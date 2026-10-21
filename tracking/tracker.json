@@ -1,11 +1,46 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "spreadsheet_id": "12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM",
   "url": "https://docs.google.com/spreadsheets/d/12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM/edit",
   "repository": "https://github.com/LasVie/agentic-hub-plugins",
   "timezone": "Asia/Singapore",
-  "rule": "Read live sheet names, headers, task IDs, asset IDs and validations before every write; update by identity, not cached row numbers.",
+  "rule": "Read live sheet names, headers, candidate IDs, task IDs, asset IDs, owners and validations before every write; update by identity, not cached row numbers.",
   "sheets": {
+    "candidates": {
+      "title": "插件候选",
+      "sheet_id": 2075388274,
+      "header_row": 5,
+      "identity_field": "候选 ID",
+      "headers": [
+        "候选 ID",
+        "插件名称",
+        "来源生态",
+        "原市场分类",
+        "建议组件类型（初判）",
+        "用途说明",
+        "功能子类",
+        "原始组件形态",
+        "依赖与适配边界",
+        "候选状态",
+        "负责人",
+        "现有资产查重",
+        "关联资产与差异",
+        "许可声明（原调研）",
+        "许可复核",
+        "Claude 累计安装量",
+        "npm 近30天下载量",
+        "GitHub Stars",
+        "热度口径与快照",
+        "来源仓库或市场链接",
+        "包名／接入源",
+        "声明与代码证据",
+        "核验版本（原调研）",
+        "调研出处",
+        "关联开发任务 ID",
+        "备注",
+        "登记日期"
+      ]
+    },
     "tasks": {
       "title": "开发任务",
       "sheet_id": 1895100875,
@@ -84,11 +119,93 @@
     "both real screenshot links accessible",
     "task-specific Hub delivery target met",
     "explicit controller acceptance",
-    "readback verification"
+    "readback verification",
+    "linked candidate owners, task IDs and delivery state synchronized when applicable"
   ],
   "asset_identity": {
     "pre_hub": "repo:<type>:<slug>",
     "keep_stable": true,
     "hub_id": "record real Hub ID in delivery.json; never invent one"
+  },
+  "candidate_start_fields": [
+    "候选 ID",
+    "负责人",
+    "候选状态",
+    "关联开发任务 ID"
+  ],
+  "candidate_workflow": {
+    "statuses": [
+      "待评估",
+      "已立项",
+      "暂缓",
+      "已排除",
+      "已交付"
+    ],
+    "owner_options_snapshot": [
+      "待分配",
+      "Cai Zhenze",
+      "Gan Mingrui",
+      "Nguyen Trung Dung",
+      "Siu Lok Yin",
+      "Vannes Wijaya",
+      "Wu Yunkai",
+      "Song Haoran"
+    ],
+    "linkage": {
+      "candidate_identity": "候选 ID",
+      "task_identity": "任务 ID",
+      "candidate_task_field": "关联开发任务 ID",
+      "task_reference_field": "任务名称",
+      "task_reference_format": "[<候选 ID>] <任务名称>",
+      "additional_references": [
+        "PR body",
+        "SOURCE_REVIEW.md"
+      ],
+      "multiple_tasks": "Keep all linked task IDs; preserve the explicitly assigned candidate lead."
+    },
+    "ownership": {
+      "candidate_field": "负责人",
+      "task_field": "负责人",
+      "unassigned_value": "待分配",
+      "authority": "Explicit controller assignment or confirmed task assignment; never infer from AI account or PR author.",
+      "candidate_to_task": "Inherit an assigned candidate lead unless an explicit reassignment applies.",
+      "task_to_candidate": "Fill an unassigned candidate from its confirmed primary task owner.",
+      "conflict": "Check explicit assignment/handoff evidence; otherwise preserve both values and report the conflict.",
+      "handoff": "Update both sheets and log old owner, new owner, date and authority in the progress report.",
+      "concurrency": "Re-read by stable IDs before writing; batch linked updates and verify by readback."
+    },
+    "state_rules": {
+      "待评估": "A candidate or owner-only claim; no formal development task yet.",
+      "已立项": "A linked development task exists; first delivery is still open.",
+      "暂缓": "Controller explicitly defers the candidate; retain linked task history.",
+      "已排除": "Controller explicitly rejects the candidate; task cancellation alone is insufficient.",
+      "已交付": "All agreed first-delivery gates and controller acceptance passed and the asset ledger was synced; track later upgrades in separate tasks."
+    },
+    "finish_fields": [
+      "负责人",
+      "关联开发任务 ID",
+      "现有资产查重",
+      "关联资产与差异",
+      "许可复核",
+      "备注",
+      "候选状态"
+    ],
+    "research_snapshot_fields": [
+      "原市场分类",
+      "用途说明",
+      "许可声明（原调研）",
+      "Claude 累计安装量",
+      "npm 近30天下载量",
+      "GitHub Stars",
+      "热度口径与快照",
+      "来源仓库或市场链接",
+      "包名／接入源",
+      "声明与代码证据",
+      "核验版本（原调研）",
+      "调研出处"
+    ],
+    "evidence": "Screenshot links stay in the linked development task; record real merged PR, version, asset ID and Hub status in candidate notes as appropriate.",
+    "not_applicable": "Do not invent a candidate for independent requirements or pure infrastructure maintenance.",
+    "restore_rule": "Never overwrite live claims, owners, statuses, links or notes with the initial import snapshot."
   }
 }
