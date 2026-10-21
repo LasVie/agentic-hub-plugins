@@ -1,0 +1,163 @@
+{
+  "captured_date": "2026-10-22",
+  "official_source_commit": "0036e5e8493cfadb4ea2d56e10c7c0edc4dd950a",
+  "samples": [
+    {
+      "name": "wechat-article-delivery",
+      "asset_id": "0ba03a6a07544b3588523d5625e47a0d",
+      "type": "skill",
+      "version": "1.0.0",
+      "source_url": "https://agentichub.openjiuwen.com/assets/0ba03a6a07544b3588523d5625e47a0d?version=1.0.0",
+      "artifact_api_url": "https://agentichub.openjiuwen.com/api/v1/artifacts/0ba03a6a07544b3588523d5625e47a0d?version=1.0.0&is_cli_download=false",
+      "sha256": "418fc7f0d56537b43e6ec93e81f71cd0cc6ae42a054a64f201d6b99878fbfe7a",
+      "bytes": 25533,
+      "file_count": 15,
+      "paths": [
+        "examples/",
+        "licenses/",
+        "references/",
+        "scripts/",
+        "NOTICE.md",
+        "PROVENANCE.md",
+        "README.md",
+        "SKILL.md",
+        "DEPENDENCIES.md",
+        "LICENSE",
+        "scripts/typeset.py",
+        "examples/article.md",
+        "examples/task.json",
+        "licenses/baoyu-skills-MIT.txt",
+        "references/workflow.md"
+      ],
+      "license_files": [
+        "NOTICE.md",
+        "LICENSE"
+      ],
+      "hub_checksum_verified": true,
+      "manifest_keys": {}
+    },
+    {
+      "name": "swarmskill-creator",
+      "asset_id": "7bd2d81927844612ab06bbe347e5bcfe",
+      "type": "skill",
+      "version": "2.0.0",
+      "source_url": "https://agentichub.openjiuwen.com/assets/7bd2d81927844612ab06bbe347e5bcfe?version=2.0.0",
+      "artifact_api_url": "https://agentichub.openjiuwen.com/api/v1/artifacts/7bd2d81927844612ab06bbe347e5bcfe?version=2.0.0&is_cli_download=false",
+      "sha256": "539ac96299f588a2772e6d7d261194f4577cb5eda00d51f4945e5d0ed68252c1",
+      "bytes": 72614,
+      "file_count": 17,
+      "paths": [
+        "reference/",
+        "scripts/",
+        "templates/",
+        "SKILL.md",
+        "reference/community-search.md",
+        "reference/conversion-guide.md",
+        "reference/role-design.md",
+        "reference/pattern-selection.md",
+        "reference/compliance-checklist.md",
+        "scripts/validate_swarmskill.py",
+        "templates/scripts/",
+        "templates/bind.md.template",
+        "templates/role.md.template",
+        "templates/dependencies.yaml.template",
+        "templates/workflow.md.template",
+        "templates/SKILL.md.template",
+        "templates/scripts/workflow.py.template"
+      ],
+      "license_files": [],
+      "hub_checksum_verified": true,
+      "manifest_keys": {}
+    },
+    {
+      "name": "pr-quality-check",
+      "asset_id": "003ee9c7b96f47e6b161a41d5b71dc41",
+      "type": "agent-plugin",
+      "version": "1.0.0",
+      "source_url": "https://agentichub.openjiuwen.com/assets/003ee9c7b96f47e6b161a41d5b71dc41?version=1.0.0",
+      "artifact_api_url": "https://agentichub.openjiuwen.com/api/v1/artifacts/003ee9c7b96f47e6b161a41d5b71dc41?version=1.0.0&is_cli_download=false",
+      "sha256": "ef2b47c4244bd0cb51a61cbb32a827afc579864a7cb5a4dfb0341d1d42cc140a",
+      "bytes": 27316,
+      "file_count": 12,
+      "paths": [
+        "README.md",
+        "avatars/avatar.png",
+        "manifest.json",
+        "skills/behavior-gap-review/SKILL.md",
+        "skills/behavior-gap-review/references/coverage-and-swallow.md",
+        "skills/capability-match-guide/SKILL.md",
+        "skills/change-scope-orchestration/SKILL.md",
+        "skills/change-scope-orchestration/references/lens-and-severity.md",
+        "skills/contract-comment-review/SKILL.md",
+        "skills/contract-comment-review/references/invariant-and-comment.md",
+        "skills/guideline-clarity-review/SKILL.md",
+        "skills/guideline-clarity-review/references/confidence-and-simplify.md"
+      ],
+      "license_files": [],
+      "hub_checksum_verified": true,
+      "manifest_keys": {
+        "manifest.json": [
+          "version",
+          "package_type",
+          "id",
+          "name",
+          "description",
+          "display_name",
+          "display_description",
+          "category",
+          "source",
+          "avatar",
+          "default_init_input",
+          "tags",
+          "quick_inputs",
+          "skills"
+        ]
+      }
+    },
+    {
+      "name": "spanner",
+      "asset_id": "4dcf236da117410894698567e3ac3860",
+      "type": "agent-plugin",
+      "version": "1.0.0",
+      "source_url": "https://agentichub.openjiuwen.com/assets/4dcf236da117410894698567e3ac3860?version=1.0.0",
+      "artifact_api_url": "https://agentichub.openjiuwen.com/api/v1/artifacts/4dcf236da117410894698567e3ac3860?version=1.0.0&is_cli_download=false",
+      "sha256": "c46657f5afe1ac37b30e22518b7bcf4f42ce4fe27a85c36a972818f2c1475ba6",
+      "bytes": 19897,
+      "file_count": 9,
+      "paths": [
+        "README.md",
+        "manifest.json",
+        "skills/data-operations/SKILL.md",
+        "skills/data-operations/references/dml-ddl-guide.md",
+        "skills/data-query/SKILL.md",
+        "skills/data-query/references/sql-query-patterns.md",
+        "skills/nl-interaction/SKILL.md",
+        "skills/nl-interaction/references/googlesql-dialect.md",
+        "tools/spanner_tool.py"
+      ],
+      "license_files": [],
+      "hub_checksum_verified": true,
+      "manifest_keys": {
+        "manifest.json": [
+          "version",
+          "package_type",
+          "id",
+          "name",
+          "description",
+          "display_name",
+          "display_description",
+          "category",
+          "source",
+          "avatar",
+          "default_init_input",
+          "tags",
+          "quick_inputs",
+          "skills",
+          "tools"
+        ]
+      }
+    }
+  ],
+  "executed_samples": false,
+  "redistributed_sample_archives": false
+}

@@ -1,0 +1,12 @@
+{
+  "type": "skill",
+  "name": "example-skill",
+  "version": "1.0.0",
+  "display_name": "请替换为技能名称",
+  "description": "请替换为真实用途、触发条件与输出说明",
+  "publisher": "YOUR_HUB_LOGIN",
+  "category": "办公与生产力",
+  "tags": [],
+  "functional_tags": [],
+  "scope": "请填写适用范围与明确排除项"
+}
