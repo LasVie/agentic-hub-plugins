@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "spreadsheet_id": "12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM",
+  "url": "https://docs.google.com/spreadsheets/d/12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM/edit",
+  "repository": "https://github.com/LasVie/agentic-hub-plugins",
+  "timezone": "Asia/Singapore",
+  "rule": "Read live sheet names, headers, task IDs, asset IDs and validations before every write; update by identity, not cached row numbers.",
+  "sheets": {
+    "tasks": {
+      "title": "开发任务",
+      "sheet_id": 1895100875,
+      "header_row": 5,
+      "headers": [
+        "任务 ID",
+        "任务名称",
+        "组件类型",
+        "历史或新增",
+        "负责人",
+        "状态",
+        "依赖任务",
+        "PR",
+        "测试截图",
+        "Agentic Hub 提交截图",
+        "总控验收",
+        "实际完成日"
+      ]
+    },
+    "assets": {
+      "title": "资产总账",
+      "sheet_id": 1087216345,
+      "header_row": 1,
+      "headers": [
+        "记录性质",
+        "资产名称",
+        "资产类型",
+        "官方分类",
+        "用途说明",
+        "功能检索标签",
+        "适用范围与排除项",
+        "同名提醒",
+        "发布者",
+        "版本",
+        "资产 ID",
+        "官方原始标签",
+        "来源链接",
+        "登记日期"
+      ]
+    },
+    "reports": {
+      "title": "进展汇报",
+      "sheet_id": 2097350348,
+      "header_row": 5,
+      "headers": [
+        "汇报 ID",
+        "汇报人",
+        "关联任务 ID",
+        "汇报日期",
+        "本次已完成",
+        "下一步",
+        "阻塞与协助请求",
+        "证据或 PR",
+        "预计完成日",
+        "需总控决定",
+        "汇报状态"
+      ]
+    }
+  },
+  "start_fields": [
+    "任务 ID",
+    "任务名称",
+    "组件类型",
+    "历史或新增",
+    "负责人",
+    "状态",
+    "依赖任务"
+  ],
+  "evidence_fields": [
+    "测试截图",
+    "Agentic Hub 提交截图"
+  ],
+  "completion_gates": [
+    "PR actually merged",
+    "functional tests passed",
+    "both real screenshot links accessible",
+    "task-specific Hub delivery target met",
+    "explicit controller acceptance",
+    "readback verification"
+  ],
+  "asset_identity": {
+    "pre_hub": "repo:<type>:<slug>",
+    "keep_stable": true,
+    "hub_id": "record real Hub ID in delivery.json; never invent one"
+  }
+}

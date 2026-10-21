@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+.env
+.env.*
+!.env.example
+.research/
+tracking/pending/
+dist/
+.pytest_cache/
+
+# releases/ 下的交付 ZIP 必须进入 PR；不要全局忽略 *.zip。

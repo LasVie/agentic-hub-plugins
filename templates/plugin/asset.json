@@ -1,0 +1,12 @@
+{
+  "type": "agent-plugin",
+  "name": "example-plugin",
+  "version": "1.0.0",
+  "display_name": "请替换为插件名称",
+  "description": "请替换为真实用途、组件和输出说明",
+  "publisher": "YOUR_HUB_LOGIN",
+  "category": "办公与生产力",
+  "tags": [],
+  "functional_tags": [],
+  "scope": "请填写适用范围与明确排除项"
+}
