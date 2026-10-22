@@ -1,0 +1,5 @@
+{
+  "name": "__PROJECT_NAME__", "version": "0.1.0", "private": true, "type": "module",
+  "engines": {"node": ">=20"},
+  "dependencies": {"@modelcontextprotocol/sdk": "1.32.1", "zod": "4.6.7"}
+}

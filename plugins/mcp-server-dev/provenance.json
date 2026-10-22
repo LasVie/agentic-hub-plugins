@@ -1,0 +1,26 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/anthropics/claude-plugins-official/tree/d4226d062928f8d9505dbdeadd10217d23361052/plugins/mcp-server-dev",
+      "revision": "d4226d062928f8d9505dbdeadd10217d23361052",
+      "license_expression": "Apache-2.0",
+      "license_evidence": [
+        {
+          "path": "licenses/claude-plugins-official/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "skills/build-mcp-app/SKILL.md",
+    "skills/build-mcpb/SKILL.md",
+    "templates/app/server.mjs",
+    "templates/mcpb/server.mjs",
+    "templates/app/widget.mjs",
+    "templates/app/build.mjs"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

@@ -1,0 +1,200 @@
+$ node --version
+v24.19.0
+$ node <npm-cli> --version
+10.9.4
+{"python": "3.12.14", "node": "v24.19.0", "npm": "10.9.4", "plugin": "1.0.0"}
+$ node <npm-cli> ci --ignore-scripts --no-audit --no-fund --cache <release-test>/npm-cache --registry https://registry.npmjs.org --prefix <release-test>/tools
+
+added 150 packages in 10s
+npm notice
+npm notice New major version of npm available! 10.9.4 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice
+$ python3 /private<release-unpacked>/mcp-server-dev/mcp-server-dev/scripts/devkit.py scaffold --kind app --output <release-test>/app --name tested-app --author Vannes Wijaya
+{
+  "plugin_version": "1.0.0",
+  "kind": "app",
+  "project": "<release-test>/app",
+  "name": "tested-app",
+  "generated_version": "0.1.0",
+  "runtime": "Node.js >=20",
+  "commands": [
+    "npm ci --ignore-scripts",
+    "npm run build",
+    "node server.mjs"
+  ],
+  "license_note": "Review rights for your generated code and installed dependencies before distribution."
+}
+$ node <npm-cli> ci --ignore-scripts --no-audit --no-fund --cache <release-test>/npm-cache --registry https://registry.npmjs.org --prefix <release-test>/app
+
+added 99 packages in 382ms
+$ node --check <release-test>/app/widget.mjs
+$ node --check <release-test>/app/collect-licenses.mjs
+$ node --check <release-test>/app/build.mjs
+$ node --check <release-test>/app/server.mjs
+$ node <release-test>/app/build.mjs
+Collected installed license/NOTICE evidence for 99 packages
+Built widget.html with local SDK bundle
+$ node <repo>/tests/mcp_server_dev_smoke.mjs <release-test>/app app <release-test>/tools/node_modules
+{"kind":"app","project":"<release-test>/app","initialize":"passed","tools_list":"passed","add_2_3":5,"invalid_inputs":"rejected","unknown_tool":"rejected","recovery":"passed","resource":"UI URI/MIME/local HTML verified"}
+$ python3 /private<release-unpacked>/mcp-server-dev/mcp-server-dev/scripts/devkit.py scaffold --kind mcpb --output <release-test>/mcpb --name tested-mcpb --author Vannes Wijaya
+{
+  "plugin_version": "1.0.0",
+  "kind": "mcpb",
+  "project": "<release-test>/mcpb",
+  "name": "tested-mcpb",
+  "generated_version": "0.1.0",
+  "runtime": "Node.js >=20",
+  "commands": [
+    "npm ci --ignore-scripts --omit=dev",
+    "node collect-licenses.mjs",
+    "mcpb validate manifest.json",
+    "mcpb pack"
+  ],
+  "license_note": "Review rights for your generated code and installed dependencies before distribution."
+}
+$ node <npm-cli> ci --ignore-scripts --no-audit --no-fund --cache <release-test>/npm-cache --registry https://registry.npmjs.org --prefix <release-test>/mcpb --omit=dev
+
+added 95 packages in 264ms
+$ node --check <release-test>/mcpb/collect-licenses.mjs
+$ node --check <release-test>/mcpb/server.mjs
+$ node <release-test>/mcpb/collect-licenses.mjs
+Collected installed license/NOTICE evidence for 95 packages
+$ node <repo>/tests/mcp_server_dev_smoke.mjs <release-test>/mcpb mcpb <release-test>/tools/node_modules
+{"kind":"mcpb","project":"<release-test>/mcpb","initialize":"passed","tools_list":"passed","add_2_3":5,"invalid_inputs":"rejected","unknown_tool":"rejected","recovery":"passed","resource":"not applicable"}
+$ node <release-test>/tools/node_modules/@anthropic-ai/mcpb/dist/cli/cli.js validate <release-test>/mcpb/manifest.json
+Manifest schema validation passes!
+$ node <release-test>/tools/node_modules/@anthropic-ai/mcpb/dist/cli/cli.js validate <release-test>/invalid-manifest.json
+ERROR: Manifest validation failed:
+
+  - name: Required
+  - version: Required
+  - description: Required
+  - author: Required
+  - server: Required
+$ node <release-test>/tools/node_modules/@anthropic-ai/mcpb/dist/cli/cli.js pack <release-test>/mcpb <release-test>/tested.mcpb
+Validating manifest...
+Manifest schema validation passes!
+
+📦  tested-mcpb@0.1.0
+Archive Contents
+   2.3kB ../collect-licenses.mjs
+  16.7kB ../DEPENDENCY_LICENSES.json
+    460B ../manifest.json
+  41.7kB ../node_modules/.package-lock.json
+    189B ../package.json
+    891B ../server.mjs
+   2.9kB ../THIRD_PARTY_NOTICES.md
+  11.1kB ../licenses/claude-plugins-official/LICENSE
+ 100.1kB ../licenses/npm/ [and 92 more files]
+ 135.1kB ../node_modules/@hono/ [and 29 more files]
+   1.6MB ../node_modules/@modelcontextprotocol/ [and 179 more files]
+  16.5kB ../node_modules/accepts/ [and 5 more files]
+  42.6kB ../node_modules/ajv-formats/ [and 9 more files]
+ 660.8kB ../node_modules/ajv/ [and 254 more files]
+  51.8kB ../node_modules/body-parser/ [and 14 more files]
+  12.0kB ../node_modules/bytes/ [and 5 more files]
+  12.2kB ../node_modules/call-bind-apply-helpers/ [and 12 more files]
+  11.8kB ../node_modules/call-bound/ [and 7 more files]
+  21.7kB ../node_modules/content-disposition/ [and 4 more files]
+  10.2kB ../node_modules/content-type/ [and 5 more files]
+   4.9kB ../node_modules/cookie-signature/ [and 5 more files]
+  22.8kB ../node_modules/cookie/ [and 5 more files]
+  19.5kB ../node_modules/cors/ [and 4 more files]
+  15.7kB ../node_modules/cross-spawn/ [and 9 more files]
+  41.8kB ../node_modules/debug/ [and 7 more files]
+  26.5kB ../node_modules/depd/ [and 6 more files]
+  12.1kB ../node_modules/dunder-proto/ [and 10 more files]
+   6.1kB ../node_modules/ee-first/ [and 4 more files]
+   6.8kB ../node_modules/encodeurl/ [and 4 more files]
+   9.5kB ../node_modules/es-define-property/ [and 7 more files]
+   8.4kB ../node_modules/es-errors/ [and 13 more files]
+  10.7kB ../node_modules/es-object-atoms/ [and 10 more files]
+   3.6kB ../node_modules/escape-html/ [and 4 more files]
+  10.6kB ../node_modules/etag/ [and 5 more files]
+  60.0kB ../node_modules/eventsource-parser/ [and 15 more files]
+  74.6kB ../node_modules/eventsource/ [and 10 more files]
+ 129.3kB ../node_modules/express-rate-limit/ [and 7 more files]
+  85.1kB ../node_modules/express/ [and 14 more files]
+  12.4kB ../node_modules/fast-deep-equal/ [and 7 more files]
+ 233.8kB ../node_modules/fast-uri/ [and 45 more files]
+  17.7kB ../node_modules/finalhandler/ [and 5 more files]
+   5.7kB ../node_modules/forwarded/ [and 5 more files]
+  10.0kB ../node_modules/fresh/ [and 5 more files]
+  30.1kB ../node_modules/function-bind/ [and 9 more files]
+  44.7kB ../node_modules/get-intrinsic/ [and 7 more files]
+   9.9kB ../node_modules/get-proto/ [and 9 more files]
+   9.1kB ../node_modules/gopd/ [and 8 more files]
+  22.3kB ../node_modules/has-symbols/ [and 11 more files]
+   9.7kB ../node_modules/hasown/ [and 7 more files]
+ 887.9kB ../node_modules/hono/ [and 385 more files]
+  18.6kB ../node_modules/http-errors/ [and 5 more files]
+ 325.5kB ../node_modules/iconv-lite/ [and 25 more files]
+   3.9kB ../node_modules/inherits/ [and 5 more files]
+ 155.2kB ../node_modules/ip-address/ [and 12 more files]
+  38.3kB ../node_modules/ipaddr.js/ [and 5 more files]
+   2.8kB ../node_modules/is-promise/ [and 5 more files]
+  10.7kB ../node_modules/isexe/ [and 8 more files]
+ 132.2kB ../node_modules/jose/ [and 49 more files]
+  21.0kB ../node_modules/json-schema-traverse/ [and 11 more files]
+  43.9kB ../node_modules/json-schema-typed/ [and 6 more files]
+  15.9kB ../node_modules/math-intrinsics/ [and 21 more files]
+   9.1kB ../node_modules/media-typer/ [and 5 more files]
+   3.7kB ../node_modules/merge-descriptors/ [and 4 more files]
+ 220.3kB ../node_modules/mime-db/ [and 6 more files]
+  22.3kB ../node_modules/mime-types/ [and 6 more files]
+   6.6kB ../node_modules/ms/ [and 4 more files]
+  34.1kB ../node_modules/negotiator/ [and 13 more files]
+   5.4kB ../node_modules/object-assign/ [and 4 more files]
+  99.0kB ../node_modules/object-inspect/ [and 32 more files]
+  13.4kB ../node_modules/on-finished/ [and 5 more files]
+   4.0kB ../node_modules/once/ [and 4 more files]
+  10.1kB ../node_modules/parseurl/ [and 5 more files]
+   3.4kB ../node_modules/path-key/ [and 4 more files]
+  24.3kB ../node_modules/path-to-regexp/ [and 4 more files]
+  16.2kB ../node_modules/pkce-challenge/ [and 8 more files]
+  15.9kB ../node_modules/proxy-addr/ [and 5 more files]
+ 408.2kB ../node_modules/qs/ [and 18 more files]
+   8.8kB ../node_modules/range-parser/ [and 5 more files]
+  15.8kB ../node_modules/raw-body/ [and 4 more files]
+   3.3kB ../node_modules/require-from-string/ [and 4 more files]
+  45.8kB ../node_modules/router/ [and 7 more files]
+  41.3kB ../node_modules/safer-buffer/ [and 7 more files]
+  31.4kB ../node_modules/send/ [and 4 more files]
+  14.0kB ../node_modules/serve-static/ [and 4 more files]
+   3.8kB ../node_modules/setprototypeof/ [and 5 more files]
+   2.5kB ../node_modules/shebang-command/ [and 4 more files]
+   2.3kB ../node_modules/shebang-regex/ [and 4 more files]
+  14.9kB ../node_modules/side-channel-list/ [and 7 more files]
+  12.0kB ../node_modules/side-channel-map/ [and 7 more files]
+  13.3kB ../node_modules/side-channel-weakmap/ [and 7 more files]
+  21.2kB ../node_modules/side-channel/ [and 7 more files]
+  12.2kB ../node_modules/statuses/ [and 6 more files]
+   4.6kB ../node_modules/toidentifier/ [and 5 more files]
+  31.0kB ../node_modules/type-is/ [and 9 more files]
+   4.2kB ../node_modules/unpipe/ [and 5 more files]
+   8.5kB ../node_modules/vary/ [and 5 more files]
+   9.7kB ../node_modules/which/ [and 6 more files]
+   2.9kB ../node_modules/wrappy/ [and 4 more files]
+ 194.2kB ../node_modules/zod-to-json-schema/ [and 91 more files]
+   5.5MB ../node_modules/zod/ [and 716 more files]
+
+Archive Details
+name: tested-mcpb
+version: 0.1.0
+filename: tested-mcpb-0.1.0.mcpb
+package size: 3.8MB
+unpacked size: 12.2MB
+shasum: 637ad319040f49acdcf68e5697d0c419c21e9f32
+total files: 2467
+ignored (.mcpbignore) files: 1289
+
+Output: <release-test>/tested.mcpb
+MCPB archive: 2467 files; no traversal; runtime dependency licenses present
+$ node <release-test>/tools/node_modules/@anthropic-ai/mcpb/dist/cli/cli.js unpack <release-test>/tested.mcpb <release-test>/relocated
+Extension unpacked successfully to <release-test>/relocated
+$ node <repo>/tests/mcp_server_dev_smoke.mjs <release-test>/relocated mcpb <release-test>/tools/node_modules
+{"kind":"mcpb","project":"<release-test>/relocated","initialize":"passed","tools_list":"passed","add_2_3":5,"invalid_inputs":"rejected","unknown_tool":"rejected","recovery":"passed","resource":"not applicable"}
+PASS: real App protocol, text fallback, invalid inputs, MCPB validate/pack/unpack/relocation
+Host UI rendering, target-desktop install and Hub submission remain separate evidence.

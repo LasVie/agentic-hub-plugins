@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:mcp-server-dev",
+  "type": "agent-plugin",
+  "name": "mcp-server-dev",
+  "version": "1.0.0",
+  "zip": "mcp-server-dev-1.0.0.zip",
+  "sha256": "4f3750a4270985e8e47441a5b59720967e77fec9f1d63585a5ece85ae436626d",
+  "payload_sha256": {
+    "README.md": "a6a95c39028e62510e16849fe62c50c01748b16f6a0c630f53af14e3b7c2e85f",
+    "THIRD_PARTY_NOTICES.md": "bc5eed92355472547c151683823bc0ace429ecc43c6d35528e8209c0f0654ae2",
+    "licenses/claude-plugins-official/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "manifest.json": "446c857c1dc22508e535ee07f3f89c99b60f289bf9685f48f22197f198ff7e06",
+    "scripts/devkit.py": "6e5fd1bd5b4190daddef891166e374d334d0f71fcbdeb569922a9c33684ac83f",
+    "skills/build-mcp-app/SKILL.md": "5a0f08b51707bc3e493cd47e57fefd379bacc0905df40e410de5814c10008cbf",
+    "skills/build-mcpb/SKILL.md": "7401ed919a6b7efeb6908e09bf571ba8864eca6b7660b071d425eaae01f5b067",
+    "skills/mcp-dev-route/SKILL.md": "54e559699faad3a895f67595fcf509abe063a132857cdb8ed173092d5c7424a9",
+    "templates/app/build.mjs": "0ef02ab3f90c1c724fd657eb74ad0dc96cbb14a1ebd730c0bc80c23aceaed657",
+    "templates/app/package-lock.json": "c65a9203b491b807d09812b7e321b0516391652048111a8b43bb5e3d9b878d3e",
+    "templates/app/package.json": "98ee06bad26b364fffd198c18338c55b6b3a88daeb36b35fb29c4fb1fe4220da",
+    "templates/app/server.mjs": "179d6126de8e654a3d95be4a9b437018bcf67a1c81b95d181558a5fde31c2c0a",
+    "templates/app/widget.mjs": "40e2eec04ecad5baba4461dd409a9ffb3eb6cf84ef26ae196478e1bcf1f140c4",
+    "templates/collect-licenses.mjs": "84438278fd9535615949d55e80eba897e0cf5b8f07bdb5416ae7b1b072f5b8ba",
+    "templates/mcpb/package-lock.json": "cbd70e08aa147e163787ca6515fa53afc1dfaac54b37001c38680c6727ae317d",
+    "templates/mcpb/package.json": "cf067806688138a88e787ec36aadbb3c90e60ab3554204e641d00d5d64474718",
+    "templates/mcpb/server.mjs": "6005b35f97c78cb7527e8d5f952b79e516f91bdcab1a55afb1fd19f2091c3bde"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "e928d176d8a84bff1f5a114fee0f2e5711aa02c6df6a9f38e4c428400417c20c",
+  "functional_test_report_sha256": "c09a57bc1150fb56842f7960e8b22b57cb5a398e8682e83b03ed38e959919296"
+}
