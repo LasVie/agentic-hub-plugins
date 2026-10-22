@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-22",
+  "task_id": "AH-20261022-exa-deep-research",
+  "version": "1.0.0",
+  "native_host_and_live": {
+    "host_load": "passed",
+    "tools": [
+      "ExaSearchTool",
+      "ExaFetchTool",
+      "ExaAdvancedSearchTool",
+      "ExaResearchTool"
+    ],
+    "skills": 2,
+    "runtime": {
+      "python": "3.12.6",
+      "mcp": "1.26.0",
+      "jsonschema": "4.26.0"
+    },
+    "loader_sha256": "cf7f3ab694574ed771cba8b78899631bebd050814ed9b909acfee5ae246c4fc4",
+    "paid_guard": "passed; no research run started",
+    "live": {
+      "anonymous_search": "passed",
+      "fetch": "passed",
+      "filtered_search": "passed",
+      "search_content_characters": 9659,
+      "research": "not run; no account/budget authorization"
+    },
+    "isolated_import_install_uninstall": "passed"
+  },
+  "port_regressions": {
+    "run": 9,
+    "passed": 9
+  },
+  "repository_supported_suite": {
+    "run": 57,
+    "passed": 31,
+    "skipped_missing_runtime_dependencies": 26,
+    "excluded_windows_symlink_privilege_cases": [
+      "test_payload_symlinks_are_rejected",
+      "test_generation_preserves_existing_files_and_rejects_symlinks"
+    ]
+  },
+  "release_verification": {
+    "canonical_zip_sha256": "f61bc3d94d3fdb48db5e1f41139cd9450c9f5902cfc992ccf730ea32b27cc8ac",
+    "native_zip_sha256": "589ebbf999a42f0c15e9d98afe47b11d1b4747211c82becebca0ea1cf7f7f548",
+    "files": 19,
+    "payload_bytes": 46251,
+    "extracted": "D:\\jiuwen_repos\\agentic-hub-plugins-exa\\.research\\extracted-exa",
+    "license_and_payload_match": true
+  }
+}
