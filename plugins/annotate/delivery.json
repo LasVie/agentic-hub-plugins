@@ -1,0 +1,261 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:annotate",
+  "task_id": "AH-20261022-annotate",
+  "candidate_id": "CAND-CLD-264",
+  "owner": "Wang Jie",
+  "version": "1.0.3",
+  "status": "Awaiting Acceptance",
+  "marketplace_zip": "releases/agent-plugin/annotate/1.0.3/annotate-1.0.3.zip",
+  "marketplace_sha256": "68849b9d4ef7ab1886974c35de7450dd5870c44a7aa9c8719945051b7be7df9a",
+  "native_test_sha256": "65063bf4ebc0b6639a85d9dd9c8a04f7f5d1eb71c3e2b435275375c96d5f1fa0",
+  "current_version_user_test_confirmation": null,
+  "delivery_pr": "https://github.com/LasVie/agentic-hub-plugins/pull/28",
+  "merged_commit": "d7c04f3685e872067472cfa7633817e9e232dc86",
+  "hub_id": "70cbbc39a17a426696300ab165e1564c",
+  "hub_url": "https://agentichub.openjiuwen.com/assets/70cbbc39a17a426696300ab165e1564c?version=1.0.3",
+  "hub_status": "Submitted - Pending Review",
+  "hub_submission_screenshot": "https://github.com/LasVie/agentic-hub-plugins/pull/28#issuecomment-6339615534",
+  "project_lead_acceptance": "Pending Acceptance",
+  "delivery_state": "PR #28 actually merged; the unchanged accepted Chinese 1.0.3 package was successfully submitted to Hub and is pending review. Neither review approval nor public market publication is claimed. Explicit final development acceptance remains pending.",
+  "naming": {
+    "upstream_candidate_name": "Annotate (claude-annotate)",
+    "packaged_display_name": "网页圈选与批注",
+    "hub_display_name": "网页圈选与批注",
+    "internal_slug": "annotate",
+    "packaged_publisher": "Wang Jie",
+    "hub_publisher": "LasVie",
+    "responsible_development_member": "Wang Jie"
+  },
+  "merge_verification": {
+    "delivery_pr": "https://github.com/LasVie/agentic-hub-plugins/pull/28",
+    "merged": true,
+    "merged_at": "2026-10-22T11:18:59Z",
+    "merged_commit": "d7c04f3685e872067472cfa7633817e9e232dc86",
+    "verified_final_pr_head": "f1f8071e404beb42d3555924ee669aac7cc3335f",
+    "source_repository": "dashingsss/agentic-hub-plugins",
+    "source_branch": "feat/annotate-zh-1.0.3",
+    "marketplace_zip_matches_accepted_tested_payload": true,
+    "runtime_payload_files": 13,
+    "native_and_marketplace_payloads_identical": true,
+    "source": "Live GitHub PR response, merged main ZIP and immutable artifact hashes."
+  },
+  "ci_verification": {
+    "head_sha": "f1f8071e404beb42d3555924ee669aac7cc3335f",
+    "workflow": "Validate delivery packages",
+    "run_id": 39769413041,
+    "url": "https://github.com/LasVie/agentic-hub-plugins/actions/runs/39769413041",
+    "status": "completed",
+    "conclusion": "success",
+    "resolved_failure": "The earlier CI unit importer generated launch.py bytecode inside the runtime payload. A test-only change temporarily disables bytecode around importlib execution and restores the prior setting in finally; runtime files, versions and ZIP hashes did not change.",
+    "independent_current_main_merge_validation": "89 unit tests completed successfully, 28 existing SDK-dependent skips; check-repo passed 12 source assets / 20 release ZIPs with PYTHONDONTWRITEBYTECODE unset."
+  },
+  "functional_test_evidence": {
+    "report": "TEST_REPORT.md",
+    "report_sha256": "0037abc9b3ffd338727028861e69875d3f32aac2d9b19ed7224177b59dbf7183",
+    "current_annotate_unit_cases": 17,
+    "current_annotate_unit_result": "17 passed",
+    "contributor_developer_integration": "TEST_REPORT.md records 13 actual MCP/Chrome check groups against the exact extracted 1.0.3 payload, including initialization, concurrency, retry, Chinese UI, annotation, inline PNGs, progress, cleanup and reuse. This is developer automation, not a new human WorkSwarm run.",
+    "independent_audit_scope": "Package/hash/license checks,17 Annotate unit tests and full 89-test/default-environment merge checks passed. Independent cold MCP initialization, parallel startup, Chinese instructions and URL-rejection checks ran; that audit machine lacked the declared external Google Chrome prerequisite, so a fresh independent 13-group browser pass is not claimed.",
+    "host_image_boundary": "Historical WorkSwarm report says two inline PNGs were returned; read_file multimodal input was disabled. Do not infer unrestricted model image support."
+  },
+  "historical_deliveries": [],
+  "historical_test_packages": [
+    {
+      "version": "1.0.2",
+      "marketplace_sha256": "fed33148dd681602bc19ee1d4d851f189f524f84067967a810d83e8218fa0801",
+      "native_test_sha256": "0a130967d1820063cfeedb69162c8ae7343ff1fb49f80c5fa43c57c19c619377",
+      "tested_by": "Wang Jie",
+      "test_round_completion_confirmed": true,
+      "completion_scope": "The user confirmed that their agreed test round had ended and authorized PR preparation with limitations/untested items disclosed; this is not a claim every case passed.",
+      "source": "USER_TEST_CONFIRMATION.md and the actual original screenshot comment on PR#28.",
+      "evidence_comment": "https://github.com/LasVie/agentic-hub-plugins/pull/28#issuecomment-6338983543",
+      "merged_delivery_claimed": false
+    }
+  ],
+  "historical_user_test_evidence": {
+    "version": "1.0.2",
+    "original_screenshot_comment": "https://github.com/LasVie/agentic-hub-plugins/pull/28#issuecomment-6338983543",
+    "original_png_count": 7,
+    "remote_original_bytes_verified": true,
+    "images": [
+      {
+        "url": "https://github.com/user-attachments/assets/15f3a4fa-81b3-4508-b901-ce2438d6e12e",
+        "bytes": 253829,
+        "sha256": "4d4bc79704ba771099efe11df3a43d3985f6f2226e46efad76378824d8d7bcef",
+        "width": 1850,
+        "height": 1344,
+        "remote_bytes_identical": true
+      },
+      {
+        "url": "https://github.com/user-attachments/assets/ef3c95d7-4478-4e33-89d3-29373ce0ce1a",
+        "bytes": 526253,
+        "sha256": "e31d97c5a5bf31b007570888a104c6079eb7b5c04390db517a843a1b87cfba11",
+        "width": 1998,
+        "height": 1248,
+        "remote_bytes_identical": true
+      },
+      {
+        "url": "https://github.com/user-attachments/assets/d690974a-ff53-49e4-923c-245ca7d6f166",
+        "bytes": 646836,
+        "sha256": "e64b5a9975dae809d64e5dadb517a827db01ee0673037b2381df58914fc3bfda",
+        "width": 1952,
+        "height": 1278,
+        "remote_bytes_identical": true
+      },
+      {
+        "url": "https://github.com/user-attachments/assets/96028328-972d-4c86-a06b-973f45c14dad",
+        "bytes": 292439,
+        "sha256": "6a69060c19ea18d652666ae229a8e45c418bd391f72360425430854ab9a3e9e9",
+        "width": 1816,
+        "height": 1168,
+        "remote_bytes_identical": true
+      },
+      {
+        "url": "https://github.com/user-attachments/assets/ab2f9562-0ab1-45eb-b275-9177b2c0ad3f",
+        "bytes": 404184,
+        "sha256": "5b14539e7c94b3718b3f1c0c9dc42cb0f11c1281d2df4659c91e27774d9312cd",
+        "width": 1984,
+        "height": 1274,
+        "remote_bytes_identical": true
+      },
+      {
+        "url": "https://github.com/user-attachments/assets/b9db456a-2022-4a91-8dd3-e0bd2abf04f8",
+        "bytes": 497846,
+        "sha256": "56ecdd513ec71f80a6ca9f52b67fcc5159a3ef75eef9a5ee76164202542566cb",
+        "width": 2048,
+        "height": 1247,
+        "remote_bytes_identical": true
+      },
+      {
+        "url": "https://github.com/user-attachments/assets/8c3310f8-7b29-46c5-bb73-aa14d58b43da",
+        "bytes": 285644,
+        "sha256": "cf5ac575839ab289cf9f66c878a8cccc83a72b23bfc181d25357b4f69ba65f42",
+        "width": 1910,
+        "height": 1250,
+        "remote_bytes_identical": true
+      }
+    ],
+    "scope": "Actual user-provided conversation-saved PNGs from the 1.0.2 round. No generation, cropping, conversion or recompression is claimed; screenshots are not relabeled as a new 1.0.3 human test."
+  },
+  "test_evidence_pr_permalinks": [
+    "https://github.com/LasVie/agentic-hub-plugins/pull/28#issuecomment-6338983543"
+  ],
+  "contributor_current_version_acceptance": {
+    "accepted_by": "Wang Jie",
+    "date": "2026-10-22",
+    "version": "1.0.3",
+    "marketplace_sha256": "68849b9d4ef7ab1886974c35de7450dd5870c44a7aa9c8719945051b7be7df9a",
+    "native_test_sha256": "65063bf4ebc0b6639a85d9dd9c8a04f7f5d1eb71c3e2b435275375c96d5f1fa0",
+    "source": "USER_TEST_CONFIRMATION.md; exact message times and a conversation permalink are unavailable.",
+    "direct_statements": [
+      "不重新测试了，你就改成中文就行了啊",
+      "已经测试好了呀，只是改一点文字语言没事的，你怎么没有创建pr啊",
+      "你就直接创建就行了"
+    ],
+    "scope": "Explicit acceptance of proceeding with the current localized 1.0.3 package without another manual round, followed by PR creation. The earlier 1.0.2 manual test and screenshots remain historical.",
+    "human_performed_new1_0_3_testing": false,
+    "final_project_lead_acceptance": "Pending Acceptance"
+  },
+  "current_package_approval": {
+    "approved_by": "Song Haoran",
+    "recorded_at_utc": "2026-10-22T11:23:48.623Z",
+    "user_reply": "确认上传并提交",
+    "authority_source": "Direct human reply in the current conversation to the complete Annotate listing preview and explicit upload/submission question. No conversation permalink is available; none is invented.",
+    "version": "1.0.3",
+    "marketplace_sha256": "68849b9d4ef7ab1886974c35de7450dd5870c44a7aa9c8719945051b7be7df9a",
+    "display_name": "网页圈选与批注",
+    "approved_scope": "Upload the exact merged unchanged Chinese package and submit the complete Chinese listing shown in this conversation to Agentic Hub under LasVie, with known dependency/test/functional-overlap limits.",
+    "human_approved_current_tested_package": true,
+    "human_performed_new_testing": false,
+    "final_development_acceptance_inferred": false,
+    "evidence_comment": "https://github.com/LasVie/agentic-hub-plugins/pull/28#issuecomment-6339615534"
+  },
+  "license_verification": {
+    "source_review": "SOURCE_REVIEW.md",
+    "source_review_sha256": "0c2c9714d3c0d1e959ab8127edb91b55b06a0dc0b4df839e9b56cdde611cb665",
+    "provenance": "provenance.json",
+    "mode": "ported",
+    "permission_status": "verified for the specifically reused MIT-covered materials",
+    "upstream": "https://github.com/FinalAngel/claude-annotate/tree/d70e57a29ed480b05ff046296572fcc5b761f25e",
+    "revision": "d70e57a29ed480b05ff046296572fcc5b761f25e",
+    "upstream_version": "0.3.2",
+    "original_rightsholder": "Copyright (c) 2026 Angelo Dini",
+    "license_expression": "MIT",
+    "bundled_license_path": "licenses/claude-annotate/LICENSE",
+    "bundled_license_sha256": "560cb98de97e83fc25542efdd90e7ab60fa0f824bb9a3d0152c0141b97935da3",
+    "third_party_notices": "THIRD_PARTY_NOTICES.md",
+    "original_license_bytes_and_copied_headers_preserved": true,
+    "dependency_inventory": "DEPENDENCIES.json",
+    "locked_dependency_records": 95,
+    "dependency_implementations_bundled": false,
+    "scope": "No browser, upstream brand media or third-party dependency implementations are redistributed in the ZIP. Original dependency notices remain in first-use downloaded packages; no new unified license for adaptation work is asserted."
+  },
+  "hub_submission": {
+    "version": "1.0.3",
+    "marketplace_sha256": "68849b9d4ef7ab1886974c35de7450dd5870c44a7aa9c8719945051b7be7df9a",
+    "hub_id": "70cbbc39a17a426696300ab165e1564c",
+    "asset_url": "https://agentichub.openjiuwen.com/assets/70cbbc39a17a426696300ab165e1564c?version=1.0.3",
+    "status": "Submitted - Pending Review",
+    "publisher": "LasVie",
+    "visibility": "public",
+    "display_name": "网页圈选与批注",
+    "packaged_display_name": "网页圈选与批注",
+    "responsible_development_member": "Wang Jie",
+    "packaged_publisher": "Wang Jie",
+    "captured_at_utc": "2026-10-22T11:24:56.433Z",
+    "merged_commit": "d7c04f3685e872067472cfa7633817e9e232dc86",
+    "catalog_checked_at_utc": "2026-10-22T11:23:55.746501Z",
+    "profile_verified": true,
+    "detail_verified": true,
+    "detail_verified_at_utc": "2026-10-22T11:25:46.353Z",
+    "full_platform_description_matches_approved_form": true,
+    "verification": "Actual upload receipt and authenticated personal center/detail show the real 1.0.3 asset as 审核中. Full Chinese details match the approved form. Pending review is neither approval nor public market publication.",
+    "evidence_comment": "https://github.com/LasVie/agentic-hub-plugins/pull/28#issuecomment-6339615534",
+    "original_images": [
+      {
+        "file": "submit-success-original.png",
+        "url": "https://github.com/user-attachments/assets/dd0a0247-70a5-4530-9db1-4688cda1bf31",
+        "bytes": 48272,
+        "sha256": "f875da8c5fb19c0c2fb61ee143f0f56056fb028c0824782e186e1b3caaaa59b3",
+        "remote_bytes_identical": true
+      },
+      {
+        "file": "profile-pending-review.png",
+        "url": "https://github.com/user-attachments/assets/4fb9c9be-7296-4139-91a8-9a89c424e367",
+        "bytes": 32026,
+        "sha256": "1671f80c140b54b5580646bf022bbc2e1386c6cb7e516623fd76165cc6cd6c80",
+        "remote_bytes_identical": true
+      },
+      {
+        "file": "detail-pending-review.png",
+        "url": "https://github.com/user-attachments/assets/4b3fca9e-dcd1-4338-92ed-7187207d761b",
+        "bytes": 390794,
+        "sha256": "7629ac508cb2d0c34eac9ad1f314b4dac6906b6ac578fdd4373bb46ac864af3e",
+        "remote_bytes_identical": true
+      }
+    ],
+    "all_original_images_remote_bytes_identical": true,
+    "evidence_access_note": "The original images are rendered and byte-verified through the authenticated PR discussion. Anonymous stable image URL requests returned 404; use the permanent PR comment rather than temporary signed media links.",
+    "evidence_media_note": "The three full-resolution captures contain original JPEG bytes with their saved .png suffix retained; no conversion, cropping or recompression was performed.",
+    "description_comparison": "The full platform description matched the approved form after whitespace normalization."
+  },
+  "remaining_limits": [
+    "Requires macOS desktop WorkSwarm with a usable model, Python >=3.9, Node >=20, installed Google Chrome and writable plugin/cache directories; first use installs locked npm dependencies over the network.",
+    "Initialization happens at first use, not ZIP import. Node/browser are not downloaded; Windows, remote or headless deployments are not promised.",
+    "Only local development hosts are supported; no arbitrary public-site or iframe annotation, guaranteed framework source location, automatic code editing or automatic new model turn.",
+    "Annotation text, DOM and screenshots may be sent to the selected model; host image support is required for actual visual understanding.",
+    "The historical user round did not exercise clear, close-then-read, public-URL rejection or new-session dependency reuse; separate developer automation does not rewrite that history."
+  ],
+  "repository_base_commit": "d7c04f3685e872067472cfa7633817e9e232dc86",
+  "repository_instructions_blob_sha": "5db6e79a90161a1691466572395d74d90bbdd7a1",
+  "repository_policy_sync": {
+    "recorded_at": "2026-10-22T11:28:10+00:00",
+    "latest_reviewed_main_commit": "d7c04f3685e872067472cfa7633817e9e232dc86",
+    "latest_agents_blob_sha": "5db6e79a90161a1691466572395d74d90bbdd7a1",
+    "reviewed_by": "Maintenance agent, which read the complete latest main AGENTS.md.",
+    "scope": "First repository delivery metadata record for this existing task and actual merged/submitted version; no runtime delivery change.",
+    "asset_ledger_action_this_update": "None; the coordinating agent synchronizes the shared tracker separately.",
+    "new_task_or_report_created": false
+  }
+}
