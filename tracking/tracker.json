@@ -1,5 +1,5 @@
 {
-  "schema_version": 7,
+  "schema_version": 8,
   "spreadsheet_id": "12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM",
   "url": "https://docs.google.com/spreadsheets/d/12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM/edit?usp=sharing",
   "repository": "https://github.com/LasVie/agentic-hub-plugins",
@@ -64,7 +64,6 @@
         "Change Type",
         "Owner",
         "Status",
-        "Dependencies",
         "PR",
         "Test Screenshot",
         "Agentic Hub Submission Screenshot",
@@ -134,8 +133,7 @@
     "Component Type",
     "Change Type",
     "Owner",
-    "Status",
-    "Dependencies"
+    "Status"
   ],
   "evidence_fields": [
     "Test Screenshot",
