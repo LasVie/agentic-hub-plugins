@@ -1,0 +1,52 @@
+2026-10-22 15:03:44 | common | default_trace_id | INFO | Registered connector pool type: default
+2026-10-22 15:03:44 | common | default_trace_id | INFO | Registered connector pool type: httpx
+test_action_specific_unknown_fields_are_rejected (__main__.TarotFunctionalTests.test_action_specific_unknown_fields_are_rejected) ... ok
+test_actual_node_cli_matches_host_draw (__main__.TarotFunctionalTests.test_actual_node_cli_matches_host_draw) ... ok
+test_actual_node_cli_rejects_invalid_count (__main__.TarotFunctionalTests.test_actual_node_cli_rejects_invalid_count) ... ok
+test_all_six_spreads_have_correct_unique_positions (__main__.TarotFunctionalTests.test_all_six_spreads_have_correct_unique_positions) ... ok
+test_dataset_has_78_unique_cards_and_urls (__main__.TarotFunctionalTests.test_dataset_has_78_unique_cards_and_urls) ... ok
+test_draw_defaults_to_one_card (__main__.TarotFunctionalTests.test_draw_defaults_to_one_card) ... ok
+test_full_deck_seeded_draw_is_reproducible_and_unique (__main__.TarotFunctionalTests.test_full_deck_seeded_draw_is_reproducible_and_unique) ... ok
+test_generated_seed_replays_exact_draw (__main__.TarotFunctionalTests.test_generated_seed_replays_exact_draw) ... ok
+test_invalid_actions_and_non_object_inputs (__main__.TarotFunctionalTests.test_invalid_actions_and_non_object_inputs) ... ok
+test_invalid_card_names (__main__.TarotFunctionalTests.test_invalid_card_names) ... ok
+test_invalid_count_type_and_bounds (__main__.TarotFunctionalTests.test_invalid_count_type_and_bounds) ... ok
+test_invalid_orientation (__main__.TarotFunctionalTests.test_invalid_orientation) ... ok
+test_invalid_reversal_types (__main__.TarotFunctionalTests.test_invalid_reversal_types) ... ok
+test_invalid_seeds (__main__.TarotFunctionalTests.test_invalid_seeds) ... ok
+test_invalid_spread_names (__main__.TarotFunctionalTests.test_invalid_spread_names) ... ok
+test_lookup_aliases_and_unicode_normalization (__main__.TarotFunctionalTests.test_lookup_aliases_and_unicode_normalization) ... ok
+test_lookup_reversed_meaning (__main__.TarotFunctionalTests.test_lookup_reversed_meaning) ... ok
+test_missing_node_has_actionable_error (__main__.TarotFunctionalTests.test_missing_node_has_actionable_error) ... ok
+test_native_tool_async_stream_yields_one_complete_result (__main__.TarotFunctionalTests.test_native_tool_async_stream_yields_one_complete_result) ... 2026-10-22 15:03:45 | common | default_trace_id | INFO | Registered query expression support for milvus
+2026-10-22 15:03:45 | common | default_trace_id | INFO | Registered query expression support for chroma
+2026-10-22 15:03:45 | common | default_trace_id | INFO | Registered parser ExcelParser for .xlsx
+2026-10-22 15:03:45 | common | default_trace_id | INFO | Registered parser ExcelParser for .csv
+2026-10-22 15:03:45 | common | default_trace_id | INFO | Registered parser ExcelParser for .tsv
+2026-10-22 15:03:45 | common | default_trace_id | INFO | Registered parser TxtMdParser for .txt
+2026-10-22 15:03:45 | common | default_trace_id | INFO | Registered parser TxtMdParser for .md
+2026-10-22 15:03:45 | common | default_trace_id | INFO | Registered parser TxtMdParser for .markdown
+2026-10-22 15:03:45 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .htm
+2026-10-22 15:03:45 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .html
+2026-10-22 15:03:45 | common | default_trace_id | INFO | Registered parser JSONParser for .json
+2026-10-22 15:03:45 | common | default_trace_id | INFO | Registered parser PDFParser for .pdf
+2026-10-22 15:03:45 | common | default_trace_id | INFO | Registered parser WordParser for .docx
+2026-10-22 15:03:45 | common | default_trace_id | INFO | Registered parser ImageParser for .png
+2026-10-22 15:03:45 | common | default_trace_id | INFO | Registered parser ImageParser for .jpg
+2026-10-22 15:03:45 | common | default_trace_id | INFO | Registered parser ImageParser for .jpeg
+2026-10-22 15:03:45 | common | default_trace_id | INFO | Registered parser ImageParser for .webp
+2026-10-22 15:03:45 | common | default_trace_id | INFO | Registered parser ImageParser for .gif
+2026-10-22 15:03:45 | common | default_trace_id | INFO | Registered parser ImageParser for .jfif
+ok
+test_native_tool_schema_and_async_invoke (__main__.TarotFunctionalTests.test_native_tool_schema_and_async_invoke) ... ok
+test_relocated_payload_runs_outside_repository (__main__.TarotFunctionalTests.test_relocated_payload_runs_outside_repository) ... ok
+test_reversals_false_keeps_all_78_upright (__main__.TarotFunctionalTests.test_reversals_false_keeps_all_78_upright) ... ok
+test_timeout_is_bounded_and_reported (__main__.TarotFunctionalTests.test_timeout_is_bounded_and_reported) ... ok
+test_unknown_card_returns_bounded_suggestions (__main__.TarotFunctionalTests.test_unknown_card_returns_bounded_suggestions) ... ok
+test_valid_seed_boundaries_and_literal_shell_characters (__main__.TarotFunctionalTests.test_valid_seed_boundaries_and_literal_shell_characters) ... ok
+test_validate_cli_output_matches_bundled_bytes (__main__.TarotFunctionalTests.test_validate_cli_output_matches_bundled_bytes) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 1.472s
+
+OK

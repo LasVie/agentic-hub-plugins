@@ -1,0 +1,52 @@
+{
+  "version": "1.0.2",
+  "package_type": "plugin",
+  "id": "deckaura-tarot",
+  "name": "Deckaura Tarot",
+  "description": "Offline 78-card tarot lookup, reproducible draws without replacement and six reflective spreads, with a native Python host tool and no network calls.",
+  "skills": [
+    {
+      "dir": "skills/tarot-reading",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/tarot_tool.py",
+      "class": "TarotTool",
+      "display_name": {
+        "en": "Deckaura Tarot"
+      },
+      "display_description": {
+        "en": "Offline card lookup, seeded draws and six reflective spreads."
+      }
+    }
+  ],
+  "display_name": {
+    "en": "Deckaura Tarot",
+    "zh": "Deckaura Tarot"
+  },
+  "display_description": {
+    "en": "Offline 78-card tarot lookup, reproducible draws without replacement and six reflective spreads, with a native Python host tool and no network calls.",
+    "zh": "Offline 78-card tarot lookup, reproducible draws without replacement and six reflective spreads, with a native Python host tool and no network calls."
+  },
+  "tags": [
+    {
+      "en": "tarot",
+      "zh": "tarot"
+    },
+    {
+      "en": "reflection",
+      "zh": "reflection"
+    },
+    {
+      "en": "offline",
+      "zh": "offline"
+    },
+    {
+      "en": "journaling",
+      "zh": "journaling"
+    }
+  ],
+  "category": "Others"
+}
