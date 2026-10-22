@@ -1,0 +1,23 @@
+{
+  "task_id": "AH-20261022-learning-output-style",
+  "candidate_id": "CAND-ANT-037",
+  "owner": "Gan Mingrui",
+  "version": "1.0.1",
+  "status": "Submitting",
+  "confirmation_report_id_for_original_1_0_0": "RPT-20261022-learning-output-style-confirmation",
+  "ready_report_id": "RPT-20261022-learning-output-style-ready",
+  "marketplace_sha256": "065afa71ff915c2d9ab494046e64edd2d47b1e7470f332bd8339922c0a1fc47d",
+  "native_test_sha256": "ae36a586495e015b028dda8e35c5a04af4854bc9cf4e05f174b27cadb7a031a9",
+  "current_version_user_test_confirmation": "RPT-20261022-learning-output-style-user-confirmed",
+  "delivery_pr": null,
+  "merged_commit": null,
+  "hub_id": null,
+  "hub_status": "Not Submitted",
+  "test_screenshot": null,
+  "hub_submission_screenshot": null,
+  "project_lead_acceptance": "Pending Acceptance",
+  "tracker_updated_and_verified": "2026-10-22",
+  "repository_base_commit": "e29f36fe8af161a3a2f73cdeb14272622f5c3962",
+  "repository_snapshot_note": "Local source snapshot; shell clone could not authenticate. Use the connected GitHub tools to prepare the delivery branch/PR after current-version test confirmation.",
+  "repository_instructions_blob_sha": "0fdb2edbaa260a1c0064edf9c5166eb536fa0743"
+}

@@ -1,0 +1,23 @@
+Learning Output Style for JiuwenSwarm
+
+Based on Anthropic's learning-output-style plugin from:
+https://github.com/anthropics/claude-plugins-official
+plugins/learning-output-style
+Commit: d1adba47161a271799de7b548225d929310046bd
+
+The upstream plugin is distributed under the Apache License, Version 2.0.
+The original files and author attribution are preserved under upstream/.
+
+Adaptation made on 2026-10-21:
+- Added a JiuwenSwarm manifest and Chinese installation instructions.
+- Extracted the SessionStart hook's additionalContext string verbatim into
+  prompt_sections/learning-output-style.md.
+- Replaced hook execution with native prompt-section loading. No upstream
+  Bash script executes in JiuwenSwarm.
+
+This is a local adaptation, not an official Anthropic JiuwenSwarm release.
+
+Additional adaptation on 2026-10-22 for version 1.0.1:
+- Added repository marketplace packaging, a contribution-coaching Skill, and file-level change notices.
+- Preserved the original teaching text after an attribution notice.
+- Added complete per-source license evidence; excluded unused hooks from the runtime payload.

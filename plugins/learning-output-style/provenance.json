@@ -1,0 +1,40 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "audit_file": "SOURCE_REVIEW.md",
+  "sources": [
+    {
+      "url": "https://github.com/anthropics/claude-plugins-official/tree/d1adba47161a271799de7b548225d929310046bd/plugins/learning-output-style",
+      "revision": "d1adba47161a271799de7b548225d929310046bd",
+      "version": "1.0.0",
+      "license_expression": "Apache-2.0",
+      "author_statement": "Anthropic, as identified by upstream .claude-plugin/plugin.json",
+      "license_evidence": [
+        {
+          "path": "licenses/claude-plugins-official/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ],
+      "notice_present": false,
+      "upstream_files_verified_by_git_blob_sha": {
+        ".claude-plugin/plugin.json": "71e67fed7425cd93014d53cc4332c266acadfc6e",
+        "hooks/hooks.json": "7f66d5ec3183c32a2dcd98a6a3385dd16b3c1efe",
+        "hooks-handlers/session-start.sh": "0489074abad81a48abf1ce6b3fe96ee91137f246",
+        "LICENSE": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "README.md": "8a83ffdf60d3e312465a81f6fdaacf7d28b2e6f3"
+      }
+    }
+  ],
+  "reused_paths": [
+    "prompt_sections/learning-output-style.md",
+    "skills/learning-contribution/SKILL.md"
+  ],
+  "confirmed_input_package": {
+    "filename": "learning-output-style_1.0.0.zip",
+    "version": "1.0.0",
+    "sha256": "7e119eb95893e2a379c100d69f349a619a342c44dcf658c9ca80124020e96631",
+    "confirmation_source": "Gan Mingrui, current conversation, 2026-10-22; does not cover 1.0.1"
+  },
+  "repository_instructions_blob_sha": "1a57b8e990ef8ae296788234e814d390a1072796",
+  "packaging_tool_blob_sha": "4578aa751424aeddb452646631d76e8694be8265"
+}
