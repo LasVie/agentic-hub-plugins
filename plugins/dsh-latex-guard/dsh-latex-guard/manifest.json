@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "source": "local",
+  "id": "dsh-latex-guard",
+  "name": "LaTeX Guard",
+  "description": "Native LaTeX compile checks, BibTeX lint/fill, and citation-key auditing.",
+  "display_name": {"en": "LaTeX Guard", "zh": "LaTeX 守卫"},
+  "display_description": {
+    "en": "Check LaTeX builds, repair BibTeX metadata, and find broken or unused citation keys.",
+    "zh": "检查 LaTeX 编译、修复 BibTeX 元数据，并发现缺失或未使用的引用键。"
+  },
+  "category": "Research",
+  "tags": [
+    {"en": "LaTeX", "zh": "LaTeX"},
+    {"en": "BibTeX", "zh": "BibTeX"},
+    {"en": "Citation Audit", "zh": "引用审计"}
+  ],
+  "default_init_input": {"en": "Check this LaTeX project and report actionable issues: ", "zh": "检查这个 LaTeX 项目并报告可操作的问题："},
+  "quick_inputs": [
+    {"en": "Check this LaTeX project and report actionable issues: ", "zh": "检查这个 LaTeX 项目并报告可操作的问题："},
+    {"en": "Lint this BibTeX file without changing it: ", "zh": "检查这个 BibTeX 文件，但不要修改它："},
+    {"en": "Audit these TeX files against this bibliography: ", "zh": "对照参考文献库审计这些 TeX 文件："}
+  ],
+  "skills": [{"dir": "skills/latex-guard", "mode": "all"}],
+  "tools": [
+    {"file": "tools/latex_guard.py", "class": "LatexCheckTool", "display_name": {"en": "LaTeX Check", "zh": "LaTeX 检查"}, "display_description": {"en": "Compile a LaTeX entry with latexmk and summarize errors.", "zh": "使用 latexmk 编译 LaTeX 入口并汇总错误。"}},
+    {"file": "tools/latex_guard.py", "class": "BibLintTool", "display_name": {"en": "BibTeX Lint", "zh": "BibTeX 检查"}, "display_description": {"en": "Find duplicate keys and missing required BibTeX fields.", "zh": "发现重复引用键和缺少的 BibTeX 必填字段。"}},
+    {"file": "tools/latex_guard.py", "class": "BibFillTool", "display_name": {"en": "BibTeX Fill", "zh": "BibTeX 补全"}, "display_description": {"en": "Fill missing bibliography fields from Crossref.", "zh": "从 Crossref 补全缺失的参考文献字段。"}},
+    {"file": "tools/latex_guard.py", "class": "CiteAuditTool", "display_name": {"en": "Citation Audit", "zh": "引用审计"}, "display_description": {"en": "Compare TeX citation commands with BibTeX entry keys.", "zh": "比较 TeX 引用命令与 BibTeX 条目键。"}}
+  ]
+}

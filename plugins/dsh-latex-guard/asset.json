@@ -1,0 +1,15 @@
+{
+  "type": "agent-plugin",
+  "name": "dsh-latex-guard",
+  "version": "1.0.0",
+  "display_name": "LaTeX Guard",
+  "description": "Compile-check LaTeX, lint and enrich BibTeX, and audit citation keys with four native WorkSwarm tools.",
+  "publisher": "Flan246; Agentic Hub port",
+  "category": "数据与科学研究",
+  "tags": ["latex", "bibtex", "citations", "crossref"],
+  "functional_tags": ["LaTeX Validation", "BibTeX Linting", "Citation Audit"],
+  "scope": "Local LaTeX/BibTeX files supplied by explicit path. latex_check uses latexmk when installed; bib_fill alone uses Crossref. No MCP connector or DSH runtime is required.",
+  "candidate_id": "CAND-DSH-204",
+  "task_id": "AH-20261022-dsh-latex-guard",
+  "related_asset_ids": []
+}
