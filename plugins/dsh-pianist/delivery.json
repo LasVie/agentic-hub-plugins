@@ -19,9 +19,27 @@
   "test_performed_by": "Assistant under explicit delegation",
   "project_lead_acceptance": "Pending Acceptance",
   "hub_submission": null,
-  "delivery_pr": null,
-  "test_evidence_permalink": null,
+  "delivery_pr": "https://github.com/LasVie/agentic-hub-plugins/pull/26",
+  "test_evidence_permalink": "https://github.com/LasVie/agentic-hub-plugins/pull/26#issuecomment-6338329798",
   "test_report": "TEST_REPORT.md",
   "source_review": "SOURCE_REVIEW.md",
-  "confirmation_report_id": "RPT-20261022-dsh-pianist-confirm-100"
+  "confirmation_report_id": "RPT-20261022-dsh-pianist-confirm-100",
+  "native_test_archive": "test-packages/song-three-plugins-20261022/dsh-pianist-1.0.0-workswarm.zip",
+  "original_images": [
+    {
+      "filename": "dsh-pianist-workswarm.jpg",
+      "sha256": "60cc9847d5988a520cf174ee67f60eaf2be9030115ee4ce40d5f8ac14b1850e5",
+      "uploaded_bytes_verified": true
+    },
+    {
+      "filename": "dsh-pianist-player-full.jpg",
+      "sha256": "f42da5b4b89852e9f7d4af64d3f4d676f4604d6bf5560d1c62e6f62df24c69fd",
+      "uploaded_bytes_verified": true
+    },
+    {
+      "filename": "dsh-pianist-ui-use-error.jpg",
+      "sha256": "dc84179bc230a38f2476071ce0c166661f59d452128a7456dbfeeaceef7dbb41",
+      "uploaded_bytes_verified": true
+    }
+  ]
 }

@@ -19,9 +19,17 @@
   "test_performed_by": "Assistant under explicit delegation",
   "project_lead_acceptance": "Pending Acceptance",
   "hub_submission": null,
-  "delivery_pr": null,
-  "test_evidence_permalink": null,
+  "delivery_pr": "https://github.com/LasVie/agentic-hub-plugins/pull/26",
+  "test_evidence_permalink": "https://github.com/LasVie/agentic-hub-plugins/pull/26#issuecomment-6338329798",
   "test_report": "TEST_REPORT.md",
   "source_review": "SOURCE_REVIEW.md",
-  "confirmation_report_id": "RPT-20261022-dsh-vault-confirm-100"
+  "confirmation_report_id": "RPT-20261022-dsh-vault-confirm-100",
+  "native_test_archive": "test-packages/song-three-plugins-20261022/dsh-vault-1.0.0-workswarm.zip",
+  "original_images": [
+    {
+      "filename": "dsh-vault-workswarm.jpg",
+      "sha256": "8c41068feb68ef3d1fa957bbfedb325c7c227eb05fa910f8803081858ea5e493",
+      "uploaded_bytes_verified": true
+    }
+  ]
 }

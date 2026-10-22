@@ -1,18 +1,30 @@
 """Meaningful account-free runtime regressions; no network/model/service accounts."""
-import base64, hashlib, importlib.util, io, json, math, os, struct, sys, tempfile, unittest, wave
+import base64, contextlib, hashlib, importlib.util, io, json, math, os, struct, sys, tempfile, unittest, wave
 from pathlib import Path
 R=Path(__file__).resolve().parents[1]
+
+@contextlib.contextmanager
+def immutable_payload_import():
+    # Imports must not add __pycache__ to the source used by the package contract.
+    previous=sys.dont_write_bytecode
+    try:
+        sys.dont_write_bytecode=True
+        yield
+    finally:
+        sys.dont_write_bytecode=previous
 
 def package(slug):
     name='song_'+slug.replace('-','_');path=Path(os.environ.get('SONG_PAYLOAD_ROOT',R/'plugins'))
     root=path/slug/slug if not os.environ.get('SONG_PAYLOAD_ROOT') else path/slug
     if name not in sys.modules:
         spec=importlib.util.spec_from_file_location(name,root/'__init__.py',submodule_search_locations=[str(root)])
-        module=importlib.util.module_from_spec(spec);sys.modules[name]=module;spec.loader.exec_module(module)
+        with immutable_payload_import():
+            loaded=importlib.util.module_from_spec(spec);sys.modules[name]=loaded;spec.loader.exec_module(loaded)
     return name,root
 
 def module(slug,suffix):
-    name,_=package(slug);return __import__(name+'.'+suffix,fromlist=['*'])
+    with immutable_payload_import():
+        name,_=package(slug);return __import__(name+'.'+suffix,fromlist=['*'])
 
 class VaultTests(unittest.TestCase):
     def setUp(self):
