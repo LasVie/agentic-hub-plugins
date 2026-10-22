@@ -1,0 +1,27 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "audit_file": "SOURCE_REVIEW.md",
+  "independent_spec": null,
+  "sources": [
+    {
+      "url": "https://github.com/Flan246/dsh-latex-guard",
+      "revision": "8046f75141ddcf70a6eae4e61f20525d892e0176",
+      "version": "0.1.3",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/dsh-latex-guard/LICENSE",
+          "sha256": "888e8a08c51eceb91629d68d3158c5323e77edf3a1fb468b48c0f984a41a7e37"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "tools/latex_guard.py",
+    "skills/latex-guard/SKILL.md",
+    "README.md",
+    "THIRD_PARTY_NOTICES.md",
+    "licenses/dsh-latex-guard/LICENSE"
+  ]
+}

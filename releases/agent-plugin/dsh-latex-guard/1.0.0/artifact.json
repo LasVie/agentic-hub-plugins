@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:dsh-latex-guard",
+  "type": "agent-plugin",
+  "name": "dsh-latex-guard",
+  "version": "1.0.0",
+  "zip": "dsh-latex-guard-1.0.0.zip",
+  "sha256": "8816e3c333a9f29d4f93a0d79617145519c20258720112fe28310e435ab008e8",
+  "payload_sha256": {
+    "README.md": "af9a85434608cb3f38ea706a7f0ab39144ad0e7b9ba985f9b8b59d1a129da7d2",
+    "THIRD_PARTY_NOTICES.md": "1f68ad054930d98643bb3583f3476e78f012b6d0c35a73df10acdd9c9e505ac9",
+    "licenses/dsh-latex-guard/LICENSE": "888e8a08c51eceb91629d68d3158c5323e77edf3a1fb468b48c0f984a41a7e37",
+    "manifest.json": "0e08143d4b4241d21ab3792b5da22a90d3923a6317528e49e970f30648d3cdf5",
+    "skills/latex-guard/SKILL.md": "ed330e9b4cc86f6eb1ce209287386f4301a42af410b4f89fa25e1d6de23bdf11",
+    "tools/latex_guard.py": "74f0071ff278738ac44c131fb2363c950a505a7ea3164f5f80a842f2972521b1"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "86c340183a962c7438b46a6b48388f6e358f9357bb4440947c8a439ebb2f39a7",
+  "functional_test_report_sha256": "eb6d73578ff7401ae434e2954441d98296a3cc1c9f3d6ec18e2defe8ad955cbb"
+}
