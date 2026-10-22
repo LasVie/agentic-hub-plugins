@@ -6,7 +6,7 @@ Date: 2026-10-22 (Asia/Singapore). Candidate CAND-CLD-264; original task AH-2026
 
 Version 1.0.3 localizes the previously developed 1.0.2 package to Simplified Chinese as required by current main AGENTS.md. First-use automatic initialization is preserved. Tool names, parameters, structured status enums, dependency versions and original license text are preserved; human-facing wording changes.
 
-The user declined another manual test round and subsequently explicitly accepted proceeding with the current package and instructed immediate PR creation. USER_TEST_CONFIRMATION.md records that instruction separately from the observed 1.0.2 manual test, hashes, accepted limitations and untested cases. No new 1.0.3 WorkSwarm manual run is claimed. Screenshot previews were received in the conversation, but their original file bytes are unavailable to the current CLI attachment tools; no invented original hashes or evidence links are used.
+The user declined another manual test round and subsequently explicitly accepted proceeding with the current package and instructed immediate PR creation. USER_TEST_CONFIRMATION.md records that instruction separately from the observed 1.0.2 manual test, hashes, accepted limitations and untested cases. No new 1.0.3 WorkSwarm manual run is claimed. The seven user screenshots were subsequently recovered as the exact conversation-saved PNG bytes, uploaded and verified in the dedicated PR evidence comment: https://github.com/LasVie/agentic-hub-plugins/pull/28#issuecomment-6338983543. No image was generated, recreated or recompressed; dimensions are the actual conversation-saved dimensions.
 
 ## Environment and commands
 
@@ -55,4 +55,4 @@ Automatic preparation runs at first use, not ZIP import, and requires network pl
 
 Actual WorkSwarm model-level image visibility remains host-dependent. The prior user report says inline PNGs were visible but read_file multimodal input was disabled; this is disclosed, not treated as unrestricted image support. The user did not execute clear, close-then-read, public-URL rejection or warm-reuse cases in their earlier round; developer coverage does not rewrite that history.
 
-The user accepts submission of the current package without another manual round and explicitly directs PR creation now, superseding the earlier local-only hold. Original screenshot attachments remain unavailable and must not be marked complete. Do not merge automatically or claim Project Lead acceptance. Song Haoran handles any later Hub operations.
+The user accepts submission of the current package without another manual round and explicitly directs PR creation now, superseding the earlier local-only hold. The previously unavailable screenshot attachments have now been recovered, attached and verified; the evidence receipt is in USER_TEST_CONFIRMATION.md and the dedicated PR comment. Do not merge automatically or claim Project Lead acceptance. Song Haoran handles any later Hub operations.

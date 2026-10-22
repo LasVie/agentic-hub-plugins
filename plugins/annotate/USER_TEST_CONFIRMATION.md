@@ -17,7 +17,7 @@ The user supplied seven screenshots showing the 1.0.2 WorkSwarm session and anno
 
 User test confirmation: Testing of Annotate 1.0.2 is complete for this user's current test round; the user authorizes a GitHub PR with the stated limitations and untested cases disclosed, and no Agentic Hub web publication. Confirmed by Wang Jie on 2026-10-22 in the current conversation. This is completion of the agreed test round, not a claim that every feature or case passed.
 
-## Evidence and limits
+## Historical evidence and limits (before attachment recovery)
 
 - Screenshots show version 1.0.2, an installation readiness marker, MCP connection, a localhost demo, a user-drawn region and note, and a WorkSwarm report of annotate_pull, annotate_progress and annotate_done success.
 - The WorkSwarm report states that two inline PNG images were returned and describes them separately from DOM information. Independent inspection of the model's actual visual context was not performed.
@@ -45,4 +45,10 @@ On 2026-10-22 (Asia/Singapore), Wang Jie stated “已经测试好了呀，只�
 - Native companion ZIP SHA-256: `65063bf4ebc0b6639a85d9dd9c8a04f7f5d1eb71c3e2b435275375c96d5f1fa0`.
 - Source: current conversation; exact message times and a permanent conversation URL are unavailable.
 - This is user acceptance of proceeding, not a claim of a newly observed 1.0.3 WorkSwarm manual run. Observed user screenshots remain associated with 1.0.2; 1.0.3 has the development checks documented in TEST_REPORT.md.
-- At the user's explicit instruction, open the PR before original screenshot files can be attached. Disclose missing attachments, do not invent screenshot links or mark the screenshot gate complete, and do not merge automatically. No Agentic Hub operation is authorized or performed.
+- The PR was opened at the user's explicit instruction. The screenshot attachment recovery below subsequently resolves the previously unavailable-file blocker. No automatic merge or Agentic Hub operation is authorized or performed.
+
+## Verified screenshot attachment receipt
+
+The seven PNG files were subsequently recovered from the exact seven-image user message in this current conversation. They retain the conversation-saved bytes without generation, cropping, conversion or further compression; some had already been resized by the conversation system, so no higher-resolution original is claimed. They are the actual supplied 1.0.2 screenshots, not automated screenshots or a new 1.0.3 user test.
+
+All seven images are attached and displayed in the dedicated evidence comment: https://github.com/LasVie/agentic-hub-plugins/pull/28#issuecomment-6338983543. The comment records dimensions, byte counts and SHA-256 hashes. Each uploaded image was downloaded and verified byte-for-byte by SHA-256 against its recovered file. The images were hosted using the contributor's writable public fork and embedded directly into the upstream PR comment. Earlier statements that the files were unavailable describe the pre-recovery state and are now resolved.

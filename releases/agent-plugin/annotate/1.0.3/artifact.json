@@ -22,6 +22,6 @@
     "skills/annotate-feedback/SKILL.md": "24768ae7e99bc6234ac77bd949ef6329cc6816ef6663cfc5bf39c546ced48bab"
   },
   "provenance_mode": "ported",
-  "source_review_sha256": "ada703cb2ec45fda7f5c7df0fa51c7037c6bf91c9ecb100d0b5229fcd2af3f5b",
-  "functional_test_report_sha256": "14cd2d78b8068d2fda2256e4f64e0a48cc0633569323d0e68465ca3cf779c3ee"
+  "source_review_sha256": "0c2c9714d3c0d1e959ab8127edb91b55b06a0dc0b4df839e9b56cdde611cb665",
+  "functional_test_report_sha256": "0037abc9b3ffd338727028861e69875d3f32aac2d9b19ed7224177b59dbf7183"
 }
