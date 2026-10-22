@@ -42,3 +42,15 @@ The supplied log also shows separate host IPC reconnection/delivery failures.
 It contains neither an Exa import error nor the plugin-selection payload.
 Only test instructions and diagnostic records changed. The runtime payload,
 version 1.0.0 and ZIP hashes are unchanged. User test completion remains pending.
+
+## Later confirmed host failure
+
+The user subsequently supplied `equipment change rejected at non-fresh turn:
+plugin set changed`. A regression reproduced that exact error under the real
+Smart permission admission context with no competing turn. Admission's own
+activity reservation was misclassified as a peer turn. The local JiuwenSwarm
+host now distinguishes task-owned admission activity from real competitors.
+All 68 targeted host tests and the real Exa native-ZIP Smart-admission mount
+passed after the fix. See SMART_ADMISSION_FIX.md. This finding supersedes the
+earlier speculation for this specific rejection; the UI retry and separate
+IPC reconnection issue have not been declared resolved.

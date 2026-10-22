@@ -64,3 +64,10 @@ MAIN_AGENT_TEST_REPORT.md for the environment, command and limits.
 That backend test does not prove that the browser's **Use** action passed the
 selection. An empty saved plugin list is an outcome, not evidence that the
 user omitted a manual activation step. See FRONTEND_USE_DIAGNOSIS.md.
+
+If the host reports `equipment change rejected at non-fresh turn: plugin set
+changed` even on an idle first message, see SMART_ADMISSION_FIX.md. The local
+JiuwenSwarm backend fix needs a full backend/resident-runtime restart before
+retrying **Use** with the existing ZIP. Do not disable permission checks or
+bypass the fresh-turn guard. Genuine active turns and attached goals still
+prevent changing plugins.

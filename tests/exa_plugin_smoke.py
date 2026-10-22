@@ -97,12 +97,29 @@ async def main():
                 from jiuwenswarm.server.runtime.agent_adapter.interface_deep import JiuWenSwarmDeepAdapter
                 # Exercise the real chat equipment method without starting a
                 # server, model session, or changing the user's saved state.
-                adapter = object.__new__(JiuWenSwarmDeepAdapter)
+                adapter = JiuWenSwarmDeepAdapter()
                 adapter._instance = agent
                 adapter._loaded_plugins = {}
                 await adapter._load_plugins_for_request({"plugin_names": []})
                 assert not expected & {item.name for item in await agent.ability_manager.list_tool_info()}
-                await adapter._load_plugins_for_request({"plugin_names": ["exa-deep-research"]})
+                from jiuwenswarm.common.schema.agent import AgentRequest
+                from jiuwenswarm.common.schema.message import ReqMethod
+                sid = f"exa-check-{progressive}"
+                adapter._is_session_scoped_adapter = True
+                adapter._parent_session_id = sid
+                adapter._enable_auto_permission = True
+                adapter._permissions_external_input_context_builder = None
+                request = AgentRequest(
+                    request_id="exa-mount", channel_id="test", session_id=sid,
+                    req_method=ReqMethod.CHAT_SEND, params={"plugin_names": ["exa-deep-research"]})
+                # Exercise real admission/activity accounting and the real
+                # equipment gate. Policy activation is isolated from accounts.
+                with patch.object(adapter, "_uses_smart_permission_lifecycle", return_value=True), \
+                     patch.object(adapter, "_validate_auto_permission_workspace_request"), \
+                     patch.object(adapter, "_capture_permission_version", return_value=(None, {}, {})):
+                    async with adapter._permission_request_admission(request, {"query": "mount check"}):
+                        error = await adapter._ensure_chat_extensions(request)
+                        assert error is None, error.payload if error else None
                 record = adapter._loaded_plugins["exa-deep-research"][0]
             else:
                 record = await agent.load_plugin(str(current))
@@ -117,6 +134,7 @@ async def main():
                 "inner_react_registry": "passed", "absent_before_mount": not bool(expected & before)}
             if adapter:
                 result["main_agent"]["progressive" if progressive else "direct"]["chat_equipment_mount"] = "passed; empty selection has no Exa tools, selected package has all four"
+                result["main_agent"]["progressive" if progressive else "direct"]["smart_permission_admission_mount"] = "passed; real admission and fresh-turn gate, policy activation isolated"
             from openjiuwen.core.foundation.llm.schema.tool_call import ToolCall
             dispatched, message = await agent.ability_manager._execute_single_tool_call(
                 ToolCall(id="exa-guard", type="function", name="exa_research",
