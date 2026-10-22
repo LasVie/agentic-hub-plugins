@@ -68,6 +68,10 @@ Song Haoran personally handles Agentic Hub submission/publication and associated
 
 Song Haoran personally submits the asset to Agentic Hub. Update Asset Ledger only after verifiable success for the corresponding asset/version; Submitted - Pending Review qualifies without waiting for publication. PR merge, saved drafts and failed submissions do not qualify. Record real Hub evidence and update the existing asset/version once, preserving stable IDs and original task links. This later registration is outside contributor completion gates.
 
+## If this plugin task is cancelled
+
+Delete its entire Development Tasks row and release the corresponding claim. After recording the actual reason and retired Task ID in candidate Notes/history, remove that ID from live task links. Intrinsic WorkSwarm/host incompatibility or license barriers -> Excluded / Unassigned; personal account/access/time constraints or developing later -> To Evaluate / Unassigned. Preserve other active claims and actual delivered assets. Do not leave a Cancelled task row or recreate it from stale snapshots; do not submit this delivery PR for cancelled work.
+
 ## Temporary branch cleanup — all PRs
 
 - [ ] Actual merge and merge commit verified
