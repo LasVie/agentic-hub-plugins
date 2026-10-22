@@ -1,0 +1,28 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/gokimedia/claude-skill-tarot",
+      "revision": "804c54558375416fd4fce605238927f39bbac1a2",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/deckaura-tarot/LICENSE",
+          "sha256": "2a870b98a936750e931a5833bc362778ae474aa3042532609a97cbe1b09cb654"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "skills/tarot-reading/SKILL.md",
+    "skills/tarot-reading/assets/deck.json",
+    "skills/tarot-reading/references/data-provenance.md",
+    "skills/tarot-reading/references/reading-protocol.md",
+    "skills/tarot-reading/references/safety-and-quality.md",
+    "skills/tarot-reading/references/spreads.md",
+    "skills/tarot-reading/references/symbolism.md",
+    "skills/tarot-reading/scripts/tarot.mjs"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

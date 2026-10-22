@@ -1,0 +1,28 @@
+{
+  "type": "agent-plugin",
+  "name": "deckaura-tarot",
+  "version": "1.0.2",
+  "display_name": "Deckaura Tarot",
+  "description": "Offline 78-card tarot lookup, reproducible draws without replacement and six reflective spreads, with a native Python host tool and no network calls.",
+  "publisher": "Cai Zhenze",
+  "category": "内容创作",
+  "tags": [
+    "tarot",
+    "reflection",
+    "offline",
+    "journaling"
+  ],
+  "functional_tags": [
+    "Card Reference",
+    "Reproducible Draws",
+    "Creative Reflection"
+  ],
+  "scope": "Reflection, journaling and entertainment. No factual predictions, professional advice, accounts or network services. Host tool requires Python and Node.js >=18.",
+  "candidate_id": "CAND-CLD-140",
+  "task_id": "AH-20261022-deckaura-tarot",
+  "related_asset_ids": [
+    "5a0fd9c7a41647adaace097944b16c21",
+    "dc215872e14d4a6394c1316b576b296f",
+    "3e53729978e84a5aafe210742fa31c82"
+  ]
+}

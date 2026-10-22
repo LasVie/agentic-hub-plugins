@@ -1,0 +1,61 @@
+{
+  "revision": "804c54558375416fd4fce605238927f39bbac1a2",
+  "files": [
+    {
+      "upstream_path": "skills/tarot-reading/SKILL.md",
+      "payload_path": "skills/tarot-reading/SKILL.md",
+      "upstream_sha256": "06771af1e220523d71e3b1e87f0d4c42298dc11790913ddaf91ab819e9853902",
+      "license": "MIT",
+      "modified": true
+    },
+    {
+      "upstream_path": "skills/tarot-reading/assets/deck.json",
+      "payload_path": "skills/tarot-reading/assets/deck.json",
+      "upstream_sha256": "4b47fc22b3220a23a5d9ac06065698315de338a2265fe5491f6fdaa0f0c447c9",
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "upstream_path": "skills/tarot-reading/references/data-provenance.md",
+      "payload_path": "skills/tarot-reading/references/data-provenance.md",
+      "upstream_sha256": "1350e105a91009a7003341e4b0aee14ca66df84c7ebf92e933a289e5b3bb48e0",
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "upstream_path": "skills/tarot-reading/references/reading-protocol.md",
+      "payload_path": "skills/tarot-reading/references/reading-protocol.md",
+      "upstream_sha256": "7e688ee3a61a6c740cc0f65a82a342d7e112d30f515af0e1805298764ccafd06",
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "upstream_path": "skills/tarot-reading/references/safety-and-quality.md",
+      "payload_path": "skills/tarot-reading/references/safety-and-quality.md",
+      "upstream_sha256": "87fcd06c0f2476a25d341844ad84fa3a9357a1fd9b166ca08c3dedbf183b4818",
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "upstream_path": "skills/tarot-reading/references/spreads.md",
+      "payload_path": "skills/tarot-reading/references/spreads.md",
+      "upstream_sha256": "4080dccccc94088e0827ca89c64ef963025dd8bdbeab7f37dd693b82a9713dc3",
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "upstream_path": "skills/tarot-reading/references/symbolism.md",
+      "payload_path": "skills/tarot-reading/references/symbolism.md",
+      "upstream_sha256": "7207fa1d6ffc118919777728267dcd811acc3c593a43784d17eda28e31366b6a",
+      "license": "MIT",
+      "modified": false
+    },
+    {
+      "upstream_path": "skills/tarot-reading/scripts/tarot.mjs",
+      "payload_path": "skills/tarot-reading/scripts/tarot.mjs",
+      "upstream_sha256": "2f9f0ee3e7a96e2801a4987f5219a164ed80da079d7dd476c21baf11731d4113",
+      "license": "MIT",
+      "modified": false
+    }
+  ]
+}
