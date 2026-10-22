@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "name": "dsh-latex-guard",
+  "version": "1.0.1",
+  "marketplace_sha256": "70395dcc6f482f42d98f5ef3762e682a360f0f8738426d397d44f72260b04fc7",
+  "native_test_sha256": "4ede0ab40606a01dcd15551ef08172052e88fafe5f8eca09cb5aedb27ae8bd88",
+  "payload_files": 6,
+  "source_market_native_extracted_payload_identical": true,
+  "base_version": "1.0.0",
+  "base_marketplace_sha256": "8816e3c333a9f29d4f93a0d79617145519c20258720112fe28310e435ab008e8",
+  "changed_payload_files": [
+    "README.md",
+    "THIRD_PARTY_NOTICES.md",
+    "manifest.json"
+  ],
+  "original_license_bytes_unchanged": true,
+  "templates_unchanged": true,
+  "hub_status": "New Chinese version not submitted",
+  "user_test_confirmation": null,
+  "historical_only": true,
+  "superseded_by_version": "1.0.3",
+  "current_verification_file": "delivery.json",
+  "historical_evidence_note": "Retained original prior-version/source-fixture evidence. Existing versions, hashes, results and limitations are preserved; this file does not establish testing of the current package. Use delivery.json and TEST_REPORT.md for final delegated host-test scope."
+}

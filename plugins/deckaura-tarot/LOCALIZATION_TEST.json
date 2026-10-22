@@ -1,0 +1,40 @@
+{
+  "name": "deckaura-tarot",
+  "version": "1.0.3",
+  "marketplace_sha256": "c21a04c19fec50f286100794d5b40f646f9cdb33a6307c6a5b2e002792d8bc40",
+  "native_test_sha256": "8dbd6981ed81e53d435126211c331e7cfc2d2d561e3be49dc12f4f79e1d4be70",
+  "package_and_license_audit": "passed",
+  "repository_tests": {
+    "passed": 50,
+    "skipped": 0
+  },
+  "actual_host_checks": {
+    "name": "deckaura-tarot",
+    "version": "1.0.3",
+    "passed": true,
+    "checks": [
+      "Native import/install in isolated home",
+      "Installed full payload matches final ZIP",
+      "Actual openJiuwen loader/resolver loads all declared skills/tools",
+      "Actual list/detail cards expose Chinese title/description/README",
+      "Uninstall removes package and installed state"
+    ],
+    "scope": "Isolated temporary data only; no running user installation changed. No model call or visual UI acceptance."
+  },
+  "functional_checks": {
+    "final_extracted_payload_tests": 26,
+    "skipped": 0,
+    "passed": true
+  },
+  "current_version_user_testing": "pending",
+  "current_version_visual_test_screenshot": null,
+  "delivery_pr": null,
+  "hub_submission": "not submitted",
+  "limits": [
+    "No paid model calls; model-generated behavior and visual user acceptance remain pending."
+  ],
+  "historical_only": true,
+  "superseded_by_version": "1.0.4",
+  "current_verification_file": "delivery.json",
+  "historical_evidence_note": "Retained original prior-version/source-fixture evidence. Existing versions, hashes, results and limitations are preserved; this file does not establish testing of the current package. Use delivery.json and TEST_REPORT.md for final delegated host-test scope."
+}

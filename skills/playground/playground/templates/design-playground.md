@@ -1,39 +1,27 @@
-# Design Playground Template
+# 设计探索模板
 
-Use this template when the playground is about visual design decisions: components, layouts, spacing, color, typography, animation, responsive behavior.
+> 修改说明：2026-10-22，由 Anthropic Playground 原模板翻译并适配为简体中文；保留技术标识、来源和 Apache-2.0 许可。所有界面标签、提示词、帮助和复制状态默认中文；源材料按原值显示。来源见 ../THIRD_PARTY_NOTICES.md，完整许可见 ../licenses/claude-plugins-official/LICENSE。
 
-## Layout
+当探索页涉及组件、布局、间距、颜色、排版、动画或响应式行为等视觉设计取舍时，使用本模板。
 
-```
-+-------------------+----------------------+
-|                   |                      |
-|  Controls         |  Live component/     |
-|  grouped by:      |  layout preview      |
-|  • Spacing        |  (renders in a       |
-|  • Color          |   mock page or       |
-|  • Typography     |   isolated card)     |
-|  • Shadow/Border  |                      |
-|  • Interaction    |                      |
-|                   +----------------------+
-|                   |  Prompt output       |
-|                   |  [ Copy Prompt ]     |
-+-------------------+----------------------+
-```
+## 布局
 
-## Control types by decision
+左侧按间距、颜色、排版、阴影/边框、交互分组放置控件。右侧上方显示真实组件或布局预览，可放入模拟页面或独立卡片；右侧下方显示提示词与“复制提示词”按钮。窄屏下按控件、预览、提示词顺序排列。
 
-| Decision | Control | Example |
-|---|---|---|
-| Sizes, spacing, radius | Slider | border-radius 0–24px |
-| On/off features | Toggle | show border, hover effect |
-| Choosing from a set | Dropdown | font-family, easing curve |
-| Colors | Hue + saturation + lightness sliders | shadow color, accent |
-| Layout structure | Clickable cards | sidebar-left / top-nav / no-nav |
-| Responsive behavior | Viewport-width slider | watch grid reflow at breakpoints |
+## 根据设计取舍选择控件
 
-## Preview rendering
+| 设计取舍 | 控件 | 示例 |
+| --- | --- | --- |
+| 大小、间距、圆角 | 滑块 | `border-radius` 0–24px |
+| 开关功能 | 开关 | 显示边框、悬停效果 |
+| 从固定选项中选择 | 下拉框 | `font-family`、缓动曲线 |
+| 颜色 | 色相、饱和度、亮度滑块 | 阴影色、强调色 |
+| 布局结构 | 可点击卡片 | `sidebar-left` / `top-nav` / `no-nav`；可见标签用中文 |
+| 响应式行为 | 视口宽度滑块 | 观察网格在断点处重排 |
 
-Apply state values directly to a preview element's inline styles:
+## 渲染预览
+
+将状态值直接应用到预览元素的行内样式：
 
 ```javascript
 function renderPreview() {
@@ -46,22 +34,24 @@ function renderPreview() {
 }
 ```
 
-Show the preview on both light and dark backgrounds if relevant. Include a context toggle.
+与主题相关时，同时提供浅色、深色预览背景和背景切换控件。每次调整立即更新预览及提示词，不需要“应用”按钮。
 
-## Prompt output for design
+## 设计提示词
 
-Frame it as a direction to a developer, not a spec sheet:
+用给开发者的自然语言指令表达，不要只列参数：
 
-> "Update the card to feel soft and elevated: 12px border-radius, 24px horizontal padding, a medium box-shadow (0 4px 12px rgba(0,0,0,0.1)). On hover, lift it with translateY(-1px) and deepen the shadow slightly."
+> 请把卡片调整得柔和且有层次：圆角 12px，水平内边距 24px，中等阴影 `0 4px 12px rgba(0,0,0,0.1)`。悬停时通过 `translateY(-1px)` 轻微抬起，并略微加深阴影。
 
-If the user is working in Tailwind, suggest Tailwind classes. If raw CSS, use CSS properties.
+用户项目使用 Tailwind 时建议相应类名；使用原生 CSS 时使用 CSS 属性。只列偏离默认值的配置，并保留组件和项目背景。提供 3–5 个有用的中文命名预设。
 
-## Example topics
+## 示例主题
 
-- Button style explorer (radius, padding, weight, hover/active states)
-- Card component (shadow depth, radius, content layout, image)
-- Layout builder (sidebar width, content max-width, header height, grid)
-- Typography scale (base size, ratio, line heights across h1-body-caption)
-- Color palette generator (primary hue, derive secondary/accent/surface)
-- Dashboard density (airy → compact slider that scales everything proportionally)
-- Modal/dialog (width, overlay opacity, entry animation, corner radius)
+- 按钮样式：圆角、内边距、字重、悬停/按下状态。
+- 卡片组件：阴影层次、圆角、内容布局、图片区域。
+- 布局构建：侧栏宽度、内容最大宽度、页头高度、网格。
+- 排版比例：基准字号、缩放比例、标题/正文/说明的行高。
+- 调色板：主色相及派生的辅助色、强调色、表面色。
+- 仪表盘密度：从宽松到紧凑按比例调整间距。
+- 模态对话框：宽度、遮罩透明度、进入动画、圆角。
+
+所有控件都有明确关联标签和可见键盘焦点。复制成功后才显示“已复制”；失败时显示“复制失败，请选择下方文本手动复制”，并保留可选择的提示词。页面无需外部资源或网络请求。

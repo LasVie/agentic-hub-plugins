@@ -1,63 +1,65 @@
-# Supported tarot spreads
+# 支持的塔罗牌阵
 
-Canonical reference: https://deckaura.com/pages/tarot-spreads
+> 修改说明（Agentic Hub 团队，2026-10-22）：将原 Deckaura MIT 文档及人类可读位置名称翻译为简体中文；牌阵技术标识和数量保持原值。
 
-Use the smallest spread that can answer the user's reflective goal. Cards are drawn without replacement.
+标准参考：https://deckaura.com/pages/tarot-spreads
 
-## Daily — 1 card
+选择能满足用户反思目标的最小牌阵，抽牌不放回。
 
-Position: Theme for reflection
+## 每日牌阵（`daily`）——1 张
 
-Use for a concise daily prompt. Do not convert the theme into a prediction about what must happen.
+位置：反思主题。
 
-## Three-card — 3 cards
+用于简短的每日反思问题，不将主题写成必然发生的事件。
 
-1. Past or background
-2. Present or current dynamic
-3. Future tendency or next direction
+## 三张牌牌阵（`three-card`）——3 张
 
-Use for a quick situation arc. If the user prefers another temporal framing, relabel all three positions before drawing.
+1. 过去或背景
+2. 当前动态
+3. 未来倾向
 
-## Decision — 5 cards
+用于快速梳理情境发展。用户偏好其他时间框架时，在抽牌前说明三个位置的新含义。
 
-1. Situation
-2. Option A
-3. Option B
-4. What to consider
-5. Grounded next step
+## 决策牌阵（`decision`）——5 张
 
-The final card is reflective guidance, not an instruction to choose an option.
+1. 当前情况
+2. 选项 A
+3. 选项 B
+4. 需要考虑的因素
+5. 务实的下一步
 
-## Relationship — 6 cards
+最后一张牌用于反思，不是命令用户选择某个选项。
 
-1. You
-2. The other person
-3. The connection
-4. Strength
-5. Challenge
-6. Constructive next step
+## 关系牌阵（`relationship`）——6 张
 
-Do not claim to reveal another person's private thoughts. Interpret their position as the user's perception of the dynamic.
+1. 你自己
+2. 对方或你感受到的互动
+3. 彼此的联结
+4. 优势
+5. 挑战
+6. 建设性的下一步
 
-## Celtic Cross — 10 cards
+不得声称揭示他人的私人想法。对方所在位置只能解释为用户感受到的关系动态。
 
-1. Present situation
-2. Challenge or crossing influence
-3. Foundation
-4. Recent past
-5. Conscious aim or possibility
-6. Near-term direction
-7. The user's stance
-8. Environment or external influences
-9. Hopes and fears
-10. Outcome tendency
+## 凯尔特十字牌阵（`celtic-cross`）——10 张
 
-Summarize patterns across the spread instead of presenting card 10 as a guaranteed outcome.
+1. 当前情况
+2. 挑战或交叉影响
+3. 基础
+4. 最近的过去
+5. 有意识的目标或可能性
+6. 近期方向
+7. 你的立场
+8. 环境或外部影响
+9. 希望与恐惧
+10. 结果倾向
 
-## Yes/no — 1 card
+总结整个牌阵的模式，不将第 10 张牌当作保证的结果。
 
-Use the card's `yes_or_no` field as a symbolic tendency. Explain conditions or reservations using the chosen orientation. Never use a tarot yes/no result as the deciding basis for a consequential action.
+## 是非牌阵（`yes-no`）——1 张
 
-## Unsupported script layouts
+将 `yes_or_no` 作为象征倾向，并根据选定方向说明条件或保留意见。不得将塔罗是非结果作为重大行动的决定性依据。
 
-For a custom layout or year-ahead spread, draw the requested count with `draw --count N`, define all positions before interpretation, and keep the result within the 78-card limit.
+## 脚本未内置的布局
+
+自定义布局或年度牌阵可用 `draw --count N` 抽取所需数量；在解读前定义每个位置，总数不超过 78 张。

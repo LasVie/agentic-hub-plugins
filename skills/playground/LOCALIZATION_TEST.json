@@ -1,0 +1,40 @@
+{
+  "name": "playground",
+  "version": "1.0.1",
+  "marketplace_sha256": "1387c65be13a51a2fc9e119491ea76f5d7825272458d7a405dce4f015dccd461",
+  "native_test_sha256": "dcca0c806f283352e12bbbe5c43c222f5921b35a0818e415d86bdae1f8d5d3c3",
+  "package_and_license_audit": "passed",
+  "repository_tests": {
+    "passed": 50,
+    "skipped": 0
+  },
+  "actual_host_checks": {
+    "name": "playground",
+    "version": "1.0.1",
+    "passed": true,
+    "checks": [
+      "Actual openJiuwen Skill resolver resolves relocated directory through temporary test harness",
+      "Chinese Skill frontmatter/body retains slug and new version",
+      "All six relative template references resolve"
+    ],
+    "scope": "Isolated temporary data only; no running user installation changed. No model call or visual UI acceptance."
+  },
+  "functional_checks": {
+    "pinned_template_hash_and_license_tests": 3,
+    "passed": true,
+    "six_template_bytes_unchanged": true,
+    "browser_fixture_rerun": "unavailable - Chromium executable absent"
+  },
+  "current_version_user_testing": "pending",
+  "current_version_visual_test_screenshot": null,
+  "delivery_pr": null,
+  "hub_submission": "not submitted",
+  "limits": [
+    "No paid model calls; model-generated behavior and visual user acceptance remain pending.",
+    "Chinese SKILL model-session generation and target-host directory import await user testing; isolated wrapper resolver check is not a Skill installation claim."
+  ],
+  "historical_only": true,
+  "superseded_by_version": "1.0.2",
+  "current_verification_file": "delivery.json",
+  "historical_evidence_note": "Retained original prior-version/source-fixture evidence. Existing versions, hashes, results and limitations are preserved; this file does not establish testing of the current package. Use delivery.json and TEST_REPORT.md for final delegated host-test scope."
+}

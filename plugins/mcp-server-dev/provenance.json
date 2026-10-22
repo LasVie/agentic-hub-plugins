@@ -22,5 +22,31 @@
     "templates/app/widget.mjs",
     "templates/app/build.mjs"
   ],
-  "audit_file": "SOURCE_REVIEW.md"
+  "audit_file": "SOURCE_REVIEW.md",
+  "localization_history": [
+    {
+      "date": "2026-10-22",
+      "base_version": "1.0.1",
+      "version": "1.0.2",
+      "scope": "Historical documentation edition: Chinese marketplace/native display metadata and README plus aligned generator/Skill version literals. Runtime instructions and generated App/MCPB template language otherwise remained inherited from 1.0.1; this version did not complete the later runtime language audit. Example project versions remained 0.1.0.",
+      "user_test_confirmation": "pending",
+      "hub_submission_authorized": false
+    },
+    {
+      "date": "2026-10-22",
+      "base_version": "1.0.2",
+      "version": "1.0.3",
+      "scope": "Historical runtime candidate: Chinese defaults in three Skills; Chinese generator plan/help/errors; Chinese App/MCPB server/widget/build messages and license-collection guidance. Protocol identifiers, example version 0.1.0, locks and original license text were retained. Final host import/prompt evidence is separately bound to 1.0.4; embedded App UI rendering was not established.",
+      "host_test_authority": "User explicitly delegated actual local WorkSwarm import/prompt tests and conditional PR on success in current conversation. AI-operated tests are not represented as user-performed.",
+      "hub_submission_authorized": false
+    }
+  ],
+  "localization": {
+    "date": "2026-10-22",
+    "base_version": "1.0.3",
+    "version": "1.0.4",
+    "scope": "Final 1.0.4 Chinese edition retains complete Chinese Skill/generator/template instructions from the 1.0.3 runtime candidate, aligns final version metadata and documents actual delegated WorkSwarm route/scaffold results. Technical protocol identifiers, example version 0.1.0, dependency locks and complete original Apache text remain unchanged; embedded App UI rendering is unverified.",
+    "host_test_authority": "User explicitly delegated actual local WorkSwarm import/prompt tests and conditional PR on success in current conversation. AI-operated tests are not represented as user-performed.",
+    "hub_submission_authorized": false
+  }
 }

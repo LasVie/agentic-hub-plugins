@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "name": "mcp-server-dev",
+  "version": "1.0.2",
+  "marketplace_sha256": "042c476232560099cc06b7da3afacbfe2860e51bf9f6e425ae474a38e6c5a8bc",
+  "native_test_sha256": "b50dc73fdaad2005bd36d3bdcd3decc9c40510934d3ffe41699b8b5ce1504913",
+  "payload_files": 17,
+  "source_market_native_extracted_payload_identical": true,
+  "base_version": "1.0.1",
+  "base_marketplace_sha256": "acd7f7b1c2fecb6ac1887e80cce5f86e0a7502fd60c6dc546f77ef909249701f",
+  "changed_payload_files": [
+    "README.md",
+    "THIRD_PARTY_NOTICES.md",
+    "manifest.json",
+    "scripts/devkit.py",
+    "skills/build-mcp-app/SKILL.md",
+    "skills/build-mcpb/SKILL.md",
+    "skills/mcp-dev-route/SKILL.md"
+  ],
+  "original_license_bytes_unchanged": true,
+  "templates_unchanged": true,
+  "hub_status": "New Chinese version not submitted",
+  "user_test_confirmation": null,
+  "historical_only": true,
+  "superseded_by_version": "1.0.4",
+  "current_verification_file": "delivery.json",
+  "historical_evidence_note": "Retained original prior-version/source-fixture evidence. Existing versions, hashes, results and limitations are preserved; this file does not establish testing of the current package. Use delivery.json and TEST_REPORT.md for final delegated host-test scope."
+}

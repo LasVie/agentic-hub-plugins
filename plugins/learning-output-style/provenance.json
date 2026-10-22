@@ -36,5 +36,56 @@
     "confirmation_source": "Gan Mingrui, current conversation, 2026-10-22; does not cover 1.0.1"
   },
   "repository_instructions_blob_sha": "1a57b8e990ef8ae296788234e814d390a1072796",
-  "packaging_tool_blob_sha": "4578aa751424aeddb452646631d76e8694be8265"
+  "packaging_tool_blob_sha": "4578aa751424aeddb452646631d76e8694be8265",
+  "localization_1_0_2": {
+    "authorized_by": "Project Lead-side human request in the current conversation on 2026-10-22",
+    "scope": [
+      "Chinese marketplace metadata",
+      "Chinese README and user instructions",
+      "version/source metadata and adaptation notices"
+    ],
+    "runtime_prompt_and_skill": "unchanged from confirmed 1.0.1",
+    "base_delivery_pr": "https://github.com/LasVie/agentic-hub-plugins/pull/13",
+    "base_zip_sha256": "065afa71ff915c2d9ab494046e64edd2d47b1e7470f332bd8339922c0a1fc47d",
+    "user_test_confirmation": "pending for 1.0.2"
+  },
+  "complete_chinese_instructions": {
+    "date": "2026-10-22",
+    "scope": [
+      "Chinese active prompt section",
+      "Chinese learning-contribution Skill",
+      "Default Chinese dialogue with explicit end-user language preference honored"
+    ],
+    "upstream_prompt_sha256": "8dddba09dd52aeccf094bc37024f73199d7a50a57c4527718cd5784029586e13",
+    "translated_prompt_sha256": "71ee4d591dbf76379a6985ea490e1b1838f45bcb76b71d0069327dc2947ca843",
+    "packaged_prompt_sha256": "ddbebf9191f07a4d79b51ec1cffa2bcc362dbe1b8e2bc31238df0fa184544177",
+    "user_test_confirmation": "No human-performed current-version confirmation is claimed. Actual delegated AI-operated final host testing and conditional PR authority are recorded separately in delivery.json.",
+    "introduced_in_version": "1.0.3",
+    "final_host_test_version": "1.0.4"
+  },
+  "localization_history": [
+    {
+      "date": "2026-10-22",
+      "base_version": "1.0.1",
+      "version": "1.0.2",
+      "scope": "Historical documentation edition: Chinese marketplace metadata and README/user instructions plus version/source/adaptation records. The active teaching prompt and learning-contribution Skill retained the exact earlier English runtime instruction bytes; the original licenses and technical identifiers were retained.",
+      "record_note": "Reconciled the empty historical placeholder against localization_1_0_2 and the immutable 1.0.2 archive; no package hash changed."
+    },
+    {
+      "date": "2026-10-22",
+      "base_version": "1.0.2",
+      "version": "1.0.3",
+      "scope": "Historical runtime candidate: translated the active teaching prompt and learning-contribution Skill into Simplified Chinese, with separate original-English, Chinese-body and complete-file hashes. The native tags were still raw strings and caused the real WorkSwarm import/list rendering crash. This version is not recorded as a successful host import; localized tag mappings and successful final retest belong to 1.0.4.",
+      "host_test_authority": "User explicitly delegated actual local WorkSwarm import/prompt tests and conditional PR on success in current conversation. AI-operated tests are not represented as user-performed.",
+      "hub_submission_authorized": false
+    }
+  ],
+  "localization": {
+    "date": "2026-10-22",
+    "base_version": "1.0.3",
+    "version": "1.0.4",
+    "scope": "Final 1.0.4 retains the Chinese teaching prompt and contribution Skill introduced in 1.0.3, corrects native manifest tags to zh/en localized mappings after the real 1.0.3 crash, and records successful final import/prompt/learner-wait results. Original English source hash is separate from translated-body and packaged-file hashes; original legal text and technical identifiers remain intact.",
+    "host_test_authority": "User explicitly delegated actual local WorkSwarm import/prompt tests and conditional PR on success in current conversation. AI-operated tests are not represented as user-performed.",
+    "hub_submission_authorized": false
+  }
 }

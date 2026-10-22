@@ -1,17 +1,16 @@
 {
   "type": "skill",
   "name": "playground",
-  "version": "1.0.0",
-  "display_name": "Interactive Playground",
-  "description": "Create self-contained interactive HTML explorers with live controls, previews, presets, and copyable prompts. Includes design, data, concept-map, document-critique, diff-review, and code-map workflows.",
+  "version": "1.0.2",
+  "display_name": "交互式探索页",
+  "description": "根据主题与本地材料生成独立 HTML 探索页，通过控件实时预览配置、记录审阅意见，并复制可交给智能体执行的中文提示词。",
   "publisher": "Nguyen Trung Dung",
   "category": "软件开发",
   "tags": [
-    "html",
-    "interactive-ui",
-    "playground",
-    "offline",
-    "design-tools"
+    "交互探索",
+    "HTML",
+    "实时预览",
+    "提示词生成"
   ],
   "functional_tags": [
     "Interactive HTML Exploration",

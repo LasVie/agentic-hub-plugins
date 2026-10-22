@@ -134,6 +134,11 @@ def check_asset(asset: Path) -> tuple[dict, Path, dict]:
         require(m.get("package_type") == "plugin", "manifest.package_type must be plugin")
         require(m.get("id") == name and m.get("version") == c["version"], "manifest identity/version mismatch")
         require(not (FORBIDDEN & m.keys()), "plugin contains expert-only manifest fields")
+        if "tags" in m:
+            require(isinstance(m["tags"], list), "manifest.tags must be an array")
+            require(all(isinstance(tag, dict) and all(isinstance(tag.get(language), str) and bool(tag[language].strip())
+                                                     for language in ("zh", "en")) for tag in m["tags"]),
+                    "manifest.tags must contain localized objects with nonempty zh/en strings")
         require(any(m.get(k) for k in ("skills", "tools", "rails", "mcps")), "tested plugin must provide at least one capability")
         for field in ("skills", "tools", "rails", "mcps"):
             entries = m.get(field, [])

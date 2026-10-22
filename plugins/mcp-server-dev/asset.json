@@ -1,15 +1,26 @@
 {
   "type": "agent-plugin",
   "name": "mcp-server-dev",
-  "version": "1.0.1",
-  "display_name": "mcp-server-dev",
-  "description": "为 MCP Builder 补充接入路径规划、MCP App UI 与 MCPB 本地打包开发：生成可运行的 Node.js 示例工程并执行协议验证。插件本身不注册外部 MCP，不自动部署或发布。",
+  "version": "1.0.4",
+  "display_name": "MCP 应用与打包开发助手",
+  "description": "为 MCP Builder 补充接入路径规划、MCP App UI 与 MCPB 本地打包开发：生成 Node.js 示例工程并验证协议；不自动部署或发布。",
   "publisher": "Vannes Wijaya",
   "category": "软件开发",
-  "tags": ["mcp", "developer-tools", "mcp-app", "mcpb"],
-  "functional_tags": ["API与MCP", "代码实现", "测试与调试"],
+  "tags": [
+    "MCP 开发",
+    "交互界面",
+    "本地打包",
+    "协议验证"
+  ],
+  "functional_tags": [
+    "API与MCP",
+    "代码实现",
+    "测试与调试"
+  ],
   "scope": "作为历史 MCP Builder（4c94938898ed4d3580593e5535f2315b）的配套扩展；通用服务实现交回既有资产。提供 App/本地打包示例与验证，不承诺 Hub 宿主支持 App UI，不自带 Node 运行时，不执行云端部署。",
   "candidate_id": "CAND-ANT-011",
   "task_id": "AH-20261022-mcp-server-dev",
-  "related_asset_ids": ["4c94938898ed4d3580593e5535f2315b"]
+  "related_asset_ids": [
+    "4c94938898ed4d3580593e5535f2315b"
+  ]
 }

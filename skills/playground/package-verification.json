@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "name": "playground",
+  "version": "1.0.1",
+  "marketplace_sha256": "1387c65be13a51a2fc9e119491ea76f5d7825272458d7a405dce4f015dccd461",
+  "native_test_sha256": "dcca0c806f283352e12bbbe5c43c222f5921b35a0818e415d86bdae1f8d5d3c3",
+  "payload_files": 10,
+  "source_market_native_extracted_payload_identical": true,
+  "base_version": "1.0.0",
+  "base_marketplace_sha256": "bb296a3e6cfb809952bf524b6c1c86543481c5ee4b9729089b3899ca6841a69c",
+  "changed_payload_files": [
+    "README.md",
+    "SKILL.md",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "original_license_bytes_unchanged": true,
+  "templates_unchanged": true,
+  "hub_status": "New Chinese version not submitted",
+  "user_test_confirmation": null,
+  "historical_only": true,
+  "superseded_by_version": "1.0.2",
+  "current_verification_file": "delivery.json",
+  "historical_evidence_note": "Retained original prior-version/source-fixture evidence. Existing versions, hashes, results and limitations are preserved; this file does not establish testing of the current package. Use delivery.json and TEST_REPORT.md for final delegated host-test scope."
+}

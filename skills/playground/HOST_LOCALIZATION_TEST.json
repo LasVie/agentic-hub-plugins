@@ -1,0 +1,15 @@
+{
+  "name": "playground",
+  "version": "1.0.1",
+  "passed": true,
+  "checks": [
+    "Actual openJiuwen Skill resolver resolves relocated directory through temporary test harness",
+    "Chinese Skill frontmatter/body retains slug and new version",
+    "All six relative template references resolve"
+  ],
+  "scope": "Isolated temporary data only; no running user installation changed. No model call or visual UI acceptance.",
+  "historical_only": true,
+  "superseded_by_version": "1.0.2",
+  "current_verification_file": "delivery.json",
+  "historical_evidence_note": "Retained original prior-version/source-fixture evidence. Existing versions, hashes, results and limitations are preserved; this file does not establish testing of the current package. Use delivery.json and TEST_REPORT.md for final delegated host-test scope."
+}

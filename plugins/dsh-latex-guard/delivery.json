@@ -1,0 +1,99 @@
+{
+  "task_id": "AH-20261022-dsh-latex-guard",
+  "candidate_id": "CAND-DSH-204",
+  "version": "1.0.3",
+  "status": "Awaiting Acceptance",
+  "marketplace_sha256": "24aef9b9c0ff2986b31f4f8af58687515171a655da7c54add4158b047f512f4c",
+  "native_test_sha256": "ca1a8bd379ef9f2ef00fb023b37a6c9bfe3bdc4a78aaecdeb791ae84ab587ee4",
+  "current_version_user_test_confirmation": null,
+  "delivery_pr": null,
+  "merged_commit": null,
+  "hub_id": null,
+  "hub_status": "Current Chinese version not submitted",
+  "historical_deliveries": [
+    {
+      "version": "1.0.0",
+      "delivery_pr": "https://github.com/LasVie/agentic-hub-plugins/pull/11",
+      "marketplace_sha256": "8816e3c333a9f29d4f93a0d79617145519c20258720112fe28310e435ab008e8"
+    }
+  ],
+  "repository_base_commit": "49acfa795cb6964f06a16cd30594efb7055272d0",
+  "repository_instructions_blob_sha": "78a5b51285e322b38d81381d47aa9eef672bb62f",
+  "historical_local_test_candidates": [
+    {
+      "version": "1.0.1",
+      "marketplace_sha256": "70395dcc6f482f42d98f5ef3762e682a360f0f8738426d397d44f72260b04fc7",
+      "native_test_sha256": "4ede0ab40606a01dcd15551ef08172052e88fafe5f8eca09cb5aedb27ae8bd88",
+      "status_at_supersession": "Ready for Testing",
+      "delivery_pr": null,
+      "merged_commit": null,
+      "repository_base_commit": "c0a9ff52b582de403a2e5ff636f5fa2bdd42c66c",
+      "repository_instructions_blob_sha": "10fc214c4c49d862ea3ebc4c360c34b8c05056e7",
+      "note": "Historical local test candidate; not a claim of merged delivery or confirmation for the replacement package."
+    }
+  ],
+  "owner": "Siu Lok Yin",
+  "project_lead_acceptance": "Pending Acceptance",
+  "repository_snapshot_note": "Final Chinese package prepared for the latest merged Smart Download repository baseline; the tested runtime payload and both ZIP hashes are unchanged. Actual AI-delegated WorkSwarm tests are separately recorded; current delivery PR/merge/Hub state must not be inferred.",
+  "delivery_state": "PR pending creation; original screenshots pending attachment and verified permalinks",
+  "local_test_evidence": [
+    {
+      "path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/dsh-latex-guard/import-list.png",
+      "sha256": "91204af87b702118c79e1867f9721772ae7842948afcc98bc816ee13a81afe84",
+      "version": "1.0.3",
+      "role": "Original actual host/browser screenshot"
+    },
+    {
+      "path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/dsh-latex-guard/prompt-result.png",
+      "sha256": "9772d4832b6f18650d58bee699901284fa32cad9dbf593e89f76f7cd8284f2c2",
+      "version": "1.0.3",
+      "role": "Original actual host/browser screenshot"
+    }
+  ],
+  "delegated_ai_test_confirmation": {
+    "authority": "The human user in the current conversation explicitly asked the agent to finish import and prompt testing in the user-open local WorkSwarm, preserve original screenshots, and update the existing content through a PR if successful, while keeping responsible member names unchanged. This authorizes delegated AI-operated host tests and conditional PR preparation; it is not a statement that the human personally performed the tests.",
+    "authority_source": "Direct human instruction in the current conversation on 2026-10-22; no message URL is available.",
+    "recorded_at": "2026-10-22T17:31:24+08:00",
+    "performed_by": "AI agent operating the user-open local WorkSwarm UI",
+    "human_performed_testing": false,
+    "explicit_user_delegation": true,
+    "conditional_pr_on_success_authorized": true,
+    "host": "WorkSwarm 0.2.7",
+    "model": "Deepseek V4 Flash",
+    "task_id": "AH-20261022-dsh-latex-guard",
+    "version": "1.0.3",
+    "marketplace_sha256": "24aef9b9c0ff2986b31f4f8af58687515171a655da7c54add4158b047f512f4c",
+    "native_test_sha256": "ca1a8bd379ef9f2ef00fb023b37a6c9bfe3bdc4a78aaecdeb791ae84ab587ee4",
+    "result": "Passed for the documented import/prompt/browser scope",
+    "installed_payload_verification": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/dsh-latex-guard/installed-payload-verification.json",
+    "actual_cases": [
+      {
+        "flow": "Actual host import",
+        "observed": "Imported native 1.0.3 through the user-open WorkSwarm UI; independently verified all 6 installed files against final source/native/marketplace bytes.",
+        "result": "Passed"
+      },
+      {
+        "flow": "Bibliography lint",
+        "observed": "Real bib_lint detected the duplicate key demo in the fixture and reported written=false.",
+        "result": "Passed"
+      },
+      {
+        "flow": "Citation audit",
+        "observed": "Real cite_audit detected missing citation missing2026.",
+        "result": "Passed"
+      },
+      {
+        "flow": "Chinese error and preservation",
+        "observed": "Empty bib_path returned Chinese message 必须提供 bib_path. Original bibliography/TeX fixture contents and mtimes remained unchanged.",
+        "result": "Passed"
+      }
+    ],
+    "remaining_limits": [
+      "No live Crossref request or bib_fill was made in this WorkSwarm prompt. Crossref integration uses a deterministic mock; live service availability/matching is unverified.",
+      "The plugin does not compile LaTeX or prove academic correctness; preview-first tool results do not represent a file write."
+    ],
+    "final_project_lead_acceptance": "Not supplied",
+    "tested_repository_base_commit": "e0f6b866649e82cbf37fbd082db9891ca977ae8e",
+    "delivery_repository_base_commit": "49acfa795cb6964f06a16cd30594efb7055272d0"
+  }
+}

@@ -4,6 +4,7 @@ Modified from the MIT-licensed TypeScript implementation at revision
 8046f75141ddcf70a6eae4e61f20525d892e0176. Copyright (c) 2026 Flan246.
 See ../licenses/dsh-latex-guard/LICENSE for the full license.
 """
+# 中文化修改：2026-10-22，翻译工具说明和可读提示；保留参数、错误码及文件处理算法。
 from __future__ import annotations
 
 import asyncio
@@ -114,7 +115,7 @@ def lint_bib(text: str) -> Dict[str, Any]:
     for entry in parse_bib(text):
         key = entry["key"]
         if key in seen:
-            issues.append({"kind": "duplicate-key", "key": key, "detail": f"duplicate entry key '{key}', later copy dropped"})
+            issues.append({"kind": "duplicate-key", "key": key, "detail": f"引用键 '{key}' 重复，已在预览结果中去除后出现的副本"})
             continue
         seen.add(key)
         kept.append(entry)
@@ -123,7 +124,7 @@ def lint_bib(text: str) -> Dict[str, Any]:
         if entry["type"] == "book" and not entry["fields"].get("author", "").strip() and not entry["fields"].get("editor", "").strip():
             missing.append("author/editor")
         if missing:
-            issues.append({"kind": "missing-field", "key": key, "detail": "missing: " + ", ".join(missing)})
+            issues.append({"kind": "missing-field", "key": key, "detail": "缺少字段：" + ", ".join(missing)})
     return {"issues": issues, "fixed": _format_bib(kept)}
 
 
@@ -144,7 +145,7 @@ def _write_if_safe(path: Path, original: str, replacement: str, write: bool) -> 
     if not write:
         return False
     if not _fully_parsed(original):
-        raise ValueError("write refused: BibTeX parser could not account for every entry marker")
+        raise ValueError("拒绝写入：BibTeX 解析器未能完整识别所有条目标记")
     path.write_text(replacement, encoding="utf-8")
     return True
 
@@ -162,7 +163,7 @@ def _crossref_json(url: str) -> Dict[str, Any]:
             last_error = exc
         except (urllib.error.URLError, TimeoutError) as exc:
             last_error = exc
-    raise ConnectionError(str(last_error or "Crossref request failed"))
+    raise ConnectionError(str(last_error or "Crossref 请求失败"))
 
 
 def _fields_from_work(work: Dict[str, Any]) -> Dict[str, str]:
@@ -187,11 +188,11 @@ def _fields_from_work(work: Dict[str, Any]) -> Dict[str, str]:
 
 class BibLintTool(Tool):
     def __init__(self) -> None:
-        super().__init__(ToolCard(id="bib_lint", name="bib_lint", description="Lint a BibTeX file and optionally write a normalized deduplicated version.", input_params={"type": "object", "properties": {"bib_path": {"type": "string"}, "write": {"type": "boolean", "default": False}}, "required": ["bib_path"]}, parallel_safe=False))
+        super().__init__(ToolCard(id="bib_lint", name="bib_lint", description="检查 BibTeX 文件；按明确指令可写入规范格式并去除重复键。", input_params={"type": "object", "properties": {"bib_path": {"type": "string"}, "write": {"type": "boolean", "default": False}}, "required": ["bib_path"]}, parallel_safe=False))
 
     async def invoke(self, inputs: Dict[str, Any], **kwargs: Any) -> Dict[str, Any]:
         if not inputs.get("bib_path"):
-            return {"ok": False, "error": {"code": "INVALID_INPUT", "message": "bib_path is required"}}
+            return {"ok": False, "error": {"code": "INVALID_INPUT", "message": "必须提供 bib_path"}}
         path = Path(str(inputs["bib_path"])).expanduser().resolve()
         if not path.is_file():
             return {"ok": False, "error": {"code": "NOT_FOUND", "message": str(path)}}
@@ -200,7 +201,7 @@ class BibLintTool(Tool):
         try:
             result["written"] = _write_if_safe(path, original, result["fixed"], bool(inputs.get("write", False)))
         except ValueError as exc:
-            return {"ok": False, "error": {"code": "INCOMPLETE_PARSE", "message": str(exc)}, "issues": result["issues"]}
+            return {"ok": False, "error": {"code": "INCOMPLETE_PARSE", "message": "处理失败：" + str(exc)}, "issues": result["issues"]}
         return {"ok": True, **result}
 
     async def stream(self, inputs: Dict[str, Any], **kwargs: Any) -> AsyncIterator[Dict[str, Any]]:
@@ -209,11 +210,11 @@ class BibLintTool(Tool):
 
 class BibFillTool(Tool):
     def __init__(self) -> None:
-        super().__init__(ToolCard(id="bib_fill", name="bib_fill", description="Fill missing BibTeX fields using Crossref and optionally write the result.", input_params={"type": "object", "properties": {"bib_path": {"type": "string"}, "write": {"type": "boolean", "default": False}}, "required": ["bib_path"]}, parallel_safe=False))
+        super().__init__(ToolCard(id="bib_fill", name="bib_fill", description="通过 Crossref 补全 BibTeX 缺失字段；默认预览，按明确指令才写入。", input_params={"type": "object", "properties": {"bib_path": {"type": "string"}, "write": {"type": "boolean", "default": False}}, "required": ["bib_path"]}, parallel_safe=False))
 
     async def invoke(self, inputs: Dict[str, Any], **kwargs: Any) -> Dict[str, Any]:
         if not inputs.get("bib_path"):
-            return {"ok": False, "error": {"code": "INVALID_INPUT", "message": "bib_path is required"}}
+            return {"ok": False, "error": {"code": "INVALID_INPUT", "message": "必须提供 bib_path"}}
         path = Path(str(inputs["bib_path"])).expanduser().resolve()
         if not path.is_file():
             return {"ok": False, "error": {"code": "NOT_FOUND", "message": str(path)}}
@@ -254,7 +255,7 @@ class BibFillTool(Tool):
         try:
             written = _write_if_safe(path, original, fixed, bool(inputs.get("write", False)))
         except ValueError as exc:
-            return {"ok": False, "error": {"code": "INCOMPLETE_PARSE", "message": str(exc)}, "filled": filled, "missing": missing, "failed": failed}
+            return {"ok": False, "error": {"code": "INCOMPLETE_PARSE", "message": "处理失败：" + str(exc)}, "filled": filled, "missing": missing, "failed": failed}
         return {"ok": True, "fixed": fixed, "filled": filled, "missing": missing, "failed": failed, "written": written}
 
     async def stream(self, inputs: Dict[str, Any], **kwargs: Any) -> AsyncIterator[Dict[str, Any]]:
@@ -263,11 +264,11 @@ class BibFillTool(Tool):
 
 class CiteAuditTool(Tool):
     def __init__(self) -> None:
-        super().__init__(ToolCard(id="cite_audit", name="cite_audit", description="Audit TeX citation commands against a BibTeX file.", input_params={"type": "object", "properties": {"bib_path": {"type": "string"}, "tex_paths": {"type": "array", "items": {"type": "string"}, "minItems": 1}}, "required": ["bib_path", "tex_paths"]}, idempotent=True))
+        super().__init__(ToolCard(id="cite_audit", name="cite_audit", description="对照 BibTeX 文献库审计 TeX 引用命令。", input_params={"type": "object", "properties": {"bib_path": {"type": "string"}, "tex_paths": {"type": "array", "items": {"type": "string"}, "minItems": 1}}, "required": ["bib_path", "tex_paths"]}, idempotent=True))
 
     async def invoke(self, inputs: Dict[str, Any], **kwargs: Any) -> Dict[str, Any]:
         if not inputs.get("bib_path") or not inputs.get("tex_paths"):
-            return {"ok": False, "error": {"code": "INVALID_INPUT", "message": "bib_path and at least one tex_path are required"}}
+            return {"ok": False, "error": {"code": "INVALID_INPUT", "message": "必须提供 bib_path 和至少一个 tex_path"}}
         bib_path = Path(str(inputs["bib_path"])).expanduser().resolve()
         tex_paths = [Path(str(item)).expanduser().resolve() for item in inputs["tex_paths"]]
         missing_files = [str(path) for path in [bib_path, *tex_paths] if not path.is_file()]

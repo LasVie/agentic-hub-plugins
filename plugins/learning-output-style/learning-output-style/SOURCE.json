@@ -4,7 +4,7 @@
   "plugin_path": "plugins/learning-output-style",
   "license": "Apache-2.0",
   "extraction": "hooks-handlers/session-start.sh: hookSpecificOutput.additionalContext",
-  "prompt_sha256": "8dddba09dd52aeccf094bc37024f73199d7a50a57c4527718cd5784029586e13",
+  "prompt_sha256": "71ee4d591dbf76379a6985ea490e1b1838f45bcb76b71d0069327dc2947ca843",
   "upstream_sha256": {
     ".claude-plugin/plugin.json": "b207853e4f543d9ba6604590781687fec5eb129662f1587b1602445b4bb1e298",
     "COMMIT.txt": "adc447ccd35c4eab5bfb386e182da21ea7b64c2d0e608b56c1f0705848bc8bda",
@@ -13,8 +13,11 @@
     "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
     "README.md": "3148b3552ce12e2e8fa73e00d914882ae60557b29ded502d22da633685e5bdbd"
   },
-  "adapter_version": "1.0.1",
+  "adapter_version": "1.0.2",
   "original_tested_zip_sha256": "7e119eb95893e2a379c100d69f349a619a342c44dcf658c9ca80124020e96631",
-  "packaged_prompt_sha256": "62814aa53bf6d4e50c1c464209516db7b835a57e560d26bb05e73da7ffb58f1d",
-  "modification_notice": "Modified on 2026-10-22: added packaged prompt hash and adapter version. prompt_sha256 remains the hash of the unchanged original extracted teaching text."
+  "packaged_prompt_sha256": "ddbebf9191f07a4d79b51ec1cffa2bcc362dbe1b8e2bc31238df0fa184544177",
+  "modification_notice": "Modified on 2026-10-22: translated the active teaching body and contribution Skill into Simplified Chinese, defaulting human-readable dialogue to Chinese. Technical identifiers and original licenses/attribution remain intact. upstream_prompt_sha256 preserves the original English additionalContext hash; prompt_sha256 records the translated body and packaged_prompt_sha256 records the complete packaged prompt file. These are deliberately different records.",
+  "upstream_prompt_sha256": "8dddba09dd52aeccf094bc37024f73199d7a50a57c4527718cd5784029586e13",
+  "prompt_language": "zh-CN",
+  "prompt_sha256_scope": "Chinese teaching body after the leading attribution/change notice; upstream_prompt_sha256 identifies the original English extraction."
 }

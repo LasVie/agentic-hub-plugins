@@ -1,0 +1,99 @@
+{
+  "task_id": "AH-20261022-deckaura-tarot",
+  "candidate_id": "CAND-CLD-140",
+  "version": "1.0.4",
+  "status": "Awaiting Acceptance",
+  "marketplace_sha256": "957ddb5266249ea7eb308f2e98975dc54281717db1883991d48c1306f3ddace3",
+  "native_test_sha256": "6af3ae3dbcae9802b5a5785ba307117672d6e850d0e45f201750dda97a8dbf4a",
+  "current_version_user_test_confirmation": null,
+  "delivery_pr": null,
+  "merged_commit": null,
+  "hub_id": null,
+  "hub_status": "Current Chinese version not submitted",
+  "historical_deliveries": [
+    {
+      "version": "1.0.2",
+      "delivery_pr": "https://github.com/LasVie/agentic-hub-plugins/pull/15",
+      "marketplace_sha256": "b98f0bf8a1284f8671445339c61137719662b3a4df1686c5e0fbcc5778f2aeb4"
+    }
+  ],
+  "repository_base_commit": "49acfa795cb6964f06a16cd30594efb7055272d0",
+  "repository_instructions_blob_sha": "78a5b51285e322b38d81381d47aa9eef672bb62f",
+  "historical_local_test_candidates": [
+    {
+      "version": "1.0.3",
+      "marketplace_sha256": "c21a04c19fec50f286100794d5b40f646f9cdb33a6307c6a5b2e002792d8bc40",
+      "native_test_sha256": "8dbd6981ed81e53d435126211c331e7cfc2d2d561e3be49dc12f4f79e1d4be70",
+      "status_at_supersession": "Ready for Testing",
+      "delivery_pr": null,
+      "merged_commit": null,
+      "repository_base_commit": "c0a9ff52b582de403a2e5ff636f5fa2bdd42c66c",
+      "repository_instructions_blob_sha": "10fc214c4c49d862ea3ebc4c360c34b8c05056e7",
+      "note": "Historical local test candidate; not a claim of merged delivery or confirmation for the replacement package."
+    }
+  ],
+  "owner": "Cai Zhenze",
+  "project_lead_acceptance": "Pending Acceptance",
+  "repository_snapshot_note": "Final Chinese package prepared for the latest merged Smart Download repository baseline; the tested runtime payload and both ZIP hashes are unchanged. Actual AI-delegated WorkSwarm tests are separately recorded; current delivery PR/merge/Hub state must not be inferred.",
+  "delivery_state": "PR pending creation; original screenshots pending attachment and verified permalinks",
+  "local_test_evidence": [
+    {
+      "path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/deckaura-tarot/import-list.png",
+      "sha256": "398183784704370b3ae004b4969722f2430563e49b0e85dc8a731e7322a958de",
+      "version": "1.0.4",
+      "role": "Original actual host/browser screenshot"
+    },
+    {
+      "path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/deckaura-tarot/prompt-result.png",
+      "sha256": "46cd50f20c99d6ac5989ac4c981f814c1b5e65a4828be48f3ce91ad7e0656420",
+      "version": "1.0.4",
+      "role": "Original actual host/browser screenshot"
+    }
+  ],
+  "delegated_ai_test_confirmation": {
+    "authority": "The human user in the current conversation explicitly asked the agent to finish import and prompt testing in the user-open local WorkSwarm, preserve original screenshots, and update the existing content through a PR if successful, while keeping responsible member names unchanged. This authorizes delegated AI-operated host tests and conditional PR preparation; it is not a statement that the human personally performed the tests.",
+    "authority_source": "Direct human instruction in the current conversation on 2026-10-22; no message URL is available.",
+    "recorded_at": "2026-10-22T17:31:24+08:00",
+    "performed_by": "AI agent operating the user-open local WorkSwarm UI",
+    "human_performed_testing": false,
+    "explicit_user_delegation": true,
+    "conditional_pr_on_success_authorized": true,
+    "host": "WorkSwarm 0.2.7",
+    "model": "Deepseek V4 Flash",
+    "task_id": "AH-20261022-deckaura-tarot",
+    "version": "1.0.4",
+    "marketplace_sha256": "957ddb5266249ea7eb308f2e98975dc54281717db1883991d48c1306f3ddace3",
+    "native_test_sha256": "6af3ae3dbcae9802b5a5785ba307117672d6e850d0e45f201750dda97a8dbf4a",
+    "result": "Passed for the documented import/prompt/browser scope",
+    "installed_payload_verification": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/deckaura-tarot/installed-payload-verification.json",
+    "actual_cases": [
+      {
+        "flow": "Actual host import",
+        "observed": "Imported native 1.0.4 through the user-open WorkSwarm UI; independently verified all 13 installed files against final source/native/marketplace bytes.",
+        "result": "Passed"
+      },
+      {
+        "flow": "Deck validation and lookup",
+        "observed": "Real tool validate accepted 78 cards; The Star reversed lookup returned the translated meaning fields.",
+        "result": "Passed"
+      },
+      {
+        "flow": "Reproducible Chinese seed",
+        "observed": "Two real three-card draws using the same Chinese seed produced the same cards, no within-draw duplicates, and all upright when reversals=false.",
+        "result": "Passed"
+      },
+      {
+        "flow": "Chinese range error",
+        "observed": "Real draw with count=79 returned Chinese count 必须是 1 至 78 的整数。",
+        "result": "Passed"
+      }
+    ],
+    "remaining_limits": [
+      "Only reflective/creative/entertainment functionality is established; no factual prediction or professional advice is claimed.",
+      "The dataset retains technical card IDs/names and structured keys. Chinese card names must still map to the supported technical card_name when invoking the tool."
+    ],
+    "final_project_lead_acceptance": "Not supplied",
+    "tested_repository_base_commit": "e0f6b866649e82cbf37fbd082db9891ca977ae8e",
+    "delivery_repository_base_commit": "49acfa795cb6964f06a16cd30594efb7055272d0"
+  }
+}

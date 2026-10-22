@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:skill:playground",
+  "type": "skill",
+  "name": "playground",
+  "version": "1.0.2",
+  "zip": "playground-1.0.2.zip",
+  "sha256": "34ab10d8a3739412b6fb1b9a7a946ea024b27ed0809c7fc776988bbf80c59997",
+  "payload_sha256": {
+    "README.md": "47dbee7d9da6cbc2da0234ff3c329b1f27d9c98683ac39ffb1a27cf73f12bd5b",
+    "SKILL.md": "1f51e329ee0ecec9f985e96c7f9de044cb844eda0fdfb7116e1570b247640d44",
+    "THIRD_PARTY_NOTICES.md": "01448a410791e51a2f708cd8c4ff6cb90b833692e4cced2f0daef00b64979790",
+    "licenses/claude-plugins-official/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "templates/code-map.md": "297c115d0da6eaab194afb10117f632891f17cc1414cdede8956e14fec70650a",
+    "templates/concept-map.md": "924916d3f0ef2cff4fca1c40588032e7828d68bb14b411eada0c3575221b1776",
+    "templates/data-explorer.md": "fad40a878a48bd5f267a66fe67aac8fee90f5e0ba77b8eaaabd366422a6d2e81",
+    "templates/design-playground.md": "0956172190af28e626af360c4013da878224ec476bb4a17a554df612e8ed46fb",
+    "templates/diff-review.md": "cd156cd6ca5c22ed03424d4f3f40a94d2ef5f99722c8c7b1e99f42c112dbc86b",
+    "templates/document-critique.md": "b51659a867c055d097183d80f90d13b24d47596e4d8bd69130d6aa7650c9da06"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "26bb4c81e31bf55e8242b370fd71ca313e946e8c44646173fcd5021276d37038",
+  "functional_test_report_sha256": "9e1b2534291664dd22f29f60440479970c7dc8075454fc17caf3240cfa8b8bb2"
+}

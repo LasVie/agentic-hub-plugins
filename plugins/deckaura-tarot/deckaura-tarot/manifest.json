@@ -1,9 +1,9 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.4",
   "package_type": "plugin",
   "id": "deckaura-tarot",
-  "name": "Deckaura Tarot",
-  "description": "Offline 78-card tarot lookup, reproducible draws without replacement and six reflective spreads, with a native Python host tool and no network calls.",
+  "name": "塔罗牌查询与抽牌",
+  "description": "离线查询 78 张塔罗牌，按种子复现不放回抽牌，并生成六种牌阵；用于反思、写作与娱乐。",
   "skills": [
     {
       "dir": "skills/tarot-reading",
@@ -15,38 +15,54 @@
       "file": "tools/tarot_tool.py",
       "class": "TarotTool",
       "display_name": {
-        "en": "Deckaura Tarot"
+        "en": "Deckaura Tarot",
+        "zh": "塔罗牌查询与抽牌"
       },
       "display_description": {
-        "en": "Offline card lookup, seeded draws and six reflective spreads."
+        "en": "Offline card lookup, seeded draws and six reflective spreads.",
+        "zh": "离线查询牌义、按种子抽牌并生成六种反思牌阵。"
       }
     }
   ],
   "display_name": {
     "en": "Deckaura Tarot",
-    "zh": "Deckaura Tarot"
+    "zh": "塔罗牌查询与抽牌"
   },
   "display_description": {
     "en": "Offline 78-card tarot lookup, reproducible draws without replacement and six reflective spreads, with a native Python host tool and no network calls.",
-    "zh": "Offline 78-card tarot lookup, reproducible draws without replacement and six reflective spreads, with a native Python host tool and no network calls."
+    "zh": "离线查询 78 张塔罗牌，按种子复现不放回抽牌，并生成六种牌阵；用于反思、写作与娱乐。"
   },
   "tags": [
     {
       "en": "tarot",
-      "zh": "tarot"
+      "zh": "塔罗牌"
     },
     {
       "en": "reflection",
-      "zh": "reflection"
+      "zh": "反思"
     },
     {
       "en": "offline",
-      "zh": "offline"
+      "zh": "离线"
     },
     {
       "en": "journaling",
-      "zh": "journaling"
+      "zh": "日记"
     }
   ],
-  "category": "Others"
+  "category": "Others",
+  "default_init_input": {
+    "zh": "使用塔罗牌工具抽取三张不重复的牌，关闭逆位，并说明牌义只用于反思。",
+    "en": "Draw three unique cards with reversals disabled for reflection."
+  },
+  "quick_inputs": [
+    {
+      "zh": "使用塔罗牌工具抽取三张不重复的牌，关闭逆位，并说明牌义只用于反思。",
+      "en": "Draw three unique cards with reversals disabled for reflection."
+    },
+    {
+      "zh": "查询 The Star 的逆位牌义及来源。",
+      "en": "Look up The Star reversed and its source."
+    }
+  ]
 }

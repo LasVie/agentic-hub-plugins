@@ -56,5 +56,9 @@
     "jiuwenswarm/channels/web/frontend/src/types/pluginPackage.ts": "aa87b7fd48119171f61bce2e08ca4770d5613bf427a7ef7eb30a976b90dbe8cb"
   },
   "native_zip_root_and_extracted_payload": "passed",
-  "limitations": "Native helper/frontend localization check; no running-host install or visual UI assertion."
+  "limitations": "Native helper/frontend localization check; no running-host install or visual UI assertion.",
+  "historical_only": true,
+  "superseded_by_version": "1.0.4",
+  "current_verification_file": "delivery.json",
+  "historical_evidence_note": "Retained original prior-version/source-fixture evidence. Existing versions, hashes, results and limitations are preserved; this file does not establish testing of the current package. Use delivery.json and TEST_REPORT.md for final delegated host-test scope."
 }

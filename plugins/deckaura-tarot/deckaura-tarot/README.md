@@ -1,22 +1,27 @@
-# Deckaura Tarot 1.0.2
+# 塔罗牌查询与抽牌
 
-Offline reference and reflective draws from Deckaura's 78-card dataset. Includes a native Agentic Hub Plugin manifest, the `tarot-reading` Skill, and the `deckaura_tarot` Python tool. Candidate `CAND-CLD-140`; task `AH-20261022-deckaura-tarot`; port maintainer Cai Zhenze. Upstream author/rightsholder: Deckaura. This adaptation does not imply upstream endorsement.
+修改说明：2026-10-22，版本 1.0.4 将展示信息和使用说明改为中文；此后已进一步将运行 Skill、参考文档、四类牌义、CLI 和 Python 工具的人类可读文本中文化；技术标识、抽牌算法与原始许可保留。移植维护者 Cai Zhenze；上游作者与权利人为 Deckaura。
 
-## Requirements
+使用本地 78 张牌的数据集查询牌义、抽取不重复的牌，并生成六种牌阵。适合反思、日记与创作；牌义数据和模型给出的情境解读应分开呈现。
 
-- Node.js >=18 on the backend process PATH. No npm installation is required.
-- An openJiuwen/WorkSwarm host exposing `openjiuwen.core.foundation.tool.Tool` and `ToolCard` for the Python adapter.
-- The CLI works independently with Node.js. The tool makes no network or model calls. Conversational interpretation requires a separately configured host model; it is not needed for deterministic tool checks.
+## 主要功能
 
-## Install
+- 查询指定牌的正位或逆位牌义和来源链接。
+- 按指定种子复现不放回抽牌，返回牌名、方向、位置与牌义。
+- 支持 `daily`（1 张）、`three-card`（3 张）、`decision`（5 张）、`relationship`（6 张）、`celtic-cross`（10 张）、`yes-no`（1 张）。
+- 校验 78 张牌的数据完整性并返回数据集 SHA-256。
 
-The repository's canonical Hub artifact is `deckaura-tarot-1.0.2.zip`, containing `deckaura-tarot/plugin.yaml` and `deckaura-tarot/deckaura-tarot/manifest.json`.
+## 安装与依赖
 
-The tested WorkSwarm local importer supports only a root or single-directory manifest. For its Extensions plugin upload interface, use `deckaura-tarot-1.0.2-workswarm.zip`. It contains `deckaura-tarot/manifest.json` and the identical inner payload; it is a local-import companion, not a replacement for the canonical Hub artifact. See the repository `MANUAL_TESTING.md` for the isolated instance and recorded hashes.
+需要后端进程 PATH 中存在 Node.js >=18，以及提供 `openjiuwen.core.foundation.tool.Tool` 和 `ToolCard` 的 openJiuwen/WorkSwarm Python 宿主。无需安装 npm 包，也不需要外部账号、API 密钥或网络服务。CLI 可以独立由 Node.js 运行；自然语言解读另需宿主已配置的模型。
 
-After importing, confirm version 1.0.2, one Skill and one tool. Attach the Plugin to the intended Agent session to expose `deckaura_tarot`. If Node is missing, add it to the backend PATH and restart that backend.
+在扩展面板导入 `deckaura-tarot-1.0.4-native-test.zip`，确认版本 `1.0.4`、一个 Skill 和一个工具。在目标会话选中插件后调用 `deckaura_tarot`。若缺少 Node.js，将其加入后端 PATH 并重启后端。
 
-## Tool examples
+市场包 `deckaura-tarot-1.0.4.zip` 含 `deckaura-tarot/plugin.yaml` 和 `deckaura-tarot/deckaura-tarot/manifest.json`。本地测试 ZIP 直接包含相同载荷，适用于宿主扩展导入；两者哈希不同。
+
+## 使用示例
+
+向智能体提出：“查询 The Star 的逆位牌义，并给出来源”；或“抽三张牌，关闭逆位，种子用 manual-demo，说明结果只用于反思”。原生工具参数示例：
 
 ```json
 {"action":"lookup","card":"The Star","orientation":"reversed"}
@@ -25,13 +30,11 @@ After importing, confirm version 1.0.2, one Skill and one tool. Attach the Plugi
 {"action":"validate"}
 ```
 
-Each call returns JSON with `ok`. Lookup returns one card and the exact source URL. Draws/spreads return unique cards, positions, orientations, meanings and a replayable seed. Validation returns 78 cards and the dataset SHA-256. Failed calls return `ok: false` and an actionable error.
+每次调用返回含 `ok` 的 JSON。失败时返回 `ok: false` 及错误说明。抽牌数量必须为 1–78 的整数；`reversals` 必须是布尔值，方向只能是 `upright` 或 `reversed`。种子长度为 1–256 字符，不含 NUL，且不得以 `--` 开头；不要把私人问题作为种子。未知字段会被拒绝。未指定种子时先使用系统熵，再执行可复现的伪随机洗牌，不提供密码学随机保证。
 
-Supported spreads: daily (1), three-card (3), decision (5), relationship (6), celtic-cross (10), yes-no (1). Counts must be integers from 1 to 78, reversal flags must be booleans, and orientations must be `upright` or `reversed`. A seed must be 1-256 characters without NUL or a leading `--`; do not use private questions as seeds. Unknown fields are rejected for the selected action. An omitted seed uses OS entropy, followed by a reproducible pseudorandom shuffle. This is not a cryptographic card-selection guarantee.
+## 独立 CLI
 
-## Standalone CLI
-
-From this package directory:
+在载荷目录执行：
 
 ```sh
 node skills/tarot-reading/scripts/tarot.mjs validate
@@ -39,10 +42,12 @@ node skills/tarot-reading/scripts/tarot.mjs lookup "The Star" --orientation reve
 node skills/tarot-reading/scripts/tarot.mjs spread three-card --seed manual-demo --reversals false
 ```
 
-The upstream CLI is retained byte-for-byte. The native adapter adds strict parameter checks and a ten-second timeout. CLI users should use documented arguments: upstream accepts some invalid orientations/options silently and cannot correctly parse a seed beginning `--`.
+原生适配器增加严格参数校验和十秒超时。CLI 的算法和参数行为保持上游实现，位置、帮助与错误文本已中文化。它对部分无效方向或选项会静默接受，也无法正确解析以 `--` 开头的种子；直接使用 CLI 时请遵循以上合法参数。
 
-## Scope and attribution
+## 适用范围与限制
 
-Use for reflection, journaling and creative exploration. Tarot does not establish facts, guarantee future events or replace professional advice. Dataset meanings and contextual interpretations must remain distinct.
+本工具提供牌义资料和反思素材，不能证明事实、保证未来事件或替代专业建议。牌名、数据字段、牌阵 ID 与结构化协议值保留原值；正位、逆位、爱情及事业牌义是原英文摘要的中文翻译，解读默认使用中文。中文牌名应先对应到准确的英文 `card_name` 再调用工具；CLI 不支持中文别名直接查询。工具本身不访问网络，也不调用模型。
 
-Code, dataset and reference material originate from [Deckaura Tarot](https://github.com/gokimedia/claude-skill-tarot/tree/804c54558375416fd4fce605238927f39bbac1a2), upstream 1.0.0. Full upstream MIT text: [licenses/deckaura-tarot/LICENSE](licenses/deckaura-tarot/LICENSE). See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and the bundled data-provenance reference. No upstream logos, fonts, card images or third-party services are bundled. No unified license for newly written repository material is declared here.
+## 来源与许可
+
+[Deckaura Tarot](https://github.com/gokimedia/claude-skill-tarot/tree/804c54558375416fd4fce605238927f39bbac1a2)，上游版本 1.0.0。完整 MIT 许可见 `licenses/deckaura-tarot/LICENSE`，数据来源与覆盖范围见 `THIRD_PARTY_NOTICES.md` 及随包来源记录。不包含上游标志、字体或牌面图片，也不表示获得上游背书；本说明不为仓库新增材料另行指定统一许可。

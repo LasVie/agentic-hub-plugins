@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+// 修改说明（Agentic Hub 团队，2026-10-22）：将位置、帮助与错误文本翻译为简体中文；保留原算法、协议值及 MIT 署名。
 
 import { createHash, randomBytes } from "node:crypto";
 import { readFileSync } from "node:fs";
@@ -8,23 +9,23 @@ const DEFAULT_DECK_PATH = fileURLToPath(new URL("../assets/deck.json", import.me
 const SCHEMA_VERSION = "1.0";
 
 export const SPREADS = Object.freeze({
-  daily: ["Theme for reflection"],
-  "three-card": ["Past or background", "Present dynamic", "Future tendency"],
-  decision: ["Situation", "Option A", "Option B", "What to consider", "Grounded next step"],
-  relationship: ["You", "Other person or perceived dynamic", "Connection", "Strength", "Challenge", "Constructive next step"],
+  daily: ["反思主题"],
+  "three-card": ["过去或背景", "当前动态", "未来倾向"],
+  decision: ["当前情况", "选项 A", "选项 B", "需要考虑的因素", "务实的下一步"],
+  relationship: ["你自己", "对方或你感受到的互动", "彼此的联结", "优势", "挑战", "建设性的下一步"],
   "celtic-cross": [
-    "Present situation",
-    "Challenge or crossing influence",
-    "Foundation",
-    "Recent past",
-    "Conscious aim or possibility",
-    "Near-term direction",
-    "Your stance",
-    "Environment or external influences",
-    "Hopes and fears",
-    "Outcome tendency",
+    "当前情况",
+    "挑战或交叉影响",
+    "基础",
+    "最近的过去",
+    "有意识的目标或可能性",
+    "近期方向",
+    "你的立场",
+    "环境或外部影响",
+    "希望与恐惧",
+    "结果倾向",
   ],
-  "yes-no": ["Symbolic tendency"],
+  "yes-no": ["象征倾向"],
 });
 
 function normalize(value) {
@@ -49,9 +50,9 @@ export function loadDeck(path = DEFAULT_DECK_PATH) {
 
 export function validateDeck(deck) {
   const errors = [];
-  if (!Array.isArray(deck.cards)) errors.push("cards must be an array");
-  if (deck.count !== deck.cards?.length) errors.push("count must equal cards.length");
-  if (deck.cards?.length !== 78) errors.push("deck must contain exactly 78 cards");
+  if (!Array.isArray(deck.cards)) errors.push("cards 必须是数组");
+  if (deck.count !== deck.cards?.length) errors.push("count 必须等于 cards.length");
+  if (deck.cards?.length !== 78) errors.push("牌组必须恰好包含 78 张牌");
 
   const required = [
     "card_number",
@@ -71,27 +72,27 @@ export function validateDeck(deck) {
   for (const [index, card] of (deck.cards ?? []).entries()) {
     for (const field of required) {
       if (typeof card[field] !== "string" || !card[field].trim()) {
-        errors.push(`cards[${index}].${field} must be a non-empty string`);
+        errors.push(`cards[${index}].${field} 必须是非空字符串`);
       }
     }
     for (const optionalField of ["suit", "zodiac_sign"]) {
       if (typeof card[optionalField] !== "string") {
-        errors.push(`cards[${index}].${optionalField} must be a string`);
+        errors.push(`cards[${index}].${optionalField} 必须是字符串`);
       }
     }
     const nameKey = normalize(card.card_name);
-    if (names.has(nameKey)) errors.push(`duplicate card_name: ${card.card_name}`);
+    if (names.has(nameKey)) errors.push(`重复的 card_name： ${card.card_name}`);
     names.add(nameKey);
 
-    if (urls.has(card.guide_url)) errors.push(`duplicate guide_url: ${card.guide_url}`);
+    if (urls.has(card.guide_url)) errors.push(`重复的 guide_url： ${card.guide_url}`);
     urls.add(card.guide_url);
     try {
       const url = new URL(card.guide_url);
       if (url.protocol !== "https:" || !/(^|\.)deckaura\.com$/i.test(url.hostname)) {
-        errors.push(`invalid Deckaura guide_url: ${card.guide_url}`);
+        errors.push(`无效的 Deckaura guide_url： ${card.guide_url}`);
       }
     } catch {
-      errors.push(`malformed guide_url: ${card.guide_url}`);
+      errors.push(`guide_url 格式错误： ${card.guide_url}`);
     }
   }
 
@@ -149,7 +150,7 @@ function publicCard(card, orientation, position) {
 
 export function drawCards({ count = 1, seed, reversals = true, positions = [], deck = loadDeck() } = {}) {
   if (!Number.isInteger(count) || count < 1 || count > deck.cards.length) {
-    throw new RangeError(`count must be an integer from 1 to ${deck.cards.length}`);
+    throw new RangeError(`count 必须是 1 至 ${deck.cards.length} 的整数`);
   }
   const effectiveSeed = seed ?? randomBytes(16).toString("hex");
   const rng = mulberry32(seedToUint32(effectiveSeed));
@@ -162,7 +163,7 @@ export function drawCards({ count = 1, seed, reversals = true, positions = [], d
 
   const cards = pool.slice(0, count).map((card, index) => {
     const orientation = reversals && rng() < 0.33 ? "reversed" : "upright";
-    return publicCard(card, orientation, positions[index] ?? `Card ${index + 1}`);
+    return publicCard(card, orientation, positions[index] ?? `第 ${index + 1} 张牌`);
   });
 
   return {
@@ -177,7 +178,7 @@ export function drawCards({ count = 1, seed, reversals = true, positions = [], d
 export function createSpread(name, options = {}) {
   const positions = SPREADS[name];
   if (!positions) {
-    throw new Error(`unknown spread: ${name}. Choose one of: ${Object.keys(SPREADS).join(", ")}`);
+    throw new Error(`未知牌阵：${name}。请选择： ${Object.keys(SPREADS).join(", ")}`);
   }
   return { spread: name, ...drawCards({ ...options, count: positions.length, positions }) };
 }
@@ -207,7 +208,7 @@ function parseBoolean(value, fallback) {
   if (value === undefined) return fallback;
   if (value === true || value === "true") return true;
   if (value === false || value === "false") return false;
-  throw new Error("boolean options must be true or false");
+  throw new Error("布尔选项必须是 true 或 false");
 }
 
 function print(value) {
@@ -217,10 +218,10 @@ function print(value) {
 function usage() {
   return {
     usage: [
-      'node scripts/tarot.mjs lookup "The Star"',
-      "node scripts/tarot.mjs draw --count 1 --reversals true [--seed value]",
-      `node scripts/tarot.mjs spread <${Object.keys(SPREADS).join("|")}> [--reversals true] [--seed value]`,
-      "node scripts/tarot.mjs validate",
+      '查询卡牌：node scripts/tarot.mjs lookup "The Star"',
+      "抽牌：node scripts/tarot.mjs draw --count 1 --reversals true [--seed 非敏感标签]",
+      `创建牌阵：node scripts/tarot.mjs spread <${Object.keys(SPREADS).join("|")}> [--reversals true] [--seed 非敏感标签]`,
+      "检查数据：node scripts/tarot.mjs validate",
     ],
   };
 }
@@ -232,15 +233,15 @@ export function runCli(argv = process.argv.slice(2)) {
 
   if (command === "lookup") {
     const query = positional.join(" ").trim();
-    if (!query) throw new Error("lookup requires a card name");
+    if (!query) throw new Error("lookup 需要卡牌名称（使用数据集中的英文 card_name）");
     const result = lookupCard(query, deck);
     if (!result.card) {
-      const error = new Error(`card not found: ${query}`);
+      const error = new Error(`未找到卡牌： ${query}`);
       error.suggestions = result.suggestions;
       throw error;
     }
     const orientation = options.orientation === "reversed" ? "reversed" : "upright";
-    print({ schema_version: SCHEMA_VERSION, source: deck.source, card: publicCard(result.card, orientation, "Lookup") });
+    print({ schema_version: SCHEMA_VERSION, source: deck.source, card: publicCard(result.card, orientation, "查询") });
     return;
   }
 
@@ -252,7 +253,7 @@ export function runCli(argv = process.argv.slice(2)) {
 
   if (command === "spread") {
     const name = positional[0];
-    if (!name) throw new Error("spread requires a spread name");
+    if (!name) throw new Error("spread 需要牌阵名称");
     print(createSpread(name, { seed: options.seed, reversals: parseBoolean(options.reversals, true), deck }));
     return;
   }

@@ -80,8 +80,30 @@ class MCPServerDevTests(unittest.TestCase):
                 path.write_text(text)
                 r = subprocess.run([sys.executable, str(SCRIPT), "plan", str(path)], capture_output=True, text=True)
                 self.assertEqual(r.returncode, 2)
-                self.assertIn("ERROR:", r.stderr)
+                self.assertIn("错误：", r.stderr)
                 self.assertEqual(r.stdout, "")
+
+    def test_chinese_cli_help_plan_and_invalid_utf8(self):
+        for command in ([], ["plan"], ["scaffold"]):
+            result = subprocess.run([sys.executable, str(SCRIPT), *command, "--help"],
+                                    capture_output=True, text=True)
+            self.assertEqual(result.returncode, 0)
+            self.assertIn("用法：", result.stdout)
+            self.assertIn("显示此帮助信息并退出", result.stdout)
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / "中文需求.json"
+            path.write_text(json.dumps(dict(local_access=True, interactive_ui=True, prototype=False)),
+                            encoding="utf-8")
+            result = subprocess.run([sys.executable, str(SCRIPT), "plan", str(path)],
+                                    capture_output=True, text=True)
+            self.assertEqual(result.returncode, 0)
+            self.assertIn("使用 MCP Builder", json.loads(result.stdout)["next"])
+            path.write_bytes(b"\xff")
+            result = subprocess.run([sys.executable, str(SCRIPT), "plan", str(path)],
+                                    capture_output=True, text=True)
+            self.assertEqual(result.returncode, 2)
+            self.assertIn("有效的 UTF-8", result.stderr)
+            self.assertNotIn("Traceback", result.stderr)
 
 
 if __name__ == "__main__":

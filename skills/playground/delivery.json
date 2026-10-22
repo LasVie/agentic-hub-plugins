@@ -1,0 +1,111 @@
+{
+  "task_id": "AH-20261022-playground",
+  "candidate_id": "CAND-ANT-014",
+  "version": "1.0.2",
+  "status": "Awaiting Acceptance",
+  "marketplace_sha256": "34ab10d8a3739412b6fb1b9a7a946ea024b27ed0809c7fc776988bbf80c59997",
+  "native_test_sha256": "9bcfe4d8a3a09428f32afe164bdf7742e32765563977e1dc9bd2f6463dc62187",
+  "current_version_user_test_confirmation": null,
+  "delivery_pr": null,
+  "merged_commit": null,
+  "hub_id": null,
+  "hub_status": "Current Chinese version not submitted",
+  "historical_deliveries": [
+    {
+      "version": "1.0.0",
+      "delivery_pr": "https://github.com/LasVie/agentic-hub-plugins/pull/10",
+      "marketplace_sha256": "bb296a3e6cfb809952bf524b6c1c86543481c5ee4b9729089b3899ca6841a69c"
+    }
+  ],
+  "repository_base_commit": "49acfa795cb6964f06a16cd30594efb7055272d0",
+  "repository_instructions_blob_sha": "78a5b51285e322b38d81381d47aa9eef672bb62f",
+  "historical_local_test_candidates": [
+    {
+      "version": "1.0.1",
+      "marketplace_sha256": "1387c65be13a51a2fc9e119491ea76f5d7825272458d7a405dce4f015dccd461",
+      "native_test_sha256": "dcca0c806f283352e12bbbe5c43c222f5921b35a0818e415d86bdae1f8d5d3c3",
+      "status_at_supersession": "Ready for Testing",
+      "delivery_pr": null,
+      "merged_commit": null,
+      "repository_base_commit": "c0a9ff52b582de403a2e5ff636f5fa2bdd42c66c",
+      "repository_instructions_blob_sha": "10fc214c4c49d862ea3ebc4c360c34b8c05056e7",
+      "note": "Historical local test candidate; not a claim of merged delivery or confirmation for the replacement package."
+    }
+  ],
+  "owner": "Nguyen Trung Dung",
+  "project_lead_acceptance": "Pending Acceptance",
+  "repository_snapshot_note": "Final Chinese package prepared for the latest merged Smart Download repository baseline; the tested runtime payload and both ZIP hashes are unchanged. Actual AI-delegated WorkSwarm tests are separately recorded; current delivery PR/merge/Hub state must not be inferred.",
+  "delivery_state": "PR pending creation; original screenshots pending attachment and verified permalinks",
+  "local_test_evidence": [
+    {
+      "path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/playground/browser-interaction.png",
+      "sha256": "c434c8e67375c736bad890893de77fa05b20bee91e50de8bbed0540a6f100e18",
+      "version": "1.0.2",
+      "role": "Original actual host/browser screenshot"
+    },
+    {
+      "path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/playground/import-list.png",
+      "sha256": "9d5159b63b21d375aa39cf5304d41dfe3e3cabfd76d9a7df8f80742aee5dde1f",
+      "version": "1.0.2",
+      "role": "Original actual host/browser screenshot"
+    },
+    {
+      "path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/playground/import-selected.png",
+      "sha256": "5d6cc833c79a908cf601ef8841b0093147b3d6811728407d61f800f07d6a13fe",
+      "version": "1.0.2",
+      "role": "Original actual host/browser screenshot"
+    },
+    {
+      "path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/playground/prompt-result.png",
+      "sha256": "799062df96cd79f446435c077b229f1063e0c35e340e838aeb7b9893900dfa34",
+      "version": "1.0.2",
+      "role": "Original actual host/browser screenshot"
+    }
+  ],
+  "delegated_ai_test_confirmation": {
+    "authority": "The human user in the current conversation explicitly asked the agent to finish import and prompt testing in the user-open local WorkSwarm, preserve original screenshots, and update the existing content through a PR if successful, while keeping responsible member names unchanged. This authorizes delegated AI-operated host tests and conditional PR preparation; it is not a statement that the human personally performed the tests.",
+    "authority_source": "Direct human instruction in the current conversation on 2026-10-22; no message URL is available.",
+    "recorded_at": "2026-10-22T17:31:24+08:00",
+    "performed_by": "AI agent operating the user-open local WorkSwarm UI",
+    "human_performed_testing": false,
+    "explicit_user_delegation": true,
+    "conditional_pr_on_success_authorized": true,
+    "host": "WorkSwarm 0.2.7",
+    "model": "Deepseek V4 Flash",
+    "task_id": "AH-20261022-playground",
+    "version": "1.0.2",
+    "marketplace_sha256": "34ab10d8a3739412b6fb1b9a7a946ea024b27ed0809c7fc776988bbf80c59997",
+    "native_test_sha256": "9bcfe4d8a3a09428f32afe164bdf7742e32765563977e1dc9bd2f6463dc62187",
+    "result": "Passed for the documented import/prompt/browser scope",
+    "installed_payload_verification": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/playground/installed-payload-verification.json",
+    "actual_cases": [
+      {
+        "flow": "Actual Skill import",
+        "observed": "Imported the native 1.0.2 Skill through the user-open WorkSwarm UI, selected it in the host conversation and independently verified all 10 installed files against final source/native/marketplace bytes.",
+        "result": "Passed"
+      },
+      {
+        "flow": "Real generation",
+        "observed": "The host read the actual Chinese Skill/template and generated a standalone Chinese product-card HTML file in the bounded fixture directory, with inline CSS/JS and no external resource dependency.",
+        "result": "Passed"
+      },
+      {
+        "flow": "Real browser interaction",
+        "observed": "The controlling agent opened the actual generated HTML in a browser, clicked 活力醒目, adjusted the radius slider by keyboard to 13, and observed linked preview/prompt updates.",
+        "result": "Passed"
+      },
+      {
+        "flow": "Clipboard success",
+        "observed": "The browser copy action displayed 已复制. The real UI screenshot and accessibility snapshot were retained.",
+        "result": "Passed"
+      }
+    ],
+    "remaining_limits": [
+      "Clipboard-denied fallback received static source review only; clipboard rejection was not forced in the browser. Narrow-screen and every keyboard interaction were not exhaustively exercised in this run.",
+      "The generated HTML is test output. These checks do not establish all six possible workflows or every future model-generated page."
+    ],
+    "final_project_lead_acceptance": "Not supplied",
+    "tested_repository_base_commit": "e0f6b866649e82cbf37fbd082db9891ca977ae8e",
+    "delivery_repository_base_commit": "49acfa795cb6964f06a16cd30594efb7055272d0"
+  }
+}

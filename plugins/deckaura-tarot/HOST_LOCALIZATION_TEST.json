@@ -1,0 +1,17 @@
+{
+  "name": "deckaura-tarot",
+  "version": "1.0.3",
+  "passed": true,
+  "checks": [
+    "Native import/install in isolated home",
+    "Installed full payload matches final ZIP",
+    "Actual openJiuwen loader/resolver loads all declared skills/tools",
+    "Actual list/detail cards expose Chinese title/description/README",
+    "Uninstall removes package and installed state"
+  ],
+  "scope": "Isolated temporary data only; no running user installation changed. No model call or visual UI acceptance.",
+  "historical_only": true,
+  "superseded_by_version": "1.0.4",
+  "current_verification_file": "delivery.json",
+  "historical_evidence_note": "Retained original prior-version/source-fixture evidence. Existing versions, hashes, results and limitations are preserved; this file does not establish testing of the current package. Use delivery.json and TEST_REPORT.md for final delegated host-test scope."
+}

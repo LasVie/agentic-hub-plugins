@@ -20,7 +20,7 @@ async function scan(dir) {
     let meta;
     try { meta = JSON.parse(await readFile(join(pkg, 'package.json'), 'utf8')); }
     catch (error) { if (error.code === 'ENOENT') continue; throw error; }
-    if (!meta.name || !meta.version) throw new Error('Package identity missing: ' + pkg);
+    if (!meta.name || !meta.version) throw new Error('依赖缺少包名或版本：' + pkg);
     const destination = 'licenses/npm/' + meta.name.replace(/[^a-zA-Z0-9._-]/g, '_') + '@' + meta.version;
     await mkdir(join(root, destination), { recursive: true });
     const evidence = [];
@@ -38,7 +38,7 @@ await scan(join(root, 'node_modules'));
 entries.sort((a, b) => a.name.localeCompare(b.name) || a.version.localeCompare(b.version));
 await writeFile(join(root, 'DEPENDENCY_LICENSES.json'), JSON.stringify({
   automatic_collection_only: true,
-  note: 'Read each full text and scope; package metadata may be incomplete. Preserve this directory in distributions.',
+  note: '请逐项阅读完整许可及其适用范围，包元数据可能不完整。分发时请保留本目录。',
   packages: entries,
 }, null, 2) + '\n');
-console.log('Collected installed license/NOTICE evidence for ' + entries.length + ' packages');
+console.log('已收集 ' + entries.length + ' 个已安装依赖的完整许可与 NOTICE 证据');

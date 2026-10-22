@@ -1,0 +1,99 @@
+{
+  "task_id": "AH-20261022-mcp-server-dev",
+  "candidate_id": "CAND-ANT-011",
+  "version": "1.0.4",
+  "status": "Awaiting Acceptance",
+  "marketplace_sha256": "0e7ed07124213dca30dd869f878daabb530c2a34074acc345474bc04606f37c9",
+  "native_test_sha256": "b3f10dc80be2515491bd348cbf8631758f670da4d319955a8a58673e4eac0d75",
+  "current_version_user_test_confirmation": null,
+  "delivery_pr": null,
+  "merged_commit": null,
+  "hub_id": null,
+  "hub_status": "Current Chinese version not submitted",
+  "historical_deliveries": [
+    {
+      "version": "1.0.1",
+      "delivery_pr": "https://github.com/LasVie/agentic-hub-plugins/pull/18",
+      "marketplace_sha256": "acd7f7b1c2fecb6ac1887e80cce5f86e0a7502fd60c6dc546f77ef909249701f"
+    }
+  ],
+  "repository_base_commit": "49acfa795cb6964f06a16cd30594efb7055272d0",
+  "repository_instructions_blob_sha": "78a5b51285e322b38d81381d47aa9eef672bb62f",
+  "historical_local_test_candidates": [
+    {
+      "version": "1.0.2",
+      "marketplace_sha256": "042c476232560099cc06b7da3afacbfe2860e51bf9f6e425ae474a38e6c5a8bc",
+      "native_test_sha256": "b50dc73fdaad2005bd36d3bdcd3decc9c40510934d3ffe41699b8b5ce1504913",
+      "status_at_supersession": "Ready for Testing",
+      "delivery_pr": null,
+      "merged_commit": null,
+      "repository_base_commit": "c0a9ff52b582de403a2e5ff636f5fa2bdd42c66c",
+      "repository_instructions_blob_sha": "10fc214c4c49d862ea3ebc4c360c34b8c05056e7",
+      "note": "Historical local test candidate; not a claim of merged delivery or confirmation for the replacement package."
+    }
+  ],
+  "owner": "Vannes Wijaya",
+  "project_lead_acceptance": "Pending Acceptance",
+  "repository_snapshot_note": "Final Chinese package prepared for the latest merged Smart Download repository baseline; the tested runtime payload and both ZIP hashes are unchanged. Actual AI-delegated WorkSwarm tests are separately recorded; current delivery PR/merge/Hub state must not be inferred.",
+  "delivery_state": "PR pending creation; original screenshots pending attachment and verified permalinks",
+  "local_test_evidence": [
+    {
+      "path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/mcp-server-dev/import-list.png",
+      "sha256": "be82dcceaf589c978e93f84e722c66230f8dff052f2f3a44d53fb527782a557d",
+      "version": "1.0.4",
+      "role": "Original actual host/browser screenshot"
+    },
+    {
+      "path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/mcp-server-dev/prompt-result.png",
+      "sha256": "54970940ecfdabe6e06e656966e9907094c1b5ffa3c816e9988020e29af68463",
+      "version": "1.0.4",
+      "role": "Original actual host/browser screenshot"
+    }
+  ],
+  "delegated_ai_test_confirmation": {
+    "authority": "The human user in the current conversation explicitly asked the agent to finish import and prompt testing in the user-open local WorkSwarm, preserve original screenshots, and update the existing content through a PR if successful, while keeping responsible member names unchanged. This authorizes delegated AI-operated host tests and conditional PR preparation; it is not a statement that the human personally performed the tests.",
+    "authority_source": "Direct human instruction in the current conversation on 2026-10-22; no message URL is available.",
+    "recorded_at": "2026-10-22T17:31:24+08:00",
+    "performed_by": "AI agent operating the user-open local WorkSwarm UI",
+    "human_performed_testing": false,
+    "explicit_user_delegation": true,
+    "conditional_pr_on_success_authorized": true,
+    "host": "WorkSwarm 0.2.7",
+    "model": "Deepseek V4 Flash",
+    "task_id": "AH-20261022-mcp-server-dev",
+    "version": "1.0.4",
+    "marketplace_sha256": "0e7ed07124213dca30dd869f878daabb530c2a34074acc345474bc04606f37c9",
+    "native_test_sha256": "b3f10dc80be2515491bd348cbf8631758f670da4d319955a8a58673e4eac0d75",
+    "result": "Passed for the documented import/prompt/browser scope",
+    "installed_payload_verification": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/mcp-server-dev/installed-payload-verification.json",
+    "actual_cases": [
+      {
+        "flow": "Actual host import",
+        "observed": "Imported native 1.0.4 through the user-open WorkSwarm UI; independently verified all 17 installed files against final source/native/marketplace bytes.",
+        "result": "Passed"
+      },
+      {
+        "flow": "Real route planning",
+        "observed": "The host read the actual route Skill and ran devkit plan with local_access, interactive_ui and prototype all true; the documented specialist/transport plan was returned.",
+        "result": "Passed"
+      },
+      {
+        "flow": "Real scaffold",
+        "observed": "The host ran the actual App scaffold into the bounded test directory and inspected generated server/widget/package files; user-facing widget, server and guidance text were Chinese.",
+        "result": "Passed"
+      },
+      {
+        "flow": "Separate automated integration",
+        "observed": "Independent integration exercised generated App build/stdin protocol/resource/text fallback and official MCPB validate/pack/unpack/relocation, including dependency license collection. This is separate from the UI prompt run.",
+        "result": "Passed"
+      }
+    ],
+    "remaining_limits": [
+      "The WorkSwarm prompt did not run npm install/build, launch an embedded App UI, deploy or publish anything. Generated dependency installation/protocol/official MCPB checks were independent automated integration.",
+      "Embedded MCP Apps visual rendering in WorkSwarm, target desktop MCPB installation, remote HTTP/OAuth and production deployment remain unverified."
+    ],
+    "final_project_lead_acceptance": "Not supplied",
+    "tested_repository_base_commit": "e0f6b866649e82cbf37fbd082db9891ca977ae8e",
+    "delivery_repository_base_commit": "49acfa795cb6964f06a16cd30594efb7055272d0"
+  }
+}

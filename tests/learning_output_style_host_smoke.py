@@ -13,6 +13,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("source", type=Path, help="JiuwenSwarm source checkout")
     parser.add_argument("archive", type=Path)
+    parser.add_argument("--expected-version", default="1.0.1")
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     sys.path.insert(0, str(args.source.resolve()))
@@ -30,7 +31,7 @@ if __name__ == "__main__":
         assert manager.is_plugin_allowed(imported["id"])
         installed = manager.resolve_plugin_dir(imported["id"])
         assert installed.resolve().is_relative_to(Path(tmp).resolve())
-        assert json.loads((installed / "manifest.json").read_text())["version"] == "1.0.1"
+        assert json.loads((installed / "manifest.json").read_text())["version"] == args.expected_version
         spec = load_plugin_package(installed / "manifest.json")
         assert len(spec.prompt_sections) == 1 and len(spec.skills) == 1
         manager.uninstall_plugin_package(imported)
@@ -39,7 +40,7 @@ if __name__ == "__main__":
         result = {"passed": True, "checks": [
             "Real JiuwenSwarm import of native test ZIP",
             "Real install and installed-state lookup in isolated data directory",
-            "Installed version 1.0.1 loads native prompt section and Skill",
+            f"Installed version {args.expected_version} loads native prompt section and Skill",
             "Real uninstall removes package and installed state"
         ], "scope": "Temporary data directory only; no active user installation modified"}
         args.output.write_text(json.dumps(result, indent=2) + "\n")

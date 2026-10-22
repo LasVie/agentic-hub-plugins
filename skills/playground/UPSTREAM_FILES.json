@@ -5,50 +5,51 @@
       "upstream_path": "plugins/playground/skills/playground/SKILL.md",
       "payload_path": "SKILL.md",
       "upstream_sha256": "521a3d62211e5f47b65ed17b660e001b15cf8d88d058cbf31bc00e889bcb63cc",
-      "payload_sha256": "01eb387673cbabd0015bad08235b33be01ba02a6160364df3128d849293e47c3",
+      "payload_sha256": "1f51e329ee0ecec9f985e96c7f9de044cb844eda0fdfb7116e1570b247640d44",
       "modified": true
     },
     {
       "upstream_path": "plugins/playground/skills/playground/templates/code-map.md",
       "payload_path": "templates/code-map.md",
       "upstream_sha256": "0eb7c0d1ac3dbd1401c4a2348631e7be2a02ec30739dd514aab6f162cfade77f",
-      "payload_sha256": "0eb7c0d1ac3dbd1401c4a2348631e7be2a02ec30739dd514aab6f162cfade77f",
-      "modified": false
+      "payload_sha256": "297c115d0da6eaab194afb10117f632891f17cc1414cdede8956e14fec70650a",
+      "modified": true
     },
     {
       "upstream_path": "plugins/playground/skills/playground/templates/concept-map.md",
       "payload_path": "templates/concept-map.md",
       "upstream_sha256": "153810786435a1f3e3948aba075ebf3c887df827464bebca61f48ce7974e9622",
-      "payload_sha256": "153810786435a1f3e3948aba075ebf3c887df827464bebca61f48ce7974e9622",
-      "modified": false
+      "payload_sha256": "924916d3f0ef2cff4fca1c40588032e7828d68bb14b411eada0c3575221b1776",
+      "modified": true
     },
     {
       "upstream_path": "plugins/playground/skills/playground/templates/data-explorer.md",
       "payload_path": "templates/data-explorer.md",
       "upstream_sha256": "4b884e4b400f3af82b7f33210c5c2017a5296cab16f1496963bd42061a1fe342",
-      "payload_sha256": "4b884e4b400f3af82b7f33210c5c2017a5296cab16f1496963bd42061a1fe342",
-      "modified": false
+      "payload_sha256": "fad40a878a48bd5f267a66fe67aac8fee90f5e0ba77b8eaaabd366422a6d2e81",
+      "modified": true
     },
     {
       "upstream_path": "plugins/playground/skills/playground/templates/design-playground.md",
       "payload_path": "templates/design-playground.md",
       "upstream_sha256": "190f7da424ebd3226a679045420b64171a98d081b7d84e26be4553de13c91fe7",
-      "payload_sha256": "190f7da424ebd3226a679045420b64171a98d081b7d84e26be4553de13c91fe7",
-      "modified": false
+      "payload_sha256": "0956172190af28e626af360c4013da878224ec476bb4a17a554df612e8ed46fb",
+      "modified": true
     },
     {
       "upstream_path": "plugins/playground/skills/playground/templates/diff-review.md",
       "payload_path": "templates/diff-review.md",
       "upstream_sha256": "32112ba4e82fbb8b656af166d1e21f8461cedbb4fdb5d2c314c43d210ea7e37d",
-      "payload_sha256": "32112ba4e82fbb8b656af166d1e21f8461cedbb4fdb5d2c314c43d210ea7e37d",
-      "modified": false
+      "payload_sha256": "cd156cd6ca5c22ed03424d4f3f40a94d2ef5f99722c8c7b1e99f42c112dbc86b",
+      "modified": true
     },
     {
       "upstream_path": "plugins/playground/skills/playground/templates/document-critique.md",
       "payload_path": "templates/document-critique.md",
       "upstream_sha256": "c5bd7a68a53f2075d127e482c93b5f3d0b51c24bf8d301c1124801cca7be2d41",
-      "payload_sha256": "c5bd7a68a53f2075d127e482c93b5f3d0b51c24bf8d301c1124801cca7be2d41",
-      "modified": false
+      "payload_sha256": "b51659a867c055d097183d80f90d13b24d47596e4d8bd69130d6aa7650c9da06",
+      "modified": true
     }
-  ]
+  ],
+  "modification_summary": "2026-10-22: SKILL.md and all six templates translated into Simplified Chinese. Templates default labels, help and prompts to Chinese and use text-safe DOM examples; pinned original upstream hashes are retained separately."
 }

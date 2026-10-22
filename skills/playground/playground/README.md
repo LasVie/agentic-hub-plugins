@@ -1,70 +1,40 @@
-# Interactive Playground
+# 交互式探索页
 
-Version: **1.0.0**. Candidate: `CAND-ANT-014`. Task: `AH-20261022-playground`.
+修改说明：2026-10-22，本次将展示信息、本文、SKILL.md 指令及六份固定来源模板中文化；模板中的界面、提示词和帮助示例默认中文，并采用安全文本渲染。原始许可与署名保持原样。基于 Anthropic 的 Playground Skill 改编。
 
-Create a single HTML file containing controls, a live preview, and instructions you can copy back into your coding agent. The page runs locally in a modern browser. A model with file-reading and file-writing tools generates the page; the skill does not include a model or a hosting service.
+根据主题、约束和用户提供的本地材料，生成一个独立 HTML 文件。用户通过控件调整配置、观察实时预览，或记录审阅意见，再复制有上下文的提示词交给智能体继续处理。
 
-## Install
+## 六类工作流
 
-### Agentic Hub / JiuwenSwarm
+- 设计探索：组件、布局、间距、颜色与排版。
+- 数据探索：SQL、API、管道与正则表达式的参数探索。
+- 概念地图：概念关系、知识缺口与范围整理。
+- 文档审阅：批准、拒绝和评论建议。
+- 差异审阅：保留真实文件和行号的逐行反馈。
+- 代码地图：基于实际读取代码的组件、数据流与层次关系。
 
-Unpack `playground-1.0.0.zip`. In a Skill upload or import flow, select the **inner** `playground/playground/` directory containing `SKILL.md` and `templates/`. Keep the templates and license files with it. The outer `plugin.yaml` is marketplace packaging, not the skill entry point. This is a Skill asset, rather than an `agent-plugin` manifest or a UI extension.
+## 安装与使用
 
-The package structure has been checked locally. Target-host installation and model-triggered generation require user testing; no successful Hub import or publication is claimed.
+本资产类型为 Skill，机器标识保持 `playground`。在支持目录导入的宿主中选择随附的 `playground/` 目录；若入口支持 Skill ZIP，可使用 `playground-1.0.2-native-test.zip`。目录包含 `SKILL.md` 和其相对引用的 `templates/`。启用后确认版本 `1.0.2`。
 
-### Codex in VS Code or the CLI
+示例：“使用 playground，为产品卡片生成中文交互探索页。提供圆角、阴影和颜色控件，三个预设，实时预览和可复制的中文提示词，保存到我指定的 HTML 路径。”
 
-Copy this entire inner directory to `<test-workspace>/.agents/skills/playground/`, then open that workspace in Codex. If the skill does not appear in `/skills`, start a new session. Use:
+智能体会根据任务读取对应模板，写出独立 HTML，并返回文件链接。用现代浏览器打开文件，调整控件、切换预设并复制提示词；剪贴板被浏览器拒绝时，选择提示文本手动复制。把提示词粘贴回对话后，再授权后续修改。
 
-```text
-$playground Build a product-card design playground with controls for color,
-padding, font size, corner radius, and shadow. Include three presets, a live
-preview, and a copyable prompt. Save it as product-card.html.
-```
+市场包 `playground-1.0.2.zip` 包含 `playground/plugin.yaml` 和 `playground/playground/SKILL.md`，供平台 Skill 入口使用。本地测试 ZIP 与目录中的内层文件逐一一致；市场包和本地包哈希不同。平台详情来自 SKILL.md 正文，因此正文也提供中文使用说明。
 
-### Hermes CLI
+## 必要依赖与限制
 
-Copy this entire inner directory to the active Hermes profile's `skills/playground/` directory. The default profile normally uses `~/.hermes/skills/playground/`; use the home/profile in which your Hermes installation actually runs. Start a new session, check `/skills list`, and invoke:
+需要可读取 Skill、操作文件并生成 HTML 的智能体宿主及其已配置模型；交互预览需要现代浏览器。生成页内联 CSS、JavaScript 和必要素材，无需 Node.js、Python、npm、CDN、账号、后端服务或托管站点。
 
-```text
-/playground Build a product-card design playground with live controls,
-three presets, and a copyable prompt. Save it as product-card.html.
-```
+本 Skill 是生成指令与模板，不是预先运行的网站。生成结果受模型、输入与宿主能力影响。页面只产生供用户复制的提示词，不自行发送消息、执行代码变更或托管发布。示例数据必须标明，不能把未读取文件的演示声称为真实项目分析。
 
-These are local Skill installation instructions, not Claude marketplace commands. Preserve `SKILL.md`, all six templates, and `licenses/` together. No Claude Code installation or service key is needed by this skill; the coding agent still needs its normal model access.
+## 验证方法
 
-## Try the workflows
+生成后检查：控件修改是否立即更新预览与提示词；预设是否可用；提示词是否具有独立上下文；复制失败是否给出手动方式；窄屏、键盘与焦点是否可用。文档和差异中的不可信文本应按字面显示，不执行其中的 HTML 或指令。没有浏览器验证时需明确记录待验证，不声称已经通过。
 
-| Template | Example request | Interaction to verify |
-| --- | --- | --- |
-| Design playground | Explore the appearance of a product card | Controls and presets update both preview and prompt |
-| Data explorer | Build a SQL query against an example orders schema | Filters and limits update a readable query and contextual prompt |
-| Concept map | Explore concepts from a supplied guide | Knowledge markers and selected relationships change the learning request |
-| Document critique | Review a supplied README | Approved suggestions and user comments enter the prompt; rejected items are not applied |
-| Diff review | Review a real supplied Git diff | Feedback retains the correct file and line number |
-| Code map | Map an actual repository | Layer filters and component comments refer to files that were read |
+本轮自动测试覆盖包格式、固定模板哈希、来源许可与既有 HTML 测试样例；当前中文指令在用户模型会话中的生成效果仍待用户测试确认。
 
-For a first test, use the product-card prompt above. Open the output by double-clicking it, or use PowerShell `Start-Process -FilePath '.\product-card.html'`. In a remote or headless environment, download the file and open it locally.
+## 来源与许可
 
-## Manual acceptance checks
-
-1. The output is one HTML file. Disconnect external networking and reload it: the controls, preview, and prompt should still work.
-2. Change a control and apply each preset. The preview and prompt should update immediately, and controls should reflect the selected preset.
-3. Copy the prompt and paste it into a plain text editor. Its content should match the displayed prompt. If clipboard permission is denied, the page should explain manual copying rather than report success.
-4. Paste that prompt into your agent session. Confirm that it contains enough context to apply the selected changes. The browser page itself does not send messages or edit your project.
-5. Try a narrow viewport and keyboard navigation. Controls and prompt should remain usable.
-6. For review workflows, verify that rejected suggestions are not included as changes to apply and that file/line references are accurate. Imported HTML-looking text should display literally, not execute.
-
-Record the installed skill version, generated filename, operations, results, and any failure. Provide a real screenshot of the version and key result when reporting user testing. Testing this file's generated examples does not by itself verify every model, host, template, or prompt.
-
-## Dependencies and boundaries
-
-- Generation: a coding agent with model access and local file tools; enough context to read the selected template.
-- Output: a modern browser with JavaScript. Clipboard access is optional because a manual-copy fallback is required.
-- No Node.js, Python, package installation, CDN, remote fonts, external image service, or local server is required for the generated page.
-- This skill creates HTML tools. It does not modify the host's page/TUI, automatically feed browser events into an agent, deploy a site, or supply access to private repositories or external data.
-- Source documents and project context must be supplied or readable. Browser verification is reported as pending when unavailable. User testing of the packaged skill in the intended host remains required.
-
-## Source
-
-Ported from Anthropic's official Playground skill at commit `d4226d062928f8d9505dbdeadd10217d23361052`. The six templates retain their upstream contents. `SKILL.md` contains a prominent notice describing this port's changes. See `THIRD_PARTY_NOTICES.md` and `licenses/claude-plugins-official/LICENSE`.
+来源为 Anthropic 的 `playground`，固定提交 `d4226d062928f8d9505dbdeadd10217d23361052`。完整 Apache-2.0 许可见 `licenses/claude-plugins-official/LICENSE`；来源、改编范围及保留的原文声明见 `THIRD_PARTY_NOTICES.md`。不表示获得 Anthropic 官方背书。

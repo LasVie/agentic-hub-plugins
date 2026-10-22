@@ -1,0 +1,39 @@
+{
+  "name": "dsh-fs-encoding",
+  "version": "1.0.2",
+  "marketplace_sha256": "ef7d2db89b51b48f1019e9cd4470ef025269dbb6b4bc68824b4b70726eb0d049",
+  "native_test_sha256": "539372c49c303eee2ee7095e47163c41bbc3bdad3c818b78d8e53a1431af6843",
+  "package_and_license_audit": "passed",
+  "repository_tests": {
+    "passed": 50,
+    "skipped": 0
+  },
+  "actual_host_checks": {
+    "name": "dsh-fs-encoding",
+    "version": "1.0.2",
+    "passed": true,
+    "checks": [
+      "Native import/install in isolated home",
+      "Installed full payload matches final ZIP",
+      "Actual openJiuwen loader/resolver loads all declared skills/tools",
+      "Actual list/detail cards expose Chinese title/description/README",
+      "Uninstall removes package and installed state"
+    ],
+    "scope": "Isolated temporary data only; no running user installation changed. No model call or visual UI acceptance."
+  },
+  "functional_checks": {
+    "real_Tool_API_integration": true,
+    "shared_undo_and_stale_guard": true
+  },
+  "current_version_user_testing": "pending",
+  "current_version_visual_test_screenshot": null,
+  "delivery_pr": null,
+  "hub_submission": "not submitted",
+  "limits": [
+    "No paid model calls; model-generated behavior and visual user acceptance remain pending."
+  ],
+  "historical_only": true,
+  "superseded_by_version": "1.0.4",
+  "current_verification_file": "delivery.json",
+  "historical_evidence_note": "Retained original prior-version/source-fixture evidence. Existing versions, hashes, results and limitations are preserved; this file does not establish testing of the current package. Use delivery.json and TEST_REPORT.md for final delegated host-test scope."
+}

@@ -54,3 +54,13 @@ Expected release: `releases/skill/playground/1.0.0/playground-1.0.0.zip`.
 - The final archive is extracted and every member is compared against `artifact.json` payload hashes; this review result is recorded in `TEST_REPORT.md` and `RELEASE_TEST.log` after packaging. A mismatched or missing license, copied path, or change notice prevents a successful release check.
 
 License evidence is sufficient for this stated reuse. Cloud tracker synchronization, target-host user testing, PR delivery, and Hub submission remain separate workflow conditions and are not claimed by this source review.
+
+
+## Chinese packaging 1.0.1 (2026-10-22)
+
+The Project Lead-side user explicitly requested Chinese packages for every currently delivered asset. This is local Build work based on merged 1.0.0. Marketplace/native display fields and README were localized without changing machine identifiers, license bytes, publishers or upstream provenance. Playground SKILL.md frontmatter and instructions are translated, including the existing safety and browser handoff rules; six upstream templates are byte-identical. UPSTREAM_FILES.json retains the original source hash and records the changed payload hash. Functional code, data, runtime instructions and templates remain byte-identical. No new third-party material is introduced. Original license copies and attribution remain; modified documentation carries a prominent dated notice. New user testing, screenshot and separate Hub confirmation remain pending. Automated checks do not substitute for these gates.
+
+
+## Complete Chinese template edition (2026-10-22)
+
+All six `playground/templates/*.md` files are now modified derivatives, translated into Simplified Chinese together with their sample labels, help, prompts and comments. Original machine identifiers, code syntax, source paths and full Apache-2.0 license text remain intact. Every template carries a prominent dated modification notice and source/license pointer. `UPSTREAM_FILES.json` preserves each original upstream hash, records the actual translated payload hash, and marks all seven instruction/template files modified. Historical statements above about byte-identical templates apply only to earlier editions. Data/diff/document examples now construct text-safe DOM content instead of interpolating untrusted text into executable HTML; clipboard success, failure fallback, keyboard controls, real source evidence, comment preservation and rejected-suggestion boundaries are explicit. No new library, remote resource, media, dataset or dependency is bundled. Nguyen Trung Dung remains the owner. Translation and packaging checks do not establish target-host model behavior; actual import/prompt/browser tests are separate evidence.

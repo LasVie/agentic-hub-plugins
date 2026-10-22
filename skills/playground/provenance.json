@@ -23,5 +23,25 @@
     "templates/diff-review.md",
     "templates/document-critique.md"
   ],
-  "audit_file": "SOURCE_REVIEW.md"
+  "audit_file": "SOURCE_REVIEW.md",
+  "localization_history": [
+    {
+      "date": "2026-10-22",
+      "base_version": "1.0.0",
+      "version": "1.0.1",
+      "scope": "Historical partial Chinese edition: Chinese marketplace/native display metadata, README and SKILL instructions. All six pinned templates, including their English examples/UI/prompt text, remained byte-identical. Full template localization and safe text-rendering examples belong to 1.0.2.",
+      "user_test_confirmation": "pending",
+      "hub_submission_authorized": false,
+      "current_instruction_scope": "Follow-up 1.0.2 only: Chinese SKILL plus all six templates, sample UI/help/prompts and text-safe DOM patterns. This is not part of the historical 1.0.1 payload.",
+      "follow_up_version": "1.0.2"
+    }
+  ],
+  "localization": {
+    "date": "2026-10-22",
+    "base_version": "1.0.1",
+    "version": "1.0.2",
+    "scope": "Complete Chinese Skill/template edition introduced in 1.0.2: SKILL instructions and all six templates, including UI labels/help/prompts/examples, safe text DOM patterns, clipboard failure guidance and keyboard requirements. Original upstream hashes and complete Apache text are retained; current payload hashes and actual host/browser results are recorded separately.",
+    "host_test_authority": "User explicitly delegated actual local WorkSwarm import/prompt tests and conditional PR on success in current conversation. AI-operated tests are not represented as user-performed.",
+    "hub_submission_authorized": false
+  }
 }

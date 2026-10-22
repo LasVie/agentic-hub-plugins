@@ -1,12 +1,16 @@
 ---
 name: build-mcp-app
 description: 为已有 MCP 服务添加交互式 UI，或生成一个可验证的 MCP App stdio 示例；涉及 ui:// 资源、MCP Apps SDK、文本回退时使用。远程服务及认证先使用 MCP Builder。
-version: 1.0.1
+version: 1.0.4
 ---
 
 # MCP App 配套开发
 
 > 修改声明（2026-10-22）：基于 Anthropic mcp-server-dev 固定提交 d4226d062928f8d9505dbdeadd10217d23361052 的 build-mcp-app/SKILL.md 改编。替换宿主专属命令和未实现脚手架，改用随包可执行模板；上游 Apache-2.0 全文见 ../../licenses/claude-plugins-official/LICENSE。
+
+> 中文补全声明（2026-10-22）：补充默认输出语言和生成界面语言要求；不改变协议标识、示例工程版本和上游许可。
+
+默认使用简体中文输出说明、生成报告和可翻译的界面标签、帮助及错误提示；用户明确指定其他语言时按其要求执行。保留命令、API、协议值、JSON 键、代码语法和原始许可原文。示例中的 `add`、`a`、`b`、`sum`、`ui://add/result.html` 是兼容性标识，不翻译。
 
 MCP App 在 MCP 工具之外增加独立 UI 资源。工具返回文本/结构化数据，工具的 `_meta.ui.resourceUri` 指向单独注册的 `ui://` 资源；资源使用 `text/html;profile=mcp-app`。宿主不支持 UI 时，文本结果仍可使用。
 
@@ -22,7 +26,7 @@ npm run build
 node server.mjs
 ```
 
-要求 Python >=3.9（生成器）、Node >=20 和 npm。工程初始版本为 0.1.0；它与插件版本 1.0.1 不同。示例 add 工具只做有界数值加法，无文件、网络和账户访问。运行服务器会等待 MCP 客户端，不是交互命令行。
+要求 Python >=3.9（生成器）、Node >=20 和 npm。工程初始版本为 0.1.0；它与插件版本 1.0.4 不同。示例 add 工具只做有界数值加法，无文件、网络和账户访问。运行服务器会等待 MCP 客户端，不是交互命令行。
 
 浏览器 SDK 在构建时打包进 HTML，保留内联许可注释，不依赖 CDN。渲染使用 textContent，不把工具结果作为 HTML 注入。资源路径相对 server.mjs 定位，因此可以从别的工作目录启动。不要将密钥放入资源或工具输出。
 

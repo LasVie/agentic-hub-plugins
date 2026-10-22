@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:deckaura-tarot",
+  "type": "agent-plugin",
+  "name": "deckaura-tarot",
+  "version": "1.0.4",
+  "zip": "deckaura-tarot-1.0.4.zip",
+  "sha256": "957ddb5266249ea7eb308f2e98975dc54281717db1883991d48c1306f3ddace3",
+  "payload_sha256": {
+    "README.md": "0ca5145c66b180dcca8a67125aba3731e311d9fa346f9ab5d91a33c78f763d90",
+    "THIRD_PARTY_NOTICES.md": "c614f862394c4d775c1836388050ef8fb5b5a4cdef86bed35e4c8c5b2b041b62",
+    "licenses/deckaura-tarot/LICENSE": "2a870b98a936750e931a5833bc362778ae474aa3042532609a97cbe1b09cb654",
+    "manifest.json": "85cabe21fe3c0152da9a1d4739be10a43b1429cf784767e3db75cff9b4eec0cc",
+    "skills/tarot-reading/SKILL.md": "25ae0492b4c6e54d92a7452992f097ff1dbbe69a042fa3eaa7e37558691280b7",
+    "skills/tarot-reading/assets/deck.json": "43ba47133d04091e31fb220aec7bcd858cf87a0f86a9496a104b5fc20ab95840",
+    "skills/tarot-reading/references/data-provenance.md": "8b6456b7bd3ac16a2412f1e9e362ef3f7ad86412e9fb056f44dfd35ccb1b9c31",
+    "skills/tarot-reading/references/reading-protocol.md": "5f019ef5a6493841c4d3a45088e22cc4f57e113908ef32bf8f4d780030a8aa0b",
+    "skills/tarot-reading/references/safety-and-quality.md": "e1b18e0e1f7753f1882e6d9e459a19686bcaec0662711c9b4f4bd7d629c2cfdd",
+    "skills/tarot-reading/references/spreads.md": "50882fa5b95cc0016af73d5713496de9f4c77856ad9eeaa4955a640498cbbbfc",
+    "skills/tarot-reading/references/symbolism.md": "adf298d74b83c6bf08908a4b4b08c032730ea9a3a04e7947e7542272867243ac",
+    "skills/tarot-reading/scripts/tarot.mjs": "9feb2daa59bed95c822a2aaed380bca10575c1706879cbd1053174631a875570",
+    "tools/tarot_tool.py": "d8e39b3a93d3da4f925d1975108b1d7db350e1942e93ca9cd8e48fc0002fe007"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "0ed8f6b05db2cb84ce6b9fc84c721d28648d046e30cb68971b0a707c842792f4",
+  "functional_test_report_sha256": "ba2988f1ec5ddabac8f079b6df0bb4b0f074e9a120be25e552dfc1bd510a9b80"
+}

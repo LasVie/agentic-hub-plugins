@@ -1,5 +1,53 @@
 {
-  "mode":"ported","permission_status":"verified","audit_file":"SOURCE_REVIEW.md","independent_spec":null,
-  "sources":[{"url":"https://github.com/MrWeiCodes/dsh-fs-encoding","revision":"a4d31cc33bd6f0fab2bf6752f6e50e8301885b94","version":"1.5.2","license_expression":"MIT","license_evidence":[{"path":"licenses/dsh-fs-encoding/LICENSE","sha256":"8c51d3cf6410e7e7ebb17a5f831723380541b33393f20a8ce9c711f1998cce06"}]}],
-  "reused_paths":["tools/fs_encoding.py","skills/fs-encoding/SKILL.md","README.md","THIRD_PARTY_NOTICES.md","licenses/dsh-fs-encoding/LICENSE"]
+  "mode": "ported",
+  "permission_status": "verified",
+  "audit_file": "SOURCE_REVIEW.md",
+  "independent_spec": null,
+  "sources": [
+    {
+      "url": "https://github.com/MrWeiCodes/dsh-fs-encoding",
+      "revision": "a4d31cc33bd6f0fab2bf6752f6e50e8301885b94",
+      "version": "1.5.2",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/dsh-fs-encoding/LICENSE",
+          "sha256": "8c51d3cf6410e7e7ebb17a5f831723380541b33393f20a8ce9c711f1998cce06"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "tools/fs_encoding.py",
+    "skills/fs-encoding/SKILL.md",
+    "README.md",
+    "THIRD_PARTY_NOTICES.md",
+    "licenses/dsh-fs-encoding/LICENSE"
+  ],
+  "localization_history": [
+    {
+      "date": "2026-10-22",
+      "base_version": "1.0.1",
+      "version": "1.0.2",
+      "scope": "Historical documentation edition: Chinese marketplace/native display metadata and README, with version/source/adaptation records. The existing file-encoding Skill and Python Tool implementation were inherited without runtime translation changes; original legal text and machine identifiers were retained.",
+      "user_test_confirmation": "pending",
+      "hub_submission_authorized": false
+    },
+    {
+      "date": "2026-10-22",
+      "base_version": "1.0.2",
+      "version": "1.0.3",
+      "scope": "Historical runtime candidate: Chinese file-encoding Skill instructions and Python Tool help/results/errors in addition to the earlier Chinese display/README. The immutable 1.0.3 and 1.0.4 archives have identical Skill and Python Tool bytes; later packaging/documentation version changes do not move this translation into 1.0.2. Actual final host evidence is separately bound to 1.0.4 in delivery.json.",
+      "host_test_authority": "User explicitly delegated actual local WorkSwarm import/prompt tests and conditional PR on success in current conversation. AI-operated tests are not represented as user-performed.",
+      "hub_submission_authorized": false
+    }
+  ],
+  "localization": {
+    "date": "2026-10-22",
+    "base_version": "1.0.3",
+    "version": "1.0.4",
+    "scope": "Final 1.0.4 Chinese edition retains the Chinese Skill and Python Tool runtime bytes introduced by 1.0.3, with finalized version/README/notices and actual delegated WorkSwarm import/read/dry-run/Chinese-error evidence. Original publisher, full MIT license bytes and technical identifiers are retained.",
+    "host_test_authority": "User explicitly delegated actual local WorkSwarm import/prompt tests and conditional PR on success in current conversation. AI-operated tests are not represented as user-performed.",
+    "hub_submission_authorized": false
+  }
 }
