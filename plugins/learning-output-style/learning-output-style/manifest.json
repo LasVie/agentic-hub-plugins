@@ -1,0 +1,47 @@
+{
+  "package_type": "plugin",
+  "id": "learning-output-style",
+  "name": "学习式编程指导",
+  "version": "1.0.1",
+  "description": "交互式编程学习：解释实现取舍，并邀请用户完成关键的 5–10 行代码。",
+  "display_name": {
+    "zh": "学习式编程指导",
+    "en": "Learning Output Style"
+  },
+  "display_description": {
+    "zh": "迁移自 Anthropic learning-output-style；保留原始教学提示词，通过 JiuwenSwarm prompt_sections 加载。",
+    "en": "Anthropic learning-output-style instructions adapted to JiuwenSwarm prompt sections."
+  },
+  "category": "Engineering",
+  "source": "local",
+  "default_init_input": {
+    "zh": "用学习模式带我实现一个小功能：先解释关键取舍，准备代码骨架，再让我完成一处关键逻辑。",
+    "en": "Guide me through implementing a small feature in learning mode."
+  },
+  "quick_inputs": [
+    {
+      "zh": "带我实现一个带重试策略的 Python 函数，留一处关键策略让我完成。",
+      "en": "Help me implement a Python retry function and leave one meaningful strategy for me to implement."
+    }
+  ],
+  "prompt_sections": [
+    {
+      "file": "prompt_sections/learning-output-style.md",
+      "priority": 100
+    }
+  ],
+  "metadata": {
+    "license": "Apache-2.0",
+    "upstream_repository": "https://github.com/anthropics/claude-plugins-official",
+    "upstream_path": "plugins/learning-output-style",
+    "upstream_commit": "d1adba47161a271799de7b548225d929310046bd",
+    "upstream_version": "1.0.0",
+    "adaptation": "Load the extracted upstream teaching context through a native prompt section; expose focused contribution coaching as a Skill. No Bash hook executes.",
+    "modification_notice": "Modified on 2026-10-22: version 1.0.1 adds an explicit contribution-coaching Skill, repository package metadata, and complete distribution notices; native prompt-section loading remains the primary session behavior."
+  },
+  "skills": [
+    {
+      "dir": "skills/learning-contribution"
+    }
+  ]
+}

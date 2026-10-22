@@ -1,0 +1,14 @@
+{
+  "type": "agent-plugin",
+  "name": "learning-output-style",
+  "version": "1.0.1",
+  "display_name": "Learning Output Style",
+  "description": "Coach users during real programming tasks with implementation insights and prepared locations for meaningful 5-10-line code contributions.",
+  "publisher": "Gan Mingrui",
+  "category": "软件开发",
+  "tags": ["Programming Education", "Implementation", "Learning"],
+  "functional_tags": ["Interactive Programming Education"],
+  "scope": "Session-wide programming coaching through JiuwenSwarm native prompt sections and an explicit learning-contribution Skill. For repository manuals or standalone checkpoint tutorials, reuse code-analysis-toolbox; this companion adds coaching during actual feature implementation. Excludes learning schedules, general subject tutoring, and autonomous completion of the learner's chosen contribution.",
+  "task_id": "AH-20261022-learning-output-style",
+  "candidate_id": "CAND-ANT-037"
+}

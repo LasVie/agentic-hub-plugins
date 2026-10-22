@@ -1,0 +1,20 @@
+{
+  "repository": "https://github.com/anthropics/claude-plugins-official",
+  "commit": "d1adba47161a271799de7b548225d929310046bd",
+  "plugin_path": "plugins/learning-output-style",
+  "license": "Apache-2.0",
+  "extraction": "hooks-handlers/session-start.sh: hookSpecificOutput.additionalContext",
+  "prompt_sha256": "8dddba09dd52aeccf094bc37024f73199d7a50a57c4527718cd5784029586e13",
+  "upstream_sha256": {
+    ".claude-plugin/plugin.json": "b207853e4f543d9ba6604590781687fec5eb129662f1587b1602445b4bb1e298",
+    "COMMIT.txt": "adc447ccd35c4eab5bfb386e182da21ea7b64c2d0e608b56c1f0705848bc8bda",
+    "hooks/hooks.json": "2f5725548acfcae80ae997996a5037aad0754c13498cd81b87df35893f283db8",
+    "hooks-handlers/session-start.sh": "2b2ef02fffeb9df6d587a3180ab3bb06e1364a75f70e2f534045b599b953731e",
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "README.md": "3148b3552ce12e2e8fa73e00d914882ae60557b29ded502d22da633685e5bdbd"
+  },
+  "adapter_version": "1.0.1",
+  "original_tested_zip_sha256": "7e119eb95893e2a379c100d69f349a619a342c44dcf658c9ca80124020e96631",
+  "packaged_prompt_sha256": "62814aa53bf6d4e50c1c464209516db7b835a57e560d26bb05e73da7ffb58f1d",
+  "modification_notice": "Modified on 2026-10-22: added packaged prompt hash and adapter version. prompt_sha256 remains the hash of the unchanged original extracted teaching text."
+}

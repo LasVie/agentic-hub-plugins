@@ -1,0 +1,72 @@
+{
+  "version": "1.0.1",
+  "marketplace_zip": "learning-output-style-1.0.1.zip",
+  "marketplace_sha256": "065afa71ff915c2d9ab494046e64edd2d47b1e7470f332bd8339922c0a1fc47d",
+  "marketplace_bytes": 40986,
+  "native_test_zip": "learning-output-style-1.0.1-native-test.zip",
+  "native_test_sha256": "ae36a586495e015b028dda8e35c5a04af4854bc9cf4e05f174b27cadb7a031a9",
+  "native_test_bytes": 39691,
+  "payload_sha256": {
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "NOTICE": "70c9381f8e85ed1125090dc476ff792f7f44e74e4988be649dceda0f9908f7e0",
+    "README.md": "c85e489d484dbcbc2bdd4c51dc0cb7dfaa713f86ca5caa6c5070a988148a6c21",
+    "SOURCE.json": "c8e942f1eb359ac2904fa60527590a17cde0a3c8d2895f1c71c555af5c681dc4",
+    "THIRD_PARTY_NOTICES.md": "cff82e006b18352b2028453749510549205b1361b60fff22025b1a2c82659dd3",
+    "licenses/claude-plugins-official/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "manifest.json": "c02c6096b85c659866e94a98406fee6560aafb66686134e364b5167d529267bc",
+    "prompt_sections/learning-output-style.md": "62814aa53bf6d4e50c1c464209516db7b835a57e560d26bb05e73da7ffb58f1d",
+    "skills/learning-contribution/SKILL.md": "8c803f9996c1217d7c0b3e9f3f17c0aba847ec5fb8bf2a60b87102f587f79561"
+  },
+  "archive_integrity": "passed",
+  "required_marketplace_layout": "passed",
+  "native_and_marketplace_payloads_identical": true,
+  "license_and_notice_review": "passed; full license, file-level changes, and THIRD_PARTY_NOTICES present",
+  "native_loader_source": {
+    "passed": true,
+    "check_count": 8,
+    "checks": [
+      "Native Plugin loader accepts the real manifest and resolves its Skill path",
+      "Active prompt resolves at priority 100 and preserves every original teaching-text byte",
+      "Declared contribution Skill resolves inside the relocated payload",
+      "Complete license and file-level attribution ship without executable upstream hooks",
+      "Native loader rejects missing-prompt",
+      "Native loader rejects missing-skill",
+      "Native loader rejects wrong-type",
+      "Native loader rejects escaping-prompt"
+    ]
+  },
+  "native_loader_extracted": {
+    "passed": true,
+    "check_count": 8,
+    "checks": [
+      "Native Plugin loader accepts the real manifest and resolves its Skill path",
+      "Active prompt resolves at priority 100 and preserves every original teaching-text byte",
+      "Declared contribution Skill resolves inside the relocated payload",
+      "Complete license and file-level attribution ship without executable upstream hooks",
+      "Native loader rejects missing-prompt",
+      "Native loader rejects missing-skill",
+      "Native loader rejects wrong-type",
+      "Native loader rejects escaping-prompt"
+    ]
+  },
+  "host_import_install": {
+    "passed": true,
+    "checks": [
+      "Real JiuwenSwarm import of native test ZIP",
+      "Real install and installed-state lookup in isolated data directory",
+      "Installed version 1.0.1 loads native prompt section and Skill",
+      "Real uninstall removes package and installed state"
+    ],
+    "scope": "Temporary data directory only; no active user installation modified"
+  },
+  "user_test_confirmation": {
+    "member": "Gan Mingrui",
+    "version": "1.0.1",
+    "record": "USER_TEST_CONFIRMATION.md",
+    "progress_report": "RPT-20261022-learning-output-style-user-confirmed",
+    "actual_user_reply": "是，1.0.1 测试已完成，可以提交",
+    "recorded_at": "2026-10-22 15:39 Asia/Singapore",
+    "known_blocking_issues": "none reported"
+  },
+  "hub_submission": "not submitted"
+}
