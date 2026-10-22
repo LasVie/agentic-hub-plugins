@@ -11,7 +11,12 @@ ROOT = Path(__file__).resolve().parents[1]
 SCRIPT = ROOT / "plugins/mcp-server-dev/mcp-server-dev/scripts/devkit.py"
 spec = importlib.util.spec_from_file_location("mcp_devkit", SCRIPT)
 devkit = importlib.util.module_from_spec(spec)
-spec.loader.exec_module(devkit)
+previous_bytecode_setting = sys.dont_write_bytecode
+try:
+    sys.dont_write_bytecode = True  # Functional tests must not mutate the release payload.
+    spec.loader.exec_module(devkit)
+finally:
+    sys.dont_write_bytecode = previous_bytecode_setting
 
 
 class MCPServerDevTests(unittest.TestCase):

@@ -39,6 +39,7 @@ integration 的 --payload 可改为最终 ZIP 解出的 mcp-server-dev/mcp-serve
 初始机器缺 PyYAML，安装仓库固定开发依赖后复测通过。
 第一次 npm 12 + /tmp 前缀生成的 lock 含错误相对路径，npm ci 拒绝；使用 npm 10.9.4 在各项目工作目录重建干净锁文件，完整 clean install 集成复测通过。
 许可采集正则曾漏掉 LICENSE.md，已修正并在最终集成复测；只把真实最终结果标为通过。
+PR 首轮 CI（run 39711915654）发现测试导入在载荷中生成 __pycache__，导致 check-repo 正确拒绝；已让测试加载器禁止对载荷写字节码，不放宽包装规则。不设置 PYTHONDONTWRITEBYTECODE 的完整 unittest + check-repo 本地复测通过。
 
 ## 发行验证与限制
 
