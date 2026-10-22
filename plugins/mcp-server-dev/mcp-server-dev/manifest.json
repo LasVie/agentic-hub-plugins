@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "id": "mcp-server-dev",
+  "name": "mcp-server-dev",
+  "description": "MCP Builder 配套开发工具：接入路径选择、MCP App 示例及 MCPB 打包指导。",
+  "skills": [
+    {"dir": "skills/mcp-dev-route", "mode": "all"},
+    {"dir": "skills/build-mcp-app", "mode": "all"},
+    {"dir": "skills/build-mcpb", "mode": "all"}
+  ]
+}

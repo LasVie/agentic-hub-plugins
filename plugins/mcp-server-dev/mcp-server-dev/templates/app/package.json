@@ -1,0 +1,7 @@
+{
+  "name": "__PROJECT_NAME__", "version": "0.1.0", "private": true, "type": "module",
+  "engines": {"node": ">=20"},
+  "scripts": {"build": "node build.mjs"},
+  "dependencies": {"@modelcontextprotocol/sdk": "1.32.1", "@modelcontextprotocol/ext-apps": "1.7.5", "zod": "4.6.7"},
+  "devDependencies": {"esbuild": "0.28.1"}
+}
