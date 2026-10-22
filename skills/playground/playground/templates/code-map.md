@@ -1,81 +1,68 @@
-# Code Map Template
+# 代码结构图模板
 
-Use this template when the playground is about visualizing codebase architecture: component relationships, data flow, layer diagrams, system architecture with interactive commenting for feedback.
+> 修改说明：2026-10-22，由 Anthropic Playground 原模板翻译并适配为简体中文；保留技术标识、来源和 Apache-2.0 许可。所有界面标签、提示词、帮助和复制状态默认中文；源材料按原值显示。来源见 ../THIRD_PARTY_NOTICES.md，完整许可见 ../licenses/claude-plugins-official/LICENSE。
 
-## Layout
+当探索页用于可视化代码库架构、组件关系、数据流、分层或系统架构，并允许通过评论提供反馈时，使用本模板。
 
-```
-+-------------------+----------------------------------+
-|                   |                                  |
-|  Controls:        |  SVG Canvas                      |
-|  • View presets   |  (nodes + connections)           |
-|  • Layer toggles  |  with zoom controls              |
-|  • Connection     |                                  |
-|    type filters   |  Legend (bottom-left)            |
-|                   |                                  |
-|  Comments (n):    +----------------------------------+
-|  • List of user   |  Prompt output                   |
-|    comments with  |  [ Copy Prompt ]                 |
-|    delete buttons |                                  |
-+-------------------+----------------------------------+
-```
+## 布局
 
-Code map playgrounds use an SVG canvas for the architecture diagram. Users click components to add comments, which become part of the generated prompt. Layer and connection filters let users focus on specific parts of the system.
+左侧包含视图预设、层级开关、带颜色的关系类型筛选，以及评论列表和删除按钮。右侧上方使用 SVG 画布显示节点与连线，附缩放控件，左下角放图例；下方显示提示词及“复制提示词”按钮。窄屏下按内容顺序堆叠。
 
-## Control types for code maps
+用户点击组件添加评论，评论进入生成的提示词。层级及关系筛选帮助聚焦系统局部，不应删除已保存评论。
 
-| Decision | Control | Example |
-|---|---|---|
-| System view | Preset buttons | Full System, Chat Flow, Data Flow, Agent System |
-| Visible layers | Checkboxes | Client, Server, SDK, Data, External |
-| Connection types | Checkboxes with color indicators | Data Flow (blue), Tool Calls (green), Events (red) |
-| Component feedback | Click-to-comment modal | Opens modal with textarea for feedback |
-| Zoom level | +/−/reset buttons | Scale SVG for detail |
+## 代码图控件
 
-## Canvas rendering
+| 取舍 | 控件 | 示例 |
+| --- | --- | --- |
+| 系统视图 | 预设按钮 | 完整系统、对话流程、数据流、智能体系统 |
+| 可见层级 | 复选框 | 客户端、服务端、SDK、数据、外部依赖 |
+| 关系类型 | 带颜色提示的复选框 | 数据流（蓝）、工具调用（绿）、事件（红） |
+| 组件反馈 | 点击评论对话框 | 显示反馈输入框 |
+| 缩放 | 放大/缩小/重置按钮 | 缩放 SVG 以查看细节 |
 
-Use an `<svg>` element with dynamically generated nodes and paths. Key patterns:
+## 画布渲染
 
-- **Nodes:** Rounded rectangles with title and subtitle (file path)
-- **Connections:** Curved paths (bezier) with arrow markers, styled by type
-- **Layer organization:** Group nodes by Y-position bands (e.g., y: 30-80 = Client, y: 130-180 = Server)
-- **Click-to-comment:** Click node → open modal → save comment → node gets visual indicator
-- **Filtering:** Toggle visibility of nodes by layer, connections by type
+使用 `<svg>` 动态创建节点与路径：
+
+- 节点：圆角矩形、中文标题及作为副标题的真实文件路径。
+- 关系：带箭头的贝塞尔曲线，按类型设置样式。
+- 分层：按纵向分带排列，例如 `y: 30–80` 为客户端，`y: 130–180` 为服务端。
+- 点击评论：点击节点 → 打开对话框 → 保存 → 显示节点标记。
+- 筛选：按层级显示节点，按关系类型显示连线；仅渲染两端均可见的连线。
 
 ```javascript
 const nodes = [
-  { id: 'api-client', label: 'API Client', subtitle: 'src/api/client.ts',
+  { id: 'api-client', label: 'API 客户端', subtitle: 'src/api/client.ts',
     x: 100, y: 50, w: 140, h: 45, layer: 'client', color: '#dbeafe' },
-  // ...
 ];
-
 const connections = [
   { from: 'api-client', to: 'server', type: 'data-flow', label: 'HTTP' },
   { from: 'server', to: 'db', type: 'data-flow' },
-  // ...
 ];
-
 function renderDiagram() {
   const visibleNodes = nodes.filter(n => state.layers[n.layer]);
-  // Draw connections first (under nodes), then nodes
-  connections.forEach(c => drawConnection(c));
-  visibleNodes.forEach(n => drawNode(n));
+  const visibleIds = new Set(visibleNodes.map(n => n.id));
+  // 先画可见节点之间的连线，再画节点
+  connections.filter(c => visibleIds.has(c.from) && visibleIds.has(c.to)).forEach(drawConnection);
+  visibleNodes.forEach(drawNode);
 }
 ```
 
-## Connection types and styling
+通过 `createElementNS` 创建 SVG 元素；标题、路径与评论用 `textContent` 设置，不将不可信文本直接拼接到 `innerHTML`。
 
-Define 3-5 connection types with distinct visual styles:
+## 关系类型与样式
 
-| Type | Color | Style | Use for |
-|---|---|---|---|
-| `data-flow` | Blue (#3b82f6) | Solid line | Request/response, data passing |
-| `tool-call` | Green (#10b981) | Dashed (6,3) | Function calls, API invocations |
-| `event` | Red (#ef4444) | Short dash (4,4) | Async events, pub/sub |
-| `skill-invoke` | Orange (#f97316) | Long dash (8,4) | Plugin/skill activation |
-| `dependency` | Gray (#6b7280) | Dotted | Import/require relationships |
+定义 3–5 种容易区分的关系；技术类型值保持不变，可见标签使用中文：
 
-Use SVG markers for arrowheads:
+| 类型值 | 中文标签/颜色 | 样式 | 用途 |
+| --- | --- | --- | --- |
+| `data-flow` | 数据流，蓝 `#3b82f6` | 实线 | 请求/响应、数据传递 |
+| `tool-call` | 工具调用，绿 `#10b981` | 虚线 `6,3` | 函数或 API 调用 |
+| `event` | 事件，红 `#ef4444` | 短虚线 `4,4` | 异步事件、发布/订阅 |
+| `skill-invoke` | Skill 调用，橙 `#f97316` | 长虚线 `8,4` | 插件/Skill 激活 |
+| `dependency` | 依赖，灰 `#6b7280` | 点线 | `import` / `require` 关系 |
+
+使用 SVG marker 画箭头：
 
 ```html
 <marker id="arrowhead-blue" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
@@ -83,16 +70,14 @@ Use SVG markers for arrowheads:
 </marker>
 ```
 
-## Comment system
+## 评论系统
 
-The key differentiator for code maps is click-to-comment functionality:
+1. 点击节点，打开包含组件名、路径和输入框的对话框。
+2. 保存评论，将其加入列表，并用有颜色的边框标记节点。
+3. 侧栏列出组件名、评论预览及删除按钮。
+4. 删除评论时同步更新节点标记和提示词。
 
-1. **Click node** → Open modal with component name, file path, textarea
-2. **Save comment** → Add to comments list, mark node with visual indicator (colored border)
-3. **View comments** → Sidebar list with component name, comment preview, delete button
-4. **Delete comment** → Remove from list, update node visual, regenerate prompt
-
-Comments should include the component context:
+记录完整组件背景：
 
 ```javascript
 state.comments.push({
@@ -104,55 +89,52 @@ state.comments.push({
 });
 ```
 
-## Prompt output for code maps
+对话框需要关联标签、可见焦点、键盘关闭、关闭后返回触发节点；节点提供键盘入口。评论不得因切换视图或筛选而丢失。
 
-The prompt combines system context with user comments:
+## 代码图提示词
 
+将真实系统背景与用户评论组合：
+
+```text
+这是[项目名称]的架构，本次聚焦[可见层级]。
+
+对具体组件的反馈：
+
+**API 客户端**（src/api/client.ts）：
+我想在这里加入带指数退避的重试逻辑。
+
+**数据库管理器**（src/db/manager.ts）：
+能否加入连接池？当前实现每次请求都创建连接。
+
+**认证中间件**（src/middleware/auth.ts）：
+这里应校验 JWT 并提取用户上下文。
 ```
-This is the [PROJECT NAME] architecture, focusing on the [visible layers].
 
-Feedback on specific components:
+只包含用户实际添加的评论；未显示完整系统时说明可见层级。示例不是对真实项目的事实判断。页面仅生成让用户复制回会话的指令，不自行修改文件或发送消息。
 
-**API Client** (src/api/client.ts):
-I want to add retry logic with exponential backoff here.
+## 预填真实资料
 
-**Database Manager** (src/db/manager.ts):
-Can we add connection pooling? Current implementation creates new connections per request.
+先阅读具体代码库，再填入 15–25 个附真实路径的关键组件，以及依据真实导入/调用确定的 20–40 条关系。按界面、API、业务逻辑、数据、外部依赖分组，以水平带和一致间距排列。提供“完整系统”“仅前端”“仅后端”“数据流”等 3–5 个适用预设；资料不足时明确说明。
 
-**Auth Middleware** (src/middleware/auth.ts):
-This should validate JWT tokens and extract user context.
-```
+## 分层配色（浅色节点）
 
-Only include comments the user added. Mention which layers are visible if not showing the full system.
+| 层级 | 填充色 | 内容 |
+| --- | --- | --- |
+| 客户端/界面 | `#dbeafe` | React 组件、hooks、页面 |
+| 服务端/API | `#fef3c7` | Express 路由、中间件、处理器 |
+| SDK/核心 | `#f3e8ff` | 核心库、SDK 封装 |
+| 智能体/逻辑 | `#dcfce7` | 业务逻辑、智能体、处理器 |
+| 数据 | `#fce7f3` | 数据库、缓存、存储 |
+| 外部 | `#fbcfe8` | 第三方服务、API |
 
-## Pre-populating with real data
+## 示例主题
 
-For a specific codebase, pre-populate with:
+- 代码库架构探索：模块、导入、数据流。
+- 微服务：服务、队列、数据库、API 网关。
+- React 组件树：组件、hooks、context、state。
+- API 架构：路由、中间件、控制器、模型。
+- 智能体系统：提示词、工具、Skill、子智能体。
+- 数据管道：来源、转换、去向、调度。
+- 插件/扩展架构：核心、插件、hooks、事件。
 
-- **Nodes:** 15-25 key components with real file paths
-- **Connections:** 20-40 relationships based on actual imports/calls
-- **Layers:** Logical groupings (UI, API, Business Logic, Data, External)
-- **Presets:** "Full System", "Frontend Only", "Backend Only", "Data Flow"
-
-Organize nodes in horizontal bands by layer, with consistent spacing.
-
-## Layer color palette (light theme)
-
-| Layer | Node fill | Description |
-|---|---|---|
-| Client/UI | #dbeafe (blue-100) | React components, hooks, pages |
-| Server/API | #fef3c7 (amber-100) | Express routes, middleware, handlers |
-| SDK/Core | #f3e8ff (purple-100) | Core libraries, SDK wrappers |
-| Agent/Logic | #dcfce7 (green-100) | Business logic, agents, processors |
-| Data | #fce7f3 (pink-100) | Database, cache, storage |
-| External | #fbcfe8 (pink-200) | Third-party services, APIs |
-
-## Example topics
-
-- Codebase architecture explorer (modules, imports, data flow)
-- Microservices map (services, queues, databases, API gateways)
-- React component tree (components, hooks, context, state)
-- API architecture (routes, middleware, controllers, models)
-- Agent system (prompts, tools, skills, subagents)
-- Data pipeline (sources, transforms, sinks, scheduling)
-- Plugin/extension architecture (core, plugins, hooks, events)
+默认使用中文标签与提示词，资源全部内联。复制成功才显示“已复制”；失败时说明失败并提供可选择的文本手动复制。

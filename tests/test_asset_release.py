@@ -60,6 +60,48 @@ class PackagingContractTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "missing"):
             release.check_asset(asset)
 
+    def test_native_plugin_tags_reject_strings_and_incomplete_localization(self):
+        asset = self.fixture("plugin")
+        path = asset / "example-plugin/manifest.json"
+        manifest = release.read_json(path)
+        for tags in (["编程教学"], [{"zh": "编程教学"}], [{"zh": "编程教学", "en": " "}],
+                     [{"zh": 123, "en": "Teaching"}], None, {"zh": "编程教学", "en": "Teaching"}):
+            with self.subTest(tags=tags):
+                manifest["tags"] = tags
+                path.write_text(json.dumps(manifest, ensure_ascii=False), encoding="utf-8")
+                with self.assertRaisesRegex(ValueError, "manifest.tags"):
+                    release.check_asset(asset)
+
+    def test_localized_native_plugin_tags_preserve_outer_string_tags(self):
+        asset = self.fixture("plugin")
+        metadata_path = asset / "asset.json"
+        metadata = release.read_json(metadata_path)
+        metadata["tags"] = ["开发测试"]
+        metadata_path.write_text(json.dumps(metadata, ensure_ascii=False), encoding="utf-8")
+        path = asset / "example-plugin/manifest.json"
+        manifest = release.read_json(path)
+        manifest["tags"] = [{"zh": "编程教学", "en": "Programming education"}]
+        path.write_text(json.dumps(manifest, ensure_ascii=False), encoding="utf-8")
+        archive = release.pack(asset, self.base / "out")
+        wrapper, _ = release.inspect_zip(archive.read_bytes())
+        self.assertEqual(wrapper["metadata"]["tags"], release.read_json(asset / "asset.json")["tags"])
+        self.assertTrue(all(isinstance(tag, str) for tag in wrapper["metadata"]["tags"]))
+        with zipfile.ZipFile(archive) as z:
+            self.assertEqual(json.loads(z.read("example-plugin/example-plugin/manifest.json"))["tags"], manifest["tags"])
+
+    def test_historical_archive_inspection_retains_string_tag_compatibility(self):
+        asset = self.fixture("plugin")
+        manifest_path = asset / "example-plugin/manifest.json"
+        manifest = release.read_json(manifest_path)
+        manifest["tags"] = ["historical-tag"]
+        manifest_path.write_text(json.dumps(manifest))
+        # Existing ZIPs retain their recorded bytes; only current source checks
+        # enforce the native frontend's localized-tag contract before packaging.
+        body, _ = release.build_bytes(release.read_json(asset / "asset.json"), manifest_path.parent)
+        wrapper, payload = release.inspect_zip(body)
+        self.assertEqual(wrapper["name"], "example-plugin")
+        self.assertIn("manifest.json", payload)
+
     def test_declared_traversal_rejected(self):
         asset = self.fixture("plugin")
         f = asset / "example-plugin/manifest.json"

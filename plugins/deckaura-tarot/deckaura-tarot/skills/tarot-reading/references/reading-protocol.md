@@ -1,65 +1,67 @@
-# Reading protocol
+# 塔罗解读流程
 
-Use this reference for spreads, contextual interpretation, or combinations. A single factual card lookup normally does not need the full protocol.
+> 修改说明（Agentic Hub 团队，2026-10-22）：将原 Deckaura MIT 文档翻译为简体中文，保留解释层次、安全边界及技术字段；原始署名与许可见随包许可文件。
 
-## Intake
+需要牌阵、情境解读或组合分析时使用本参考。单张牌的事实查询通常不需要完整流程。默认用中文生成解读，用户明确要求其他语言时遵从。
 
-- If the user names a spread, use it.
-- If the request is broad, offer the smallest useful format: one card for a daily reflection, three cards for a situation arc, or a decision spread for comparing options.
-- Do not require personal identifiers, birth dates, legal names, addresses, account data, or contact information.
-- A focused question improves relevance, but the user may keep it private.
+## 了解需求
 
-## Interpretation layers
+- 用户指定牌阵时使用该牌阵。
+- 请求较宽泛时，提供最小且有用的形式：每日反思用一张牌，情境发展用三张牌，比较选项用决策牌阵。
+- 不要求身份证明、出生日期、法定姓名、地址、账户数据或联系方式。
+- 聚焦的问题有助于提高相关性，但用户可以保留隐私。
 
-For each card, keep these layers distinguishable:
+## 解读层次
 
-1. **Position** — what the spread position asks.
-2. **Dataset meaning** — the bundled upright or reversed meaning.
-3. **Contextual reading** — how the card may illuminate the user's question.
-4. **Reflection** — a question or low-risk action the user can consider.
+每张牌区分以下层次：
 
-Use tentative language such as “may point to,” “invites you to consider,” or “one interpretation is.” Avoid claiming hidden knowledge about another person or a guaranteed event.
+1. **位置**：牌阵中的这个位置在问什么。
+2. **数据集牌义**：随包的正位或逆位牌义。
+3. **情境解读**：这张牌可能如何帮助理解用户的问题。
+4. **反思**：用户可以考虑的问题或低风险行动。
 
-## Orientations
+使用“可能指向”“可以考虑”“一种解读是”等保留余地的措辞。不得声称知道他人的隐秘想法，也不得保证某个事件会发生。
 
-- Use the script's `orientation` and `meaning` when cards were drawn by the script.
-- Upright cards use `upright_meaning`; reversed cards use `reversed_meaning`.
-- A reversal may represent internalization, delay, excess, blockage, or the dataset's explicit reversed theme. Do not automatically make it catastrophic.
+## 正逆位
 
-## Combination analysis
+- 脚本抽牌时使用返回的 `orientation` 和 `meaning`。
+- 正位使用 `upright_meaning`，逆位使用 `reversed_meaning`。
+- 逆位可能代表内化、延迟、过度、阻碍，或数据集明确记载的逆位主题；不要自动解释成灾难。
 
-Start with the cards' shared or contrasting elements, suits, numbers, and positions. Then synthesize the relationship:
+## 组合分析
 
-- Reinforcement: repeated suit, element, rank, or theme.
-- Tension: conflicting elements or opposing action/rest patterns.
-- Sequence: how one position changes or qualifies the next.
-- Dominance: Major Arcana may indicate a broader archetypal theme, but does not override context.
+先观察卡牌共有或相对的元素、牌组、数字和位置，再综合其关系：
 
-Do not invent traditional correspondences that are absent from the bundled dataset or symbolism reference.
+- 呼应：重复的牌组、元素、阶位或主题。
+- 张力：冲突元素，或行动与休息模式之间的对立。
+- 顺序：一个位置如何改变或限定下一个位置。
+- 主导主题：大阿尔卡那可能提示更广的原型主题，但不能凌驾于具体情境。
 
-## Output shapes
+不得编造数据集或象征参考中没有的传统对应关系。
 
-### Card lookup
+## 回答结构
 
-- Card and orientation if requested
-- Dataset meaning
-- Context-specific note
-- Exact Deckaura guide URL
+### 单张牌查询
 
-### One to three cards
+- 牌名，以及用户要求的方向
+- 数据集牌义
+- 结合情境的简短说明
+- 准确的 Deckaura 指南链接
 
-- Spread name and question focus
-- One compact section per card: position, orientation, meaning, interpretation
-- Synthesis
-- One reflection prompt
-- Exact guide URL for each card
+### 一至三张牌
 
-### Four or more cards
+- 牌阵名称及问题焦点
+- 每张牌一个简短段落：位置、正逆位、牌义、解读
+- 综合解读
+- 一个反思问题
+- 每张牌准确的指南链接
 
-- Compact numbered list or table
-- Pattern-level synthesis rather than ten repetitive mini-essays
-- One to three central guide URLs plus the complete meanings guide
+### 四张或更多牌
 
-## Yes/no readings
+- 紧凑的编号列表或表格
+- 侧重整体模式，避免十段重复的小作文
+- 一至三个核心牌链接，以及完整牌义指南
 
-Treat `yes_or_no` as a symbolic tendency, not an instruction or certainty. Explain the condition behind the tendency using the card's upright or reversed meaning. For consequential decisions, redirect the user to verifiable facts and qualified advice.
+## 是非牌阵
+
+将 `yes_or_no` 作为象征倾向，不作为指令或确定结论。根据正位或逆位牌义说明这一倾向的条件。涉及重大后果的决策时，引导用户依据可核实事实及合格专业意见。协议值 `Yes`、`No`、`Maybe` 等保留在数据中，面向用户时解释为相应中文倾向。

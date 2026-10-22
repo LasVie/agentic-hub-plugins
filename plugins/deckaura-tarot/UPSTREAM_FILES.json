@@ -6,56 +6,70 @@
       "payload_path": "skills/tarot-reading/SKILL.md",
       "upstream_sha256": "06771af1e220523d71e3b1e87f0d4c42298dc11790913ddaf91ab819e9853902",
       "license": "MIT",
-      "modified": true
+      "modified": true,
+      "payload_sha256": "25ae0492b4c6e54d92a7452992f097ff1dbbe69a042fa3eaa7e37558691280b7"
     },
     {
       "upstream_path": "skills/tarot-reading/assets/deck.json",
       "payload_path": "skills/tarot-reading/assets/deck.json",
       "upstream_sha256": "4b47fc22b3220a23a5d9ac06065698315de338a2265fe5491f6fdaa0f0c447c9",
       "license": "MIT",
-      "modified": false
+      "modified": true,
+      "payload_sha256": "43ba47133d04091e31fb220aec7bcd858cf87a0f86a9496a104b5fc20ab95840"
     },
     {
       "upstream_path": "skills/tarot-reading/references/data-provenance.md",
       "payload_path": "skills/tarot-reading/references/data-provenance.md",
       "upstream_sha256": "1350e105a91009a7003341e4b0aee14ca66df84c7ebf92e933a289e5b3bb48e0",
       "license": "MIT",
-      "modified": false
+      "modified": true,
+      "payload_sha256": "8b6456b7bd3ac16a2412f1e9e362ef3f7ad86412e9fb056f44dfd35ccb1b9c31"
     },
     {
       "upstream_path": "skills/tarot-reading/references/reading-protocol.md",
       "payload_path": "skills/tarot-reading/references/reading-protocol.md",
       "upstream_sha256": "7e688ee3a61a6c740cc0f65a82a342d7e112d30f515af0e1805298764ccafd06",
       "license": "MIT",
-      "modified": false
+      "modified": true,
+      "payload_sha256": "5f019ef5a6493841c4d3a45088e22cc4f57e113908ef32bf8f4d780030a8aa0b"
     },
     {
       "upstream_path": "skills/tarot-reading/references/safety-and-quality.md",
       "payload_path": "skills/tarot-reading/references/safety-and-quality.md",
       "upstream_sha256": "87fcd06c0f2476a25d341844ad84fa3a9357a1fd9b166ca08c3dedbf183b4818",
       "license": "MIT",
-      "modified": false
+      "modified": true,
+      "payload_sha256": "e1b18e0e1f7753f1882e6d9e459a19686bcaec0662711c9b4f4bd7d629c2cfdd"
     },
     {
       "upstream_path": "skills/tarot-reading/references/spreads.md",
       "payload_path": "skills/tarot-reading/references/spreads.md",
       "upstream_sha256": "4080dccccc94088e0827ca89c64ef963025dd8bdbeab7f37dd693b82a9713dc3",
       "license": "MIT",
-      "modified": false
+      "modified": true,
+      "payload_sha256": "50882fa5b95cc0016af73d5713496de9f4c77856ad9eeaa4955a640498cbbbfc"
     },
     {
       "upstream_path": "skills/tarot-reading/references/symbolism.md",
       "payload_path": "skills/tarot-reading/references/symbolism.md",
       "upstream_sha256": "7207fa1d6ffc118919777728267dcd811acc3c593a43784d17eda28e31366b6a",
       "license": "MIT",
-      "modified": false
+      "modified": true,
+      "payload_sha256": "adf298d74b83c6bf08908a4b4b08c032730ea9a3a04e7947e7542272867243ac"
     },
     {
       "upstream_path": "skills/tarot-reading/scripts/tarot.mjs",
       "payload_path": "skills/tarot-reading/scripts/tarot.mjs",
       "upstream_sha256": "2f9f0ee3e7a96e2801a4987f5219a164ed80da079d7dd476c21baf11731d4113",
       "license": "MIT",
-      "modified": false
+      "modified": true,
+      "payload_sha256": "9feb2daa59bed95c822a2aaed380bca10575c1706879cbd1053174631a875570"
     }
-  ]
+  ],
+  "localization_audit": {
+    "date": "2026-10-22",
+    "scope": "Simplified Chinese Skill/reference instructions, 312 prose meaning fields, CLI positions/help/errors. Upstream hashes remain the pinned original bytes; payload hashes identify the translated files. Dataset schema, stable identifiers and selection algorithms remain unchanged.",
+    "source_review": "SOURCE_REVIEW.md",
+    "regression_evidence": "RUNTIME_CHINESE_AUDIT.json"
+  }
 }

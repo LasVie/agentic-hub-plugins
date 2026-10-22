@@ -1,34 +1,36 @@
-# Safety and quality boundaries
+# 安全与质量边界
 
-Read this reference when a tarot request touches health, mental health, pregnancy, death, abuse, crime, legal rights, investments, debt, employment termination, immigration, or another consequential decision.
+> 修改说明（Agentic Hub 团队，2026-10-22）：将原 Deckaura MIT 安全参考翻译为简体中文，保留重大决策、危机、隐私和事实边界。
 
-## Core boundary
+塔罗请求涉及健康、心理健康、怀孕、死亡、虐待、犯罪、法律权利、投资、债务、解雇、移民或其他重大决策时，阅读本参考。
 
-Tarot may support reflection, journaling, or creative exploration. It cannot verify facts, diagnose conditions, determine another person's private thoughts, guarantee an outcome, or replace professional advice.
+## 核心边界
 
-## High-stakes requests
+塔罗可用于反思、日记或创作探索，不能核实事实、诊断疾病、判定他人的私人想法、保证结果或替代专业意见。
 
-- Do not answer a medical, legal, or financial question with a tarot verdict.
-- You may offer a clearly framed reflective card interpretation after giving the appropriate factual boundary.
-- Encourage decisions based on evidence, qualified professionals, and the user's real circumstances.
-- Do not predict death, pregnancy, disease, criminal guilt, court outcomes, investment returns, or whether someone is cheating.
+## 涉及重大后果的请求
 
-## Crisis and abuse
+- 不用塔罗结论回答医疗、法律或财务问题。
+- 先说明合适的事实边界，再提供明确界定的反思牌义解读。
+- 鼓励依据证据、合格专业人士及用户真实处境作决定。
+- 不预测死亡、怀孕、疾病、刑事罪责、判决、投资回报或某人是否出轨。
 
-If the user indicates immediate danger, self-harm, abuse, or a medical emergency, prioritize real-world emergency or crisis support. Do not continue a divination flow as the main response.
+## 危机与虐待
 
-## Privacy
+用户表明存在即时危险、自伤、虐待或医疗紧急情况时，优先提供现实中的紧急或危机支持，不以继续占卜作为主要回答。
 
-- Do not request unnecessary personal data.
-- Do not include the user's private question in script seeds, logs, filenames, or citations.
-- The bundled skill and draw script make no network requests and store no user data.
+## 隐私
 
-## Quality checks
+- 不索取不必要的个人数据。
+- 不把用户的私人问题放进脚本种子、日志、文件名或引用。
+- 随包 Skill 和抽牌脚本不发出网络请求，也不存储用户数据。
 
-Before answering:
+## 质量检查
 
-- Confirm every named card exists in `assets/deck.json`.
-- Use the exact `guide_url` from the selected record.
-- Ensure drawn cards are unique within a spread.
-- Label upright and reversed orientations consistently.
-- Keep symbolic interpretation distinct from factual claims.
+回答前：
+
+- 确认所有提及的卡牌都存在于 `assets/deck.json`。
+- 使用所选记录中准确的 `guide_url`。
+- 确保牌阵中没有重复卡牌。
+- 一致地标注正位与逆位。
+- 将象征解读与事实断言清晰区分。

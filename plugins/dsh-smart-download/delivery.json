@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:dsh-smart-download",
+  "task_id": "AH-20261022-dsh-smart-download",
+  "candidate_id": "CAND-DSH-139",
+  "owner": "Siu Lok Yin",
+  "version": "1.0.1",
+  "status": "Awaiting Acceptance",
+  "marketplace_sha256": "c5d95dece5001b57cdfd26c0bfab04101c95f3d827c3c8640a077868bcbd3074",
+  "native_test_sha256": "09703b3ebf26336c45920e254d065e29681843e2c19686fb33120d467ddba52c",
+  "current_version_user_test_confirmation": null,
+  "delegated_ai_test_confirmation": {
+    "authority": "The human user in the current conversation explicitly asked the agent to complete import and prompt testing in the locally opened WorkSwarm, retain screenshots and update existing content through a PR if successful, while preserving responsible names.",
+    "authority_source": "Direct human instruction in the current conversation on 2026-10-22; no message URL is available.",
+    "recorded_at": "2026-10-22T17:45:33.292262+08:00",
+    "performed_by": "AI agent operating the user-open local WorkSwarm desktop UI",
+    "human_performed_testing": false,
+    "explicit_user_delegation": true,
+    "conditional_pr_on_success_authorized": true,
+    "host": "Actual local WorkSwarm desktop app (parent-operated UI on 127.0.0.1:5173; no alternate development host used)",
+    "task_id": "AH-20261022-dsh-smart-download",
+    "candidate_id": "CAND-DSH-139",
+    "owner": "Siu Lok Yin",
+    "version": "1.0.1",
+    "marketplace_sha256": "c5d95dece5001b57cdfd26c0bfab04101c95f3d827c3c8640a077868bcbd3074",
+    "native_test_sha256": "09703b3ebf26336c45920e254d065e29681843e2c19686fb33120d467ddba52c",
+    "session_id": "web_1a162fb4927_ffd2d41deec4",
+    "result": "Passed for the documented actual import/prompt/guard scope",
+    "actual_cases": [
+      {
+        "flow": "Actual desktop import",
+        "result": "Passed",
+        "observed": "Imported native 1.0.1 in the user-open WorkSwarm desktop app; all six installed runtime files independently match final source, extracted native directory and both ZIP payloads."
+      },
+      {
+        "flow": "Verified local HTTP download and status",
+        "result": "Passed",
+        "observed": "Real smart_download returned completed, verified=true, 89 bytes and SHA-256 15db81e9410d16cb0d5efd7bc2473a4925bbde0bad56964f70631f17d90d79b5; real download_status returned the matching record.",
+        "task_id": "948d2a9eaa6f497c95780524b6324362"
+      },
+      {
+        "flow": "Existing destination guard",
+        "result": "Passed",
+        "observed": "Repeating the destination returned OUTPUT_EXISTS with a Chinese message; independent final bytes still match the fixture.",
+        "task_id": "47aa20a2104a4cf28c132f261ab16c73"
+      },
+      {
+        "flow": "Default private-network guard",
+        "result": "Passed",
+        "observed": "Without allow_private_network, loopback returned DOWNLOAD_FAILED with a Chinese message; target and partial output do not exist.",
+        "task_id": "06a01e69908c4a73b0e1c15b796725cf"
+      }
+    ],
+    "remaining_limits": [
+      "Delegated AI-operated actual desktop/UI/model tests; not a statement that the human performed these tests or personally confirmed the final hash.",
+      "The 89-byte desktop fixture used one worker and resumed=false; this desktop run did not exercise acceleration or interrupted-transfer resume. Actual-SDK automated integration separately exercised 4 workers, ignored-range fallback and forced interruption/resume.",
+      "Public internet downloads and different server behavior remain subject to network policy; no fixed speed increase, cloud-drive management or downloaded-file execution is claimed.",
+      "Original screenshots are retained locally and await actual attachment to PR #23 with verified comment permalinks. No screenshot permalink is invented.",
+      "No current-version merge, Hub submission/publication, Asset Ledger update or final Project Lead acceptance is claimed."
+    ],
+    "installed_payload_verification": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/dsh-smart-download/installed-payload-verification.json",
+    "actual_tool_evidence": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/dsh-smart-download/actual-host-tool-evidence.json",
+    "delivery_pr": "https://github.com/LasVie/agentic-hub-plugins/pull/23",
+    "final_project_lead_acceptance": "Not supplied",
+    "confirmation_boundary": "Delegated AI operation and conditional PR authority are faithfully recorded; current_version_user_test_confirmation remains null. Historical 1.0.0 human confirmation is not reused for 1.0.1."
+  },
+  "delivery_pr": "https://github.com/LasVie/agentic-hub-plugins/pull/23",
+  "merged_commit": null,
+  "hub_id": null,
+  "hub_status": "Current Chinese version not submitted",
+  "project_lead_acceptance": "Pending Acceptance",
+  "delivery_state": "PR #23 open; final Chinese package and actual delegated host tests passed; original screenshot attachments verified byte-for-byte. Not merged, not submitted to Hub and not finally accepted.",
+  "repository_base_commit": "089b6ee584041e61c54c25fe9a60456360a89a05",
+  "repository_instructions_blob_sha": "77f1082183ed59b3f60271106c06db2d08e445ad",
+  "historical_deliveries": [
+    {
+      "version": "1.0.0",
+      "marketplace_sha256": "77873887154682d3419ed68d95e3d0269aa21ec27237735882b07c794ba2aa0d",
+      "native_test_sha256": "80090178347eb748b0df06c5288e71208cb3fe6b753f636711ef629393239b69",
+      "source_commit": "49acfa795cb6964f06a16cd30594efb7055272d0",
+      "confirmation_file": "USER_TEST_CONFIRMATION.md",
+      "note": "Historical main-branch delivery and human confirmation remain intact; they do not establish confirmation of version 1.0.1."
+    }
+  ],
+  "local_test_evidence": [
+    {
+      "path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/dsh-smart-download/import-list.png",
+      "name": "import-list.png",
+      "actual_format": "JPEG",
+      "extension_kept": ".png",
+      "width": 3600,
+      "height": 2260,
+      "sha256": "de3e35105475b173c4cc86d3a57a3bc22f7469ac84225a1b355c6a41b728f083",
+      "bytes": 238649,
+      "note": "Original full-resolution bytes retained; no conversion or recompression."
+    },
+    {
+      "path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/dsh-smart-download/prompt-result.png",
+      "name": "prompt-result.png",
+      "actual_format": "JPEG",
+      "extension_kept": ".png",
+      "width": 3600,
+      "height": 2260,
+      "sha256": "306189c111e6a1eadd03017c14a4c7b1fb19a7ceb70e5bf00404f82956ea349c",
+      "bytes": 624317,
+      "note": "Original full-resolution bytes retained; no conversion or recompression."
+    }
+  ],
+  "test_evidence_pr_permalinks": [
+    "https://github.com/LasVie/agentic-hub-plugins/pull/23#issuecomment-6337787088"
+  ],
+  "repository_policy_sync": {
+    "recorded_at": "2026-10-22T17:45:33.292262+08:00",
+    "latest_reviewed_main_commit": "089b6ee584041e61c54c25fe9a60456360a89a05",
+    "latest_agents_blob_sha": "77f1082183ed59b3f60271106c06db2d08e445ad",
+    "reviewed_by": "Coordinating parent agent and this agent, which read the complete current worktree AGENTS.md including the changed contributor/ledger sections.",
+    "asset_ledger_rule": "Leave Asset Ledger unchanged until verifiable successful Agentic Hub submission; GitHub-only preparation or merge is insufficient.",
+    "asset_ledger_action_this_update": "None"
+  },
+  "current_test_evidence": {
+    "original_screenshot_comment": "https://github.com/LasVie/agentic-hub-plugins/pull/23#issuecomment-6337787088",
+    "images": [
+      {
+        "file": "import-list.png",
+        "url": "https://github.com/user-attachments/assets/6b3eb225-d6a0-4d9c-b74a-3cb12dceff0a",
+        "bytes": 238649,
+        "sha256": "de3e35105475b173c4cc86d3a57a3bc22f7469ac84225a1b355c6a41b728f083",
+        "remote_bytes_identical": true,
+        "actual_media_type": "image/jpeg"
+      },
+      {
+        "file": "prompt-result.png",
+        "url": "https://github.com/user-attachments/assets/f19e65d8-2d53-4f48-9783-a8fa7642088a",
+        "bytes": 624317,
+        "sha256": "306189c111e6a1eadd03017c14a4c7b1fb19a7ceb70e5bf00404f82956ea349c",
+        "remote_bytes_identical": true,
+        "actual_media_type": "image/jpeg"
+      }
+    ],
+    "remote_original_bytes_verified": true,
+    "operation_authority": "User expressly delegated assistant-operated WorkSwarm import/prompt tests and PR on success; no human-performed test or final acceptance is claimed."
+  }
+}

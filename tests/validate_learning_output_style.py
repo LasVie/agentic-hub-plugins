@@ -30,17 +30,24 @@ def validate(payload: Path) -> list[str]:
     text = prompt_path.read_text(encoding="utf-8")
     assert spec.prompt_sections[0].content == {"cn": text, "en": text}
     assert spec.prompt_sections[0].priority == 100
-    original = text.split("-->\n\n", 1)[1].encode()
+    translated = text.split("-->\n\n", 1)[1].encode()
     source = json.loads((payload / "SOURCE.json").read_text())
-    assert hashlib.sha256(original).hexdigest() == source["prompt_sha256"]
+    assert hashlib.sha256(translated).hexdigest() == source["prompt_sha256"]
     assert digest(prompt_path) == source["packaged_prompt_sha256"]
-    assert "5-10 lines" in text and "★ Insight" in text
-    assert "TODO" in text and "Don't request contributions" in text
-    checks.append("Active prompt resolves at priority 100 and preserves every original teaching-text byte")
+    assert source["upstream_prompt_sha256"] == "8dddba09dd52aeccf094bc37024f73199d7a50a57c4527718cd5784029586e13"
+    assert source["prompt_sha256"] != source["upstream_prompt_sha256"]
+    assert source["prompt_language"] == "zh-CN"
+    assert "5–10 行" in text and "★ 实现要点" in text
+    assert "TODO" in text and "以下情况不要请求用户贡献" in text
+    assert "等待用户贡献" in text and "跳过练习" in text
+    checks.append("Active Chinese prompt resolves at priority 100 with distinct verified translation and original-source hashes")
 
     skill = Path(spec.skills[0].dir)
     assert skill.is_relative_to(payload.resolve())
     assert (skill / "SKILL.md").is_file()
+    skill_text = (skill / "SKILL.md").read_text(encoding="utf-8")
+    assert "等待用户贡献" in skill_text and "5–10 行" in skill_text
+    assert "默认使用简体中文" in skill_text and "跳过练习" in skill_text
     checks.append("Declared contribution Skill resolves inside the relocated payload")
 
     assert digest(payload / "LICENSE") == digest(payload / "licenses/claude-plugins-official/LICENSE")

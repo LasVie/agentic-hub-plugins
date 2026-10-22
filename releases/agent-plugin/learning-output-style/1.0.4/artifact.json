@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:learning-output-style",
+  "type": "agent-plugin",
+  "name": "learning-output-style",
+  "version": "1.0.4",
+  "zip": "learning-output-style-1.0.4.zip",
+  "sha256": "f5889ff19eea2e0284f26cab693e40d632cee95cf861c649cbc2be60bbc622b0",
+  "payload_sha256": {
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "NOTICE": "cf82fa9a2f824f8968bb667308044dd57c9c32f1bec5bd25a411533e35f78d78",
+    "README.md": "fe326f757902b129ee470c7d6384d1052bcf8e592d5f35bdb787b9a6d346d7ce",
+    "SOURCE.json": "49b8d00508440b43c84feec9d09f7105f30365d36d2ce400995d9e1c0a5ea1a7",
+    "THIRD_PARTY_NOTICES.md": "469183ef57d84da058eeb68d75f8a8d03e64c70842c9f69f4a9c1c0863e5419e",
+    "licenses/claude-plugins-official/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "manifest.json": "5d66779665c8131c3cc9cdc19d15d0e904362bb58bb591a15d176986e4ccb44c",
+    "prompt_sections/learning-output-style.md": "ddbebf9191f07a4d79b51ec1cffa2bcc362dbe1b8e2bc31238df0fa184544177",
+    "skills/learning-contribution/SKILL.md": "da71da77a695e9add2f244688d8d64384b05e8d33b8e1d4454cd17349e5f5098"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "4e5dca7c1947f37c5c240e918df94f54e37d0ea891102da5298f4453d24fc233",
+  "functional_test_report_sha256": "c638e0c06ddc2f58608e76b5ee2995e1b883dc22e76a67e066c4c0171253455e"
+}

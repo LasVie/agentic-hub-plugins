@@ -1,31 +1,93 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.3",
   "package_type": "plugin",
   "source": "local",
   "id": "dsh-latex-guard",
-  "name": "LaTeX Guard",
-  "description": "Native BibTeX lint/fill and LaTeX citation-key auditing.",
-  "display_name": {"en": "LaTeX Guard", "zh": "LaTeX 守卫"},
+  "name": "LaTeX 引用守卫",
+  "description": "检查 BibTeX 重复键与缺失字段，通过 Crossref 补全空白字段，并对照文献库审计 LaTeX 引用键。",
+  "display_name": {
+    "en": "LaTeX Guard",
+    "zh": "LaTeX 引用守卫"
+  },
   "display_description": {
     "en": "Repair BibTeX metadata and find broken or unused LaTeX citation keys.",
-    "zh": "修复 BibTeX 元数据，发现缺失或未使用的 LaTeX 引用键，并提供安全的预览与显式写入流程。"
+    "zh": "检查 BibTeX 重复键与缺失字段，通过 Crossref 补全空白字段，并对照文献库审计 LaTeX 引用键。"
   },
   "category": "Research",
   "tags": [
-    {"en": "LaTeX", "zh": "LaTeX"},
-    {"en": "BibTeX", "zh": "BibTeX"},
-    {"en": "Citation Audit", "zh": "引用审计"}
+    {
+      "en": "LaTeX",
+      "zh": "LaTeX"
+    },
+    {
+      "en": "BibTeX",
+      "zh": "BibTeX"
+    },
+    {
+      "en": "Citation Audit",
+      "zh": "引用审计"
+    }
   ],
-  "default_init_input": {"en": "Audit these TeX files against this bibliography: ", "zh": "对照参考文献库审计这些 TeX 文件："},
+  "default_init_input": {
+    "en": "Audit these TeX files against this bibliography: ",
+    "zh": "对照参考文献库审计这些 TeX 文件："
+  },
   "quick_inputs": [
-    {"en": "Audit these TeX files against this bibliography: ", "zh": "对照参考文献库审计这些 TeX 文件："},
-    {"en": "Lint this BibTeX file without changing it: ", "zh": "检查这个 BibTeX 文件，但不要修改它："},
-    {"en": "Fill missing fields in this BibTeX file from Crossref without writing: ", "zh": "从 Crossref 补全这个 BibTeX 文件的缺失字段，但不要写入："}
+    {
+      "en": "Audit these TeX files against this bibliography: ",
+      "zh": "对照参考文献库审计这些 TeX 文件："
+    },
+    {
+      "en": "Lint this BibTeX file without changing it: ",
+      "zh": "检查这个 BibTeX 文件，但不要修改它："
+    },
+    {
+      "en": "Fill missing fields in this BibTeX file from Crossref without writing: ",
+      "zh": "从 Crossref 补全这个 BibTeX 文件的缺失字段，但不要写入："
+    }
   ],
-  "skills": [{"dir": "skills/latex-guard", "mode": "all"}],
+  "skills": [
+    {
+      "dir": "skills/latex-guard",
+      "mode": "all"
+    }
+  ],
   "tools": [
-    {"file": "tools/latex_guard.py", "class": "BibLintTool", "display_name": {"en": "BibTeX Lint", "zh": "BibTeX 检查"}, "display_description": {"en": "Find duplicate keys and missing required BibTeX fields.", "zh": "发现重复引用键和缺少的 BibTeX 必填字段。"}},
-    {"file": "tools/latex_guard.py", "class": "BibFillTool", "display_name": {"en": "BibTeX Fill", "zh": "BibTeX 补全"}, "display_description": {"en": "Fill missing bibliography fields from Crossref.", "zh": "从 Crossref 补全缺失的参考文献字段。"}},
-    {"file": "tools/latex_guard.py", "class": "CiteAuditTool", "display_name": {"en": "Citation Audit", "zh": "引用审计"}, "display_description": {"en": "Compare TeX citation commands with BibTeX entry keys.", "zh": "比较 TeX 引用命令与 BibTeX 条目键。"}}
+    {
+      "file": "tools/latex_guard.py",
+      "class": "BibLintTool",
+      "display_name": {
+        "en": "BibTeX Lint",
+        "zh": "BibTeX 检查"
+      },
+      "display_description": {
+        "en": "Find duplicate keys and missing required BibTeX fields.",
+        "zh": "发现重复引用键和缺少的 BibTeX 必填字段。"
+      }
+    },
+    {
+      "file": "tools/latex_guard.py",
+      "class": "BibFillTool",
+      "display_name": {
+        "en": "BibTeX Fill",
+        "zh": "BibTeX 补全"
+      },
+      "display_description": {
+        "en": "Fill missing bibliography fields from Crossref.",
+        "zh": "从 Crossref 补全缺失的参考文献字段。"
+      }
+    },
+    {
+      "file": "tools/latex_guard.py",
+      "class": "CiteAuditTool",
+      "display_name": {
+        "en": "Citation Audit",
+        "zh": "引用审计"
+      },
+      "display_description": {
+        "en": "Compare TeX citation commands with BibTeX entry keys.",
+        "zh": "比较 TeX 引用命令与 BibTeX 条目键。"
+      }
+    }
   ]
 }

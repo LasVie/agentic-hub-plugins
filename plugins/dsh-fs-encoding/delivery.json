@@ -1,0 +1,150 @@
+{
+  "task_id": "AH-20261022-dsh-fs-encoding",
+  "candidate_id": "CAND-DSH-153",
+  "version": "1.0.4",
+  "status": "Awaiting Acceptance",
+  "marketplace_sha256": "00288098f906e41eec6da26e17fb8ef48b940a0d6be9de94e0329be5c8cdbb03",
+  "native_test_sha256": "3acf387d666320ded7c08d37fc5918935769fab1d6f2e98095792f5629f5d948",
+  "current_version_user_test_confirmation": null,
+  "delivery_pr": "https://github.com/LasVie/agentic-hub-plugins/pull/23",
+  "merged_commit": null,
+  "hub_id": null,
+  "hub_status": "Current Chinese version not submitted",
+  "historical_deliveries": [
+    {
+      "version": "1.0.1",
+      "delivery_pr": "https://github.com/LasVie/agentic-hub-plugins/pull/16",
+      "marketplace_sha256": "a1b1fe8d23e1362079837148a4425c719babb6e22b3f30ba2b5495a6a15f712b"
+    }
+  ],
+  "repository_base_commit": "089b6ee584041e61c54c25fe9a60456360a89a05",
+  "repository_instructions_blob_sha": "77f1082183ed59b3f60271106c06db2d08e445ad",
+  "historical_local_test_candidates": [
+    {
+      "version": "1.0.2",
+      "marketplace_sha256": "ef7d2db89b51b48f1019e9cd4470ef025269dbb6b4bc68824b4b70726eb0d049",
+      "native_test_sha256": "539372c49c303eee2ee7095e47163c41bbc3bdad3c818b78d8e53a1431af6843",
+      "status_at_supersession": "Ready for Testing",
+      "delivery_pr": null,
+      "merged_commit": null,
+      "repository_base_commit": "c0a9ff52b582de403a2e5ff636f5fa2bdd42c66c",
+      "repository_instructions_blob_sha": "10fc214c4c49d862ea3ebc4c360c34b8c05056e7",
+      "note": "Historical local test candidate; not a claim of merged delivery or confirmation for the replacement package."
+    }
+  ],
+  "owner": "Siu Lok Yin",
+  "project_lead_acceptance": "Pending Acceptance",
+  "repository_snapshot_note": "Actual delivery PR #23 is open for the unchanged tested package. Latest reviewed main and AGENTS policy are recorded from the parent agent verification; no current-version merge, Hub submission, publication, user-performed test completion or final Project Lead acceptance is inferred.",
+  "delivery_state": "PR #23 open; final Chinese package and actual delegated host tests passed; original screenshot attachments verified byte-for-byte. Not merged, not submitted to Hub and not finally accepted.",
+  "local_test_evidence": [
+    {
+      "path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/dsh-fs-encoding/import-list.png",
+      "sha256": "91baef9f5d03eed1da8f56fa4156b64ad5760fe9f289a18a2a589b6c9c4a6471",
+      "version": "1.0.4",
+      "role": "Original actual host/browser screenshot"
+    },
+    {
+      "path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/dsh-fs-encoding/prompt-result.png",
+      "sha256": "e2c7f53dbcdbe830ea84d40e6f302096731e111adf179cf45b6c2afd9f956305",
+      "version": "1.0.4",
+      "role": "Original actual host/browser screenshot"
+    }
+  ],
+  "delegated_ai_test_confirmation": {
+    "authority": "The human user in the current conversation explicitly asked the agent to finish import and prompt testing in the user-open local WorkSwarm, preserve original screenshots, and update the existing content through a PR if successful, while keeping responsible member names unchanged. This authorizes delegated AI-operated host tests and conditional PR preparation; it is not a statement that the human personally performed the tests.",
+    "authority_source": "Direct human instruction in the current conversation on 2026-10-22; no message URL is available.",
+    "recorded_at": "2026-10-22T17:31:24+08:00",
+    "performed_by": "AI agent operating the user-open local WorkSwarm UI",
+    "human_performed_testing": false,
+    "explicit_user_delegation": true,
+    "conditional_pr_on_success_authorized": true,
+    "host": "WorkSwarm 0.2.7",
+    "model": "Deepseek V4 Flash",
+    "task_id": "AH-20261022-dsh-fs-encoding",
+    "version": "1.0.4",
+    "marketplace_sha256": "00288098f906e41eec6da26e17fb8ef48b940a0d6be9de94e0329be5c8cdbb03",
+    "native_test_sha256": "3acf387d666320ded7c08d37fc5918935769fab1d6f2e98095792f5629f5d948",
+    "result": "Passed for the documented import/prompt/browser scope",
+    "installed_payload_verification": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/dsh-fs-encoding/installed-payload-verification.json",
+    "actual_cases": [
+      {
+        "flow": "Actual host import",
+        "observed": "Imported native 1.0.4 through the user-open WorkSwarm UI; independently verified all 6 installed files against final source/native/marketplace bytes.",
+        "result": "Passed"
+      },
+      {
+        "flow": "Chinese file read",
+        "observed": "Real encoding_read read the Chinese GBK fixture and reported CRLF; recorded content and SHA-256.",
+        "result": "Passed"
+      },
+      {
+        "flow": "Preview and preservation",
+        "observed": "Real encoding_edit dry-run found the target match and returned written=false; a second read retained original Chinese content, GBK, CRLF and SHA-256.",
+        "result": "Passed"
+      },
+      {
+        "flow": "Chinese error",
+        "observed": "Empty file_path returned INVALID_INPUT with Chinese message 必须提供 file_path.",
+        "result": "Passed"
+      }
+    ],
+    "remaining_limits": [
+      "The real prompt intentionally exercised read/dry-run/error flows without writing. Actual write/undo/stale-state behavior is covered separately by deterministic Tool API integration, not claimed as exercised by this UI prompt.",
+      "Protection applies to explicit encoding_* tools; it does not intercept every host file operation."
+    ],
+    "final_project_lead_acceptance": "Not supplied",
+    "tested_repository_base_commit": "e0f6b866649e82cbf37fbd082db9891ca977ae8e",
+    "delivery_repository_base_commit": "089b6ee584041e61c54c25fe9a60456360a89a05",
+    "delivery_pr": "https://github.com/LasVie/agentic-hub-plugins/pull/23",
+    "confirmation_boundary": "The original direct human instruction delegated AI operation of the already-open local WorkSwarm and conditionally authorized a PR on success. It is not a claim that the human performed the tests, confirmed the final package personally, or gave final Project Lead acceptance."
+  },
+  "repository_metadata_history": [
+    {
+      "repository_base_commit": "49acfa795cb6964f06a16cd30594efb7055272d0",
+      "repository_instructions_blob_sha": "78a5b51285e322b38d81381d47aa9eef672bb62f",
+      "delivery_pr": null,
+      "delivery_state": "PR pending creation; original screenshots pending attachment and verified permalinks",
+      "note": "Prior local preparation metadata; retained when associating the unchanged tested package with the actual PR and newly reviewed main policy."
+    }
+  ],
+  "pr_creation_record": {
+    "url": "https://github.com/LasVie/agentic-hub-plugins/pull/23",
+    "verified_head_at_creation": "277dd7e447c2d5475dfd424045c5be75dc656444",
+    "verified_tree_at_creation": "c294a3ef5f51eb1856c1f0388ebf963576a1b566",
+    "source": "Parent agent verified actual GitHub PR creation; these identifiers record creation, not any later PR head."
+  },
+  "repository_policy_sync": {
+    "recorded_at": "2026-10-22T17:40:58+08:00",
+    "latest_reviewed_main_commit": "089b6ee584041e61c54c25fe9a60456360a89a05",
+    "latest_agents_blob_sha": "77f1082183ed59b3f60271106c06db2d08e445ad",
+    "reviewed_by": "Parent agent, which read the full latest main AGENTS.md and identified #22 as the Asset Ledger gating change.",
+    "asset_ledger_rule": "Do not synchronize a new version into Asset Ledger without actual Agentic Hub submission evidence; opening or merging a GitHub delivery PR does not establish Hub submission.",
+    "asset_ledger_action_this_update": "None"
+  },
+  "test_evidence_pr_permalinks": [
+    "https://github.com/LasVie/agentic-hub-plugins/pull/23#issuecomment-6337737397"
+  ],
+  "current_test_evidence": {
+    "original_screenshot_comment": "https://github.com/LasVie/agentic-hub-plugins/pull/23#issuecomment-6337737397",
+    "images": [
+      {
+        "file": "import-list.png",
+        "url": "https://github.com/user-attachments/assets/6ad2025e-5220-4c7f-ad31-6053b328e9fe",
+        "bytes": 248266,
+        "sha256": "91baef9f5d03eed1da8f56fa4156b64ad5760fe9f289a18a2a589b6c9c4a6471",
+        "remote_bytes_identical": true,
+        "actual_media_type": "image/jpeg"
+      },
+      {
+        "file": "prompt-result.png",
+        "url": "https://github.com/user-attachments/assets/8394f4ee-5866-488d-bb3f-6711b0f95781",
+        "bytes": 654116,
+        "sha256": "e2c7f53dbcdbe830ea84d40e6f302096731e111adf179cf45b6c2afd9f956305",
+        "remote_bytes_identical": true,
+        "actual_media_type": "image/jpeg"
+      }
+    ],
+    "remote_original_bytes_verified": true,
+    "operation_authority": "User expressly delegated assistant-operated WorkSwarm import/prompt tests and PR on success; no human-performed test or final acceptance is claimed."
+  }
+}

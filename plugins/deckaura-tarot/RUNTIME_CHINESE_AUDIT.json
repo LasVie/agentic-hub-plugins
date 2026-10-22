@@ -1,0 +1,318 @@
+{
+  "date": "2026-10-22",
+  "asset": "deckaura-tarot",
+  "baseline_version": "1.0.3",
+  "baseline_zip_sha256": "c21a04c19fec50f286100794d5b40f646f9cdb33a6307c6a5b2e002792d8bc40",
+  "dataset_records": 78,
+  "translated_meaning_fields": 312,
+  "schema_and_nontranslated_card_fields": "identical",
+  "license_bytes": "identical",
+  "license_sha256": "2a870b98a936750e931a5833bc362778ae474aa3042532609a97cbe1b09cb654",
+  "seeded_regression_cases": [
+    {
+      "action": "draw",
+      "extra": [
+        "--count",
+        "78"
+      ],
+      "seed": "local-functional-suite",
+      "reversals": "true",
+      "cards": 78,
+      "result": "passed"
+    },
+    {
+      "action": "draw",
+      "extra": [
+        "--count",
+        "78"
+      ],
+      "seed": "local-functional-suite",
+      "reversals": "false",
+      "cards": 78,
+      "result": "passed"
+    },
+    {
+      "action": "draw",
+      "extra": [
+        "--count",
+        "78"
+      ],
+      "seed": "中文复现测试-20261022",
+      "reversals": "true",
+      "cards": 78,
+      "result": "passed"
+    },
+    {
+      "action": "draw",
+      "extra": [
+        "--count",
+        "78"
+      ],
+      "seed": "中文复现测试-20261022",
+      "reversals": "false",
+      "cards": 78,
+      "result": "passed"
+    },
+    {
+      "action": "spread",
+      "extra": [
+        "daily"
+      ],
+      "seed": "local-functional-suite",
+      "reversals": "true",
+      "cards": 1,
+      "result": "passed"
+    },
+    {
+      "action": "spread",
+      "extra": [
+        "daily"
+      ],
+      "seed": "local-functional-suite",
+      "reversals": "false",
+      "cards": 1,
+      "result": "passed"
+    },
+    {
+      "action": "spread",
+      "extra": [
+        "daily"
+      ],
+      "seed": "中文复现测试-20261022",
+      "reversals": "true",
+      "cards": 1,
+      "result": "passed"
+    },
+    {
+      "action": "spread",
+      "extra": [
+        "daily"
+      ],
+      "seed": "中文复现测试-20261022",
+      "reversals": "false",
+      "cards": 1,
+      "result": "passed"
+    },
+    {
+      "action": "spread",
+      "extra": [
+        "three-card"
+      ],
+      "seed": "local-functional-suite",
+      "reversals": "true",
+      "cards": 3,
+      "result": "passed"
+    },
+    {
+      "action": "spread",
+      "extra": [
+        "three-card"
+      ],
+      "seed": "local-functional-suite",
+      "reversals": "false",
+      "cards": 3,
+      "result": "passed"
+    },
+    {
+      "action": "spread",
+      "extra": [
+        "three-card"
+      ],
+      "seed": "中文复现测试-20261022",
+      "reversals": "true",
+      "cards": 3,
+      "result": "passed"
+    },
+    {
+      "action": "spread",
+      "extra": [
+        "three-card"
+      ],
+      "seed": "中文复现测试-20261022",
+      "reversals": "false",
+      "cards": 3,
+      "result": "passed"
+    },
+    {
+      "action": "spread",
+      "extra": [
+        "decision"
+      ],
+      "seed": "local-functional-suite",
+      "reversals": "true",
+      "cards": 5,
+      "result": "passed"
+    },
+    {
+      "action": "spread",
+      "extra": [
+        "decision"
+      ],
+      "seed": "local-functional-suite",
+      "reversals": "false",
+      "cards": 5,
+      "result": "passed"
+    },
+    {
+      "action": "spread",
+      "extra": [
+        "decision"
+      ],
+      "seed": "中文复现测试-20261022",
+      "reversals": "true",
+      "cards": 5,
+      "result": "passed"
+    },
+    {
+      "action": "spread",
+      "extra": [
+        "decision"
+      ],
+      "seed": "中文复现测试-20261022",
+      "reversals": "false",
+      "cards": 5,
+      "result": "passed"
+    },
+    {
+      "action": "spread",
+      "extra": [
+        "relationship"
+      ],
+      "seed": "local-functional-suite",
+      "reversals": "true",
+      "cards": 6,
+      "result": "passed"
+    },
+    {
+      "action": "spread",
+      "extra": [
+        "relationship"
+      ],
+      "seed": "local-functional-suite",
+      "reversals": "false",
+      "cards": 6,
+      "result": "passed"
+    },
+    {
+      "action": "spread",
+      "extra": [
+        "relationship"
+      ],
+      "seed": "中文复现测试-20261022",
+      "reversals": "true",
+      "cards": 6,
+      "result": "passed"
+    },
+    {
+      "action": "spread",
+      "extra": [
+        "relationship"
+      ],
+      "seed": "中文复现测试-20261022",
+      "reversals": "false",
+      "cards": 6,
+      "result": "passed"
+    },
+    {
+      "action": "spread",
+      "extra": [
+        "celtic-cross"
+      ],
+      "seed": "local-functional-suite",
+      "reversals": "true",
+      "cards": 10,
+      "result": "passed"
+    },
+    {
+      "action": "spread",
+      "extra": [
+        "celtic-cross"
+      ],
+      "seed": "local-functional-suite",
+      "reversals": "false",
+      "cards": 10,
+      "result": "passed"
+    },
+    {
+      "action": "spread",
+      "extra": [
+        "celtic-cross"
+      ],
+      "seed": "中文复现测试-20261022",
+      "reversals": "true",
+      "cards": 10,
+      "result": "passed"
+    },
+    {
+      "action": "spread",
+      "extra": [
+        "celtic-cross"
+      ],
+      "seed": "中文复现测试-20261022",
+      "reversals": "false",
+      "cards": 10,
+      "result": "passed"
+    },
+    {
+      "action": "spread",
+      "extra": [
+        "yes-no"
+      ],
+      "seed": "local-functional-suite",
+      "reversals": "true",
+      "cards": 1,
+      "result": "passed"
+    },
+    {
+      "action": "spread",
+      "extra": [
+        "yes-no"
+      ],
+      "seed": "local-functional-suite",
+      "reversals": "false",
+      "cards": 1,
+      "result": "passed"
+    },
+    {
+      "action": "spread",
+      "extra": [
+        "yes-no"
+      ],
+      "seed": "中文复现测试-20261022",
+      "reversals": "true",
+      "cards": 1,
+      "result": "passed"
+    },
+    {
+      "action": "spread",
+      "extra": [
+        "yes-no"
+      ],
+      "seed": "中文复现测试-20261022",
+      "reversals": "false",
+      "cards": 1,
+      "result": "passed"
+    }
+  ],
+  "seeded_card_identity_orientation_and_protocol_fields": "identical",
+  "test_suite": "tests/test_deckaura_tarot.py: 28 passed; no skips; actual openJiuwen SDK and Node.js",
+  "status": "source checks passed; final archive and WorkSwarm UI test are owned by parent agent",
+  "environment": {
+    "python": "3.11.17",
+    "python_executable": "/Users/lasvie/Documents/openJiuwen/openJiuwen_PersistentAgent/.venv/bin/python",
+    "node": "v24.19.0",
+    "sdk": "actual openJiuwen SDK from installed WorkSwarm Python environment; no substitutes",
+    "test_log": "RUNTIME_CHINESE_TEST.log"
+  },
+  "modified_reused_paths": [
+    "skills/tarot-reading/SKILL.md",
+    "skills/tarot-reading/assets/deck.json",
+    "skills/tarot-reading/references/data-provenance.md",
+    "skills/tarot-reading/references/reading-protocol.md",
+    "skills/tarot-reading/references/safety-and-quality.md",
+    "skills/tarot-reading/references/spreads.md",
+    "skills/tarot-reading/references/symbolism.md",
+    "skills/tarot-reading/scripts/tarot.mjs"
+  ],
+  "data_sha256": "43ba47133d04091e31fb220aec7bcd858cf87a0f86a9496a104b5fc20ab95840"
+}

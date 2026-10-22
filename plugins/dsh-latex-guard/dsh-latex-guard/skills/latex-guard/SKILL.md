@@ -1,14 +1,16 @@
 ---
 name: latex-guard
-description: Use native tools to lint or enrich BibTeX and audit LaTeX citation keys safely.
+description: 使用原生工具安全检查和补全 BibTeX，并审计 LaTeX 引用键。
 ---
 
-# LaTeX Guard
+# LaTeX 引用守卫
 
-Use the narrowest tool that answers the request:
+修改说明：2026-10-22，将操作指令中文化，保留原有工具、安全边界与 MIT 来源署名。
 
-- `bib_lint` finds duplicate keys and missing fields. Keep `write` false unless the user explicitly asks to modify the file. A write removes later duplicate entries and normalizes formatting.
-- `bib_fill` queries Crossref by DOI or title and fills only blank fields. Keep `write` false for preview; disclose that this tool sends DOI/title metadata to Crossref.
-- `cite_audit` compares citation commands in one or more explicit TeX files with an explicit `.bib` file.
+默认用简体中文报告检查结果、解释限制与错误；用户明确指定其他输出语言时按其要求执行。选择能满足请求的最小工具：
 
-This Plugin does not compile LaTeX. Never claim that linting proves scholarly correctness. Before a write, preserve the original or ensure the file is version-controlled. The tools refuse writes when the BibTeX parser cannot account for every entry marker.
+- `bib_lint` 检查重复键和缺失字段。未得到明确修改指令时保持 `write=false`。写入会去除后出现的重复条目并规范格式，应先说明预览差异。
+- `bib_fill` 按 DOI 或标题查询 Crossref，只补全空白字段。默认 `write=false`；使用前说明查询会向公共 Crossref 发送 DOI 或标题元数据，需要网络。
+- `cite_audit` 对照明确指定的 `.bib` 文件检查一个或多个明确指定的 TeX 文件中的引用命令。
+
+本插件不编译 LaTeX，检查通过也不证明文献或学术结论正确。写入前保留原文件或确认已经纳入版本控制。BibTeX 解析器未覆盖全部条目标记时，工具会拒绝写入。保持书目原始标题、作者、DOI、引用键和机器字段不变；只翻译面向用户的解释，不虚构书目信息或外部查询结果。

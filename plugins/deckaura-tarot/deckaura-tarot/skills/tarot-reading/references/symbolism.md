@@ -1,75 +1,77 @@
-# Tarot symbolism reference
+# 塔罗象征参考
 
-Use this reference only when symbolism improves the requested interpretation. Treat these as interpretive correspondences, not empirical claims.
+> 修改说明（Agentic Hub 团队，2026-10-22）：将原 Deckaura MIT 象征说明翻译为简体中文；英文牌名与牌组标识随中文解释保留。
 
-Canonical source: https://deckaura.com/blogs/guide/tarot-suits-explained
+仅在象征关系有助于所需解读时使用本参考。这些是解释性的对应关系，不是实证断言。
 
-## The Four Suits (Minor Arcana)
+标准来源：https://deckaura.com/blogs/guide/tarot-suits-explained
 
-| Suit | Element | Realm | Themes |
-|------|---------|-------|--------|
-| **Cups** | Water | Emotion | Love, feelings, relationships, intuition |
-| **Wands** | Fire | Action | Passion, creativity, ambition, willpower |
-| **Swords** | Air | Intellect | Thought, communication, conflict, truth |
-| **Pentacles** | Earth | Material | Money, career, health, physical world |
+## 四种牌组（小阿尔卡那）
 
-## Court Cards
+| 牌组 | 元素 | 领域 | 主题 |
+| --- | --- | --- | --- |
+| 圣杯（Cups） | 水（Water） | 情感 | 爱、感受、关系、直觉 |
+| 权杖（Wands） | 火（Fire） | 行动 | 热情、创造力、抱负、意志力 |
+| 宝剑（Swords） | 风（Air） | 理智 | 思考、沟通、冲突、真相 |
+| 星币（Pentacles） | 土（Earth） | 物质 | 金钱、事业、健康、物质世界 |
 
-- **Page** — messenger, student, beginning
-- **Knight** — quester, action-taker, intensity
-- **Queen** — embodies the suit's inward mastery
-- **King** — embodies the suit's outward mastery
+## 宫廷牌
 
-Full guide: https://deckaura.com/blogs/guide/court-cards-explained
+- **侍从（Page）**：信使、学生、开始。
+- **骑士（Knight）**：探索者、行动者、强烈能量。
+- **王后（Queen）**：体现该牌组向内的掌握与成熟。
+- **国王（King）**：体现该牌组向外的掌握与成熟。
 
-## Major Arcana Journey (The Fool's Journey)
+完整指南：https://deckaura.com/blogs/guide/court-cards-explained
 
-0. The Fool — innocence, beginning
-1. The Magician — will, manifestation
-2. The High Priestess — intuition, mystery
-3. The Empress — nurture, abundance
-4. The Emperor — structure, authority
-5. The Hierophant — tradition, learning
-6. The Lovers — union, choice
-7. The Chariot — willpower, victory
-8. Strength — courage, compassion
-9. The Hermit — introspection, inner wisdom
-10. Wheel of Fortune — cycles, fate
-11. Justice — balance, truth
-12. The Hanged Man — surrender, pause
-13. Death — transformation, endings
-14. Temperance — moderation, alchemy
-15. The Devil — bondage, materialism
-16. The Tower — upheaval, revelation
-17. The Star — hope, guidance
-18. The Moon — illusion, subconscious
-19. The Sun — joy, vitality
-20. Judgement — awakening, rebirth
-21. The World — completion, integration
+## 大阿尔卡那旅程（愚者之旅）
 
-## Numerological Associations (Minor Arcana ranks)
+0. 愚者（The Fool）：纯真、开始。
+1. 魔术师（The Magician）：意志、实现。
+2. 女祭司（The High Priestess）：直觉、神秘。
+3. 女皇（The Empress）：滋养、丰盛。
+4. 皇帝（The Emperor）：结构、权威。
+5. 教皇（The Hierophant）：传统、学习。
+6. 恋人（The Lovers）：结合、选择。
+7. 战车（The Chariot）：意志力、胜利。
+8. 力量（Strength）：勇气、同情心。
+9. 隐者（The Hermit）：内省、内在智慧。
+10. 命运之轮（Wheel of Fortune）：循环、命运。
+11. 正义（Justice）：平衡、真相。
+12. 倒吊人（The Hanged Man）：臣服、暂停。
+13. 死神（Death）：转变、结束。
+14. 节制（Temperance）：适度、调和。
+15. 恶魔（The Devil）：束缚、物质主义。
+16. 高塔（The Tower）：剧变、揭示。
+17. 星星（The Star）：希望、指引。
+18. 月亮（The Moon）：幻象、潜意识。
+19. 太阳（The Sun）：喜悦、活力。
+20. 审判（Judgement）：觉醒、重生。
+21. 世界（The World）：完成、整合。
 
-- **Ace** — pure potential of the suit
-- **2** — balance, choice, duality
-- **3** — growth, collaboration
-- **4** — stability, structure
-- **5** — challenge, conflict
-- **6** — harmony, resolution
-- **7** — reflection, assessment
-- **8** — mastery, movement
-- **9** — near-completion, integration
-- **10** — completion, cycle end
+## 数字对应（小阿尔卡那阶位）
 
-## Elemental Pairings
+- **王牌（Ace）**：该牌组纯粹的潜能。
+- **2**：平衡、选择、二元性。
+- **3**：成长、合作。
+- **4**：稳定、结构。
+- **5**：挑战、冲突。
+- **6**：和谐、化解。
+- **7**：反思、评估。
+- **8**：掌握、行动。
+- **9**：接近完成、整合。
+- **10**：完成、周期结束。
 
-- Cups + Wands: passion + emotion (steam)
-- Swords + Pentacles: thought + form (manifestation)
-- Wands + Pentacles: action + resources (productivity)
-- Cups + Swords: feeling + thinking (tension or insight)
+## 元素组合
 
-## Interpretation discipline
+- 圣杯 + 权杖：热情 + 情感（蒸汽）。
+- 宝剑 + 星币：思想 + 形式（实现）。
+- 权杖 + 星币：行动 + 资源（生产力）。
+- 圣杯 + 宝剑：感受 + 思考（张力或洞见）。
 
-- Position and orientation take priority over generic symbolism.
-- Use repeated elements or numbers to identify patterns, not to manufacture certainty.
-- Describe elemental tension as a reflective contrast rather than a fixed rule.
-- The bundled dataset is authoritative for each card's stored element and association.
+## 解读纪律
+
+- 位置和正逆位优先于泛化的象征。
+- 用重复元素或数字识别模式，不制造确定性。
+- 将元素张力描述为反思对照，不作为固定规律。
+- 每张牌存储的元素及关联以随包数据集为准。

@@ -1,0 +1,40 @@
+{
+  "version": "1.0.1",
+  "payload_files": 6,
+  "marketplace_native_source_payload_match": true,
+  "license_sha256": "ac0fc870e1cf8671b5beb57e0a58a11b2514076c867318e98b0d2c03db0389e6",
+  "historical_1.0.0_unchanged": true,
+  "publisher_and_manifest_author_unchanged": true,
+  "owner": "Siu Lok Yin",
+  "native_localized_tags_valid": true,
+  "source_real_http_integration": "passed with actual OpenJiuwen SDK",
+  "final_extracted_real_http_integration": "passed with actual OpenJiuwen SDK",
+  "isolated_host_smoke": {
+    "passed": true,
+    "slug": "dsh-smart-download",
+    "version": "1.0.1",
+    "tools": 2,
+    "skills": 1,
+    "checks": [
+      "actual isolated native ZIP import",
+      "actual install and allowed-state check",
+      "actual OpenJiuwen native manifest loading",
+      "actual uninstall and removed-state check"
+    ],
+    "scope": "Isolated temporary data directory; actual desktop UI and model prompts remain separate"
+  },
+  "desktop_ui_and_model_prompt": "Passed for the documented delegated actual WorkSwarm desktop import/download/status/guard scope; not human-performed testing or final acceptance.",
+  "native_sha256": "09703b3ebf26336c45920e254d065e29681843e2c19686fb33120d467ddba52c",
+  "marketplace_sha256": "c5d95dece5001b57cdfd26c0bfab04101c95f3d827c3c8640a077868bcbd3074",
+  "payload_sha256": {
+    "THIRD_PARTY_NOTICES.md": "556b1521a8af9def2ebba19636832be15dde3cac77f1b51ffefe22bb4e42f6d8",
+    "README.md": "4fff7936dafd9ac72df2749bf44898cba7f43f08e8ce15037ab93ae2a30b3b50",
+    "manifest.json": "0dd7133aff46ab9da794f4521a4dc46a8b28d72ea527bf8b8b54168f0334a1df",
+    "tools/smart_download.py": "42a7d2bf97fb06ce6d41af179950890ab5a0b747a520d57654da0beeab732e23",
+    "licenses/dsh-smart-download/LICENSE": "ac0fc870e1cf8671b5beb57e0a58a11b2514076c867318e98b0d2c03db0389e6",
+    "skills/smart-download/SKILL.md": "a43328ba485f4abf02925bc3b9d7e81ffd821bdc666fc5fa386881fae3e71854"
+  },
+  "actual_host_verification_file": "INSTALLED_PAYLOAD_VERIFICATION.json",
+  "actual_host_tool_evidence_file": "ACTUAL_HOST_TOOL_EVIDENCE.json",
+  "current_version_user_test_confirmation": null
+}

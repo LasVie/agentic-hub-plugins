@@ -1,10 +1,16 @@
 ---
 name: fs-encoding
-description: Safely read, create, edit, search, and undo legacy-encoded text files with explicit native tools.
+description: 使用专用原生工具，安全读取、创建、编辑、搜索和撤销旧编码文本文件。
 ---
 
-# File Encoding Guardian
+# 文件编码守护
 
-Use `encoding_read` before changing an existing file. For BOM-less non-UTF-8 files, pass an explicit encoding such as `gbk`, `big5`, `shift_jis`, `euc_kr`, or `windows-1252`. Use `encoding_write` for full replacement, `encoding_edit` for literal replacement, `encoding_grep` for search, and `encoding_undo` only for the most recent mutation. Undo records are stored with owner-only permissions in the host temporary directory so separately loaded tools can share them.
+修改说明：2026-10-22，将使用指令中文化，保留原有工具接口、安全边界与 MIT 来源署名。
 
-Never claim these tools replace WorkSwarm's built-ins. Writes preserve the detected encoding, BOM and dominant line ending. Unrepresentable characters are rejected before bytes change. Preview with `write=false`; mutate only when the user requests it.
+默认使用简体中文解释操作、结果和错误；用户明确要求其他语言时遵从其要求。修改现有文件前先调用 `encoding_read`。对于无 BOM 且不是 UTF-8 的文件，明确传入 `gbk`、`big5`、`shift_jis`、`euc_kr` 或 `windows-1252` 等编码，不把不确定猜测作为事实。
+
+- `encoding_write` 用于整体替换，`encoding_edit` 用于文字替换。
+- `encoding_grep` 在明确指定的文件中搜索。
+- `encoding_undo` 只撤销最近一次工具写入，且文件此后未被外部修改。撤销记录保存在宿主临时目录，权限仅限当前用户，单独加载的工具也可共享。
+
+写入保留原始编码、BOM 和主要换行符；无法用原编码表示的字符会在改变字节前被拒绝。先用 `write=false` 预览，只有用户要求修改时才写入。工具不会接管 WorkSwarm 内置文件工具，不能把普通内置写入声称为已受本插件保护。结果中的 `encoding`、`CRLF`、错误码等机器值保持原样；对用户用中文解释。需要额外依赖、权限或操作失败时如实说明。

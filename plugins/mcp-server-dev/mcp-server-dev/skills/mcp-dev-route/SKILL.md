@@ -1,10 +1,12 @@
 ---
 name: mcp-dev-route
 description: 当用户开发 MCP 服务、选择远程 HTTP 或本地 stdio、添加 MCP App UI、打包 MCPB 时使用。先复用 MCP Builder 的通用服务开发能力，再选择配套专项技能与可执行示例。
-version: 1.0.1
+version: 1.0.4
 ---
 
 # MCP 开发路径规划
+
+默认使用简体中文与用户交流，编写规划、说明、生成报告及可翻译的界面和错误提示。用户明确要求其他语言时按其要求执行。保留 slug、命令、API、协议值、JSON 键和代码语法的原值；原始许可与署名原文不改写。
 
 1. 从需求确认：是否访问本机文件/桌面、是否需要交互 UI、是否仅做原型。未明确的条件先询问，不能猜测认证或部署权限。
 2. 在用户工作区保存 JSON，例如 `{"local_access":true,"interactive_ui":true,"prototype":false}`。三个键必须齐全且都是布尔值。

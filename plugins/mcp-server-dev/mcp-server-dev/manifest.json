@@ -1,17 +1,48 @@
 {
-  "version": "1.0.1",
+  "version": "1.0.4",
   "package_type": "plugin",
   "id": "mcp-server-dev",
-  "name": "mcp-server-dev",
-  "description": "MCP Builder 配套开发工具：接入路径选择、MCP App 示例及 MCPB 打包指导。",
-  "display_name": {"zh": "mcp-server-dev", "en": "mcp-server-dev"},
+  "name": "MCP 应用与打包开发助手",
+  "description": "为 MCP Builder 补充接入路径规划、MCP App UI 与 MCPB 本地打包开发：生成 Node.js 示例工程并验证协议；不自动部署或发布。",
+  "display_name": {
+    "zh": "MCP 应用与打包开发助手",
+    "en": "mcp-server-dev"
+  },
   "display_description": {
-    "zh": "MCP Builder 配套开发工具：接入路径选择、MCP App 示例及 MCPB 打包指导。",
+    "zh": "为 MCP Builder 补充接入路径规划、MCP App UI 与 MCPB 本地打包开发：生成 Node.js 示例工程并验证协议；不自动部署或发布。",
     "en": "Companion tools for MCP Builder: choose an implementation path, generate MCP App examples, and build MCPB packages."
   },
   "skills": [
-    {"dir": "skills/mcp-dev-route", "mode": "all"},
-    {"dir": "skills/build-mcp-app", "mode": "all"},
-    {"dir": "skills/build-mcpb", "mode": "all"}
+    {
+      "dir": "skills/mcp-dev-route",
+      "mode": "all"
+    },
+    {
+      "dir": "skills/build-mcp-app",
+      "mode": "all"
+    },
+    {
+      "dir": "skills/build-mcpb",
+      "mode": "all"
+    }
+  ],
+  "category": "Engineering",
+  "tags": [
+    {
+      "zh": "MCP 开发",
+      "en": "MCP development"
+    },
+    {
+      "zh": "交互界面",
+      "en": "App UI"
+    },
+    {
+      "zh": "本地打包",
+      "en": "Local packaging"
+    },
+    {
+      "zh": "协议验证",
+      "en": "Protocol validation"
+    }
   ]
 }

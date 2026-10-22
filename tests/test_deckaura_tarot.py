@@ -55,16 +55,16 @@ ADAPTER = load_adapter(PAYLOAD) if Tool is not None else None
 SCRIPT = PAYLOAD / "skills/tarot-reading/scripts/tarot.mjs"
 DECK = PAYLOAD / "skills/tarot-reading/assets/deck.json"
 POSITIONS = {
-    "daily": ["Theme for reflection"],
-    "three-card": ["Past or background", "Present dynamic", "Future tendency"],
-    "decision": ["Situation", "Option A", "Option B", "What to consider", "Grounded next step"],
-    "relationship": ["You", "Other person or perceived dynamic", "Connection", "Strength", "Challenge", "Constructive next step"],
+    "daily": ["反思主题"],
+    "three-card": ["过去或背景", "当前动态", "未来倾向"],
+    "decision": ["当前情况", "选项 A", "选项 B", "需要考虑的因素", "务实的下一步"],
+    "relationship": ["你自己", "对方或你感受到的互动", "彼此的联结", "优势", "挑战", "建设性的下一步"],
     "celtic-cross": [
-        "Present situation", "Challenge or crossing influence", "Foundation",
-        "Recent past", "Conscious aim or possibility", "Near-term direction",
-        "Your stance", "Environment or external influences", "Hopes and fears", "Outcome tendency",
+        "当前情况", "挑战或交叉影响", "基础",
+        "最近的过去", "有意识的目标或可能性", "近期方向",
+        "你的立场", "环境或外部影响", "希望与恐惧", "结果倾向",
     ],
-    "yes-no": ["Symbolic tendency"],
+    "yes-no": ["象征倾向"],
 }
 
 
@@ -112,6 +112,29 @@ class TarotFunctionalTests(unittest.TestCase):
                 self.assertIsInstance(card[field], str)
                 self.assertTrue(card[field].strip())
 
+    def test_all_78_cards_have_chinese_prose_and_preserved_protocol_values(self):
+        for card in self.cards.values():
+            for field in ("upright_meaning", "reversed_meaning", "love_meaning", "career_meaning"):
+                with self.subTest(card=card["card_name"], field=field):
+                    self.assertRegex(card[field], r"[\u4e00-\u9fff]")
+                    self.assertNotRegex(card[field], r"[A-Za-z]")
+            self.assertIn(card["arcana"], ("Major", "Minor"))
+            self.assertIn(card["element"], ("Air", "Water", "Fire", "Earth"))
+            self.assertRegex(card["card_name"], r"[A-Za-z]")
+
+    def test_chinese_cli_help_and_adapter_error_messages(self):
+        help_result = subprocess.run(
+            [self.node, str(SCRIPT)], capture_output=True, text=True, check=True, timeout=10
+        )
+        usage = json.loads(help_result.stdout)["usage"]
+        self.assertEqual(len(usage), 4)
+        self.assertTrue(all(any("\u4e00" <= char <= "\u9fff" for char in line) for line in usage))
+        cases = ({"action": "draw", "count": 0}, {"action": "lookup", "card": "no-such-card"})
+        for request in cases:
+            result = ADAPTER.run_tarot(request)
+            self.assertFalse(result["ok"])
+            self.assertRegex(result["error"]["message"], r"[\u4e00-\u9fff]")
+
     def test_validate_cli_output_matches_bundled_bytes(self):
         result = self.run_ok({"action": "validate"})
         self.assertEqual(result["count"], 78)
@@ -124,8 +147,8 @@ class TarotFunctionalTests(unittest.TestCase):
                 card = self.run_ok({"action": "lookup", "card": alias})["card"]
                 self.assertEqual(card["card_name"], "The Star")
                 self.assertEqual(card["orientation"], "upright")
-                self.assertEqual(card["meaning"], "Hope, renewal, spirituality, inspiration")
-                self.assertEqual(card["position"], "Lookup")
+                self.assertEqual(card["meaning"], "希望、更新、精神探索、灵感")
+                self.assertEqual(card["position"], "查询")
 
     def test_lookup_reversed_meaning(self):
         card = self.run_ok({"action": "lookup", "card": "The Star", "orientation": "reversed"})["card"]
@@ -149,7 +172,7 @@ class TarotFunctionalTests(unittest.TestCase):
         first = self.run_ok(request)
         self.assertEqual(first, self.run_ok(request))
         self.assertEqual({card["card_name"] for card in first["cards"]}, set(self.cards))
-        self.assertEqual([card["position"] for card in first["cards"]], [f"Card {i}" for i in range(1, 79)])
+        self.assertEqual([card["position"] for card in first["cards"]], [f"第 {i} 张牌" for i in range(1, 79)])
         self.assertEqual({card["orientation"] for card in first["cards"]}, {"upright", "reversed"})
         self.assert_cards(first["cards"])
 
@@ -261,7 +284,7 @@ class TarotFunctionalTests(unittest.TestCase):
             capture_output=True, text=True, timeout=10,
         )
         self.assertNotEqual(result.returncode, 0)
-        self.assertIn("1 to 78", json.loads(result.stderr)["error"])
+        self.assertIn("1 至 78", json.loads(result.stderr)["error"])
 
     def test_native_tool_schema_and_async_invoke(self):
         tool = ADAPTER.TarotTool()

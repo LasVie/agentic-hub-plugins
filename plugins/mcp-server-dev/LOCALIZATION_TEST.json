@@ -1,0 +1,42 @@
+{
+  "name": "mcp-server-dev",
+  "version": "1.0.2",
+  "marketplace_sha256": "042c476232560099cc06b7da3afacbfe2860e51bf9f6e425ae474a38e6c5a8bc",
+  "native_test_sha256": "b50dc73fdaad2005bd36d3bdcd3decc9c40510934d3ffe41699b8b5ce1504913",
+  "package_and_license_audit": "passed",
+  "repository_tests": {
+    "passed": 50,
+    "skipped": 0
+  },
+  "actual_host_checks": {
+    "name": "mcp-server-dev",
+    "version": "1.0.2",
+    "passed": true,
+    "checks": [
+      "Native import/install in isolated home",
+      "Installed full payload matches final ZIP",
+      "Actual openJiuwen loader/resolver loads all declared skills/tools",
+      "Actual list/detail cards expose Chinese title/description/README",
+      "Uninstall removes package and installed state"
+    ],
+    "scope": "Isolated temporary data only; no running user installation changed. No model call or visual UI acceptance."
+  },
+  "functional_checks": {
+    "real_extracted_app_protocol_and_resource": true,
+    "invalid_inputs_and_recovery": true,
+    "official_mcpb_validate_pack_unpack_relocated_execution": true,
+    "generated_dependency_license_collection": true
+  },
+  "current_version_user_testing": "pending",
+  "current_version_visual_test_screenshot": null,
+  "delivery_pr": null,
+  "hub_submission": "not submitted",
+  "limits": [
+    "No paid model calls; model-generated behavior and visual user acceptance remain pending.",
+    "Target host App UI rendering, remote OAuth and cloud deployment not verified."
+  ],
+  "historical_only": true,
+  "superseded_by_version": "1.0.4",
+  "current_verification_file": "delivery.json",
+  "historical_evidence_note": "Retained original prior-version/source-fixture evidence. Existing versions, hashes, results and limitations are preserved; this file does not establish testing of the current package. Use delivery.json and TEST_REPORT.md for final delegated host-test scope."
+}

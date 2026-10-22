@@ -1,14 +1,22 @@
 ---
 name: smart-download
-description: Download explicit HTTP(S) files with range acceleration, conservative resume, progress status, and optional SHA-256 verification.
+description: 下载明确指定的 HTTP(S) 文件，支持服务器分段加速、安全续传、进度状态和可选的 SHA-256 校验。
 ---
 
-# Smart Download
+# 智能下载
 
-Use `smart_download` only after the user supplies or approves the URL and destination. Prefer `output_path` when the destination filename matters; otherwise pass `output_dir` and let the server or URL supply a sanitized filename.
+修改说明：2026-10-22，将实际操作指令和默认输出语言中文化；保留原始 MIT 署名、工具接口和安全边界。
 
-Pass a known lowercase or uppercase 64-character `sha256` whenever one is published. A mismatch fails the operation and leaves no final file. The tool may use 4 or 8 HTTP range connections for sufficiently large files; it falls back to one connection when range behavior is unavailable or inconsistent. A compatible `.part` file can resume conservatively.
+默认使用简体中文说明计划、操作结果、依赖、限制和错误。用户明确指定其他输出语言时按其要求执行。保留工具与参数名、状态值、错误码、网址、路径、SHA-256、代码语法和原始法律文本，不将机器值翻译成不同标识。
 
-Private, loopback, link-local and reserved network destinations are rejected by default. Set `allow_private_network=true` only for a user-approved intranet or local test server. Custom headers may be used for ordinary HTTP metadata, but do not expose secrets in conversation text or status output.
+只有用户已经提供或批准网址和目标位置后，才调用 `smart_download`。文件名明确时优先使用 `output_path`；否则使用 `output_dir`，由服务器或网址提供清理后的文件名。两者不能同时传入。已有目标文件默认不覆盖，只有用户明确要求才设置 `overwrite=true`。
 
-Use `download_status` with the returned `task_id`. Do not claim that a file is complete unless `state` is `completed` and, when requested, `verified` is true.
+有公开预期 SHA-256 时，传入其 64 个十六进制字符，大小写均可。校验不符会失败且不创建最终文件，错误码为 `CHECKSUM_MISMATCH`；不能将失败报告成成功，也不能无依据替换用户提供的哈希。
+
+服务器正确支持 Range 且文件足够大时，工具可用 4 或 8 个 HTTP 连接；服务器不支持或返回不一致范围时回退为单连接。仅在 `.part` 文件及对应网址、验证器和大小元数据兼容时保守续传。不要承诺固定加速倍数，也不要把一次未发生中断的下载称为续传实测通过。
+
+默认拒绝私有、回环、链路本地和保留地址。只有用户明确批准的内网或本地测试网址，才允许 `allow_private_network=true`。不得为了绕过失败而擅自开启该参数。可通过 `headers` 提供必要认证信息，不要在对话、结果或状态中回显密钥；禁止将用户名或密码放入网址。续传元数据可能保存原始网址查询参数，提醒用户按敏感本地数据管理。
+
+使用返回的 `task_id` 调用 `download_status`。只有 `state` 为 `completed`，且指定哈希时 `verified=true`，才能报告文件下载完成并校验通过。报告实际输出路径、字节数、计算所得 SHA-256、连接数及是否续传；未要求校验时明确说明只是计算哈希。失败时用中文解释实际错误，保留原错误码，不编造文件、状态或网络成功。
+
+本插件不管理云盘账户、不解析网页内容、不支持 FTP/BT，也不会执行下载的文件。需要模型、宿主文件权限和网络权限；不需要额外 Node.js、aria2 或 API 密钥。

@@ -2,14 +2,14 @@
   "package_type": "plugin",
   "id": "learning-output-style",
   "name": "学习式编程指导",
-  "version": "1.0.1",
-  "description": "交互式编程学习：解释实现取舍，并邀请用户完成关键的 5–10 行代码。",
+  "version": "1.0.4",
+  "description": "在真实编程任务中解释实现取舍，准备函数或代码骨架，并邀请学习者完成一处有意义的 5–10 行关键逻辑。基于宿主原有模型与工具提供逐步指导。",
   "display_name": {
     "zh": "学习式编程指导",
     "en": "Learning Output Style"
   },
   "display_description": {
-    "zh": "迁移自 Anthropic learning-output-style；保留原始教学提示词，通过 JiuwenSwarm prompt_sections 加载。",
+    "zh": "在真实编程任务中解释实现取舍，准备函数或代码骨架，并邀请学习者完成一处有意义的 5–10 行关键逻辑。基于宿主原有模型与工具提供逐步指导。",
     "en": "Anthropic learning-output-style instructions adapted to JiuwenSwarm prompt sections."
   },
   "category": "Engineering",
@@ -37,11 +37,25 @@
     "upstream_commit": "d1adba47161a271799de7b548225d929310046bd",
     "upstream_version": "1.0.0",
     "adaptation": "Load the extracted upstream teaching context through a native prompt section; expose focused contribution coaching as a Skill. No Bash hook executes.",
-    "modification_notice": "Modified on 2026-10-22: version 1.0.1 adds an explicit contribution-coaching Skill, repository package metadata, and complete distribution notices; native prompt-section loading remains the primary session behavior."
+    "modification_notice": "Modified on 2026-10-22: version 1.0.1 adds an explicit contribution-coaching Skill, repository package metadata, and complete distribution notices; native prompt-section loading remains the primary session behavior. Modified on 2026-10-22 for 1.0.2: localized the marketplace metadata and README in Chinese and updated version/source records; active teaching prompt and contribution Skill bytes are unchanged. Modified on 2026-10-22 for the complete Chinese runtime edition: translated active teaching instructions and Skill; native tags use localized objects to satisfy actual WorkSwarm UI rendering."
   },
   "skills": [
     {
       "dir": "skills/learning-contribution"
+    }
+  ],
+  "tags": [
+    {
+      "zh": "编程教学",
+      "en": "Programming education"
+    },
+    {
+      "zh": "动手练习",
+      "en": "Hands-on practice"
+    },
+    {
+      "zh": "实现指导",
+      "en": "Implementation guidance"
     }
   ]
 }

@@ -1,16 +1,16 @@
 {
   "type": "agent-plugin",
   "name": "deckaura-tarot",
-  "version": "1.0.2",
-  "display_name": "Deckaura Tarot",
-  "description": "Offline 78-card tarot lookup, reproducible draws without replacement and six reflective spreads, with a native Python host tool and no network calls.",
+  "version": "1.0.4",
+  "display_name": "塔罗牌查询与抽牌",
+  "description": "离线查询 78 张塔罗牌，按种子复现不放回抽牌，并生成六种牌阵；用于反思、写作与娱乐。",
   "publisher": "Cai Zhenze",
   "category": "内容创作",
   "tags": [
-    "tarot",
-    "reflection",
-    "offline",
-    "journaling"
+    "塔罗牌",
+    "反思",
+    "离线",
+    "日记"
   ],
   "functional_tags": [
     "Card Reference",

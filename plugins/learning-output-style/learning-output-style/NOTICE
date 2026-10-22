@@ -21,3 +21,15 @@ Additional adaptation on 2026-10-22 for version 1.0.1:
 - Added repository marketplace packaging, a contribution-coaching Skill, and file-level change notices.
 - Preserved the original teaching text after an attribution notice.
 - Added complete per-source license evidence; excluded unused hooks from the runtime payload.
+
+Additional adaptation on 2026-10-22 for version 1.0.2:
+- Localized marketplace metadata and the user README in Chinese.
+- Updated version and source records; retained the exact active prompt and Skill bytes from 1.0.1.
+- Original Apache license texts and attribution statements remain unchanged.
+
+
+Additional adaptation on 2026-10-22 for the complete Chinese instruction edition:
+- Translated the active teaching prompt and contribution Skill into Simplified Chinese with default Chinese dialogue.
+- Preserved original English source hashes separately from translated-body and packaged-file hashes.
+- Added prominent file-level change notices; retained the original author attribution and full Apache license texts.
+- Earlier byte-identical teaching-text statements describe historical versions only.

@@ -1,26 +1,32 @@
 {
-  "version": "1.0.1",
-  "marketplace_zip": "learning-output-style-1.0.1.zip",
-  "marketplace_sha256": "065afa71ff915c2d9ab494046e64edd2d47b1e7470f332bd8339922c0a1fc47d",
-  "marketplace_bytes": 40986,
-  "native_test_zip": "learning-output-style-1.0.1-native-test.zip",
-  "native_test_sha256": "ae36a586495e015b028dda8e35c5a04af4854bc9cf4e05f174b27cadb7a031a9",
-  "native_test_bytes": 39691,
+  "version": "1.0.2",
+  "marketplace_zip": "learning-output-style-1.0.2.zip",
+  "marketplace_sha256": "a0158fca0498855ae586a733fc23b0098cbf971a68d63523ed1dd85194df09f3",
+  "marketplace_bytes": 43285,
+  "native_test_zip": "learning-output-style-1.0.2-native-test.zip",
+  "native_test_sha256": "56e5fe4439eda85b8f902ff518305793d69262bb724f99ccf6fa5d20bc40ffd1",
+  "native_test_bytes": 41940,
   "payload_sha256": {
     "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
-    "NOTICE": "70c9381f8e85ed1125090dc476ff792f7f44e74e4988be649dceda0f9908f7e0",
-    "README.md": "c85e489d484dbcbc2bdd4c51dc0cb7dfaa713f86ca5caa6c5070a988148a6c21",
-    "SOURCE.json": "c8e942f1eb359ac2904fa60527590a17cde0a3c8d2895f1c71c555af5c681dc4",
-    "THIRD_PARTY_NOTICES.md": "cff82e006b18352b2028453749510549205b1361b60fff22025b1a2c82659dd3",
+    "NOTICE": "5f9ae4545e86e82a63613df1d280704800b46e55acd1f85f60ef50b469c76376",
+    "README.md": "c2b5a37e1b50b11328ee4dc07f164b722ccffcaf35f5a77317447f91701162b1",
+    "SOURCE.json": "f2dfe3036458db054102767d08c26cc39c374f918ac13c7776f509b2d072a274",
+    "THIRD_PARTY_NOTICES.md": "c51c7a266945b25d4078e8e7291f22a71172e4e503d78ab925de82f9fa1026ad",
     "licenses/claude-plugins-official/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
-    "manifest.json": "c02c6096b85c659866e94a98406fee6560aafb66686134e364b5167d529267bc",
+    "manifest.json": "2fe43fef15340da03d352fbf430019260c38c4f8ad10eca0ab808b9abc2ddb6d",
     "prompt_sections/learning-output-style.md": "62814aa53bf6d4e50c1c464209516db7b835a57e560d26bb05e73da7ffb58f1d",
     "skills/learning-contribution/SKILL.md": "8c803f9996c1217d7c0b3e9f3f17c0aba847ec5fb8bf2a60b87102f587f79561"
   },
   "archive_integrity": "passed",
   "required_marketplace_layout": "passed",
   "native_and_marketplace_payloads_identical": true,
-  "license_and_notice_review": "passed; full license, file-level changes, and THIRD_PARTY_NOTICES present",
+  "license_and_notice_review": "Full Apache texts unchanged; prior notices preserved; Chinese README carries its modification notice. No new upstream materials.",
+  "unchanged_from_1_0_1": [
+    "LICENSE",
+    "licenses/claude-plugins-official/LICENSE",
+    "prompt_sections/learning-output-style.md",
+    "skills/learning-contribution/SKILL.md"
+  ],
   "native_loader_source": {
     "passed": true,
     "check_count": 8,
@@ -54,19 +60,21 @@
     "checks": [
       "Real JiuwenSwarm import of native test ZIP",
       "Real install and installed-state lookup in isolated data directory",
-      "Installed version 1.0.1 loads native prompt section and Skill",
+      "Installed version 1.0.2 loads native prompt section and Skill",
       "Real uninstall removes package and installed state"
     ],
     "scope": "Temporary data directory only; no active user installation modified"
   },
   "user_test_confirmation": {
-    "member": "Gan Mingrui",
-    "version": "1.0.1",
-    "record": "USER_TEST_CONFIRMATION.md",
-    "progress_report": "RPT-20261022-learning-output-style-user-confirmed",
-    "actual_user_reply": "是，1.0.1 测试已完成，可以提交",
-    "recorded_at": "2026-10-22 15:39 Asia/Singapore",
-    "known_blocking_issues": "none reported"
+    "version": "1.0.2",
+    "status": "pending",
+    "historical_1_0_1_confirmation": "USER_TEST_CONFIRMATION.md; does not cover 1.0.2"
   },
-  "hub_submission": "not submitted"
+  "hub_submission": "not submitted",
+  "delivery_pr_1_0_2": null,
+  "historical_delivery_pr": "https://github.com/LasVie/agentic-hub-plugins/pull/13",
+  "historical_only": true,
+  "superseded_by_version": "1.0.4",
+  "current_verification_file": "delivery.json",
+  "historical_evidence_note": "Retained original prior-version/source-fixture evidence. Existing versions, hashes, results and limitations are preserved; this file does not establish testing of the current package. Use delivery.json and TEST_REPORT.md for final delegated host-test scope."
 }

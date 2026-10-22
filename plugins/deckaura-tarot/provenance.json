@@ -24,5 +24,23 @@
     "skills/tarot-reading/references/symbolism.md",
     "skills/tarot-reading/scripts/tarot.mjs"
   ],
-  "audit_file": "SOURCE_REVIEW.md"
+  "audit_file": "SOURCE_REVIEW.md",
+  "localization_history": [
+    {
+      "date": "2026-10-22",
+      "base_version": "1.0.2",
+      "version": "1.0.3",
+      "scope": "Historical metadata/README-only Chinese edition: localized marketplace/native display fields, tags, README and version/source/adaptation records. The immutable 1.0.3 ZIP retained English Skill/reference instructions, all 312 English upright/reversed/love/career meaning summaries, English spread positions/CLI help/errors and Python Tool descriptions/errors. Full runtime/data translation belongs to 1.0.4, not 1.0.3. Card identifiers, schema, original license bytes and selection algorithms remained unchanged.",
+      "user_test_confirmation": "pending",
+      "hub_submission_authorized": false
+    }
+  ],
+  "localization": {
+    "date": "2026-10-22",
+    "base_version": "1.0.3",
+    "version": "1.0.4",
+    "scope": "Complete Chinese runtime edition introduced in 1.0.4: Skill and all five reference documents, all 312 upright/reversed/love/career meaning summaries, spread positions, CLI help/errors, and Python Tool descriptions/errors. The prior 1.0.3 runtime/data remained English. Stable card identifiers, schema/protocol fields, original source URLs, full MIT license bytes and selection algorithms are retained; actual host results are recorded in delivery.json.",
+    "host_test_authority": "User explicitly delegated actual local WorkSwarm import/prompt tests and conditional PR on success in current conversation. AI-operated tests are not represented as user-performed.",
+    "hub_submission_authorized": false
+  }
 }

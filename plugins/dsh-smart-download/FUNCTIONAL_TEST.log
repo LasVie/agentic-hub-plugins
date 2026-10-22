@@ -1,0 +1,86 @@
+Source payload real HTTP integration
+2026-10-22 17:34:40 | common | default_trace_id | INFO | Registered connector pool type: default
+2026-10-22 17:34:40 | common | default_trace_id | INFO | Registered connector pool type: httpx
+2026-10-22 17:34:41 | common | default_trace_id | INFO | Registered query expression support for milvus
+2026-10-22 17:34:41 | common | default_trace_id | INFO | Registered query expression support for chroma
+2026-10-22 17:34:41 | common | default_trace_id | INFO | Registered parser ExcelParser for .xlsx
+2026-10-22 17:34:41 | common | default_trace_id | INFO | Registered parser ExcelParser for .csv
+2026-10-22 17:34:41 | common | default_trace_id | INFO | Registered parser ExcelParser for .tsv
+2026-10-22 17:34:41 | common | default_trace_id | INFO | Registered parser TxtMdParser for .txt
+2026-10-22 17:34:41 | common | default_trace_id | INFO | Registered parser TxtMdParser for .md
+2026-10-22 17:34:41 | common | default_trace_id | INFO | Registered parser TxtMdParser for .markdown
+2026-10-22 17:34:41 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .htm
+2026-10-22 17:34:41 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .html
+2026-10-22 17:34:41 | common | default_trace_id | INFO | Registered parser JSONParser for .json
+2026-10-22 17:34:41 | common | default_trace_id | INFO | Registered parser PDFParser for .pdf
+2026-10-22 17:34:41 | common | default_trace_id | INFO | Registered parser WordParser for .docx
+2026-10-22 17:34:41 | common | default_trace_id | INFO | Registered parser ImageParser for .png
+2026-10-22 17:34:41 | common | default_trace_id | INFO | Registered parser ImageParser for .jpg
+2026-10-22 17:34:41 | common | default_trace_id | INFO | Registered parser ImageParser for .jpeg
+2026-10-22 17:34:41 | common | default_trace_id | INFO | Registered parser ImageParser for .webp
+2026-10-22 17:34:41 | common | default_trace_id | INFO | Registered parser ImageParser for .gif
+2026-10-22 17:34:41 | common | default_trace_id | INFO | Registered parser ImageParser for .jfif
+Tool API backend: /Users/lasvie/Documents/openJiuwen/openJiuwen_PersistentAgent/openjiuwen/core/foundation/tool/__init__.py
+dsh-smart-download integration: PASS
+
+Final extracted native payload real HTTP integration
+2026-10-22 17:35:57 | common | default_trace_id | INFO | Registered connector pool type: default
+2026-10-22 17:35:57 | common | default_trace_id | INFO | Registered connector pool type: httpx
+2026-10-22 17:35:58 | common | default_trace_id | INFO | Registered query expression support for milvus
+2026-10-22 17:35:58 | common | default_trace_id | INFO | Registered query expression support for chroma
+2026-10-22 17:35:58 | common | default_trace_id | INFO | Registered parser ExcelParser for .xlsx
+2026-10-22 17:35:58 | common | default_trace_id | INFO | Registered parser ExcelParser for .csv
+2026-10-22 17:35:58 | common | default_trace_id | INFO | Registered parser ExcelParser for .tsv
+2026-10-22 17:35:58 | common | default_trace_id | INFO | Registered parser TxtMdParser for .txt
+2026-10-22 17:35:58 | common | default_trace_id | INFO | Registered parser TxtMdParser for .md
+2026-10-22 17:35:58 | common | default_trace_id | INFO | Registered parser TxtMdParser for .markdown
+2026-10-22 17:35:58 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .htm
+2026-10-22 17:35:58 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .html
+2026-10-22 17:35:58 | common | default_trace_id | INFO | Registered parser JSONParser for .json
+2026-10-22 17:35:58 | common | default_trace_id | INFO | Registered parser PDFParser for .pdf
+2026-10-22 17:35:58 | common | default_trace_id | INFO | Registered parser WordParser for .docx
+2026-10-22 17:35:58 | common | default_trace_id | INFO | Registered parser ImageParser for .png
+2026-10-22 17:35:58 | common | default_trace_id | INFO | Registered parser ImageParser for .jpg
+2026-10-22 17:35:58 | common | default_trace_id | INFO | Registered parser ImageParser for .jpeg
+2026-10-22 17:35:58 | common | default_trace_id | INFO | Registered parser ImageParser for .webp
+2026-10-22 17:35:58 | common | default_trace_id | INFO | Registered parser ImageParser for .gif
+2026-10-22 17:35:58 | common | default_trace_id | INFO | Registered parser ImageParser for .jfif
+Tool API backend: /Users/lasvie/Documents/openJiuwen/openJiuwen_PersistentAgent/openjiuwen/core/foundation/tool/__init__.py
+dsh-smart-download integration: PASS
+
+Actual isolated host lifecycle
+2026-10-22 17:36:40 | common | default_trace_id | INFO | Registered connector pool type: default
+2026-10-22 17:36:40 | common | default_trace_id | INFO | Registered connector pool type: httpx
+2026-10-22 17:36:40 | common | default_trace_id | INFO | Registered query expression support for milvus
+2026-10-22 17:36:40 | common | default_trace_id | INFO | Registered query expression support for chroma
+2026-10-22 17:36:40 | common | default_trace_id | INFO | Registered parser ExcelParser for .xlsx
+2026-10-22 17:36:40 | common | default_trace_id | INFO | Registered parser ExcelParser for .csv
+2026-10-22 17:36:40 | common | default_trace_id | INFO | Registered parser ExcelParser for .tsv
+2026-10-22 17:36:40 | common | default_trace_id | INFO | Registered parser TxtMdParser for .txt
+2026-10-22 17:36:40 | common | default_trace_id | INFO | Registered parser TxtMdParser for .md
+2026-10-22 17:36:40 | common | default_trace_id | INFO | Registered parser TxtMdParser for .markdown
+2026-10-22 17:36:40 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .htm
+2026-10-22 17:36:40 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .html
+2026-10-22 17:36:40 | common | default_trace_id | INFO | Registered parser JSONParser for .json
+2026-10-22 17:36:40 | common | default_trace_id | INFO | Registered parser PDFParser for .pdf
+2026-10-22 17:36:40 | common | default_trace_id | INFO | Registered parser WordParser for .docx
+2026-10-22 17:36:40 | common | default_trace_id | INFO | Registered parser ImageParser for .png
+2026-10-22 17:36:40 | common | default_trace_id | INFO | Registered parser ImageParser for .jpg
+2026-10-22 17:36:40 | common | default_trace_id | INFO | Registered parser ImageParser for .jpeg
+2026-10-22 17:36:40 | common | default_trace_id | INFO | Registered parser ImageParser for .webp
+2026-10-22 17:36:40 | common | default_trace_id | INFO | Registered parser ImageParser for .gif
+2026-10-22 17:36:40 | common | default_trace_id | INFO | Registered parser ImageParser for .jfif
+{
+  "passed": true,
+  "slug": "dsh-smart-download",
+  "version": "1.0.1",
+  "tools": 2,
+  "skills": 1,
+  "checks": [
+    "actual isolated native ZIP import",
+    "actual install and allowed-state check",
+    "actual OpenJiuwen native manifest loading",
+    "actual uninstall and removed-state check"
+  ],
+  "scope": "Isolated temporary data directory; actual desktop UI and model prompts remain separate"
+}

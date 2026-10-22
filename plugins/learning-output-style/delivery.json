@@ -2,22 +2,184 @@
   "task_id": "AH-20261022-learning-output-style",
   "candidate_id": "CAND-ANT-037",
   "owner": "Gan Mingrui",
-  "version": "1.0.1",
-  "status": "Submitting",
+  "version": "1.0.4",
+  "status": "Awaiting Acceptance",
   "confirmation_report_id_for_original_1_0_0": "RPT-20261022-learning-output-style-confirmation",
   "ready_report_id": "RPT-20261022-learning-output-style-ready",
-  "marketplace_sha256": "065afa71ff915c2d9ab494046e64edd2d47b1e7470f332bd8339922c0a1fc47d",
-  "native_test_sha256": "ae36a586495e015b028dda8e35c5a04af4854bc9cf4e05f174b27cadb7a031a9",
-  "current_version_user_test_confirmation": "RPT-20261022-learning-output-style-user-confirmed",
-  "delivery_pr": null,
+  "marketplace_sha256": "f5889ff19eea2e0284f26cab693e40d632cee95cf861c649cbc2be60bbc622b0",
+  "native_test_sha256": "d9ab3c0051840516da0b89a44e2f36f92808ca7e294edf3500349a292f07a5a4",
+  "current_version_user_test_confirmation": null,
+  "delivery_pr": "https://github.com/LasVie/agentic-hub-plugins/pull/23",
   "merged_commit": null,
   "hub_id": null,
-  "hub_status": "Not Submitted",
+  "hub_status": "Current Chinese version not submitted",
   "test_screenshot": null,
   "hub_submission_screenshot": null,
   "project_lead_acceptance": "Pending Acceptance",
   "tracker_updated_and_verified": "2026-10-22",
-  "repository_base_commit": "e29f36fe8af161a3a2f73cdeb14272622f5c3962",
-  "repository_snapshot_note": "Local source snapshot; shell clone could not authenticate. Use the connected GitHub tools to prepare the delivery branch/PR after current-version test confirmation.",
-  "repository_instructions_blob_sha": "0fdb2edbaa260a1c0064edf9c5166eb536fa0743"
+  "repository_base_commit": "089b6ee584041e61c54c25fe9a60456360a89a05",
+  "repository_snapshot_note": "Actual delivery PR #23 is open for the unchanged tested package. Latest reviewed main and AGENTS policy are recorded from the parent agent verification; no current-version merge, Hub submission, publication, user-performed test completion or final Project Lead acceptance is inferred.",
+  "repository_instructions_blob_sha": "77f1082183ed59b3f60271106c06db2d08e445ad",
+  "historical_deliveries": [
+    {
+      "version": "1.0.1",
+      "delivery_pr": "https://github.com/LasVie/agentic-hub-plugins/pull/13",
+      "merged_commit": "a231860012025293f364d6b2699220a601739f60",
+      "marketplace_sha256": "065afa71ff915c2d9ab494046e64edd2d47b1e7470f332bd8339922c0a1fc47d",
+      "confirmation_report": "RPT-20261022-learning-output-style-user-confirmed",
+      "test_screenshot": "https://github.com/LasVie/agentic-hub-plugins/pull/13#issuecomment-6335545221"
+    }
+  ],
+  "historical_local_test_candidates": [
+    {
+      "version": "1.0.2",
+      "marketplace_sha256": "a0158fca0498855ae586a733fc23b0098cbf971a68d63523ed1dd85194df09f3",
+      "native_test_sha256": "56e5fe4439eda85b8f902ff518305793d69262bb724f99ccf6fa5d20bc40ffd1",
+      "status_at_supersession": "Ready for Testing",
+      "delivery_pr": null,
+      "merged_commit": null,
+      "repository_base_commit": "c0a9ff52b582de403a2e5ff636f5fa2bdd42c66c",
+      "repository_instructions_blob_sha": "0fdb2edbaa260a1c0064edf9c5166eb536fa0743",
+      "note": "Historical local test candidate; not a claim of merged delivery or confirmation for the replacement package."
+    }
+  ],
+  "delivery_state": "PR #23 open; final Chinese package and actual delegated host tests passed; original screenshot attachments verified byte-for-byte. Not merged, not submitted to Hub and not finally accepted.",
+  "local_test_evidence": [
+    {
+      "path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/learning-output-style/import-1.0.3-failure.png",
+      "sha256": "81b0edccb08cd07eb8cd94663ee0c1e0c60bfc6eaa3c581e99f7c652ed603032",
+      "version": "1.0.3",
+      "role": "Historical failed import"
+    },
+    {
+      "path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/learning-output-style/import-list.png",
+      "sha256": "7ec8c2bb43dc4122821c8d54a3a8495e9f1717d8440b41a22a26350d869fe1b3",
+      "version": "1.0.4",
+      "role": "Original actual host/browser screenshot"
+    },
+    {
+      "path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/learning-output-style/prompt-result.png",
+      "sha256": "c2e532bb3a6f804d8f8f8392baa7d95382ee98899d39af9edc291e2b56844300",
+      "version": "1.0.4",
+      "role": "Original actual host/browser screenshot"
+    }
+  ],
+  "delegated_ai_test_confirmation": {
+    "authority": "The human user in the current conversation explicitly asked the agent to finish import and prompt testing in the user-open local WorkSwarm, preserve original screenshots, and update the existing content through a PR if successful, while keeping responsible member names unchanged. This authorizes delegated AI-operated host tests and conditional PR preparation; it is not a statement that the human personally performed the tests.",
+    "authority_source": "Direct human instruction in the current conversation on 2026-10-22; no message URL is available.",
+    "recorded_at": "2026-10-22T17:31:24+08:00",
+    "performed_by": "AI agent operating the user-open local WorkSwarm UI",
+    "human_performed_testing": false,
+    "explicit_user_delegation": true,
+    "conditional_pr_on_success_authorized": true,
+    "host": "WorkSwarm 0.2.7",
+    "model": "Deepseek V4 Flash",
+    "task_id": "AH-20261022-learning-output-style",
+    "version": "1.0.4",
+    "marketplace_sha256": "f5889ff19eea2e0284f26cab693e40d632cee95cf861c649cbc2be60bbc622b0",
+    "native_test_sha256": "d9ab3c0051840516da0b89a44e2f36f92808ca7e294edf3500349a292f07a5a4",
+    "result": "Passed for the documented import/prompt/browser scope",
+    "installed_payload_verification": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/learning-output-style/installed-payload-verification.json",
+    "actual_cases": [
+      {
+        "flow": "Historical failed import",
+        "observed": "The 1.0.3 native import exposed a host crash caused by original string tags. Failure screenshot and installed manifest snapshot were preserved; 1.0.3 is not marked passed.",
+        "result": "Historical failure; resolved in 1.0.4"
+      },
+      {
+        "flow": "Final host import",
+        "observed": "Corrected tags to localized zh/en mappings, bumped to 1.0.4 and imported again successfully. All 9 final installed files match the 1.0.4 source/native/marketplace bytes.",
+        "result": "Passed"
+      },
+      {
+        "flow": "Real teaching prompt",
+        "observed": "The configured host created a syntactically valid Python retry skeleton in the bounded fixture directory, explained the design tradeoff in Chinese and left the meaningful learner contribution as TODO at lines 33–44.",
+        "result": "Passed"
+      },
+      {
+        "flow": "Wait for learner",
+        "observed": "The host explicitly stopped and waited for the learner rather than completing the chosen contribution. The remaining NotImplementedError is the intended unfinished learner exercise, not a passing completed implementation.",
+        "result": "Passed"
+      },
+      {
+        "flow": "Actual SDK loader",
+        "observed": "The final marketplace-extracted 1.0.4 passed eight actual openJiuwen loader checks, including source/translation hashes and negative path/type/missing-file cases.",
+        "result": "Passed"
+      }
+    ],
+    "remaining_limits": [
+      "The exercise was intentionally left incomplete for the learner; no learner implementation or post-contribution validation is claimed.",
+      "These are AI-operated tests on the user-open host, not user-performed tests. Other models, harnesses or combinations of active plugins may behave differently."
+    ],
+    "final_project_lead_acceptance": "Not supplied",
+    "tested_repository_base_commit": "e0f6b866649e82cbf37fbd082db9891ca977ae8e",
+    "delivery_repository_base_commit": "089b6ee584041e61c54c25fe9a60456360a89a05",
+    "delivery_pr": "https://github.com/LasVie/agentic-hub-plugins/pull/23",
+    "confirmation_boundary": "The original direct human instruction delegated AI operation of the already-open local WorkSwarm and conditionally authorized a PR on success. It is not a claim that the human performed the tests, confirmed the final package personally, or gave final Project Lead acceptance."
+  },
+  "resolved_test_failure": {
+    "version": "1.0.3",
+    "failure": "Original string manifest tags caused a host import crash",
+    "fix": "Localized zh/en tag mappings in rebuilt 1.0.4; re-imported successfully; final bytes independently verified",
+    "evidence": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/learning-output-style/import-1.0.3-failure.png",
+    "final_version": "1.0.4",
+    "payload_change_requires_new_version": true
+  },
+  "repository_metadata_history": [
+    {
+      "repository_base_commit": "49acfa795cb6964f06a16cd30594efb7055272d0",
+      "repository_instructions_blob_sha": "78a5b51285e322b38d81381d47aa9eef672bb62f",
+      "delivery_pr": null,
+      "delivery_state": "PR pending creation; original screenshots pending attachment and verified permalinks",
+      "note": "Prior local preparation metadata; retained when associating the unchanged tested package with the actual PR and newly reviewed main policy."
+    }
+  ],
+  "pr_creation_record": {
+    "url": "https://github.com/LasVie/agentic-hub-plugins/pull/23",
+    "verified_head_at_creation": "277dd7e447c2d5475dfd424045c5be75dc656444",
+    "verified_tree_at_creation": "c294a3ef5f51eb1856c1f0388ebf963576a1b566",
+    "source": "Parent agent verified actual GitHub PR creation; these identifiers record creation, not any later PR head."
+  },
+  "repository_policy_sync": {
+    "recorded_at": "2026-10-22T17:40:58+08:00",
+    "latest_reviewed_main_commit": "089b6ee584041e61c54c25fe9a60456360a89a05",
+    "latest_agents_blob_sha": "77f1082183ed59b3f60271106c06db2d08e445ad",
+    "reviewed_by": "Parent agent, which read the full latest main AGENTS.md and identified #22 as the Asset Ledger gating change.",
+    "asset_ledger_rule": "Do not synchronize a new version into Asset Ledger without actual Agentic Hub submission evidence; opening or merging a GitHub delivery PR does not establish Hub submission.",
+    "asset_ledger_action_this_update": "None"
+  },
+  "test_evidence_pr_permalinks": [
+    "https://github.com/LasVie/agentic-hub-plugins/pull/23#issuecomment-6337704455"
+  ],
+  "current_test_evidence": {
+    "original_screenshot_comment": "https://github.com/LasVie/agentic-hub-plugins/pull/23#issuecomment-6337704455",
+    "images": [
+      {
+        "file": "import-1.0.3-failure.png",
+        "url": "https://github.com/user-attachments/assets/bcbe8963-997d-4b08-8007-2bb97eb50cbf",
+        "bytes": 381921,
+        "sha256": "81b0edccb08cd07eb8cd94663ee0c1e0c60bfc6eaa3c581e99f7c652ed603032",
+        "remote_bytes_identical": true,
+        "actual_media_type": "image/jpeg"
+      },
+      {
+        "file": "import-list.png",
+        "url": "https://github.com/user-attachments/assets/691d44df-2819-4121-9f2a-93834e0a974d",
+        "bytes": 254381,
+        "sha256": "7ec8c2bb43dc4122821c8d54a3a8495e9f1717d8440b41a22a26350d869fe1b3",
+        "remote_bytes_identical": true,
+        "actual_media_type": "image/jpeg"
+      },
+      {
+        "file": "prompt-result.png",
+        "url": "https://github.com/user-attachments/assets/da805a2d-3502-4fbc-9bf7-ae9dd402e467",
+        "bytes": 718645,
+        "sha256": "c2e532bb3a6f804d8f8f8392baa7d95382ee98899d39af9edc291e2b56844300",
+        "remote_bytes_identical": true,
+        "actual_media_type": "image/jpeg"
+      }
+    ],
+    "remote_original_bytes_verified": true,
+    "operation_authority": "User expressly delegated assistant-operated WorkSwarm import/prompt tests and PR on success; no human-performed test or final acceptance is claimed."
+  }
 }

@@ -1,13 +1,21 @@
 {
   "type": "agent-plugin",
   "name": "dsh-latex-guard",
-  "version": "1.0.0",
-  "display_name": "LaTeX Guard",
-  "description": "Lint and enrich BibTeX and audit LaTeX citation keys with three native WorkSwarm tools.",
+  "version": "1.0.3",
+  "display_name": "LaTeX 引用守卫",
+  "description": "检查 BibTeX 重复键与缺失字段，通过 Crossref 补全空白字段，并对照文献库审计 LaTeX 引用键。",
   "publisher": "Flan246; Agentic Hub port",
   "category": "数据与科学研究",
-  "tags": ["latex", "bibtex", "citations", "crossref"],
-  "functional_tags": ["BibTeX Linting", "Crossref Metadata", "Citation Audit"],
+  "tags": [
+    "LaTeX",
+    "BibTeX",
+    "引用审计"
+  ],
+  "functional_tags": [
+    "BibTeX Linting",
+    "Crossref Metadata",
+    "Citation Audit"
+  ],
   "scope": "Local LaTeX/BibTeX files supplied by explicit path. bib_fill alone uses Crossref. The Plugin does not compile LaTeX and requires no TeX distribution, MCP connector, or DSH runtime.",
   "candidate_id": "CAND-DSH-204",
   "task_id": "AH-20261022-dsh-latex-guard",

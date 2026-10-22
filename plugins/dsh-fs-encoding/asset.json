@@ -1,10 +1,23 @@
 {
-  "type": "agent-plugin", "name": "dsh-fs-encoding", "version": "1.0.1",
-  "display_name": "File Encoding Guardian",
-  "description": "Read, write, edit, search and undo legacy-encoded text files while preserving BOM and line endings.",
+  "type": "agent-plugin",
+  "name": "dsh-fs-encoding",
+  "version": "1.0.4",
+  "display_name": "文件编码守护",
+  "description": "通过专用工具读取、写入、编辑、搜索和撤销旧编码文本文件，保留原始编码、BOM 与换行符，并拒绝无法表示的字符。",
   "publisher": "dsh-fs-encoding contributors; Agentic Hub port",
-  "category": "软件开发", "tags": ["encoding", "legacy-files", "bom", "text-editing"],
-  "functional_tags": ["Encoding-Safe IO", "Legacy Text", "Byte Preservation"],
+  "category": "软件开发",
+  "tags": [
+    "文件编码",
+    "旧编码文本",
+    "安全编辑"
+  ],
+  "functional_tags": [
+    "Encoding-Safe IO",
+    "Legacy Text",
+    "Byte Preservation"
+  ],
   "scope": "Explicit encoding_* tools for local files. Does not replace WorkSwarm built-in filesystem tools or convert existing files to a new encoding.",
-  "candidate_id": "CAND-DSH-153", "task_id": "AH-20261022-dsh-fs-encoding", "related_asset_ids": []
+  "candidate_id": "CAND-DSH-153",
+  "task_id": "AH-20261022-dsh-fs-encoding",
+  "related_asset_ids": []
 }

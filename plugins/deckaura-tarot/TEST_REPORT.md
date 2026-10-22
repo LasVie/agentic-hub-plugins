@@ -1,3 +1,64 @@
+# Final delegated WorkSwarm test: deckaura-tarot 1.0.4
+
+Date: 2026-10-22 (Asia/Singapore). Task `AH-20261022-deckaura-tarot`; candidate `CAND-CLD-140`; unchanged responsible member **Cai Zhenze**.
+
+Final package: marketplace SHA-256 `957ddb5266249ea7eb308f2e98975dc54281717db1883991d48c1306f3ddace3`; native import SHA-256 `6af3ae3dbcae9802b5a5785ba307117672d6e850d0e45f201750dda97a8dbf4a`. Both transports, source, final extraction and actually installed payload match file for file and byte for byte.
+
+Authority: The human user in the current conversation explicitly asked the agent to finish import and prompt testing in the user-open local WorkSwarm, preserve original screenshots, and update the existing content through a PR if successful, while keeping responsible member names unchanged. This authorizes delegated AI-operated host tests and conditional PR preparation; it is not a statement that the human personally performed the tests.
+
+Environment: the user-open **WorkSwarm 0.2.7**, configured **Deepseek V4 Flash**, macOS. The controlling AI operated the real UI and submitted real Chinese prompts; tool results were not replaced by fabricated output. Recorded at 2026-10-22T17:31:24+08:00.
+
+Delivery repository base `49acfa795cb6964f06a16cd30594efb7055272d0` (latest merged Smart Download baseline); the actual host tests used unchanged package bytes prepared from `e0f6b866649e82cbf37fbd082db9891ca977ae8e`. Full latest AGENTS.md was read and verified as Git blob `78a5b51285e322b38d81381d47aa9eef672bb62f`.
+
+## Actual results
+
+| Flow | Observed verification | Result |
+| --- | --- | --- |
+| Actual host import | Imported native 1.0.4 through the user-open WorkSwarm UI; independently verified all 13 installed files against final source/native/marketplace bytes. | Passed |
+| Deck validation and lookup | Real tool validate accepted 78 cards; The Star reversed lookup returned the translated meaning fields. | Passed |
+| Reproducible Chinese seed | Two real three-card draws using the same Chinese seed produced the same cards, no within-draw duplicates, and all upright when reversals=false. | Passed |
+| Chinese range error | Real draw with count=79 returned Chinese count 必须是 1 至 78 的整数。 | Passed |
+
+## Final regression and package checks
+
+57 repository unit tests passed with actual openJiuwen/Node.js and zero skipped. The independent package audit passed for exact source/native/marketplace/repository-release/extracted contents, pinned source records, unchanged original license bytes and publisher/manifest author identities. The actual openJiuwen loader passed eight checks on the final extracted Learning package. The initial final-package audit snapshot checked 7 source assets and 26 retained release ZIPs; an intermediate repository check passed for 8 source assets and 27 retained ZIPs. Other explicitly delegated repository work may proceed concurrently; the parent agent runs the final full-repository check in the fresh PR worktree. These six-asset results do not assert the completion state of that parallel work. These automated checks supplement the actual delegated host run; they are not labelled as human-performed testing.
+
+Evidence is retained under `workswarm-host-tests-20261022/`: `final-audit/final-package-audit.json`, `final-audit/final-unit-suite.log`, `final-audit/final-learning-loader.json`, and `final-audit/final-repo-validation.log`. Each asset also has `installed-payload-verification.json`, real UI accessibility snapshots and original PNG files.
+
+## Original screenshots and scope
+
+- `deckaura-tarot/import-list.png` — version 1.0.4; SHA-256 `398183784704370b3ae004b4969722f2430563e49b0e85dc8a731e7322a958de`; Original actual host/browser screenshot.
+- `deckaura-tarot/prompt-result.png` — version 1.0.4; SHA-256 `46cd50f20c99d6ac5989ac4c981f814c1b5e65a4828be48f3ce91ad7e0656420`; Original actual host/browser screenshot.
+
+The final-version screenshots are local original evidence pending attachment to a real PR discussion. No PR image URL or evidence permalink has been invented. Screenshot tracker fields must receive only verified PR evidence links after upload; existing historical evidence remains valid for its stated version.
+
+## Limits and delivery state
+
+- Only reflective/creative/entertainment functionality is established; no factual prediction or professional advice is claimed.
+- The dataset retains technical card IDs/names and structured keys. Chinese card names must still map to the supported technical card_name when invoking the tool.
+
+The delegated test scope passed. Current status is `Awaiting Acceptance` with the delivery PR pending creation. `current_version_user_test_confirmation` remains null because the agent ran the tests under explicit human delegation; the separate `delegated_ai_test_confirmation` records that authority and the exact tested hashes. No current-version PR merge, Hub submission, Hub approval/publication, human-performed test completion or final Project Lead acceptance is claimed. Owners, stable IDs and historical PR/evidence records are preserved.
+
+## Historical reports (preserved; prior versions and pending snapshots are not current results)
+
+# WorkSwarm Chinese runtime test candidate deckaura-tarot 1.0.4
+
+2026-10-22. Final native import/prompt tests delegated by the Project Lead; results pending. Previous version 1.0.3 and prior reports/hashes are historical only. No current-version user-performed testing, merge or Hub submission is claimed.
+
+## Historical reports
+
+# Chinese package verification: deckaura-tarot 1.0.3
+
+Date: 2026-10-22. Current package is a local Build candidate, not merged or submitted. All current-version user testing and screenshot confirmation are pending. Original owner, stable task/candidate IDs, prior PR #15 and historical evidence remain intact. Earlier confirmation below covers only its original bytes.
+
+Source validation: 50 repository unit/functional tests passed with actual openJiuwen SDK and Node.js (zero skipped); file encoding and LaTeX real Tool API integrations passed. Final archive source/market/native/extracted equality and original-license checks passed; details are in LOCALIZATION_TEST.json and package-verification.json. Six Plugins passed actual isolated import/install/load/Chinese-card/uninstall checks; Playground passed actual relocated Skill resolver checks through a temporary test harness (not target-host Skill import). No paid model call is made. Crossref fill integration uses a deterministic mock, not a live service assertion.
+
+Localization covers Chinese marketplace/native display fields, tags, README and user instructions. Playground SKILL body is Chinese; its six pinned templates remain unchanged. Original license texts, technical IDs and functional algorithms are preserved; MCP generator changes only its version literal and Skill version references.
+
+The final extracted payload passed all 26 actual SDK/Node functional tests with zero skipped. No model interpretation is claimed.
+
+## Historical report (original version only)
+
 # Deckaura Tarot 1.0.2 test report
 
 Candidate `CAND-CLD-140`; task `AH-20261022-deckaura-tarot`; owner Cai Zhenze. Tests and source review were performed on 2026-10-22. The user subsequently confirmed manual testing complete for this unchanged package and explicitly authorized Phase 3 in the current conversation on the same date; the exact confirmation time is unavailable. The task is `Submitting` and the candidate remains `Planned`. PR merge, Hub submission/publication and Song Haoran's final acceptance are not established by this report.

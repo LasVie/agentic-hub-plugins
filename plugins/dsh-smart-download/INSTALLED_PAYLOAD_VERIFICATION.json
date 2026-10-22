@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-10-22T17:43:53.699314+08:00",
+  "asset": "dsh-smart-download",
+  "version": "1.0.1",
+  "session_id": "web_1a162fb4927_ffd2d41deec4",
+  "installed_path": "/Users/lasvie/.jiuwenswarm/agent/workspace/plugins/plugin_packages/local/dsh-smart-download",
+  "payload_files": 6,
+  "installed_source_extracted_native_zip_market_zip_all_match": true,
+  "payload_sha256": {
+    "THIRD_PARTY_NOTICES.md": "556b1521a8af9def2ebba19636832be15dde3cac77f1b51ffefe22bb4e42f6d8",
+    "README.md": "4fff7936dafd9ac72df2749bf44898cba7f43f08e8ce15037ab93ae2a30b3b50",
+    "manifest.json": "0dd7133aff46ab9da794f4521a4dc46a8b28d72ea527bf8b8b54168f0334a1df",
+    "tools/smart_download.py": "42a7d2bf97fb06ce6d41af179950890ab5a0b747a520d57654da0beeab732e23",
+    "licenses/dsh-smart-download/LICENSE": "ac0fc870e1cf8671b5beb57e0a58a11b2514076c867318e98b0d2c03db0389e6",
+    "skills/smart-download/SKILL.md": "a43328ba485f4abf02925bc3b9d7e81ffd821bdc666fc5fa386881fae3e71854"
+  },
+  "native_sha256": "09703b3ebf26336c45920e254d065e29681843e2c19686fb33120d467ddba52c",
+  "marketplace_sha256": "c5d95dece5001b57cdfd26c0bfab04101c95f3d827c3c8640a077868bcbd3074",
+  "download": {
+    "path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/dsh-smart-download/宿主下载实测.txt",
+    "bytes": 89,
+    "sha256": "15db81e9410d16cb0d5efd7bc2473a4925bbde0bad56964f70631f17d90d79b5",
+    "matches_fixture": true,
+    "matches_real_tool_result": true
+  },
+  "existing_output_guard": {
+    "error_code": "OUTPUT_EXISTS",
+    "final_download_still_matches_fixture": true
+  },
+  "private_network_guard": {
+    "error_code": "DOWNLOAD_FAILED",
+    "target": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/dsh-smart-download/私网拒绝实测.txt",
+    "target_absent": true,
+    "partial_target_absent": true
+  },
+  "tool_evidence": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/dsh-smart-download/actual-host-tool-evidence.json",
+  "original_screenshots": [
+    {
+      "path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/dsh-smart-download/import-list.png",
+      "name": "import-list.png",
+      "actual_format": "JPEG",
+      "extension_kept": ".png",
+      "width": 3600,
+      "height": 2260,
+      "sha256": "de3e35105475b173c4cc86d3a57a3bc22f7469ac84225a1b355c6a41b728f083",
+      "bytes": 238649,
+      "note": "Original full-resolution bytes retained; no conversion or recompression."
+    },
+    {
+      "path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/dsh-smart-download/prompt-result.png",
+      "name": "prompt-result.png",
+      "actual_format": "JPEG",
+      "extension_kept": ".png",
+      "width": 3600,
+      "height": 2260,
+      "sha256": "306189c111e6a1eadd03017c14a4c7b1fb19a7ceb70e5bf00404f82956ea349c",
+      "bytes": 624317,
+      "note": "Original full-resolution bytes retained; no conversion or recompression."
+    }
+  ],
+  "limits": [
+    "Delegated AI-operated real host test, not human-performed testing or final Project Lead acceptance.",
+    "This 89-byte desktop fixture used one worker and no interrupted transfer; this run does not establish manual resume or acceleration. Prior actual-SDK automated integration separately forced resume and multi-worker/fallback cases.",
+    "No current-version merge, Hub submission/publication or Asset Ledger update is claimed."
+  ]
+}

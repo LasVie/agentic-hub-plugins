@@ -18,13 +18,17 @@ try {
   assert.equal(tools.length, 1);
   assert.equal(tools[0].name, 'add');
   assert.equal(tools[0].annotations.readOnlyHint, true);
+  assert.equal(tools[0].annotations.title, '数值相加');
+  assert(tools[0].description.includes('有限数值'));
   const result = await client.callTool({ name: 'add', arguments: { a: 2, b: 3 } });
   assert.equal(result.isError, undefined);
   assert.deepEqual(JSON.parse(result.content[0].text), { sum: 5 });
   const bad = await client.callTool({ name: 'add', arguments: { a: 1e20, b: 0 } });
   assert.equal(bad.isError, true);
+  assert(bad.content.some(item => item.type === 'text' && item.text.includes('不能大于')));
   const typeError = await client.callTool({ name: 'add', arguments: { a: 'injected', b: 0 } });
   assert.equal(typeError.isError, true);
+  assert(typeError.content.some(item => item.type === 'text' && item.text.includes('必须为数字')));
   let unknownFailed = false;
   try {
     const unknown = await client.callTool({ name: 'unknown_tool', arguments: {} });
@@ -40,6 +44,10 @@ try {
     const { contents } = await client.readResource({ uri: resources[0].uri });
     assert.equal(contents[0].mimeType, 'text/html;profile=mcp-app');
     assert(contents[0].text.includes('aria-live="polite"'));
+    assert(contents[0].text.includes('lang="zh-CN"'));
+    assert(contents[0].text.includes('计算结果'));
+    assert(contents[0].text.includes('等待工具返回结果'));
+    assert(contents[0].text.includes('无法读取结果，请查看工具的文本回复'));
     assert(contents[0].text.includes('textContent'));
     assert(!contents[0].text.includes('from "https://'));
   }

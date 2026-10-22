@@ -41,3 +41,13 @@ None exposes duplicate-key/missing-field BibTeX linting, Crossref gap filling, a
 ## Distribution review
 
 The final ZIP must include `THIRD_PARTY_NOTICES.md`, `licenses/dsh-latex-guard/LICENSE`, the modified tool header, and only the Python port/Plugin documentation. Before release, unpack the ZIP and verify these exact paths and the license SHA-256 recorded in `provenance.json`.
+
+
+## Chinese packaging 1.0.1 (2026-10-22)
+
+The Project Lead-side user explicitly requested Chinese packages for every currently delivered asset. This is local Build work based on merged 1.0.0. Marketplace/native display fields and README were localized without changing machine identifiers, license bytes, publishers or upstream provenance. Functional code, data, runtime instructions and templates remain byte-identical. No new third-party material is introduced. Original license copies and attribution remain; modified documentation carries a prominent dated notice. New user testing, screenshot and separate Hub confirmation remain pending. Automated checks do not substitute for these gates.
+
+
+## Complete Chinese runtime edition (2026-10-22)
+
+Localized the actual Skill instructions, ToolCard descriptions and human-readable errors while retaining machine parameter names, result/error keys, codes, codec IDs, protocol values, original MIT headers and full license bytes. Existing algorithms and standard exception details remain; Chinese prefixes explain external/Python diagnostics without rewriting third-party values. No new dependencies or source materials. Final hash and real WorkSwarm evidence are recorded after packaging.

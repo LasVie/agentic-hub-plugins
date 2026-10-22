@@ -1,22 +1,117 @@
 {
-  "version": "1.0.1", "package_type": "plugin", "source": "local", "id": "dsh-fs-encoding", "name": "File Encoding Guardian",
-  "description": "Encoding-safe tools for legacy text files.",
-  "display_name": {"en": "File Encoding Guardian", "zh": "文件编码守护"},
-  "display_description": {"en": "Safely inspect and edit legacy-encoded files without losing BOMs or line endings.", "zh": "安全检查和编辑旧编码文本文件，同时保留 BOM、换行符与原始编码并拒绝不可表示字符。"},
+  "version": "1.0.4",
+  "package_type": "plugin",
+  "source": "local",
+  "id": "dsh-fs-encoding",
+  "name": "文件编码守护",
+  "description": "通过专用工具读取、写入、编辑、搜索和撤销旧编码文本文件，保留原始编码、BOM 与换行符，并拒绝无法表示的字符。",
+  "display_name": {
+    "en": "File Encoding Guardian",
+    "zh": "文件编码守护"
+  },
+  "display_description": {
+    "en": "Safely inspect and edit legacy-encoded files without losing BOMs or line endings.",
+    "zh": "通过专用工具读取、写入、编辑、搜索和撤销旧编码文本文件，保留原始编码、BOM 与换行符，并拒绝无法表示的字符。"
+  },
   "category": "Development",
-  "tags": [{"en":"File Encoding","zh":"文件编码"},{"en":"Legacy Text","zh":"旧编码文本"},{"en":"Safe Editing","zh":"安全编辑"}],
-  "default_init_input": {"en":"Inspect this legacy-encoded file safely: ","zh":"安全检查这个旧编码文本文件："},
-  "quick_inputs": [
-    {"en":"Inspect this legacy-encoded file safely: ","zh":"安全检查这个旧编码文本文件："},
-    {"en":"Edit this file while preserving its encoding and line endings: ","zh":"编辑这个文件并保留其编码和换行符："},
-    {"en":"Search these legacy-encoded files for: ","zh":"在这些旧编码文件中搜索："}
+  "tags": [
+    {
+      "en": "File Encoding",
+      "zh": "文件编码"
+    },
+    {
+      "en": "Legacy Text",
+      "zh": "旧编码文本"
+    },
+    {
+      "en": "Safe Editing",
+      "zh": "安全编辑"
+    }
   ],
-  "skills": [{"dir":"skills/fs-encoding","mode":"all"}],
+  "default_init_input": {
+    "en": "Inspect this legacy-encoded file safely: ",
+    "zh": "安全检查这个旧编码文本文件："
+  },
+  "quick_inputs": [
+    {
+      "en": "Inspect this legacy-encoded file safely: ",
+      "zh": "安全检查这个旧编码文本文件："
+    },
+    {
+      "en": "Edit this file while preserving its encoding and line endings: ",
+      "zh": "编辑这个文件并保留其编码和换行符："
+    },
+    {
+      "en": "Search these legacy-encoded files for: ",
+      "zh": "在这些旧编码文件中搜索："
+    }
+  ],
+  "skills": [
+    {
+      "dir": "skills/fs-encoding",
+      "mode": "all"
+    }
+  ],
   "tools": [
-    {"file":"tools/fs_encoding.py","class":"EncodingReadTool","display_name":{"en":"Encoding Read","zh":"编码读取"},"display_description":{"en":"Read text with explicit or safe encoding detection.","zh":"使用显式编码或安全检测读取文本。"}},
-    {"file":"tools/fs_encoding.py","class":"EncodingWriteTool","display_name":{"en":"Encoding Write","zh":"编码写入"},"display_description":{"en":"Create or replace text without changing its encoding.","zh":"创建或替换文本且不改变原始编码。"}},
-    {"file":"tools/fs_encoding.py","class":"EncodingEditTool","display_name":{"en":"Encoding Edit","zh":"编码编辑"},"display_description":{"en":"Apply a literal replacement with byte-safe validation.","zh":"通过字节安全校验执行文字替换。"}},
-    {"file":"tools/fs_encoding.py","class":"EncodingGrepTool","display_name":{"en":"Encoding Search","zh":"编码搜索"},"display_description":{"en":"Search decoded legacy text across explicit files.","zh":"在指定旧编码文本文件中搜索解码内容。"}},
-    {"file":"tools/fs_encoding.py","class":"EncodingUndoTool","display_name":{"en":"Encoding Undo","zh":"编码撤销"},"display_description":{"en":"Undo the latest unchanged encoding-safe mutation.","zh":"撤销最近一次未被外部修改的编码安全变更。"}}
+    {
+      "file": "tools/fs_encoding.py",
+      "class": "EncodingReadTool",
+      "display_name": {
+        "en": "Encoding Read",
+        "zh": "编码读取"
+      },
+      "display_description": {
+        "en": "Read text with explicit or safe encoding detection.",
+        "zh": "使用显式编码或安全检测读取文本。"
+      }
+    },
+    {
+      "file": "tools/fs_encoding.py",
+      "class": "EncodingWriteTool",
+      "display_name": {
+        "en": "Encoding Write",
+        "zh": "编码写入"
+      },
+      "display_description": {
+        "en": "Create or replace text without changing its encoding.",
+        "zh": "创建或替换文本且不改变原始编码。"
+      }
+    },
+    {
+      "file": "tools/fs_encoding.py",
+      "class": "EncodingEditTool",
+      "display_name": {
+        "en": "Encoding Edit",
+        "zh": "编码编辑"
+      },
+      "display_description": {
+        "en": "Apply a literal replacement with byte-safe validation.",
+        "zh": "通过字节安全校验执行文字替换。"
+      }
+    },
+    {
+      "file": "tools/fs_encoding.py",
+      "class": "EncodingGrepTool",
+      "display_name": {
+        "en": "Encoding Search",
+        "zh": "编码搜索"
+      },
+      "display_description": {
+        "en": "Search decoded legacy text across explicit files.",
+        "zh": "在指定旧编码文本文件中搜索解码内容。"
+      }
+    },
+    {
+      "file": "tools/fs_encoding.py",
+      "class": "EncodingUndoTool",
+      "display_name": {
+        "en": "Encoding Undo",
+        "zh": "编码撤销"
+      },
+      "display_description": {
+        "en": "Undo the latest unchanged encoding-safe mutation.",
+        "zh": "撤销最近一次未被外部修改的编码安全变更。"
+      }
+    }
   ]
 }

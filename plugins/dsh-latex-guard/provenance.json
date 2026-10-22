@@ -23,5 +23,31 @@
     "README.md",
     "THIRD_PARTY_NOTICES.md",
     "licenses/dsh-latex-guard/LICENSE"
-  ]
+  ],
+  "localization_history": [
+    {
+      "date": "2026-10-22",
+      "base_version": "1.0.0",
+      "version": "1.0.1",
+      "scope": "Historical documentation edition: Chinese marketplace/native display metadata and README, with version/source/adaptation records. The existing LaTeX Skill and Python Tool implementation were inherited without runtime translation changes; original legal text and technical identifiers were retained.",
+      "user_test_confirmation": "pending",
+      "hub_submission_authorized": false
+    },
+    {
+      "date": "2026-10-22",
+      "base_version": "1.0.1",
+      "version": "1.0.2",
+      "scope": "Historical runtime candidate: Chinese LaTeX Skill instructions and Python Tool help/results/errors. The immutable 1.0.2 and 1.0.3 archives have identical Skill and Python Tool bytes; 1.0.3 carries the final tested packaging/documentation metadata. Live Crossref service testing was not established by this scope record.",
+      "host_test_authority": "User explicitly delegated actual local WorkSwarm import/prompt tests and conditional PR on success in current conversation. AI-operated tests are not represented as user-performed.",
+      "hub_submission_authorized": false
+    }
+  ],
+  "localization": {
+    "date": "2026-10-22",
+    "base_version": "1.0.2",
+    "version": "1.0.3",
+    "scope": "Final 1.0.3 Chinese edition retains the Chinese Skill and Python Tool runtime bytes introduced by 1.0.2, with finalized version/README/notices and actual delegated WorkSwarm import/lint/citation/Chinese-error evidence. Live Crossref was not called; original publisher, MIT text and technical identifiers are retained.",
+    "host_test_authority": "User explicitly delegated actual local WorkSwarm import/prompt tests and conditional PR on success in current conversation. AI-operated tests are not represented as user-performed.",
+    "hub_submission_authorized": false
+  }
 }

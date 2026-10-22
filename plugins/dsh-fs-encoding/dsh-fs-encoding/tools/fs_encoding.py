@@ -3,6 +3,7 @@
 Copyright (c) 2026 dsh-fs-encoding contributors. Modified to expose explicit
 Python/OpenJiuwen tools; see ../licenses/dsh-fs-encoding/LICENSE.
 """
+# 中文化修改：2026-10-22，翻译工具说明和可读提示；保留参数、错误码及文件处理算法。
 from __future__ import annotations
 
 import hashlib
@@ -46,7 +47,7 @@ def _save_undo(path: Path, before: bytes, after: bytes) -> None:
 def _encoding(raw: str) -> str:
     key = re.sub(r"[^a-z0-9]", "", raw.lower())
     if key not in ALIASES:
-        raise ValueError("unsupported encoding; use utf8/utf8bom, utf16le/be, utf32le/be, gbk, big5, shift_jis, euc_kr, or windows-1250..1258")
+        raise ValueError("不支持该编码；请使用 utf8/utf8bom、utf16le/be、utf32le/be、gbk、big5、shift_jis、euc_kr 或 windows-1250..1258")
     return ALIASES[key]
 
 
@@ -63,7 +64,7 @@ def _decode(data: bytes, hint: str | None) -> tuple[str, str, bytes]:
     try:
         return data.decode("utf-8", "strict"), "utf-8", b""
     except UnicodeDecodeError as exc:
-        raise ValueError("encoding is ambiguous; re-run with an explicit encoding") from exc
+        raise ValueError("文件编码不明确；请指定 encoding 后重试") from exc
 
 
 def _line_ending(text: str) -> str:
@@ -94,13 +95,13 @@ def _error(code: str, message: str) -> Dict[str, Any]:
 
 class EncodingReadTool(Tool):
     def __init__(self) -> None:
-        super().__init__(ToolCard(id="encoding_read", name="encoding_read", description="Read a legacy-encoded text file safely.", input_params={"type":"object","properties":{"file_path":{"type":"string"},"encoding":{"type":"string"},"offset":{"type":"integer","minimum":1,"default":1},"limit":{"type":"integer","minimum":1,"default":200}},"required":["file_path"]}, idempotent=True))
+        super().__init__(ToolCard(id="encoding_read", name="encoding_read", description="安全读取旧编码文本文件。", input_params={"type":"object","properties":{"file_path":{"type":"string"},"encoding":{"type":"string"},"offset":{"type":"integer","minimum":1,"default":1},"limit":{"type":"integer","minimum":1,"default":200}},"required":["file_path"]}, idempotent=True))
     async def invoke(self, inputs: Dict[str, Any], **kwargs: Any) -> Dict[str, Any]:
-        if not inputs.get("file_path"): return _error("INVALID_INPUT", "file_path is required")
+        if not inputs.get("file_path"): return _error("INVALID_INPUT", "必须提供 file_path")
         path = Path(str(inputs["file_path"])).expanduser().resolve()
         if not path.is_file(): return _error("NOT_FOUND", str(path))
         try: data, text, enc, bom, ending = _load(path, inputs.get("encoding"))
-        except (ValueError, UnicodeError) as exc: return _error("ENCODING_REQUIRED", str(exc))
+        except (ValueError, UnicodeError) as exc: return _error("ENCODING_REQUIRED", "处理失败：" + str(exc))
         _KNOWN[str(path)] = enc
         lines = text.replace("\r\n", "\n").replace("\r", "\n").split("\n")
         offset, limit = int(inputs.get("offset", 1)), int(inputs.get("limit", 200))
@@ -110,9 +111,9 @@ class EncodingReadTool(Tool):
 
 class EncodingWriteTool(Tool):
     def __init__(self) -> None:
-        super().__init__(ToolCard(id="encoding_write", name="encoding_write", description="Preview or write full text while preserving an existing encoding.", input_params={"type":"object","properties":{"file_path":{"type":"string"},"content":{"type":"string"},"encoding":{"type":"string"},"write":{"type":"boolean","default":False}},"required":["file_path","content"]}, parallel_safe=False))
+        super().__init__(ToolCard(id="encoding_write", name="encoding_write", description="预览或完整写入文本，保留现有文件编码。", input_params={"type":"object","properties":{"file_path":{"type":"string"},"content":{"type":"string"},"encoding":{"type":"string"},"write":{"type":"boolean","default":False}},"required":["file_path","content"]}, parallel_safe=False))
     async def invoke(self, inputs: Dict[str, Any], **kwargs: Any) -> Dict[str, Any]:
-        if not inputs.get("file_path") or "content" not in inputs: return _error("INVALID_INPUT", "file_path and content are required")
+        if not inputs.get("file_path") or "content" not in inputs: return _error("INVALID_INPUT", "必须提供 file_path 和 content")
         path = Path(str(inputs["file_path"])).expanduser().resolve(); exists = path.is_file()
         try:
             if exists:
@@ -120,12 +121,12 @@ class EncodingWriteTool(Tool):
                 hint = inputs.get("encoding") or known
                 before, _old, enc, bom, ending = _load(path, hint)
                 if known and inputs.get("encoding") and enc != known:
-                    return _error("ENCODING_MISMATCH", f"file was previously read as {known}; refusing {enc}")
+                    return _error("ENCODING_MISMATCH", f"文件先前按 {known} 读取，拒绝改用 {enc}")
                 _KNOWN[str(path)] = enc
             else:
                 before=b""; enc=_encoding(str(inputs.get("encoding","utf8"))); bom=next((m for m,n in BOMS if n==enc),b""); ending="\r\n" if "\r\n" in str(inputs["content"]) else "\n"
             after=_encode(str(inputs["content"]),enc,bom,ending)
-        except (ValueError, UnicodeError) as exc: return _error("UNREPRESENTABLE_OR_UNKNOWN", str(exc))
+        except (ValueError, UnicodeError) as exc: return _error("UNREPRESENTABLE_OR_UNKNOWN", "处理失败：" + str(exc))
         written=bool(inputs.get("write",False))
         if written:
             path.parent.mkdir(parents=True,exist_ok=True); path.write_bytes(after)
@@ -137,18 +138,18 @@ class EncodingWriteTool(Tool):
 
 class EncodingEditTool(Tool):
     def __init__(self) -> None:
-        super().__init__(ToolCard(id="encoding_edit", name="encoding_edit", description="Preview or apply literal replacement without changing encoding.", input_params={"type":"object","properties":{"file_path":{"type":"string"},"old_string":{"type":"string"},"new_string":{"type":"string"},"encoding":{"type":"string"},"replace_all":{"type":"boolean","default":False},"write":{"type":"boolean","default":False}},"required":["file_path","old_string","new_string"]}, parallel_safe=False))
+        super().__init__(ToolCard(id="encoding_edit", name="encoding_edit", description="预览或执行文字替换，保留文件原编码。", input_params={"type":"object","properties":{"file_path":{"type":"string"},"old_string":{"type":"string"},"new_string":{"type":"string"},"encoding":{"type":"string"},"replace_all":{"type":"boolean","default":False},"write":{"type":"boolean","default":False}},"required":["file_path","old_string","new_string"]}, parallel_safe=False))
     async def invoke(self, inputs: Dict[str, Any], **kwargs: Any) -> Dict[str, Any]:
         path=Path(str(inputs.get("file_path",""))).expanduser().resolve()
         if not path.is_file(): return _error("NOT_FOUND",str(path))
         try: before,text,enc,bom,ending=_load(path,inputs.get("encoding"))
-        except (ValueError,UnicodeError) as exc: return _error("ENCODING_REQUIRED",str(exc))
+        except (ValueError,UnicodeError) as exc: return _error("ENCODING_REQUIRED","处理失败：" + str(exc))
         old,new=str(inputs.get("old_string","")),str(inputs.get("new_string","")); count=text.count(old)
-        if not old or count==0: return _error("EDIT_NOT_FOUND","old_string not found")
-        if count>1 and not inputs.get("replace_all",False): return _error("AMBIGUOUS_EDIT",f"old_string occurs {count} times")
+        if not old or count==0: return _error("EDIT_NOT_FOUND","未找到 old_string")
+        if count>1 and not inputs.get("replace_all",False): return _error("AMBIGUOUS_EDIT",f"old_string 出现 {count} 次，请指定是否全部替换")
         updated=text.replace(old,new) if inputs.get("replace_all",False) else text.replace(old,new,1)
         try: after=_encode(updated,enc,bom,ending)
-        except UnicodeError as exc: return _error("UNREPRESENTABLE",str(exc))
+        except UnicodeError as exc: return _error("UNREPRESENTABLE","处理失败：" + str(exc))
         written=bool(inputs.get("write",False))
         if written: path.write_bytes(after); _save_undo(path, before, after)
         return {"ok":True,"matches":count,"encoding":enc,"written":written,"before_sha256":_digest(before),"after_sha256":_digest(after)}
@@ -157,13 +158,13 @@ class EncodingEditTool(Tool):
 
 class EncodingGrepTool(Tool):
     def __init__(self) -> None:
-        super().__init__(ToolCard(id="encoding_grep", name="encoding_grep", description="Search explicit legacy-encoded files.", input_params={"type":"object","properties":{"pattern":{"type":"string"},"file_paths":{"type":"array","items":{"type":"string"}},"encoding":{"type":"string"},"regex":{"type":"boolean","default":False}},"required":["pattern","file_paths"]}, idempotent=True))
+        super().__init__(ToolCard(id="encoding_grep", name="encoding_grep", description="在明确指定的旧编码文件中搜索文本。", input_params={"type":"object","properties":{"pattern":{"type":"string"},"file_paths":{"type":"array","items":{"type":"string"}},"encoding":{"type":"string"},"regex":{"type":"boolean","default":False}},"required":["pattern","file_paths"]}, idempotent=True))
     async def invoke(self, inputs: Dict[str, Any], **kwargs: Any) -> Dict[str, Any]:
         hits=[]; failures=[]; pattern=str(inputs.get("pattern","")); rx=re.compile(pattern) if inputs.get("regex",False) else None
         for raw in inputs.get("file_paths",[]):
             path=Path(str(raw)).expanduser().resolve()
             try: _data,text,enc,_bom,_ending=_load(path,inputs.get("encoding"))
-            except Exception as exc: failures.append({"path":str(path),"error":str(exc)}); continue
+            except Exception as exc: failures.append({"path":str(path),"error":"读取失败：" + str(exc)}); continue
             for number,line in enumerate(text.replace("\r\n","\n").replace("\r","\n").split("\n"),1):
                 if (rx.search(line) if rx else pattern in line): hits.append({"path":str(path),"line":number,"text":line,"encoding":enc})
         return {"ok":True,"hits":hits,"failures":failures}
@@ -172,18 +173,18 @@ class EncodingGrepTool(Tool):
 
 class EncodingUndoTool(Tool):
     def __init__(self) -> None:
-        super().__init__(ToolCard(id="encoding_undo", name="encoding_undo", description="Undo the latest unchanged mutation for one file.", input_params={"type":"object","properties":{"file_path":{"type":"string"}},"required":["file_path"]}, parallel_safe=False))
+        super().__init__(ToolCard(id="encoding_undo", name="encoding_undo", description="撤销该文件最近一次且未被外部覆盖的工具修改。", input_params={"type":"object","properties":{"file_path":{"type":"string"}},"required":["file_path"]}, parallel_safe=False))
     async def invoke(self, inputs: Dict[str, Any], **kwargs: Any) -> Dict[str, Any]:
         path=Path(str(inputs.get("file_path",""))).expanduser().resolve(); record_path=_undo_path(path)
-        if not record_path.is_file(): return _error("NO_UNDO","no undo record")
+        if not record_path.is_file(): return _error("NO_UNDO","没有可用的撤销记录")
         try:
             record=json.loads(record_path.read_text(encoding="utf-8"))
             before=base64.b64decode(record["before"], validate=True)
         except (OSError, ValueError, KeyError, json.JSONDecodeError) as exc:
-            return _error("INVALID_UNDO",str(exc))
-        if record.get("path") != str(path): return _error("INVALID_UNDO","undo record path mismatch")
+            return _error("INVALID_UNDO","处理失败：" + str(exc))
+        if record.get("path") != str(path): return _error("INVALID_UNDO","撤销记录的文件路径不匹配")
         current=path.read_bytes() if path.is_file() else b""
-        if _digest(current)!=record.get("after_sha256"): return _error("STALE_UNDO","file changed after the recorded mutation")
+        if _digest(current)!=record.get("after_sha256"): return _error("STALE_UNDO","记录修改后文件已被外部更改，拒绝撤销")
         path.write_bytes(before); record_path.unlink()
         return {"ok":True,"restored_sha256":_digest(before),"bytes":len(before)}
     async def stream(self, inputs: Dict[str, Any], **kwargs: Any) -> AsyncIterator[Dict[str, Any]]: yield await self.invoke(inputs, **kwargs)
