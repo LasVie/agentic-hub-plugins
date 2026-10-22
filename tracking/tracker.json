@@ -455,7 +455,7 @@
   "asset_naming": {
     "permission": "Choose a new Chinese display name based on the delivered functionality; no requirement to retain/literally translate the upstream title.",
     "new_slug": "A new asset may use a compliant internal slug selected before packaging, with manifests/paths consistent.",
-    "mapping": "Record upstream/candidate name -> final Chinese display name -> internal slug in SOURCE_REVIEW.md and linked task/candidate notes.",
+    "mapping": "Record upstream/candidate name -> final Chinese display name -> internal slug in SOURCE_REVIEW.md, linked candidate Notes and the original task's Progress Reports.",
     "stable_identity": "Preserve original research names and established Candidate IDs, Task IDs, Asset IDs and existing internal IDs.",
     "retest": "Changes to packaged names after user testing require rebuilding and renewed user confirmation plus applicable screenshots."
   }
