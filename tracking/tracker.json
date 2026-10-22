@@ -1,5 +1,5 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
   "spreadsheet_id": "12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM",
   "url": "https://docs.google.com/spreadsheets/d/12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM/edit",
   "repository": "https://github.com/LasVie/agentic-hub-plugins",
@@ -14,7 +14,8 @@
       "New Asset",
       "Existing Asset Update",
       "To Be Confirmed"
-    ]
+    ],
+    "review_record": "Candidate review updates Plugin Candidates only. Do not create a Development Task or Progress Report for inventory screening. Start plugin task tracking when the user selects an asset for implementation."
   },
   "sheets": {
     "candidates": {
@@ -143,6 +144,7 @@
   "completion_gates": [
     "PR actually merged",
     "functional tests passed",
+    "explicit user test-completion confirmation for the current version and final ZIP SHA-256, with known blocking issues resolved",
     "both real screenshot links accessible",
     "task-specific Hub delivery target met",
     "explicit controller acceptance",
@@ -195,7 +197,7 @@
       "task_field": "Owner",
       "unassigned_value": "Unassigned",
       "authority": "Explicit controller assignment or confirmed task assignment; never infer from AI account or PR author.",
-      "candidate_to_task": "Inherit an assigned candidate lead unless an explicit reassignment applies.",
+      "candidate_to_task": "On an explicitly selected or continued task, inherit its confirmed candidate lead. General screening skips claimed candidates; never take over another owner without explicit handoff.",
       "task_to_candidate": "Fill an unassigned candidate from its confirmed primary task owner.",
       "conflict": "Check explicit assignment/handoff evidence; otherwise preserve both values and report the conflict.",
       "handoff": "Update both sheets and log old owner, new owner, date and authority in the progress report.",
@@ -205,7 +207,7 @@
       "To Evaluate": "A candidate or owner-only claim; no formal development task yet.",
       "Planned": "A linked development task exists; first delivery is still open.",
       "Deferred": "Controller explicitly defers the candidate; retain linked task history.",
-      "Excluded": "Controller explicitly rejects the candidate; task cancellation alone is insufficient.",
+      "Excluded": "Explicit controller rejection, or confirmed complete functional coverage recorded by the candidates agent for an unclaimed candidate with no linked development task. Preserve evidence and history; task cancellation alone is insufficient.",
       "Delivered": "All agreed first-delivery gates and controller acceptance passed and the asset ledger was synced; track later upgrades in separate tasks."
     },
     "finish_fields": [
@@ -233,7 +235,15 @@
     ],
     "evidence": "Screenshot links stay in the linked development task; record real merged PR, version, asset ID and Hub status in candidate notes as appropriate.",
     "not_applicable": "Independent plugin requirements may have no candidate. Pure repository maintenance skips candidate and task tracking entirely; do not invent either record.",
-    "restore_rule": "Never overwrite live claims, owners, statuses, links or notes with the initial import snapshot."
+    "restore_rule": "Never overwrite live claims, owners, statuses, links or notes with the initial import snapshot.",
+    "duplicate_check_options_snapshot": [
+      "Not Checked",
+      "Same Name - Review Needed",
+      "Functional Overlap - Review Needed",
+      "Already Covered",
+      "Partial Overlap - Extend Existing Capability",
+      "Confirmed New Capability"
+    ]
   },
   "language": "en",
   "language_rule": "Write all tracker descriptions, notes, progress reports, labels and statuses in English. Preserve stable IDs, owner names, URLs, versions, dates and exact original source filenames. Read live headers and dropdown options before each write; translated snapshots must never overwrite newer collaborative edits.",
@@ -244,6 +254,10 @@
     "Designing",
     "In Development",
     "Integration Testing",
+    "Ready for Testing",
+    "User Testing",
+    "Ready for Submission",
+    "Submitting",
     "Awaiting Acceptance",
     "Completed",
     "Blocked",
@@ -254,5 +268,113 @@
     "Pending Acceptance",
     "Accepted",
     "Rejected"
-  ]
+  ],
+  "workflow": {
+    "phases": [
+      "Review",
+      "Build",
+      "Submit"
+    ],
+    "routing": "Review ends with candidates for user selection. Explicit selection starts Build. Explicit completion of user testing for the current package starts Submit when known blocking issues are resolved.",
+    "review": {
+      "role": "candidates agent",
+      "skip_confirmed_duplicates": "Skip Already Covered or an explicit complete-coverage conclusion without repeating upstream downloads or functional review. Reopen only for explicit user re-review or a new requested scope/version.",
+      "skip_claimed": "During general screening skip a named Owner, an explicit selection/reservation, linked task IDs, or Planned/Delivered. Also skip Deferred/Excluded. Do not overwrite another claim.",
+      "uncertain_is_not_duplicate": [
+        "Not Checked",
+        "Same Name - Review Needed",
+        "Functional Overlap - Review Needed"
+      ],
+      "compare": "Compare historical and new assets across types, especially Skills, SwarmSkills and Plugins, by inputs, actions, outputs, scope, exclusions and dependencies. Start with tags and related details.",
+      "write_fields": [
+        "Duplicate Check",
+        "Related Assets and Differences",
+        "Notes"
+      ],
+      "confirmed_duplicate": {
+        "duplicate_check": "Already Covered",
+        "candidate_status": "Excluded",
+        "condition": "Only if still unclaimed and without linked development tasks at pre-write readback; otherwise preserve active work and report the conflict."
+      },
+      "partial_overlap": "Partial Overlap - Extend Existing Capability",
+      "independent_capability": "Confirmed New Capability",
+      "evidence": "Record candidate version/ref, compared Asset IDs and versions, functional reasoning and actual review date in English.",
+      "task_creation": false
+    },
+    "build": {
+      "trigger": "User explicitly selects a candidate for migration/development, or explicitly continues an existing assigned task.",
+      "claim_before_implementation": true,
+      "claim_fields": [
+        "Owner",
+        "Candidate Status",
+        "Linked Development Task IDs",
+        "Notes"
+      ],
+      "selected_candidate_status": "Planned",
+      "unknown_owner": "Keep Unassigned; Planned, linked task IDs and a dated user-selection note still reserve the candidate.",
+      "concurrency": "Re-read the candidate, ownership and linked task before writing. Batch linked candidate/task updates where possible and verify both. Repair partial writes before implementation; do not pretend this provides atomic compare-and-set locking.",
+      "review_reuse": "Reuse existing review evidence and check relevant asset changes since that review rather than rescanning the complete catalog.",
+      "output": "Native source and a Hub-format test package with version, ZIP SHA-256, actual tests, installation instructions, expected results and known issues.",
+      "ready_status": "Ready for Testing",
+      "testing_status": "User Testing",
+      "allowed_before_confirmation": [
+        "local development",
+        "local branches/commits",
+        "source/license review",
+        "functional tests",
+        "local ZIP packaging",
+        "user test instructions",
+        "tracker progress updates"
+      ],
+      "not_before_confirmation": [
+        "git push of plugin delivery",
+        "delivery PR creation",
+        "PR merge",
+        "GitHub Release publication",
+        "Hub submission"
+      ]
+    },
+    "submit": {
+      "gate": "Explicit user test completion for this Task ID, version and final ZIP SHA-256; known blocking issues resolved. Automated tests, CI, downloads, starting tests or a screenshot alone are insufficient.",
+      "ready_status": "Ready for Submission",
+      "active_status": "Submitting",
+      "confirmation_record": {
+        "sheet": "Progress Reports",
+        "task_field": "Task ID",
+        "date_field": "Report Date",
+        "text_field": "Completed This Update",
+        "required_content": [
+          "faithful English rendering of actual user confirmation",
+          "actual confirming user",
+          "confirmation date/time",
+          "Task ID",
+          "tested version",
+          "final ZIP SHA-256",
+          "known blocking issues and resolution",
+          "actual conversation reference when available; never invent URLs"
+        ],
+        "test_screenshot_field": "Development Tasks / Test Screenshot",
+        "example": "User test confirmation: Testing is complete; confirmed by <actual user>; date/time <time>; Task ID <id>; version <version>; ZIP SHA-256 <hash>; known blocking issues <none/resolved details>; source <actual conversation reference or current conversation>."
+      },
+      "reuse_confirmation": "Continue normal submission after a valid explicit confirmation without asking for the same approval again.",
+      "invalidate_confirmation": "A change to the tested payload, package wrapper or final ZIP requires testing and confirmation of the new package. Unrelated repository documentation that leaves the package unchanged does not invalidate it.",
+      "sequence": [
+        "verify current package and user confirmation",
+        "set Submitting",
+        "push and open delivery PR",
+        "verify tests, CI and distribution evidence",
+        "merge ZIP and verify actual merge",
+        "delete eligible temporary branch",
+        "sync Asset Ledger",
+        "submit merged payload to Hub according to the agreed target",
+        "collect both screenshot links and update linked records",
+        "obtain explicit final Project Lead acceptance",
+        "mark Completed/Delivered only when all completion gates pass"
+      ],
+      "pending_status": "Awaiting Acceptance",
+      "final_acceptance": "User test completion is distinct from final Project Lead Acceptance. Only explicit acceptance by Song Haoran permits Accepted after the agreed delivery conditions are met.",
+      "legacy_tasks": "Preserve already merged PRs and historical progress. Never invent prior user confirmation; remaining Hub submissions and new package versions must meet the gate. Do not resubmit an identical already merged ZIP."
+    },
+    "maintenance_exception": "Pure repository maintenance uses a maintenance PR only; plugin user-test confirmation, ZIP/evidence gates, plugin task/report registration and candidate/asset updates do not apply."
+  }
 }

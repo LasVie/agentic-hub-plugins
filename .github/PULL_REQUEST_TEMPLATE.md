@@ -1,50 +1,61 @@
-本模板的资产交付与追踪清单适用于具体插件的开发和修改。纯仓库维护 PR 填写变更说明和相关验证，将任务 ID、候选 ID 及插件专属项目注明“不适用：仓库维护”，不向插件追踪表登记任务或汇报。
+This template applies to plugin development or changes. For pure repository maintenance, describe the change and verification; mark plugin-only fields Not Applicable. Do not create plugin tasks, reports, or asset/candidate records for maintenance.
 
-## 交付内容
+## Scope and identity
 
-任务 ID（插件开发或修改必填）：
-候选 ID（如适用）：
-实际指派的主负责人（未指定则待分配）：
-类型与资产 ID：
-与资产总账中已有能力的差异：
+- Change type: Plugin development/change / Repository maintenance
+- Task ID (required for plugin work):
+- Candidate ID (if applicable):
+- Confirmed primary owner (Unassigned if unspecified):
+- Asset type / stable Asset ID:
+- Difference from existing Asset Ledger capabilities:
 
-## 验证
+## Submission gate — before pushing/opening this delivery PR
 
-- 来源审查记录与固定上游版本：
-- 授权检查结果 / 独立实现依据：
-- 实际功能测试的环境、命令与结果：
-- 发布 ZIP 路径、版本与 SHA-256：
-- [ ] 已通过本仓格式校验，声明文件均存在
-- [ ] 已完成真实资产功能测试（不是只测包装器）
-- [ ] 已逐项核对代码、提示词、文档、素材及依赖的许可覆盖范围
-- [ ] 复用资产的最终 ZIP 内含适用版权声明、许可全文及 THIRD_PARTY_NOTICES.md，必要的上游 NOTICE 已保留
-- [ ] Apache-2.0 修改文件已作显著修改声明，原有适用声明未被覆盖
-- [ ] 已解包复核许可文件路径与哈希；授权不明材料未进入交付源码或 ZIP
+- [ ] The user explicitly confirmed testing is complete for the current package, and known blocking issues are resolved
+- Confirmation Progress Report ID / actual conversation reference:
+- Confirming user and date/time:
+- Tested version and final ZIP SHA-256:
+- [ ] The ZIP and payload submitted here match the confirmed test package; any changed package has been retested and explicitly confirmed
 
-许可条款的落实证据（列最终 ZIP 内路径；不适用项说明原因）：
-源码来源、许可及适用文件：
-版权/署名与 THIRD_PARTY_NOTICES.md：
-LICENSE / 上游 NOTICE（无则注明）：
-修改文件声明：
+AI self-tests, CI, downloading a package, starting tests, or a screenshot alone do not establish user test completion. Keep package development local until the gate is met. Pure repository maintenance is exempt; do not invent user testing or confirmation records.
 
-上述清单不代表已获得本仓自有代码的统一再许可授权；纯仓库维护可说明与插件分发相关的项目不适用。
+## Validation and distribution
 
-## 合入后追踪（仅插件开发或修改）
+- Source review and pinned upstream version:
+- Permission review / independent implementation basis:
+- Actual functional-test environment, commands and results:
+- ZIP path, version and SHA-256:
+- [ ] Repository format checks pass and every declared file exists
+- [ ] Actual asset functionality was tested, beyond packaging-tool tests
+- [ ] License coverage was checked for code, prompts, documents, media and dependencies
+- [ ] The final ZIP preserves applicable copyright statements, full licenses, THIRD_PARTY_NOTICES.md and any applicable upstream NOTICE
+- [ ] Apache-2.0 modified files carry prominent change notices; original applicable statements remain intact
+- [ ] Extracted final ZIP license paths and hashes were checked; materials with unknown permission are excluded
 
-- [ ] 已确认 PR 实际合入
-- [ ] 已提示用户上传测试截图
-- [ ] 已提示用户上传最终 Agentic Hub 提交截图
-- [ ] 已分别填写任务表的两列证据
-- [ ] 已同步资产总账、开发任务、进展汇报，以及对应候选行（如适用）
-- [ ] 候选与任务的负责人、候选 ID 和关联任务 ID 已核对；转派或冲突已记录
-- [ ] 候选按真实阶段更新；全部交付条件及总控验收通过后才填“已交付”
+Evidence within the final ZIP (explain Not Applicable items):
 
-待提交 / 审核中的 Hub 结果必须如实注明。纯仓库维护仅在 PR 留痕，不创建开发任务或关联进展汇报，也不更新插件候选或资产总账。
+- Sources, licenses and covered files:
+- Copyright / attribution / THIRD_PARTY_NOTICES.md:
+- LICENSE / upstream NOTICE (state if absent):
+- Modified-file notices:
 
-## 合入后分支清理（所有 PR 适用）
+This checklist does not relicense repository-owned code or upstream materials. Required functional tests, CI and distribution review must pass before merge.
 
-- [ ] 已确认 PR 实际合入及合并提交
-- [ ] 已核对来源分支最新 head 无新增提交，且无其他未合入 PR 使用该分支
-- [ ] 已确认本仓临时来源分支被自动或手动删除；需保留或权限不足时已在本 PR 说明分支名与原因
+## After merge — plugin work only
 
-保留默认、受保护及明确长期保留的分支；不删除他人 fork 分支或强制删除本地未合入工作。清理无需等待插件证据或验收，后续修改从最新主分支新建分支。
+- [ ] Actual merge and merge commit verified
+- [ ] User prompted for actual test screenshots and the final Agentic Hub submission screenshot
+- [ ] Both actual screenshot links recorded separately in Development Tasks
+- [ ] Asset Ledger, original Development Task, Progress Reports and linked candidate synchronized as applicable
+- [ ] Candidate/task IDs, owners and any handoff or conflict verified
+- [ ] Actual Hub submission/review state recorded; pending review is not publication
+- [ ] Final Project Lead acceptance recorded only from Song Haoran's explicit conclusion
+- [ ] Completed / Delivered used only when all agreed delivery gates pass; test completion alone is insufficient
+
+## Temporary branch cleanup — all PRs
+
+- [ ] Actual merge and merge commit verified
+- [ ] Source-branch head has no post-merge commits and no open PR depends on the branch
+- [ ] Eligible temporary source branch confirmed deleted automatically or manually; exceptions and missing permissions recorded in this PR
+
+Preserve main/default, protected and explicitly long-lived branches. Do not delete other contributors' fork branches or force-delete unmerged local work. Cleanup does not wait for plugin screenshots or final acceptance. Start subsequent changes from current main.
