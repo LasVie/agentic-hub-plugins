@@ -1,5 +1,5 @@
 {
-  "schema_version": 6,
+  "schema_version": 7,
   "spreadsheet_id": "12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM",
   "url": "https://docs.google.com/spreadsheets/d/12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM/edit?usp=sharing",
   "repository": "https://github.com/LasVie/agentic-hub-plugins",
@@ -145,9 +145,8 @@
     "PR actually merged",
     "functional tests passed",
     "explicit user test-completion confirmation for the current version and final ZIP SHA-256, with known blocking issues resolved",
-    "both real screenshot links accessible",
-    "task-specific Hub delivery target met",
-    "explicit controller acceptance",
+    "real test-screenshot evidence links accessible",
+    "explicit Project Lead acceptance of the GitHub handoff",
     "readback verification",
     "linked candidate owners, task IDs and delivery state synchronized when applicable"
   ],
@@ -233,7 +232,7 @@
       "Verified Version (Research Snapshot)",
       "Research Provenance"
     ],
-    "evidence": "Screenshot links stay in the linked development task; record real merged PR, version, asset ID and Hub status in candidate notes as appropriate.",
+    "evidence": "Test-evidence links stay in the linked development task; record merged PR, version, asset ID and GitHub handoff status in candidate notes. Synchronize real Hub information only when supplied by Song Haoran.",
     "not_applicable": "Independent plugin requirements may have no candidate. Pure repository maintenance skips candidate and task tracking entirely; do not invent either record.",
     "restore_rule": "Never overwrite live claims, owners, statuses, links or notes with the initial import snapshot.",
     "duplicate_check_options_snapshot": [
@@ -330,8 +329,7 @@
         "git push of plugin delivery",
         "delivery PR creation",
         "PR merge",
-        "GitHub Release publication",
-        "Hub submission"
+        "GitHub Release publication"
       ]
     },
     "submit": {
@@ -365,15 +363,15 @@
         "verify tests, CI and distribution evidence",
         "merge ZIP and verify actual merge",
         "delete eligible temporary branch",
-        "sync Asset Ledger",
-        "submit merged payload to Hub according to the agreed target",
-        "collect both screenshot links and update linked records",
+        "attach original test screenshots to the delivery PR and verify evidence permalinks",
+        "sync Asset Ledger and linked task/candidate/report records",
+        "hand off merged release path, version, hash, installation notes and test evidence to the Project Lead",
         "obtain explicit final Project Lead acceptance",
-        "mark Completed/Delivered only when all completion gates pass"
+        "mark Completed/Delivered only when contributor completion gates pass"
       ],
       "pending_status": "Awaiting Acceptance",
-      "final_acceptance": "User test completion is distinct from final Project Lead Acceptance. Only explicit acceptance by Song Haoran permits Accepted after the agreed delivery conditions are met.",
-      "legacy_tasks": "Preserve already merged PRs and historical progress. Never invent prior user confirmation; remaining Hub submissions and new package versions must meet the gate. Do not resubmit an identical already merged ZIP."
+      "final_acceptance": "User test completion is distinct from final Project Lead Acceptance. Only explicit acceptance by Song Haoran permits Accepted for the GitHub handoff; Hub submission/publication and its screenshot are not contributor acceptance prerequisites.",
+      "legacy_tasks": "Preserve already merged PRs and historical progress. Never invent prior user confirmation; new package versions must meet the test-completion gate. Do not resubmit an identical already merged ZIP. Pending Project Lead-owned Hub work does not block contributor completion."
     },
     "maintenance_exception": "Pure repository maintenance uses a maintenance PR only; plugin user-test confirmation, ZIP/evidence gates, plugin task/report registration and candidate/asset updates do not apply."
   },
@@ -388,5 +386,24 @@
     "update_in_place": true,
     "connection_note": "Link-based editing permission does not configure agent connector/API authentication. Use a configured Google Drive/Sheets connector or an available authorized browser route. Do not request an individual editor grant merely because a connector is unconfigured.",
     "failure_rule": "If no working route is available, report the actual connection/access blocker. For actual plugin work, preserve pending synchronization records; never claim the cloud sheet was updated without readback."
+  },
+  "hub_ownership": {
+    "owner": "Song Haoran",
+    "scope": "Agentic Hub submission, publication and associated Hub evidence are handled personally by the Project Lead.",
+    "contributor_rule": "Contributors and their agents deliver tested Hub-compatible packages through GitHub. Do not perform Hub operations or ask contributors to do them.",
+    "completion_rule": "Hub actions, review results and Hub screenshots are outside contributor completion gates. Preserve any real existing Hub evidence."
+  },
+  "screenshot_evidence": {
+    "storage": "Original full-resolution images attached to the delivery PR body or dedicated evidence comments.",
+    "tracker_values": "Evidence permalinks only in both screenshot columns; no embedded images, IMAGE formulas, local paths, base64, temporary signed image URLs or Drive links.",
+    "test": "Proactively request missing or invalid original test screenshots when the user reports testing complete. Verify actual images and task/version before writing links.",
+    "hub": "Agentic Hub Submission Screenshot is reserved for actual evidence supplied by Song Haoran; leave blank until available. Do not ask contributors to supply it.",
+    "completion": "Accessible real test evidence is required; Hub evidence is not a prerequisite for Completed/Delivered.",
+    "legacy": "Preserve old evidence until originals are safely attached to an allowed delivery PR and replacement links verified."
+  },
+  "table_row_maintenance": {
+    "rule": "Extend existing native tables and linked filter ranges to include appended rows; preserve column types, dropdown choices/chips, date formats, wrapping and alignment.",
+    "copy": "Copy formatting only from a valid nearby row without copying values or hyperlinks. Preserve valid new owner choices.",
+    "verify": "Read back values and table coverage after writing; never leave new entries outside the table."
   }
 }
