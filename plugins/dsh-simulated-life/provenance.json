@@ -1,0 +1,25 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/john-walks-slow/dsh-simulated-life",
+      "revision": "93cbc648fa4efb6da11513aff9eaf7888db94105",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/dsh-simulated-life/LICENSE",
+          "sha256": "d7d56b562d869856a4abd9a5762bb8895cc8cc7fc8ddfc22acab6345a08f2ae6"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "vendor/deduplication.ts",
+    "vendor/formatter.ts",
+    "vendor/loader.ts",
+    "vendor/types.ts",
+    "runtime/engine.mjs"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

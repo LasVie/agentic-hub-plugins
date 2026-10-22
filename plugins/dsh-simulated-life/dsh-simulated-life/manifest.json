@@ -1,0 +1,43 @@
+{
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "source": "local",
+  "id": "dsh-simulated-life",
+  "name": "本地模拟生活",
+  "description": "读取近24小时虚构生活事件、会话去重，并原子回写感受、思考与行动。",
+  "display_name": {
+    "zh": "本地模拟生活",
+    "en": "dsh-simulated-life"
+  },
+  "display_description": {
+    "zh": "读取近24小时虚构生活事件、会话去重，并原子回写感受、思考与行动。",
+    "en": "读取近24小时虚构生活事件、会话去重，并原子回写感受、思考与行动。"
+  },
+  "category": "内容创作",
+  "skills": [
+    {
+      "dir": "skills/dsh-simulated-life",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/plugin_tool.py",
+      "class": "PluginTool",
+      "display_name": {
+        "zh": "本地模拟生活",
+        "en": "dsh-simulated-life"
+      },
+      "display_description": {
+        "zh": "读取近24小时虚构生活事件、会话去重，并原子回写感受、思考与行动。",
+        "en": "读取近24小时虚构生活事件、会话去重，并原子回写感受、思考与行动。"
+      }
+    }
+  ],
+  "rails": [
+    {
+      "file": "rails/life_rail.py",
+      "class": "LifeRail"
+    }
+  ]
+}

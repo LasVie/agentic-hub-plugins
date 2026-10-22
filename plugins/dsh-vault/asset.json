@@ -1,0 +1,16 @@
+{
+  "type": "agent-plugin",
+  "name": "dsh-vault",
+  "version": "1.0.0",
+  "display_name": "本地凭据保险库",
+  "description": "无需服务账号的本地 AES-256-GCM 加密凭据管理、掩码查询和动态验证码。",
+  "publisher": "Song Haoran",
+  "category": "合规与法律",
+  "tags": [
+    "本地凭据保险库",
+    "本地运行",
+    "中文"
+  ],
+  "candidate_id": "CAND-DSH-036",
+  "task_id": "AH-20261022-dsh-vault"
+}

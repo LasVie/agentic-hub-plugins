@@ -1,0 +1,35 @@
+{
+  "asset_id": "repo:agent-plugin:dsh-simulated-life",
+  "candidate_id": "CAND-DSH-047",
+  "task_id": "AH-20261022-dsh-simulated-life",
+  "owner": "Song Haoran",
+  "display_name": "本地模拟生活",
+  "version": "1.0.0",
+  "native_zip_sha256": "d4f8679550432e7a72f9f5f08d13d92f50a5822ad7bb4339048730e00b64d774",
+  "marketplace_zip_sha256": "8e12f48d1afced64e983d3c80f07c75e36ae80ef8021801dbec252d19c235faf",
+  "phase": "Submitting",
+  "user_confirmation": {
+    "original": "提交",
+    "faithful_english": "Submit.",
+    "context": "Reply to the exact three version1.0.0 test-completion and PR-submission question.",
+    "confirmed_by": "Song Haoran",
+    "recorded_at": "2026-10-22T18:10:42+08:00",
+    "source": "Current side conversation; no public message permalink exists."
+  },
+  "test_performed_by": "Assistant under explicit delegation",
+  "project_lead_acceptance": "Pending Acceptance",
+  "hub_submission": null,
+  "delivery_pr": "https://github.com/LasVie/agentic-hub-plugins/pull/26",
+  "test_evidence_permalink": "https://github.com/LasVie/agentic-hub-plugins/pull/26#issuecomment-6338329798",
+  "test_report": "TEST_REPORT.md",
+  "source_review": "SOURCE_REVIEW.md",
+  "confirmation_report_id": "RPT-20261022-dsh-simulated-life-confirm-100",
+  "native_test_archive": "test-packages/song-three-plugins-20261022/dsh-simulated-life-1.0.0-workswarm.zip",
+  "original_images": [
+    {
+      "filename": "dsh-simulated-life-workswarm.jpg",
+      "sha256": "df951f41b72a4e500ccb9baf81cb3fee618dbccde4ad6c6a2955dd8a01b97c0c",
+      "uploaded_bytes_verified": true
+    }
+  ]
+}

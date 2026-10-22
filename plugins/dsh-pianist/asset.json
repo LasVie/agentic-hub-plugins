@@ -1,0 +1,16 @@
+{
+  "type": "agent-plugin",
+  "name": "dsh-pianist",
+  "version": "1.0.0",
+  "display_name": "离线钢琴演奏",
+  "description": "用本地合成音色生成钢琴演奏、WAV 与可交互的中文播放器。",
+  "publisher": "Song Haoran",
+  "category": "多模态与媒体",
+  "tags": [
+    "离线钢琴演奏",
+    "本地运行",
+    "中文"
+  ],
+  "candidate_id": "CAND-DSH-192",
+  "task_id": "AH-20261022-dsh-pianist"
+}

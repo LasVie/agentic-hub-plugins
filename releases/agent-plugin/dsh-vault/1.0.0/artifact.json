@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:dsh-vault",
+  "type": "agent-plugin",
+  "name": "dsh-vault",
+  "version": "1.0.0",
+  "zip": "dsh-vault-1.0.0.zip",
+  "sha256": "9d6065d4c8a2d49b803bfd48c5863daa2c9317599532e2aea234c734c7ccb4f3",
+  "payload_sha256": {
+    "README.md": "ab80d04507b3509bc69581a5c34dfa06489e9146806f3ca915d433fd04d119fb",
+    "THIRD_PARTY_NOTICES.md": "7a48dd6bbfc624a6b9d1b313b71b6b69c31c0d36de438f103b5fe4faf3f29eac",
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "licenses/dsh-vault/LICENSE": "58c6d04bab9e38ade2435645406d3f6bfcd267fa24d1a7382dfbeb85dbe313f2",
+    "manifest.json": "8703e640f97f22d65e2d42780133caebb228c57b167d495da7d8d169f553dcf9",
+    "runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime/bridge.py": "778be01677ad243eeafd860b4a060b363c144f2b61260f871767e06e77f6dbcb",
+    "runtime/engine.mjs": "c2b26991fc0b9ad6bf9fe3cee725a259f071f75f4fd585315ae7485fed899278",
+    "runtime/entry.ts": "6dc56e092144dc1e4b142a1386a5c0b4b251b96a0bed49709a130127ab7f9066",
+    "scripts/setup_vault.py": "581170ce879c01b52279167d798ffe5fb32659168d86e42562dc12dc861cbcde",
+    "skills/dsh-vault/SKILL.md": "454c18bda09d0b57fe3423124b0e4cd44fef5b14a2bb76b5d62cda67b786000f",
+    "tools/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tools/plugin_tool.py": "8fccd8fd9997750f675e78560fd1077f5d5fea9f75e356c1409f1bbb7b8214e4",
+    "vendor/crypto.ts": "d21bbfde0bb5a131e520c2506fe527ce5afdd5528ecfcfc1f0a050fcf9ddeffe",
+    "vendor/totp.ts": "d52a764e9c182f61603ff794f7542b0b55243a48ed7c4503721cb43d49cc2bf8"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "0d752f9f3b2bafe11654c48e9cb014e6b6419cf4feadd16c2f4dc4cec30a2d0b",
+  "functional_test_report_sha256": "66af4f10831376213b082c682db92647aea020a35421ec0a3fd1ac3e61371511"
+}
