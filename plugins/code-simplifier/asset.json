@@ -1,0 +1,21 @@
+{
+  "type": "agent-plugin",
+  "name": "code-simplifier",
+  "version": "1.0.1",
+  "display_name": "Code Simplifier",
+  "description": "Simplify recently modified code for readability and maintainability while preserving behavior and following target-project conventions.",
+  "publisher": "Cai Zhenze",
+  "category": "软件开发",
+  "tags": [
+    "code readability",
+    "refactoring",
+    "behavior preservation"
+  ],
+  "functional_tags": [
+    "Code Simplification and Refactoring"
+  ],
+  "scope": "Explicitly requested simplification in built-in single-agent JiuwenSwarm conversations. Uses the current agent tools and model; no standalone subagent, autonomous hook, MCP, or intentional behavior change.",
+  "publisher_role": "Packaging maintainer; Hub publisher account has not been verified.",
+  "candidate_id": "CAND-ANT-026",
+  "task_id": "AH-20261022-code-simplifier"
+}

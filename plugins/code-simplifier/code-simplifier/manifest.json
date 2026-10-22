@@ -1,0 +1,55 @@
+{
+  "version": "1.0.1",
+  "package_type": "plugin",
+  "id": "code-simplifier",
+  "name": "代码简化",
+  "description": "Improve code readability and maintainability while preserving behavior and following the target project's conventions.",
+  "display_name": {
+    "en": "Code Simplifier",
+    "zh": "代码简化"
+  },
+  "display_description": {
+    "en": "Simplify recently modified code while preserving functionality, following project conventions, and reporting relevant verification.",
+    "zh": "在保持功能和行为不变的前提下，遵循当前项目规范，简化近期修改的代码，提升可读性与可维护性。"
+  },
+  "category": "Engineering",
+  "source": "local",
+  "default_init_input": {
+    "en": "Use Code Simplifier to simplify the code changed in this session, preserving behavior and following this project's instructions.",
+    "zh": "使用代码简化技能优化本次会话修改的代码，保持行为不变并遵循当前项目的规范。"
+  },
+  "tags": [
+    {
+      "en": "Code readability",
+      "zh": "代码可读性"
+    },
+    {
+      "en": "Behavior preservation",
+      "zh": "行为保持"
+    },
+    {
+      "en": "Maintainability",
+      "zh": "可维护性"
+    }
+  ],
+  "quick_inputs": [
+    {
+      "en": "Use Code Simplifier to simplify the code changed in this session, preserving behavior and following this project's instructions.",
+      "zh": "使用代码简化技能优化本次会话修改的代码，保持行为不变并遵循当前项目的规范。"
+    },
+    {
+      "en": "Simplify the changed functions by reducing unnecessary nesting and duplication without changing their behavior.",
+      "zh": "减少已修改函数中不必要的嵌套与重复，保持原有行为不变。"
+    },
+    {
+      "en": "Refine the recently changed code for clarity, run the project's permitted focused checks, and summarize the changes and verification limits.",
+      "zh": "提升近期修改代码的清晰度，运行项目允许的针对性检查，并总结变更与验证限制。"
+    }
+  ],
+  "skills": [
+    {
+      "dir": "./skills/code-simplifier",
+      "mode": "all"
+    }
+  ]
+}

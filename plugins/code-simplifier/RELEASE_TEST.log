@@ -1,0 +1,34 @@
+PASS: asset source/provenance check
+PASS: native ZIP integrity
+PASS: official deterministic marketplace pack
+PASS: wrapper and manifest identity/version match
+PASS: all six payload files and declared paths verified after extraction
+PASS: native and marketplace payload hashes identical
+PASS: both full upstream license hashes and notices present
+PASS: skill prompt byte-identical to original
+PASS: deterministic rebuild byte equality
+{
+  "version": "1.0.1",
+  "task_id": "AH-20261022-code-simplifier",
+  "candidate_id": "CAND-ANT-026",
+  "owner": "Cai Zhenze",
+  "status": "Ready for Testing",
+  "marketplace_zip": "code-simplifier-1.0.1.zip",
+  "marketplace_sha256": "b1761a8781c23347c355f44dee9ba322c01a6e0be494deb69ad279ed3198039a",
+  "native_zip": "code-simplifier-1.0.1-native.zip",
+  "native_sha256": "001186450f4ef90d683e163f91831e5bfd662be9a81dbf7caf3322316e0fac65",
+  "payload_sha256": {
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "README.md": "4a96c06ea46df8744b6c8e752d363d24ae966a19713a22f9af5d70a915ed94e8",
+    "THIRD_PARTY_NOTICES.md": "5a71e3b3a501cf40fc75e3ab76db4d4e0119cb8cd5a2a9bda00534c04ba44232",
+    "licenses/claude-plugins-official/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "manifest.json": "95b060fde54892aa1486375fa60a0e074ac4c43c4dd8b3d4a4e359a7f76f4770",
+    "skills/code-simplifier/SKILL.md": "ed4dc434de1fd7c67cd244213a9d590064f245e4e169a58bf53e6eeb48e407b1"
+  },
+  "payloads_identical": true,
+  "skill_prompt_unchanged": true,
+  "host_loading_discovery_checks": 4,
+  "model_edit_test_performed": false,
+  "interactive_user_testing": "Pending",
+  "upstream_revision": "d1adba47161a271799de7b548225d929310046bd"
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:code-simplifier",
+  "type": "agent-plugin",
+  "name": "code-simplifier",
+  "version": "1.0.1",
+  "zip": "code-simplifier-1.0.1.zip",
+  "sha256": "b1761a8781c23347c355f44dee9ba322c01a6e0be494deb69ad279ed3198039a",
+  "payload_sha256": {
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "README.md": "4a96c06ea46df8744b6c8e752d363d24ae966a19713a22f9af5d70a915ed94e8",
+    "THIRD_PARTY_NOTICES.md": "5a71e3b3a501cf40fc75e3ab76db4d4e0119cb8cd5a2a9bda00534c04ba44232",
+    "licenses/claude-plugins-official/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "manifest.json": "95b060fde54892aa1486375fa60a0e074ac4c43c4dd8b3d4a4e359a7f76f4770",
+    "skills/code-simplifier/SKILL.md": "ed4dc434de1fd7c67cd244213a9d590064f245e4e169a58bf53e6eeb48e407b1"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "e697e8f2c51d563e59839af2b2e24fdb4857c5eda8d2c5d8fb0117518a5c5f8a",
+  "functional_test_report_sha256": "f103b4b2ab94a7111c89bf9e30d7342ab81c891402705f13424ee508b69b47a1"
+}
