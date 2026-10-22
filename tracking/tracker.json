@@ -1,5 +1,5 @@
 {
-  "schema_version": 10,
+  "schema_version": 11,
   "spreadsheet_id": "12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM",
   "url": "https://docs.google.com/spreadsheets/d/12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM/edit?usp=sharing",
   "repository": "https://github.com/LasVie/agentic-hub-plugins",
@@ -189,7 +189,7 @@
         "PR body",
         "SOURCE_REVIEW.md"
       ],
-      "multiple_tasks": "Keep all linked task IDs; preserve the explicitly assigned candidate lead."
+      "multiple_tasks": "Keep other live task IDs and confirmed candidate owners; on cancellation remove only the cancelled Task ID from live linkage and retain retired IDs in Notes/Progress Reports."
     },
     "ownership": {
       "candidate_field": "Owner",
@@ -203,10 +203,10 @@
       "concurrency": "Re-read by stable IDs before writing; batch linked updates and verify by readback."
     },
     "state_rules": {
-      "To Evaluate": "A candidate or owner-only claim; no formal development task yet.",
+      "To Evaluate": "Unselected candidate, or personal/account/scheduling cancellation released with Owner=Unassigned and no cancelled Task ID in live linkage. Cancellation history in Notes/reports is not a claim.",
       "Planned": "A linked development task exists; first delivery is still open.",
-      "Deferred": "Controller explicitly defers the candidate; retain linked task history.",
-      "Excluded": "Explicit controller rejection, or confirmed complete functional coverage recorded by the candidates agent for an unclaimed candidate with no linked development task. Preserve evidence and history; task cancellation alone is insufficient.",
+      "Deferred": "Explicit Project Lead decision to defer the candidate as a whole. A member's personal wish to develop later is released to To Evaluate instead.",
+      "Excluded": "Explicit Project Lead rejection, verified full functional coverage, or cancellation due to intrinsic WorkSwarm/host incompatibility or license/permission barriers. Cancellation cases release Owner to Unassigned and remove the cancelled live task link, preserving reasons/evidence and unrelated active work.",
       "Delivered": "Contributor first-delivery gates and explicit Project Lead acceptance of the GitHub handoff passed; linked task/candidate/report records were synchronized. Hub submission and Asset Ledger registration are separate. Track later upgrades in separate tasks."
     },
     "finish_fields": [
@@ -260,8 +260,7 @@
     "Awaiting Acceptance",
     "Completed",
     "Blocked",
-    "Paused",
-    "Cancelled"
+    "Paused"
   ],
   "project_lead_acceptance_options": [
     "Pending Acceptance",
@@ -278,7 +277,7 @@
     "review": {
       "role": "candidates agent",
       "skip_confirmed_duplicates": "Skip Already Covered or an explicit complete-coverage conclusion without repeating upstream downloads or functional review. Reopen only for explicit user re-review or a new requested scope/version.",
-      "skip_claimed": "During general screening skip a named Owner, an explicit selection/reservation, linked task IDs, or Planned/Delivered. Also skip Deferred/Excluded. Do not overwrite another claim.",
+      "skip_claimed": "Skip current named owners, active unreleased reservations, live task IDs and Planned/Delivered; also skip Deferred/Excluded. Retired cancelled Task IDs and explicitly released selection history in Notes/Progress Reports do not reserve a To Evaluate/Unassigned candidate.",
       "uncertain_is_not_duplicate": [
         "Not Checked",
         "Same Name - Review Needed",
@@ -333,7 +332,8 @@
         "GitHub Release publication"
       ],
       "test_completion_follow_up": "Record actual explicit user test confirmation, then proactively request missing original test screenshots of the current version. Collect/inspect originals before any delivery push or PR; screenshots alone do not establish test completion.",
-      "missing_materials": "Keep work in Build and record/request missing materials in the original task's reports. Do not set Ready for Submission/Submitting or push/open/merge a delivery PR. Reuse valid confirmation instead of asking again. Test Screenshot remains link-only and may be blank until the allowed PR exists."
+      "missing_materials": "Keep work in Build and record/request missing materials in the original task's reports. Do not set Ready for Submission/Submitting or push/open/merge a delivery PR. Reuse valid confirmation instead of asking again. Test Screenshot remains link-only and may be blank until the allowed PR exists.",
+      "task_identity": "Use a distinct AH-YYYYMMDD-<slug> Task ID, adding a suffix when necessary. Check live tasks and retired IDs in candidate Notes/Progress Reports; never reuse or resurrect a deleted cancelled Task ID."
     },
     "submit": {
       "gate": "Before setting Ready for Submission/Submitting or pushing/opening a delivery PR, every pre_pr_material must be available, including explicit current-package user test completion and received original test screenshots. Automated tests/CI or screenshots alone are insufficient.",
@@ -393,6 +393,37 @@
       "collect_only": "Ask only for the missing name; do not infer it from AI/GitHub accounts or require usernames/email for entry.",
       "members": "If needed, add the supplied name to Members/live owner options without inventing other profile data or replacing existing members/options.",
       "before_selection": "Assist screening, update actual candidate review findings and await user selection. No claim, development task, progress report or implementation solely for collecting a name/screening."
+    },
+    "cancellation": {
+      "trigger": "Explicit cancellation/selection withdrawal of a plugin development/modification task, or a legacy Cancelled row. Blocked/Paused alone does not mean cancelled.",
+      "task_action": "Delete the entire Development Tasks row for every actual cancellation. Do not retain Cancelled as a persistent status, archive it in that tab or recreate it from old snapshots.",
+      "record_first": "Append the actual cancellation date, retired Task ID, former owner, reason/evidence and resulting candidate state to candidate Notes. Preserve past reports/PRs as history, not active claims.",
+      "intrinsic": {
+        "examples": [
+          "WorkSwarm/required-host incompatibility",
+          "license/permission problem prevents intended port/development"
+        ],
+        "candidate_status": "Excluded",
+        "owner": "Unassigned",
+        "review": "Record concrete scope/evidence and use the appropriate live License Review option for a license issue."
+      },
+      "personal": {
+        "examples": [
+          "no service account or personal access",
+          "no time",
+          "develop later",
+          "changed priority",
+          "selection withdrawal"
+        ],
+        "candidate_status": "To Evaluate",
+        "owner": "Unassigned"
+      },
+      "unknown_reason": "Record that no specific reason is known and release to To Evaluate/Unassigned; do not invent an asset defect. Reclassify if later evidence establishes an intrinsic blocker.",
+      "linkage": "Remove the cancelled ID/current reservation from Linked Development Task IDs; keep the retired ID and reason in Notes/Progress Reports. Preserve actual duplicate/license findings.",
+      "multiple_tasks": "Always delete the cancelled row. If other non-cancelled tasks still reserve the candidate, preserve their IDs/owners and report conflicts instead of releasing another member's work.",
+      "history": "Do not delete prior merged packages, Hub submissions or Asset Ledger records solely because a task is cancelled.",
+      "new_selection": "Create a new unique Task ID on reselection; cancellation history is not a live reservation.",
+      "write_verify": "Re-read current IDs/claims; batch candidate updates with task-row deletion where possible, delete multiple rows descending, maintain native input/table/filter ranges through row 200 and verify all affected records by readback."
     }
   },
   "access": {

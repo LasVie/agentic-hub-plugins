@@ -29,6 +29,8 @@ python tools/asset_release.py check-repo
 3. **用户测试与收齐材料**：提供中文测试包、安装步骤、版本和哈希，等待用户明确测试完成且问题解决，随后主动索要缺失的测试截图原图。源码、中文 ZIP、许可材料、功能测试记录、用户确认和截图全部齐全后才设 `Ready for Submission`；此前保持本地制作，不 push 或开交付 PR。
 4. **PR 交付与验收**：材料齐全后 push、创建 PR，并在创建时附上已收齐的截图原图；核验图片及永久链接，回填测试截图栏。中文最终包必须与用户确认的测试包一致；改名、中文化或其他包变更后须重测确认。功能测试、CI、许可审查和截图链接都通过后再合入、清理分支、同步开发任务/汇报/候选，交给 Song Haoran 明确验收。满足成员交付条件后才设 `Completed` / `Delivered`。
 
+**取消与释放**：任何实际取消都删除 `Development Tasks` 对应整行，不保留 `Cancelled` 任务。取消原因是 WorkSwarm 适配或许可障碍时，候选改为 `Excluded / Unassigned`；没有账号、个人条件或以后再做时改为 `To Evaluate / Unassigned`。从候选的活跃任务链接中移除已取消 Task ID，将真实原因和旧 ID 保留在候选备注/历史汇报中；历史取消记录不继续占用插件。重新认领使用新 Task ID；同一候选的其他在研任务及已交付资产保留。
+
 **资产总账更新时点**：PR 合入后先同步开发任务、汇报和候选，不新增或更新 `Asset Ledger`。Song Haoran 完成 Agentic Hub 提交并提供可核验的成功凭据后，才新增资产或更新对应版本；`Submitted - Pending Review` 已满足提交成功条件，无需等待审核通过或公开发布。总账入账独立于成员的 GitHub 交付验收。
 
 `Development Tasks` 与关联 `Progress Reports` 只追踪具体插件的开发和修改。纯规则、文档、工具、CI 等仓库维护只在 GitHub PR 留痕，不创建插件任务、汇报或候选/资产记录，也不适用插件用户测试门槛。本仓维护 PR 同样在合入后清理对应临时分支。
