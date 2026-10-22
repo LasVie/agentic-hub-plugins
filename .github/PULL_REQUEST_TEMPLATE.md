@@ -46,13 +46,17 @@ This checklist does not relicense repository-owned code or upstream materials. R
 - [ ] Actual merge and merge commit verified
 - [ ] Missing original test screenshots proactively requested; actual full-resolution images attached to this PR
 - [ ] Verified test-evidence permalinks recorded in Development Tasks / Test Screenshot
-- [ ] Asset Ledger, original Development Task, Progress Reports and linked candidate synchronized as applicable
+- [ ] Original Development Task, Progress Reports and linked candidate synchronized as applicable; Asset Ledger left unchanged after merge
 - [ ] Candidate/task IDs, owners and any handoff or conflict verified
 - [ ] Merged release path, version/hash, installation notes and test evidence handed off to Song Haoran
 - [ ] Final Project Lead acceptance recorded only from Song Haoran's explicit conclusion
 - [ ] Completed / Delivered used only after contributor delivery gates and explicit Project Lead acceptance pass; test completion alone is insufficient
 
 Song Haoran personally handles Agentic Hub submission/publication and associated Hub evidence. Contributors and their agents do not perform those operations. Preserve the Agentic Hub Submission Screenshot column for real evidence supplied by him; it may remain blank and is not a contributor completion gate. Both screenshot columns accept only verified PR evidence permalinks.
+
+## Later Asset Ledger synchronization — after verified Hub submission only
+
+Song Haoran personally submits the asset to Agentic Hub. Update Asset Ledger only after verifiable success for the corresponding asset/version; Submitted - Pending Review qualifies without waiting for publication. PR merge, saved drafts and failed submissions do not qualify. Record real Hub evidence and update the existing asset/version once, preserving stable IDs and original task links. This later registration is outside contributor completion gates.
 
 ## Temporary branch cleanup — all PRs
 
