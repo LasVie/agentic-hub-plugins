@@ -1,0 +1,27 @@
+{
+  "asset_id": "repo:agent-plugin:dsh-pianist",
+  "candidate_id": "CAND-DSH-192",
+  "task_id": "AH-20261022-dsh-pianist",
+  "owner": "Song Haoran",
+  "display_name": "离线钢琴演奏",
+  "version": "1.0.0",
+  "native_zip_sha256": "ab958ffb941b5e94653f250e1cdb33535146ca9cb694178423d961ec95443a1e",
+  "marketplace_zip_sha256": "e2bdb718c99a170d64594b6e3c19c75c3c6ffbbe64e1d2c930d8f82930f50e7f",
+  "phase": "Submitting",
+  "user_confirmation": {
+    "original": "提交",
+    "faithful_english": "Submit.",
+    "context": "Reply to the exact three version1.0.0 test-completion and PR-submission question.",
+    "confirmed_by": "Song Haoran",
+    "recorded_at": "2026-10-22T18:10:42+08:00",
+    "source": "Current side conversation; no public message permalink exists."
+  },
+  "test_performed_by": "Assistant under explicit delegation",
+  "project_lead_acceptance": "Pending Acceptance",
+  "hub_submission": null,
+  "delivery_pr": null,
+  "test_evidence_permalink": null,
+  "test_report": "TEST_REPORT.md",
+  "source_review": "SOURCE_REVIEW.md",
+  "confirmation_report_id": "RPT-20261022-dsh-pianist-confirm-100"
+}

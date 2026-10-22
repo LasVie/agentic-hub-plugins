@@ -1,0 +1,33 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/Laplace-bit/dsh-pianist",
+      "revision": "6ab631567700efa80a954f33eb5534b265d91ddd",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/dsh-pianist/LICENSE",
+          "sha256": "0146359ef15d03bd1b44d07d33a8382fc723a91676290be129943a036b0044ef"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "vendor/audio/generated-piano.ts",
+    "vendor/core/errors.ts",
+    "vendor/core/normalizer.ts",
+    "vendor/core/performance-payload.ts",
+    "vendor/core/performance-state.ts",
+    "vendor/core/tempo-map.ts",
+    "vendor/core/timeline-index.ts",
+    "vendor/core/timeline.ts",
+    "vendor/core/transpose.ts",
+    "vendor/core/types.ts",
+    "vendor/core/validator.ts",
+    "runtime/engine.mjs",
+    "runtime/player.js"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

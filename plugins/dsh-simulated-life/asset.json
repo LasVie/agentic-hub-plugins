@@ -1,0 +1,16 @@
+{
+  "type": "agent-plugin",
+  "name": "dsh-simulated-life",
+  "version": "1.0.0",
+  "display_name": "本地模拟生活",
+  "description": "读取近24小时虚构生活事件、会话去重，并原子回写感受、思考与行动。",
+  "publisher": "Song Haoran",
+  "category": "内容创作",
+  "tags": [
+    "本地模拟生活",
+    "本地运行",
+    "中文"
+  ],
+  "candidate_id": "CAND-DSH-047",
+  "task_id": "AH-20261022-dsh-simulated-life"
+}

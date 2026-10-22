@@ -1,0 +1,23 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/Ox0400/dsh-vault",
+      "revision": "deebe535663e17db5daf94683888e17928ec74e6",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/dsh-vault/LICENSE",
+          "sha256": "58c6d04bab9e38ade2435645406d3f6bfcd267fa24d1a7382dfbeb85dbe313f2"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "vendor/crypto.ts",
+    "vendor/totp.ts",
+    "runtime/engine.mjs"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

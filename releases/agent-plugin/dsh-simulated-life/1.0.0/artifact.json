@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:dsh-simulated-life",
+  "type": "agent-plugin",
+  "name": "dsh-simulated-life",
+  "version": "1.0.0",
+  "zip": "dsh-simulated-life-1.0.0.zip",
+  "sha256": "8e12f48d1afced64e983d3c80f07c75e36ae80ef8021801dbec252d19c235faf",
+  "payload_sha256": {
+    "README.md": "60531fddfa9cc48c9b8b12c2bc8f873680aef4837e00861eba6bce00a0424e0e",
+    "THIRD_PARTY_NOTICES.md": "d77beda3ad234f5f8cecf93c9c0615def7b54e5432274ac7f42bc49e347cbf9a",
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "licenses/dsh-simulated-life/LICENSE": "d7d56b562d869856a4abd9a5762bb8895cc8cc7fc8ddfc22acab6345a08f2ae6",
+    "manifest.json": "6c469a62e8408ab6afa1c607a001d32f495fbbeea1081a366dc5f4948b85227d",
+    "rails/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rails/life_rail.py": "46c41e21f786040fe91f83ebc287f8029159d4cd001c911202a13346d6fb9992",
+    "runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime/bridge.py": "778be01677ad243eeafd860b4a060b363c144f2b61260f871767e06e77f6dbcb",
+    "runtime/engine.mjs": "1f428ebc823da73c419de938f24e335c6de4773b65119730ff87e167671e2168",
+    "runtime/entry.ts": "91c365fc59d7f9b33dbb9cf84ed531d89d789fa0d55cbbdbf9e2ebf35b9fedbf",
+    "runtime/life.py": "988613c2339906485bcf4c7c7289fe999c58ced8257d11ccce5e65e8c14c0526",
+    "skills/dsh-simulated-life/SKILL.md": "b75283bddf08197274f5add7cea1994d64614391c806254c7e5f35c35c0346d3",
+    "tools/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tools/plugin_tool.py": "b546104c6f9b0c12745d767cbc03bb8b65dc449dbeaecda1b3079b9fd686eefd",
+    "vendor/deduplication.ts": "91bb21acf1de5a1e7ed27349f2df88d74fe5ee2b7382125294a6b4a706b62214",
+    "vendor/formatter.ts": "6ed801e637d1ba77aee6f078be3b2bdb170cdaa5710e99daa4b6bc14e0bcc6c4",
+    "vendor/loader.ts": "c1dc409af326e2d6743d783f83dfef641b2f683466f07eb83faacd9ae7b727d3",
+    "vendor/types.ts": "983f734f1c87bf687f59f036e6f7bfdde13e950267fc28f7aae56bc7644c3e60"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "3563d6d6311c04925ea3ce7babedd0a5c1e3f8c8e2f77a2ff81f496b055332ac",
+  "functional_test_report_sha256": "5b90f197c582a75811ff5990c442b7f4f67dd6f8acc87932cddf6cfe8781a356"
+}
