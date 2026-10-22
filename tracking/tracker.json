@@ -1,5 +1,5 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "spreadsheet_id": "12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM",
   "url": "https://docs.google.com/spreadsheets/d/12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM/edit",
   "repository": "https://github.com/LasVie/agentic-hub-plugins",
@@ -11,118 +11,134 @@
     "maintenance_record": "Record changes, validation and review in the GitHub PR only. Do not create development tasks, progress reports or pending tracker-sync records, or update candidates or the asset ledger for pure maintenance.",
     "mixed_pr": "Track only the actual plugin-asset development or modification; do not create a separate task for accompanying repository maintenance.",
     "task_cohort_options": [
-      "新增资产",
-      "历史改造",
-      "待确认"
+      "New Asset",
+      "Existing Asset Update",
+      "To Be Confirmed"
     ]
   },
   "sheets": {
     "candidates": {
-      "title": "插件候选",
+      "title": "Plugin Candidates",
       "sheet_id": 2075388274,
       "header_row": 5,
-      "identity_field": "候选 ID",
+      "identity_field": "Candidate ID",
       "headers": [
-        "候选 ID",
-        "插件名称",
-        "来源生态",
-        "原市场分类",
-        "建议组件类型（初判）",
-        "用途说明",
-        "功能子类",
-        "原始组件形态",
-        "依赖与适配边界",
-        "候选状态",
-        "负责人",
-        "现有资产查重",
-        "关联资产与差异",
-        "许可声明（原调研）",
-        "许可复核",
-        "Claude 累计安装量",
-        "npm 近30天下载量",
+        "Candidate ID",
+        "Plugin Name",
+        "Source Ecosystem",
+        "Original Market Category",
+        "Suggested Component Type (Preliminary)",
+        "Description",
+        "Functional Subcategory",
+        "Original Package Form",
+        "Dependencies and Adaptation Scope",
+        "Candidate Status",
+        "Owner",
+        "Duplicate Check",
+        "Related Assets and Differences",
+        "License Statement (Research Snapshot)",
+        "License Review",
+        "Claude Cumulative Installs",
+        "npm Downloads (30 Days)",
         "GitHub Stars",
-        "热度口径与快照",
-        "来源仓库或市场链接",
-        "包名／接入源",
-        "声明与代码证据",
-        "核验版本（原调研）",
-        "调研出处",
-        "关联开发任务 ID",
-        "备注",
-        "登记日期"
+        "Popularity Metric and Snapshot",
+        "Repository or Marketplace URL",
+        "Package or Integration Source",
+        "Manifest and Code Evidence",
+        "Verified Version (Research Snapshot)",
+        "Research Provenance",
+        "Linked Development Task IDs",
+        "Notes",
+        "Registered Date"
       ]
     },
     "tasks": {
-      "title": "开发任务",
+      "title": "Development Tasks",
       "sheet_id": 1895100875,
       "header_row": 5,
       "headers": [
-        "任务 ID",
-        "任务名称",
-        "组件类型",
-        "历史或新增",
-        "负责人",
-        "状态",
-        "依赖任务",
+        "Task ID",
+        "Task Name",
+        "Component Type",
+        "Change Type",
+        "Owner",
+        "Status",
+        "Dependencies",
         "PR",
-        "测试截图",
-        "Agentic Hub 提交截图",
-        "总控验收",
-        "实际完成日"
+        "Test Screenshot",
+        "Agentic Hub Submission Screenshot",
+        "Project Lead Acceptance",
+        "Completed Date"
       ]
     },
     "assets": {
-      "title": "资产总账",
+      "title": "Asset Ledger",
       "sheet_id": 1087216345,
       "header_row": 1,
       "headers": [
-        "记录性质",
-        "资产名称",
-        "资产类型",
-        "官方分类",
-        "用途说明",
-        "功能检索标签",
-        "适用范围与排除项",
-        "同名提醒",
-        "发布者",
-        "版本",
-        "资产 ID",
-        "官方原始标签",
-        "来源链接",
-        "登记日期"
+        "Record Type",
+        "Asset Name",
+        "Asset Type",
+        "Official Category",
+        "Description",
+        "Functional Tags",
+        "Scope and Exclusions",
+        "Duplicate Name Alert",
+        "Publisher",
+        "Version",
+        "Asset ID",
+        "Source Tags (English)",
+        "Source URL",
+        "Registered Date"
       ]
     },
     "reports": {
-      "title": "进展汇报",
+      "title": "Progress Reports",
       "sheet_id": 2097350348,
       "header_row": 5,
       "headers": [
-        "汇报 ID",
-        "汇报人",
-        "关联任务 ID",
-        "汇报日期",
-        "本次已完成",
-        "下一步",
-        "阻塞与协助请求",
-        "证据或 PR",
-        "预计完成日",
-        "需总控决定",
-        "汇报状态"
+        "Report ID",
+        "Reporter",
+        "Task ID",
+        "Report Date",
+        "Completed This Update",
+        "Next Steps",
+        "Blockers and Help Needed",
+        "Evidence or PR",
+        "Expected Completion Date",
+        "Decisions Needed from Project Lead",
+        "Report Status"
+      ]
+    },
+    "overview": {
+      "title": "Overview",
+      "sheet_id": 1888153676
+    },
+    "members": {
+      "title": "Members",
+      "sheet_id": 530747996,
+      "header_row": 5,
+      "headers": [
+        "Name",
+        "Project Role",
+        "GitHub Username",
+        "Google Email",
+        "Sharing Status"
       ]
     }
   },
   "start_fields": [
-    "任务 ID",
-    "任务名称",
-    "组件类型",
-    "历史或新增",
-    "负责人",
-    "状态",
-    "依赖任务"
+    "Task ID",
+    "Task Name",
+    "Component Type",
+    "Change Type",
+    "Owner",
+    "Status",
+    "Dependencies"
   ],
   "evidence_fields": [
-    "测试截图",
-    "Agentic Hub 提交截图"
+    "Test Screenshot",
+    "Agentic Hub Submission Screenshot"
   ],
   "completion_gates": [
     "PR actually merged",
@@ -139,21 +155,21 @@
     "hub_id": "record real Hub ID in delivery.json; never invent one"
   },
   "candidate_start_fields": [
-    "候选 ID",
-    "负责人",
-    "候选状态",
-    "关联开发任务 ID"
+    "Candidate ID",
+    "Owner",
+    "Candidate Status",
+    "Linked Development Task IDs"
   ],
   "candidate_workflow": {
     "statuses": [
-      "待评估",
-      "已立项",
-      "暂缓",
-      "已排除",
-      "已交付"
+      "To Evaluate",
+      "Planned",
+      "Deferred",
+      "Excluded",
+      "Delivered"
     ],
     "owner_options_snapshot": [
-      "待分配",
+      "Unassigned",
       "Cai Zhenze",
       "Gan Mingrui",
       "Nguyen Trung Dung",
@@ -163,11 +179,11 @@
       "Song Haoran"
     ],
     "linkage": {
-      "candidate_identity": "候选 ID",
-      "task_identity": "任务 ID",
-      "candidate_task_field": "关联开发任务 ID",
-      "task_reference_field": "任务名称",
-      "task_reference_format": "[<候选 ID>] <任务名称>",
+      "candidate_identity": "Candidate ID",
+      "task_identity": "Task ID",
+      "candidate_task_field": "Linked Development Task IDs",
+      "task_reference_field": "Task Name",
+      "task_reference_format": "[<Candidate ID>] <Task Name>",
       "additional_references": [
         "PR body",
         "SOURCE_REVIEW.md"
@@ -175,9 +191,9 @@
       "multiple_tasks": "Keep all linked task IDs; preserve the explicitly assigned candidate lead."
     },
     "ownership": {
-      "candidate_field": "负责人",
-      "task_field": "负责人",
-      "unassigned_value": "待分配",
+      "candidate_field": "Owner",
+      "task_field": "Owner",
+      "unassigned_value": "Unassigned",
       "authority": "Explicit controller assignment or confirmed task assignment; never infer from AI account or PR author.",
       "candidate_to_task": "Inherit an assigned candidate lead unless an explicit reassignment applies.",
       "task_to_candidate": "Fill an unassigned candidate from its confirmed primary task owner.",
@@ -186,37 +202,57 @@
       "concurrency": "Re-read by stable IDs before writing; batch linked updates and verify by readback."
     },
     "state_rules": {
-      "待评估": "A candidate or owner-only claim; no formal development task yet.",
-      "已立项": "A linked development task exists; first delivery is still open.",
-      "暂缓": "Controller explicitly defers the candidate; retain linked task history.",
-      "已排除": "Controller explicitly rejects the candidate; task cancellation alone is insufficient.",
-      "已交付": "All agreed first-delivery gates and controller acceptance passed and the asset ledger was synced; track later upgrades in separate tasks."
+      "To Evaluate": "A candidate or owner-only claim; no formal development task yet.",
+      "Planned": "A linked development task exists; first delivery is still open.",
+      "Deferred": "Controller explicitly defers the candidate; retain linked task history.",
+      "Excluded": "Controller explicitly rejects the candidate; task cancellation alone is insufficient.",
+      "Delivered": "All agreed first-delivery gates and controller acceptance passed and the asset ledger was synced; track later upgrades in separate tasks."
     },
     "finish_fields": [
-      "负责人",
-      "关联开发任务 ID",
-      "现有资产查重",
-      "关联资产与差异",
-      "许可复核",
-      "备注",
-      "候选状态"
+      "Owner",
+      "Linked Development Task IDs",
+      "Duplicate Check",
+      "Related Assets and Differences",
+      "License Review",
+      "Notes",
+      "Candidate Status"
     ],
     "research_snapshot_fields": [
-      "原市场分类",
-      "用途说明",
-      "许可声明（原调研）",
-      "Claude 累计安装量",
-      "npm 近30天下载量",
+      "Original Market Category",
+      "Description",
+      "License Statement (Research Snapshot)",
+      "Claude Cumulative Installs",
+      "npm Downloads (30 Days)",
       "GitHub Stars",
-      "热度口径与快照",
-      "来源仓库或市场链接",
-      "包名／接入源",
-      "声明与代码证据",
-      "核验版本（原调研）",
-      "调研出处"
+      "Popularity Metric and Snapshot",
+      "Repository or Marketplace URL",
+      "Package or Integration Source",
+      "Manifest and Code Evidence",
+      "Verified Version (Research Snapshot)",
+      "Research Provenance"
     ],
     "evidence": "Screenshot links stay in the linked development task; record real merged PR, version, asset ID and Hub status in candidate notes as appropriate.",
     "not_applicable": "Independent plugin requirements may have no candidate. Pure repository maintenance skips candidate and task tracking entirely; do not invent either record.",
     "restore_rule": "Never overwrite live claims, owners, statuses, links or notes with the initial import snapshot."
-  }
+  },
+  "language": "en",
+  "language_rule": "Write all tracker descriptions, notes, progress reports, labels and statuses in English. Preserve stable IDs, owner names, URLs, versions, dates and exact original source filenames. Read live headers and dropdown options before each write; translated snapshots must never overwrite newer collaborative edits.",
+  "task_statuses": [
+    "To Be Confirmed",
+    "Unassigned",
+    "Researching",
+    "Designing",
+    "In Development",
+    "Integration Testing",
+    "Awaiting Acceptance",
+    "Completed",
+    "Blocked",
+    "Paused",
+    "Cancelled"
+  ],
+  "project_lead_acceptance_options": [
+    "Pending Acceptance",
+    "Accepted",
+    "Rejected"
+  ]
 }
