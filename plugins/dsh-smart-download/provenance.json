@@ -23,5 +23,13 @@
     "README.md",
     "THIRD_PARTY_NOTICES.md",
     "licenses/dsh-smart-download/LICENSE"
-  ]
+  ],
+  "localization": {
+    "date": "2026-10-22",
+    "base_version": "1.0.0",
+    "version": "1.0.1",
+    "scope": "Complete Chinese README, Skill instructions, metadata, ToolCard descriptions and human-readable errors. Preserve machine identifiers, HTTP/range and resume algorithms, error codes, publisher, original MIT notices and license bytes. Use a typed checksum mismatch marker to preserve classification after localization. Redact credentials from status URLs and handle malformed URLs as structured errors. Preserve existing destination directory permissions while retaining private status-directory and metadata-file modes.",
+    "host_test_authority": "The Project Lead explicitly delegated local WorkSwarm import/prompt testing and a conditional PR on success in the current conversation. Host tests are performed separately by the coordinating agent; no user-performed current-version tests are inferred.",
+    "hub_submission_authorized": false
+  }
 }

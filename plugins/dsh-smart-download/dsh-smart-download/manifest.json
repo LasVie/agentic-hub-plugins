@@ -1,40 +1,81 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "package_type": "plugin",
   "source": "local",
   "id": "dsh-smart-download",
-  "name": "Smart Download",
-  "description": "Verified HTTP(S) downloads with range acceleration, resume and status.",
-  "display_name": {"en": "Smart Download", "zh": "智能下载"},
+  "name": "智能下载",
+  "description": "通过 HTTP(S) 下载文件，支持服务器分段加速、安全续传、任务状态查询和可选的 SHA-256 校验。",
+  "display_name": {
+    "en": "Smart Download",
+    "zh": "智能下载"
+  },
   "display_description": {
     "en": "Download files safely with HTTP ranges, conservative resume and SHA-256 verification.",
-    "zh": "通过 HTTP 分段、安全续传和 SHA-256 校验可靠下载文件。"
+    "zh": "通过 HTTP(S) 下载文件，支持服务器分段加速、安全续传、任务状态查询和可选的 SHA-256 校验。"
   },
   "category": "Productivity",
   "tags": [
-    {"en": "Download", "zh": "下载"},
-    {"en": "Checksum", "zh": "校验"},
-    {"en": "Resume", "zh": "续传"}
+    {
+      "en": "Download",
+      "zh": "下载"
+    },
+    {
+      "en": "Checksum",
+      "zh": "校验"
+    },
+    {
+      "en": "Resume",
+      "zh": "续传"
+    }
   ],
-  "default_init_input": {"en": "Download and verify this URL: ", "zh": "下载并校验这个网址："},
+  "default_init_input": {
+    "en": "Download and verify this URL: ",
+    "zh": "下载并校验这个网址："
+  },
   "quick_inputs": [
-    {"en": "Download this file to: ", "zh": "把这个文件下载到："},
-    {"en": "Download this URL and verify SHA-256: ", "zh": "下载这个网址并校验 SHA-256："},
-    {"en": "Show the status of download task: ", "zh": "显示这个下载任务的状态："}
+    {
+      "en": "Download this file to: ",
+      "zh": "把这个文件下载到："
+    },
+    {
+      "en": "Download this URL and verify SHA-256: ",
+      "zh": "下载这个网址并校验 SHA-256："
+    },
+    {
+      "en": "Show the status of download task: ",
+      "zh": "显示这个下载任务的状态："
+    }
   ],
-  "skills": [{"dir": "skills/smart-download", "mode": "all"}],
+  "skills": [
+    {
+      "dir": "skills/smart-download",
+      "mode": "all"
+    }
+  ],
   "tools": [
     {
       "file": "tools/smart_download.py",
       "class": "SmartDownloadTool",
-      "display_name": {"en": "Smart Download", "zh": "智能下载"},
-      "display_description": {"en": "Download and optionally verify one HTTP(S) file.", "zh": "下载并按需校验一个 HTTP(S) 文件。"}
+      "display_name": {
+        "en": "Smart Download",
+        "zh": "智能下载"
+      },
+      "display_description": {
+        "en": "Download and optionally verify one HTTP(S) file.",
+        "zh": "下载并按需校验一个 HTTP(S) 文件。"
+      }
     },
     {
       "file": "tools/smart_download.py",
       "class": "DownloadStatusTool",
-      "display_name": {"en": "Download Status", "zh": "下载状态"},
-      "display_description": {"en": "Read persisted progress for a download task.", "zh": "读取下载任务的持久化进度。"}
+      "display_name": {
+        "en": "Download Status",
+        "zh": "下载状态"
+      },
+      "display_description": {
+        "en": "Read persisted progress for a download task.",
+        "zh": "读取下载任务的持久化进度。"
+      }
     }
   ]
 }

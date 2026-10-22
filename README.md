@@ -26,7 +26,9 @@ python tools/asset_release.py check-repo
 
 1. **审查（candidates agent）**：先跳过已确认重复、已被认领、已立项或已交付的候选，再对照历史和新增 Skill / Plugin 等能力。发现完整重复立即回填查重结论、关联资产和依据；未认领且无任务的重复项标为 `Excluded`。待核重叠不冒充已确认重复。本阶段只维护候选审查，不创建开发任务。
 2. **开始制作（用户选定后）**：先同步候选认领与原开发任务，再做来源审查、格式适配和功能测试，交付本地测试包、安装步骤及版本/哈希。任务使用 `Ready for Testing` / `User Testing`。等待用户明确确认当前包测试结束，确认前不 push 或开交付 PR。
-3. **提交（用户明确测试结束后）**：在关联进展汇报记录用户确认和测试包版本/哈希，问题解决后设 `Ready for Submission` / `Submitting`，再推送、PR 合入 ZIP、清理分支、在 PR 上传测试原图并将证据链接同步到台账，交给总控验收。Agentic Hub 的提交、发布和对应截图由 Song Haoran 本人负责，不属于成员及其 agent 的交付步骤或完成门槛。测试证据齐全、总控明确验收且 GitHub 交付条件满足后才设 `Completed` / `Delivered`；用户测试结束不等于最终验收。
+3. **提交（用户明确测试结束后）**：在关联进展汇报记录用户确认和测试包版本/哈希，问题解决后设 `Ready for Submission` / `Submitting`，再推送、PR 合入 ZIP、清理分支、在 PR 上传测试原图并将证据链接同步到开发任务、汇报及关联候选，交给总控验收。Agentic Hub 的提交、发布和对应截图由 Song Haoran 本人负责，不属于成员及其 agent 的交付步骤或完成门槛。测试证据齐全、总控明确验收且 GitHub 交付条件满足后才设 `Completed` / `Delivered`；用户测试结束不等于最终验收。
+
+**资产总账更新时点**：PR 合入后先同步开发任务、汇报和候选，不新增或更新 `Asset Ledger`。Song Haoran 完成 Agentic Hub 提交并提供可核验的成功凭据后，才新增资产或更新对应版本；`Submitted - Pending Review` 已满足提交成功条件，无需等待审核通过或公开发布。总账入账独立于成员的 GitHub 交付验收。
 
 `Development Tasks` 与关联 `Progress Reports` 只追踪具体插件的开发和修改。纯规则、文档、工具、CI 等仓库维护只在 GitHub PR 留痕，不创建插件任务、汇报或候选/资产记录，也不适用插件用户测试门槛。本仓维护 PR 同样在合入后清理对应临时分支。
 

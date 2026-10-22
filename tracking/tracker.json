@@ -1,5 +1,5 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "spreadsheet_id": "12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM",
   "url": "https://docs.google.com/spreadsheets/d/12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM/edit?usp=sharing",
   "repository": "https://github.com/LasVie/agentic-hub-plugins",
@@ -145,13 +145,14 @@
     "explicit user test-completion confirmation for the current version and final ZIP SHA-256, with known blocking issues resolved",
     "real test-screenshot evidence links accessible",
     "explicit Project Lead acceptance of the GitHub handoff",
-    "readback verification",
+    "linked development task/candidate/report readback verification; Asset Ledger registration is separate",
     "linked candidate owners, task IDs and delivery state synchronized when applicable"
   ],
   "asset_identity": {
     "pre_hub": "repo:<type>:<slug>",
     "keep_stable": true,
-    "hub_id": "record real Hub ID in delivery.json; never invent one"
+    "hub_id": "record real Hub ID in delivery.json; never invent one",
+    "pre_hub_storage": "Repository and linked task/candidate/report records only; no Asset Ledger entry before successful Hub submission."
   },
   "candidate_start_fields": [
     "Candidate ID",
@@ -205,7 +206,7 @@
       "Planned": "A linked development task exists; first delivery is still open.",
       "Deferred": "Controller explicitly defers the candidate; retain linked task history.",
       "Excluded": "Explicit controller rejection, or confirmed complete functional coverage recorded by the candidates agent for an unclaimed candidate with no linked development task. Preserve evidence and history; task cancellation alone is insufficient.",
-      "Delivered": "All agreed first-delivery gates and controller acceptance passed and the asset ledger was synced; track later upgrades in separate tasks."
+      "Delivered": "Contributor first-delivery gates and explicit Project Lead acceptance of the GitHub handoff passed; linked task/candidate/report records were synchronized. Hub submission and Asset Ledger registration are separate. Track later upgrades in separate tasks."
     },
     "finish_fields": [
       "Owner",
@@ -282,7 +283,7 @@
         "Same Name - Review Needed",
         "Functional Overlap - Review Needed"
       ],
-      "compare": "Compare historical and new assets across types, especially Skills, SwarmSkills and Plugins, by inputs, actions, outputs, scope, exclusions and dependencies. Start with tags and related details.",
+      "compare": "Compare historical and new assets across types, especially Skills, SwarmSkills and Plugins, by inputs, actions, outputs, scope, exclusions and dependencies. Start with tags and related details. Also inspect relevant active/completed development tasks, claims and merged PRs for capabilities not yet registered in Asset Ledger because Hub submission is pending.",
       "write_fields": [
         "Duplicate Check",
         "Related Assets and Differences",
@@ -362,13 +363,13 @@
         "merge ZIP and verify actual merge",
         "delete eligible temporary branch",
         "attach original test screenshots to the delivery PR and verify evidence permalinks",
-        "sync Asset Ledger and linked task/candidate/report records",
+        "sync linked development task, candidate and report records; leave Asset Ledger unchanged",
         "hand off merged release path, version, hash, installation notes and test evidence to the Project Lead",
         "obtain explicit final Project Lead acceptance",
         "mark Completed/Delivered only when contributor completion gates pass"
       ],
       "pending_status": "Awaiting Acceptance",
-      "final_acceptance": "User test completion is distinct from final Project Lead Acceptance. Only explicit acceptance by Song Haoran permits Accepted for the GitHub handoff; Hub submission/publication and its screenshot are not contributor acceptance prerequisites.",
+      "final_acceptance": "User test completion is distinct from final Project Lead Acceptance. Only explicit acceptance by Song Haoran permits Accepted for the GitHub handoff; Hub submission/publication and its screenshot are not contributor acceptance prerequisites. Asset Ledger registration is also outside contributor completion gates.",
       "legacy_tasks": "Preserve already merged PRs and historical progress. Never invent prior user confirmation; new package versions must meet the test-completion gate. Do not resubmit an identical already merged ZIP. Pending Project Lead-owned Hub work does not block contributor completion."
     },
     "maintenance_exception": "Pure repository maintenance uses a maintenance PR only; plugin user-test confirmation, ZIP/evidence gates, plugin task/report registration and candidate/asset updates do not apply."
@@ -389,7 +390,7 @@
     "owner": "Song Haoran",
     "scope": "Agentic Hub submission, publication and associated Hub evidence are handled personally by the Project Lead.",
     "contributor_rule": "Contributors and their agents deliver tested Hub-compatible packages through GitHub. Do not perform Hub operations or ask contributors to do them.",
-    "completion_rule": "Hub actions, review results and Hub screenshots are outside contributor completion gates. Preserve any real existing Hub evidence."
+    "completion_rule": "Hub actions, review results and Hub screenshots are outside contributor completion gates. Preserve any real existing Hub evidence. Asset Ledger updates occur only after verified Hub submission success and are outside contributor completion gates."
   },
   "screenshot_evidence": {
     "storage": "Original full-resolution images attached to the delivery PR body or dedicated evidence comments.",
@@ -403,5 +404,22 @@
     "rule": "Extend existing native tables and linked filter ranges to include appended rows; preserve column types, dropdown choices/chips, date formats, wrapping and alignment.",
     "copy": "Copy formatting only from a valid nearby row without copying values or hyperlinks. Preserve valid new owner choices.",
     "verify": "Read back values and table coverage after writing; never leave new entries outside the table."
+  },
+  "asset_ledger_registration": {
+    "trigger": "Verified successful Agentic Hub submission of the corresponding merged/tested asset version, performed personally by Song Haoran.",
+    "before_trigger": "Do not append placeholders, register GitHub-only deliveries, or advance existing ledger versions/descriptions/sources/dates after PR merge. Keep internal IDs and progress in repository/task/candidate/report records.",
+    "success": "A real Hub submission receipt, record or screenshot confirms acceptance of the matching asset/version payload. Submitted - Pending Review qualifies; publication/approval is not required.",
+    "not_success": [
+      "PR merge",
+      "local test completion",
+      "GitHub Release",
+      "upload selection",
+      "saved draft",
+      "failed submission",
+      "planned submission"
+    ],
+    "write": "After verified Hub submission success, match stable IDs/source URLs, update the existing asset for upgrades or append a New Asset row, preserve Historical Asset cohort and stable IDs, then verify by readback.",
+    "identity": "Use the actual Hub ID/detail URL when available. If the accepted submission lacks a public ID/URL, identify repo:<type>:<slug> as internal and link verified submission evidence on the delivery PR; record the real Hub reference/status in linked reports/candidate notes.",
+    "follow_up": "Synchronize original task/candidate/report links and real Hub evidence. Do not create a duplicate plugin task or reopen accepted contributor work solely for later ledger registration."
   }
 }

@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "session_id": "web_1a162fb4927_ffd2d41deec4",
+  "recorded_at": "2026-10-22T17:43:53.699314+08:00",
+  "source_history_file": "/Users/lasvie/.jiuwenswarm/agent/sessions/web_1a162fb4927_ffd2d41deec4/history.jsonl",
+  "source_history_sha256_at_read": "17fcd160562e75536498ecd26ee2131cbe1053c6a1beb7b1feeec76030b9b642",
+  "scope": "Only smart_download and download_status tool calls/results from this explicitly authorized real desktop WorkSwarm session; no adjacent session, system/provider configuration or credential file read.",
+  "performed_by": "AI agent operating the user-open local WorkSwarm desktop UI under direct human delegation",
+  "human_performed_testing": false,
+  "tool_events": [
+    {
+      "tool_name": "smart_download",
+      "arguments": {
+        "url": "http://127.0.0.1:61598/host-fixture.txt",
+        "output_path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/dsh-smart-download/宿主下载实测.txt",
+        "allow_private_network": true,
+        "workers": 1,
+        "sha256": "15db81e9410d16cb0d5efd7bc2473a4925bbde0bad56964f70631f17d90d79b5"
+      },
+      "call_history_line": 21,
+      "call_timestamp": 1792662028.5809479,
+      "tool_call_id": "call_18533d4553e7437292c3bb8d:target",
+      "result_history_line": 22,
+      "result_timestamp": 1792662028.615909,
+      "raw_output": {
+        "ok": true,
+        "task_id": "948d2a9eaa6f497c95780524b6324362",
+        "state": "completed",
+        "url": "http://127.0.0.1:61598/host-fixture.txt",
+        "output_path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/dsh-smart-download/宿主下载实测.txt",
+        "bytes_downloaded": 89,
+        "total_bytes": 89,
+        "workers": 1,
+        "resumed": false,
+        "sha256": "15db81e9410d16cb0d5efd7bc2473a4925bbde0bad56964f70631f17d90d79b5",
+        "verified": true,
+        "updated_at": 1792662028.5686662
+      }
+    },
+    {
+      "tool_name": "download_status",
+      "arguments": {
+        "task_id": "948d2a9eaa6f497c95780524b6324362"
+      },
+      "call_history_line": 28,
+      "call_timestamp": 1792662031.331845,
+      "tool_call_id": "call_23b334e534204ad494cd34d9:target",
+      "result_history_line": 29,
+      "result_timestamp": 1792662031.33744,
+      "raw_output": {
+        "ok": true,
+        "task_id": "948d2a9eaa6f497c95780524b6324362",
+        "state": "completed",
+        "url": "http://127.0.0.1:61598/host-fixture.txt",
+        "output_path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/dsh-smart-download/宿主下载实测.txt",
+        "bytes_downloaded": 89,
+        "total_bytes": 89,
+        "workers": 1,
+        "resumed": false,
+        "sha256": "15db81e9410d16cb0d5efd7bc2473a4925bbde0bad56964f70631f17d90d79b5",
+        "verified": true,
+        "updated_at": 1792662028.5686662
+      }
+    },
+    {
+      "tool_name": "smart_download",
+      "arguments": {
+        "allow_private_network": true,
+        "output_path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/dsh-smart-download/宿主下载实测.txt",
+        "sha256": "15db81e9410d16cb0d5efd7bc2473a4925bbde0bad56964f70631f17d90d79b5",
+        "url": "http://127.0.0.1:61598/host-fixture.txt",
+        "workers": 1
+      },
+      "call_history_line": 35,
+      "call_timestamp": 1792662034.3186948,
+      "tool_call_id": "call_850258e3a60441478cfe204b:target",
+      "result_history_line": 36,
+      "result_timestamp": 1792662034.324023,
+      "raw_output": {
+        "ok": false,
+        "error": {
+          "code": "OUTPUT_EXISTS",
+          "message": "目标文件已存在，未执行覆盖：/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/dsh-smart-download/宿主下载实测.txt"
+        },
+        "task_id": "47aa20a2104a4cf28c132f261ab16c73"
+      }
+    },
+    {
+      "tool_name": "smart_download",
+      "arguments": {
+        "output_path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/dsh-smart-download/私网拒绝实测.txt",
+        "sha256": "15db81e9410d16cb0d5efd7bc2473a4925bbde0bad56964f70631f17d90d79b5",
+        "url": "http://127.0.0.1:61598/host-fixture.txt",
+        "workers": 1
+      },
+      "call_history_line": 41,
+      "call_timestamp": 1792662043.951969,
+      "tool_call_id": "call_766e19815dea499681fa51ae:target",
+      "result_history_line": 42,
+      "result_timestamp": 1792662043.963459,
+      "raw_output": {
+        "ok": false,
+        "error": {
+          "code": "DOWNLOAD_FAILED",
+          "message": "默认禁止访问私有、本地或保留地址：127.0.0.1"
+        },
+        "task_id": "06a01e69908c4a73b0e1c15b796725cf"
+      }
+    }
+  ]
+}

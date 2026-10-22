@@ -9,7 +9,7 @@
   "marketplace_sha256": "f5889ff19eea2e0284f26cab693e40d632cee95cf861c649cbc2be60bbc622b0",
   "native_test_sha256": "d9ab3c0051840516da0b89a44e2f36f92808ca7e294edf3500349a292f07a5a4",
   "current_version_user_test_confirmation": null,
-  "delivery_pr": null,
+  "delivery_pr": "https://github.com/LasVie/agentic-hub-plugins/pull/23",
   "merged_commit": null,
   "hub_id": null,
   "hub_status": "Current Chinese version not submitted",
@@ -17,9 +17,9 @@
   "hub_submission_screenshot": null,
   "project_lead_acceptance": "Pending Acceptance",
   "tracker_updated_and_verified": "2026-10-22",
-  "repository_base_commit": "49acfa795cb6964f06a16cd30594efb7055272d0",
-  "repository_snapshot_note": "Final Chinese package prepared for the latest merged Smart Download repository baseline; the tested runtime payload and both ZIP hashes are unchanged. Actual AI-delegated WorkSwarm tests are separately recorded; current delivery PR/merge/Hub state must not be inferred.",
-  "repository_instructions_blob_sha": "78a5b51285e322b38d81381d47aa9eef672bb62f",
+  "repository_base_commit": "089b6ee584041e61c54c25fe9a60456360a89a05",
+  "repository_snapshot_note": "Actual delivery PR #23 is open for the unchanged tested package. Latest reviewed main and AGENTS policy are recorded from the parent agent verification; no current-version merge, Hub submission, publication, user-performed test completion or final Project Lead acceptance is inferred.",
+  "repository_instructions_blob_sha": "77f1082183ed59b3f60271106c06db2d08e445ad",
   "historical_deliveries": [
     {
       "version": "1.0.1",
@@ -43,7 +43,7 @@
       "note": "Historical local test candidate; not a claim of merged delivery or confirmation for the replacement package."
     }
   ],
-  "delivery_state": "PR pending creation; original screenshots pending attachment and verified permalinks",
+  "delivery_state": "PR #23 open; final Chinese package and actual delegated host tests passed; original screenshot attachments verified byte-for-byte. Not merged, not submitted to Hub and not finally accepted.",
   "local_test_evidence": [
     {
       "path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/learning-output-style/import-1.0.3-failure.png",
@@ -113,7 +113,9 @@
     ],
     "final_project_lead_acceptance": "Not supplied",
     "tested_repository_base_commit": "e0f6b866649e82cbf37fbd082db9891ca977ae8e",
-    "delivery_repository_base_commit": "49acfa795cb6964f06a16cd30594efb7055272d0"
+    "delivery_repository_base_commit": "089b6ee584041e61c54c25fe9a60456360a89a05",
+    "delivery_pr": "https://github.com/LasVie/agentic-hub-plugins/pull/23",
+    "confirmation_boundary": "The original direct human instruction delegated AI operation of the already-open local WorkSwarm and conditionally authorized a PR on success. It is not a claim that the human performed the tests, confirmed the final package personally, or gave final Project Lead acceptance."
   },
   "resolved_test_failure": {
     "version": "1.0.3",
@@ -122,5 +124,62 @@
     "evidence": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/learning-output-style/import-1.0.3-failure.png",
     "final_version": "1.0.4",
     "payload_change_requires_new_version": true
+  },
+  "repository_metadata_history": [
+    {
+      "repository_base_commit": "49acfa795cb6964f06a16cd30594efb7055272d0",
+      "repository_instructions_blob_sha": "78a5b51285e322b38d81381d47aa9eef672bb62f",
+      "delivery_pr": null,
+      "delivery_state": "PR pending creation; original screenshots pending attachment and verified permalinks",
+      "note": "Prior local preparation metadata; retained when associating the unchanged tested package with the actual PR and newly reviewed main policy."
+    }
+  ],
+  "pr_creation_record": {
+    "url": "https://github.com/LasVie/agentic-hub-plugins/pull/23",
+    "verified_head_at_creation": "277dd7e447c2d5475dfd424045c5be75dc656444",
+    "verified_tree_at_creation": "c294a3ef5f51eb1856c1f0388ebf963576a1b566",
+    "source": "Parent agent verified actual GitHub PR creation; these identifiers record creation, not any later PR head."
+  },
+  "repository_policy_sync": {
+    "recorded_at": "2026-10-22T17:40:58+08:00",
+    "latest_reviewed_main_commit": "089b6ee584041e61c54c25fe9a60456360a89a05",
+    "latest_agents_blob_sha": "77f1082183ed59b3f60271106c06db2d08e445ad",
+    "reviewed_by": "Parent agent, which read the full latest main AGENTS.md and identified #22 as the Asset Ledger gating change.",
+    "asset_ledger_rule": "Do not synchronize a new version into Asset Ledger without actual Agentic Hub submission evidence; opening or merging a GitHub delivery PR does not establish Hub submission.",
+    "asset_ledger_action_this_update": "None"
+  },
+  "test_evidence_pr_permalinks": [
+    "https://github.com/LasVie/agentic-hub-plugins/pull/23#issuecomment-6337704455"
+  ],
+  "current_test_evidence": {
+    "original_screenshot_comment": "https://github.com/LasVie/agentic-hub-plugins/pull/23#issuecomment-6337704455",
+    "images": [
+      {
+        "file": "import-1.0.3-failure.png",
+        "url": "https://github.com/user-attachments/assets/bcbe8963-997d-4b08-8007-2bb97eb50cbf",
+        "bytes": 381921,
+        "sha256": "81b0edccb08cd07eb8cd94663ee0c1e0c60bfc6eaa3c581e99f7c652ed603032",
+        "remote_bytes_identical": true,
+        "actual_media_type": "image/jpeg"
+      },
+      {
+        "file": "import-list.png",
+        "url": "https://github.com/user-attachments/assets/691d44df-2819-4121-9f2a-93834e0a974d",
+        "bytes": 254381,
+        "sha256": "7ec8c2bb43dc4122821c8d54a3a8495e9f1717d8440b41a22a26350d869fe1b3",
+        "remote_bytes_identical": true,
+        "actual_media_type": "image/jpeg"
+      },
+      {
+        "file": "prompt-result.png",
+        "url": "https://github.com/user-attachments/assets/da805a2d-3502-4fbc-9bf7-ae9dd402e467",
+        "bytes": 718645,
+        "sha256": "c2e532bb3a6f804d8f8f8392baa7d95382ee98899d39af9edc291e2b56844300",
+        "remote_bytes_identical": true,
+        "actual_media_type": "image/jpeg"
+      }
+    ],
+    "remote_original_bytes_verified": true,
+    "operation_authority": "User expressly delegated assistant-operated WorkSwarm import/prompt tests and PR on success; no human-performed test or final acceptance is claimed."
   }
 }
