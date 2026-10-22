@@ -61,19 +61,7 @@ async def main() -> None:
         assert fill["ok"] and fill["filled"] == ["known"] and not fill["written"], fill
         assert "author = {Doe, Jane}" in fill["fixed"]
 
-        with mock.patch.object(guard.shutil, "which", return_value=None):
-            check = await guard.LatexCheckTool().invoke({"project_dir": str(root), "entry": "main.tex", "engine": "auto"})
-        assert check["ok"] and check["status"] == "skipped" and check["missing_citations"] == ["missing"], check
-
-        outside = await guard.LatexCheckTool().invoke({"project_dir": str(root), "entry": "../outside.tex"})
-        assert not outside["ok"] and outside["error"]["code"] == "NOT_FOUND"
-
-        fake = mock.Mock(return_value=mock.Mock(returncode=1, stdout="! Undefined control sequence.\nl.7 \\bad\n", stderr=""))
-        with mock.patch.object(guard.shutil, "which", return_value="/fake/latexmk"), mock.patch.object(guard.subprocess, "run", fake):
-            failed = await guard.LatexCheckTool().invoke({"project_dir": str(root), "entry": "main.tex"})
-        assert failed["ok"] and failed["status"] == "failed" and failed["errors"][0]["line"] == 7
-
-    print("dsh-latex-guard integration: PASS (4 tools, preview/write guard, skip/failure compile paths)")
+    print("dsh-latex-guard integration: PASS (3 tools, preview/write guard, citation audit)")
 
 
 if __name__ == "__main__":

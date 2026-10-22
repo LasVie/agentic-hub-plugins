@@ -18,10 +18,10 @@ Use bib_lint on `<folder>/main.bib` with write=false. Return the raw tool result
 
 Expected: the `known` entry is reported as missing `author` and `journal`. The file is not modified.
 
-## LaTeX compilation
+## Crossref fill preview
 
 ```text
-Use latex_check with project_dir `<folder>`, entry `main.tex`, and engine `auto`. Return the raw tool result.
+Use bib_fill on `<folder>/main.bib` with write=false. Return the raw tool result.
 ```
 
-Expected: `passed` or `failed` when `latexmk` is installed. Otherwise, `skipped` with a notice explaining that `latexmk` is unavailable.
+Expected: the tool queries Crossref where a DOI or title is available, reports filled/missing/failed keys, and does not modify the file.

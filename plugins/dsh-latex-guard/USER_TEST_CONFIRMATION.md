@@ -11,3 +11,5 @@
 The user reported: "i already tested, all works but the last one is status skipped cause no latexmk".
 
 Recorded conclusion: the available Plugin operations worked in the user's WorkSwarm test. `latex_check` did not perform a real TeX compilation because `latexmk` was unavailable and correctly returned `status: skipped`. This confirms graceful degradation, not successful compilation. No screenshot link was supplied with the confirmation.
+
+Follow-up scope change: at the user's request, `latex_check` was removed from the Plugin before merge. The confirmation above applies to the superseded four-tool ZIP and is retained as historical test evidence; the replacement three-tool ZIP has a different hash and requires a fresh confirmation.

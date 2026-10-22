@@ -9,8 +9,6 @@ from __future__ import annotations
 import asyncio
 import json
 import re
-import shutil
-import subprocess
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -29,7 +27,6 @@ _REQUIRED = {
     "book": ("title", "publisher", "year"),
     "inproceedings": ("author", "title", "booktitle", "year"),
 }
-_ENGINES = {"pdflatex": "-pdf", "xelatex": "-xelatex", "lualatex": "-lualatex"}
 
 
 def _match_brace(text: str, start: int) -> int:
@@ -139,44 +136,6 @@ def cite_audit(tex_sources: Iterable[str], bib_text: str) -> Dict[str, list[str]
     return {"missing_in_bib": sorted(cited - bib_keys), "uncited": sorted(bib_keys - cited)}
 
 
-def _detect_engine(tex: str) -> str:
-    magic = re.search(r"^%+\s*!\s*TeX\s+program\s*=\s*(\S+)", tex, re.I | re.M)
-    if magic:
-        program = magic.group(1).lower()
-        if "xetex" in program or "xelatex" in program:
-            return "xelatex"
-        if "luatex" in program or "lualatex" in program:
-            return "lualatex"
-    if re.search(r"\\RequireXeTeX|xeCJK|\{ctex", tex):
-        return "xelatex"
-    if "\\RequireLuaTeX" in tex:
-        return "lualatex"
-    body = re.sub(r"^\s*%.*$", "", tex, flags=re.M)
-    return "xelatex" if re.search(r"[\u4e00-\u9fff]", body) else "pdflatex"
-
-
-def _parse_log(log: str) -> Dict[str, Any]:
-    errors: list[Dict[str, Any]] = []
-    warnings: list[Dict[str, Any]] = []
-    missing: set[str] = set()
-    lines = log.splitlines()
-    for index, line in enumerate(lines):
-        if line.startswith("! "):
-            line_no = None
-            for later in lines[index + 1:]:
-                if later.startswith("l."):
-                    number = re.match(r"l\.(\d+)", later)
-                    line_no = int(number.group(1)) if number else None
-                    break
-            errors.append({"line": line_no, "message": line[2:].strip(), "file": None})
-        elif "LaTeX Warning:" in line:
-            warnings.append({"line": None, "message": line.strip(), "file": None})
-            citation = re.search(r"Citation ['`]([^'`]+)['`]", line)
-            if citation:
-                missing.add(citation.group(1))
-    return {"errors": errors, "warnings": warnings, "missing_citations": sorted(missing)}
-
-
 def _read_text(path: Path) -> str:
     return path.read_text(encoding="utf-8")
 
@@ -224,47 +183,6 @@ def _fields_from_work(work: Dict[str, Any]) -> Dict[str, str]:
     if work.get("DOI"):
         fields["doi"] = str(work["DOI"]).lower()
     return fields
-
-
-class LatexCheckTool(Tool):
-    def __init__(self) -> None:
-        super().__init__(ToolCard(id="latex_check", name="latex_check", description="Compile-check a LaTeX entry with latexmk.", input_params={"type": "object", "properties": {"project_dir": {"type": "string"}, "entry": {"type": "string"}, "engine": {"type": "string", "enum": ["auto", "pdflatex", "xelatex", "lualatex"], "default": "auto"}}, "required": ["project_dir", "entry"]}, idempotent=True))
-
-    async def invoke(self, inputs: Dict[str, Any], **kwargs: Any) -> Dict[str, Any]:
-        if not inputs.get("project_dir") or not inputs.get("entry"):
-            return {"ok": False, "error": {"code": "INVALID_INPUT", "message": "project_dir and entry are required"}}
-        project = Path(str(inputs["project_dir"])).expanduser().resolve()
-        entry = str(inputs["entry"])
-        entry_path = (project / entry).resolve()
-        if not entry_path.is_relative_to(project) or not entry_path.is_file():
-            return {"ok": False, "error": {"code": "NOT_FOUND", "message": f"entry not found inside project_dir: {entry}"}}
-        tex = _read_text(entry_path)
-        requested = str(inputs.get("engine", "auto"))
-        if requested not in {"auto", *_ENGINES}:
-            return {"ok": False, "error": {"code": "INVALID_ENGINE", "message": requested}}
-        engine = _detect_engine(tex) if requested == "auto" else requested
-        if engine == "pdflatex":
-            document_class = re.search(r"\\documentclass(?:\[[^\]]*\])?\{([^}/.]+)\}", tex)
-            class_path = project / f"{document_class.group(1)}.cls" if document_class else None
-            if class_path and class_path.is_file():
-                engine = _detect_engine(_read_text(class_path))
-        if not shutil.which("latexmk"):
-            missing = []
-            bib_path = project / (entry_path.stem + ".bib")
-            if bib_path.is_file():
-                missing = cite_audit([tex], _read_text(bib_path))["missing_in_bib"]
-            return {"ok": True, "status": "skipped", "engine": engine, "errors": [], "warnings": [], "missing_citations": missing, "notice": "latexmk not found on PATH; compile check skipped. Only cite audit was performed.", "log_tail": None}
-        try:
-            completed = await asyncio.to_thread(subprocess.run, ["latexmk", "-interaction=nonstopmode", _ENGINES[engine], entry], cwd=str(project), capture_output=True, text=True, timeout=120, check=False)
-        except subprocess.TimeoutExpired:
-            return {"ok": False, "error": {"code": "LATEXMK_FAILED", "message": "latexmk timed out"}}
-        log = completed.stdout + completed.stderr
-        parsed = _parse_log(log)
-        status = "passed" if completed.returncode == 0 and not parsed["errors"] else "failed"
-        return {"ok": True, "status": status, "engine": engine, **parsed, "notice": None, "log_tail": None if status == "passed" or parsed["errors"] else "\n".join(log.splitlines()[-30:])[-2000:]}
-
-    async def stream(self, inputs: Dict[str, Any], **kwargs: Any) -> AsyncIterator[Dict[str, Any]]:
-        yield await self.invoke(inputs, **kwargs)
 
 
 class BibLintTool(Tool):

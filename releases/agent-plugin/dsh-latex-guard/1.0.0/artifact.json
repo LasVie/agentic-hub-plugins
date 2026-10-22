@@ -5,16 +5,16 @@
   "name": "dsh-latex-guard",
   "version": "1.0.0",
   "zip": "dsh-latex-guard-1.0.0.zip",
-  "sha256": "6456dfe0894add45f92ae8847d7150cf1b3bd0eb75b40525d58c344e318ba71a",
+  "sha256": "8816e3c333a9f29d4f93a0d79617145519c20258720112fe28310e435ab008e8",
   "payload_sha256": {
-    "README.md": "d7a0dc19e60930c7f965e9425f0523d3f6299f42fc160a807d2036c121d4c39b",
-    "THIRD_PARTY_NOTICES.md": "ee51b7bf2ad169b95afc13e9c7f99ae3a47df37f222cc605e14ed5b05e674e95",
+    "README.md": "af9a85434608cb3f38ea706a7f0ab39144ad0e7b9ba985f9b8b59d1a129da7d2",
+    "THIRD_PARTY_NOTICES.md": "1f68ad054930d98643bb3583f3476e78f012b6d0c35a73df10acdd9c9e505ac9",
     "licenses/dsh-latex-guard/LICENSE": "888e8a08c51eceb91629d68d3158c5323e77edf3a1fb468b48c0f984a41a7e37",
-    "manifest.json": "1b2b7b1d8377291d4b90757478da31300b9fce3b6af4ffd9934753d02d888c82",
-    "skills/latex-guard/SKILL.md": "04a1f50842efe3a30e221e7d16c018ab063501945485743869d30803b978b6e5",
-    "tools/latex_guard.py": "025e1d1766d47e3a37ed56bbfe14c254a71809e6ffb375b93afb32737b1c5420"
+    "manifest.json": "0e08143d4b4241d21ab3792b5da22a90d3923a6317528e49e970f30648d3cdf5",
+    "skills/latex-guard/SKILL.md": "ed330e9b4cc86f6eb1ce209287386f4301a42af410b4f89fa25e1d6de23bdf11",
+    "tools/latex_guard.py": "74f0071ff278738ac44c131fb2363c950a505a7ea3164f5f80a842f2972521b1"
   },
   "provenance_mode": "ported",
-  "source_review_sha256": "0dd6f9141af12d6608b0b7287d854b826fb4b1bb8b62d0e8161350524685980d",
-  "functional_test_report_sha256": "6038b81354abe5b34c27d7f57c453fc9890ce1346d1e82f0b8f5a6bc96f9edc6"
+  "source_review_sha256": "86c340183a962c7438b46a6b48388f6e358f9357bb4440947c8a439ebb2f39a7",
+  "functional_test_report_sha256": "eb6d73578ff7401ae434e2954441d98296a3cc1c9f3d6ec18e2defe8ad955cbb"
 }

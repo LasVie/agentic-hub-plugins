@@ -7,6 +7,6 @@
 - Copyright: Copyright (c) 2026 Flan246
 - License: MIT; full text in `licenses/dsh-latex-guard/LICENSE`
 - Applies to: the behavior and derived implementation in `tools/latex_guard.py`, the adapted operating guidance, and documentation describing those behaviors.
-- Modifications: ported TypeScript core behavior to native Python WorkSwarm tools; removed the DSH/Cordis registration layer and Node dependencies; added explicit path schemas, safe preview-first writes, Python standard-library Crossref access, and WorkSwarm packaging.
+- Modifications: ported the BibTeX/citation core behavior to native Python WorkSwarm tools; omitted upstream `latex_check`; removed the DSH/Cordis registration layer and Node dependencies; added explicit path schemas, safe preview-first writes, Python standard-library Crossref access, and WorkSwarm packaging.
 
 No upstream third-party logo, artwork, dataset, or bundled dependency is included.
