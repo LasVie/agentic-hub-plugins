@@ -1,0 +1,5 @@
+{
+  "mode":"ported","permission_status":"verified","audit_file":"SOURCE_REVIEW.md","independent_spec":null,
+  "sources":[{"url":"https://github.com/MrWeiCodes/dsh-fs-encoding","revision":"a4d31cc33bd6f0fab2bf6752f6e50e8301885b94","version":"1.5.2","license_expression":"MIT","license_evidence":[{"path":"licenses/dsh-fs-encoding/LICENSE","sha256":"8c51d3cf6410e7e7ebb17a5f831723380541b33393f20a8ce9c711f1998cce06"}]}],
+  "reused_paths":["tools/fs_encoding.py","skills/fs-encoding/SKILL.md","README.md","THIRD_PARTY_NOTICES.md","licenses/dsh-fs-encoding/LICENSE"]
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:dsh-fs-encoding",
+  "type": "agent-plugin",
+  "name": "dsh-fs-encoding",
+  "version": "1.0.1",
+  "zip": "dsh-fs-encoding-1.0.1.zip",
+  "sha256": "a1b1fe8d23e1362079837148a4425c719babb6e22b3f30ba2b5495a6a15f712b",
+  "payload_sha256": {
+    "README.md": "8c5d97700537a3d124b57ec3b79913d18426e185688ab1b6a1c61d7387b5ec7f",
+    "THIRD_PARTY_NOTICES.md": "909af44c9d8188a1ee9071a57c62533d3f90b5565de47daf0442257636b18205",
+    "licenses/dsh-fs-encoding/LICENSE": "8c51d3cf6410e7e7ebb17a5f831723380541b33393f20a8ce9c711f1998cce06",
+    "manifest.json": "80c1ef7966566aff9ec9b586ea724fe0bcf79eb47a34f1e0a9faf40731b5cf0d",
+    "skills/fs-encoding/SKILL.md": "3c9f0ca089f541f505396ab98e0a593c72cc97f212e07e69da4260c9e3d3be53",
+    "tools/fs_encoding.py": "f07650b1a5f1e3b25860d8c5a6fca53915cb36ecfcea68269a58ae9a4b8a4ba4"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "e231358273c38c5cb503dfbd3e1c2e8609a157018a0a8c92e9e796fbc73ac24e",
+  "functional_test_report_sha256": "02b0149b93997ffa30e0d4ac36e6b59deaee2932830633cbf3b9fbd555ae3aca"
+}
