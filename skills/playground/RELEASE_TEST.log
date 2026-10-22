@@ -1,0 +1,15 @@
+{
+  "asset": "playground",
+  "version": "1.0.0",
+  "sha256": "bb296a3e6cfb809952bf524b6c1c86543481c5ee4b9729089b3899ca6841a69c",
+  "zip_bytes": 54356,
+  "payload_files": 10,
+  "runtime": "skill",
+  "archive_extracted": true,
+  "all_payload_hashes_match": true,
+  "templates_match_pinned_source": true,
+  "full_license_hash_matches": true,
+  "modification_notice_present": true,
+  "deterministic_rebuild_matches": true,
+  "no_development_files_in_archive": true
+}
