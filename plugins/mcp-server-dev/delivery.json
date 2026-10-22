@@ -7,9 +7,9 @@
   "native_test_sha256": "b3f10dc80be2515491bd348cbf8631758f670da4d319955a8a58673e4eac0d75",
   "current_version_user_test_confirmation": null,
   "delivery_pr": "https://github.com/LasVie/agentic-hub-plugins/pull/23",
-  "merged_commit": null,
-  "hub_id": null,
-  "hub_status": "Current Chinese version not submitted",
+  "merged_commit": "feef362890450e1bd9cc668ca1bf67b39ac59db3",
+  "hub_id": "5a6a0ada106540b59a55aa8e57b824a7",
+  "hub_status": "Submitted - Pending Review",
   "historical_deliveries": [
     {
       "version": "1.0.1",
@@ -17,8 +17,8 @@
       "marketplace_sha256": "acd7f7b1c2fecb6ac1887e80cce5f86e0a7502fd60c6dc546f77ef909249701f"
     }
   ],
-  "repository_base_commit": "089b6ee584041e61c54c25fe9a60456360a89a05",
-  "repository_instructions_blob_sha": "77f1082183ed59b3f60271106c06db2d08e445ad",
+  "repository_base_commit": "feef362890450e1bd9cc668ca1bf67b39ac59db3",
+  "repository_instructions_blob_sha": "5db6e79a90161a1691466572395d74d90bbdd7a1",
   "historical_local_test_candidates": [
     {
       "version": "1.0.2",
@@ -34,8 +34,8 @@
   ],
   "owner": "Vannes Wijaya",
   "project_lead_acceptance": "Pending Acceptance",
-  "repository_snapshot_note": "Actual delivery PR #23 is open for the unchanged tested package. Latest reviewed main and AGENTS policy are recorded from the parent agent verification; no current-version merge, Hub submission, publication, user-performed test completion or final Project Lead acceptance is inferred.",
-  "delivery_state": "PR #23 open; final Chinese package and actual delegated host tests passed; original screenshot attachments verified byte-for-byte. Not merged, not submitted to Hub and not finally accepted.",
+  "repository_snapshot_note": "PR #23 actually merged on 2026-10-22T10:20:50Z at feef362890450e1bd9cc668ca1bf67b39ac59db3. Latest main AGENTS.md was fully re-read for this metadata-only maintenance. Hub submission accepted and pending review; no review approval or publication is claimed. Delegated AI-operated tests and original test evidence remain intact; no human-performed test or final Project Lead acceptance is inferred.",
+  "delivery_state": "PR #23 merged; unchanged final Chinese package and delegated WorkSwarm tests verified; original test screenshots remain on PR #23. Hub submission accepted and pending review; no review approval or publication is claimed. Awaiting explicit final Project Lead acceptance.",
   "local_test_evidence": [
     {
       "path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/workswarm-host-tests-20261022/mcp-server-dev/import-list.png",
@@ -105,6 +105,25 @@
       "delivery_pr": null,
       "delivery_state": "PR pending creation; original screenshots pending attachment and verified permalinks",
       "note": "Prior local preparation metadata; retained when associating the unchanged tested package with the actual PR and newly reviewed main policy."
+    },
+    {
+      "repository_base_commit": "089b6ee584041e61c54c25fe9a60456360a89a05",
+      "repository_instructions_blob_sha": "77f1082183ed59b3f60271106c06db2d08e445ad",
+      "repository_snapshot_note": "Actual delivery PR #23 is open for the unchanged tested package. Latest reviewed main and AGENTS policy are recorded from the parent agent verification; no current-version merge, Hub submission, publication, user-performed test completion or final Project Lead acceptance is inferred.",
+      "delivery_state": "PR #23 open; final Chinese package and actual delegated host tests passed; original screenshot attachments verified byte-for-byte. Not merged, not submitted to Hub and not finally accepted.",
+      "merged_commit": null,
+      "hub_id": null,
+      "hub_status": "Current Chinese version not submitted",
+      "repository_policy_sync": {
+        "recorded_at": "2026-10-22T17:40:58+08:00",
+        "latest_reviewed_main_commit": "089b6ee584041e61c54c25fe9a60456360a89a05",
+        "latest_agents_blob_sha": "77f1082183ed59b3f60271106c06db2d08e445ad",
+        "reviewed_by": "Parent agent, which read the full latest main AGENTS.md and identified #22 as the Asset Ledger gating change.",
+        "asset_ledger_rule": "Do not synchronize a new version into Asset Ledger without actual Agentic Hub submission evidence; opening or merging a GitHub delivery PR does not establish Hub submission.",
+        "asset_ledger_action_this_update": "None"
+      },
+      "superseded_at": "2026-10-22T10:34:04+00:00",
+      "note": "Historical pre-merge delivery metadata preserved. Its open-PR and not-merged wording describes that earlier snapshot only; consult merged_commit, delivery_state and merge_verification for the verified current state."
     }
   ],
   "pr_creation_record": {
@@ -114,12 +133,12 @@
     "source": "Parent agent verified actual GitHub PR creation; these identifiers record creation, not any later PR head."
   },
   "repository_policy_sync": {
-    "recorded_at": "2026-10-22T17:40:58+08:00",
-    "latest_reviewed_main_commit": "089b6ee584041e61c54c25fe9a60456360a89a05",
-    "latest_agents_blob_sha": "77f1082183ed59b3f60271106c06db2d08e445ad",
-    "reviewed_by": "Parent agent, which read the full latest main AGENTS.md and identified #22 as the Asset Ledger gating change.",
-    "asset_ledger_rule": "Do not synchronize a new version into Asset Ledger without actual Agentic Hub submission evidence; opening or merging a GitHub delivery PR does not establish Hub submission.",
-    "asset_ledger_action_this_update": "None"
+    "recorded_at": "2026-10-22T10:34:04+00:00",
+    "latest_reviewed_main_commit": "feef362890450e1bd9cc668ca1bf67b39ac59db3",
+    "latest_agents_blob_sha": "5db6e79a90161a1691466572395d74d90bbdd7a1",
+    "reviewed_by": "Maintenance agent, which read the complete latest main AGENTS.md.",
+    "asset_ledger_rule": "Verified successful Hub submission, including Submitted - Pending Review, permits a ledger update; GitHub merge alone does not. Hub state remains separate from contributor acceptance.",
+    "asset_ledger_action_this_update": "None; the coordinating Project Lead agent handles the shared tracker separately."
   },
   "test_evidence_pr_permalinks": [
     "https://github.com/LasVie/agentic-hub-plugins/pull/23#issuecomment-6337691624"
@@ -146,5 +165,79 @@
     ],
     "remote_original_bytes_verified": true,
     "operation_authority": "User expressly delegated assistant-operated WorkSwarm import/prompt tests and PR on success; no human-performed test or final acceptance is claimed."
+  },
+  "merge_verification": {
+    "recorded_at": "2026-10-22T10:34:04+00:00",
+    "delivery_pr": "https://github.com/LasVie/agentic-hub-plugins/pull/23",
+    "pr_number": 23,
+    "state": "closed",
+    "merged": true,
+    "merged_at": "2026-10-22T10:20:50Z",
+    "merged_commit": "feef362890450e1bd9cc668ca1bf67b39ac59db3",
+    "verified_final_pr_head": "de93a06c800c53397250d02dbaf173bd7f87b683",
+    "source": "Live GitHub PR #23 response and current main ref; original PR creation metadata and pre-merge snapshots are retained as history.",
+    "marketplace_sha256": "0e7ed07124213dca30dd869f878daabb530c2a34074acc345474bc04606f37c9",
+    "marketplace_zip_matches_merged_main_and_tested_package": true,
+    "native_test_zip_sha256_unchanged": true,
+    "acceptance_boundary": "The merge and any Hub submission are actual delivery events. They do not establish human-performed testing or final Project Lead acceptance. Original delegated test records retain their historical capture-time scope."
+  },
+  "hub_url": "https://agentichub.openjiuwen.com/assets/5a6a0ada106540b59a55aa8e57b824a7?version=1.0.4",
+  "hub_submission_screenshot": "https://github.com/LasVie/agentic-hub-plugins/pull/23#issuecomment-6338553000",
+  "hub_submission": {
+    "version": "1.0.4",
+    "marketplace_sha256": "0e7ed07124213dca30dd869f878daabb530c2a34074acc345474bc04606f37c9",
+    "hub_id": "5a6a0ada106540b59a55aa8e57b824a7",
+    "asset_url": "https://agentichub.openjiuwen.com/assets/5a6a0ada106540b59a55aa8e57b824a7?version=1.0.4",
+    "status": "Submitted - Pending Review",
+    "publisher": "LasVie",
+    "visibility": "public",
+    "display_name": "MCP 交互与打包助手",
+    "packaged_display_name": "MCP 应用与打包开发助手",
+    "name_mapping": "MCP 应用与打包开发助手 (packaged) -> MCP 交互与打包助手 (Hub); internal slug mcp-server-dev is unchanged.",
+    "responsible_development_member": "Vannes Wijaya",
+    "packaged_publisher": "Vannes Wijaya",
+    "platform_displayed_update_time": "2026-10-22 18:24 Asia/Singapore",
+    "receipt_recorded_at": "2026-10-22T10:25:23.216Z",
+    "time_precision_note": "The platform displays the update minute in Singapore time; receipt_recorded_at is the local evidence-record timestamp and does not invent an exact platform submission second.",
+    "merged_commit": "feef362890450e1bd9cc668ca1bf67b39ac59db3",
+    "evidence_comment": "https://github.com/LasVie/agentic-hub-plugins/pull/23#issuecomment-6338553000",
+    "verification": "Actual success receipt says the upload entered review; personal upload list and owner-accessible detail independently show 审核中. No approval or public publication is claimed.",
+    "original_images": [
+      {
+        "file": "submit-result.png",
+        "url": "https://github.com/user-attachments/assets/cc7b4160-2731-4a24-a80d-b8926d82c0dc",
+        "bytes": 50296,
+        "sha256": "956802ebc0f7ec3356b9b8fc29389a63c8843388c4f3a887fefc5ed42fea6d49",
+        "remote_bytes_identical": true
+      },
+      {
+        "file": "profile-pending-review.png",
+        "url": "https://github.com/user-attachments/assets/073d31ca-0973-4448-bac8-6637488e44a2",
+        "bytes": 30039,
+        "sha256": "7594b589992102369c9e46e84bbcd48744b85102af83b2151c782a17ffb075f5",
+        "remote_bytes_identical": true
+      },
+      {
+        "file": "detail-pending-review.png",
+        "url": "https://github.com/user-attachments/assets/aafb5e87-5ac0-4503-9c81-d28abb9032f7",
+        "bytes": 114696,
+        "sha256": "36d6f18f566f315080c13dd3e739303ff6884b52016e0a99aab073336f66f75b",
+        "remote_bytes_identical": true
+      }
+    ],
+    "all_original_images_remote_bytes_identical": true
+  },
+  "current_package_approval": {
+    "approved_by": "Song Haoran",
+    "date": "2026-10-22",
+    "authority_source": "Direct human instructions in the current conversation; no message URL is available. The resulting submission and approval scope are documented on PR #23 in the actual Hub evidence comment.",
+    "version": "1.0.4",
+    "marketplace_sha256": "0e7ed07124213dca30dd869f878daabb530c2a34074acc345474bc04606f37c9",
+    "approved_scope": "The current tested Chinese package, complete MCP form preview and documented MCP Builder functional overlap were explicitly accepted for Hub submission. PR #23 was then actually merged and the unchanged package was submitted.",
+    "human_approved_current_tested_package": true,
+    "human_performed_testing": false,
+    "test_performer": "AI agent operating the user-open local WorkSwarm under explicit delegation",
+    "final_project_lead_acceptance": "Pending Acceptance",
+    "evidence_comment": "https://github.com/LasVie/agentic-hub-plugins/pull/23#issuecomment-6338553000"
   }
 }
