@@ -1,0 +1,71 @@
+Actual browser run output; clipboard branches use API stubs.
+{
+  "tested_at": "2026-10-22T04:13:07.056Z",
+  "browser": "Playwright chrome, headless",
+  "browser_version": "155.0.8059.85",
+  "fatal_error": null,
+  "scope": "HTML produced by executing the ported skill workflow in the current Codex session; not target-host skill discovery or user acceptance",
+  "clipboard": "Success and rejection tested with API stubs; OS clipboard untouched; actual browser permissions require manual testing",
+  "results": [
+    {
+      "name": "design defaults and usable initial prompt",
+      "passed": true
+    },
+    {
+      "name": "design control updates live preview and contextual prompt",
+      "passed": true
+    },
+    {
+      "name": "all design presets synchronize controls and preview",
+      "passed": true
+    },
+    {
+      "name": "design source-like input remains literal text",
+      "passed": true
+    },
+    {
+      "name": "clipboard success branch copies the exact visible prompt (API stub)",
+      "passed": true
+    },
+    {
+      "name": "mobile design has no horizontal overflow and supports keyboard focus",
+      "passed": true
+    },
+    {
+      "name": "standalone design works over file URL while network is offline",
+      "passed": true
+    },
+    {
+      "name": "clipboard denial selects text and does not claim success",
+      "passed": true
+    },
+    {
+      "name": "data filters and preset update query and self-contained request",
+      "passed": true
+    },
+    {
+      "name": "invalid numeric data blocks misleading output and recovers",
+      "passed": true
+    },
+    {
+      "name": "document source cannot execute embedded HTML",
+      "passed": true
+    },
+    {
+      "name": "document decisions separate approved changes from rejected context",
+      "passed": true
+    },
+    {
+      "name": "review filters preserve decisions and literal user comments",
+      "passed": true
+    },
+    {
+      "name": "no external network dependencies or browser JavaScript errors",
+      "passed": true
+    }
+  ],
+  "page_errors": [],
+  "external_requests": []
+}
+
+Repository test summary: Python -X utf8, 21 passed; 2 unchanged symlink tests unavailable with WinError 1314. Local capability-aware rerun: 21 passed, 2 explicitly skipped. All three new Playground source tests passed.

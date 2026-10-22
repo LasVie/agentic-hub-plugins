@@ -1,0 +1,29 @@
+{
+  "type": "skill",
+  "name": "playground",
+  "version": "1.0.0",
+  "display_name": "Interactive Playground",
+  "description": "Create self-contained interactive HTML explorers with live controls, previews, presets, and copyable prompts. Includes design, data, concept-map, document-critique, diff-review, and code-map workflows.",
+  "publisher": "Nguyen Trung Dung",
+  "category": "软件开发",
+  "tags": [
+    "html",
+    "interactive-ui",
+    "playground",
+    "offline",
+    "design-tools"
+  ],
+  "functional_tags": [
+    "Interactive HTML Exploration",
+    "Visual Configuration",
+    "Review Feedback"
+  ],
+  "scope": "Generate local single-file HTML tools. No host page/TUI extension, automatic agent callback, external service, deployment, or automatic code modification.",
+  "candidate_id": "CAND-ANT-014",
+  "task_id": "AH-20261022-playground",
+  "related_asset_ids": [
+    "8fd546a8a97149a08029b24e9d3cd028",
+    "fb9e53d490ed4f62af6151509c3bb1ba",
+    "585e9662a0604f6f97c4a710abe05034"
+  ]
+}

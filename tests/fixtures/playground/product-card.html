@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Product card playground — Playground 1.0.0</title>
+<style>
+:root{font:15px/1.5 system-ui,sans-serif;color:#e6edf3;background:#10151d;color-scheme:dark}
+*{box-sizing:border-box}body{margin:0}header,main,footer{max-width:1200px;margin:auto;padding:24px}
+header{display:flex;justify-content:space-between;gap:16px;align-items:center;border-bottom:1px solid #303a48}
+h1{font-size:24px;margin:0}h2{font-size:17px;margin:0 0 16px}p{margin:8px 0}small,.muted{color:#aebacc}
+main{display:grid;grid-template-columns:290px minmax(0,1fr);gap:24px}section,aside{min-width:0}
+.panel{background:#19212d;border:1px solid #303a48;border-radius:14px;padding:20px}
+label{display:block;margin-top:18px}input,select,textarea,button{font:inherit}input[type=range]{width:100%;accent-color:#72d9ce}
+input[type=text],select{width:100%;margin-top:6px;padding:9px;border:1px solid #556278;border-radius:6px;background:#10151d;color:inherit}
+input[type=color]{display:block;width:100%;height:38px;margin-top:6px;background:none;border:1px solid #556278}
+button{border:1px solid #65748b;border-radius:7px;padding:8px 12px;background:#263448;color:#e6edf3;cursor:pointer}
+button:hover{background:#344962}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #72d9ce;outline-offset:3px}
+.presets{display:flex;flex-wrap:wrap;gap:8px}.presets button[aria-pressed=true]{border-color:#72d9ce;color:#9cefe5;background:#203f44}
+.stage{min-height:420px;display:grid;place-items:center;padding:32px 20px;background:#c9d6dd;border-radius:9px;color-scheme:light}
+#card{width:min(100%,350px);background:#fff;color:#132631;overflow-wrap:anywhere;transition:none}
+.illustration{height:150px;display:grid;place-items:center;background:#eaf2f3;border-radius:8px;margin-bottom:20px}
+.illustration svg{width:150px;height:130px}.product-label{color:#365563;font-size:12px}#product-name{font-size:1.55em;line-height:1.2;margin:10px 0}
+.buy{display:inline-block;margin-top:14px;color:#092b2b;background:var(--accent);padding:9px 14px;border-radius:6px;font-size:.85em;font-weight:650}
+.prompt-panel{margin-top:20px}.prompt-head{display:flex;justify-content:space-between;gap:12px;align-items:center}
+textarea{display:block;width:100%;height:150px;resize:vertical;margin-top:12px;padding:12px;border:1px solid #556278;border-radius:7px;color:#e6edf3;background:#10151d}
+#copy-status{min-height:24px;overflow-wrap:anywhere}output{float:right;font-family:ui-monospace,monospace;color:#9cefe5}
+footer{padding-top:0;color:#aebacc;font-size:13px}a{color:#9cefe5}@media(max-width:720px){header{display:block}header small{display:block;margin-top:8px}main{grid-template-columns:1fr;padding:16px}.stage{min-height:350px}.prompt-head{flex-wrap:wrap}}
+</style>
+</head>
+<body>
+<header><div><h1>Product card playground</h1><p class="muted">Adjust the card, then copy your design direction.</p></div><small>Playground 1.0.0 · Design example</small></header>
+<main>
+<aside class="panel" aria-label="Design controls">
+<h2>Explore a direction</h2>
+<div class="presets" role="group" aria-label="Presets">
+<button type="button" data-preset="Quiet" aria-pressed="true">Quiet</button>
+<button type="button" data-preset="Bright" aria-pressed="false">Bright</button>
+<button type="button" data-preset="Compact" aria-pressed="false">Compact</button>
+</div>
+<label for="name">Product name</label><input id="name" type="text" value="Lumen desk light" maxlength="120">
+<label for="color">Accent color</label><input id="color" type="color" value="#72d9ce">
+<label for="padding">Padding <output id="padding-value" for="padding">24 px</output></label><input id="padding" type="range" min="12" max="40" value="24">
+<label for="radius">Corner radius <output id="radius-value" for="radius">16 px</output></label><input id="radius" type="range" min="0" max="32" value="16">
+<label for="font">Text size <output id="font-value" for="font">16 px</output></label><input id="font" type="range" min="12" max="22" value="16">
+<label for="shadow">Shadow <output id="shadow-value" for="shadow">16 px</output></label><input id="shadow" type="range" min="0" max="36" value="16">
+<p class="muted">Changes appear immediately. This page does not edit project files.</p>
+</aside>
+<section aria-label="Live preview and prompt">
+<div class="stage"><article id="card" aria-label="Product card preview">
+<div class="illustration"><svg viewBox="0 0 150 130" role="img" aria-label="Illustration of an adjustable desk lamp"><path d="M40 112h74" stroke="#315e69" stroke-width="10" stroke-linecap="round"/><path d="M77 106V66L102 36" fill="none" stroke="#315e69" stroke-width="7" stroke-linecap="round"/><path d="M82 24q24-12 36 14l-40 15q-9-17 4-29Z" fill="var(--accent)"/><circle cx="77" cy="66" r="7" fill="#72a0a5"/></svg></div>
+<span class="product-label">Example product</span><h2 id="product-name">Lumen desk light</h2><p>A little clarity for your desk. Adjustable, compact, and ready for your next idea.</p><span class="buy">Explore the light</span>
+</article></div>
+<div class="panel prompt-panel"><div class="prompt-head"><h2>Your design direction</h2><button id="copy" type="button">Copy prompt</button></div><label for="prompt" class="muted">Paste this into your coding agent</label><textarea id="prompt" readonly aria-describedby="copy-status"></textarea><p id="copy-status" role="status" aria-live="polite"></p></div>
+</section>
+</main>
+<footer>Generated by following the ported design-playground workflow. Example content only. Everything runs in this HTML file.</footer>
+<script>
+'use strict';
+const DEFAULTS=Object.freeze({name:'Lumen desk light',color:'#72d9ce',padding:24,radius:16,font:16,shadow:16});
+const PRESETS={Quiet:{...DEFAULTS},Bright:{...DEFAULTS,color:'#ffc267',padding:32,radius:24,font:18,shadow:28},Compact:{...DEFAULTS,color:'#a8b9ff',padding:16,radius:6,font:14,shadow:0}};
+const state={...DEFAULTS};
+const controls=['name','color','padding','radius','font','shadow'];
+const byId=id=>document.getElementById(id);
+function renderPreview(){
+ const card=byId('card');card.style.setProperty('--accent',state.color);card.style.padding=state.padding+'px';card.style.borderRadius=state.radius+'px';card.style.fontSize=state.font+'px';card.style.boxShadow=state.shadow?`0 8px ${state.shadow}px rgba(12,38,49,.22)`:'none';byId('product-name').textContent=state.name||'Untitled product';
+ for(const name of ['padding','radius','font','shadow'])byId(name+'-value').textContent=state[name]+' px';
+ document.querySelectorAll('[data-preset]').forEach(button=>button.setAttribute('aria-pressed',String(controls.every(key=>state[key]===PRESETS[button.dataset.preset][key]))));
+}
+function updatePrompt(){
+ const changes=[];
+ if(state.color!==DEFAULTS.color)changes.push(`use ${state.color} as the accent color`);
+ if(state.padding!==DEFAULTS.padding)changes.push(`give the card ${state.padding}px of padding`);
+ if(state.radius!==DEFAULTS.radius)changes.push(`use ${state.radius}px corner radii`);
+ if(state.font!==DEFAULTS.font)changes.push(`set the body text to ${state.font}px`);
+ if(state.shadow!==DEFAULTS.shadow)changes.push(state.shadow?`use a ${state.shadow>20?'pronounced':'subtle'} shadow with ${state.shadow}px blur`:'remove the drop shadow');
+ const context=`Create a product card for the example product “${state.name||'Untitled product'}”, an adjustable desk light.`;
+ byId('prompt').value=context+(changes.length?' Keep the card readable and '+changes.join(', ')+'.':' Use the quiet default design with a clear title, short description, and call to action.');
+ byId('copy-status').textContent='';
+}
+function updateAll(){renderPreview();updatePrompt();}
+for(const key of controls)byId(key).addEventListener('input',event=>{state[key]=['name','color'].includes(key)?event.target.value:Number(event.target.value);updateAll();});
+document.querySelectorAll('[data-preset]').forEach(button=>button.addEventListener('click',()=>{Object.assign(state,PRESETS[button.dataset.preset]);for(const key of controls)byId(key).value=state[key];updateAll();}));
+byId('copy').addEventListener('click',async()=>{
+ try{if(!navigator.clipboard?.writeText)throw new Error('Clipboard unavailable');await navigator.clipboard.writeText(byId('prompt').value);byId('copy-status').textContent='Copied! Paste the prompt into your coding agent.';}
+ catch{byId('prompt').focus();byId('prompt').select();byId('copy-status').textContent='Clipboard access is unavailable. The prompt is selected; use Ctrl+C or Command+C to copy it manually.';}
+});
+updateAll();
+</script>
+</body>
+</html>
