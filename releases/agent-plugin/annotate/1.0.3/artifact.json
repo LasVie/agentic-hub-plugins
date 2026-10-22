@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:annotate",
+  "type": "agent-plugin",
+  "name": "annotate",
+  "version": "1.0.3",
+  "zip": "annotate-1.0.3.zip",
+  "sha256": "68849b9d4ef7ab1886974c35de7450dd5870c44a7aa9c8719945051b7be7df9a",
+  "payload_sha256": {
+    "README.md": "5261be4ebb583ae20a256b4616c523f059de6ceab9dbf59e869cb42a0b2e6295",
+    "THIRD_PARTY_NOTICES.md": "a78620b18d5cec26d8bdf3d08e3e538f5a25ef3476bf3d7cefbe6bc656ef256f",
+    "demo/index.html": "9b2f68cd503ff2ed07a6aa359dac801007ebedc56e18f6da62d217b7a704a908",
+    "licenses/claude-annotate/LICENSE": "560cb98de97e83fc25542efdd90e7ab60fa0f824bb9a3d0152c0141b97935da3",
+    "manifest.json": "40179a3d73a2818f9480b9db6940252bd3bc7a777b5ca918d77082cba6d51918",
+    "mcps/annotate/mcp.json": "cdac28209d52a7135f4b80e3e8140be357b67b0705054409594f09289d2e8b5a",
+    "runtime/package-lock.json": "1c70f7e4dd71d389f84859320e5795ddb9fdefc14571704c9af7f61831644a52",
+    "runtime/package.json": "f027ed3e7c6c904f053039a48faeb8e82ed71ad71ba9f7018f440ce97223c9db",
+    "runtime/server/index.mjs": "d35739888f887f328192ead41d977fef04dfb6d81fb105c75f3731c395421f2b",
+    "runtime/server/overlay.js": "82a6742ff7c82708049f55416189a821047ecaa984788372fc42299cdf881a2d",
+    "scripts/launch.py": "129e35566f03f5850882f5bc436f561bde845a7ae426796e7a7035f4137e8bed",
+    "scripts/setup.mjs": "0d91692ceb9d44c4c0f279ab8e31d673ec467500780a268bad8b2eda13862cbf",
+    "skills/annotate-feedback/SKILL.md": "24768ae7e99bc6234ac77bd949ef6329cc6816ef6663cfc5bf39c546ced48bab"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "0c2c9714d3c0d1e959ab8127edb91b55b06a0dc0b4df839e9b56cdde611cb665",
+  "functional_test_report_sha256": "0037abc9b3ffd338727028861e69875d3f32aac2d9b19ed7224177b59dbf7183"
+}

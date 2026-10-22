@@ -1,0 +1,17 @@
+{
+  "name": "agentic-hub-annotate-runtime",
+  "version": "1.0.3",
+  "private": true,
+  "type": "module",
+  "description": "通过标准 MCP 主动读取网页圈选批注的本地浏览器运行程序。",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.0",
+    "playwright-core": "1.63.0"
+  },
+  "scripts": {
+    "start": "node server/index.mjs"
+  }
+}
