@@ -1,0 +1,19 @@
+{
+  "type": "agent-plugin",
+  "name": "dsh-smart-download",
+  "version": "1.0.0",
+  "display_name": "Smart Download",
+  "description": "Download HTTP(S) files with safe range acceleration, resume, status and SHA-256 verification.",
+  "publisher": "dsh-smart-download contributors; Agentic Hub port",
+  "category": "办公与生产力",
+  "tags": ["download", "http", "checksum", "resume"],
+  "functional_tags": ["Verified Download", "Range Acceleration", "Resume"],
+  "scope": "Explicit HTTP(S) file downloads to user-selected local paths. Does not provide cloud-drive management, content parsing, torrent support or a bundled download binary.",
+  "candidate_id": "CAND-DSH-139",
+  "task_id": "AH-20261022-dsh-smart-download",
+  "related_asset_ids": [
+    "4ec90e5a10e4419a8f97766613b9d57f",
+    "d9665968537247718932825ef3417b25",
+    "5806cbee80c4460584e65308217abfe8"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:dsh-smart-download",
+  "type": "agent-plugin",
+  "name": "dsh-smart-download",
+  "version": "1.0.0",
+  "zip": "dsh-smart-download-1.0.0.zip",
+  "sha256": "77873887154682d3419ed68d95e3d0269aa21ec27237735882b07c794ba2aa0d",
+  "payload_sha256": {
+    "README.md": "88233226deda9fe5e4b07dbcb09cd2316b5f596f45c8a3f9c8d7717a7a1073a1",
+    "THIRD_PARTY_NOTICES.md": "629fbfd52b4ecf50b3279959d5bda0af43defa33a6b08c16ff7dedbd970c5574",
+    "licenses/dsh-smart-download/LICENSE": "ac0fc870e1cf8671b5beb57e0a58a11b2514076c867318e98b0d2c03db0389e6",
+    "manifest.json": "50ffdaefec0253f50b4770485f667479d7d688255e3f5a7c817d0207fbb10692",
+    "skills/smart-download/SKILL.md": "56e89a0a0b1ef237cbb052f86e3cc19b017306696efbecdb98c9cadd3172ecd3",
+    "tools/smart_download.py": "f4648f75705cddbbc1ba578815c0ec16bbdd89164f3658530f25aebc10efe973"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "a41a7a2b690c97868b1bd171e554c91b4f43d22a6a913214ff7b8886da8cc12f",
+  "functional_test_report_sha256": "0af4516585b542cfadaf062940b2141181b99d355c983d99acf249a2212c5f0e"
+}
