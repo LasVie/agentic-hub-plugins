@@ -1,3 +1,18 @@
+# Patch verification: mcp-server-dev 1.0.1
+
+User testing was explicitly completed on 2026-10-22 in the current conversation, with an original full-resolution screenshot and authorization to submit/merge the marketplace version. See USER_TEST_CONFIRMATION.md for both ZIP hashes, the screenshot hash and the reported host test environment/results. The confirmed marketplace ZIP is unchanged. After rebasing onto current main, repository discovery ran 50 tests: 24 passed and 26 unrelated Deckaura tests skipped because that SDK is unavailable in the local test environment. Repository format/release checks passed. MCP Apps visual rendering and remote deployment remain declared exclusions. GitHub delivery and final Project Lead acceptance are separate from the completed user test; subsequent Hub operations belong to Song Haoran.
+
+Date: 2026-10-22 (Asia/Singapore). Original task AH-20261022-mcp-server-dev;
+Candidate CAND-ANT-011; owner Vannes Wijaya. Local test release only.
+
+The user supplied an original screenshot of a blank card with a question-mark avatar after importing 1.0.0. Root cause: native list/detail helpers consume display_name/display_description, while the frontend reads their zh/en properties directly. The previous manifest only declared name/description. Version 1.0.1 adds nonempty bilingual display fields and aligns version declarations; the three Skills and generator behavior are otherwise unchanged.
+
+Validation: 24 repository unit tests passed, including a new native-display contract regression. Read-only native host list/detail helper execution plus the host frontend localization function reproduce empty title/description for 1.0.0 and produce mcp-server-dev, nonempty bilingual descriptions, and initial M for 1.0.1. These host sources are selected in memory from a local checkout, never copied into the plugin. All three Skills remain present in the detail response.
+
+The final local ZIP was extracted and used for the real App protocol/UI resource tests and official MCPB validate/pack/unpack/relocation tests; all passed. Both package variants contain the same 17 runtime files. Repository evidence is retained in PATCH_FUNCTIONAL_TEST.log and HOST_CARD_TEST.json beside this report. Final ZIP hashes are recorded in releases/agent-plugin/mcp-server-dev/1.0.1/artifact.json; the user handoff also includes test-package.json in the workspace outputs directory. No user acceptance, actual running-host installation/visual UI success, PR merge or Hub submission is claimed for 1.0.1. The historical 1.0.0 report follows unchanged.
+
+---
+
 # 功能测试：mcp-server-dev 1.0.0
 
 测试日期：2026-10-22（Asia/Singapore）。任务 AH-20261022-mcp-server-dev；候选 CAND-ANT-011。

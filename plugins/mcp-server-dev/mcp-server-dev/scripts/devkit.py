@@ -10,7 +10,7 @@ import sys
 import tempfile
 from pathlib import Path
 
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 ROOT = Path(__file__).resolve().parents[1]
 BUILDER_ID = "4c94938898ed4d3580593e5535f2315b"
 BUILDER_URL = "https://agentichub.openjiuwen.com/assets/" + BUILDER_ID

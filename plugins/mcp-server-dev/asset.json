@@ -1,7 +1,7 @@
 {
   "type": "agent-plugin",
   "name": "mcp-server-dev",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "display_name": "mcp-server-dev",
   "description": "为 MCP Builder 补充接入路径规划、MCP App UI 与 MCPB 本地打包开发：生成可运行的 Node.js 示例工程并执行协议验证。插件本身不注册外部 MCP，不自动部署或发布。",
   "publisher": "Vannes Wijaya",

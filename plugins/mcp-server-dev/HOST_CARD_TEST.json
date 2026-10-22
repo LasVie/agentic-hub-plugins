@@ -1,0 +1,60 @@
+{
+  "fixed": {
+    "list": {
+      "zh-CN": {
+        "title": "mcp-server-dev",
+        "description": "MCP Builder 配套开发工具：接入路径选择、MCP App 示例及 MCPB 打包指导。",
+        "initial": "M"
+      },
+      "en-US": {
+        "title": "mcp-server-dev",
+        "description": "Companion tools for MCP Builder: choose an implementation path, generate MCP App examples, and build MCPB packages.",
+        "initial": "M"
+      }
+    },
+    "show": {
+      "zh-CN": {
+        "title": "mcp-server-dev",
+        "description": "MCP Builder 配套开发工具：接入路径选择、MCP App 示例及 MCPB 打包指导。",
+        "initial": "M"
+      },
+      "en-US": {
+        "title": "mcp-server-dev",
+        "description": "Companion tools for MCP Builder: choose an implementation path, generate MCP App examples, and build MCPB packages.",
+        "initial": "M"
+      }
+    }
+  },
+  "legacy": {
+    "list": {
+      "zh-CN": {
+        "title": "",
+        "description": "",
+        "initial": "?"
+      },
+      "en-US": {
+        "title": "",
+        "description": "",
+        "initial": "?"
+      }
+    },
+    "show": {
+      "zh-CN": {
+        "title": "",
+        "description": "",
+        "initial": "?"
+      },
+      "en-US": {
+        "title": "",
+        "description": "",
+        "initial": "?"
+      }
+    }
+  },
+  "host_sources": {
+    "jiuwenswarm/server/runtime/extension_package_manager.py": "bed08a9f18cbb0dfb394ffde10ebd4ad63707606088bd6a46ac44f1de7a2bd35",
+    "jiuwenswarm/channels/web/frontend/src/types/pluginPackage.ts": "aa87b7fd48119171f61bce2e08ca4770d5613bf427a7ef7eb30a976b90dbe8cb"
+  },
+  "native_zip_root_and_extracted_payload": "passed",
+  "limitations": "Native helper/frontend localization check; no running-host install or visual UI assertion."
+}

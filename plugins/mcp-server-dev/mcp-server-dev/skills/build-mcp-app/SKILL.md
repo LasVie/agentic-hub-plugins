@@ -1,7 +1,7 @@
 ---
 name: build-mcp-app
 description: 为已有 MCP 服务添加交互式 UI，或生成一个可验证的 MCP App stdio 示例；涉及 ui:// 资源、MCP Apps SDK、文本回退时使用。远程服务及认证先使用 MCP Builder。
-version: 1.0.0
+version: 1.0.1
 ---
 
 # MCP App 配套开发
@@ -22,7 +22,7 @@ npm run build
 node server.mjs
 ```
 
-要求 Python >=3.9（生成器）、Node >=20 和 npm。工程初始版本为 0.1.0；它与插件版本 1.0.0 不同。示例 add 工具只做有界数值加法，无文件、网络和账户访问。运行服务器会等待 MCP 客户端，不是交互命令行。
+要求 Python >=3.9（生成器）、Node >=20 和 npm。工程初始版本为 0.1.0；它与插件版本 1.0.1 不同。示例 add 工具只做有界数值加法，无文件、网络和账户访问。运行服务器会等待 MCP 客户端，不是交互命令行。
 
 浏览器 SDK 在构建时打包进 HTML，保留内联许可注释，不依赖 CDN。渲染使用 textContent，不把工具结果作为 HTML 注入。资源路径相对 server.mjs 定位，因此可以从别的工作目录启动。不要将密钥放入资源或工具输出。
 

@@ -1,9 +1,14 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "package_type": "plugin",
   "id": "mcp-server-dev",
   "name": "mcp-server-dev",
   "description": "MCP Builder 配套开发工具：接入路径选择、MCP App 示例及 MCPB 打包指导。",
+  "display_name": {"zh": "mcp-server-dev", "en": "mcp-server-dev"},
+  "display_description": {
+    "zh": "MCP Builder 配套开发工具：接入路径选择、MCP App 示例及 MCPB 打包指导。",
+    "en": "Companion tools for MCP Builder: choose an implementation path, generate MCP App examples, and build MCPB packages."
+  },
   "skills": [
     {"dir": "skills/mcp-dev-route", "mode": "all"},
     {"dir": "skills/build-mcp-app", "mode": "all"},

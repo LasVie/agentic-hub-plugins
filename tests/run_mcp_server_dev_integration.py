@@ -47,7 +47,8 @@ def run(payload, work, node, npm):
         return result.stdout
 
     env_info = {"python": sys.version.split()[0], "node": command([node, "--version"]).strip(),
-                "npm": command(npm + ["--version"]).strip(), "plugin": "1.0.0"}
+                "npm": command(npm + ["--version"]).strip(),
+                "plugin": json.loads((payload / "manifest.json").read_text())["version"]}
     print(json.dumps(env_info), flush=True)
     tool_dir = work / "tools"
     shutil.copytree(ROOT / "tests/mcp-dev-node-tools", tool_dir)
