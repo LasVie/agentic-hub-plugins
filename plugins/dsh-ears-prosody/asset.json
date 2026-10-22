@@ -1,0 +1,29 @@
+{
+  "type": "agent-plugin",
+  "name": "dsh-ears-prosody",
+  "version": "1.0.1",
+  "display_name": "DSH 韵律分析",
+  "description": "离线分析本地 WAV 的音高走势、活动与停顿时序、能量变化及节奏代理指标，不联网、不修改音频。",
+  "publisher": "Cai Zhenze",
+  "category": "多模态与媒体",
+  "tags": [
+    "音频",
+    "韵律",
+    "WAV",
+    "离线"
+  ],
+  "functional_tags": [
+    "Pitch Analysis",
+    "Pause Timing",
+    "Acoustic Measurements"
+  ],
+  "scope": "Read-only local WAV analysis. Node.js >=20 plus the host Python/openJiuwen runtime. No recording, transcription, speaker identification, emotion/intent inference, model calls or remote services.",
+  "candidate_id": "CAND-DSH-189",
+  "task_id": "AH-20261022-dsh-ears-prosody",
+  "related_asset_ids": [
+    "05df7e483d59492d90e21103d5393dac",
+    "98529d5e450c44569d0df532723de4c9",
+    "d59d594136824a6d916d79126048ec52",
+    "94e2a85b3e3948b082a24846dc7c00a3"
+  ]
+}

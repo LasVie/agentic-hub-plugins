@@ -1,0 +1,22 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/chaoge762/dsh-ears-prosody",
+      "revision": "f28cd16bc5646fb17c3c76564598e2c37e997d77",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/dsh-ears-prosody/LICENSE",
+          "sha256": "125fba30b32d7fa4fb44458066f73682a725b9355561fa6c972e36f1695c72ef"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "lib/wav.mjs",
+    "lib/hearing.mjs"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

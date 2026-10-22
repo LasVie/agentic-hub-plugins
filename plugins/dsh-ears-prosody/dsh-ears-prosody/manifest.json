@@ -1,0 +1,54 @@
+{
+  "version": "1.0.1",
+  "package_type": "plugin",
+  "id": "dsh-ears-prosody",
+  "name": "DSH 韵律分析",
+  "description": "离线分析本地 WAV 的音高走势、活动与停顿时序、能量变化及节奏代理指标，不联网、不修改音频。",
+  "display_name": {
+    "en": "DSH 韵律分析",
+    "zh": "DSH 韵律分析"
+  },
+  "display_description": {
+    "en": "离线分析本地 WAV 的音高走势、活动与停顿时序、能量变化及节奏代理指标，不联网、不修改音频。",
+    "zh": "离线分析本地 WAV 的音高走势、活动与停顿时序、能量变化及节奏代理指标，不联网、不修改音频。"
+  },
+  "skills": [
+    {
+      "dir": "skills/prosody-analysis",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/prosody_tool.py",
+      "class": "ProsodyTool",
+      "display_name": {
+        "en": "WAV 韵律分析",
+        "zh": "WAV 韵律分析"
+      },
+      "display_description": {
+        "en": "离线测量音高、停顿、能量和节奏代理指标。",
+        "zh": "离线测量音高、停顿、能量和节奏代理指标。"
+      }
+    }
+  ],
+  "tags": [
+    {
+      "en": "音频",
+      "zh": "音频"
+    },
+    {
+      "en": "韵律",
+      "zh": "韵律"
+    },
+    {
+      "en": "WAV",
+      "zh": "WAV"
+    },
+    {
+      "en": "离线",
+      "zh": "离线"
+    }
+  ],
+  "category": "Others"
+}

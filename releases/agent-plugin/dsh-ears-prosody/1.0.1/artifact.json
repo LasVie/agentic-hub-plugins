@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:dsh-ears-prosody",
+  "type": "agent-plugin",
+  "name": "dsh-ears-prosody",
+  "version": "1.0.1",
+  "zip": "dsh-ears-prosody-1.0.1.zip",
+  "sha256": "be6bddccd8fc5c42a5259d66cd9c2b8f474d0a174b0ac2a29c20ac97c6fcf9e8",
+  "payload_sha256": {
+    "README.md": "92bb9a8e9a7b931b118ce02a2ec32ea9b3b5e353b27dee49656f8cda9ed4902b",
+    "THIRD_PARTY_NOTICES.md": "ea4bc9f284d7c2bc139de9dd1705b9b4ad598887a8fac91f1b1a0694e8275973",
+    "lib/hearing.mjs": "f5e1c02062bf5b08f3343d904f6c3c56f0b3151f5cae30a0356c16bcdf4ed6f3",
+    "lib/wav.mjs": "b3b4ea2dfc4ddb6c1eb3c230257da94ecc156dbb28770c03dc86183017655fa1",
+    "licenses/dsh-ears-prosody/LICENSE": "125fba30b32d7fa4fb44458066f73682a725b9355561fa6c972e36f1695c72ef",
+    "manifest.json": "a435730d1da3de6c483e01e6744018d65d888cb3891f84b7d79690f9dfebd952",
+    "scripts/analyze.mjs": "5c09303ee79e15b9f717481f60dad6866c9e1eadf2f3f4b47ede826b34c8db78",
+    "skills/prosody-analysis/SKILL.md": "2e99ed52b7321848f990931e03bf6c46bc7f4723974c31811b772829faa5e6a7",
+    "tools/prosody_tool.py": "9cce44a6eb0681bb3b6cd2b8225af354dc628954a6a751b01188a7570d39d6df"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "f0c9460d776cc35792d76805b0d616729ed1745bcb275be61c338daa24ad0abb",
+  "functional_test_report_sha256": "c2b3880be4bc9cb38188f4a73e8294d71a15c8887a626703b1ab95fb948a5b2a"
+}
