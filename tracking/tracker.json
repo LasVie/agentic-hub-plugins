@@ -1,10 +1,21 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "spreadsheet_id": "12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM",
   "url": "https://docs.google.com/spreadsheets/d/12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM/edit",
   "repository": "https://github.com/LasVie/agentic-hub-plugins",
   "timezone": "Asia/Singapore",
   "rule": "Read live sheet names, headers, candidate IDs, task IDs, asset IDs, owners and validations before every write; update by identity, not cached row numbers.",
+  "task_scope": {
+    "include": "Development or modification of a specific plugin asset: new implementation, porting, feature changes, bug fixes and version upgrades.",
+    "exclude": "Pure repository maintenance: rules or license-policy documents, generic templates, packaging tools, CI, tracker structure and repository initialization.",
+    "maintenance_record": "Record changes, validation and review in the GitHub PR only. Do not create development tasks, progress reports or pending tracker-sync records, or update candidates or the asset ledger for pure maintenance.",
+    "mixed_pr": "Track only the actual plugin-asset development or modification; do not create a separate task for accompanying repository maintenance.",
+    "task_cohort_options": [
+      "新增资产",
+      "历史改造",
+      "待确认"
+    ]
+  },
   "sheets": {
     "candidates": {
       "title": "插件候选",
@@ -205,7 +216,7 @@
       "调研出处"
     ],
     "evidence": "Screenshot links stay in the linked development task; record real merged PR, version, asset ID and Hub status in candidate notes as appropriate.",
-    "not_applicable": "Do not invent a candidate for independent requirements or pure infrastructure maintenance.",
+    "not_applicable": "Independent plugin requirements may have no candidate. Pure repository maintenance skips candidate and task tracking entirely; do not invent either record.",
     "restore_rule": "Never overwrite live claims, owners, statuses, links or notes with the initial import snapshot."
   }
 }
