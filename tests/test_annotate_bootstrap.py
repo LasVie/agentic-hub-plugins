@@ -5,6 +5,7 @@ import json
 import os
 from pathlib import Path
 import subprocess
+import sys
 import tempfile
 import time
 import unittest
@@ -13,7 +14,12 @@ from unittest import mock
 
 SPEC = importlib.util.spec_from_file_location("annotate_launcher", Path(__file__).parents[1] / "plugins/annotate/annotate/scripts/launch.py")
 launcher = importlib.util.module_from_spec(SPEC)
-SPEC.loader.exec_module(launcher)
+_previous_dont_write_bytecode = sys.dont_write_bytecode
+try:
+    sys.dont_write_bytecode = True
+    SPEC.loader.exec_module(launcher)
+finally:
+    sys.dont_write_bytecode = _previous_dont_write_bytecode
 
 
 class AnnotateBootstrapTests(unittest.TestCase):
