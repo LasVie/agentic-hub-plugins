@@ -78,3 +78,12 @@ provenance.json 的 license_evidence 路径与哈希须与解包文件一致；a
 
 真实协议测试与包装合格支持提交本次开发 PR；不证明 Agentic Hub 已提交、审核通过、已发布或已获总控验收。
 实际 MCP Apps 宿主渲染、目标桌面安装、两类真实截图、Hub 最终提交状态和 Song Haoran 明确验收仍按追踪表记录，不由 AI 自动补齐。
+
+
+## 1.0.1 local test patch (2026-10-22)
+
+Reuses task AH-20261022-mcp-server-dev and its existing source/license review. Adds original integration metadata display_name/display_description and updates version declarations to fix the blank native plugin card reported by the user. No new third-party code, icon, font, documentation or dependency is distributed. Existing full Apache license bytes and six change notices remain present. Native host functions and frontend localization are inspected/executed in memory from the user's local checkout solely for compatibility verification; no host source enters the runtime payload. Both final ZIPs contain 17 byte-identical payload files; audit records and hashes are in the workspace outputs/mcp-server-dev/1.0.1 directory. This package is not yet merged or submitted; it remains in Build pending current-package user test completion. Historical 1.0.0 evidence above is retained.
+
+## 1.0.1 submission review (2026-10-22)
+
+The user has now explicitly completed testing and authorized submission/merge of the marketplace package; USER_TEST_CONFIRMATION.md preserves that statement and the original screenshot hash. Marketplace SHA-256 acd7f7b1c2fecb6ac1887e80cce5f86e0a7502fd60c6dc546f77ef909249701f is unchanged. The complete bundled license hash, six modification notices and all 17 runtime files were rechecked against both packages. Only external test/confirmation documentation and release-record hashes change in this step; no third-party reuse scope or runtime bytes change. The PR is a GitHub delivery of the market-wrapper ZIP. Per current AGENTS.md, Song Haoran owns later Agentic Hub operations; no Hub status or final acceptance is inferred from this submission.

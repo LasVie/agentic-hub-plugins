@@ -1,0 +1,101 @@
+$ /Users/lasvie/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node --version
+v24.19.0
+$ /Users/lasvie/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node /tmp/mcp-dev-npm10/package/bin/npm-cli.js --version
+10.9.4
+{"python": "3.12.14", "node": "v24.19.0", "npm": "10.9.4", "plugin": "1.0.1"}
+$ /Users/lasvie/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node /tmp/mcp-dev-npm10/package/bin/npm-cli.js ci --ignore-scripts --no-audit --no-fund --cache <temporary-workspace>/npm-cache --registry https://registry.npmjs.org --prefix <temporary-workspace>/tools
+
+added 150 packages in 9s
+npm notice
+npm notice New major version of npm available! 10.9.4 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice
+$ <workspace>/.runtime/workswarm-venv/bin/python <workspace>/outputs/mcp-server-dev/1.0.1/extracted-local-test/mcp-server-dev/scripts/devkit.py scaffold --kind app --output <temporary-workspace>/app --name tested-app --author Vannes Wijaya
+{
+  "plugin_version": "1.0.1",
+  "kind": "app",
+  "project": "<temporary-workspace>/app",
+  "name": "tested-app",
+  "generated_version": "0.1.0",
+  "runtime": "Node.js >=20",
+  "commands": [
+    "npm ci --ignore-scripts",
+    "npm run build",
+    "node server.mjs"
+  ],
+  "license_note": "Review rights for your generated code and installed dependencies before distribution."
+}
+$ /Users/lasvie/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node /tmp/mcp-dev-npm10/package/bin/npm-cli.js ci --ignore-scripts --no-audit --no-fund --cache <temporary-workspace>/npm-cache --registry https://registry.npmjs.org --prefix <temporary-workspace>/app
+
+added 99 packages in 424ms
+$ /Users/lasvie/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary-workspace>/app/widget.mjs
+$ /Users/lasvie/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary-workspace>/app/collect-licenses.mjs
+$ /Users/lasvie/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary-workspace>/app/build.mjs
+$ /Users/lasvie/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary-workspace>/app/server.mjs
+$ /Users/lasvie/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node <temporary-workspace>/app/build.mjs
+Collected installed license/NOTICE evidence for 99 packages
+Built widget.html with local SDK bundle
+$ /Users/lasvie/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node <repository>/tests/mcp_server_dev_smoke.mjs <temporary-workspace>/app app <temporary-workspace>/tools/node_modules
+{"kind":"app","project":"<temporary-workspace>/app","initialize":"passed","tools_list":"passed","add_2_3":5,"invalid_inputs":"rejected","unknown_tool":"rejected","recovery":"passed","resource":"UI URI/MIME/local HTML verified"}
+$ <workspace>/.runtime/workswarm-venv/bin/python <workspace>/outputs/mcp-server-dev/1.0.1/extracted-local-test/mcp-server-dev/scripts/devkit.py scaffold --kind mcpb --output <temporary-workspace>/mcpb --name tested-mcpb --author Vannes Wijaya
+{
+  "plugin_version": "1.0.1",
+  "kind": "mcpb",
+  "project": "<temporary-workspace>/mcpb",
+  "name": "tested-mcpb",
+  "generated_version": "0.1.0",
+  "runtime": "Node.js >=20",
+  "commands": [
+    "npm ci --ignore-scripts --omit=dev",
+    "node collect-licenses.mjs",
+    "mcpb validate manifest.json",
+    "mcpb pack"
+  ],
+  "license_note": "Review rights for your generated code and installed dependencies before distribution."
+}
+$ /Users/lasvie/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node /tmp/mcp-dev-npm10/package/bin/npm-cli.js ci --ignore-scripts --no-audit --no-fund --cache <temporary-workspace>/npm-cache --registry https://registry.npmjs.org --prefix <temporary-workspace>/mcpb --omit=dev
+
+added 95 packages in 321ms
+$ /Users/lasvie/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary-workspace>/mcpb/collect-licenses.mjs
+$ /Users/lasvie/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary-workspace>/mcpb/server.mjs
+$ /Users/lasvie/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node <temporary-workspace>/mcpb/collect-licenses.mjs
+Collected installed license/NOTICE evidence for 95 packages
+$ /Users/lasvie/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node <repository>/tests/mcp_server_dev_smoke.mjs <temporary-workspace>/mcpb mcpb <temporary-workspace>/tools/node_modules
+{"kind":"mcpb","project":"<temporary-workspace>/mcpb","initialize":"passed","tools_list":"passed","add_2_3":5,"invalid_inputs":"rejected","unknown_tool":"rejected","recovery":"passed","resource":"not applicable"}
+$ /Users/lasvie/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node <temporary-workspace>/tools/node_modules/@anthropic-ai/mcpb/dist/cli/cli.js validate <temporary-workspace>/mcpb/manifest.json
+Manifest schema validation passes!
+$ /Users/lasvie/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node <temporary-workspace>/tools/node_modules/@anthropic-ai/mcpb/dist/cli/cli.js validate <temporary-workspace>/invalid-manifest.json
+ERROR: Manifest validation failed:
+
+  - name: Required
+  - version: Required
+  - description: Required
+  - author: Required
+  - server: Required
+$ /Users/lasvie/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node <temporary-workspace>/tools/node_modules/@anthropic-ai/mcpb/dist/cli/cli.js pack <temporary-workspace>/mcpb <temporary-workspace>/tested.mcpb
+Validating manifest...
+Manifest schema validation passes!
+
+📦  tested-mcpb@0.1.0
+Archive Contents
+  12.2MB ../../../ [and 2467 more files]
+
+Archive Details
+name: tested-mcpb
+version: 0.1.0
+filename: tested-mcpb-0.1.0.mcpb
+package size: 3.8MB
+unpacked size: 12.2MB
+shasum: d74a6f7208f3581e5a2281ec2286fe81347a34ca
+total files: 2467
+ignored (.mcpbignore) files: 1289
+
+Output: <temporary-workspace>/tested.mcpb
+MCPB archive: 2467 files; no traversal; runtime dependency licenses present
+$ /Users/lasvie/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node <temporary-workspace>/tools/node_modules/@anthropic-ai/mcpb/dist/cli/cli.js unpack <temporary-workspace>/tested.mcpb <temporary-workspace>/relocated
+Extension unpacked successfully to <temporary-workspace>/relocated
+$ /Users/lasvie/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node <repository>/tests/mcp_server_dev_smoke.mjs <temporary-workspace>/relocated mcpb <temporary-workspace>/tools/node_modules
+{"kind":"mcpb","project":"<temporary-workspace>/relocated","initialize":"passed","tools_list":"passed","add_2_3":5,"invalid_inputs":"rejected","unknown_tool":"rejected","recovery":"passed","resource":"not applicable"}
+PASS: real App protocol, text fallback, invalid inputs, MCPB validate/pack/unpack/relocation
+Host UI rendering, target-desktop install and Hub submission remain separate evidence.

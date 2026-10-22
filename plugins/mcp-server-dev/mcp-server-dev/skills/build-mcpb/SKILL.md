@@ -1,7 +1,7 @@
 ---
 name: build-mcpb
 description: 用户需要将 stdio MCP 服务打包为 MCPB，验证 manifest、运行时依赖或本地分发时使用。生成可运行的只读示例，保留依赖许可，并验证解包后的真实协议调用。
-version: 1.0.0
+version: 1.0.1
 ---
 
 # MCPB 配套开发
@@ -29,4 +29,4 @@ npx --yes @anthropic-ai/mcpb@2.1.2 pack . /已有父目录/add-bundle.mcpb
 
 后续业务扩展需要分别实现路径真实解析/包含检查（处理符号链接）、文件读量限制、数组 argv 执行、最小权限及敏感信息保护。注解只供宿主参考，不是权限边界。本示例无文件/网络访问。
 
-MCPB 文件是用户生成的项目产物；本插件的 Agentic Hub 提交产物是 mcp-server-dev-1.0.0.zip，两者用途不同。插件不会自动签名、上传或发布。
+MCPB 文件是用户生成的项目产物；本插件的 Agentic Hub 提交产物是 mcp-server-dev-1.0.1.zip，两者用途不同。插件不会自动签名、上传或发布。

@@ -1,7 +1,7 @@
 ---
 name: mcp-dev-route
 description: 当用户开发 MCP 服务、选择远程 HTTP 或本地 stdio、添加 MCP App UI、打包 MCPB 时使用。先复用 MCP Builder 的通用服务开发能力，再选择配套专项技能与可执行示例。
-version: 1.0.0
+version: 1.0.1
 ---
 
 # MCP 开发路径规划

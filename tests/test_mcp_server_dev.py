@@ -20,6 +20,19 @@ finally:
 
 
 class MCPServerDevTests(unittest.TestCase):
+    def test_native_host_display_metadata(self):
+        manifest = json.loads((SCRIPT.parents[1] / "manifest.json").read_text(encoding="utf-8"))
+        # Native list/detail cards read these fields, not name/description.
+        # The frontend accesses value.zh/value.en without string normalization.
+        for field in ("display_name", "display_description"):
+            self.assertIsInstance(manifest.get(field), dict, field)
+            for language in ("zh", "en"):
+                with self.subTest(field=field, language=language):
+                    value = manifest[field].get(language)
+                    self.assertIsInstance(value, str)
+                    self.assertTrue(value.strip())
+        self.assertEqual(manifest["version"], devkit.VERSION)
+
     def test_routes_reuse_builder_and_choose_specialists(self):
         for local, ui, prototype in itertools.product((False, True), repeat=3):
             with self.subTest(local=local, ui=ui, prototype=prototype):
