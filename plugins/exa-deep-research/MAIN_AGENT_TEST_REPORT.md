@@ -27,7 +27,8 @@ actual JiuwenSwarm `_load_plugins_for_request` method behaved as follows:
 Read-only inspection of the user's local installation confirmed Exa 1.0.0 is
 installed and its tool file SHA-256 matches the tested ZIP. Saved session
 equipment selections contained no Exa mount; the recent single-agent sessions
-had empty plugin selections. This supports a per-conversation activation issue.
+had empty plugin selections. This establishes a missing mount, but does not
+establish why it was missing.
 The app's existing state was not edited. No conversation content is included
 in these records.
 
@@ -35,7 +36,9 @@ The host source currently disables its tool-retrieval feature via
 `is_tool_retrieval_enabled`; the forced progressive-policy case above verifies
 schema compatibility, not that progressive mode was active in the user's chat.
 The UI/model conversation itself has not been driven by this test. The user
-still needs to enable the plugin in their conversation and retry.
+reported that no manual plugin selector is available. The frontend's **Use**
+action should automatically carry its selection. That browser-to-chat handoff
+was not covered by this backend test; see FRONTEND_USE_DIAGNOSIS.md.
 
 ## Environment and command
 
