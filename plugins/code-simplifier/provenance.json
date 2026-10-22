@@ -1,0 +1,48 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/anthropics/claude-plugins-official/tree/d1adba47161a271799de7b548225d929310046bd/plugins/code-simplifier",
+      "revision": "d1adba47161a271799de7b548225d929310046bd",
+      "license_expression": "Apache-2.0",
+      "author": "Anthropic (support@anthropic.com), as credited in the pinned upstream plugin.json",
+      "reused_source_paths": [
+        "plugins/code-simplifier/agents/code-simplifier.md",
+        "plugins/code-simplifier/LICENSE"
+      ],
+      "license_evidence": [
+        {
+          "path": "licenses/claude-plugins-official/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ],
+      "notice_present": false
+    }
+  ],
+  "reused_paths": [
+    "skills/code-simplifier/SKILL.md",
+    "LICENSE",
+    "licenses/claude-plugins-official/LICENSE"
+  ],
+  "audit_file": "SOURCE_REVIEW.md",
+  "input_package": {
+    "filename": "code-simplifier_1.0.0.zip",
+    "version": "1.0.0",
+    "sha256": "10879fcf250d91bdc59bcbd20f10680cd32df5cf695f400359ce03e4c58e0357",
+    "authority": "User-supplied attachment in the current conversation; Cai Zhenze explicitly requested compliant repackaging for local testing on 2026-10-22."
+  },
+  "package_maintainer": "Cai Zhenze",
+  "changes": [
+    "Incremented native manifest version to 1.0.1",
+    "Updated README installation paths and added packaging change notice",
+    "Added THIRD_PARTY_NOTICES.md and unchanged upstream LICENSE under licenses/claude-plugins-official/",
+    "Added deterministic marketplace wrapper; native test archive uses the same payload"
+  ],
+  "skill_payload_changed": false,
+  "duplicate_check": "Already Covered; accepted by the user for this local test packaging task; no claim of new functionality."
+}
