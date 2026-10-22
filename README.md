@@ -25,11 +25,11 @@ python tools/asset_release.py check-repo
 维护流程分为三步，详细要求见 [AGENTS.md](AGENTS.md)：
 
 1. **审查（candidates agent）**：先跳过已确认重复、已被认领、已立项或已交付的候选，再对照历史和新增 Skill / Plugin 等能力。发现完整重复立即回填查重结论、关联资产和依据；未认领且无任务的重复项标为 `Excluded`。待核重叠不冒充已确认重复。本阶段只维护候选审查，不创建开发任务。
-2. **开始制作（用户选定后）**：先同步候选认领与原开发任务，再做来源审查、格式适配和功能测试，交付本地测试包、安装步骤及版本/哈希。任务使用 `Ready for Testing` / `User Testing`。等待用户明确确认当前包测试结束，确认前不 push、开交付 PR 或提交 Hub。
-3. **提交（用户明确测试结束后）**：在关联进展汇报记录用户确认和测试包版本/哈希，问题解决后设 `Ready for Submission` / `Submitting`，再推送、PR 合入 ZIP、清理分支、同步台账、提交 Hub 和补齐两类截图。最终总控验收通过且全部交付条件满足后才设 `Completed` / `Delivered`；用户测试结束不等于最终验收。
+2. **开始制作（用户选定后）**：先同步候选认领与原开发任务，再做来源审查、格式适配和功能测试，交付本地测试包、安装步骤及版本/哈希。任务使用 `Ready for Testing` / `User Testing`。等待用户明确确认当前包测试结束，确认前不 push 或开交付 PR。
+3. **提交（用户明确测试结束后）**：在关联进展汇报记录用户确认和测试包版本/哈希，问题解决后设 `Ready for Submission` / `Submitting`，再推送、PR 合入 ZIP、清理分支、在 PR 上传测试原图并将证据链接同步到台账，交给总控验收。Agentic Hub 的提交、发布和对应截图由 Song Haoran 本人负责，不属于成员及其 agent 的交付步骤或完成门槛。测试证据齐全、总控明确验收且 GitHub 交付条件满足后才设 `Completed` / `Delivered`；用户测试结束不等于最终验收。
 
 `Development Tasks` 与关联 `Progress Reports` 只追踪具体插件的开发和修改。纯规则、文档、工具、CI 等仓库维护只在 GitHub PR 留痕，不创建插件任务、汇报或候选/资产记录，也不适用插件用户测试门槛。本仓维护 PR 同样在合入后清理对应临时分支。
 
-认领、转派、多个任务与历史升级按[候选负责人、立项与交接](AGENTS.md#candidate-ownership-project-initiation-and-handoffs)维护；他人的认领不能被覆盖。任务表保留现有简化列，用户测试确认写入关联的 `Progress Reports`，两类截图仍分别存放。
+认领、转派、多个任务与历史升级按[候选负责人、立项与交接](AGENTS.md#candidate-ownership-project-initiation-and-handoffs)维护；他人的认领不能被覆盖。任务表保留现有简化列，用户测试确认写入关联的 `Progress Reports`，两类截图栏只填 PR 中原图的证据链接；Hub 截图栏保留给总控后续提供的证据，缺少时不阻塞成员交付。新增任务必须纳入原表格范围并继承下拉选项、日期格式与换行。
 
 在线追踪表统一使用英文页签、字段、状态与描述。维护者写入新记录时同样使用英文，保留 ID、成员姓名、链接和原始来源文件名；字段映射见 `tracking/tracker.json`。
