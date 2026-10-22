@@ -79,6 +79,63 @@ async def main():
         result = {"host_load": "passed", "tools": names, "skills": len(parts.skills),
                   "runtime": {"python": sys.version.split()[0], "mcp": importlib.metadata.version("mcp"), "jsonschema": importlib.metadata.version("jsonschema")},
                   "loader_sha256": hashlib.sha256((args.sdk_root / "openjiuwen/harness/resources/extension_loader.py").read_bytes()).hexdigest()}
+        from openjiuwen.core.single_agent.schema.agent_card import AgentCard
+        from openjiuwen.harness.factory import create_deep_agent
+        from openjiuwen.harness.rails import SkillUseRail
+        expected = {"exa_search", "exa_fetch", "exa_search_advanced", "exa_research"}
+        result["main_agent"] = {}
+        for progressive in (False, True):
+            agent = create_deep_agent(
+                None, card=AgentCard(id=f"exa-check-{progressive}", name="main_agent"),
+                enable_task_loop=False, auto_create_workspace=False, language="en",
+                rails=[SkillUseRail(skills_dir=str(Path(temp) / "skills"), include_tools=False)],
+                enable_read_image_multimodal=False, progressive_tool_enabled=progressive)
+            await agent.ensure_initialized()
+            before = {item.name for item in await agent.ability_manager.list_tool_info()}
+            adapter = None
+            if archive and args.host_root:
+                from jiuwenswarm.server.runtime.agent_adapter.interface_deep import JiuWenSwarmDeepAdapter
+                # Exercise the real chat equipment method without starting a
+                # server, model session, or changing the user's saved state.
+                adapter = object.__new__(JiuWenSwarmDeepAdapter)
+                adapter._instance = agent
+                adapter._loaded_plugins = {}
+                await adapter._load_plugins_for_request({"plugin_names": []})
+                assert not expected & {item.name for item in await agent.ability_manager.list_tool_info()}
+                await adapter._load_plugins_for_request({"plugin_names": ["exa-deep-research"]})
+                record = adapter._loaded_plugins["exa-deep-research"][0]
+            else:
+                record = await agent.load_plugin(str(current))
+            infos = await agent.ability_manager.list_tool_info()
+            assert expected <= {item.name for item in infos}, "Exa tools absent from main agent"
+            assert expected <= {item.name for item in await agent._react_agent.ability_manager.list_tool_info()}
+            exposure = {name: agent.ability_manager.get(name).exposure.value for name in sorted(expected)}
+            expected_exposure = "deferred" if progressive else "direct"
+            assert set(exposure.values()) == {expected_exposure}, exposure
+            result["main_agent"]["progressive" if progressive else "direct"] = {
+                "registered": sorted(expected), "exposure": exposure,
+                "inner_react_registry": "passed", "absent_before_mount": not bool(expected & before)}
+            if adapter:
+                result["main_agent"]["progressive" if progressive else "direct"]["chat_equipment_mount"] = "passed; empty selection has no Exa tools, selected package has all four"
+            from openjiuwen.core.foundation.llm.schema.tool_call import ToolCall
+            dispatched, message = await agent.ability_manager._execute_single_tool_call(
+                ToolCall(id="exa-guard", type="function", name="exa_research",
+                         arguments=json.dumps({"arguments": {"query": "not executed"}, "allow_paid": False})),
+                session=None)
+            assert dispatched["error"]["code"] == "PAID_ACTION_REQUIRES_APPROVAL", dispatched
+            assert "PAID_ACTION_REQUIRES_APPROVAL" in message.content
+            result["main_agent"]["progressive" if progressive else "direct"]["main_registry_dispatch_guard"] = "passed; actual registered tool executed, no research run started"
+            if progressive and adapter:
+                from jiuwenswarm.agents.harness.common.tools.tool_retrieval_toolkits import ToolRetrievalToolkit
+                toolkit = ToolRetrievalToolkit(deferred_tools_provider=adapter._collect_deferred_tool_infos)
+                assert expected <= {item.name for item in toolkit.frozen_catalogue.flat_entries}
+                for name in expected:
+                    schema = json.loads(await toolkit.tool_search(operation="get_schema", tool=name))
+                    assert schema["name"] == name and schema["schema"]["type"] == "object"
+                result["main_agent"]["progressive"]["host_tool_search_all_four_schemas"] = "passed"
+            await agent.unload_extension(record)
+            assert not expected & {item.name for item in await agent.ability_manager.list_tool_info()}
+            result["main_agent"]["progressive" if progressive else "direct"]["unmount_removes_tools"] = "passed"
         tools = {type(tool).__name__: tool for tool in parts.tools}
         with patch.dict(os.environ, {"EXA_API_KEY": ""}):
             guard = await tools["ExaResearchTool"].invoke({"arguments": {"query": "not executed"}})

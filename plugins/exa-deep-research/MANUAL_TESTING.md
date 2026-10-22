@@ -10,6 +10,11 @@ The final handoff supplies their actual SHA-256 values.
 1. In the target host's Plugin page, import the local test ZIP, install/enable
    it, and inspect the card. Expect Exa Deep Research 1.0.0, two skills and four
    native tools; English and Chinese display text should be readable.
+   Import/install makes the package available in the library. In the single
+   agent conversation, open the **+** menu beside the chat input, choose
+   **Extensions**, then **Plugins**, and turn on **Exa Deep Research**. If a
+   Connect button appears, connect it first, then check that its switch is on.
+   Selection is per conversation; check it again after starting a new one.
 2. Start a new conversation. Ask exa_search for three primary sources about
    MCP HTTP transports. Expect an actual Exa tool call, successful content and
    source URLs. No API key is needed for the anonymous quota.
@@ -39,3 +44,17 @@ Under AGENTS.md, the agent waits for explicit completion of testing of this
 package before pushing or creating a delivery PR. After confirmation, test
 screenshots are attached to that PR and tracked using evidence permalinks.
 Song Haoran handles any later Agentic Hub submission personally.
+
+## Tools absent from the main agent
+
+Installing a package does not select it for a conversation. The host request
+must include `plugin_names: ["exa-deep-research"]`. An empty list intentionally
+unmounts it. After enabling the switch, send a new message requesting
+`exa_search`. If progressive loading is enabled in your host, discover a
+deferred tool with `tool_search`, then use its advertised execution mechanism.
+
+Local follow-up on 2026-10-22 reproduced both states through JiuwenSwarm's
+actual chat equipment loader. All four tools were present in the main and
+inner ReAct registries after selection, and absent before selection and after
+unmount. No runtime change or replacement ZIP was required. See
+MAIN_AGENT_TEST_REPORT.md for the environment, command and limits.
