@@ -1,7 +1,7 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "spreadsheet_id": "12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM",
-  "url": "https://docs.google.com/spreadsheets/d/12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM/edit",
+  "url": "https://docs.google.com/spreadsheets/d/12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM/edit?usp=sharing",
   "repository": "https://github.com/LasVie/agentic-hub-plugins",
   "timezone": "Asia/Singapore",
   "rule": "Read live sheet names, headers, candidate IDs, task IDs, asset IDs, owners and validations before every write; update by identity, not cached row numbers.",
@@ -376,5 +376,17 @@
       "legacy_tasks": "Preserve already merged PRs and historical progress. Never invent prior user confirmation; remaining Hub submissions and new package versions must meet the gate. Do not resubmit an identical already merged ZIP."
     },
     "maintenance_exception": "Pure repository maintenance uses a maintenance PR only; plugin user-test confirmation, ZIP/evidence gates, plugin task/report registration and candidate/asset updates do not apply."
+  },
+  "access": {
+    "service": "Google Sheets",
+    "link_sharing": "Anyone with the link",
+    "role": "Editor",
+    "drive_permission_type": "anyone",
+    "drive_permission_role": "writer",
+    "verified_on": "2026-10-22",
+    "edit_url": "https://docs.google.com/spreadsheets/d/12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM/edit?usp=sharing",
+    "update_in_place": true,
+    "connection_note": "Link-based editing permission does not configure agent connector/API authentication. Use a configured Google Drive/Sheets connector or an available authorized browser route. Do not request an individual editor grant merely because a connector is unconfigured.",
+    "failure_rule": "If no working route is available, report the actual connection/access blocker. For actual plugin work, preserve pending synchronization records; never claim the cloud sheet was updated without readback."
   }
 }
