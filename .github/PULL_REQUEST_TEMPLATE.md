@@ -5,19 +5,22 @@ This template applies to plugin development or changes. For pure repository main
 - Change type: Plugin development/change / Repository maintenance
 - Task ID (required for plugin work):
 - Candidate ID (if applicable):
-- Confirmed primary owner (Unassigned if unspecified):
+- Confirmed member/primary owner (collected or explicitly supplied before plugin work):
 - Asset type / stable Asset ID:
+- Original candidate/upstream name -> final Chinese display name -> internal slug:
 - Difference from existing Asset Ledger capabilities:
 
 ## Submission gate — before pushing/opening this delivery PR
 
-- [ ] The user explicitly confirmed testing is complete for the current package, and known blocking issues are resolved
+- [ ] The user explicitly confirmed testing of the current Chinese package is complete, and known blocking issues are resolved
+- [ ] All source, Chinese ZIP/version/hash, source/license review, notices, functional-test records and installation/use instructions were complete before delivery push/PR creation
+- [ ] Original test screenshots of the current version were received and inspected before delivery push/PR creation
 - Confirmation Progress Report ID / actual conversation reference:
 - Confirming user and date/time:
 - Tested version and final ZIP SHA-256:
 - [ ] The ZIP and payload submitted here match the confirmed test package; any changed package has been retested and explicitly confirmed
 
-AI self-tests, CI, downloading a package, starting tests, or a screenshot alone do not establish user test completion. Keep package development local until the gate is met. Pure repository maintenance is exempt; do not invent user testing or confirmation records.
+AI self-tests, CI, downloading a package, starting tests, or a screenshot alone do not establish user test completion. Keep package development local until user test completion and all required materials, including original test screenshots, are collected. Pure repository maintenance is exempt; do not invent user testing or confirmation records.
 
 ## Validation and distribution
 
@@ -41,11 +44,18 @@ Evidence within the final ZIP (explain Not Applicable items):
 
 This checklist does not relicense repository-owned code or upstream materials. Required functional tests, CI and distribution review must pass before merge.
 
+## Screenshot evidence and Chinese package — before merge
+
+- [ ] Collected original test screenshots attached when creating this PR; task/version/key operations are readable and correct
+- [ ] Actual screenshot attachments and permanent evidence links verified; links written/read back in Development Tasks / Test Screenshot
+- [ ] Both the user test package and final delivery package are Chinese editions and match the confirmed version/payload/ZIP hash
+- [ ] Any post-test localization or packaged-name changes were rebuilt/retested and explicitly confirmed with applicable screenshots
+
+Missing original screenshots prevent delivery push/PR creation. A missing PR evidence link is resolved after PR creation and before merge; do not merge and defer test screenshots.
+
 ## After merge — plugin work only
 
 - [ ] Actual merge and merge commit verified
-- [ ] Missing original test screenshots proactively requested; actual full-resolution images attached to this PR
-- [ ] Verified test-evidence permalinks recorded in Development Tasks / Test Screenshot
 - [ ] Original Development Task, Progress Reports and linked candidate synchronized as applicable; Asset Ledger left unchanged after merge
 - [ ] Candidate/task IDs, owners and any handoff or conflict verified
 - [ ] Merged release path, version/hash, installation notes and test evidence handed off to Song Haoran
