@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "annotate": {
+      "command": "python3",
+      "args": ["../../scripts/launch.py"],
+      "description": "本地网页批注工具，支持主动读取、内联截图、逐条进度和首次使用自动准备依赖。",
+      "timeout_s": 240
+    }
+  }
+}

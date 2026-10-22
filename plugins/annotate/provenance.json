@@ -1,0 +1,16 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/FinalAngel/claude-annotate/tree/d70e57a29ed480b05ff046296572fcc5b761f25e",
+      "revision": "d70e57a29ed480b05ff046296572fcc5b761f25e",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {"path": "licenses/claude-annotate/LICENSE", "sha256": "560cb98de97e83fc25542efdd90e7ab60fa0f824bb9a3d0152c0141b97935da3"}
+      ]
+    }
+  ],
+  "reused_paths": ["runtime/server/index.mjs", "runtime/server/overlay.js", "runtime/package.json", "runtime/package-lock.json"],
+  "audit_file": "SOURCE_REVIEW.md"
+}

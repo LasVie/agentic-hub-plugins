@@ -1,0 +1,27 @@
+{
+  "type": "agent-plugin",
+  "name": "annotate",
+  "version": "1.0.3",
+  "display_name": "网页圈选与批注",
+  "description": "在本地开发网页画框、写批注，通过 MCP 读取元素信息和内联截图，并在 WorkSwarm 中逐条反馈处理状态。",
+  "publisher": "Wang Jie",
+  "category": "软件开发",
+  "tags": [
+    "可视反馈",
+    "网页批注",
+    "本地开发"
+  ],
+  "functional_tags": [
+    "界面审阅",
+    "网页批注",
+    "人工反馈"
+  ],
+  "scope": "面向 macOS 桌面 WorkSwarm 和本地开发网页。需要 Python >=3.9 和已安装 Chrome，首次使用自动发现 Node >=20 并按锁文件安装 npm 依赖；需要网络和可写目录，不要求激活 Conda。不支持导入时执行安装、Claude 专用推送、公网网页批注或 iframe 内批注，不保证所有框架的源码定位。",
+  "candidate_id": "CAND-CLD-264",
+  "task_id": "AH-20261022-annotate",
+  "related_asset_ids": [
+    "2f99a9222dce41f4bd5ac440bf4496f4",
+    "747494162b0c4725ae6ca95b9803b501",
+    "repo:skill:playground"
+  ]
+}
