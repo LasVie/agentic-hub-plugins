@@ -1,0 +1,78 @@
+{
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "id": "fet-timetable-audit",
+  "name": "课表校验与导出",
+  "description": "离线检查 FET 课表输入和已有排课结果，发现引用、工作量、教师与学生时间冲突，并导出 CSV 或 JSON。",
+  "display_name": {
+    "en": "课表校验与导出",
+    "zh": "课表校验与导出"
+  },
+  "display_description": {
+    "en": "离线检查 FET 课表输入和已有排课结果，发现引用、工作量、教师与学生时间冲突，并导出 CSV 或 JSON。",
+    "zh": "离线检查 FET 课表输入和已有排课结果，发现引用、工作量、教师与学生时间冲突，并导出 CSV 或 JSON。"
+  },
+  "category": "Others",
+  "tags": [
+    {
+      "en": "课表",
+      "zh": "课表"
+    },
+    {
+      "en": "校验",
+      "zh": "校验"
+    },
+    {
+      "en": "离线",
+      "zh": "离线"
+    },
+    {
+      "en": "CSV",
+      "zh": "CSV"
+    }
+  ],
+  "skills": [
+    {
+      "dir": "skills/timetable-audit",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/timetable_tools.py",
+      "class": "InspectFetTool",
+      "display_name": {
+        "en": "课表输入检查",
+        "zh": "课表输入检查"
+      },
+      "display_description": {
+        "en": "检查引用、时间网格、工作量及检查覆盖范围。",
+        "zh": "检查引用、时间网格、工作量及检查覆盖范围。"
+      }
+    },
+    {
+      "file": "tools/timetable_tools.py",
+      "class": "VerifyTimetableTool",
+      "display_name": {
+        "en": "已有课表校验",
+        "zh": "已有课表校验"
+      },
+      "display_description": {
+        "en": "核对教师与学生冲突、未安排活动、越界及已支持的不可用时段。",
+        "zh": "核对教师与学生冲突、未安排活动、越界及已支持的不可用时段。"
+      }
+    },
+    {
+      "file": "tools/timetable_tools.py",
+      "class": "ExportTimetableTool",
+      "display_name": {
+        "en": "课表导出",
+        "zh": "课表导出"
+      },
+      "display_description": {
+        "en": "按教师或学生筛选，导出为新的 CSV/JSON 文件，不覆盖已有文件。",
+        "zh": "按教师或学生筛选，导出为新的 CSV/JSON 文件，不覆盖已有文件。"
+      }
+    }
+  ]
+}

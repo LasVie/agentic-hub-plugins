@@ -1,0 +1,29 @@
+{
+  "type": "agent-plugin",
+  "name": "fet-timetable-audit",
+  "version": "1.0.0",
+  "display_name": "课表校验与导出",
+  "description": "离线检查 FET 课表输入和已有排课结果，发现引用、工作量、教师与学生时间冲突，并导出 CSV 或 JSON。",
+  "publisher": "Cai Zhenze",
+  "category": "办公与生产力",
+  "tags": [
+    "课表",
+    "校验",
+    "离线",
+    "CSV"
+  ],
+  "functional_tags": [
+    "Timetable Validation",
+    "School Scheduling",
+    "Offline Export"
+  ],
+  "scope": "校验已有 UTF-8 .fet 和活动安排 XML，支持有限的确定性检查；不生成或求解课表，不证明全约束可行性，不校验教室冲突。无网络、账号、FET 可执行程序或 OR-Tools 依赖。需 Python 3.11+ 与宿主 openJiuwen SDK。",
+  "candidate_id": "CAND-CLD-219",
+  "task_id": "AH-20261023-fet-timetable-audit",
+  "related_asset_ids": [
+    "4388eb53fbc4495ebefe271d0ee466fb",
+    "748c5ba007174fd3aed776cb31f96fec",
+    "e7d544bde62d408dbce9f4428bcf34cc",
+    "43e55c7831c4428e935444ae44a48ab6"
+  ]
+}
