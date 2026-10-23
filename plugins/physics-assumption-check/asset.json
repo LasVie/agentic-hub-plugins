@@ -1,0 +1,29 @@
+{
+  "type": "agent-plugin",
+  "name": "physics-assumption-check",
+  "version": "1.0.1",
+  "display_name": "物理解题审校",
+  "description": "先读题图与连接关系，再列方程、核对单位和极限情况，并按风险汇总假设；提供本地题图裁剪放大工具。",
+  "publisher": "Cai Zhenze",
+  "category": "数据与科学研究",
+  "tags": [
+    "物理",
+    "解题",
+    "题图",
+    "假设审校"
+  ],
+  "functional_tags": [
+    "Physics Exercises",
+    "Diagram Interpretation",
+    "Assumption Review"
+  ],
+  "scope": "Physics exercise interpretation and model-guided solution review. Local PNG/JPEG helper requires Python >=3.10 and Pillow 12.2.0; no network or model call inside the helper. Actual solution quality depends on the host model and legible input.",
+  "candidate_id": "CAND-CLD-250",
+  "task_id": "AH-20261023-physics-assumption-check",
+  "related_asset_ids": [
+    "d3cb3265e9894701b0b15b67228d4d2d",
+    "da13d597743247348214550bd2aa3f78",
+    "d8bcb2d409884f5da841d3846ecf48fa",
+    "1f53f98b3e4348d69a42b25b6c6ce459"
+  ]
+}

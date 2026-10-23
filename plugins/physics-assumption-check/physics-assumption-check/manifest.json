@@ -1,0 +1,50 @@
+{
+  "version": "1.0.1",
+  "package_type": "plugin",
+  "id": "physics-assumption-check",
+  "name": "物理解题审校",
+  "description": "先读题图与连接关系，再列方程、核对单位和极限情况，并按风险汇总假设；提供本地题图裁剪放大工具。",
+  "display_name": {
+    "en": "物理解题审校",
+    "zh": "物理解题审校"
+  },
+  "display_description": {
+    "en": "物理题图解读、解题与假设审校，附本地裁剪放大工具。",
+    "zh": "物理题图解读、解题与假设审校，附本地裁剪放大工具。"
+  },
+  "skills": [
+    {
+      "dir": "skills/physics-review",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/physics_tool.py",
+      "class": "PhysicsFigureTool",
+      "display_name": {
+        "en": "物理题图裁剪放大",
+        "zh": "物理题图裁剪放大"
+      },
+      "display_description": {
+        "en": "本地处理静态 PNG/JPEG，返回新 PNG、尺寸和哈希；不覆盖文件。",
+        "zh": "本地处理静态 PNG/JPEG，返回新 PNG、尺寸和哈希；不覆盖文件。"
+      }
+    }
+  ],
+  "tags": [
+    {
+      "en": "物理",
+      "zh": "物理"
+    },
+    {
+      "en": "解题",
+      "zh": "解题"
+    },
+    {
+      "en": "假设审校",
+      "zh": "假设审校"
+    }
+  ],
+  "category": "Others"
+}
