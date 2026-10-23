@@ -1,0 +1,505 @@
+{
+  "host_source_commit": "3ef1de9bf0b4813e2a0e8674dedc499c78e53df2",
+  "host": {
+    "checked_at": "2026-10-23T08:38:24.831754+00:00",
+    "model_requests_sent": 0,
+    "instance": "/private/tmp/message-quota-audit-workswarm-20261023",
+    "instance_isolation": "Fresh task-only source/config/state/cache and ports; no credentials copied; Main preserved.",
+    "frontend": {
+      "status": 200,
+      "html": true
+    },
+    "websockets": [
+      {
+        "port": 29250,
+        "ping_pong": true,
+        "config_ok": true,
+        "config_fields": 143,
+        "catalog_ok": true
+      },
+      {
+        "port": 6386,
+        "ping_pong": true,
+        "config_ok": true,
+        "config_fields": 143,
+        "catalog_ok": true
+      }
+    ],
+    "imported": {
+      "type": "res",
+      "id": "quota-309e1a0b9cdb47bca4d68df4a268d443",
+      "ok": true,
+      "payload": {
+        "id": "message-quota-audit"
+      }
+    },
+    "installed": {
+      "type": "res",
+      "id": "quota-884af94215af4bd69e90c9fd46daa21c",
+      "ok": true,
+      "payload": {}
+    }
+  },
+  "installed_loader_and_tools": {
+    "summary": {
+      "passed": true,
+      "version": "1.0.1",
+      "display_name": "消息配额与用量审计",
+      "tool_count": 4,
+      "skill_count": 1,
+      "actual_invocations": 17,
+      "installed_path": "/private/tmp/message-quota-audit-workswarm-20261023/data/agent/workspace/plugins/plugin_packages/local/message-quota-audit",
+      "source_canonical_native_installed_equal": true,
+      "all_existing_plugin_ids_preserved": true,
+      "model_requests": 0,
+      "network_attempts": 0,
+      "canonical_sha256": "0eb6d3f295db16ceb21717927cefeb21c081b3d2fd1408d9af68d9c61da5a4df",
+      "native_sha256": "61dff8962b7f481f9ae89eb6fdad0ef77f67e78d987f52c0652bdcdb3c31a9a6"
+    },
+    "results": {
+      "init": {
+        "ok": true,
+        "version": "1.0.1",
+        "action": "init",
+        "revision": 0,
+        "policy": {
+          "ack_max_bytes": 40,
+          "buckets": {
+            "direct": {
+              "limit": 120,
+              "per_send": false
+            },
+            "offline": {
+              "limit": 80,
+              "per_send": true
+            }
+          },
+          "day_boundary_hour": 0,
+          "hop_max": 3,
+          "pair_max": 3,
+          "pair_window_seconds": 1200,
+          "timezone": "Asia/Shanghai"
+        },
+        "event_count": 0,
+        "message": "策略已保存。"
+      },
+      "configure": {
+        "ok": true,
+        "version": "1.0.1",
+        "action": "configure",
+        "revision": 1,
+        "policy": {
+          "ack_max_bytes": 40,
+          "buckets": {
+            "direct": {
+              "limit": 3,
+              "per_send": false
+            },
+            "offline": {
+              "limit": 2,
+              "per_send": true
+            }
+          },
+          "day_boundary_hour": 0,
+          "hop_max": 3,
+          "pair_max": 3,
+          "pair_window_seconds": 1200,
+          "timezone": "Asia/Shanghai"
+        },
+        "event_count": 0,
+        "message": "策略已保存。"
+      },
+      "preview": {
+        "ok": true,
+        "version": "1.0.1",
+        "verdict": "allowed",
+        "reason_code": "allowed",
+        "message": "当前声明满足本地策略；此预览不保留额度，也不证明消息已发送。",
+        "recorded": false,
+        "policy_revision": 1,
+        "day": "2026-10-23",
+        "bucket": "direct",
+        "units": 2,
+        "used_before": 0,
+        "limit": 3,
+        "remaining": 3,
+        "message_sha256": "c7058aa44529fdcea6d189c8a75165360a89140077c8bde78c6ad3f9a0a34c6b",
+        "accounting_time_ms": 1792744707755
+      },
+      "first_record": {
+        "ok": true,
+        "version": "1.0.1",
+        "verdict": "allowed",
+        "reason_code": "allowed",
+        "message": "已按用户明确声明登记用量；不表示实际投递已被独立验证。",
+        "recorded": true,
+        "policy_revision": 1,
+        "day": "2026-10-23",
+        "bucket": "direct",
+        "units": 2,
+        "used_before": 0,
+        "limit": 3,
+        "remaining": 1,
+        "message_sha256": "c7058aa44529fdcea6d189c8a75165360a89140077c8bde78c6ad3f9a0a34c6b",
+        "accounting_time_ms": 1792744707756,
+        "duplicate": false
+      },
+      "duplicate": {
+        "ok": true,
+        "version": "1.0.1",
+        "verdict": "already_recorded",
+        "recorded": true,
+        "duplicate": true,
+        "day": "2026-10-23",
+        "bucket": "direct",
+        "units": 2,
+        "policy_revision": 1,
+        "message_sha256": "c7058aa44529fdcea6d189c8a75165360a89140077c8bde78c6ad3f9a0a34c6b",
+        "message": "此消息已登记；没有重复计数。"
+      },
+      "conflict": {
+        "ok": false,
+        "version": "1.0.1",
+        "error": {
+          "code": "event_conflict",
+          "message": "同一发件人和消息 ID 已登记不同内容；拒绝覆盖原记录。"
+        }
+      },
+      "exact_limit": {
+        "ok": true,
+        "version": "1.0.1",
+        "verdict": "allowed",
+        "reason_code": "allowed",
+        "message": "已按用户明确声明登记用量；不表示实际投递已被独立验证。",
+        "recorded": true,
+        "policy_revision": 1,
+        "day": "2026-10-23",
+        "bucket": "direct",
+        "units": 1,
+        "used_before": 2,
+        "limit": 3,
+        "remaining": 0,
+        "message_sha256": "ddf637e3ccb062c65c9bb0857927819448691cf05a69bea120f415a53f9c7b01",
+        "accounting_time_ms": 1792744707757,
+        "duplicate": false
+      },
+      "over_limit": {
+        "ok": true,
+        "version": "1.0.1",
+        "verdict": "rejected",
+        "reason_code": "quota_exceeded",
+        "message": "计入本次用量会超过该发件人的当日配额。",
+        "recorded": false,
+        "policy_revision": 1,
+        "day": "2026-10-23",
+        "bucket": "direct",
+        "units": 1,
+        "used_before": 3,
+        "limit": 3,
+        "remaining": 0,
+        "message_sha256": "48def23dbcd9d23f99e541eeffc55efac3f298604d824dd5dd1201727953d738",
+        "accounting_time_ms": 1792744707758
+      },
+      "offline": {
+        "ok": true,
+        "version": "1.0.1",
+        "verdict": "allowed",
+        "reason_code": "allowed",
+        "message": "已按用户明确声明登记用量；不表示实际投递已被独立验证。",
+        "recorded": true,
+        "policy_revision": 1,
+        "day": "2026-10-23",
+        "bucket": "offline",
+        "units": 1,
+        "used_before": 0,
+        "limit": 2,
+        "remaining": 1,
+        "message_sha256": "1daa8b6e6147cee12ccb51e7a45131a179801a48ad0f758a6c7a8ff8f1006039",
+        "accounting_time_ms": 1792744707758,
+        "duplicate": false
+      },
+      "ack_only": {
+        "ok": true,
+        "version": "1.0.1",
+        "verdict": "rejected",
+        "reason_code": "ack_only",
+        "message": "正文只有回执词；请合并沟通内容。",
+        "recorded": false,
+        "policy_revision": 1,
+        "day": "2026-10-23",
+        "bucket": "direct",
+        "units": 2,
+        "used_before": 3,
+        "limit": 3,
+        "remaining": 0,
+        "message_sha256": "5988dbb63be110050155f3c018ae4bc6a01e7dba9c6e1d64c12af459e3c2ce9b",
+        "accounting_time_ms": 1792744707759
+      },
+      "hop_limit": {
+        "ok": true,
+        "version": "1.0.1",
+        "verdict": "rejected",
+        "reason_code": "hop_limit",
+        "message": "回复链深度达到上限。",
+        "recorded": false,
+        "policy_revision": 1,
+        "day": "2026-10-23",
+        "bucket": "direct",
+        "units": 2,
+        "used_before": 3,
+        "limit": 3,
+        "remaining": 0,
+        "message_sha256": "5b578b7c21c3f3ad3efb9040a602d9412892d3f6e60e5513e1a893641e66b03e",
+        "accounting_time_ms": 1792744707759
+      },
+      "stale_revision": {
+        "ok": false,
+        "version": "1.0.1",
+        "error": {
+          "code": "revision_conflict",
+          "message": "策略修订号已变化；请重新读取 status，不会覆盖并发修改。"
+        }
+      },
+      "report": {
+        "ok": true,
+        "version": "1.0.1",
+        "action": "report",
+        "policy_revision": 1,
+        "start_day": "2026-10-17",
+        "end_day": "2026-10-23",
+        "event_count": 3,
+        "totals": [
+          {
+            "day": "2026-10-23",
+            "as": "sender_demo",
+            "bucket": "direct",
+            "letters": 2,
+            "units": 3,
+            "body_bytes": 66
+          },
+          {
+            "day": "2026-10-23",
+            "as": "sender_demo",
+            "bucket": "offline",
+            "letters": 1,
+            "units": 1,
+            "body_bytes": 18
+          }
+        ],
+        "entries": [
+          {
+            "id": "test_001",
+            "as": "sender_demo",
+            "day": "2026-10-23",
+            "bucket": "direct",
+            "units": 2,
+            "body_bytes": 42
+          },
+          {
+            "id": "test_002",
+            "as": "sender_demo",
+            "day": "2026-10-23",
+            "bucket": "direct",
+            "units": 1,
+            "body_bytes": 24
+          },
+          {
+            "id": "test_004",
+            "as": "sender_demo",
+            "day": "2026-10-23",
+            "bucket": "offline",
+            "units": 1,
+            "body_bytes": 18
+          }
+        ],
+        "message": "只读汇总；正文不写入账本，记录不证明实际投递。"
+      },
+      "reconcile_match": {
+        "ok": true,
+        "version": "1.0.1",
+        "action": "reconcile",
+        "policy_revision": 1,
+        "start_day": "2026-10-17",
+        "end_day": "2026-10-23",
+        "event_count": 3,
+        "totals": [
+          {
+            "day": "2026-10-23",
+            "as": "sender_demo",
+            "bucket": "direct",
+            "letters": 2,
+            "units": 3,
+            "body_bytes": 66
+          },
+          {
+            "day": "2026-10-23",
+            "as": "sender_demo",
+            "bucket": "offline",
+            "letters": 1,
+            "units": 1,
+            "body_bytes": 18
+          }
+        ],
+        "entries": [
+          {
+            "id": "test_001",
+            "as": "sender_demo",
+            "day": "2026-10-23",
+            "bucket": "direct",
+            "units": 2,
+            "body_bytes": 42
+          },
+          {
+            "id": "test_002",
+            "as": "sender_demo",
+            "day": "2026-10-23",
+            "bucket": "direct",
+            "units": 1,
+            "body_bytes": 24
+          },
+          {
+            "id": "test_004",
+            "as": "sender_demo",
+            "day": "2026-10-23",
+            "bucket": "offline",
+            "units": 1,
+            "body_bytes": 18
+          }
+        ],
+        "message": "输入记录与账本一致；未写入或修复账本。",
+        "matched": true,
+        "supplied_totals": [
+          {
+            "day": "2026-10-23",
+            "as": "sender_demo",
+            "bucket": "direct",
+            "letters": 2,
+            "units": 3,
+            "body_bytes": 66
+          },
+          {
+            "day": "2026-10-23",
+            "as": "sender_demo",
+            "bucket": "offline",
+            "letters": 1,
+            "units": 1,
+            "body_bytes": 18
+          }
+        ],
+        "supplied_event_count": 3,
+        "reason_code": "matched"
+      },
+      "reconcile_mismatch": {
+        "ok": true,
+        "version": "1.0.1",
+        "action": "reconcile",
+        "policy_revision": 1,
+        "start_day": "2026-10-17",
+        "end_day": "2026-10-23",
+        "event_count": 3,
+        "totals": [
+          {
+            "day": "2026-10-23",
+            "as": "sender_demo",
+            "bucket": "direct",
+            "letters": 2,
+            "units": 3,
+            "body_bytes": 66
+          },
+          {
+            "day": "2026-10-23",
+            "as": "sender_demo",
+            "bucket": "offline",
+            "letters": 1,
+            "units": 1,
+            "body_bytes": 18
+          }
+        ],
+        "entries": [
+          {
+            "id": "test_001",
+            "as": "sender_demo",
+            "day": "2026-10-23",
+            "bucket": "direct",
+            "units": 2,
+            "body_bytes": 42
+          },
+          {
+            "id": "test_002",
+            "as": "sender_demo",
+            "day": "2026-10-23",
+            "bucket": "direct",
+            "units": 1,
+            "body_bytes": 24
+          },
+          {
+            "id": "test_004",
+            "as": "sender_demo",
+            "day": "2026-10-23",
+            "bucket": "offline",
+            "units": 1,
+            "body_bytes": 18
+          }
+        ],
+        "message": "输入记录与账本不同；未写入或修复账本。",
+        "matched": false,
+        "supplied_totals": [
+          {
+            "day": "2026-10-23",
+            "as": "sender_demo",
+            "bucket": "direct",
+            "letters": 2,
+            "units": 4,
+            "body_bytes": 66
+          },
+          {
+            "day": "2026-10-23",
+            "as": "sender_demo",
+            "bucket": "offline",
+            "letters": 1,
+            "units": 1,
+            "body_bytes": 18
+          }
+        ],
+        "supplied_event_count": 3,
+        "reason_code": "reconciliation_mismatch"
+      }
+    },
+    "persisted": {
+      "ok": true,
+      "version": "1.0.1",
+      "action": "status",
+      "revision": 1,
+      "policy": {
+        "ack_max_bytes": 40,
+        "buckets": {
+          "direct": {
+            "limit": 3,
+            "per_send": false
+          },
+          "offline": {
+            "limit": 2,
+            "per_send": true
+          }
+        },
+        "day_boundary_hour": 0,
+        "hop_max": 3,
+        "pair_max": 3,
+        "pair_window_seconds": 1200,
+        "timezone": "Asia/Shanghai"
+      },
+      "event_count": 3,
+      "message": "只读状态；未修改策略或账本。"
+    }
+  },
+  "ui_inspection": {
+    "Chinese_names_and_four_tool_labels": "passed by browser AX and screenshot inspection",
+    "screenshot": "/private/tmp/message-quota-audit-workswarm-20261023/runtime/extensions-details.png",
+    "human_test_evidence": false
+  },
+  "limitations": [
+    "Native OS file picker not exercised; actual import/install RPC succeeded.",
+    "No model conversation executed; fresh-instance credentials were not copied.",
+    "macOS host tested; Linux host unverified and Windows unsupported."
+  ]
+}

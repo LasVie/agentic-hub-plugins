@@ -1,0 +1,30 @@
+{
+  "type": "agent-plugin",
+  "name": "message-quota-audit",
+  "version": "1.0.1",
+  "display_name": "消息配额与用量审计",
+  "description": "离线预览消息配额与回环限制，按明确授权登记用量并对账；不发送或拦截消息。",
+  "publisher": "Cai Zhenze",
+  "category": "软件开发",
+  "tags": [
+    "消息配额",
+    "用量账本",
+    "回环检查",
+    "离线对账"
+  ],
+  "functional_tags": [
+    "Message Quotas",
+    "Local Usage Ledger",
+    "Reconciliation"
+  ],
+  "scope": "显式本地消息配额预览、用户确认后的事务记账及只读对账；Python 3.11 标准库和宿主 SDK，仅 Linux/macOS。不发送消息、不接管宿主、不提供静默时段、真实计费或身份鉴定。",
+  "candidate_id": "CAND-DSH-070",
+  "task_id": "AH-20261023-message-quota-audit",
+  "related_asset_ids": [
+    "repo:agent-plugin:agent-letter-verify",
+    "72c01bbdeaee47c4ad9eeaa9d7ae630e",
+    "d0facc36f10c4f82b9592633a2dc0b11",
+    "04d23729393a4070a80dd38bc6ce1cab",
+    "b68e551f74ec46818b51492be6efb83c"
+  ]
+}

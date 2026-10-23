@@ -1,0 +1,82 @@
+{
+  "version": "1.0.1",
+  "package_type": "plugin",
+  "id": "message-quota-audit",
+  "name": "消息配额与用量审计",
+  "description": "离线预览消息配额与回环限制，按明确授权登记用量并对账；不发送或拦截消息。",
+  "display_name": {
+    "en": "消息配额与用量审计",
+    "zh": "消息配额与用量审计"
+  },
+  "display_description": {
+    "en": "离线预览消息配额与回环限制，按明确授权登记用量并对账；不发送或拦截消息。",
+    "zh": "离线预览消息配额与回环限制，按明确授权登记用量并对账；不发送或拦截消息。"
+  },
+  "skills": [
+    {
+      "dir": "skills/message-accounting",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/quota_tools.py",
+      "class": "QuotaPolicyTool",
+      "display_name": {
+        "en": "消息配额策略",
+        "zh": "消息配额策略"
+      },
+      "display_description": {
+        "en": "初始化、读取或按修订号配置独立工作目录的策略。",
+        "zh": "初始化、读取或按修订号配置独立工作目录的策略。"
+      }
+    },
+    {
+      "file": "tools/quota_tools.py",
+      "class": "CheckQuotaTool",
+      "display_name": {
+        "en": "预览消息配额",
+        "zh": "预览消息配额"
+      },
+      "display_description": {
+        "en": "只读判定，不保留额度，不发送消息。",
+        "zh": "只读判定，不保留额度，不发送消息。"
+      }
+    },
+    {
+      "file": "tools/quota_tools.py",
+      "class": "RecordUsageTool",
+      "display_name": {
+        "en": "登记消息用量",
+        "zh": "登记消息用量"
+      },
+      "display_description": {
+        "en": "仅按用户明确授权登记；事务复核并防止重复计数。",
+        "zh": "仅按用户明确授权登记；事务复核并防止重复计数。"
+      }
+    },
+    {
+      "file": "tools/quota_tools.py",
+      "class": "UsageReportTool",
+      "display_name": {
+        "en": "消息用量与对账",
+        "zh": "消息用量与对账"
+      },
+      "display_description": {
+        "en": "只读汇总或比较完整记录；不修复或修改账本。",
+        "zh": "只读汇总或比较完整记录；不修复或修改账本。"
+      }
+    }
+  ],
+  "tags": [
+    {
+      "en": "消息配额",
+      "zh": "消息配额"
+    },
+    {
+      "en": "离线审计",
+      "zh": "离线审计"
+    }
+  ],
+  "category": "Others"
+}
