@@ -1,0 +1,662 @@
+[
+  {
+    "slug": "word-vault-local",
+    "session_id": "web_1a167599bdc_a5b557027c88",
+    "native_tool": "word_vault_local",
+    "verified_result_count": 9,
+    "results": [
+      {
+        "action": "status",
+        "tool_call_id": "call_97fe0c9286c04dfabc2c2a24:target",
+        "observed_at": 1792735301.337147,
+        "result_summary": {
+          "ok": true,
+          "plugin": "word-vault-local",
+          "version": "1.0.0",
+          "revision": 0,
+          "summary": {
+            "total": 0,
+            "mastered": 0,
+            "wrong": 0
+          }
+        }
+      },
+      {
+        "action": "help",
+        "tool_call_id": "call_84c33df3092e42a1a0122e20:target",
+        "observed_at": 1792735301.3415601,
+        "result_summary": {
+          "ok": true,
+          "plugin": "word-vault-local",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "action": "add_words",
+        "tool_call_id": "call_888d56ab0d294057be77e7d4:target",
+        "observed_at": 1792735304.139785,
+        "result_summary": {
+          "ok": true,
+          "plugin": "word-vault-local",
+          "version": "1.0.0",
+          "revision": 1,
+          "message": "已保存并计次 5 个词条。",
+          "summary": {
+            "total": 5,
+            "mastered": 0,
+            "wrong": 0
+          }
+        }
+      },
+      {
+        "action": "start_quiz",
+        "tool_call_id": "call_0a4d255efcf74a448a88aa3a:target",
+        "observed_at": 1792735306.4296541,
+        "result_summary": {
+          "ok": true,
+          "plugin": "word-vault-local",
+          "version": "1.0.0",
+          "revision": 2,
+          "message": "练习已生成，答案由本地记录核对。",
+          "summary": {
+            "total": 5,
+            "mastered": 0,
+            "wrong": 0
+          }
+        }
+      },
+      {
+        "action": "answer",
+        "tool_call_id": "call_d5cc0edff7744749865faa6e:target",
+        "observed_at": 1792735311.222535,
+        "result_summary": {
+          "ok": true,
+          "plugin": "word-vault-local",
+          "version": "1.0.0",
+          "revision": 3,
+          "message": "答对了。",
+          "is_correct": true,
+          "summary": {
+            "total": 5,
+            "mastered": 0,
+            "wrong": 0
+          }
+        }
+      },
+      {
+        "action": "answer",
+        "tool_call_id": "call_624d9efd549d494f901593f8:target",
+        "observed_at": 1792735314.192321,
+        "result_summary": {
+          "ok": false,
+          "message": "这道题已经作答，不会重复计分。"
+        }
+      },
+      {
+        "action": "status",
+        "tool_call_id": "call_a2aca70a34fc48e48f19af9a:target",
+        "observed_at": 1792735319.929587,
+        "result_summary": {
+          "ok": true,
+          "plugin": "word-vault-local",
+          "version": "1.0.0",
+          "revision": 3,
+          "summary": {
+            "total": 5,
+            "mastered": 0,
+            "wrong": 0
+          }
+        }
+      },
+      {
+        "action": "open_ui",
+        "tool_call_id": "call_895712d5e7724f77ba85820d:target",
+        "observed_at": 1792735320.04828,
+        "result_summary": {
+          "ok": true,
+          "plugin": "word-vault-local",
+          "version": "1.0.0",
+          "message": "中文交互工作台已就绪。链接仅供本机访问，请勿分享凭据；空闲 30 分钟自动关闭。"
+        }
+      },
+      {
+        "action": "status",
+        "tool_call_id": "call_e104f9414fd5492dbb5211b3:target",
+        "observed_at": 1792735751.004715,
+        "result_summary": {
+          "ok": true,
+          "plugin": "word-vault-local",
+          "version": "1.0.0",
+          "revision": 5,
+          "summary": {
+            "total": 6,
+            "mastered": 0,
+            "wrong": 1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "slug": "story-workbench",
+    "session_id": "web_1a1675a2b1e_db587ee431a7",
+    "native_tool": "story_workbench",
+    "verified_result_count": 11,
+    "results": [
+      {
+        "action": "help",
+        "tool_call_id": "call_cdb18ba0a16a4b64b25419c6:target",
+        "observed_at": 1792735333.0787141,
+        "result_summary": {
+          "ok": true,
+          "plugin": "story-workbench",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "action": "status",
+        "tool_call_id": "call_3a8977329e9843dc8cb9b906:target",
+        "observed_at": 1792735335.268012,
+        "result_summary": {
+          "ok": true,
+          "plugin": "story-workbench",
+          "version": "1.0.0",
+          "revision": 0,
+          "history_count": 0,
+          "annotation_count": 0
+        }
+      },
+      {
+        "action": "create_project",
+        "tool_call_id": "call_e20b8fdf5eb248d78ec1675e:target",
+        "observed_at": 1792735337.970432,
+        "result_summary": {
+          "ok": true,
+          "plugin": "story-workbench",
+          "version": "1.0.0",
+          "revision": 1,
+          "message": "项目已创建。",
+          "history_count": 0,
+          "annotation_count": 0
+        }
+      },
+      {
+        "action": "save_character",
+        "tool_call_id": "call_508a7e1fcab04a5a99641f0c:target",
+        "observed_at": 1792735340.0219278,
+        "result_summary": {
+          "ok": true,
+          "plugin": "story-workbench",
+          "version": "1.0.0",
+          "revision": 2,
+          "message": "人物设定已保存。",
+          "history_count": 0,
+          "annotation_count": 0
+        }
+      },
+      {
+        "action": "save_chapter",
+        "tool_call_id": "call_aaed13a8af974a34b3ae51d5:target",
+        "observed_at": 1792735342.877428,
+        "result_summary": {
+          "ok": true,
+          "plugin": "story-workbench",
+          "version": "1.0.0",
+          "revision": 3,
+          "message": "章节已保存，旧版本保留在修订历史。",
+          "history_count": 0,
+          "annotation_count": 0
+        }
+      },
+      {
+        "action": "annotate",
+        "tool_call_id": "call_0177e78b8cc241c39f57f28f:target",
+        "observed_at": 1792735346.187977,
+        "result_summary": {
+          "ok": true,
+          "plugin": "story-workbench",
+          "version": "1.0.0",
+          "revision": 4,
+          "message": "原文批注已保存。",
+          "history_count": 0,
+          "annotation_count": 1
+        }
+      },
+      {
+        "action": "save_chapter",
+        "tool_call_id": "call_d4cbdec4d8ee4e999f5bc0f1:target",
+        "observed_at": 1792735353.27599,
+        "result_summary": {
+          "ok": true,
+          "plugin": "story-workbench",
+          "version": "1.0.0",
+          "revision": 5,
+          "message": "章节已保存，旧版本保留在修订历史。",
+          "history_count": 1,
+          "annotation_count": 1
+        }
+      },
+      {
+        "action": "save_chapter",
+        "tool_call_id": "call_b5e5c2d958bd40d2bcd0ea88:target",
+        "observed_at": 1792735359.209683,
+        "result_summary": {
+          "ok": false,
+          "message": "章节版本已更新，请刷新后重试。"
+        }
+      },
+      {
+        "action": "status",
+        "tool_call_id": "call_69e12338cf784cc587161cbe:target",
+        "observed_at": 1792735361.6170912,
+        "result_summary": {
+          "ok": true,
+          "plugin": "story-workbench",
+          "version": "1.0.0",
+          "revision": 5,
+          "history_count": 1,
+          "annotation_count": 1
+        }
+      },
+      {
+        "action": "open_ui",
+        "tool_call_id": "call_09c39e6f83694fa2a5718a19:target",
+        "observed_at": 1792735365.1361868,
+        "result_summary": {
+          "ok": true,
+          "plugin": "story-workbench",
+          "version": "1.0.0",
+          "message": "中文交互工作台已就绪。链接仅供本机访问，请勿分享凭据；空闲 30 分钟自动关闭。"
+        }
+      },
+      {
+        "action": "status",
+        "tool_call_id": "call_e8c963528966454b8fb5bb0f:target",
+        "observed_at": 1792735750.6884842,
+        "result_summary": {
+          "ok": true,
+          "plugin": "story-workbench",
+          "version": "1.0.0",
+          "revision": 7,
+          "history_count": 2,
+          "annotation_count": 2
+        }
+      }
+    ]
+  },
+  {
+    "slug": "process-workbench",
+    "session_id": "web_1a1675ab4ed_70622f242643",
+    "native_tool": "process_workbench",
+    "verified_result_count": 10,
+    "results": [
+      {
+        "action": "help",
+        "tool_call_id": "call_fea9c9b8782d42619cd5140c:target",
+        "observed_at": 1792735371.61131,
+        "result_summary": {
+          "ok": true,
+          "plugin": "process-workbench",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "action": "status",
+        "tool_call_id": "call_218cf9af6b964716ab14e948:target",
+        "observed_at": 1792735371.617193,
+        "result_summary": {
+          "ok": true,
+          "plugin": "process-workbench",
+          "version": "1.0.0",
+          "revision": 0,
+          "runs": []
+        }
+      },
+      {
+        "action": "validate_template",
+        "tool_call_id": "call_79dfb885cc114a33bf42611f:target",
+        "observed_at": 1792735377.9884002,
+        "result_summary": {
+          "ok": true,
+          "plugin": "process-workbench",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "action": "save_template",
+        "tool_call_id": "call_11f65f6530c942d39f93f515:target",
+        "observed_at": 1792735381.478812,
+        "result_summary": {
+          "ok": true,
+          "plugin": "process-workbench",
+          "version": "1.0.0",
+          "revision": 1,
+          "message": "模板已校验并保存；既有运行保留原快照。",
+          "runs": []
+        }
+      },
+      {
+        "action": "start_run",
+        "tool_call_id": "call_d0271e26219747778f82ec59:target",
+        "observed_at": 1792735383.824587,
+        "result_summary": {
+          "ok": true,
+          "plugin": "process-workbench",
+          "version": "1.0.0",
+          "revision": 2,
+          "message": "运行已开始；需明确完成当前环节，不会自动执行外部操作。",
+          "runs": [
+            {
+              "id": "host-run",
+              "status": "running",
+              "trail_count": 0,
+              "evidence_files": []
+            }
+          ]
+        }
+      },
+      {
+        "action": "complete_step",
+        "tool_call_id": "call_3556acf095ec4db5badbe21d:target",
+        "observed_at": 1792735388.0258539,
+        "result_summary": {
+          "ok": false,
+          "message": "只能完成当前环节，不能跳过前置步骤。"
+        }
+      },
+      {
+        "action": "complete_step",
+        "tool_call_id": "call_d9e1c4268aa147ddbd7e3dc3:target",
+        "observed_at": 1792735391.166868,
+        "result_summary": {
+          "ok": true,
+          "plugin": "process-workbench",
+          "version": "1.0.0",
+          "revision": 3,
+          "message": "当前环节已记录，流转到下一环节。",
+          "runs": [
+            {
+              "id": "host-run",
+              "status": "running",
+              "trail_count": 1,
+              "evidence_files": [
+                "draft.txt"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "action": "status",
+        "tool_call_id": "call_bfd265fed6fa41cda422df65:target",
+        "observed_at": 1792735393.9382248,
+        "result_summary": {
+          "ok": true,
+          "plugin": "process-workbench",
+          "version": "1.0.0",
+          "revision": 3,
+          "runs": [
+            {
+              "id": "host-run",
+              "status": "running",
+              "trail_count": 1,
+              "evidence_files": [
+                "draft.txt"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "action": "open_ui",
+        "tool_call_id": "call_5e7b81fac34d4d4388321656:target",
+        "observed_at": 1792735396.2305868,
+        "result_summary": {
+          "ok": true,
+          "plugin": "process-workbench",
+          "version": "1.0.0",
+          "message": "中文交互工作台已就绪。链接仅供本机访问，请勿分享凭据；空闲 30 分钟自动关闭。"
+        }
+      },
+      {
+        "action": "status",
+        "tool_call_id": "call_24aabb25d0bc481a8f12d501:target",
+        "observed_at": 1792735748.476562,
+        "result_summary": {
+          "ok": true,
+          "plugin": "process-workbench",
+          "version": "1.0.0",
+          "revision": 4,
+          "runs": [
+            {
+              "id": "host-run",
+              "status": "done",
+              "trail_count": 2,
+              "evidence_files": [
+                "draft.txt",
+                "verification.txt"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "slug": "environment-inspector",
+    "session_id": "web_1a1675ac492_3eb318eb583a",
+    "native_tool": "environment_inspector",
+    "verified_result_count": 9,
+    "results": [
+      {
+        "action": "help",
+        "tool_call_id": "call_11b5d44687b64a7fbefc61d4:target",
+        "observed_at": 1792735372.6366432,
+        "result_summary": {
+          "ok": true,
+          "plugin": "environment-inspector",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "action": "status",
+        "tool_call_id": "call_99940a78dbf643428dcb0a3b:target",
+        "observed_at": 1792735372.643392,
+        "result_summary": {
+          "ok": true,
+          "plugin": "environment-inspector",
+          "version": "1.0.0",
+          "revision": 0,
+          "snapshot_count": 0
+        }
+      },
+      {
+        "action": "probe",
+        "tool_call_id": "call_8f8ec9777fa64ed2b699e3b9:target",
+        "observed_at": 1792735375.679935,
+        "result_summary": {
+          "ok": true,
+          "plugin": "environment-inspector",
+          "version": "1.0.0",
+          "revision": 1,
+          "message": "已完成本次只读观测；不可用项保持明确标记。",
+          "snapshot_count": 1
+        }
+      },
+      {
+        "action": "status",
+        "tool_call_id": "call_9c77ccfe574b466db99a597b:target",
+        "observed_at": 1792735380.704343,
+        "result_summary": {
+          "ok": true,
+          "plugin": "environment-inspector",
+          "version": "1.0.0",
+          "revision": 1,
+          "snapshot_count": 1
+        }
+      },
+      {
+        "action": "probe",
+        "tool_call_id": "call_055347a885a241c28d15926f:target",
+        "observed_at": 1792735383.398188,
+        "result_summary": {
+          "ok": true,
+          "plugin": "environment-inspector",
+          "version": "1.0.0",
+          "revision": 2,
+          "message": "已完成本次只读观测；不可用项保持明确标记。",
+          "snapshot_count": 2
+        }
+      },
+      {
+        "action": "compare",
+        "tool_call_id": "call_16f56e40865949a3b398b67d:target",
+        "observed_at": 1792735386.887077,
+        "result_summary": {
+          "ok": true,
+          "plugin": "environment-inspector",
+          "version": "1.0.0",
+          "revision": 2
+        }
+      },
+      {
+        "action": "compare",
+        "tool_call_id": "call_b003f1092513485faa1891a2:target",
+        "observed_at": 1792735386.893057,
+        "result_summary": {
+          "ok": false,
+          "message": "请选择两份不同且存在的快照。"
+        }
+      },
+      {
+        "action": "open_ui",
+        "tool_call_id": "call_a07466a7a0024db9bf207e68:target",
+        "observed_at": 1792735389.7483351,
+        "result_summary": {
+          "ok": true,
+          "plugin": "environment-inspector",
+          "version": "1.0.0",
+          "message": "中文交互工作台已就绪。链接仅供本机访问，请勿分享凭据；空闲 30 分钟自动关闭。"
+        }
+      },
+      {
+        "action": "status",
+        "tool_call_id": "call_124005fd35184311a2aa5e63:target",
+        "observed_at": 1792735747.401841,
+        "result_summary": {
+          "ok": true,
+          "plugin": "environment-inspector",
+          "version": "1.0.0",
+          "revision": 3,
+          "snapshot_count": 3
+        }
+      }
+    ]
+  },
+  {
+    "slug": "git-branch-atlas",
+    "session_id": "web_1a1675af767_dc1401a49c2b",
+    "native_tool": "git_branch_atlas",
+    "verified_result_count": 8,
+    "results": [
+      {
+        "action": "help",
+        "tool_call_id": "call_2ebc2fb633224b3f8ec7a9c6:target",
+        "observed_at": 1792735388.5919669,
+        "result_summary": {
+          "ok": true,
+          "plugin": "git-branch-atlas",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "action": "status",
+        "tool_call_id": "call_5079afa93be1492185988f13:target",
+        "observed_at": 1792735388.5975602,
+        "result_summary": {
+          "ok": true,
+          "plugin": "git-branch-atlas",
+          "version": "1.0.0",
+          "revision": 0,
+          "message": "只读分支拓扑快照；没有 checkout、fetch、blame 或提交操作。"
+        }
+      },
+      {
+        "action": "scan",
+        "tool_call_id": "call_070381d15fc548cc96790e1a:target",
+        "observed_at": 1792735391.5893178,
+        "result_summary": {
+          "ok": true,
+          "plugin": "git-branch-atlas",
+          "version": "1.0.0",
+          "revision": 1,
+          "message": "分支拓扑已读取。"
+        }
+      },
+      {
+        "action": "compare_branches",
+        "tool_call_id": "call_7c1a2d66837d4f5fb738a358:target",
+        "observed_at": 1792735399.208024,
+        "result_summary": {
+          "ok": true,
+          "plugin": "git-branch-atlas",
+          "version": "1.0.0",
+          "message": "比较的是已存在的本地提交，不包含远端未拉取的更新。",
+          "base_only": 0,
+          "head_only": 2,
+          "related": true
+        }
+      },
+      {
+        "action": "compare_branches",
+        "tool_call_id": "call_001ada986dbf4b3792a8d723:target",
+        "observed_at": 1792735401.892076,
+        "result_summary": {
+          "ok": false,
+          "message": "Git 引用不能为选项或包含空白字符。"
+        }
+      },
+      {
+        "action": "status",
+        "tool_call_id": "call_1f300fbd13a54178877a1c2c:target",
+        "observed_at": 1792735405.420749,
+        "result_summary": {
+          "ok": true,
+          "plugin": "git-branch-atlas",
+          "version": "1.0.0",
+          "revision": 1,
+          "message": "只读分支拓扑快照；没有 checkout、fetch、blame 或提交操作。",
+          "branch_count": 2,
+          "commit_count": 4,
+          "merge_count": 1
+        }
+      },
+      {
+        "action": "open_ui",
+        "tool_call_id": "call_99ef6065db654f68bfc3ec6c:target",
+        "observed_at": 1792735408.527688,
+        "result_summary": {
+          "ok": true,
+          "plugin": "git-branch-atlas",
+          "version": "1.0.0",
+          "message": "中文交互工作台已就绪。链接仅供本机访问，请勿分享凭据；空闲 30 分钟自动关闭。"
+        }
+      },
+      {
+        "action": "status",
+        "tool_call_id": "call_0b98b42298d4436e9da6e2b5:target",
+        "observed_at": 1792735733.208679,
+        "result_summary": {
+          "ok": true,
+          "plugin": "git-branch-atlas",
+          "version": "1.0.0",
+          "revision": 2,
+          "message": "只读分支拓扑快照；没有 checkout、fetch、blame 或提交操作。",
+          "branch_count": 2,
+          "commit_count": 4,
+          "merge_count": 1
+        }
+      }
+    ]
+  }
+]

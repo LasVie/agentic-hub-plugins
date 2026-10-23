@@ -1,0 +1,47 @@
+{
+  "operator": "Codex, explicitly delegated by Song Haoran",
+  "date": "2026-10-23",
+  "locale": "zh-CN",
+  "browser": "Codex in-app browser, actual loopback apps opened by native open_ui",
+  "word-vault-local": [
+    "Read native-created five-word bank and graded quiz",
+    "Add lighthouse / 灯塔 through form",
+    "Submit wrong choice for glasses and see correct meaning",
+    "Search 灯塔 and verify only lighthouse remains",
+    "Native status reads six words, one wrong word, revision 5"
+  ],
+  "story-workbench": [
+    "Open native-created chapter and relocated 旧书店 annotation",
+    "Select 街道尽头 in textarea and add Chinese annotation",
+    "Append Chinese final sentence and save chapter",
+    "Native status reads two annotations, two historical revisions, revision 7"
+  ],
+  "process-workbench": [
+    "Read native-created frozen run at check step",
+    "Reject missing.txt without finishing run",
+    "Complete check with actual verification.txt file",
+    "See done board and SHA-256 evidence table",
+    "Native status reads done and two trail entries, revision 4"
+  ],
+  "environment-inspector": [
+    "Read two native-created snapshots and actual tools/ports",
+    "Trigger third actual read-only probe",
+    "Select snap-1 and snap-3 and compare actual opened ports",
+    "Filter ports to workswarm",
+    "Native status reads three snapshots, revision 3"
+  ],
+  "git-branch-atlas": [
+    "Read actual synthetic Git merge fixture",
+    "Scan repo through UI",
+    "Compare feature/main: 0/2 unique commits",
+    "Select merge commit and see both full parent OIDs",
+    "Search feature and verify only matching commit remains",
+    "Native status reads two branches, four commits, one merge, revision 2"
+  ],
+  "not_visually_tested": [
+    "Browser export downloads",
+    "Mobile/narrow layouts",
+    "Other browsers",
+    "Linux and Windows"
+  ]
+}

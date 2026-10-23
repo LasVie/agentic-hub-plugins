@@ -1,0 +1,20 @@
+{
+  "type": "agent-plugin",
+  "name": "process-workbench",
+  "version": "1.0.0",
+  "display_name": "流程执行台",
+  "description": "校验多阶段流程模板，冻结每次运行快照，以实际文件 SHA-256 记录环节完成证据，提供中文交互看板。",
+  "publisher": "Song Haoran",
+  "category": "办公与生产力",
+  "tags": [
+    "流程执行台",
+    "中文交互",
+    "本地数据"
+  ],
+  "functional_tags": [
+    "process-workbench"
+  ],
+  "scope": "保存用户定义的多阶段JSON模板与独立运行快照，校验环节流转，以工作目录内的真实文件哈希记录完成证据，提供交互看板。没有后台调度、自动模型评分、自动智能体或任意命令执行。",
+  "candidate_id": "CAND-DSH-227",
+  "task_id": "AH-20261023-process-workbench"
+}

@@ -1,0 +1,274 @@
+{
+  "owner": "Song Haoran",
+  "date": "2026-10-23",
+  "user_instruction": "再选5个，不用和我确认，保证质量和互动性，进行适配测试和提交",
+  "authorization": "Explicit selection, adaptation, assistant-operated testing and GitHub submission delegation for this batch. No claim of personally performed human tests or final lead acceptance.",
+  "assets": [
+    {
+      "candidate": "CAND-DSH-154",
+      "task": "AH-20261023-word-vault-local",
+      "slug": "word-vault-local",
+      "name": "词汇练习室",
+      "version": "1.0.0",
+      "scope": "Local per-learner vocabulary bank, scored quizzes, wrong-answer review and three-correct mastery; interactive edit/quiz UI. Exclude photo/OCR, borrowed WorkBuddy mnemonic/card layout, IPA invention, Windows SAPI and third-party vocabulary datasets.",
+      "dupe": "Confirmed New Capability",
+      "related": "Compared primary-school tutoring team d3cb3265e9894701b0b15b67228d4d2d@1.0.0 (subject tutoring), learning-output-style repo:agent-plugin:learning-output-style@1.0.4, existing Wiki/memory assets and all active tasks. None declares an executable per-learner word bank, repeat-occurrence counts, randomized answer evaluation or persistent consecutive-correct mastery. Exclude upstream third-party card methodology with unresolved coverage.",
+      "native_sha256": "861f1042194ac12db09f35df190d37d690b115cfb934f1167904db640fa471e1",
+      "hub_sha256": "9769327de19ef7413ec4d6f1571c9fa618adbed089e377ad358217f4739d69c0",
+      "payload_sha256": {
+        "README.md": "a5b9233f3d125f59ae078d6b2bb637da73d65ddf4239c9e00af0486397f3330d",
+        "THIRD_PARTY_NOTICES.md": "b31103e3eb54fdc2a42090802e4427744f53b8d19b3b0b6ee981db3bec223d5c",
+        "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "licenses/upstream/LICENSE": "aae1d49ba58af902bbc71ce1b5a60ede3487e09d570b87bf07891b776b4dc406",
+        "manifest.json": "7fb5893889d530faed94f7e3cd816203d972bc0bd3e7da8719cbd48e684e38e9",
+        "runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "runtime/cli.mjs": "6d03df6a71144fc688c6a968db100dc1df908634a05a51626e87089a1bfd8856",
+        "runtime/common.mjs": "02e236d9847c17213f562aa66eb142a3839c83a66f7686318c86c3760f23ae88",
+        "runtime/config.mjs": "f995171ba860e17598d7d3a9edfc7cbd580292ce3865ad7fbf72d5c695304fe2",
+        "runtime/engine.mjs": "dabee5b2d3e76575984346d2975a22be33688f27d808ab44a1b05a9e6ec0e288",
+        "runtime/server.mjs": "c4729275b094496263b6eee763b0dfe864b8a776747fb7ca781648f77ccd2340",
+        "skills/word-vault-local/SKILL.md": "299e3bf9a2f91fd09061cfdcf04c5533fd8793e1e0359a9b6b613c298e2de3a7",
+        "tools/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "tools/plugin_tool.py": "698945691e49ee0e340871139405bcc1b389c5ab983534001cdfb0519afcd134",
+        "ui/app.js": "50ad551bf203e9cd5c2446af382dbc36cd22dbb90d22076d4b0bb13f58768111",
+        "ui/index.html": "1edef594f3625cc082d12f8cfc2ccfb60623d5237318cb9bf6ace37234d526b7",
+        "ui/style.css": "e46b66c607568cd3eabab0d906c2115cbf4e300023c693471c2e9f6d88e2e05d",
+        "vendor/words.mjs": "8243f11daf53f9b1ba161a9454d7d80cf481e8e45e6ef41c80f7c07ff306bce8"
+      },
+      "functional_checks": 50,
+      "asset_id": "repo:agent-plugin:word-vault-local",
+      "session_id": "web_1a167599bdc_a5b557027c88"
+    },
+    {
+      "candidate": "CAND-DSH-229",
+      "task": "AH-20261023-story-workbench",
+      "slug": "story-workbench",
+      "name": "小说创作台",
+      "version": "1.0.0",
+      "scope": "Local structured story project, characters, chapter text, manuscript annotations and immutable revision history; interactive workspace editor. Companion to webnovel-writing; no autonomous prose-generation service, presets/agents or licensed corpora.",
+      "dupe": "Partial Overlap - Extend Existing Capability",
+      "related": "Compared webnovel-writing e5830b8ba502461c9ed165263d524f70@c3f17a0 (writing/outline/coherence guidance) and long nonfiction chapter editing 04bd85fd593c408abdb08826c5621eab@1.0.0 (explicitly excludes novels). Add persisted editable fiction project records, revision-checked character/chapter editing and text-anchored annotation, while reusing the existing writing entry point conceptually; do not duplicate its writing instructions or corpora.",
+      "native_sha256": "d2eb4ed772dfcfcf5caa34d693fc37501f67474cbf4bec3140e36d8a226d6813",
+      "hub_sha256": "6bcf455c2b2cfedc8a7a97cee4d8524bc51afea1755b1a9262544dd8f08c7efc",
+      "payload_sha256": {
+        "README.md": "7fc48c6437716fc1ea236281a377e7917b4020ae46ec66ea667648fc4ec2cb25",
+        "THIRD_PARTY_NOTICES.md": "36e089d891504c120541b6db6dbc74034629d84b902cf33c1a7e87f049f30254",
+        "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "licenses/upstream/LICENSE": "e38aeb00e87dccbb024038215ef856d4211dbc7ce1a279646302872ebc1415f1",
+        "manifest.json": "f02c3a82dacefc5dfbb7b469bf61cb6bfabd891cc1e305f1488e106e53c70cc3",
+        "runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "runtime/cli.mjs": "6d03df6a71144fc688c6a968db100dc1df908634a05a51626e87089a1bfd8856",
+        "runtime/common.mjs": "02e236d9847c17213f562aa66eb142a3839c83a66f7686318c86c3760f23ae88",
+        "runtime/config.mjs": "10a907ff4140679c82188c80a639540d79cae62ffa3f2d2782e72841fc7fb577",
+        "runtime/engine.mjs": "ae066f4bccc40a67f3af3643a81a5237343e064053a63ae4fdf5893b5bcd54aa",
+        "runtime/server.mjs": "c4729275b094496263b6eee763b0dfe864b8a776747fb7ca781648f77ccd2340",
+        "skills/story-workbench/SKILL.md": "9fdc457bc259c2e429776b273376a390b7715e16afb80b55b475fee068204a66",
+        "tools/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "tools/plugin_tool.py": "44d5d8c1dafa3e8c64adf0c9430dfa77b92aefd9a72b37dadc7593e4c6b777e7",
+        "ui/app.js": "2d37e8140a6dfd69d59a5564eea465b7fa8c706eca19d1254f2c7908f39cc9eb",
+        "ui/index.html": "5792bc8afaafa10f752fe3be74618112f91dfaf89fa4f6aa8ee81b933f670e74",
+        "ui/style.css": "e46b66c607568cd3eabab0d906c2115cbf4e300023c693471c2e9f6d88e2e05d",
+        "vendor/manuscript-markers.ts": "1df2d184b379c28ff212ce1a1000a649a9765423952b5b0426f6c68694c79090",
+        "vendor/manuscript-selection.ts": "c058c8efc474091fec06d275858aa3a40e4106898c9c33f54ca6af410ae807b5"
+      },
+      "functional_checks": 29,
+      "asset_id": "repo:agent-plugin:story-workbench",
+      "session_id": "web_1a1675a2b1e_db587ee431a7"
+    },
+    {
+      "candidate": "CAND-DSH-227",
+      "task": "AH-20261023-process-workbench",
+      "slug": "process-workbench",
+      "name": "流程执行台",
+      "version": "1.0.0",
+      "scope": "Local user-defined staged process templates, validation, explicit runs, evidence-gated step completion and interactive board; no automatic agents, background scheduling or arbitrary command execution.",
+      "dupe": "Partial Overlap - Extend Existing Capability",
+      "related": "Compared workflow-standardization-team f928db94a6c7499ba3d177c24d50e8e8@0.0.1, agent-team-orchestration b68e551f74ec46818b51492be6efb83c@e7bda4f and project delivery expert 907e16140e984e82898b7cee47f44f94@1.0.0. Their SOP/coordination guidance does not declare a persisted executable template validator with step/run revisions and locally recorded evidence gates. Add an explicit local execution-record companion, without duplicating agent orchestration or automatic work.",
+      "native_sha256": "40053cbac5f8bca1773c9c2bbfcbe521213f2eb05063c238ee621b7203f8db54",
+      "hub_sha256": "a5a9d8bac54603f0d891aadbde350f9dbd7a5cc050f8b3aa1513d967c9765c43",
+      "payload_sha256": {
+        "README.md": "560f881f81a95cf39f065271e46f77a436a3a2ca9238637f82aae8c7c03b2aaf",
+        "THIRD_PARTY_NOTICES.md": "758e7dae1409b7d00cb97d089ad922654681db00c67b5df9bb43635bdfbf0edb",
+        "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "licenses/upstream/LICENSE": "8f466caa0d7f2244d1ac0d4ec523692c9c8e5f509fcdd89b974b82988c736807",
+        "manifest.json": "cd468418d3f402d8849ba984ac961767b680ccc5ae2b9f288e31499512efe2e7",
+        "runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "runtime/cli.mjs": "6d03df6a71144fc688c6a968db100dc1df908634a05a51626e87089a1bfd8856",
+        "runtime/common.mjs": "02e236d9847c17213f562aa66eb142a3839c83a66f7686318c86c3760f23ae88",
+        "runtime/config.mjs": "793e06eb8c082b9952add365a88c7bdc3a10189fa205ea9e625ee5ea6ca21e96",
+        "runtime/engine.mjs": "94e395b535c79fd95953a563a0b2b08fa095fb82c069909c7110c321ff1107eb",
+        "runtime/server.mjs": "c4729275b094496263b6eee763b0dfe864b8a776747fb7ca781648f77ccd2340",
+        "skills/process-workbench/SKILL.md": "371e21003e8a15c3ee1249908ab83be8c295552db10a85cfe3947e9e224d094f",
+        "tools/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "tools/plugin_tool.py": "9765809844bde4f90c670d0736aea3702327701dc275b7eecc4244d7ee991ef1",
+        "ui/app.js": "e53dfee950b72eecf9e8f7a37fae3a90587f1300d9f2bba600133fd48276018c",
+        "ui/index.html": "a79c01af130b526e8b7ba154be5331e7c85fdc81fc12d32beeea45f4d0966ea8",
+        "ui/style.css": "e46b66c607568cd3eabab0d906c2115cbf4e300023c693471c2e9f6d88e2e05d",
+        "vendor/process-core.mjs": "4aa8c681737e8835865a1d0e35b82f4379bc0a12ffc6267a0fab983ab2ac3087"
+      },
+      "functional_checks": 31,
+      "asset_id": "repo:agent-plugin:process-workbench",
+      "session_id": "web_1a1675ab4ed_70622f242643"
+    },
+    {
+      "candidate": "CAND-DSH-155",
+      "task": "AH-20261023-environment-inspector",
+      "slug": "environment-inspector",
+      "name": "本机环境探针",
+      "version": "1.0.0",
+      "scope": "Read-only local macOS/Linux system/toolchain/listening-port facts and comparison of user-triggered snapshots with interactive filtering; no process termination, system changes or secret/config-file collection.",
+      "dupe": "Partial Overlap - Extend Existing Capability",
+      "related": "Compared system-guardian-swarm 2e8704aedef0414d823646ce208e47d6@1.0.0 (Linux/open-source OS security/cleanup teams), diagnose 0b0d14a133b54992bd547e7c068a1f8d@e7bda4f (bug diagnosis discipline), MCP Manager 4862208069dc4ed9b1838f6ddfabbcc4@1.0.3 and HarmonyOS checklist 8aca6e7f4076432f8bff1fa2f706e9c2@1.0.0. Add bounded actual local CLI/version/port observations and before/after snapshot comparison on the target macOS host as a read-only companion; no generic diagnosis/security assessment duplicated. Windows remains unsupported unless separately tested.",
+      "native_sha256": "486cff543f0880fa40f4a151a8cc53c32cf0f9021dd96632b6fb293e3c1ddf33",
+      "hub_sha256": "2202ce83a7fc1a13174b5b1d635f71e60864a816c1a36a62e939de058f440557",
+      "payload_sha256": {
+        "README.md": "7cb0436dfdc9d1bdf50210ae1447c5dff9705533a04510dad68b14dfb3fa4788",
+        "THIRD_PARTY_NOTICES.md": "c56b3b194fa04b7492e84ccf68e328489e28e4a769d52e2f3e77c46c24bea8a1",
+        "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "licenses/upstream/LICENSE": "9d319c367eb6246b2755a2ce8f34ad926d9749e619ba28b20d3f0a1d3987fc56",
+        "manifest.json": "0dbd28c360e25be53e5c912c8d5a897fb49dcf3a4b5ab46d35f6fabd60587aba",
+        "runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "runtime/cli.mjs": "6d03df6a71144fc688c6a968db100dc1df908634a05a51626e87089a1bfd8856",
+        "runtime/common.mjs": "02e236d9847c17213f562aa66eb142a3839c83a66f7686318c86c3760f23ae88",
+        "runtime/config.mjs": "dfb59d2a311b38dc9dbe9142a0598726faf0985392d83f2f442e0b3d3a5d6124",
+        "runtime/engine.mjs": "796be2f7c9daaf230eec2d3d4f6f29b79c641e2fd839c7f99f5a05429a395ec0",
+        "runtime/server.mjs": "c4729275b094496263b6eee763b0dfe864b8a776747fb7ca781648f77ccd2340",
+        "skills/environment-inspector/SKILL.md": "513e5676a1ed680a0ec3a2c4c24b6e12f3461ccc6f6071a7656da447bce86bc1",
+        "tools/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "tools/plugin_tool.py": "3f5d7c8a4533070df4dac2812b5db6102329e8da6fe9afff75d6262593e6fba0",
+        "ui/app.js": "363b761704ed87453675713a722e4e87cca0737df758c3ab61a12ce83ea4dca0",
+        "ui/index.html": "24ed09841248957d101a4f43c9b2948b1ea1e1d7f086ae7c720c698474666c40",
+        "ui/style.css": "e46b66c607568cd3eabab0d906c2115cbf4e300023c693471c2e9f6d88e2e05d",
+        "vendor/ports.mjs": "9ce2df7b73111cfe90b8f679d3c3c9b468b6b3fef74f15df5779a79151deb5f8"
+      },
+      "functional_checks": 26,
+      "asset_id": "repo:agent-plugin:environment-inspector",
+      "session_id": "web_1a1675ac492_3eb318eb583a"
+    },
+    {
+      "candidate": "CAND-DSH-033",
+      "task": "AH-20261023-git-branch-atlas",
+      "slug": "git-branch-atlas",
+      "name": "Git 分支全景",
+      "version": "1.0.0",
+      "scope": "Read-only branch topology, commit-parent lanes, merge-base/ahead-behind and worktree overview with interactive graph; no checkout, fetch, commit, deletion or file blame/history duplication.",
+      "dupe": "Partial Overlap - Extend Existing Capability",
+      "related": "Compared Git History Trace 825e6a41c9094622b131d0575d06cb97@0.1.0, official detail explicitly limits tools to file history, blame and show_commit; GitCode Repo a19afa7386394f92bc5a14116d898e1e@1.0.0 handles repository/PR collaboration. Add read-only branch topology, ahead/behind and worktree comparison as a companion, without reimplementing file history/blame or Git mutation. No active task reserves this increment.",
+      "native_sha256": "f6dea01503ef9ef90a29f74f1d60fe6f7b7eba4e0ec87dba22c4030aee424568",
+      "hub_sha256": "ebd09a1e5f8838aae5c079349e0429c30f5dd698f36b1f727f9a2bc24207b025",
+      "payload_sha256": {
+        "README.md": "c8addc73ada3729e405eae153095b09003903da296111b9da155b7aa06b0f344",
+        "THIRD_PARTY_NOTICES.md": "571215ffb8773ac72b6d88135a5b297dc60380ddc07db07779affdacb1034d8d",
+        "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "licenses/upstream/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "manifest.json": "5a68cdf682134136b00fa8866d7d5a5e4936d10ae31887f06a96d4446a0bc995",
+        "runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "runtime/cli.mjs": "6d03df6a71144fc688c6a968db100dc1df908634a05a51626e87089a1bfd8856",
+        "runtime/common.mjs": "02e236d9847c17213f562aa66eb142a3839c83a66f7686318c86c3760f23ae88",
+        "runtime/config.mjs": "8a624106a75853e700926824bac5cfc1e22a17ca1b89b62cc277e1b1b5097ddf",
+        "runtime/engine.mjs": "7c1ac5688173fb79cdb27c184d58e6cb6c76b51334b6088f108d28950f143b31",
+        "runtime/server.mjs": "c4729275b094496263b6eee763b0dfe864b8a776747fb7ca781648f77ccd2340",
+        "skills/git-branch-atlas/SKILL.md": "a37c1790ba6e446fca6d0698475c7d56072dd9782123b39960b90f23975afc9b",
+        "tools/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "tools/plugin_tool.py": "aaa48c40ef24aa21683edf6d2178060fdce13bf68d633fe647cea7d2e6dc0d2b",
+        "ui/app.js": "24ea38b98ab619027c46f8fc18d52493e819616948a5445cc8709fdf14026b10",
+        "ui/index.html": "37104a800dc9c4b789429355ad46b922c48a09e82e8bec58bbab0ad37f189451",
+        "ui/style.css": "e46b66c607568cd3eabab0d906c2115cbf4e300023c693471c2e9f6d88e2e05d",
+        "vendor/readonly-argv.mjs": "a8bb50e18f17ec9bc3f679cbb0f4ef5f3c9ece839c7688725d94d64e6d13a337",
+        "vendor/types.ts": "a7876578f2e9dcb3d1a7c3a47221c8d779e7b54b72d47e339767f094d5f515c5"
+      },
+      "functional_checks": 26,
+      "asset_id": "repo:agent-plugin:git-branch-atlas",
+      "session_id": "web_1a1675af767_dc1401a49c2b"
+    }
+  ],
+  "images": [
+    {
+      "path": "images/environment-inspector-ui-detail.png",
+      "sha256": "909b139cc3cabe43a835c281be1bdc7d6e95b6607d152af3da704a47c9389fb8",
+      "bytes": 75999
+    },
+    {
+      "path": "images/environment-inspector-ui-overview.png",
+      "sha256": "5e6e9176b6204a05669f1dcb060649fd33cc5f13f0e783dc1b5d4143ef7f4710",
+      "bytes": 56963
+    },
+    {
+      "path": "images/environment-inspector-workswarm-readback.png",
+      "sha256": "4ec8faafbecbc33d815eb773dbecd2466f6d715e3b7d2f7585314c8556ea4bcf",
+      "bytes": 605515
+    },
+    {
+      "path": "images/git-branch-atlas-ui-detail.png",
+      "sha256": "988f347381bd99c32497f2f9dac6bbabefae9ab621dfc04d8aef517f5b434c25",
+      "bytes": 59937
+    },
+    {
+      "path": "images/git-branch-atlas-ui-overview.png",
+      "sha256": "709615e3b4c54840b7b194a0593c7b519dde38d522665cdfb42a9504a9ee0462",
+      "bytes": 61163
+    },
+    {
+      "path": "images/git-branch-atlas-workswarm-readback.png",
+      "sha256": "e8ae8c9f61431c1c70d949aeb302e81cd3cc2b168bba4b0a58fe0d87bf236a95",
+      "bytes": 616331
+    },
+    {
+      "path": "images/process-workbench-ui-detail.png",
+      "sha256": "6a31983e4cea51c3edeac59a59723b7af6c8dd8b6a85d7baad422529808df8d1",
+      "bytes": 59048
+    },
+    {
+      "path": "images/process-workbench-ui-evidence.png",
+      "sha256": "21345a5fc58f9e74d437ab08e946d0d6d8e2879e0b23a5eff074d24b0746f69d",
+      "bytes": 62545
+    },
+    {
+      "path": "images/process-workbench-ui-overview.png",
+      "sha256": "0ac7165c309b911d6060c4bded5329be3412f6d0ff39647063c34546a36b787e",
+      "bytes": 67415
+    },
+    {
+      "path": "images/process-workbench-workswarm-readback.png",
+      "sha256": "51d6b7b57253a764d944bab01508aa56988d61b90e31016c6a97062d52962aa6",
+      "bytes": 613159
+    },
+    {
+      "path": "images/story-workbench-ui-annotations.png",
+      "sha256": "5d06b5dc34fb586eefc82e97b3a33825a6d4a1104d46234914e1d66429c3de7e",
+      "bytes": 39097
+    },
+    {
+      "path": "images/story-workbench-ui-detail.png",
+      "sha256": "3fe667a7204d74d5b84354db7813bebe62fe35517382f782fa27543b9423368f",
+      "bytes": 41197
+    },
+    {
+      "path": "images/story-workbench-ui-overview.png",
+      "sha256": "6d3a6644af9562f05e6a8fa8137f13f877cc312eb3ab4c3586a89adb7037e53c",
+      "bytes": 56834
+    },
+    {
+      "path": "images/story-workbench-workswarm-readback.png",
+      "sha256": "7a619df595a0d568e4958c3c6e098f8960240c87e91e46c4d65730bde70bd3a4",
+      "bytes": 622006
+    },
+    {
+      "path": "images/word-vault-local-ui-detail.png",
+      "sha256": "af92135d722c35195940c733fbe7363b78b7c5cf1cd457ed6f68f544c5602dc3",
+      "bytes": 46930
+    },
+    {
+      "path": "images/word-vault-local-ui-overview.png",
+      "sha256": "e3de63aeb485b5512f9c01f1554e0754d4c439db01b387149623524964311d88",
+      "bytes": 59051
+    },
+    {
+      "path": "images/word-vault-local-workswarm-readback.png",
+      "sha256": "e6c460286f08212a7e1ff6e40207c200163ec82e82195ebd802b1be04e3536f1",
+      "bytes": 629658
+    }
+  ],
+  "native_result_count": 47,
+  "handoff": "Awaiting Acceptance; Pending Acceptance; Hub evidence and completion dates blank; Asset Ledger unchanged."
+}

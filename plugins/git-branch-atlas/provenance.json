@@ -1,0 +1,23 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "zhu1090093659/dsh-web",
+      "revision": "56b81a665b4a33a2a6b6a25282ffb1252fadf15e",
+      "license_expression": "Apache-2.0",
+      "license_evidence": [
+        {
+          "path": "licenses/upstream/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "vendor/types.ts",
+    "vendor/readonly-argv.mjs",
+    "runtime/engine.mjs"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

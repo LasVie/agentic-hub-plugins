@@ -1,0 +1,20 @@
+{
+  "type": "agent-plugin",
+  "name": "story-workbench",
+  "version": "1.0.0",
+  "display_name": "小说创作台",
+  "description": "管理本地小说项目、人物、章节与修订历史；在中文编辑器中添加可重新定位的原文批注，不自动生成或改写正文。",
+  "publisher": "Song Haoran",
+  "category": "办公与生产力",
+  "tags": [
+    "小说创作台",
+    "中文交互",
+    "本地数据"
+  ],
+  "functional_tags": [
+    "story-workbench"
+  ],
+  "scope": "保存小说项目、人物设定、章节正文、原文批注与旧版本。作为既有小说写作技能的本地编辑伴随工具，不重复写作语料或自动生成正文，不包含上游整套后端与智能体。",
+  "candidate_id": "CAND-DSH-229",
+  "task_id": "AH-20261023-story-workbench"
+}

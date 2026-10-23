@@ -1,0 +1,22 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "wangzhanchao883/dsh-word-vault",
+      "revision": "f90b94e3a1cbb9dbb8a033fd2d2cad78206c223a",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/upstream/LICENSE",
+          "sha256": "aae1d49ba58af902bbc71ce1b5a60ede3487e09d570b87bf07891b776b4dc406"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "vendor/words.mjs",
+    "runtime/engine.mjs"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

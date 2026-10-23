@@ -1,0 +1,37 @@
+[
+  {
+    "slug": "word-vault-local",
+    "files": 18,
+    "mismatches": [],
+    "native_sha256": "861f1042194ac12db09f35df190d37d690b115cfb934f1167904db640fa471e1",
+    "hub_sha256": "9769327de19ef7413ec4d6f1571c9fa618adbed089e377ad358217f4739d69c0"
+  },
+  {
+    "slug": "story-workbench",
+    "files": 19,
+    "mismatches": [],
+    "native_sha256": "d2eb4ed772dfcfcf5caa34d693fc37501f67474cbf4bec3140e36d8a226d6813",
+    "hub_sha256": "6bcf455c2b2cfedc8a7a97cee4d8524bc51afea1755b1a9262544dd8f08c7efc"
+  },
+  {
+    "slug": "process-workbench",
+    "files": 18,
+    "mismatches": [],
+    "native_sha256": "40053cbac5f8bca1773c9c2bbfcbe521213f2eb05063c238ee621b7203f8db54",
+    "hub_sha256": "a5a9d8bac54603f0d891aadbde350f9dbd7a5cc050f8b3aa1513d967c9765c43"
+  },
+  {
+    "slug": "environment-inspector",
+    "files": 18,
+    "mismatches": [],
+    "native_sha256": "486cff543f0880fa40f4a151a8cc53c32cf0f9021dd96632b6fb293e3c1ddf33",
+    "hub_sha256": "2202ce83a7fc1a13174b5b1d635f71e60864a816c1a36a62e939de058f440557"
+  },
+  {
+    "slug": "git-branch-atlas",
+    "files": 19,
+    "mismatches": [],
+    "native_sha256": "f6dea01503ef9ef90a29f74f1d60fe6f7b7eba4e0ec87dba22c4030aee424568",
+    "hub_sha256": "ebd09a1e5f8838aae5c079349e0429c30f5dd698f36b1f727f9a2bc24207b025"
+  }
+]

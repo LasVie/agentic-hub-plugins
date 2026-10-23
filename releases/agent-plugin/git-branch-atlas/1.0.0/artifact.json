@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:git-branch-atlas",
+  "type": "agent-plugin",
+  "name": "git-branch-atlas",
+  "version": "1.0.0",
+  "zip": "git-branch-atlas-1.0.0.zip",
+  "sha256": "ebd09a1e5f8838aae5c079349e0429c30f5dd698f36b1f727f9a2bc24207b025",
+  "payload_sha256": {
+    "README.md": "c8addc73ada3729e405eae153095b09003903da296111b9da155b7aa06b0f344",
+    "THIRD_PARTY_NOTICES.md": "571215ffb8773ac72b6d88135a5b297dc60380ddc07db07779affdacb1034d8d",
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "licenses/upstream/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "manifest.json": "5a68cdf682134136b00fa8866d7d5a5e4936d10ae31887f06a96d4446a0bc995",
+    "runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime/cli.mjs": "6d03df6a71144fc688c6a968db100dc1df908634a05a51626e87089a1bfd8856",
+    "runtime/common.mjs": "02e236d9847c17213f562aa66eb142a3839c83a66f7686318c86c3760f23ae88",
+    "runtime/config.mjs": "8a624106a75853e700926824bac5cfc1e22a17ca1b89b62cc277e1b1b5097ddf",
+    "runtime/engine.mjs": "7c1ac5688173fb79cdb27c184d58e6cb6c76b51334b6088f108d28950f143b31",
+    "runtime/server.mjs": "c4729275b094496263b6eee763b0dfe864b8a776747fb7ca781648f77ccd2340",
+    "skills/git-branch-atlas/SKILL.md": "a37c1790ba6e446fca6d0698475c7d56072dd9782123b39960b90f23975afc9b",
+    "tools/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tools/plugin_tool.py": "aaa48c40ef24aa21683edf6d2178060fdce13bf68d633fe647cea7d2e6dc0d2b",
+    "ui/app.js": "24ea38b98ab619027c46f8fc18d52493e819616948a5445cc8709fdf14026b10",
+    "ui/index.html": "37104a800dc9c4b789429355ad46b922c48a09e82e8bec58bbab0ad37f189451",
+    "ui/style.css": "e46b66c607568cd3eabab0d906c2115cbf4e300023c693471c2e9f6d88e2e05d",
+    "vendor/readonly-argv.mjs": "a8bb50e18f17ec9bc3f679cbb0f4ef5f3c9ece839c7688725d94d64e6d13a337",
+    "vendor/types.ts": "a7876578f2e9dcb3d1a7c3a47221c8d779e7b54b72d47e339767f094d5f515c5"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "cc5c0ebcafa8f661326c7d5f6e44ed8af281d312c88dd1aef49a6b48b348708b",
+  "functional_test_report_sha256": "d5fbbed3ff19f2983fe46a48aba86269bd1891e1f06dcfce1ea40f831b92139f"
+}

@@ -1,0 +1,22 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "weibaohui/dsh-process",
+      "revision": "97c11790728f897278d044b17062c36d069e9a8b",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/upstream/LICENSE",
+          "sha256": "8f466caa0d7f2244d1ac0d4ec523692c9c8e5f509fcdd89b974b82988c736807"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "vendor/process-core.mjs",
+    "runtime/engine.mjs"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

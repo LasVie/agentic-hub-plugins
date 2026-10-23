@@ -1,0 +1,37 @@
+{
+  "id": "word-vault-local",
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "source": "local",
+  "name": "词汇练习室",
+  "description": "按学习者保存英文词条、出现次数与连对掌握状态；在中文交互界面完成四选一、错词复习和导出，无需额外账号。",
+  "display_name": {
+    "zh": "词汇练习室",
+    "en": "word-vault-local"
+  },
+  "display_description": {
+    "zh": "按学习者保存英文词条、出现次数与连对掌握状态；在中文交互界面完成四选一、错词复习和导出，无需额外账号。",
+    "en": "按学习者保存英文词条、出现次数与连对掌握状态；在中文交互界面完成四选一、错词复习和导出，无需额外账号。"
+  },
+  "category": "办公与生产力",
+  "skills": [
+    {
+      "dir": "skills/word-vault-local",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/plugin_tool.py",
+      "class": "PluginTool",
+      "display_name": {
+        "zh": "词汇练习室",
+        "en": "word-vault-local"
+      },
+      "display_description": {
+        "zh": "按学习者保存英文词条、出现次数与连对掌握状态；在中文交互界面完成四选一、错词复习和导出，无需额外账号。",
+        "en": "按学习者保存英文词条、出现次数与连对掌握状态；在中文交互界面完成四选一、错词复习和导出，无需额外账号。"
+      }
+    }
+  ]
+}
