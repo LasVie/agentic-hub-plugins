@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:word-vault-local",
+  "type": "agent-plugin",
+  "name": "word-vault-local",
+  "version": "1.0.0",
+  "zip": "word-vault-local-1.0.0.zip",
+  "sha256": "9769327de19ef7413ec4d6f1571c9fa618adbed089e377ad358217f4739d69c0",
+  "payload_sha256": {
+    "README.md": "a5b9233f3d125f59ae078d6b2bb637da73d65ddf4239c9e00af0486397f3330d",
+    "THIRD_PARTY_NOTICES.md": "b31103e3eb54fdc2a42090802e4427744f53b8d19b3b0b6ee981db3bec223d5c",
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "licenses/upstream/LICENSE": "aae1d49ba58af902bbc71ce1b5a60ede3487e09d570b87bf07891b776b4dc406",
+    "manifest.json": "7fb5893889d530faed94f7e3cd816203d972bc0bd3e7da8719cbd48e684e38e9",
+    "runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime/cli.mjs": "6d03df6a71144fc688c6a968db100dc1df908634a05a51626e87089a1bfd8856",
+    "runtime/common.mjs": "02e236d9847c17213f562aa66eb142a3839c83a66f7686318c86c3760f23ae88",
+    "runtime/config.mjs": "f995171ba860e17598d7d3a9edfc7cbd580292ce3865ad7fbf72d5c695304fe2",
+    "runtime/engine.mjs": "dabee5b2d3e76575984346d2975a22be33688f27d808ab44a1b05a9e6ec0e288",
+    "runtime/server.mjs": "c4729275b094496263b6eee763b0dfe864b8a776747fb7ca781648f77ccd2340",
+    "skills/word-vault-local/SKILL.md": "299e3bf9a2f91fd09061cfdcf04c5533fd8793e1e0359a9b6b613c298e2de3a7",
+    "tools/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tools/plugin_tool.py": "698945691e49ee0e340871139405bcc1b389c5ab983534001cdfb0519afcd134",
+    "ui/app.js": "50ad551bf203e9cd5c2446af382dbc36cd22dbb90d22076d4b0bb13f58768111",
+    "ui/index.html": "1edef594f3625cc082d12f8cfc2ccfb60623d5237318cb9bf6ace37234d526b7",
+    "ui/style.css": "e46b66c607568cd3eabab0d906c2115cbf4e300023c693471c2e9f6d88e2e05d",
+    "vendor/words.mjs": "8243f11daf53f9b1ba161a9454d7d80cf481e8e45e6ef41c80f7c07ff306bce8"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "1384310ae637c6e98a5ecfb2218a35947b19fc6198492aeea433de1dbf3fd6a5",
+  "functional_test_report_sha256": "f12127441743c948ed952ee075ae10fb1abb05a6d0f9b5b3d62123c13812168c"
+}

@@ -1,0 +1,4759 @@
+[
+  {
+    "plugin": "word-vault-local",
+    "test": "fresh native SDK invocation",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "word-vault-local",
+      "version": "1.0.0",
+      "revision": 0,
+      "learner": "learner-1",
+      "words": [],
+      "summary": {
+        "total": 0,
+        "mastered": 0,
+        "wrong": 0
+      },
+      "quiz": null
+    }
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "Chinese native help",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "unknown operation rejected",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "five local words saved",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "word-vault-local",
+      "version": "1.0.0",
+      "message": "已保存并计次 5 个词条。",
+      "revision": 1,
+      "learner": "learner-1",
+      "words": [
+        {
+          "id": "w-7cc224fa8098",
+          "learner": "learner-1",
+          "term": "apple",
+          "lemma": "apple",
+          "meaning": "苹果",
+          "seen_count": 1,
+          "streak": 0,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.339Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-e4ffce875648",
+          "learner": "learner-1",
+          "term": "river",
+          "lemma": "river",
+          "meaning": "河流",
+          "seen_count": 1,
+          "streak": 0,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-89604ed6aed8",
+          "learner": "learner-1",
+          "term": "mountain",
+          "lemma": "mountain",
+          "meaning": "山峰",
+          "seen_count": 1,
+          "streak": 0,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-c09876645037",
+          "learner": "learner-1",
+          "term": "glasses",
+          "lemma": "glasses",
+          "meaning": "眼镜",
+          "seen_count": 1,
+          "streak": 0,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-537d3023a228",
+          "learner": "learner-1",
+          "term": "buses",
+          "lemma": "bus",
+          "meaning": "公交车",
+          "seen_count": 1,
+          "streak": 0,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        }
+      ],
+      "summary": {
+        "total": 5,
+        "mastered": 0,
+        "wrong": 0
+      },
+      "quiz": null
+    }
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "upstream protected plural stays distinct",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "upstream conservative morphology used",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "stale write is immutable",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "repeat counts without duplicate row",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "learner isolation",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "quiz 0 generated real options",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "word-vault-local",
+      "version": "1.0.0",
+      "message": "练习已生成，答案由本地记录核对。",
+      "revision": 3,
+      "learner": "learner-1",
+      "words": [
+        {
+          "id": "w-7cc224fa8098",
+          "learner": "learner-1",
+          "term": "apple",
+          "lemma": "apple",
+          "meaning": "苹果",
+          "seen_count": 2,
+          "streak": 0,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.448Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-e4ffce875648",
+          "learner": "learner-1",
+          "term": "river",
+          "lemma": "river",
+          "meaning": "河流",
+          "seen_count": 1,
+          "streak": 0,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-89604ed6aed8",
+          "learner": "learner-1",
+          "term": "mountain",
+          "lemma": "mountain",
+          "meaning": "山峰",
+          "seen_count": 1,
+          "streak": 0,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-c09876645037",
+          "learner": "learner-1",
+          "term": "glasses",
+          "lemma": "glasses",
+          "meaning": "眼镜",
+          "seen_count": 1,
+          "streak": 0,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-537d3023a228",
+          "learner": "learner-1",
+          "term": "buses",
+          "lemma": "bus",
+          "meaning": "公交车",
+          "seen_count": 1,
+          "streak": 0,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        }
+      ],
+      "summary": {
+        "total": 5,
+        "mastered": 0,
+        "wrong": 0
+      },
+      "quiz": {
+        "id": "quiz-8cdf0e6e4bd9",
+        "correct": 0,
+        "finished": false,
+        "questions": [
+          {
+            "id": 0,
+            "term": "buses",
+            "options": [
+              "河流",
+              "眼镜",
+              "山峰",
+              "公交车"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 1,
+            "term": "glasses",
+            "options": [
+              "苹果",
+              "眼镜",
+              "山峰",
+              "公交车"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 2,
+            "term": "mountain",
+            "options": [
+              "苹果",
+              "河流",
+              "眼镜",
+              "山峰"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 3,
+            "term": "river",
+            "options": [
+              "公交车",
+              "河流",
+              "苹果",
+              "眼镜"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 4,
+            "term": "apple",
+            "options": [
+              "苹果",
+              "山峰",
+              "公交车",
+              "眼镜"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "quiz 0 hides answer indices",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "quiz 0 scores question 0",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "word-vault-local",
+      "version": "1.0.0",
+      "message": "答对了。",
+      "is_correct": true,
+      "revision": 4,
+      "learner": "learner-1",
+      "words": [
+        {
+          "id": "w-7cc224fa8098",
+          "learner": "learner-1",
+          "term": "apple",
+          "lemma": "apple",
+          "meaning": "苹果",
+          "seen_count": 2,
+          "streak": 0,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.448Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-e4ffce875648",
+          "learner": "learner-1",
+          "term": "river",
+          "lemma": "river",
+          "meaning": "河流",
+          "seen_count": 1,
+          "streak": 0,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-89604ed6aed8",
+          "learner": "learner-1",
+          "term": "mountain",
+          "lemma": "mountain",
+          "meaning": "山峰",
+          "seen_count": 1,
+          "streak": 0,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-c09876645037",
+          "learner": "learner-1",
+          "term": "glasses",
+          "lemma": "glasses",
+          "meaning": "眼镜",
+          "seen_count": 1,
+          "streak": 0,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-537d3023a228",
+          "learner": "learner-1",
+          "term": "buses",
+          "lemma": "bus",
+          "meaning": "公交车",
+          "seen_count": 1,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        }
+      ],
+      "summary": {
+        "total": 5,
+        "mastered": 0,
+        "wrong": 0
+      },
+      "quiz": {
+        "id": "quiz-8cdf0e6e4bd9",
+        "correct": 1,
+        "finished": false,
+        "questions": [
+          {
+            "id": 0,
+            "term": "buses",
+            "options": [
+              "河流",
+              "眼镜",
+              "山峰",
+              "公交车"
+            ],
+            "chosen_index": 3,
+            "is_correct": true,
+            "correct_meaning": "公交车"
+          },
+          {
+            "id": 1,
+            "term": "glasses",
+            "options": [
+              "苹果",
+              "眼镜",
+              "山峰",
+              "公交车"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 2,
+            "term": "mountain",
+            "options": [
+              "苹果",
+              "河流",
+              "眼镜",
+              "山峰"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 3,
+            "term": "river",
+            "options": [
+              "公交车",
+              "河流",
+              "苹果",
+              "眼镜"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 4,
+            "term": "apple",
+            "options": [
+              "苹果",
+              "山峰",
+              "公交车",
+              "眼镜"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "quiz 0 scores question 1",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "word-vault-local",
+      "version": "1.0.0",
+      "message": "答对了。",
+      "is_correct": true,
+      "revision": 5,
+      "learner": "learner-1",
+      "words": [
+        {
+          "id": "w-7cc224fa8098",
+          "learner": "learner-1",
+          "term": "apple",
+          "lemma": "apple",
+          "meaning": "苹果",
+          "seen_count": 2,
+          "streak": 0,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.448Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-e4ffce875648",
+          "learner": "learner-1",
+          "term": "river",
+          "lemma": "river",
+          "meaning": "河流",
+          "seen_count": 1,
+          "streak": 0,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-89604ed6aed8",
+          "learner": "learner-1",
+          "term": "mountain",
+          "lemma": "mountain",
+          "meaning": "山峰",
+          "seen_count": 1,
+          "streak": 0,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-c09876645037",
+          "learner": "learner-1",
+          "term": "glasses",
+          "lemma": "glasses",
+          "meaning": "眼镜",
+          "seen_count": 1,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-537d3023a228",
+          "learner": "learner-1",
+          "term": "buses",
+          "lemma": "bus",
+          "meaning": "公交车",
+          "seen_count": 1,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        }
+      ],
+      "summary": {
+        "total": 5,
+        "mastered": 0,
+        "wrong": 0
+      },
+      "quiz": {
+        "id": "quiz-8cdf0e6e4bd9",
+        "correct": 2,
+        "finished": false,
+        "questions": [
+          {
+            "id": 0,
+            "term": "buses",
+            "options": [
+              "河流",
+              "眼镜",
+              "山峰",
+              "公交车"
+            ],
+            "chosen_index": 3,
+            "is_correct": true,
+            "correct_meaning": "公交车"
+          },
+          {
+            "id": 1,
+            "term": "glasses",
+            "options": [
+              "苹果",
+              "眼镜",
+              "山峰",
+              "公交车"
+            ],
+            "chosen_index": 1,
+            "is_correct": true,
+            "correct_meaning": "眼镜"
+          },
+          {
+            "id": 2,
+            "term": "mountain",
+            "options": [
+              "苹果",
+              "河流",
+              "眼镜",
+              "山峰"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 3,
+            "term": "river",
+            "options": [
+              "公交车",
+              "河流",
+              "苹果",
+              "眼镜"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 4,
+            "term": "apple",
+            "options": [
+              "苹果",
+              "山峰",
+              "公交车",
+              "眼镜"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "quiz 0 scores question 2",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "word-vault-local",
+      "version": "1.0.0",
+      "message": "答对了。",
+      "is_correct": true,
+      "revision": 6,
+      "learner": "learner-1",
+      "words": [
+        {
+          "id": "w-7cc224fa8098",
+          "learner": "learner-1",
+          "term": "apple",
+          "lemma": "apple",
+          "meaning": "苹果",
+          "seen_count": 2,
+          "streak": 0,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.448Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-e4ffce875648",
+          "learner": "learner-1",
+          "term": "river",
+          "lemma": "river",
+          "meaning": "河流",
+          "seen_count": 1,
+          "streak": 0,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-89604ed6aed8",
+          "learner": "learner-1",
+          "term": "mountain",
+          "lemma": "mountain",
+          "meaning": "山峰",
+          "seen_count": 1,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-c09876645037",
+          "learner": "learner-1",
+          "term": "glasses",
+          "lemma": "glasses",
+          "meaning": "眼镜",
+          "seen_count": 1,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-537d3023a228",
+          "learner": "learner-1",
+          "term": "buses",
+          "lemma": "bus",
+          "meaning": "公交车",
+          "seen_count": 1,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        }
+      ],
+      "summary": {
+        "total": 5,
+        "mastered": 0,
+        "wrong": 0
+      },
+      "quiz": {
+        "id": "quiz-8cdf0e6e4bd9",
+        "correct": 3,
+        "finished": false,
+        "questions": [
+          {
+            "id": 0,
+            "term": "buses",
+            "options": [
+              "河流",
+              "眼镜",
+              "山峰",
+              "公交车"
+            ],
+            "chosen_index": 3,
+            "is_correct": true,
+            "correct_meaning": "公交车"
+          },
+          {
+            "id": 1,
+            "term": "glasses",
+            "options": [
+              "苹果",
+              "眼镜",
+              "山峰",
+              "公交车"
+            ],
+            "chosen_index": 1,
+            "is_correct": true,
+            "correct_meaning": "眼镜"
+          },
+          {
+            "id": 2,
+            "term": "mountain",
+            "options": [
+              "苹果",
+              "河流",
+              "眼镜",
+              "山峰"
+            ],
+            "chosen_index": 3,
+            "is_correct": true,
+            "correct_meaning": "山峰"
+          },
+          {
+            "id": 3,
+            "term": "river",
+            "options": [
+              "公交车",
+              "河流",
+              "苹果",
+              "眼镜"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 4,
+            "term": "apple",
+            "options": [
+              "苹果",
+              "山峰",
+              "公交车",
+              "眼镜"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "quiz 0 scores question 3",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "word-vault-local",
+      "version": "1.0.0",
+      "message": "答对了。",
+      "is_correct": true,
+      "revision": 7,
+      "learner": "learner-1",
+      "words": [
+        {
+          "id": "w-7cc224fa8098",
+          "learner": "learner-1",
+          "term": "apple",
+          "lemma": "apple",
+          "meaning": "苹果",
+          "seen_count": 2,
+          "streak": 0,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.448Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-e4ffce875648",
+          "learner": "learner-1",
+          "term": "river",
+          "lemma": "river",
+          "meaning": "河流",
+          "seen_count": 1,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-89604ed6aed8",
+          "learner": "learner-1",
+          "term": "mountain",
+          "lemma": "mountain",
+          "meaning": "山峰",
+          "seen_count": 1,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-c09876645037",
+          "learner": "learner-1",
+          "term": "glasses",
+          "lemma": "glasses",
+          "meaning": "眼镜",
+          "seen_count": 1,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-537d3023a228",
+          "learner": "learner-1",
+          "term": "buses",
+          "lemma": "bus",
+          "meaning": "公交车",
+          "seen_count": 1,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        }
+      ],
+      "summary": {
+        "total": 5,
+        "mastered": 0,
+        "wrong": 0
+      },
+      "quiz": {
+        "id": "quiz-8cdf0e6e4bd9",
+        "correct": 4,
+        "finished": false,
+        "questions": [
+          {
+            "id": 0,
+            "term": "buses",
+            "options": [
+              "河流",
+              "眼镜",
+              "山峰",
+              "公交车"
+            ],
+            "chosen_index": 3,
+            "is_correct": true,
+            "correct_meaning": "公交车"
+          },
+          {
+            "id": 1,
+            "term": "glasses",
+            "options": [
+              "苹果",
+              "眼镜",
+              "山峰",
+              "公交车"
+            ],
+            "chosen_index": 1,
+            "is_correct": true,
+            "correct_meaning": "眼镜"
+          },
+          {
+            "id": 2,
+            "term": "mountain",
+            "options": [
+              "苹果",
+              "河流",
+              "眼镜",
+              "山峰"
+            ],
+            "chosen_index": 3,
+            "is_correct": true,
+            "correct_meaning": "山峰"
+          },
+          {
+            "id": 3,
+            "term": "river",
+            "options": [
+              "公交车",
+              "河流",
+              "苹果",
+              "眼镜"
+            ],
+            "chosen_index": 1,
+            "is_correct": true,
+            "correct_meaning": "河流"
+          },
+          {
+            "id": 4,
+            "term": "apple",
+            "options": [
+              "苹果",
+              "山峰",
+              "公交车",
+              "眼镜"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "quiz 0 scores question 4",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "word-vault-local",
+      "version": "1.0.0",
+      "message": "答对了。",
+      "is_correct": true,
+      "revision": 8,
+      "learner": "learner-1",
+      "words": [
+        {
+          "id": "w-7cc224fa8098",
+          "learner": "learner-1",
+          "term": "apple",
+          "lemma": "apple",
+          "meaning": "苹果",
+          "seen_count": 2,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.448Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-e4ffce875648",
+          "learner": "learner-1",
+          "term": "river",
+          "lemma": "river",
+          "meaning": "河流",
+          "seen_count": 1,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-89604ed6aed8",
+          "learner": "learner-1",
+          "term": "mountain",
+          "lemma": "mountain",
+          "meaning": "山峰",
+          "seen_count": 1,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-c09876645037",
+          "learner": "learner-1",
+          "term": "glasses",
+          "lemma": "glasses",
+          "meaning": "眼镜",
+          "seen_count": 1,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-537d3023a228",
+          "learner": "learner-1",
+          "term": "buses",
+          "lemma": "bus",
+          "meaning": "公交车",
+          "seen_count": 1,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        }
+      ],
+      "summary": {
+        "total": 5,
+        "mastered": 0,
+        "wrong": 0
+      },
+      "quiz": {
+        "id": "quiz-8cdf0e6e4bd9",
+        "correct": 5,
+        "finished": true,
+        "questions": [
+          {
+            "id": 0,
+            "term": "buses",
+            "options": [
+              "河流",
+              "眼镜",
+              "山峰",
+              "公交车"
+            ],
+            "chosen_index": 3,
+            "is_correct": true,
+            "correct_meaning": "公交车"
+          },
+          {
+            "id": 1,
+            "term": "glasses",
+            "options": [
+              "苹果",
+              "眼镜",
+              "山峰",
+              "公交车"
+            ],
+            "chosen_index": 1,
+            "is_correct": true,
+            "correct_meaning": "眼镜"
+          },
+          {
+            "id": 2,
+            "term": "mountain",
+            "options": [
+              "苹果",
+              "河流",
+              "眼镜",
+              "山峰"
+            ],
+            "chosen_index": 3,
+            "is_correct": true,
+            "correct_meaning": "山峰"
+          },
+          {
+            "id": 3,
+            "term": "river",
+            "options": [
+              "公交车",
+              "河流",
+              "苹果",
+              "眼镜"
+            ],
+            "chosen_index": 1,
+            "is_correct": true,
+            "correct_meaning": "河流"
+          },
+          {
+            "id": 4,
+            "term": "apple",
+            "options": [
+              "苹果",
+              "山峰",
+              "公交车",
+              "眼镜"
+            ],
+            "chosen_index": 0,
+            "is_correct": true,
+            "correct_meaning": "苹果"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "quiz 1 generated real options",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "word-vault-local",
+      "version": "1.0.0",
+      "message": "练习已生成，答案由本地记录核对。",
+      "revision": 9,
+      "learner": "learner-1",
+      "words": [
+        {
+          "id": "w-7cc224fa8098",
+          "learner": "learner-1",
+          "term": "apple",
+          "lemma": "apple",
+          "meaning": "苹果",
+          "seen_count": 2,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.448Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-e4ffce875648",
+          "learner": "learner-1",
+          "term": "river",
+          "lemma": "river",
+          "meaning": "河流",
+          "seen_count": 1,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-89604ed6aed8",
+          "learner": "learner-1",
+          "term": "mountain",
+          "lemma": "mountain",
+          "meaning": "山峰",
+          "seen_count": 1,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-c09876645037",
+          "learner": "learner-1",
+          "term": "glasses",
+          "lemma": "glasses",
+          "meaning": "眼镜",
+          "seen_count": 1,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-537d3023a228",
+          "learner": "learner-1",
+          "term": "buses",
+          "lemma": "bus",
+          "meaning": "公交车",
+          "seen_count": 1,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        }
+      ],
+      "summary": {
+        "total": 5,
+        "mastered": 0,
+        "wrong": 0
+      },
+      "quiz": {
+        "id": "quiz-26b58fc72f81",
+        "correct": 0,
+        "finished": false,
+        "questions": [
+          {
+            "id": 0,
+            "term": "apple",
+            "options": [
+              "苹果",
+              "山峰",
+              "眼镜",
+              "公交车"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 1,
+            "term": "glasses",
+            "options": [
+              "眼镜",
+              "山峰",
+              "公交车",
+              "苹果"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 2,
+            "term": "buses",
+            "options": [
+              "苹果",
+              "公交车",
+              "山峰",
+              "眼镜"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 3,
+            "term": "mountain",
+            "options": [
+              "苹果",
+              "山峰",
+              "公交车",
+              "眼镜"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 4,
+            "term": "river",
+            "options": [
+              "公交车",
+              "苹果",
+              "山峰",
+              "河流"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "quiz 1 hides answer indices",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "quiz 1 scores question 0",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "word-vault-local",
+      "version": "1.0.0",
+      "message": "答对了。",
+      "is_correct": true,
+      "revision": 10,
+      "learner": "learner-1",
+      "words": [
+        {
+          "id": "w-7cc224fa8098",
+          "learner": "learner-1",
+          "term": "apple",
+          "lemma": "apple",
+          "meaning": "苹果",
+          "seen_count": 2,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.448Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-e4ffce875648",
+          "learner": "learner-1",
+          "term": "river",
+          "lemma": "river",
+          "meaning": "河流",
+          "seen_count": 1,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-89604ed6aed8",
+          "learner": "learner-1",
+          "term": "mountain",
+          "lemma": "mountain",
+          "meaning": "山峰",
+          "seen_count": 1,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-c09876645037",
+          "learner": "learner-1",
+          "term": "glasses",
+          "lemma": "glasses",
+          "meaning": "眼镜",
+          "seen_count": 1,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-537d3023a228",
+          "learner": "learner-1",
+          "term": "buses",
+          "lemma": "bus",
+          "meaning": "公交车",
+          "seen_count": 1,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        }
+      ],
+      "summary": {
+        "total": 5,
+        "mastered": 0,
+        "wrong": 0
+      },
+      "quiz": {
+        "id": "quiz-26b58fc72f81",
+        "correct": 1,
+        "finished": false,
+        "questions": [
+          {
+            "id": 0,
+            "term": "apple",
+            "options": [
+              "苹果",
+              "山峰",
+              "眼镜",
+              "公交车"
+            ],
+            "chosen_index": 0,
+            "is_correct": true,
+            "correct_meaning": "苹果"
+          },
+          {
+            "id": 1,
+            "term": "glasses",
+            "options": [
+              "眼镜",
+              "山峰",
+              "公交车",
+              "苹果"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 2,
+            "term": "buses",
+            "options": [
+              "苹果",
+              "公交车",
+              "山峰",
+              "眼镜"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 3,
+            "term": "mountain",
+            "options": [
+              "苹果",
+              "山峰",
+              "公交车",
+              "眼镜"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 4,
+            "term": "river",
+            "options": [
+              "公交车",
+              "苹果",
+              "山峰",
+              "河流"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "quiz 1 scores question 1",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "word-vault-local",
+      "version": "1.0.0",
+      "message": "答对了。",
+      "is_correct": true,
+      "revision": 11,
+      "learner": "learner-1",
+      "words": [
+        {
+          "id": "w-7cc224fa8098",
+          "learner": "learner-1",
+          "term": "apple",
+          "lemma": "apple",
+          "meaning": "苹果",
+          "seen_count": 2,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.448Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-e4ffce875648",
+          "learner": "learner-1",
+          "term": "river",
+          "lemma": "river",
+          "meaning": "河流",
+          "seen_count": 1,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-89604ed6aed8",
+          "learner": "learner-1",
+          "term": "mountain",
+          "lemma": "mountain",
+          "meaning": "山峰",
+          "seen_count": 1,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-c09876645037",
+          "learner": "learner-1",
+          "term": "glasses",
+          "lemma": "glasses",
+          "meaning": "眼镜",
+          "seen_count": 1,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-537d3023a228",
+          "learner": "learner-1",
+          "term": "buses",
+          "lemma": "bus",
+          "meaning": "公交车",
+          "seen_count": 1,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        }
+      ],
+      "summary": {
+        "total": 5,
+        "mastered": 0,
+        "wrong": 0
+      },
+      "quiz": {
+        "id": "quiz-26b58fc72f81",
+        "correct": 2,
+        "finished": false,
+        "questions": [
+          {
+            "id": 0,
+            "term": "apple",
+            "options": [
+              "苹果",
+              "山峰",
+              "眼镜",
+              "公交车"
+            ],
+            "chosen_index": 0,
+            "is_correct": true,
+            "correct_meaning": "苹果"
+          },
+          {
+            "id": 1,
+            "term": "glasses",
+            "options": [
+              "眼镜",
+              "山峰",
+              "公交车",
+              "苹果"
+            ],
+            "chosen_index": 0,
+            "is_correct": true,
+            "correct_meaning": "眼镜"
+          },
+          {
+            "id": 2,
+            "term": "buses",
+            "options": [
+              "苹果",
+              "公交车",
+              "山峰",
+              "眼镜"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 3,
+            "term": "mountain",
+            "options": [
+              "苹果",
+              "山峰",
+              "公交车",
+              "眼镜"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 4,
+            "term": "river",
+            "options": [
+              "公交车",
+              "苹果",
+              "山峰",
+              "河流"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "quiz 1 scores question 2",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "word-vault-local",
+      "version": "1.0.0",
+      "message": "答对了。",
+      "is_correct": true,
+      "revision": 12,
+      "learner": "learner-1",
+      "words": [
+        {
+          "id": "w-7cc224fa8098",
+          "learner": "learner-1",
+          "term": "apple",
+          "lemma": "apple",
+          "meaning": "苹果",
+          "seen_count": 2,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.448Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-e4ffce875648",
+          "learner": "learner-1",
+          "term": "river",
+          "lemma": "river",
+          "meaning": "河流",
+          "seen_count": 1,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-89604ed6aed8",
+          "learner": "learner-1",
+          "term": "mountain",
+          "lemma": "mountain",
+          "meaning": "山峰",
+          "seen_count": 1,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-c09876645037",
+          "learner": "learner-1",
+          "term": "glasses",
+          "lemma": "glasses",
+          "meaning": "眼镜",
+          "seen_count": 1,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-537d3023a228",
+          "learner": "learner-1",
+          "term": "buses",
+          "lemma": "bus",
+          "meaning": "公交车",
+          "seen_count": 1,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        }
+      ],
+      "summary": {
+        "total": 5,
+        "mastered": 0,
+        "wrong": 0
+      },
+      "quiz": {
+        "id": "quiz-26b58fc72f81",
+        "correct": 3,
+        "finished": false,
+        "questions": [
+          {
+            "id": 0,
+            "term": "apple",
+            "options": [
+              "苹果",
+              "山峰",
+              "眼镜",
+              "公交车"
+            ],
+            "chosen_index": 0,
+            "is_correct": true,
+            "correct_meaning": "苹果"
+          },
+          {
+            "id": 1,
+            "term": "glasses",
+            "options": [
+              "眼镜",
+              "山峰",
+              "公交车",
+              "苹果"
+            ],
+            "chosen_index": 0,
+            "is_correct": true,
+            "correct_meaning": "眼镜"
+          },
+          {
+            "id": 2,
+            "term": "buses",
+            "options": [
+              "苹果",
+              "公交车",
+              "山峰",
+              "眼镜"
+            ],
+            "chosen_index": 1,
+            "is_correct": true,
+            "correct_meaning": "公交车"
+          },
+          {
+            "id": 3,
+            "term": "mountain",
+            "options": [
+              "苹果",
+              "山峰",
+              "公交车",
+              "眼镜"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 4,
+            "term": "river",
+            "options": [
+              "公交车",
+              "苹果",
+              "山峰",
+              "河流"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "quiz 1 scores question 3",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "word-vault-local",
+      "version": "1.0.0",
+      "message": "答对了。",
+      "is_correct": true,
+      "revision": 13,
+      "learner": "learner-1",
+      "words": [
+        {
+          "id": "w-7cc224fa8098",
+          "learner": "learner-1",
+          "term": "apple",
+          "lemma": "apple",
+          "meaning": "苹果",
+          "seen_count": 2,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.448Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-e4ffce875648",
+          "learner": "learner-1",
+          "term": "river",
+          "lemma": "river",
+          "meaning": "河流",
+          "seen_count": 1,
+          "streak": 1,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-89604ed6aed8",
+          "learner": "learner-1",
+          "term": "mountain",
+          "lemma": "mountain",
+          "meaning": "山峰",
+          "seen_count": 1,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-c09876645037",
+          "learner": "learner-1",
+          "term": "glasses",
+          "lemma": "glasses",
+          "meaning": "眼镜",
+          "seen_count": 1,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-537d3023a228",
+          "learner": "learner-1",
+          "term": "buses",
+          "lemma": "bus",
+          "meaning": "公交车",
+          "seen_count": 1,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        }
+      ],
+      "summary": {
+        "total": 5,
+        "mastered": 0,
+        "wrong": 0
+      },
+      "quiz": {
+        "id": "quiz-26b58fc72f81",
+        "correct": 4,
+        "finished": false,
+        "questions": [
+          {
+            "id": 0,
+            "term": "apple",
+            "options": [
+              "苹果",
+              "山峰",
+              "眼镜",
+              "公交车"
+            ],
+            "chosen_index": 0,
+            "is_correct": true,
+            "correct_meaning": "苹果"
+          },
+          {
+            "id": 1,
+            "term": "glasses",
+            "options": [
+              "眼镜",
+              "山峰",
+              "公交车",
+              "苹果"
+            ],
+            "chosen_index": 0,
+            "is_correct": true,
+            "correct_meaning": "眼镜"
+          },
+          {
+            "id": 2,
+            "term": "buses",
+            "options": [
+              "苹果",
+              "公交车",
+              "山峰",
+              "眼镜"
+            ],
+            "chosen_index": 1,
+            "is_correct": true,
+            "correct_meaning": "公交车"
+          },
+          {
+            "id": 3,
+            "term": "mountain",
+            "options": [
+              "苹果",
+              "山峰",
+              "公交车",
+              "眼镜"
+            ],
+            "chosen_index": 1,
+            "is_correct": true,
+            "correct_meaning": "山峰"
+          },
+          {
+            "id": 4,
+            "term": "river",
+            "options": [
+              "公交车",
+              "苹果",
+              "山峰",
+              "河流"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "quiz 1 scores question 4",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "word-vault-local",
+      "version": "1.0.0",
+      "message": "答对了。",
+      "is_correct": true,
+      "revision": 14,
+      "learner": "learner-1",
+      "words": [
+        {
+          "id": "w-7cc224fa8098",
+          "learner": "learner-1",
+          "term": "apple",
+          "lemma": "apple",
+          "meaning": "苹果",
+          "seen_count": 2,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.448Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-e4ffce875648",
+          "learner": "learner-1",
+          "term": "river",
+          "lemma": "river",
+          "meaning": "河流",
+          "seen_count": 1,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-89604ed6aed8",
+          "learner": "learner-1",
+          "term": "mountain",
+          "lemma": "mountain",
+          "meaning": "山峰",
+          "seen_count": 1,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-c09876645037",
+          "learner": "learner-1",
+          "term": "glasses",
+          "lemma": "glasses",
+          "meaning": "眼镜",
+          "seen_count": 1,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-537d3023a228",
+          "learner": "learner-1",
+          "term": "buses",
+          "lemma": "bus",
+          "meaning": "公交车",
+          "seen_count": 1,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        }
+      ],
+      "summary": {
+        "total": 5,
+        "mastered": 0,
+        "wrong": 0
+      },
+      "quiz": {
+        "id": "quiz-26b58fc72f81",
+        "correct": 5,
+        "finished": true,
+        "questions": [
+          {
+            "id": 0,
+            "term": "apple",
+            "options": [
+              "苹果",
+              "山峰",
+              "眼镜",
+              "公交车"
+            ],
+            "chosen_index": 0,
+            "is_correct": true,
+            "correct_meaning": "苹果"
+          },
+          {
+            "id": 1,
+            "term": "glasses",
+            "options": [
+              "眼镜",
+              "山峰",
+              "公交车",
+              "苹果"
+            ],
+            "chosen_index": 0,
+            "is_correct": true,
+            "correct_meaning": "眼镜"
+          },
+          {
+            "id": 2,
+            "term": "buses",
+            "options": [
+              "苹果",
+              "公交车",
+              "山峰",
+              "眼镜"
+            ],
+            "chosen_index": 1,
+            "is_correct": true,
+            "correct_meaning": "公交车"
+          },
+          {
+            "id": 3,
+            "term": "mountain",
+            "options": [
+              "苹果",
+              "山峰",
+              "公交车",
+              "眼镜"
+            ],
+            "chosen_index": 1,
+            "is_correct": true,
+            "correct_meaning": "山峰"
+          },
+          {
+            "id": 4,
+            "term": "river",
+            "options": [
+              "公交车",
+              "苹果",
+              "山峰",
+              "河流"
+            ],
+            "chosen_index": 3,
+            "is_correct": true,
+            "correct_meaning": "河流"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "quiz 2 generated real options",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "word-vault-local",
+      "version": "1.0.0",
+      "message": "练习已生成，答案由本地记录核对。",
+      "revision": 15,
+      "learner": "learner-1",
+      "words": [
+        {
+          "id": "w-7cc224fa8098",
+          "learner": "learner-1",
+          "term": "apple",
+          "lemma": "apple",
+          "meaning": "苹果",
+          "seen_count": 2,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.448Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-e4ffce875648",
+          "learner": "learner-1",
+          "term": "river",
+          "lemma": "river",
+          "meaning": "河流",
+          "seen_count": 1,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-89604ed6aed8",
+          "learner": "learner-1",
+          "term": "mountain",
+          "lemma": "mountain",
+          "meaning": "山峰",
+          "seen_count": 1,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-c09876645037",
+          "learner": "learner-1",
+          "term": "glasses",
+          "lemma": "glasses",
+          "meaning": "眼镜",
+          "seen_count": 1,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-537d3023a228",
+          "learner": "learner-1",
+          "term": "buses",
+          "lemma": "bus",
+          "meaning": "公交车",
+          "seen_count": 1,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        }
+      ],
+      "summary": {
+        "total": 5,
+        "mastered": 0,
+        "wrong": 0
+      },
+      "quiz": {
+        "id": "quiz-676be41eb134",
+        "correct": 0,
+        "finished": false,
+        "questions": [
+          {
+            "id": 0,
+            "term": "glasses",
+            "options": [
+              "河流",
+              "苹果",
+              "公交车",
+              "眼镜"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 1,
+            "term": "mountain",
+            "options": [
+              "苹果",
+              "山峰",
+              "公交车",
+              "眼镜"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 2,
+            "term": "apple",
+            "options": [
+              "公交车",
+              "苹果",
+              "眼镜",
+              "山峰"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 3,
+            "term": "buses",
+            "options": [
+              "山峰",
+              "眼镜",
+              "苹果",
+              "公交车"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 4,
+            "term": "river",
+            "options": [
+              "公交车",
+              "山峰",
+              "河流",
+              "眼镜"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "quiz 2 hides answer indices",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "quiz 2 scores question 0",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "word-vault-local",
+      "version": "1.0.0",
+      "message": "答对了。",
+      "is_correct": true,
+      "revision": 16,
+      "learner": "learner-1",
+      "words": [
+        {
+          "id": "w-7cc224fa8098",
+          "learner": "learner-1",
+          "term": "apple",
+          "lemma": "apple",
+          "meaning": "苹果",
+          "seen_count": 2,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.448Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-e4ffce875648",
+          "learner": "learner-1",
+          "term": "river",
+          "lemma": "river",
+          "meaning": "河流",
+          "seen_count": 1,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-89604ed6aed8",
+          "learner": "learner-1",
+          "term": "mountain",
+          "lemma": "mountain",
+          "meaning": "山峰",
+          "seen_count": 1,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-c09876645037",
+          "learner": "learner-1",
+          "term": "glasses",
+          "lemma": "glasses",
+          "meaning": "眼镜",
+          "seen_count": 1,
+          "streak": 3,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "mastered"
+        },
+        {
+          "id": "w-537d3023a228",
+          "learner": "learner-1",
+          "term": "buses",
+          "lemma": "bus",
+          "meaning": "公交车",
+          "seen_count": 1,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        }
+      ],
+      "summary": {
+        "total": 5,
+        "mastered": 1,
+        "wrong": 0
+      },
+      "quiz": {
+        "id": "quiz-676be41eb134",
+        "correct": 1,
+        "finished": false,
+        "questions": [
+          {
+            "id": 0,
+            "term": "glasses",
+            "options": [
+              "河流",
+              "苹果",
+              "公交车",
+              "眼镜"
+            ],
+            "chosen_index": 3,
+            "is_correct": true,
+            "correct_meaning": "眼镜"
+          },
+          {
+            "id": 1,
+            "term": "mountain",
+            "options": [
+              "苹果",
+              "山峰",
+              "公交车",
+              "眼镜"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 2,
+            "term": "apple",
+            "options": [
+              "公交车",
+              "苹果",
+              "眼镜",
+              "山峰"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 3,
+            "term": "buses",
+            "options": [
+              "山峰",
+              "眼镜",
+              "苹果",
+              "公交车"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 4,
+            "term": "river",
+            "options": [
+              "公交车",
+              "山峰",
+              "河流",
+              "眼镜"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "quiz 2 scores question 1",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "word-vault-local",
+      "version": "1.0.0",
+      "message": "答对了。",
+      "is_correct": true,
+      "revision": 17,
+      "learner": "learner-1",
+      "words": [
+        {
+          "id": "w-7cc224fa8098",
+          "learner": "learner-1",
+          "term": "apple",
+          "lemma": "apple",
+          "meaning": "苹果",
+          "seen_count": 2,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.448Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-e4ffce875648",
+          "learner": "learner-1",
+          "term": "river",
+          "lemma": "river",
+          "meaning": "河流",
+          "seen_count": 1,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-89604ed6aed8",
+          "learner": "learner-1",
+          "term": "mountain",
+          "lemma": "mountain",
+          "meaning": "山峰",
+          "seen_count": 1,
+          "streak": 3,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "mastered"
+        },
+        {
+          "id": "w-c09876645037",
+          "learner": "learner-1",
+          "term": "glasses",
+          "lemma": "glasses",
+          "meaning": "眼镜",
+          "seen_count": 1,
+          "streak": 3,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "mastered"
+        },
+        {
+          "id": "w-537d3023a228",
+          "learner": "learner-1",
+          "term": "buses",
+          "lemma": "bus",
+          "meaning": "公交车",
+          "seen_count": 1,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        }
+      ],
+      "summary": {
+        "total": 5,
+        "mastered": 2,
+        "wrong": 0
+      },
+      "quiz": {
+        "id": "quiz-676be41eb134",
+        "correct": 2,
+        "finished": false,
+        "questions": [
+          {
+            "id": 0,
+            "term": "glasses",
+            "options": [
+              "河流",
+              "苹果",
+              "公交车",
+              "眼镜"
+            ],
+            "chosen_index": 3,
+            "is_correct": true,
+            "correct_meaning": "眼镜"
+          },
+          {
+            "id": 1,
+            "term": "mountain",
+            "options": [
+              "苹果",
+              "山峰",
+              "公交车",
+              "眼镜"
+            ],
+            "chosen_index": 1,
+            "is_correct": true,
+            "correct_meaning": "山峰"
+          },
+          {
+            "id": 2,
+            "term": "apple",
+            "options": [
+              "公交车",
+              "苹果",
+              "眼镜",
+              "山峰"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 3,
+            "term": "buses",
+            "options": [
+              "山峰",
+              "眼镜",
+              "苹果",
+              "公交车"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 4,
+            "term": "river",
+            "options": [
+              "公交车",
+              "山峰",
+              "河流",
+              "眼镜"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "quiz 2 scores question 2",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "word-vault-local",
+      "version": "1.0.0",
+      "message": "答对了。",
+      "is_correct": true,
+      "revision": 18,
+      "learner": "learner-1",
+      "words": [
+        {
+          "id": "w-7cc224fa8098",
+          "learner": "learner-1",
+          "term": "apple",
+          "lemma": "apple",
+          "meaning": "苹果",
+          "seen_count": 2,
+          "streak": 3,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.448Z",
+          "status": "mastered"
+        },
+        {
+          "id": "w-e4ffce875648",
+          "learner": "learner-1",
+          "term": "river",
+          "lemma": "river",
+          "meaning": "河流",
+          "seen_count": 1,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-89604ed6aed8",
+          "learner": "learner-1",
+          "term": "mountain",
+          "lemma": "mountain",
+          "meaning": "山峰",
+          "seen_count": 1,
+          "streak": 3,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "mastered"
+        },
+        {
+          "id": "w-c09876645037",
+          "learner": "learner-1",
+          "term": "glasses",
+          "lemma": "glasses",
+          "meaning": "眼镜",
+          "seen_count": 1,
+          "streak": 3,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "mastered"
+        },
+        {
+          "id": "w-537d3023a228",
+          "learner": "learner-1",
+          "term": "buses",
+          "lemma": "bus",
+          "meaning": "公交车",
+          "seen_count": 1,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        }
+      ],
+      "summary": {
+        "total": 5,
+        "mastered": 3,
+        "wrong": 0
+      },
+      "quiz": {
+        "id": "quiz-676be41eb134",
+        "correct": 3,
+        "finished": false,
+        "questions": [
+          {
+            "id": 0,
+            "term": "glasses",
+            "options": [
+              "河流",
+              "苹果",
+              "公交车",
+              "眼镜"
+            ],
+            "chosen_index": 3,
+            "is_correct": true,
+            "correct_meaning": "眼镜"
+          },
+          {
+            "id": 1,
+            "term": "mountain",
+            "options": [
+              "苹果",
+              "山峰",
+              "公交车",
+              "眼镜"
+            ],
+            "chosen_index": 1,
+            "is_correct": true,
+            "correct_meaning": "山峰"
+          },
+          {
+            "id": 2,
+            "term": "apple",
+            "options": [
+              "公交车",
+              "苹果",
+              "眼镜",
+              "山峰"
+            ],
+            "chosen_index": 1,
+            "is_correct": true,
+            "correct_meaning": "苹果"
+          },
+          {
+            "id": 3,
+            "term": "buses",
+            "options": [
+              "山峰",
+              "眼镜",
+              "苹果",
+              "公交车"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          },
+          {
+            "id": 4,
+            "term": "river",
+            "options": [
+              "公交车",
+              "山峰",
+              "河流",
+              "眼镜"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "quiz 2 scores question 3",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "word-vault-local",
+      "version": "1.0.0",
+      "message": "答对了。",
+      "is_correct": true,
+      "revision": 19,
+      "learner": "learner-1",
+      "words": [
+        {
+          "id": "w-7cc224fa8098",
+          "learner": "learner-1",
+          "term": "apple",
+          "lemma": "apple",
+          "meaning": "苹果",
+          "seen_count": 2,
+          "streak": 3,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.448Z",
+          "status": "mastered"
+        },
+        {
+          "id": "w-e4ffce875648",
+          "learner": "learner-1",
+          "term": "river",
+          "lemma": "river",
+          "meaning": "河流",
+          "seen_count": 1,
+          "streak": 2,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "learning"
+        },
+        {
+          "id": "w-89604ed6aed8",
+          "learner": "learner-1",
+          "term": "mountain",
+          "lemma": "mountain",
+          "meaning": "山峰",
+          "seen_count": 1,
+          "streak": 3,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "mastered"
+        },
+        {
+          "id": "w-c09876645037",
+          "learner": "learner-1",
+          "term": "glasses",
+          "lemma": "glasses",
+          "meaning": "眼镜",
+          "seen_count": 1,
+          "streak": 3,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "mastered"
+        },
+        {
+          "id": "w-537d3023a228",
+          "learner": "learner-1",
+          "term": "buses",
+          "lemma": "bus",
+          "meaning": "公交车",
+          "seen_count": 1,
+          "streak": 3,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "mastered"
+        }
+      ],
+      "summary": {
+        "total": 5,
+        "mastered": 4,
+        "wrong": 0
+      },
+      "quiz": {
+        "id": "quiz-676be41eb134",
+        "correct": 4,
+        "finished": false,
+        "questions": [
+          {
+            "id": 0,
+            "term": "glasses",
+            "options": [
+              "河流",
+              "苹果",
+              "公交车",
+              "眼镜"
+            ],
+            "chosen_index": 3,
+            "is_correct": true,
+            "correct_meaning": "眼镜"
+          },
+          {
+            "id": 1,
+            "term": "mountain",
+            "options": [
+              "苹果",
+              "山峰",
+              "公交车",
+              "眼镜"
+            ],
+            "chosen_index": 1,
+            "is_correct": true,
+            "correct_meaning": "山峰"
+          },
+          {
+            "id": 2,
+            "term": "apple",
+            "options": [
+              "公交车",
+              "苹果",
+              "眼镜",
+              "山峰"
+            ],
+            "chosen_index": 1,
+            "is_correct": true,
+            "correct_meaning": "苹果"
+          },
+          {
+            "id": 3,
+            "term": "buses",
+            "options": [
+              "山峰",
+              "眼镜",
+              "苹果",
+              "公交车"
+            ],
+            "chosen_index": 3,
+            "is_correct": true,
+            "correct_meaning": "公交车"
+          },
+          {
+            "id": 4,
+            "term": "river",
+            "options": [
+              "公交车",
+              "山峰",
+              "河流",
+              "眼镜"
+            ],
+            "chosen_index": null,
+            "is_correct": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "quiz 2 scores question 4",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "word-vault-local",
+      "version": "1.0.0",
+      "message": "答对了。",
+      "is_correct": true,
+      "revision": 20,
+      "learner": "learner-1",
+      "words": [
+        {
+          "id": "w-7cc224fa8098",
+          "learner": "learner-1",
+          "term": "apple",
+          "lemma": "apple",
+          "meaning": "苹果",
+          "seen_count": 2,
+          "streak": 3,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.448Z",
+          "status": "mastered"
+        },
+        {
+          "id": "w-e4ffce875648",
+          "learner": "learner-1",
+          "term": "river",
+          "lemma": "river",
+          "meaning": "河流",
+          "seen_count": 1,
+          "streak": 3,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "mastered"
+        },
+        {
+          "id": "w-89604ed6aed8",
+          "learner": "learner-1",
+          "term": "mountain",
+          "lemma": "mountain",
+          "meaning": "山峰",
+          "seen_count": 1,
+          "streak": 3,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "mastered"
+        },
+        {
+          "id": "w-c09876645037",
+          "learner": "learner-1",
+          "term": "glasses",
+          "lemma": "glasses",
+          "meaning": "眼镜",
+          "seen_count": 1,
+          "streak": 3,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "mastered"
+        },
+        {
+          "id": "w-537d3023a228",
+          "learner": "learner-1",
+          "term": "buses",
+          "lemma": "bus",
+          "meaning": "公交车",
+          "seen_count": 1,
+          "streak": 3,
+          "wrong_count": 0,
+          "updated_at": "2026-10-23T05:58:01.342Z",
+          "status": "mastered"
+        }
+      ],
+      "summary": {
+        "total": 5,
+        "mastered": 5,
+        "wrong": 0
+      },
+      "quiz": {
+        "id": "quiz-676be41eb134",
+        "correct": 5,
+        "finished": true,
+        "questions": [
+          {
+            "id": 0,
+            "term": "glasses",
+            "options": [
+              "河流",
+              "苹果",
+              "公交车",
+              "眼镜"
+            ],
+            "chosen_index": 3,
+            "is_correct": true,
+            "correct_meaning": "眼镜"
+          },
+          {
+            "id": 1,
+            "term": "mountain",
+            "options": [
+              "苹果",
+              "山峰",
+              "公交车",
+              "眼镜"
+            ],
+            "chosen_index": 1,
+            "is_correct": true,
+            "correct_meaning": "山峰"
+          },
+          {
+            "id": 2,
+            "term": "apple",
+            "options": [
+              "公交车",
+              "苹果",
+              "眼镜",
+              "山峰"
+            ],
+            "chosen_index": 1,
+            "is_correct": true,
+            "correct_meaning": "苹果"
+          },
+          {
+            "id": 3,
+            "term": "buses",
+            "options": [
+              "山峰",
+              "眼镜",
+              "苹果",
+              "公交车"
+            ],
+            "chosen_index": 3,
+            "is_correct": true,
+            "correct_meaning": "公交车"
+          },
+          {
+            "id": 4,
+            "term": "river",
+            "options": [
+              "公交车",
+              "山峰",
+              "河流",
+              "眼镜"
+            ],
+            "chosen_index": 2,
+            "is_correct": true,
+            "correct_meaning": "河流"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "three-consecutive mastery persisted",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "duplicate answer does not double score",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "client cannot self-award a correct answer",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "wrong-answer review selects wrong word",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "boolean revision rejected",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "unsafe learner rejected",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "invalid term rejected",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "learner export excludes other banks",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "real loopback UI starts",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "word-vault-local",
+      "version": "1.0.0",
+      "message": "中文交互工作台已就绪。链接仅供本机访问，请勿分享凭据；空闲 30 分钟自动关闭。"
+    }
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "Chinese UI shell and restrictive CSP",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "UI uses same authoritative SQLite revision",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "missing UI token denied",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "cross-origin mutation denied",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "UI cannot switch workspace",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "non-JSON CSRF request denied",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "not an arbitrary file server",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "reopening reuses current healthy version",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "UI shutdown preserves state",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "private SQLite permissions",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "word-vault-local",
+    "test": "native data persists across new Tool objects",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "story-workbench",
+    "test": "fresh native SDK invocation",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "story-workbench",
+      "version": "1.0.0",
+      "revision": 0,
+      "schema": 1,
+      "project_name": "",
+      "characters": [],
+      "chapters": [],
+      "annotations": [],
+      "history": []
+    }
+  },
+  {
+    "plugin": "story-workbench",
+    "test": "Chinese native help",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "story-workbench",
+    "test": "unknown operation rejected",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "story-workbench",
+    "test": "project created",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "story-workbench",
+      "version": "1.0.0",
+      "message": "项目已创建。",
+      "revision": 1,
+      "schema": 1,
+      "project_name": "城市边界",
+      "characters": [],
+      "chapters": [],
+      "annotations": [],
+      "history": []
+    }
+  },
+  {
+    "plugin": "story-workbench",
+    "test": "existing project never overwritten",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "story-workbench",
+    "test": "character saved",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "story-workbench",
+    "test": "Chinese chapter saved",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "story-workbench",
+      "version": "1.0.0",
+      "message": "章节已保存，旧版本保留在修订历史。",
+      "chapter_hash": "d20dd1aced13686cfcc84f55cd01fe821591e1a181467f7176ef717fceb4a41d",
+      "revision": 3,
+      "schema": 1,
+      "project_name": "城市边界",
+      "characters": [
+        {
+          "id": "hero",
+          "name": "林夏",
+          "role": "图书修复师",
+          "goal": "找回失踪的手稿",
+          "updated_at": "2026-10-23T05:58:03.331Z"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "第一章",
+          "content": "清晨，林夏推开旧书店。\n\n街道尽头亮起一盏灯。",
+          "hash": "d20dd1aced13686cfcc84f55cd01fe821591e1a181467f7176ef717fceb4a41d",
+          "updated_at": "2026-10-23T05:58:03.397Z",
+          "writing_units": 21,
+          "markers": []
+        }
+      ],
+      "annotations": [],
+      "history": []
+    }
+  },
+  {
+    "plugin": "story-workbench",
+    "test": "original marker core measures prose",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "story-workbench",
+    "test": "quote anchored",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "story-workbench",
+      "version": "1.0.0",
+      "message": "原文批注已保存。",
+      "annotation_id": "ann-41450c3c6dec",
+      "revision": 4,
+      "schema": 1,
+      "project_name": "城市边界",
+      "characters": [
+        {
+          "id": "hero",
+          "name": "林夏",
+          "role": "图书修复师",
+          "goal": "找回失踪的手稿",
+          "updated_at": "2026-10-23T05:58:03.331Z"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "第一章",
+          "content": "清晨，林夏推开旧书店。\n\n街道尽头亮起一盏灯。",
+          "hash": "d20dd1aced13686cfcc84f55cd01fe821591e1a181467f7176ef717fceb4a41d",
+          "updated_at": "2026-10-23T05:58:03.397Z",
+          "writing_units": 21,
+          "markers": []
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-41450c3c6dec",
+          "chapter_id": "chapter-1",
+          "source_revision": "d20dd1aced13686cfcc84f55cd01fe821591e1a181467f7176ef717fceb4a41d",
+          "quote": "旧书店",
+          "note": "补充空间细节",
+          "anchor": {
+            "state": "relocated",
+            "start": 7,
+            "end": 10
+          },
+          "status": "open",
+          "created_at": "2026-10-23T05:58:03.459Z"
+        }
+      ],
+      "history": []
+    }
+  },
+  {
+    "plugin": "story-workbench",
+    "test": "UTF16 quote relocated after prefix",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "story-workbench",
+      "version": "1.0.0",
+      "message": "章节已保存，旧版本保留在修订历史。",
+      "chapter_hash": "9d127d2448bb5842d3095d79a608132454c4842a5a595e8d055bf34ae6e5a150",
+      "revision": 5,
+      "schema": 1,
+      "project_name": "城市边界",
+      "characters": [
+        {
+          "id": "hero",
+          "name": "林夏",
+          "role": "图书修复师",
+          "goal": "找回失踪的手稿",
+          "updated_at": "2026-10-23T05:58:03.331Z"
+        }
+      ],
+      "chapters": [
+        {
+          "id": "chapter-1",
+          "title": "第一章",
+          "content": "序：🌙\n清晨，林夏推开旧书店。\n\n街道尽头亮起一盏灯。",
+          "hash": "9d127d2448bb5842d3095d79a608132454c4842a5a595e8d055bf34ae6e5a150",
+          "updated_at": "2026-10-23T05:58:03.520Z",
+          "writing_units": 25,
+          "markers": []
+        }
+      ],
+      "annotations": [
+        {
+          "id": "ann-41450c3c6dec",
+          "chapter_id": "chapter-1",
+          "source_revision": "d20dd1aced13686cfcc84f55cd01fe821591e1a181467f7176ef717fceb4a41d",
+          "quote": "旧书店",
+          "note": "补充空间细节",
+          "anchor": {
+            "state": "relocated",
+            "start": 12,
+            "end": 15
+          },
+          "status": "open",
+          "created_at": "2026-10-23T05:58:03.459Z"
+        }
+      ],
+      "history": [
+        {
+          "id": "chapter-1",
+          "title": "第一章",
+          "content": "清晨，林夏推开旧书店。\n\n街道尽头亮起一盏灯。",
+          "hash": "d20dd1aced13686cfcc84f55cd01fe821591e1a181467f7176ef717fceb4a41d",
+          "updated_at": "2026-10-23T05:58:03.397Z",
+          "saved_at": "2026-10-23T05:58:03.519Z"
+        }
+      ]
+    }
+  },
+  {
+    "plugin": "story-workbench",
+    "test": "prior revision immutable and hashed",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "story-workbench",
+    "test": "ambiguous quote detached honestly",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "story-workbench",
+    "test": "ambiguous new annotation rejected",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "story-workbench",
+    "test": "stale chapter hash rejected",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "story-workbench",
+    "test": "resolve preserves annotation",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "story-workbench",
+    "test": "stale character update rejected",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "story-workbench",
+    "test": "complete project history export",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "story-workbench",
+    "test": "real loopback UI starts",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "story-workbench",
+      "version": "1.0.0",
+      "message": "中文交互工作台已就绪。链接仅供本机访问，请勿分享凭据；空闲 30 分钟自动关闭。"
+    }
+  },
+  {
+    "plugin": "story-workbench",
+    "test": "Chinese UI shell and restrictive CSP",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "story-workbench",
+    "test": "UI uses same authoritative SQLite revision",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "story-workbench",
+    "test": "missing UI token denied",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "story-workbench",
+    "test": "cross-origin mutation denied",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "story-workbench",
+    "test": "UI cannot switch workspace",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "story-workbench",
+    "test": "non-JSON CSRF request denied",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "story-workbench",
+    "test": "not an arbitrary file server",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "story-workbench",
+    "test": "reopening reuses current healthy version",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "story-workbench",
+    "test": "UI shutdown preserves state",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "story-workbench",
+    "test": "private SQLite permissions",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "story-workbench",
+    "test": "native data persists across new Tool objects",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "fresh native SDK invocation",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "process-workbench",
+      "version": "1.0.0",
+      "revision": 0,
+      "schema": 1,
+      "template": null,
+      "runs": []
+    }
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "Chinese native help",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "unknown operation rejected",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "real template metadata validation",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "process-workbench",
+      "version": "1.0.0",
+      "valid": true,
+      "errors": [],
+      "meta": {
+        "name": "delivery",
+        "guid": "",
+        "display_name": "交付流程",
+        "description": "",
+        "category": "",
+        "complexity": "",
+        "version": "",
+        "phaseCount": 2,
+        "linkCount": 2
+      },
+      "steps": [
+        {
+          "id": "draft",
+          "name": "草案",
+          "prompt": "保存草案",
+          "on_success": "next",
+          "phase_id": "prep",
+          "phase_name": "准备"
+        },
+        {
+          "id": "verify",
+          "name": "验收",
+          "prompt": "核对结果",
+          "on_success": "end",
+          "phase_id": "check",
+          "phase_name": "检查"
+        }
+      ]
+    }
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "duplicate step id rejected",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "dangling transition rejected",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "template saved",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "process-workbench",
+      "version": "1.0.0",
+      "message": "模板已校验并保存；既有运行保留原快照。",
+      "revision": 1,
+      "schema": 1,
+      "template": {
+        "process": {
+          "name": "delivery",
+          "display_name": "交付流程"
+        },
+        "phases": [
+          {
+            "id": "prep",
+            "name": "准备",
+            "links": [
+              {
+                "id": "draft",
+                "name": "草案",
+                "prompt": "保存草案",
+                "on_success": "next"
+              }
+            ]
+          },
+          {
+            "id": "check",
+            "name": "检查",
+            "links": [
+              {
+                "id": "verify",
+                "name": "验收",
+                "prompt": "核对结果",
+                "on_success": "end"
+              }
+            ]
+          }
+        ]
+      },
+      "runs": []
+    }
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "run freezes template",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "process-workbench",
+      "version": "1.0.0",
+      "message": "运行已开始；需明确完成当前环节，不会自动执行外部操作。",
+      "revision": 2,
+      "schema": 1,
+      "template": {
+        "process": {
+          "name": "delivery",
+          "display_name": "交付流程"
+        },
+        "phases": [
+          {
+            "id": "prep",
+            "name": "准备",
+            "links": [
+              {
+                "id": "draft",
+                "name": "草案",
+                "prompt": "保存草案",
+                "on_success": "next"
+              }
+            ]
+          },
+          {
+            "id": "check",
+            "name": "检查",
+            "links": [
+              {
+                "id": "verify",
+                "name": "验收",
+                "prompt": "核对结果",
+                "on_success": "end"
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "id": "run-1",
+          "snapshot": {
+            "process": {
+              "name": "delivery",
+              "display_name": "交付流程"
+            },
+            "phases": [
+              {
+                "id": "prep",
+                "name": "准备",
+                "links": [
+                  {
+                    "id": "draft",
+                    "name": "草案",
+                    "prompt": "保存草案",
+                    "on_success": "next"
+                  }
+                ]
+              },
+              {
+                "id": "check",
+                "name": "检查",
+                "links": [
+                  {
+                    "id": "verify",
+                    "name": "验收",
+                    "prompt": "核对结果",
+                    "on_success": "end"
+                  }
+                ]
+              }
+            ]
+          },
+          "steps": [
+            {
+              "id": "draft",
+              "name": "草案",
+              "prompt": "保存草案",
+              "on_success": "next",
+              "phase_id": "prep",
+              "phase_name": "准备"
+            },
+            {
+              "id": "verify",
+              "name": "验收",
+              "prompt": "核对结果",
+              "on_success": "end",
+              "phase_id": "check",
+              "phase_name": "检查"
+            }
+          ],
+          "current": "draft",
+          "status": "running",
+          "trail": [],
+          "started_at": "2026-10-23T05:58:04.682Z",
+          "snapshot_hash": "948cecf61ad2886c115339efa0053d4a2c42de5dddc79a1db133ba6453255932"
+        }
+      ]
+    }
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "existing run unaffected by template edits",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "skipping rejected without advancement",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "missing proof rejected without advancement",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "traversal rejected without advancement",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "draft completion recorded",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "process-workbench",
+      "version": "1.0.0",
+      "message": "当前环节已记录，流转到下一环节。",
+      "run_status": "running",
+      "revision": 4,
+      "schema": 1,
+      "template": {
+        "process": {
+          "name": "delivery",
+          "display_name": "交付流程"
+        },
+        "phases": [
+          {
+            "id": "prep",
+            "name": "准备",
+            "links": [
+              {
+                "id": "draft",
+                "name": "草案",
+                "prompt": "new",
+                "on_success": "next"
+              }
+            ]
+          },
+          {
+            "id": "check",
+            "name": "检查",
+            "links": [
+              {
+                "id": "verify",
+                "name": "验收",
+                "prompt": "核对结果",
+                "on_success": "end"
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "id": "run-1",
+          "snapshot": {
+            "process": {
+              "name": "delivery",
+              "display_name": "交付流程"
+            },
+            "phases": [
+              {
+                "id": "prep",
+                "name": "准备",
+                "links": [
+                  {
+                    "id": "draft",
+                    "name": "草案",
+                    "prompt": "保存草案",
+                    "on_success": "next"
+                  }
+                ]
+              },
+              {
+                "id": "check",
+                "name": "检查",
+                "links": [
+                  {
+                    "id": "verify",
+                    "name": "验收",
+                    "prompt": "核对结果",
+                    "on_success": "end"
+                  }
+                ]
+              }
+            ]
+          },
+          "steps": [
+            {
+              "id": "draft",
+              "name": "草案",
+              "prompt": "保存草案",
+              "on_success": "next",
+              "phase_id": "prep",
+              "phase_name": "准备"
+            },
+            {
+              "id": "verify",
+              "name": "验收",
+              "prompt": "核对结果",
+              "on_success": "end",
+              "phase_id": "check",
+              "phase_name": "检查"
+            }
+          ],
+          "current": "verify",
+          "status": "running",
+          "trail": [
+            {
+              "step_id": "draft",
+              "note": "已完成实际核对",
+              "evidence": [
+                {
+                  "path": "proof.txt",
+                  "bytes": 22,
+                  "sha256": "9c7a6eb5e85542993d44e81ce593c7b8523ba96fa7399314ad678a427218c894"
+                }
+              ],
+              "completed_at": "2026-10-23T05:58:04.963Z"
+            }
+          ],
+          "started_at": "2026-10-23T05:58:04.682Z",
+          "snapshot_hash": "948cecf61ad2886c115339efa0053d4a2c42de5dddc79a1db133ba6453255932"
+        }
+      ]
+    }
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "verify completion recorded",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "process-workbench",
+      "version": "1.0.0",
+      "message": "所有已走到的环节完成，文件证据已记录。",
+      "run_status": "done",
+      "revision": 5,
+      "schema": 1,
+      "template": {
+        "process": {
+          "name": "delivery",
+          "display_name": "交付流程"
+        },
+        "phases": [
+          {
+            "id": "prep",
+            "name": "准备",
+            "links": [
+              {
+                "id": "draft",
+                "name": "草案",
+                "prompt": "new",
+                "on_success": "next"
+              }
+            ]
+          },
+          {
+            "id": "check",
+            "name": "检查",
+            "links": [
+              {
+                "id": "verify",
+                "name": "验收",
+                "prompt": "核对结果",
+                "on_success": "end"
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "id": "run-1",
+          "snapshot": {
+            "process": {
+              "name": "delivery",
+              "display_name": "交付流程"
+            },
+            "phases": [
+              {
+                "id": "prep",
+                "name": "准备",
+                "links": [
+                  {
+                    "id": "draft",
+                    "name": "草案",
+                    "prompt": "保存草案",
+                    "on_success": "next"
+                  }
+                ]
+              },
+              {
+                "id": "check",
+                "name": "检查",
+                "links": [
+                  {
+                    "id": "verify",
+                    "name": "验收",
+                    "prompt": "核对结果",
+                    "on_success": "end"
+                  }
+                ]
+              }
+            ]
+          },
+          "steps": [
+            {
+              "id": "draft",
+              "name": "草案",
+              "prompt": "保存草案",
+              "on_success": "next",
+              "phase_id": "prep",
+              "phase_name": "准备"
+            },
+            {
+              "id": "verify",
+              "name": "验收",
+              "prompt": "核对结果",
+              "on_success": "end",
+              "phase_id": "check",
+              "phase_name": "检查"
+            }
+          ],
+          "current": null,
+          "status": "done",
+          "trail": [
+            {
+              "step_id": "draft",
+              "note": "已完成实际核对",
+              "evidence": [
+                {
+                  "path": "proof.txt",
+                  "bytes": 22,
+                  "sha256": "9c7a6eb5e85542993d44e81ce593c7b8523ba96fa7399314ad678a427218c894"
+                }
+              ],
+              "completed_at": "2026-10-23T05:58:04.963Z"
+            },
+            {
+              "step_id": "verify",
+              "note": "已完成实际核对",
+              "evidence": [
+                {
+                  "path": "proof.txt",
+                  "bytes": 22,
+                  "sha256": "9c7a6eb5e85542993d44e81ce593c7b8523ba96fa7399314ad678a427218c894"
+                }
+              ],
+              "completed_at": "2026-10-23T05:58:04.999Z"
+            }
+          ],
+          "started_at": "2026-10-23T05:58:04.682Z",
+          "snapshot_hash": "948cecf61ad2886c115339efa0053d4a2c42de5dddc79a1db133ba6453255932"
+        }
+      ]
+    }
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "run completes with real evidence hash",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "finished run cannot double-complete",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "break pauses instead of pretending done",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "explicit resume works",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "full run export",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "real loopback UI starts",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "process-workbench",
+      "version": "1.0.0",
+      "message": "中文交互工作台已就绪。链接仅供本机访问，请勿分享凭据；空闲 30 分钟自动关闭。"
+    }
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "Chinese UI shell and restrictive CSP",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "UI uses same authoritative SQLite revision",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "missing UI token denied",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "cross-origin mutation denied",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "UI cannot switch workspace",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "non-JSON CSRF request denied",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "not an arbitrary file server",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "reopening reuses current healthy version",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "UI shutdown preserves state",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "private SQLite permissions",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "process-workbench",
+    "test": "native data persists across new Tool objects",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "environment-inspector",
+    "test": "fresh native SDK invocation",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "environment-inspector",
+      "version": "1.0.0",
+      "revision": 0,
+      "snapshots": []
+    }
+  },
+  {
+    "plugin": "environment-inspector",
+    "test": "Chinese native help",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "environment-inspector",
+    "test": "unknown operation rejected",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "environment-inspector",
+    "test": "real local environment probe",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "environment-inspector",
+      "version": "1.0.0",
+      "message": "已完成本次只读观测；不可用项保持明确标记。",
+      "revision": 1,
+      "snapshot": {
+        "observed_at": "2026-10-23T05:58:05.831Z",
+        "platform": "darwin",
+        "architecture": "arm64",
+        "release": "25.6.0",
+        "cpu_count": 10,
+        "memory_total_gib": 24,
+        "tools": [
+          {
+            "name": "Node.js",
+            "status": "available",
+            "version": "v22.11.0",
+            "note": ""
+          },
+          {
+            "name": "Python",
+            "status": "available",
+            "version": "Python 3.9.6",
+            "note": ""
+          },
+          {
+            "name": "Git",
+            "status": "available",
+            "version": "git version 2.50.1 (Apple Git-155)",
+            "note": ""
+          },
+          {
+            "name": "编译器",
+            "status": "available",
+            "version": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+            "note": ""
+          }
+        ],
+        "ports": [
+          {
+            "port": 5173,
+            "command": "workswarm",
+            "pid": 77767,
+            "bind": "loopback",
+            "category": "dev"
+          },
+          {
+            "port": 6173,
+            "command": "node",
+            "pid": 49914,
+            "bind": "loopback",
+            "category": "dev"
+          },
+          {
+            "port": 14013,
+            "command": "WeChat",
+            "pid": 12788,
+            "bind": "loopback",
+            "category": "service"
+          },
+          {
+            "port": 14016,
+            "command": "WeChat",
+            "pid": 12788,
+            "bind": "loopback",
+            "category": "service"
+          },
+          {
+            "port": 14019,
+            "command": "WeChat",
+            "pid": 12788,
+            "bind": "loopback",
+            "category": "service"
+          },
+          {
+            "port": 14022,
+            "command": "WeChat",
+            "pid": 12788,
+            "bind": "loopback",
+            "category": "service"
+          },
+          {
+            "port": 14023,
+            "command": "WeChat",
+            "pid": 12788,
+            "bind": "loopback",
+            "category": "service"
+          },
+          {
+            "port": 18092,
+            "command": "workswarm",
+            "pid": 77773,
+            "bind": "loopback",
+            "category": "service"
+          },
+          {
+            "port": 19000,
+            "command": "workswarm",
+            "pid": 77774,
+            "bind": "loopback",
+            "category": "service"
+          },
+          {
+            "port": 19001,
+            "command": "workswarm",
+            "pid": 77774,
+            "bind": "loopback",
+            "category": "service"
+          },
+          {
+            "port": 19092,
+            "command": "python3.1",
+            "pid": 49916,
+            "bind": "loopback",
+            "category": "service"
+          },
+          {
+            "port": 20000,
+            "command": "python3.1",
+            "pid": 49917,
+            "bind": "loopback",
+            "category": "service"
+          },
+          {
+            "port": 20001,
+            "command": "python3.1",
+            "pid": 49917,
+            "bind": "loopback",
+            "category": "service"
+          },
+          {
+            "port": 38615,
+            "command": "Code\\x20H",
+            "pid": 64167,
+            "bind": "loopback",
+            "category": "service"
+          },
+          {
+            "port": 42050,
+            "command": "OneDrive",
+            "pid": 55655,
+            "bind": "loopback",
+            "category": "service"
+          },
+          {
+            "port": 56736,
+            "command": "rapportd",
+            "pid": 1147,
+            "bind": "all-interfaces",
+            "category": "ephemeral"
+          },
+          {
+            "port": 56766,
+            "command": "Code\\x20H",
+            "pid": 64166,
+            "bind": "loopback",
+            "category": "ephemeral"
+          }
+        ],
+        "port_status": "observed",
+        "port_note": "lsof 权限范围内的 TCP 监听事实；每端口保留一条代表记录，不是完整进程清单。扫描瞬间以后可能变化。",
+        "limits": "只读本机事实，未评估系统安全性；未读取密钥、配置文件、用户名、设备名称或网卡地址；不结束任何进程。仅验证当前 macOS；其他平台须另测。",
+        "id": "snap-1"
+      },
+      "snapshots": [
+        {
+          "observed_at": "2026-10-23T05:58:05.831Z",
+          "platform": "darwin",
+          "architecture": "arm64",
+          "release": "25.6.0",
+          "cpu_count": 10,
+          "memory_total_gib": 24,
+          "tools": [
+            {
+              "name": "Node.js",
+              "status": "available",
+              "version": "v22.11.0",
+              "note": ""
+            },
+            {
+              "name": "Python",
+              "status": "available",
+              "version": "Python 3.9.6",
+              "note": ""
+            },
+            {
+              "name": "Git",
+              "status": "available",
+              "version": "git version 2.50.1 (Apple Git-155)",
+              "note": ""
+            },
+            {
+              "name": "编译器",
+              "status": "available",
+              "version": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+              "note": ""
+            }
+          ],
+          "ports": [
+            {
+              "port": 5173,
+              "command": "workswarm",
+              "pid": 77767,
+              "bind": "loopback",
+              "category": "dev"
+            },
+            {
+              "port": 6173,
+              "command": "node",
+              "pid": 49914,
+              "bind": "loopback",
+              "category": "dev"
+            },
+            {
+              "port": 14013,
+              "command": "WeChat",
+              "pid": 12788,
+              "bind": "loopback",
+              "category": "service"
+            },
+            {
+              "port": 14016,
+              "command": "WeChat",
+              "pid": 12788,
+              "bind": "loopback",
+              "category": "service"
+            },
+            {
+              "port": 14019,
+              "command": "WeChat",
+              "pid": 12788,
+              "bind": "loopback",
+              "category": "service"
+            },
+            {
+              "port": 14022,
+              "command": "WeChat",
+              "pid": 12788,
+              "bind": "loopback",
+              "category": "service"
+            },
+            {
+              "port": 14023,
+              "command": "WeChat",
+              "pid": 12788,
+              "bind": "loopback",
+              "category": "service"
+            },
+            {
+              "port": 18092,
+              "command": "workswarm",
+              "pid": 77773,
+              "bind": "loopback",
+              "category": "service"
+            },
+            {
+              "port": 19000,
+              "command": "workswarm",
+              "pid": 77774,
+              "bind": "loopback",
+              "category": "service"
+            },
+            {
+              "port": 19001,
+              "command": "workswarm",
+              "pid": 77774,
+              "bind": "loopback",
+              "category": "service"
+            },
+            {
+              "port": 19092,
+              "command": "python3.1",
+              "pid": 49916,
+              "bind": "loopback",
+              "category": "service"
+            },
+            {
+              "port": 20000,
+              "command": "python3.1",
+              "pid": 49917,
+              "bind": "loopback",
+              "category": "service"
+            },
+            {
+              "port": 20001,
+              "command": "python3.1",
+              "pid": 49917,
+              "bind": "loopback",
+              "category": "service"
+            },
+            {
+              "port": 38615,
+              "command": "Code\\x20H",
+              "pid": 64167,
+              "bind": "loopback",
+              "category": "service"
+            },
+            {
+              "port": 42050,
+              "command": "OneDrive",
+              "pid": 55655,
+              "bind": "loopback",
+              "category": "service"
+            },
+            {
+              "port": 56736,
+              "command": "rapportd",
+              "pid": 1147,
+              "bind": "all-interfaces",
+              "category": "ephemeral"
+            },
+            {
+              "port": 56766,
+              "command": "Code\\x20H",
+              "pid": 64166,
+              "bind": "loopback",
+              "category": "ephemeral"
+            }
+          ],
+          "port_status": "observed",
+          "port_note": "lsof 权限范围内的 TCP 监听事实；每端口保留一条代表记录，不是完整进程清单。扫描瞬间以后可能变化。",
+          "limits": "只读本机事实，未评估系统安全性；未读取密钥、配置文件、用户名、设备名称或网卡地址；不结束任何进程。仅验证当前 macOS；其他平台须另测。",
+          "id": "snap-1"
+        }
+      ]
+    }
+  },
+  {
+    "plugin": "environment-inspector",
+    "test": "actual Node version observed",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "environment-inspector",
+    "test": "port failure not represented as no service",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "environment-inspector",
+    "test": "identity and key fields absent",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "environment-inspector",
+    "test": "stale probe cannot overwrite snapshot",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "environment-inspector",
+    "test": "second observation retained",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "environment-inspector",
+    "test": "actual snapshots compared",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "environment-inspector",
+    "test": "unknown snapshot rejected",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "environment-inspector",
+    "test": "same snapshot comparison rejected",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "environment-inspector",
+    "test": "snapshot export preserves two observations",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "environment-inspector",
+    "test": "upstream lsof parser real fixture",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "environment-inspector",
+    "test": "real loopback UI starts",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "environment-inspector",
+      "version": "1.0.0",
+      "message": "中文交互工作台已就绪。链接仅供本机访问，请勿分享凭据；空闲 30 分钟自动关闭。"
+    }
+  },
+  {
+    "plugin": "environment-inspector",
+    "test": "Chinese UI shell and restrictive CSP",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "environment-inspector",
+    "test": "UI uses same authoritative SQLite revision",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "environment-inspector",
+    "test": "missing UI token denied",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "environment-inspector",
+    "test": "cross-origin mutation denied",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "environment-inspector",
+    "test": "UI cannot switch workspace",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "environment-inspector",
+    "test": "non-JSON CSRF request denied",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "environment-inspector",
+    "test": "not an arbitrary file server",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "environment-inspector",
+    "test": "reopening reuses current healthy version",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "environment-inspector",
+    "test": "UI shutdown preserves state",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "environment-inspector",
+    "test": "private SQLite permissions",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "environment-inspector",
+    "test": "native data persists across new Tool objects",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "git-branch-atlas",
+    "test": "fresh native SDK invocation",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "git-branch-atlas",
+      "version": "1.0.0",
+      "revision": 0,
+      "state": {
+        "schema": 1,
+        "snapshot": null
+      },
+      "message": "只读分支拓扑快照；没有 checkout、fetch、blame 或提交操作。"
+    }
+  },
+  {
+    "plugin": "git-branch-atlas",
+    "test": "Chinese native help",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "git-branch-atlas",
+    "test": "unknown operation rejected",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "git-branch-atlas",
+    "test": "real branched/merged repository scan",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "git-branch-atlas",
+      "version": "1.0.0",
+      "revision": 1,
+      "snapshot": {
+        "observed_at": "2026-10-23T05:58:07.089Z",
+        "repo": "repo",
+        "head_oid": "35d381e30695edde85378783ec169b18ad215743",
+        "commits": [
+          {
+            "oid": "35d381e30695edde85378783ec169b18ad215743",
+            "parents": [
+              "620d5e25856867e2e98e503087b6d3927cb828af",
+              "40c66d1a3cfddca3c279c0415ca2b8e586f7fb6e"
+            ],
+            "subject": "合并功能分支",
+            "author": "Plugin Test",
+            "authorTime": 1792735086,
+            "refs": [
+              "main"
+            ]
+          },
+          {
+            "oid": "40c66d1a3cfddca3c279c0415ca2b8e586f7fb6e",
+            "parents": [
+              "bb9ee92892b29ad4937f0cf9db8d495f05002bf6"
+            ],
+            "subject": "功能分支提交",
+            "author": "Plugin Test",
+            "authorTime": 1792735086,
+            "refs": [
+              "feature"
+            ]
+          },
+          {
+            "oid": "620d5e25856867e2e98e503087b6d3927cb828af",
+            "parents": [
+              "bb9ee92892b29ad4937f0cf9db8d495f05002bf6"
+            ],
+            "subject": "主线提交",
+            "author": "Plugin Test",
+            "authorTime": 1792735086,
+            "refs": []
+          },
+          {
+            "oid": "bb9ee92892b29ad4937f0cf9db8d495f05002bf6",
+            "parents": [],
+            "subject": "初始提交",
+            "author": "Plugin Test",
+            "authorTime": 1792735086,
+            "refs": []
+          }
+        ],
+        "lanes": [
+          {
+            "columns": [
+              "merge"
+            ],
+            "nodeColumn": 0,
+            "merge": true
+          },
+          {
+            "columns": [
+              "pass",
+              "node"
+            ],
+            "nodeColumn": 1,
+            "merge": false
+          },
+          {
+            "columns": [
+              "node",
+              "pass"
+            ],
+            "nodeColumn": 0,
+            "merge": false
+          },
+          {
+            "columns": [
+              "node",
+              "gap"
+            ],
+            "nodeColumn": 0,
+            "merge": false
+          }
+        ],
+        "branches": [
+          {
+            "name": "feature",
+            "current": false
+          },
+          {
+            "name": "main",
+            "current": true
+          }
+        ],
+        "worktrees": [
+          {
+            "path": "/private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/interactive-five-ko_kzo06/git-branch-atlas/repo",
+            "head": "35d381e30695edde85378783ec169b18ad215743",
+            "branch": "main",
+            "main": true
+          }
+        ],
+        "has_more": false,
+        "limit": 80,
+        "note": "拓扑顺序与边界外父提交保留；图形泳道为辅助视图，完整 parent OID 才是证据。只读，不拉取远端或改变工作树。"
+      },
+      "message": "分支拓扑已读取。"
+    }
+  },
+  {
+    "plugin": "git-branch-atlas",
+    "test": "merge parents and lane core preserved",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "git-branch-atlas",
+    "test": "two branch refs parsed",
+    "passed": true,
+    "detail": [
+      {
+        "name": "feature",
+        "current": false
+      },
+      {
+        "name": "main",
+        "current": true
+      }
+    ]
+  },
+  {
+    "plugin": "git-branch-atlas",
+    "test": "ahead/behind real divergence",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "git-branch-atlas",
+      "version": "1.0.0",
+      "base_oid": "40c66d1a3cfddca3c279c0415ca2b8e586f7fb6e",
+      "head_oid": "35d381e30695edde85378783ec169b18ad215743",
+      "base_only": 0,
+      "head_only": 2,
+      "merge_bases": [
+        "40c66d1a3cfddca3c279c0415ca2b8e586f7fb6e"
+      ],
+      "related": true,
+      "message": "比较的是已存在的本地提交，不包含远端未拉取的更新。"
+    }
+  },
+  {
+    "plugin": "git-branch-atlas",
+    "test": "bounded graph retains truncation signal",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "git-branch-atlas",
+    "test": "traversal rejected",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "git-branch-atlas",
+    "test": "option ref rejected",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "git-branch-atlas",
+    "test": "unresolvable ref rejected",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "git-branch-atlas",
+    "test": "repository tracked state and index immutable",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "git-branch-atlas",
+    "test": "graph export retains authoritative parent OIDs",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "git-branch-atlas",
+    "test": "unborn repository reported honestly",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "git-branch-atlas",
+      "version": "1.0.0",
+      "revision": 3,
+      "snapshot": {
+        "observed_at": "2026-10-23T05:58:07.684Z",
+        "repo": "empty",
+        "head_oid": null,
+        "commits": [],
+        "lanes": [],
+        "branches": [],
+        "worktrees": [
+          {
+            "path": "/private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/interactive-five-ko_kzo06/git-branch-atlas/empty",
+            "head": "0000000000000000000000000000000000000000",
+            "branch": "main",
+            "main": true
+          }
+        ],
+        "has_more": false,
+        "limit": 80,
+        "note": "拓扑顺序与边界外父提交保留；图形泳道为辅助视图，完整 parent OID 才是证据。只读，不拉取远端或改变工作树。"
+      },
+      "message": "分支拓扑已读取。"
+    }
+  },
+  {
+    "plugin": "git-branch-atlas",
+    "test": "real loopback UI starts",
+    "passed": true,
+    "detail": {
+      "ok": true,
+      "plugin": "git-branch-atlas",
+      "version": "1.0.0",
+      "message": "中文交互工作台已就绪。链接仅供本机访问，请勿分享凭据；空闲 30 分钟自动关闭。"
+    }
+  },
+  {
+    "plugin": "git-branch-atlas",
+    "test": "Chinese UI shell and restrictive CSP",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "git-branch-atlas",
+    "test": "UI uses same authoritative SQLite revision",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "git-branch-atlas",
+    "test": "missing UI token denied",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "git-branch-atlas",
+    "test": "cross-origin mutation denied",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "git-branch-atlas",
+    "test": "UI cannot switch workspace",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "git-branch-atlas",
+    "test": "non-JSON CSRF request denied",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "git-branch-atlas",
+    "test": "not an arbitrary file server",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "git-branch-atlas",
+    "test": "reopening reuses current healthy version",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "git-branch-atlas",
+    "test": "UI shutdown preserves state",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "git-branch-atlas",
+    "test": "private SQLite permissions",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "plugin": "git-branch-atlas",
+    "test": "native data persists across new Tool objects",
+    "passed": true,
+    "detail": null
+  }
+]

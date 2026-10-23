@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:environment-inspector",
+  "type": "agent-plugin",
+  "name": "environment-inspector",
+  "version": "1.0.0",
+  "zip": "environment-inspector-1.0.0.zip",
+  "sha256": "2202ce83a7fc1a13174b5b1d635f71e60864a816c1a36a62e939de058f440557",
+  "payload_sha256": {
+    "README.md": "7cb0436dfdc9d1bdf50210ae1447c5dff9705533a04510dad68b14dfb3fa4788",
+    "THIRD_PARTY_NOTICES.md": "c56b3b194fa04b7492e84ccf68e328489e28e4a769d52e2f3e77c46c24bea8a1",
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "licenses/upstream/LICENSE": "9d319c367eb6246b2755a2ce8f34ad926d9749e619ba28b20d3f0a1d3987fc56",
+    "manifest.json": "0dbd28c360e25be53e5c912c8d5a897fb49dcf3a4b5ab46d35f6fabd60587aba",
+    "runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime/cli.mjs": "6d03df6a71144fc688c6a968db100dc1df908634a05a51626e87089a1bfd8856",
+    "runtime/common.mjs": "02e236d9847c17213f562aa66eb142a3839c83a66f7686318c86c3760f23ae88",
+    "runtime/config.mjs": "dfb59d2a311b38dc9dbe9142a0598726faf0985392d83f2f442e0b3d3a5d6124",
+    "runtime/engine.mjs": "796be2f7c9daaf230eec2d3d4f6f29b79c641e2fd839c7f99f5a05429a395ec0",
+    "runtime/server.mjs": "c4729275b094496263b6eee763b0dfe864b8a776747fb7ca781648f77ccd2340",
+    "skills/environment-inspector/SKILL.md": "513e5676a1ed680a0ec3a2c4c24b6e12f3461ccc6f6071a7656da447bce86bc1",
+    "tools/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tools/plugin_tool.py": "3f5d7c8a4533070df4dac2812b5db6102329e8da6fe9afff75d6262593e6fba0",
+    "ui/app.js": "363b761704ed87453675713a722e4e87cca0737df758c3ab61a12ce83ea4dca0",
+    "ui/index.html": "24ed09841248957d101a4f43c9b2948b1ea1e1d7f086ae7c720c698474666c40",
+    "ui/style.css": "e46b66c607568cd3eabab0d906c2115cbf4e300023c693471c2e9f6d88e2e05d",
+    "vendor/ports.mjs": "9ce2df7b73111cfe90b8f679d3c3c9b468b6b3fef74f15df5779a79151deb5f8"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "c29368d3f6d286e7fe57980d2e840b34b14abd98386e30485462ac570f2c9448",
+  "functional_test_report_sha256": "5fb4b609e26fa973a9911f21a5a33b48394726dd07ca86a10f797bdd5c992789"
+}

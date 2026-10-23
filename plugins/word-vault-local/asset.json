@@ -1,0 +1,20 @@
+{
+  "type": "agent-plugin",
+  "name": "word-vault-local",
+  "version": "1.0.0",
+  "display_name": "词汇练习室",
+  "description": "按学习者保存英文词条、出现次数与连对掌握状态；在中文交互界面完成四选一、错词复习和导出，无需额外账号。",
+  "publisher": "Song Haoran",
+  "category": "办公与生产力",
+  "tags": [
+    "词汇练习室",
+    "中文交互",
+    "本地数据"
+  ],
+  "functional_tags": [
+    "word-vault-local"
+  ],
+  "scope": "按学习者分开保存词条、出现次数与连续答对次数，提供真实计分的四选一和错词复习。释义由用户或当前会话提供，不包含拍照识词、借用的记忆卡设计、第三方词表、自动查词或语音服务。",
+  "candidate_id": "CAND-DSH-154",
+  "task_id": "AH-20261023-word-vault-local"
+}

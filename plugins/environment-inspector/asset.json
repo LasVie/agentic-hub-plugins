@@ -1,0 +1,20 @@
+{
+  "type": "agent-plugin",
+  "name": "environment-inspector",
+  "version": "1.0.0",
+  "display_name": "本机环境探针",
+  "description": "主动观测本机系统、标准位置工具链和 TCP 监听端口，保存与比较快照，提供中文筛选界面；不结束进程、不读取密钥。",
+  "publisher": "Song Haoran",
+  "category": "软件开发",
+  "tags": [
+    "本机环境探针",
+    "中文交互",
+    "本地数据"
+  ],
+  "functional_tags": [
+    "environment-inspector"
+  ],
+  "scope": "只读观测本机操作系统、标准位置工具版本与TCP监听端口，明确区分可用、未观测与失败，保存及比较快照。不会结束进程、修改系统、读取密钥或配置文件。仅当前macOS已验证，Linux与Windows不作已测试保证。",
+  "candidate_id": "CAND-DSH-155",
+  "task_id": "AH-20261023-environment-inspector"
+}

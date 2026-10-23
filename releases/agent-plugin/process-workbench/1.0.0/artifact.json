@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:process-workbench",
+  "type": "agent-plugin",
+  "name": "process-workbench",
+  "version": "1.0.0",
+  "zip": "process-workbench-1.0.0.zip",
+  "sha256": "a5a9d8bac54603f0d891aadbde350f9dbd7a5cc050f8b3aa1513d967c9765c43",
+  "payload_sha256": {
+    "README.md": "560f881f81a95cf39f065271e46f77a436a3a2ca9238637f82aae8c7c03b2aaf",
+    "THIRD_PARTY_NOTICES.md": "758e7dae1409b7d00cb97d089ad922654681db00c67b5df9bb43635bdfbf0edb",
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "licenses/upstream/LICENSE": "8f466caa0d7f2244d1ac0d4ec523692c9c8e5f509fcdd89b974b82988c736807",
+    "manifest.json": "cd468418d3f402d8849ba984ac961767b680ccc5ae2b9f288e31499512efe2e7",
+    "runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime/cli.mjs": "6d03df6a71144fc688c6a968db100dc1df908634a05a51626e87089a1bfd8856",
+    "runtime/common.mjs": "02e236d9847c17213f562aa66eb142a3839c83a66f7686318c86c3760f23ae88",
+    "runtime/config.mjs": "793e06eb8c082b9952add365a88c7bdc3a10189fa205ea9e625ee5ea6ca21e96",
+    "runtime/engine.mjs": "94e395b535c79fd95953a563a0b2b08fa095fb82c069909c7110c321ff1107eb",
+    "runtime/server.mjs": "c4729275b094496263b6eee763b0dfe864b8a776747fb7ca781648f77ccd2340",
+    "skills/process-workbench/SKILL.md": "371e21003e8a15c3ee1249908ab83be8c295552db10a85cfe3947e9e224d094f",
+    "tools/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tools/plugin_tool.py": "9765809844bde4f90c670d0736aea3702327701dc275b7eecc4244d7ee991ef1",
+    "ui/app.js": "e53dfee950b72eecf9e8f7a37fae3a90587f1300d9f2bba600133fd48276018c",
+    "ui/index.html": "a79c01af130b526e8b7ba154be5331e7c85fdc81fc12d32beeea45f4d0966ea8",
+    "ui/style.css": "e46b66c607568cd3eabab0d906c2115cbf4e300023c693471c2e9f6d88e2e05d",
+    "vendor/process-core.mjs": "4aa8c681737e8835865a1d0e35b82f4379bc0a12ffc6267a0fab983ab2ac3087"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "178714a166139ab59c69a38095121d882ce2bceaf24f843536644b5ec5f8a89c",
+  "functional_test_report_sha256": "3d0fe8512cee9a99b77500fcc44823722f3b7b3f5777a3821d86d928f4552127"
+}

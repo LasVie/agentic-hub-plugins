@@ -1,0 +1,22 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "webkubor/dsh-env-inspector",
+      "revision": "1dfe519cd7515b6f806302c50e75b0635402dcc2",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/upstream/LICENSE",
+          "sha256": "9d319c367eb6246b2755a2ce8f34ad926d9749e619ba28b20d3f0a1d3987fc56"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "vendor/ports.mjs",
+    "runtime/engine.mjs"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

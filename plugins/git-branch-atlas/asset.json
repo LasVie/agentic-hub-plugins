@@ -1,0 +1,20 @@
+{
+  "type": "agent-plugin",
+  "name": "git-branch-atlas",
+  "version": "1.0.0",
+  "display_name": "Git 分支全景",
+  "description": "只读本地 Git 分支拓扑、父提交与关联工作树，比较两个引用的独有提交和共同祖先，提供可搜索、可点选的中文图谱。",
+  "publisher": "Song Haoran",
+  "category": "软件开发",
+  "tags": [
+    "Git 分支全景",
+    "中文交互",
+    "本地数据"
+  ],
+  "functional_tags": [
+    "git-branch-atlas"
+  ],
+  "scope": "只读显示本地分支拓扑、提交父节点、泳道和关联工作树，比较已有提交的独有数量与共同祖先。伴随既有文件历史工具使用；不重复blame，不切换、拉取、提交或删除分支。",
+  "candidate_id": "CAND-DSH-033",
+  "task_id": "AH-20261023-git-branch-atlas"
+}

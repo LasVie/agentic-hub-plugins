@@ -1,0 +1,23 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "LiPu-jpg/Openwrite/tree/34b038f7c0c037f4f6ee238f6476db34f584e6b0/packages/studio-panel",
+      "revision": "34b038f7c0c037f4f6ee238f6476db34f584e6b0",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/upstream/LICENSE",
+          "sha256": "e38aeb00e87dccbb024038215ef856d4211dbc7ce1a279646302872ebc1415f1"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "vendor/manuscript-selection.ts",
+    "vendor/manuscript-markers.ts",
+    "runtime/engine.mjs"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

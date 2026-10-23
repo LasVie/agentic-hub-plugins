@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-23",
+  "repository_unit": {
+    "command": "PATH=<WorkSwarm Node 22 bin>:$PATH python -B -m unittest discover -s tests -v",
+    "total": 183,
+    "passed": 182,
+    "skipped": 1,
+    "skip_reason": "Optional historical prosody baseline comparison requires PROSODY_BASELINE_ZIP",
+    "exit_code": 0
+  },
+  "contract": {
+    "command": "python -B tools/asset_release.py check-repo",
+    "result": {
+      "source_assets": 27,
+      "release_zips": 35,
+      "note": "Structural checks only; functional tests and human screenshots are separate."
+    },
+    "exit_code": 0
+  },
+  "mcp_integration": {
+    "command": "python -B tests/run_mcp_server_dev_integration.py",
+    "node": "22.11.0",
+    "actual_initialize_tools_invalid_inputs_recovery_text_fallback_mcpb_relocation": "passed",
+    "exit_code": 0
+  },
+  "targeted_checks": {
+    "source": 162,
+    "extracted_final_native_zip": 162,
+    "skips": 0
+  },
+  "native_desktop_results": 47,
+  "original_png_screenshots": 17,
+  "installed_runtime_hash_matches": 92
+}

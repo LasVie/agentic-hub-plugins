@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:story-workbench",
+  "type": "agent-plugin",
+  "name": "story-workbench",
+  "version": "1.0.0",
+  "zip": "story-workbench-1.0.0.zip",
+  "sha256": "6bcf455c2b2cfedc8a7a97cee4d8524bc51afea1755b1a9262544dd8f08c7efc",
+  "payload_sha256": {
+    "README.md": "7fc48c6437716fc1ea236281a377e7917b4020ae46ec66ea667648fc4ec2cb25",
+    "THIRD_PARTY_NOTICES.md": "36e089d891504c120541b6db6dbc74034629d84b902cf33c1a7e87f049f30254",
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "licenses/upstream/LICENSE": "e38aeb00e87dccbb024038215ef856d4211dbc7ce1a279646302872ebc1415f1",
+    "manifest.json": "f02c3a82dacefc5dfbb7b469bf61cb6bfabd891cc1e305f1488e106e53c70cc3",
+    "runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime/cli.mjs": "6d03df6a71144fc688c6a968db100dc1df908634a05a51626e87089a1bfd8856",
+    "runtime/common.mjs": "02e236d9847c17213f562aa66eb142a3839c83a66f7686318c86c3760f23ae88",
+    "runtime/config.mjs": "10a907ff4140679c82188c80a639540d79cae62ffa3f2d2782e72841fc7fb577",
+    "runtime/engine.mjs": "ae066f4bccc40a67f3af3643a81a5237343e064053a63ae4fdf5893b5bcd54aa",
+    "runtime/server.mjs": "c4729275b094496263b6eee763b0dfe864b8a776747fb7ca781648f77ccd2340",
+    "skills/story-workbench/SKILL.md": "9fdc457bc259c2e429776b273376a390b7715e16afb80b55b475fee068204a66",
+    "tools/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tools/plugin_tool.py": "44d5d8c1dafa3e8c64adf0c9430dfa77b92aefd9a72b37dadc7593e4c6b777e7",
+    "ui/app.js": "2d37e8140a6dfd69d59a5564eea465b7fa8c706eca19d1254f2c7908f39cc9eb",
+    "ui/index.html": "5792bc8afaafa10f752fe3be74618112f91dfaf89fa4f6aa8ee81b933f670e74",
+    "ui/style.css": "e46b66c607568cd3eabab0d906c2115cbf4e300023c693471c2e9f6d88e2e05d",
+    "vendor/manuscript-markers.ts": "1df2d184b379c28ff212ce1a1000a649a9765423952b5b0426f6c68694c79090",
+    "vendor/manuscript-selection.ts": "c058c8efc474091fec06d275858aa3a40e4106898c9c33f54ca6af410ae807b5"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "a70719e12a21a5d1a26a2a9db363a57a7cc6fa9de7e4a294304c7e56d56e18b0",
+  "functional_test_report_sha256": "35151c43152854bab73eedc23fc94c6e94d35ca460d3a50a59976d5e5ae212a2"
+}

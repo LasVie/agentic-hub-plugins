@@ -1,0 +1,37 @@
+{
+  "id": "git-branch-atlas",
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "source": "local",
+  "name": "Git 分支全景",
+  "description": "只读本地 Git 分支拓扑、父提交与关联工作树，比较两个引用的独有提交和共同祖先，提供可搜索、可点选的中文图谱。",
+  "display_name": {
+    "zh": "Git 分支全景",
+    "en": "git-branch-atlas"
+  },
+  "display_description": {
+    "zh": "只读本地 Git 分支拓扑、父提交与关联工作树，比较两个引用的独有提交和共同祖先，提供可搜索、可点选的中文图谱。",
+    "en": "只读本地 Git 分支拓扑、父提交与关联工作树，比较两个引用的独有提交和共同祖先，提供可搜索、可点选的中文图谱。"
+  },
+  "category": "软件开发",
+  "skills": [
+    {
+      "dir": "skills/git-branch-atlas",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/plugin_tool.py",
+      "class": "PluginTool",
+      "display_name": {
+        "zh": "Git 分支全景",
+        "en": "git-branch-atlas"
+      },
+      "display_description": {
+        "zh": "只读本地 Git 分支拓扑、父提交与关联工作树，比较两个引用的独有提交和共同祖先，提供可搜索、可点选的中文图谱。",
+        "en": "只读本地 Git 分支拓扑、父提交与关联工作树，比较两个引用的独有提交和共同祖先，提供可搜索、可点选的中文图谱。"
+      }
+    }
+  ]
+}
