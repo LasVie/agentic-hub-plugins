@@ -1,0 +1,50 @@
+{
+  "task_id": "AH-20261022-exa-deep-research",
+  "candidate_id": "CAND-CLD-017",
+  "asset_name": "Exa 深度研究",
+  "slug": "exa-deep-research",
+  "version": "1.0.1",
+  "user_confirmation": "The plugin is working in chinese version too, you can see the latest 5 screenshots here",
+  "received_at_utc": "2026-10-23T06:57:13.314Z",
+  "received_date_asia_singapore": "2026-10-23",
+  "native_test_zip_sha256": "497d4bd1d51f4476b8cdc8d3dfdcb177c6d052880b73a31e7a79d2c6d2e9b54a",
+  "canonical_zip_sha256": "a924aac36f89663c7d02e8a823e13bb28238729b81754b769fa8e0e79e7f9c16",
+  "originals": "Decoded without image processing from the five original PNG attachments in the user confirmation message.",
+  "files": [
+    {
+      "file": "01-fetch.png",
+      "bytes": 101505,
+      "width": 1160,
+      "height": 681,
+      "sha256": "1ca2ef4dddb98db15e07e4a62441ea220a572c8a8cf25203ceeec87745791d4b"
+    },
+    {
+      "file": "02-advanced-search.png",
+      "bytes": 115956,
+      "width": 1197,
+      "height": 735,
+      "sha256": "6f9b76fe11e074da95506f1034486b9aa5140f2852230b1363e8f4f007bc781f"
+    },
+    {
+      "file": "03-paid-approval-guard.png",
+      "bytes": 89248,
+      "width": 1217,
+      "height": 741,
+      "sha256": "5a95bed297221449316d7d7b16d76f16f2bcd7ef7aae18ace1edcebb91e15e9a"
+    },
+    {
+      "file": "04-search-summary.png",
+      "bytes": 101580,
+      "width": 1182,
+      "height": 647,
+      "sha256": "2d8b5dcf9456af01625ca1c780fb97bed97271bd97360c9f8a50363a9c735b9d"
+    },
+    {
+      "file": "05-search-tool-event.png",
+      "bytes": 85398,
+      "width": 1331,
+      "height": 742,
+      "sha256": "c1a12a7e7350ade0197786f96d4742a807243027a8211b805cd4b3175e0c4738"
+    }
+  ]
+}

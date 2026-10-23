@@ -35,9 +35,36 @@ metadata, descriptions and errors. API/tool identifiers, transport behavior and
 original license bytes remain unchanged. It has different ZIP hashes and is
 not covered by the 1.0.0 confirmation.
 
-Status: local Build; current 1.0.1 confirmation and original test screenshots
-are pending. Preserve the user's merge authorization; after the changed package
-passes its required confirmation/materials gate, do not ask again for the same
-merge permission. No push, delivery PR, merge, GitHub Release or Hub action has
-been performed. Project Lead acceptance and official catalog registration are
-separate and are not asserted.
+On **2026-10-23**, after receiving the exact 1.0.1 native ZIP path and Chinese
+test prompts, the user stated: **"The plugin is working in chinese version too,
+you can see the latest 5 screenshots here"** and supplied five original PNGs.
+This confirms the current Chinese package; the existing merge authorization is
+reused. The message was received at 14:57:13 Asia/Singapore (06:57:13 UTC).
+
+- Native ZIP SHA-256: `497d4bd1d51f4476b8cdc8d3dfdcb177c6d052880b73a31e7a79d2c6d2e9b54a`.
+- Canonical ZIP SHA-256: `a924aac36f89663c7d02e8a823e13bb28238729b81754b769fa8e0e79e7f9c16`.
+- Both archives and all 19 payload files were reverified unchanged after this
+  confirmation and rebasing on current main. No runtime modification follows
+  the successful user test.
+- Confirmation report: `RPT-20261023-exa-confirmed-101`, linked to the original
+  task in the shared tracker.
+- Originals are in [evidence/1.0.1](evidence/1.0.1/README.md); their exact hashes,
+  dimensions and receipt date are recorded in [index.json](evidence/1.0.1/index.json).
+  They were decoded from the user message without resizing or recompression.
+
+The images show Chinese fetch and filtered-search responses, the Chinese
+`PAID_ACTION_REQUIRES_APPROVAL` message, a search response with Chinese summaries
+and an English introduction, and an expanded successful `exa_search` event.
+Only the last image shows a raw expanded tool record. The other responses are
+frontend conversation evidence, supported by the independent runtime checks in
+TEST_REPORT.md. No image displays the plugin version or ZIP hash; association
+with 1.0.1 rests on the user's response to the exact package handoff. The guard
+message also matches the new Chinese payload. Do not infer that every response
+was entirely Chinese, every negative case was manually tested, or paid research
+was executed.
+
+Status: current Chinese package user-confirmed; original screenshot/materials
+gate complete. The PR must embed these originals and pass required CI before
+merge. Actual PR state and its permanent evidence comment are authoritative for
+GitHub delivery. Project Lead acceptance remains pending; Hub operations and
+official catalog registration are separate and are not asserted.

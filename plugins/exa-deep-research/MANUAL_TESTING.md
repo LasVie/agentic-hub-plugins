@@ -2,7 +2,11 @@
 
 Owner Nguyen Trung Dung; task AH-20261022-exa-deep-research; CAND-CLD-017.
 Native ZIP SHA-256: `497d4bd1d51f4476b8cdc8d3dfdcb177c6d052880b73a31e7a79d2c6d2e9b54a`.
-Current ZIP: `.research/test-packages/exa-deep-research-1.0.1-workswarm.zip`.
+Current ZIP: `plugins/exa-deep-research/test-packages/exa-deep-research-1.0.1-workswarm.zip`.
+
+The user confirmed this Chinese package works on 2026-10-23 and supplied five
+original screenshots; see USER_TEST_CONFIRMATION.md. This plan is retained for
+reproduction. Its optional steps are not claims of additional manual coverage.
 
 Your full-conversation confirmation for English 1.0.0 remains valid for that
 unchanged package. This Chinese 1.0.1 changes packaged instructions/descriptions

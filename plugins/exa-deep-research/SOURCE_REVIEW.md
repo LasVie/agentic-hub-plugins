@@ -100,7 +100,10 @@ not confirm the changed 1.0.1 hashes. Original 1.0.0 archives remain unchanged i
 the original worktree; the unpublished English release is excluded from this
 Chinese delivery branch. No external publication of 1.0.0 ever occurred.
 
-Current main AGENTS.md requires current Chinese-package user confirmation and
-original test screenshots before pushing/opening/merging. Both are pending for
-1.0.1. See USER_TEST_CONFIRMATION.md. No PR, push, merge, Release, Project Lead
-acceptance, official catalog entry or Hub operation is claimed.
+On 2026-10-23 the user confirmed the current Chinese package works and supplied
+five original PNG screenshots. See USER_TEST_CONFIRMATION.md and evidence/1.0.1
+for the exact statement, unchanged package hashes and evidence limitations.
+The source/license distribution review is complete; the existing merge
+authorization applies after required CI and permanent PR image links are
+verified. Project Lead acceptance, official catalog inclusion and Hub operations
+are not asserted. Documentation/evidence updates do not change runtime payloads.

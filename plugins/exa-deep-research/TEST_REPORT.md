@@ -4,9 +4,9 @@ Owner **Nguyen Trung Dung**; task AH-20261022-exa-deep-research;
 candidate CAND-CLD-017. Date 2026-10-23, Asia/Singapore.
 Name mapping: Exa Deep Research -> **Exa 深度研究** -> exa-deep-research.
 
-Status: **Ready for Testing**, local Build. Original English 1.0.0 is explicitly
-user-confirmed; changed Chinese 1.0.1 is not yet user-confirmed. No push/PR/merge,
-GitHub Release, Hub operation or Project Lead acceptance is claimed.
+Status: **Chinese 1.0.1 user-confirmed**, original screenshots received on
+2026-10-23. The package bytes remain unchanged. Required CI and the actual PR
+merge state are recorded on the delivery PR; Project Lead acceptance is pending.
 
 ## Package changes and identity
 
@@ -83,12 +83,40 @@ CP1258 Unicode errors; UTF-8 configuration removes those assertion failures.
 See REPOSITORY_COMPARISON_1.0.1.json and ignored local test logs.
 
 Node/npm is unavailable, so the separate unrelated MCP development integration
-was not run locally. Remote CI has not run because Build must remain local until
-the new package confirmation and original screenshots are collected.
+was not run locally. GitHub's required Linux CI runs the complete suite,
+repository contract and Node integration before merge. The initial 23/31 count
+above describes the recorded 3a57bc0 baseline; current-main revalidation is
+revalidation after rebasing on d462c34 passes **28 assets / 36 release ZIPs**.
+The confirmed canonical/native ZIP hashes and all 19 payload files still match.
 
-No live frontend installation, Chinese model-response quality or full 1.0.1
-conversation is claimed. MANUAL_TESTING.md provides the remaining user steps.
+The agent's automated checks did not drive the live frontend or evaluate a
+model conversation. The user subsequently confirmed the Chinese package works
+and supplied the five original screenshots described below.
 Paid research remains optional and untested. Historical 1.0.0 service/registry
 and 68 host regression results remain versioned in TEST_REPORT_1.0.0.md,
 MAIN_AGENT_TEST_REPORT.md and SMART_ADMISSION_FIX.md; they are not new-version
 manual evidence. See USER_TEST_CONFIRMATION.md for the actual user statement.
+
+## User conversation evidence received 2026-10-23
+
+Confirmation: "The plugin is working in chinese version too, you can see the
+latest 5 screenshots here". The reply follows the exact 1.0.1 package handoff
+and Chinese prompts. See evidence/1.0.1/index.json for original image hashes.
+
+| Original | Visible evidence |
+| --- | --- |
+| 01-fetch.png | Chinese exa_fetch prompt and response, official source URL and Chinese transport summary; visible UI time 14:53. |
+| 02-advanced-search.png | Chinese filtered-search prompt with numResults=3 and includeDomains, response reporting three official-domain results; visible UI time 14:54. |
+| 03-paid-approval-guard.png | allow_paid=false prompt, PAID_ACTION_REQUIRES_APPROVAL and the current Chinese approval message; visible UI time 14:54. |
+| 04-search-summary.png | Chinese search prompt, source links and Chinese summaries with an English introduction; visible UI time 14:53. |
+| 05-search-tool-event.png | Expanded exa_search event, actual arguments and successful ok=True/web_search_exa result. |
+
+The first four images show conversation responses, not expanded raw tool
+records. The fifth independently corroborates actual search execution, but has
+an English query and no visible package version. None displays a version/hash;
+current-package attribution relies on the user's explicit reply to the 1.0.1
+handoff, with the Chinese guard message matching the new payload. No manual
+invalid-input, uninstall or paid-research coverage is inferred. One mixed-language
+introduction remains a model-output observation; do not claim universal Chinese
+wording. The user accepted the current result. Original full-resolution image
+bytes are preserved without processing, and checked for exposed credentials.
