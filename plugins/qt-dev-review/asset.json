@@ -1,0 +1,18 @@
+{
+  "type": "agent-plugin",
+  "name": "qt-dev-review",
+  "version": "1.0.0",
+  "display_name": "Qt 开发审校",
+  "description": "只读审查指定的 Qt C++/QML 文件，输出中文规则定位和审校报告；无需 Qt 安装，不替代编译和人工审查。",
+  "publisher": "Song Haoran",
+  "category": "软件开发",
+  "tags": [
+    "Qt 开发审校"
+  ],
+  "functional_tags": [
+    "Qt 开发审校"
+  ],
+  "scope": "只读审查指定的 Qt C++/QML 文件，输出中文规则定位和审校报告；无需 Qt 安装，不替代编译和人工审查。",
+  "candidate_id": "CAND-CLD-095",
+  "task_id": "AH-20261023-qt-dev-review"
+}

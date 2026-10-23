@@ -1,0 +1,37 @@
+{
+  "id": "motor-l0-screening",
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "source": "local",
+  "name": "电机方案粗筛",
+  "description": "本地生成电机方案矩阵、执行物理规则校验并按公式估算排序；仅用于相对粗筛，不是工程认证或仿真结论。",
+  "display_name": {
+    "zh": "电机方案粗筛",
+    "en": "motor-l0-screening"
+  },
+  "display_description": {
+    "zh": "本地生成电机方案矩阵、执行物理规则校验并按公式估算排序；仅用于相对粗筛，不是工程认证或仿真结论。",
+    "en": "本地生成电机方案矩阵、执行物理规则校验并按公式估算排序；仅用于相对粗筛，不是工程认证或仿真结论。"
+  },
+  "category": "数据与科学研究",
+  "skills": [
+    {
+      "dir": "skills/motor-l0-screening",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/plugin_tool.py",
+      "class": "PluginTool",
+      "display_name": {
+        "zh": "电机方案粗筛",
+        "en": "motor-l0-screening"
+      },
+      "display_description": {
+        "zh": "本地生成电机方案矩阵、执行物理规则校验并按公式估算排序；仅用于相对粗筛，不是工程认证或仿真结论。",
+        "en": "本地生成电机方案矩阵、执行物理规则校验并按公式估算排序；仅用于相对粗筛，不是工程认证或仿真结论。"
+      }
+    }
+  ]
+}

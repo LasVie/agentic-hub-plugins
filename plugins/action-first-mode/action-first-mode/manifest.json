@@ -1,0 +1,43 @@
+{
+  "id": "action-first-mode",
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "source": "local",
+  "name": "行动优先表达",
+  "description": "明确开启、关闭和查询行动优先表达模式，状态保存在用户指定的工作目录内；不作医疗效果承诺。",
+  "display_name": {
+    "zh": "行动优先表达",
+    "en": "action-first-mode"
+  },
+  "display_description": {
+    "zh": "明确开启、关闭和查询行动优先表达模式，状态保存在用户指定的工作目录内；不作医疗效果承诺。",
+    "en": "明确开启、关闭和查询行动优先表达模式，状态保存在用户指定的工作目录内；不作医疗效果承诺。"
+  },
+  "category": "办公与生产力",
+  "skills": [
+    {
+      "dir": "skills/action-first-mode",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/plugin_tool.py",
+      "class": "PluginTool",
+      "display_name": {
+        "zh": "行动优先表达",
+        "en": "action-first-mode"
+      },
+      "display_description": {
+        "zh": "明确开启、关闭和查询行动优先表达模式，状态保存在用户指定的工作目录内；不作医疗效果承诺。",
+        "en": "明确开启、关闭和查询行动优先表达模式，状态保存在用户指定的工作目录内；不作医疗效果承诺。"
+      }
+    }
+  ],
+  "prompt_sections": [
+    {
+      "file": "prompt_sections/action-first.md",
+      "priority": 100
+    }
+  ]
+}

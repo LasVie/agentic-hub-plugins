@@ -1,0 +1,290 @@
+[
+  {
+    "plugin": "qt-dev-review",
+    "test": "C++ and QML findings located",
+    "passed": true,
+    "detail": "{\"ok\": true, \"message\": \"中文审校报告已生成；代码未修改。\", \"scanned\": 2, \"count\": 4, \"findings\": [{\"file\": \"bad.cpp\", \"line\": 1, \"rule\": \"DEP-1\", \"message\": \"检查是否可以用 std::unique_ptr 替代 QScopedPointer；确认所有权和目标 Qt/C++ 版本。\", \"context\": \"#include <QScopedPointer>\"}, {\"file\": \"bad.cpp\", \"line\": 2, \"rule\": \"DEP-1\", \"message\": \"检查是否可以用 std::unique_ptr 替代 QScopedPointer；确认所有权和目标 Qt/C++ 版本。\", \"context\": \"void f() { QScop"
+  },
+  {
+    "plugin": "qt-dev-review",
+    "test": "code not modified",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "qt-dev-review",
+    "test": "clean file accepts",
+    "passed": true,
+    "detail": "{'ok': True, 'message': '中文审校报告已生成；代码未修改。', 'scanned': 1, 'count': 0, 'findings': [], 'truncated': False, 'report': '/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/migration-five-20261023/test-wor"
+  },
+  {
+    "plugin": "qt-dev-review",
+    "test": "traversal rejected",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "qt-dev-review",
+    "test": "missing rejected",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "qt-dev-review",
+    "test": "empty rejected",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "archify-graph-tools",
+    "test": "Chinese example created",
+    "passed": true,
+    "detail": "{'ok': True, 'message': '已创建中文工作流 JSON；可继续 validate 和 deliver。', 'source': '/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/migration-five-20261023/test-workspaces/self-archify-graph-tools/sample.json'}"
+  },
+  {
+    "plugin": "archify-graph-tools",
+    "test": "valid source accepted",
+    "passed": true,
+    "detail": "{'ok': True, 'message': '图谱校验通过。', 'diagnostics': [], 'source': '/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/migration-five-20261023/test-workspaces/self-archify-graph-tools/sample.json'}"
+  },
+  {
+    "plugin": "archify-graph-tools",
+    "test": "real renderer delivered",
+    "passed": true,
+    "detail": "{'ok': True, 'message': '已交付中文离线交互图谱。', 'diagnostics': [], 'source': '/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/migration-five-20261023/test-workspaces/self-archify-graph-tools/sample.json', 'output': '/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/migration-five-20261023/test-workspaces/self-archify-graph-tools/sample.html', 'sha256': 'c4df46510137915346019099c16d972c5fe0880115abfb9e1ea66b7139c41f5c'}"
+  },
+  {
+    "plugin": "archify-graph-tools",
+    "test": "Chinese content and interactive controls",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "archify-graph-tools",
+    "test": "broken node reference rejected",
+    "passed": true,
+    "detail": "{'ok': False, 'message': '图谱校验或交付失败，请先修复源 JSON；未确认新产物可用。', 'diagnostics': [{'code': 'workflow/unknown-edge-endpoint', 'subject': {'diagramType': 'workflow', 'edge': 'a', 'path': '/edges/0/to', 'from': 'select', 'to': 'missing'}, 'message': '请检查该位置的结构、引用关系或布局约束；按图谱 schema 修正后重试。'}], 'source': '/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/migration-five-20261023/test-workspaces/self-archify-graph-tools/bad.json'}"
+  },
+  {
+    "plugin": "archify-graph-tools",
+    "test": "failed delivery preserves prior output",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "archify-graph-tools",
+    "test": "remote resource rejected before renderer",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "archify-graph-tools",
+    "test": "unsafe path rejected",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "motor-l0-screening",
+    "test": "matrix and validation produced",
+    "passed": true,
+    "detail": "{'ok': True, 'message': '本地粗筛计算完成；仅用于未标定的相对比较，不代表仿真或投产结论。', 'spec': {'power_kw': 7.5, 'speed_rpm': 1450, 'voltage_v': 380, 'poles': 4, 'motor_type': 'induction', 'motor_type_assumed': False, 'motor_type_input': 'induction', 'poles_explicit': False, 'torque_nm': 49.4, 'cooling': 'forced_air', 'count': 30, 'line_freq_hz': 50, 'insulation_class': 'F'}, 'summary': {'total': 30, 'passed': 0, 'warning': 20, 'failed': 10}, 'warnings': [{'code': 'POLE_CANDIDATES', 'level': 'info', 'primary_pole': 4, 'source': 'recommended', 'candidates': [4, 2, 6], 'strict': False, 'message': '极数候选集 = [4, 2, 6] 极（主极 4 极，来源=recommended）。若主极被 V16 判超同步，候选集中其余极数即替代方案，请对照查看。'}, {'code': 'POLES_DEFAULT_ASSUMED', 'level': 'info', 'poles': 4, 'higher_pole_candidates': [6, 8], 'message': '未指定 poles，按转速 1450rpm / 50Hz 推荐为 4"
+  },
+  {
+    "plugin": "motor-l0-screening",
+    "test": "full matrix saved",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "motor-l0-screening",
+    "test": "ranking excludes failed and infeasible",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "motor-l0-screening",
+    "test": "finite efficiency sorted descending",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "motor-l0-screening",
+    "test": "deterministic matrix",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "motor-l0-screening",
+    "test": "power_kw invalid -1 rejected",
+    "passed": true,
+    "detail": "{'ok': False, 'message': 'power_kw 超出有效范围。'}"
+  },
+  {
+    "plugin": "motor-l0-screening",
+    "test": "speed_rpm invalid 0 rejected",
+    "passed": true,
+    "detail": "{'ok': False, 'message': 'speed_rpm 超出有效范围。'}"
+  },
+  {
+    "plugin": "motor-l0-screening",
+    "test": "count invalid 121 rejected",
+    "passed": true,
+    "detail": "{'ok': False, 'message': 'count 必须是1至120的整数。'}"
+  },
+  {
+    "plugin": "motor-l0-screening",
+    "test": "power_kw invalid True rejected",
+    "passed": true,
+    "detail": "{'ok': False, 'message': 'power_kw 超出有效范围。'}"
+  },
+  {
+    "plugin": "motor-l0-screening",
+    "test": "motor_type invalid unsupported rejected",
+    "passed": true,
+    "detail": "{'ok': False, 'message': 'motor_type 请选择 induction 或 pmsm。'}"
+  },
+  {
+    "plugin": "motor-l0-screening",
+    "test": "explicit PMSM and 60Hz passed through",
+    "passed": true,
+    "detail": "{'ok': True, 'message': '本地粗筛计算完成；仅用于未标定的相对比较，不代表仿真或投产结论。', 'spec': {'power_kw': 7.5, 'speed_rpm': 1450, 'voltage_v': 380, 'poles': 4, 'motor_type': 'pmsm', 'motor_type_assumed': False, 'motor_type_in"
+  },
+  {
+    "plugin": "action-first-mode",
+    "test": "default off",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "action-first-mode",
+    "test": "explicit on",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "action-first-mode",
+    "test": "fresh tool instance persists state",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "action-first-mode",
+    "test": "state file permissions private",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "action-first-mode",
+    "test": "explicit off",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "action-first-mode",
+    "test": "implicit command rejected",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "gomoku-local",
+    "test": "horizontal win detected",
+    "passed": true,
+    "detail": "{'ok': True, 'message': '黑方连成五子，获胜。', 'board': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"
+  },
+  {
+    "plugin": "gomoku-local",
+    "test": "horizontal finished game immutable",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "gomoku-local",
+    "test": "vertical win detected",
+    "passed": true,
+    "detail": "{'ok': True, 'message': '黑方连成五子，获胜。', 'board': [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1"
+  },
+  {
+    "plugin": "gomoku-local",
+    "test": "vertical finished game immutable",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "gomoku-local",
+    "test": "diagonal win detected",
+    "passed": true,
+    "detail": "{'ok': True, 'message': '黑方连成五子，获胜。', 'board': [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0"
+  },
+  {
+    "plugin": "gomoku-local",
+    "test": "diagonal finished game immutable",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "gomoku-local",
+    "test": "reverse-diagonal win detected",
+    "passed": true,
+    "detail": "{'ok': True, 'message': '黑方连成五子，获胜。', 'board': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0"
+  },
+  {
+    "plugin": "gomoku-local",
+    "test": "reverse-diagonal finished game immutable",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "gomoku-local",
+    "test": "invalid move 0 rejected without mutation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "gomoku-local",
+    "test": "invalid move 1 rejected without mutation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "gomoku-local",
+    "test": "invalid move 2 rejected without mutation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "gomoku-local",
+    "test": "invalid move 3 rejected without mutation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "gomoku-local",
+    "test": "invalid move 4 rejected without mutation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "gomoku-local",
+    "test": "invalid move 5 rejected without mutation",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "gomoku-local",
+    "test": "existing game preserved",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "gomoku-local",
+    "test": "Chinese board snapshot exported",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "plugin": "gomoku-local",
+    "test": "overline counts as win",
+    "passed": true,
+    "detail": ""
+  }
+]

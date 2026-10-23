@@ -1,0 +1,37 @@
+[
+  {
+    "plugin": "action-first-mode",
+    "session_id": "web_1a166b7d542_bf5f5708dd17",
+    "actual_native_results": 5,
+    "installed_payload_files": 15,
+    "installed_payload_identical": true
+  },
+  {
+    "plugin": "archify-graph-tools",
+    "session_id": "web_1a166b5f704_395f922c4007",
+    "actual_native_results": 3,
+    "installed_payload_files": 152,
+    "installed_payload_identical": true
+  },
+  {
+    "plugin": "gomoku-local",
+    "session_id": "web_1a166b9ef8a_e9bb421ed4db",
+    "actual_native_results": 7,
+    "installed_payload_files": 14,
+    "installed_payload_identical": true
+  },
+  {
+    "plugin": "motor-l0-screening",
+    "session_id": "web_1a166b6da77_c6eff8b23288",
+    "actual_native_results": 2,
+    "installed_payload_files": 19,
+    "installed_payload_identical": true
+  },
+  {
+    "plugin": "qt-dev-review",
+    "session_id": "web_1a166b420cc_687f52ecd583",
+    "actual_native_results": 2,
+    "installed_payload_files": 13,
+    "installed_payload_identical": true
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/omdsh-dev/dsh-gomoku",
+      "revision": "26fdf6e99c95447f250ab51478fbc694b6024e8d",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/gomoku/LICENSE",
+          "sha256": "f4d265194e0824721af0592462a71fe750c04db3565c23c5d6c65fdee25fb4b0"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "vendor/game.mjs",
+    "vendor/game-source.ts"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

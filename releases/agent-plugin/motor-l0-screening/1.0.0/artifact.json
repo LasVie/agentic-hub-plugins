@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:motor-l0-screening",
+  "type": "agent-plugin",
+  "name": "motor-l0-screening",
+  "version": "1.0.0",
+  "zip": "motor-l0-screening-1.0.0.zip",
+  "sha256": "b53f89b843c3153e16132496e4f1f09533e0dece12b8184e4773894008cbb058",
+  "payload_sha256": {
+    "README.md": "75f57f4987e37a59b331347e766f1c77abb855f6715f8a05554e7bf033464855",
+    "THIRD_PARTY_NOTICES.md": "e0bd188192bac9773874ea272e1c794153c13c8a1e3dc0c5450521bdd7213362",
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "licenses/motor/LICENSE": "b3eef46ad78b14b85580d841e3e0b5869f45c379daefed167fcf2be0a5219173",
+    "licenses/motor-core/LICENSE": "eb7807ba2f9e8e619d6d91b963a0e8e12a59f9d523f05de9fec1a2bbeed88a19",
+    "manifest.json": "3f1f316137e2cfe0d5981be24ec34aab032b1649f525938e2527c3fb8b6eb58e",
+    "runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime/common.py": "1c644742282f69f17b1817ba1caf6be7799bb7ed4bee1510f85b7dd1db7c5a96",
+    "runtime/engine.mjs": "53fd4d924225091c9d9cf4dc336c337cdea68421d5b1e95e826737998cdd8f4e",
+    "runtime/engine.py": "daf546e4054c0253eddd3504b595cbc2f95939d78e1219ad760c555313d0702d",
+    "skills/motor-l0-screening/SKILL.md": "c1d11be65d6adc78ec36008187101cd741c42417e7b7a826c14981758b266c65",
+    "tools/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tools/plugin_tool.py": "a62c4ede26c8007f8e7726f72dc611db2c5fe5e6bc46c0e27e133ff1d7c82831",
+    "vendor/core/design-rules.mjs": "ff000d650e0dcd52af7a20248f6bb86c03f61e2de8a6639ab7fcf1d2448c04d8",
+    "vendor/core/formula-engine.mjs": "42b33de9c4dfb88c5a72d52ca1ba898c2c7e3fa1cc3f273bb6cb6da40b05d32e",
+    "vendor/core/index.mjs": "f2290558b5831519061778f7491aeac1af2a5a222b550d922380dfcf957d1458",
+    "vendor/core/motor-constants.mjs": "49165a3254a4fadc64f9f90a505d19f9a378f10533f01b8557bbc6741b9d80e4",
+    "vendor/core/param-schema.mjs": "4da2b38b847f86f38b4b291cad34cd9f97a30ee84d9c30e3f72bdb2de1d4ec46",
+    "vendor/param-matrix.mjs": "99aa15cc63040c97363438a2c56ed6c9cb91fcfca37730ca71e7c5e463a8609a"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "b76e5b1ee62ffa0f7c7e3ebec81321d4ac1bfbb2e6ebd1ada0d3947c703d1ab1",
+  "functional_test_report_sha256": "ffbf6c1fb448124bf22c556fe830658b834a7d10c07e184ea053e4b21458d0ad"
+}

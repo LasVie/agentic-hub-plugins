@@ -1,0 +1,18 @@
+{
+  "type": "agent-plugin",
+  "name": "gomoku-local",
+  "version": "1.0.0",
+  "display_name": "本地五子棋",
+  "description": "15×15 自由五子棋的本地状态、合法落子、胜负判定和中文棋盘导出；用当前会话模型对弈，无需额外账号。",
+  "publisher": "Song Haoran",
+  "category": "生活与健康",
+  "tags": [
+    "本地五子棋"
+  ],
+  "functional_tags": [
+    "本地五子棋"
+  ],
+  "scope": "15×15 自由五子棋的本地状态、合法落子、胜负判定和中文棋盘导出；用当前会话模型对弈，无需额外账号。",
+  "candidate_id": "CAND-DSH-336",
+  "task_id": "AH-20261023-gomoku-local"
+}
