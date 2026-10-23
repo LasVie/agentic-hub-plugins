@@ -1,0 +1,16 @@
+{
+  "canonical_path": "releases/agent-plugin/invaders-local/1.0.2/invaders-local-1.0.2.zip",
+  "canonical_sha256": "70aebf34f8d40746a3a9977ad22b27be3665b5351bb2535b0852d3d748acfeef",
+  "workswarm_path": "plugins/invaders-local/test-packages/invaders-local-1.0.2-workswarm.zip",
+  "workswarm_sha256": "21df39acd6244c2d9be87685d4c04fb08df1baad1defcab2ce425ebbcc199f67",
+  "payload_byte_identical": true,
+  "version": "1.0.2",
+  "crc_ok": true,
+  "utf8_ok": true,
+  "licenses_reviewed": true,
+  "source_payload_byte_identical": true,
+  "declared_manifest_paths_exist": true,
+  "dev_files_in_zip": false,
+  "payload_file_count": 15,
+  "payload_file_hashes_record": "releases/agent-plugin/invaders-local/1.0.2/artifact.json"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "agent-plugin",
+  "name": "invaders-local",
+  "version": "1.0.2",
+  "display_name": "星际防线",
+  "description": "离线键盘射击小游戏：移动、射击、护盾、生命、计分、波次推进与本地续玩；导出自包含中文网页。",
+  "publisher": "Cai Zhenze",
+  "category": "生活与健康",
+  "tags": [
+    "离线游戏",
+    "键盘射击"
+  ],
+  "functional_tags": [
+    "离线游戏",
+    "射击",
+    "本地存档"
+  ],
+  "scope": "单人离线浏览器游戏；不嵌入 WorkSwarm 聊天窗，不监听模型回合，不联网、不调用模型。",
+  "candidate_id": "CAND-CLD-302",
+  "task_id": "AH-20261023-invaders-local"
+}

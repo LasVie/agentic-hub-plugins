@@ -1,0 +1,60 @@
+{
+  "candidate_id": "CAND-CLD-302",
+  "task_id": "AH-20261023-invaders-local",
+  "version": "1.0.2",
+  "screenshots": [
+    {
+      "original_filename": "Screenshot 2026-10-23 at 5.38.36 PM.png",
+      "upload_filename": "user-test-1.0.2-01.png",
+      "sha256": "81af175f2ea249a14de3d3f8ce6e253e48e228d95e66d136a5c65a5fd1be3da7",
+      "bytes": 349940,
+      "dimensions": [
+        1596,
+        1920
+      ],
+      "observed_content": "WorkSwarm export result/version/hash; also shows host control-input error",
+      "received_from": "Cai Zhenze, current conversation",
+      "modifications": "None; original PNG bytes preserved"
+    },
+    {
+      "original_filename": "Screenshot 2026-10-23 at 5.38.48 PM.png",
+      "upload_filename": "user-test-1.0.2-02.png",
+      "sha256": "83e871e1763fd13414be85117c5114faef5e9fc5fed33bdc82841022a3c224fe",
+      "bytes": 750617,
+      "dimensions": [
+        3454,
+        2084
+      ],
+      "observed_content": "WorkSwarm artifact preview, empty game board in this preview",
+      "received_from": "Cai Zhenze, current conversation",
+      "modifications": "None; original PNG bytes preserved"
+    },
+    {
+      "original_filename": "Screenshot 2026-10-23 at 5.38.55 PM.png",
+      "upload_filename": "user-test-1.0.2-03.png",
+      "sha256": "6aeb4f3bff894f974b32be8790de53ff05064ad522f6f4f7ffa76b7df0ba8d02",
+      "bytes": 465082,
+      "dimensions": [
+        3450,
+        2090
+      ],
+      "observed_content": "Standalone local HTML initial board and v1.0.2",
+      "received_from": "Cai Zhenze, current conversation",
+      "modifications": "None; original PNG bytes preserved"
+    },
+    {
+      "original_filename": "Screenshot 2026-10-23 at 5.39.14 PM.png",
+      "upload_filename": "user-test-1.0.2-04.png",
+      "sha256": "d934c29c30322398b354bf0c5e305ec237be6714af5311d4883fbb780489fd55",
+      "bytes": 438326,
+      "dimensions": [
+        3446,
+        2076
+      ],
+      "observed_content": "Standalone gameplay, score40/wave1/lives3/position11/tick228",
+      "received_from": "Cai Zhenze, current conversation",
+      "modifications": "None; original PNG bytes preserved"
+    }
+  ],
+  "attribution": "User explicitly confirmed current-version manual testing passed. Screenshots alone do not prove backend tool invocation. Exported local HTML independently hashes to the expected generated artifact."
+}
