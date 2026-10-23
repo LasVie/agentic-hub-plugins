@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<title>星际防线 v@@VERSION@@</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,-apple-system,sans-serif;background:#08111a;color:#dde8ec}
+*{box-sizing:border-box}body{margin:0;padding:32px 18px}main{max-width:780px;margin:auto}
+header{display:flex;justify-content:space-between;gap:20px;align-items:center}h1{font-size:29px;margin:0 0 9px;letter-spacing:3px}p{line-height:1.7;margin:10px 0}.muted,small{color:#94abb7}
+.tag{border:1px solid #35505d;padding:6px 10px;border-radius:20px;color:#9debd3;white-space:nowrap}
+.metrics{display:flex;gap:25px;flex-wrap:wrap;margin:24px 0 14px}.metrics span{display:grid;gap:4px;color:#96acb7;font-size:12px}.metrics b{color:#ecf8f8;font-size:24px;font-variant-numeric:tabular-nums}
+.arena{border:1px solid #345260;border-radius:12px;padding:18px;background:#061019;overflow:auto;box-shadow:0 15px 50px #0004}
+#board{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:clamp(11px,2.5vw,19px);line-height:1.45;letter-spacing:1px;white-space:pre;width:fit-content;margin:0 auto;outline:none;color:#e2edf3;user-select:none}
+.arena:focus-within{border-color:#69d9bf;box-shadow:0 0 0 2px #69d9bf22}
+.state{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px;font-size:13px}#status{color:#a7e2cd}#position{color:#98afb8;font-variant-numeric:tabular-nums}
+.buttons{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}button{font:inherit;border-radius:7px;border:1px solid #3d5967;background:#152c38;color:#e3edf1;padding:10px 16px;cursor:pointer}button:hover{background:#234351}button:focus-visible{outline:2px solid #a1efda;outline-offset:3px}#toggle{background:#93e4cb;color:#05271d;border-color:#93e4cb;font-weight:700}
+.help{border-top:1px solid #293e49;margin-top:24px;padding-top:14px;font-size:14px}kbd{border:1px solid #415a66;border-radius:4px;padding:1px 5px;white-space:nowrap}#notice{font-size:13px;color:#d1c49e;min-height:22px}.legal{font-size:12px;color:#8fa5b0;margin-top:30px}summary{cursor:pointer}pre.license{white-space:pre-wrap;font-size:11px;line-height:1.5}.touch{margin-top:14px}footer{font-size:12px;color:#8ba2af;margin-top:18px}
+</style></head><body><main>
+<header><div><h1>星际防线</h1><small>v@@VERSION@@ · 单人键盘射击 · 种子 @@SEED@@</small></div><span class="tag">完全离线</span></header>
+<div class="metrics"><span>得分<b id="score">0</b></span><span>最高分<b id="hi">0</b></span><span>波次<b id="level">1</b></span><span>生命<b id="lives">3</b></span></div>
+<section class="arena" aria-label="游戏区域"><div class="state"><strong id="status">待开始</strong><span id="position">位置 15 · 步数 0</span></div><pre id="board" tabindex="0" role="img" aria-label="射击游戏棋盘，点击后用左右方向键移动，空格射击"></pre></section>
+<div class="buttons"><button id="toggle">开始游戏</button><button id="restart">重新开始</button><button id="save">保存进度</button></div>
+<p id="notice" role="status"></p>
+<div class="help"><p>先点击“开始游戏”。<kbd>←</kbd> <kbd>→</kbd> 或 <kbd>A</kbd> <kbd>D</kbd> 移动，<kbd>空格</kbd> 射击，<kbd>P</kbd> 暂停或继续，<kbd>Esc</kbd> 暂停。请先点击棋盘以接收按键。</p><p>击中敌人得分，清空一波进入下一波；护盾能承受两次击中，也会挡住自己的子弹。每累计 1500 分补充一条生命（最多五条）。敌人触底或生命耗尽时结束。</p><p>切换窗口或标签页会自动暂停。同一浏览器和文件地址可自动续玩；恢复后保持暂停。“重新开始”保留最高分并从当前种子重新开局。浏览器禁用存储或清理数据后无法续玩。</p></div>
+<footer>没有联网请求、模型调用、账号或遥测。此网页独立运行，不会跟随 WorkSwarm 的对话回合自动暂停。建议使用桌面 Chrome；触屏与其他浏览器尚未验证。</footer>
+<details class="legal"><summary>来源与完整许可</summary><p>游戏引擎源自 Nigel Hudson 的 Invaders 0.1.1（固定提交 d332a1fc97e28e86042fc63d6802c5098733d746），按 MIT 许可适配。中文网页、存档校验与导出工具由本项目添加。未使用原作者图标或宣传素材；不代表原作者或平台背书。</p><pre class="license">@@LICENSE@@</pre></details>
+<script type="module">
+@@ENGINE@@
+@@STATE@@
+const INITIAL_SEED = @@SEED@@;
+@@APP@@
+</script></main></body></html>

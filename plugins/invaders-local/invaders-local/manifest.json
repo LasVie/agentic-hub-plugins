@@ -1,0 +1,36 @@
+{
+  "version": "1.0.2",
+  "package_type": "plugin",
+  "id": "invaders-local",
+  "name": "星际防线",
+  "description": "离线键盘射击小游戏：移动、射击、护盾、生命、计分、波次推进与本地续玩；导出自包含中文网页。",
+  "skills": [
+    {
+      "dir": "skills/invaders-local",
+      "mode": "all"
+    }
+  ],
+  "source": "local",
+  "tools": [
+    {
+      "file": "tools/game_tool.py",
+      "class": "CreateInvadersGame",
+      "display_name": {
+        "zh": "创建星际防线网页",
+        "en": "创建星际防线网页"
+      },
+      "display_description": {
+        "zh": "导出可离线游玩的中文射击游戏网页；不覆盖已有文件。",
+        "en": "导出可离线游玩的中文射击游戏网页；不覆盖已有文件。"
+      }
+    }
+  ],
+  "display_name": {
+    "zh": "星际防线",
+    "en": "星际防线"
+  },
+  "display_description": {
+    "zh": "离线键盘射击小游戏：移动、射击、护盾、生命、计分、波次推进与本地续玩；导出自包含中文网页。",
+    "en": "离线键盘射击小游戏：移动、射击、护盾、生命、计分、波次推进与本地续玩；导出自包含中文网页。"
+  }
+}

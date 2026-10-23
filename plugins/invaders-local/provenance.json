@@ -1,0 +1,22 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/nison/claude-invaders",
+      "revision": "d332a1fc97e28e86042fc63d6802c5098733d746",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/invaders/LICENSE",
+          "sha256": "e6614d9422b3f9aec4744b855ff6f01e217cf37e257bca81c4810e28f4e1193f"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "vendor/engine-source.ts",
+    "assets/engine.mjs"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

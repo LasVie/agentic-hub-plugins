@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:invaders-local",
+  "type": "agent-plugin",
+  "name": "invaders-local",
+  "version": "1.0.2",
+  "zip": "invaders-local-1.0.2.zip",
+  "sha256": "70aebf34f8d40746a3a9977ad22b27be3665b5351bb2535b0852d3d748acfeef",
+  "payload_sha256": {
+    "README.md": "fb04fc5c0f99b50b1b99ec5b832a3f60e33867c00adb957997d7114adb626cc9",
+    "THIRD_PARTY_NOTICES.md": "f5f116f88d53c95a039b52cf62a0a8a967fe0e0eddc465578a6915c8fe1501d2",
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "assets/app.js": "8d3c07436cc370aac69cda8f58558cd5ee7fd20d1f8b0938b7cf6a65e4fa85db",
+    "assets/engine.mjs": "e915f3f695d1e50bbe6ecedd4ffb3007d2321d3225690ffa2d504f7342c3c5ee",
+    "assets/page.html": "71735162f413ea39aa8b55415dd01965c5b724627e6ec7c5818a1449cf9265ff",
+    "assets/state.mjs": "04a5b7f2d4e55fe8ea911f5cccd578ddde18e0bc2e3a8cd2a65210393770f0df",
+    "licenses/invaders/LICENSE": "e6614d9422b3f9aec4744b855ff6f01e217cf37e257bca81c4810e28f4e1193f",
+    "manifest.json": "63c3da337e588ecd6a4d1aac3644b16a53d9718b38aae8073cf3e1db6c3d443e",
+    "runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime/export_game.py": "aa895bd51a4a2b99bae0bf9e23055d1656398f40ef6fa6e64a8dd30e924b3b0d",
+    "skills/invaders-local/SKILL.md": "0c5c61ed3b7f44d4b148c91f78fa6ec00859d354bdbb41e893a83c54dfd06f4b",
+    "tools/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tools/game_tool.py": "f131712eb935083d1b2786bd34f9f68089133128c959136cb4759cfd32c80379",
+    "vendor/engine-source.ts": "f573048f62360e2cd40247c0d88d6dfdb947b9d09a933e3069dd33d9a88151fb"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "6167bf8d9213325ddf755c8032ae8cfb71fbf20d0bdf7257ca7d10b8b521f2e4",
+  "functional_test_report_sha256": "5ccbad5c8a421b16f51c66ec169ab8262113374d7d7ac12157a1a9dbb78650cf"
+}
