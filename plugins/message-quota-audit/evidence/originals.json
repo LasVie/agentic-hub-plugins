@@ -1,0 +1,81 @@
+{
+  "candidate_id": "CAND-DSH-070",
+  "task_id": "AH-20261023-message-quota-audit",
+  "owner": "Cai Zhenze",
+  "version": "1.0.1",
+  "canonical_sha256": "0eb6d3f295db16ceb21717927cefeb21c081b3d2fd1408d9af68d9c61da5a4df",
+  "native_sha256": "61dff8962b7f481f9ae89eb6fdad0ef77f67e78d987f52c0652bdcdb3c31a9a6",
+  "originals": [
+    {
+      "original_filename": "Screenshot 2026-10-23 at 5.19.10 PM.png",
+      "received_path": "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/TemporaryItems/NSIRD_screencaptureui_JNmX5h/Screenshot 2026-10-23 at 5.19.10 PM.png",
+      "repository_path": "plugins/message-quota-audit/evidence/user-test-1.0.1-01.png",
+      "width": 1262,
+      "height": 1804,
+      "bytes": 368567,
+      "sha256": "5d9a2c7709ec21561ab87af587c39a5ad5e9ad3db5049d546474787e57797dc4",
+      "transformation": "none; byte-identical original PNG"
+    },
+    {
+      "original_filename": "Screenshot 2026-10-23 at 5.19.19 PM.png",
+      "received_path": "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/TemporaryItems/NSIRD_screencaptureui_9QQ32c/Screenshot 2026-10-23 at 5.19.19 PM.png",
+      "repository_path": "plugins/message-quota-audit/evidence/user-test-1.0.1-02.png",
+      "width": 1244,
+      "height": 1826,
+      "bytes": 318372,
+      "sha256": "52286a9474b9349c9b671c723279598826885ff267ebbd6f28fc04c8616571c6",
+      "transformation": "none; byte-identical original PNG"
+    },
+    {
+      "original_filename": "Screenshot 2026-10-23 at 5.19.28 PM.png",
+      "received_path": "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/TemporaryItems/NSIRD_screencaptureui_ioFOHW/Screenshot 2026-10-23 at 5.19.28 PM.png",
+      "repository_path": "plugins/message-quota-audit/evidence/user-test-1.0.1-03.png",
+      "width": 1222,
+      "height": 1842,
+      "bytes": 468934,
+      "sha256": "e8b7c5c129820295cdde5d16f6dc32be6cb2ef03263e2a8d05cf2fc81a14e2f2",
+      "transformation": "none; byte-identical original PNG"
+    },
+    {
+      "original_filename": "Screenshot 2026-10-23 at 5.19.37 PM.png",
+      "received_path": "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/TemporaryItems/NSIRD_screencaptureui_ZNZFkT/Screenshot 2026-10-23 at 5.19.37 PM.png",
+      "repository_path": "plugins/message-quota-audit/evidence/user-test-1.0.1-04.png",
+      "width": 1186,
+      "height": 1854,
+      "bytes": 484778,
+      "sha256": "48e1180320b08f3cd6f1947e2617c0f4249c17b18e9478bfadb9bc26bd7d7ceb",
+      "transformation": "none; byte-identical original PNG"
+    }
+  ],
+  "association": "Screenshots show current1.0.1 prompt/workspace and completed tool results. Visible manual001 digest matches read-only local ledger; screenshot byte counts42/30/18 and units2/1/1 match.",
+  "local_readonly_crosscheck": {
+    "revision": 1,
+    "entries": [
+      [
+        "manual_001",
+        "2026-10-23",
+        "direct",
+        2,
+        42,
+        "fadf49b958d5416552a475d94eda4ee481196332967fb6f41a0589a4e8563bea"
+      ],
+      [
+        "manual_002",
+        "2026-10-23",
+        "direct",
+        1,
+        30,
+        "794a32c00f10127521c73a5439ad05ff5232a26129b57dfb14cf8da7fa1ed9c7"
+      ],
+      [
+        "manual_004",
+        "2026-10-23",
+        "offline",
+        1,
+        18,
+        "6078b51c1595a335b2ccbef2ab37aef5482e1771bc7afa93f288ec0e868fcf38"
+      ]
+    ]
+  },
+  "privacy_review": "No credentials/keys or unrelated private content observed; local username/path and public fictional test bodies are part of the user-authorized evidence. Originals preserved without redaction/recompression."
+}

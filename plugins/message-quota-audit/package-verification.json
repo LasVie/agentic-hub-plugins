@@ -1,0 +1,20 @@
+{
+  "version": "1.0.1",
+  "source_native_canonical_equality": true,
+  "Chinese_UTF8": true,
+  "license_sha256": "8d5ee4ed2408d928530d0515bfa8f8d1976f468f355a19aaa7f71921c4dce08d",
+  "payload_files": {
+    "README.md": "6542c8a44dc1c963feefa0f8af10fb310653f41f37cb55b32406afd36d252602",
+    "THIRD_PARTY_NOTICES.md": "936f25f5847dbd984a896862991e100a794fa28e73bc3617bfa627f8e82ce52f",
+    "licenses/whale-post-gate/LICENSE": "8d5ee4ed2408d928530d0515bfa8f8d1976f468f355a19aaa7f71921c4dce08d",
+    "licenses/whale-post-gate/UPSTREAM_HEADER.txt": "3cc8d7ad3d410938769f2837421e1b35865afba5ad181f340c1d8d2e72b6c986",
+    "manifest.json": "109f9e7079dfcd1ac811f42ffb77de3b35a1c2f033240266f323fecc1c0fc2c1",
+    "runtime/quota.py": "ad2b322ec4f7e482047a3b4aa8e80db6e7a2255ba7d4a5b735f8cd258a8bf845",
+    "scripts/quota_cli.py": "5d47d3bb1a4aab5657e964a17ac047ba59f4799c80dc0c902dc3c31cc2773534",
+    "skills/message-accounting/SKILL.md": "b2a9fc60410d905c8496f354e9803f00a3a75a5db806ce7bcd73d6a513449da0",
+    "tools/quota_tools.py": "cf27255226a9bd9709a51ce407e093cccbc7fcfd5b443744bb66087f4df9667e"
+  },
+  "no_cache_or_runtime_state": true,
+  "canonical_sha256": "0eb6d3f295db16ceb21717927cefeb21c081b3d2fd1408d9af68d9c61da5a4df",
+  "native_sha256": "61dff8962b7f481f9ae89eb6fdad0ef77f67e78d987f52c0652bdcdb3c31a9a6"
+}
