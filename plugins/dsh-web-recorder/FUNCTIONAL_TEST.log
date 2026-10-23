@@ -1,0 +1,40 @@
+start: {"ok": true, "session_id": "4719cc0e69a7", "endpoint": "ws://127.0.0.1:56470/devtools/browser/d16ae929-c23f-4f04-867f-17a990f792e3", "attached": false, "headless": true, "output_dir": "/Users/kodisiu/agentic-hub-plugins/dsh-web-recorder-sessions/4719cc0e69a7", "note": "Interact with the browser now, then call web_record_stop with this session_id."}
+status: {"ok": true, "session_id": "4719cc0e69a7", "active": true, "total_events": 12, "counts": {"click": 1, "input": 1, "change": 0, "submit": 0, "navigation": 2, "network": 8}, "output_dir": "/Users/kodisiu/agentic-hub-plugins/dsh-web-recorder-sessions/4719cc0e69a7"}
+automated evidence: /Users/kodisiu/agentic-hub-plugins/plugins/dsh-web-recorder/test-evidence/dsh-web-recorder-1.0.2-functional.png
+stop: {"ok": true, "session_id": "4719cc0e69a7", "total_events": 12, "counts": {"click": 1, "input": 1, "change": 0, "submit": 0, "navigation": 2, "network": 8}, "output_dir": "/Users/kodisiu/agentic-hub-plugins/dsh-web-recorder-sessions/4719cc0e69a7", "report_md": "/Users/kodisiu/agentic-hub-plugins/dsh-web-recorder-sessions/4719cc0e69a7/report.md", "events_jsonl": "/Users/kodisiu/agentic-hub-plugins/dsh-web-recorder-sessions/4719cc0e69a7/events.jsonl"}
+
+checks:
+  [PASS] click>=1
+  [PASS] input>=1
+  [PASS] navigation>=1
+  [PASS] network>=2
+  [PASS] events.jsonl non-empty
+  [PASS] report has timeline
+  [PASS] network has api/data
+
+counts: {"click": 1, "input": 1, "change": 0, "submit": 0, "navigation": 2, "network": 8}
+report.md first 40 lines:
+# Web Session Recording — 4719cc0e69a7
+
+- Started: 2026-10-23T13:21:30
+- Stopped: 2026-10-23T13:21:35
+- Endpoint: ws://127.0.0.1:56470/devtools/browser/d16ae929-c23f-4f04-867f-17a990f792e3
+- Total events: 12
+- Breakdown: click=1, input=1, change=0, submit=0, navigation=2, network=8
+
+## Timeline
+
+| # | +ms | kind | detail |
+| --- | --- | --- | --- |
+| 1 | 1103 | network | GET http://127.0.0.1:56469/ [Document] |
+| 2 | 1106 | network | ← 200 text/html http://127.0.0.1:56469/ |
+| 3 | 1111 | navigation | load → http://127.0.0.1:56469/ |
+| 4 | 1131 | network | GET http://127.0.0.1:56469/favicon.ico [Other] |
+| 5 | 1132 | network | ← 200 text/html http://127.0.0.1:56469/favicon.ico |
+| 6 | 2913 | input | input#field[name=field] (len=5) |
+| 7 | 2915 | click | button#go "Go" |
+| 8 | 2916 | network | GET http://127.0.0.1:56469/api/data [Fetch] |
+| 9 | 2917 | network | ← 200 application/json http://127.0.0.1:56469/api/data |
+| 10 | 3727 | navigation | popstate → http://127.0.0.1:56469/next |
+| 11 | 3730 | network | GET http://127.0.0.1:56469/favicon.ico [Other] |
+| 12 | 3732 | network | ← 200 text/html http://127.0.0.1:56469/favicon.ico |

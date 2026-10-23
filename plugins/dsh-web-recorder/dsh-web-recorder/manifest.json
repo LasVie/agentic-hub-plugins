@@ -1,0 +1,20 @@
+{
+  "version": "1.0.2", "package_type": "plugin", "source": "local", "id": "dsh-web-recorder", "name": "Web Session Recorder",
+  "description": "Record a user-guided browser session and export a Markdown timeline plus a structured event log.",
+  "display_name": {"en": "Web Session Recorder", "zh": "网页会话记录器"},
+  "display_description": {"en": "Capture real clicks, inputs, navigation and network traffic from a user-driven browser session, then emit report.md and events.jsonl to help reverse-engineer web flows and build API-level skills.", "zh": "记录用户真实操作的浏览器会话中的点击、输入、导航与网络请求，导出 report.md 时间线和 events.jsonl 事件日志，用于还原网页流程、构建 API 级技能。"},
+  "category": "Development",
+  "tags": [{"en":"Browser Automation","zh":"浏览器自动化"},{"en":"Session Recording","zh":"会话记录"},{"en":"Network Capture","zh":"网络抓取"}],
+  "default_init_input": {"en":"Record my browser session on: ","zh":"记录我在以下网址的浏览器会话："},
+  "quick_inputs": [
+    {"en":"Record my browser session on: ","zh":"记录我在以下网址的浏览器会话："},
+    {"en":"Stop the current recording and summarize the timeline","zh":"停止当前记录并总结时间线"},
+    {"en":"Attach to my already-running Chrome (http://127.0.0.1:9222) and record","zh":"接入我已在运行的 Chrome（http://127.0.0.1:9222）并记录"}
+  ],
+  "skills": [{"dir":"skills/web-recorder","mode":"all"}],
+  "tools": [
+    {"file":"tools/web_recorder.py","class":"WebRecordStartTool","display_name":{"en":"Start Recording","zh":"开始记录"},"display_description":{"en":"Launch or attach to a browser and start capturing the session.","zh":"启动或接入浏览器并开始捕获会话。"}},
+    {"file":"tools/web_recorder.py","class":"WebRecordStopTool","display_name":{"en":"Stop Recording","zh":"停止记录"},"display_description":{"en":"Stop the session and write report.md and events.jsonl.","zh":"停止会话并写出 report.md 与 events.jsonl。"}},
+    {"file":"tools/web_recorder.py","class":"WebRecordStatusTool","display_name":{"en":"Recording Status","zh":"记录状态"},"display_description":{"en":"List active recording sessions and live event counts.","zh":"列出进行中的记录会话与实时事件计数。"}}
+  ]
+}
