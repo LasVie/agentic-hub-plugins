@@ -3,10 +3,17 @@
 Task `AH-20261023-dsh-win-toolkit`; candidate `CAND-DSH-019`; owner Nguyen Trung Dung.
 Date: 2026-10-23, Asia/Singapore. Current Chinese display name: **Windows 本机工具箱**.
 
-Current package status: **Ready for Testing**. The original 1.0.0 user confirmation
-is historical; explicit completion confirmation for the rebuilt 1.0.1 is pending.
-The seven original screenshots remain unchanged and document the original test.
-No current-version frontend test, CI success, merge or lead acceptance is claimed.
+Current package status: **User testing confirmed; preparing submission**.
+Nguyen Trung Dung supplied seven new original 1.0.1 screenshots and said,
+"These are the new screenshot verification for the 1.0.1 version, confirm and proceed"
+on 2026-10-23. See `USER_TEST_CONFIRMATION.md` and
+`test-evidence/1.0.1/originals.json` for exact package association and image hashes.
+New frontend evidence covers completed calls for all five tools, hosts 21 lines,
+TCP OPEN/CLOSED, enabled plugin, clipboard write/read and notification completion.
+The read returns subsequently copied prompt text; no numeric round trip is claimed.
+The OS popup and raw result panels are not shown. The original 1.0.0 evidence is
+preserved separately. Required CI and permanent links are checked before merge;
+Project Lead acceptance remains pending.
 
 | Current archive | SHA-256 |
 | --- | --- |
@@ -34,8 +41,9 @@ New direct tests use the real Tool classes in the existing Windows host venv:
 - Source: **7/7 PASS**; independently extracted native package: **7/7 PASS**.
 - Checks: hosts content/line-count shape; actual loopback TCP OPEN then CLOSED
   or TIMEOUT; invalid port; missing host; clipboard read shape; declared classes.
-- Clipboard write and notification were not repeated in this repair run. Their
-  original test evidence remains historical, and runtime logic is unchanged.
+- Clipboard write and notification were not repeated by the agent in this repair
+  run. Both are exercised in the new user frontend screenshots; runtime logic
+  is unchanged. Original direct-write testing remains historical.
 - `python -B -m unittest discover -s tests -p test_playground.py -v`: **4/4 PASS**
   in this LF checkout. No clean-main failure is inferred from a bad local clone.
 - Package contract, deterministic rebuild and clean-checkout verification are

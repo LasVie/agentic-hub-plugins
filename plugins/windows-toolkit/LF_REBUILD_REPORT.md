@@ -13,7 +13,7 @@ native payloads, but those bytes do not match their Git source. The old
 `source_zip_payload_identical` finding described the former CRLF working copy,
 not a clean LF clone; it must not be propagated as clean-checkout evidence.
 
-## Repair prepared locally
+## Repair and current user confirmation
 
 - Build from LF source; scoped `.gitattributes` preserves those text bytes on
   clients with either autocrlf setting and leaves ZIP/PNG originals binary.
@@ -82,12 +82,24 @@ task owner; do not reset them to Ready for Testing or claim this agent repaired
 them. API server reads confirmed the valid saved state. This agent changed no
 cell in Cai Zhenze's task.
 
-## Remaining delivery gates
+## Current delivery state
 
-Current 1.0.1 user completion is pending under AGENTS.md's changed-package rule.
-The original seven screenshots and 1.0.0 confirmation remain preserved; they
-are not represented as fresh 1.0.1 frontend testing. After explicit current
-confirmation, update PR42 and all current-version/hash records, verify original
-evidence links and required CI, merge under the existing authorization, then
-delete only the eligible temporary source branch. Leave Project Lead acceptance
-pending and Asset Ledger unchanged until their separate requirements are met.
+Nguyen Trung Dung supplied seven new original 1.0.1 screenshots in the current
+conversation on 2026-10-23 and explicitly said:
+
+> These are the new screenshot verification for the 1.0.1 version, confirm and proceed
+
+Current-package completion is confirmed. Exact hashes remain unchanged. The new
+images were visually inspected and preserved byte-for-byte with original names
+in test-evidence/1.0.1; their manifest and scope are in originals.json and
+USER_TEST_CONFIRMATION.md. They show completed calls for all five tools, including
+hosts content/21-line result, open/closed TCP, clipboard operations, notification
+completion and plugin enabled. Clipboard read returned subsequently copied text;
+the OS notification popup and raw backend outputs are not independently shown.
+
+The two diagnosed blockers are resolved: LF package contract passes, and the
+other contributor repaired the tracker before this agent wrote any of his cells.
+Current main (726e157, merged PR43) is incorporated without runtime changes to
+the confirmed Windows Toolkit ZIPs. Required CI and permanent screenshot links
+are verified before merge under existing authorization. Project Lead acceptance
+remains pending; no Hub action or Asset Ledger change is claimed.

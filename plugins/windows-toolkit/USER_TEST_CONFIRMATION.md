@@ -1,38 +1,66 @@
 # Windows Toolkit — current and historical confirmation
 
-## Current LF rebuild: 1.0.1
+## Current Chinese 1.0.1: user testing confirmed
 
-Owner Nguyen Trung Dung; task `AH-20261023-dsh-win-toolkit`; candidate `CAND-DSH-019`.
-Chinese display name: **Windows 本机工具箱**.
+Owner **Nguyen Trung Dung**; Task `AH-20261023-dsh-win-toolkit`;
+Candidate `CAND-DSH-019`; Chinese display name **Windows 本机工具箱**.
+Confirmation report: `RPT-20261023-dsh-win-toolkit-usertest-101`.
 
-- Native ZIP: `test-packages/windows-toolkit-1.0.1-native.zip`.
+> These are the new screenshot verification for the 1.0.1 version, confirm and proceed
+
+Received in the current conversation on 2026-10-23. Verification observed at
+17:43:10 Asia/Singapore; exact message sent time and message permalink are
+unavailable, so neither is invented. The user explicitly identifies the new
+screenshots as 1.0.1 verification and instructs us to proceed. This supersedes
+the earlier pending record for the LF rebuild. Existing merge authorization is
+reused. The original 1.0.0 confirmation and images remain historical evidence.
+
+- Tested native ZIP: `test-packages/windows-toolkit-1.0.1-native.zip`.
 - Native SHA-256: `18c6b8d439992404bb308ac37084405a92869d38523c64d473dbf42d499421d4`.
+- Canonical ZIP: `releases/agent-plugin/windows-toolkit/1.0.1/windows-toolkit-1.0.1.zip`.
 - Canonical SHA-256: `844450ba04d52481dbdb762eb515ddca4fcea179a1191f82d33f8a0a90b874a4`.
-- Source/native/canonical payloads now match exactly and use LF; license unchanged.
-- Changed bytes: CRLF normalization and manifest.version only. Python AST and
-  all other normalized payload bytes match the tested 1.0.0 package.
-- Agent repair validation: 7/7 real source checks and 7/7 extracted checks pass.
-- **Current-package user test completion: pending.** No new user quote or manual
-  test is invented. Existing merge authorization is preserved; do not ask again
-  for the same merge permission after the changed-package gate passes.
+- All six native payload files match source and canonical ZIP exactly, use
+  UTF-8/LF, and retain the pinned MIT license. Only line endings and
+  manifest.version changed from 1.0.0; Python AST is unchanged.
+- Current source and separately extracted native read-only direct checks: 7/7
+  each PASS. Clipboard write/notification were not repeated by the agent during
+  repair; they are exercised in the user's new frontend evidence below.
 
-The seven original PNGs and [PR evidence comment](https://github.com/LasVie/agentic-hub-plugins/pull/42#issuecomment-6361186996)
-are preserved for the original 1.0.0 test. No screenshot shows a version or hash.
-The same visible workflow and locale names remain applicable functionally, but
-association with the rebuilt 1.0.1 requires the user's explicit confirmation.
-Source/license review and automated checks do not replace that confirmation.
+## Seven new original PNGs for 1.0.1
 
-The user clarified in the continuation conversation that the successful tests
-were for the Chinese 1.0.0, then requested the 1.0.1 ZIP path. That clarification
-is not recorded as completion confirmation for 1.0.1. The exact new native path
-and hash were supplied; current-version confirmation remains pending.
+Stored in `test-evidence/1.0.1/` under their original filenames. All seven local
+originals were visually matched against the conversation images. Copies retain
+the exact source bytes, dimensions and hashes, without recompression or editing.
+`originals.json` records identity, package hashes and evidence scope. No
+credentials or private content requiring redaction were visible in these images.
 
-Evidence correction after inspecting all seven images: the hosts and external
-netdiag prompts contain Chinese. Clipboard/notification examples use English
-and numeric text. No image demonstrates a Chinese clipboard write/read round
-trip. The older blanket statement that all UI inputs were English/numeric is
-too broad; the original file is retained as historical evidence below and in
-`USER_TEST_CONFIRMATION_1.0.0.md`.
+| Original filename | Visible evidence | Bytes | Dimensions | SHA-256 |
+| --- | --- | ---: | --- | --- |
+| `Screenshot 2026-10-23 173831.png` | win_hosts_list: completed tool call; hosts path, 21 total lines, no custom mappings | 56158 | 1227×597 | `e216e6cc4f807f19f6480be3a01e6d0a71a8e1e89aa16dc0456e32a5346d7adb` |
+| `Screenshot 2026-10-23 173843.png` | win_netdiag: github.com:443, DNS 20.205.243.166, TCP OPEN | 44239 | 1178×532 | `23c672e1d440e2c5f31493f4b2d40cf347203e1cc450280dd9c30f352bd0f187` |
+| `Screenshot 2026-10-23 173854.png` | win_netdiag: 127.0.0.1:1, TCP CLOSED | 38577 | 1147×497 | `12f829622545799af399a49a5eebfd191dd924b8eee04e8bdf7f2dc01fd9f561` |
+| `Screenshot 2026-10-23 173904.png` | win_notify: completed tool call; assistant reports Notification / 67676767; OS popup itself not shown | 35167 | 1167×455 | `8863e7cfd80d5412d3711d6d133a1a409187a30dc3fc73b57704812977ad3639` |
+| `Screenshot 2026-10-23 173918.png` | win_clipboard_write: completed tool call; assistant reports 67676767, 8 characters | 29925 | 1042×467 | `5628182a030ac26b9c8804296f03de7f34add848131ca15635c41715433878c5` |
+| `Screenshot 2026-10-23 173929.png` | win_clipboard_read: completed tool call; current text is Read what is on my clipboard, not the earlier numeric value | 26968 | 1192×482 | `f8ba9c3bcfcfcc4c99e4637a68f1c805245fedbb57f8803e3f10e85f79bed047` |
+| `Screenshot 2026-10-23 173938.png` | Plugins panel: Windows Toolkit enabled; clipboard-read conversation visible behind panel | 46617 | 742×537 | `03c134e63cbb747f3f7d5734dbf491c3f005317abc58c7c1ced9247505d1c21e` |
+
+The visible conversation runs from 17:35 to 17:38 on 2026-10-23. It shows
+completed tool calls for all five tools, an enabled plugin, the 21-line hosts
+result, and both open/closed network results. Hosts and external-netdiag inputs
+contain Chinese; clipboard/notification inputs use English and numeric text.
+
+Evidence limits: the UI renders the English locale name **Windows Toolkit**;
+none of the images shows a version/hash, so version association relies on the
+user's explicit confirmation above. The clipboard read returns the newly copied
+prompt text rather than `67676767`; no uninterrupted write/read round trip is
+claimed. Notification completion appears in the conversation, but the OS popup
+itself is not photographed. Raw result panels are collapsed; no independent raw
+backend event trace is claimed. Chinese clipboard round-trip coverage comes
+from the original direct-tool test, not these new screenshots.
+
+No known blocking issue remains in the performed checks. PR CI and permanent
+image-link verification are required before merge. Project Lead acceptance and
+Hub operations remain separate and pending.
 
 ## Historical user confirmation: original 1.0.0
 

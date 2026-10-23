@@ -38,7 +38,7 @@
 - 解包检查命令、文件清单与哈希核对结果：见 `package-verification.json`、`packaging-repair-verification.json` 与 `TEST_REPORT.md`
 - 原生开发时的需求来源、材料接触记录与 NATIVE_DESIGN.md：不适用（本任务为已授权复用，`mode: ported`）
 - AI 结论：**verified** — MIT 全文已随包保留，复用范围限定为工具语义与脚本逻辑，未纳入未授权材料
-- 待解决事项：无许可阻塞；原 1.0.0 用户测试确认已保留，当前 LF 重建版 1.0.1 的明确完成确认仍待收到。Hub 操作由 Song Haoran 负责。
+- 待解决事项：无许可阻塞；原 1.0.0 用户测试确认已保留，用户已于 2026-10-23 明确确认 1.0.1 并提供七张新的原始截图。Hub 操作由 Song Haoran 负责。
 
 ## LF packaging repair — 2026-10-23
 
@@ -51,6 +51,8 @@ copy with the SHA-256 above. Required notices and attribution remain bundled.
 
 Current native SHA-256: `18c6b8d439992404bb308ac37084405a92869d38523c64d473dbf42d499421d4`.
 Current canonical SHA-256: `844450ba04d52481dbdb762eb515ddca4fcea179a1191f82d33f8a0a90b874a4`.
-The original packages and reports remain historical evidence. No new-version
-user completion, frontend test, merge, Hub action or Project Lead acceptance is
-claimed. See `LF_REBUILD_REPORT.md` for the diagnosed bug and actual checks.
+The original packages and reports remain historical evidence. Nguyen Trung Dung
+explicitly confirmed 1.0.1 with seven new original screenshots on 2026-10-23;
+see USER_TEST_CONFIRMATION.md. Required CI/image links are verified before merge.
+No Hub action or Project Lead acceptance is claimed. See LF_REBUILD_REPORT.md
+for the diagnosed bug and actual checks.
