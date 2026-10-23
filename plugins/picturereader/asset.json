@@ -1,0 +1,15 @@
+{
+  "type": "agent-plugin",
+  "name": "picturereader",
+  "version": "1.0.0",
+  "display_name": "Pixel Evidence Reader",
+  "description": "Turn local images into deterministic text evidence for text-only models: coarse luminance and color grids, structure fingerprints, exact pixel samples, dominant palettes, and reproducible region crops.",
+  "publisher": "WorkSwarm",
+  "category": "多模态与媒体",
+  "tags": ["image-analysis", "pixel-grid", "offline", "text-only-models", "palette"],
+  "functional_tags": ["Images and OCR", "Privacy and Compliance", "Testing and Debugging"],
+  "scope": "Analyzes local PNG/JPEG/WebP/BMP/GIF images without external calls. It does not perform OCR, semantic image Q&A, document conversion, model-adapter interception, or external VLM routing.",
+  "candidate_id": "CAND-DSH-177",
+  "task_id": "AH-20261023-picturereader",
+  "related_asset_ids": ["6d8fa6247b3f4433a2a3461a102f9e33", "335483a004ac44828ce57577cb465fe3", "8978dad9e5cc4dd4a560f3dc624aca35", "de19f9cb94ad4fa081605924c8992ee5"]
+}

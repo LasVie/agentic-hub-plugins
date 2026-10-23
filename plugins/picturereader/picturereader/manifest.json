@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "source": "local",
+  "id": "picturereader",
+  "name": "Pixel Evidence Reader",
+  "description": "Convert local images into deterministic text grids, structure fingerprints, pixel samples, palettes, and region crops for text-only models.",
+  "display_name": {"en": "Pixel Evidence Reader", "zh": "像素证据读图器"},
+  "display_description": {"en": "Inspect local images without external calls using pixel grids, measured structure, exact samples, dominant colors, and reproducible region zooms.", "zh": "无需外部调用，通过像素网格、结构测量、精确采样、主色和可复现区域放大来检查本地图像。"},
+  "category": "Productivity",
+  "tags": [{"en": "Image Analysis", "zh": "图像分析"}, {"en": "Offline", "zh": "离线"}, {"en": "Pixel Evidence", "zh": "像素证据"}],
+  "default_init_input": {"en": "Read this local image with pixel evidence: ", "zh": "用像素证据读取这张本地图像："},
+  "quick_inputs": [
+    {"en": "Scan this image and explain its measured layout and colors: ", "zh": "扫描此图并解释测得的布局和颜色："},
+    {"en": "Sample exact pixels at these coordinates: ", "zh": "精确采样这些坐标处的像素："},
+    {"en": "Crop and rescan this region: ", "zh": "裁剪并重新扫描此区域："}
+  ],
+  "skills": [{"dir": "skills/pixel-evidence-reading", "mode": "all"}],
+  "tools": [
+    {"file": "tools/picture_reader.py", "class": "ImageScanTool", "display_name": {"en": "Scan Image", "zh": "扫描图像"}, "display_description": {"en": "Produce bounded luminance/color grids and structure metrics.", "zh": "生成有界亮度/颜色网格和结构指标。"}},
+    {"file": "tools/picture_reader.py", "class": "ImageSampleTool", "display_name": {"en": "Sample Pixels", "zh": "采样像素"}, "display_description": {"en": "Read exact or locally averaged pixel values.", "zh": "读取精确或局部平均像素值。"}},
+    {"file": "tools/picture_reader.py", "class": "ImagePaletteTool", "display_name": {"en": "Measure Palette", "zh": "测量色板"}, "display_description": {"en": "Measure dominant colors and proportions.", "zh": "测量主色及其比例。"}},
+    {"file": "tools/picture_reader.py", "class": "ImageCropTool", "display_name": {"en": "Crop Region", "zh": "裁剪区域"}, "display_description": {"en": "Export a selected region as PNG for reproducible zooming.", "zh": "将所选区域导出为 PNG，便于可复现放大。"}}
+  ]
+}
