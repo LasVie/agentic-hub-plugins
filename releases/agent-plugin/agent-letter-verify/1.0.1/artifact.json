@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:agent-letter-verify",
+  "type": "agent-plugin",
+  "name": "agent-letter-verify",
+  "version": "1.0.1",
+  "zip": "agent-letter-verify-1.0.1.zip",
+  "sha256": "c195834594177edaef1516a3be7e725b75c20467454de6b80bb9d0842b64c9e6",
+  "payload_sha256": {
+    "README.md": "479670b38437ba62efa8e972dfcfdd9a0e811d0be14b460629a28d4868d75560",
+    "THIRD_PARTY_NOTICES.md": "958cacd82d4a0af1467774dd78a3f27f2fc95ac8712e41376967257b35533dc7",
+    "licenses/whale-post-verify/LICENSE": "8d5ee4ed2408d928530d0515bfa8f8d1976f468f355a19aaa7f71921c4dce08d",
+    "manifest.json": "908341730d2f58d436c2cdf50af052b910b733a5a0b5c541bd23401d277cf2a8",
+    "runtime/verifier.py": "6ff147e2eb6d6e917ccb36ff2149ea626e3e4a0a7f56beea14d4f7962117d9f5",
+    "scripts/letter_cli.py": "eea619187f5c3f32a1b2d7b1d97ea4fe9639c163f7793a4154f44a666e329d68",
+    "skills/letter-integrity/SKILL.md": "4ba87bc9d9e842773ff97217acd4fd136de6ec3fe8c9893f83ba16c3d9b2c323",
+    "tools/letter_tools.py": "939028f1361c8235d05dd571483d8aee99b4993876e3029bf6c36497f919c38c"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "78e41cdf5b699ebd59d23f4fc4be61a17146ae336e1f5f31c9d62c97e095fa7c",
+  "functional_test_report_sha256": "5194a65cd9e708b4ecb3f3b868cf31da4d6bd0fbfdaf3f4ff8e0e2670fa21bcc"
+}

@@ -1,0 +1,29 @@
+{
+  "type": "agent-plugin",
+  "name": "agent-letter-verify",
+  "version": "1.0.1",
+  "display_name": "代理信件完整性校验",
+  "description": "离线核对代理信件的结构、发件人白名单、正文摘要和 HMAC；明确区分通过、拒绝与未校验，不发送信件。",
+  "publisher": "Cai Zhenze",
+  "category": "软件开发",
+  "tags": [
+    "代理信件",
+    "完整性",
+    "HMAC",
+    "离线校验"
+  ],
+  "functional_tags": [
+    "Agent Message Integrity",
+    "HMAC Verification",
+    "Local Trust Policy"
+  ],
+  "scope": "Explicit offline verification of the supported whale-post-basic-v1 JSON envelope profile using local per-sender keys. Linux/macOS, Python >=3.11 standard library plus the host SDK; no transport, automatic WorkSwarm interception, replay defense, unique-author identity proof or secret output.",
+  "candidate_id": "CAND-DSH-305",
+  "task_id": "AH-20261023-agent-letter-verify",
+  "related_asset_ids": [
+    "b68e551f74ec46818b51492be6efb83c",
+    "04d23729393a4070a80dd38bc6ce1cab",
+    "2c760446a88c433aaff1bf94f046701a",
+    "repo:agent-plugin:dsh-smart-download"
+  ]
+}

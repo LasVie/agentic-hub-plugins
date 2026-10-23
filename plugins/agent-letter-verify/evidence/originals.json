@@ -1,0 +1,29 @@
+{
+  "task_id": "AH-20261023-agent-letter-verify",
+  "candidate_id": "CAND-DSH-305",
+  "version": "1.0.1",
+  "provided_by": "Cai Zhenze",
+  "received_at": "2026-10-23T15:40:40+08:00",
+  "images": [
+    {
+      "original_filename": "Screenshot 2026-10-23 at 3.40.01 PM.png",
+      "file": "user-test-1.0.1-01.png",
+      "bytes": 296499,
+      "dimensions": [
+        836,
+        1714
+      ],
+      "sha256": "807bfb46a54dc8b1b46cdf08d88c813452abf27c162b85874059050755680605"
+    },
+    {
+      "original_filename": "Screenshot 2026-10-23 at 3.40.11 PM.png",
+      "file": "user-test-1.0.1-02.png",
+      "bytes": 368279,
+      "dimensions": [
+        842,
+        1270
+      ],
+      "sha256": "8ed43a932b220db5a3ede36ad306520ade4a21b23c4bbffa2e828a0103559529"
+    }
+  ]
+}
