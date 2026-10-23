@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fet version="6.28.0">
+  <Institution_Name>星河示例学校（虚构）</Institution_Name>
+  <Comments>独立编写的测试资料；教师、班级与安排均为虚构。</Comments>
+  <Days_List><Number_of_Days>2</Number_of_Days><Day><Name>星期一</Name></Day><Day><Name>星期二</Name></Day></Days_List>
+  <Hours_List><Number_of_Hours>4</Number_of_Hours><Hour><Name>第1节</Name></Hour><Hour><Name>第2节</Name></Hour><Hour><Name>第3节</Name></Hour><Hour><Name>第4节</Name></Hour></Hours_List>
+  <Subjects_List><Subject><Name>数学</Name></Subject><Subject><Name>语文</Name></Subject><Subject><Name>科学</Name></Subject></Subjects_List>
+  <Teachers_List><Teacher><Name>张老师</Name></Teacher><Teacher><Name>李老师</Name></Teacher></Teachers_List>
+  <Students_List>
+    <Year><Name>七年级</Name><Number_of_Students>60</Number_of_Students>
+      <Group><Name>七年级一班</Name><Number_of_Students>30</Number_of_Students><Subgroup><Name>一班甲组</Name><Number_of_Students>15</Number_of_Students></Subgroup><Subgroup><Name>一班乙组</Name><Number_of_Students>15</Number_of_Students></Subgroup></Group>
+      <Group><Name>七年级二班</Name><Number_of_Students>30</Number_of_Students><Subgroup><Name>二班甲组</Name><Number_of_Students>30</Number_of_Students></Subgroup></Group>
+    </Year>
+  </Students_List>
+  <Activity_Tags_List />
+  <Activities_List>
+    <Activity><Teacher>张老师</Teacher><Subject>数学</Subject><Students>七年级一班</Students><Duration>2</Duration><Total_Duration>2</Total_Duration><Id>101</Id><Activity_Group_Id>0</Activity_Group_Id><Active>true</Active><Comments /></Activity>
+    <Activity><Teacher>李老师</Teacher><Subject>语文</Subject><Students>七年级二班</Students><Duration>1</Duration><Total_Duration>1</Total_Duration><Id>102</Id><Activity_Group_Id>0</Activity_Group_Id><Active>true</Active><Comments /></Activity>
+    <Activity><Teacher>张老师</Teacher><Subject>科学</Subject><Students>七年级二班</Students><Duration>1</Duration><Total_Duration>1</Total_Duration><Id>103</Id><Activity_Group_Id>0</Activity_Group_Id><Active>true</Active><Comments /></Activity>
+  </Activities_List>
+  <Buildings_List />
+  <Rooms_List />
+  <Time_Constraints_List>
+    <ConstraintBasicCompulsoryTime><Weight_Percentage>100</Weight_Percentage><Active>true</Active></ConstraintBasicCompulsoryTime>
+    <ConstraintTeacherNotAvailableTimes><Weight_Percentage>100</Weight_Percentage><Teacher>张老师</Teacher><Number_of_Not_Available_Times>1</Number_of_Not_Available_Times><Not_Available_Time><Day>星期一</Day><Hour>第4节</Hour></Not_Available_Time><Active>true</Active></ConstraintTeacherNotAvailableTimes>
+    <ConstraintStudentsSetNotAvailableTimes><Weight_Percentage>100</Weight_Percentage><Students>七年级</Students><Number_of_Not_Available_Times>1</Number_of_Not_Available_Times><Not_Available_Time><Day>星期二</Day><Hour>第4节</Hour></Not_Available_Time><Active>true</Active></ConstraintStudentsSetNotAvailableTimes>
+  </Time_Constraints_List>
+  <Space_Constraints_List />
+</fet>

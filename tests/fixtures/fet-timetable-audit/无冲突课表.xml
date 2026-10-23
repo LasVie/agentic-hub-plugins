@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Activities_Timetable>
+  <Activity><Id>101</Id><Day>星期一</Day><Hour>第1节</Hour><Room /></Activity>
+  <Activity><Id>102</Id><Day>星期一</Day><Hour>第1节</Hour><Room /></Activity>
+  <Activity><Id>103</Id><Day>星期二</Day><Hour>第1节</Hour><Room /></Activity>
+</Activities_Timetable>

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:fet-timetable-audit",
+  "type": "agent-plugin",
+  "name": "fet-timetable-audit",
+  "version": "1.0.0",
+  "zip": "fet-timetable-audit-1.0.0.zip",
+  "sha256": "20ce4ca8188428a8d8abd957be6158f83d76337322cf70ba78c9b3ba1b80c911",
+  "payload_sha256": {
+    "README.md": "674da07efe867abf0942ae79fd767a1eabde9960849f57a14040445a8aeb6aeb",
+    "THIRD_PARTY_NOTICES.md": "0b02101d66f56848c6397e8b5ff396ec77b6727bf7da4b811b726fbcf3149736",
+    "lib/fet_audit.py": "f79c2e5039b9d21096baf97c0ce0736896452bd7c5fbd187f170e6a9854e0de7",
+    "licenses/fet-claude-skill/LICENSE": "e3ed89d5dfdbd375ad42d40bce582e5d35f4749e5e2a9112e975965f6cec9cfb",
+    "manifest.json": "344935ab66844ac97e24ec0590d073a3b71546b28bfd6c4dd97b507759335c02",
+    "scripts/audit_cli.py": "5c46a034c81ff6063ff73ce9dbad560329f6f77f660d129567e7a2ad9c4acea8",
+    "skills/timetable-audit/SKILL.md": "557b01b15afdbc61f8d9ef8bd8394265937c471735a7500efccb69d9c8d7c8c0",
+    "tools/timetable_tools.py": "55bf3d2e0e9f3eaa563fd0aa31cc2569a6de7a722a2d80df2ee5966c939a6f96"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "04606db00f0832dcf36fe1f4bbaf170e2b9a75db45dba6046dd1d962e3cffa05",
+  "functional_test_report_sha256": "7c4f577ea6d844e23bdb630c414d1d3e331cae77c100d1acc57bfa7298472e0b"
+}

@@ -1,0 +1,21 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/nispa/fet-claude-skill",
+      "revision": "beb2e1193665deb68b8f29d7617e7bb972573d95",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/fet-claude-skill/LICENSE",
+          "sha256": "e3ed89d5dfdbd375ad42d40bce582e5d35f4749e5e2a9112e975965f6cec9cfb"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "lib/fet_audit.py"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}
