@@ -57,16 +57,18 @@ Missing original screenshots prevent delivery push/PR creation. A missing PR evi
 
 - [ ] Actual merge and merge commit verified
 - [ ] Original Development Task, Progress Reports and linked candidate synchronized as applicable; Asset Ledger left unchanged after merge
-- [ ] Candidate/task IDs, owners and any handoff or conflict verified
+- [ ] Candidate/task IDs, owners, Final Plugin Name and any handoff or conflict verified
 - [ ] Merged release path, version/hash, installation notes and test evidence handed off to Song Haoran
-- [ ] Final Project Lead acceptance recorded only from Song Haoran's explicit conclusion
-- [ ] Completed / Delivered used only after contributor delivery gates and explicit Project Lead acceptance pass; test completion alone is insufficient
+- [ ] Final Project Lead acceptance recorded from Song Haoran's verified corresponding-version Hub submission screenshot or explicit acceptance; no duplicate verbal approval requested
+- [ ] Completed / Delivered used only after contributor delivery gates and Project Lead acceptance pass; Completed Date uses the actual acceptance/evidence-upload date (Asia/Singapore)
 
 Song Haoran personally handles Agentic Hub submission/publication and associated Hub evidence. Contributors and their agents do not perform those operations. Preserve the Agentic Hub Submission Screenshot column for real evidence supplied by him; it may remain blank and is not a contributor completion gate. Both screenshot columns accept only verified PR evidence permalinks.
 
-## Later Asset Ledger synchronization — after verified Hub submission only
+## Later Asset Ledger synchronization — official public Hub catalog only
 
-Song Haoran personally submits the asset to Agentic Hub. Update Asset Ledger only after verifiable success for the corresponding asset/version; Submitted - Pending Review qualifies without waiting for publication. PR merge, saved drafts and failed submissions do not qualify. Record real Hub evidence and update the existing asset/version once, preserving stable IDs and original task links. This later registration is outside contributor completion gates.
+Song Haoran personally handles Hub operations. His verified Hub submission screenshot for this exact asset/version counts as Accepted; write the evidence permalink, actual upload date and Final Plugin Name to the original task, and synchronize linked candidate/reports. A valid existing image can be backfilled using its original date. Keep test confirmation and all other delivery gates intact.
+
+Update Asset Ledger only when the corresponding asset/version actually appears in the official public Hub catalog, verified by real Hub ID, display name, public version and detail URL. PR merge, a submission receipt, an owner-only detail page or Submitted - Pending Review alone is insufficient. Retain the previously verified public version for unpublished upgrades. Remove confirmed erroneous non-catalog ledger rows without deleting their development/PR evidence. Catalog registration is independent from lead acceptance.
 
 ## If this plugin task is cancelled
 
