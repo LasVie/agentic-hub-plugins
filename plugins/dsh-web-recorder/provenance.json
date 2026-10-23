@@ -1,0 +1,8 @@
+{
+  "mode": "native",
+  "permission_status": "original",
+  "sources": [],
+  "reused_paths": [],
+  "audit_file": "SOURCE_REVIEW.md",
+  "independent_spec": "NATIVE_DESIGN.md"
+}

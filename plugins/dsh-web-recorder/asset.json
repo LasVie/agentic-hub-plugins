@@ -1,0 +1,15 @@
+{
+  "type": "agent-plugin",
+  "name": "dsh-web-recorder",
+  "version": "1.0.2",
+  "display_name": "Web Session Recorder",
+  "description": "Record a user-guided browser session — clicks, inputs, navigation and network traffic — over the Chrome DevTools Protocol, then export a Markdown timeline (report.md) and a structured events.jsonl log to reverse-engineer web flows and build API-level skills.",
+  "publisher": "WorkSwarm",
+  "category": "软件开发",
+  "tags": ["browser", "recorder", "network-capture", "cdp", "api-discovery"],
+  "functional_tags": ["Browsers and Web", "Testing and Debugging", "APIs and MCP"],
+  "scope": "Records and summarizes a human-driven Chromium-family browser session into report.md + events.jsonl. It does not drive/automate the browser for the user, capture request/response bodies, store input value contents (only lengths), download a browser, or support Firefox/WebKit. Requires an installed Chrome/Edge/Chromium on the host.",
+  "candidate_id": "CAND-DSH-172",
+  "task_id": "AH-20261023-dsh-web-recorder",
+  "related_asset_ids": []
+}
