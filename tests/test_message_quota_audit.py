@@ -16,7 +16,14 @@ import unittest
 REPO=Path(__file__).resolve().parents[1]
 PAYLOAD=Path(os.environ.get("MESSAGE_QUOTA_TEST_PAYLOAD",REPO/"plugins/message-quota-audit/message-quota-audit"))
 spec=importlib.util.spec_from_file_location("quota_test_core",PAYLOAD/"runtime/quota.py")
-q=importlib.util.module_from_spec(spec);spec.loader.exec_module(q)
+q=importlib.util.module_from_spec(spec)
+# Test imports must not mutate the source payload inspected by check-repo.
+_previous_bytecode=sys.dont_write_bytecode
+try:
+    sys.dont_write_bytecode=True
+    spec.loader.exec_module(q)
+finally:
+    sys.dont_write_bytecode=_previous_bytecode
 NOW=int(datetime(2026,10,23,8,tzinfo=timezone.utc).timestamp()*1000)
 
 
@@ -143,7 +150,7 @@ class QuotaTests(unittest.TestCase):
     def test_separate_processes_share_atomic_limit(self):
         self.configure(pair_max=100,buckets={"direct":{"limit":3,"per_send":False}})
         cli=PAYLOAD/"scripts/quota_cli.py"
-        procs=[subprocess.Popen([sys.executable,str(cli),"record"],stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True) for _ in range(8)]
+        procs=[subprocess.Popen([sys.executable,"-B",str(cli),"record"],stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True) for _ in range(8)]
         for n,p in enumerate(procs):
             p.stdin.write(q.packed({"workspace":self.w,"message_json":q.packed(message(n)),"confirmed":True}));p.stdin.close();p.stdin=None
         results=[]
@@ -174,9 +181,9 @@ class QuotaTests(unittest.TestCase):
         self.code(self.configure(buckets={"direct":{"limit":-1,"per_send":False}}),"invalid_policy")
     def test_cli_real_json_and_chinese_help(self):
         cli=PAYLOAD/"scripts/quota_cli.py"
-        p=subprocess.run([sys.executable,str(cli),"check"],input=q.packed({"workspace":self.w,"message_json":q.packed(message())}),text=True,capture_output=True)
+        p=subprocess.run([sys.executable,"-B",str(cli),"check"],input=q.packed({"workspace":self.w,"message_json":q.packed(message())}),text=True,capture_output=True)
         self.assertEqual(p.returncode,0,p.stderr);self.assertEqual(json.loads(p.stdout)["verdict"],"allowed")
-        p=subprocess.run([sys.executable,str(cli),"--help"],text=True,capture_output=True);self.assertEqual(p.returncode,0);self.assertIn("用法",p.stdout)
+        p=subprocess.run([sys.executable,"-B",str(cli),"--help"],text=True,capture_output=True);self.assertEqual(p.returncode,0);self.assertIn("用法",p.stdout)
 
 
 if __name__=="__main__":unittest.main()
