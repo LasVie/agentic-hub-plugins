@@ -14,7 +14,8 @@
       ],
       "observed_content": "WorkSwarm export result/version/hash; also shows host control-input error",
       "received_from": "Cai Zhenze, current conversation",
-      "modifications": "None; original PNG bytes preserved"
+      "modifications": "None; original PNG bytes preserved",
+      "repository_path": "plugins/invaders-local/evidence/user-test-1.0.2-01.png"
     },
     {
       "original_filename": "Screenshot 2026-10-23 at 5.38.48 PM.png",
@@ -27,7 +28,8 @@
       ],
       "observed_content": "WorkSwarm artifact preview, empty game board in this preview",
       "received_from": "Cai Zhenze, current conversation",
-      "modifications": "None; original PNG bytes preserved"
+      "modifications": "None; original PNG bytes preserved",
+      "repository_path": "plugins/invaders-local/evidence/user-test-1.0.2-02.png"
     },
     {
       "original_filename": "Screenshot 2026-10-23 at 5.38.55 PM.png",
@@ -40,7 +42,8 @@
       ],
       "observed_content": "Standalone local HTML initial board and v1.0.2",
       "received_from": "Cai Zhenze, current conversation",
-      "modifications": "None; original PNG bytes preserved"
+      "modifications": "None; original PNG bytes preserved",
+      "repository_path": "plugins/invaders-local/evidence/user-test-1.0.2-03.png"
     },
     {
       "original_filename": "Screenshot 2026-10-23 at 5.39.14 PM.png",
@@ -53,8 +56,10 @@
       ],
       "observed_content": "Standalone gameplay, score40/wave1/lives3/position11/tick228",
       "received_from": "Cai Zhenze, current conversation",
-      "modifications": "None; original PNG bytes preserved"
+      "modifications": "None; original PNG bytes preserved",
+      "repository_path": "plugins/invaders-local/evidence/user-test-1.0.2-04.png"
     }
   ],
-  "attribution": "User explicitly confirmed current-version manual testing passed. Screenshots alone do not prove backend tool invocation. Exported local HTML independently hashes to the expected generated artifact."
+  "attribution": "User explicitly confirmed current-version manual testing passed. Screenshots alone do not prove backend tool invocation. Exported local HTML independently hashes to the expected generated artifact.",
+  "attachment_method": "Original PNGs embedded directly in the PR Test Screenshot comment from immutable GitHub commit URLs, matching the repository's established evidence workflow. No browser permission changes."
 }
