@@ -1,0 +1,117 @@
+{
+  "id": "windows-toolkit",
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "source": "local",
+  "name": "Windows 本机工具箱",
+  "description": "通过专用工具读取与写入剪贴板、弹出系统通知、读取 hosts 文件，并对任意主机做 DNS 解析与 TCP 端口连通性诊断；仅支持 Windows，全部输入以 Base64 跨 PowerShell 边界传递，不拼接命令行。",
+  "display_name": {
+    "zh": "Windows 本机工具箱",
+    "en": "Windows Toolkit"
+  },
+  "display_description": {
+    "zh": "通过专用工具读取与写入剪贴板、弹出系统通知、读取 hosts 文件，并对任意主机做 DNS 解析与 TCP 端口连通性诊断；仅支持 Windows，全部输入以 Base64 跨 PowerShell 边界传递，不拼接命令行。",
+    "en": "通过专用工具读取与写入剪贴板、弹出系统通知、读取 hosts 文件，并对任意主机做 DNS 解析与 TCP 端口连通性诊断；仅支持 Windows，全部输入以 Base64 跨 PowerShell 边界传递，不拼接命令行。"
+  },
+  "category": "软件开发",
+  "tags": [
+    {
+      "zh": "Windows 本机",
+      "en": "Windows Native"
+    },
+    {
+      "zh": "剪贴板",
+      "en": "Clipboard"
+    },
+    {
+      "zh": "网络诊断",
+      "en": "Network Diagnostics"
+    }
+  ],
+  "default_init_input": {
+    "zh": "检查 github.com 的 443 端口是否可达：",
+    "en": "Check whether github.com:443 is reachable: "
+  },
+  "quick_inputs": [
+    {
+      "zh": "检查这个主机的端口连通性：",
+      "en": "Check port reachability for this host: "
+    },
+    {
+      "zh": "读取当前剪贴板内容，并总结要点。",
+      "en": "Read the current clipboard and summarize it."
+    },
+    {
+      "zh": "读取 hosts 文件并指出其中的自定义映射。",
+      "en": "Read the hosts file and point out custom mappings."
+    }
+  ],
+  "skills": [
+    {
+      "dir": "skills/windows-toolkit",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/windows_toolkit.py",
+      "class": "ClipboardReadTool",
+      "display_name": {
+        "zh": "读取剪贴板",
+        "en": "ClipboardRead"
+      },
+      "display_description": {
+        "zh": "读取当前 Windows 剪贴板中的文本；剪贴板没有文本时明确返回空。",
+        "en": "读取当前 Windows 剪贴板中的文本；剪贴板没有文本时明确返回空。"
+      }
+    },
+    {
+      "file": "tools/windows_toolkit.py",
+      "class": "ClipboardWriteTool",
+      "display_name": {
+        "zh": "写入剪贴板",
+        "en": "ClipboardWrite"
+      },
+      "display_description": {
+        "zh": "用给定文本替换当前剪贴板内容，需要用户明确要求才可调用。",
+        "en": "用给定文本替换当前剪贴板内容，需要用户明确要求才可调用。"
+      }
+    },
+    {
+      "file": "tools/windows_toolkit.py",
+      "class": "NotifyTool",
+      "display_name": {
+        "zh": "弹出系统通知",
+        "en": "Notify"
+      },
+      "display_description": {
+        "zh": "显示一个约 6 秒后自动关闭的 Windows 通知弹窗，用于长任务结束时提醒用户。",
+        "en": "显示一个约 6 秒后自动关闭的 Windows 通知弹窗，用于长任务结束时提醒用户。"
+      }
+    },
+    {
+      "file": "tools/windows_toolkit.py",
+      "class": "HostsListTool",
+      "display_name": {
+        "zh": "读取 hosts 文件",
+        "en": "HostsList"
+      },
+      "display_description": {
+        "zh": "只读读取 C:\\Windows\\System32\\drivers\\etc\\hosts 的内容与行数。",
+        "en": "只读读取 C:\\Windows\\System32\\drivers\\etc\\hosts 的内容与行数。"
+      }
+    },
+    {
+      "file": "tools/windows_toolkit.py",
+      "class": "NetdiagTool",
+      "display_name": {
+        "zh": "网络连通性诊断",
+        "en": "Netdiag"
+      },
+      "display_description": {
+        "zh": "对给定主机做 DNS 解析与 TCP 端口连接测试（默认端口 443），返回解析地址与 OPEN/CLOSED/TIMEOUT。",
+        "en": "对给定主机做 DNS 解析与 TCP 端口连接测试（默认端口 443），返回解析地址与 OPEN/CLOSED/TIMEOUT。"
+      }
+    }
+  ]
+}
