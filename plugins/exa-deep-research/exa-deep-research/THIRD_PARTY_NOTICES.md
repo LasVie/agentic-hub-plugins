@@ -19,3 +19,11 @@ This is a repository-maintained adaptation, not an official Exa release.
 No upstream NOTICE or additional skill-directory license was present at the
 pinned commit. This notice preserves upstream attribution and does not assign
 a new license to repository-owned integration code.
+
+## Chinese edition 1.0.1
+
+On 2026-10-23 the repository port translated the packaged README, both Skills,
+all eleven reference files, tool descriptions and local error messages into
+Simplified Chinese. The transport logic, tool/API identifiers and original
+license text are unchanged. Source mapping: Exa Deep Research -> Exa 深度研究
+-> exa-deep-research. Original notices above remain intact.

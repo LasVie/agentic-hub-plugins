@@ -1,35 +1,30 @@
 ---
 name: exa-agent
-description: Use authenticated Exa Agent for explicitly approved managed research, structured discovery, list building and continuation with evidence and coverage checks.
+description: 在明确授权后调用认证 Exa Agent，执行结构化发现、名单构建和研究续接，并核验来源证据与覆盖范围。
 ---
 
-# Managed Exa Research
+# Exa 托管研究
 
-Adapted from Exa's MIT-licensed exa-agent skill. This complements the existing
-research workflow with actual service execution. Ordinary search/fetch uses
-the exa-search skill and does not need this metered operation.
+根据 Exa MIT 授权的 exa-agent 技能移植，为已有研究工作流补充实际服务执行。普通搜索和抓取使用 exa-search，无需调用此计费服务。
 
-## Before calling
+默认用简体中文说明状态、总结结果和撰写报告；用户明确要求其他语言时遵从其要求。保留来源原文、URL 和准确引文，区分翻译与原文。
 
-- The host process must have EXA_API_KEY configured locally. Never ask for a
-  key in chat or write it into the plugin, a report, screenshot or source control.
-- Obtain the user's explicit authorization for the metered task and its scope.
-  Set `allow_paid=true` only when that authorization covers this call. Do not
-  repeatedly ask when the same authorization already covers continuation.
-- Define objective, qualifying universe, segments/dates, output fields, evidence,
-  exclusions and target count. Start with the tool's low effort default.
-- Use a top-level object outputSchema with bounded arrays and source URL fields.
-  Premium partner data and higher effort require corresponding user scope.
+## 调用前
 
-## Native call shape
+- 宿主进程必须本地配置 `EXA_API_KEY`。不要在聊天中索取密钥，也不写入插件、报告、截图或版本控制。
+- 先取得用户对计费任务及范围的明确授权。仅当现有授权覆盖本次调用时设置 `allow_paid=true`；同一授权已覆盖续接时不要重复索取。
+- 明确目标、合格对象范围、分段与日期、输出字段、证据要求、排除项和目标数量，优先使用低 effort。
+- `outputSchema` 使用顶层 object，限制数组长度并包含来源 URL。高级合作方数据或更高 effort 需符合用户授权范围。
 
-Call `exa_research` with the upstream request nested inside `arguments`:
+## 原生调用格式
+
+将上游请求放入 `exa_research` 的 `arguments`：
 
 ```json
 {
   "allow_paid": true,
   "arguments": {
-    "query": "Find three official sources about the MCP transport specification and cite URLs.",
+    "query": "查找三份介绍 MCP 传输规范的官方资料，保留来源 URL，并用中文概括。",
     "effort": "low",
     "outputSchema": {
       "type": "object",
@@ -49,24 +44,15 @@ Call `exa_research` with the upstream request nested inside `arguments`:
 }
 ```
 
-The wrapper discovers and validates the actual remote schema before execution.
-If the service changes its schema, correct the request from the returned schema.
+包装器先发现并校验真实远端模式，再执行请求。若服务模式改变，根据返回的模式修正字段。
 
-## Run state and output
+## 状态与结果
 
-1. Provide exactly one of query (new run) or runId (resume/status).
-2. Preserve the returned run ID and status. A running response is not completion.
-   Respect any suggested wait; use the existing runId rather than creating a
-   duplicate run. The native call has a 60-second overall deadline.
-3. A timeout is ambiguous. Check the Exa dashboard or a known runId before any
-   retry. If no ID was returned, do not assume the run never started.
-4. On completion inspect both structured output and grounding/citations. Check
-   requested count, segment coverage, duplicates and evidence quality.
-5. Use previousRunId only for refinement of a completed retained run. Do not use
-   it for unrelated work or failed/running runs. Zero Data Retention accounts
-   may not support resumption; the current 60-second wrapper is unsuitable for
-   long ZDR streaming runs. Use Exa's official client for those cases.
-6. Report best-effort discovery and known gaps unless exhaustive coverage was
-   defined and checked. Preserve factual uncertainty and source attribution.
+1. `query`（新任务）和 `runId`（续接或状态查询）必须且只能提供一个。
+2. 保留远端运行 ID 与状态；正在运行不表示完成。遵守建议等待时间，用现有 `runId` 查询，不重复新建任务。单次原生调用总时限为 60 秒。
+3. 超时状态不确定。重试前检查 Exa 控制台或已知 `runId`；未返回 ID 也不能断言任务未开始。
+4. 完成后检查结构化输出、引用与事实依据，并核对数量、分段覆盖、重复项和证据质量。
+5. `previousRunId` 仅用于细化已经完成且可保留的任务，不用于无关、失败或仍运行的任务。ZDR 账户可能不支持续接；60 秒包装器不适合长 ZDR 流，相关任务使用 Exa 官方客户端。
+6. 仅在已定义并核验穷尽范围时声称全面覆盖；其余情况说明尽力检索及已知缺口，保留事实不确定性与出处。
 
-No authenticated/billable run is part of this package's anonymous smoke test.
+本包的匿名冒烟测试不执行认证或计费任务。

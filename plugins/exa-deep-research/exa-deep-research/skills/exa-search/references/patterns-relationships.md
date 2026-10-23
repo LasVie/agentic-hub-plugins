@@ -1,30 +1,19 @@
 <!-- Adapted for native openJiuwen tools from Exa 3.4.2; see THIRD_PARTY_NOTICES.md. -->
-# Query Patterns: Hidden Relationships
+# 查询模式：关系线索
 
-Finding connections that aren't explicitly listed anywhere. Direct queries ("X clients") return articles about them, not actual connections. Use indirect signals instead.
+直接搜索“X 的客户”可能只返回谈论关系的文章。先收集可核验的线索，再确认关系，不把间接信号当作已证实事实。
 
-**Start with the subject's own platforms:**
-```
-exa_search { "query": "[subject] official website blog podcast", "numResults": 5 }
-exa_search { "query": "[subject] conversation interview testimonial guest", "numResults": 8 }
-exa_fetch { "urls": ["https://subject-website.com/blog", "https://subject-website.com/about"] }
-```
+先查看主体的官方站点、博客、访谈、播客和用户证言：
 
-**For B2B (company -> customers):**
+```json
+{"query":"[主体] 官方网站 博客 播客","numResults":5}
 ```
-exa_search { "query": "[company] case study customer success story", "numResults": 5 }
-exa_fetch { "urls": ["https://company.com/customers", "https://company.com/case-studies"] }
+```json
+{"query":"[主体] 对话 访谈 用户证言 嘉宾","numResults":8}
 ```
 
-**Indirect signal searches:**
-```
-// Testimonials
-exa_search { "query": "personal blog [subject] changed my life testimonial", "numResults": 15 }
+公司与客户关系优先阅读官网客户页和案例，例如 `https://example.com/customers`、`https://example.com/case-studies`，并核对对方是否提供独立佐证。
 
-// Duration markers (high confidence -- people don't fabricate decades)
-exa_search { "query": "[subject] years decades longtime worked with known since", "numResults": 10 }
+间接线索可使用“[主体] 个人博客 使用经历 评价”（15 条）、“[主体] 多年 长期合作 相识”（10 条）、“[主体] 方法 术语 概念 框架”（5 条），随后查询独特术语与具体人物经历（10 条）。
 
-// Terminology detection: find insider terms, then search for people using them
-exa_search { "query": "[subject] method terminology concepts framework", "numResults": 5 }
-exa_search { "query": "[unique term 1] [unique term 2] personal story", "numResults": 10 }
-```
+长期关系、相同术语或单一证言都只是线索；保留来源和推断理由，不据此推定真实客户、私人关系或合作事实。

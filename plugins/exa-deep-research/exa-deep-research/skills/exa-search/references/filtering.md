@@ -1,49 +1,22 @@
 <!-- Adapted for native openJiuwen tools from Exa 3.4.2; see THIRD_PARTY_NOTICES.md. -->
-# Filtering Results
+# 筛选结果
 
-After extracting data from search results, you may need to filter rows based on criteria from the original query. This file covers how to apply filters effectively.
+先提取实际证据，再根据原始任务逐项筛选；语义相似不是合格证明。
 
-## Hard Filters
+## 硬条件
 
-Hard filters have clear, binary criteria: a date range, a geographic constraint, a numeric threshold, a category membership.
+日期范围、地区、数值阈值和明确类别等条件可逐行核对。移除不合格项；排除条件则检查是否出现被排除值。例：“2025 年发表”“位于旧金山或纽约”“排除某公司”。不能核实的字段应标注不确定，不默认合格。
 
-Apply these mechanically:
-- Check each row against the criterion
-- Remove rows that fail
-- No judgment call needed
+## 软条件
 
-Examples: "published in 2025", "based in SF or NYC", "under $500B market cap", "excluding Novo Nordisk"
+“真实设计观点”“已实际交付”“高质量内容”等需要判断。阅读相关正文，摘要不足时调用 `exa_fetch`，为保留或剔除提供简短理由。
 
-**Negation filters** ("excluding X", "not sponsored by Y") are hard filters applied in reverse. Check for the presence of the excluded value and remove matches.
+语义否定也需要内容判断，例如“没有异味、噪声或虫害投诉”；应检查不同说法是否表达同类问题，不能只找某个字词。
 
-## Soft Filters
+## 顺序与时间
 
-Soft filters require judgment: "genuine design opinion" vs "generic blog post", "actually shipping" vs "just evaluating", "high-signal" vs "noise".
+先应用成本低的硬条件，再对剩余项执行软条件判断。遇到“近六个月”“最近”等相对时间，先按当前用户日期与时区计算明确边界，再核对发表日期和事件发生日期。“2025 年初”等模糊日期需说明，不静默纳入或排除。
 
-For these:
-1. Read the relevant content (use `exa_fetch` if snippets are insufficient)
-2. Make a judgment call based on the content
-3. Include a brief rationale for each keep/drop decision so your reasoning is visible
+## 完整性与精确度
 
-**Semantic negation** is a type of soft filter: "no review mentions smell, noise, or pest complaints" requires reading review content and detecting whether these topics appear, even if phrased differently.
-
-## Filter Order
-
-Apply filters in this order to minimize wasted work:
-1. **Hard filters first** -- cheap, mechanical, eliminates rows before you spend tokens on judgment
-2. **Soft filters second** -- only on rows that passed hard filters
-
-## Temporal Filters
-
-Queries often involve time: "in the last 6 months", "began enrolling in 2025", "recent".
-
-- Calculate exact date boundaries from the current date before filtering
-- Check publication/event dates against the boundary
-- If a date is ambiguous (e.g. "early 2025"), note the uncertainty rather than silently including or excluding
-
-## Completeness vs Precision
-
-The original query determines the balance:
-- "Find every..." or "exhaustive" -- err on the side of including borderline cases, flag them as uncertain
-- "Find the best..." or "top N" -- err on the side of precision, drop borderline cases
-- Default: include borderline cases with a flag, let downstream processing decide
+“找出全部”应保留边界案例并标注不确定；“最佳/前 N 项”优先精确度，排除缺乏证据的边界案例。默认可带标记保留边界项，交给后续流程判断。无有限对象范围和逐项核验时，不声称穷尽覆盖。

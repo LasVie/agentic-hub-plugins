@@ -1,56 +1,21 @@
 <!-- Adapted for native openJiuwen tools from Exa 3.4.2; see THIRD_PARTY_NOTICES.md. -->
-# Synthesizing Research into Narrative
+# 将研究综合为叙述
 
-When the task calls for a narrative answer (not a list or table), this file covers how to synthesize findings from multiple sources into a coherent, well-structured response.
+当用户需要现状、观点或跨来源解释时，综合为带引用的中文叙述；用户要求其他语言时遵从其要求。若只需要实体清单或简答，不扩写成长文。
 
-## When Synthesis Applies
+先给出核心发现，再按主题组织信息。将支持同一主题的来源放在一起，而不是逐个罗列来源摘要。
 
-Synthesis is the right output format when:
-- The user is asking "what do people say about X" or "what's the current state of Y"
-- The answer requires integrating perspectives from multiple sources
-- The output should be prose with citations, not a table of entities
+可信来源存在分歧时，分别呈现立场及其证据，说明适用条件或差异原因，不强行制造一致意见。补充信心依据：独立来源数量、信息时效，以及来源是实践者还是评论者。
 
-## Structure
+## 主题聚类
 
-### Lead with the answer
+1. 阅读返回材料，识别反复出现且有明确方向的主题。
+2. 按主题归类，而不只按词汇或话题。
+3. 每个主题说明发现，引用 2–3 份有代表性的来源，并说明实际材料数量。
+4. 保留虽然只出现一次但具有重要信息的不同观点。
 
-Put the core finding or conclusion first. The user should get value from the first paragraph alone.
+## 引用
 
-### Organize by theme, not by source
+事实性结论应有直接支持它的来源 URL，尽量就近链接。直接引用须逐字准确并署明出处；译文应标记为翻译，不冒充原句。
 
-Bad: "Source A says X. Source B says Y. Source C says Z."
-Good: "Theme 1: [insight supported by A, B]. Theme 2: [insight supported by C, with counterpoint from A]."
-
-### Surface disagreement explicitly
-
-When credible sources disagree, don't collapse to consensus. Present both sides with their evidence:
-- "On [topic], [position A] (supported by [sources]) vs [position B] (supported by [sources]). [When each applies or why they diverge]."
-
-### Include confidence signals
-
-- How many independent sources support a claim?
-- How fresh is the evidence?
-- Are the sources practitioners or commentators?
-
-## Thematic Clustering
-
-When dealing with many reactions or perspectives (e.g. "what are people saying about X"):
-
-1. Read through all results
-2. Identify recurring themes (not just topics -- themes have a stance or direction)
-3. Group results by theme
-4. For each theme: state the theme, cite 2-3 representative sources, note the volume
-5. Flag outlier themes that appear only once but carry important signal
-
-## Citation Practice
-
-- Every factual claim gets a source URL
-- Prefer inline citations: "Engineers report 3x latency reduction ([source](url))"
-- For quotes, include the exact text and attribute it
-
-## Common Mistakes
-
-- **Source-by-source summaries**: Feels comprehensive but is unreadable and doesn't synthesize
-- **Collapsing disagreement**: Picking a winner instead of presenting the landscape
-- **Missing recency**: Treating 2023 sources as current for fast-moving topics
-- **Over-synthesis**: Producing a full essay when the user asked a narrow question
+避免把不同来源简单堆叠、抹平分歧、把旧材料当成近期事实，或把窄问题扩成没有必要的长篇。保留已知缺口与不确定性。

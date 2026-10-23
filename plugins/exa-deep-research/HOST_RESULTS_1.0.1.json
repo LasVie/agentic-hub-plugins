@@ -1,0 +1,75 @@
+{
+  "plugin_version": "1.0.1",
+  "host_load": "passed",
+  "tools": [
+    "ExaSearchTool",
+    "ExaFetchTool",
+    "ExaAdvancedSearchTool",
+    "ExaResearchTool"
+  ],
+  "skills": 2,
+  "runtime": {
+    "python": "3.12.6",
+    "mcp": "1.29.0",
+    "jsonschema": "4.26.0"
+  },
+  "loader_sha256": "6d5bdf4c3e7d559c968f090735ab3b70aadbf758c554d5d8e9aee012a72c2262",
+  "main_agent": {
+    "direct": {
+      "registered": [
+        "exa_fetch",
+        "exa_research",
+        "exa_search",
+        "exa_search_advanced"
+      ],
+      "exposure": {
+        "exa_fetch": "direct",
+        "exa_research": "direct",
+        "exa_search": "direct",
+        "exa_search_advanced": "direct"
+      },
+      "inner_react_registry": "passed",
+      "absent_before_mount": true,
+      "chat_equipment_mount": "passed; empty selection has no Exa tools, selected package has all four",
+      "smart_permission_admission_mount": "passed; real admission and fresh-turn gate, policy activation isolated",
+      "main_registry_dispatch_guard": "passed; actual registered tool executed, no research run started",
+      "unmount_removes_tools": "passed"
+    },
+    "progressive": {
+      "registered": [
+        "exa_fetch",
+        "exa_research",
+        "exa_search",
+        "exa_search_advanced"
+      ],
+      "exposure": {
+        "exa_fetch": "deferred",
+        "exa_research": "deferred",
+        "exa_search": "deferred",
+        "exa_search_advanced": "deferred"
+      },
+      "inner_react_registry": "passed",
+      "absent_before_mount": true,
+      "chat_equipment_mount": "passed; empty selection has no Exa tools, selected package has all four",
+      "smart_permission_admission_mount": "passed; real admission and fresh-turn gate, policy activation isolated",
+      "main_registry_dispatch_guard": "passed; actual registered tool executed, no research run started",
+      "host_tool_search_all_four_schemas": "passed",
+      "unmount_removes_tools": "passed"
+    }
+  },
+  "paid_guard": "passed; no research run started",
+  "live": {
+    "anonymous_search": "passed",
+    "fetch": "passed",
+    "filtered_search": "passed",
+    "search_content_characters": 9688,
+    "research": "not run; no account/budget authorization"
+  },
+  "isolated_import_install_uninstall": "passed",
+  "host_revision": "1bd3583934b76dd4b338ca959a6bff6b4cca3a2f",
+  "host_source_sha256": "d53903c7531615c738dade0e59730c1369eb6052602448fc3f62e2495e73051f",
+  "host_patch": "Local admission ownership correction; not included in this plugin",
+  "sdk_revision": "0ab5913b250d565b35bff3828dae438939cb1acd",
+  "native_zip_sha256": "497d4bd1d51f4476b8cdc8d3dfdcb177c6d052880b73a31e7a79d2c6d2e9b54a",
+  "scope": "Actual SDK/host loader and equipment methods; policy activation isolated. No LLM or browser conversation was driven."
+}

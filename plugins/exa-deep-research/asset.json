@@ -1,9 +1,9 @@
 {
   "type": "agent-plugin",
   "name": "exa-deep-research",
-  "version": "1.0.0",
-  "display_name": "Exa Deep Research",
-  "description": "Exa semantic web search, page fetching, filtered search and optional managed research through four native tools.",
+  "version": "1.0.1",
+  "display_name": "Exa 深度研究",
+  "description": "通过四个原生工具执行 Exa 网页语义搜索、正文读取、条件筛选和可选托管研究。",
   "publisher": "LasVie/agentic-hub-plugins",
   "category": "数据与科学研究",
   "tags": [
@@ -13,11 +13,11 @@
     "mcp"
   ],
   "functional_tags": [
-    "Semantic Web Search",
-    "Public Page Retrieval",
-    "Structured Research"
+    "网页语义搜索",
+    "公开网页读取",
+    "结构化研究"
   ],
-  "scope": "Companion tool capability for existing research workflows. Sends user queries/URLs to the official Exa service; no local-file ingestion. Search/fetch support anonymous quota. Managed research requires EXA_API_KEY and explicit approval. No model, subagents, keys or Node runtime bundled.",
+  "scope": "为现有研究工作流补充 Exa 工具能力。查询与 URL 会发送给 Exa；不读取本地文件。匿名检索受服务额度限制，托管研究需 EXA_API_KEY 和明确授权。不捆绑模型、子智能体、密钥或 Node 运行时。",
   "candidate_id": "CAND-CLD-017",
   "task_id": "AH-20261022-exa-deep-research",
   "related_asset_ids": [

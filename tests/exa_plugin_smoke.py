@@ -76,7 +76,8 @@ async def main():
         # host MCP registration is needed or claimed.
         assert not native.mcps
         names = [type(tool).__name__ for tool in parts.tools]
-        result = {"host_load": "passed", "tools": names, "skills": len(parts.skills),
+        result = {"plugin_version": json.loads((current / "manifest.json").read_text(encoding="utf-8"))["version"],
+                  "host_load": "passed", "tools": names, "skills": len(parts.skills),
                   "runtime": {"python": sys.version.split()[0], "mcp": importlib.metadata.version("mcp"), "jsonschema": importlib.metadata.version("jsonschema")},
                   "loader_sha256": hashlib.sha256((args.sdk_root / "openjiuwen/harness/resources/extension_loader.py").read_bytes()).hexdigest()}
         from openjiuwen.core.single_agent.schema.agent_card import AgentCard
@@ -160,14 +161,14 @@ async def main():
             assert guard["error"]["code"] == "PAID_ACTION_REQUIRES_APPROVAL"
             result["paid_guard"] = "passed; no research run started"
             if args.live:
-                search = await tools["ExaSearchTool"].invoke({"query": "official Model Context Protocol streamable HTTP transport documentation", "numResults": 3})
+                search = await tools["ExaSearchTool"].invoke({"query": "Model Context Protocol Streamable HTTP 传输协议 官方文档", "numResults": 3})
                 assert search["ok"], search
                 texts = [item.get("text", "") for item in search["result"].get("content", [])]
                 assert any("http" in value for value in texts), "No source URLs in actual search content"
                 fetch = await tools["ExaFetchTool"].invoke({"urls": ["https://modelcontextprotocol.io/specification/2025-06-18/basic/transports"], "maxCharacters": 2000})
                 assert fetch["ok"], fetch
                 assert any(len(item.get("text", "")) > 100 for item in fetch["result"].get("content", [])), "Fetch returned no page content"
-                advanced = await tools["ExaAdvancedSearchTool"].invoke({"arguments": {"query": "Model Context Protocol streamable HTTP transport documentation", "numResults": 2, "includeDomains": ["modelcontextprotocol.io"]}})
+                advanced = await tools["ExaAdvancedSearchTool"].invoke({"arguments": {"query": "Model Context Protocol Streamable HTTP 传输协议 官方文档", "numResults": 2, "includeDomains": ["modelcontextprotocol.io"]}})
                 assert advanced["ok"], advanced
                 result["live"] = {"anonymous_search": "passed", "fetch": "passed", "filtered_search": "passed", "search_content_characters": sum(map(len, texts)), "research": "not run; no account/budget authorization"}
         if manager:

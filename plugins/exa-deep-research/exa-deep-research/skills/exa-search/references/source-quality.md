@@ -1,47 +1,30 @@
 <!-- Adapted for native openJiuwen tools from Exa 3.4.2; see THIRD_PARTY_NOTICES.md. -->
-# Evaluating Source Quality
+# 评价来源质量
 
-When assessing sources during search and extraction, tag quality signals in your output so results can be weighted and ranked downstream.
+检索和提取时记录观察到的质量信号，便于后续排序；不把单个信号直接等同于真假。
 
-## Noise Signals -- Filter Out First
+| 信号 | 需要核查的内容 |
+| --- | --- |
+| 缺少实践证据 | 无作品、交付产品或可验证结果，主要讨论他人的工作 |
+| 激励可能冲突 | 赞助、销售、推广或大量联盟链接可能影响立场 |
+| 循环背书 | 只有同圈评价，缺少外部影响证据 |
+| 只讲收益 | 未讨论权衡、失败条件或限制 |
+| 经验时效衰减 | 是否仍在实际构建或实践，还是主要从事教学与评论 |
 
-Before deep-reading, check for these disqualifiers:
+实践者常提供具体产品、开源贡献、带数字的案例和亲历过程；评论者常汇总清单或链接他人工作。记录实际观察，不仅凭标签做决定。
 
-| Signal | What to look for |
-|--------|-----------------|
-| No skin in the game | Theorists who don't do the work -- no portfolio, no shipped products, no verifiable results |
-| Misaligned incentives | Paid to sell, not to be right (sponsored content, vendor blogs, affiliate-heavy) |
-| Circular credentials | Validated only by peers in the same bubble -- no external evidence of impact |
-| Positive-only advice | No tradeoffs, no failure modes discussed -- "just do X" with no caveats |
-| Temporal decay | Shifted from doing to teaching/advising. Check: are they still actively building/practicing? |
+## 按需核验
 
-## Practitioner vs Commentator
+任务明确要求评估专家或来源可信度时，才执行额外核验搜索：
 
-The most important distinction. Practitioners do the work; commentators write about the work.
-
-**Practitioner signals:** shipped products, open-source contributions, case studies with specific numbers, "we built X and here's what happened"
-
-**Commentator signals:** roundup posts, "top 10" lists, content primarily linking to others' work, no first-hand experience described
-
-Note this distinction in your quality tags.
-
-## Verification Searches
-
-When validating a source's credibility (for expert-finding and best-of queries):
-
+```json
+{"query":"[姓名] 实践者 专家 推荐 评价","numResults":5}
 ```
-// Who cites them?
-exa_search { "query": "[name] recommended by experts practitioners", "numResults": 5 }
-
-// Track record?
-exa_search { "query": "[name] results portfolio case study shipped", "numResults": 5 }
-
-// Criticism?
-exa_search { "query": "[name] criticism overrated wrong", "numResults": 5 }
+```json
+{"query":"[姓名] 实际成果 作品 案例 已交付","numResults":5}
+```
+```json
+{"query":"[姓名] 批评 错误 争议","numResults":5}
 ```
 
-Only run verification searches when the task specifically calls for evaluating source credibility. For standard search tasks, just tag what you observe from the content you already have.
-
-## Tagging in Output
-
-For each source, include a short free-form `quality` string describing what you observed -- e.g. "shipped the product, writes from direct experience" or "roundup blog, no original work shown, links to others." Don't classify into categories. Just describe what you see so the signal is preserved for downstream ranking.
+普通检索只标注现有材料可观察到的信号，不为所有结果额外扩展核验。使用简短的 `quality` 说明，例如“亲自交付该产品，描述具体过程”或“汇总文章，未展示原创工作”；保留信号而非强行套入固定分类。

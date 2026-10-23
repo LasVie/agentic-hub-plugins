@@ -1,40 +1,40 @@
 {
   "id": "exa-deep-research",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "package_type": "plugin",
   "source": "local",
-  "name": "Exa Deep Research",
-  "description": "Exa semantic web search, page fetching, filtered search and optional managed research through four native tools.",
+  "name": "Exa 深度研究",
+  "description": "通过四个原生工具执行 Exa 网页语义搜索、正文读取、条件筛选和可选托管研究。",
   "display_name": {
-    "en": "Exa Deep Research",
+    "en": "Exa 深度研究",
     "zh": "Exa 深度研究"
   },
   "display_description": {
-    "en": "Search and read public web sources with Exa; optional authenticated research preserves structured results and citations.",
-    "zh": "通过 Exa 检索与读取公开网页；可选的认证研究保留结构化结果与引用。"
+    "en": "通过四个原生工具执行 Exa 网页语义搜索、正文读取、条件筛选和可选托管研究。",
+    "zh": "通过四个原生工具执行 Exa 网页语义搜索、正文读取、条件筛选和可选托管研究。"
   },
-  "category": "Research",
+  "category": "数据与科学研究",
   "tags": [
     {
-      "en": "Web Research",
+      "en": "网络研究",
       "zh": "网络研究"
     },
     {
-      "en": "Search",
+      "en": "搜索",
       "zh": "搜索"
     }
   ],
   "default_init_input": {
-    "en": "Use Exa to research: ",
+    "en": "使用 Exa 调研：",
     "zh": "使用 Exa 调研："
   },
   "quick_inputs": [
     {
-      "en": "Find primary sources with Exa for: ",
+      "en": "通过 Exa 查找一手来源：",
       "zh": "通过 Exa 查找一手来源："
     },
     {
-      "en": "Read this public page with Exa: ",
+      "en": "使用 Exa 读取公开网页：",
       "zh": "使用 Exa 读取公开网页："
     }
   ],

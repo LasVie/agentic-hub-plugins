@@ -1,28 +1,18 @@
 <!-- Adapted for native openJiuwen tools from Exa 3.4.2; see THIRD_PARTY_NOTICES.md. -->
-# Query Patterns: Companies
+# 查询模式：公司
 
-Use `category:company` for structured company data (funding, headcount, description).
+使用 `category:company` 辅助发现公司资料，并核实融资、人数和业务描述。
 
+```json
+{"query":"category:company 旧金山 AI 基础设施 初创公司","numResults":10}
 ```
-// By category
-exa_search { "query": "category:company AI infrastructure startups San Francisco", "numResults": 10 }
-
-// By stage
-exa_search { "query": "category:company Series B fintech payments", "numResults": 10 }
-
-// Similar to known company
-exa_search { "query": "category:company companies like Stripe", "numResults": 8 }
+```json
+{"query":"category:company B 轮 金融科技 支付","numResults":10}
 ```
-
-For competitive intelligence, layer multiple angles:
-```
-exa_search { "query": "category:company companies like [target]", "numResults": 10 }
-exa_search { "query": "category:company [category] software tools", "numResults": 15 }
-exa_search { "query": "[category] startup launch funding announcement recently", "numResults": 15 }
+```json
+{"query":"category:company 与 Stripe 类似的公司","numResults":8}
 ```
 
-For funding/investors:
-```
-exa_search { "query": "[company] funding round raised investors", "numResults": 5 }
-exa_search { "query": "category:company [company]", "numResults": 5 }
-```
+竞品研究覆盖不同角度：与目标相似的公司、该类别软件工具、近期产品发布及融资公告。宽范围查询可用 15 条结果，随后核验具体产品与条件。
+
+融资与投资方查询可组合“[公司] 融资轮次 金额 投资人”和“category:company [公司]”，各先请求 5 条。保留公告日期、币种、来源与不确定性，避免将公司概要当作最新融资事实。

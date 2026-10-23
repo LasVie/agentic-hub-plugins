@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:exa-deep-research",
+  "type": "agent-plugin",
+  "name": "exa-deep-research",
+  "version": "1.0.1",
+  "zip": "exa-deep-research-1.0.1.zip",
+  "sha256": "a924aac36f89663c7d02e8a823e13bb28238729b81754b769fa8e0e79e7f9c16",
+  "payload_sha256": {
+    "licenses/exa-mcp-server/LICENSE": "715e1b754d876f214cba57f6ad09bc6e5e48aab46aa3774b00e82a49ab04c742",
+    "manifest.json": "ec9df50e39b8a52938189f96f9d2d5c261b7eed6306406a0ac0293b5dd6e0887",
+    "README.md": "bdbfaf409667376941f25f54c91251925391972192c5c88a9fb03150cb5b79dc",
+    "requirements.txt": "62337717828e89d7ec22def6ab423936551980c69c65afab0becab61af24d70b",
+    "skills/exa-agent/SKILL.md": "0fa563ba65dbc4b8c81a5c6f396ec4344f8bacb1001f9af99701dae7012b7da0",
+    "skills/exa-search/references/extraction.md": "84ba42f073043beaa2081fd3b61bfe231f9450f4930c7704932a0b0eb7f97014",
+    "skills/exa-search/references/filtering.md": "9e017fdddb4a675e14ea74d661c0dc71328213c453ed4158a60ab5032a127cf8",
+    "skills/exa-search/references/patterns-code.md": "8becb865493c15cfe63f2951b07c45fcdfb728b26254f18615ac4fc4087abb76",
+    "skills/exa-search/references/patterns-companies.md": "9b2f231ef9ac7f4d4a6d3530fa0beccc20320e4d438c514bb312db8ae23d06b6",
+    "skills/exa-search/references/patterns-news.md": "0de72e3add05ed89440094b6d7f7b5266ececf2189020d8e10fb11fc679b9b40",
+    "skills/exa-search/references/patterns-papers.md": "018a41284b9f7658bb6ad432069e4e14ab35cbd5422d956a6e34f5ea43a3530e",
+    "skills/exa-search/references/patterns-people.md": "98c6c175c8be31eb4d19fa16ca32a16af78665ab18e9814817af34b6a7b160e0",
+    "skills/exa-search/references/patterns-relationships.md": "8eea6a3e4a3ce53578ff188f869b6c35b3eed4113adf568fa15f237086cdf476",
+    "skills/exa-search/references/searching.md": "6ab551afcc31f1a8fb8c62bcc339527ea4a75c5d3ca16ec8419b0956a725d3e8",
+    "skills/exa-search/references/source-quality.md": "e707764d4f963c09d409c3319182a9cce6fa41dc1360df70c52f04fb6bffb858",
+    "skills/exa-search/references/synthesis.md": "8587e82d3eec34f2709f54a5a73313afba2878cbcfbf809d64595bed033c9d50",
+    "skills/exa-search/SKILL.md": "41db7fb52c006a8a40fff1f839559339fbc9f7bc0a4b5be1e757e224feff6cd4",
+    "THIRD_PARTY_NOTICES.md": "78dd51e98ede36a2c0268dea3380889ef137415c60e68d31d184855ac2ff1302",
+    "tools/exa_tools.py": "5a909a935df962ba99d29d27df4ff18492a5cc6bcb78d1cb6697fa9a8f663452"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "19e38385fecd4dffca6032a51b9ff8752c450bf695864efcc1756914c4627282",
+  "functional_test_report_sha256": "9506738591a08f0f2954f612fbc55110292e1c4b34f5001bb93d766b58fe72f3"
+}

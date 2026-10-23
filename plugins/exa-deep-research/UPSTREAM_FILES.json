@@ -5,7 +5,7 @@
       "source": "skills/search/references/extraction.md",
       "source_sha256": "c32fc8ca1bfce9fd49c7d0fd508fd945ccfc64c7d65f847c15ffacaf5681d17a",
       "payload": "skills/exa-search/references/extraction.md",
-      "payload_sha256": "802479579d0ea4057b3fc6ed4be71d41e5ad7e9a4b1c3ca8b5777b88d0fde96a",
+      "payload_sha256": "84ba42f073043beaa2081fd3b61bfe231f9450f4930c7704932a0b0eb7f97014",
       "source_checkout_sha256": "6ab64e93fded203599711e4c7d697f659e8f5c9bfaf010b30f121c70085bda14",
       "source_git_blob": "64167825988e529b65c94e3190c5c889eced60c3"
     },
@@ -13,7 +13,7 @@
       "source": "skills/search/references/filtering.md",
       "source_sha256": "714b26242983919533b4f7603bd11a72843054fc93d8400227a4f6606ab73921",
       "payload": "skills/exa-search/references/filtering.md",
-      "payload_sha256": "fb5442fc8fc8c1d37b1026e6b860f76285579b26f4999d0528d9e496f5c9ffd6",
+      "payload_sha256": "9e017fdddb4a675e14ea74d661c0dc71328213c453ed4158a60ab5032a127cf8",
       "source_checkout_sha256": "a9af0020a850988b97ed9ab72790a13994a005e0bbd41348152b57a42d0f3dea",
       "source_git_blob": "afa4c08188fb0cc70f452a46c49648e6394e5b1a"
     },
@@ -21,7 +21,7 @@
       "source": "skills/search/references/patterns-code.md",
       "source_sha256": "473cf8d03c3e3d56a3aca80ce2127f8138fbb689055f026ea022004d61ba6e68",
       "payload": "skills/exa-search/references/patterns-code.md",
-      "payload_sha256": "4b6d61917845a1e34f228f1a2408cb39f35f805bbc251c58e8a43e17dc5fc6bf",
+      "payload_sha256": "8becb865493c15cfe63f2951b07c45fcdfb728b26254f18615ac4fc4087abb76",
       "source_checkout_sha256": "076dfcd6a1188357d27c2a33eb61f9be1e2cd57e9e8443380795fce19b0426d7",
       "source_git_blob": "3204646cf8b6e3c8b23e50aae0c001748ed6e9aa"
     },
@@ -29,7 +29,7 @@
       "source": "skills/search/references/patterns-companies.md",
       "source_sha256": "e499dcc2952fdbb83011e942c9f0dd87d416025e07a0e916f25ac01ef5d15ec6",
       "payload": "skills/exa-search/references/patterns-companies.md",
-      "payload_sha256": "d1ca827122802a87e7b44f67de94f30d929474c2a48f81e2f48d5e249d43f1a1",
+      "payload_sha256": "9b2f231ef9ac7f4d4a6d3530fa0beccc20320e4d438c514bb312db8ae23d06b6",
       "source_checkout_sha256": "4896f95f783dfef453bfebeb555e64cad4d8b86ecba694e4e42a9d93725304d7",
       "source_git_blob": "25ba8f3dddf38fc8200516590e1861a31d78606b"
     },
@@ -37,7 +37,7 @@
       "source": "skills/search/references/patterns-news.md",
       "source_sha256": "b8411cc85e50d3305012ffd014d611b2f56fb8abf62c653eec6717bde47cd072",
       "payload": "skills/exa-search/references/patterns-news.md",
-      "payload_sha256": "30bc85069be18f45ada6a09d643d636b9d9a54031ea96422a34d631b930abf5e",
+      "payload_sha256": "0de72e3add05ed89440094b6d7f7b5266ececf2189020d8e10fb11fc679b9b40",
       "source_checkout_sha256": "277765a13272d279a211893e65f2429c8836026adc661c93c952f6aa5eadaa1f",
       "source_git_blob": "328348ccd672d875a7a546fcaf5eee541aea43c0"
     },
@@ -45,7 +45,7 @@
       "source": "skills/search/references/patterns-papers.md",
       "source_sha256": "da9b453ffd611c409e5444bcd50722b9bfdbfd3713a23b8a39f42803021cef86",
       "payload": "skills/exa-search/references/patterns-papers.md",
-      "payload_sha256": "19a3d30c8341a49897f681d2c61a50484d40ec20a17cef32f5d5960866d00407",
+      "payload_sha256": "018a41284b9f7658bb6ad432069e4e14ab35cbd5422d956a6e34f5ea43a3530e",
       "source_checkout_sha256": "19cef29a2a19ca5c2487ab73ef423536e60d9fb4b3c4dd4e502d979782d93a3f",
       "source_git_blob": "60b9c00e7a134e4daa62b8c747f8056f37797b38"
     },
@@ -53,7 +53,7 @@
       "source": "skills/search/references/patterns-people.md",
       "source_sha256": "f5434d2cd0491ec59be340ec4a31583368a133529baacc9f1d89f0c79a76df4a",
       "payload": "skills/exa-search/references/patterns-people.md",
-      "payload_sha256": "bb6d2a2789b61cbea5cf97885bfc86ea9709e3890d8fb20e3b0d93ec43c39133",
+      "payload_sha256": "98c6c175c8be31eb4d19fa16ca32a16af78665ab18e9814817af34b6a7b160e0",
       "source_checkout_sha256": "ffe57cf2834f9c282195357b413849f941994eaa15708b6a2550bcf69291bde2",
       "source_git_blob": "9fa45a5738c678baa1dba2e75e8ad2a762f2f5b1"
     },
@@ -61,7 +61,7 @@
       "source": "skills/search/references/patterns-relationships.md",
       "source_sha256": "98aaba626705219969a74fc081e54d8d227dc7e784595346123e9c61f1561944",
       "payload": "skills/exa-search/references/patterns-relationships.md",
-      "payload_sha256": "60b6abca5c7bf995a15d1edc963c072c6b2ab746f683062c7626a695528ae93c",
+      "payload_sha256": "8eea6a3e4a3ce53578ff188f869b6c35b3eed4113adf568fa15f237086cdf476",
       "source_checkout_sha256": "df13ad3cbc5f9e26bd47771dba40cd36f5c2a73b9717a0840455f708c01e7fc8",
       "source_git_blob": "875c78f82e83eee6c0e1edd68dbdfec363390654"
     },
@@ -69,7 +69,7 @@
       "source": "skills/search/references/searching.md",
       "source_sha256": "1400a291d84649772375fa7f3fe188f363469df25923a474d4ccd258a4a6f8c5",
       "payload": "skills/exa-search/references/searching.md",
-      "payload_sha256": "32c42cc49acda332e8369b76d49c4768076177e52cfb6dad7e5e6a77c39839bc",
+      "payload_sha256": "6ab551afcc31f1a8fb8c62bcc339527ea4a75c5d3ca16ec8419b0956a725d3e8",
       "source_checkout_sha256": "a1c599a9ea6f32fe3f41ac923363392f12d7bb175597aca73003e88ffc4f776f",
       "source_git_blob": "daa271a78b81aabfc16b84ac7aeb1b51a1b17e60"
     },
@@ -77,7 +77,7 @@
       "source": "skills/search/references/source-quality.md",
       "source_sha256": "e8c40d5f5139530bde191af80849610091b11fb1fd3578ca5f11d00223bea8e1",
       "payload": "skills/exa-search/references/source-quality.md",
-      "payload_sha256": "1a3fe307feb4a4b6e05cfd8a7cbb8c7dbb1aa5e1dc9fdc30a1633b3f7132ef0d",
+      "payload_sha256": "e707764d4f963c09d409c3319182a9cce6fa41dc1360df70c52f04fb6bffb858",
       "source_checkout_sha256": "ba1b002febde61cbfed3d85558cfbd9f9226331ce0335ef9cc79a918721e5bd1",
       "source_git_blob": "ca578178ef8c25a6f2f3004ca2e25a6f0c2f1d97"
     },
@@ -85,7 +85,7 @@
       "source": "skills/search/references/synthesis.md",
       "source_sha256": "a6844adca3d2d06955828186645ee870e6a7dd55b680ffaf8bc9365e3218b399",
       "payload": "skills/exa-search/references/synthesis.md",
-      "payload_sha256": "b60ed8aff382b1a15f10fdff021e6ad57802ce286502f3d62fe8e0bffc23e5c4",
+      "payload_sha256": "8587e82d3eec34f2709f54a5a73313afba2878cbcfbf809d64595bed033c9d50",
       "source_checkout_sha256": "68fc44028b6d9acfa26462db02756798728e05cf69dbcb5917cdd44b2a996c85",
       "source_git_blob": "d94451671744521663941358f10cfee7ec8ba2bd"
     },
@@ -93,7 +93,7 @@
       "source": "skills/search/SKILL.md",
       "source_sha256": "0aacd119c70b57144e7358c5829061a0d25a734ea29afb668392861250c9e42f",
       "payload": "skills/exa-search/SKILL.md",
-      "payload_sha256": "6dfea3d65859f8c44805e24c77d4a5d27f0bba12ce09306966518c4e8b80b8d8",
+      "payload_sha256": "41db7fb52c006a8a40fff1f839559339fbc9f7bc0a4b5be1e757e224feff6cd4",
       "source_checkout_sha256": "f69dd636d92a68e6a4c4dfd7cf055e8ab3c6bae91d4feae6c41f0f385919a664",
       "source_git_blob": "e70c99cc46a8550eede16407bc3064015aa3d84f"
     },
@@ -101,7 +101,7 @@
       "source": "skills/exa-agent/SKILL.md",
       "source_sha256": "313819bd811314700649c0ef704d725587edd7c470bbdc1434e1b0d7bc14bd11",
       "payload": "skills/exa-agent/SKILL.md",
-      "payload_sha256": "278b6933ff5e2af04659ed1217433e5d44e03be14ad918c0b490e633bfd8867c",
+      "payload_sha256": "0fa563ba65dbc4b8c81a5c6f396ec4344f8bacb1001f9af99701dae7012b7da0",
       "source_checkout_sha256": "7edb803ea15874f12b2b46f054402f5cfab3bfed315b1c054f4327685a4cadb7",
       "source_git_blob": "2654082c69949fca4a73ac1e224ea35281120520"
     }

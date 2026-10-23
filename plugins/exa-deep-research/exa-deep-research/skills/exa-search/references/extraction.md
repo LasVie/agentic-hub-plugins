@@ -1,64 +1,31 @@
 <!-- Adapted for native openJiuwen tools from Exa 3.4.2; see THIRD_PARTY_NOTICES.md. -->
-# Extracting Structured Data from Search Results
+# 从搜索结果提取结构化信息
 
-After running searches, you need to extract structured information from the results. This file covers how to do that well.
+搜索结果通常包括标题、URL 和摘要。名称、融资轮次、日期等字段若已明确出现，可直接提取；摘要只提及但没有具体值、需要判断正文观点、单页包含多个字段或任务要求深入阅读时，使用 `exa_fetch`。
 
-## When You Have Enough from Snippets
+每次最多读取 10 个 URL，通常批量 5–10 个减少往返。按所需上下文设置 `maxCharacters`（本适配器默认 3000、最多 20000）；不要声称受长度限制的内容等于完整页面。
 
-Exa search results include titles, URLs, and text snippets ("highlights"). For many fields (company name, person name, funding round, publication date), the snippet is sufficient. Extract directly from what you have before fetching full pages.
-
-## When to Deep-Read with exa_fetch
-
-Fetch the full page when:
-- The snippet mentions what you need but doesn't include the actual value
-- You need to read body text to make a judgment call (e.g. "does this blog post show genuine design opinion or is it generic?")
-- You need to extract multiple fields from a single rich source (case study page, team page, filing)
-- The task requires reading beyond the first few sentences
-
-```
-exa_fetch {
-  "urls": ["https://source-1.com", "https://source-2.com"],
-}
+```json
+{"urls":["https://example.com/source-a","https://example.com/source-b"],"maxCharacters":15000}
 ```
 
-Batch up to 5-10 URLs per fetch call to minimize round trips. Avoid using `maxCharacters` param or `head`/`tail` bash tools; the point is to understand full page context.
+## 字段与证据
 
-## Extracting into a Schema
+1. 结构化字段（名称、日期、URL、金额、代码）：提取原始值；缺失就标记“未找到”，不猜测。
+2. 类别字段（行业、阶段、职位级别）：映射到最贴近的类别，歧义须说明。
+3. 语义字段（倾向、是否为真实设计观点、主题相关性）：阅读内容后判断，并给出简短依据。
+4. 否定字段（“没有评论提及 X”“没有 A 轮公告”）：先搜索正面存在的情况；未找到时说明检索覆盖与信心，不把未发现等同于确认不存在。
 
-When you've been given a schema (the "columns" for the result), extract each field per result:
+明确区分“已确认不存在”和“未找到/访问受限”。付费墙或不可访问情况应标注。
 
-1. **Structured fields** (name, date, URL, funding amount, ticker): Extract the literal value. If not present, mark as missing rather than guessing.
+证据强度可描述为直接陈述、基于上下文的推断、单一间接线索。说明推断依据，例如团队照片只能支持人数估计，不能作为确定员工数。
 
-2. **Categorical fields** (industry, stage, role level): Map to the closest category. Note uncertainty if the mapping is ambiguous.
+## 输出
 
-3. **Semantic fields** (sentiment, whether something qualifies as "genuine opinion", relevance to a theme): Read the content and make a judgment call. Include a brief rationale so downstream synthesis can weigh your assessment.
+按用户模式填写字段，使用简洁 JSON 或 Markdown 表格，保留来源及置信说明；叙述值默认使用中文。结构字段名由既定模式决定，不擅自翻译。
 
-4. **Negation fields** ("no review mentions X", "no Series A announcement"): These require checking that something is absent. Search for the positive case; if nothing surfaces, report absence with confidence level based on how thorough your coverage was.
-
-## Handling Missing Data
-
-- Mark fields as "not found" rather than guessing or leaving blank
-- Distinguish "confirmed absent" (searched thoroughly, not there) from "not found" (didn't have access or coverage was limited)
-- If a source is paywalled or inaccessible, note that explicitly
-
-## Confidence Signals
-
-When extracting, note the strength of the evidence:
-- **Direct**: The source explicitly states the value (e.g. "We raised $20M in Series B")
-- **Inferred**: The value is derived from context (e.g. headcount estimated from team page photos)
-- **Uncertain**: Single indirect signal, could be wrong
-
-## Output Format
-
-Return extracted data as compact structured output. For lists of entities:
-
-```
-[
-  { "name": "...", "field_1": "...", "field_2": "...", "source": "url", "confidence": "direct" },
-  ...
-]
+```json
+[{"name":"示例公司","field_1":"未找到","source":"https://example.com/source","confidence":"直接陈述"}]
 ```
 
-Or as a markdown table if that better suits your task's instructions.
-
-Keep output compact. Your results will be merged with results from other searches, so verbosity at this stage compounds.
+仅输出实际得到的信息；请求结果数不等于阅读来源数，避免重复冗长叙述。

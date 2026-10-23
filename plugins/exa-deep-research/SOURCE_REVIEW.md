@@ -1,9 +1,10 @@
 # Exa source and capability review
 
 Reviewed 2026-10-22 for CAND-CLD-017 / AH-20261022-exa-deep-research.
-Mode: ported. Version: 1.0.0. Contributor identity was not supplied; tracker
-ownership remains Unassigned. Package publisher identifies this repository,
-not an inferred individual or Exa endorsement.
+Mode: ported. Current version: 1.0.1, Chinese edition. Owner Nguyen Trung Dung
+was explicitly confirmed on 2026-10-23. Package publisher identifies this
+repository; it does not imply Exa endorsement. Naming mapping: Exa Deep Research
+-> Exa 深度研究 -> exa-deep-research.
 
 ## Pinned source and rights
 
@@ -69,23 +70,37 @@ tools. The live ledger was rechecked at kickoff for newly delivered Exa assets.
   mcp>=1.26.0,<2 and jsonschema>=4.20,<5, with HTTPS access to mcp.exa.ai.
   No additional model account or Node runtime is supplied.
 
-## Release verification
+## Chinese edition and current release verification
 
-Completed 2026-10-22: repository checks, nine native tool regressions, real
-native import/install/uninstall and live search/fetch/filtering from the
-extracted release payload. Every runtime path matches artifact.json and both
-ZIP formats; all 19 files and license/notice coverage were inspected. Source
-Git blob hashes are distinguished from Windows checkout hashes in
-UPSTREAM_FILES.json. No comparison package or upstream server code is shipped.
+On 2026-10-23 the actual packaged README, both Skills, all eleven references,
+display metadata, four tool descriptions and 23 local description/error literals
+were translated/adapted to Simplified Chinese. API identifiers, schema keys,
+transport/control structure and the complete original MIT license bytes remain
+unchanged. Original notices are retained and the modification summary is bundled
+in THIRD_PARTY_NOTICES.md. UPSTREAM_FILES.json preserves all pinned source
+fingerprints and records the current adapted hashes for the same 13 paths.
 
-Canonical ZIP: releases/agent-plugin/exa-deep-research/1.0.0/exa-deep-research-1.0.0.zip
+The Chinese references also clarify the native fetch length limit, the need to
+verify category/relationship evidence and the difference between source text
+and translation. No additional upstream material or dependency is introduced.
+Default summaries/reports use Chinese and honor an explicit user language request.
+Raw Exa/webpage source text remains unmodified evidence in its source language.
 
-SHA-256: f61bc3d94d3fdb48db5e1f41139cd9450c9f5902cfc992ccf730ea32b27cc8ac
+Source native SDK regressions: 12 passed with Chinese query/error/metadata cases.
+Extracted SDK regressions: 12 passed. The actual native package passed host
+import/install, Smart admission, main/inner registration, guard dispatch,
+deferred discovery and uninstall. Anonymous Chinese search, fetch and a
+domain-filtered request also passed. All 19 payload files and 13 reused-path
+fingerprints match; license bytes are unchanged. Canonical SHA-256 a924aac36f89663c7d02e8a823e13bb28238729b81754b769fa8e0e79e7f9c16; native SHA-256 497d4bd1d51f4476b8cdc8d3dfdcb177c6d052880b73a31e7a79d2c6d2e9b54a. See TEST_REPORT.md for commands and limits.
 
-Native test ZIP SHA-256: 589ebbf999a42f0c15e9d98afe47b11d1b4747211c82becebca0ea1cf7f7f548
+Historical 1.0.0 results are retained in TEST_REPORT_1.0.0.md and the dated
+main-agent/Smart admission records. Nguyen Trung Dung confirmed full-conversation
+testing and authorized merging that exact 1.0.0 package on 2026-10-23. This does
+not confirm the changed 1.0.1 hashes. Original 1.0.0 archives remain unchanged in
+the original worktree; the unpublished English release is excluded from this
+Chinese delivery branch. No external publication of 1.0.0 ever occurred.
 
-See TEST_REPORT.md and FUNCTIONAL_RESULTS.json for actual commands, environment,
-Windows-only repository-test limitations and untested authenticated features.
-No user confirmation exists for this new version/hash. The earlier upstream
-tryout does not satisfy the current-package testing gate. No push, PR or
-external package upload occurred during Build.
+Current main AGENTS.md requires current Chinese-package user confirmation and
+original test screenshots before pushing/opening/merging. Both are pending for
+1.0.1. See USER_TEST_CONFIRMATION.md. No PR, push, merge, Release, Project Lead
+acceptance, official catalog entry or Hub operation is claimed.

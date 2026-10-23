@@ -1,90 +1,94 @@
-# Exa Deep Research 1.0.0 — test report
+# Exa Chinese edition 1.0.1 validation
 
-Date: 2026-10-22 (Asia/Singapore). Task AH-20261022-exa-deep-research.
+Owner **Nguyen Trung Dung**; task AH-20261022-exa-deep-research;
+candidate CAND-CLD-017. Date 2026-10-23, Asia/Singapore.
+Name mapping: Exa Deep Research -> **Exa 深度研究** -> exa-deep-research.
 
-The final extracted package passed real native host import, installation,
-four-tool/two-skill resolution, live anonymous search/fetch/domain filtering,
-the managed-research guard and uninstallation. Nine port regression tests
-passed independently. No active user installation or model account was used.
+Status: **Ready for Testing**, local Build. Original English 1.0.0 is explicitly
+user-confirmed; changed Chinese 1.0.1 is not yet user-confirmed. No push/PR/merge,
+GitHub Release, Hub operation or Project Lead acceptance is claimed.
 
-## Environment and source
+## Package changes and identity
 
-- Windows, Python 3.12.6, MCP SDK 1.26.0, jsonschema 4.26.0, PyYAML 6.0.3.
-- Actual openJiuwen source 4170e756504d70d8324c2ac18a5afdd770a99dc9.
-- Actual JiuwenSwarm source 1bd3583934b76dd4b338ca959a6bff6b4cca3a2f.
-- Actual host loader SHA-256 cf7f3ab694574ed771cba8b78899631bebd050814ed9b909acfee5ae246c4fc4.
-- Pinned Exa source 3.4.2 at 0b499f095c4ca145eee07b09137641c037d58449.
-  The hosted anonymous service advertised 3.5.0, with a required search
-  objective absent from the pinned source. The port adapts to live discovery.
-- No substitute Tool classes or simulated host loader. Error-path regression
-  tests mock only the MCP exchange boundary. Live cases call the real service.
+The actual README, two Skills, eleven references, display metadata, four tool
+descriptions and 23 local description/error literals are localized. The
+references clarify native length limits and evidence interpretation. API/tool
+identifiers, schema keys and transport/control structure remain unchanged;
+AST comparison with string literals normalized confirms the Python structure.
+Original MIT license and copyright bytes are unchanged. Raw remote/source text
+is preserved in its source language; Chinese summaries do not replace original
+quotations. Explicit end-user language requests are supported by instructions.
 
-## Commands and results
+| Archive | SHA-256 |
+| --- | --- |
+| Native exa-deep-research-1.0.1-workswarm.zip | 497d4bd1d51f4476b8cdc8d3dfdcb177c6d052880b73a31e7a79d2c6d2e9b54a |
+| Canonical exa-deep-research-1.0.1.zip | a924aac36f89663c7d02e8a823e13bb28238729b81754b769fa8e0e79e7f9c16 |
 
-`python -B -m unittest discover -s tests -p test_exa_deep_research.py -v`
+All 19 source/canonical/native payload files are byte-identical. CRC, safe paths,
+UTF-8, declared files and all 13 adapted upstream fingerprints passed; full MIT
+SHA-256 remains 715e1b754d876f214cba57f6ad09bc6e5e48aab46aa3774b00e82a49ab04c742.
+The original confirmed 1.0.0 archives remain unchanged in the original worktree.
 
-9 passed, zero failures: invalid queries/counts/extra fields; file and
-credential-URL rejection; explicit approval and missing-key guards before
-network calls; ambiguous query/runId rejection; preserved remote isError and
-structured content; nested secret redaction; ExceptionGroup sanitization;
-single-result streaming; timeout without automatic retry.
+## Exa functional and host checks
 
-`python -B tests/exa_plugin_smoke.py --sdk-root D:\jiuwen_repos\agent-core-latest --host-root D:\jiuwen_repos\jiuwenswarm --payload .research/extracted-exa --archive .research/test-packages/exa-deep-research-1.0.0-workswarm.zip --live --output .research/exa-final-smoke.json`
+- Source: **12/12 passed**, no skips, using actual openJiuwen Tool classes.
+- Independently extracted canonical payload: **12/12 passed**, no skips.
+- Chinese queries, local errors, card descriptions, instruction defaults and
+  lossless UTF-8 result preservation pass. Transport alone is mocked in the
+  deterministic unit cases; SDK Tool invocation/streaming are real.
+- Actual native import/install, loader/resolver, Smart admission and full
+  equipment gate passed with the locally patched host. All four tools register
+  in main and inner ReAct registries under direct and progressive exposure.
+- Main registry guard dispatch, all four deferred schemas, unload and uninstall
+  pass. Permission policy activation is isolated from account setup; the
+  admission accounting and equipment gate themselves are real.
+- **Actual anonymous search with Chinese query, page fetch and a domain-filtered
+  search request passed** from the installed ZIP. Search returned 9,688 content
+  characters. No fallback provider, LLM request or authenticated/paid research
+  operation was used.
 
-Exit 0. The actual host imported, installed and uninstalled the native ZIP
-inside a temporary data directory. It resolved four native Tools and two
-Skills. Anonymous search returned source URLs and 9659
-characters of content. Fetch returned the MCP transport specification's page
-text. Advanced search with a domain filter succeeded. The paid guard returned
-its expected error without starting a run. Initial test-harness cleanup locks
-on Windows were fixed by closing the host LogManager; final cleanup passed.
-FUNCTIONAL_RESULTS.json contains a bounded summary, not retrieved copyrighted
-page text or credentials.
+Environment: Python 3.12.6, mcp 1.29.0, jsonschema 4.26.0; SDK source revision
+0ab5913b250d565b35bff3828dae438939cb1acd. Loader SHA-256
+6d5bdf4c3e7d559c968f090735ab3b70aadbf758c554d5d8e9aee012a72c2262.
+Host base 1bd3583934b76dd4b338ca959a6bff6b4cca3a2f plus the local admission
+fix, source SHA-256 d53903c7531615c738dade0e59730c1369eb6052602448fc3f62e2495e73051f.
+This host fix is separate and is not shipped inside the plugin ZIP.
 
-`python -B tools/asset_release.py check plugins/exa-deep-research`
+Bounded evidence: HOST_RESULTS_1.0.1.json and EXTRACTED_PACKAGE_RESULTS_1.0.1.json.
+Commands use the existing host virtual environment with -B. Unit command:
+`python -B -m unittest discover -s tests -p test_exa_deep_research.py -v`.
+For extracted tests set EXA_TEST_PAYLOAD to .research/extracted-exa-1.0.1.
+Host command: `python -B tests/exa_plugin_smoke.py --sdk-root
+D:/jiuwen_repos/agent-core-latest --host-root D:/jiuwen_repos/jiuwenswarm
+--payload plugins/exa-deep-research/exa-deep-research --archive
+.research/test-packages/exa-deep-research-1.0.1-workswarm.zip --live
+--output .research/exa-zh-host-live.json`.
 
-Passed: actual declared Tool classes/Skill paths, matching IDs and versions,
-full license coverage and verified notice hashes. No AgentTemplate-only fields,
-model aliases, keys, copied media, Node modules or comparison code are shipped.
+## Repository verification and limits
 
-`python -B tools/asset_release.py pack plugins/exa-deep-research`
+`asset_release.py check`, `pack` and `check-repo` pass: **23 assets / 31 release
+ZIPs**. The unchanged confirmed English release is preserved outside the current
+delivery tree instead of being relabeled as a Chinese release.
 
-Passed twice with identical ZIP bytes. Canonical release:
-releases/agent-plugin/exa-deep-research/1.0.0/exa-deep-research-1.0.0.zip
+The complete Windows suite is **not green**. With PYTHONUTF8=1 and
+PYTHONIOENCODING=utf-8: 185 tests, no assertion failures,
+23 error records and 60 skips.
+Unchanged main 3a57bc0: 173 tests, no assertion failures,
+23 error records and 60 skips.
+Error-ID occurrence counts and skip IDs/reasons match exactly; the 12 additional
+Exa tests all pass. These baseline errors involve fcntl/fchmod, unavailable
+symlink privileges, missing Node and resulting cleanup failures. No unrelated
+asset was changed to conceal them. The initial default-locale run also hit
+CP1258 Unicode errors; UTF-8 configuration removes those assertion failures.
+See REPOSITORY_COMPARISON_1.0.1.json and ignored local test logs.
 
-SHA-256: f61bc3d94d3fdb48db5e1f41139cd9450c9f5902cfc992ccf730ea32b27cc8ac
+Node/npm is unavailable, so the separate unrelated MCP development integration
+was not run locally. Remote CI has not run because Build must remain local until
+the new package confirmation and original screenshots are collected.
 
-`python -B plugins/exa-deep-research/build_local_test_package.py`
-
-Native flat ZIP: .research/test-packages/exa-deep-research-1.0.0-workswarm.zip
-
-SHA-256: 589ebbf999a42f0c15e9d98afe47b11d1b4747211c82becebca0ea1cf7f7f548
-
-Extraction verified all 19 runtime files (46251 bytes),
-every artifact.json payload hash, full MIT text, notices and absence of caches.
-Both ZIP formats contain identical payload bytes. Canonical Git source hashes
-and Windows checkout hashes are recorded separately in UPSTREAM_FILES.json;
-the bundled full MIT text retains the checkout's CRLF line endings.
-
-`python -B tools/asset_release.py check-repo`
-
-Passed: 7 source assets and 8 release ZIPs. Windows' initial CRLF conversion
-of unchanged tracked assets was repaired from canonical Git bytes; no changes
-to those assets are part of this port. This checkout disables core.autocrlf.
-
-The full unittest suite has two pre-existing symlink tests requiring Windows
-privileges unavailable here, including outside the sandbox. They are not
-reported as passing. Running the supported suite with UTF-8 enabled completed
-57 tests: 31 passed and 26 were skipped by existing runtime-dependency guards.
-The two omitted privilege cases are test_payload_symlinks_are_rejected and
-test_generation_preserves_existing_files_and_rejects_symlinks. Exa's nine tests
-and the separate real-host extracted-package test passed with real dependencies.
-
-## Limits and user test gate
-
-Authenticated managed research, premium providers, long ZDR streams and the
-user's actual UI/model-guided flow have not been live-tested. Managed research
-requires an authorized account and metered scope; no paid operation was run.
-The earlier user statement "seems working" describes the original MCP tryout,
-not completion of this new native version/hash. No test screenshot, current
-package confirmation, GitHub delivery or Project Lead acceptance is asserted.
+No live frontend installation, Chinese model-response quality or full 1.0.1
+conversation is claimed. MANUAL_TESTING.md provides the remaining user steps.
+Paid research remains optional and untested. Historical 1.0.0 service/registry
+and 68 host regression results remain versioned in TEST_REPORT_1.0.0.md,
+MAIN_AGENT_TEST_REPORT.md and SMART_ADMISSION_FIX.md; they are not new-version
+manual evidence. See USER_TEST_CONFIRMATION.md for the actual user statement.
