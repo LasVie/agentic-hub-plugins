@@ -1,0 +1,18 @@
+{
+  "type": "agent-plugin",
+  "name": "motor-l0-screening",
+  "version": "1.0.0",
+  "display_name": "电机方案粗筛",
+  "description": "本地生成电机方案矩阵、执行物理规则校验并按公式估算排序；仅用于相对粗筛，不是工程认证或仿真结论。",
+  "publisher": "Song Haoran",
+  "category": "数据与科学研究",
+  "tags": [
+    "电机方案粗筛"
+  ],
+  "functional_tags": [
+    "电机方案粗筛"
+  ],
+  "scope": "本地生成电机方案矩阵、执行物理规则校验并按公式估算排序；仅用于相对粗筛，不是工程认证或仿真结论。",
+  "candidate_id": "CAND-DSH-135",
+  "task_id": "AH-20261023-motor-l0-screening"
+}

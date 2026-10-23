@@ -1,0 +1,37 @@
+{
+  "id": "qt-dev-review",
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "source": "local",
+  "name": "Qt 开发审校",
+  "description": "只读审查指定的 Qt C++/QML 文件，输出中文规则定位和审校报告；无需 Qt 安装，不替代编译和人工审查。",
+  "display_name": {
+    "zh": "Qt 开发审校",
+    "en": "qt-dev-review"
+  },
+  "display_description": {
+    "zh": "只读审查指定的 Qt C++/QML 文件，输出中文规则定位和审校报告；无需 Qt 安装，不替代编译和人工审查。",
+    "en": "只读审查指定的 Qt C++/QML 文件，输出中文规则定位和审校报告；无需 Qt 安装，不替代编译和人工审查。"
+  },
+  "category": "软件开发",
+  "skills": [
+    {
+      "dir": "skills/qt-dev-review",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/plugin_tool.py",
+      "class": "PluginTool",
+      "display_name": {
+        "zh": "Qt 开发审校",
+        "en": "qt-dev-review"
+      },
+      "display_description": {
+        "zh": "只读审查指定的 Qt C++/QML 文件，输出中文规则定位和审校报告；无需 Qt 安装，不替代编译和人工审查。",
+        "en": "只读审查指定的 Qt C++/QML 文件，输出中文规则定位和审校报告；无需 Qt 安装，不替代编译和人工审查。"
+      }
+    }
+  ]
+}

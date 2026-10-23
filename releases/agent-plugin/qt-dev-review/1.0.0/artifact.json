@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:qt-dev-review",
+  "type": "agent-plugin",
+  "name": "qt-dev-review",
+  "version": "1.0.0",
+  "zip": "qt-dev-review-1.0.0.zip",
+  "sha256": "17c1b3d154ab42cf6f083274bba9eca0872d352f2025e2bc136d2b65455ca237",
+  "payload_sha256": {
+    "README.md": "e9a1750d5b6288de877e4fba8c4f7b0ba14fa4d7cc873c35507dee8801e83435",
+    "THIRD_PARTY_NOTICES.md": "3817379d3669a89f83c450c46018de6ed6b33a6d9a0100b90420e8e69cc05a95",
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "licenses/qt/LICENSE": "34e9066300fe20969e87af6b5f77de2439f2e3634b03b8b86caa7e948306df8e",
+    "manifest.json": "3b45828ee9b42375ad2bbecbfa63b06f618245e1e714fef0d0179ff35b8e0aa4",
+    "runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime/common.py": "1c644742282f69f17b1817ba1caf6be7799bb7ed4bee1510f85b7dd1db7c5a96",
+    "runtime/engine.py": "1560ebf56cab410d363eb3867e1b5299cd6a38611c1f5cab637f7d351bc95430",
+    "skills/qt-dev-review/SKILL.md": "95f59de0d1d6ed9f4ce601351ed566653111bade25ae20e3b02cb1a0a87f10fe",
+    "tools/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tools/plugin_tool.py": "a0fcefb514fd18eda6b3687939d5823e8bab3b4457edac82e2b0b9cdf7baddd0",
+    "vendor/qt_qml_lint.py": "beaac8c7047211963d59b8121d5144708bee9cf7e6f5c53b111a38d99ac5e336",
+    "vendor/qt_review_lint.py": "b776510c73df9045671d3fa767db2121ba2086631c17b50dbf7427d82776c3cc"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "0aafbb5510ce2395d9ac2efa7552925c33fe285aee4dc156622f9dde8e9320f7",
+  "functional_test_report_sha256": "6befd4a6bcf5b49b507ef51858a591be7f0609d7a44160e1f514f8cbbe7a9959"
+}

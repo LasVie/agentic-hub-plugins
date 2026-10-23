@@ -1,0 +1,37 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/wangxuewangxue98/dsh-motor-ai-l0",
+      "revision": "45769d11b4b996e51429ccaeffcfeb06d0bf3229",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/motor/LICENSE",
+          "sha256": "b3eef46ad78b14b85580d841e3e0b5869f45c379daefed167fcf2be0a5219173"
+        }
+      ]
+    },
+    {
+      "url": "https://registry.npmjs.org/@wangxue98/dsh-motor-ai-core/1.4.1",
+      "revision": "1.4.1; sha512-q93FbR2LnVw575go1pHKCVVRUEa7CSjFsL2kD2olrgJAcO79gTxUoB/Mt3acg8ivBWHyxP0Pbei4vzrDVsQGCw==",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/motor-core/LICENSE",
+          "sha256": "eb7807ba2f9e8e619d6d91b963a0e8e12a59f9d523f05de9fec1a2bbeed88a19"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "vendor/param-matrix.mjs",
+    "vendor/core/motor-constants.mjs",
+    "vendor/core/design-rules.mjs",
+    "vendor/core/index.mjs",
+    "vendor/core/formula-engine.mjs",
+    "vendor/core/param-schema.mjs"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

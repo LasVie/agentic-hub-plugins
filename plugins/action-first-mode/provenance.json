@@ -1,0 +1,25 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/yongshuai0314/dsh-i-have-adhd",
+      "revision": "4dd11e9e80921739f6cddc1df08f3ca204c223fa",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/adhd/LICENSE",
+          "sha256": "944ba1a13b9fb69b6308758c1d0fd870154d8457446487cf4b01e8c0e15dc1d1"
+        },
+        {
+          "path": "licenses/adhd/THIRD-PARTY-NOTICES.md",
+          "sha256": "6f8b93bf21bfb7bce41b33af4872adad604262972663916b34769890c5d8c57e"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "references/rules-zh.md"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

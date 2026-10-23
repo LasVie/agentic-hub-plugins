@@ -1,0 +1,18 @@
+{
+  "type": "agent-plugin",
+  "name": "archify-graph-tools",
+  "version": "1.0.0",
+  "display_name": "交互图谱校验与交付",
+  "description": "为 Playground 补充结构化图谱校验与离线交付；从中文 JSON 生成可交互 HTML，保留源文件和校验结果。",
+  "publisher": "Song Haoran",
+  "category": "软件开发",
+  "tags": [
+    "交互图谱校验与交付"
+  ],
+  "functional_tags": [
+    "交互图谱校验与交付"
+  ],
+  "scope": "为 Playground 补充结构化图谱校验与离线交付；从中文 JSON 生成可交互 HTML，保留源文件和校验结果。",
+  "candidate_id": "CAND-DSH-193",
+  "task_id": "AH-20261023-archify-graph-tools"
+}

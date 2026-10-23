@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:gomoku-local",
+  "type": "agent-plugin",
+  "name": "gomoku-local",
+  "version": "1.0.0",
+  "zip": "gomoku-local-1.0.0.zip",
+  "sha256": "058fcbdcbd1d3b0f9600c1ad9a025b473cd08065c94031823d5df52e0f4b5c17",
+  "payload_sha256": {
+    "README.md": "e8fa18fa46477155a542981e1a5d8b70ec2513fb7250325368b5488b27925679",
+    "THIRD_PARTY_NOTICES.md": "d1910456c5b12cf6cf664ff7633cf42aeac8e419cdb8de40a34558707ce12fb5",
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "licenses/gomoku/LICENSE": "f4d265194e0824721af0592462a71fe750c04db3565c23c5d6c65fdee25fb4b0",
+    "manifest.json": "e21c5e6eb4414c460b7ce68a492d72e75ab1fecd8e685ba4ff3c6689e915f8d5",
+    "runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime/common.py": "1c644742282f69f17b1817ba1caf6be7799bb7ed4bee1510f85b7dd1db7c5a96",
+    "runtime/engine.mjs": "f2ca083f9273a3d75cbd860cd6d4b515820a52a7a2b213ff9e12ebbdbac17dc8",
+    "runtime/engine.py": "252d62e83a429d6b3e2be7ccf61915575cef53b61b4bd59cd9b8130d05036d32",
+    "skills/gomoku-local/SKILL.md": "42b9d940e7fb6c818288534b1c3386c164ffbe75bb940305321d5a59caf5c410",
+    "tools/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tools/plugin_tool.py": "a57f2dac270f367ff789b4afbd7ee1f2b80604d91fd388bb357c402b8fdcd212",
+    "vendor/game-source.ts": "f09ba97c3a2eedaa66fb76f8a059a9d2d997b221360432ecd991d745483dd7e9",
+    "vendor/game.mjs": "09bb6955e9d4ede46b629b7827d235253ae33a4b17178a5eefdeb6df4623774b"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "1eb4cdd0eb561635af76c7545d455c6bef53e793b451512a80fd881d72b7ddac",
+  "functional_test_report_sha256": "76ca546eb4568ad765eb20f609ffc689e814cfae56c2d688e94af2478e9d008a"
+}

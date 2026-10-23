@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-23",
+  "timezone": "Asia/Singapore",
+  "verified_at": "2026-10-23T11:48:36+08:00",
+  "method": "The user manually opened both exact local artifacts in Safari. Native CUA inspected the existing pages, captured original screenshots and exercised on-page graph controls. No automated file-URL navigation or security-policy workaround was used.",
+  "scope": "Current desktop samples only; not mobile/cross-browser coverage. Browser export downloads were not exercised. Gomoku HTML is a read-only snapshot; model-assisted gameplay was tested separately in WorkSwarm.",
+  "results": {
+    "archify-graph-tools": {
+      "outcome": "passed",
+      "checks": [
+        {
+          "name": "Chinese workflow rendering",
+          "result": "passed",
+          "evidence": "Title/subtitle, three node labels, arrows, legend and node index render in Chinese without blocking clipping in the observed desktop view."
+        },
+        {
+          "name": "Zoom and reset",
+          "result": "passed",
+          "evidence": "Zoom changed from100% to125%; reset returned to100%; final graph view was reset."
+        },
+        {
+          "name": "Theme switch",
+          "result": "passed",
+          "evidence": "Dark-to-light switch responded; light theme screenshot captured; original dark theme restored."
+        },
+        {
+          "name": "Node details",
+          "result": "passed",
+          "evidence": "Clicking Desktop Test in node index opened its Chinese semantic passport and showed0outgoing/1incoming link."
+        },
+        {
+          "name": "Upstream reachability",
+          "result": "passed",
+          "evidence": "Toggle on displayed2upstream nodes,2connections, maximum depth2."
+        },
+        {
+          "name": "Chinese node finder",
+          "result": "passed",
+          "evidence": "Searching 中文适配 reduced3nodes to1/3matching result."
+        },
+        {
+          "name": "Visual style",
+          "result": "passed",
+          "evidence": "Classic switched to Blueprint with Chinese state label, then restored to Classic."
+        }
+      ]
+    },
+    "gomoku-local": {
+      "outcome": "passed",
+      "checks": [
+        {
+          "name": "Chinese board rendering",
+          "result": "passed",
+          "evidence": "All15rows and15columns render with visible1-based coordinates and Chinese instructions."
+        },
+        {
+          "name": "Move and status identity",
+          "result": "passed",
+          "evidence": "Black1 appears at row8/column8; White2 at row8/column9; revision2 and next turnBlack agree with state JSON."
+        },
+        {
+          "name": "Read-only behavior label",
+          "result": "passed",
+          "evidence": "The page clearly states it is a read-only snapshot and directs further moves to the WorkSwarm conversation."
+        }
+      ]
+    }
+  },
+  "package_payload_changed": false,
+  "user_test_completion_confirmed": false,
+  "original_screenshots": [
+    {
+      "file": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/migration-five-20261023/evidence/archify-safari-node-original.jpg",
+      "sha256": "2ea4eabf43cf79fdb91e5181c44ba5acaa67ec42e0f24f41a13dfbab4702f9ae",
+      "pixels": [
+        5120,
+        2820
+      ]
+    },
+    {
+      "file": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/migration-five-20261023/evidence/archify-safari-upstream-original.jpg",
+      "sha256": "35c14436f6c29186b010e225aacb78b9f4c732d274cfd3ae52dcfdb0a62bb318",
+      "pixels": [
+        5120,
+        2820
+      ]
+    },
+    {
+      "file": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/migration-five-20261023/evidence/archify-safari-search-original.jpg",
+      "sha256": "f6035f79bd9a67b4c5f7a8af4c6564c7757fcd5f82634cdd75ca199dda2c75f4",
+      "pixels": [
+        5120,
+        2820
+      ]
+    },
+    {
+      "file": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/migration-five-20261023/evidence/archify-safari-initial-original.jpg",
+      "sha256": "29618f12b18c94038c71f7838ee03424b027477bb4092238e7093c94e441cd28",
+      "pixels": [
+        5120,
+        2820
+      ]
+    },
+    {
+      "file": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/migration-five-20261023/evidence/archify-safari-final-original.jpg",
+      "sha256": "ca170769d8c24aca009e877e692ddc126469b889f62800519d297d02c943339e",
+      "pixels": [
+        5120,
+        2820
+      ]
+    },
+    {
+      "file": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/migration-five-20261023/evidence/archify-safari-light-original.jpg",
+      "sha256": "ee3d778f380febfa42f4699a0eeb31bac70bb95f0b7535844ed0a05e79bcfc3a",
+      "pixels": [
+        5120,
+        2820
+      ]
+    },
+    {
+      "file": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/migration-five-20261023/evidence/archify-safari-blueprint-original.jpg",
+      "sha256": "05f5b2b1f879da290b4cf8d3c7c08f4ea14f58cefeb894ec84f4a30520e8a71a",
+      "pixels": [
+        5120,
+        2820
+      ]
+    },
+    {
+      "file": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/migration-five-20261023/evidence/gomoku-safari-visual-original.jpg",
+      "sha256": "698c29a540a8c52bba27a5f4bad309752c2696b352da2af8096fc222ebccec5c",
+      "pixels": [
+        5120,
+        2820
+      ]
+    }
+  ]
+}

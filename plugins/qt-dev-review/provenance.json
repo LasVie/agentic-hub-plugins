@@ -1,0 +1,22 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/TheQtCompanyRnD/agent-skills",
+      "revision": "6845f02d41171a6df8b6e6fe225b7f5d1a6f4adf",
+      "license_expression": "BSD-3-Clause",
+      "license_evidence": [
+        {
+          "path": "licenses/qt/LICENSE",
+          "sha256": "34e9066300fe20969e87af6b5f77de2439f2e3634b03b8b86caa7e948306df8e"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "vendor/qt_review_lint.py",
+    "vendor/qt_qml_lint.py"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

@@ -1,0 +1,233 @@
+{
+  "date": "2026-10-23",
+  "owner": "Song Haoran",
+  "user_instruction": "pr合入",
+  "authorization": "Current-package test completion and GitHub PR submission/merge after passing assistant-delegated native and visual tests; not a claim of personally performed human tests or final Hub acceptance.",
+  "repository_visibility_at_submission": "public",
+  "assets": [
+    {
+      "slug": "action-first-mode",
+      "name": "行动优先表达",
+      "version": "1.0.0",
+      "candidate_id": "CAND-DSH-221",
+      "task_id": "AH-20261023-action-first-mode",
+      "native_sha256": "a58dbe3186132f37d74af3149210dcecbb46859eb71780c1ddd6d2c1ba152f5b",
+      "hub_sha256": "77fcb326985f7bdd5db4a49588b1c82dd4a8ae84381a743198ce0f4948c63f77",
+      "host_session_id": "web_1a166b7d542_bf5f5708dd17",
+      "actual_native_results": 5,
+      "functional_tests": 6,
+      "asset_id": "repo:agent-plugin:action-first-mode",
+      "hub_zip": "releases/agent-plugin/action-first-mode/1.0.0/action-first-mode-1.0.0.zip",
+      "native_zip": "plugins/action-first-mode/test-packages/action-first-mode-1.0.0-native.zip",
+      "confirmation_report_id": "RPT-20261023-action-first-mode-confirmed-100",
+      "images": [
+        {
+          "path": "docs/deliveries/five-chinese-plugins-20261023/images/action-first-persist.jpg",
+          "sha256": "b555f5a196018f5f8980781e82baa78812849171047f231d2e764ae2105a8974"
+        },
+        {
+          "path": "docs/deliveries/five-chinese-plugins-20261023/images/action-first-off.jpg",
+          "sha256": "82bba7fe5c913f668c9806bc338d4831a7d63549f610b00a38e65d84001238ad"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/yongshuai0314/dsh-i-have-adhd",
+          "revision": "4dd11e9e80921739f6cddc1df08f3ca204c223fa",
+          "license_expression": "MIT",
+          "license_evidence": [
+            {
+              "path": "licenses/adhd/LICENSE",
+              "sha256": "944ba1a13b9fb69b6308758c1d0fd870154d8457446487cf4b01e8c0e15dc1d1"
+            },
+            {
+              "path": "licenses/adhd/THIRD-PARTY-NOTICES.md",
+              "sha256": "6f8b93bf21bfb7bce41b33af4872adad604262972663916b34769890c5d8c57e"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "archify-graph-tools",
+      "name": "交互图谱校验与交付",
+      "version": "1.0.0",
+      "candidate_id": "CAND-DSH-193",
+      "task_id": "AH-20261023-archify-graph-tools",
+      "native_sha256": "30119fc51738db33f5f52c474fd73965de66ecd298e9f9cbde543e6178a9ccf7",
+      "hub_sha256": "a3df97a8c026b6f70ae7e045c46319e20629824ab0058db243e171f47a0c6258",
+      "host_session_id": "web_1a166b5f704_395f922c4007",
+      "actual_native_results": 3,
+      "functional_tests": 8,
+      "asset_id": "repo:agent-plugin:archify-graph-tools",
+      "hub_zip": "releases/agent-plugin/archify-graph-tools/1.0.0/archify-graph-tools-1.0.0.zip",
+      "native_zip": "plugins/archify-graph-tools/test-packages/archify-graph-tools-1.0.0-native.zip",
+      "confirmation_report_id": "RPT-20261023-archify-graph-tools-confirmed-100",
+      "images": [
+        {
+          "path": "docs/deliveries/five-chinese-plugins-20261023/images/archify-host-result.jpg",
+          "sha256": "aa5183f8857b70c126d98c011a2ac82c57eec54cfccb1e11839c2d7a55a7de1f"
+        },
+        {
+          "path": "docs/deliveries/five-chinese-plugins-20261023/images/archify-safari-final-original.jpg",
+          "sha256": "ca170769d8c24aca009e877e692ddc126469b889f62800519d297d02c943339e"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/tt-a1i/archify",
+          "revision": "25cf37080fc8b1dbe758a4efc3935b55f3327083",
+          "license_expression": "MIT",
+          "license_evidence": [
+            {
+              "path": "licenses/archify/LICENSE",
+              "sha256": "b799ab081703e7821ae5096d2c1abdf14bbdc75e8ea1c4045998c36ed6db9706"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/JetBrains/JetBrainsMono",
+          "revision": "embedded in archify 25cf37080fc8b1dbe758a4efc3935b55f3327083",
+          "license_expression": "OFL-1.1",
+          "license_evidence": [
+            {
+              "path": "vendor/archify/assets/JetBrainsMono-OFL.txt",
+              "sha256": "c1ab7c666206842a02b35b30770dac0d7a10156ed401c9defc3f02a754d89e90"
+            }
+          ]
+        },
+        {
+          "url": "https://github.com/obsidianmd/pele",
+          "revision": "embedded in archify 25cf37080fc8b1dbe758a4efc3935b55f3327083",
+          "license_expression": "MIT",
+          "license_evidence": [
+            {
+              "path": "vendor/archify/explainer/vendor/pele/LICENSE",
+              "sha256": "311bccc30de6f7b9cbfb64232bb0c911ccb2191abe316550813ae25b2c7925b9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gomoku-local",
+      "name": "本地五子棋",
+      "version": "1.0.0",
+      "candidate_id": "CAND-DSH-336",
+      "task_id": "AH-20261023-gomoku-local",
+      "native_sha256": "71a72e2c7857f139978a448b75220903d24167ccc6adae92271409cd2f3f2e36",
+      "hub_sha256": "058fcbdcbd1d3b0f9600c1ad9a025b473cd08065c94031823d5df52e0f4b5c17",
+      "host_session_id": "web_1a166b9ef8a_e9bb421ed4db",
+      "actual_native_results": 7,
+      "functional_tests": 17,
+      "asset_id": "repo:agent-plugin:gomoku-local",
+      "hub_zip": "releases/agent-plugin/gomoku-local/1.0.0/gomoku-local-1.0.0.zip",
+      "native_zip": "plugins/gomoku-local/test-packages/gomoku-local-1.0.0-native.zip",
+      "confirmation_report_id": "RPT-20261023-gomoku-local-confirmed-100",
+      "images": [
+        {
+          "path": "docs/deliveries/five-chinese-plugins-20261023/images/gomoku-host-result.jpg",
+          "sha256": "ea5068ef745c7393d39550b31f25ee4fe737f9a6e235fb8ed36acd44aa810d3e"
+        },
+        {
+          "path": "docs/deliveries/five-chinese-plugins-20261023/images/gomoku-safari-visual-original.jpg",
+          "sha256": "698c29a540a8c52bba27a5f4bad309752c2696b352da2af8096fc222ebccec5c"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/omdsh-dev/dsh-gomoku",
+          "revision": "26fdf6e99c95447f250ab51478fbc694b6024e8d",
+          "license_expression": "MIT",
+          "license_evidence": [
+            {
+              "path": "licenses/gomoku/LICENSE",
+              "sha256": "f4d265194e0824721af0592462a71fe750c04db3565c23c5d6c65fdee25fb4b0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "motor-l0-screening",
+      "name": "电机方案粗筛",
+      "version": "1.0.0",
+      "candidate_id": "CAND-DSH-135",
+      "task_id": "AH-20261023-motor-l0-screening",
+      "native_sha256": "1194cbe5aee2e5edbccd526a9bdae9b113fa027b9919b05b1513772f08c25604",
+      "hub_sha256": "b53f89b843c3153e16132496e4f1f09533e0dece12b8184e4773894008cbb058",
+      "host_session_id": "web_1a166b6da77_c6eff8b23288",
+      "actual_native_results": 2,
+      "functional_tests": 11,
+      "asset_id": "repo:agent-plugin:motor-l0-screening",
+      "hub_zip": "releases/agent-plugin/motor-l0-screening/1.0.0/motor-l0-screening-1.0.0.zip",
+      "native_zip": "plugins/motor-l0-screening/test-packages/motor-l0-screening-1.0.0-native.zip",
+      "confirmation_report_id": "RPT-20261023-motor-l0-screening-confirmed-100",
+      "images": [
+        {
+          "path": "docs/deliveries/five-chinese-plugins-20261023/images/motor-host-result.jpg",
+          "sha256": "f169cf6d7a651a19ac300183d599285de21b25641287c3a686c7be9a500d3d9f"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/wangxuewangxue98/dsh-motor-ai-l0",
+          "revision": "45769d11b4b996e51429ccaeffcfeb06d0bf3229",
+          "license_expression": "MIT",
+          "license_evidence": [
+            {
+              "path": "licenses/motor/LICENSE",
+              "sha256": "b3eef46ad78b14b85580d841e3e0b5869f45c379daefed167fcf2be0a5219173"
+            }
+          ]
+        },
+        {
+          "url": "https://registry.npmjs.org/@wangxue98/dsh-motor-ai-core/1.4.1",
+          "revision": "1.4.1; sha512-q93FbR2LnVw575go1pHKCVVRUEa7CSjFsL2kD2olrgJAcO79gTxUoB/Mt3acg8ivBWHyxP0Pbei4vzrDVsQGCw==",
+          "license_expression": "MIT",
+          "license_evidence": [
+            {
+              "path": "licenses/motor-core/LICENSE",
+              "sha256": "eb7807ba2f9e8e619d6d91b963a0e8e12a59f9d523f05de9fec1a2bbeed88a19"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "qt-dev-review",
+      "name": "Qt 开发审校",
+      "version": "1.0.0",
+      "candidate_id": "CAND-CLD-095",
+      "task_id": "AH-20261023-qt-dev-review",
+      "native_sha256": "c14c8564d904ccc923037285f02ba82d80d95b30b8169404aefe3f1e81149ae6",
+      "hub_sha256": "17c1b3d154ab42cf6f083274bba9eca0872d352f2025e2bc136d2b65455ca237",
+      "host_session_id": "web_1a166b420cc_687f52ecd583",
+      "actual_native_results": 2,
+      "functional_tests": 6,
+      "asset_id": "repo:agent-plugin:qt-dev-review",
+      "hub_zip": "releases/agent-plugin/qt-dev-review/1.0.0/qt-dev-review-1.0.0.zip",
+      "native_zip": "plugins/qt-dev-review/test-packages/qt-dev-review-1.0.0-native.zip",
+      "confirmation_report_id": "RPT-20261023-qt-dev-review-confirmed-100",
+      "images": [
+        {
+          "path": "docs/deliveries/five-chinese-plugins-20261023/images/qt-host-result.jpg",
+          "sha256": "ce0aba018c7671bc06b154d93bde86b113e5a4746361963643c44f5ab4d0b80a"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/TheQtCompanyRnD/agent-skills",
+          "revision": "6845f02d41171a6df8b6e6fe225b7f5d1a6f4adf",
+          "license_expression": "BSD-3-Clause",
+          "license_evidence": [
+            {
+              "path": "licenses/qt/LICENSE",
+              "sha256": "34e9066300fe20969e87af6b5f77de2439f2e3634b03b8b86caa7e948306df8e"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
