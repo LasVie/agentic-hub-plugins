@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import asyncio
 import copy
+from contextlib import contextmanager
 import csv
 import hashlib
 import importlib.util
@@ -34,11 +35,23 @@ FIXTURES = ROOT / "tests/fixtures/fet-timetable-audit"
 VERSION = "1.0.0"
 
 
+@contextmanager
+def immutable_payload_import():
+    previous = sys.dont_write_bytecode
+    try:
+        sys.dont_write_bytecode = True
+        yield
+    finally:
+        sys.dont_write_bytecode = previous
+
+
 def load_module(name, path):
     spec = importlib.util.spec_from_file_location(name, path)
     module = importlib.util.module_from_spec(spec)
     sys.modules[name] = module
-    spec.loader.exec_module(module)
+    # Functional tests must leave the release payload clean for check-repo.
+    with immutable_payload_import():
+        spec.loader.exec_module(module)
     return module
 
 
@@ -420,7 +433,9 @@ class FetAuditHostTests(FixtureCase):
             if not exc.name.startswith("openjiuwen"):
                 raise
             raise unittest.SkipTest("Requires real WorkSwarm openJiuwen SDK") from exc
-        cls.adapter = load_module("fet_audit_adapter_under_test", PAYLOAD / "tools/timetable_tools.py")
+        with immutable_payload_import():
+            cls.adapter = load_module("fet_audit_adapter_under_test", PAYLOAD / "tools/timetable_tools.py")
+            cls.adapter._core()  # Resolve the lazy import without writing into source.
         cls.tool_type = Tool
 
     def test_real_sdk_tools_expose_localized_cards_and_invoke(self):
