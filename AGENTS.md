@@ -32,7 +32,7 @@ Both the user test package and the final release/delivery package for every Skil
 
 Canonical editing link: **[Agentic Hub Asset Tracker & Team Progress](https://docs.google.com/spreadsheets/d/12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM/edit?usp=sharing)**. Spreadsheet ID: `12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM`. This is the existing collaborative workbook; update it in place rather than creating a copy.
 
-Sharing was verified on 2026-10-22 as **Anyone with the link — Editor** (Drive permission `type: anyone`, `role: writer`). Maintainers do not need an individual editor invitation while that setting remains in effect. Use an available configured Google Drive / Sheets connector to read and update the workbook; if that route is unavailable, use an available browser with the same editing link and verify the saved cells afterward. Apply the live-read, identity, ownership, and readback rules above on either route.
+Use an available configured Google Drive / Sheets connector to read and update the workbook; if that route is unavailable, use an available authorized browser with the same editing link and verify the saved cells afterward. Apply the live-read, identity, ownership, and readback rules above on either route.
 
 Link-based editing permission does not configure an agent's Google connector or API authentication. If a tool cannot authenticate or access the sheet, distinguish that tool/connection issue from the workbook's sharing setting and try an available authorized browser route. If no working route is available, report the actual blocker and follow the pending-sync rule above; do not claim synchronization succeeded or request a new individual editor grant merely because a connector is unconfigured.
 
