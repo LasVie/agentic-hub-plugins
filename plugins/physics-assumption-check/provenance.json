@@ -1,0 +1,24 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/Carlotess/fisica",
+      "revision": "f53864e09df2a7d91f5c2a86ac60b4ac7e987bbf",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/fisica/LICENSE",
+          "sha256": "b273a3590e2290ab4e55acdd824bb37f19940cea6c01cfef271c32f2628005d2"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "skills/physics-review/SKILL.md",
+    "skills/physics-review/references/common-errors.md",
+    "scripts/prepare_figure.py",
+    "README.md"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

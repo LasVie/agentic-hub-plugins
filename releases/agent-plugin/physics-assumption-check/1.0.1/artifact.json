@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:physics-assumption-check",
+  "type": "agent-plugin",
+  "name": "physics-assumption-check",
+  "version": "1.0.1",
+  "zip": "physics-assumption-check-1.0.1.zip",
+  "sha256": "e363550695bda9524f5f1c3e3d6764f35ab36a2111fe5f4d5e7275dd7be5b06f",
+  "payload_sha256": {
+    "README.md": "07021ade6ae668c49688f26289641cd4b6ac08e5105ea9b9ebccd8d9632bd111",
+    "THIRD_PARTY_NOTICES.md": "f370ef880a8f0c5dcc8576073823efdc9b42e76bd7ed97a8442f370a17acbf67",
+    "licenses/fisica/LICENSE": "b273a3590e2290ab4e55acdd824bb37f19940cea6c01cfef271c32f2628005d2",
+    "manifest.json": "5a0fc04f6469d4b9e34734259330f17f302d35f3b30f471ea402c6248c178ce5",
+    "requirements-local.txt": "19ab807ebf5e9053dab1f5095f9bbf8d1b4d7dca9be222d9e6c608a96ef5312a",
+    "scripts/prepare_figure.py": "9dc8804b44e492a0b059f4579ef5650a5a174fc9a6d64fdca92769a33d4b19f6",
+    "skills/physics-review/SKILL.md": "a543b8164a2a117afb9b929918bc4f69d3b54430dbcf1612f5165ed67434b779",
+    "skills/physics-review/references/common-errors.md": "48b8b20b694d593c1cbf306ccd73981bbfec381fdac7b01028d8c3769fd9f4bc",
+    "tools/physics_tool.py": "a010e00a20bcccac63bba56d40129b1c53005f9e47e49a1afa15f4c439d5d671"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "c6b9554d88f98a33c6aad492352dfce4a4cee708c2a061fc166bc01bf12367da",
+  "functional_test_report_sha256": "2efbd3ede4703b0bc39815d1dd08d2238dc4f8b8eb6182883ab4b7c92e5003b9"
+}
