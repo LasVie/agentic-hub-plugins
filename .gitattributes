@@ -1,0 +1,9 @@
+# Keep Windows Toolkit's packaged text identical on LF and CRLF Git clients.
+/plugins/windows-toolkit/**/*.md text eol=lf
+/plugins/windows-toolkit/**/*.py text eol=lf
+/plugins/windows-toolkit/**/*.json text eol=lf
+/plugins/windows-toolkit/windows-toolkit/licenses/dsh-win-toolkit/LICENSE text eol=lf
+/releases/agent-plugin/windows-toolkit/**/artifact.json text eol=lf
+/plugins/windows-toolkit/test-packages/*.zip -text
+/plugins/windows-toolkit/test-evidence/*.png -text
+/releases/agent-plugin/windows-toolkit/**/*.zip -text

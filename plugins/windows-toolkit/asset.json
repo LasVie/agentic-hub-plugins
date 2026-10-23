@@ -1,0 +1,24 @@
+{
+  "type": "agent-plugin",
+  "name": "windows-toolkit",
+  "version": "1.0.1",
+  "display_name": "Windows 本机工具箱",
+  "description": "通过专用工具读取与写入剪贴板、弹出系统通知、读取 hosts 文件，并对任意主机做 DNS 解析与 TCP 端口连通性诊断；仅支持 Windows，全部输入以 Base64 跨 PowerShell 边界传递，不拼接命令行。",
+  "publisher": "dsh-win-toolkit contributors; Agentic Hub port",
+  "category": "软件开发",
+  "tags": [
+    "Windows 本机",
+    "剪贴板",
+    "网络诊断"
+  ],
+  "functional_tags": [
+    "Windows Clipboard",
+    "System Notification",
+    "Hosts File",
+    "DNS and TCP Diagnostics"
+  ],
+  "scope": "仅面向 Windows 10/11 本机的只读诊断与两项受控桌面写入：读取剪贴板、读取 hosts 文件、DNS/TCP 诊断；写入剪贴板与弹出通知需用户明确要求。不修改 hosts、不结束进程、不读取密钥或凭据、不修改网络配置，不支持非 Windows 宿主。",
+  "candidate_id": "CAND-DSH-019",
+  "task_id": "AH-20261023-dsh-win-toolkit",
+  "related_asset_ids": []
+}
