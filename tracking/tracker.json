@@ -1,5 +1,5 @@
 {
-  "schema_version": 11,
+  "schema_version": 12,
   "spreadsheet_id": "12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM",
   "url": "https://docs.google.com/spreadsheets/d/12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM/edit?usp=sharing",
   "repository": "https://github.com/LasVie/agentic-hub-plugins",
@@ -68,7 +68,8 @@
         "Test Screenshot",
         "Agentic Hub Submission Screenshot",
         "Project Lead Acceptance",
-        "Completed Date"
+        "Completed Date",
+        "Final Plugin Name"
       ]
     },
     "assets": {
@@ -145,7 +146,7 @@
     "functional tests passed",
     "explicit user test-completion confirmation for the current version and final ZIP SHA-256, with known blocking issues resolved",
     "real test-screenshot evidence links accessible",
-    "explicit Project Lead acceptance of the GitHub handoff",
+    "Project Lead acceptance evidenced by Song Haoran's verified corresponding-version Hub submission screenshot or explicit acceptance; no duplicate verbal approval",
     "linked development task/candidate/report readback verification; Asset Ledger registration is separate",
     "linked candidate owners, task IDs and delivery state synchronized when applicable"
   ],
@@ -153,7 +154,7 @@
     "pre_hub": "repo:<type>:<slug>",
     "keep_stable": true,
     "hub_id": "record real Hub ID in delivery.json; never invent one",
-    "pre_hub_storage": "Repository and linked task/candidate/report records only; no Asset Ledger entry before successful Hub submission."
+    "pre_hub_storage": "Repository and linked task/candidate/report records only; no Asset Ledger entry before the asset/version is verified in the official public Hub catalog."
   },
   "candidate_start_fields": [
     "Candidate ID",
@@ -207,7 +208,7 @@
       "Planned": "A linked development task exists; first delivery is still open.",
       "Deferred": "Explicit Project Lead decision to defer the candidate as a whole. A member's personal wish to develop later is released to To Evaluate instead.",
       "Excluded": "Explicit Project Lead rejection, verified full functional coverage, or cancellation due to intrinsic WorkSwarm/host incompatibility or license/permission barriers. Cancellation cases release Owner to Unassigned and remove the cancelled live task link, preserving reasons/evidence and unrelated active work.",
-      "Delivered": "Contributor first-delivery gates and explicit Project Lead acceptance of the GitHub handoff passed; linked task/candidate/report records were synchronized. Hub submission and Asset Ledger registration are separate. Track later upgrades in separate tasks."
+      "Delivered": "Contributor first-delivery gates and Project Lead acceptance passed; a verified corresponding-version Hub submission screenshot supplied by Song Haoran counts as acceptance without another verbal approval. Synchronize original task/candidate/report records. Official-catalog registration is separate; track later upgrades in separate tasks."
     },
     "finish_fields": [
       "Owner",
@@ -283,7 +284,7 @@
         "Same Name - Review Needed",
         "Functional Overlap - Review Needed"
       ],
-      "compare": "Compare historical and new assets across types, especially Skills, SwarmSkills and Plugins, by inputs, actions, outputs, scope, exclusions and dependencies. Start with tags and related details. Also inspect relevant active/completed development tasks, claims and merged PRs for capabilities not yet registered in Asset Ledger because Hub submission is pending.",
+      "compare": "Compare historical and new assets across types, especially Skills, SwarmSkills and Plugins, by inputs, actions, outputs, scope, exclusions and dependencies. Start with tags and related details. Also inspect relevant active/completed development tasks, claims and merged PRs for capabilities not yet registered in Asset Ledger because they are absent from the official public Hub catalog.",
       "write_fields": [
         "Duplicate Check",
         "Related Assets and Differences",
@@ -370,11 +371,11 @@
         "delete eligible temporary branch",
         "sync development task, candidate and report records; leave Asset Ledger unchanged",
         "hand off merged release, Chinese display name/naming map, version/hash, instructions and test evidence",
-        "obtain explicit final Project Lead acceptance",
+        "record Project Lead acceptance from his verified corresponding-version Hub submission screenshot or explicit acceptance; synchronize actual date and Final Plugin Name",
         "mark Completed/Delivered only when contributor completion gates pass"
       ],
       "pending_status": "Awaiting Acceptance",
-      "final_acceptance": "User test completion is distinct from final Project Lead Acceptance. Only explicit acceptance by Song Haoran permits Accepted for the GitHub handoff; Hub submission/publication and its screenshot are not contributor acceptance prerequisites. Asset Ledger registration is also outside contributor completion gates.",
+      "final_acceptance": "Song Haoran supplying/uploading a verified Hub submission screenshot for the corresponding delivered asset/version counts as Accepted, including an agent explicitly acting at his request. Verify actual images, version/hash association and permanent PR evidence links; do not require another verbal approval or infer authority from a GitHub author name alone. Explicit lead acceptance without a Hub image also remains valid. Preserve all other delivery gates. Official public-catalog inclusion is a separate Asset Ledger gate.",
       "legacy_tasks": "Preserve historical PRs, merges, claims and progress. Never invent past test confirmation or screenshots. New pushes/PRs/package versions must satisfy the complete gate; for existing open PRs collect and attach missing test evidence before merge. Do not resubmit an identical already merged ZIP. Later Hub submission/ledger registration remain Project Lead-owned.",
       "pre_pr_materials": [
         "confirmed member/owner and linked task/candidate identity",
@@ -384,7 +385,23 @@
         "explicit user test-completion record for the current package with blocking issues resolved",
         "received, readable and current original test screenshots showing key operations/results"
       ],
-      "merge_gate": "Actual test screenshots must already be attached to the delivery PR and their tracker evidence permalinks verified; do not merge with a plan to add test screenshots later."
+      "merge_gate": "Actual test screenshots must already be attached to the delivery PR and their tracker evidence permalinks verified; do not merge with a plan to add test screenshots later.",
+      "acceptance_record": {
+        "field": "Project Lead Acceptance",
+        "value": "Accepted",
+        "hub_evidence_field": "Agentic Hub Submission Screenshot",
+        "date_field": "Completed Date",
+        "date_rule": "Use the actual acceptance/evidence-upload date in Asia/Singapore once all completion gates pass. Backfill existing verified screenshots using their original date and record the new rule/synchronization date in reports. If a date is unknown, report it rather than inventing one.",
+        "non_qualifying": [
+          "blank/broken evidence link",
+          "test-only image",
+          "wrong asset/version",
+          "failed upload",
+          "draft screenshot",
+          "unresolved explicit rejection or identity conflict"
+        ],
+        "sync": "Record evidence basis, date, final name and version/hash in the original task/candidate/report; verify readback. Keep a still-blocked task Awaiting Acceptance and record the actual lead acceptance/date in its report until remaining delivery gates pass."
+      }
     },
     "maintenance_exception": "Pure repository maintenance uses a maintenance PR only; plugin user-test confirmation, ZIP/evidence gates, plugin task/report registration and candidate/asset updates do not apply.",
     "entry": {
@@ -428,28 +445,23 @@
   },
   "access": {
     "service": "Google Sheets",
-    "link_sharing": "Anyone with the link",
-    "role": "Editor",
-    "drive_permission_type": "anyone",
-    "drive_permission_role": "writer",
-    "verified_on": "2026-10-22",
     "edit_url": "https://docs.google.com/spreadsheets/d/12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM/edit?usp=sharing",
     "update_in_place": true,
-    "connection_note": "Link-based editing permission does not configure agent connector/API authentication. Use a configured Google Drive/Sheets connector or an available authorized browser route. Do not request an individual editor grant merely because a connector is unconfigured.",
+    "connection_note": "Use a configured Google Drive/Sheets connector or an available authorized browser with the canonical editing link. Connector/API authentication is configured separately.",
     "failure_rule": "If no working route is available, report the actual connection/access blocker. For actual plugin work, preserve pending synchronization records; never claim the cloud sheet was updated without readback."
   },
   "hub_ownership": {
     "owner": "Song Haoran",
     "scope": "Agentic Hub submission, publication and associated Hub evidence are handled personally by the Project Lead.",
     "contributor_rule": "Contributors and their agents deliver tested Hub-compatible packages through GitHub. Do not perform Hub operations or ask contributors to do them.",
-    "completion_rule": "Hub actions, review results and Hub screenshots are outside contributor completion gates. Preserve any real existing Hub evidence. Asset Ledger updates occur only after verified Hub submission success and are outside contributor completion gates."
+    "completion_rule": "Hub operations are not contributor responsibilities. Song Haoran's verified submission screenshot counts as lead acceptance; no extra verbal approval is required. Asset Ledger updates wait for actual official public-catalog presence, independently of contributor acceptance."
   },
   "screenshot_evidence": {
     "storage": "Original full-resolution images attached to the delivery PR body or dedicated evidence comments.",
     "tracker_values": "Evidence permalinks only in both screenshot columns; no embedded images, IMAGE formulas, local paths, base64, temporary signed image URLs or Drive links.",
     "test": "After user test completion, proactively request missing/invalid original test screenshots. Verify task/version, readability and key results; receive originals before delivery push/PR creation.",
-    "hub": "Agentic Hub Submission Screenshot is reserved for actual evidence supplied by Song Haoran; leave blank until available. Do not ask contributors to supply it.",
-    "completion": "Missing test screenshots block entry to Submit, delivery push and PR creation; missing verified PR attachments/links block merge and Completed/Delivered. Preserve valid user confirmation while requesting missing evidence. Hub screenshots remain outside contributor gates.",
+    "hub": "Reserved for real corresponding-version Hub evidence supplied by Song Haoran or an agent explicitly acting at his request; verify actual image and PR permalink, then apply Accepted and the actual upload date. Do not ask contributors to supply it.",
+    "completion": "Missing test screenshots block Submit/push/PR; missing verified PR test attachments/links block merge and Completed/Delivered. Test images do not replace explicit user test completion. A verified Hub submission screenshot from Song Haoran establishes lead acceptance; official catalog presence is verified separately before ledger registration.",
     "legacy": "Preserve old evidence until originals are safely attached to an allowed delivery PR and replacement links verified.",
     "pre_pr": "Collect original screenshots in the conversation/local handoff before a delivery PR exists. A PR permalink is generated only after the complete materials gate allows PR creation. Record receipt/missing items in reports; never put local paths/images in tracker screenshot fields.",
     "upload_timing": "Attach collected originals when creating the delivery PR, verify actual images/permalinks, and write/read back Test Screenshot links before merging."
@@ -460,9 +472,9 @@
     "verify": "Read back values and table coverage after writing; never leave new entries outside the table."
   },
   "asset_ledger_registration": {
-    "trigger": "Verified successful Agentic Hub submission of the corresponding merged/tested asset version, performed personally by Song Haoran.",
-    "before_trigger": "Do not append placeholders, register GitHub-only deliveries, or advance existing ledger versions/descriptions/sources/dates after PR merge. Keep internal IDs and progress in repository/task/candidate/report records.",
-    "success": "A real Hub submission receipt, record or screenshot confirms acceptance of the matching asset/version payload. Submitted - Pending Review qualifies; publication/approval is not required.",
+    "trigger": "Corresponding asset/version actually present in the official public Agentic Hub catalog, verified by real Hub Asset ID, type, display name, publicly available version and official detail URL.",
+    "before_trigger": "Do not register GitHub-only deliveries or placeholders, or advance existing ledger versions/descriptions/sources/dates after merge or pending submission. Keep internal identity and development progress in repository/task/candidate/report records.",
+    "success": "Official public-catalog inclusion and the matching public asset/version were independently verified.",
     "not_success": [
       "PR merge",
       "local test completion",
@@ -470,11 +482,16 @@
       "upload selection",
       "saved draft",
       "failed submission",
-      "planned submission"
+      "planned submission",
+      "submission receipt alone",
+      "Submitted - Pending Review alone",
+      "owner-only detail page",
+      "Hub screenshot alone"
     ],
-    "write": "After verified Hub submission success, match stable IDs/source URLs, update the existing asset for upgrades or append a New Asset row, preserve Historical Asset cohort and stable IDs, then verify by readback.",
-    "identity": "Use the actual Hub ID/detail URL when available. If the accepted submission lacks a public ID/URL, identify repo:<type>:<slug> as internal and link verified submission evidence on the delivery PR; record the real Hub reference/status in linked reports/candidate notes.",
-    "follow_up": "Synchronize original task/candidate/report links and real Hub evidence. Do not create a duplicate plugin task or reopen accepted contributor work solely for later ledger registration."
+    "write": "Append New Asset or update the matching existing catalog asset once; preserve Historical Asset/New Asset cohorts, stable IDs and existing internal mapping. Use the actual Hub detail URL as source and record the actual catalog-check/registration date. For an unpublished upgrade retain the previously verified public version.",
+    "identity": "Real Hub ID/detail URL required for catalog verification; preserve any established internal ID and record the actual Hub ID mapping in linked records. No invented public references or PR-only ledger sources.",
+    "reconciliation": "On authorized cleanup, compare against a complete live official catalog and re-read targets by stable ID. Remove confirmed non-catalog ledger rows, retaining development/candidate/PR evidence and audit explanation. Restore the verified public version for an erroneous unpublished upgrade. Do not remove on a network error or name-only absence, or restore cleaned live rows from historical snapshots.",
+    "follow_up": "Synchronize original task/candidate/report links, real evidence and final names. A lead submission screenshot can establish acceptance while catalog registration remains pending. Never create duplicate plugin tasks or reopen accepted work solely for later catalog synchronization."
   },
   "package_language": {
     "test_package": "Simplified Chinese",
@@ -488,6 +505,7 @@
     "new_slug": "A new asset may use a compliant internal slug selected before packaging, with manifests/paths consistent.",
     "mapping": "Record upstream/candidate name -> final Chinese display name -> internal slug in SOURCE_REVIEW.md, linked candidate Notes and the original task's Progress Reports.",
     "stable_identity": "Preserve original research names and established Candidate IDs, Task IDs, Asset IDs and existing internal IDs.",
-    "retest": "Changes to packaged names after user testing require rebuilding and renewed user confirmation plus applicable screenshots."
+    "retest": "Changes to packaged names after user testing require rebuilding and renewed user confirmation plus applicable screenshots.",
+    "task_field": "Development Tasks / Final Plugin Name: record the actual chosen Chinese package display name; verify the official Hub display name when available and retain any package/Hub difference in naming notes. Applies to Skills/SwarmSkills/Plugins; leave undecided names blank, preserve original candidate names and stable IDs."
   }
 }
