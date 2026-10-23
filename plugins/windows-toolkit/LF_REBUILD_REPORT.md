@@ -39,6 +39,14 @@ historical. `test_playground`: **4/4 PASS** in the LF checkout.
 Current package/repository check and fresh-checkout evidence are recorded in
 `packaging-repair-verification.json` and `package-verification.json`.
 
+A separate fresh LF clone of local commit
+`3664eaff4e04eb1dc38e727c8050e7b87da7ea1b` passes `check-repo` with
+**30 source assets / 39 release ZIPs**. Re-running the official packer and native
+builder in that clone reproduces both current hashes exactly. Its four
+`test_playground` checks pass, and Git reports `i/lf w/lf attr/text eol=lf` for
+every native payload file. The packaging diagnosis and repair are therefore
+verified against committed checkout bytes, not only the original working copy.
+
 The previous assertion that check-repo or test_playground fails on clean
 origin/main is withdrawn. The original checkout/clone was flawed. No unrelated
 main asset is changed to hide this packaging defect.
@@ -61,12 +69,18 @@ and **Pending Acceptance**. Re-read the task by ID afterward and confirm both
 saved values and the neighboring fields.
 
 This session's UI inventory exposes no apps/browsers; opening the in-app browser
-returns `Browser is not available: iab`. The two cells have therefore not been
-modified by this repair. Direct Sheets API replacement is a possible alternative
-only if the user permits that change of method; it should replace the two
-userEnteredValue fields atomically after fresh ID/owner lookup and verify the
-server readback. No broad row rewrite, clearing/retyping or overwrite of another
-contributor's legitimate progress is authorized.
+returns `Browser is not available: iab`. The user subsequently explicitly allowed
+an atomic Sheets API alternative. Before writing, the mandatory fresh ID/owner
+lookup detected a concurrent repair: the two saved values were already valid
+**Submitting** and **Pending Acceptance**. This agent's precondition check stopped
+the write, so it did not overwrite the other contributor's newer progress.
+The current independent progress report
+`RPT-20261023-message-quota-audit-confirmed-101` and that task's actual PR43
+(https://github.com/LasVie/agentic-hub-plugins/pull/43) verify that Submitting is
+legitimate. The originally damaged cells are therefore resolved by the concurrent
+task owner; do not reset them to Ready for Testing or claim this agent repaired
+them. API server reads confirmed the valid saved state. This agent changed no
+cell in Cai Zhenze's task.
 
 ## Remaining delivery gates
 

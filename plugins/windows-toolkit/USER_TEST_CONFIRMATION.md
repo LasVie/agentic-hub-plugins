@@ -22,6 +22,18 @@ The same visible workflow and locale names remain applicable functionally, but
 association with the rebuilt 1.0.1 requires the user's explicit confirmation.
 Source/license review and automated checks do not replace that confirmation.
 
+The user clarified in the continuation conversation that the successful tests
+were for the Chinese 1.0.0, then requested the 1.0.1 ZIP path. That clarification
+is not recorded as completion confirmation for 1.0.1. The exact new native path
+and hash were supplied; current-version confirmation remains pending.
+
+Evidence correction after inspecting all seven images: the hosts and external
+netdiag prompts contain Chinese. Clipboard/notification examples use English
+and numeric text. No image demonstrates a Chinese clipboard write/read round
+trip. The older blanket statement that all UI inputs were English/numeric is
+too broad; the original file is retained as historical evidence below and in
+`USER_TEST_CONFIRMATION_1.0.0.md`.
+
 ## Historical user confirmation: original 1.0.0
 
 - 任务 ID：AH-20261023-dsh-win-toolkit
