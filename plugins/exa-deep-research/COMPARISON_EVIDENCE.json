@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-22",
+  "method": "Static archive inspection only; no comparison package executed or reused.",
+  "assets": [
+    {
+      "asset_id": "5aed0d9ff4ba434c864c9361774bfed5",
+      "version": "1.0.0",
+      "checksum_sha256": "863db7e25d83c5870221130a57b7063b28cf9a86114403cae26295d32b949a7c",
+      "file_size": 36475
+    },
+    {
+      "asset_id": "4ec90e5a10e4419a8f97766613b9d57f",
+      "version": "1.0.0",
+      "checksum_sha256": "e16add53c3070afd8b71d31b8328a7da8ebe552a5806bb241ca5dffc2bb7c637",
+      "file_size": 11955
+    },
+    {
+      "asset_id": "599d73928abc4a19a8996a95b0506cf7",
+      "version": "1.0.0",
+      "checksum_sha256": "9444afb02eebcdc5d4b72b0a7b3283acfee5767655627fa1c33229412ee04221",
+      "file_size": 4147
+    },
+    {
+      "asset_id": "1643f00a8e524167b14e99da78baae52",
+      "version": "2.2.0",
+      "checksum_sha256": "606c76000579dd27357b810e22b22f44f53b3d9068ea849f18db8b2158e132b0",
+      "file_size": 8653
+    }
+  ]
+}

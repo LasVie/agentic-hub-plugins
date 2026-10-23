@@ -1,0 +1,16 @@
+{
+  "baseline_commit": "3a57bc03bc29dbc115b60bf5241660c96c2aeb2d",
+  "changed_tests_run": 185,
+  "baseline_tests_run": 173,
+  "changed_failures": 0,
+  "baseline_failures": 0,
+  "changed_error_records": 23,
+  "baseline_error_records": 23,
+  "changed_skipped": 60,
+  "baseline_skipped": 60,
+  "error_id_counts_equal": true,
+  "skip_ids_reasons_equal": true,
+  "added_exa_tests": 12,
+  "new_error_ids": [],
+  "scope": "Full Windows suite is not green. Error records can include more than one failure per test, so a passed count is not inferred."
+}

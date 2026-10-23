@@ -1,0 +1,12 @@
+{
+  "version": "1.0.1",
+  "native_zip": "D:\\jiuwen_repos\\agentic-hub-plugins-exa-submit\\.research\\test-packages\\exa-deep-research-1.0.1-workswarm.zip",
+  "native_sha256": "497d4bd1d51f4476b8cdc8d3dfdcb177c6d052880b73a31e7a79d2c6d2e9b54a",
+  "canonical_sha256": "a924aac36f89663c7d02e8a823e13bb28238729b81754b769fa8e0e79e7f9c16",
+  "payload_files": 19,
+  "source_canonical_native_payload_equal": true,
+  "license_unchanged": true,
+  "reused_path_hashes_verified": 13,
+  "original_1_0_0_archives_unchanged": true,
+  "extracted": "D:\\jiuwen_repos\\agentic-hub-plugins-exa-submit\\.research\\extracted-exa-1.0.1"
+}

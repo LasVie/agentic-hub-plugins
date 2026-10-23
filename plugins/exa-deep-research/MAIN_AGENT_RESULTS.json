@@ -1,0 +1,59 @@
+{
+  "host_load": "passed",
+  "tools": [
+    "ExaSearchTool",
+    "ExaFetchTool",
+    "ExaAdvancedSearchTool",
+    "ExaResearchTool"
+  ],
+  "skills": 2,
+  "runtime": {
+    "python": "3.12.6",
+    "mcp": "1.29.0",
+    "jsonschema": "4.26.0"
+  },
+  "loader_sha256": "cf7f3ab694574ed771cba8b78899631bebd050814ed9b909acfee5ae246c4fc4",
+  "main_agent": {
+    "direct": {
+      "registered": [
+        "exa_fetch",
+        "exa_research",
+        "exa_search",
+        "exa_search_advanced"
+      ],
+      "exposure": {
+        "exa_fetch": "direct",
+        "exa_research": "direct",
+        "exa_search": "direct",
+        "exa_search_advanced": "direct"
+      },
+      "inner_react_registry": "passed",
+      "absent_before_mount": true,
+      "chat_equipment_mount": "passed; empty selection has no Exa tools, selected package has all four",
+      "main_registry_dispatch_guard": "passed; actual registered tool executed, no research run started",
+      "unmount_removes_tools": "passed"
+    },
+    "progressive": {
+      "registered": [
+        "exa_fetch",
+        "exa_research",
+        "exa_search",
+        "exa_search_advanced"
+      ],
+      "exposure": {
+        "exa_fetch": "deferred",
+        "exa_research": "deferred",
+        "exa_search": "deferred",
+        "exa_search_advanced": "deferred"
+      },
+      "inner_react_registry": "passed",
+      "absent_before_mount": true,
+      "chat_equipment_mount": "passed; empty selection has no Exa tools, selected package has all four",
+      "main_registry_dispatch_guard": "passed; actual registered tool executed, no research run started",
+      "host_tool_search_all_four_schemas": "passed",
+      "unmount_removes_tools": "passed"
+    }
+  },
+  "paid_guard": "passed; no research run started",
+  "isolated_import_install_uninstall": "passed"
+}

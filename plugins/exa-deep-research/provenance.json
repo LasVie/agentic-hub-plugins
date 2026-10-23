@@ -1,0 +1,33 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/exa-labs/exa-mcp-server/tree/0b499f095c4ca145eee07b09137641c037d58449",
+      "revision": "0b499f095c4ca145eee07b09137641c037d58449",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/exa-mcp-server/LICENSE",
+          "sha256": "715e1b754d876f214cba57f6ad09bc6e5e48aab46aa3774b00e82a49ab04c742"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "skills/exa-agent/SKILL.md",
+    "skills/exa-search/SKILL.md",
+    "skills/exa-search/references/extraction.md",
+    "skills/exa-search/references/filtering.md",
+    "skills/exa-search/references/patterns-code.md",
+    "skills/exa-search/references/patterns-companies.md",
+    "skills/exa-search/references/patterns-news.md",
+    "skills/exa-search/references/patterns-papers.md",
+    "skills/exa-search/references/patterns-people.md",
+    "skills/exa-search/references/patterns-relationships.md",
+    "skills/exa-search/references/searching.md",
+    "skills/exa-search/references/source-quality.md",
+    "skills/exa-search/references/synthesis.md"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}
