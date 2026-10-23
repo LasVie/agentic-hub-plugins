@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:windows-toolkit",
+  "type": "agent-plugin",
+  "name": "windows-toolkit",
+  "version": "1.0.1",
+  "zip": "windows-toolkit-1.0.1.zip",
+  "sha256": "844450ba04d52481dbdb762eb515ddca4fcea179a1191f82d33f8a0a90b874a4",
+  "payload_sha256": {
+    "licenses/dsh-win-toolkit/LICENSE": "e7f61d728785dac8cc772f416f5d33fa618b35d141b972cf7d41b21bbfd873a6",
+    "manifest.json": "550a3c723d856667cf8073b685df782786b82fef3c7ee83f96ad939c7b4c952c",
+    "README.md": "5de426a468d115986d53227d38a33cb67475e27ac040528fd15efe4feb6b9e22",
+    "skills/windows-toolkit/SKILL.md": "21934c134181e06d13147178393feb9e87eab454c1ccf786d4d69becf158a043",
+    "THIRD_PARTY_NOTICES.md": "4d3029b02832162ba69c39643877eb5c23404dab713371ebc39015c881208f9a",
+    "tools/windows_toolkit.py": "1169b436a9e6419c063bf5bd5ecd968060fe77b5e7e1f76182d4be9e0a08688c"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "29e79cf54250c07a94207407bad440fc6d4f48acc425bf6fe8e174585fe639c0",
+  "functional_test_report_sha256": "0935dedbb5c545166cc859679c7830a397157cc1043773ac684560f387f2bf1f"
+}

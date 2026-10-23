@@ -1,6 +1,6 @@
 {
   "id": "windows-toolkit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "package_type": "plugin",
   "source": "local",
   "name": "Windows 本机工具箱",

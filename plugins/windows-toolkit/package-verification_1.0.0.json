@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "name": "windows-toolkit",
+  "version": "1.0.0",
+  "marketplace_sha256": "18ce196c8bfa65ce65bc0d560f064643ba9122ffd96f8f43f12c27166880262f",
+  "marketplace_zip": "releases/agent-plugin/windows-toolkit/1.0.0/windows-toolkit-1.0.0.zip",
+  "payload_files": 7,
+  "payload_entries": [
+    "windows-toolkit/plugin.yaml",
+    "windows-toolkit/windows-toolkit/README.md",
+    "windows-toolkit/windows-toolkit/THIRD_PARTY_NOTICES.md",
+    "windows-toolkit/windows-toolkit/licenses/dsh-win-toolkit/LICENSE",
+    "windows-toolkit/windows-toolkit/manifest.json",
+    "windows-toolkit/windows-toolkit/skills/windows-toolkit/SKILL.md",
+    "windows-toolkit/windows-toolkit/tools/windows_toolkit.py"
+  ],
+  "source_zip_payload_identical": true,
+  "format_check": "pass",
+  "extracted_zip_runtime_test": {
+    "method": "Loaded tools/windows_toolkit.py from the extracted release ZIP and invoked the real Tool classes.",
+    "open_loopback_port": "OPEN",
+    "closed_loopback_port": "CLOSED",
+    "hosts_read": "ok, 21 lines",
+    "clipboard_chinese_roundtrip": "pass",
+    "result": "PASS"
+  },
+  "original_license_bytes_unchanged": true,
+  "hub_status": "Not submitted",
+  "user_test_confirmation": null,
+  "note": "Direct tool testing only. This file does not establish WorkSwarm UI user testing, Hub submission, or Project Lead acceptance.",
+  "license_bytes_exact_in_zip": true,
+  "license_sha256_in_zip": "e7f61d728785dac8cc772f416f5d33fa618b35d141b972cf7d41b21bbfd873a6",
+  "crlf_conversion_incident": {
+    "found": "git core.autocrlf=true converted the copied MIT LICENSE to CRLF, changing its SHA-256 from the upstream value.",
+    "impact": "License preservation requirement violated in the first package (sha256 2bf34c81...).",
+    "fix": "Restored LF-exact bytes from the pinned upstream tarball and re-packed; verified the LICENSE inside the ZIP hashes to the upstream value.",
+    "repacked_zip_sha256": "18ce196c8bfa65ce65bc0d560f064643ba9122ffd96f8f43f12c27166880262f"
+  }
+}

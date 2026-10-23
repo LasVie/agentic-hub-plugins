@@ -1,39 +1,73 @@
 {
-  "passed": true,
-  "name": "windows-toolkit",
-  "version": "1.0.0",
-  "marketplace_sha256": "18ce196c8bfa65ce65bc0d560f064643ba9122ffd96f8f43f12c27166880262f",
-  "marketplace_zip": "releases/agent-plugin/windows-toolkit/1.0.0/windows-toolkit-1.0.0.zip",
-  "payload_files": 7,
-  "payload_entries": [
-    "windows-toolkit/plugin.yaml",
-    "windows-toolkit/windows-toolkit/README.md",
-    "windows-toolkit/windows-toolkit/THIRD_PARTY_NOTICES.md",
-    "windows-toolkit/windows-toolkit/licenses/dsh-win-toolkit/LICENSE",
-    "windows-toolkit/windows-toolkit/manifest.json",
-    "windows-toolkit/windows-toolkit/skills/windows-toolkit/SKILL.md",
-    "windows-toolkit/windows-toolkit/tools/windows_toolkit.py"
+  "version": "1.0.1",
+  "native_sha256": "18c6b8d439992404bb308ac37084405a92869d38523c64d473dbf42d499421d4",
+  "marketplace_sha256": "844450ba04d52481dbdb762eb515ddca4fcea179a1191f82d33f8a0a90b874a4",
+  "payload_files": [
+    {
+      "path": "README.md",
+      "sha256": "5de426a468d115986d53227d38a33cb67475e27ac040528fd15efe4feb6b9e22",
+      "bytes": 2120,
+      "crlf_pairs": 0
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "4d3029b02832162ba69c39643877eb5c23404dab713371ebc39015c881208f9a",
+      "bytes": 1355,
+      "crlf_pairs": 0
+    },
+    {
+      "path": "licenses/dsh-win-toolkit/LICENSE",
+      "sha256": "e7f61d728785dac8cc772f416f5d33fa618b35d141b972cf7d41b21bbfd873a6",
+      "bytes": 1084,
+      "crlf_pairs": 0
+    },
+    {
+      "path": "manifest.json",
+      "sha256": "550a3c723d856667cf8073b685df782786b82fef3c7ee83f96ad939c7b4c952c",
+      "bytes": 4221,
+      "crlf_pairs": 0
+    },
+    {
+      "path": "skills/windows-toolkit/SKILL.md",
+      "sha256": "21934c134181e06d13147178393feb9e87eab454c1ccf786d4d69becf158a043",
+      "bytes": 2064,
+      "crlf_pairs": 0
+    },
+    {
+      "path": "tools/windows_toolkit.py",
+      "sha256": "1169b436a9e6419c063bf5bd5ecd968060fe77b5e7e1f76182d4be9e0a08688c",
+      "bytes": 11415,
+      "crlf_pairs": 0
+    }
   ],
-  "source_zip_payload_identical": true,
-  "format_check": "pass",
-  "extracted_zip_runtime_test": {
-    "method": "Loaded tools/windows_toolkit.py from the extracted release ZIP and invoked the real Tool classes.",
-    "open_loopback_port": "OPEN",
-    "closed_loopback_port": "CLOSED",
-    "hosts_read": "ok, 21 lines",
-    "clipboard_chinese_roundtrip": "pass",
-    "result": "PASS"
-  },
+  "payload_file_count": 6,
+  "marketplace_entry_count": 7,
+  "source_native_marketplace_equal": true,
+  "all_payload_text_lf": true,
+  "only_changes_from_tested_1_0_0": "CRLF to LF; manifest.version 1.0.0 to 1.0.1",
+  "tool_python_ast_equal": true,
   "original_license_bytes_unchanged": true,
-  "hub_status": "Not submitted",
+  "english_locale_display_name_preserved": true,
+  "original_tested_archives_preserved": true,
+  "current_package_user_confirmation": "pending",
+  "original_screenshots": "Preserved; current LF version association still requires confirmation.",
+  "passed": true,
+  "format_check": "pass",
+  "source_direct_checks": {
+    "passed": 7,
+    "failed": 0,
+    "desktop_write_tests": "not repeated"
+  },
+  "extracted_native_direct_checks": {
+    "passed": 7,
+    "failed": 0,
+    "desktop_write_tests": "not repeated"
+  },
+  "playground_tests": {
+    "passed": 4,
+    "failed": 0
+  },
   "user_test_confirmation": null,
-  "note": "Direct tool testing only. This file does not establish WorkSwarm UI user testing, Hub submission, or Project Lead acceptance.",
-  "license_bytes_exact_in_zip": true,
-  "license_sha256_in_zip": "e7f61d728785dac8cc772f416f5d33fa618b35d141b972cf7d41b21bbfd873a6",
-  "crlf_conversion_incident": {
-    "found": "git core.autocrlf=true converted the copied MIT LICENSE to CRLF, changing its SHA-256 from the upstream value.",
-    "impact": "License preservation requirement violated in the first package (sha256 2bf34c81...).",
-    "fix": "Restored LF-exact bytes from the pinned upstream tarball and re-packed; verified the LICENSE inside the ZIP hashes to the upstream value.",
-    "repacked_zip_sha256": "18ce196c8bfa65ce65bc0d560f064643ba9122ffd96f8f43f12c27166880262f"
-  }
+  "hub_status": "Not submitted",
+  "note": "Current LF 1.0.1 checks only; historical 1.0.0 confirmation and images are preserved separately. Current user completion remains pending."
 }

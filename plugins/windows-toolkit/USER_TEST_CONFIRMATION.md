@@ -1,4 +1,28 @@
-# 用户测试确认 — windows-toolkit 1.0.0
+# Windows Toolkit — current and historical confirmation
+
+## Current LF rebuild: 1.0.1
+
+Owner Nguyen Trung Dung; task `AH-20261023-dsh-win-toolkit`; candidate `CAND-DSH-019`.
+Chinese display name: **Windows 本机工具箱**.
+
+- Native ZIP: `test-packages/windows-toolkit-1.0.1-native.zip`.
+- Native SHA-256: `18c6b8d439992404bb308ac37084405a92869d38523c64d473dbf42d499421d4`.
+- Canonical SHA-256: `844450ba04d52481dbdb762eb515ddca4fcea179a1191f82d33f8a0a90b874a4`.
+- Source/native/canonical payloads now match exactly and use LF; license unchanged.
+- Changed bytes: CRLF normalization and manifest.version only. Python AST and
+  all other normalized payload bytes match the tested 1.0.0 package.
+- Agent repair validation: 7/7 real source checks and 7/7 extracted checks pass.
+- **Current-package user test completion: pending.** No new user quote or manual
+  test is invented. Existing merge authorization is preserved; do not ask again
+  for the same merge permission after the changed-package gate passes.
+
+The seven original PNGs and [PR evidence comment](https://github.com/LasVie/agentic-hub-plugins/pull/42#issuecomment-6361186996)
+are preserved for the original 1.0.0 test. No screenshot shows a version or hash.
+The same visible workflow and locale names remain applicable functionally, but
+association with the rebuilt 1.0.1 requires the user's explicit confirmation.
+Source/license review and automated checks do not replace that confirmation.
+
+## Historical user confirmation: original 1.0.0
 
 - 任务 ID：AH-20261023-dsh-win-toolkit
 - 候选 ID：CAND-DSH-019

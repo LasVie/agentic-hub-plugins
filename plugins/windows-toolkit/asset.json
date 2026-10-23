@@ -1,7 +1,7 @@
 {
   "type": "agent-plugin",
   "name": "windows-toolkit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "display_name": "Windows 本机工具箱",
   "description": "通过专用工具读取与写入剪贴板、弹出系统通知、读取 hosts 文件，并对任意主机做 DNS 解析与 TCP 端口连通性诊断；仅支持 Windows，全部输入以 Base64 跨 PowerShell 边界传递，不拼接命令行。",
   "publisher": "dsh-win-toolkit contributors; Agentic Hub port",

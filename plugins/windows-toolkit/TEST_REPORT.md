@@ -1,4 +1,54 @@
-# 功能测试报告 — windows-toolkit 1.0.0
+# Windows Toolkit 1.0.1 — LF rebuild validation
+
+Task `AH-20261023-dsh-win-toolkit`; candidate `CAND-DSH-019`; owner Nguyen Trung Dung.
+Date: 2026-10-23, Asia/Singapore. Current Chinese display name: **Windows 本机工具箱**.
+
+Current package status: **Ready for Testing**. The original 1.0.0 user confirmation
+is historical; explicit completion confirmation for the rebuilt 1.0.1 is pending.
+The seven original screenshots remain unchanged and document the original test.
+No current-version frontend test, CI success, merge or lead acceptance is claimed.
+
+| Current archive | SHA-256 |
+| --- | --- |
+| `test-packages/windows-toolkit-1.0.1-native.zip` | `18c6b8d439992404bb308ac37084405a92869d38523c64d473dbf42d499421d4` |
+| `releases/agent-plugin/windows-toolkit/1.0.1/windows-toolkit-1.0.1.zip` | `844450ba04d52481dbdb762eb515ddca4fcea179a1191f82d33f8a0a90b874a4` |
+
+The original failed PR42 head `8f21e91505e0f3689d8b46496c22809cd5af0feb`
+reproduces `current source and release ZIP differ` in a clean LF checkout.
+Its manifest is 4,221 source bytes with zero CRLF pairs, versus 4,338 ZIP bytes
+with 117 CRLF pairs. Five non-license payload files have the same newline-only
+mismatch; the license already matches. This is an asset packaging defect, not
+evidence that clean origin/main or test_playground is broken.
+
+Version 1.0.1 was built from LF source because the packer refuses to replace a
+different archive under an existing version. Original 1.0.0 archives are retained
+unchanged for audit. All six native payload files now match source, native ZIP
+and canonical ZIP byte-for-byte. There are seven canonical entries including
+the marketplace wrapper. Every payload file is UTF-8/LF. Relative to the tested
+1.0.0 payload, only CRLF-to-LF normalization and manifest.version changed; Python
+AST comparison and exact normalized-byte comparisons pass. The complete original
+MIT license retains SHA-256 `e7f61d728785dac8cc772f416f5d33fa618b35d141b972cf7d41b21bbfd873a6`.
+
+New direct tests use the real Tool classes in the existing Windows host venv:
+
+- Source: **7/7 PASS**; independently extracted native package: **7/7 PASS**.
+- Checks: hosts content/line-count shape; actual loopback TCP OPEN then CLOSED
+  or TIMEOUT; invalid port; missing host; clipboard read shape; declared classes.
+- Clipboard write and notification were not repeated in this repair run. Their
+  original test evidence remains historical, and runtime logic is unchanged.
+- `python -B -m unittest discover -s tests -p test_playground.py -v`: **4/4 PASS**
+  in this LF checkout. No clean-main failure is inferred from a bad local clone.
+- Package contract, deterministic rebuild and clean-checkout verification are
+  recorded in `LF_REBUILD_REPORT.md` and `packaging-repair-verification.json`.
+
+Run `python -B tools/asset_release.py pack plugins/windows-toolkit`, then
+`python -B plugins/windows-toolkit/build_native_test_package.py`. Scoped Git
+attributes retain LF for this asset's text files and preserve PNG/ZIP bytes.
+No runtime function, Skill wording or locale display name was changed.
+`display_name.en = Windows Toolkit` is normal host locale rendering, not a
+Chinese-package compliance gap.
+
+## Historical 1.0.0 direct test report (preserved)
 
 测试日期：2026-10-23（Asia/Singapore）。任务 `AH-20261023-dsh-win-toolkit`；候选 `CAND-DSH-019`。
 
