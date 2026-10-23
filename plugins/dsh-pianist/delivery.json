@@ -7,7 +7,7 @@
   "version": "1.0.0",
   "native_zip_sha256": "ab958ffb941b5e94653f250e1cdb33535146ca9cb694178423d961ec95443a1e",
   "marketplace_zip_sha256": "e2bdb718c99a170d64594b6e3c19c75c3c6ffbbe64e1d2c930d8f82930f50e7f",
-  "phase": "Submitting",
+  "phase": "Awaiting Acceptance",
   "user_confirmation": {
     "original": "提交",
     "faithful_english": "Submit.",
@@ -18,7 +18,52 @@
   },
   "test_performed_by": "Assistant under explicit delegation",
   "project_lead_acceptance": "Pending Acceptance",
-  "hub_submission": null,
+  "hub_submission": {
+    "version": "1.0.0",
+    "marketplace_sha256": "e2bdb718c99a170d64594b6e3c19c75c3c6ffbbe64e1d2c930d8f82930f50e7f",
+    "hub_id": "84d95cd0469b4abda04a35c44603908a",
+    "asset_url": "https://agentichub.openjiuwen.com/assets/84d95cd0469b4abda04a35c44603908a?version=1.0.0",
+    "status": "Submitted - Pending Review",
+    "publisher": "LasVie",
+    "visibility": "public",
+    "display_name": "离线钢琴演奏",
+    "packaged_display_name": "离线钢琴演奏",
+    "responsible_development_member": "Song Haoran",
+    "packaged_publisher": "Song Haoran",
+    "submission_date": "2026-10-22",
+    "receipt_captured_at": "2026-10-22T11:21:46.556Z",
+    "merged_commit": "1373743448cbd776cbcac846d66291ff7171af75",
+    "profile_verified": true,
+    "detail_verified": true,
+    "status_last_verified_date": "2026-10-22",
+    "verification": "The actual success receipt identifies this plugin/version/Hub ID and entry into review. The authenticated asset detail and personal center showed 审核中 on 2026-10-22. This records successful submission pending review, not review approval or publication. No new live Hub status verification on 2026-10-23 is claimed.",
+    "description_verification_scope": "The complete Chinese form was prepared and checked before submission. The authenticated detail's visible name/version/status and accessible description summary were read back. A full exact post-submit description comparison is not claimed because the native accessibility text was truncated.",
+    "evidence_comment": "https://github.com/LasVie/agentic-hub-plugins/pull/26#issuecomment-6339722755",
+    "original_images": [
+      {
+        "file": "dsh-pianist-hub-detail-1.0.0.jpg",
+        "url": "https://github.com/user-attachments/assets/b9782a6a-28e1-4f8f-93ca-d376fcc35856",
+        "bytes": 551947,
+        "sha256": "fa28386c9bb37afaab12a0fc4c18d5a761612948d43d32785966a98655eaf910",
+        "media_type": "image/jpeg",
+        "width": 5120,
+        "height": 2820,
+        "remote_bytes_identical": true
+      },
+      {
+        "file": "three-plugins-hub-profile.jpg",
+        "url": "https://github.com/user-attachments/assets/cc39eda7-96e8-4e4d-8bc5-6b55256fae1b",
+        "bytes": 417779,
+        "sha256": "509fa3b9a64dc22846275de30142554399d492af108998de8b3d9b8bd5c15f99",
+        "media_type": "image/jpeg",
+        "width": 5120,
+        "height": 2820,
+        "remote_bytes_identical": true
+      }
+    ],
+    "all_original_images_remote_bytes_identical": true,
+    "evidence_scope": "Original asset-detail image and shared personal-center image are attached to the original delivery PR. Shared image includes other assets, which are not claimed as this task's output. Existing WorkSwarm test evidence remains unchanged."
+  },
   "delivery_pr": "https://github.com/LasVie/agentic-hub-plugins/pull/26",
   "test_evidence_permalink": "https://github.com/LasVie/agentic-hub-plugins/pull/26#issuecomment-6338329798",
   "test_report": "TEST_REPORT.md",
@@ -41,5 +86,38 @@
       "sha256": "dc84179bc230a38f2476071ce0c166661f59d452128a7456dbfeeaceef7dbb41",
       "uploaded_bytes_verified": true
     }
-  ]
+  ],
+  "repository_metadata_history": [
+    {
+      "repository_base_commit": "bcc5e76f97589b38400e2662280ad9d59a252532",
+      "phase": "Submitting",
+      "hub_submission": null,
+      "superseded_on": "2026-10-23",
+      "note": "Historical pre-submission metadata retained. Actual successful Hub submission on 2026-10-22 is recorded in hub_submission."
+    }
+  ],
+  "merged_commit": "1373743448cbd776cbcac846d66291ff7171af75",
+  "hub_id": "84d95cd0469b4abda04a35c44603908a",
+  "hub_url": "https://agentichub.openjiuwen.com/assets/84d95cd0469b4abda04a35c44603908a?version=1.0.0",
+  "hub_status": "Submitted - Pending Review",
+  "hub_submission_screenshot": "https://github.com/LasVie/agentic-hub-plugins/pull/26#issuecomment-6339722755",
+  "tracker_updated_and_verified": "2026-10-23",
+  "hub_status_sync": {
+    "recorded_on": "2026-10-23",
+    "base_commit": "bcc5e76f97589b38400e2662280ad9d59a252532",
+    "agents_blob_sha": "5db6e79a90161a1691466572395d74d90bbdd7a1",
+    "scope": "Metadata-only synchronization of these three actual submissions and original screenshots. No runtime source, ZIP, version, responsible member, test confirmation or Project Lead acceptance changed.",
+    "spreadsheet_url": "https://docs.google.com/spreadsheets/d/12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM/edit",
+    "asset_ledger_row": 616,
+    "development_task_row": 18,
+    "plugin_candidate_row": 581,
+    "progress_report_row": 106,
+    "report_id": "RPT-20261023-dsh-pianist-hub-100-submitted",
+    "shared_tracker_write_and_readback_verified": true,
+    "development_status": "Awaiting Acceptance",
+    "project_lead_acceptance": "Pending Acceptance",
+    "submission_date": "2026-10-22",
+    "tracker_registration_date": "2026-10-23",
+    "note": "Native table/filter coverage was verified. Stable task/candidate/internal asset IDs, owner, developer acceptance and unrelated concurrent records were preserved."
+  }
 }
