@@ -1,0 +1,26 @@
+{
+  "version": "1.0.1",
+  "workswarm_zip": "/Users/IDLE_And_R/.codex/worktrees/581d/agentic-hub-plugins/dist/source-preview-recovery/1.0.1/source-preview-recovery-1.0.1-workswarm.zip",
+  "workswarm_sha256": "99d19c3d678c8c6a64fa269375362a71345bb8bf9335a39553f320af2da168b5",
+  "canonical_zip": "/Users/IDLE_And_R/.codex/worktrees/581d/agentic-hub-plugins/releases/agent-plugin/source-preview-recovery/1.0.1/source-preview-recovery-1.0.1.zip",
+  "canonical_sha256": "183bc30c69074c0748d07e399a0664478200152699fd91e97bd86b5a521a2d14",
+  "payload_files": {
+    "README.md": "6430a02f798a5f12323528e59326fa8668affdd0bd705bbefe6b9abdd6f054d8",
+    "THIRD_PARTY_NOTICES.md": "9167553b78cdda0600e5eed9d5d2d3b69b47c6d53b1887375a50f926a5d8ff11",
+    "licenses/save-token/LICENSE": "d9f4d0687b6934f18e9bab4e75f26c04b83a5f5d7898f464a921abd1ee8ef85e",
+    "licenses/save-token/UPSTREAM_HEADER.txt": "9d7a8c017c8ea1bcc2d7be1cc5d35990b8235a52f0ec8a07e37ccf449742ba04",
+    "manifest.json": "605e53391c57babce4308a9f4c7ed8c5d4a8989ee6c68b312e6d598f4c48fbd8",
+    "runtime/recovery.py": "8ee07a7b452d6ddc96ac6f4df23733154f4257c3989e738e085b13b519e63691",
+    "skills/source-recovery/SKILL.md": "d8948de9d348e19bfd99d662965ca3ceb4d74301569c67d40a07930646fe3d35",
+    "tools/recovery_tools.py": "cd656feff569460d19fde674ba1199108711de3c8c4d5c3bcdc76a6cca368915"
+  },
+  "all_payload_files_equal": true,
+  "utf8_text_verified": true,
+  "license_bytes_verified": true,
+  "wrapper_contents_verified": true,
+  "payload_file_count": 8,
+  "extracted_payload": "/private/tmp/source-preview-recovery-package-test-101/canonical/source-preview-recovery/source-preview-recovery",
+  "installed_files_equal": true,
+  "Chinese_display_help_messages_verified": true,
+  "all_reused_headers_preserved": true
+}

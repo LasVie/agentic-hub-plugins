@@ -1,0 +1,28 @@
+{
+  "type": "agent-plugin",
+  "name": "source-preview-recovery",
+  "version": "1.0.1",
+  "display_name": "原文快照与精简预览",
+  "description": "显式创建本地 UTF-8 文本快照与精简预览，按持久 ID 回取原文或行范围，并拒绝覆盖已有文件。",
+  "publisher": "Cai Zhenze",
+  "category": "软件开发",
+  "tags": [
+    "原文快照",
+    "精简预览",
+    "按行回取",
+    "离线工具"
+  ],
+  "functional_tags": [
+    "Source Snapshots",
+    "Compact Previews",
+    "Exact Recovery"
+  ],
+  "scope": "Python3.11标准库与宿主SDK；仅macOS/Linux。本地用户授权的UTF-8文本/JSON/JSONL/日志，单文件最多8MiB、快照总量64MiB/128个。无命令执行、自动拦截、去重、自动清理、模型调用或真实费用测量。",
+  "candidate_id": "CAND-DSH-121",
+  "task_id": "AH-20261023-source-preview-recovery",
+  "related_asset_ids": [
+    "72c01bbdeaee47c4ad9eeaa9d7ae630e",
+    "d0facc36f10c4f82b9592633a2dc0b11",
+    "repo:agent-plugin:dsh-fs-encoding"
+  ]
+}

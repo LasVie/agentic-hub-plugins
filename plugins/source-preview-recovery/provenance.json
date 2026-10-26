@@ -1,0 +1,23 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/vibe-any/dsh-plugin-save-token",
+      "revision": "e241dbc23288d7d1b6865cf726c8e777c4ce7e08",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/save-token/LICENSE",
+          "sha256": "d9f4d0687b6934f18e9bab4e75f26c04b83a5f5d7898f464a921abd1ee8ef85e"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "runtime/recovery.py",
+    "README.md",
+    "licenses/save-token/UPSTREAM_HEADER.txt"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

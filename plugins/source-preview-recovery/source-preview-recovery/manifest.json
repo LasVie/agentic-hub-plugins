@@ -1,0 +1,74 @@
+{
+  "version": "1.0.1",
+  "package_type": "plugin",
+  "id": "source-preview-recovery",
+  "name": "原文快照与精简预览",
+  "description": "显式创建本地 UTF-8 文本快照与精简预览，按持久 ID 回取原文或行范围，并拒绝覆盖已有文件。",
+  "display_name": {
+    "en": "原文快照与精简预览",
+    "zh": "原文快照与精简预览"
+  },
+  "display_description": {
+    "en": "显式创建本地 UTF-8 文本快照与精简预览，按持久 ID 回取原文或行范围，并拒绝覆盖已有文件。",
+    "zh": "显式创建本地 UTF-8 文本快照与精简预览，按持久 ID 回取原文或行范围，并拒绝覆盖已有文件。"
+  },
+  "skills": [
+    {
+      "dir": "skills/source-recovery",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/recovery_tools.py",
+      "class": "CreateSourcePreviewTool",
+      "display_name": {
+        "en": "创建原文快照与预览",
+        "zh": "创建原文快照与预览"
+      },
+      "display_description": {
+        "en": "保存完整原文，再返回精简视图与持久ID。",
+        "zh": "保存完整原文，再返回精简视图与持久ID。"
+      }
+    },
+    {
+      "file": "tools/recovery_tools.py",
+      "class": "RecoverSourceSnapshotTool",
+      "display_name": {
+        "en": "验证与回取原文快照",
+        "zh": "验证与回取原文快照"
+      },
+      "display_description": {
+        "en": "只读校验并按原始源行回取。",
+        "zh": "只读校验并按原始源行回取。"
+      }
+    },
+    {
+      "file": "tools/recovery_tools.py",
+      "class": "ExportSourceSnapshotTool",
+      "display_name": {
+        "en": "完整导出原文快照",
+        "zh": "完整导出原文快照"
+      },
+      "display_description": {
+        "en": "明确授权后导出到新文件，拒绝覆盖。",
+        "zh": "明确授权后导出到新文件，拒绝覆盖。"
+      }
+    }
+  ],
+  "tags": [
+    {
+      "en": "原文快照",
+      "zh": "原文快照"
+    },
+    {
+      "en": "精简预览",
+      "zh": "精简预览"
+    },
+    {
+      "en": "离线回取",
+      "zh": "离线回取"
+    }
+  ],
+  "category": "Others"
+}

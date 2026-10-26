@@ -1,0 +1,45 @@
+src/compress.js
+/*!
+ * dsh-plugin-save-token v2.4.1 — pure compression/format helpers (host half)
+ *
+ * Extracted from src/index.js so the whole compression brain is unit-testable
+ * with `node --test test/` (no host imports, no I/O, no state). Every function
+ * is deterministic: same inputs -> same outputs. The orchestration half
+ * (src/index.js) owns all mutable state (counters, caches, spill) and calls
+ * into this module.
+ *
+ * Design red lines kept verbatim from v2.1.x:
+ * - lossless-first: uniform JSON arrays are re-encoded TOON-style with zero
+ *   information loss; lossy elision only when lossless routes do not apply.
+ * - never-worse: candidates must pass byte (keepRatioMax + absolute saving)
+ *   AND token gates; otherwise the original text goes out untouched.
+ */
+
+codex-plugin-save-token/src/tools.js
+/*!
+ * codex-plugin-save-token — MCP tool handlers (the orchestration half)
+ *
+ * Same three arms as the dsh plugin's host half, adapted to a world where the
+ * model opts in by calling these tools (Codex has no waterfall to intercept
+ * built-in tool results):
+ * - compress: oversized command/file output -> structure-aware compression
+ *   (lossless TOON first, never-worse gates) + FULL text spilled to disk +
+ *   a reversible [save-token #id] notice;
+ * - dedupe: a byte-identical rerun within TTL becomes a stub pointing at the
+ *   first copy (fingerprints hash the FULL strings — the dsh v2.2.0 fix);
+ * - expand: save_token_expand hands back the FULL original (memory cache,
+ *   then the persistent spill locator — the dsh v2.4.0 closure).
+ *
+ * Reversibility red line kept verbatim: no spill, no compression.
+ */
+
+codex-plugin-save-token/src/store.js
+/*!
+ * codex-plugin-save-token — spill store (reversibility arm)
+ *
+ * The dsh plugin delegates persistence to the harness `spillStore` service;
+ * a plain Codex CLI install has no such service, so this module is the
+ * smallest complete replacement: append-friendly day directories, one file
+ * per spilled output, a `locator` (absolute path) that survives process
+ * restarts, strict root-scoped reads, and a throttled best-effort prune.
+ */
