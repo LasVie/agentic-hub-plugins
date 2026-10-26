@@ -1,0 +1,23 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/xiaoyuyu6420/dsh-backup",
+      "revision": "608ed261adcbfde11acab00207f76912fa207c1b",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/dsh-backup/LICENSE",
+          "sha256": "cd82853c068839eb0f8fbb2e09efe527ab2ebdab629ac21a5069ffc13220b9cf"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "runtime/backup.py",
+    "README.md",
+    "skills/directory-backup/SKILL.md"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

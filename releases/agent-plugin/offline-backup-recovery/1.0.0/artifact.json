@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:offline-backup-recovery",
+  "type": "agent-plugin",
+  "name": "offline-backup-recovery",
+  "version": "1.0.0",
+  "zip": "offline-backup-recovery-1.0.0.zip",
+  "sha256": "eedd7c0ce3b3cf39a09f030d910bfbab7bcbc591a0a0d2839e069df6f741f91a",
+  "payload_sha256": {
+    "README.md": "875314cdf36019b5f0652dfa8538f79f6030cbdf677abb50b8fe37f666dd8067",
+    "THIRD_PARTY_NOTICES.md": "8bcf90c75a20e93bac15c55a0892058c1e4f8f04ab5a045732cf69d26cab89f7",
+    "licenses/dsh-backup/LICENSE": "cd82853c068839eb0f8fbb2e09efe527ab2ebdab629ac21a5069ffc13220b9cf",
+    "manifest.json": "34397b031575d9f9cd0bc05655c31c2601074b9efa3bcd7046ef1a7e145e2e21",
+    "runtime/backup.py": "1ded107218d551c0dc2a6a87ed81922c6f6f1dddcb0f09ead794c5798566e62b",
+    "skills/directory-backup/SKILL.md": "abfd22075e075be904d135a3df354f6b1986a1ca0344ed47422cd258e9839bfc",
+    "tools/backup_tools.py": "f18874a2543a4d370bb6e2dc0aa671933132bb2548384453fdf654977a62befa"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "6d04261d97a5bc50fb31116d99acbbe218a9b14306003ad4922513f794f2f68c",
+  "functional_test_report_sha256": "14cd96f05977df0a6a38aa0b3965d38c915f758464dbf8b4d9ab3e03a1c4375d"
+}

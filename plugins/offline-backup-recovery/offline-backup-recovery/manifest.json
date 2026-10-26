@@ -1,0 +1,74 @@
+{
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "id": "offline-backup-recovery",
+  "name": "离线备份与恢复",
+  "description": "手动备份指定目录，校验归档与文件摘要，预览恢复计划并恢复到新目录；拒绝覆盖、链接和危险路径。",
+  "display_name": {
+    "en": "离线备份与恢复",
+    "zh": "离线备份与恢复"
+  },
+  "display_description": {
+    "en": "手动备份指定目录，校验归档与文件摘要，预览恢复计划并恢复到新目录；拒绝覆盖、链接和危险路径。",
+    "zh": "手动备份指定目录，校验归档与文件摘要，预览恢复计划并恢复到新目录；拒绝覆盖、链接和危险路径。"
+  },
+  "skills": [
+    {
+      "dir": "skills/directory-backup",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/backup_tools.py",
+      "class": "CreateDirectoryBackupTool",
+      "display_name": {
+        "en": "创建目录备份",
+        "zh": "创建目录备份"
+      },
+      "display_description": {
+        "en": "明确授权后创建新ZIP备份并逐文件校验。",
+        "zh": "明确授权后创建新ZIP备份并逐文件校验。"
+      }
+    },
+    {
+      "file": "tools/backup_tools.py",
+      "class": "InspectDirectoryBackupTool",
+      "display_name": {
+        "en": "校验目录备份",
+        "zh": "校验目录备份"
+      },
+      "display_description": {
+        "en": "只读校验清单、路径、文件及归档摘要。",
+        "zh": "只读校验清单、路径、文件及归档摘要。"
+      }
+    },
+    {
+      "file": "tools/backup_tools.py",
+      "class": "RestoreDirectoryBackupTool",
+      "display_name": {
+        "en": "预览与恢复目录",
+        "zh": "预览与恢复目录"
+      },
+      "display_description": {
+        "en": "默认只预览；明确授权后恢复到新目录，拒绝覆盖。",
+        "zh": "默认只预览；明确授权后恢复到新目录，拒绝覆盖。"
+      }
+    }
+  ],
+  "tags": [
+    {
+      "en": "离线备份",
+      "zh": "离线备份"
+    },
+    {
+      "en": "完整性校验",
+      "zh": "完整性校验"
+    },
+    {
+      "en": "目录恢复",
+      "zh": "目录恢复"
+    }
+  ],
+  "category": "Others"
+}
