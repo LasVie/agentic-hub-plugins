@@ -1,0 +1,85 @@
+{
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "source": "local",
+  "id": "coffee-brewing-research",
+  "name": "咖啡选豆与冲煮",
+  "description": "通过八个原生工具检索精品咖啡、按预算和风味选豆、比较真实档案并读取冲煮配方；默认简体中文。",
+  "display_name": {
+    "en": "咖啡选豆与冲煮",
+    "zh": "咖啡选豆与冲煮"
+  },
+  "display_description": {
+    "en": "通过八个原生工具检索精品咖啡、按预算和风味选豆、比较真实档案并读取冲煮配方；默认简体中文。",
+    "zh": "通过八个原生工具检索精品咖啡、按预算和风味选豆、比较真实档案并读取冲煮配方；默认简体中文。"
+  },
+  "category": "生活与健康",
+  "tags": [
+    {
+      "en": "精品咖啡",
+      "zh": "精品咖啡"
+    },
+    {
+      "en": "选豆比较",
+      "zh": "选豆比较"
+    },
+    {
+      "en": "冲煮配方",
+      "zh": "冲煮配方"
+    }
+  ],
+  "default_init_input": {
+    "en": "用中文查询实际咖啡目录：",
+    "zh": "用中文查询实际咖啡目录："
+  },
+  "quick_inputs": [
+    {
+      "en": "找两款每袋不超过 20 美元、偏巧克力风味的意式咖啡，必须调用工具。",
+      "zh": "找两款每袋不超过 20 美元、偏巧克力风味的意式咖啡，必须调用工具。"
+    },
+    {
+      "en": "为刚才选中的咖啡读取 V60 冲煮建议，区分精选配方和一般起点。",
+      "zh": "为刚才选中的咖啡读取 V60 冲煮建议，区分精选配方和一般起点。"
+    }
+  ],
+  "skills": [
+    {
+      "dir": "skills/coffee-picks",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/coffee_tools.py",
+      "class": "SearchCoffeesTool"
+    },
+    {
+      "file": "tools/coffee_tools.py",
+      "class": "GetCoffeeTool"
+    },
+    {
+      "file": "tools/coffee_tools.py",
+      "class": "FindSimilarTool"
+    },
+    {
+      "file": "tools/coffee_tools.py",
+      "class": "RecommendationsTool"
+    },
+    {
+      "file": "tools/coffee_tools.py",
+      "class": "CompareCoffeesTool"
+    },
+    {
+      "file": "tools/coffee_tools.py",
+      "class": "TrendingCoffeesTool"
+    },
+    {
+      "file": "tools/coffee_tools.py",
+      "class": "DialInSuggestionTool"
+    },
+    {
+      "file": "tools/coffee_tools.py",
+      "class": "WhatToBrewTool"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:coffee-brewing-research",
+  "type": "agent-plugin",
+  "name": "coffee-brewing-research",
+  "version": "1.0.0",
+  "zip": "coffee-brewing-research-1.0.0.zip",
+  "sha256": "974eacf436ce73b99571e03c30b41877b6a7318609bf73f5b84badfc8ecd31ea",
+  "payload_sha256": {
+    "licenses/timberline-percolate/LICENSE": "23aa04bfd21c572e8aebb500ba5d841a5d0318419b8e05495e9474df1687a54b",
+    "manifest.json": "f1c29ef496fb500641aee6ad3197d2199e4abeffd3d4b1746643c0c4706a6f21",
+    "README.md": "7ac1d3eb30b0605fa2e090d66390364f3128f1608afe8399851d944dc65868f1",
+    "skills/coffee-picks/references/api.md": "3ca13b891e074d49cedbeb225ce1950032fcbcfef6b81f53393b73d2f79a522e",
+    "skills/coffee-picks/SKILL.md": "771bdf10810be454d492b0f2fa7d7e6ba50ba79a0b5868a114289a1ebc4a7e43",
+    "THIRD_PARTY_NOTICES.md": "3389abe781e413722a0464e04b1768687647f2a5953cf9989875b72cb6c4e68a",
+    "tools/coffee_tools.py": "60ddb0cd573dfc5f5d64fd84aa4404a99ece178c32ceaaeee0c1c15c410fbfed",
+    "tools/tool_catalog.json": "802534ed20e2bc218868babd269f8528d17eb84d02ca2d230b74759f74aa16e1"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "3016b929ba466fc1d28f80829f92c3ab7aaea3010e754bfc9900ecac026d95ee",
+  "functional_test_report_sha256": "dde75fbc0f3fa002b6f48b37d05cda3c4a99544c31fb26513171ceed01ba3a06"
+}

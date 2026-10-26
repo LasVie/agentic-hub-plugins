@@ -1,0 +1,245 @@
+{
+  "search_coffees": {
+    "description_zh": "按名称、分类、烘焙度、器具和美元价格检索 Percolate 实际咖啡目录；返回风味和零售商，不提供购买链接。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "maxLength": 120,
+          "description": "简短的咖啡或烘焙商检索词；不发送完整对话或私密资料。"
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "espresso",
+            "single_origin",
+            "blend",
+            "decaf",
+            "dark"
+          ],
+          "description": "咖啡分类；接口枚举保持英文，省略表示不按分类筛选。"
+        },
+        "roast_level": {
+          "type": "string",
+          "enum": [
+            "light",
+            "medium-light",
+            "medium",
+            "medium-dark",
+            "dark"
+          ],
+          "description": "烘焙度；使用列出的英文枚举，省略表示不限制。"
+        },
+        "brew_method": {
+          "type": "string",
+          "maxLength": 120,
+          "description": "冲煮器具或方法，例如 espresso、pourover、V60、french press。"
+        },
+        "price_min": {
+          "type": "number",
+          "minimum": 0,
+          "description": "最低目录价格，单位美元，必须为有限非负数。"
+        },
+        "price_max": {
+          "type": "number",
+          "minimum": 0,
+          "description": "最高目录价格，单位美元，必须为有限非负数，不能小于最低价。"
+        },
+        "limit": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "本次最多返回的结果数，1–10 的整数；首轮建议 2–3 条。"
+        }
+      },
+      "additionalProperties": false,
+      "$schema": "http://json-schema.org/draft-07/schema#"
+    }
+  },
+  "get_coffee": {
+    "description_zh": "读取指定咖啡 ID 或名称的实际档案、风味、适用器具、搭配及价格信息。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "id_or_name": {
+          "type": "string",
+          "maxLength": 120,
+          "description": "实际返回的 Percolate 咖啡 ID，或用户明确指定的咖啡原名。"
+        }
+      },
+      "required": [
+        "id_or_name"
+      ],
+      "additionalProperties": false,
+      "$schema": "http://json-schema.org/draft-07/schema#"
+    }
+  },
+  "find_similar": {
+    "description_zh": "按现有咖啡的风味、烘焙度及结构化评分寻找相似咖啡，保留服务的匹配依据。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "coffee": {
+          "type": "string",
+          "maxLength": 200,
+          "description": "实际咖啡 ID 或原名；不要杜撰名称或替换用户明确指定的输入。"
+        },
+        "limit": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "本次最多返回的结果数，1–10 的整数；首轮建议 2–3 条。"
+        }
+      },
+      "required": [
+        "coffee"
+      ],
+      "additionalProperties": false,
+      "$schema": "http://json-schema.org/draft-07/schema#"
+    }
+  },
+  "get_recommendations": {
+    "description_zh": "根据明确风味偏好、每袋美元预算、烘焙度和冲煮器具查询咖啡推荐。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "preferences": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 60,
+            "description": "一个简短风味词；不得为空白。"
+          },
+          "minItems": 1,
+          "maxItems": 20,
+          "description": "用户明确喜欢的风味列表，例如 chocolate、caramel、nutty；仅发送必要偏好。"
+        },
+        "budget": {
+          "type": "number",
+          "minimum": 0,
+          "description": "每袋最高目录预算，单位美元，必须为有限非负数。"
+        },
+        "roast_level": {
+          "type": "string",
+          "enum": [
+            "light",
+            "medium-light",
+            "medium",
+            "medium-dark",
+            "dark"
+          ],
+          "description": "烘焙度；使用列出的英文枚举，省略表示不限制。"
+        },
+        "brew_method": {
+          "type": "string",
+          "maxLength": 120,
+          "description": "冲煮器具或方法，例如 espresso、pourover、V60、french press。"
+        },
+        "limit": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "本次最多返回的结果数，1–10 的整数；首轮建议 2–3 条。"
+        }
+      },
+      "required": [
+        "preferences"
+      ],
+      "additionalProperties": false,
+      "$schema": "http://json-schema.org/draft-07/schema#"
+    }
+  },
+  "compare_coffees": {
+    "description_zh": "对比两款实际咖啡的烘焙度、醇厚度、酸甜度、风味、器具和价格差异。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "coffee_a": {
+          "type": "string",
+          "maxLength": 200,
+          "description": "第一款实际咖啡的 ID 或原名。"
+        },
+        "coffee_b": {
+          "type": "string",
+          "maxLength": 200,
+          "description": "第二款实际咖啡的 ID 或原名。"
+        }
+      },
+      "required": [
+        "coffee_a",
+        "coffee_b"
+      ],
+      "additionalProperties": false,
+      "$schema": "http://json-schema.org/draft-07/schema#"
+    }
+  },
+  "trending_coffees": {
+    "description_zh": "查询目录返回的热度列表，并说明实际使用近 30 天收藏趋势还是目录热度回退。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "本次最多返回的结果数，1–10 的整数；首轮建议 2–3 条。"
+        }
+      },
+      "additionalProperties": false,
+      "$schema": "http://json-schema.org/draft-07/schema#"
+    }
+  },
+  "dial_in_suggestion": {
+    "description_zh": "读取指定咖啡的冲煮比例、水温和研磨建议；区分精选配方与按烘焙度推导的起点。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "coffee": {
+          "type": "string",
+          "maxLength": 200,
+          "description": "实际咖啡 ID 或原名；不要杜撰名称或替换用户明确指定的输入。"
+        },
+        "brew_method": {
+          "type": "string",
+          "maxLength": 120,
+          "description": "冲煮器具或方法，例如 espresso、pourover、V60、french press。"
+        }
+      },
+      "required": [
+        "coffee"
+      ],
+      "additionalProperties": false,
+      "$schema": "http://json-schema.org/draft-07/schema#"
+    }
+  },
+  "what_to_brew": {
+    "description_zh": "按饮用时段、简短心情偏好和器具查询此刻适合冲煮的咖啡；只报告返回的依据。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "time_of_day": {
+          "type": "string",
+          "enum": [
+            "morning",
+            "afternoon",
+            "evening"
+          ],
+          "description": "饮用时段：morning 早晨、afternoon 下午、evening 晚间。"
+        },
+        "mood": {
+          "type": "string",
+          "maxLength": 120,
+          "description": "简短的口味或场景偏好；不要附带健康记录、姓名或其他私密信息。"
+        },
+        "brew_method": {
+          "type": "string",
+          "maxLength": 120,
+          "description": "冲煮器具或方法，例如 espresso、pourover、V60、french press。"
+        }
+      },
+      "additionalProperties": false,
+      "$schema": "http://json-schema.org/draft-07/schema#"
+    }
+  }
+}

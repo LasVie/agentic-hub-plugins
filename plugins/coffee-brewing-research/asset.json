@@ -1,0 +1,23 @@
+{
+  "type": "agent-plugin",
+  "name": "coffee-brewing-research",
+  "version": "1.0.0",
+  "display_name": "咖啡选豆与冲煮",
+  "description": "通过八个原生工具检索精品咖啡、按预算和风味选豆、比较真实档案并读取冲煮配方；默认简体中文。",
+  "publisher": "LasVie/agentic-hub-plugins",
+  "category": "生活与健康",
+  "tags": [
+    "coffee",
+    "brewing",
+    "catalog",
+    "mcp"
+  ],
+  "functional_tags": [
+    "咖啡目录检索",
+    "风味预算选豆",
+    "冲煮配方证据"
+  ],
+  "scope": "公开目录的八个原生查询工具和中文 Skill；不访问个人收藏、冲煮日志、账户或购买，不提供杜撰价格/链接。依赖联网和宿主既有 Python/MCP SDK；远端记录查询参数及用量。",
+  "candidate_id": "CAND-CLD-134",
+  "task_id": "AH-20261026-coffee-brewing-research"
+}
