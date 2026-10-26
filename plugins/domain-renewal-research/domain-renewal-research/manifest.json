@@ -1,0 +1,97 @@
+{
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "source": "local",
+  "id": "domain-renewal-research",
+  "name": "域名续费比价",
+  "description": "通过 12 个原生工具比较域名续费和注册报价、估算多年费用、读取名称研究证据；默认使用简体中文。",
+  "display_name": {
+    "en": "域名续费比价",
+    "zh": "域名续费比价"
+  },
+  "display_description": {
+    "en": "通过 12 个原生工具比较域名续费和注册报价、估算多年费用、读取名称研究证据；默认使用简体中文。",
+    "zh": "通过 12 个原生工具比较域名续费和注册报价、估算多年费用、读取名称研究证据；默认使用简体中文。"
+  },
+  "category": "办公与生产力",
+  "tags": [
+    {
+      "en": "域名研究",
+      "zh": "域名研究"
+    },
+    {
+      "en": "续费比较",
+      "zh": "续费比较"
+    }
+  ],
+  "default_init_input": {
+    "en": "用中文比较域名年度续费：",
+    "zh": "用中文比较域名年度续费："
+  },
+  "quick_inputs": [
+    {
+      "en": "比较 .com、.org、.dev 每年不超过 15 美元的续费报价，不检查具体名称。",
+      "zh": "比较 .com、.org、.dev 每年不超过 15 美元的续费报价，不检查具体名称。"
+    },
+    {
+      "en": "读取注册商覆盖与来源状态，用中文说明报价是否完整。",
+      "zh": "读取注册商覆盖与来源状态，用中文说明报价是否完整。"
+    }
+  ],
+  "skills": [
+    {
+      "dir": "skills/domain-research",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/domain_tools.py",
+      "class": "SearchPricesTool"
+    },
+    {
+      "file": "tools/domain_tools.py",
+      "class": "TldPricesTool"
+    },
+    {
+      "file": "tools/domain_tools.py",
+      "class": "RegistrarsTool"
+    },
+    {
+      "file": "tools/domain_tools.py",
+      "class": "EstimateCostTool"
+    },
+    {
+      "file": "tools/domain_tools.py",
+      "class": "RegistrarLinkTool"
+    },
+    {
+      "file": "tools/domain_tools.py",
+      "class": "NamingGuidanceTool"
+    },
+    {
+      "file": "tools/domain_tools.py",
+      "class": "AvailabilityTool"
+    },
+    {
+      "file": "tools/domain_tools.py",
+      "class": "PopularityTool"
+    },
+    {
+      "file": "tools/domain_tools.py",
+      "class": "AvailabilityBatchTool"
+    },
+    {
+      "file": "tools/domain_tools.py",
+      "class": "NameFinderTool"
+    },
+    {
+      "file": "tools/domain_tools.py",
+      "class": "PriceHistoryTool"
+    },
+    {
+      "file": "tools/domain_tools.py",
+      "class": "CompareNamesTool"
+    }
+  ]
+}

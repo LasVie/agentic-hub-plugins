@@ -1,0 +1,499 @@
+{
+  "search_prices": {
+    "class": "SearchPricesTool",
+    "description_zh": "按年度续费、预算、后缀和注册商筛选报价；价格以美元分为单位，不检查名称可注册性。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "q": {
+          "type": "string",
+          "maxLength": 200,
+          "default": "",
+          "description": "后缀搜索，例如 .com,.org,.dev；仅比较价格时不发送项目背景。"
+        },
+        "registrar": {
+          "type": "string",
+          "maxLength": 40,
+          "pattern": "^[a-z0-9-]+$",
+          "description": "单个已连接注册商 ID；与 registrars 互斥。"
+        },
+        "registrars": {
+          "type": "string",
+          "maxLength": 200,
+          "pattern": "^[a-z0-9-]+(?:,[a-z0-9-]+)*$",
+          "description": "逗号分隔的注册商 ID；与 registrar 互斥。"
+        },
+        "favorites": {
+          "type": "string",
+          "maxLength": 81,
+          "pattern": "^[a-z0-9-]+(?:,[a-z0-9-]+)?$",
+          "description": "至多两个逗号分隔的注册商比较列，不保存偏好。"
+        },
+        "sort": {
+          "type": "string",
+          "enum": [
+            "renewal",
+            "registration",
+            "total"
+          ],
+          "default": "renewal",
+          "description": "比较指标；续费优先选择 renewal。"
+        },
+        "orderBy": {
+          "type": "string",
+          "enum": [
+            "price",
+            "extension"
+          ],
+          "default": "price",
+          "description": "显示排序，不改变最低报价的选择规则。"
+        },
+        "direction": {
+          "type": "string",
+          "enum": [
+            "asc",
+            "desc"
+          ],
+          "default": "asc",
+          "description": "显示排序方向。"
+        },
+        "years": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10,
+          "default": 3,
+          "description": "新注册费用估算年数，1–10 的整数。"
+        },
+        "maxRenewalCents": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100000000,
+          "description": "年度续费预算，整数美元分；15 美元写为 1500。"
+        },
+        "hideCountryCodes": {
+          "type": "boolean",
+          "default": false,
+          "description": "是否隐藏国家或地区后缀。"
+        },
+        "hideJumps": {
+          "type": "boolean",
+          "default": false,
+          "description": "是否隐藏续费跳涨报价。"
+        },
+        "view": {
+          "type": "string",
+          "enum": [
+            "best",
+            "all"
+          ],
+          "default": "best",
+          "description": "best 每后缀最低已覆盖报价；all 显示各注册商报价。"
+        },
+        "includeStale": {
+          "type": "boolean",
+          "default": false,
+          "description": "是否包含旧报价；搜索时须配合 view=all，保留过期标记。"
+        },
+        "limit": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 200,
+          "default": 50,
+          "description": "本页条数，1–200；先使用小页，不扫描整个目录。"
+        },
+        "offset": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100000,
+          "default": 0,
+          "description": "分页偏移；只读取本次请求所需的页。"
+        },
+        "name": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?$",
+          "maxLength": 63,
+          "description": "一个 ASCII 名称标签，不含点号或后缀；会发送给公开服务。"
+        },
+        "format": {
+          "type": "string",
+          "enum": [
+            "json",
+            "csv",
+            "markdown"
+          ],
+          "default": "json",
+          "description": "返回格式；保留 JSON 原始证据，可另取 CSV 或 Markdown。"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "get_tld_prices": {
+    "class": "TldPricesTool",
+    "description_zh": "比较指定单级后缀的注册商报价；保留样本、税费、币种换算和来源日期。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "tld": {
+          "type": "string",
+          "pattern": "^\\.?[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?$",
+          "maxLength": 64,
+          "description": "不带点号的单级 ASCII 后缀，例如 com；不支持 co.uk 或中文域名。"
+        },
+        "registrar": {
+          "type": "string",
+          "maxLength": 40,
+          "pattern": "^[a-z0-9-]+$",
+          "description": "单个已连接注册商 ID；与 registrars 互斥。"
+        },
+        "registrars": {
+          "type": "string",
+          "maxLength": 200,
+          "pattern": "^[a-z0-9-]+(?:,[a-z0-9-]+)*$",
+          "description": "逗号分隔的注册商 ID；与 registrar 互斥。"
+        },
+        "favorites": {
+          "type": "string",
+          "maxLength": 81,
+          "pattern": "^[a-z0-9-]+(?:,[a-z0-9-]+)?$",
+          "description": "至多两个逗号分隔的注册商比较列，不保存偏好。"
+        },
+        "sort": {
+          "type": "string",
+          "enum": [
+            "renewal",
+            "registration",
+            "total"
+          ],
+          "default": "renewal",
+          "description": "比较指标；续费优先选择 renewal。"
+        },
+        "orderBy": {
+          "type": "string",
+          "enum": [
+            "price",
+            "extension"
+          ],
+          "default": "price",
+          "description": "显示排序，不改变最低报价的选择规则。"
+        },
+        "direction": {
+          "type": "string",
+          "enum": [
+            "asc",
+            "desc"
+          ],
+          "default": "asc",
+          "description": "显示排序方向。"
+        },
+        "years": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10,
+          "default": 3,
+          "description": "新注册费用估算年数，1–10 的整数。"
+        },
+        "includeStale": {
+          "type": "boolean",
+          "default": false,
+          "description": "是否包含旧报价；搜索时须配合 view=all，保留过期标记。"
+        },
+        "limit": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 200,
+          "default": 50,
+          "description": "本页条数，1–200；先使用小页，不扫描整个目录。"
+        },
+        "offset": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100000,
+          "default": 0,
+          "description": "分页偏移；只读取本次请求所需的页。"
+        },
+        "name": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?$",
+          "maxLength": 63,
+          "description": "一个 ASCII 名称标签，不含点号或后缀；会发送给公开服务。"
+        },
+        "format": {
+          "type": "string",
+          "enum": [
+            "json",
+            "csv",
+            "markdown"
+          ],
+          "default": "json",
+          "description": "返回格式；保留 JSON 原始证据，可另取 CSV 或 Markdown。"
+        }
+      },
+      "required": [
+        "tld"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "get_registrars": {
+    "class": "RegistrarsTool",
+    "description_zh": "读取服务覆盖的注册商 ID、来源健康状态和覆盖范围。",
+    "input_schema": {
+      "type": "object",
+      "properties": {},
+      "additionalProperties": false
+    }
+  },
+  "estimate_cost": {
+    "class": "EstimateCostTool",
+    "description_zh": "估算在指定注册商新注册域名的多年费用；不是现有域名账单或保证未来价格。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "tld": {
+          "type": "string",
+          "pattern": "^\\.?[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?$",
+          "maxLength": 64,
+          "description": "不带点号的单级 ASCII 后缀，例如 com；不支持 co.uk 或中文域名。"
+        },
+        "registrar": {
+          "type": "string",
+          "maxLength": 40,
+          "pattern": "^[a-z0-9-]+$",
+          "description": "单个已连接注册商 ID；与 registrars 互斥。"
+        },
+        "years": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10,
+          "default": 3,
+          "description": "新注册费用估算年数，1–10 的整数。"
+        },
+        "name": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?$",
+          "maxLength": 63,
+          "description": "一个 ASCII 名称标签，不含点号或后缀；会发送给公开服务。"
+        }
+      },
+      "required": [
+        "tld",
+        "registrar",
+        "years"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "get_registrar_link": {
+    "class": "RegistrarLinkTool",
+    "description_zh": "取得指定名称的注册商搜索链接；不打开网页、不检查可注册性、不购买。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "tld": {
+          "type": "string",
+          "pattern": "^\\.?[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?$",
+          "maxLength": 64,
+          "description": "不带点号的单级 ASCII 后缀，例如 com；不支持 co.uk 或中文域名。"
+        },
+        "registrar": {
+          "type": "string",
+          "maxLength": 40,
+          "pattern": "^[a-z0-9-]+$",
+          "description": "单个已连接注册商 ID；与 registrars 互斥。"
+        },
+        "name": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?$",
+          "maxLength": 63,
+          "description": "一个 ASCII 名称标签，不含点号或后缀；会发送给公开服务。"
+        }
+      },
+      "required": [
+        "tld",
+        "registrar",
+        "name"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "get_naming_guidance": {
+    "class": "NamingGuidanceTool",
+    "description_zh": "读取命名研究规则；保持项目背景在会话中，仅发送必要的查询参数。",
+    "input_schema": {
+      "type": "object",
+      "properties": {},
+      "additionalProperties": false
+    }
+  },
+  "check_availability": {
+    "class": "AvailabilityTool",
+    "description_zh": "按用户命名研究请求检查一个公开名称；会发送名称给服务及检查提供方，未知不等于被注册。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?$",
+          "maxLength": 63,
+          "description": "一个 ASCII 名称标签，不含点号或后缀；会发送给公开服务。"
+        },
+        "tld": {
+          "type": "string",
+          "pattern": "^\\.?[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?$",
+          "maxLength": 64,
+          "description": "不带点号的单级 ASCII 后缀，例如 com；不支持 co.uk 或中文域名。"
+        },
+        "registrar": {
+          "type": "string",
+          "maxLength": 40,
+          "pattern": "^[a-z0-9-]+$",
+          "description": "单个已连接注册商 ID；与 registrars 互斥。"
+        },
+        "fresh": {
+          "type": "boolean",
+          "default": false,
+          "description": "仅用户明确要求重新检查时设为 true；不自动刷新或重试。"
+        }
+      },
+      "required": [
+        "name",
+        "tld"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "get_domain_popularity": {
+    "class": "PopularityTool",
+    "description_zh": "可选 DNS 热度查询；数据有独立 CC BY-NC 4.0 条款，商业复用需许可；不是 SEO 或可注册性判断。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?$",
+          "maxLength": 63,
+          "description": "一个 ASCII 名称标签，不含点号或后缀；会发送给公开服务。"
+        },
+        "tld": {
+          "type": "string",
+          "pattern": "^\\.?[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?$",
+          "maxLength": 64,
+          "description": "不带点号的单级 ASCII 后缀，例如 com；不支持 co.uk 或中文域名。"
+        }
+      },
+      "required": [
+        "name",
+        "tld"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "check_availability_batch": {
+    "class": "AvailabilityBatchTool",
+    "description_zh": "检查同一名称的 1–20 个后缀；cachedOnly=true 只读已有证据，未知不等于被注册。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?$",
+          "maxLength": 63,
+          "description": "一个 ASCII 名称标签，不含点号或后缀；会发送给公开服务。"
+        },
+        "tlds": {
+          "type": "string",
+          "maxLength": 1299,
+          "description": "逗号分隔的 1–20 个单级后缀，例如 com,dev。"
+        },
+        "cachedOnly": {
+          "type": "boolean",
+          "default": false,
+          "description": "true 只读取已有可注册性证据；缓存缺失属于未知。"
+        }
+      },
+      "required": [
+        "name",
+        "tlds"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "open_name_finder": {
+    "class": "NameFinderTool",
+    "description_zh": "取得命名表单工作流；不支持内嵌表单时使用返回的网页入口，不进行模型推理或域名检查。",
+    "input_schema": {
+      "type": "object",
+      "properties": {},
+      "additionalProperties": false
+    }
+  },
+  "get_price_history": {
+    "class": "PriceHistoryTool",
+    "description_zh": "读取指定后缀的已保存价格历史；历史报价不是当前价格承诺。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "tld": {
+          "type": "string",
+          "pattern": "^\\.?[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?$",
+          "maxLength": 64,
+          "description": "不带点号的单级 ASCII 后缀，例如 com；不支持 co.uk 或中文域名。"
+        },
+        "registrar": {
+          "type": "string",
+          "maxLength": 40,
+          "pattern": "^[a-z0-9-]+$",
+          "description": "单个已连接注册商 ID；与 registrars 互斥。"
+        },
+        "price": {
+          "type": "string",
+          "enum": [
+            "renewal",
+            "registration"
+          ],
+          "default": "renewal",
+          "description": "历史价格指标；保留其时间范围和来源限定。"
+        },
+        "format": {
+          "type": "string",
+          "enum": [
+            "json",
+            "csv",
+            "markdown"
+          ],
+          "default": "json",
+          "description": "返回格式；保留 JSON 原始证据，可另取 CSV 或 Markdown。"
+        }
+      },
+      "required": [
+        "tld"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "compare_domain_names": {
+    "class": "CompareNamesTool",
+    "description_zh": "对 1–10 个完整名称按续费排名，复用已有检查证据，不触发新的注册商检查。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "domains": {
+          "type": "string",
+          "maxLength": 1279,
+          "description": "逗号分隔的 1–10 个不重复完整 ASCII 域名，例如 example.com,example.org。"
+        },
+        "maxRenewalCents": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100000000,
+          "description": "年度续费预算，整数美元分；15 美元写为 1500。"
+        }
+      },
+      "required": [
+        "domains"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

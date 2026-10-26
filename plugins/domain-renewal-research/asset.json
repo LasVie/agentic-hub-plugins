@@ -1,0 +1,27 @@
+{
+  "type": "agent-plugin",
+  "name": "domain-renewal-research",
+  "version": "1.0.0",
+  "display_name": "域名续费比价",
+  "description": "为现有域名管理流程补充跨注册商续费比较、预算筛选、费用估算和名称研究。",
+  "publisher": "LasVie/agentic-hub-plugins",
+  "category": "办公与生产力",
+  "tags": [
+    "domain",
+    "renewal",
+    "research",
+    "mcp"
+  ],
+  "functional_tags": [
+    "域名续费比较",
+    "年度预算筛选",
+    "公开报价证据"
+  ],
+  "scope": "中文研究伴随插件。通过免费公开服务读取带日期的报价和用户请求的名称研究；不执行 DNS、部署、购买、注册、转移或续费。依赖互联网和宿主 MCP SDK；可选 Radar 数据有独立 CC BY-NC 4.0 条款。",
+  "candidate_id": "CAND-CLD-138",
+  "task_id": "AH-20261026-domain-renewal-research",
+  "related_asset_ids": [
+    "62e9a479c4954481bb862b6d38d3a444",
+    "74bf008cf94a4082ac4eb4e15a7a2982"
+  ]
+}
