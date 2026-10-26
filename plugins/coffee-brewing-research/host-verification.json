@@ -1,0 +1,62 @@
+{
+  "source": {
+    "at_utc": "2026-10-26T08:07:50.732317+00:00",
+    "model_calls": 0,
+    "real_deepagent": true,
+    "real_skill_rail": true,
+    "real_runner": true,
+    "model_visible_tools": [
+      "coffee_compare_coffees",
+      "coffee_dial_in_suggestion",
+      "coffee_find_similar",
+      "coffee_get_coffee",
+      "coffee_get_recommendations",
+      "coffee_search_coffees",
+      "coffee_trending_coffees",
+      "coffee_what_to_brew"
+    ],
+    "all_eight_direct": true,
+    "extra_private_field_rejected_before_network": true,
+    "registered_live_catalog_call": true,
+    "all_tools_unloaded": true,
+    "payload_unchanged": true,
+    "versions": {
+      "openjiuwen": "0.1.19",
+      "mcp": "1.29.0",
+      "httpx": "0.28.1",
+      "jsonschema": "4.26.0"
+    },
+    "frontend_conversation": "not performed",
+    "unloaded_ref_count": 9
+  },
+  "extracted": {
+    "at_utc": "2026-10-26T08:14:55.354980+00:00",
+    "model_calls": 0,
+    "real_deepagent": true,
+    "real_skill_rail": true,
+    "real_runner": true,
+    "model_visible_tools": [
+      "coffee_compare_coffees",
+      "coffee_dial_in_suggestion",
+      "coffee_find_similar",
+      "coffee_get_coffee",
+      "coffee_get_recommendations",
+      "coffee_search_coffees",
+      "coffee_trending_coffees",
+      "coffee_what_to_brew"
+    ],
+    "all_eight_direct": true,
+    "extra_private_field_rejected_before_network": true,
+    "registered_live_catalog_call": true,
+    "all_tools_unloaded": true,
+    "payload_unchanged": true,
+    "versions": {
+      "openjiuwen": "0.1.19",
+      "mcp": "1.29.0",
+      "httpx": "0.28.1",
+      "jsonschema": "4.26.0"
+    },
+    "frontend_conversation": "not performed",
+    "unloaded_ref_count": 9
+  }
+}

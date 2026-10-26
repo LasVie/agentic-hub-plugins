@@ -1,0 +1,106 @@
+{
+  "task_id": "AH-20261026-coffee-brewing-research",
+  "candidate_id": "CAND-CLD-134",
+  "asset_id": "repo:agent-plugin:coffee-brewing-research",
+  "display_name": "咖啡选豆与冲煮",
+  "version": "1.0.0",
+  "member": "Nguyen Trung Dung",
+  "confirmation_date": "2026-10-26",
+  "timezone": "Asia/Singapore",
+  "user_statement": "Confirmed working",
+  "confirmation_source": "Current conversation; exact message timestamp/permalink unavailable",
+  "native_zip_sha256": "f7b178268153b8075460d5ba6e1ae1f72ab8e2dd1106576596eb54f2e916bb4b",
+  "canonical_zip_sha256": "974eacf436ce73b99571e03c30b41877b6a7318609bf73f5b84badfc8ecd31ea",
+  "originals": "Eight original PNGs matched individually to the eight images supplied with the confirmation; copied without editing or recompression; visually checked for credentials/private information, none observed.",
+  "evidence_limits": "Images show enabled plugin and completed tool calls/model responses, not full raw tool transcripts. Search image shows Skill load only. Invalid-budget crop shows ok:false but cuts off the full error-code/message. Independent real SDK/live/host tests remain separate evidence; no invented manual raw-result assertion.",
+  "images": [
+    {
+      "file": "01-plugin-enabled.png",
+      "original_filename": "Screenshot 2026-10-26 163708.png",
+      "sha256": "6d972954a1992e698477268d2debcabd70b5e79507b2bbff68504cc6ba6454e3",
+      "bytes": 49989,
+      "dimensions": [
+        928,
+        543
+      ],
+      "scope_and_limits": "Chinese plugin enabled; other displayed plugins disabled."
+    },
+    {
+      "file": "02-skill-loaded.png",
+      "original_filename": "Screenshot 2026-10-26 163748.png",
+      "sha256": "a5b6bc7e7cc5950a00441216cc7bcabe573f065ec38210b58fa9e0f9443954ca",
+      "bytes": 52517,
+      "dimensions": [
+        1187,
+        720
+      ],
+      "scope_and_limits": "Search prompt and actual skill_tool coffee-picks invocation; crop does not show the catalog tool result."
+    },
+    {
+      "file": "03-detail-and-similar.png",
+      "original_filename": "Screenshot 2026-10-26 163759.png",
+      "sha256": "246041218e4a50017143eb109867684aa48335cdcf174497aa91bc119263a27a",
+      "bytes": 64559,
+      "dimensions": [
+        1227,
+        605
+      ],
+      "scope_and_limits": "Completed coffee_get_coffee and coffee_find_similar; Chinese response reports success using the actual returned full name."
+    },
+    {
+      "file": "04-recommendations.png",
+      "original_filename": "Screenshot 2026-10-26 163813.png",
+      "sha256": "63a472e55041d19d8e3eba325c885fb8aaefecc2171c3aab626f0655982f4020",
+      "bytes": 67635,
+      "dimensions": [
+        1211,
+        641
+      ],
+      "scope_and_limits": "Completed coffee_get_recommendations; exact USD20/chocolate/caramel/espresso/limit2 inputs and reported two recommendations."
+    },
+    {
+      "file": "05-comparison.png",
+      "original_filename": "Screenshot 2026-10-26 163827.png",
+      "sha256": "03a8f073e53c8dbec6e2722829f79125ee6f083d29b9a5f90fbf90f3eddc07e5",
+      "bytes": 79891,
+      "dimensions": [
+        1187,
+        762
+      ],
+      "scope_and_limits": "Completed coffee_compare_coffees; response reports actual names, ok:true, no retry."
+    },
+    {
+      "file": "06-brewing.png",
+      "original_filename": "Screenshot 2026-10-26 163837.png",
+      "sha256": "35851f27d268c4bd10e7de9561645ef58242a2b26368f3fd7302c22d4c981c43",
+      "bytes": 93841,
+      "dimensions": [
+        1177,
+        741
+      ],
+      "scope_and_limits": "Completed coffee_dial_in_suggestion for an explicitly named espresso capsule; response identifies curated_pairing. Full recipe/format explanation below the crop is not visible."
+    },
+    {
+      "file": "07-trending-and-brew-choice.png",
+      "original_filename": "Screenshot 2026-10-26 163848.png",
+      "sha256": "64a86662ef7a3cafd9831c66fed93bfd7b2e4f1bb86252a68173b1c40a19f4fe",
+      "bytes": 67533,
+      "dimensions": [
+        1265,
+        697
+      ],
+      "scope_and_limits": "Completed coffee_trending_coffees and coffee_what_to_brew; response reports both ok:true. Full returned lists/method are below the crop."
+    },
+    {
+      "file": "08-invalid-budget.png",
+      "original_filename": "Screenshot 2026-10-26 163901.png",
+      "sha256": "33813d6e65a7223370a9a5582653d62c67c333309c078329522154ce3df9471d",
+      "bytes": 57519,
+      "dimensions": [
+        1161,
+        595
+      ],
+      "scope_and_limits": "Exact price_min30/price_max20/limit2 request, completed coffee_search_coffees, response says unchanged arguments, one call, ok:false. Error-code line is cut off; no independent screenshot proof of the complete code/message."
+    }
+  ]
+}

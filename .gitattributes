@@ -17,3 +17,12 @@
 /plugins/domain-renewal-research/evidence/**/*.png -text
 /releases/agent-plugin/domain-renewal-research/**/artifact.json text eol=lf
 /releases/agent-plugin/domain-renewal-research/**/*.zip -text
+
+# Preserve the Chinese coffee plugin payload bytes across Windows/LF clients.
+/plugins/coffee-brewing-research/**/*.md text eol=lf
+/plugins/coffee-brewing-research/**/*.py text eol=lf
+/plugins/coffee-brewing-research/**/*.json text eol=lf
+/plugins/coffee-brewing-research/coffee-brewing-research/licenses/timberline-percolate/LICENSE text eol=lf
+/plugins/coffee-brewing-research/test-packages/*.zip -text
+/releases/agent-plugin/coffee-brewing-research/**/artifact.json text eol=lf
+/releases/agent-plugin/coffee-brewing-research/**/*.zip -text

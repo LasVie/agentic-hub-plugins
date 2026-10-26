@@ -1,0 +1,88 @@
+{
+  "native": {
+    "path": "D:\\jiuwen_repos\\agentic-hub-plugins-coffee-brewing-research\\plugins\\coffee-brewing-research\\test-packages\\coffee-brewing-research-1.0.0-native.zip",
+    "sha256": "f7b178268153b8075460d5ba6e1ae1f72ab8e2dd1106576596eb54f2e916bb4b",
+    "bytes": 34901
+  },
+  "canonical": {
+    "path": "D:\\jiuwen_repos\\agentic-hub-plugins-coffee-brewing-research\\releases\\agent-plugin\\coffee-brewing-research\\1.0.0\\coffee-brewing-research-1.0.0.zip",
+    "sha256": "974eacf436ce73b99571e03c30b41877b6a7318609bf73f5b84badfc8ecd31ea",
+    "bytes": 36173
+  },
+  "payload_files": [
+    {
+      "path": "licenses/timberline-percolate/LICENSE",
+      "sha256": "23aa04bfd21c572e8aebb500ba5d841a5d0318419b8e05495e9474df1687a54b",
+      "bytes": 1080
+    },
+    {
+      "path": "manifest.json",
+      "sha256": "f1c29ef496fb500641aee6ad3197d2199e4abeffd3d4b1746643c0c4706a6f21",
+      "bytes": 2377
+    },
+    {
+      "path": "README.md",
+      "sha256": "7ac1d3eb30b0605fa2e090d66390364f3128f1608afe8399851d944dc65868f1",
+      "bytes": 4713
+    },
+    {
+      "path": "skills/coffee-picks/references/api.md",
+      "sha256": "3ca13b891e074d49cedbeb225ce1950032fcbcfef6b81f53393b73d2f79a522e",
+      "bytes": 2666
+    },
+    {
+      "path": "skills/coffee-picks/SKILL.md",
+      "sha256": "771bdf10810be454d492b0f2fa7d7e6ba50ba79a0b5868a114289a1ebc4a7e43",
+      "bytes": 4898
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "3389abe781e413722a0464e04b1768687647f2a5953cf9989875b72cb6c4e68a",
+      "bytes": 1677
+    },
+    {
+      "path": "tools/coffee_tools.py",
+      "sha256": "60ddb0cd573dfc5f5d64fd84aa4404a99ece178c32ceaaeee0c1c15c410fbfed",
+      "bytes": 8420
+    },
+    {
+      "path": "tools/tool_catalog.json",
+      "sha256": "802534ed20e2bc218868babd269f8528d17eb84d02ca2d230b74759f74aa16e1",
+      "bytes": 8060
+    }
+  ],
+  "all_eight_source_native_canonical_identical": true,
+  "utf8_lf_no_bom": true,
+  "zip_crc_and_safe_paths": true,
+  "extracted": "D:\\jiuwen_repos\\agentic-hub-plugins-coffee-brewing-research\\.research\\coffee-brewing-research\\extracted-native",
+  "frontend_test": "Explicit user completion with eight original screenshots; cropped-result limits recorded",
+  "user_confirmation": "Confirmed working; Nguyen Trung Dung; 2026-10-26; RPT-20261026-coffee-brewing-research-confirmed-100",
+  "screenshots": "evidence/1.0.0/evidence.json; eight original PNGs",
+  "tests": {
+    "source_real_sdk_cases": 15,
+    "extracted_real_sdk_cases": 15,
+    "root_discovery_checks_each": 3,
+    "source_distinct_live_tools_succeeded": 8,
+    "source_single_batch_all_green": false,
+    "extracted_live_successes": 3,
+    "extracted_first_batch_successes": 2,
+    "extracted_remaining_call_succeeded_after_wait": true,
+    "real_agent_cards_source_and_extracted": 8,
+    "unloaded_refs_each": 9,
+    "literal_chinese_query_succeeded": true,
+    "local_invalid_budget_rejected": true,
+    "model_calls": 0,
+    "check_repo": {
+      "source_assets": 36,
+      "release_zips": 45,
+      "passed": true
+    },
+    "full_repository_windows_suite": "Not rerun; no all-green claim",
+    "github_ci": "Not run; Build remains local",
+    "source_initial_id_failure": "Preserved; exact returned names succeeded in a separate diagnostic and later comparison",
+    "rate_limit": "429 observed and preserved; no automatic retry; waited before separate remaining checks",
+    "frontend_conversation": "Confirmed working by user; original screenshots preserved with scope/limits"
+  },
+  "checked_at_utc": "2026-10-26T08:19:04.513023+00:00",
+  "git_index_runtime_bytes_match_tested_zip": true
+}

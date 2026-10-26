@@ -1,0 +1,22 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/bguillow-rgb/timberline-plugins/tree/a9c0c687825e61b567fb1a03cba0992cbf9393bc/percolate",
+      "revision": "a9c0c687825e61b567fb1a03cba0992cbf9393bc",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/timberline-percolate/LICENSE",
+          "sha256": "23aa04bfd21c572e8aebb500ba5d841a5d0318419b8e05495e9474df1687a54b"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "README.md",
+    "skills/coffee-picks/SKILL.md"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}
