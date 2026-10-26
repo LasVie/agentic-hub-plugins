@@ -17,7 +17,12 @@ import zipfile
 PAYLOAD = Path(os.environ.get('OFFLINE_BACKUP_PAYLOAD', Path(__file__).resolve().parents[1] / 'plugins/offline-backup-recovery/offline-backup-recovery'))
 SPEC = importlib.util.spec_from_file_location('backup_under_test', PAYLOAD / 'runtime/backup.py')
 core = importlib.util.module_from_spec(SPEC)
-SPEC.loader.exec_module(core)
+_OLD_BYTECODE = sys.dont_write_bytecode
+try:
+    sys.dont_write_bytecode = True
+    SPEC.loader.exec_module(core)
+finally:
+    sys.dont_write_bytecode = _OLD_BYTECODE
 sha = lambda b: hashlib.sha256(b).hexdigest()
 
 
