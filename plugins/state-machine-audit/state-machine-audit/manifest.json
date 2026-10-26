@@ -1,0 +1,62 @@
+{
+  "version": "1.0.1",
+  "package_type": "plugin",
+  "id": "state-machine-audit",
+  "name": "状态机行为审计",
+  "description": "只读核验经确认的有限状态机模型，探索守卫与变量配置，报告死端、不变量违例和最短反例；搜索未完成时明确未决。",
+  "display_name": {
+    "en": "状态机行为审计",
+    "zh": "状态机行为审计"
+  },
+  "display_description": {
+    "en": "只读核验经确认的有限状态机模型，探索守卫与变量配置，报告死端、不变量违例和最短反例；搜索未完成时明确未决。",
+    "zh": "只读核验经确认的有限状态机模型，探索守卫与变量配置，报告死端、不变量违例和最短反例；搜索未完成时明确未决。"
+  },
+  "skills": [
+    {
+      "dir": "skills/model-audit",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/audit_tools.py",
+      "class": "InspectStateMachineTool",
+      "display_name": {
+        "en": "检查并展示状态机模型",
+        "zh": "检查并展示状态机模型"
+      },
+      "display_description": {
+        "en": "只读检查模型结构，返回实际哈希和待确认迁移表。",
+        "zh": "只读检查模型结构，返回实际哈希和待确认迁移表。"
+      }
+    },
+    {
+      "file": "tools/audit_tools.py",
+      "class": "AuditStateMachineTool",
+      "display_name": {
+        "en": "审计已确认的状态机行为",
+        "zh": "审计已确认的状态机行为"
+      },
+      "display_description": {
+        "en": "精确探索有限配置，报告反例及真实未决边界。",
+        "zh": "精确探索有限配置，报告反例及真实未决边界。"
+      }
+    }
+  ],
+  "tags": [
+    {
+      "en": "状态机",
+      "zh": "状态机"
+    },
+    {
+      "en": "反例路径",
+      "zh": "反例路径"
+    },
+    {
+      "en": "离线验证",
+      "zh": "离线验证"
+    }
+  ],
+  "category": "Others"
+}

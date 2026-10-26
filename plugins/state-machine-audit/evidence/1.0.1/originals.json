@@ -1,0 +1,58 @@
+{
+  "task_id": "AH-20261026-state-machine-audit",
+  "candidate_id": "CAND-DSH-214",
+  "owner": "Cai Zhenze",
+  "display_name": "状态机行为审计",
+  "version": "1.0.1",
+  "recorded_at": "2026-10-26T17:06:53+08:00",
+  "confirmation_source": "Current conversation explicit user1.0.1 completion/pass and five original attachments; exact message timestamp/permalink unavailable.",
+  "native_zip_sha256": "0846461cbb98e2c08398e65df2f8dffac55c96431d883f22867ffc66e05015cb",
+  "canonical_zip_sha256": "9280fb9d391e31136c66f7b088524309e03a257d03ce1a3e833c8bc70e21f212",
+  "originals": [
+    {
+      "original_filename": "Screenshot 2026-10-26 at 5.04.43 PM.png",
+      "source_path": "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/TemporaryItems/NSIRD_screencaptureui_OBbXgN/Screenshot 2026-10-26 at 5.04.43 PM.png",
+      "saved_path": "evidence/1.0.1/user-test-1.0.1-01.png",
+      "sha256": "373087defcbaef8c20c95b9bde82d88729f6319b018fe9f4c9e6596903976c1e",
+      "width": 850,
+      "height": 1920,
+      "original_bytes_preserved": true
+    },
+    {
+      "original_filename": "Screenshot 2026-10-26 at 5.04.57 PM.png",
+      "source_path": "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/TemporaryItems/NSIRD_screencaptureui_rkzLgN/Screenshot 2026-10-26 at 5.04.57 PM.png",
+      "saved_path": "evidence/1.0.1/user-test-1.0.1-02.png",
+      "sha256": "896463db95c10dd830d567fff60d7d2e36797b402e6f77feffaec607fd9d9afc",
+      "width": 852,
+      "height": 1942,
+      "original_bytes_preserved": true
+    },
+    {
+      "original_filename": "Screenshot 2026-10-26 at 5.05.08 PM.png",
+      "source_path": "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/TemporaryItems/NSIRD_screencaptureui_Y5XTJC/Screenshot 2026-10-26 at 5.05.08 PM.png",
+      "saved_path": "evidence/1.0.1/user-test-1.0.1-03.png",
+      "sha256": "c1adda4876bf297191e571d93fd65672140354a479bbc2593ad68d5b39f7613c",
+      "width": 874,
+      "height": 1940,
+      "original_bytes_preserved": true
+    },
+    {
+      "original_filename": "Screenshot 2026-10-26 at 5.05.21 PM.png",
+      "source_path": "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/TemporaryItems/NSIRD_screencaptureui_Uw1QU7/Screenshot 2026-10-26 at 5.05.21 PM.png",
+      "saved_path": "evidence/1.0.1/user-test-1.0.1-04.png",
+      "sha256": "0e9fc6643664bf47ddb13e40a32aadbf7f55f0fd628552a02e183578f54ae703",
+      "width": 846,
+      "height": 1942,
+      "original_bytes_preserved": true
+    },
+    {
+      "original_filename": "Screenshot 2026-10-26 at 5.05.31 PM.png",
+      "source_path": "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/TemporaryItems/NSIRD_screencaptureui_SyIvoy/Screenshot 2026-10-26 at 5.05.31 PM.png",
+      "saved_path": "evidence/1.0.1/user-test-1.0.1-05.png",
+      "sha256": "61587867a6fa26425d864239075b59d16f6bca39f5384eaf4fd4166aad3517f3",
+      "width": 850,
+      "height": 1946,
+      "original_bytes_preserved": true
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "version": "1.0.1",
+  "file_count": 14,
+  "source_native_canonical_payload_identical": true,
+  "license_exact_original": true,
+  "original_header_exact": true,
+  "utf8_all_files": true,
+  "workswarm_sha256": "0846461cbb98e2c08398e65df2f8dffac55c96431d883f22867ffc66e05015cb",
+  "canonical_sha256": "9280fb9d391e31136c66f7b088524309e03a257d03ce1a3e833c8bc70e21f212",
+  "extracted_payloads": {
+    "native": "/Users/IDLE_And_R/.codex/worktrees/581d/agentic-hub-plugins/dist/state-machine-audit/1.0.1/extracted-native",
+    "canonical": "/Users/IDLE_And_R/.codex/worktrees/581d/agentic-hub-plugins/dist/state-machine-audit/1.0.1/extracted-canonical/state-machine-audit/state-machine-audit"
+  }
+}

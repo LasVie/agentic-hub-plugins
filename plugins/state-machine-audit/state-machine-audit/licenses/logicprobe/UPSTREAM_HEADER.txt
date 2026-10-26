@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+"""logicprobe-engine.py — standalone JSON-driven mirror of the logicprobe DSH engine.
+
+Reads the same LogicModelV1 JSON schema as the DSH `logicprobe_verify` /
+`logicprobe_compose_verify` / `logicprobe_export` tools and runs the same
+checks (S1-S8 structural, A1-A14 adversarial, D1-D4 before/after regression,
+C1/C2 composition) plus the four external-tool exporters (UPPAAL / TLA+ /
+PRISM / SPIN) and the UML front end (render / parse / review, mirroring
+`src/uml.ts`). Pure stdlib, no third-party imports.
+
+Usage:
+  python logicprobe-engine.py verify model.json [--before-model before.json]
+      [--state-mapping map.json] [--max-states N] [--max-permutation-events N]
+  python logicprobe-engine.py compose m1.json m2.json [m3.json ...]
+      [--rendezvous ev1,ev2] [--max-states N]
+  python logicprobe-engine.py export model.json --format uppaal|tla|prism|spin
+  python logicprobe-engine.py uml-render model.json [--notation mermaid|plantuml]
+      [--diagram state|activity|sequence] [--max-steps N] [--intent present|verify|fidelity]
+  python logicprobe-engine.py uml-parse diagram.txt [--notation auto|mermaid|plantuml]
+      [--intent present|verify|fidelity]
+  python logicprobe-engine.py uml-review [--model model.json] [--diagram diagram.txt]
+      [--notation auto|mermaid|plantuml] [--diagram-kind state|activity|sequence]
+      [--no-round-trip] [--max-steps N] [--intent present|verify|fidelity]
+
+Output: JSON verification/composition report on stdout (same shape as the DSH
+tool result), or the export result JSON (format / primary / extras / warnings),
+or the UML render/parse/review JSON.
+"""

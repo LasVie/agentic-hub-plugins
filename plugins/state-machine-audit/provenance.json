@@ -1,0 +1,22 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/AmethystLuna/logicprobe",
+      "revision": "e1b5ac4a426c43878863092bc79387700a8189cb",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/logicprobe/LICENSE",
+          "sha256": "e22255c214b26dcc8eb5827f277db869d67c1e97dbdc08e7aae367eecfbe8148"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "runtime/audit.py",
+    "licenses/logicprobe/UPSTREAM_HEADER.txt"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}
