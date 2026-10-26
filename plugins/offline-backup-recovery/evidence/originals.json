@@ -1,0 +1,22 @@
+[
+  {
+    "index": 1,
+    "original_name": "Screenshot 2026-10-26 at 5.15.32 PM.png",
+    "bytes": 409887,
+    "width": 1118,
+    "height": 1888,
+    "sha256": "8d0934a22a4f22c2c29f39f82531d5023ae4305d072b65c7f34a10ce78623efd",
+    "file": "user-test-1.0.0-01.png",
+    "source": "Original PNG supplied and authorized for GitHub PR evidence by Cai Zhenze in the current conversation2026-10-26; exact bytes, no editing/recompression."
+  },
+  {
+    "index": 2,
+    "original_name": "Screenshot 2026-10-26 at 5.15.42 PM.png",
+    "bytes": 468845,
+    "width": 1130,
+    "height": 1924,
+    "sha256": "56188cb102c93c450a1f74e67e693d9ecf3f98fd85f72ca63facc287cc985991",
+    "file": "user-test-1.0.0-02.png",
+    "source": "Original PNG supplied and authorized for GitHub PR evidence by Cai Zhenze in the current conversation2026-10-26; exact bytes, no editing/recompression."
+  }
+]
