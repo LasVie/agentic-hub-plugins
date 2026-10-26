@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "init": "待支付",
+  "states": [
+    {
+      "id": "待支付"
+    },
+    {
+      "id": "已支付"
+    },
+    {
+      "id": "已发货"
+    },
+    {
+      "id": "已完成",
+      "terminal": true
+    },
+    {
+      "id": "错误",
+      "terminal": true
+    }
+  ],
+  "variables": [
+    {
+      "name": "已付款",
+      "kind": "boolean",
+      "init": false
+    },
+    {
+      "name": "重试",
+      "kind": "integer",
+      "init": 0,
+      "min": 0,
+      "max": 2
+    }
+  ],
+  "transitions": [
+    {
+      "from": "待支付",
+      "event": "支付",
+      "to": "已支付",
+      "updates": [
+        {
+          "variable": "已付款",
+          "op": "set",
+          "value": true
+        }
+      ]
+    },
+    {
+      "from": "待支付",
+      "event": "重试支付",
+      "to": "待支付",
+      "guard": {
+        "variable": "重试",
+        "op": "<",
+        "value": 2
+      },
+      "updates": [
+        {
+          "variable": "重试",
+          "op": "inc",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "from": "已支付",
+      "event": "发货",
+      "to": "已发货",
+      "guard": {
+        "variable": "已付款",
+        "op": "==",
+        "value": true
+      }
+    },
+    {
+      "from": "已发货",
+      "event": "签收",
+      "to": "已完成"
+    },
+    {
+      "from": "待支付",
+      "event": "绕过支付",
+      "to": "已发货"
+    }
+  ],
+  "invariants": [
+    {
+      "id": "禁止错误",
+      "kind": "never-states",
+      "description": "订单不能进入错误状态",
+      "states": [
+        "错误"
+      ]
+    },
+    {
+      "id": "先付后发",
+      "kind": "event-before-state",
+      "description": "发货前必须发生支付事件",
+      "event": "支付",
+      "state": "已发货"
+    }
+  ]
+}

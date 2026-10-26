@@ -1,0 +1,840 @@
+{
+  "version": "1.0.1",
+  "host": {
+    "checked_at": "2026-10-26T08:20:25.447241+00:00",
+    "version": "1.0.1",
+    "instance": "/private/tmp/state-machine-audit-workswarm-20261026",
+    "frontend": {
+      "status": 200,
+      "html": true
+    },
+    "websockets": [
+      {
+        "port": 29290,
+        "ping_pong": true,
+        "config_ok": true,
+        "catalog_ok": true
+      },
+      {
+        "port": 6392,
+        "ping_pong": true,
+        "config_ok": true,
+        "catalog_ok": true
+      }
+    ],
+    "prior_installed_payload_backed_up": true,
+    "other_plugin_entries_unchanged": true,
+    "host_config_files_unchanged": true,
+    "model_requests_sent": 0,
+    "removed_old_own_plugin": {
+      "type": "res",
+      "id": "state-audit-101-7a4a364235bb455ea2a927ef74938b74",
+      "ok": true,
+      "payload": {}
+    },
+    "imported": {
+      "type": "res",
+      "id": "state-audit-101-028279dcd9354e169a3468cb1d0052d0",
+      "ok": true,
+      "payload": {
+        "id": "state-machine-audit"
+      }
+    },
+    "installed": {
+      "type": "res",
+      "id": "state-audit-101-8785340a155d4c378747308b9c2c684d",
+      "ok": true,
+      "payload": {}
+    }
+  },
+  "installed_sdk": {
+    "summary": {
+      "passed": true,
+      "version": "1.0.1",
+      "display_name": "状态机行为审计",
+      "tool_count": 2,
+      "skill_count": 1,
+      "actual_tool_invocations": 14,
+      "read_only_inputs": true,
+      "payload_unchanged": true,
+      "network_attempts": 0,
+      "model_requests": 0,
+      "installed_path": "/private/tmp/state-machine-audit-workswarm-20261026/data/agent/workspace/plugins/plugin_packages/local/state-machine-audit"
+    },
+    "results": {
+      "inspect_valid": {
+        "ok": true,
+        "ran": true,
+        "version": "1.0.1",
+        "message": "模型格式有效，请先核对状态、守卫、更新与不变量，再确认此哈希。",
+        "model_sha256": "cf550b3773d196542414803b063ccca3caad7f30b7affb5d21120242fc38d7e5",
+        "init": "待支付",
+        "states": [
+          {
+            "id": "待支付"
+          },
+          {
+            "id": "已支付"
+          },
+          {
+            "id": "已发货"
+          },
+          {
+            "id": "已完成",
+            "terminal": true
+          },
+          {
+            "id": "错误",
+            "terminal": true
+          }
+        ],
+        "variables": [
+          {
+            "name": "已付款",
+            "kind": "boolean",
+            "init": false
+          },
+          {
+            "name": "重试",
+            "kind": "integer",
+            "init": 0,
+            "min": 0,
+            "max": 2
+          }
+        ],
+        "invariants": [
+          {
+            "id": "禁止错误",
+            "kind": "never-states",
+            "description": "订单不能进入错误状态",
+            "states": [
+              "错误"
+            ]
+          },
+          {
+            "id": "先付后发",
+            "kind": "event-before-state",
+            "description": "发货前必须发生支付事件",
+            "event": "支付",
+            "state": "已发货"
+          }
+        ],
+        "transition_count": 4,
+        "transition_table": [
+          {
+            "from": "待支付",
+            "event": "支付",
+            "to": "已支付",
+            "updates": [
+              {
+                "variable": "已付款",
+                "op": "set",
+                "value": true
+              }
+            ]
+          },
+          {
+            "from": "待支付",
+            "event": "重试支付",
+            "to": "待支付",
+            "guard": {
+              "variable": "重试",
+              "op": "<",
+              "value": 2
+            },
+            "updates": [
+              {
+                "variable": "重试",
+                "op": "inc",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "from": "已支付",
+            "event": "发货",
+            "to": "已发货",
+            "guard": {
+              "variable": "已付款",
+              "op": "==",
+              "value": true
+            }
+          },
+          {
+            "from": "已发货",
+            "event": "签收",
+            "to": "已完成"
+          }
+        ],
+        "transitions_omitted": 0,
+        "configuration_upper_bound": 60,
+        "semantics": "同一状态和事件下，若有守卫分支匹配则仅执行所有匹配分支；否则执行所有无守卫回退分支。初始事件历史为空。"
+      },
+      "audit_valid": {
+        "ok": true,
+        "ran": true,
+        "version": "1.0.1",
+        "verdict": "pass",
+        "message": "模型检查通过",
+        "analysis_complete": true,
+        "summary": {
+          "explored_configurations": 12,
+          "discovered_configurations": 12,
+          "examined_transitions": 11,
+          "finding_count": 0,
+          "reachable_states": [
+            "已发货",
+            "已完成",
+            "已支付",
+            "待支付"
+          ],
+          "unreachable_states": [
+            "错误"
+          ],
+          "unresolved_states": []
+        },
+        "properties": [
+          {
+            "id": "禁止错误",
+            "description": "订单不能进入错误状态",
+            "status": "pass"
+          },
+          {
+            "id": "先付后发",
+            "description": "发货前必须发生支付事件",
+            "status": "pass"
+          }
+        ],
+        "incomplete_reasons": [],
+        "limits": {
+          "max_states": 2000,
+          "max_edges": 10000,
+          "max_steps": 64
+        },
+        "findings": [],
+        "findings_omitted": 0,
+        "coverage_note": "仅核验本次明确提供的有限模型；不证明源代码、真实并发、时钟或概率性质。无不变量时不会声称已验证安全属性。",
+        "model_sha256": "cf550b3773d196542414803b063ccca3caad7f30b7affb5d21120242fc38d7e5"
+      },
+      "state_budget": {
+        "ok": true,
+        "ran": true,
+        "version": "1.0.1",
+        "verdict": "incomplete",
+        "message": "搜索未完成，结论未决",
+        "analysis_complete": false,
+        "summary": {
+          "explored_configurations": 1,
+          "discovered_configurations": 1,
+          "examined_transitions": 2,
+          "finding_count": 0,
+          "reachable_states": [
+            "已支付",
+            "待支付"
+          ],
+          "unreachable_states": [],
+          "unresolved_states": [
+            "已发货",
+            "已完成",
+            "错误"
+          ]
+        },
+        "properties": [
+          {
+            "id": "禁止错误",
+            "description": "订单不能进入错误状态",
+            "status": "incomplete"
+          },
+          {
+            "id": "先付后发",
+            "description": "发货前必须发生支付事件",
+            "status": "incomplete"
+          }
+        ],
+        "incomplete_reasons": [
+          "state_limit"
+        ],
+        "limits": {
+          "max_states": 1,
+          "max_edges": 10000,
+          "max_steps": 64
+        },
+        "findings": [],
+        "findings_omitted": 0,
+        "coverage_note": "仅核验本次明确提供的有限模型；不证明源代码、真实并发、时钟或概率性质。无不变量时不会声称已验证安全属性。",
+        "model_sha256": "cf550b3773d196542414803b063ccca3caad7f30b7affb5d21120242fc38d7e5"
+      },
+      "unpaid_inspect": {
+        "ok": true,
+        "ran": true,
+        "version": "1.0.1",
+        "message": "模型格式有效，请先核对状态、守卫、更新与不变量，再确认此哈希。",
+        "model_sha256": "c80baeb7ce66f5d3f069d89d99304708fcd9344523267f6b7bd87853b0dc66da",
+        "init": "待支付",
+        "states": [
+          {
+            "id": "待支付"
+          },
+          {
+            "id": "已支付"
+          },
+          {
+            "id": "已发货"
+          },
+          {
+            "id": "已完成",
+            "terminal": true
+          },
+          {
+            "id": "错误",
+            "terminal": true
+          }
+        ],
+        "variables": [
+          {
+            "name": "已付款",
+            "kind": "boolean",
+            "init": false
+          },
+          {
+            "name": "重试",
+            "kind": "integer",
+            "init": 0,
+            "min": 0,
+            "max": 2
+          }
+        ],
+        "invariants": [
+          {
+            "id": "禁止错误",
+            "kind": "never-states",
+            "description": "订单不能进入错误状态",
+            "states": [
+              "错误"
+            ]
+          },
+          {
+            "id": "先付后发",
+            "kind": "event-before-state",
+            "description": "发货前必须发生支付事件",
+            "event": "支付",
+            "state": "已发货"
+          }
+        ],
+        "transition_count": 5,
+        "transition_table": [
+          {
+            "from": "待支付",
+            "event": "支付",
+            "to": "已支付",
+            "updates": [
+              {
+                "variable": "已付款",
+                "op": "set",
+                "value": true
+              }
+            ]
+          },
+          {
+            "from": "待支付",
+            "event": "重试支付",
+            "to": "待支付",
+            "guard": {
+              "variable": "重试",
+              "op": "<",
+              "value": 2
+            },
+            "updates": [
+              {
+                "variable": "重试",
+                "op": "inc",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "from": "已支付",
+            "event": "发货",
+            "to": "已发货",
+            "guard": {
+              "variable": "已付款",
+              "op": "==",
+              "value": true
+            }
+          },
+          {
+            "from": "已发货",
+            "event": "签收",
+            "to": "已完成"
+          },
+          {
+            "from": "待支付",
+            "event": "绕过支付",
+            "to": "已发货"
+          }
+        ],
+        "transitions_omitted": 0,
+        "configuration_upper_bound": 60,
+        "semantics": "同一状态和事件下，若有守卫分支匹配则仅执行所有匹配分支；否则执行所有无守卫回退分支。初始事件历史为空。"
+      },
+      "unpaid": {
+        "ok": true,
+        "ran": true,
+        "version": "1.0.1",
+        "verdict": "fail",
+        "message": "发现模型违例",
+        "analysis_complete": true,
+        "summary": {
+          "explored_configurations": 18,
+          "discovered_configurations": 18,
+          "examined_transitions": 17,
+          "finding_count": 1,
+          "reachable_states": [
+            "已发货",
+            "已完成",
+            "已支付",
+            "待支付"
+          ],
+          "unreachable_states": [
+            "错误"
+          ],
+          "unresolved_states": []
+        },
+        "properties": [
+          {
+            "id": "禁止错误",
+            "description": "订单不能进入错误状态",
+            "status": "pass"
+          },
+          {
+            "id": "先付后发",
+            "description": "发货前必须发生支付事件",
+            "status": "fail"
+          }
+        ],
+        "incomplete_reasons": [],
+        "limits": {
+          "max_states": 2000,
+          "max_edges": 10000,
+          "max_steps": 64
+        },
+        "findings": [
+          {
+            "code": "invariant_violated",
+            "message": "违反不变量：发货前必须发生支付事件",
+            "trace_length": 1,
+            "trace": [
+              {
+                "from": "待支付",
+                "event": "绕过支付",
+                "to": "已发货",
+                "before": {
+                  "已付款": false,
+                  "重试": 0
+                },
+                "after": {
+                  "已付款": false,
+                  "重试": 0
+                }
+              }
+            ],
+            "property_id": "先付后发"
+          }
+        ],
+        "findings_omitted": 0,
+        "coverage_note": "仅核验本次明确提供的有限模型；不证明源代码、真实并发、时钟或概率性质。无不变量时不会声称已验证安全属性。",
+        "model_sha256": "c80baeb7ce66f5d3f069d89d99304708fcd9344523267f6b7bd87853b0dc66da"
+      },
+      "blocked_inspect": {
+        "ok": true,
+        "ran": true,
+        "version": "1.0.1",
+        "message": "模型格式有效，请先核对状态、守卫、更新与不变量，再确认此哈希。",
+        "model_sha256": "86911d3c79aa4daefb733056a5d89d58666b4d0ed2a36be57d1c33ce84a8e9d5",
+        "init": "待支付",
+        "states": [
+          {
+            "id": "待支付"
+          },
+          {
+            "id": "已支付"
+          },
+          {
+            "id": "已发货"
+          },
+          {
+            "id": "已完成",
+            "terminal": true
+          },
+          {
+            "id": "错误",
+            "terminal": true
+          }
+        ],
+        "variables": [
+          {
+            "name": "已付款",
+            "kind": "boolean",
+            "init": false
+          },
+          {
+            "name": "重试",
+            "kind": "integer",
+            "init": 0,
+            "min": 0,
+            "max": 2
+          }
+        ],
+        "invariants": [
+          {
+            "id": "禁止错误",
+            "kind": "never-states",
+            "description": "订单不能进入错误状态",
+            "states": [
+              "错误"
+            ]
+          },
+          {
+            "id": "先付后发",
+            "kind": "event-before-state",
+            "description": "发货前必须发生支付事件",
+            "event": "支付",
+            "state": "已发货"
+          }
+        ],
+        "transition_count": 3,
+        "transition_table": [
+          {
+            "from": "待支付",
+            "event": "支付",
+            "to": "已支付",
+            "guard": {
+              "variable": "已付款",
+              "op": "==",
+              "value": true
+            }
+          },
+          {
+            "from": "已支付",
+            "event": "发货",
+            "to": "已发货"
+          },
+          {
+            "from": "已发货",
+            "event": "签收",
+            "to": "已完成"
+          }
+        ],
+        "transitions_omitted": 0,
+        "configuration_upper_bound": 60,
+        "semantics": "同一状态和事件下，若有守卫分支匹配则仅执行所有匹配分支；否则执行所有无守卫回退分支。初始事件历史为空。"
+      },
+      "blocked": {
+        "ok": true,
+        "ran": true,
+        "version": "1.0.1",
+        "verdict": "fail",
+        "message": "发现模型违例",
+        "analysis_complete": true,
+        "summary": {
+          "explored_configurations": 1,
+          "discovered_configurations": 1,
+          "examined_transitions": 0,
+          "finding_count": 1,
+          "reachable_states": [
+            "待支付"
+          ],
+          "unreachable_states": [
+            "已发货",
+            "已完成",
+            "已支付",
+            "错误"
+          ],
+          "unresolved_states": []
+        },
+        "properties": [
+          {
+            "id": "禁止错误",
+            "description": "订单不能进入错误状态",
+            "status": "pass"
+          },
+          {
+            "id": "先付后发",
+            "description": "发货前必须发生支付事件",
+            "status": "pass"
+          }
+        ],
+        "incomplete_reasons": [],
+        "limits": {
+          "max_states": 2000,
+          "max_edges": 10000,
+          "max_steps": 64
+        },
+        "findings": [
+          {
+            "code": "enabled_dead_end",
+            "message": "可达的非终态没有可启用迁移：待支付",
+            "trace_length": 0,
+            "trace": []
+          }
+        ],
+        "findings_omitted": 0,
+        "coverage_note": "仅核验本次明确提供的有限模型；不证明源代码、真实并发、时钟或概率性质。无不变量时不会声称已验证安全属性。",
+        "model_sha256": "86911d3c79aa4daefb733056a5d89d58666b4d0ed2a36be57d1c33ce84a8e9d5"
+      },
+      "domain_inspect": {
+        "ok": true,
+        "ran": true,
+        "version": "1.0.1",
+        "message": "模型格式有效，请先核对状态、守卫、更新与不变量，再确认此哈希。",
+        "model_sha256": "a2023ec38a6afa2cfc1734e7fc94830be41a76a15cd39c1c24e9d4b8c596a47d",
+        "init": "待支付",
+        "states": [
+          {
+            "id": "待支付"
+          },
+          {
+            "id": "已支付"
+          },
+          {
+            "id": "已发货"
+          },
+          {
+            "id": "已完成",
+            "terminal": true
+          },
+          {
+            "id": "错误",
+            "terminal": true
+          }
+        ],
+        "variables": [
+          {
+            "name": "已付款",
+            "kind": "boolean",
+            "init": false
+          },
+          {
+            "name": "重试",
+            "kind": "integer",
+            "init": 0,
+            "min": 0,
+            "max": 2
+          }
+        ],
+        "invariants": [
+          {
+            "id": "禁止错误",
+            "kind": "never-states",
+            "description": "订单不能进入错误状态",
+            "states": [
+              "错误"
+            ]
+          },
+          {
+            "id": "先付后发",
+            "kind": "event-before-state",
+            "description": "发货前必须发生支付事件",
+            "event": "支付",
+            "state": "已发货"
+          }
+        ],
+        "transition_count": 4,
+        "transition_table": [
+          {
+            "from": "待支付",
+            "event": "支付",
+            "to": "已支付",
+            "updates": [
+              {
+                "variable": "已付款",
+                "op": "set",
+                "value": true
+              }
+            ]
+          },
+          {
+            "from": "待支付",
+            "event": "重试支付",
+            "to": "待支付",
+            "guard": {
+              "variable": "重试",
+              "op": "<",
+              "value": 3
+            },
+            "updates": [
+              {
+                "variable": "重试",
+                "op": "inc",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "from": "已支付",
+            "event": "发货",
+            "to": "已发货",
+            "guard": {
+              "variable": "已付款",
+              "op": "==",
+              "value": true
+            }
+          },
+          {
+            "from": "已发货",
+            "event": "签收",
+            "to": "已完成"
+          }
+        ],
+        "transitions_omitted": 0,
+        "configuration_upper_bound": 60,
+        "semantics": "同一状态和事件下，若有守卫分支匹配则仅执行所有匹配分支；否则执行所有无守卫回退分支。初始事件历史为空。"
+      },
+      "domain": {
+        "ok": true,
+        "ran": true,
+        "version": "1.0.1",
+        "verdict": "fail",
+        "message": "发现模型违例",
+        "analysis_complete": false,
+        "summary": {
+          "explored_configurations": 12,
+          "discovered_configurations": 12,
+          "examined_transitions": 12,
+          "finding_count": 1,
+          "reachable_states": [
+            "已发货",
+            "已完成",
+            "已支付",
+            "待支付"
+          ],
+          "unreachable_states": [],
+          "unresolved_states": [
+            "错误"
+          ]
+        },
+        "properties": [
+          {
+            "id": "禁止错误",
+            "description": "订单不能进入错误状态",
+            "status": "incomplete"
+          },
+          {
+            "id": "先付后发",
+            "description": "发货前必须发生支付事件",
+            "status": "incomplete"
+          }
+        ],
+        "incomplete_reasons": [
+          "domain_escape"
+        ],
+        "limits": {
+          "max_states": 2000,
+          "max_edges": 10000,
+          "max_steps": 64
+        },
+        "findings": [
+          {
+            "code": "domain_escape",
+            "message": "迁移更新越出已声明的有限变量域：重试",
+            "trace_length": 3,
+            "trace": [
+              {
+                "from": "待支付",
+                "event": "重试支付",
+                "to": "待支付",
+                "before": {
+                  "已付款": false,
+                  "重试": 0
+                },
+                "after": {
+                  "已付款": false,
+                  "重试": 1
+                }
+              },
+              {
+                "from": "待支付",
+                "event": "重试支付",
+                "to": "待支付",
+                "before": {
+                  "已付款": false,
+                  "重试": 1
+                },
+                "after": {
+                  "已付款": false,
+                  "重试": 2
+                }
+              },
+              {
+                "from": "待支付",
+                "event": "重试支付",
+                "to": "待支付",
+                "before": {
+                  "已付款": false,
+                  "重试": 2
+                },
+                "after": {
+                  "已付款": false,
+                  "重试": 3
+                }
+              }
+            ]
+          }
+        ],
+        "findings_omitted": 0,
+        "coverage_note": "仅核验本次明确提供的有限模型；不证明源代码、真实并发、时钟或概率性质。无不变量时不会声称已验证安全属性。",
+        "model_sha256": "a2023ec38a6afa2cfc1734e7fc94830be41a76a15cd39c1c24e9d4b8c596a47d"
+      },
+      "unknown": {
+        "ok": false,
+        "ran": false,
+        "version": "1.0.1",
+        "error": {
+          "code": "model_invalid",
+          "message": "存在未知字段；不会忽略未支持的构造。",
+          "location": "transitions[0]"
+        }
+      },
+      "duplicate": {
+        "ok": false,
+        "ran": false,
+        "version": "1.0.1",
+        "error": {
+          "code": "duplicate_json_key",
+          "message": "JSON 含重复键；拒绝静默覆盖。",
+          "location": "schemaVersion"
+        }
+      },
+      "unconfirmed": {
+        "ok": false,
+        "ran": false,
+        "version": "1.0.1",
+        "error": {
+          "code": "confirmation_required",
+          "message": "须先展示模型并取得用户明确确认，再运行审计。",
+          "location": ""
+        }
+      },
+      "hash_mismatch": {
+        "ok": false,
+        "ran": false,
+        "version": "1.0.1",
+        "error": {
+          "code": "model_changed",
+          "message": "模型字节与已确认哈希不符；请重新 inspect 并取得确认。",
+          "location": ""
+        }
+      }
+    },
+    "stream_matches_invoke": true
+  },
+  "frontend": {
+    "url": "http://127.0.0.1:6392/",
+    "chinese_name": "状态机行为审计",
+    "skill_count": 1,
+    "tool_count": 2,
+    "chinese_descriptions_rendered": true,
+    "verification": "CUA inspected Extensions > My Extensions > details; automated setup evidence, not user test completion."
+  },
+  "historical_100_evidence": "evidence/1.0.0/host-verification.json"
+}

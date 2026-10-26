@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:state-machine-audit",
+  "type": "agent-plugin",
+  "name": "state-machine-audit",
+  "version": "1.0.1",
+  "zip": "state-machine-audit-1.0.1.zip",
+  "sha256": "9280fb9d391e31136c66f7b088524309e03a257d03ce1a3e833c8bc70e21f212",
+  "payload_sha256": {
+    "README.md": "40fcf4b314e6e2a604dac431af34e20dad0fa0184fe0b1f052c56682e4942f49",
+    "THIRD_PARTY_NOTICES.md": "554df690db2506cdb1f0573d5fad7f3ec6ed1ad958aabc824e4a12442a942231",
+    "examples/守卫堵塞.json": "86911d3c79aa4daefb733056a5d89d58666b4d0ed2a36be57d1c33ce84a8e9d5",
+    "examples/未支付发货.json": "c80baeb7ce66f5d3f069d89d99304708fcd9344523267f6b7bd87853b0dc66da",
+    "examples/未知字段.json": "149e64bd71a7b75e6c9d9596c9452d6ba7b47ecaf3c2f08b3616bb01ccae4248",
+    "examples/正常订单.json": "cf550b3773d196542414803b063ccca3caad7f30b7affb5d21120242fc38d7e5",
+    "examples/越域重试.json": "a2023ec38a6afa2cfc1734e7fc94830be41a76a15cd39c1c24e9d4b8c596a47d",
+    "examples/重复键.json": "a605c82d3cc20583e55900d99ab13a52cdcd2d4c6c3eef83d04c2fe3d6697511",
+    "licenses/logicprobe/LICENSE": "e22255c214b26dcc8eb5827f277db869d67c1e97dbdc08e7aae367eecfbe8148",
+    "licenses/logicprobe/UPSTREAM_HEADER.txt": "d383335df0600e14f533ae67e7cc4f86f396a9cd6a5a13d680b0ced2950066d4",
+    "manifest.json": "83ab402d1b6ad1acd119c0e1d6a4aac6eaf33c4924bc7a460a4921926495d64f",
+    "runtime/audit.py": "6d0ccaf8c4d97c866a1f8655819f87a24ffcde9fde2f3b985d3d116773823040",
+    "skills/model-audit/SKILL.md": "9b2433cfe726f19d4066ea8f8e3a085b640ed919824cd90feb748ddbf779d850",
+    "tools/audit_tools.py": "4d46c718b597d0980c80e37aef38c38ce8457ec6ef5a41d2edd7f4aa7099a7ed"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "3e33926d70003128504f8d4549c645cf52d3906789b1bdb8fd3c9667677300b0",
+  "functional_test_report_sha256": "1882e34fa962d361c4b1435e5e1d174c6c945adb6e2912d523572672efcc02d5"
+}

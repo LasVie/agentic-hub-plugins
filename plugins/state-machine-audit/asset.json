@@ -1,0 +1,28 @@
+{
+  "type": "agent-plugin",
+  "name": "state-machine-audit",
+  "version": "1.0.1",
+  "display_name": "状态机行为审计",
+  "description": "只读核验经确认的有限状态机模型，探索守卫与变量状态，报告死端、不变量违例及最短反例；搜索未完成时明确返回未决。",
+  "publisher": "Cai Zhenze",
+  "category": "软件开发",
+  "tags": [
+    "状态机",
+    "行为审计",
+    "反例路径",
+    "离线验证"
+  ],
+  "functional_tags": [
+    "Finite State Exploration",
+    "Guarded Transitions",
+    "Counterexample Traces"
+  ],
+  "scope": "Python3.11标准库和宿主SDK；显式确认的有限JSON模型，只读、不执行输入。无源代码自动抽取、UML或数据模型套件、外部求解器、模型调用；不证明实际代码、实时或并发系统正确。",
+  "candidate_id": "CAND-DSH-214",
+  "task_id": "AH-20261026-state-machine-audit",
+  "related_asset_ids": [
+    "repo:agent-plugin:archify-graph-tools",
+    "repo:agent-plugin:process-workbench",
+    "2e67d9c04b7a42db9fbd51b4e2df5392"
+  ]
+}
