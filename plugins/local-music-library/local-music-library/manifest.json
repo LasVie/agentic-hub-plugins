@@ -1,0 +1,46 @@
+{
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "id": "local-music-library",
+  "name": "本地音乐库",
+  "description": "浏览明确选定的本地音频目录，保存独立歌单，并在中文回环播放器中播放、跳转和续播。",
+  "skills": [
+    {
+      "dir": "skills/local-music-library",
+      "mode": "all"
+    }
+  ],
+  "display_name": {
+    "zh": "本地音乐库",
+    "en": "本地音乐库"
+  },
+  "display_description": {
+    "zh": "浏览明确选定的本地音频目录，保存独立歌单，并在中文回环播放器中播放、跳转和续播。",
+    "en": "浏览明确选定的本地音频目录，保存独立歌单，并在中文回环播放器中播放、跳转和续播。"
+  },
+  "tools": [
+    {
+      "file": "tools/music_tool.py",
+      "class": "MusicLibrary",
+      "display_name": {
+        "zh": "本地音乐库",
+        "en": "本地音乐库"
+      },
+      "display_description": {
+        "zh": "浏览明确选定的本地音频目录，保存独立歌单，并在中文回环播放器中播放、跳转和续播。",
+        "en": "浏览明确选定的本地音频目录，保存独立歌单，并在中文回环播放器中播放、跳转和续播。"
+      }
+    }
+  ],
+  "category": "多模态与媒体",
+  "tags": [
+    {
+      "zh": "离线",
+      "en": "离线"
+    },
+    {
+      "zh": "音乐",
+      "en": "音乐"
+    }
+  ]
+}

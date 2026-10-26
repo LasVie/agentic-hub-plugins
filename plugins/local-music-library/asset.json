@@ -1,0 +1,22 @@
+{
+  "type": "agent-plugin",
+  "name": "local-music-library",
+  "version": "1.0.0",
+  "display_name": "本地音乐库",
+  "description": "浏览明确选定的本地音频目录，保存独立歌单，并在中文回环播放器中播放、跳转和续播。",
+  "publisher": "Cai Zhenze",
+  "category": "多模态与媒体",
+  "tags": [
+    "音频",
+    "本地",
+    "离线"
+  ],
+  "functional_tags": [
+    "Local Audio Library",
+    "Playlists",
+    "Browser Playback"
+  ],
+  "scope": "User-selected existing audio collection and local playlists; macOS/Linux Python3.11+ and browser codecs; no online music, lyrics, TTS, news or transcoding.",
+  "candidate_id": "CAND-DSH-335",
+  "task_id": "AH-20261023-local-music-library"
+}

@@ -1,0 +1,21 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/kendu76/dsh-music-player",
+      "revision": "172355b147f91ae994631aa4cbd61adfe8a5fb66",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/dsh-music-player/LICENSE",
+          "sha256": "72da6f7e35695c2e2c48017943bf2a48be9c9855bf2384fc89c7ce0e1f6b044f"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "runtime/library.py"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}
