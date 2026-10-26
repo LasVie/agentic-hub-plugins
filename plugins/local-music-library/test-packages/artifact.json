@@ -1,0 +1,24 @@
+{
+  "canonical_sha256": "5c32cc0f4068d75272e00bff309b84a9b98c279d469d8c636d96960ca5e8408f",
+  "workswarm_sha256": "e81650018d2d85667e6d2042c4ed33eb1129b58aba9de7be24c6f9c4e11eb24a",
+  "payload_files": {
+    "README.md": "a58ae55c7aac92655fdaf42c2817ae32c41d8148c91e73093481d4f2de02f7c3",
+    "THIRD_PARTY_NOTICES.md": "eb636324142024e9f684051fdd2ab42a7bcedd3a8d2be1289a010a8ab03e6db5",
+    "__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "assets/app.js": "de9b999f2f693c94e87f4179561159b1b6742c1d8e71987f3dcfb812e79534ba",
+    "assets/page.html": "f527ba3035c29c0a4f31be99a75c4032f12c3602900a791f14eae37198f500eb",
+    "licenses/dsh-music-player/LICENSE": "72da6f7e35695c2e2c48017943bf2a48be9c9855bf2384fc89c7ce0e1f6b044f",
+    "manifest.json": "fe54ace4c664e7870c593c93b586b8233f5667e26472f53c197eee7e2681d51c",
+    "runtime/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "runtime/control.py": "d8eeb20040c178171768b519c2e8ef0422525714a9df54d519470f72fdc467fa",
+    "runtime/library.py": "6268d8eb1ea3104c5b765dde4625c3fd1a693f951714325d666536a735b6f5b2",
+    "runtime/server.py": "d2a8b4e9a6726fa00734d2ed9093f490807032e8fd5260d8598a9e122c9786b4",
+    "skills/local-music-library/SKILL.md": "b9ac568a582635f5747c124e0e116887e987ebabf4a0ea1c8ec1fa5bf66bc369",
+    "tools/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "tools/music_tool.py": "9977c2d0c3627a1deb05fa883bb6bfbdd1edfc3acc1fc3e6d10df4c638927f43"
+  },
+  "payload_byte_identical": true,
+  "version": "1.0.0",
+  "canonical_path": "releases/agent-plugin/local-music-library/1.0.0/local-music-library-1.0.0.zip",
+  "workswarm_path": "plugins/local-music-library/test-packages/local-music-library-1.0.0-workswarm.zip"
+}
