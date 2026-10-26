@@ -44,7 +44,7 @@ MIT 原版权所有者是 **2026 Ilios Galil (PerfWebsite)**。
 
 最终 1.0.0 已完成 8 文件源码/原生/外层逐字节核对、CRC、安全路径、UTF-8/LF 与许可哈希检查。
 原生 SHA-256：`af6ef3967d0dcb88739abf6bf0df5e88e4eb39f98477b536386d0e93159b0d26`；外层：`532fefbc5aa7a94fa08ad76270ad9d491e8f4ffe7fac12713a3e4b1c6945a82c`。
-实际结果见 TEST_REPORT.md / package-verification.json。当前用户确认与原始截图待收到；无 PR、Hub 提交或验收。
+实际结果见 TEST_REPORT.md / package-verification.json。2026-10-26 当前中文 1.0.0 用户确认及七张原始截图已收到，详见 USER_TEST_CONFIRMATION.md 与 evidence/1.0.0/evidence.json；Hub 提交与验收仍由项目负责人后续处理。
 
 ## 许可字节核对
 完整原文 SHA-256：`177ce274838539489d3222b84b4759e4fdea7d5a5c13b357a1311b68c6f8c1c4`。Git blob 与固定来源逐字节一致；内层 UTF-8/LF，无 BOM。

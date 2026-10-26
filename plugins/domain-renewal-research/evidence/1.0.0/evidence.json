@@ -1,0 +1,85 @@
+{
+  "task_id": "AH-20261026-domain-renewal-research",
+  "candidate_id": "CAND-CLD-138",
+  "owner": "Nguyen Trung Dung",
+  "display_name": "域名续费比价",
+  "version": "1.0.0",
+  "native_zip_sha256": "af6ef3967d0dcb88739abf6bf0df5e88e4eb39f98477b536386d0e93159b0d26",
+  "canonical_zip_sha256": "532fefbc5aa7a94fa08ad76270ad9d491e8f4ffe7fac12713a3e4b1c6945a82c",
+  "received_in_conversation": true,
+  "originals_located": "2026-10-26 Asia/Singapore",
+  "privacy_review": "All seven viewed at original resolution; only task prompts, public service metadata and plugin selector are visible. No credentials or private project content observed.",
+  "limitations": "Crops show invocation evidence, not all raw outputs. Screenshot06 is agent argument substitution, not a manual INVALID_ARGUMENTS pass. Exact-input rejection is independently covered by passing real-SDK tests. User confirmation is retained separately.",
+  "files": [
+    {
+      "file": "01-plugin-enabled.png",
+      "original_filename": "Screenshot 2026-10-26 150508.png",
+      "sha256": "e0dc4b2d1a245d47f2aeba8bc4096162570f387dd58d6ac1bc2cbc6cbd0463da",
+      "bytes": 46619,
+      "width": 692,
+      "height": 588,
+      "description": "Plugin enabled",
+      "unchanged_original_bytes": true
+    },
+    {
+      "file": "02-registrars.png",
+      "original_filename": "Screenshot 2026-10-26 150520.png",
+      "sha256": "fd12f0f8b3138d908cec3c6c68f7013fcd94faddf62cfe786fa3f1289a0b8c2c",
+      "bytes": 69011,
+      "width": 1173,
+      "height": 707,
+      "description": "Registrar sources and completed tool call",
+      "unchanged_original_bytes": true
+    },
+    {
+      "file": "03-renewal-prices.png",
+      "original_filename": "Screenshot 2026-10-26 150530.png",
+      "sha256": "736f2bf3aecc48341a6f72bd371da5865738499bb8d38aafff4c8cc6b7b7e57b",
+      "bytes": 71296,
+      "width": 1187,
+      "height": 626,
+      "description": "Renewal-budget query and completed tool call",
+      "unchanged_original_bytes": true
+    },
+    {
+      "file": "04-estimate.png",
+      "original_filename": "Screenshot 2026-10-26 150541.png",
+      "sha256": "421e3f38edb5317aff27ace2ec9993d7bc7331bbdea9e6b62b4336ded5d6063b",
+      "bytes": 71798,
+      "width": 1126,
+      "height": 677,
+      "description": "Three-year estimate and selected parameters",
+      "unchanged_original_bytes": true
+    },
+    {
+      "file": "05-cached-availability.png",
+      "original_filename": "Screenshot 2026-10-26 150554.png",
+      "sha256": "aec63702e93fd37ff4fc9f10299e1c93f79e759e86c720e60d97ccdc1b3f1e3c",
+      "bytes": 65203,
+      "width": 1141,
+      "height": 642,
+      "description": "Cached-only availability invocation",
+      "unchanged_original_bytes": true
+    },
+    {
+      "file": "06-agent-input-substitution.png",
+      "original_filename": "Screenshot 2026-10-26 150604.png",
+      "sha256": "cf7a312e37519c766549b4b96831f4178559aa743f9d3c576d005ff82af2a549",
+      "bytes": 64263,
+      "width": 1092,
+      "height": 737,
+      "description": "Agent argument substitution; final rejection outside crop",
+      "unchanged_original_bytes": true
+    },
+    {
+      "file": "07-name-finder.png",
+      "original_filename": "Screenshot 2026-10-26 150615.png",
+      "sha256": "99aa801d907e44bb92705fdfb993b079b400895adb5142e76afba44d0416ce02",
+      "bytes": 63554,
+      "width": 1251,
+      "height": 662,
+      "description": "Naming-form tool invocation",
+      "unchanged_original_bytes": true
+    }
+  ]
+}

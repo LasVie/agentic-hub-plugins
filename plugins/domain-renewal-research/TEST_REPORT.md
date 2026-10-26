@@ -30,7 +30,7 @@ python -B plugins/domain-renewal-research/tests/host_checks.py --payload <source
 
 ## 仍待用户验证
 
-当前为本地 Build；用户尚未确认本次 1.0.0，也未提供本版本原始截图。
+初始 Ready for Testing 时用户确认与截图尚未收到；2026-10-26 后续确认及原始证据已补齐，见文末及 USER_TEST_CONFIRMATION.md。
 未声称已完成前端对话、ZIP 文件选择器或内嵌 MCP App 渲染，也未调用真实模型。
 源码宿主验证证明工具绑定与实际执行，不代替用户的完整会话验收。
 Hub 操作由 Song Haoran 负责；未创建交付 PR、推送、发布或登记 Asset Ledger。
@@ -55,4 +55,15 @@ Hub 操作由 Song Haoran 负责；未创建交付 PR、推送、发布或登记
 
 `package-verification.json` 记录全部字节哈希和摘要；`host-verification.json` 记录实际宿主结果。
 私有本地原始响应、基线和日志保留在忽略的 .research/domain-renewal-research，不随运行包分发。
-当前状态是 Ready for Testing，用户完成确认与本版本原始截图仍待收到；没有交付 push、PR、Release 或 Hub 操作。
+初始构建状态为 Ready for Testing；后续当前版本用户确认和原始截图已收到，交付状态见 USER_TEST_CONFIRMATION.md 与 PR。
+
+## 2026-10-26 用户确认与原始截图补充
+
+Nguyen Trung Dung 在当前会话明确表示 “Confirmed for chinese version, can you port the English version too, if that is necessary”。
+该确认关联此前提供、哈希未变的中文 1.0.0；不复用其他插件确认。七张已提供的截图在 Windows Screenshots 目录找到原始文件，
+逐张查看后逐字节复制到 evidence/1.0.0，哈希、原名、尺寸和证据边界见 evidence.json。
+画面可见插件启用、注册商/续费比较/估算/缓存查询/命名表单调用；部分返回在裁剪范围外，不据此声称原始结果全部可见。
+参数拒绝截图显示智能体替换了输入，最终 INVALID_ARGUMENTS 不在画面内，因此不将它计为该手工用例通过。
+准确中文参数在真实 SDK 测试中独立验证拒绝；目前无已确认的适配器故障。
+仅更新外围证据、报告和发布记录，运行文件、版本、原生及外层 ZIP 均未改变。
+English prompts added outside runtime; explicit English responses are supported by the existing Skill rule. English UI and optional Radar remain untested.

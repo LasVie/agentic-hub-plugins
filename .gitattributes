@@ -14,5 +14,6 @@
 /plugins/domain-renewal-research/**/*.json text eol=lf
 /plugins/domain-renewal-research/domain-renewal-research/licenses/cheapest-domains/LICENSE text eol=lf
 /plugins/domain-renewal-research/test-packages/*.zip -text
+/plugins/domain-renewal-research/evidence/**/*.png -text
 /releases/agent-plugin/domain-renewal-research/**/artifact.json text eol=lf
 /releases/agent-plugin/domain-renewal-research/**/*.zip -text

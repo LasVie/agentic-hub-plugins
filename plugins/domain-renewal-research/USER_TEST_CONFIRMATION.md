@@ -1,4 +1,4 @@
-# User test confirmation — Chinese 1.0.0 confirmed; evidence finalization pending
+# User test confirmation — Chinese 1.0.0 confirmed; originals collected
 
 - Task ID: AH-20261026-domain-renewal-research; Candidate ID: CAND-CLD-138.
 - Confirmed by: Nguyen Trung Dung, the member explicitly identified in this conversation.
@@ -22,9 +22,9 @@
 | 6 | Invalid-Chinese-name prompt and completed calls; assistant admits substituting `12345`, then attempts correction. | Final raw `INVALID_ARGUMENTS` is not visible. This establishes agent argument substitution, not adapter acceptance of Chinese input or a passing manual rejection test. Independent exact-input SDK tests passed. |
 | 7 | `domain_open_name_finder` completed, with Chinese form-entry heading. | Final URL/raw response is below the crop. |
 
-The user supplied seven readable conversation images; screenshot receipt is not missing. Available execution tools do not expose original image paths or downloadable attachment URLs, and no image files were present in the accessible Codex attachments directory. Original bytes have therefore not yet been saved/uploaded to GitHub; no evidence permalink is fabricated. This is an attachment-access limitation. The user's follow-up “did I not send you just now ?” correctly refers to the seven images already received.
+The user supplied seven readable conversation images. On 2026-10-26 the matching seven originals were found in `C:/Users/ASUS/Pictures/Screenshots/`, viewed individually, and copied byte-for-byte into `evidence/1.0.0/`. `evidence.json` preserves original filenames, SHA-256, dimensions and byte counts. No recompression or image editing was performed. No credentials/private project material were observed. The earlier attachment-access blocker came from searching only Codex attachments; that search was too narrow and has been corrected. The user's follow-up “did I not send you just now ?” was correct.
 
-Known blocking issues: no new adapter failure established. Delivery evidence remains incomplete: original image bytes are not accessible for required PR attachments, and the visible manual invalid-input screenshot does not show the final rejection. Preserve confirmation while finalizing evidence. No delivery push, PR, merge, Release, Hub action or Asset Ledger write has occurred.
+Known blocking issues: none established in the plugin payload. The incomplete manual invalid-input screenshot is explicitly retained as an evidence limitation, not counted as a passing rejection test. The exact supplied Chinese-name rejection is independently covered by the passing real-SDK tests; agent argument substitution does not establish a plugin defect. User confirmation plus the original enabled-plugin/core-call screenshots are available for delivery. The Chinese package/version/ZIPs remain unchanged. GitHub upload/check/merge results must be recorded only after they occur. Hub and Project Lead acceptance remain separate later actions.
 
 ## English use
 
