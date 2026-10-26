@@ -1,0 +1,28 @@
+{
+  "type": "agent-plugin",
+  "name": "offline-backup-recovery",
+  "version": "1.0.0",
+  "display_name": "离线备份与恢复",
+  "description": "手动备份指定目录，校验归档与文件摘要，预览恢复计划并恢复到新目录；拒绝覆盖、链接和危险路径。",
+  "publisher": "Cai Zhenze",
+  "category": "办公与生产力",
+  "tags": [
+    "离线备份",
+    "完整性校验",
+    "目录恢复"
+  ],
+  "functional_tags": [
+    "Directory Backup",
+    "Integrity Verification",
+    "New-target Recovery"
+  ],
+  "scope": "仅POSIX Python3.11+标准库及宿主SDK；手动选择稳定目录。最多1000个文件/目录、单文件16MiB、合计64MiB、深度20。无联网、模型调用、原地恢复、自动清理、加密或在线宿主迁移。",
+  "candidate_id": "CAND-DSH-275",
+  "task_id": "AH-20261026-offline-backup-recovery",
+  "related_asset_ids": [
+    "850431fa7351409f922e0fbd510d1b8a",
+    "repo:agent-plugin:dsh-fs-encoding",
+    "7202ba29df594ed39b2ac7f42b062c6b",
+    "repo:agent-plugin:source-preview-recovery"
+  ]
+}
