@@ -1,0 +1,23 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/igalil/cheapest-domains-integrations/tree/d81dd545228309d1e43f67832cf5da367883dfc9",
+      "revision": "d81dd545228309d1e43f67832cf5da367883dfc9",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/cheapest-domains/LICENSE",
+          "sha256": "177ce274838539489d3222b84b4759e4fdea7d5a5c13b357a1311b68c6f8c1c4"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "README.md",
+    "skills/domain-research/SKILL.md",
+    "skills/domain-research/references/api.md"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

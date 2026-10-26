@@ -1,0 +1,112 @@
+{
+  "display_name": "域名续费比价",
+  "version": "1.0.0",
+  "task_id": "AH-20261026-domain-renewal-research",
+  "candidate_id": "CAND-CLD-138",
+  "owner": "Nguyen Trung Dung",
+  "native_sha256": "af6ef3967d0dcb88739abf6bf0df5e88e4eb39f98477b536386d0e93159b0d26",
+  "canonical_sha256": "532fefbc5aa7a94fa08ad76270ad9d491e8f4ffe7fac12713a3e4b1c6945a82c",
+  "payload_files": [
+    {
+      "path": "README.md",
+      "bytes": 5400,
+      "sha256": "2a069e7e4c903f35a8edeb90ed7eea4742f92dd2f2ef703ae6072856dc119ecc",
+      "lf": true
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1413,
+      "sha256": "465294ae21a06c1c9f546789f9b40a2a700ca109cf2c1414a3417dc6f4cd6724",
+      "lf": true
+    },
+    {
+      "path": "licenses/cheapest-domains/LICENSE",
+      "bytes": 1082,
+      "sha256": "177ce274838539489d3222b84b4759e4fdea7d5a5c13b357a1311b68c6f8c1c4",
+      "lf": true
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 2621,
+      "sha256": "684d75404033f144776d2048049b2e6041482f85cdb63a37d8e3c95bfa9a3af7",
+      "lf": true
+    },
+    {
+      "path": "skills/domain-research/SKILL.md",
+      "bytes": 7893,
+      "sha256": "1477223cd7a2ad9c5d532ea8dcc37206468b2dd925e58a3be1ea842789dbc91e",
+      "lf": true
+    },
+    {
+      "path": "skills/domain-research/references/api.md",
+      "bytes": 5764,
+      "sha256": "40f5532ff309bbce02b52a0abcf9579ecc41dc4b56700af9d3f46f25caf8a2e7",
+      "lf": true
+    },
+    {
+      "path": "tools/domain_tools.py",
+      "bytes": 8365,
+      "sha256": "cb52c7766261ce90767037e7494c2bdc0d375555673ebc353cd0d534cf9792ec",
+      "lf": true
+    },
+    {
+      "path": "tools/tool_catalog.json",
+      "bytes": 16274,
+      "sha256": "3123def78c931d07c52875c65c5eae5932151cafddcf096774db1656abca7a81",
+      "lf": true
+    }
+  ],
+  "source_native_canonical_equal": true,
+  "utf8_lf_no_bom": true,
+  "zip_crc_and_safe_paths": true,
+  "extracted_payload": "D:\\jiuwen_repos\\agentic-hub-plugins-domain-renewal-research\\.research\\domain-renewal-research\\extracted\\domain-renewal-research",
+  "user_test_confirmation": "pending",
+  "original_user_screenshots": "pending",
+  "hub_operations": "not performed",
+  "source_native_tests": {
+    "passed": 15,
+    "isolation": "fresh real-SDK process"
+  },
+  "extracted_native_tests": {
+    "passed": 15,
+    "isolation": "fresh real-SDK process"
+  },
+  "source_live_native_tools": {
+    "passed": 11,
+    "planned": 11,
+    "model_calls": 0
+  },
+  "extracted_live_native_tools": {
+    "passed": 3,
+    "planned": 3,
+    "model_calls": 0
+  },
+  "real_deepagent_model_visible_tools": 12,
+  "real_host_source_and_extracted": "PASS; Runner invocation, skill binding and unload; payload bytes unchanged",
+  "license_sha256": "177ce274838539489d3222b84b4759e4fdea7d5a5c13b357a1311b68c6f8c1c4",
+  "upstream_license_copies": "root/plugin/Skill identical blob791c5d5ab858d37c3bb8766c34c3077e67b3ff04; no NOTICE",
+  "check_repo": {
+    "source_assets": 35,
+    "release_zips": 44,
+    "result": "PASS"
+  },
+  "full_windows_repository_suite": {
+    "baseline_commit": "341277d",
+    "baseline_summary": "Ran 290 tests in 7.648s\n\nFAILED (failures=62, errors=75, skipped=60)\n",
+    "port_summary": "Ran 293 tests in 20.233s\n\nFAILED (failures=62, errors=75, skipped=60)\n",
+    "new_failure_headers": [],
+    "baseline_only_headers": [],
+    "identical_failure_headers": true,
+    "isolated_native_cases": 15,
+    "ui_inventory": {
+      "apps": 0,
+      "browsers": 0
+    }
+  },
+  "ui_verification": "Chinese identity/descriptions/schema/errors checked through real SDK; actual frontend manual test pending, no connected CUA surface",
+  "optional_radar_live": "not called; independent data license preserved",
+  "status": "Ready for Testing",
+  "delivery_push_pr_release_hub": "not performed",
+  "git_index_native_payload_equal": true,
+  "git_index_payload_files": 8
+}

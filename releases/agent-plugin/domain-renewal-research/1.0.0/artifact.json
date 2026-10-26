@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:domain-renewal-research",
+  "type": "agent-plugin",
+  "name": "domain-renewal-research",
+  "version": "1.0.0",
+  "zip": "domain-renewal-research-1.0.0.zip",
+  "sha256": "532fefbc5aa7a94fa08ad76270ad9d491e8f4ffe7fac12713a3e4b1c6945a82c",
+  "payload_sha256": {
+    "licenses/cheapest-domains/LICENSE": "177ce274838539489d3222b84b4759e4fdea7d5a5c13b357a1311b68c6f8c1c4",
+    "manifest.json": "684d75404033f144776d2048049b2e6041482f85cdb63a37d8e3c95bfa9a3af7",
+    "README.md": "2a069e7e4c903f35a8edeb90ed7eea4742f92dd2f2ef703ae6072856dc119ecc",
+    "skills/domain-research/references/api.md": "40f5532ff309bbce02b52a0abcf9579ecc41dc4b56700af9d3f46f25caf8a2e7",
+    "skills/domain-research/SKILL.md": "1477223cd7a2ad9c5d532ea8dcc37206468b2dd925e58a3be1ea842789dbc91e",
+    "THIRD_PARTY_NOTICES.md": "465294ae21a06c1c9f546789f9b40a2a700ca109cf2c1414a3417dc6f4cd6724",
+    "tools/domain_tools.py": "cb52c7766261ce90767037e7494c2bdc0d375555673ebc353cd0d534cf9792ec",
+    "tools/tool_catalog.json": "3123def78c931d07c52875c65c5eae5932151cafddcf096774db1656abca7a81"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "5b02128885c085abf2ee47d2e5d9aa3f85dabcadea616a0098658c60d22a31ee",
+  "functional_test_report_sha256": "4f672ec4e009ca914510f7296d3238375a3cf2c6fcadb6742420edb70b806d18"
+}

@@ -7,3 +7,12 @@
 /plugins/windows-toolkit/test-packages/*.zip -text
 /plugins/windows-toolkit/test-evidence/*.png -text
 /releases/agent-plugin/windows-toolkit/**/*.zip -text
+
+# Keep the confirmed domain-research payload identical on Windows and LF clones.
+/plugins/domain-renewal-research/**/*.md text eol=lf
+/plugins/domain-renewal-research/**/*.py text eol=lf
+/plugins/domain-renewal-research/**/*.json text eol=lf
+/plugins/domain-renewal-research/domain-renewal-research/licenses/cheapest-domains/LICENSE text eol=lf
+/plugins/domain-renewal-research/test-packages/*.zip -text
+/releases/agent-plugin/domain-renewal-research/**/artifact.json text eol=lf
+/releases/agent-plugin/domain-renewal-research/**/*.zip -text
