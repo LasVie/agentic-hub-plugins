@@ -55,9 +55,9 @@
   "utf8_lf_no_bom": true,
   "zip_crc_and_safe_paths": true,
   "extracted": "D:\\jiuwen_repos\\agentic-hub-plugins-coffee-brewing-research\\.research\\coffee-brewing-research\\extracted-native",
-  "frontend_test": "pending user",
-  "user_confirmation": "pending",
-  "screenshots": "pending",
+  "frontend_test": "Explicit user completion with eight original screenshots; cropped-result limits recorded",
+  "user_confirmation": "Confirmed working; Nguyen Trung Dung; 2026-10-26; RPT-20261026-coffee-brewing-research-confirmed-100",
+  "screenshots": "evidence/1.0.0/evidence.json; eight original PNGs",
   "tests": {
     "source_real_sdk_cases": 15,
     "extracted_real_sdk_cases": 15,
@@ -81,7 +81,7 @@
     "github_ci": "Not run; Build remains local",
     "source_initial_id_failure": "Preserved; exact returned names succeeded in a separate diagnostic and later comparison",
     "rate_limit": "429 observed and preserved; no automatic retry; waited before separate remaining checks",
-    "frontend_conversation": "Pending user"
+    "frontend_conversation": "Confirmed working by user; original screenshots preserved with scope/limits"
   },
   "checked_at_utc": "2026-10-26T08:19:04.513023+00:00",
   "git_index_runtime_bytes_match_tested_zip": true

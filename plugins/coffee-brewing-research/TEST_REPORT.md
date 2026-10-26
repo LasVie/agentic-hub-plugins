@@ -35,9 +35,14 @@ SDK 来自本机已安装的编辑式宿主源码，实际版本随 host-verific
 
 ## 用户测试与交付
 
-尚未收到本版本用户完成确认或原始测试截图；选中 Percolate 只是开发授权。
-本次验证不代替前端导入/启用/模型会话测试；不声称 Hermes CLI 完整会话或 UI 已验证。
-代码/ZIP 保留本地；无 push、PR、Release、Hub 操作或 Asset Ledger 写入。
+Nguyen Trung Dung 于 2026-10-26 在当前会话明确回复 **“Confirmed working”**，同时提供本版本八张截图。
+已找到八张对应原始 PNG、逐一查看核对，并无损复制至 evidence/1.0.0；原名、尺寸和哈希见 evidence.json。
+确认关联本报告同一 1.0.0 原生与外层 ZIP，二者哈希及八个运行文件均保持不变。
+确认 Report ID：RPT-20261026-coffee-brewing-research-confirmed-100。
+图像实际覆盖启用、Skill 读取、多项工具完成及本地拒绝；若干截图未显示完整原始结果，搜索图仅显示 Skill 调用，
+错误图显示 ok:false 但截断完整错误代码/提示。保留这些证据限制，不虚构手工原始输出验证。
+前端会话成功由用户明确确认；独立 SDK/公开服务/宿主验证分别记录。不声称实际 Hermes CLI 模型会话已测试。
+完整材料已收集，可进入提交；PR、图像永久链接和实际 Linux CI 必须在合并前验证。
 
 ## 最终实际结果
 
@@ -56,8 +61,8 @@ SDK 来自本机已安装的编辑式宿主源码，实际版本随 host-verific
 - Native SHA-256：`f7b178268153b8075460d5ba6e1ae1f72ab8e2dd1106576596eb54f2e916bb4b`。
 - Canonical SHA-256：`974eacf436ce73b99571e03c30b41877b6a7318609bf73f5b84badfc8ecd31ea`。
 - `asset_release.py check-repo`：**36 assets / 45 ZIPs PASS**。未重新运行完整 Windows 仓库套件，不声称全绿；
-  没有交付 PR 或 GitHub CI。后续提交仍须通过实际 Linux CI。
-- 中文名称、说明、schema、Skill、错误和原样中文查询已验证；前端导入/启用/模型会话和 Hermes 会话仍待用户。
+  Build 阶段未运行 GitHub CI；后续提交仍须通过实际 Linux CI。
+- 中文名称、说明、schema、Skill、错误和原样中文查询已验证；用户已明确确认前端当前版本工作并提供八张原始截图；未进行实际 Hermes 模型会话。
 - 实际源服务响应、限流/失败和诊断日志仅保存在忽略的 .research，未打包或分发目录结果。
 
-当前为 Ready for Testing；必须接收本版本完成确认和原始截图后才能进入提交。已知上游 ID、限流、胶囊/器具限制均写入中文指南。
+当前版本用户完成确认和八张原始截图已收集，可进入 Submit；实际 PR/图像链接/CI 验证记录随后通过 PR 和 tracker 补充。已知上游 ID、限流、胶囊/器具限制均写入中文指南。

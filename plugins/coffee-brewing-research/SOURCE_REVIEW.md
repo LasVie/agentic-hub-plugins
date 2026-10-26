@@ -59,8 +59,10 @@ Cards conservatively disable automatic replay/parallel safety despite upstream r
 
 The reviewed Chinese runtime must be tested and extracted before Ready for Testing. Actual results and
 final hashes are recorded in TEST_REPORT.md and package-verification.json after those steps occur.
-User selection authorizes Build; current-package user confirmation and original screenshots are not yet
-received. No delivery push/PR/merge/Release or Hub action is authorized by this source review alone.
+Nguyen Trung Dung explicitly confirmed the unchanged current Chinese 1.0.0 package with “Confirmed working”
+on 2026-10-26 and supplied eight original screenshots. USER_TEST_CONFIRMATION.md records exact hashes,
+Report ID and image scope/limits. Complete materials now permit Submit; actual evidence/CI verification
+is required before merge. This source review alone does not establish user testing or Hub publication.
 
 ## Final package verification
 
@@ -70,4 +72,5 @@ Native SHA-256 `f7b178268153b8075460d5ba6e1ae1f72ab8e2dd1106576596eb54f2e916bb4b
 Original 1080-byte MIT blob and SHA-256 match the pinned source. Chinese original-name lookup guidance and pods/format
 limits were added before these ZIPs were created. Subsequent outer test-report/metadata changes do not change runtime bytes.
 Actual source/extracted SDK, hosted service and real-agent evidence is in TEST_REPORT.md / host-verification.json.
-No user confirmation, screenshots or GitHub delivery are claimed for this new asset.
+Current-package user confirmation and eight original screenshots are recorded in USER_TEST_CONFIRMATION.md
+and evidence/1.0.0/evidence.json. Actual GitHub delivery is recorded separately after creation/verification.
