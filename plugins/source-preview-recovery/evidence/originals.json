@@ -1,0 +1,66 @@
+{
+  "task_id": "AH-20261023-source-preview-recovery",
+  "candidate_id": "CAND-DSH-121",
+  "display_name": "原文快照与精简预览",
+  "version": "1.0.1",
+  "native_zip_sha256": "99d19c3d678c8c6a64fa269375362a71345bb8bf9335a39553f320af2da168b5",
+  "canonical_zip_sha256": "183bc30c69074c0748d07e399a0664478200152699fd91e97bd86b5a521a2d14",
+  "original_full_resolution_no_recompression": true,
+  "images": [
+    {
+      "sequence": 1,
+      "original_filename": "Screenshot 2026-10-26 at 10.11.52 AM.png",
+      "path": "evidence/user-test-1.0.1-01.png",
+      "width": 1854,
+      "height": 1968,
+      "bytes": 398935,
+      "sha256": "ebb79462a460ff0364a43dfa869792881da9069e65b629129a6a715ac86f88d9",
+      "source": "Original user attachment in current independent Codex conversation",
+      "role": "test instructions"
+    },
+    {
+      "sequence": 2,
+      "original_filename": "Screenshot 2026-10-26 at 10.12.01 AM.png",
+      "path": "evidence/user-test-1.0.1-02.png",
+      "width": 1726,
+      "height": 1958,
+      "bytes": 351609,
+      "sha256": "5e4b755329ad7e3a9c43f336575ed3ecdafbd35757cea413436ce9ecd7a849c8",
+      "source": "Original user attachment in current independent Codex conversation",
+      "role": "test instructions"
+    },
+    {
+      "sequence": 3,
+      "original_filename": "Screenshot 2026-10-26 at 10.12.09 AM.png",
+      "path": "evidence/user-test-1.0.1-03.png",
+      "width": 1712,
+      "height": 1942,
+      "bytes": 361773,
+      "sha256": "ac773340ad552ba7f36ae94f99b3c7401286489193f93e9c915d741a49b212a7",
+      "source": "Original user attachment in current independent Codex conversation",
+      "role": "test instructions"
+    },
+    {
+      "sequence": 4,
+      "original_filename": "Screenshot 2026-10-26 at 10.12.20 AM.png",
+      "path": "evidence/user-test-1.0.1-04.png",
+      "width": 1652,
+      "height": 1950,
+      "bytes": 452066,
+      "sha256": "4938562f09aa45e9040cab1e2205cd746d539ea422210e518566f85ddbe99f53",
+      "source": "Original user attachment in current independent Codex conversation",
+      "role": "actual returned-result summary and limitations"
+    },
+    {
+      "sequence": 5,
+      "original_filename": "Screenshot 2026-10-26 at 10.12.32 AM.png",
+      "path": "evidence/user-test-1.0.1-05.png",
+      "width": 1610,
+      "height": 1960,
+      "bytes": 571605,
+      "sha256": "3304574addf7ec82dd388c92135132bf5707441805c833081210a11e34e409f1",
+      "source": "Original user attachment in current independent Codex conversation",
+      "role": "actual returned-result summary and limitations"
+    }
+  ]
+}

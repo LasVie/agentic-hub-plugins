@@ -1,0 +1,323 @@
+{
+  "host_source_commit": "3ef1de9bf0b4813e2a0e8674dedc499c78e53df2",
+  "isolation": {
+    "commit": "3ef1de9bf0b4813e2a0e8674dedc499c78e53df2",
+    "source": "fresh physical copy of this task’s earlier verified pinned git archive; excludes caches, node_modules and .env",
+    "state_and_config_copied": false,
+    "node_modules": "independent copy-on-write files; no symlink to another instance"
+  },
+  "prepared": {
+    "source_commit": "3ef1de9bf0b4813e2a0e8674dedc499c78e53df2",
+    "data_dir": "/private/tmp/source-preview-recovery-workswarm-20261023/data",
+    "credentials_copied": false,
+    "models_disabled": true,
+    "prewarm": false,
+    "image_probe": false
+  },
+  "host": {
+    "checked_at": "2026-10-23T10:30:01.620488+00:00",
+    "frontend": {
+      "status": 200,
+      "html": true
+    },
+    "websockets": [
+      {
+        "port": 29260,
+        "ping_pong": true,
+        "config_ok": true,
+        "catalog_ok": true
+      },
+      {
+        "port": 6387,
+        "ping_pong": true,
+        "config_ok": true,
+        "catalog_ok": true
+      }
+    ],
+    "model_requests_sent": 0,
+    "instance": "/private/tmp/source-preview-recovery-workswarm-20261023",
+    "imported": {
+      "type": "res",
+      "id": "preview-1e83898eca66433ba6ba4822aa3a8885",
+      "ok": true,
+      "payload": {
+        "id": "source-preview-recovery"
+      }
+    },
+    "installed": {
+      "type": "res",
+      "id": "preview-dbe9ebaca4fc434fa15a921693e1a2f7",
+      "ok": true,
+      "payload": {}
+    }
+  },
+  "installed_loader_and_tools": {
+    "summary": {
+      "passed": true,
+      "version": "1.0.1",
+      "display_name": "原文快照与精简预览",
+      "tool_count": 3,
+      "skill_count": 1,
+      "actual_tool_invocations": 13,
+      "fresh_process_recovery": true,
+      "payload_unchanged": true,
+      "network_attempts": 0,
+      "model_requests": 0,
+      "installed_path": "/private/tmp/source-preview-recovery-workswarm-20261023/data/agent/workspace/plugins/plugin_packages/local/source-preview-recovery"
+    },
+    "results": {
+      "unauthorized": {
+        "ok": false,
+        "version": "1.0.1",
+        "error": {
+          "code": "confirmation_required",
+          "message": "创建快照会保存完整原文；必须得到用户明确授权并传入 confirmed=true。"
+        }
+      },
+      "preview": {
+        "ok": true,
+        "version": "1.0.1",
+        "snapshot_id": "sha256-d67872e977b684ff20d42234e71c6e0c9f0676501e1d19d11bd4671862eb069d",
+        "sha256": "d67872e977b684ff20d42234e71c6e0c9f0676501e1d19d11bd4671862eb069d",
+        "original_bytes": 3167,
+        "line_count": 233,
+        "utf8_bom": false,
+        "integrity_verified": true,
+        "message": "原文快照已验证保存；以下只是精简预览，不能代替原文或视为无损编码。",
+        "reused": false,
+        "strategy": "source-line-preview",
+        "preview": "L1: 标题🙂\nL2: \nL3: 重复行\nL4: 重复行\nL5: 重复行\nL6: 重复行\nL7: 重复行\nL8: 重复行\nL9: 重复行\nL10: 重复行\nL11: 重复行\nL12: 重复行\nL13: 重复行\n〔省略源文件第 14～31 行〕\nL32: 重复行\nL33: 错误：需要复核\nL34: 中文内容\n〔省略源文件第 35～65 行〕\nL66: 中文内容\n〔省略源文件第 67～118 行〕\nL119: 中文内容\n〔省略源文件第 120～171 行〕\nL172: 中文内容\n〔省略源文件第 173～224 行〕\nL225: 中文内容\nL226: 中文内容\nL227: 中文内容\nL228: 中文内容\nL229: 中文内容\nL230: 中文内容\nL231: 中文内容\nL232: 中文内容\nL233: 中文内容\n",
+        "shown_source_lines": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          32,
+          33,
+          34,
+          66,
+          119,
+          172,
+          225,
+          226,
+          227,
+          228,
+          229,
+          230,
+          231,
+          232,
+          233
+        ],
+        "preview_bytes": 655,
+        "preview_reduced": true,
+        "recovery_hint": "使用 recover_source_snapshot 按 ID 检查或读取源行；完整字节请使用 export_source_snapshot 导出到新的路径。"
+      },
+      "repeated": {
+        "ok": true,
+        "version": "1.0.1",
+        "snapshot_id": "sha256-d67872e977b684ff20d42234e71c6e0c9f0676501e1d19d11bd4671862eb069d",
+        "sha256": "d67872e977b684ff20d42234e71c6e0c9f0676501e1d19d11bd4671862eb069d",
+        "original_bytes": 3167,
+        "line_count": 233,
+        "utf8_bom": false,
+        "integrity_verified": true,
+        "message": "原文快照已验证保存；以下只是精简预览，不能代替原文或视为无损编码。",
+        "reused": true,
+        "strategy": "source-line-preview",
+        "preview": "L1: 标题🙂\nL2: \nL3: 重复行\nL4: 重复行\nL5: 重复行\nL6: 重复行\nL7: 重复行\nL8: 重复行\nL9: 重复行\nL10: 重复行\nL11: 重复行\nL12: 重复行\nL13: 重复行\n〔省略源文件第 14～31 行〕\nL32: 重复行\nL33: 错误：需要复核\nL34: 中文内容\n〔省略源文件第 35～65 行〕\nL66: 中文内容\n〔省略源文件第 67～118 行〕\nL119: 中文内容\n〔省略源文件第 120～171 行〕\nL172: 中文内容\n〔省略源文件第 173～224 行〕\nL225: 中文内容\nL226: 中文内容\nL227: 中文内容\nL228: 中文内容\nL229: 中文内容\nL230: 中文内容\nL231: 中文内容\nL232: 中文内容\nL233: 中文内容\n",
+        "shown_source_lines": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          32,
+          33,
+          34,
+          66,
+          119,
+          172,
+          225,
+          226,
+          227,
+          228,
+          229,
+          230,
+          231,
+          232,
+          233
+        ],
+        "preview_bytes": 655,
+        "preview_reduced": true,
+        "recovery_hint": "使用 recover_source_snapshot 按 ID 检查或读取源行；完整字节请使用 export_source_snapshot 导出到新的路径。"
+      },
+      "range": {
+        "ok": true,
+        "version": "1.0.1",
+        "snapshot_id": "sha256-d67872e977b684ff20d42234e71c6e0c9f0676501e1d19d11bd4671862eb069d",
+        "sha256": "d67872e977b684ff20d42234e71c6e0c9f0676501e1d19d11bd4671862eb069d",
+        "original_bytes": 3167,
+        "line_count": 233,
+        "utf8_bom": false,
+        "integrity_verified": true,
+        "start_line": 32,
+        "end_line": 34,
+        "text": "重复行\r\n错误：需要复核\r\n中文内容\r\n",
+        "range_bytes": 48,
+        "message": "已从完整快照回取指定源行，保留原换行。"
+      },
+      "original_after_source_changed": {
+        "ok": true,
+        "version": "1.0.1",
+        "snapshot_id": "sha256-d67872e977b684ff20d42234e71c6e0c9f0676501e1d19d11bd4671862eb069d",
+        "sha256": "d67872e977b684ff20d42234e71c6e0c9f0676501e1d19d11bd4671862eb069d",
+        "original_bytes": 3167,
+        "line_count": 233,
+        "utf8_bom": false,
+        "integrity_verified": true,
+        "message": "快照完整性验证通过；没有读取当前源文件。"
+      },
+      "export": {
+        "ok": true,
+        "version": "1.0.1",
+        "snapshot_id": "sha256-d67872e977b684ff20d42234e71c6e0c9f0676501e1d19d11bd4671862eb069d",
+        "sha256": "d67872e977b684ff20d42234e71c6e0c9f0676501e1d19d11bd4671862eb069d",
+        "original_bytes": 3167,
+        "line_count": 233,
+        "utf8_bom": false,
+        "integrity_verified": true,
+        "message": "已将验证后的完整原文字节导出到新文件。",
+        "output": "/private/tmp/source-preview-recovery-workswarm-20261023/runtime/installed-fixtures-101/完整导出.txt",
+        "exported_bytes": 3167
+      },
+      "refuse_overwrite": {
+        "ok": false,
+        "version": "1.0.1",
+        "error": {
+          "code": "output_exists",
+          "message": "输出路径已存在；拒绝覆盖，请选择新的文件名。"
+        }
+      },
+      "typed_json": {
+        "ok": true,
+        "version": "1.0.1",
+        "snapshot_id": "sha256-f224b7ea829e70469b632b309dfca5091f956156167c289cff726fb38cc6eeb6",
+        "sha256": "f224b7ea829e70469b632b309dfca5091f956156167c289cff726fb38cc6eeb6",
+        "original_bytes": 2041,
+        "line_count": 1,
+        "utf8_bom": false,
+        "integrity_verified": true,
+        "message": "原文快照已验证保存；以下只是精简预览，不能代替原文或视为无损编码。",
+        "reused": false,
+        "strategy": "json-record-preview",
+        "preview": "JSON 数组记录预览；R 为记录序号，不是源文件行号。标量保留引号以区分类型。\n字段：[\"n\", \"s\", \"v\", \"b\", \"t\"]\nR1: 900719925474099312345, \"null\", null, true, \"true\"\nR2: 900719925474099312345, \"null\", null, true, \"true\"\nR3: 900719925474099312345, \"null\", null, true, \"true\"\nR4: 900719925474099312345, \"null\", null, true, \"true\"\nR5: 900719925474099312345, \"null\", null, true, \"true\"\nR6: 900719925474099312345, \"null\", null, true, \"true\"\nR7: 900719925474099312345, \"null\", null, true, \"true\"\nR8: 900719925474099312345, \"null\", null, true, \"true\"\nR9: 900719925474099312345, \"null\", null, true, \"true\"\nR10: 900719925474099312345, \"null\", null, true, \"true\"\nR11: 900719925474099312345, \"null\", null, true, \"true\"\nR12: 900719925474099312345, \"null\", null, true, \"true\"\nR13: 900719925474099312345, \"null\", null, true, \"true\"\n〔省略数组记录 14～14〕\nR15: 900719925474099312345, \"null\", null, true, \"true\"\n〔省略数组记录 16～16〕\nR17: 900719925474099312345, \"null\", null, true, \"true\"\n〔省略数组记录 18～18〕\nR19: 900719925474099312345, \"null\", null, true, \"true\"\n〔省略数组记录 20～20〕\nR21: 900719925474099312345, \"null\", null, true, \"true\"\n〔省略数组记录 22～22〕\nR23: 900719925474099312345, \"null\", null, true, \"true\"\nR24: 900719925474099312345, \"null\", null, true, \"true\"\nR25: 900719925474099312345, \"null\", null, true, \"true\"\nR26: 900719925474099312345, \"null\", null, true, \"true\"\nR27: 900719925474099312345, \"null\", null, true, \"true\"\nR28: 900719925474099312345, \"null\", null, true, \"true\"\nR29: 900719925474099312345, \"null\", null, true, \"true\"\nR30: 900719925474099312345, \"null\", null, true, \"true\"\n",
+        "shown_source_lines": [],
+        "preview_bytes": 1673,
+        "preview_reduced": true,
+        "recovery_hint": "使用 recover_source_snapshot 按 ID 检查或读取源行；完整字节请使用 export_source_snapshot 导出到新的路径。"
+      },
+      "large_preview": {
+        "ok": true,
+        "version": "1.0.1",
+        "snapshot_id": "sha256-8674ef6d79761164654c47bdf828a340813349c5e440a60e439030af8945a3b7",
+        "sha256": "8674ef6d79761164654c47bdf828a340813349c5e440a60e439030af8945a3b7",
+        "original_bytes": 1000000,
+        "line_count": 50000,
+        "utf8_bom": false,
+        "integrity_verified": true,
+        "message": "原文快照已验证保存；以下只是精简预览，不能代替原文或视为无损编码。",
+        "reused": false,
+        "strategy": "source-line-preview",
+        "preview": "L1: 大文件中文🙂\nL2: 大文件中文🙂\nL3: 大文件中文🙂\nL4: 大文件中文🙂\nL5: 大文件中文🙂\nL6: 大文件中文🙂\nL7: 大文件中文🙂\nL8: 大文件中文🙂\nL9: 大文件中文🙂\nL10: 大文件中文🙂\nL11: 大文件中文🙂\nL12: 大文件中文🙂\nL13: 大文件中文🙂\n〔省略源文件第 14～12507 行〕\nL12508: 大文件中文🙂\n〔省略源文件第 12509～25002 行〕\nL25003: 大文件中文🙂\n〔省略源文件第 25004～37497 行〕\nL37498: 大文件中文🙂\n〔省略源文件第 37499～49992 行〕\nL49993: 大文件中文🙂\nL49994: 大文件中文🙂\nL49995: 大文件中文🙂\nL49996: 大文件中文🙂\nL49997: 大文件中文🙂\nL49998: 大文件中文🙂\nL49999: 大文件中文🙂\nL50000: 大文件中文🙂\n",
+        "shown_source_lines": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          12508,
+          25003,
+          37498,
+          49993,
+          49994,
+          49995,
+          49996,
+          49997,
+          49998,
+          49999,
+          50000
+        ],
+        "preview_bytes": 793,
+        "preview_reduced": true,
+        "recovery_hint": "使用 recover_source_snapshot 按 ID 检查或读取源行；完整字节请使用 export_source_snapshot 导出到新的路径。"
+      },
+      "large_export": {
+        "ok": true,
+        "version": "1.0.1",
+        "snapshot_id": "sha256-8674ef6d79761164654c47bdf828a340813349c5e440a60e439030af8945a3b7",
+        "sha256": "8674ef6d79761164654c47bdf828a340813349c5e440a60e439030af8945a3b7",
+        "original_bytes": 1000000,
+        "line_count": 50000,
+        "utf8_bom": false,
+        "integrity_verified": true,
+        "message": "已将验证后的完整原文字节导出到新文件。",
+        "output": "/private/tmp/source-preview-recovery-workswarm-20261023/runtime/installed-fixtures-101/large-export.txt",
+        "exported_bytes": 1000000
+      },
+      "large_range_rejected": {
+        "ok": false,
+        "version": "1.0.1",
+        "error": {
+          "code": "range_too_large",
+          "message": "单次最多回取 1000 行；请缩小范围或完整导出。"
+        }
+      }
+    },
+    "fresh_process_result": {
+      "ok": true,
+      "version": "1.0.1",
+      "snapshot_id": "sha256-d67872e977b684ff20d42234e71c6e0c9f0676501e1d19d11bd4671862eb069d",
+      "sha256": "d67872e977b684ff20d42234e71c6e0c9f0676501e1d19d11bd4671862eb069d",
+      "original_bytes": 3167,
+      "line_count": 233,
+      "utf8_bom": false,
+      "integrity_verified": true,
+      "message": "快照完整性验证通过；没有读取当前源文件。"
+    }
+  },
+  "ui_inspection": {
+    "Chinese_display_and_three_tools": "passed by AX and screenshot after final101 reimport",
+    "screenshot": "/private/tmp/source-preview-recovery-workswarm-20261023/runtime/extensions-details-1.0.1.png",
+    "human_test_evidence": false
+  },
+  "limitations": [
+    "No model chat or OS file-picker upload exercised; real import/install RPC and installed SDK Tools passed.",
+    "Fresh instance has disabled model placeholder; user configures model locally if using chat.",
+    "macOS host tested; Linux host not exercised; Windows unsupported."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:source-preview-recovery",
+  "type": "agent-plugin",
+  "name": "source-preview-recovery",
+  "version": "1.0.1",
+  "zip": "source-preview-recovery-1.0.1.zip",
+  "sha256": "183bc30c69074c0748d07e399a0664478200152699fd91e97bd86b5a521a2d14",
+  "payload_sha256": {
+    "README.md": "6430a02f798a5f12323528e59326fa8668affdd0bd705bbefe6b9abdd6f054d8",
+    "THIRD_PARTY_NOTICES.md": "9167553b78cdda0600e5eed9d5d2d3b69b47c6d53b1887375a50f926a5d8ff11",
+    "licenses/save-token/LICENSE": "d9f4d0687b6934f18e9bab4e75f26c04b83a5f5d7898f464a921abd1ee8ef85e",
+    "licenses/save-token/UPSTREAM_HEADER.txt": "9d7a8c017c8ea1bcc2d7be1cc5d35990b8235a52f0ec8a07e37ccf449742ba04",
+    "manifest.json": "605e53391c57babce4308a9f4c7ed8c5d4a8989ee6c68b312e6d598f4c48fbd8",
+    "runtime/recovery.py": "8ee07a7b452d6ddc96ac6f4df23733154f4257c3989e738e085b13b519e63691",
+    "skills/source-recovery/SKILL.md": "d8948de9d348e19bfd99d662965ca3ceb4d74301569c67d40a07930646fe3d35",
+    "tools/recovery_tools.py": "cd656feff569460d19fde674ba1199108711de3c8c4d5c3bcdc76a6cca368915"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "7a5a93b59f12c3c64a53a7499c4dec70a492f1b21e687dd63086d751a00ce6b3",
+  "functional_test_report_sha256": "c9a83e3a29377f05562d59aa893ced4cf7b40413324ac1a200fdd1d7b1f6e522"
+}
