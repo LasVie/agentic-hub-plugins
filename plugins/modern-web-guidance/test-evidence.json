@@ -1,0 +1,114 @@
+{
+  "date": "2026-10-27",
+  "task_id": "AH-20261027-modern-web-guidance",
+  "version": "1.0.0",
+  "canonical_zip": "D:\\资料\\华为实习\\jiuwenswarm-plugin\\work-repository\\agentic-hub-plugins\\releases\\agent-plugin\\modern-web-guidance\\1.0.0\\modern-web-guidance-1.0.0.zip",
+  "canonical_sha256": "94c518ae4400e5cab1867c68447ba13a78bd9975faf3a74c33deed8c98e7ffd3",
+  "native_zip": "D:\\资料\\华为实习\\jiuwenswarm-plugin\\plugin-builds\\modern-web-guidance\\1.0.0\\modern-web-guidance-1.0.0-native.zip",
+  "native_sha256": "295a9af3d23306068801d3ee7b9f72af78e02e6c792bb97eaf31558839f3101b",
+  "canonical_bytes": 106884,
+  "native_bytes": 104548,
+  "payload_file_count": 23,
+  "deterministic_repack": true,
+  "payloads_equal": true,
+  "extracted_payload_unchanged_after_tests": true,
+  "python_tests": 11,
+  "node_tests": 5,
+  "tests": [
+    {
+      "command": [
+        "D:\\资料\\华为实习\\jiuwenswarm-plugin\\jiuwenswarm\\.venv\\Scripts\\python.exe",
+        "D:\\资料\\华为实习\\jiuwenswarm-plugin\\work-repository\\agentic-hub-plugins\\plugins\\modern-web-guidance\\tests\\test_plugin.py"
+      ],
+      "returncode": 0,
+      "log": "D:\\资料\\华为实习\\jiuwenswarm-plugin\\plugin-builds\\modern-web-guidance\\1.0.0\\extracted-test-1.log",
+      "log_sha256": "dff93c9b0faaf739540db3a3de8b6fccf0cd811f20c7dad3602af2a4f116de86"
+    },
+    {
+      "command": [
+        "D:\\envs\\nodejs24\\node.EXE",
+        "--test",
+        "D:\\资料\\华为实习\\jiuwenswarm-plugin\\work-repository\\agentic-hub-plugins\\plugins\\modern-web-guidance\\tests\\test_bm25.mjs"
+      ],
+      "returncode": 0,
+      "log": "D:\\资料\\华为实习\\jiuwenswarm-plugin\\plugin-builds\\modern-web-guidance\\1.0.0\\extracted-test-2.log",
+      "log_sha256": "ff0965bd199880782e536d3b33b91f0951c217d966bb18ec5e9638d5e47609d2"
+    }
+  ],
+  "human_testing": "Passed; explicitly confirmed by Gan Mingrui in the current conversation on 2026-10-27.",
+  "ui_import": "Already installed when inspected; all 23 installed payload files equal the tested source/native ZIP payload.",
+  "original_screenshots": "D:\\资料\\华为实习\\jiuwenswarm-plugin\\plugin-builds\\modern-web-guidance\\1.0.0\\host-test-20261027",
+  "host_ui_testing": {
+    "date": "2026-10-27",
+    "task_id": "AH-20261027-modern-web-guidance",
+    "operator": "AI browser operator, explicitly delegated by Gan Mingrui in the current conversation",
+    "url": "http://localhost:5173/chat/web_1a17b892dac_f543033b14ff",
+    "model_display": "deepseek/deepseek-v4.1-flash",
+    "installed_payload_matches_source": true,
+    "matched_files": 23,
+    "version": "1.0.0",
+    "guide_count": 12,
+    "results": {
+      "installed_skill_and_tool_visible": "passed",
+      "help": "passed",
+      "ime_search_retrieve": "passed",
+      "dialog_search_retrieve": "passed",
+      "lcp_search_retrieve": "passed",
+      "uncovered_postgresql_search": "passed; results=[]"
+    },
+    "limits": [
+      "Import operation predated observation; installed state verified.",
+      "No actual IME/Safari/snippet execution or performance benchmark."
+    ],
+    "evidence": [
+      {
+        "name": "01-installed-plugin.jpg",
+        "sha256": "515b69e3bb5a8005504a6230ae9802ec59f86b035bd06f3cc87089f3dcc40b53",
+        "bytes": 41942
+      },
+      {
+        "name": "02-help-tool.jpg",
+        "sha256": "5789e31097d7e94fe4db09b4b8f8462da216e029185701f76266727d62ed5047",
+        "bytes": 51882
+      },
+      {
+        "name": "03-help-result.jpg",
+        "sha256": "e14fd869358313cf6fbdd25c7bf6942633f70ac9013e641a277533a2519ec41a",
+        "bytes": 62799
+      },
+      {
+        "name": "04-dialog-summary.jpg",
+        "sha256": "d4153cf28616c53e2e5ee5a7a2bbd6fe00d5b81e45e459685874c612bc26d516",
+        "bytes": 74079
+      },
+      {
+        "name": "05-lcp-uncovered.jpg",
+        "sha256": "e54033d07e709392528c2090b9bde2fff8069c3f5cbee67a31784b395fa5d4ab",
+        "bytes": 88972
+      },
+      {
+        "name": "ui-dialogue-dom.txt",
+        "sha256": "a9ee8894758ba308d4bb4986a91a108fb9eb70e1ab2603e365ae5f2d2aa71c57",
+        "bytes": 53042
+      },
+      {
+        "name": "ui-tool-evidence.txt",
+        "sha256": "94038f2578fa4da77d90f932175f289b9e588a4c7d0afd48a4f550718c3b0be0",
+        "bytes": 24101
+      }
+    ]
+  },
+  "user_confirmation": {
+    "quote": "1.0.0 测试通过",
+    "confirmed_by": "Gan Mingrui",
+    "date": "2026-10-27",
+    "recorded_at": "2026-10-27T14:02:24+08:00",
+    "source": "Current conversation; no message permalink available",
+    "task_id": "AH-20261027-modern-web-guidance",
+    "report_id": "RPT-20261027-modern-web-guidance-confirmed-100",
+    "version": "1.0.0",
+    "canonical_sha256": "94c518ae4400e5cab1867c68447ba13a78bd9975faf3a74c33deed8c98e7ffd3",
+    "native_sha256": "295a9af3d23306068801d3ee7b9f72af78e02e6c792bb97eaf31558839f3101b",
+    "known_blockers": "none"
+  }
+}

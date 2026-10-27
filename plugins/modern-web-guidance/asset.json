@@ -1,0 +1,22 @@
+{
+  "type": "agent-plugin",
+  "name": "modern-web-guidance",
+  "version": "1.0.0",
+  "display_name": "现代网页技术指南",
+  "description": "离线检索 12 篇中文现代 Web 精选指南，提供可追溯的实现要点、浏览器兼容快照和降级建议。",
+  "publisher": "Gan Mingrui",
+  "category": "软件开发",
+  "tags": [
+    "前端开发",
+    "浏览器兼容",
+    "离线检索",
+    "渐进增强"
+  ],
+  "functional_tags": [
+    "Modern Web Platform Guidance"
+  ],
+  "scope": "12 篇中文精选改编指南；本地 BM25 检索，不含全量语义模型、Chrome 扩展开发或实时兼容性更新。",
+  "publisher_role": "Packaging maintainer; Hub publication handled by the Project Lead.",
+  "candidate_id": "CAND-CLD-076",
+  "task_id": "AH-20261027-modern-web-guidance"
+}

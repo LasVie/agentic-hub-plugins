@@ -1,0 +1,167 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://www.npmjs.com/package/modern-web-guidance/v/0.0.196",
+      "revision": "0.0.196; distribution repository 4f2b13e25c5815b3f080ca0d983e828d96561a0f",
+      "license_expression": "Apache-2.0",
+      "author": "GoogleChrome (publisher in upstream package.json); no file-specific copyright line in the selected guides/SKILL.",
+      "reused_source_paths": [
+        "skills/modern-web-guidance/SKILL.md",
+        "skills/modern-web-guidance/guides.json",
+        "skills/modern-web-guidance/guides/css/size-aware-styling.md",
+        "skills/modern-web-guidance/guides/css/style-parent-with-has.md",
+        "skills/modern-web-guidance/guides/ui-behaviors/light-dismiss-a-dialog.md",
+        "skills/modern-web-guidance/guides/css/animate-to-intrinsic-sizes.md",
+        "skills/modern-web-guidance/guides/ui-behaviors/same-document-transitions.md",
+        "skills/modern-web-guidance/guides/performance/optimize-image-priority.md",
+        "skills/modern-web-guidance/guides/performance/break-up-long-tasks.md",
+        "skills/modern-web-guidance/guides/performance/defer-rendering-heavy-content.md",
+        "skills/modern-web-guidance/guides/forms/validate-input-after-interaction.md",
+        "skills/modern-web-guidance/guides/forms/ime-safe-enter-submit.md",
+        "skills/modern-web-guidance/guides/ui-atoms/responsive-table.md",
+        "skills/modern-web-guidance/guides/visual-design/dark-mode.md"
+      ],
+      "license_evidence": [
+        {
+          "path": "licenses/modern-web-guidance/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "path": "licenses/modern-web-guidance/THIRD_PARTY_NOTICES",
+          "sha256": "6c15a79dd9fde68f3f175fa8a0ffbfd88dc25bfbfd07ce554286e432caad56f3"
+        }
+      ],
+      "notice_present": false,
+      "third_party_notices_present": true
+    },
+    {
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src/blob/8a0a736723558e9ae484e4b6bbf3cc6a8d6ba4ad/src/rag/bm25.ts",
+      "revision": "8a0a736723558e9ae484e4b6bbf3cc6a8d6ba4ad",
+      "license_expression": "Apache-2.0",
+      "author": "GoogleChrome repository; bm25.ts contains no file-specific copyright line.",
+      "reused_source_paths": [
+        "src/rag/bm25.ts"
+      ],
+      "license_evidence": [
+        {
+          "path": "licenses/modern-web-guidance-src/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ],
+      "notice_present": false
+    }
+  ],
+  "reused_paths": [
+    "runtime/bm25.mjs",
+    "skills/modern-web-guidance/SKILL.md",
+    "data/catalog.json",
+    "data/guides/size-aware-styling.md",
+    "data/guides/style-parent-with-has.md",
+    "data/guides/light-dismiss-a-dialog.md",
+    "data/guides/animate-to-intrinsic-sizes.md",
+    "data/guides/same-document-transitions.md",
+    "data/guides/optimize-image-priority.md",
+    "data/guides/break-up-long-tasks.md",
+    "data/guides/defer-rendering-heavy-content.md",
+    "data/guides/validate-input-after-interaction.md",
+    "data/guides/ime-safe-enter-submit.md",
+    "data/guides/responsive-table.md",
+    "data/guides/dark-mode.md",
+    "licenses/modern-web-guidance/LICENSE",
+    "licenses/modern-web-guidance/THIRD_PARTY_NOTICES",
+    "licenses/modern-web-guidance-src/LICENSE"
+  ],
+  "audit_file": "SOURCE_REVIEW.md",
+  "package_maintainer": "Gan Mingrui",
+  "input_package": {
+    "filename": "modern-web-guidance-0.0.196.tgz",
+    "sha256": "c2728821e16071044bae353f74ec3cd6ced9d1c001a24a133e4c4ebd190798f8",
+    "sha512_integrity": "sha512-M+tLvHwRo27cqgwMgSz+JRLoUv4n4dP9z9eNM9pPfxRbc0TMzKauqBJtcAvkvBS5Zwa2DUw43FFNAYgbV8uk4A=="
+  },
+  "scope": "12 Chinese abridged/adapted guides and lexical BM25 retrieval; not a full upstream port.",
+  "source_mapping": [
+    {
+      "source": "skills/modern-web-guidance/guides/css/size-aware-styling.md",
+      "source_sha256": "18605ef97e5cd22604ce07be958176ad700c17ac7387790ddeff78ddbce1b7b1",
+      "target": "data/guides/size-aware-styling.md",
+      "target_sha256": "cbf91092924e9fe6f301fc66ae283b4679512cd9f96dededb027f9cf5e653cbf"
+    },
+    {
+      "source": "skills/modern-web-guidance/guides/css/style-parent-with-has.md",
+      "source_sha256": "1daa831051199af73a360c3812aefed36268e1582740aeef75cbd994f0acef74",
+      "target": "data/guides/style-parent-with-has.md",
+      "target_sha256": "6d60b6e7dd20d3619709bbf65bb4df95c247f5f48b05682e36198acdd6dbcf0b"
+    },
+    {
+      "source": "skills/modern-web-guidance/guides/ui-behaviors/light-dismiss-a-dialog.md",
+      "source_sha256": "63701ee5f5ca0fa516151e90fcc23a3ce263d4984146495b4452d7756cf46259",
+      "target": "data/guides/light-dismiss-a-dialog.md",
+      "target_sha256": "847a1de52511a26c24f45713c87cbbd55cfba095df8eb5b2a2dcef75b0e3ca6b"
+    },
+    {
+      "source": "skills/modern-web-guidance/guides/css/animate-to-intrinsic-sizes.md",
+      "source_sha256": "08dfdae16f501a2727859b82af4cefc3c68819615ec7033d7bb043478285142a",
+      "target": "data/guides/animate-to-intrinsic-sizes.md",
+      "target_sha256": "952b356e3fc6342d3a1e30083348248c95c25a04af1df8631eb65700c724124c"
+    },
+    {
+      "source": "skills/modern-web-guidance/guides/ui-behaviors/same-document-transitions.md",
+      "source_sha256": "a7ed8055ea00003017cd965588f87921915054a83e35915ac60dee1d89e452a1",
+      "target": "data/guides/same-document-transitions.md",
+      "target_sha256": "6be6b3a9bb6ad078a5a7754e037adb9b355655e985c248abf120663965b662cd"
+    },
+    {
+      "source": "skills/modern-web-guidance/guides/performance/optimize-image-priority.md",
+      "source_sha256": "4f1345b87b2e96b3e97185082cd1f38b8fc06f5a2e98f5c66062aa88ed00bc46",
+      "target": "data/guides/optimize-image-priority.md",
+      "target_sha256": "a39b1cbc868547eab0064661773ea0fe52a0b8ef3db75a6d15ce0bef04f6b4b0"
+    },
+    {
+      "source": "skills/modern-web-guidance/guides/performance/break-up-long-tasks.md",
+      "source_sha256": "0102bca572c87a8aa55458e01c0ef2ab5befddbef43df3e3762a5bd1e9449f81",
+      "target": "data/guides/break-up-long-tasks.md",
+      "target_sha256": "b04e2f5c85d309480c86cf9155b4dd34f38bdee005f203ad32d99e9ccc2fd0dc"
+    },
+    {
+      "source": "skills/modern-web-guidance/guides/performance/defer-rendering-heavy-content.md",
+      "source_sha256": "99f4e9b7b376b7be9c9acd22c04ec66d8bb8b50677a31d212c394d84f74adae9",
+      "target": "data/guides/defer-rendering-heavy-content.md",
+      "target_sha256": "93b597b464cd9b2071e0182d146be1a78d0fbef5aaab530155225ff0c2951b09"
+    },
+    {
+      "source": "skills/modern-web-guidance/guides/forms/validate-input-after-interaction.md",
+      "source_sha256": "a3699bb30041af3142858c9ec4066932e865410f2777873684ce8ad1a188cc3f",
+      "target": "data/guides/validate-input-after-interaction.md",
+      "target_sha256": "e59f9db7cb82018c42a806b03088b6f2428d3d45f9f4493e921731f1fbd1c90d"
+    },
+    {
+      "source": "skills/modern-web-guidance/guides/forms/ime-safe-enter-submit.md",
+      "source_sha256": "fcfdf8aaa9348c0004aaec3c26d3a0fed9ca586d9f3c84d3512643bcfee5fd8a",
+      "target": "data/guides/ime-safe-enter-submit.md",
+      "target_sha256": "0c1643376a3c6244e6c825826a8b7a257206e70616e217312c34bc38c2013789"
+    },
+    {
+      "source": "skills/modern-web-guidance/guides/ui-atoms/responsive-table.md",
+      "source_sha256": "8c932c22d531d93e5120251feaa5c79380f5f10ad312f608a7ef2c050e24bf84",
+      "target": "data/guides/responsive-table.md",
+      "target_sha256": "29df168c4f8e1989a05d1da7fd33c2fe9d805205b188e5e97afa89574465a253"
+    },
+    {
+      "source": "skills/modern-web-guidance/guides/visual-design/dark-mode.md",
+      "source_sha256": "f34345bba25c253d697c5d030ba023b3746bd5e3c5f0eef8df523b330d902711",
+      "target": "data/guides/dark-mode.md",
+      "target_sha256": "8564f02451a73d2c2deb9d241dc69e50613a4dbf544da5695225449f16340e4d"
+    }
+  ],
+  "bm25_source_sha256": "5b8758a0c30a36f1a77fb00ea2e55a02756911d5236cf1b093f50f6bab839f92",
+  "skill_source_sha256": "11be6f07942e9ee38b1e1c2c087dc04854e83a9b37f19c4e1907c3e359988ad9",
+  "catalog_source_sha256": "8d9461ed77313d57ab1978d26faf5eb979cdfc639882e0ce48061710c2ca339b",
+  "changes": [
+    "Chinese abridged guide adaptations with per-file notices and upstream snapshot caveats.",
+    "Reused BM25 scoring; removed TypeScript types, translated comments and added CJK bigram tokens.",
+    "Native Tool/ToolCard bridge and bounded local JSON CLI; no downloaded dependencies, telemetry, dense model or automatic install/update.",
+    "Chinese task-scoped skill replaces npx/latest and forced global triggering."
+  ]
+}

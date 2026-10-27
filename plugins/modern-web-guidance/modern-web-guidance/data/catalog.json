@@ -1,0 +1,103 @@
+{
+  "modification_notice": "2026-10-27：从上游 guides.json 选取 12 个稳定 ID，添加中文描述、关键词和固定来源。",
+  "upstream_version": "0.0.196",
+  "snapshot_date": "2026-10-27",
+  "guides": [
+    {
+      "id": "size-aware-styling",
+      "title": "容器宽度驱动的组件布局",
+      "keywords": "容器查询 卡片 响应式 侧栏 container queries responsive card",
+      "description": "组件应根据所在容器的空间调整布局，而非只看整个视口。先在外层设置 `container-type: inline-size`，再让内层组件响应 `@container`；被查询的容器不能靠自己的尺寸查询来改变自身。",
+      "category": "样式布局",
+      "source": "https://github.com/GoogleChrome/modern-web-guidance/blob/4f2b13e25c5815b3f080ca0d983e828d96561a0f/skills/modern-web-guidance/guides/css/size-aware-styling.md"
+    },
+    {
+      "id": "style-parent-with-has",
+      "title": "根据子元素状态设置父容器样式",
+      "keywords": "父元素 表单 错误 has user-invalid parent styling validation",
+      "description": "使用 `.field-group:has(input:user-invalid)` 根据输入状态装饰祖先。范围限定到具体表单分组，避免用 `body:has(...)` 扫描大范围 DOM。`:has()` 与 `:user-invalid` 是两个不同能力，必须分别检测，不能拿后者的支持版本证明前者兼容。",
+      "category": "样式布局",
+      "source": "https://github.com/GoogleChrome/modern-web-guidance/blob/4f2b13e25c5815b3f080ca0d983e828d96561a0f/skills/modern-web-guidance/guides/css/style-parent-with-has.md"
+    },
+    {
+      "id": "light-dismiss-a-dialog",
+      "title": "点击遮罩关闭模态弹窗",
+      "keywords": "弹窗 对话框 点击外部 遮罩 dialog modal light dismiss closedby",
+      "description": "用原生 `<dialog>` 和 `showModal()` 提供模态行为、顶层显示及焦点约束。`closedby=\"any\"` 允许点击外部和关闭请求；`closerequest` 仅允许关闭请求及程序关闭；`none` 仅允许程序关闭。非模态 `show()` 没有同样的遮罩行为。",
+      "category": "界面交互",
+      "source": "https://github.com/GoogleChrome/modern-web-guidance/blob/4f2b13e25c5815b3f080ca0d983e828d96561a0f/skills/modern-web-guidance/guides/ui-behaviors/light-dismiss-a-dialog.md"
+    },
+    {
+      "id": "animate-to-intrinsic-sizes",
+      "title": "动画展开到内容自然高度",
+      "keywords": "自动高度 折叠 展开 动画 interpolate-size calc-size accordion auto height",
+      "description": "`interpolate-size: allow-keywords` 可让固定长度与固有尺寸关键字之间发生插值。必须显式启用；不能直接在 `min-content` 与 `max-content` 等两个关键字之间插值。",
+      "category": "样式布局",
+      "source": "https://github.com/GoogleChrome/modern-web-guidance/blob/4f2b13e25c5815b3f080ca0d983e828d96561a0f/skills/modern-web-guidance/guides/css/animate-to-intrinsic-sizes.md"
+    },
+    {
+      "id": "same-document-transitions",
+      "title": "单页视图切换的渐进过渡",
+      "keywords": "视图过渡 页面切换 SPA view transitions startViewTransition",
+      "description": "用 `document.startViewTransition()` 包裹 DOM 更新，使用唯一的 `view-transition-name` 关联前后视图中的共享元素。同一快照内不能有两个元素使用相同名称。只为主要内容建立共享动画，结束后清理临时名称。",
+      "category": "界面交互",
+      "source": "https://github.com/GoogleChrome/modern-web-guidance/blob/4f2b13e25c5815b3f080ca0d983e828d96561a0f/skills/modern-web-guidance/guides/ui-behaviors/same-document-transitions.md"
+    },
+    {
+      "id": "optimize-image-priority",
+      "title": "优先加载首屏关键图片",
+      "keywords": "首屏 图片 性能 优先级 LCP fetchpriority image priority lazy",
+      "description": "先确认页面实际的 LCP 候选图片，再为最多一到两张关键图片设置 `fetchpriority=\"high\"`。不要给所有图片提权，也不要将 LCP 图片设为 `loading=\"lazy\"`。",
+      "category": "性能优化",
+      "source": "https://github.com/GoogleChrome/modern-web-guidance/blob/4f2b13e25c5815b3f080ca0d983e828d96561a0f/skills/modern-web-guidance/guides/performance/optimize-image-priority.md"
+    },
+    {
+      "id": "break-up-long-tasks",
+      "title": "拆分阻塞主线程的长任务",
+      "keywords": "长任务 卡顿 响应 INP scheduler yield long tasks",
+      "description": "长循环会阻塞输入与渲染。按时间预算分批处理，并把控制权交还浏览器。`await Promise.resolve()` 只排入微任务，不等同于让出主线程进行下一次渲染。",
+      "category": "性能优化",
+      "source": "https://github.com/GoogleChrome/modern-web-guidance/blob/4f2b13e25c5815b3f080ca0d983e828d96561a0f/skills/modern-web-guidance/guides/performance/break-up-long-tasks.md"
+    },
+    {
+      "id": "defer-rendering-heavy-content",
+      "title": "延后渲染首屏外复杂内容",
+      "keywords": "长页面 首屏外 渲染 性能 content-visibility contain-intrinsic-size",
+      "description": "`content-visibility: auto` 适合初始视口之外、相对独立且内部复杂的区块。不要对首屏关键内容使用它，否则额外的可见性判断可能反而拖慢首屏。",
+      "category": "性能优化",
+      "source": "https://github.com/GoogleChrome/modern-web-guidance/blob/4f2b13e25c5815b3f080ca0d983e828d96561a0f/skills/modern-web-guidance/guides/performance/defer-rendering-heavy-content.md"
+    },
+    {
+      "id": "validate-input-after-interaction",
+      "title": "用户交互后再显示表单错误",
+      "keywords": "表单 验证 校验 错误 user-invalid user-valid form validation",
+      "description": "通过 `required`、`type=\"email\"`、`pattern` 等原生约束表达校验条件，再用 `:user-invalid` 延后显示错误。不要使用初始 `:invalid` 状态把尚未填写的字段全部标红。",
+      "category": "表单输入",
+      "source": "https://github.com/GoogleChrome/modern-web-guidance/blob/4f2b13e25c5815b3f080ca0d983e828d96561a0f/skills/modern-web-guidance/guides/forms/validate-input-after-interaction.md"
+    },
+    {
+      "id": "ime-safe-enter-submit",
+      "title": "避免中文输入法回车误提交",
+      "keywords": "中文 输入法 回车 误发送 拼音 IME composition Enter submit",
+      "description": "中文、日文和韩文输入法会用 Enter 确认候选词。自定义键盘提交逻辑必须区分确认候选与提交消息；这也适用于搜索框、命令面板和重命名输入框。",
+      "category": "表单输入",
+      "source": "https://github.com/GoogleChrome/modern-web-guidance/blob/4f2b13e25c5815b3f080ca0d983e828d96561a0f/skills/modern-web-guidance/guides/forms/ime-safe-enter-submit.md"
+    },
+    {
+      "id": "responsive-table",
+      "title": "小屏可读的语义化数据表格",
+      "keywords": "响应式 表格 固定表头 横向滚动 table sticky headers",
+      "description": "保留 `<table>`、`<thead>`、`<tbody>`、`<th>` 等语义和数据关系。用有名称、键盘可聚焦的滚动区域承载宽表格；固定表头和行标题帮助用户持续识别上下文。",
+      "category": "基础组件",
+      "source": "https://github.com/GoogleChrome/modern-web-guidance/blob/4f2b13e25c5815b3f080ca0d983e828d96561a0f/skills/modern-web-guidance/guides/ui-atoms/responsive-table.md"
+    },
+    {
+      "id": "dark-mode",
+      "title": "跟随系统的深浅主题",
+      "keywords": "暗色 深色 主题 夜间模式 dark mode color-scheme light-dark",
+      "description": "先在文档 head 声明支持的配色，再把 `color-scheme` 作用于 `:root` 或 `html`，使浏览器表单控件、滚动条和页面背景跟随主题。只设在 body 不能保证全视口界面同步。",
+      "category": "视觉主题",
+      "source": "https://github.com/GoogleChrome/modern-web-guidance/blob/4f2b13e25c5815b3f080ca0d983e828d96561a0f/skills/modern-web-guidance/guides/visual-design/dark-mode.md"
+    }
+  ]
+}
