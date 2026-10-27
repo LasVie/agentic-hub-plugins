@@ -1,0 +1,126 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/alexgreensh/anidoodle",
+      "revision": "f746cbd8a7032463bd0bc88ee8ff852599193b8c",
+      "license_expression": "Apache-2.0",
+      "author": "Copyright 2026 Alex Greenshpun",
+      "reused_source_paths": [
+        "skills/anidoodle/engine/src/canvas-core/core.ts",
+        "skills/anidoodle/engine/src/canvas-core/bake.ts",
+        "skills/anidoodle/engine/src/canvas-core/input.ts",
+        "skills/anidoodle/engine/src/canvas-core/storybook.ts",
+        "skills/anidoodle/engine/src/canvas-core/bitRig.ts",
+        "skills/anidoodle/engine/src/canvas-core/mascotHero.ts",
+        "skills/anidoodle/engine/src/canvas-core/formMascot.ts",
+        "skills/anidoodle/engine/src/canvas-core/scrollHero.ts",
+        "skills/anidoodle/engine/src/hosts/interactive.ts"
+      ],
+      "license_evidence": [
+        {
+          "path": "licenses/anidoodle/LICENSE",
+          "sha256": "52470b5f684dde202910fbeef20ae4f4da8534c679492c0e9903470c26802aa0"
+        },
+        {
+          "path": "licenses/anidoodle/NOTICE",
+          "sha256": "302e06ead6aed0bba06dc2c1fe9dc82f0be972b4241094e03bd8c4f06aa45700"
+        }
+      ],
+      "notice_present": true
+    }
+  ],
+  "reused_paths": [
+    "engine/src/canvas-core/core.ts",
+    "engine/src/canvas-core/bake.ts",
+    "engine/src/canvas-core/input.ts",
+    "engine/src/canvas-core/storybook.ts",
+    "engine/src/canvas-core/bitRig.ts",
+    "engine/src/canvas-core/mascotHero.ts",
+    "engine/src/canvas-core/formMascot.ts",
+    "engine/src/canvas-core/scrollHero.ts",
+    "engine/src/hosts/interactive.ts",
+    "licenses/anidoodle/LICENSE",
+    "licenses/anidoodle/NOTICE",
+    "engine/art.js"
+  ],
+  "audit_file": "SOURCE_REVIEW.md",
+  "package_maintainer": "Gan Mingrui",
+  "source_mapping": [
+    {
+      "source": "skills/anidoodle/engine/src/canvas-core/core.ts",
+      "target": "engine/src/canvas-core/core.ts",
+      "modified": false,
+      "source_sha256": "c542fce365e1fbc21d1e2523240fb5834e9e83440bf48cf2f94605ae733c6f00",
+      "target_sha256": "c542fce365e1fbc21d1e2523240fb5834e9e83440bf48cf2f94605ae733c6f00"
+    },
+    {
+      "source": "skills/anidoodle/engine/src/canvas-core/bake.ts",
+      "target": "engine/src/canvas-core/bake.ts",
+      "modified": false,
+      "source_sha256": "e200498de7ed19cd3b8eb4c992f1e712dbef5adddf84d1c99b23c48907235398",
+      "target_sha256": "e200498de7ed19cd3b8eb4c992f1e712dbef5adddf84d1c99b23c48907235398"
+    },
+    {
+      "source": "skills/anidoodle/engine/src/canvas-core/input.ts",
+      "target": "engine/src/canvas-core/input.ts",
+      "modified": true,
+      "source_sha256": "c244d165e06f6b1386690655babf07a6530399deb0b17def9f86c0dcfe6f08fd",
+      "target_sha256": "d098badaa6243c24d7fdde1683d371169bca01ac1dbc251668b69f2c45181475"
+    },
+    {
+      "source": "skills/anidoodle/engine/src/canvas-core/storybook.ts",
+      "target": "engine/src/canvas-core/storybook.ts",
+      "modified": false,
+      "source_sha256": "fb625db833347048a2b96d7afcb368b54c8c6d1378aeb5f13df27b738697d55a",
+      "target_sha256": "fb625db833347048a2b96d7afcb368b54c8c6d1378aeb5f13df27b738697d55a"
+    },
+    {
+      "source": "skills/anidoodle/engine/src/canvas-core/bitRig.ts",
+      "target": "engine/src/canvas-core/bitRig.ts",
+      "modified": false,
+      "source_sha256": "d936fedce6ba45ba372a448f50f35c13879bf3c2879dae1c33ef7bb18eee847d",
+      "target_sha256": "d936fedce6ba45ba372a448f50f35c13879bf3c2879dae1c33ef7bb18eee847d"
+    },
+    {
+      "source": "skills/anidoodle/engine/src/canvas-core/mascotHero.ts",
+      "target": "engine/src/canvas-core/mascotHero.ts",
+      "modified": true,
+      "source_sha256": "767ba854009b01ea7f059a992b6a3c0091432beb8a6c5181db6d7725fdda91e1",
+      "target_sha256": "a747a0e9c82dd68477099d632b9f9826a3433a6e1d38a3c669861ec823e70e20"
+    },
+    {
+      "source": "skills/anidoodle/engine/src/canvas-core/formMascot.ts",
+      "target": "engine/src/canvas-core/formMascot.ts",
+      "modified": true,
+      "source_sha256": "9dacf9326672af333205f0cc8cbbab778667368e034c31769bbf6509e154d140",
+      "target_sha256": "a72f0d49b3a69504c986202302fb75dcd34c32bb14d5765c1c8d90887b5bebae"
+    },
+    {
+      "source": "skills/anidoodle/engine/src/canvas-core/scrollHero.ts",
+      "target": "engine/src/canvas-core/scrollHero.ts",
+      "modified": true,
+      "source_sha256": "193522bbf56c6190b82f103ff75768cfda5af752a457bee3c2d1e2406b436ffb",
+      "target_sha256": "9ff30edd5f5c1855e74fe801d2fdbf0137678ee35ba84d8532beaa328dfb2632"
+    },
+    {
+      "source": "skills/anidoodle/engine/src/hosts/interactive.ts",
+      "target": "engine/src/hosts/interactive.ts",
+      "modified": true,
+      "source_sha256": "42f3e1ecece1bfd46fc91a9c5c028e8072acfd4f1ba91e67b39f4ff4b94b91d7",
+      "target_sha256": "29afadeb71a833e1d13ea205803490df5b5f5dadcf4089e2d91512901363a99f"
+    }
+  ],
+  "scope": "Selected interactive canvas core; optional sound pack, media, fonts, music/video engines and upstream distribution branding excluded.",
+  "build_dependency": {
+    "name": "esbuild",
+    "version": "0.25.12",
+    "license": "MIT",
+    "license_evidence": {
+      "path": "licenses/esbuild/LICENSE",
+      "sha256": "b40ec5baec7bb34fa5b1c09521fa3cd52d5fad7adafed74932a2010d3612a681"
+    },
+    "distributed": false
+  }
+}
