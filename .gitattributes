@@ -29,4 +29,6 @@
 
 # Preserve the exact user-confirmed modern-web-guidance payload and license hashes.
 /plugins/modern-web-guidance/modern-web-guidance/** -text
+/plugins/modern-web-guidance/TEST_REPORT.md text eol=lf
+/plugins/modern-web-guidance/SOURCE_REVIEW.md text eol=lf
 /releases/agent-plugin/modern-web-guidance/**/*.zip -text
