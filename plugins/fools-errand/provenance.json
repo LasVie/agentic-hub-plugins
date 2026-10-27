@@ -1,0 +1,41 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "audit_file": "SOURCE_REVIEW.md",
+  "sources": [
+    {
+      "url": "https://github.com/srosebattles/fools-errand-game",
+      "revision": "d88025d32a5a4fc08b7fd0edfcadd8ba3b811e36",
+      "version": "1.1.0",
+      "license_expression": "CC-BY-4.0",
+      "author": "Sarah Rose Battles",
+      "attribution_url": "https://llmtextgames.xyz",
+      "license_evidence": [
+        {
+          "path": "licenses/fools-errand/LICENSE",
+          "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744"
+        }
+      ],
+      "source_files": {
+        "README.md": "4f8e6c583b871208bda0b9960498ebbfe00592e1b414c2c921cb8d717d26fd39",
+        ".claude-plugin/plugin.json": "2c0eccfcd3e7d7d8a5ac8bdcf5ac19592a0b377db600e0deeb87d37ec4add3db",
+        "skills/fools-errand/SKILL.md": "6c5eaf1d01e4e5651608ce1ce73913da1f9ab0abf81a724ba8ba391c07ea237e"
+      }
+    }
+  ],
+  "reused_paths": ["skills/fools-errand/SKILL.md", "README.md", "THIRD_PARTY_NOTICES.md", "licenses/fools-errand/LICENSE"],
+  "name_mapping": {
+    "upstream": "A Fool's Errand",
+    "display_name": "糊涂勇者历险记",
+    "slug": "fools-errand"
+  },
+  "modifications": [
+    "2026-10-27: Translate and adapt the game-master Skill and usage into Simplified Chinese.",
+    "Replace Claude marketplace packaging with a native WorkSwarm Plugin containing one Skill and no executable runtime or dependencies.",
+    "Clarify explicit activation, player turn boundaries, nonnegative consumables, consistent in-chat state, honest missing-state handling and no external tool/file operations.",
+    "Preserve CC BY 4.0 attribution, source/license links, disclaimer and modification notices; omit upstream images."
+  ],
+  "runtime_dependencies": [],
+  "excluded_materials": ["assets/icon.png", "assets/icon.svg", ".claude-plugin/marketplace.json"],
+  "research_snapshot_note": "Upstream Skill text had no final LF; the local readable research copy adds a trailing LF. source_files hashes identify the original downloaded bytes, not that normalized copy. The bundled LICENSE is byte-identical to upstream."
+}

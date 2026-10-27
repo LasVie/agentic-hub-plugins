@@ -1,0 +1,38 @@
+{
+  "package_type": "plugin",
+  "id": "fools-errand",
+  "version": "1.0.0",
+  "name": "糊涂勇者历险记",
+  "description": "在当前聊天中进行有选择、有物品和任务状态的轻松文字冒险，无需安装额外运行依赖。",
+  "display_name": {"zh": "糊涂勇者历险记", "en": "糊涂勇者历险记"},
+  "display_description": {
+    "zh": "扮演被近视巫师误认的勇者，用善意、创意和交谈完成三项荒唐任务。进度只保留在当前对话。",
+    "en": "扮演被近视巫师误认的勇者，用善意、创意和交谈完成三项荒唐任务。进度只保留在当前对话。"
+  },
+  "category": "Life",
+  "source": "local",
+  "default_init_input": {
+    "zh": "开始玩《糊涂勇者历险记》，请用中文主持。从第一幕开始，显示初始状态并等我选择。",
+    "en": "开始玩《糊涂勇者历险记》，请用中文主持。从第一幕开始，显示初始状态并等我选择。"
+  },
+  "quick_inputs": [
+    {"zh": "开始玩《糊涂勇者历险记》，请用中文主持。从第一幕开始，显示初始状态并等我选择。", "en": "开始玩《糊涂勇者历险记》，请用中文主持。从第一幕开始，显示初始状态并等我选择。"},
+    {"zh": "继续当前对话中的《糊涂勇者历险记》，先显示状态、物品和任务。", "en": "继续当前对话中的《糊涂勇者历险记》，先显示状态、物品和任务。"},
+    {"zh": "结束当前的《糊涂勇者历险记》，我想回家，请给出结局和最终状态。", "en": "结束当前的《糊涂勇者历险记》，我想回家，请给出结局和最终状态。"}
+  ],
+  "tags": [
+    {"zh": "文字冒险", "en": "文字冒险"},
+    {"zh": "回合选择", "en": "回合选择"},
+    {"zh": "轻松故事", "en": "轻松故事"}
+  ],
+  "skills": [{"dir": "skills/fools-errand", "mode": "all"}],
+  "metadata": {
+    "license": "CC-BY-4.0",
+    "upstream_repository": "https://github.com/srosebattles/fools-errand-game",
+    "upstream_commit": "d88025d32a5a4fc08b7fd0edfcadd8ba3b811e36",
+    "upstream_version": "1.1.0",
+    "original_author": "Sarah Rose Battles",
+    "attribution_url": "https://llmtextgames.xyz",
+    "modification_notice": "2026-10-27：中文翻译与 WorkSwarm 原生 Plugin 包装，补充显式触发、状态核对、安全边界和测试说明；保留原会话内文字冒险机制。不代表原作者认可或背书。"
+  }
+}

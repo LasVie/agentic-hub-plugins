@@ -32,3 +32,8 @@
 /plugins/modern-web-guidance/TEST_REPORT.md text eol=lf
 /plugins/modern-web-guidance/SOURCE_REVIEW.md text eol=lf
 /releases/agent-plugin/modern-web-guidance/**/*.zip -text
+/plugins/fools-errand/fools-errand/** -text
+/plugins/fools-errand/*.md text eol=lf
+/plugins/fools-errand/*.json text eol=lf
+/releases/agent-plugin/fools-errand/**/*.zip -text
+/releases/agent-plugin/fools-errand/**/artifact.json text eol=lf

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:fools-errand",
+  "type": "agent-plugin",
+  "name": "fools-errand",
+  "version": "1.0.0",
+  "zip": "fools-errand-1.0.0.zip",
+  "sha256": "5228e50c52c92de8a1b578592834007651b73f919ed941ff56386a277954fe7e",
+  "payload_sha256": {
+    "README.md": "e876e34397c1fc0f932c8b92cfa2b2463a99acddaf298cad22523ab4ca01befe",
+    "THIRD_PARTY_NOTICES.md": "39a8588792489e42f70cf9abfd79c91a1308d75a1aece5bd497b24e083903389",
+    "licenses/fools-errand/LICENSE": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+    "manifest.json": "7ef31abdad50235723c87aa2dfc65771f2d8482995b73c7f5cd340ab9cd9c439",
+    "skills/fools-errand/SKILL.md": "b3fa1acf2d51874386163bdf7b5f1c00c3eb65c500efcb2f8d9de01f61fd6df8"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "7a4ec25be9b118f69dcec7d217561f7671470a8f31b7cd8325623fed5d2e830b",
+  "functional_test_report_sha256": "e50b1f6f58b11b57eb9e9dc23889e5591f39b82b7ad7ea9d2e279d417c5635f7"
+}

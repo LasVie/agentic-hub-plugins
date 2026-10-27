@@ -1,0 +1,19 @@
+{
+  "task_id": "AH-20261027-fools-errand",
+  "candidate_id": "CAND-CLD-142",
+  "version": "1.0.0",
+  "source": "User-provided PNG images in the current conversation. Exact conversation-saved bytes; no additional resizing, cropping, conversion or compression. Some images were already resized by the conversation system.",
+  "native_zip_sha256": "f62d3ba3d1c4714bfd91538605090e6d4abf1f2b2cb3be87bc851a6291e38b21",
+  "canonical_zip_sha256": "5228e50c52c92de8a1b578592834007651b73f919ed941ff56386a277954fe7e",
+  "hosting_issue": "https://github.com/dashingsss/agentic-hub-plugins/issues/2",
+  "verification": "All seven uploaded PNG files downloaded and verified byte-for-byte by SHA-256 before PR creation.",
+  "images": [
+    {"file": "01-chinese-opening.png", "caption": "中文开局及插件版本", "width": 1979, "height": 1280, "bytes": 523818, "sha256": "6da021a3f5971746ffaca0e19650653297d5f46738eb420cf215a6757296b087", "conversation_timestamp_utc": "2026-10-27T06:50:19.613Z", "image_position_in_message": 1},
+    {"file": "02-free-action.png", "caption": "自由行动与任务清单", "width": 2016, "height": 1241, "bytes": 444453, "sha256": "ab4d756e820009e232404fe38c4091744c127025d927ff72bb6741de77b279e1", "conversation_timestamp_utc": "2026-10-27T06:50:19.613Z", "image_position_in_message": 4},
+    {"file": "03-ending.png", "caption": "提前结束与真实任务结果", "width": 1932, "height": 1224, "bytes": 257354, "sha256": "0cf5a71dad7f8e244bc33d159dec3d8f047f1829ba373cfd85216b25df2d3b84", "conversation_timestamp_utc": "2026-10-27T06:50:19.613Z", "image_position_in_message": 6},
+    {"file": "04-new-conversation.png", "caption": "新对话不伪造旧局状态", "width": 2048, "height": 1082, "bytes": 469031, "sha256": "6c039c98bf77c33700b741051781678d0080f596d4615c388bcca9226b19058e", "conversation_timestamp_utc": "2026-10-27T06:50:19.613Z", "image_position_in_message": 7},
+    {"file": "05-normal-question.png", "caption": "普通请求不自动开局", "width": 1914, "height": 750, "bytes": 169057, "sha256": "79e4c8b2d7d6f197831775bffa66f9dd46ba6492d2b125bae4a368a8c9225387", "conversation_timestamp_utc": "2026-10-27T06:50:19.613Z", "image_position_in_message": 8},
+    {"file": "06-explicit-action.png", "caption": "明确行动指令补测", "width": 1806, "height": 1058, "bytes": 259671, "sha256": "8a90a20386d0179032de5513f736223dc8bba89a1a9ea568bf28c6fc0df965c5", "conversation_timestamp_utc": "2026-10-27T07:15:42.726Z", "image_position_in_message": 1},
+    {"file": "07-task-status.png", "caption": "任务未完成状态与等待玩家", "width": 1760, "height": 1122, "bytes": 180175, "sha256": "01f7cb26971c68a7d096b0dae8a05aa5c814c502a26169ac264c7e7fa9605414", "conversation_timestamp_utc": "2026-10-27T07:21:18.525Z", "image_position_in_message": 1}
+  ]
+}
