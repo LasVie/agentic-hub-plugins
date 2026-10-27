@@ -1,0 +1,89 @@
+{
+  "version": "1.0.0",
+  "display_name": "家庭文档台账",
+  "packages": [
+    {
+      "path": "/Users/IDLE_And_R/.codex/worktrees/581d/agentic-hub-plugins/releases/agent-plugin/family-document-registry/1.0.0/family-document-registry-1.0.0.zip",
+      "sha256": "7434f44e68a3a42850c423019c7449f467c4d89d22896f2dea30087cc174dc56",
+      "bytes": 67920,
+      "payload_files": 18,
+      "payload_matches_source": true,
+      "license_original_bytes": true,
+      "extracted_payload": "/Users/IDLE_And_R/.codex/worktrees/581d/agentic-hub-plugins/dist/family-document-registry/1.0.0/extracted-market/family-document-registry/family-document-registry"
+    },
+    {
+      "path": "/Users/IDLE_And_R/.codex/worktrees/581d/agentic-hub-plugins/plugins/family-document-registry/test-packages/family-document-registry-1.0.0-workswarm.zip",
+      "sha256": "9316d2dd294f4ea488b65a7a466884d46c99f74dd198bfbc6d9ed29815bb3b37",
+      "bytes": 65589,
+      "payload_files": 18,
+      "payload_matches_source": true,
+      "license_original_bytes": true,
+      "extracted_payload": "/Users/IDLE_And_R/.codex/worktrees/581d/agentic-hub-plugins/dist/family-document-registry/1.0.0/extracted-native"
+    }
+  ],
+  "payload_sha256": {
+    "THIRD_PARTY_NOTICES.md": "cd3a7b678ecadc59ceba04d62fd0497d9f72b63a238ff9e1d119fb0ceed15940",
+    "README.md": "09d64e8fb50d9f137a531bf24acab4f27c513b3a9b8370828762570406393798",
+    "manifest.json": "fb3904f0875b43b52d8fe246284f854d9bb3263a28bf1cabd11e6ba509265cbc",
+    "tools/registry_tools.py": "134d9e210223bfe0127d82ab721474c46bfa207f8cc335a3c46212bb37b7990d",
+    "licenses/document-vault/LICENSE": "f0a46556162fa59b55fc18b145c3e58e499018693fa76b9bd4a0a9c66c1a4e88",
+    "runtime/registry.py": "8a46108570d5ba308c0e50091da9bf3407c01ee2b9d53f59adeb80de07ae0685",
+    "examples/材料计划-完整.json": "c4e8a767572d3692d5b00545c5b7f3ef96d783cf7c6aed8772e2cf6b5df15d7d",
+    "examples/材料计划-待确认.json": "bcb5fbd5bc2e26095e6f62a03fd7bffeaafd59b992da54b340a599cdc5e00652",
+    "examples/家庭台账-初始.json": "6d3e81e3311a9fe0ec97ab2650cb5ca9062a7fc64f8165695d91c623014f9094",
+    "examples/非法日期.json": "846dbe7a8297fc85bd90348fe8a557e1383ecfd0e34b0298d1563f39cd347fa8",
+    "examples/重复键.json": "19657748cdfc1c9442b0dbd8b8c3574ce3631b25b2ed8753495f6245a0842273",
+    "examples/家庭台账-确认替换.json": "fa263a27dd5b593c3068af194142b2fd28f4d0f0f2b6503de5d87b24498ee614",
+    "examples/资料/林晨-旧护照.txt": "d4b6adea8bd45c35d3f08f5f6c9c4e286d62b47cd0904612b074512ec5f96831",
+    "examples/资料/林晨-月度证明.txt": "e70091d4026383b14df2118900f4c4fc59a6782b6bbd664201a474d305940f21",
+    "examples/资料/梅宁-月份证明.txt": "b71529f0c7e3f41695a980469be3104ec219a65b8993827c4cfbf96390fe36be",
+    "examples/资料/梅宁-待核对证明.txt": "7ceb7ac481241635e0184a3a43e07d621d998136f0569934672f454eb48cd3d8",
+    "examples/资料/林晨-新护照.txt": "56fd7787d84a149253999b42125ed1da3838c87d0410d209e3de198ea9be3962",
+    "skills/family-documents/SKILL.md": "cfdc934dab9ea4e04c1d4e0f87f8cc4af7755ffab24cad97f262115c3fb97136"
+  },
+  "chinese_utf8": true,
+  "functional_tests": {
+    "source": {
+      "run": 46,
+      "passed": 46
+    },
+    "extracted_market": {
+      "run": 46,
+      "passed": 46
+    },
+    "extracted_native": {
+      "run": 46,
+      "passed": 46
+    },
+    "installed": {
+      "run": 46,
+      "passed": 46
+    },
+    "real_sdk_calls_each": 16
+  },
+  "repository_regression": {
+    "environment": "requirements-dev.txt PyYAML6.0.3 + existing Node22.23.3; optional SDK tests separate",
+    "run": 447,
+    "passed": 381,
+    "skipped": 66,
+    "mixed_optional_sdk_run": "457 run / 1 existing unittest.assertWarns vs openJiuwen lazy module error; documented, not hidden"
+  },
+  "test_evidence_sha256": {
+    "host-catalog-after.json": "254138f19e5892ecbbadcec08131194f6f4cc66ce80a0130b12b3b9cd9cd62dc",
+    "host-catalog-before.json": "c15708a28d0594634dda8fdece8c6b98d9f70db5ad13d6eef7eb809ae5794dd6",
+    "host-import.json": "0c372743fff24d703b6dbdc6d4ee1faeee62f286c8aa2df59ffd96b6f4ab4e60",
+    "installed-sdk.json": "f2e96a0a841349d0fff01f33f143583a1d962977a9bc435bd39cb68a468c5675",
+    "installed-tests.log": "59e9b54498f3b4b98620e08e57f6571daf90f355124cd43c74aaeff994929e0f",
+    "market-sdk.json": "79c8676a0abd2bd34467b4495cd0b6a14ce90fd704fd442d0b8a632531ee832a",
+    "market-tests.log": "b6b84dd8d1f5633c698f16c40611e6bd56ae30c560d5768b9785c587ee024596",
+    "native-sdk.json": "be07630be31f6a012df4e5296558eb4961c8075b84a39e182040634479924fa4",
+    "native-tests.log": "b6b84dd8d1f5633c698f16c40611e6bd56ae30c560d5768b9785c587ee024596",
+    "repository-contract-tests.log": "4e71ae7ec3b13993caaf611e63284a0cbb9a0b81f0f5451592c1498d0ee7b01f",
+    "repository-tests-final.log": "0d4a1338c9381c5a80a7c14e23fc07c5b70fc6df6c2ab802bbe65668fd875ec8",
+    "repository-tests.log": "34350118e779a08eff6092d19be11eb08f988fda51e1408898f1614b6861bffb",
+    "source-sdk.json": "7ef5ea9b7a25ae65db7a6a2b264a9f32381924b5b30b4e84b0ced9cf6566306f",
+    "source-tests.log": "aeefea32d6abe843fece466e05f5f00bf327d491329b322aa2f605c206979c30"
+  },
+  "manual_user_testing_completed": false,
+  "manual_workspace_initialized_by_assistant": false
+}

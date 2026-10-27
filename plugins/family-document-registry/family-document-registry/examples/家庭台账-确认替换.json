@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "people": [
+    {
+      "id": "p_lin",
+      "name": "林晨（虚构）"
+    },
+    {
+      "id": "p_mei",
+      "name": "梅宁（虚构）"
+    }
+  ],
+  "documents": [
+    {
+      "id": "passport_old",
+      "person_id": "p_lin",
+      "kind": "护照",
+      "country": "示例地区",
+      "path": "资料/林晨-旧护照.txt",
+      "issued_on": "2021-09-30",
+      "expires_on": "2026-09-30",
+      "status": "archived",
+      "replaces": null
+    },
+    {
+      "id": "passport_new",
+      "person_id": "p_lin",
+      "kind": "护照",
+      "country": "示例地区",
+      "path": "资料/林晨-新护照.txt",
+      "issued_on": "2026-10-01",
+      "expires_on": "2027-03-31",
+      "status": "active",
+      "replaces": "passport_old"
+    },
+    {
+      "id": "permit_unknown",
+      "person_id": "p_mei",
+      "kind": "居留证明",
+      "country": "示例地区",
+      "path": "资料/梅宁-待核对证明.txt",
+      "issued_on": "2026-08",
+      "expires_on": null,
+      "status": "active",
+      "replaces": null
+    },
+    {
+      "id": "certificate_month",
+      "person_id": "p_mei",
+      "kind": "学习证明",
+      "country": "示例地区",
+      "path": "资料/梅宁-月份证明.txt",
+      "issued_on": "2026-10-01",
+      "expires_on": "2026-11",
+      "status": "active",
+      "replaces": null
+    },
+    {
+      "id": "statement_recent",
+      "person_id": "p_lin",
+      "kind": "月度证明",
+      "country": "示例地区",
+      "path": "资料/林晨-月度证明.txt",
+      "issued_on": "2026-09-30",
+      "expires_on": "2028-12-31",
+      "status": "active",
+      "replaces": null
+    },
+    {
+      "id": "unattached",
+      "person_id": "p_mei",
+      "kind": "历史资料",
+      "country": "示例地区",
+      "path": null,
+      "issued_on": null,
+      "expires_on": null,
+      "status": "archived",
+      "replaces": null
+    }
+  ]
+}

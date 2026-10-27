@@ -1,0 +1,78 @@
+{
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "id": "family-document-registry",
+  "name": "家庭文档台账",
+  "description": "维护经确认的家庭人员与文档元数据，检查有效期及续办状态，按已确认计划生成逐字节核验的材料副本和中文清单。",
+  "display_name": {
+    "en": "家庭文档台账",
+    "zh": "家庭文档台账"
+  },
+  "display_description": {
+    "en": "维护经确认的家庭人员与文档元数据，检查有效期及续办状态，按已确认计划生成逐字节核验的材料副本和中文清单。",
+    "zh": "维护经确认的家庭人员与文档元数据，检查有效期及续办状态，按已确认计划生成逐字节核验的材料副本和中文清单。"
+  },
+  "skills": [
+    {
+      "dir": "skills/family-documents",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/registry_tools.py",
+      "class": "ManageFamilyRegistryTool",
+      "display_name": {
+        "en": "管理家庭文档台账",
+        "zh": "管理家庭文档台账"
+      },
+      "display_description": {
+        "en": "检查完整元数据并经确认保存有历史的新修订。",
+        "zh": "检查完整元数据并经确认保存有历史的新修订。"
+      }
+    },
+    {
+      "file": "tools/registry_tools.py",
+      "class": "InspectFamilyDocumentsTool",
+      "display_name": {
+        "en": "检查文档有效期",
+        "zh": "检查文档有效期"
+      },
+      "display_description": {
+        "en": "只读核对日期精度、续办状态、替换关系与文件摘要。",
+        "zh": "只读核对日期精度、续办状态、替换关系与文件摘要。"
+      }
+    },
+    {
+      "file": "tools/registry_tools.py",
+      "class": "PrepareFamilyDocumentPackTool",
+      "display_name": {
+        "en": "预览并创建材料副本",
+        "zh": "预览并创建材料副本"
+      },
+      "display_description": {
+        "en": "精确绑定已确认计划，创建新材料包、中文清单和摘要清单。",
+        "zh": "精确绑定已确认计划，创建新材料包、中文清单和摘要清单。"
+      }
+    }
+  ],
+  "tags": [
+    {
+      "en": "家庭文档",
+      "zh": "家庭文档"
+    },
+    {
+      "en": "有效期",
+      "zh": "有效期"
+    },
+    {
+      "en": "持续台账",
+      "zh": "持续台账"
+    },
+    {
+      "en": "本地处理",
+      "zh": "本地处理"
+    }
+  ],
+  "category": "Others"
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:family-document-registry",
+  "type": "agent-plugin",
+  "name": "family-document-registry",
+  "version": "1.0.0",
+  "zip": "family-document-registry-1.0.0.zip",
+  "sha256": "7434f44e68a3a42850c423019c7449f467c4d89d22896f2dea30087cc174dc56",
+  "payload_sha256": {
+    "README.md": "09d64e8fb50d9f137a531bf24acab4f27c513b3a9b8370828762570406393798",
+    "THIRD_PARTY_NOTICES.md": "cd3a7b678ecadc59ceba04d62fd0497d9f72b63a238ff9e1d119fb0ceed15940",
+    "examples/家庭台账-初始.json": "6d3e81e3311a9fe0ec97ab2650cb5ca9062a7fc64f8165695d91c623014f9094",
+    "examples/家庭台账-确认替换.json": "fa263a27dd5b593c3068af194142b2fd28f4d0f0f2b6503de5d87b24498ee614",
+    "examples/材料计划-完整.json": "c4e8a767572d3692d5b00545c5b7f3ef96d783cf7c6aed8772e2cf6b5df15d7d",
+    "examples/材料计划-待确认.json": "bcb5fbd5bc2e26095e6f62a03fd7bffeaafd59b992da54b340a599cdc5e00652",
+    "examples/资料/林晨-新护照.txt": "56fd7787d84a149253999b42125ed1da3838c87d0410d209e3de198ea9be3962",
+    "examples/资料/林晨-旧护照.txt": "d4b6adea8bd45c35d3f08f5f6c9c4e286d62b47cd0904612b074512ec5f96831",
+    "examples/资料/林晨-月度证明.txt": "e70091d4026383b14df2118900f4c4fc59a6782b6bbd664201a474d305940f21",
+    "examples/资料/梅宁-待核对证明.txt": "7ceb7ac481241635e0184a3a43e07d621d998136f0569934672f454eb48cd3d8",
+    "examples/资料/梅宁-月份证明.txt": "b71529f0c7e3f41695a980469be3104ec219a65b8993827c4cfbf96390fe36be",
+    "examples/重复键.json": "19657748cdfc1c9442b0dbd8b8c3574ce3631b25b2ed8753495f6245a0842273",
+    "examples/非法日期.json": "846dbe7a8297fc85bd90348fe8a557e1383ecfd0e34b0298d1563f39cd347fa8",
+    "licenses/document-vault/LICENSE": "f0a46556162fa59b55fc18b145c3e58e499018693fa76b9bd4a0a9c66c1a4e88",
+    "manifest.json": "fb3904f0875b43b52d8fe246284f854d9bb3263a28bf1cabd11e6ba509265cbc",
+    "runtime/registry.py": "8a46108570d5ba308c0e50091da9bf3407c01ee2b9d53f59adeb80de07ae0685",
+    "skills/family-documents/SKILL.md": "cfdc934dab9ea4e04c1d4e0f87f8cc4af7755ffab24cad97f262115c3fb97136",
+    "tools/registry_tools.py": "134d9e210223bfe0127d82ab721474c46bfa207f8cc335a3c46212bb37b7990d"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "3c780cb17eff7ad22f43cafe9c79b34a603eb4af3928b14a753a96cf70ecf038",
+  "functional_test_report_sha256": "5b52ac65f423b1f3883b502fe7b1e5d7ebe7938f8a9c157d1e208f7a7436b805"
+}

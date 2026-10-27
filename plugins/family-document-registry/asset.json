@@ -1,0 +1,28 @@
+{
+  "type": "agent-plugin",
+  "name": "family-document-registry",
+  "version": "1.0.0",
+  "display_name": "家庭文档台账",
+  "description": "维护经确认的家庭人员与文档元数据，检查有效期及续办状态，按已确认计划生成逐字节核验的材料副本和中文清单。",
+  "publisher": "Cai Zhenze",
+  "category": "办公与生产力",
+  "tags": [
+    "家庭文档",
+    "有效期",
+    "持续台账",
+    "本地处理"
+  ],
+  "functional_tags": [
+    "Persistent Person Document Registry",
+    "Expiry and Renewal Management",
+    "Approved Copy-only Packs"
+  ],
+  "scope": "Python3.11+、macOS/Linux及现有宿主SDK。用户确认的元数据、精确日期/不确定性、修订历史与材料副本；无OCR、自动整理/删除、加密、联网、模型调用或法律资格判断。",
+  "candidate_id": "CAND-CLD-247",
+  "task_id": "AH-20261026-family-document-registry",
+  "related_asset_ids": [
+    "a789d92d40df427a948a5cfe8f7fd50e",
+    "58423394089843bcb863654f02ab937a",
+    "2c760446a88c433aaff1bf94f046701a"
+  ]
+}

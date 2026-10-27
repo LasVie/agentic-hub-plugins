@@ -1,0 +1,23 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/cudjo21/document-vault",
+      "revision": "1afd4e52feda695406898fafba0577106aebc7a3",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/document-vault/LICENSE",
+          "sha256": "f0a46556162fa59b55fc18b145c3e58e499018693fa76b9bd4a0a9c66c1a4e88"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "runtime/registry.py",
+    "skills/family-documents/SKILL.md",
+    "README.md"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

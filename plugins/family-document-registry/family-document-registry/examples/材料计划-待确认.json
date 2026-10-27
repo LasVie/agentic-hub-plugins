@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "reference_date": "2026-10-31",
+  "requirements": [
+    {
+      "id": "passport_item",
+      "person_id": "p_lin",
+      "label": "用户要求：护照在参考日后至少5个月有效",
+      "document_id": "passport_new",
+      "min_validity_months": 5
+    },
+    {
+      "id": "statement_item",
+      "person_id": "p_lin",
+      "label": "用户要求：不早于参考日前1个月的月度证明",
+      "document_id": "statement_recent",
+      "max_age_months": 1
+    },
+    {
+      "id": "permit_item",
+      "person_id": "p_mei",
+      "label": "到期日仍待确认的证明",
+      "document_id": "permit_unknown",
+      "min_validity_months": 1
+    },
+    {
+      "id": "photo_item",
+      "person_id": "p_mei",
+      "label": "尚未提供的照片",
+      "document_id": null
+    }
+  ]
+}
