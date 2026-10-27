@@ -1,0 +1,17 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/channelroom-studio/ai-youtube-os",
+      "revision": "a4eb2f9838e99b26060a236ef2196a18bf38bc7a",
+      "package": "claude-plugin:ai-youtube-os@0.1.4",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {"path": "licenses/ai-youtube-os/LICENSE", "sha256": "4e41d928703565652945552ff18e00ae69118aa1908be9adde77241118ecef5e"}
+      ]
+    }
+  ],
+  "reused_paths": ["runtime/media.py", "runtime/engine.py", "runtime/templates/channel.json", "runtime/templates/state.json", "runtime/templates/OPERATIONS.md", "skills/video-channel-ops/SKILL.md"],
+  "audit_file": "SOURCE_REVIEW.md"
+}

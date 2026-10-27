@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "name": "{{CHANNEL_NAME}}",
+  "handle": "{{HANDLE}}",
+  "channel_id": "",
+  "language": "{{LANGUAGE}}",
+  "timezone": "{{TIMEZONE}}",
+  "topic": "{{TOPIC}}",
+  "tone": "{{TONE}}",
+  "format": {
+    "long": "{{LONG_FORMAT}}",
+    "short": "{{SHORT_FORMAT}}"
+  },
+  "schedule": {
+    "production_start": "10:00",
+    "publish_long": "19:00",
+    "publish_short": "20:00"
+  },
+  "voice": {
+    "provider": "{{VOICE_PROVIDER}}",
+    "voice_id": "{{VOICE_ID}}",
+    "note": "确定后的声音 ID 每天重复使用，不要反复克隆或上传声音。"
+  },
+  "visuals": {
+    "provider": "{{VISUAL_PROVIDER}}",
+    "style": "{{VISUAL_STYLE}}"
+  },
+  "banned_expressions": ["保证收益", "稳赚", "100%"],
+  "fact_rules": "区分事实与推断，未经核实的数字不写。",
+  "authorization": {
+    "daily_upload": false,
+    "additional_payments": false
+  }
+}
