@@ -1,0 +1,75 @@
+{
+  "id": "offline-ebook-reader",
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "source": "local",
+  "name": "离线书架阅读器",
+  "description": "导入本地TXT与未加密流式文本EPUB，在中文书架连续阅读、按章跳转并保存阅读位置与排版设置。",
+  "display_name": {
+    "zh": "离线书架阅读器",
+    "en": "离线书架阅读器"
+  },
+  "display_description": {
+    "zh": "导入本地TXT与未加密流式文本EPUB，在中文书架连续阅读、按章跳转并保存阅读位置与排版设置。",
+    "en": "导入本地TXT与未加密流式文本EPUB，在中文书架连续阅读、按章跳转并保存阅读位置与排版设置。"
+  },
+  "category": "办公与生产力",
+  "tags": [
+    {
+      "zh": "离线阅读",
+      "en": "离线阅读"
+    },
+    {
+      "zh": "电子书架",
+      "en": "电子书架"
+    },
+    {
+      "zh": "阅读进度",
+      "en": "阅读进度"
+    }
+  ],
+  "skills": [
+    {
+      "dir": "skills/offline-reading",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/ebook_tools.py",
+      "class": "EbookLibraryTool",
+      "display_name": {
+        "zh": "离线书架管理",
+        "en": "离线书架管理"
+      },
+      "display_description": {
+        "zh": "导入、目录与阅读状态",
+        "en": "导入、目录与阅读状态"
+      }
+    },
+    {
+      "file": "tools/ebook_tools.py",
+      "class": "EbookChapterTool",
+      "display_name": {
+        "zh": "章节原文读取",
+        "en": "章节原文读取"
+      },
+      "display_description": {
+        "zh": "只读章节与实际字符范围",
+        "en": "只读章节与实际字符范围"
+      }
+    },
+    {
+      "file": "tools/ebook_tools.py",
+      "class": "EbookReaderTool",
+      "display_name": {
+        "zh": "本机阅读器",
+        "en": "本机阅读器"
+      },
+      "display_description": {
+        "zh": "启动、查询和关闭中文阅读界面",
+        "en": "启动、查询和关闭中文阅读界面"
+      }
+    }
+  ]
+}

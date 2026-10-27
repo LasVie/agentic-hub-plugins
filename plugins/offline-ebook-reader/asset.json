@@ -1,0 +1,28 @@
+{
+  "type": "agent-plugin",
+  "name": "offline-ebook-reader",
+  "version": "1.0.0",
+  "display_name": "离线书架阅读器",
+  "description": "导入本地TXT与未加密流式文本EPUB，在中文书架连续阅读、按章跳转并保存阅读位置与排版设置。",
+  "publisher": "Cai Zhenze",
+  "category": "办公与生产力",
+  "tags": [
+    "离线阅读",
+    "电子书架",
+    "阅读进度"
+  ],
+  "functional_tags": [
+    "Offline Ebook Reading",
+    "Chapter Navigation",
+    "Reading Position Persistence"
+  ],
+  "scope": "macOS/Linux Python3.11+及宿主SDK；最多8MiB输入/200万字符/500章/40本；受限纯文本EPUB，不联网、不朗读、翻译或编辑原文件。",
+  "candidate_id": "CAND-DSH-329",
+  "task_id": "AH-20261027-offline-ebook-reader",
+  "related_asset_ids": [
+    "4ec90e5a10e4419a8f97766613b9d57f",
+    "d9665968537247718932825ef3417b25",
+    "repo:agent-plugin:story-workbench",
+    "repo:agent-plugin:local-music-library"
+  ]
+}

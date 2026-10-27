@@ -1,0 +1,24 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/xrn1997/dsh-novel",
+      "revision": "f9a19f5fbd2d76ef5e970c2333a67f9dcb66b31c",
+      "license_expression": "Apache-2.0",
+      "license_evidence": [
+        {
+          "path": "licenses/dsh-novel/LICENSE",
+          "sha256": "19523a8b57412455e7834886cbc1264ecf63ee559ccd026a73c901b0e9bb8df6"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "runtime/ebook.py",
+    "assets/app.js",
+    "README.md",
+    "skills/offline-reading/SKILL.md"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}
