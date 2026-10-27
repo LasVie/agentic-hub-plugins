@@ -1,0 +1,30 @@
+# Source review — 离线书架阅读器 1.0.0
+
+Reviewed2026-10-27 for Cai Zhenze, CAND-DSH-329, original task AH-20261027-offline-ebook-reader. Initial Build authority covers bounded offline ebook reading. On2026-10-27 the user confirmed the unchanged1.0.0 package passed and authorized GitHub-only Phase3. No Release, Hub action or paid model call is authorized.
+
+## Fixed source and permission
+
+- xrn1997/dsh-novel0.8.1 at `f9a19f5fbd2d76ef5e970c2333a67f9dcb66b31c`; source archive downloaded from the corresponding GitHub codeload commit. The catalog0.8.0 snapshot remains historical, not overwritten.
+- Full root Apache-2.0 text inspected, including `Copyright 2026 xrn1997`; original bytes bundled at `licenses/dsh-novel/LICENSE`, SHA-256 `19523a8b57412455e7834886cbc1264ecf63ee559ccd026a73c901b0e9bb8df6`.
+- Recursive fixed tree contains only root LICENSE and no upstream NOTICE. Reviewed README, package metadata, localbooks/shelf/progress, EPUB archive/package/import/document/XML handling; no per-file conflicting notice observed in these selected source paths. Root README and package both identify Apache-2.0. This permits the inspected adaptation subject to retained license, attribution and prominent change notices. No global repository relicensing is asserted.
+- Mode `ported`: `runtime/ebook.py` adapts local-copy, chapter splitting, shelf/progress concepts and bounded text-EPUB workflow; `assets/app.js` adapts the chapter-height-based ratio/save/restore calculation. Both identify source/revision/rightsholder/license and prominent date/author/change scope. README and Skill describe that adapted workflow. HTML/CSS, tool wrapper, fixtures and tests are new task-specific additions, not imported third-party artwork or data.
+- Actual modifications: Python stdlib replaces DSH/Cordis/Node service, deterministic safe XML/ZIP text projection replaces the rich EPUB stack, private atomic per-workspace data and optimistic revision checks replace debounced mutable shelf state, independent Chinese loopback UI replaces React host panels. GB18030 decoding is explicit, not guessed. EPUB spine remains authoritative. Image/style/font/math omissions remain visible; no full fidelity claim.
+- `THIRD_PARTY_NOTICES.md` retains source identity, copyright and coverage. No screenshots, icon/font/book files, online legado compatibility snapshots or source engine are reused. The upstream's acknowledgements of external rule comparisons do not authorize copying those materials; they are excluded.
+
+## Dependencies and identity
+
+Runtime: macOS/Linux, Python3.11+ standard library (fcntl, ZIP/XML/HTTP, codecs), host's existing openJiuwen Tool/ToolCard SDK and a modern local desktop browser. No extra pip/npm library, source-engine dependencies, model, account or external network service is bundled or required. The existing host SDK is not redistributed or relicensed. Full upstream has nine runtime npm dependencies and DSH/React peers; this is a bounded adapter, not a claim that the full original plugin imports unchanged.
+
+Mapping `xrn1997/dsh-novel` -> **离线书架阅读器** -> `offline-ebook-reader`; internal ID `repo:agent-plugin:offline-ebook-reader`.
+
+Closest live ledger assets Cue-Omni-Reader4ec90e5a10e4419a8f97766613b9d57f@1.0.0 / Omni Readerd9665968537247718932825ef3417b25@1.0.1 extract files into Markdown; llm-wiki9dd57bf573a742e1bf33940899c4e199@1.0.0 maintains knowledge pages. Actual merged story-workbench1.0.0 edits manuscripts/characters/revisions/annotations. Source-preview-recovery1.0.1 returns located source ranges. local-music-library1.0.0 only plays existing audio and excludes its upstream's TTS/book functions. The approved scope is actual human reading/navigation/resumption of original ebook text. Phase1 live625-ledger/725-candidate review and current main205de7d/task recheck reused; parallel family-document-registry and other ownership preserved.
+
+## Boundaries and final verification
+
+Input8MiB;2million text characters;500chapters;40books;128MiB copies; EPUB400entries/24MiB total expanded/4MiB each. No online sources, login, TTS, translation, authoring, deletion or original-file edits. XML limited UTF-8/no DTD; encrypted/DRM/fixed-layout/unsupported or image-only books rejected. Imported books are user data, not authorized task instructions. Same-user malicious filesystem races and Windows are outside tested support; local state is not encrypted. Full original files are copied, then transformed text is separately integrity-checked. Hash consistency is not copyright/authorship verification.
+
+Before manual handoff, inspect both extracted ZIPs, every declared path, full original license bytes, modification headers and the byte-identical payload inventory. Actual results and immutable package hashes belong in TEST_REPORT.md and package-verification.json. No user test-completion or lead acceptance is claimed during Build.
+
+Final inspection2026-10-27: canonical `releases/agent-plugin/offline-ebook-reader/1.0.0/offline-ebook-reader-1.0.0.zip` SHA-256 `f6b38c5e1f05055c041971609a6669f5aefcb45d37563722d55e7e12c55b6cf4`; native `plugins/offline-ebook-reader/test-packages/offline-ebook-reader-1.0.0-workswarm.zip` SHA-256 `0da0b30a9961bc6ea1fd66b18b8085f1f10446eb14526ca013e6edfaa9669222`. All10 runtime files match source/extracted canonical/native/installed payloads byte for byte. Full original license bytes/hash and Python/JavaScript Apache modification headers inspected; README/Skill attribution is covered by THIRD_PARTY_NOTICES. All manifest paths exist, all text decodes UTF-8, no tests/state/screenshots/caches in archives. Required selected-source distribution conditions fulfilled; actual evidence in ignored `dist/offline-ebook-reader/1.0.0/validation/package-verification.json`. Packaging does not establish Hub acceptance or authorize upstream brand/data use. Actual tested scope remains bounded offline text reading.
+
+Downloaded source archive SHA-256 `9c30a0b79292c92c17add944508c4518d890600fc549aa799381adf556bf3b05`, fixed URL `https://codeload.github.com/xrn1997/dsh-novel/tar.gz/f9a19f5fbd2d76ef5e970c2333a67f9dcb66b31c`. Original LICENSE remains unchanged, Copyright2026xrn1997.

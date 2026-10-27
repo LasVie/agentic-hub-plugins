@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:offline-ebook-reader",
+  "type": "agent-plugin",
+  "name": "offline-ebook-reader",
+  "version": "1.0.0",
+  "zip": "offline-ebook-reader-1.0.0.zip",
+  "sha256": "f6b38c5e1f05055c041971609a6669f5aefcb45d37563722d55e7e12c55b6cf4",
+  "payload_sha256": {
+    "README.md": "cd4688f139a7ad230ce4375fa8b35e4d8c06f297a3ee1e12dc4eacdf12c0d35a",
+    "THIRD_PARTY_NOTICES.md": "2f546644d3f0cf6a2675c598b7207c51b2662eb5fec621f6db6f670033bd0ffc",
+    "assets/app.js": "c8cb9d0f6c2a7cdbdcb2cfc270daa747ada08f3b021d7c5bab406f322137f347",
+    "assets/page.html": "d42b7ebec07df3fbd4920e1732e9674e2db2ddc4f3a4e611f85d1a74c3ca657e",
+    "assets/style.css": "25b8807bf2a1feb1dae44f1032f0e4db026bcc7eae20618509567197b3fc1182",
+    "licenses/dsh-novel/LICENSE": "19523a8b57412455e7834886cbc1264ecf63ee559ccd026a73c901b0e9bb8df6",
+    "manifest.json": "b925466833d2845058ace2f5f05875a37a3ee73c69b593949b3144d3618cb9d0",
+    "runtime/ebook.py": "15aaac1b7bf59431ee7a870783b54f7982b5dce0a8db67991d947d10896d537f",
+    "skills/offline-reading/SKILL.md": "a09ee0db52462ea926e3fa61aec454c4397fa8825782b25ed3abfaf7e1d0c8d1",
+    "tools/ebook_tools.py": "fb20ad6cc45ad1f1ea96abc24d4dd0872d1e06fa880d593d63248bb0029409bf"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "8188317ac2596a4c56f61c5c25efb85fb735e2db91d9fd1675d41eb7af41c3e5",
+  "functional_test_report_sha256": "09ee3fe69daa73812c846c3acd20e6344b02bb3170bf492be04b7185dbad2671"
+}
