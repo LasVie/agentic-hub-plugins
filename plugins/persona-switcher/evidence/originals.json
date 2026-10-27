@@ -1,0 +1,98 @@
+[
+  {
+    "index": 1,
+    "original_name": "Screenshot 2026-10-27 152252.png",
+    "bytes": 198688,
+    "width": 1920,
+    "height": 1200,
+    "sha256": "88f3ab3f110ece9156ea91a4e0146fe10f107634a3739eaba71d4ca0b8e006e6",
+    "file": "user-test-1.0.0-01.png",
+    "shows": "Step 1: Windows path passed directly; init adds 2 sample roles; step 2 begins",
+    "session": "web_1a17c38e0c0_7d8311269a55",
+    "source": "Original PNG supplied by Vannes Wijaya in the current conversation 2026-10-27 for GitHub PR evidence; exact bytes, no editing/recompression."
+  },
+  {
+    "index": 2,
+    "original_name": "Screenshot 2026-10-27 152258.png",
+    "bytes": 259940,
+    "width": 1920,
+    "height": 1200,
+    "sha256": "48426f0df74c249cd7d49d0478ab9ff2ae3eed9f1aba14912399818adcd2f0eb",
+    "file": "user-test-1.0.0-02.png",
+    "shows": "Step 2 list (2 roles, none active); step 3 tea-master reply begins (客官, tea metaphors)",
+    "session": "web_1a17c38e0c0_7d8311269a55",
+    "source": "Original PNG supplied by Vannes Wijaya in the current conversation 2026-10-27 for GitHub PR evidence; exact bytes, no editing/recompression."
+  },
+  {
+    "index": 3,
+    "original_name": "Screenshot 2026-10-27 152302.png",
+    "bytes": 277349,
+    "width": 1920,
+    "height": 1200,
+    "sha256": "9ba3a22d727ebe62dc0ab93c75772403045d54910b5a7cc0ac7bd7f3c1c1b2f7",
+    "file": "user-test-1.0.0-03.png",
+    "shows": "Step 3 cache explanation end (locality, L1-L3, closing line); step 4 /role strict-reviewer switch",
+    "session": "web_1a17c38e0c0_7d8311269a55",
+    "source": "Original PNG supplied by Vannes Wijaya in the current conversation 2026-10-27 for GitHub PR evidence; exact bytes, no editing/recompression."
+  },
+  {
+    "index": 4,
+    "original_name": "Screenshot 2026-10-27 152307.png",
+    "bytes": 262552,
+    "width": 1920,
+    "height": 1200,
+    "sha256": "e545d3ef2559f0e5f31d792adfa88de0f24dbab610832fb04266c917ac48af4d",
+    "file": "user-test-1.0.0-04.png",
+    "shows": "Step 4 strict-reviewer code review (conclusion, evidence, 未验证, fix); step 5 poet created",
+    "session": "web_1a17c38e0c0_7d8311269a55",
+    "source": "Original PNG supplied by Vannes Wijaya in the current conversation 2026-10-27 for GitHub PR evidence; exact bytes, no editing/recompression."
+  },
+  {
+    "index": 5,
+    "original_name": "Screenshot 2026-10-27 152312.png",
+    "bytes": 243401,
+    "width": 1920,
+    "height": 1200,
+    "sha256": "c4c1ff19967f0c3a0b36a188f02ea0d38a782252a25ffe37d7e9555480730b3a",
+    "file": "user-test-1.0.0-05.png",
+    "shows": "Step 5 poet self-introduction in seven-character rhyming lines; step 6 set default, leave role",
+    "session": "web_1a17c38e0c0_7d8311269a55",
+    "source": "Original PNG supplied by Vannes Wijaya in the current conversation 2026-10-27 for GitHub PR evidence; exact bytes, no editing/recompression."
+  },
+  {
+    "index": 6,
+    "original_name": "Screenshot 2026-10-27 152319.png",
+    "bytes": 237219,
+    "width": 1920,
+    "height": 1200,
+    "sha256": "b6b355e92b5f1d0aebe1088ccda0f8832438981230452b244b9d49c1c2219f23",
+    "file": "user-test-1.0.0-06.png",
+    "shows": "Step 6 status: no role active, default not auto-applied",
+    "session": "web_1a17c38e0c0_7d8311269a55",
+    "source": "Original PNG supplied by Vannes Wijaya in the current conversation 2026-10-27 for GitHub PR evidence; exact bytes, no editing/recompression."
+  },
+  {
+    "index": 7,
+    "original_name": "Screenshot 2026-10-27 152325.png",
+    "bytes": 235392,
+    "width": 1920,
+    "height": 1200,
+    "sha256": "a2131854856e98727582409d9fb3f9f36c1b68afb76b6c00eab7b42c34b6ca0a",
+    "file": "user-test-1.0.0-07.png",
+    "shows": "Step 7 delete asks for confirmation first, deletes only after 确认删除; step 8 tea-master names real model DeepSeek V4 Pro",
+    "session": "web_1a17c38e0c0_7d8311269a55",
+    "source": "Original PNG supplied by Vannes Wijaya in the current conversation 2026-10-27 for GitHub PR evidence; exact bytes, no editing/recompression."
+  },
+  {
+    "index": 8,
+    "original_name": "Screenshot 2026-10-27 152410.png",
+    "bytes": 119795,
+    "width": 1920,
+    "height": 1200,
+    "sha256": "c1c0428e45cb7b03f85e3b55c774e387a16b3bbb62ab0745e87653c6d22147ca",
+    "file": "user-test-1.0.0-08.png",
+    "shows": "Installed extension detail page: 会话人设切换 with skill persona-switcher and tool",
+    "session": "web_1a17c38e0c0_7d8311269a55",
+    "source": "Original PNG supplied by Vannes Wijaya in the current conversation 2026-10-27 for GitHub PR evidence; exact bytes, no editing/recompression."
+  }
+]

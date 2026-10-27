@@ -1,0 +1,17 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/yupaoa/dsh-persona-switcher",
+      "revision": "563854472ae7fe3b2e96f6cbcb53428d3af81e1c",
+      "package": "npm:dsh-persona-switcher@0.3.1",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {"path": "licenses/dsh-persona-switcher/LICENSE", "sha256": "74ceca0db0d67b681613a3281cb06baaf00bedcbc4ec006fb51f6ff83af1d717"}
+      ]
+    }
+  ],
+  "reused_paths": ["runtime/engine.py"],
+  "audit_file": "SOURCE_REVIEW.md"
+}
