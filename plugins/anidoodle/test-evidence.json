@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-27",
+  "task_id": "AH-20261027-anidoodle",
+  "version": "1.0.0",
+  "canonical_zip": "D:\\资料\\华为实习\\jiuwenswarm-plugin\\work-repository\\agentic-hub-plugins\\releases\\agent-plugin\\anidoodle\\1.0.0\\anidoodle-1.0.0.zip",
+  "canonical_sha256": "3c65b279a759f26bdd7266a03d0e32380d141475f2acb8192e1a704899e7a172",
+  "native_zip": "D:\\资料\\华为实习\\jiuwenswarm-plugin\\plugin-builds\\anidoodle\\1.0.0\\anidoodle-1.0.0-native.zip",
+  "native_sha256": "bf300d24813c64fb920af004afd9443ccdea711b2bc44125f9697a5031d556cf",
+  "payload_files": 23,
+  "payload_bytes": 264884,
+  "deterministic_repack": true,
+  "payloads_equal": true,
+  "extracted_tests": 9,
+  "extracted_tests_passed": true,
+  "actual_sdk_calls": 6,
+  "user_testing": "confirmed_complete",
+  "host_ui_import": "not_replayed_installed_tool_execution_verified",
+  "browser_supplement": {
+    "date": "2026-10-27",
+    "session": "http://localhost:5173/chat/web_1a17c4aea8a_0d1926480db7",
+    "method": "Computer Use: existing Chrome host session, actual prompt and expanded tool results",
+    "actual_plugin_calls": 7,
+    "checks_passed": [
+      "list",
+      "create_mascot",
+      "create_form",
+      "create_scroll",
+      "reject_duplicate_name",
+      "reject_invalid_name",
+      "export_source",
+      "three_visible_attachment_cards"
+    ],
+    "screenshots": [
+      "plugin-builds/anidoodle/1.0.0/browser-evidence/01-no-overwrite.jpg",
+      "plugin-builds/anidoodle/1.0.0/browser-evidence/02-three-attachments.jpg"
+    ],
+    "downloaded_html_interaction_retested": false,
+    "limitation": "Browser controller blocks file://; no workaround attempted. Earlier headless interaction tests are separate evidence.",
+    "installed_payload_hash_independently_verified": false
+  },
+  "user_confirmation_and_original_screenshots": "confirmed_and_received",
+  "user_original_screenshots": {
+    "received_date": "2026-10-27",
+    "directory": "plugin-builds/anidoodle/1.0.0/user-test-evidence/2026-10-27",
+    "inventory": "inventory.json",
+    "count": 12,
+    "categories": {
+      "form": 3,
+      "scroll": 5,
+      "mascot": 4
+    },
+    "bytes": 12267077,
+    "original_bytes_preserved_and_verified": true,
+    "images_with_screenshot_notification": 3,
+    "uploaded": false
+  },
+  "exported_source_rebuild_matches": true,
+  "browser_results": [
+    {
+      "scene": "mascot",
+      "replay": {
+        "a": "f1ecacab",
+        "b": "c7e22702",
+        "a2": "f1ecacab"
+      },
+      "reduced": true,
+      "errors": [],
+      "external": [],
+      "passed": true
+    },
+    {
+      "scene": "form",
+      "replay": {
+        "a": "f1ecacab",
+        "b": "c7e22702",
+        "a2": "f1ecacab"
+      },
+      "reduced": true,
+      "errors": [],
+      "external": [],
+      "passed": true
+    },
+    {
+      "scene": "scroll",
+      "replay": {
+        "a": "78053255",
+        "b": "ee1b2443",
+        "a2": "78053255"
+      },
+      "reduced": true,
+      "errors": [],
+      "external": [],
+      "passed": true
+    }
+  ],
+  "browser_tested_html_matches_extracted_generation": true,
+  "user_test_confirmation": {
+    "user": "Gan Mingrui",
+    "date": "2026-10-27",
+    "recorded_at": "2026-10-27T16:29:48+08:00",
+    "source": "Current conversation; user replied 确认 to the explicit question whether 手绘交互工坊 1.0.0 testing is complete, no blocking issues remain, and submission may begin.",
+    "verbatim": "确认",
+    "task_id": "AH-20261027-anidoodle",
+    "version": "1.0.0",
+    "native_sha256": "bf300d24813c64fb920af004afd9443ccdea711b2bc44125f9697a5031d556cf",
+    "canonical_sha256": "3c65b279a759f26bdd7266a03d0e32380d141475f2acb8192e1a704899e7a172",
+    "known_blocking_issues": "none reported",
+    "progress_report_id": "RPT-20261027-anidoodle-ready-100"
+  }
+}

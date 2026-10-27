@@ -1,0 +1,21 @@
+{
+  "type": "agent-plugin",
+  "name": "anidoodle",
+  "version": "1.0.0",
+  "display_name": "手绘交互工坊",
+  "description": "基于 anidoodle 绘图引擎生成中文离线交互页面：鼠标跟随角色、表单伙伴与滚动逐笔绘画；支持 PNG 导出及可编辑源码工程。",
+  "publisher": "Gan Mingrui",
+  "category": "多模态与媒体",
+  "tags": [
+    "手绘动画",
+    "交互插画",
+    "离线网页"
+  ],
+  "functional_tags": [
+    "Interactive Hand-drawn Art",
+    "Stroke Animation"
+  ],
+  "scope": "首版移植铅笔水彩交互核心和三个可改编场景，不含上游全部 32 种画风、配乐或视频制作。生成任意新角色需要编辑源码并重新编译。",
+  "candidate_id": "CAND-CLD-335",
+  "task_id": "AH-20261027-anidoodle"
+}

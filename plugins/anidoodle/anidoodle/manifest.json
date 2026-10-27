@@ -1,0 +1,43 @@
+{
+  "id": "anidoodle",
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "source": "local",
+  "name": "手绘交互工坊",
+  "description": "生成可离线打开的手绘互动页面，并交付可编辑源码。",
+  "display_name": {
+    "zh": "手绘交互工坊",
+    "en": "手绘交互工坊"
+  },
+  "category": "多模态与媒体",
+  "skills": [
+    {
+      "dir": "skills/anidoodle",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/art_tool.py",
+      "class": "AnidoodleTool",
+      "display_name": {
+        "zh": "制作手绘互动作品",
+        "en": "制作手绘互动作品"
+      }
+    }
+  ],
+  "default_init_input": {
+    "zh": "用手绘交互工坊制作一个会跟随鼠标、点击后欢呼的中文伙伴页面，输出到我的工作区。",
+    "en": "制作一个中文手绘互动伙伴页面。"
+  },
+  "quick_inputs": [
+    {
+      "zh": "制作一个随滚动逐笔画出来的中文插画页面。",
+      "en": "制作滚动绘画页面。"
+    },
+    {
+      "zh": "制作一个输入密码时会遮眼的表单伙伴演示。",
+      "en": "制作表单伙伴演示。"
+    }
+  ]
+}
