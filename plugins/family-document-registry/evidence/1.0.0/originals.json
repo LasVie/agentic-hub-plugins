@@ -1,0 +1,42 @@
+{
+  "task_id": "AH-20261026-family-document-registry",
+  "candidate_id": "CAND-CLD-247",
+  "display_name": "家庭文档台账",
+  "version": "1.0.0",
+  "received_date": "2026-10-27",
+  "source": "Current conversation: explicit completion/pass and four original attached PNGs",
+  "native_zip_sha256": "9316d2dd294f4ea488b65a7a466884d46c99f74dd198bfbc6d9ed29815bb3b37",
+  "canonical_zip_sha256": "7434f44e68a3a42850c423019c7449f467c4d89d22896f2dea30087cc174dc56",
+  "images": [
+    {
+      "filename": "Screenshot 2026-10-27 at 10.29.52 AM.png",
+      "bytes": 350022,
+      "width": 578,
+      "height": 1902,
+      "sha256": "be665c667a0fa8cc15ba748666b3f2ed7fcb570e5fbf28f1de18d28481341c4e"
+    },
+    {
+      "filename": "Screenshot 2026-10-27 at 10.30.11 AM.png",
+      "bytes": 399631,
+      "width": 584,
+      "height": 1922,
+      "sha256": "7c3d766ea3793fd54255bd5e1474a04396bf54859221ce77be51eaf75850de39"
+    },
+    {
+      "filename": "Screenshot 2026-10-27 at 10.30.23 AM.png",
+      "bytes": 395679,
+      "width": 586,
+      "height": 1924,
+      "sha256": "bfa113b68b1d7415d380414f6d6e1b4512fb817da8ae9db7547e779d4aca8ad1"
+    },
+    {
+      "filename": "Screenshot 2026-10-27 at 10.30.31 AM.png",
+      "bytes": 393428,
+      "width": 600,
+      "height": 1916,
+      "sha256": "54684f3c6393b520e72ba628fe0132326e98b5ac2006392aa104e746f5d486ea"
+    }
+  ],
+  "original_bytes_preserved": true,
+  "privacy_review": "Public synthetic family metadata and test workspace paths; no credentials or real document content observed. Original PNGs retained without recompression."
+}

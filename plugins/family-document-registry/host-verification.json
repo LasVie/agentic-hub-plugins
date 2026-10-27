@@ -1,0 +1,70 @@
+{
+  "checked_at": "2026-10-26T10:45:52.069108+00:00",
+  "instance": "/private/tmp/state-machine-audit-workswarm-20261026",
+  "reused_own_instance": true,
+  "frontend_url": "http://127.0.0.1:6392/",
+  "frontend": {
+    "status": 200,
+    "html": true
+  },
+  "websockets": [
+    {
+      "port": 29290,
+      "websocket_ping_pong": true,
+      "backend_config_ok": true,
+      "extensions_catalog_ok": true
+    },
+    {
+      "port": 6392,
+      "websocket_ping_pong": true,
+      "backend_config_ok": true,
+      "extensions_catalog_ok": true
+    }
+  ],
+  "model_requests_sent": 0,
+  "no_new_ports_or_service_restarts": true,
+  "native_zip_sha256": "9316d2dd294f4ea488b65a7a466884d46c99f74dd198bfbc6d9ed29815bb3b37",
+  "imported": {
+    "type": "res",
+    "id": "family-registry-a16883f9f66048b391982e916f6aeb44",
+    "ok": true,
+    "payload": {
+      "id": "family-document-registry"
+    }
+  },
+  "installed": {
+    "type": "res",
+    "id": "family-registry-6a7724201fad4d6fbd516a45082a93b5",
+    "ok": true,
+    "payload": {}
+  },
+  "host_config_unchanged": true,
+  "host_config_before_sha256": "6211b3b0a50baa85d2ea7e062935f1a80c13d16ecaccab08743a591b8fc8e89f",
+  "host_config_after_sha256": "6211b3b0a50baa85d2ea7e062935f1a80c13d16ecaccab08743a591b8fc8e89f",
+  "catalog_package_ids": [
+    "family-document-registry",
+    "state-machine-audit"
+  ],
+  "installed_path": "/private/tmp/state-machine-audit-workswarm-20261026/data/agent/workspace/plugins/plugin_packages/local/family-document-registry",
+  "installed_payload_matches_source": true,
+  "payload_file_count": 18,
+  "other_plugin_entries_unchanged": true,
+  "installed_sdk": {
+    "version": "1.0.0",
+    "actual_tool_calls": 16,
+    "passed": true
+  },
+  "frontend_labels": {
+    "display_name": "家庭文档台账",
+    "skill_count": 1,
+    "tool_count": 3,
+    "chinese_descriptions_rendered": true,
+    "verification": "Assistant CUA verification, not user manual completion",
+    "screenshot": "/private/tmp/family-document-registry-tests-20261026/host-ui-1.0.0.png"
+  },
+  "model_setup": {
+    "selected": "disabled-local-test",
+    "user_model_setup_required_for_chat": true,
+    "model_configuration_modified_by_assistant": false
+  }
+}
