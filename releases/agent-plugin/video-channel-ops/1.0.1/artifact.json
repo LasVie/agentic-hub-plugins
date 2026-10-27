@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:video-channel-ops",
+  "type": "agent-plugin",
+  "name": "video-channel-ops",
+  "version": "1.0.1",
+  "zip": "video-channel-ops-1.0.1.zip",
+  "sha256": "3f7223a7b167d5050221a7bfd1622f4d6f3136b34cf1511adaf46c842393d39c",
+  "payload_sha256": {
+    "README.md": "dbe2009f3b28b02f8169f52a568749e25e6c54b6d3bd0baf69828b9a25c2cec1",
+    "THIRD_PARTY_NOTICES.md": "1325ded29caa77c884e54eb1a944520d4b2f84d5b974163413e31b1ae1fcd6b0",
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "licenses/ai-youtube-os/LICENSE": "4e41d928703565652945552ff18e00ae69118aa1908be9adde77241118ecef5e",
+    "manifest.json": "051e9da9df41c84e1350985569a0d0d45acbae86b5502295ed75f2046e0039e7",
+    "runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime/engine.py": "2f6e1e6ba57e442f7209e5a74fe844bd7f110a4c2250311dc2404052500156bc",
+    "runtime/media.py": "f36bf785d94c963fad140828d1f91d726ce15f2963ac3dc9164adc0b6a23eb80",
+    "runtime/templates/OPERATIONS.md": "2061da8927672bead4516e2cac3f7a1352af5604c05f143ff12e49f2c54246f4",
+    "runtime/templates/channel.json": "57137b113c1cd571a299672c637028c1862e22c24170f01f1cbb802cf7e65503",
+    "runtime/templates/state.json": "a09b8c26006947723ea7bfc5b29ef2c192a598517fe4b197323736fec0365586",
+    "skills/video-channel-ops/SKILL.md": "786173ac393f2919527f5b5b835e3181d6fb18d5595300d0b0dbf0d80a73fe36",
+    "tools/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tools/plugin_tool.py": "2bf4197f72f238b742ca522aa283578d9709484fccb48db4c9b905b5e247ca8d"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "0b2ec94a49eebbbf20ac32e6c28ad5eeaf55e9c0315b860a0363c6ac0c2b9c8d",
+  "functional_test_report_sha256": "f3c5580ed5f1e5c9273dc8c8569e9ea310640c4e169472367a679d649978d2a2"
+}

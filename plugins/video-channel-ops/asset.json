@@ -1,0 +1,14 @@
+{
+  "type": "agent-plugin",
+  "name": "video-channel-ops",
+  "version": "1.0.1",
+  "display_name": "视频频道日更流水线",
+  "description": "用 AI 助手每天稳定产出视频频道内容：创建频道运营目录，按 7 步制作当天的长 / 短视频，防止重复制作与重复付费提交，用 FFmpeg 渲染并做上传前机器检查，记录经平台确认的发布结果与 24h/72h/7d 指标。不联网、不自动上传、不付费。",
+  "publisher": "Vannes Wijaya",
+  "category": "内容创作",
+  "tags": ["视频频道", "日更", "短视频", "FFmpeg"],
+  "functional_tags": ["视频与动画", "流程与任务"],
+  "scope": "按频道目录管理每日长 / 短视频制作状态、生成任务 job ID、发布记录与指标，本地 FFmpeg 渲染与机器检查；不含配音 / 画面生成、联网调研或平台上传本身，这些依赖用户自行连接的工具。",
+  "candidate_id": "CAND-CLD-225",
+  "task_id": "AH-20261027-ai-youtube-os"
+}
