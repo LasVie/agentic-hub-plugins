@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "rss-daily": {
+      "command": "python3",
+      "args": ["../../runtime/server.py"],
+      "description": "公开订阅源日报、中文来源绑定编排与确认后持久去重；只使用 Python 标准库，不安装第三方依赖。",
+      "timeout_s": 60
+    }
+  }
+}

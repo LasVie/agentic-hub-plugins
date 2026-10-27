@@ -1,0 +1,15 @@
+{
+  "type": "agent-plugin",
+  "name": "rss-daily",
+  "version": "1.0.0",
+  "display_name": "资讯晨报助手",
+  "description": "实际抓取公开 RSS/Atom，筛选时效与重复条目，生成带来源的中文日报草稿，核对落稿并在用户明确确认后记录已读。",
+  "publisher": "Wang Jie",
+  "category": "办公与生产力",
+  "tags": ["资讯日报", "来源追溯", "去重确认"],
+  "functional_tags": ["日报编排", "来源绑定", "确认后去重"],
+  "scope": "移植 dsh-rss-daily 的分阶段日报工作流和去重算法，提供 WorkSwarm stdio MCP 与中文 Skill。macOS/Linux、Python 3.9+，仅用标准库，无需额外依赖安装。真实抓取需要网络；不搬运 DSH 面板、定时器、webhook、API 凭据、newsflash 事件接口或证书降级逻辑。演示材料与真实新闻、状态分开；源码、解压包与当前 WorkSwarm 用户流程已验证，后续 GitHub 审核和负责人接受独立处理。",
+  "candidate_id": "CAND-DSH-266",
+  "task_id": "AH-20261027-rss-daily",
+  "related_asset_ids": ["24ad7d8aea5a4ac08683ae8a92c04ec9", "6cda66d3f34048eab98a194179ff3c47", "47dc6a921d3b4a6d939f5d5526ed44c1"]
+}

@@ -1,0 +1,111 @@
+{
+  "task_id": "AH-20261027-rss-daily",
+  "candidate_id": "CAND-DSH-266",
+  "version": "1.0.0",
+  "native_zip_sha256": "2f8815b00cb46c6907de62781c0574b2ee4c58e70aecaafbeb98bf73dc247588",
+  "canonical_zip_sha256": "1253b65bb649ae2839dc8bc31c14d723c02468f7403af1bc27496ac05e2754ad",
+  "source": "User-provided PNG images in the current conversation. Exact conversation-saved bytes; no further resizing, cropping, conversion or compression. Some images were resized by the conversation system; no higher-resolution original is claimed.",
+  "images": [
+    {
+      "file": "01-plugin-version.png",
+      "caption": "宿主工具连接、测试指令及版本 1.0.0",
+      "width": 2016,
+      "height": 1235,
+      "bytes": 592276,
+      "sha256": "c19e2b84e46d8ecf4439a8d7fff8b0826f2273c2c3fac44a78df8896ed9ad6f8",
+      "conversation_timestamp_utc": "2026-10-27T09:56:51.936Z",
+      "image_position_in_message": 1,
+      "url": "https://github.com/user-attachments/assets/da5e369e-cfce-415a-8973-e20ec88e9246?raw=true"
+    },
+    {
+      "file": "02-chinese-demo.png",
+      "caption": "中文演示日报、来源绑定及确认前状态",
+      "width": 2007,
+      "height": 1248,
+      "bytes": 419045,
+      "sha256": "0ddd4fad9853c1386da00e25554d9826b21f6ed7a9499769cdc79285dd794c0e",
+      "conversation_timestamp_utc": "2026-10-27T09:56:51.936Z",
+      "image_position_in_message": 2,
+      "url": "https://github.com/user-attachments/assets/eb408074-cbc1-4f69-b2dc-1b856c48cb99?raw=true"
+    },
+    {
+      "file": "03-explicit-confirmation.png",
+      "caption": "用户明确确认与重复确认操作",
+      "width": 1836,
+      "height": 1042,
+      "bytes": 212434,
+      "sha256": "553075436813086d415d70024eae6fff91120ee5ab00490c6fdeea3e072c4459",
+      "conversation_timestamp_utc": "2026-10-27T09:56:51.936Z",
+      "image_position_in_message": 3,
+      "url": "https://github.com/user-attachments/assets/39987cad-006e-4317-b731-32f120d0efef?raw=true"
+    },
+    {
+      "file": "04-idempotent-confirmation.png",
+      "caption": "重复确认不增加历史或改动确认时间",
+      "width": 2048,
+      "height": 1224,
+      "bytes": 465099,
+      "sha256": "5571243cb04a07820e8ca642fda640db9cfe8bea561651e84ad5f0039445d019",
+      "conversation_timestamp_utc": "2026-10-27T09:56:51.936Z",
+      "image_position_in_message": 4,
+      "url": "https://github.com/user-attachments/assets/dff09d26-8dfc-4fc4-8541-97fe92f79504?raw=true"
+    },
+    {
+      "file": "05-new-conversation-state.png",
+      "caption": "新会话读取旧确认批次与三条历史",
+      "width": 1920,
+      "height": 1291,
+      "bytes": 562175,
+      "sha256": "b721d2c069ed88c09b42dc2c90435dc3c5ec013f028983b100ed644a5a3c57eb",
+      "conversation_timestamp_utc": "2026-10-27T09:56:51.936Z",
+      "image_position_in_message": 5,
+      "url": "https://github.com/user-attachments/assets/a5a7f3a5-97c6-4c50-b150-56780098da00?raw=true"
+    },
+    {
+      "file": "06-dedup-and-isolation.png",
+      "caption": "刷新无新条目、演示与真实状态隔离",
+      "width": 1754,
+      "height": 1262,
+      "bytes": 253632,
+      "sha256": "c82bbfd2b173fcf75d152cfdc4bd50ff1ed2b473f4c5197f678392ff5ef81ba1",
+      "conversation_timestamp_utc": "2026-10-27T09:56:51.936Z",
+      "image_position_in_message": 6,
+      "url": "https://github.com/user-attachments/assets/69d032b3-9141-45ae-84d2-cb35de781e8b?raw=true"
+    },
+    {
+      "file": "07-live-fetch.png",
+      "caption": "真实订阅源抓取，六条候选素材",
+      "width": 2048,
+      "height": 1204,
+      "bytes": 677299,
+      "sha256": "8f9fa01d4c48386ad63e7f8e9c4d760d16abe988eb0b0bdeeafafb7f107274b1",
+      "conversation_timestamp_utc": "2026-10-27T09:56:51.936Z",
+      "image_position_in_message": 7,
+      "url": "https://github.com/user-attachments/assets/9beb6f41-bbb0-4595-9b04-b76754bdcb3f?raw=true"
+    },
+    {
+      "file": "08-live-chinese-digest.png",
+      "caption": "真实中文日报与原文来源链接",
+      "width": 2016,
+      "height": 1234,
+      "bytes": 831434,
+      "sha256": "cf0f8d8f301f5da2f61ac842435229776928bdd79e317ded5bae4085086cd896",
+      "conversation_timestamp_utc": "2026-10-27T09:56:51.936Z",
+      "image_position_in_message": 8,
+      "url": "https://github.com/user-attachments/assets/407f6d88-0cd7-49ad-941d-383a2ef8566f?raw=true"
+    },
+    {
+      "file": "09-live-finalized-unconfirmed.png",
+      "caption": "真实日报已生成、未自动确认阅读",
+      "width": 2048,
+      "height": 1176,
+      "bytes": 435331,
+      "sha256": "fa1ea239276a5a99e8fd847e78f7adb4b6f895de9062b359c9625f75b03bb2e0",
+      "conversation_timestamp_utc": "2026-10-27T09:56:51.936Z",
+      "image_position_in_message": 9,
+      "url": "https://github.com/user-attachments/assets/567719ff-3944-4b7d-991c-7a6fdc239ae9?raw=true"
+    }
+  ],
+  "hosting_issue": "https://github.com/dashingsss/agentic-hub-plugins/issues/3",
+  "verification": "All nine uploaded PNG files downloaded and verified byte-for-byte by SHA-256 before PR creation."
+}
