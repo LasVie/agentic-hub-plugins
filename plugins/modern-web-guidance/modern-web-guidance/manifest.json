@@ -1,0 +1,69 @@
+{
+  "id": "modern-web-guidance",
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "source": "local",
+  "name": "现代网页技术指南",
+  "description": "离线检索 12 篇中文现代 Web 精选指南，提供可追溯的实现要点、浏览器兼容快照和降级建议。",
+  "display_name": {
+    "zh": "现代网页技术指南",
+    "en": "现代网页技术指南"
+  },
+  "display_description": {
+    "zh": "离线检索 12 篇中文现代 Web 精选指南，提供可追溯的实现要点、浏览器兼容快照和降级建议。",
+    "en": "离线检索 12 篇中文现代 Web 精选指南，提供可追溯的实现要点、浏览器兼容快照和降级建议。"
+  },
+  "category": "软件开发",
+  "tags": [
+    {
+      "zh": "前端开发",
+      "en": "前端开发"
+    },
+    {
+      "zh": "浏览器兼容",
+      "en": "浏览器兼容"
+    },
+    {
+      "zh": "离线检索",
+      "en": "离线检索"
+    },
+    {
+      "zh": "渐进增强",
+      "en": "渐进增强"
+    }
+  ],
+  "skills": [
+    {
+      "dir": "skills/modern-web-guidance",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/guidance_tool.py",
+      "class": "ModernWebGuidanceTool",
+      "display_name": {
+        "zh": "查询现代网页技术指南",
+        "en": "查询现代网页技术指南"
+      },
+      "display_description": {
+        "zh": "离线检索 12 篇中文现代 Web 精选指南，提供可追溯的实现要点、浏览器兼容快照和降级建议。",
+        "en": "离线检索 12 篇中文现代 Web 精选指南，提供可追溯的实现要点、浏览器兼容快照和降级建议。"
+      }
+    }
+  ],
+  "default_init_input": {
+    "zh": "用现代网页技术指南查询：中文输入法按回车时怎样避免误发送？请读取指南后说明方案。",
+    "en": "用现代网页技术指南查询中文输入法回车误发送问题。"
+  },
+  "quick_inputs": [
+    {
+      "zh": "查询 Safari 弹窗点击遮罩关闭的兼容方案。",
+      "en": "查询 Safari 弹窗点击遮罩关闭的兼容方案。"
+    },
+    {
+      "zh": "查询首屏 LCP 图片优先级，说明哪些图片不应该懒加载。",
+      "en": "查询首屏 LCP 图片优先级。"
+    }
+  ]
+}
