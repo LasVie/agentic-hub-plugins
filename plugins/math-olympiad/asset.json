@@ -1,0 +1,15 @@
+{
+  "type": "agent-plugin",
+  "name": "math-olympiad",
+  "version": "1.0.0",
+  "display_name": "奥数竞赛证明与对抗验证",
+  "description": "以对抗式验证求解与审查竞赛数学证明（IMO、Putnam、USAMO、AIME、数学联赛）：题意检查、多角度纯推理求解、仅依据清理后证明的分阶段模式化攻击、非对称阈值确认、修订或诚实弃权，可选中文 LaTeX/PDF 排版。",
+  "publisher": "Vannes Wijaya",
+  "category": "数据与科学研究",
+  "tags": ["竞赛数学", "证明验证", "反例构造", "奥数"],
+  "functional_tags": ["Competition Mathematics and Adversarial Verification"],
+  "scope": "Single-agent host conversations; one bundled skill using the host's current model. Excludes subagents, web lookup of problems, tools/MCP, model configuration and any guarantee of solving. PDF output only when xelatex + ctex are installed.",
+  "publisher_role": "Packaging maintainer; Hub publisher account has not been verified.",
+  "candidate_id": "CAND-ANT-038",
+  "task_id": "AH-20261027-math-olympiad"
+}

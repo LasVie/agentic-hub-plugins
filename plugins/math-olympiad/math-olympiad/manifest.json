@@ -1,0 +1,43 @@
+{
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "id": "math-olympiad",
+  "name": "奥数竞赛证明与对抗验证",
+  "description": "以对抗式验证求解与审查竞赛数学证明：先确认题意，多角度纯推理求解，再仅依据清理后的证明逐条模式化攻击，修订或诚实弃权，默认中文输出。",
+  "display_name": {
+    "en": "Math Olympiad Proofs with Adversarial Verification",
+    "zh": "奥数竞赛证明与对抗验证"
+  },
+  "display_description": {
+    "en": "Solve and check competition-math proofs (IMO, Putnam, USAMO, AIME) with interpretation checks, staged adversarial verification and calibrated abstention.",
+    "zh": "面向 IMO、Putnam、USAMO、AIME 及国内数学联赛：题意检查、多角度求解、分阶段对抗验证、诚实弃权，可选 LaTeX/PDF 中文排版。"
+  },
+  "category": "Science",
+  "source": "local",
+  "default_init_input": {
+    "en": "Use Math Olympiad Proofs to solve this competition problem with adversarial verification: ",
+    "zh": "请用奥数竞赛证明与对抗验证技能求解这道竞赛题，并给出验证记录："
+  },
+  "tags": [
+    {"en": "Competition math", "zh": "竞赛数学"},
+    {"en": "Proof verification", "zh": "证明验证"},
+    {"en": "Counterexamples", "zh": "反例构造"}
+  ],
+  "quick_inputs": [
+    {
+      "en": "Solve this olympiad problem and verify the proof adversarially: prove that for positive reals a, b, c with a+b+c=3, a^2+b^2+c^2 >= 3.",
+      "zh": "请求解并对抗验证：设正实数 a、b、c 满足 a+b+c=3，证明 a²+b²+c² ≥ 3。"
+    },
+    {
+      "en": "Check whether this competition proof is correct and point out any gap.",
+      "zh": "请检查下面这份竞赛证明是否正确，并指出漏洞所在："
+    },
+    {
+      "en": "Find a counterexample to this claim, or explain why it holds.",
+      "zh": "请为下面的命题找反例，或说明它为何成立："
+    }
+  ],
+  "skills": [
+    {"dir": "./skills/math-olympiad", "mode": "all"}
+  ]
+}

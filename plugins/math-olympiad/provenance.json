@@ -1,0 +1,54 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/anthropics/claude-plugins-official/tree/d4226d062928f8d9505dbdeadd10217d23361052/plugins/math-olympiad",
+      "revision": "d4226d062928f8d9505dbdeadd10217d23361052",
+      "license_expression": "Apache-2.0",
+      "author": "Anthropic (support@anthropic.com), as credited in the pinned upstream plugin.json",
+      "reused_source_paths": [
+        "plugins/math-olympiad/README.md",
+        "plugins/math-olympiad/LICENSE",
+        "plugins/math-olympiad/skills/math-olympiad/SKILL.md",
+        "plugins/math-olympiad/skills/math-olympiad/references/verifier_patterns.md",
+        "plugins/math-olympiad/skills/math-olympiad/references/adversarial_prompts.md",
+        "plugins/math-olympiad/skills/math-olympiad/references/solver_heuristics.md",
+        "plugins/math-olympiad/skills/math-olympiad/references/presentation_prompts.md",
+        "plugins/math-olympiad/skills/math-olympiad/references/known_constructions.md",
+        "plugins/math-olympiad/skills/math-olympiad/references/attempt_agent.md",
+        "plugins/math-olympiad/skills/math-olympiad/scripts/check_latex.sh",
+        "plugins/math-olympiad/skills/math-olympiad/scripts/compile_pdf.sh"
+      ],
+      "license_evidence": [
+        {"path": "licenses/claude-plugins-official/LICENSE", "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"},
+        {"path": "LICENSE", "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"}
+      ],
+      "notice_present": false
+    }
+  ],
+  "reused_paths": [
+    "README.md",
+    "LICENSE",
+    "licenses/claude-plugins-official/LICENSE",
+    "skills/math-olympiad/SKILL.md",
+    "skills/math-olympiad/references/verifier_patterns.md",
+    "skills/math-olympiad/references/adversarial_prompts.md",
+    "skills/math-olympiad/references/solver_heuristics.md",
+    "skills/math-olympiad/references/presentation_prompts.md",
+    "skills/math-olympiad/references/known_constructions.md",
+    "skills/math-olympiad/references/attempt_agent.md",
+    "skills/math-olympiad/scripts/check_latex.sh",
+    "skills/math-olympiad/scripts/compile_pdf.sh"
+  ],
+  "audit_file": "SOURCE_REVIEW.md",
+  "package_maintainer": "Vannes Wijaya",
+  "changes": [
+    "Translated to Simplified Chinese with Chinese default output",
+    "Multi-subagent workflow rewritten as single-agent staged workflow",
+    "Dropped model_tier_defaults.md, evals and upstream plugin.json; budget presets added",
+    "PDF typesetting switched to ctexart + xelatex",
+    "Upstream unverifiable benchmark claims removed",
+    "Added manifest.json, THIRD_PARTY_NOTICES.md and license copies"
+  ]
+}

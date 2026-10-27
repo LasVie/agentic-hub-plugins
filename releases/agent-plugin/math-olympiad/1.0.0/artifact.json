@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:math-olympiad",
+  "type": "agent-plugin",
+  "name": "math-olympiad",
+  "version": "1.0.0",
+  "zip": "math-olympiad-1.0.0.zip",
+  "sha256": "f401d739852e5549445d0929154a9aaca53958e46ae752a66521c15afcff52f0",
+  "payload_sha256": {
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "README.md": "fa0950ed4d12c1d2a081e6478de2300d7dadba444663632eecd533dbb2352c47",
+    "THIRD_PARTY_NOTICES.md": "3ccf046a4b2ed0dd6433eb8149d2978c206241aa62fe0d10299efd799d9b5f2a",
+    "licenses/claude-plugins-official/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "manifest.json": "f05d75265e0279809b8750297d829568cccee42590f0a0220a292ae9f9acff00",
+    "skills/math-olympiad/SKILL.md": "6fd8ec86b86e490665a40963b84e994dae11bd7214fcc630dd297a2b1be334e2",
+    "skills/math-olympiad/references/adversarial_prompts.md": "711f74fe6d99d6cec5bd2bb2a17431bd3d5c0c4b403a18aeef41f6381b157f80",
+    "skills/math-olympiad/references/attempt_agent.md": "f27181334a32a954fc408d289fb272bcfd9464e3df37d73026420eb5b276d071",
+    "skills/math-olympiad/references/known_constructions.md": "d800407dd84c4da7825202d7c9980901762291f7a147a34f24407efedc213cc3",
+    "skills/math-olympiad/references/presentation_prompts.md": "69439ae9c3adaac80a18add726fe4e7c526c69e2a03d2484da2f2b7cd4366e5d",
+    "skills/math-olympiad/references/solver_heuristics.md": "69db633d1789ef7be5fb6092deb36a09b9182c5229640711088cebbd942f46dd",
+    "skills/math-olympiad/references/verifier_patterns.md": "e27ec7dbd721ceacef6af55651571cce11b77b5a89ad305e3bf1e30df4670d3c",
+    "skills/math-olympiad/scripts/check_latex.sh": "0be05f17634f7c70128aa495f5b3f910ee8014d5fcc5a250edd18b01304c2e2e",
+    "skills/math-olympiad/scripts/compile_pdf.sh": "88a12b48dd8a96c751dea179bbeae552b3d23a450fe25de0fc294c2fc76a59ad"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "3adde32bea31d4911d7e3de20aff292d8e6ddd2a414fb54cf6099919bfd867af",
+  "functional_test_report_sha256": "cf663db2e30be3d04b62c1f7ccfc5fd67ce6a9029596ef98b26f66d8f637d0ac"
+}

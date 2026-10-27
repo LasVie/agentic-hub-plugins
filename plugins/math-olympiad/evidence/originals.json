@@ -1,0 +1,90 @@
+[
+  {
+    "index": 1,
+    "original_name": "Screenshot 2026-10-27 112838.png",
+    "bytes": 106762,
+    "width": 1920,
+    "height": 1200,
+    "sha256": "ff593ddf4e825bfa344c0abba3259963409d4847b5004676141fe418b72204bd",
+    "file": "user-test-1.0.0-01.png",
+    "shows": "Plugin list (我的扩展) shows 奥数竞赛证明与对抗验证 with Chinese tags/description",
+    "source": "Original PNG supplied by Vannes Wijaya in the current conversation 2026-10-27 for GitHub PR evidence; exact bytes, no editing/recompression."
+  },
+  {
+    "index": 2,
+    "original_name": "Screenshot 2026-10-27 112848.png",
+    "bytes": 133716,
+    "width": 1920,
+    "height": 1200,
+    "sha256": "8d6acee48a6e22eb1627ef31e8a1cc09261eaefff68c3b197a29a2c4a2657430",
+    "file": "user-test-1.0.0-02.png",
+    "shows": "Plugin detail page: Chinese name, tags, quick prompts, bundled math-olympiad skill",
+    "source": "Original PNG supplied by Vannes Wijaya in the current conversation 2026-10-27 for GitHub PR evidence; exact bytes, no editing/recompression."
+  },
+  {
+    "index": 3,
+    "original_name": "Screenshot 2026-10-27 112541.png",
+    "bytes": 300893,
+    "width": 1920,
+    "height": 1200,
+    "sha256": "165bce1de6dca03db39d8b95640124bfc482b4bfdf17ccc3f54b84ef91161be1",
+    "file": "user-test-1.0.0-03.png",
+    "shows": "Step 2 solve a²+b²+c²≥3 — beginning: Chinese staged workflow; compiled proof.pdf (xelatex+ctex) shown",
+    "source": "Original PNG supplied by Vannes Wijaya in the current conversation 2026-10-27 for GitHub PR evidence; exact bytes, no editing/recompression."
+  },
+  {
+    "index": 4,
+    "original_name": "Screenshot 2026-10-27 113044.png",
+    "bytes": 216613,
+    "width": 1920,
+    "height": 1200,
+    "sha256": "6acacb65329a30a7fe968a0612572001ca72070c93eaa73bccc9628802c97d1e",
+    "file": "user-test-1.0.0-04.png",
+    "shows": "Step 2 — end: proof, 验证记录 5/5 HOLDS, same-agent staged disclosure, proof.pdf output",
+    "source": "Original PNG supplied by Vannes Wijaya in the current conversation 2026-10-27 for GitHub PR evidence; exact bytes, no editing/recompression."
+  },
+  {
+    "index": 5,
+    "original_name": "Screenshot 2026-10-27 112629.png",
+    "bytes": 212090,
+    "width": 1920,
+    "height": 1200,
+    "sha256": "a342e9f3ec0ae7201c8e41a02aa90936bb523b16f03205c3b73dc701b31fe357",
+    "file": "user-test-1.0.0-05.png",
+    "shows": "Step 3 check n²+n+41 proof — beginning: interpretation, cleaned proof, round-1 attack",
+    "source": "Original PNG supplied by Vannes Wijaya in the current conversation 2026-10-27 for GitHub PR evidence; exact bytes, no editing/recompression."
+  },
+  {
+    "index": 6,
+    "original_name": "Screenshot 2026-10-27 112638.png",
+    "bytes": 199450,
+    "width": 1920,
+    "height": 1200,
+    "sha256": "de6c16749f4e7119c946d30e367bff33dec32fdaedecf89a9509f1b0fa20e6b2",
+    "file": "user-test-1.0.0-06.png",
+    "shows": "Step 3 — end: 证明有漏洞且命题不成立, counterexamples n=40/41, early exit after 2 HOLE FOUND",
+    "source": "Original PNG supplied by Vannes Wijaya in the current conversation 2026-10-27 for GitHub PR evidence; exact bytes, no editing/recompression."
+  },
+  {
+    "index": 7,
+    "original_name": "Screenshot 2026-10-27 112814.png",
+    "bytes": 233112,
+    "width": 1920,
+    "height": 1200,
+    "sha256": "dca5d17d21c458ceb40a8c8c5fb47f467fe37abf2a237d4bfdd4ea9400eee15b",
+    "file": "user-test-1.0.0-07.png",
+    "shows": "Step 4 twin primes — beginning: identified as open problem",
+    "source": "Original PNG supplied by Vannes Wijaya in the current conversation 2026-10-27 for GitHub PR evidence; exact bytes, no editing/recompression."
+  },
+  {
+    "index": 8,
+    "original_name": "Screenshot 2026-10-27 112825.png",
+    "bytes": 259703,
+    "width": 1920,
+    "height": 1200,
+    "sha256": "e7c61cf92c4d2fa91f2d4a0d4333cc275156f4236b3c90286623a2cca358a0d1",
+    "file": "user-test-1.0.0-08.png",
+    "shows": "Step 4 — end: no full proof; honest abstention, verification log",
+    "source": "Original PNG supplied by Vannes Wijaya in the current conversation 2026-10-27 for GitHub PR evidence; exact bytes, no editing/recompression."
+  }
+]
