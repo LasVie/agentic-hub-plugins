@@ -13,7 +13,7 @@ Confirmed by Cai Zhenze in the current conversation on 2026-10-27 Asia/Singapore
 
 ## Original screenshot receipt
 
-Four original PNGs were copied byte-for-byte into ignored `dist/offline-ebook-reader/1.0.0/user-evidence/` for PR upload. The originals are not in either plugin ZIP. Images are uploaded directly to the GitHub PR comment, with their verified permalink subsequently recorded in the original task. No image is reconstructed or recompressed.
+Four original PNGs were copied byte-for-byte into ignored `dist/offline-ebook-reader/1.0.0/user-evidence/` for PR upload. The originals are not in either plugin ZIP. A byte-identical copy of each original is retained in `evidence/1.0.0/` and embedded in the dedicated PR evidence comment using immutable GitHub commit image URLs. The specific verified comment permalink is recorded in the original task. This is repository-backed PR image evidence, not a github.com/user-attachments upload. No image is reconstructed or recompressed. The Chrome extension file chooser still reported disabled file access after the user enabled it; a native picker timed out, so the authorized GitHub repository upload route was used without further browser permission changes.
 
 | Original filename | Dimensions | Bytes | SHA-256 |
 | --- | --- | --- | --- |
