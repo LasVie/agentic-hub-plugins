@@ -6,11 +6,11 @@ Task AH-20261028-heartbeat; candidate CAND-DSH-043.
 
 2026-10-28; actual openjiuwen native Tool/ToolCard SDK from the local jiuwenswarm venv, CPython 3.12.14, Linux (WSL2); CLI checks run with the system `python3` in a separate process. Command: `python -B tests/interest_heartbeat_functional.py [inner-dir]`, isolated temp data dir via `INTEREST_HEARTBEAT_DATA_DIR`, fixed clock in Asia/Shanghai for time-dependent checks.
 
-- 1.0.2 source payload: 63/63 passed.
-- 1.0.2 extracted native ZIP payload: 63/63 passed.
-- (1.0.1: 55/55; 1.0.0: 50/50; both superseded and never pushed.)
+- 1.0.3 source payload: 67/67 passed.
+- 1.0.3 extracted native ZIP payload: 67/67 passed.
+- (1.0.2: 63/63; 1.0.1: 55/55; 1.0.0: 50/50; all superseded and never pushed.)
 
-Coverage: status/cron prompt; configure validation with Chinese errors (bad window, number, timezone); interests set/remove; profile add/list with chat confidence cap and invalid kind; gate verdicts for quiet hours, busy window, cooldown, daily cap, pause, cross-midnight left-closed window, next-day reset; pick refusal under gate; browse due/not-due (outside window, min interval, daily sessions), focus rotation with 3-day cooldown; seed add/duplicate/same-topic merge, empty-text error, retire after 2 uses, chat seed retires after 1, news TTL expiry, category cap 16, hand-seed protection; late booking still counted with notice; carry note into pick and clearing; skip; audit events present and free of seed text; UTF-8 Chinese data; reset needs confirm; unknown action; 8 concurrent confirm_send calls with no lost entries; 1.0.1 CLI entry (cron prompt carries absolute CLI path and full flow, CLI beat, shared data with the tool, invalid JSON and unconfirmed reset errors); 1.0.2 cron schedule (default hourly skipping 01:00-08:00, cross-midnight quiet hours, 120/30-minute intervals, no quiet hours, configure returns an update notice, status exposes it) and the readable silent line; skill/manifest/tool card Chinese text.
+Coverage: status/cron prompt; configure validation with Chinese errors (bad window, number, timezone); interests set/remove; profile add/list with chat confidence cap and invalid kind; gate verdicts for quiet hours, busy window, cooldown, daily cap, pause, cross-midnight left-closed window, next-day reset; pick refusal under gate; browse due/not-due (outside window, min interval, daily sessions), focus rotation with 3-day cooldown; seed add/duplicate/same-topic merge, empty-text error, retire after 2 uses, chat seed retires after 1, news TTL expiry, category cap 16, hand-seed protection; late booking still counted with notice; carry note into pick and clearing; skip; audit events present and free of seed text; UTF-8 Chinese data; reset needs confirm; unknown action; 8 concurrent confirm_send calls with no lost entries; 1.0.1 CLI entry (cron prompt carries absolute CLI path and full flow, CLI beat, shared data with the tool, invalid JSON and unconfirmed reset errors); 1.0.2 cron schedule (default hourly skipping 01:00-08:00, cross-midnight quiet hours, 120/30-minute intervals, no quiet hours, configure returns an update notice, status exposes it) and the readable silent line; 1.0.3 cron prompt within the host 500-character limit, `$HOME` CLI path runnable from bash, skip reason requested, search-results URLs rejected as seed sources; skill/manifest/tool card Chinese text.
 
 ## Host test round 1 (1.0.0)
 
@@ -24,5 +24,15 @@ Further finding (user report plus host code `gateway/cron/scheduler.py` `_push_t
 Fixed in 1.0.1/1.0.2 (1.0.1 was never host-tested): skill saves settings stated in the request and skips the follow-up question when the user says to use defaults; new `runtime/cli.py`; `status` returns a self-contained cron prompt with the absolute CLI path and the full beat flow; `status` also returns a cron expression and IANA timezone generated from settings that skips quiet hours (user chose "fewer runs + readable note" on 2026-10-28); silent runs reply with one readable Chinese line instead of `HEARTBEAT_OK`; skill, README and descriptions state that shares appear in the scheduled-task panel. Round 1 does not count as confirmation of 1.0.2.
 
 ## Host test round 2 (1.0.2)
+
+2026-10-28, same host, user-run by Vannes Wijaya; reviewed from session history and the plugin audit log.
+
+- Setup (session web_1a18092a391_aab22d6696a3): interests stated in the request saved without asking; paused=false and Asia/Shanghai set; one cron job 兴趣心跳 created with `0 0 0,8,...,23 * * ? *`; panel delivery explained. Defect: the first cron add was rejected (`description must be at most 500 characters`); the agent condensed the prompt itself.
+- Cron runs 12:00, 13:00, 14:00 fired on schedule, all via the CLI path. 12:00: SPEAK, shared the second coffee seed, confirm_send 2/10. 13:00 and 14:00: both seeds already said today → skip → readable silent line. User confirmed each run appears as a 兴趣心跳 card in the panel and opens to the whole run.
+- Defects: the shared link was a DuckDuckGo search-results URL saved by the 11:00 browse; runs posted process narration and a trailing status line; skips were logged as 未说明 because the condensed prompt dropped `reason`.
+
+Fixed in 1.0.3: shorter cron prompt (≤500 characters with a `$HOME`-relative CLI path), asks for the skip reason and for no process narration; `add_seed` rejects search-results URLs; skill updated to match. Round 2 does not count as confirmation of 1.0.3.
+
+## Host test round 3 (1.0.3)
 
 Pending.

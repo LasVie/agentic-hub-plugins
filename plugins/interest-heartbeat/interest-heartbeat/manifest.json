@@ -1,6 +1,6 @@
 {
   "id": "interest-heartbeat",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "package_type": "plugin",
   "source": "local",
   "name": "兴趣心跳主动分享",

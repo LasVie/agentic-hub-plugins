@@ -3,7 +3,7 @@
 用法：python -B tests/interest_heartbeat_functional.py [插件内层目录]
 默认测试 plugins/interest-heartbeat/interest-heartbeat；可传解压后的 ZIP 内层目录。
 """
-import asyncio,importlib,json,os,sys,tempfile
+import re,asyncio,importlib,json,os,sys,tempfile
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -47,6 +47,9 @@ async def main():
  b=E(at(28,'11:12'),action='add_seed',text='某烘焙商发布了新的浅烘埃塞豆',topic='浅烘新豆',tag='news')
  c=E(at(28,'11:13'),action='add_seed',text='同一款豆子加了限量版',topic='浅烘新豆',tag='news')
  check('素材新增 / 完全重复 / 同话题合并',a['kind']=='added' and b['kind']=='duplicate' and c['kind']=='merged' and c['id']==a['id'],[a,b,c])
+ check('搜索结果页不算来处','原文链接' in (err(at(28,'11:13'),action='add_seed',text='搜索页素材',url='https://html.duckduckgo.com/html/?q=咖啡') or '') and '原文链接' in (err(at(28,'11:13'),action='add_seed',text='搜索页素材',url='https://www.google.com/search?q=x') or ''))
+ o=E(at(28,'11:13'),action='add_seed',text='原文链接素材',topic='原文',url='https://news.example.com/search-tips')
+ check('原文链接照常保存',o['kind']=='added' and E(at(28,'11:13'),action='seeds',op='remove',id=o['id'])['ok'])
  check('空素材报错','不能为空' in (err(at(28,'11:13'),action='add_seed',text='  ') or ''))
  E(at(28,'11:14'),action='browse_done',focus='咖啡',added=1)
  r=E(at(28,'12:00'),action='beat');check('同日间隔不足 4 小时不再闲逛',not r['闲逛']['due'] and '不足' in r['闲逛']['reason'],r)
@@ -106,7 +109,12 @@ async def main():
  import subprocess
  cli=pkg/'runtime'/'cli.py'
  r=await call(action='status');prompt=r['cron_prompt']
- check('cron 提示词带命令行入口绝对路径与完整流程',str(cli.resolve()) in prompt and 'add_seed' in prompt and 'confirm_send' in prompt and '（心跳：这次没有值得说的）' in prompt,prompt)
+ shown=re.search(r'python3 "([^"]+)"',prompt).group(1)
+ check('cron 提示词带命令行入口路径与完整流程',os.path.expandvars(shown)==str(cli.resolve()) and 'add_seed' in prompt and 'confirm_send' in prompt and 'skip（reason）' in prompt and '（心跳：这次没有值得说的）' in prompt,prompt)
+ # 宿主定时任务描述限 500 字；按宿主安装路径（$HOME 后约 90 字）留出余量
+ check('cron 提示词不超过宿主 500 字上限',len(prompt)-len(shown)+110<=500,len(prompt))
+ p=subprocess.run(['bash','-c',f'python3 "{shown}' + '" \'{"action": "status"}\''],capture_output=True,text=True,encoding='utf-8',env=os.environ,cwd=tempfile.gettempdir())
+ check('bash 能按提示词里的路径运行命令行',p.returncode==0 and json.loads(p.stdout)['ok'],p.stdout+p.stderr)
  run=lambda arg:subprocess.run(['python3',str(cli),arg],capture_output=True,text=True,encoding='utf-8',env=os.environ,cwd=tempfile.gettempdir())
  p=run('{"action": "beat"}');out=json.loads(p.stdout)
  check('命令行 beat 返回中文 JSON',p.returncode==0 and out['ok'] and '闸门' in out,p.stdout+p.stderr)
