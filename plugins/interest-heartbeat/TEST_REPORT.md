@@ -35,4 +35,11 @@ Fixed in 1.0.3: shorter cron prompt (≤500 characters with a `$HOME`-relative C
 
 ## Host test round 3 (1.0.3)
 
-Pending.
+2026-10-28, same host, user-run by Vannes Wijaya; reviewed from session history, gateway log and the plugin audit log. Screenshots in `evidence/1.0.3/`.
+
+- Setup (session web_1a1812549e1_c181b0ea96bc, 14:14): interests saved directly; `status` cron expression and prompt used verbatim; cron job created on the first attempt (prompt 479 characters, `$HOME`-relative CLI path); panel delivery explained. The leftover 1.0.2 job was removed by id from another chat without pausing the heartbeat.
+- Cron runs 15:00 and 16:00: CLI path ran from bash; beat → pick → skip with a recorded reason; the only reply was the silent line, with no process narration.
+- Browse run (16:11, triggered by hand in the cron session after moving a browse window to 16:00-21:00; the host offered no run-now tool): focus rotated to 独立游戏; 2 seeds stored with article URLs (nintendolife.com, gamesindustry.biz); browse_done; one item shared in two sentences with its link; confirm_send booked 3/10.
+- Host display issues, not plugin defects: the 15:00 card kept a running timer although the gateway logged stream end and `push_to_targets ... status=succeeded` at 15:00:31 exactly as for the 16:00 run; the 16:11 reply is rendered twice in the panel while the session history holds one final message.
+
+User confirmed testing of 1.0.3 complete on 2026-10-28 (Hub wrapper ZIP SHA-256 11a86df6170ae62ad06398bae4ad142438a8cca8e7df7083a04fa81beed3d034; native test ZIP 3a75ac0a80d2d352b6e994a296eb9fd566cebb90514e9fadbc8ef3dcebdff2b7).
