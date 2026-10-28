@@ -1,0 +1,65 @@
+{
+  "task_id": "AH-20261027-word-citation-notes",
+  "candidate_id": "CAND-CLD-322",
+  "display_name": "Word 引用脚注转换",
+  "version": "1.0.0",
+  "received_date": "2026-10-28",
+  "timezone": "Asia/Singapore",
+  "source": "Original PNG attachments supplied with explicit manual testing completion in this Codex conversation. Byte-for-byte copies; no resize/recompression.",
+  "images": [
+    {
+      "index": 1,
+      "filename": "Screenshot 2026-10-28 at 2.53.38 PM.png",
+      "bytes": 336745,
+      "width": 594,
+      "height": 1966,
+      "sha256": "e6e2d65924a9461b03d586b028a5ec433eb4c0c2b94d3749694f4036275a8dc1",
+      "original_path": "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/TemporaryItems/NSIRD_screencaptureui_1A4HJ0/Screenshot 2026-10-28 at 2.53.38 PM.png"
+    },
+    {
+      "index": 2,
+      "filename": "Screenshot 2026-10-28 at 2.53.52 PM.png",
+      "bytes": 342160,
+      "width": 582,
+      "height": 1970,
+      "sha256": "e3d25026d0a6b097853d7777b0c769e0b99c63e07608ba030a46f7dbc4baebd1",
+      "original_path": "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/TemporaryItems/NSIRD_screencaptureui_FV4EqR/Screenshot 2026-10-28 at 2.53.52 PM.png"
+    },
+    {
+      "index": 3,
+      "filename": "Screenshot 2026-10-28 at 2.54.03 PM.png",
+      "bytes": 331726,
+      "width": 576,
+      "height": 1960,
+      "sha256": "51e1690ebcdd3868c116fda54b5888a549381794f2515af6df2a35beed079bb8",
+      "original_path": "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/TemporaryItems/NSIRD_screencaptureui_YqqvJw/Screenshot 2026-10-28 at 2.54.03 PM.png"
+    },
+    {
+      "index": 4,
+      "filename": "Screenshot 2026-10-28 at 2.54.12 PM.png",
+      "bytes": 344365,
+      "width": 572,
+      "height": 1968,
+      "sha256": "198a3afe6edc8dbd79e4f195b1ce24f8bf4d36248dfbf48db55209ab0a6e8f2b",
+      "original_path": "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/TemporaryItems/NSIRD_screencaptureui_ZePEy4/Screenshot 2026-10-28 at 2.54.12 PM.png"
+    },
+    {
+      "index": 5,
+      "filename": "Screenshot 2026-10-28 at 2.54.35 PM.png",
+      "bytes": 609946,
+      "width": 3322,
+      "height": 1984,
+      "sha256": "91989fc12becc8af3e77af56f8711184cb89decea19f379c349692e165298071",
+      "original_path": "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/TemporaryItems/NSIRD_screencaptureui_3goyNs/Screenshot 2026-10-28 at 2.54.35 PM.png"
+    },
+    {
+      "index": 6,
+      "filename": "Screenshot 2026-10-28 at 2.54.46 PM.png",
+      "bytes": 773532,
+      "width": 3322,
+      "height": 1980,
+      "sha256": "6cc11daf85bf75a97e536502059e7127d3dca4541e14fa55ce4bf8286cb6d6b4",
+      "original_path": "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/TemporaryItems/NSIRD_screencaptureui_VQVMPa/Screenshot 2026-10-28 at 2.54.46 PM.png"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "task_id": "AH-20261027-word-citation-notes",
+  "candidate_id": "CAND-CLD-322",
+  "owner": "Cai Zhenze",
+  "display_name": "Word 引用脚注转换",
+  "version": "1.0.0",
+  "checked_date": "2026-10-27",
+  "market_zip": "releases/agent-plugin/word-citation-notes/1.0.0/word-citation-notes-1.0.0.zip",
+  "market_sha256": "03da5e1d00c4873ebaff0e4547470f37ce5c86ba63d9d4f7173a1f73dd63a658",
+  "market_bytes": 55944,
+  "native_zip": "plugins/word-citation-notes/test-packages/word-citation-notes-1.0.0-workswarm.zip",
+  "native_sha256": "335a003d520315f8688f548ff284af9154829a3a32fc1cf885ee419870303b57",
+  "native_bytes": 54780,
+  "payload_files": {
+    "requirements.txt": "beea49f077fc00047671f0088a02d0f03e741782da9e939e661b309cba746207",
+    "THIRD_PARTY_NOTICES.md": "7467247c935d4de1e0f4d37b01efb8fbd3c9d0eda489f8ebe6fe6922ca704361",
+    "README.md": "953816b2769975977b740b211f8efdf378ecc712aa373c11c2973f0fadc58fdc",
+    "manifest.json": "b3799ed42f754d1f9b0b514562a1a94bd24c2e49b9c1a92d3b2e2a7cf6982f13",
+    "tools/notes_tools.py": "a29d1ab9435044575c28089064ec46db4d84e70da8c428c8ad3bed77ddd0192c",
+    "runtime/docx_notes.py": "ad70c3cea2cd0b33326a6602780261c19abfddf9a755942d5e4e791dc0c4ee8c",
+    "licenses/cite2fn/LICENSE": "d611e5491dca3e4e98428beebd7d70b7cc20bd6796e66eb5a98a51446e2d446b",
+    "skills/word-citation-notes/SKILL.md": "fb4e651f238e704ff2902b9ed68e31112e251d1a255d3d64b1eb837e93b4508b"
+  },
+  "all_source_market_native_installed_payloads_identical": true,
+  "original_license_sha256": "d611e5491dca3e4e98428beebd7d70b7cc20bd6796e66eb5a98a51446e2d446b",
+  "license_verified": true,
+  "focused_tests": {
+    "source": 24,
+    "extracted_market": 24,
+    "extracted_native": 24,
+    "installed": 24,
+    "all_passed": true,
+    "real_sdk_invocation_and_stream": true
+  },
+  "regression": {
+    "run": 509,
+    "passed": 419,
+    "environment_skipped": 90,
+    "errors": 0,
+    "failures": 0,
+    "node": "22.23.3",
+    "dependencies": "PyYAML only; full lxml/SDK suite separately passed"
+  },
+  "check_repo": {
+    "source_assets": 41,
+    "release_zips": 50,
+    "passed": true
+  },
+  "manual_workspace": "/Users/IDLE_And_R/.codex/worktrees/581d/agentic-hub-plugins/dist/word-citation-notes/1.0.0/manual-workspace",
+  "manual_input_files": [
+    "公开引用示例.docx",
+    "原件SHA256.txt",
+    "尾注计划.json",
+    "脚注计划.json",
+    "过期源摘要.json",
+    "重叠范围.json",
+    "重复键.json"
+  ],
+  "manual_outputs_exist": false,
+  "model_requests_sent": 0,
+  "user_testing_complete": false,
+  "original_user_test_screenshots_received": false,
+  "chinese_checks": {
+    "utf8_text": true,
+    "simplified_chinese_instructions": true,
+    "all_three_tool_descriptions": true,
+    "help_errors_and_results_exercised": true
+  },
+  "renderer": {
+    "name": "LibreOfficeDev",
+    "version": "26.8.0.0.alpha0",
+    "both_note_kinds_rendered": true,
+    "chinese_fontconfig_corrected_in_private_process": true,
+    "visual_inspection_passed": true,
+    "user_manual_test_evidence": false
+  }
+}
