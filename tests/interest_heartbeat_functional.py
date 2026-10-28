@@ -102,6 +102,18 @@ async def main():
  base_n=len(E(at(30,'10:41'),action='ledger')['今天已说'])
  await asyncio.gather(*[tool.PluginTool().invoke({'action':'confirm_send','summary':f'并发{i}'}) for i in range(8)])
  r=await call(action='ledger');check('并发 confirm_send 不丢账',len(r['今天已说'])-base_n==8,len(r['今天已说']))
+ # 定时任务会话没有插件工具：命令行入口（系统 python3、独立进程、同一数据目录）
+ import subprocess
+ cli=pkg/'runtime'/'cli.py'
+ r=await call(action='status');prompt=r['cron_prompt']
+ check('cron 提示词带命令行入口绝对路径与完整流程',str(cli.resolve()) in prompt and 'add_seed' in prompt and 'confirm_send' in prompt and 'HEARTBEAT_OK' in prompt,prompt)
+ run=lambda arg:subprocess.run(['python3',str(cli),arg],capture_output=True,text=True,encoding='utf-8',env=os.environ,cwd=tempfile.gettempdir())
+ p=run('{"action": "beat"}');out=json.loads(p.stdout)
+ check('命令行 beat 返回中文 JSON',p.returncode==0 and out['ok'] and '闸门' in out,p.stdout+p.stderr)
+ p=run('{"action": "add_seed", "text": "命令行加入的素材", "topic": "命令行"}');out=json.loads(p.stdout)
+ r=await call(action='seeds');check('命令行与工具共享数据',out['kind']=='added' and any(x['id']==out['id'] for x in r['活跃']),[out,r])
+ p=run('not json');out=json.loads(p.stdout);check('命令行非法参数中文报错',p.returncode==1 and 'JSON' in out['message'],p.stdout)
+ p=run('{"action": "reset"}');out=json.loads(p.stdout);check('命令行 reset 仍需确认',p.returncode==1 and '明确同意' in out['message'],p.stdout)
  # 技能与清单
  skill=(pkg/'skills'/'interest-heartbeat'/'SKILL.md').read_text(encoding='utf-8')
  check('技能 frontmatter 与中文流程','name: interest-heartbeat' in skill and '一跳流程' in skill and 'HEARTBEAT_OK' in skill,'')

@@ -1,7 +1,7 @@
 {
   "type": "agent-plugin",
   "name": "interest-heartbeat",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "display_name": "兴趣心跳主动分享",
   "description": "让助手按节律自己醒来：按你的兴趣联网闲逛、把见闻存进素材池，由代码闸门（静默时段、忙时窗口、每日上限、冷却）决定能不能开口，只在有真实来处、值得一说时在你的会话里主动分享一两句；不开口时不打扰、不多耗模型。",
   "publisher": "Vannes Wijaya",

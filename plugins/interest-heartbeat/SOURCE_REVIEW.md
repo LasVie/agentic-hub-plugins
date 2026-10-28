@@ -30,7 +30,7 @@ The npm manifest for 2.0.0 declares no `license` field; the repository `LICENSE`
 
 ## New team-written materials
 
-Tool wrapper `tools/plugin_tool.py`, README, storage/locking/configuration/profile/ledger code in `runtime/engine.py`, and tests are newly written. No unified repository licensing decision is made here (Project Lead decides).
+Tool wrapper `tools/plugin_tool.py`, command-line entry `runtime/cli.py`, README, storage/locking/configuration/profile/ledger code in `runtime/engine.py`, and tests are newly written. No unified repository licensing decision is made here (Project Lead decides).
 
 ## Functional differences from upstream
 
@@ -41,6 +41,7 @@ Tool wrapper `tools/plugin_tool.py`, README, storage/locking/configuration/profi
 
 Permission conclusion: reuse permitted for the declared paths subject to the bundled full MIT notice. This is an operational source review, not a trademark/service-terms representation.
 
+
 ## Final archive review
 
-2026-10-28, version 1.0.0 (pre-push): extracted both ZIPs. Hub wrapper `releases/agent-plugin/interest-heartbeat/1.0.0/interest-heartbeat-1.0.0.zip` (SHA-256 551c9ffe9b60607c9490745ec6ddf108fe9745a53a0493731dae22c285205a7f; outer dir holds only plugin.yaml + inner dir) and native test ZIP `dist/interest-heartbeat/1.0.0/interest-heartbeat-1.0.0-workswarm.zip` (SHA-256 bfb92514eb2f95622d4527f64d2a972470a1e2a976befa79e1c723b912916257) contain byte-identical inner payloads (`diff -r` clean). Reused-semantics file `runtime/engine.py` carries a modification header; SKILL.md is listed in THIRD_PARTY_NOTICES.md; `licenses/dsh-heartbeat/LICENSE` SHA-256 6d174799b6efe730b5ca9e02e4d9fc19463d91dcaa87c67aa6c9b8b9a043a7d4 matches provenance.json and upstream. No unmet MIT condition. Pending explicit user test completion; no push/PR.
+2026-10-28, version 1.0.1 (pre-push; supersedes the unpushed local 1.0.0 build, removed): extracted both ZIPs. Hub wrapper `releases/agent-plugin/interest-heartbeat/1.0.1/interest-heartbeat-1.0.1.zip` (SHA-256 512eab4f166d8bf5232b2540a87b871e095c0cbc1095b6325140085b5628056a; outer dir holds only plugin.yaml + inner dir) and native test ZIP `dist/interest-heartbeat/1.0.1/interest-heartbeat-1.0.1-workswarm.zip` (SHA-256 2c434664a19936beadbf84cfb163aa95fec87ff3c97f3268e92bc4cbd5a6c14a) contain byte-identical inner payloads (`diff -r` clean). Reused-semantics file `runtime/engine.py` carries a modification header; SKILL.md is listed in THIRD_PARTY_NOTICES.md; `runtime/cli.py` is new code; `licenses/dsh-heartbeat/LICENSE` SHA-256 6d174799b6efe730b5ca9e02e4d9fc19463d91dcaa87c67aa6c9b8b9a043a7d4 matches provenance.json and upstream. No unmet MIT condition. Pending explicit user test completion; no push/PR.
