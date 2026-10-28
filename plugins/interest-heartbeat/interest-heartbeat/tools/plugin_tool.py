@@ -4,7 +4,7 @@ from openjiuwen.core.foundation.tool import Tool,ToolCard
 from ..runtime.engine import execute,InputError
 DESC=('兴趣心跳：按节律醒来、按兴趣闲逛找新东西、由代码闸门（暂停/静默时段/忙时窗口/每日上限/冷却）决定能否开口。'
  '一跳流程：beat → （闲逛到期时）web 搜索 + add_seed + browse_done → （闸门放行时）pick → 说一两句并 confirm_send，或 skip。'
- '不开口时只回复 HEARTBEAT_OK。其他动作：status 查看状态与定时任务提示词、configure 修改节律与时段、interests 管理兴趣、'
+ '不开口时只回复 （心跳：这次没有值得说的）。其他动作：status 查看状态与定时任务提示词、configure 修改节律与时段、interests 管理兴趣、'
  'profile 记录用户喜好（只记用户明确说过的）、carry 心事匣、seeds 素材池、ledger 账本与审计、reset 清空（需用户明确同意）。只读写本地插件数据目录。')
 S={'type':'string'}
 class PluginTool(Tool):

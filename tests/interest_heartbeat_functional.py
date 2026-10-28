@@ -25,7 +25,7 @@ def err(now,**q):
  except eng.InputError as e:return str(e)
 async def main():
  call=lambda **q:tool.PluginTool().invoke(q)
- r=await call(action='status');check('status 默认设置与 cron 提示词',r['ok'] and r['设置']['每日上限']==10 and 'HEARTBEAT_OK' in r['cron_prompt'],r)
+ r=await call(action='status');check('status 默认设置与 cron 提示词',r['ok'] and r['设置']['每日上限']==10 and '（心跳：这次没有值得说的）' in r['cron_prompt'],r)
  r=await call(action='configure',timezone='Asia/Shanghai',busy_windows=['09:00-10:00']);check('configure 时区与忙时窗口',r['ok'] and r['config']['忙时窗口']==['09:00-10:00'],r)
  r=await call(action='configure',quiet_hours='25:00-08:00');check('非法时段中文报错',not r['ok'] and 'HH:MM' in r['message'],r)
  r=await call(action='configure',max_daily=-1);check('非法数值中文报错',not r['ok'] and 'max_daily' in r['message'],r)
@@ -37,7 +37,7 @@ async def main():
  r=await call(action='profile',op='list');check('画像列表',any(x['id']==pid and x['confidence']==0.6 for x in r['entries']),r)
  r=await call(action='profile',op='add',kind='bogus',text='x');check('画像非法分区报错',not r['ok'] and 'kind' in r['message'],r)
  # 静默时段（默认 01:00-08:00）
- r=E(at(28,'03:00'),action='beat');check('静默时段 SILENT',r['闸门']['verdict']=='SILENT' and '静默时段' in r['闸门']['reason'] and 'HEARTBEAT_OK' in r['下一步'],r)
+ r=E(at(28,'03:00'),action='beat');check('静默时段 SILENT',r['闸门']['verdict']=='SILENT' and '静默时段' in r['闸门']['reason'] and '（心跳：这次没有值得说的）' in r['下一步'],r)
  r=E(at(28,'09:30'),action='beat');check('忙时窗口 SILENT',r['闸门']['verdict']=='SILENT' and '忙时窗口' in r['闸门']['reason'],r)
  r=E(at(28,'10:30'),action='beat');check('10:30 可开口、未到闲逛时段',r['闸门']['verdict']=='SPEAK' and not r['闲逛']['due'] and '不在闲逛时段' in r['闲逛']['reason'],r)
  r=E(at(28,'10:30'),action='pick');check('空素材池 pick',r['可以开口'] and r['素材']==[] and r['画像']['别提']==['剧透'],r)
@@ -88,7 +88,7 @@ async def main():
  E(at(29,'13:06'),action='configure',paused=False,quiet_hours='22:00-02:00')
  r=E(at(29,'23:30'),action='beat');r2=E(at(30,'01:59'),action='beat');r3=E(at(30,'02:00'),action='beat')
  check('跨午夜静默时段左闭右开',r['闸门']['verdict']=='SILENT' and r2['闸门']['verdict']=='SILENT' and '静默' not in r3['闸门'].get('reason',''),[r['闸门'],r2['闸门'],r3['闸门']])
- r=E(at(30,'10:30'),action='skip',reason='素材都不新鲜');check('skip 记录原因',r['ok'] and 'HEARTBEAT_OK' in r['message'],r)
+ r=E(at(30,'10:30'),action='skip',reason='素材都不新鲜');check('skip 记录原因',r['ok'] and '（心跳：这次没有值得说的）' in r['message'],r)
  r=E(at(30,'10:31'),action='ledger',limit=200);events=[x['event'] for x in r['审计']]
  check('审计含各类事件',{'beat','sent','skip','seed_added','browse_done','pick_refused'}<=set(events),sorted(set(events)))
  raw=(Path(os.environ['INTEREST_HEARTBEAT_DATA_DIR'])/'audit.jsonl').read_text(encoding='utf-8')
@@ -106,7 +106,7 @@ async def main():
  import subprocess
  cli=pkg/'runtime'/'cli.py'
  r=await call(action='status');prompt=r['cron_prompt']
- check('cron 提示词带命令行入口绝对路径与完整流程',str(cli.resolve()) in prompt and 'add_seed' in prompt and 'confirm_send' in prompt and 'HEARTBEAT_OK' in prompt,prompt)
+ check('cron 提示词带命令行入口绝对路径与完整流程',str(cli.resolve()) in prompt and 'add_seed' in prompt and 'confirm_send' in prompt and '（心跳：这次没有值得说的）' in prompt,prompt)
  run=lambda arg:subprocess.run(['python3',str(cli),arg],capture_output=True,text=True,encoding='utf-8',env=os.environ,cwd=tempfile.gettempdir())
  p=run('{"action": "beat"}');out=json.loads(p.stdout)
  check('命令行 beat 返回中文 JSON',p.returncode==0 and out['ok'] and '闸门' in out,p.stdout+p.stderr)
@@ -114,9 +114,19 @@ async def main():
  r=await call(action='seeds');check('命令行与工具共享数据',out['kind']=='added' and any(x['id']==out['id'] for x in r['活跃']),[out,r])
  p=run('not json');out=json.loads(p.stdout);check('命令行非法参数中文报错',p.returncode==1 and 'JSON' in out['message'],p.stdout)
  p=run('{"action": "reset"}');out=json.loads(p.stdout);check('命令行 reset 仍需确认',p.returncode==1 and '明确同意' in out['message'],p.stdout)
+ # 定时任务表达式：跳过静默时段、随设置变化
+ cfg=json.loads(json.dumps(eng.DEFAULT_CONFIG));cfg['timezone']='Asia/Shanghai'
+ s=eng.cron_schedule(cfg);check('默认每小时、跳过 01:00-08:00',s['cron_expr']=='0 0 0,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 * * ? *' and s['timezone']=='Asia/Shanghai',s)
+ cfg['gate']['quiet_hours']=['22:00','02:00'];s=eng.cron_schedule(cfg);check('跨午夜静默时段',' 2,3,' in s['cron_expr'] and ',22,' not in s['cron_expr'] and ',21 ' in s['cron_expr'],s)
+ cfg['gate']['quiet_hours']=['01:00','08:00'];cfg['interval_minutes']=120;s=eng.cron_schedule(cfg);check('120 分钟间隔从静默结束起每 2 小时',s['cron_expr']=='0 0 0,8,10,12,14,16,18,20,22 * * ? *',s)
+ cfg['interval_minutes']=30;s=eng.cron_schedule(cfg);check('30 分钟间隔',s['cron_expr'].startswith('0 0,30 0,8,'),s)
+ cfg['gate']['quiet_hours']=[];cfg['interval_minutes']=60;s=eng.cron_schedule(cfg);check('无静默时段则全天',s['cron_expr']=='0 0 * * * ? *',s)
+ r=await call(action='configure',quiet_hours='23:00-07:00');check('改静默时段提示更新定时任务','提示' in r and '定时任务' in r and ',23' not in r['定时任务']['cron_expr'],r)
+ r=await call(action='status');check('status 返回定时任务表达式',r['定时任务']['cron_expr'].startswith('0 0 '),r['定时任务'])
+ r=E(at(30,'23:30'),action='beat');check('不开口时给出可读的一行回复','（心跳：这次没有值得说的）' in r['下一步'],r['下一步'])
  # 技能与清单
  skill=(pkg/'skills'/'interest-heartbeat'/'SKILL.md').read_text(encoding='utf-8')
- check('技能 frontmatter 与中文流程','name: interest-heartbeat' in skill and '一跳流程' in skill and 'HEARTBEAT_OK' in skill,'')
+ check('技能 frontmatter 与中文流程','name: interest-heartbeat' in skill and '一跳流程' in skill and '（心跳：这次没有值得说的）' in skill,'')
  man=json.loads((pkg/'manifest.json').read_text(encoding='utf-8'));check('清单中文名称',man['name']=='兴趣心跳主动分享' and man['display_name']['zh']=='兴趣心跳主动分享',man['name'])
  card=tool.PluginTool().card;check('工具卡 id 与中文描述',card.name=='interest_heartbeat' and '闸门' in card.description,card.name)
  bad=[n for n,ok in results if not ok];print(f'\n{len(results)-len(bad)}/{len(results)} passed');sys.exit(1 if bad else 0)
