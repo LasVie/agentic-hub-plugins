@@ -1,0 +1,3 @@
+本软件部分基于 FreeType 团队的工作。
+Portions of this software are copyright © 1996-2024 The FreeType Project (www.freetype.org). All rights reserved.
+本分发选择 FreeType Project License（FTL）；保留原始双许可说明不表示选择 GPL。其他独立组件许可见 SOURCE_NOTICES.txt 及 BDF/PCF 原文。

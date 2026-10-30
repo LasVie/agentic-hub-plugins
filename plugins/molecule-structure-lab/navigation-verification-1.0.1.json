@@ -1,0 +1,113 @@
+{
+  "task_id": "AH-20261028-molecule-structure-lab",
+  "candidate_id": "CAND-EXT-002",
+  "owner": "Cai Zhenze",
+  "version": "1.0.1",
+  "date": "2026-10-30",
+  "diagnosis": "1.0.0 rejects user-activated cross-port entry navigation; separate foreign-workspace rejection remains correct.",
+  "manual_testing": "Passed: explicitly confirmed by Cai Zhenze in current Main 2.0 conversation on 2026-10-30; five original full-resolution screenshots received.",
+  "core_tests_passed": 14,
+  "independent_review": "No blocking findings in navigation policy, regression tests and frozen packages",
+  "native_sha256": "7fe3bcf1390a25ff484d49cf4eb5c681c1ea76001d3d3aa37810bf2af72b0f8a",
+  "canonical_sha256": "f42697463babe8275f41b9b640add46c0473f08ddb5a9ad70844710a95ae828a",
+  "evidence_root": "Historical raw developer evidence retained locally under dist/molecule-structure-lab/1.0.1; maintained verification summary follows.",
+  "failure_evidence": "dist/molecule-structure-lab/1.0.0/navigation-failure-20261030/originals.json",
+  "host_core_modified": false,
+  "paid_calls": 0,
+  "user_evidence": "test-evidence/1.0.1/originals.json",
+  "running_host_dispatch_evidence": "User screenshot 01 shows four real WorkSwarm calls, version 1.0.1, startup and safe reuse with identical URL.",
+  "known_blockers": [],
+  "phase": "Phase 3 authorized; GitHub delivery preparation",
+  "developer_browser": {
+    "date": "2026-10-30",
+    "browser": "Chrome",
+    "entry": "Actual anchor click from separate local port developer fixture to installed-SDK tool-returned URL; successful 1.0.1 engine load",
+    "checks": {
+      "aspirin_highlight": {
+        "atoms": 13,
+        "bonds": 13,
+        "amw": 180.159,
+        "tpsa": 63.6,
+        "matched_atoms": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "input_edit_invalidates_results_and_disables_exports": true,
+      "ethanol_benzene_no_match": true,
+      "empty_query_distinct": true,
+      "error_cases": [
+        {
+          "code": "invalid_smiles",
+          "shown": true,
+          "svgEnabled": false,
+          "jsonEnabled": false
+        },
+        {
+          "code": "invalid_smarts",
+          "shown": true,
+          "svgEnabled": false,
+          "jsonEnabled": false
+        },
+        {
+          "code": "unsupported_atom",
+          "shown": true,
+          "svgEnabled": false,
+          "jsonEnabled": false
+        },
+        {
+          "code": "unsupported_bond",
+          "shown": true,
+          "svgEnabled": false,
+          "jsonEnabled": false
+        }
+      ],
+      "recovery_CCO_wildcard": true,
+      "actual_SVG_JSON_downloads": true,
+      "download_metadata_equal": true
+    },
+    "download_event": "Browser download event waiter timed out; actual downloaded files were found and independently parsed/verified."
+  },
+  "developer_downloads": {
+    "version": "1.0.1",
+    "matching_svg_json_metadata": true,
+    "files": {
+      "分子分析-1.0.1.json": {
+        "sha256": "0f823389eb95c90ea60aeaf8a9b2f14800fe48095b3868b268b2703a54b5d181",
+        "bytes": 2182
+      },
+      "分子结构-1.0.1.svg": {
+        "sha256": "7f538d049a7d0886063ef39b6c8e2995a443a6cfe3a52a96ad226ce5d963c460",
+        "bytes": 13365
+      }
+    }
+  },
+  "installed_sdk": {
+    "passed": true,
+    "checked_at": "2026-10-30T03:30:51.692315+00:00",
+    "version": "1.0.1",
+    "python": "3.12.14",
+    "platform": "Darwin",
+    "openjiuwen_version": "0.1.19",
+    "model_requests_sent": 0,
+    "payload_files_unchanged": true,
+    "payload_file_count": 60,
+    "payload_inventory_sha256": "f9ad38d06144ee315b8e976d4c451c6e60205bc62908ae29ff386c8bb9a0d919",
+    "loader": "openjiuwen.harness.resources.load_plugin_package",
+    "resolver": "openjiuwen.harness.resources.resolve_plugin_parts",
+    "tool_ids": [
+      "analyze_molecule",
+      "molecule_workbench"
+    ]
+  },
+  "license_review": {
+    "evidence_entries_verified": 47,
+    "unique_files": 41,
+    "reused_file_hashes_verified": 5,
+    "upstream_license_notice_files_unchanged": 48
+  }
+}

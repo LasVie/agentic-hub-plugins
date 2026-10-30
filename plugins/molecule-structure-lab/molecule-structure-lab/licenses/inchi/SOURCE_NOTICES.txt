@@ -1,0 +1,75 @@
+以下为固定上游源码中原样保留的版权与许可注释，按原始路径汇总。路径集合保守覆盖构建所用模块及其运行库；不表示每一段源码均保留在链接优化后的二进制中。
+
+
+Source paths: INCHI_API/libinchi/src/ichilnct.c, INCHI_API/libinchi/src/inchi_dll.c, INCHI_API/libinchi/src/inchi_dll.h, INCHI_API/libinchi/src/inchi_dll_a.c, INCHI_API/libinchi/src/inchi_dll_a.h, INCHI_API/libinchi/src/inchi_dll_a2.c, INCHI_API/libinchi/src/inchi_dll_b.c, INCHI_API/libinchi/src/inchi_dll_b.h, INCHI_API/libinchi/src/inchi_dll_main.c, INCHI_API/libinchi/src/inchi_dll_main.h, INCHI_API/libinchi/src/ixa/ixa_builder.c, INCHI_API/libinchi/src/ixa/ixa_inchikey_builder.c, INCHI_API/libinchi/src/ixa/ixa_mol.c, INCHI_API/libinchi/src/ixa/ixa_mol.h, INCHI_API/libinchi/src/ixa/ixa_read_inchi.c, INCHI_API/libinchi/src/ixa/ixa_read_mol.c, INCHI_API/libinchi/src/ixa/ixa_status.c, INCHI_API/libinchi/src/ixa/ixa_status.h, INCHI_BASE/src/bcf_s.c, INCHI_BASE/src/bcf_s.h, INCHI_BASE/src/extr_ct.h, INCHI_BASE/src/ichi.h, INCHI_BASE/src/ichi_bns.c, INCHI_BASE/src/ichi_bns.h, INCHI_BASE/src/ichi_io.c, INCHI_BASE/src/ichi_io.h, INCHI_BASE/src/ichican2.c, INCHI_BASE/src/ichicano.c, INCHI_BASE/src/ichicano.h, INCHI_BASE/src/ichicans.c, INCHI_BASE/src/ichicant.h, INCHI_BASE/src/ichicomn.h, INCHI_BASE/src/ichicomp.h, INCHI_BASE/src/ichidrp.h, INCHI_BASE/src/ichierr.c, INCHI_BASE/src/ichierr.h, INCHI_BASE/src/ichiisot.c, INCHI_BASE/src/ichimain.h, INCHI_BASE/src/ichimak2.c, INCHI_BASE/src/ichimake.c, INCHI_BASE/src/ichimake.h, INCHI_BASE/src/ichimap1.c, INCHI_BASE/src/ichimap2.c, INCHI_BASE/src/ichimap4.c, INCHI_BASE/src/ichinorm.c, INCHI_BASE/src/ichinorm.h, INCHI_BASE/src/ichiparm.c, INCHI_BASE/src/ichiprt1.c, INCHI_BASE/src/ichiprt2.c, INCHI_BASE/src/ichiprt3.c, INCHI_BASE/src/ichiqueu.c, INCHI_BASE/src/ichiread.c, INCHI_BASE/src/ichiring.c, INCHI_BASE/src/ichiring.h, INCHI_BASE/src/ichirvr1.c, INCHI_BASE/src/ichirvr2.c, INCHI_BASE/src/ichirvr3.c, INCHI_BASE/src/ichirvr4.c, INCHI_BASE/src/ichirvr5.c, INCHI_BASE/src/ichirvr6.c, INCHI_BASE/src/ichirvr7.c, INCHI_BASE/src/ichirvrs.h, INCHI_BASE/src/ichisize.h, INCHI_BASE/src/ichisort.c, INCHI_BASE/src/ichister.c, INCHI_BASE/src/ichister.h, INCHI_BASE/src/ichitaut.c, INCHI_BASE/src/ichitaut.h, INCHI_BASE/src/ichitime.h, INCHI_BASE/src/ikey_base26.c, INCHI_BASE/src/ikey_base26.h, INCHI_BASE/src/ikey_dll.c, INCHI_BASE/src/inchi_api.h, INCHI_BASE/src/inchi_gui.c, INCHI_BASE/src/inchi_gui.h, INCHI_BASE/src/inchicmp.h, INCHI_BASE/src/incomdef.h, INCHI_BASE/src/inpdef.h, INCHI_BASE/src/ixa.h, INCHI_BASE/src/logging.h, INCHI_BASE/src/mode.h, INCHI_BASE/src/mol2atom.c, INCHI_BASE/src/mol_fmt.h, INCHI_BASE/src/mol_fmt1.c, INCHI_BASE/src/mol_fmt2.c, INCHI_BASE/src/mol_fmt3.c, INCHI_BASE/src/mol_fmt4.c, INCHI_BASE/src/readinch.c, INCHI_BASE/src/readinch.h, INCHI_BASE/src/runichi.c, INCHI_BASE/src/runichi2.c, INCHI_BASE/src/runichi3.c, INCHI_BASE/src/runichi4.c, INCHI_BASE/src/strutil.c, INCHI_BASE/src/strutil.h, INCHI_BASE/src/util.c, INCHI_BASE/src/util.h
+
+/*
+ * International Chemical Identifier (InChI)
+ * Version 1
+ * Software version 1.07
+ * April 30, 2024
+ *
+ * MIT License
+ *
+ * Copyright (c) 2024 IUPAC and InChI Trust
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+*
+* The InChI library and programs are free software developed under the
+ * auspices of the International Union of Pure and Applied Chemistry (IUPAC).
+ * Originally developed at NIST.
+ * Modifications and additions by IUPAC and the InChI Trust.
+ * Some portions of code were developed/changed by external contributors
+ * (either contractor or volunteer) which are listed in the file
+ * 'External-contributors' included in this distribution.
+ *
+ * info@inchi-trust.org
+ *
+*/
+
+==============================================================================
+
+Source paths: INCHI_BASE/src/ikey_dll.c
+
+/*
+    InChIKey: calculation of hash for InChI string
+
+    Uses truncated SHA-256 function.
+    SHA-256 implementation: Copyright (C) Brainspark B.V.,
+                            see files sha2.c, sha2.h.
+*/
+
+==============================================================================
+
+Source paths: INCHI_BASE/src/sha2.c, INCHI_BASE/src/sha2.h
+
+/*
+ *
+ * FIPS-180-2 compliant SHA-256 implementation
+ * Copyright (C) 2010 Paul Bakker.
+ * Originally written (2003-2006) by Christophe Devine.
+ *
+ * This code is free software; you can redistribute it and/or
+ * modify it, as a part of the International Chemical Identifier (InChI)
+ * software, under the terms of the MIT license
+ * https://opensource.org/license/mit
+ *
+ * Note that this licensing is only valid in combination with the InChI
+ * software package, for all other cases contact Paul Bakker.
+ */

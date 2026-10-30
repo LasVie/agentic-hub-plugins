@@ -1,0 +1,103 @@
+{
+  "package": "@rdkit/rdkit",
+  "version": "2026.9.1",
+  "engine_version": "2026.09.1",
+  "source_commit": "fece8caa860bdf6c9c82bdb9253f22a0cf87150c",
+  "source_tag": "Release_2026_09_1",
+  "npm_tarball_url": "https://registry.npmjs.org/@rdkit/rdkit/-/rdkit-2026.9.1.tgz",
+  "npm_tarball_sha256": "ae6b0e42b85114a2f38ef890fcb229a90b54b0b42d4636c50ae1c7f77d85ffe0",
+  "official_publish_run": "https://github.com/rdkit/rdkit/actions/runs/37104484827",
+  "official_build_job": "https://github.com/rdkit/rdkit/actions/runs/37104484827/job/111150237761",
+  "emscripten_version": "6.0.11",
+  "emscripten_source_commit": "a0014542110d6078c3a1a7941fa1ddb3a2281f16",
+  "runtime_files": [
+    {
+      "path": "vendor/rdkit/RDKit_minimal.js",
+      "upstream_path": "package/dist/RDKit_minimal.js",
+      "sha256": "ea427db9cc39be245065603de0df10c3053cb49af3b63fdf6bc2bf73d6fc17da",
+      "bytes": 106667,
+      "modified": false
+    },
+    {
+      "path": "vendor/rdkit/RDKit_minimal.wasm",
+      "upstream_path": "package/dist/RDKit_minimal.wasm",
+      "sha256": "594ceaed387adc70ea13bfbb2e8eace916f6c782254ed5a6f0f0a0a7a4fe4061",
+      "bytes": 7379879,
+      "modified": false
+    }
+  ],
+  "source_archives": [
+    {
+      "name": "rdkit-fece8caa.tar.gz",
+      "url": "https://codeload.github.com/rdkit/rdkit/tar.gz/fece8caa860bdf6c9c82bdb9253f22a0cf87150c",
+      "bytes": 84513741,
+      "sha256": "deba969d21a869ea0f93d0bbe7d4b496828bf34f8823b70c111ab931402c15cf",
+      "md5": "c0a3dc3ebb81bb638c5f5be9b388cd4c"
+    },
+    {
+      "name": "freetype-2.13.3.tar.gz",
+      "url": "https://codeload.github.com/freetype/freetype/tar.gz/refs/tags/VER-2-13-3",
+      "bytes": 2482495,
+      "sha256": "bc5c898e4756d373e0d991bab053036c5eb2aa7c0d5c67e8662ddc6da40c4103",
+      "md5": "4425315beb50f913ae12d643e4e121e1"
+    },
+    {
+      "name": "coordgen-3.0.2.tar.gz",
+      "url": "https://codeload.github.com/schrodinger/coordgenlibs/tar.gz/refs/tags/v3.0.2",
+      "bytes": 166817,
+      "sha256": "f67697434f7fec03bca150a6d84ea0e8409f6ec49d5aab43badc5833098ff4e3",
+      "md5": "bc9dabbbb2b99ae426f3a1bf16c4d3cc"
+    },
+    {
+      "name": "maeparser-1.3.3.tar.gz",
+      "url": "https://codeload.github.com/schrodinger/maeparser/tar.gz/refs/tags/v1.3.3",
+      "bytes": 39896,
+      "sha256": "78e7571a779ea4952e752ecef57c62fb26463947e29ef7f4b31b11988d88ca07",
+      "md5": "c43dfb89c495512f695ce018b32ac749"
+    },
+    {
+      "name": "ringdecomposer-1.1.3_rdkit.tar.gz",
+      "url": "https://codeload.github.com/rareylab/RingDecomposerLib/tar.gz/refs/tags/v1.1.3_rdkit",
+      "bytes": 137931,
+      "sha256": "944b5816712a48bbf88aa25d4300ce11871ddf6e971218eac08f90ed2192f715",
+      "md5": "e9a0bcdda8b921a35e812b9888a9a874"
+    },
+    {
+      "name": "inchi-1.07.3.zip",
+      "url": "https://github.com/IUPAC-InChI/InChI/releases/download/v1.07.3/INCHI-1-SRC.zip",
+      "bytes": 6513779,
+      "sha256": "b42d828b5d645bd60bc43df7e0516215808d92e5a46c28e12b1f4f75dfaae333",
+      "md5": "b761f37a7d3a3ff8574daf6906993759"
+    },
+    {
+      "name": "emscripten-6.0.11.tar.gz",
+      "url": "https://codeload.github.com/emscripten-core/emscripten/tar.gz/a0014542110d6078c3a1a7941fa1ddb3a2281f16",
+      "bytes": 32936264,
+      "sha256": "bd0d31316d84f5338329d888c5726c22a9a391b4bce377160e5c51e92af2dd85",
+      "md5": "e0a319507ee65c0e934b63c32952e3ba"
+    },
+    {
+      "name": "eigen3_3.4.0-4.debian.tar.xz",
+      "url": "https://deb.debian.org/debian/pool/main/e/eigen3/eigen3_3.4.0-4.debian.tar.xz",
+      "bytes": 20484,
+      "sha256": "10746fe711162ac7882a838b0af1e9826b5a0ea5b8d9963220ec78f71586250c",
+      "md5": "3f3b5a832ec6bed9dedb19a21c25c994"
+    },
+    {
+      "name": "eigen3_3.4.0.orig.tar.bz2",
+      "url": "https://deb.debian.org/debian/pool/main/e/eigen3/eigen3_3.4.0.orig.tar.bz2",
+      "bytes": 2143091,
+      "sha256": "b4c198460eba6f28d34894e3a5710998818515104d6e74e5cc331ce31e46e626",
+      "md5": "132dde48fe2b563211675626d29f1707"
+    },
+    {
+      "name": "eigen3_3.4.0-4.dsc",
+      "url": "https://deb.debian.org/debian/pool/main/e/eigen3/eigen3_3.4.0-4.dsc",
+      "bytes": 2170,
+      "sha256": "fc8497759df4b6d3803b90fb03853d69feee68a76c992355c187ca59ae60afe1",
+      "md5": "85d68b7f90623f8044dadd52942768ad"
+    }
+  ],
+  "notice_scope": "Original copyright and license materials cover the unmodified prebuilt runtime and embedded components; SOURCE_NOTICES files conservatively retain original notices from relevant source modules, not a claim that every compiled function survived linking.",
+  "npm_signature_verification": "Registry integrity hashes checked; Sigstore and PGP signatures were not independently cryptographically verified."
+}

@@ -1,0 +1,445 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "audit_file": "SOURCE_REVIEW.md",
+  "reviewed_at": "2026-10-28",
+  "asset_id": "repo:agent-plugin:molecule-structure-lab",
+  "candidate_id": "CAND-EXT-002",
+  "task_id": "AH-20261028-molecule-structure-lab",
+  "owner": "Cai Zhenze",
+  "name_mapping": {
+    "upstream": "RDKit.js / @rdkit/rdkit",
+    "display_name": "离线分子结构工作台",
+    "slug": "molecule-structure-lab"
+  },
+  "version": "1.0.1",
+  "sources": [
+    {
+      "name": "RDKit",
+      "url": "https://github.com/rdkit/rdkit",
+      "revision": "fece8caa860bdf6c9c82bdb9253f22a0cf87150c",
+      "license_expression": "BSD-3-Clause",
+      "scope": "Unmodified official npm runtime; original module notices and separate ChemReactions BSD notice are retained.",
+      "license_evidence": [
+        {
+          "path": "licenses/rdkit/ChemReactions-LICENSE",
+          "sha256": "98d8727ed6d0fe47e638c0904f7ffb9e53f3f2f83a4693a6e45add3f7df84963"
+        },
+        {
+          "path": "licenses/rdkit/LICENSE",
+          "sha256": "c4cc4391fcf56a0a9dfb950b5725c068998ead0ca001f016d70082d1d9ab0fc7"
+        },
+        {
+          "path": "licenses/rdkit/SOURCE_NOTICES.txt",
+          "sha256": "9f5a23d7ad5cc60bba8e3a0022c4cf39752736f70e1f540c6c10b32c6f7872ea"
+        }
+      ]
+    },
+    {
+      "name": "Linchemin",
+      "url": "https://github.com/syngenta/linchemin",
+      "revision": "f44fda38e856eaa876483c94284ee6788d2c27f4",
+      "license_expression": "MIT",
+      "scope": "RDKit OxidationNumbers implementation credits this source; no separate Linchemin application is included.",
+      "license_evidence": [
+        {
+          "path": "licenses/linchemin/LICENSE",
+          "sha256": "92c5b4f8cf1fc9a7743244652c3855fbad2153e25708425ba33782416ea30e30"
+        }
+      ]
+    },
+    {
+      "name": "FreeType",
+      "url": "https://github.com/freetype/freetype",
+      "revision": "VER-2-13-3",
+      "license_expression": "FTL",
+      "scope": "Select FTL, not alternative GPL; preserve standalone permissive BDF/PCF and other original notices.",
+      "license_evidence": [
+        {
+          "path": "licenses/freetype/BDF-README",
+          "sha256": "7984455e7e5a9faba3797c8bf095fbe10cc846316b7320aff8c58402e22b82fe"
+        },
+        {
+          "path": "licenses/freetype/CREDIT.txt",
+          "sha256": "80a55c295ef3607bc40738f181972bb6b41aa4eb6515c5a76e8250ab73830c5b"
+        },
+        {
+          "path": "licenses/freetype/LICENSE",
+          "sha256": "21878c9be611eecf3f936301e277f77719c14316a5132c0877c4d0dc54e5470c"
+        },
+        {
+          "path": "licenses/freetype/PCF-README",
+          "sha256": "18d9782898d9eac04476e2f744678137b2a889689ed3e923e052fc396a86f86b"
+        },
+        {
+          "path": "licenses/freetype/SOURCE_NOTICES.txt",
+          "sha256": "5b3cbce639c2b76efb4b691461daa271ce2d0ec3a1c0c7cf9387472854e4e204"
+        },
+        {
+          "path": "licenses/freetype/UPSTREAM-LICENSES.TXT",
+          "sha256": "d91ddbd45278a6e3e6ec46abfb46baf81e14cd0e3afa5d5450390a8935d71e6f"
+        }
+      ]
+    },
+    {
+      "name": "InChI",
+      "url": "https://github.com/IUPAC-InChI/InChI",
+      "revision": "v1.07.3; actual INCHI-1-SRC.zip SHA-256 b42d828b5d645bd60bc43df7e0516215808d92e5a46c28e12b1f4f75dfaae333",
+      "license_expression": "MIT",
+      "scope": "Actual archive IUPAC/InChI Trust notices and root InChI Project MIT retained. sha2 is distributed only as combined InChI in RDKit; upstream Emscripten compatibility change is documented.",
+      "license_evidence": [
+        {
+          "path": "licenses/inchi/LICENSE",
+          "sha256": "ccdc331f3b58763b4aba0140d4581280e25e533e5f1bae512da5b8759aa5ff98"
+        },
+        {
+          "path": "licenses/inchi/MODIFICATIONS.txt",
+          "sha256": "271cc38f774face7932c83da85d6cda71af0b3a15c21b6ac37e12eaa9148c2cb"
+        },
+        {
+          "path": "licenses/inchi/SOURCE_NOTICES.txt",
+          "sha256": "3ff459d795768f7fa2ab0ba02afafc06d7288225c8728400580a77dc45510e0e"
+        }
+      ]
+    },
+    {
+      "name": "CoordGen",
+      "url": "https://github.com/schrodinger/coordgenlibs",
+      "revision": "v3.0.2",
+      "license_expression": "BSD-3-Clause",
+      "scope": "Unmodified dependency inside the official binary; original source notices retained.",
+      "license_evidence": [
+        {
+          "path": "licenses/coordgen/LICENSE",
+          "sha256": "dbf75b65b42f7bf69c8aeb018fd0846937d9a5fc902b88ae112a0d0066466ecf"
+        },
+        {
+          "path": "licenses/coordgen/SOURCE_NOTICES.txt",
+          "sha256": "5b2fb54d245322ee893edc6e3bd4e00ca39ec79ba93b3a33e62bc3b8122ab1c6"
+        }
+      ]
+    },
+    {
+      "name": "Maeparser",
+      "url": "https://github.com/schrodinger/maeparser",
+      "revision": "v1.3.3",
+      "license_expression": "MIT",
+      "scope": "Built as a CoordGen dependency; license retained conservatively.",
+      "license_evidence": [
+        {
+          "path": "licenses/maeparser/LICENSE",
+          "sha256": "1150c89f456672af59099da1190c1359f4d224e63c27e0d91b5b891de9b958ba"
+        }
+      ]
+    },
+    {
+      "name": "RingDecomposerLib",
+      "url": "https://github.com/rareylab/RingDecomposerLib",
+      "revision": "v1.1.3_rdkit",
+      "license_expression": "BSD-3-Clause",
+      "scope": "Upstream RDKit build applies qsort/header compatibility changes; this plugin does not modify the compiled result.",
+      "license_evidence": [
+        {
+          "path": "licenses/ringdecomposer/LICENSE",
+          "sha256": "1b13dfa5495b55db4ed6e11a3496836db8d0c807c5a82d2cbd0ed6c494c2058b"
+        },
+        {
+          "path": "licenses/ringdecomposer/SOURCE_NOTICES.txt",
+          "sha256": "d61a00b74bd7ce433409b8fd6623f543ea3ae9fde5e570afdf952ca2b822d88d"
+        }
+      ]
+    },
+    {
+      "name": "Boost",
+      "url": "https://github.com/boostorg/boost",
+      "revision": "boost-1.87.0",
+      "license_expression": "BSL-1.0",
+      "scope": "Header/library material in the upstream binary; full BSL retained including machine-object exception.",
+      "license_evidence": [
+        {
+          "path": "licenses/boost/LICENSE",
+          "sha256": "ea056d2c64294936b226f7360c265e77c52adc4ba171ee61029357f101f439cf"
+        }
+      ]
+    },
+    {
+      "name": "zlib",
+      "url": "https://github.com/madler/zlib",
+      "revision": "v1.3.2",
+      "license_expression": "Zlib",
+      "scope": "Compression support compiled by the official build; original license retained.",
+      "license_evidence": [
+        {
+          "path": "licenses/zlib/LICENSE",
+          "sha256": "e589b065d0b2f203584be60fed4839f7d3f6be99a6862b0c8928940b78b44d11"
+        }
+      ]
+    },
+    {
+      "name": "Eigen",
+      "url": "https://deb.debian.org/debian/pool/main/e/eigen3/",
+      "revision": "3.4.0-4",
+      "license_expression": "MPL-2.0 AND BSD-3-Clause",
+      "scope": "MPL selected for MPL/dual-licensed covered code. Exact Debian source and changes archives are included for source availability. Unused files within those unchanged source archives retain their own original licenses.",
+      "license_evidence": [
+        {
+          "path": "licenses/eigen/COPYING.BSD",
+          "sha256": "51928dce36213c5333ba3172e847d735d4c6e9b7ff2722a326c49067155b82eb"
+        },
+        {
+          "path": "licenses/eigen/COPYING.README",
+          "sha256": "c83230b770f17ef1386ea1fd3681271dd98aa93646bdbfb5bff3a1b7050fff9d"
+        },
+        {
+          "path": "licenses/eigen/DEBIAN-COPYRIGHT",
+          "sha256": "d86a43829b598ef251601455af9c6a05027aec31f6380266890ea016c7ba5fb7"
+        },
+        {
+          "path": "licenses/eigen/LICENSE",
+          "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85"
+        },
+        {
+          "path": "licenses/eigen/SOURCE_AVAILABILITY.md",
+          "sha256": "3624c86668d3f1bd1371ccc3a8917a609e533b3c79bfb0736a3d0e9f336ab858"
+        }
+      ]
+    },
+    {
+      "name": "Telex Regular",
+      "url": "https://github.com/rdkit/rdkit/blob/fece8caa860bdf6c9c82bdb9253f22a0cf87150c/Data/Fonts/Telex-Regular.ttf",
+      "revision": "Telex 1.100; RDKit fece8caa860bdf6c9c82bdb9253f22a0cf87150c",
+      "license_expression": "OFL-1.1",
+      "scope": "Original embedded font; reserved name Telex unchanged. Copyright/name-table inspected in distributed WASM.",
+      "license_evidence": [
+        {
+          "path": "licenses/telex/LICENSE",
+          "sha256": "b38a2763020468c5ef0f166f3134e82f48887bc3a1e5c24bb1813d7ba7c1b5f1"
+        }
+      ]
+    },
+    {
+      "name": "Roboto Regular",
+      "url": "https://github.com/rdkit/rdkit/blob/fece8caa860bdf6c9c82bdb9253f22a0cf87150c/Code/GraphMol/MolDraw2D/Fonts/roboto_regular.h",
+      "revision": "Roboto 2.137 (2017); RDKit fece8caa860bdf6c9c82bdb9253f22a0cf87150c",
+      "license_expression": "Apache-2.0",
+      "scope": "Original embedded font; original copyright/name-table attribution retained alongside full Apache text and upstream license pointer.",
+      "license_evidence": [
+        {
+          "path": "licenses/roboto/COPYRIGHT.txt",
+          "sha256": "ac9896b090caa9f6d11379c5f6db9ab299b06142fefdab9729467120d9f12b34"
+        },
+        {
+          "path": "licenses/roboto/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "path": "licenses/roboto/UPSTREAM-LICENSE-POINTER.txt",
+          "sha256": "034e7b61775d5c9a633dbf83ceff91a75578eb100598606bd7a202ac9ca9d5e1"
+        }
+      ]
+    },
+    {
+      "name": "GNU Bison generated parsers",
+      "url": "https://github.com/rdkit/rdkit/tree/fece8caa860bdf6c9c82bdb9253f22a0cf87150c/Code/GraphMol/SmilesParse",
+      "revision": "Bison 3.8.2 generated files at RDKit fece8caa860bdf6c9c82bdb9253f22a0cf87150c",
+      "license_expression": "GPL-3.0-or-later WITH Bison-exception-2.2",
+      "scope": "The exact generated exception permits this larger chemistry runtime; no parser-generator product or standalone skeleton is distributed.",
+      "license_evidence": [
+        {
+          "path": "licenses/bison/EXCEPTION.txt",
+          "sha256": "e4b163e4052ac5d612d633187449c78d14484df49c258d3507f169c7224614b1"
+        },
+        {
+          "path": "licenses/bison/LICENSE",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        }
+      ]
+    },
+    {
+      "name": "Flex generated scanners",
+      "url": "https://github.com/westes/flex",
+      "revision": "v2.6.4",
+      "license_expression": "BSD-3-Clause",
+      "scope": "The original COPYING explicitly exempts generated scanners from its copyright terms; its original explanation is retained.",
+      "license_evidence": [
+        {
+          "path": "licenses/flex/LICENSE",
+          "sha256": "9c387fb4d9780b249a0341ba0fcba629b375dc6d6fe5ceacfebbc47196ba5a42"
+        }
+      ]
+    },
+    {
+      "name": "Emscripten",
+      "url": "https://github.com/emscripten-core/emscripten",
+      "revision": "a0014542110d6078c3a1a7941fa1ddb3a2281f16 (6.0.11)",
+      "license_expression": "MIT",
+      "scope": "Select MIT from MIT/NCSA for Emscripten-owned code; preserve full original dual license, Node-derived notice and AUTHORS. Runtime source notices conservatively cover separately licensed linked components.",
+      "license_evidence": [
+        {
+          "path": "licenses/emscripten/AUTHORS",
+          "sha256": "b865d6074c7f13366cad82990ba58bbe0a3f3eccf5fa47e50aa02693de4e895e"
+        },
+        {
+          "path": "licenses/emscripten/LICENSE",
+          "sha256": "1d678c6d3e6fca3245faaf72b66097b8df241172b38c8d9a16601e3a72b66386"
+        },
+        {
+          "path": "licenses/emscripten/SOURCE_NOTICES.txt",
+          "sha256": "059edaef6397d9fd0016b5f9bf12165e6839439669c99c08229245b45874721e"
+        }
+      ]
+    },
+    {
+      "name": "musl",
+      "url": "https://github.com/emscripten-core/emscripten/tree/a0014542110d6078c3a1a7941fa1ddb3a2281f16/system/lib/libc/musl",
+      "revision": "a0014542110d6078c3a1a7941fa1ddb3a2281f16",
+      "license_expression": "MIT AND BSD-2-Clause AND BSD-3-Clause AND LicenseRef-musl-source-notices",
+      "scope": "Full musl COPYRIGHT plus original permissive math, regex and other file notices in licenses/emscripten/SOURCE_NOTICES.txt; no blanket MIT relicense of independent components.",
+      "license_evidence": [
+        {
+          "path": "licenses/musl/LICENSE",
+          "sha256": "b870108ec5e7790e9f9919064f1b9421d62d5f9b0e6c230c6adf7ea2da62e97b"
+        },
+        {
+          "path": "licenses/emscripten/SOURCE_NOTICES.txt",
+          "sha256": "059edaef6397d9fd0016b5f9bf12165e6839439669c99c08229245b45874721e"
+        }
+      ]
+    },
+    {
+      "name": "LLVM compiler-rt",
+      "url": "https://github.com/emscripten-core/emscripten/tree/a0014542110d6078c3a1a7941fa1ddb3a2281f16/system/lib/compiler-rt",
+      "revision": "a0014542110d6078c3a1a7941fa1ddb3a2281f16",
+      "license_expression": "Apache-2.0 WITH LLVM-exception",
+      "scope": "Full original runtime license including retained historical terms.",
+      "license_evidence": [
+        {
+          "path": "licenses/llvm-compiler-rt/LICENSE",
+          "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d"
+        },
+        {
+          "path": "licenses/emscripten/SOURCE_NOTICES.txt",
+          "sha256": "059edaef6397d9fd0016b5f9bf12165e6839439669c99c08229245b45874721e"
+        }
+      ]
+    },
+    {
+      "name": "LLVM libc++",
+      "url": "https://github.com/emscripten-core/emscripten/tree/a0014542110d6078c3a1a7941fa1ddb3a2281f16/system/lib/libcxx",
+      "revision": "a0014542110d6078c3a1a7941fa1ddb3a2281f16",
+      "license_expression": "Apache-2.0 WITH LLVM-exception",
+      "scope": "Full original runtime license including retained historical terms.",
+      "license_evidence": [
+        {
+          "path": "licenses/llvm-libcxx/LICENSE",
+          "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b"
+        },
+        {
+          "path": "licenses/emscripten/SOURCE_NOTICES.txt",
+          "sha256": "059edaef6397d9fd0016b5f9bf12165e6839439669c99c08229245b45874721e"
+        }
+      ]
+    },
+    {
+      "name": "LLVM libc++abi",
+      "url": "https://github.com/emscripten-core/emscripten/tree/a0014542110d6078c3a1a7941fa1ddb3a2281f16/system/lib/libcxxabi",
+      "revision": "a0014542110d6078c3a1a7941fa1ddb3a2281f16",
+      "license_expression": "Apache-2.0 WITH LLVM-exception",
+      "scope": "Full original runtime license including retained historical terms.",
+      "license_evidence": [
+        {
+          "path": "licenses/llvm-libcxxabi/LICENSE",
+          "sha256": "e2b35be49f7284a45b7baca8fc7b3ab7440e7902392b2528a457816b5bb2a15c"
+        },
+        {
+          "path": "licenses/emscripten/SOURCE_NOTICES.txt",
+          "sha256": "059edaef6397d9fd0016b5f9bf12165e6839439669c99c08229245b45874721e"
+        }
+      ]
+    },
+    {
+      "name": "LLVM libunwind",
+      "url": "https://github.com/emscripten-core/emscripten/tree/a0014542110d6078c3a1a7941fa1ddb3a2281f16/system/lib/libunwind",
+      "revision": "a0014542110d6078c3a1a7941fa1ddb3a2281f16",
+      "license_expression": "Apache-2.0 WITH LLVM-exception",
+      "scope": "Full original runtime license including retained historical terms.",
+      "license_evidence": [
+        {
+          "path": "licenses/llvm-libunwind/LICENSE",
+          "sha256": "b5efebcaca80879234098e52d1725e6d9eb8fb96a19fce625d39184b705f7b6d"
+        },
+        {
+          "path": "licenses/emscripten/SOURCE_NOTICES.txt",
+          "sha256": "059edaef6397d9fd0016b5f9bf12165e6839439669c99c08229245b45874721e"
+        }
+      ]
+    },
+    {
+      "name": "dlmalloc",
+      "url": "https://github.com/emscripten-core/emscripten/blob/a0014542110d6078c3a1a7941fa1ddb3a2281f16/system/lib/dlmalloc.c",
+      "revision": "a0014542110d6078c3a1a7941fa1ddb3a2281f16",
+      "license_expression": "CC0-1.0",
+      "scope": "Doug Lea public-domain dedication and CC0 fallback referenced in original runtime source notices; full CC0 text supplied.",
+      "license_evidence": [
+        {
+          "path": "licenses/dlmalloc/LICENSE",
+          "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+        },
+        {
+          "path": "licenses/emscripten/SOURCE_NOTICES.txt",
+          "sha256": "059edaef6397d9fd0016b5f9bf12165e6839439669c99c08229245b45874721e"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "vendor/rdkit/RDKit_minimal.js",
+    "vendor/rdkit/RDKit_minimal.wasm",
+    "licenses/eigen/sources/eigen3_3.4.0-4.debian.tar.xz",
+    "licenses/eigen/sources/eigen3_3.4.0-4.dsc",
+    "licenses/eigen/sources/eigen3_3.4.0.orig.tar.bz2"
+  ],
+  "reused_file_hashes": [
+    {
+      "path": "vendor/rdkit/RDKit_minimal.js",
+      "sha256": "ea427db9cc39be245065603de0df10c3053cb49af3b63fdf6bc2bf73d6fc17da",
+      "bytes": 106667,
+      "modified": false
+    },
+    {
+      "path": "vendor/rdkit/RDKit_minimal.wasm",
+      "sha256": "594ceaed387adc70ea13bfbb2e8eace916f6c782254ed5a6f0f0a0a7a4fe4061",
+      "bytes": 7379879,
+      "modified": false
+    },
+    {
+      "path": "licenses/eigen/sources/eigen3_3.4.0-4.debian.tar.xz",
+      "sha256": "10746fe711162ac7882a838b0af1e9826b5a0ea5b8d9963220ec78f71586250c",
+      "bytes": 20484,
+      "modified": false
+    },
+    {
+      "path": "licenses/eigen/sources/eigen3_3.4.0-4.dsc",
+      "sha256": "fc8497759df4b6d3803b90fb03853d69feee68a76c992355c187ca59ae60afe1",
+      "bytes": 2170,
+      "modified": false
+    },
+    {
+      "path": "licenses/eigen/sources/eigen3_3.4.0.orig.tar.bz2",
+      "sha256": "b4c198460eba6f28d34894e3a5710998818515104d6e74e5cc331ce31e46e626",
+      "bytes": 2143091,
+      "modified": false
+    }
+  ],
+  "runtime_archive": {
+    "url": "https://registry.npmjs.org/@rdkit/rdkit/-/rdkit-2026.9.1.tgz",
+    "sha256": "ae6b0e42b85114a2f38ef890fcb229a90b54b0b42d4636c50ae1c7f77d85ffe0",
+    "registry_integrity": "sha512-nbdi5yEw+mG2kIxFvgVMGulS5fjNMzzocx9nKs01NAjNpFAEQVb6RDl3pd9AWEa7m5D8DR4QAS6CDzu+5xjzEA==",
+    "provenance_run": "https://github.com/rdkit/rdkit/actions/runs/37104484827",
+    "build_job": "https://github.com/rdkit/rdkit/actions/runs/37104484827/job/111150237761"
+  },
+  "source_archive_inventory": "vendor/rdkit/UPSTREAM.json",
+  "source_availability": "licenses/eigen/SOURCE_AVAILABILITY.md",
+  "third_party_notices": "THIRD_PARTY_NOTICES.md",
+  "verification_limits": "Hashes and published provenance/build logs were inspected. No independent Sigstore/PGP verification or reproducible rebuild is claimed. Final ZIP extraction and host/user testing are tracked separately."
+}

@@ -1,0 +1,62 @@
+{
+  "version": "1.0.1",
+  "package_type": "plugin",
+  "id": "molecule-structure-lab",
+  "name": "离线分子结构工作台",
+  "description": "离线编辑SMILES，计算分子描述符，进行SMARTS子结构匹配与高亮，并导出SVG或JSON。",
+  "skills": [
+    {
+      "dir": "skills/molecule-workbench",
+      "mode": "all"
+    }
+  ],
+  "display_name": {
+    "en": "离线分子结构工作台",
+    "zh": "离线分子结构工作台"
+  },
+  "display_description": {
+    "en": "离线编辑SMILES，计算分子描述符，进行SMARTS子结构匹配与高亮，并导出SVG或JSON。",
+    "zh": "离线编辑SMILES，计算分子描述符，进行SMARTS子结构匹配与高亮，并导出SVG或JSON。"
+  },
+  "tools": [
+    {
+      "file": "tools/molecule_tools.py",
+      "class": "AnalyzeMoleculeTool",
+      "display_name": {
+        "en": "离线分析分子",
+        "zh": "离线分析分子"
+      },
+      "display_description": {
+        "en": "解析SMILES，计算描述符并返回首个SMARTS匹配与SVG结构图。",
+        "zh": "解析SMILES，计算描述符并返回首个SMARTS匹配与SVG结构图。"
+      }
+    },
+    {
+      "file": "tools/molecule_tools.py",
+      "class": "MoleculeWorkbenchTool",
+      "display_name": {
+        "en": "管理分子工作台",
+        "zh": "管理分子工作台"
+      },
+      "display_description": {
+        "en": "启动、查询或停止本插件的独立本机浏览器工作台。",
+        "zh": "启动、查询或停止本插件的独立本机浏览器工作台。"
+      }
+    }
+  ],
+  "tags": [
+    {
+      "en": "分子结构",
+      "zh": "分子结构"
+    },
+    {
+      "en": "离线计算",
+      "zh": "离线计算"
+    },
+    {
+      "en": "化学信息学",
+      "zh": "化学信息学"
+    }
+  ],
+  "category": "Others"
+}

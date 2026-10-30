@@ -1,0 +1,48 @@
+以下为固定上游源码中原样保留的版权与许可注释，按原始路径汇总。路径集合保守覆盖构建所用模块及其运行库；不表示每一段源码均保留在链接优化后的二进制中。
+
+
+Source paths: src/MinimalExample/MinimalExample.c, src/RDKitBenchmark/rdkitmain.cpp, src/RingDecomposerLib/RDLapsp.c, src/RingDecomposerLib/RDLapsp.h, src/RingDecomposerLib/RDLcycleFams.c, src/RingDecomposerLib/RDLcycleFams.h, src/RingDecomposerLib/RDLdataStruct.h, src/RingDecomposerLib/RDLdimacs.c, src/RingDecomposerLib/RDLdimacs.h, src/RingDecomposerLib/RDLforward.h, src/RingDecomposerLib/RDLgraph.c, src/RingDecomposerLib/RDLgraph.h, src/RingDecomposerLib/RDLhandler.c, src/RingDecomposerLib/RDLhandler.h, src/RingDecomposerLib/RDLinfo.c, src/RingDecomposerLib/RDLinfo.h, src/RingDecomposerLib/RDLrelation.c, src/RingDecomposerLib/RDLrelation.h, src/RingDecomposerLib/RDLstack.c, src/RingDecomposerLib/RDLstack.h, src/RingDecomposerLib/RDLtarjan.c, src/RingDecomposerLib/RDLtarjan.h, src/RingDecomposerLib/RDLtesting.c, src/RingDecomposerLib/RDLtesting.h, src/RingDecomposerLib/RDLutility.c, src/RingDecomposerLib/RDLutility.h, src/RingDecomposerLib/RingDecomposerLib.c, src/RingDecomposerLib/RingDecomposerLib.h, src/Test/Test.c, src/Test/TestDemo.c, src/Test/TestDemo.h, src/Test/TestValidate.c, src/Test/TestValidate.h
+
+/*
+ * This file is part of the RingDecomposerLib, licensed
+ * under BSD New license (see LICENSE in the root directory).
+ * Copyright (c) 2016
+ * University of Hamburg, ZBH - Center for Bioinformatics
+ * Niek Andresen, Florian Flachsenberg, Matthias Rarey
+ * 
+ * Please cite:
+ * 
+ * Kolodzik, A.; Urbaczek, S.; Rarey, M.
+ * Unique Ring Families: A Chemically Meaningful Description
+ * of Molecular Ring Topologies.
+ * J. Chem. Inf. Model., 2012, 52 (8), pp 2013-2021
+ * 
+ * Flachsenberg, F.; Andresen, N.; Rarey, M.
+ * RingDecomposerLib: An Open-Source Implementation of
+ * Unique Ring Families and Other Cycle Bases.
+ * J. Chem. Inf. Model., 2017, 57 (2), pp 122-126
+ */
+
+==============================================================================
+
+Source paths: src/RingDecomposerLib/RDLbitset.c, src/RingDecomposerLib/RDLbitset.h
+
+/*
+ * This file is part of the RingDecomposerLib, licensed
+ * under BSD New license (see LICENSE in the root directory).
+ * Copyright (c) 2016
+ * University of Hamburg, ZBH - Center for Bioinformatics
+ * Niek Andresen, Florian Flachsenberg, Matthias Rarey
+ *
+ * Please cite:
+ *
+ * Kolodzik, A.; Urbaczek, S.; Rarey, M.
+ * Unique Ring Families: A Chemically Meaningful Description
+ * of Molecular Ring Topologies.
+ * J. Chem. Inf. Model., 2012, 52 (8), pp 2013-2021
+ *
+ * Flachsenberg, F.; Andresen, N.; Rarey, M.
+ * RingDecomposerLib: An Open-Source Implementation of
+ * Unique Ring Families and Other Cycle Bases.
+ * J. Chem. Inf. Model., 2017, 57 (2), pp 122-126
+ */

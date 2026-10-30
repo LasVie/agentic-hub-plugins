@@ -1,0 +1,1 @@
+本插件未修改 InChI 或 RDKit 二进制。官方 RDKit 构建脚本在 InChI 的 INCHI_BASE/src/util.c 中移除条件片段 && defined(__APPLE__)，用于 Emscripten 兼容。保留实际源代码的 IUPAC / InChI Trust MIT 版权声明及 sha2.c / sha2.h 限于与 InChI 组合分发的许可声明；本包不提供独立 SHA-256 实现。
