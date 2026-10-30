@@ -1,0 +1,78 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/ricktu288/ray-optics",
+      "revision": "811f508d2b070898c241a568b0c167dcb8645251",
+      "version": "5.4.0",
+      "license_expression": "Apache-2.0",
+      "license_evidence": [
+        {
+          "path": "licenses/ray-optics/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "path": "licenses/ray-optics/upstream/src/core/Simulator.js",
+          "sha256": "c90de5b393cfe75041bce44d1a5a29721e5480d9a83fa4d055b6636869379879"
+        },
+        {
+          "path": "licenses/ray-optics/upstream/src/core/geometry.js",
+          "sha256": "5a6a91360f84af5c5acc96c20c485c5c1fdb831e4205bea313097718a34c3ee4"
+        },
+        {
+          "path": "licenses/ray-optics/upstream/src/core/sceneObjs/BaseGlass.js",
+          "sha256": "82e3b8f185a1a295b3e746a5e9a8420419ae153a5cd6a1468b57d2869a231f0b"
+        },
+        {
+          "path": "licenses/ray-optics/upstream/src/core/sceneObjs/LineObjMixin.js",
+          "sha256": "26d2593630197259f2fef738e9f37453d39c3868772d6ba90c3cadcee7bb85aa"
+        },
+        {
+          "path": "licenses/ray-optics/upstream/src/core/sceneObjs/glass/Glass.js",
+          "sha256": "63f671f312e302b1b5809214fae5d21b82db992c588f68b3a5a3b3303e64bfe8"
+        },
+        {
+          "path": "licenses/ray-optics/upstream/src/core/sceneObjs/glass/IdealLens.js",
+          "sha256": "f59a30334c9bde1226e68dfa82d5202092d584fe0ebec773a5e13c0a2760b37b"
+        },
+        {
+          "path": "licenses/ray-optics/upstream/src/core/sceneObjs/glass/PlaneGlass.js",
+          "sha256": "cee40b9415f589aecb781d79b0b323e4010f57990a1aae660f2a4db9a639bb3c"
+        },
+        {
+          "path": "licenses/ray-optics/upstream/src/core/sceneObjs/lightSource/Beam.js",
+          "sha256": "8a35d2944ee422606654e77bd8dca95ed46a9d6ad4621c1a2e4e29b702369e26"
+        },
+        {
+          "path": "licenses/ray-optics/upstream/src/core/sceneObjs/lightSource/SingleRay.js",
+          "sha256": "549685769cf69405422e225b7505f3831c6c8d47b7b75de559785f3592c38927"
+        },
+        {
+          "path": "licenses/ray-optics/upstream/src/core/sceneObjs/mirror/Mirror.js",
+          "sha256": "b102dc22bce0902b4fbc62b78e3fb23da9d1b1840b046c888b0537ed3ec2408b"
+        },
+        {
+          "path": "licenses/ray-optics/upstream/src/core/sceneObjs/other/Detector.js",
+          "sha256": "40b688ba0326cb2e69f0b9d8a63e82b0fcab183b83d2f684f0a3551f14c80fd8"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "engine/core.mjs",
+    "engine/geometry.mjs",
+    "licenses/ray-optics/upstream/src/core/Simulator.js",
+    "licenses/ray-optics/upstream/src/core/geometry.js",
+    "licenses/ray-optics/upstream/src/core/sceneObjs/BaseGlass.js",
+    "licenses/ray-optics/upstream/src/core/sceneObjs/LineObjMixin.js",
+    "licenses/ray-optics/upstream/src/core/sceneObjs/glass/Glass.js",
+    "licenses/ray-optics/upstream/src/core/sceneObjs/glass/IdealLens.js",
+    "licenses/ray-optics/upstream/src/core/sceneObjs/glass/PlaneGlass.js",
+    "licenses/ray-optics/upstream/src/core/sceneObjs/lightSource/Beam.js",
+    "licenses/ray-optics/upstream/src/core/sceneObjs/lightSource/SingleRay.js",
+    "licenses/ray-optics/upstream/src/core/sceneObjs/mirror/Mirror.js",
+    "licenses/ray-optics/upstream/src/core/sceneObjs/other/Detector.js"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

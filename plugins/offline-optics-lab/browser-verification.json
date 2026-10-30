@@ -1,0 +1,94 @@
+{
+  "task_id": "AH-20261030-offline-optics-lab",
+  "candidate_id": "CAND-EXT-003",
+  "version": "1.0.0",
+  "date": "2026-10-30",
+  "method": "Actual local plugin HTTP service opened in the ChatGPT in-app browser using CUA; UI actions and accessibility/screenshot readback. No model conversation or paid call.",
+  "web_sha256": {
+    "app.js": "3a2b9c7d1c33cee883e88328b62f65594a6fa90e18798a8a20eaa0b6d68f97b3",
+    "index.html": "8640bf072304b07d1e6862c7a3c097a6a5f4dbe91de946609f6f7bcb1c780b01",
+    "style.css": "acdf6638bf45357b589175823de93ead7b2a12bea5d2b1d223b61b3ac4abe625"
+  },
+  "verified": [
+    {
+      "check": "Chinese UI load",
+      "result": "Passed: title/version, five presets, object editor, canvas, detector section and storage controls rendered."
+    },
+    {
+      "check": "Real refraction trace",
+      "result": "Passed: initial preset emitted 1 ray, produced 4 segments; detector signed relative power -0.958477, normal 0.903661, shear 0.319492."
+    },
+    {
+      "check": "Parameter edit and stale-result invalidation",
+      "result": "Passed: changed glass refractive index from 1.5 to 2 through actual input; old measurements disappeared and CSV disabled before retrace."
+    },
+    {
+      "check": "Parameter-dependent numerical result",
+      "result": "Passed: retrace returned detector signed power -0.887046, normal 0.858879, shear 0.221762; canvas showed reflected/transmitted ray paths."
+    },
+    {
+      "check": "Scene save and reload",
+      "result": "Passed: saved edited scene using UI; reload restored scene and refractive index 2, with results absent until a fresh trace."
+    },
+    {
+      "check": "Expanded viewport half-plane shading regression",
+      "result": "Passed visually after final code fix: changed glass endpoint1 X to -200 and fit view; medium shading extends to negative coordinates and current view extent."
+    },
+    {
+      "check": "Invalid geometry rejection",
+      "result": "Passed: set both interface endpoints to (-200,400); trace returned Chinese minimum-distance error, no paths/measurements/CSV."
+    },
+    {
+      "check": "Unsaved replacement dialog",
+      "result": "Passed: choosing lens preset after edits displayed explicit custom discard confirmation; Continue replaced editor."
+    },
+    {
+      "check": "Actual lens preset trace",
+      "result": "Passed: 9 emitted rays, 27 segments, detector signed relative power 1; normal 0.943441, shear approximately -3.05311e-16."
+    },
+    {
+      "check": "CSV browser download",
+      "result": "Passed: actual generated CSV downloaded, UTF-8 Chinese header and 20 bin rows read from disk; values match refIndex2 trace."
+    },
+    {
+      "check": "JSON browser download",
+      "result": "Passed: actual generated JSON downloaded and parsed from disk; title 平行光束聚焦 and three expected Beam/IdealLens/Detector objects."
+    }
+  ],
+  "downloads": [
+    {
+      "name": "离线光学实验室-场景.json",
+      "bytes": 730,
+      "sha256": "ab82564b49dd173dfc7879792afab2279c9c66df93bcf461ca72b36b3ec107ce",
+      "title": "平行光束聚焦",
+      "object_types": [
+        "Beam",
+        "IdealLens",
+        "Detector"
+      ]
+    },
+    {
+      "name": "离线光学实验室-探测器.csv",
+      "bytes": 2088,
+      "sha256": "d19b9b239eb929f4b868e237ba963f6d1b388fa8987a1208837ce875346593ce",
+      "data_rows": 20
+    }
+  ],
+  "unverified": [
+    "JSON reimport through browser file chooser: chooser operation hung despite 10-second operation options and was interrupted. No completed import or roundtrip is claimed; the page/picker may remain open.",
+    "Direct pointer dragging, all five presets through UI, overwrite-cancel branch and responsive viewports were not tested in this browser pass. Separate engine/service tests are independent evidence.",
+    "No actual user/model conversation tested by this UI verification. User manual testing remains pending."
+  ],
+  "screenshots": {
+    "observed_inline": true,
+    "saved_artifact_paths": [
+      "dist/offline-optics-lab/1.0.0/browser-proof.jpg"
+    ],
+    "sha256": "a13018ec53bb7bcd9e2673d642a137084ea7649abd836803c315e4810a83701c",
+    "note": "Parent captured final rendered refIndex2 result from the frozen web payload. AI development QA only; not original user manual evidence. Page screenshot excludes the credential-bearing address bar."
+  },
+  "last_observed_ui": "Lens preset with successful trace and JSON export message. Subsequent import file-chooser operation interrupted before result readback; current picker state not confirmed.",
+  "service_cleanup": "Dedicated QA worker stopped using its original verified session identity; subsequent health contact returned no response. Source SDK/installed SDK workers also stopped. WorkSwarm frontend/backend remain running. Temporary root proof tab closed; child QA tab was not reacquired by ambiguous session-scoped ID.",
+  "manual_testing_passed": false,
+  "parent_readback": "Loaded saved refIndex2 scene, executed real UI trace:1 emitted ray/4 segments, detector power-0.887046, normal0.858879, shear0.221762. Downloaded lens JSON independently validated/retraced with exact shipped engine; power1 and9 hits. CSV parsed as20 data rows with Chinese headers."
+}

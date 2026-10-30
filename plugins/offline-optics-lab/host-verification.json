@@ -1,0 +1,136 @@
+{
+  "verified_at": "2026-10-30T07:06:37.137381+00:00",
+  "plugin_id": "offline-optics-lab",
+  "display_name": "离线光学实验室",
+  "version": "1.0.0",
+  "frontend_url": "http://127.0.0.1:6393/",
+  "backend_websocket_url": "ws://127.0.0.1:29310/ws",
+  "host_root": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/.research/ebook-workswarm-20261027",
+  "model_requests": 0,
+  "host_code_changes": false,
+  "service_restarts": false,
+  "verification_scope": "Supported running-backend import/install/catalog and payload integrity only.",
+  "native_tool_execution_through_chat_worker": "Not exercised; requires separate manual conversation testing.",
+  "connection_state_limitation": "For a package without MCP connectors, connected mirrors installed and does not prove native-tool loading or execution.",
+  "sdk_invocation": "Not performed by this helper; report separately if tested.",
+  "supported_interface_evidence": {
+    "host_paths_relative_to_source": {
+      "jiuwenswarm/channels/web/frontend/src/services/pluginPackagesApi.ts:145": "show; importLocal at154; install at159.",
+      "jiuwenswarm/common/schema/message.py:406": "Supported plugin package WS request-method declarations.",
+      "jiuwenswarm/server/runtime/extension_package_manager.py:4126": "import_plugin_package; install_plugin_package at4308.",
+      "jiuwenswarm/server/runtime/extension_package_manager.py:639": "Native-only connected state mirrors installed.",
+      "jiuwenswarm/server/runtime/agent_adapter/interface_deep.py:2909": "Selected chat plugins load through DeepAgent.load_plugin at2936."
+    },
+    "sdk_paths_relative_to_openjiuwen": {
+      "harness/deep_agent.py:2196": "Public DeepAgent.load_plugin API.",
+      "harness/resources/extension_resolver.py:103": "resolve_plugin_parts resolves manifest-declared native tools and skills."
+    },
+    "unsupported_test_path": "No generic native Tool.invoke request is declared in the inspected WorkSwarm WS schema. No test endpoint, monkey-patch, or fake-model conversation is used."
+  },
+  "catalog_before": [
+    {
+      "id": "molecule-structure-lab",
+      "installed": true,
+      "connection_state": "connected"
+    },
+    {
+      "id": "offline-circuit-lab",
+      "installed": true,
+      "connection_state": "connected"
+    },
+    {
+      "id": "offline-ebook-reader",
+      "installed": true,
+      "connection_state": "connected"
+    },
+    {
+      "id": "word-citation-notes",
+      "installed": true,
+      "connection_state": "connected"
+    }
+  ],
+  "config_sha256_before": "7c5d0dcb0b1e408f3f89102677c5fdb1923b5d73f5f6b4dcde061fc5820939fb",
+  "other_plugin_files_before": 93,
+  "prior_host_sdk_evidence": "Reused maintained offline-circuit-lab/host-verification.json plus current read-only host inspection; this helper changes only supported installation of this plugin.",
+  "frontend_http": 200,
+  "websocket_proxy_ping_pong": true,
+  "websocket_direct_ping_pong": true,
+  "native_zip": {
+    "path": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/plugins/offline-optics-lab/test-packages/offline-optics-lab-1.0.0-workswarm.zip",
+    "sha256": "5634e3e37c9a53920e59567cd81bce9df42677e18944ba0b2f539b9602785511",
+    "payload_files": 26
+  },
+  "import_local": true,
+  "install": true,
+  "payload_matches_zip": true,
+  "payload_sha256": {
+    "README.md": "fa4001b52b064c24d6a81102b42885d685feb423d1fb4aa9247a0b969bbc41d7",
+    "THIRD_PARTY_NOTICES.md": "8f0290634fae14c1d96c729865840aea190bd5f0d9179900b0ddc0a507ab034c",
+    "engine/README.md": "135869ca2db91e2e690c628b3e428157e89775b32ea331787351c385bceafeca",
+    "engine/cli.mjs": "378cd8c62f5b596d068ad6ab8fea15181d3eecf45178c0e17ffc01c5b68f133b",
+    "engine/core.mjs": "5767ffaf806e452e259db17eb056b4fdf1bb523646f6f235822fc1feca9d084a",
+    "engine/examples.json": "0cd945834b95dda361d50f39f34b9e01ec54550ce5739d0aca7c529555011cd5",
+    "engine/geometry.mjs": "5a6a91360f84af5c5acc96c20c485c5c1fdb831e4205bea313097718a34c3ee4",
+    "licenses/ray-optics/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "licenses/ray-optics/upstream/src/core/Simulator.js": "c90de5b393cfe75041bce44d1a5a29721e5480d9a83fa4d055b6636869379879",
+    "licenses/ray-optics/upstream/src/core/geometry.js": "5a6a91360f84af5c5acc96c20c485c5c1fdb831e4205bea313097718a34c3ee4",
+    "licenses/ray-optics/upstream/src/core/sceneObjs/BaseGlass.js": "82e3b8f185a1a295b3e746a5e9a8420419ae153a5cd6a1468b57d2869a231f0b",
+    "licenses/ray-optics/upstream/src/core/sceneObjs/LineObjMixin.js": "26d2593630197259f2fef738e9f37453d39c3868772d6ba90c3cadcee7bb85aa",
+    "licenses/ray-optics/upstream/src/core/sceneObjs/glass/Glass.js": "63f671f312e302b1b5809214fae5d21b82db992c588f68b3a5a3b3303e64bfe8",
+    "licenses/ray-optics/upstream/src/core/sceneObjs/glass/IdealLens.js": "f59a30334c9bde1226e68dfa82d5202092d584fe0ebec773a5e13c0a2760b37b",
+    "licenses/ray-optics/upstream/src/core/sceneObjs/glass/PlaneGlass.js": "cee40b9415f589aecb781d79b0b323e4010f57990a1aae660f2a4db9a639bb3c",
+    "licenses/ray-optics/upstream/src/core/sceneObjs/lightSource/Beam.js": "8a35d2944ee422606654e77bd8dca95ed46a9d6ad4621c1a2e4e29b702369e26",
+    "licenses/ray-optics/upstream/src/core/sceneObjs/lightSource/SingleRay.js": "549685769cf69405422e225b7505f3831c6c8d47b7b75de559785f3592c38927",
+    "licenses/ray-optics/upstream/src/core/sceneObjs/mirror/Mirror.js": "b102dc22bce0902b4fbc62b78e3fb23da9d1b1840b046c888b0537ed3ec2408b",
+    "licenses/ray-optics/upstream/src/core/sceneObjs/other/Detector.js": "40b688ba0326cb2e69f0b9d8a63e82b0fcab183b83d2f684f0a3551f14c80fd8",
+    "manifest.json": "975d3961ae5e38319019d9b4d0ec40f9cf9fb2f2ab2f475cc0198dff4218ce88",
+    "runtime/lab.py": "7826a31f600c5f412c0ea6d255f7a3f2a9c23545bdbd1b904951a2380def9794",
+    "skills/optics-lab/SKILL.md": "956ddbc349ca0de37a514ac5b5968d4b400b250d7c6c9681778fa185bae81a09",
+    "tools/optics_tools.py": "d482b47a9749d175482b78ac5064d2858466498cbc0c291cfddf9937dfa2dada",
+    "web/app.js": "3a2b9c7d1c33cee883e88328b62f65594a6fa90e18798a8a20eaa0b6d68f97b3",
+    "web/index.html": "8640bf072304b07d1e6862c7a3c097a6a5f4dbe91de946609f6f7bcb1c780b01",
+    "web/style.css": "acdf6638bf45357b589175823de93ead7b2a12bea5d2b1d223b61b3ac4abe625"
+  },
+  "installed_card": {
+    "id": "offline-optics-lab",
+    "version": "1.0.0",
+    "displayName": {
+      "zh": "离线光学实验室",
+      "en": "离线光学实验室"
+    },
+    "installed": true,
+    "connection_state": "connected"
+  },
+  "config_sha256_after": "7c5d0dcb0b1e408f3f89102677c5fdb1923b5d73f5f6b4dcde061fc5820939fb",
+  "model_config_unchanged": true,
+  "other_plugin_payloads_unchanged": true,
+  "catalog_after": [
+    {
+      "id": "molecule-structure-lab",
+      "installed": true,
+      "connection_state": "connected"
+    },
+    {
+      "id": "offline-circuit-lab",
+      "installed": true,
+      "connection_state": "connected"
+    },
+    {
+      "id": "offline-ebook-reader",
+      "installed": true,
+      "connection_state": "connected"
+    },
+    {
+      "id": "offline-optics-lab",
+      "installed": true,
+      "connection_state": "connected"
+    },
+    {
+      "id": "word-citation-notes",
+      "installed": true,
+      "connection_state": "connected"
+    }
+  ],
+  "other_plugin_catalog_unchanged": true,
+  "passed": true
+}
