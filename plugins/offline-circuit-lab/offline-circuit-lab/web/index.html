@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="referrer" content="no-referrer">
+  <title>离线电路实验室</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="masthead">
+      <div class="identity"><span class="mark" aria-hidden="true">∿</span><div><p class="eyebrow">本机实验 · 看见电路的响应</p><h1>离线电路实验室</h1><p class="subtitle">v1.0.0 · 编辑 RLC 网络，读取数值解与瞬态波形</p></div></div>
+      <span class="local-badge"><i></i>仅本机 · 无外部联网</span>
+    </header>
+
+    <section class="toolbar" aria-label="电路文件与示例">
+      <div class="preset-group"><span class="toolbar-label">从示例开始</span><button data-preset="rc">RC 充电</button><button data-preset="divider">电阻分压</button><button data-preset="rlc">RLC 振铃</button></div>
+      <div class="file-group"><button id="load-btn">读取已保存</button><button id="save-btn">保存电路</button><button id="export-json-btn">导出 JSON</button><button id="import-btn">导入 JSON</button><input id="file-input" type="file" accept=".json,application/json" hidden></div>
+    </section>
+    <p id="notice" class="notice" role="status" aria-live="polite">正在读取本机工作区……</p>
+
+    <div class="workbench">
+      <section class="editor panel" aria-labelledby="editor-title">
+        <div class="section-heading"><div><p class="eyebrow">01 / 建立连接</p><h2 id="editor-title">电路与元件</h2></div><span id="component-count" class="count">0 个元件</span></div>
+        <div class="diagram-scroll"><svg id="schematic" role="img" aria-label="当前电路连接图" xmlns="http://www.w3.org/2000/svg"></svg></div>
+        <p class="diagram-note"><span class="junction"></span>圆点表示电气连接；交叉处没有圆点就不相连。节点 0 为参考地。</p>
+        <fieldset id="editor-fields">
+          <legend class="sr-only">编辑元件</legend>
+          <div class="table-scroll"><table class="component-table"><thead><tr><th scope="col">名称</th><th scope="col">元件</th><th scope="col">从节点</th><th scope="col">到节点</th><th scope="col">数值 <small>SI 单位</small></th><th scope="col"><span class="sr-only">删除</span></th></tr></thead><tbody id="component-rows"></tbody></table></div>
+          <div class="editor-actions"><label class="add-type">添加 <select id="new-type" aria-label="新元件类型"><option value="R">电阻 R</option><option value="C">电容 C</option><option value="L">电感 L</option><option value="V">电压源 V</option></select></label><button id="add-btn" type="button">＋ 添加元件</button></div>
+          <div class="simulation-settings"><label>观察节点<select id="probe" aria-label="观察节点"></select></label><label>仿真时长 <span>ms</span><input id="duration" type="number" step="any" value="5" inputmode="decimal"></label><label>时间步长 <span>µs</span><input id="step" type="number" step="any" value="5" inputmode="decimal"></label></div>
+          <p class="field-help">电阻用 Ω，电容用 F，电感用 H，电压用 V。例如 1 µF 填 <code>1e-6</code>。电压源在起点由 0 跳至设定值，电容与电感初始储能为 0。最多 24 个元件、16 个节点；时长须为步长的整数倍，共 1–5000 步。</p>
+        </fieldset>
+        <div class="run-row"><button id="run-btn" class="primary">运行仿真 <span aria-hidden="true">↗</span></button><span id="run-state">等待运行</span></div>
+      </section>
+
+      <section class="results panel" aria-labelledby="results-title">
+        <div class="section-heading"><div><p class="eyebrow">02 / 观察响应</p><h2 id="results-title">数值与波形</h2></div><span id="result-version" class="count">尚无结果</span></div>
+        <div class="wave-header"><div><span class="legend-line"></span><strong id="wave-title">节点电压</strong></div><span>电压 / V · 时间 / ms</span></div>
+        <div id="plot-area" class="plot-area"><svg id="waveform" role="img" aria-label="仿真电压波形" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300"></svg><div id="empty-result" class="empty-result"><span aria-hidden="true">∿</span><strong>先连接，再求解</strong><p>运行后显示求解器返回的真实采样值。</p></div></div>
+        <div class="measurement-grid"><div><span>末端电压</span><strong id="last-voltage">—</strong></div><div><span>电压范围</span><strong id="voltage-range">—</strong></div><div><span>采样点</span><strong id="sample-count">—</strong></div><div><span>实际结束时间</span><strong id="last-time">—</strong></div></div>
+        <div id="warnings" class="warnings" hidden></div>
+        <div class="samples-heading"><h3>逐点读数</h3><button id="export-csv-btn" disabled>导出 CSV</button></div>
+        <div class="cursor-control"><label for="sample-slider">选择采样点</label><input id="sample-slider" type="range" min="0" max="0" value="0" disabled><output id="sample-time">—</output></div>
+        <div class="readout-grid"><div><h4>节点电压 <small>V</small></h4><dl id="voltage-readout"><dt>等待运行</dt><dd>—</dd></dl></div><div><h4>元件电流 <small>A，从节点 → 到节点</small></h4><dl id="current-readout"><dt>等待运行</dt><dd>—</dd></dl></div></div>
+        <p class="result-note" id="result-note">修改任何电路参数后需重新运行。图形是连接关系与计算结果，不是硬件测量。</p>
+      </section>
+    </div>
+
+    <footer>
+      <details><summary>适用范围、文件与许可</summary><div class="footer-detail"><p>仅支持有界、线性的电阻、电感、电容及理想阶跃电压源网络。用于学习与对比，不提供半导体、频率扫描、寄生参数或工程认证。奇异矩阵、不支持的输入或数值失败会明确报告。</p><p>“保存电路”只更新本次工作区中的电路状态，不修改导入的原文件。导出文件通过浏览器下载；导入会替换当前编辑内容。此页面仅与启动它的本机服务通信，链接包含本机访问凭据，请勿分享。</p><p>数值模型源自 CircuitJS1 的许可范围内代码；这是有界适配版，不是完整 CircuitJS1。上游作者：Paul Falstad、Iain Sharp。按 GPL-2.0-or-later 提供，且不提供任何担保，包括适销性或特定用途适用性的担保。<a href="license.txt" target="_blank" rel="noopener">阅读完整许可证</a>。原始版权、修改记录与对应源码随插件提供。</p></div></details>
+      <span class="footer-stamp">离线电路实验室 / 1.0.0</span>
+    </footer>
+  </main>
+  <dialog id="change-dialog" aria-labelledby="change-title" aria-describedby="change-message">
+    <form method="dialog"><h2 id="change-title">确认电路操作</h2><p id="change-message"></p><div class="dialog-actions"><button value="cancel">取消</button><button value="continue" class="primary">确认继续</button></div></form>
+  </dialog>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{
+  "version": "1.0.0",
+  "date": "2026-10-28",
+  "scope": "Actual Chrome UI actions against plugin-owned loopback server; no user/model conversation test.",
+  "checks": {
+    "rc_1k_5ms_volts": 4.9663,
+    "rc_2k_5ms_volts": 4.5896,
+    "edit_clears_results_and_disables_csv": true,
+    "divider_volts": 2.5,
+    "divider_3k_volts": 3.75,
+    "added_parallel_3k_branch_volts": 3.0,
+    "save_refresh_restores_four_components": true,
+    "floating_network_chinese_rejection": true,
+    "rlc_samples": 2501,
+    "rlc_peak_display_volts": 5.815,
+    "rlc_final_display_volts": 5.0,
+    "chinese_ui_visually_readable": true
+  },
+  "downloads": {
+    "csv_data_rows": 101,
+    "csv_sha256": "069e37432ade0920ef0fd499881fb10b292327f02a7f5cb345766a8ac32ce161",
+    "csv_last_row": [
+      "0.001",
+      "0",
+      "5",
+      "3.0000000000000004",
+      "-0.0019999999999999996",
+      "0.0019999999999999996",
+      "0.001",
+      "0.001"
+    ],
+    "json_components": 4,
+    "json_sha256": "1fb8d3cfcfdcb84db545e1863bf689a0eba1003a24b9ecea6fc6985a6e4b5ed7"
+  },
+  "automation_limitations": [
+    "Native confirm dialog automation stalled; replaced plugin confirmation UI with accessible in-page dialog and verified preset/save confirmation.",
+    "Browser download-event waiter timed out, but real downloaded CSV/JSON files were independently read and validated.",
+    "Browser file-chooser JSON re-import not exercised; included in user manual instructions."
+  ],
+  "manual_test_passed": false
+}

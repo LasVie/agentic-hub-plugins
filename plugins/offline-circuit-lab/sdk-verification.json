@@ -1,0 +1,582 @@
+{
+  "verified_at": "2026-10-28T08:30:03.195180+00:00",
+  "scope": "Standalone SDK DeepAgent.load_plugin plus registered Tool.invoke; not running WorkSwarm chat-worker execution.",
+  "plugin_id": "offline-circuit-lab",
+  "version": "1.0.0",
+  "payload": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/dist/offline-circuit-lab/1.0.0/final-sdk-extracted",
+  "workspace": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/dist/offline-circuit-lab/1.0.0/sdk-final-workspace2",
+  "model_requests": 0,
+  "external_network": "Denied by audit hook in this verification subprocess.",
+  "records": [
+    {
+      "tool": "local_circuit_lab",
+      "inputs": {
+        "action": "status",
+        "workspace": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/dist/offline-circuit-lab/1.0.0/sdk-final-workspace2"
+      },
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "running": false,
+        "message": "此工作目录没有可验证的运行会话。"
+      }
+    },
+    {
+      "tool": "local_circuit_lab",
+      "inputs": {
+        "action": "start",
+        "workspace": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/dist/offline-circuit-lab/1.0.0/sdk-final-workspace2"
+      },
+      "result": {
+        "ok": false,
+        "version": "1.0.0",
+        "error": {
+          "code": "confirmation_required",
+          "message": "启动或关闭服务前需要用户明确授权，随后设置 confirmed=true。"
+        }
+      }
+    },
+    {
+      "tool": "simulate_rlc_circuit",
+      "inputs": {
+        "circuit": {
+          "components": [
+            {
+              "id": "V1",
+              "type": "V",
+              "a": "1",
+              "b": "0",
+              "value": 5
+            },
+            {
+              "id": "R1",
+              "type": "R",
+              "a": "1",
+              "b": "2",
+              "value": 1000
+            },
+            {
+              "id": "R2",
+              "type": "R",
+              "a": "2",
+              "b": "0",
+              "value": 1000
+            }
+          ],
+          "duration_ms": 5,
+          "step_us": 5,
+          "probe": "2"
+        }
+      },
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "mode": "transient",
+        "method": "修正节点分析；首步后向欧拉 + 梯形积分",
+        "units": {
+          "t": "s",
+          "voltages": "V",
+          "currents": "A"
+        },
+        "current_direction": "支路电流正方向为 a → b；电压源约束为 Va − Vb = value。",
+        "summary": {
+          "probe": "2",
+          "final_voltage": 2.5,
+          "min_voltage": 0.0,
+          "max_voltage": 2.5,
+          "steps": 1000,
+          "duration_ms": 5.0,
+          "step_us": 5.0,
+          "component_count": 3,
+          "node_count": 3
+        },
+        "warnings": [
+          "仅计算理想线性 R/L/C 与理想电压源；不含寄生、饱和、温度、损耗模型或真实硬件安全验证。",
+          "t=0 为阶跃前零状态；所有电压源在其后同时阶跃至设定值。电容初始电压和电感初始电流均为零。",
+          "首步使用后向欧拉，其后使用梯形积分。步长过大会遗漏快速动态或引起数值振铃；请减半步长复核收敛性。"
+        ],
+        "sample_count": 1001,
+        "trace_preview": [
+          {
+            "t": 0.0,
+            "voltages": {
+              "0": 0.0,
+              "1": 0.0,
+              "2": 0.0
+            },
+            "currents": {
+              "V1": 0.0,
+              "R1": 0.0,
+              "R2": 0.0
+            }
+          },
+          {
+            "t": 5e-06,
+            "voltages": {
+              "0": 0.0,
+              "1": 5.0,
+              "2": 2.5
+            },
+            "currents": {
+              "V1": -0.0025,
+              "R1": 0.0025,
+              "R2": 0.0025
+            }
+          },
+          {
+            "t": 1e-05,
+            "voltages": {
+              "0": 0.0,
+              "1": 5.0,
+              "2": 2.5
+            },
+            "currents": {
+              "V1": -0.0025,
+              "R1": 0.0025,
+              "R2": 0.0025
+            }
+          },
+          {
+            "t": 1.5000000000000002e-05,
+            "voltages": {
+              "0": 0.0,
+              "1": 5.0,
+              "2": 2.5
+            },
+            "currents": {
+              "V1": -0.0025,
+              "R1": 0.0025,
+              "R2": 0.0025
+            }
+          },
+          {
+            "t": 2e-05,
+            "voltages": {
+              "0": 0.0,
+              "1": 5.0,
+              "2": 2.5
+            },
+            "currents": {
+              "V1": -0.0025,
+              "R1": 0.0025,
+              "R2": 0.0025
+            }
+          },
+          {
+            "t": 2.5e-05,
+            "voltages": {
+              "0": 0.0,
+              "1": 5.0,
+              "2": 2.5
+            },
+            "currents": {
+              "V1": -0.0025,
+              "R1": 0.0025,
+              "R2": 0.0025
+            }
+          },
+          {
+            "t": 0.004975,
+            "voltages": {
+              "0": 0.0,
+              "1": 5.0,
+              "2": 2.5
+            },
+            "currents": {
+              "V1": -0.0025,
+              "R1": 0.0025,
+              "R2": 0.0025
+            }
+          },
+          {
+            "t": 0.00498,
+            "voltages": {
+              "0": 0.0,
+              "1": 5.0,
+              "2": 2.5
+            },
+            "currents": {
+              "V1": -0.0025,
+              "R1": 0.0025,
+              "R2": 0.0025
+            }
+          },
+          {
+            "t": 0.004985000000000001,
+            "voltages": {
+              "0": 0.0,
+              "1": 5.0,
+              "2": 2.5
+            },
+            "currents": {
+              "V1": -0.0025,
+              "R1": 0.0025,
+              "R2": 0.0025
+            }
+          },
+          {
+            "t": 0.0049900000000000005,
+            "voltages": {
+              "0": 0.0,
+              "1": 5.0,
+              "2": 2.5
+            },
+            "currents": {
+              "V1": -0.0025,
+              "R1": 0.0025,
+              "R2": 0.0025
+            }
+          },
+          {
+            "t": 0.004995,
+            "voltages": {
+              "0": 0.0,
+              "1": 5.0,
+              "2": 2.5
+            },
+            "currents": {
+              "V1": -0.0025,
+              "R1": 0.0025,
+              "R2": 0.0025
+            }
+          },
+          {
+            "t": 0.005,
+            "voltages": {
+              "0": 0.0,
+              "1": 5.0,
+              "2": 2.5
+            },
+            "currents": {
+              "V1": -0.0025,
+              "R1": 0.0025,
+              "R2": 0.0025
+            }
+          }
+        ],
+        "trace_truncated": true,
+        "trace_note": "这里只返回首尾样本预览；完整数值波形与CSV由本机实验室提供。"
+      }
+    },
+    {
+      "tool": "local_circuit_lab",
+      "inputs": {
+        "action": "start",
+        "workspace": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/dist/offline-circuit-lab/1.0.0/sdk-final-workspace2",
+        "confirmed": true
+      },
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "running": true,
+        "reused": false,
+        "message": "请在同一台电脑的独立浏览器标签页打开完整地址；空闲30分钟后自动关闭。地址含本机会话凭据，请勿分享。"
+      }
+    },
+    {
+      "tool": "local_circuit_lab",
+      "inputs": {
+        "action": "status",
+        "workspace": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/dist/offline-circuit-lab/1.0.0/sdk-final-workspace2"
+      },
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "running": true
+      }
+    },
+    {
+      "tool": "local_circuit_lab",
+      "inputs": {
+        "action": "stop",
+        "workspace": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/dist/offline-circuit-lab/1.0.0/sdk-final-workspace2",
+        "confirmed": true
+      },
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "running": false,
+        "message": "已确认本插件会话停止响应；保存的电路保留。"
+      }
+    },
+    {
+      "tool": "local_circuit_lab",
+      "inputs": {
+        "action": "start",
+        "workspace": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/dist/offline-circuit-lab/1.0.0/sdk-final-workspace2",
+        "confirmed": true
+      },
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "running": true,
+        "reused": false,
+        "message": "请在同一台电脑的独立浏览器标签页打开完整地址；空闲30分钟后自动关闭。地址含本机会话凭据，请勿分享。"
+      }
+    },
+    {
+      "tool": "local_circuit_lab",
+      "inputs": {
+        "action": "stop",
+        "workspace": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/dist/offline-circuit-lab/1.0.0/sdk-final-workspace2",
+        "confirmed": true
+      },
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "running": false,
+        "message": "已确认本插件会话停止响应；保存的电路保留。"
+      }
+    },
+    {
+      "tool": "local_circuit_lab",
+      "inputs": {
+        "action": "status",
+        "workspace": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/dist/offline-circuit-lab/1.0.0/sdk-final-workspace2"
+      },
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "running": false,
+        "message": "此工作目录没有可验证的运行会话。"
+      }
+    }
+  ],
+  "passed": true,
+  "payload_sha256": {
+    "README.md": "67936cedfdd80f1a36d8987fb7738a3a5b9e5ce6ce96a5ba66e48adeb332dd26",
+    "THIRD_PARTY_NOTICES.md": "c7f1e40499570d84d43b2e7f7f1924b3632465e2ceda65f76100d4319b21f384",
+    "licenses/circuitjs/LICENSE": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+    "licenses/circuitjs/upstream/CapacitorElm.ts": "84d78ee77eed8c0318894f98ef358285d4d20b3104ea0dff317fdac13feabc5d",
+    "licenses/circuitjs/upstream/Inductor.ts": "2256ebc668b53444995ad4680301f1530befd2922d2dc63c1413ad9d102e5794",
+    "licenses/circuitjs/upstream/ResistorElm.ts": "f8e4c560a87788b8552e570d386ecf003f027ebda0c2643e7707cbec3bb150e4",
+    "licenses/circuitjs/upstream/SimulationManager.ts": "7754d920a638ed735948608dea391616eb357c84387c80f882e0a6ff4c907949",
+    "manifest.json": "b80f65877c09f42a320f47625319dc2fd1edf87dd72002235011512d08e9a531",
+    "runtime/lab.py": "ec0860872f43a4dee394cc532ec0e140fbf074598920ed6a622fc8fb3c1a9768",
+    "runtime/solver.py": "5fadbfb301ac05b62d95a3efb96f735465da419578e059bdb7b26b321702de62",
+    "skills/circuit-lab/SKILL.md": "1bd64c1d2a5eb9de751ab46fa0d6db1e7480ad49fb2ca1f84c2859f20110bf42",
+    "tools/circuit_tools.py": "9c2f5b71ba13dc3e71d43b12c9975ff810ce0dc8d9f4ccafbc53d772efbc8415",
+    "web/app.js": "8b159e994146fcad4f8d3712ea06fba19c8ee13a95f7c5f72b80485beca338d6",
+    "web/index.html": "b8406493700ea8fcba70c5b8c38f0445a1f840169215298b396f14176b3cd345",
+    "web/style.css": "7e3486458e0e0a82da52db422924a35cac7ee4a1fae191ec0c64397cb47a08c3"
+  },
+  "registered_refs": [
+    {
+      "kind": "tool",
+      "identity": "local_circuit_lab_offline-circuit-sdk-dc6f48554c304a52b6c511164a525cfb"
+    },
+    {
+      "kind": "tool",
+      "identity": "simulate_rlc_circuit_offline-circuit-sdk-dc6f48554c304a52b6c511164a525cfb"
+    },
+    {
+      "kind": "skill",
+      "identity": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/dist/offline-circuit-lab/1.0.0/final-sdk-extracted/skills/circuit-lab"
+    }
+  ],
+  "registered_tools": [
+    "local_circuit_lab",
+    "simulate_rlc_circuit"
+  ],
+  "divider_analytical_check": {
+    "expected_probe_volts": 2.5,
+    "expected_resistor_amps": 0.0025,
+    "actual_probe_volts": 2.5,
+    "actual_resistor_amps": 0.0025
+  },
+  "divider_result": {
+    "ok": true,
+    "version": "1.0.0",
+    "mode": "transient",
+    "method": "修正节点分析；首步后向欧拉 + 梯形积分",
+    "units": {
+      "t": "s",
+      "voltages": "V",
+      "currents": "A"
+    },
+    "current_direction": "支路电流正方向为 a → b；电压源约束为 Va − Vb = value。",
+    "summary": {
+      "probe": "2",
+      "final_voltage": 2.5,
+      "min_voltage": 0.0,
+      "max_voltage": 2.5,
+      "steps": 1000,
+      "duration_ms": 5.0,
+      "step_us": 5.0,
+      "component_count": 3,
+      "node_count": 3
+    },
+    "warnings": [
+      "仅计算理想线性 R/L/C 与理想电压源；不含寄生、饱和、温度、损耗模型或真实硬件安全验证。",
+      "t=0 为阶跃前零状态；所有电压源在其后同时阶跃至设定值。电容初始电压和电感初始电流均为零。",
+      "首步使用后向欧拉，其后使用梯形积分。步长过大会遗漏快速动态或引起数值振铃；请减半步长复核收敛性。"
+    ],
+    "sample_count": 1001,
+    "trace_preview": [
+      {
+        "t": 0.0,
+        "voltages": {
+          "0": 0.0,
+          "1": 0.0,
+          "2": 0.0
+        },
+        "currents": {
+          "V1": 0.0,
+          "R1": 0.0,
+          "R2": 0.0
+        }
+      },
+      {
+        "t": 5e-06,
+        "voltages": {
+          "0": 0.0,
+          "1": 5.0,
+          "2": 2.5
+        },
+        "currents": {
+          "V1": -0.0025,
+          "R1": 0.0025,
+          "R2": 0.0025
+        }
+      },
+      {
+        "t": 1e-05,
+        "voltages": {
+          "0": 0.0,
+          "1": 5.0,
+          "2": 2.5
+        },
+        "currents": {
+          "V1": -0.0025,
+          "R1": 0.0025,
+          "R2": 0.0025
+        }
+      },
+      {
+        "t": 1.5000000000000002e-05,
+        "voltages": {
+          "0": 0.0,
+          "1": 5.0,
+          "2": 2.5
+        },
+        "currents": {
+          "V1": -0.0025,
+          "R1": 0.0025,
+          "R2": 0.0025
+        }
+      },
+      {
+        "t": 2e-05,
+        "voltages": {
+          "0": 0.0,
+          "1": 5.0,
+          "2": 2.5
+        },
+        "currents": {
+          "V1": -0.0025,
+          "R1": 0.0025,
+          "R2": 0.0025
+        }
+      },
+      {
+        "t": 2.5e-05,
+        "voltages": {
+          "0": 0.0,
+          "1": 5.0,
+          "2": 2.5
+        },
+        "currents": {
+          "V1": -0.0025,
+          "R1": 0.0025,
+          "R2": 0.0025
+        }
+      },
+      {
+        "t": 0.004975,
+        "voltages": {
+          "0": 0.0,
+          "1": 5.0,
+          "2": 2.5
+        },
+        "currents": {
+          "V1": -0.0025,
+          "R1": 0.0025,
+          "R2": 0.0025
+        }
+      },
+      {
+        "t": 0.00498,
+        "voltages": {
+          "0": 0.0,
+          "1": 5.0,
+          "2": 2.5
+        },
+        "currents": {
+          "V1": -0.0025,
+          "R1": 0.0025,
+          "R2": 0.0025
+        }
+      },
+      {
+        "t": 0.004985000000000001,
+        "voltages": {
+          "0": 0.0,
+          "1": 5.0,
+          "2": 2.5
+        },
+        "currents": {
+          "V1": -0.0025,
+          "R1": 0.0025,
+          "R2": 0.0025
+        }
+      },
+      {
+        "t": 0.0049900000000000005,
+        "voltages": {
+          "0": 0.0,
+          "1": 5.0,
+          "2": 2.5
+        },
+        "currents": {
+          "V1": -0.0025,
+          "R1": 0.0025,
+          "R2": 0.0025
+        }
+      },
+      {
+        "t": 0.004995,
+        "voltages": {
+          "0": 0.0,
+          "1": 5.0,
+          "2": 2.5
+        },
+        "currents": {
+          "V1": -0.0025,
+          "R1": 0.0025,
+          "R2": 0.0025
+        }
+      },
+      {
+        "t": 0.005,
+        "voltages": {
+          "0": 0.0,
+          "1": 5.0,
+          "2": 2.5
+        },
+        "currents": {
+          "V1": -0.0025,
+          "R1": 0.0025,
+          "R2": 0.0025
+        }
+      }
+    ],
+    "trace_truncated": true,
+    "trace_note": "这里只返回首尾样本预览；完整数值波形与CSV由本机实验室提供。"
+  },
+  "start_status_same_session": true,
+  "local_ui_http": 200,
+  "immediate_restart_new_session": true,
+  "stopped_service_verified": true,
+  "invocations": 9,
+  "unloaded_refs": 3
+}

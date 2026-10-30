@@ -1,0 +1,27 @@
+{
+  "type": "agent-plugin",
+  "name": "offline-circuit-lab",
+  "version": "1.0.0",
+  "display_name": "离线电路实验室",
+  "description": "离线编辑有界RLC电路拓扑，执行真实数值仿真，查看电压电流波形并保存或导出电路与测量数据。",
+  "publisher": "Cai Zhenze",
+  "category": "数据与科学研究",
+  "tags": [
+    "离线仿真",
+    "电路实验",
+    "RLC"
+  ],
+  "functional_tags": [
+    "Offline Circuit Simulation",
+    "Editable RLC Topology",
+    "Transient Measurements"
+  ],
+  "scope": "macOS/Linux Python3.11+、宿主SDK和桌面浏览器；有界理想RLC模型，不联网、不修改宿主、不提供硬件安全或工程认证。",
+  "candidate_id": "CAND-EXT-001",
+  "task_id": "AH-20261028-offline-circuit-lab",
+  "related_asset_ids": [
+    "e3d119abf7b242aa9b65c63faeb62c01",
+    "29178601e70a4c31a09abb9b44388cb4",
+    "21cbd7759f7440e1a5c043161368be30"
+  ]
+}

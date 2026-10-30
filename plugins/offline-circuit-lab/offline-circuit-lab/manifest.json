@@ -1,0 +1,63 @@
+{
+  "id": "offline-circuit-lab",
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "source": "local",
+  "name": "离线电路实验室",
+  "description": "离线编辑有界RLC电路拓扑，执行真实数值仿真，查看电压电流波形并保存或导出电路与测量数据。",
+  "display_name": {
+    "zh": "离线电路实验室",
+    "en": "离线电路实验室"
+  },
+  "display_description": {
+    "zh": "离线编辑有界RLC电路拓扑，执行真实数值仿真，查看电压电流波形并保存或导出电路与测量数据。",
+    "en": "离线编辑有界RLC电路拓扑，执行真实数值仿真，查看电压电流波形并保存或导出电路与测量数据。"
+  },
+  "category": "数据与科学研究",
+  "tags": [
+    {
+      "zh": "离线仿真",
+      "en": "离线仿真"
+    },
+    {
+      "zh": "电路实验",
+      "en": "电路实验"
+    },
+    {
+      "zh": "RLC",
+      "en": "RLC"
+    }
+  ],
+  "skills": [
+    {
+      "dir": "skills/circuit-lab",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/circuit_tools.py",
+      "class": "LocalCircuitLabTool",
+      "display_name": {
+        "zh": "本机电路实验室",
+        "en": "本机电路实验室"
+      },
+      "display_description": {
+        "zh": "启动、查询或关闭中文离线编辑界面",
+        "en": "启动、查询或关闭中文离线编辑界面"
+      }
+    },
+    {
+      "file": "tools/circuit_tools.py",
+      "class": "SimulateRlcCircuitTool",
+      "display_name": {
+        "zh": "RLC数值仿真",
+        "en": "RLC数值仿真"
+      },
+      "display_description": {
+        "zh": "只读计算实际拓扑并返回测量与样本预览",
+        "en": "只读计算实际拓扑并返回测量与样本预览"
+      }
+    }
+  ]
+}
