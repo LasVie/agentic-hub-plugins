@@ -1,0 +1,21 @@
+{
+  "id": "video-channel-ops",
+  "version": "1.0.1",
+  "package_type": "plugin",
+  "source": "local",
+  "name": "视频频道日更流水线",
+  "description": "用 AI 助手每天稳定产出视频频道内容：创建频道运营目录，按调研、脚本、配音、画面、渲染、字幕与检查、上传 7 步制作当天的长 / 短视频，防止重复制作与重复付费提交，用 FFmpeg 渲染并做上传前机器检查，记录经平台确认的发布结果与 24h/72h/7d 指标。不联网、不自动上传、不付费。",
+  "display_name": {"zh": "视频频道日更流水线", "en": "video-channel-ops"},
+  "display_description": {
+    "zh": "用 AI 助手每天稳定产出视频频道内容：创建频道运营目录，按 7 步制作当天的长 / 短视频，防止重复制作与重复付费提交，用 FFmpeg 渲染并做上传前机器检查，记录经平台确认的发布结果与指标。",
+    "en": "用 AI 助手每天稳定产出视频频道内容：创建频道运营目录，按 7 步制作当天的长 / 短视频，防止重复制作与重复付费提交，用 FFmpeg 渲染并做上传前机器检查，记录经平台确认的发布结果与指标。"
+  },
+  "category": "内容创作",
+  "skills": [{"dir": "skills/video-channel-ops", "mode": "all"}],
+  "tools": [{
+    "file": "tools/plugin_tool.py",
+    "class": "PluginTool",
+    "display_name": {"zh": "视频频道日更流水线", "en": "video-channel-ops"},
+    "display_description": {"zh": "管理频道目录、每日栏位、生成任务、发布记录与指标，并渲染和检查视频。", "en": "管理频道目录、每日栏位、生成任务、发布记录与指标，并渲染和检查视频。"}
+  }]
+}

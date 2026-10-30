@@ -1,0 +1,87 @@
+{
+  "checked_at": "2026-10-27T06:13:27.976768+00:00",
+  "instance": "/private/tmp/state-machine-audit-workswarm-20261026",
+  "reused_own_instance": true,
+  "frontend_url": "http://127.0.0.1:6392/",
+  "frontend": {
+    "status": 200,
+    "html": true
+  },
+  "websockets": [
+    {
+      "port": 29290,
+      "websocket_ping_pong": true,
+      "backend_config_ok": true,
+      "extensions_catalog_ok": true
+    },
+    {
+      "port": 6392,
+      "websocket_ping_pong": true,
+      "backend_config_ok": true,
+      "extensions_catalog_ok": true
+    }
+  ],
+  "model_requests_sent": 0,
+  "no_new_ports_or_service_restarts": true,
+  "native_zip_sha256": "335a003d520315f8688f548ff284af9154829a3a32fc1cf885ee419870303b57",
+  "imported": {
+    "type": "res",
+    "id": "word-notes-f17d72a3210849079efdaac9dfd56f8f",
+    "ok": true,
+    "payload": {
+      "id": "word-citation-notes"
+    }
+  },
+  "installed": {
+    "type": "res",
+    "id": "word-notes-6297d29c563e45889621d77646d9a6a7",
+    "ok": true,
+    "payload": {}
+  },
+  "unrelated_catalog_unchanged": true,
+  "catalog_package_ids": [
+    "family-document-registry",
+    "state-machine-audit",
+    "word-citation-notes"
+  ],
+  "selected_package": {
+    "id": "word-citation-notes",
+    "displayName": {
+      "en": "Word 引用脚注转换",
+      "zh": "Word 引用脚注转换"
+    },
+    "displayDescription": {
+      "en": "检查Word正文与精确引用范围，展示绑定原文件摘要的转换计划，经确认后生成保留原件和参考文献的脚注或尾注DOCX。",
+      "zh": "检查Word正文与精确引用范围，展示绑定原文件摘要的转换计划，经确认后生成保留原件和参考文献的脚注或尾注DOCX。"
+    },
+    "category": "Others",
+    "tags": [
+      {
+        "en": "Word文档",
+        "zh": "Word文档"
+      },
+      {
+        "en": "脚注与尾注",
+        "zh": "脚注与尾注"
+      },
+      {
+        "en": "精确范围",
+        "zh": "精确范围"
+      },
+      {
+        "en": "离线转换",
+        "zh": "离线转换"
+      }
+    ],
+    "source": "local",
+    "avatar": "",
+    "installed": true,
+    "connection_state": "connected"
+  },
+  "host_config_unchanged": true,
+  "host_config_before_sha256": "6211b3b0a50baa85d2ea7e062935f1a80c13d16ecaccab08743a591b8fc8e89f",
+  "host_config_after_sha256": "6211b3b0a50baa85d2ea7e062935f1a80c13d16ecaccab08743a591b8fc8e89f",
+  "installed_path": "/private/tmp/state-machine-audit-workswarm-20261026/data/agent/workspace/plugins/plugin_packages/local/word-citation-notes",
+  "installed_payload_matches_source": true,
+  "payload_file_count": 8
+}

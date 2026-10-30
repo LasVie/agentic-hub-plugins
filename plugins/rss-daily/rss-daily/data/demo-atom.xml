@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>演示 Atom，非实时新闻</title>
+<entry><title>演示：社区举办无障碍设计分享</title><link href="https://example.org/demo/accessibility"/><updated>@RECENT@</updated><summary>演示社区计划分享键盘导航和文字对比度实践，时间与报名方式未提供。该内容不是真实新闻。</summary></entry>
+</feed>

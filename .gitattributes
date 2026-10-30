@@ -37,3 +37,10 @@
 /plugins/fools-errand/*.json text eol=lf
 /releases/agent-plugin/fools-errand/**/*.zip -text
 /releases/agent-plugin/fools-errand/**/artifact.json text eol=lf
+
+# Preserve the exact confirmed anidoodle payload and report/license hashes.
+/plugins/anidoodle/** -text
+/releases/agent-plugin/anidoodle/** -text
+
+/plugins/rss-daily/** -text
+/releases/agent-plugin/rss-daily/** -text

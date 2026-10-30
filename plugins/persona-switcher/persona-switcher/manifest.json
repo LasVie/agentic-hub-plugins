@@ -1,0 +1,22 @@
+{
+  "id": "persona-switcher",
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "source": "local",
+  "name": "会话人设切换",
+  "description": "在会话中随时切换 AI 的人设与说话风格：角色是工作目录内的 ROLE.md 文件，可列出、切换、回到默认、设默认、新建和删除；只换说话的人，不改变工具、技能、模型或权限。",
+  "display_name": {"zh": "会话人设切换", "en": "persona-switcher"},
+  "display_description": {
+    "zh": "在会话中随时切换 AI 的人设与说话风格：角色是工作目录内的 ROLE.md 文件，可列出、切换、回到默认、设默认、新建和删除；只换说话的人，不改变工具、技能、模型或权限。",
+    "en": "在会话中随时切换 AI 的人设与说话风格：角色是工作目录内的 ROLE.md 文件，可列出、切换、回到默认、设默认、新建和删除；只换说话的人，不改变工具、技能、模型或权限。"
+  },
+  "category": "办公与生产力",
+  "skills": [{"dir": "skills/persona-switcher", "mode": "all"}],
+  "tools": [{
+    "file": "tools/plugin_tool.py",
+    "class": "PluginTool",
+    "display_name": {"zh": "会话人设切换", "en": "persona-switcher"},
+    "display_description": {"zh": "管理角色库并切换当前人设与说话风格。", "en": "管理角色库并切换当前人设与说话风格。"}
+  }],
+  "prompt_sections": [{"file": "prompt_sections/persona.md", "priority": 100}]
+}

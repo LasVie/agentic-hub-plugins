@@ -1,0 +1,14 @@
+{
+  "type": "agent-plugin",
+  "name": "persona-switcher",
+  "version": "1.0.0",
+  "display_name": "会话人设切换",
+  "description": "在会话中随时切换 AI 的人设与说话风格：角色是工作目录内的 ROLE.md 文件，可列出、切换、回到默认、设默认、新建和删除；只换说话的人，不改变工具、技能、模型或权限。",
+  "publisher": "Vannes Wijaya",
+  "category": "办公与生产力",
+  "tags": ["人设切换", "说话风格", "角色扮演"],
+  "functional_tags": ["人设切换", "会话与上下文"],
+  "scope": "按工作目录切换人设与说话风格并管理 ROLE.md 角色库；不改变工具、技能、模型或权限，不含网页端选择器与吉祥物。",
+  "candidate_id": "CAND-DSH-095",
+  "task_id": "AH-20261027-persona-switcher"
+}

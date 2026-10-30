@@ -1,0 +1,29 @@
+{
+  "type": "agent-plugin",
+  "name": "word-citation-notes",
+  "version": "1.0.0",
+  "display_name": "Word 引用脚注转换",
+  "description": "检查Word正文与精确引用范围，展示绑定原文件摘要的转换计划，经确认后生成保留原件和参考文献的脚注或尾注DOCX。",
+  "publisher": "Cai Zhenze",
+  "category": "办公与生产力",
+  "tags": [
+    "Word文档",
+    "脚注与尾注",
+    "精确范围",
+    "离线转换"
+  ],
+  "functional_tags": [
+    "DOCX Citation-to-Notes Conversion",
+    "Source-bound Explicit Plans",
+    "Native OOXML Footnotes and Endnotes"
+  ],
+  "scope": "Python3.11+与外部lxml及宿主SDK。仅明确支持的DOCX正文；先展示精确引用/注释文字和源摘要，再确认生成新文件。保留原件/参考文献，无自动Bluebook或Id./supra推断、联网取元数据、法律判断或自动覆盖。",
+  "candidate_id": "CAND-CLD-322",
+  "task_id": "AH-20261027-word-citation-notes",
+  "related_asset_ids": [
+    "440c3c6e0e654b1eb9ec32c17bcd2923",
+    "58423394089843bcb863654f02ab937a",
+    "0b3aefa276af49bc863c42001a77e695",
+    "1f4e4a2df62a40879bbbd77580973b99"
+  ]
+}

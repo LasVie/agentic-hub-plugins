@@ -1,0 +1,12 @@
+[
+  "src/canvas-core/core.ts",
+  "src/canvas-core/bake.ts",
+  "src/canvas-core/input.ts",
+  "src/hosts/interactive.ts",
+  "src/canvas-core/storybook.ts",
+  "src/canvas-core/bitRig.ts",
+  "src/canvas-core/mascotHero.ts",
+  "src/canvas-core/formMascot.ts",
+  "src/canvas-core/scrollHero.ts",
+  "src/entry.ts"
+]

@@ -1,0 +1,21 @@
+{
+  "id": "interest-heartbeat",
+  "version": "1.0.3",
+  "package_type": "plugin",
+  "source": "local",
+  "name": "兴趣心跳主动分享",
+  "description": "让助手按节律自己醒来：按你的兴趣联网闲逛、把见闻存进素材池，由代码闸门（静默时段、忙时窗口、每日上限、冷却）决定能不能开口，只在有真实来处、值得一说时在定时任务面板里主动分享一两句；不开口时不打扰、不多耗模型。",
+  "display_name": {"zh": "兴趣心跳主动分享", "en": "interest-heartbeat"},
+  "display_description": {
+    "zh": "按节律醒来，按兴趣闲逛找新东西，由代码闸门决定能否开口，有值得说的才在定时任务面板里主动分享一两句。",
+    "en": "按节律醒来，按兴趣闲逛找新东西，由代码闸门决定能否开口，有值得说的才在定时任务面板里主动分享一两句。"
+  },
+  "category": "办公与生产力",
+  "skills": [{"dir": "skills/interest-heartbeat", "mode": "all"}],
+  "tools": [{
+    "file": "tools/plugin_tool.py",
+    "class": "PluginTool",
+    "display_name": {"zh": "兴趣心跳", "en": "interest-heartbeat"},
+    "display_description": {"zh": "管理心跳节律、兴趣、喜好画像、素材池、开口闸门与账本。", "en": "管理心跳节律、兴趣、喜好画像、素材池、开口闸门与账本。"}
+  }]
+}

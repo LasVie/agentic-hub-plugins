@@ -1,0 +1,23 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/anitasrinivasan/cite2fn",
+      "revision": "00cc8c12c67633371a41db2a93516b9f3aff92f4",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/cite2fn/LICENSE",
+          "sha256": "d611e5491dca3e4e98428beebd7d70b7cc20bd6796e66eb5a98a51446e2d446b"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "runtime/docx_notes.py",
+    "skills/word-citation-notes/SKILL.md",
+    "README.md"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

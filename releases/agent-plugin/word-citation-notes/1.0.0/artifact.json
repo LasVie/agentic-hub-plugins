@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:word-citation-notes",
+  "type": "agent-plugin",
+  "name": "word-citation-notes",
+  "version": "1.0.0",
+  "zip": "word-citation-notes-1.0.0.zip",
+  "sha256": "03da5e1d00c4873ebaff0e4547470f37ce5c86ba63d9d4f7173a1f73dd63a658",
+  "payload_sha256": {
+    "README.md": "953816b2769975977b740b211f8efdf378ecc712aa373c11c2973f0fadc58fdc",
+    "THIRD_PARTY_NOTICES.md": "7467247c935d4de1e0f4d37b01efb8fbd3c9d0eda489f8ebe6fe6922ca704361",
+    "licenses/cite2fn/LICENSE": "d611e5491dca3e4e98428beebd7d70b7cc20bd6796e66eb5a98a51446e2d446b",
+    "manifest.json": "b3799ed42f754d1f9b0b514562a1a94bd24c2e49b9c1a92d3b2e2a7cf6982f13",
+    "requirements.txt": "beea49f077fc00047671f0088a02d0f03e741782da9e939e661b309cba746207",
+    "runtime/docx_notes.py": "ad70c3cea2cd0b33326a6602780261c19abfddf9a755942d5e4e791dc0c4ee8c",
+    "skills/word-citation-notes/SKILL.md": "fb4e651f238e704ff2902b9ed68e31112e251d1a255d3d64b1eb837e93b4508b",
+    "tools/notes_tools.py": "a29d1ab9435044575c28089064ec46db4d84e70da8c428c8ad3bed77ddd0192c"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "251446224d1af8d8dbec7ec1932dde13ccb61bf606d593ec84cbee5d38eb4da4",
+  "functional_test_report_sha256": "f26378145752a7f89a3cf193d2e9546435e3441a0642b2840391892dbe1950eb"
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:persona-switcher",
+  "type": "agent-plugin",
+  "name": "persona-switcher",
+  "version": "1.0.0",
+  "zip": "persona-switcher-1.0.0.zip",
+  "sha256": "995bb3011bf17f35075d0711da17b39ad313a95800e5a0c23542d8892741791a",
+  "payload_sha256": {
+    "README.md": "66ae9484c33aa229eaf8b8f0a55567ac9753578d0d546f88a42c18db9c2393dc",
+    "THIRD_PARTY_NOTICES.md": "c2670828ee405d9ae82c46ca6193e19172c808db180e2d60ffb9d5a2c6960b1a",
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "licenses/dsh-persona-switcher/LICENSE": "74ceca0db0d67b681613a3281cb06baaf00bedcbc4ec006fb51f6ff83af1d717",
+    "manifest.json": "037045edde17c6833e25160818fd87d5a66294b9325dd3212610c45fe41a1972",
+    "prompt_sections/persona.md": "bd156ae3d9672683b3e8664122f67c9e0adfc4e4b247c9a0afebd02b91ec76e7",
+    "runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime/engine.py": "9450b2b5ff33e9a78ca74731c8fdb3e47a983180f58c7fd20e49c3937a2d18bb",
+    "skills/persona-switcher/SKILL.md": "2e6a9110e46636f550085cb6bfdbd6b6ed8c513469b98f38976923f35a1f5d57",
+    "skills/persona-switcher/references/sample-roles/strict-reviewer.md": "a76580d684d45baf5ab870e14120905ff2e30501b010a478e41fb0ec45271e88",
+    "skills/persona-switcher/references/sample-roles/tea-master.md": "6b55ae249ad6581127cbd093e77e10a7263cadde7115ddbefbe6971ed81dcefb",
+    "tools/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tools/plugin_tool.py": "be0ede3c5678ec12b6fd0a542787dd0c9eba307fce131d6156b3d0935885767c"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "db6a05c5ad582a0af86b777a8224fbbcce192a301b9f0df4d5c67a6392cbb4d0",
+  "functional_test_report_sha256": "f463ebf0bd56c5f8ad4219aac73c21bb409d9c8738e6f81a8f47e3a173b230fb"
+}

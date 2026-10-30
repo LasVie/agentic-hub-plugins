@@ -1,0 +1,78 @@
+{
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "id": "word-citation-notes",
+  "name": "Word 引用脚注转换",
+  "description": "检查Word正文与精确引用范围，展示绑定原文件摘要的转换计划，经确认后生成保留原件和参考文献的脚注或尾注DOCX。",
+  "display_name": {
+    "en": "Word 引用脚注转换",
+    "zh": "Word 引用脚注转换"
+  },
+  "display_description": {
+    "en": "检查Word正文与精确引用范围，展示绑定原文件摘要的转换计划，经确认后生成保留原件和参考文献的脚注或尾注DOCX。",
+    "zh": "检查Word正文与精确引用范围，展示绑定原文件摘要的转换计划，经确认后生成保留原件和参考文献的脚注或尾注DOCX。"
+  },
+  "skills": [
+    {
+      "dir": "skills/word-citation-notes",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/notes_tools.py",
+      "class": "InspectWordCitationsTool",
+      "display_name": {
+        "en": "检查Word引用原文",
+        "zh": "检查Word引用原文"
+      },
+      "display_description": {
+        "en": "只读展示正文段落、精确位置和源文件摘要，不自动猜测作者或年份。",
+        "zh": "只读展示正文段落、精确位置和源文件摘要，不自动猜测作者或年份。"
+      }
+    },
+    {
+      "file": "tools/notes_tools.py",
+      "class": "PreviewWordNotesTool",
+      "display_name": {
+        "en": "预览引用脚注转换",
+        "zh": "预览引用脚注转换"
+      },
+      "display_description": {
+        "en": "只读校验精确引用范围及注释文字，展示绑定原件和输出路径的计划摘要。",
+        "zh": "只读校验精确引用范围及注释文字，展示绑定原件和输出路径的计划摘要。"
+      }
+    },
+    {
+      "file": "tools/notes_tools.py",
+      "class": "ApplyWordNotesTool",
+      "display_name": {
+        "en": "确认生成脚注或尾注",
+        "zh": "确认生成脚注或尾注"
+      },
+      "display_description": {
+        "en": "仅按用户明确确认的完整计划生成新DOCX，保留原件，拒绝覆盖。",
+        "zh": "仅按用户明确确认的完整计划生成新DOCX，保留原件，拒绝覆盖。"
+      }
+    }
+  ],
+  "tags": [
+    {
+      "en": "Word文档",
+      "zh": "Word文档"
+    },
+    {
+      "en": "脚注与尾注",
+      "zh": "脚注与尾注"
+    },
+    {
+      "en": "精确范围",
+      "zh": "精确范围"
+    },
+    {
+      "en": "离线转换",
+      "zh": "离线转换"
+    }
+  ],
+  "category": "Others"
+}

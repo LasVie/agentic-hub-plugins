@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:interest-heartbeat",
+  "type": "agent-plugin",
+  "name": "interest-heartbeat",
+  "version": "1.0.3",
+  "zip": "interest-heartbeat-1.0.3.zip",
+  "sha256": "11a86df6170ae62ad06398bae4ad142438a8cca8e7df7083a04fa81beed3d034",
+  "payload_sha256": {
+    "README.md": "62a1875515e8bb373280323530b9b16cee403703669cb547313841f27b5c71eb",
+    "THIRD_PARTY_NOTICES.md": "aa162ca1dc444360e6a9f3e32341737ba430d9cac4a88a39d476fef3c6e81413",
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "licenses/dsh-heartbeat/LICENSE": "6d174799b6efe730b5ca9e02e4d9fc19463d91dcaa87c67aa6c9b8b9a043a7d4",
+    "manifest.json": "f2bd8acf3982d30020cbce15ad243248ec5a35c7e96f6a5bd334f226cdb31207",
+    "runtime/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime/cli.py": "a0c1adbbd07967ec9aa3c8b74e46b0cdb6f3e301c97e7e093f32c5bc63c49600",
+    "runtime/engine.py": "834d5050d19f0c9d29293c938f103ddd7184d5eabee9f06d863cfdb3a46b7bc8",
+    "skills/interest-heartbeat/SKILL.md": "1af658d4e5f3f5253e739f658384399e15f438a1ab64a965a90e83244ddff85f",
+    "tools/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tools/plugin_tool.py": "e9508e2ba6eebe62209178435ad2fe58ec5d4bf4a18a67ffd850ad56235a9eaa"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "91505e52a1c79beb5fdda1b97c4553f39b9b95631a42d72ef4f0b8d9de52cd65",
+  "functional_test_report_sha256": "0b0ed0f54af9224036553d14a116e25015d7fcac2094dd81632f6d343290dd72"
+}
