@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:rss-daily",
+  "type": "agent-plugin",
+  "name": "rss-daily",
+  "version": "1.0.0",
+  "zip": "rss-daily-1.0.0.zip",
+  "sha256": "1253b65bb649ae2839dc8bc31c14d723c02468f7403af1bc27496ac05e2754ad",
+  "payload_sha256": {
+    "README.md": "10ec8aca017f50c742a559eb7c4b43249528db8a3294f75f29b0cf3df6873137",
+    "THIRD_PARTY_NOTICES.md": "aac9f1aa53254f81ef8b7d36be281a3fb8e66fc9e0d8e78365432c9278e51ae1",
+    "data/demo-atom.xml": "419a6a42a56b65e3c401199950aea2be079a2f49d2724e9c43525f8d4a8f64cc",
+    "data/demo-rss.xml": "61cf7ef5491bcaf06768d6fb481cd84cfb0a889e8e70729763ed1820ce8a90c5",
+    "data/sources.json": "543bed7275a4dacc8dd8e45172fbe16436ece9b3eae0adb7ea7db498e94cdaec",
+    "licenses/dsh-rss-daily/LICENSE": "b3d60c37bbcb0c53c5eda5d884574e0b2f48b8f85f2307becb5689e80d88a2da",
+    "manifest.json": "eedfc9435dde3056f12e888f9276dcdf5e5c5c99210c15eb8842bd475cc71b31",
+    "mcps/rss-daily/mcp.json": "c183c8651ebcc08084582a704dade20a927fdfc4f7ee97e95eddd3c3c527840a",
+    "runtime/engine.py": "9c0dd0339e0aa865f51aa9305e5febdfd3ce4b9462f94b40a621831f8a06ca1a",
+    "runtime/network.py": "19e4be433d215922116fe80d5956e020185ebc3d6add2810559f0e0eb1fbff10",
+    "runtime/server.py": "f3b383cc80f41eb2ced72b0a1b38ada71654a15553143498a130b15dfe5e360c",
+    "runtime/worker.py": "d45db429ee9428c929893430d548218f225865f7551a76529b616a42e387896f",
+    "skills/rss-daily/SKILL.md": "b6dc8fb5a10bfcec040da7860866a2fe5f6daad1feae0dc9c688f634602027bf"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "7127d6bcdc57691b8fb903025c0c146a42c6b78c0259ec9bc8c8b1c9e775db16",
+  "functional_test_report_sha256": "ec6be218a140bc23c37bc66499c694642ff690c8be1f532d7ec85d12a3cffe74"
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>演示订阅源，非实时新闻</title>
+<item><title>演示：团队发布开源笔记工具</title><link>https://example.com/demo/notes</link><pubDate>@RECENT@</pubDate><description>演示团队发布本地笔记整理工具，支持标签和全文检索。该内容仅供测试，不是真实新闻。</description></item>
+<item><title>演示：团队发布开源笔记工具</title><link>https://example.com/demo/notes?utm_source=duplicate</link><pubDate>@RECENT@</pubDate><description>重复的演示条目，应被合并。</description></item>
+<item><title>演示：研究团队改进节能传感器</title><link>https://example.com/demo/sensor</link><pubDate>@RECENT@</pubDate><description>演示研究介绍降低传感器待机耗电的实验方案，未报告具体性能数据。该内容不是真实新闻。</description></item>
+<item><title>演示：过期活动预告</title><link>https://example.com/demo/old</link><pubDate>@OLD@</pubDate><description>三十天前的演示材料，应被时间窗口过滤。</description></item>
+</channel></rss>

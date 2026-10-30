@@ -36,3 +36,6 @@
 # Preserve the exact confirmed anidoodle payload and report/license hashes.
 /plugins/anidoodle/** -text
 /releases/agent-plugin/anidoodle/** -text
+
+/plugins/rss-daily/** -text
+/releases/agent-plugin/rss-daily/** -text
