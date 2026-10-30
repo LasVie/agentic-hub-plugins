@@ -1,0 +1,298 @@
+以下为固定上游源码中原样保留的版权与许可注释，按原始路径汇总。路径集合保守覆盖构建所用模块及其运行库；不表示每一段源码均保留在链接优化后的二进制中。
+
+
+Source paths: CoordgenFragmentBuilder.cpp, CoordgenFragmentBuilder.h, CoordgenFragmenter.cpp, CoordgenMacrocycleBuilder.cpp, CoordgenMacrocycleBuilder.h, CoordgenMinimizer.cpp, CoordgenMinimizer.h, sketcherMinimizerBond.cpp, sketcherMinimizerFragment.cpp
+
+/*
+ Contributors: Nicola Zonta
+ Copyright Schrodinger, LLC. All rights reserved
+ */
+
+==============================================================================
+
+Source paths: CoordgenFragmenter.h
+
+/*
+   Contributors: Nicola Zonta
+   Copyright Schrodinger, LLC. All rights reserved
+ */
+
+==============================================================================
+
+Source paths: sketcherMinimizer.cpp
+
+/*
+ *  sketcherMinimizer.cpp
+ *  2d_sketcher
+ *
+ *  Created by Nicola Zonta on 13/04/2010.
+ *  Copyright Schrodinger, LLC. All rights reserved
+ *
+ */
+
+==============================================================================
+
+Source paths: sketcherMinimizer.h
+
+/*
+ *  sketcherMinimizer.h
+ *
+ *  Created by Nicola Zonta on 13/04/2010.
+ *   Copyright Schrodinger, LLC. All rights reserved.
+ *
+ */
+
+==============================================================================
+
+Source paths: sketcherMinimizerAtom.cpp
+
+/*
+ *  sketcherMinimizerAtom.h
+ *
+ *  Created by Nicola Zonta on 19/10/2010.
+ *   Copyright Schrodinger, LLC. All rights reserved.
+ *
+ */
+
+==============================================================================
+
+Source paths: sketcherMinimizerAtom.h
+
+/*
+ *  sketcherMinimizerAtom.h
+ *
+ *  Created by Nicola Zonta on 13/04/2010.
+ *   Copyright Schrodinger, LLC. All rights reserved.
+ *
+ */
+
+==============================================================================
+
+Source paths: sketcherMinimizerBendInteraction.h
+
+/*
+ *  sketcherMinimizerBendInteraction.h
+ *
+ *  Created by Nicola Zonta on 13/04/2010.
+ *   Copyright Schrodinger, LLC. All rights reserved.
+ *
+ */
+
+==============================================================================
+
+Source paths: sketcherMinimizerBond.h
+
+/*
+ *  sketcherMinimizerBond.h
+ *
+ *  Created by Nicola Zonta on 03/05/2010.
+ *   Copyright Schrodinger, LLC. All rights reserved.
+ *
+ */
+
+==============================================================================
+
+Source paths: sketcherMinimizerClashInteraction.h
+
+/*
+ *  sketcherMinimizerClashInteraction.h
+ *
+ *  Created by Nicola Zonta on 19/04/2010.
+ *   Copyright Schrodinger, LLC. All rights reserved.
+ *
+ */
+
+==============================================================================
+
+Source paths: sketcherMinimizerConstraintInteraction.h
+
+/*
+ *  sketcherMinimizerConstraintInteraction.h
+ *
+ *  Created by Nicola Zonta on 7/02/2019.
+ *   Copyright Schrodinger, LLC. All rights reserved.
+ *
+ */
+
+==============================================================================
+
+Source paths: sketcherMinimizerEZConstrainInteraction.h
+
+/*
+ *  sketcherMinimizerEZConstrainInteraction.h
+ *
+ *  Created by Nicola Zonta
+ *   Copyright Schrodinger, LLC. All rights reserved.
+ *
+ */
+
+==============================================================================
+
+Source paths: sketcherMinimizerFragment.h
+
+/*
+ *
+ *
+ *  Created by Nicola Zonta on 03/05/2010.
+ *   Copyright Schrodinger, LLC. All rights reserved.
+ *
+ */
+
+==============================================================================
+
+Source paths: sketcherMinimizerInteraction.h
+
+/*
+ *  sketcherMinimizerInteraction.h
+ *
+ *  Created by Nicola Zonta on 13/04/2010.
+ *   Copyright Schrodinger, LLC. All rights reserved.
+ *
+ */
+
+==============================================================================
+
+Source paths: sketcherMinimizerMarchingSquares.cpp
+
+/*
+ *  sketcherMarchingSquares.h
+ *
+ *
+ *  Created by Nicola Zonta on 13/3/2011.
+ *  Copyright Schrodinger, LLC. All rights reserved
+ *
+ */
+
+==============================================================================
+
+Source paths: sketcherMinimizerMarchingSquares.h
+
+/*
+ *  sketcherMarchingSquares.h
+ *
+ *
+ *  Created by Nicola Zonta on 19/11/2010.
+ *  Copyright Schrodinger, LLC. All rights reserved
+ *
+ */
+
+==============================================================================
+
+Source paths: sketcherMinimizerMaths.h
+
+/*
+ *  sketcherMinimizerMaths.h
+ *
+ *
+ *  Created by Nicola Zonta on 15/3/2011.
+ *  Copyright Schrodinger, LLC. All rights reserved
+ *
+ */
+
+==============================================================================
+
+Source paths: sketcherMinimizerMolecule.cpp
+
+/*
+ *  sketcherMinimizerMolecule.cpp
+ *
+ *  Created by Nicola Zonta on 24/05/2011.
+ *   Copyright Schrodinger, LLC. All rights reserved.
+ *
+ */
+
+==============================================================================
+
+Source paths: sketcherMinimizerMolecule.h
+
+/*
+ *  sketcherMinimizerMolecule.h
+ *
+ *  Created by Nicola Zonta on 03/05/2010.
+ *   Copyright Schrodinger, LLC. All rights reserved.
+ *
+ */
+
+==============================================================================
+
+Source paths: sketcherMinimizerResidue.cpp
+
+/*
+ *  sketcherMinimizerResidue.cpp
+ *
+ *  Created by Nicola Zonta on 13/05/2011.
+ *   Copyright Schrodinger, LLC. All rights reserved.
+ *
+ */
+
+==============================================================================
+
+Source paths: sketcherMinimizerResidue.h
+
+/*
+ *  sketcherMinimizerResidue.h
+ *
+ *  Created by Nicola Zonta on 13/05/2011.
+ *   Copyright Schrodinger, LLC. All rights reserved.
+ *
+ */
+
+==============================================================================
+
+Source paths: sketcherMinimizerResidueInteraction.cpp
+
+/*
+ *  sketcherMinimizerResidueInteraction.cpp
+ *
+ *  Created by Nicola Zonta on 13/05/2011.
+ *   Copyright Schrodinger, LLC. All rights reserved.
+ *
+ */
+
+==============================================================================
+
+Source paths: sketcherMinimizerResidueInteraction.h
+
+/*
+ *  sketcherMinimizerResidueInteraction.h
+ *
+ *  Created by Nicola Zonta on 13/05/2011.
+ *   Copyright Schrodinger, LLC. All rights reserved.
+ *
+ */
+
+==============================================================================
+
+Source paths: sketcherMinimizerRing.cpp
+
+/*
+ *  sketcherMinimizerRing.cpp
+ *
+ *  Created by Nicola Zonta on 24/05/2011.
+ *   Copyright Schrodinger, LLC. All rights reserved.
+ *
+ */
+
+==============================================================================
+
+Source paths: sketcherMinimizerRing.h
+
+/*
+ *  sketcherMinimizerRing.h
+ *
+ *  Created by Nicola Zonta on 03/05/2010.
+ *   Copyright Schrodinger, LLC. All rights reserved.
+ *
+ */
+
+==============================================================================
+
+Source paths: sketcherMinimizerStretchInteraction.h
+
+/*
+ *  sketcherMinimizerStretchInteraction.h
+ *
+ *  Created by Nicola Zonta on 13/04/2010.
+ *   Copyright Schrodinger, LLC. All rights reserved.
+ *
+ */

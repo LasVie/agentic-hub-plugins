@@ -1,0 +1,7 @@
+Copyright 2011 Google Inc. All Rights Reserved.
+Roboto Regular, Version 2.137; 2017
+Roboto is a trademark of Google.
+Christian Robertson
+Licensed under the Apache License, Version 2.0.
+
+以上身份与版权文字读取自所分发 WASM 内嵌字体的 name 表；字体字节未修改。RDKit 固定源码 Data/Fonts/roboto_regular_license.txt 声明 Apache-2.0。该来源未提供单独 NOTICE 文件。

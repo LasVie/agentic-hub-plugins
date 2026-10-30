@@ -1,0 +1,78 @@
+{
+  "reviewed_at": "2026-10-28T22:28:18.635494+08:00",
+  "asset_id": "repo:agent-plugin:molecule-structure-lab",
+  "candidate_id": "CAND-EXT-002",
+  "task_id": "AH-20261028-molecule-structure-lab",
+  "version": "1.0.0",
+  "result": "PASS",
+  "current_payload": {
+    "payload_files": 60,
+    "license_files": 44,
+    "sources": 21,
+    "license_evidence_entries": 47,
+    "unique_license_evidence_files": 41,
+    "reused_files": 5,
+    "payload_matches_source": true,
+    "all_license_hashes_match": true,
+    "runtime_identical_to_npm": true,
+    "eigen_archives_match_descriptor": true,
+    "all_license_directories_in_chinese_notices": true
+  },
+  "original_full_license_texts_checked": 18,
+  "collected_notice_files_checked": 6,
+  "archives": [
+    {
+      "layout": "wrapper",
+      "path": "releases/agent-plugin/molecule-structure-lab/1.0.0/molecule-structure-lab-1.0.0.zip",
+      "sha256": "07904c3c058641ca68c23fda0e400623e4d36092a7fa2cdce58d4473186e86f4",
+      "bytes": 11207708,
+      "zip_entries": 61,
+      "payload_files": 60,
+      "license_files": 44,
+      "sources": 21,
+      "license_evidence_entries": 47,
+      "unique_license_evidence_files": 41,
+      "reused_files": 5,
+      "payload_matches_source": true,
+      "all_license_hashes_match": true,
+      "runtime_identical_to_npm": true,
+      "eigen_archives_match_descriptor": true,
+      "all_license_directories_in_chinese_notices": true
+    },
+    {
+      "layout": "native",
+      "path": "plugins/molecule-structure-lab/test-packages/molecule-structure-lab-1.0.0-workswarm.zip",
+      "sha256": "55e943a1fe105ff0ce3dc210cb83ed85fd1e30b4300af0a5018271df59da637b",
+      "bytes": 11201681,
+      "zip_entries": 60,
+      "payload_files": 60,
+      "license_files": 44,
+      "sources": 21,
+      "license_evidence_entries": 47,
+      "unique_license_evidence_files": 41,
+      "reused_files": 5,
+      "payload_matches_source": true,
+      "all_license_hashes_match": true,
+      "runtime_identical_to_npm": true,
+      "eigen_archives_match_descriptor": true,
+      "all_license_directories_in_chinese_notices": true
+    }
+  ],
+  "conditions": {
+    "unmodified_upstream_runtime": true,
+    "embedded_font_bytes_unchanged": true,
+    "mixed_license_notices_preserved": true,
+    "eigen_corresponding_source_bundled": true,
+    "upstream_modifications_documented": true,
+    "new_apache_modifications": false,
+    "unresolved_distribution_blockers": []
+  },
+  "scope": "Source/license distribution audit only. Not user test confirmation, security certification, legal warranty, or permission to push/publish.",
+  "verification_limits": "No independent Sigstore/PGP signature verification or reproducible rebuild. Human source/license review is documented in SOURCE_REVIEW.md.",
+  "procedure": [
+    "Run the repository provenance validator against the selected source payload; require every license/source file to be covered by hashed evidence or reused-file inventory.",
+    "Require each ZIP's frozen SHA-256, safe unique paths, valid CRCs, repository size limits and exact expected wrapper/native inventory; extract to a new temporary directory.",
+    "Compare every extracted payload byte with source, verify all license evidence and reused-file hashes, compare runtime bytes with the pinned npm archive, and verify bundled Eigen source archives against the .dsc.",
+    "Read the Chinese third-party inventory and original full license/notice materials; retain dual-license selections, required attributions, source availability and upstream modification statements."
+  ]
+}

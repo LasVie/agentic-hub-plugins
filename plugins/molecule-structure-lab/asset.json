@@ -1,0 +1,15 @@
+{
+  "type": "agent-plugin",
+  "name": "molecule-structure-lab",
+  "version": "1.0.1",
+  "display_name": "离线分子结构工作台",
+  "description": "使用本地RDKit引擎解析可编辑的SMILES，计算分子描述符，执行SMARTS子结构匹配并高亮结构，导出SVG和JSON。",
+  "publisher": "Cai Zhenze",
+  "category": "数据与科学研究",
+  "tags": ["分子结构", "SMILES", "SMARTS", "离线分析"],
+  "functional_tags": ["Molecular Graph Parsing", "Molecular Descriptors", "SMARTS Substructure Matching", "Highlighted SVG Export"],
+  "scope": "仅显式输入的有界二维分子图分析。通过现有原生工具接口和插件自有本地网页运行；不修改宿主。原生工具支持macOS/Linux与Python3.11+，不支持Windows；浏览器需WebAssembly与Web Worker，代理分析另需Node.js18+。不预测反应、毒性、药效、三维构象或真实物质安全性。",
+  "candidate_id": "CAND-EXT-002",
+  "task_id": "AH-20261028-molecule-structure-lab",
+  "related_asset_ids": ["e54618b2d0324cc5a1c289ed80ce6e4f", "c64eabe8a6fc48e081c1e5547edc9041", "1adb66983cdf4c858df2b76c4d885083"]
+}

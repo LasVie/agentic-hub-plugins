@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>离线分子结构工作台</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#molecule-form">跳至分子输入</a>
+  <div class="shell">
+    <header class="page-header">
+      <div class="brand">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="m20 6 12 7v14l-12 7-12-7V13Z"/><path d="m20 6 12 21H8Z"/><circle cx="20" cy="6" r="3"/><circle cx="8" cy="27" r="3"/><circle cx="32" cy="27" r="3"/></svg>
+        <div><p class="eyebrow">本地计算 · 化学结构</p><h1>离线分子结构工作台</h1></div>
+      </div>
+      <div class="runtime-info"><span class="offline-badge"><span class="status-dot"></span>离线工作台</span><span class="version-label">插件 <span id="plugin-version">1.0.1</span></span></div>
+    </header>
+
+    <div class="page-intro"><p>从 SMILES 到可检查的分子结构，计算描述符并查看 SMARTS 匹配。</p><span id="engine-state" class="engine-state" role="status">正在加载本地 RDKit 引擎…</span></div>
+
+    <main class="workbench">
+      <section class="panel input-panel" aria-labelledby="input-title">
+        <div class="section-heading"><span class="step">01</span><h2 id="input-title">定义分子</h2></div>
+        <form id="molecule-form" novalidate>
+          <fieldset class="presets"><legend>公开示例</legend><div class="preset-buttons"><button type="button" class="preset selected" data-preset="aspirin" aria-pressed="true">阿司匹林</button><button type="button" class="preset" data-preset="ethanol" aria-pressed="false">乙醇</button><button type="button" class="preset" data-preset="benzene" aria-pressed="false">苯</button></div></fieldset>
+
+          <div class="field"><div class="label-row"><label for="smiles">分子 SMILES</label><span class="required-label">必填</span></div><textarea id="smiles" name="smiles" rows="4" spellcheck="false" autocapitalize="off" autocomplete="off" aria-describedby="smiles-hint">CC(=O)Oc1ccccc1C(=O)O</textarea><p class="field-hint" id="smiles-hint">输入普通 SMILES；不支持反应式或 CXSMILES 扩展。</p></div>
+          <div class="field"><div class="label-row"><label for="smarts">子结构 SMARTS</label><span class="optional-label">可选</span></div><input id="smarts" name="smarts" value="c1ccccc1" type="text" spellcheck="false" autocapitalize="off" autocomplete="off" aria-describedby="smarts-hint"><p class="field-hint" id="smarts-hint">默认查询苯环。留空时只计算结构与描述符。</p></div>
+
+          <div class="run-actions"><button class="button primary" id="analyze" type="submit" disabled><span id="analyze-text">引擎加载中…</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5"/></svg></button><button class="button cancel" id="cancel" type="button" hidden>取消计算</button></div>
+          <p class="keyboard-hint">快捷键 <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>Enter</kbd></p>
+        </form>
+        <div id="feedback" class="feedback" role="status" aria-live="polite" aria-atomic="true">引擎加载完成后，点击“运行分析”。</div>
+        <div class="input-notes"><p><strong>完全本地</strong>　输入只交给此浏览器中的 RDKit WebAssembly 引擎，不调用外部服务。</p><p id="limits-note">单次限制：SMILES 1024 字符、SMARTS 512 字符、分子 256 个原子 / 512 条键。</p><p>每次计算限时 12 秒；超时或取消后会释放计算线程。</p></div>
+      </section>
+
+      <div class="results-column" id="results" aria-busy="false">
+        <section class="panel structure-panel" aria-labelledby="structure-title">
+          <div class="structure-header"><div class="section-heading"><span class="step">02</span><h2 id="structure-title">结构与匹配</h2></div><span id="result-badge" class="result-badge neutral">等待分析</span></div>
+          <div class="structure-canvas" id="structure-canvas">
+            <div class="empty-state" id="empty-state"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="m50 14 31 18v36L50 86 19 68V32Z"/><path d="M50 23 27 36m0 28 23 13m23-41v28"/><circle cx="50" cy="14" r="4"/><circle cx="19" cy="68" r="4"/><circle cx="81" cy="68" r="4"/></svg><p id="empty-title">让分子结构变得可见</p><span id="empty-description">编辑左侧输入，运行分析以查看二维结构。</span></div>
+            <img id="structure-image" alt="当前输入分子的二维结构" hidden>
+            <div class="stale-overlay" id="stale-overlay" hidden>输入已变更 · 请重新分析</div>
+          </div>
+          <div class="structure-summary" id="structure-summary" hidden><div class="counts"><span><strong id="atom-count">—</strong> 个原子</span><span><strong id="bond-count">—</strong> 条键</span></div><span class="structure-note">二维结构示意</span></div>
+          <div class="match-panel" id="match-panel" hidden><div class="match-head"><span class="match-marker" aria-hidden="true"></span><strong id="match-title"></strong></div><p id="match-description"></p><div class="match-indices" id="match-indices" hidden><p><span>原子索引</span><code id="match-atoms"></code></p><p><span>键索引</span><code id="match-bonds"></code></p></div></div>
+        </section>
+
+        <section class="panel properties-panel" id="properties-panel" aria-labelledby="properties-title" hidden>
+          <div class="section-heading"><span class="step">03</span><h2 id="properties-title">计算结果</h2><span class="section-subtitle">RDKit 描述符</span></div>
+          <div class="canonical-field"><h3>规范 SMILES</h3><code id="canonical-smiles"></code></div>
+          <dl class="descriptors" id="descriptors"></dl>
+          <p class="descriptor-note">数值按显示精度四舍五入；JSON 保留引擎返回的数值。氢键受体与供体采用 RDKit 的 NumHBA / NumHBD 定义。</p>
+          <div class="export-row"><div><h3>导出当前结果</h3><p>包含版本、输入和匹配范围；浏览器下载到本机。</p></div><div class="export-buttons"><button class="button secondary" id="export-svg" type="button" disabled><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v9m-4-4 4 4 4-4M4 13v4h12v-4"/></svg>导出 SVG</button><button class="button secondary" id="export-json" type="button" disabled><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v9m-4-4 4 4 4-4M4 13v4h12v-4"/></svg>导出 JSON</button></div></div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="page-footer"><p><strong>使用边界</strong>　仅分析已输入的结构。SMARTS 只返回首个匹配，不统计全部匹配；描述符与结构图不构成药效、毒性或临床结论。</p><p>不连接数据库、不预测合成路线。请独立核对输入、立体化学及结果含义。</p></footer>
+  </div>
+</body>
+</html>

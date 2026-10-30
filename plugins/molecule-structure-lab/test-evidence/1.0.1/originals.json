@@ -1,0 +1,53 @@
+{
+  "task_id": "AH-20261028-molecule-structure-lab",
+  "candidate_id": "CAND-EXT-002",
+  "owner": "Cai Zhenze",
+  "version": "1.0.1",
+  "received_date": "2026-10-30",
+  "confirmation_source": "Current Main 2.0 conversation; user explicitly confirmed manual testing complete and passed and authorized Phase 3.",
+  "native_zip_sha256": "7fe3bcf1390a25ff484d49cf4eb5c681c1ea76001d3d3aa37810bf2af72b0f8a",
+  "canonical_zip_sha256": "f42697463babe8275f41b9b640add46c0473f08ddb5a9ad70844710a95ae828a",
+  "originals_unchanged": true,
+  "screenshots": [
+    {
+      "file": "01-host-tool-start-reuse.png",
+      "original_filename": "Screenshot 2026-10-30 at 2.47.33 PM.png",
+      "sha256": "c4ba5267b8dfb60ee171630f51fa11f73805b482ab245b4e82934b0d8d5e76ca",
+      "bytes": 381490,
+      "width": 1130,
+      "height": 1368
+    },
+    {
+      "file": "02-empty-input-error.png",
+      "original_filename": "Screenshot 2026-10-30 at 2.47.43 PM.png",
+      "sha256": "a57168f4ae55dd9c57f3b5b8f26e85525c51d461e42a0d177e55575fa9fac968",
+      "bytes": 244735,
+      "width": 1918,
+      "height": 1508
+    },
+    {
+      "file": "03-aspirin-highlight.png",
+      "original_filename": "Screenshot 2026-10-30 at 2.47.52 PM.png",
+      "sha256": "04a6b17f1e4519b4082c35f6bf71bfc61adac0b3ef07f794f8fd47c0eba4d110",
+      "bytes": 418816,
+      "width": 1908,
+      "height": 1868
+    },
+    {
+      "file": "04-ethanol-no-match.png",
+      "original_filename": "Screenshot 2026-10-30 at 2.48.10 PM.png",
+      "sha256": "d6ac26127260ad84611d626c871318704a2a6a0ea1275f36c95493d64ca19d55",
+      "bytes": 377871,
+      "width": 1946,
+      "height": 1862
+    },
+    {
+      "file": "05-benzene-highlight.png",
+      "original_filename": "Screenshot 2026-10-30 at 2.48.19 PM.png",
+      "sha256": "3453ff875a93da7495d1c9ad814aa77013e7e942323ea29169fec9abebdc1648",
+      "bytes": 411703,
+      "width": 1940,
+      "height": 1906
+    }
+  ]
+}
