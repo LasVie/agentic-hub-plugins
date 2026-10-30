@@ -1,0 +1,63 @@
+{
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "id": "offline-optics-lab",
+  "name": "离线光学实验室",
+  "description": "离线编辑二维光学场景，追迹反射、折射及理想透镜光线，读取探测器数据并保存或导出场景。",
+  "skills": [
+    {
+      "dir": "skills/optics-lab",
+      "mode": "all"
+    }
+  ],
+  "source": "local",
+  "category": "数据与科学研究",
+  "display_name": {
+    "zh": "离线光学实验室",
+    "en": "离线光学实验室"
+  },
+  "display_description": {
+    "zh": "离线编辑二维光学场景，追迹反射、折射及理想透镜光线，读取探测器数据并保存或导出场景。",
+    "en": "离线编辑二维光学场景，追迹反射、折射及理想透镜光线，读取探测器数据并保存或导出场景。"
+  },
+  "tags": [
+    {
+      "zh": "离线光学",
+      "en": "离线光学"
+    },
+    {
+      "zh": "光线追迹",
+      "en": "光线追迹"
+    },
+    {
+      "zh": "交互实验",
+      "en": "交互实验"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/optics_tools.py",
+      "class": "LocalOpticsLabTool",
+      "display_name": {
+        "zh": "本机光学实验室",
+        "en": "本机光学实验室"
+      },
+      "display_description": {
+        "zh": "启动、查询或关闭中文离线光学编辑界面",
+        "en": "启动、查询或关闭中文离线光学编辑界面"
+      }
+    },
+    {
+      "file": "tools/optics_tools.py",
+      "class": "SimulateOpticalSceneTool",
+      "display_name": {
+        "zh": "光学场景追迹",
+        "en": "光学场景追迹"
+      },
+      "display_description": {
+        "zh": "只读追迹真实场景并返回数值探测器数据",
+        "en": "只读追迹真实场景并返回数值探测器数据"
+      }
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>离线光学实验室</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <div class="brand-mark" aria-hidden="true"><span></span><i></i><b></b></div>
+    <div><p class="eyebrow">让假设成为可观察的光路</p><h1>离线光学实验室</h1><p class="subtitle">v1.0.0 · 几何光学 · 本机数值计算</p></div>
+    <span class="offline-badge"><span></span>仅本机 · 无外部联网</span>
+  </header>
+
+  <main>
+    <section class="preset-bar" aria-label="光学示例">
+      <div class="section-caption"><span class="small-number">01</span> 从一个实验开始</div>
+      <div id="presets" class="presets" aria-label="选择示例"><span class="muted">正在读取本机示例…</span></div>
+      <button id="help-toggle" type="button" class="quiet" aria-controls="quick-help" aria-expanded="false">操作说明 <span aria-hidden="true">?</span></button>
+    </section>
+    <div id="quick-help" class="help-box" hidden>
+      选择示例，点击“追迹光路”。点击画布上的元件或左侧列表以选中；拖动端点改变位置，也可在参数面板精确输入。改变场景会清除旧结果，须重新追迹。可保存到当前工作目录、导入导出 JSON，并导出本次探测器 CSV。画布坐标使用统一的任意长度单位；角度、折射率与相对光功率不代表实际仪器标定。
+    </div>
+
+    <div id="message" class="message neutral" role="status" aria-live="polite">正在连接本机实验室…</div>
+
+    <section class="workbench" aria-label="光路编辑与观察">
+      <aside class="editor-panel panel">
+        <div class="panel-heading"><div><p class="eyebrow">构建场景</p><h2>光源与元件</h2></div><span id="object-count" class="count">0 个</span></div>
+        <label class="field scene-title">场景名称<input id="scene-name" type="text" maxlength="100" autocomplete="off" placeholder="给这个实验起个名字"></label>
+        <div id="object-list" class="object-list" role="list" aria-label="场景元件"></div>
+        <div class="add-row"><label class="sr-only" for="add-type">新增元件类型</label><select id="add-type"></select><button id="add-object" type="button" aria-label="添加元件">＋ 添加</button></div>
+        <div class="inspector-heading"><h3>所选元件参数</h3><span id="selected-type" class="muted">尚未选择</span></div>
+        <div id="inspector" class="inspector"><p class="muted">选择一个元件以编辑。</p></div>
+        <div id="object-tip" class="object-tip"></div>
+        <button id="delete-object" type="button" class="danger-link" disabled>移除所选元件</button>
+      </aside>
+
+      <section class="observation-panel panel">
+        <div class="panel-heading"><div><p class="eyebrow">观察路径</p><h2>可编辑光学台</h2></div><button id="fit-view" type="button" class="quiet">适配视图 ↗</button></div>
+        <div class="canvas-wrap">
+          <canvas id="scene-canvas" width="1100" height="620" tabindex="0" aria-label="光路画布，可选择元件并拖动端点；同样的参数可在左侧输入框编辑。"></canvas>
+          <div class="canvas-label"><span id="canvas-state">等待追迹</span><span id="coordinate">X → · Y ↓</span></div>
+          <div class="canvas-legend" aria-hidden="true"><span class="legend-ray">光线</span><span class="legend-glass">介质</span><span class="legend-detector">探测器</span></div>
+        </div>
+        <div class="run-bar"><div><button id="simulate" type="button" class="primary">追迹光路 <span aria-hidden="true">↗</span></button><span id="run-detail" class="muted">修改参数后重新计算</span></div><span id="selection-hint" class="muted">点击元件 · 拖动端点</span></div>
+        <div class="metrics" aria-label="本次计算摘要">
+          <div><span>发射光线</span><strong id="ray-count">—</strong></div>
+          <div><span>可见路径段</span><strong id="segment-count">—</strong></div>
+          <div><span>探测器</span><strong id="detector-count">—</strong></div>
+          <div><span>计算状态</span><strong id="calculation-state" class="text-metric">尚未计算</strong></div>
+        </div>
+        <p id="truncation-note" class="measurement-note">画布只显示当前场景；按下追迹后才显示引擎计算的光线路径。</p>
+      </section>
+    </section>
+
+    <section class="results-section panel" aria-labelledby="result-heading">
+      <div class="panel-heading"><div><p class="eyebrow">读取结果</p><h2 id="result-heading">探测器测量</h2></div><button id="export-csv" type="button" disabled>导出探测器 CSV ↓</button></div>
+      <div id="detector-results" class="detector-results"><div class="empty-state"><span aria-hidden="true">⌁</span><div><h3>等待真实追迹结果</h3><p>放置探测器并运行仿真，查看光功率和沿探测线的分布。</p></div></div></div>
+      <p class="measurement-note">测量来自本次引擎运行。读数带穿越方向的正负号；相对功率不等于瓦特。平行光束的亮度是总相对功率，光线数量只改变离散采样。探测器不吸收光线；同一条光线可能穿过多次。无命中时返回零。</p>
+    </section>
+
+    <section class="storage-panel panel" aria-label="保存和交换场景">
+      <div><p class="eyebrow">继续你的实验</p><h2>保存 · 比较 · 重现</h2><p class="muted">仅保存场景。重新打开或导入后须再次运行，避免把旧测量当作新结果。</p></div>
+      <div class="storage-actions"><button id="save-scene" type="button">保存场景</button><button id="load-scene" type="button">读取已保存</button><button id="export-json" type="button">导出 JSON ↓</button><button id="import-json" type="button">导入 JSON ↑</button><input id="import-file" type="file" accept=".json,application/json" hidden></div>
+    </section>
+    <details class="boundaries"><summary>模型边界、许可与会话</summary><div>
+      <p>这是有界的二维几何光学实验：支持光源、直线反射镜、理想薄透镜、均匀折射率玻璃和探测器。未模拟衍射、干涉、偏振演化、真实材料色散或三维结构；结果不用于工程认证或激光安全判断。理想薄透镜采用近轴模型。</p>
+      <p>场景坐标向右、向下为正；长度使用统一的任意单位，焦距与坐标必须使用相同单位。反射、折射与全反射由数值引擎计算。极弱光线、光线数或时间达到边界时会明确报告截断，不声称完整计算。</p>
+      <p>基于 Ray Optics Simulation v5.4.0 的获许可核心，保留 Apache-2.0 及相关第三方许可。不代表上游官方产品或背书。<a href="licenses.txt" target="_blank" rel="noopener noreferrer">查看本包来源与许可</a></p>
+      <p>所有请求仅发往当前本机服务。地址含本机会话凭据，请勿公开。服务空闲后会自动关闭；请在 WorkSwarm 中使用本插件工具查询或重新启动。不修改宿主与其他插件。</p>
+    </div></details>
+  </main>
+  <footer><span>本机实验 · 独立观察</span><span>离线光学实验室 / 1.0.0</span></footer>
+  <dialog id="confirm-dialog" aria-labelledby="confirm-title" aria-describedby="confirm-message">
+    <h2 id="confirm-title">确认操作</h2><p id="confirm-message"></p>
+    <div class="dialog-actions"><button id="confirm-cancel" type="button">保留当前内容</button><button id="confirm-accept" type="button" class="primary">继续</button></div>
+  </dialog>
+</body>
+</html>

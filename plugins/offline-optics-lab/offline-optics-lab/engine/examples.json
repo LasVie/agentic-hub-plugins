@@ -1,0 +1,276 @@
+[
+  {
+    "id": "refraction",
+    "name": "折射与反射",
+    "scene": {
+      "schema_version": 1,
+      "title": "折射与反射",
+      "objects": [
+        {
+          "id": "光源",
+          "type": "SingleRay",
+          "p1": {
+            "x": 150,
+            "y": 100
+          },
+          "p2": {
+            "x": 250,
+            "y": 273.2050807568877
+          },
+          "brightness": 1
+        },
+        {
+          "id": "玻璃界面",
+          "type": "PlaneGlass",
+          "p1": {
+            "x": 100,
+            "y": 400
+          },
+          "p2": {
+            "x": 900,
+            "y": 400
+          },
+          "refIndex": 1.5
+        },
+        {
+          "id": "透射探测器",
+          "type": "Detector",
+          "p1": {
+            "x": 100,
+            "y": 570
+          },
+          "p2": {
+            "x": 900,
+            "y": 570
+          },
+          "bins": 20,
+          "twoSided": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "lens",
+    "name": "平行光束聚焦",
+    "scene": {
+      "schema_version": 1,
+      "title": "平行光束聚焦",
+      "objects": [
+        {
+          "id": "平行光束",
+          "type": "Beam",
+          "p1": {
+            "x": 100,
+            "y": 230
+          },
+          "p2": {
+            "x": 100,
+            "y": 420
+          },
+          "brightness": 1,
+          "rayCount": 9
+        },
+        {
+          "id": "理想透镜",
+          "type": "IdealLens",
+          "p1": {
+            "x": 400,
+            "y": 150
+          },
+          "p2": {
+            "x": 400,
+            "y": 500
+          },
+          "focalLength": 150
+        },
+        {
+          "id": "焦平面",
+          "type": "Detector",
+          "p1": {
+            "x": 550,
+            "y": 100
+          },
+          "p2": {
+            "x": 550,
+            "y": 550
+          },
+          "bins": 20,
+          "twoSided": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "reflection",
+    "name": "镜面反射",
+    "scene": {
+      "schema_version": 1,
+      "title": "镜面反射",
+      "objects": [
+        {
+          "id": "光源",
+          "type": "SingleRay",
+          "p1": {
+            "x": 150,
+            "y": 150
+          },
+          "p2": {
+            "x": 300,
+            "y": 250
+          },
+          "brightness": 1
+        },
+        {
+          "id": "平面镜",
+          "type": "Mirror",
+          "p1": {
+            "x": 450,
+            "y": 100
+          },
+          "p2": {
+            "x": 450,
+            "y": 550
+          }
+        },
+        {
+          "id": "反射探测器",
+          "type": "Detector",
+          "p1": {
+            "x": 250,
+            "y": 600
+          },
+          "p2": {
+            "x": 250,
+            "y": 350
+          },
+          "bins": 20,
+          "twoSided": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "tir",
+    "name": "全内反射",
+    "scene": {
+      "schema_version": 1,
+      "title": "全内反射",
+      "objects": [
+        {
+          "id": "玻璃内光源",
+          "type": "SingleRay",
+          "p1": {
+            "x": 250,
+            "y": 480
+          },
+          "p2": {
+            "x": 369.175359259421,
+            "y": 380
+          },
+          "brightness": 1
+        },
+        {
+          "id": "玻璃界面",
+          "type": "PlaneGlass",
+          "p1": {
+            "x": 100,
+            "y": 300
+          },
+          "p2": {
+            "x": 900,
+            "y": 300
+          },
+          "refIndex": 1.5
+        },
+        {
+          "id": "反射探测器",
+          "type": "Detector",
+          "p1": {
+            "x": 600,
+            "y": 600
+          },
+          "p2": {
+            "x": 600,
+            "y": 350
+          },
+          "bins": 20,
+          "twoSided": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "composed",
+    "name": "玻璃与透镜组合",
+    "scene": {
+      "schema_version": 1,
+      "title": "玻璃与透镜组合",
+      "objects": [
+        {
+          "id": "平行光束",
+          "type": "Beam",
+          "p1": {
+            "x": 80,
+            "y": 250
+          },
+          "p2": {
+            "x": 80,
+            "y": 390
+          },
+          "brightness": 1,
+          "rayCount": 7
+        },
+        {
+          "id": "玻璃板",
+          "type": "Glass",
+          "path": [
+            {
+              "x": 220,
+              "y": 160
+            },
+            {
+              "x": 330,
+              "y": 160
+            },
+            {
+              "x": 330,
+              "y": 490
+            },
+            {
+              "x": 220,
+              "y": 490
+            }
+          ],
+          "refIndex": 1.5
+        },
+        {
+          "id": "理想透镜",
+          "type": "IdealLens",
+          "p1": {
+            "x": 500,
+            "y": 140
+          },
+          "p2": {
+            "x": 500,
+            "y": 510
+          },
+          "focalLength": 180
+        },
+        {
+          "id": "透射探测器",
+          "type": "Detector",
+          "p1": {
+            "x": 690,
+            "y": 150
+          },
+          "p2": {
+            "x": 690,
+            "y": 500
+          },
+          "bins": 20,
+          "twoSided": true
+        }
+      ]
+    }
+  }
+]

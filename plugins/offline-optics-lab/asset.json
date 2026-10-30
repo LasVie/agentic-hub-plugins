@@ -1,0 +1,26 @@
+{
+  "type": "agent-plugin",
+  "name": "offline-optics-lab",
+  "version": "1.0.0",
+  "display_name": "离线光学实验室",
+  "description": "离线编辑二维光学场景，追迹反射、折射及理想透镜光线，读取探测器数据并保存或导出场景。",
+  "publisher": "Cai Zhenze",
+  "category": "数据与科学研究",
+  "tags": [
+    "离线光学",
+    "光线追迹",
+    "交互实验"
+  ],
+  "functional_tags": [
+    "Offline Geometric Optics",
+    "Editable Optical Scenes",
+    "Numerical Detectors"
+  ],
+  "scope": "macOS/Linux、Python3.11+、已安装Node.js18+和桌面浏览器；有界二维几何光学，不联网、不修改宿主，不是全波/三维设计或工程认证。",
+  "candidate_id": "CAND-EXT-003",
+  "task_id": "AH-20261030-offline-optics-lab",
+  "related_asset_ids": [
+    "e3d119abf7b242aa9b65c63faeb62c01",
+    "da13d597743247348214550bd2aa3f78"
+  ]
+}
