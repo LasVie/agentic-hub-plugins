@@ -80,3 +80,15 @@ Five original screenshots were received and preserved locally without recompress
 Filenames above retain the original wording; the actual macOS filename uses a narrow no-break space before AM. The screenshots show simulated values, not physical hardware testing or safety validation. No screenshot is placed in either plugin ZIP or the source tree. The PR evidence comment and tracker will hold the verified attachment permalink.
 
 Pre-delivery review rechecked all current source, ZIP, manifest, license and provenance hashes, and reused unchanged functional/browser/SDK evidence. The feature branch was fast-forwarded to current main `400e1e72bd26f2cc703cecff43915ddf864fd28a`; incoming changes do not alter this plugin or its packaging mechanism. Source and both ZIPs are unchanged. Only this report, its artifact hash and plugin-specific byte-preservation attributes are updated for delivery. Runtime state, downloaded exports, raw logs and private screenshots stay outside the Git tree. CI remains a separate pre-merge requirement. Project Lead acceptance is pending; no Completed/Delivered status or official catalog entry is asserted.
+
+### Phase 3 CI import-cache regression — 2026-10-30
+
+PR #62 initial CI ran 549 tests successfully (90 dependency-gated skips), then
+`check-repo` rejected development files. Reproduction in a clean temporary HEAD
+extraction showed that the circuit test imports generated `runtime/__pycache__`
+inside the payload. Only the two repository test modules changed: their direct
+imports now temporarily suppress bytecode and restore the previous setting.
+All 27 circuit tests then passed with normal interpreter settings and local
+loopback access; the following asset check passed with zero payload caches.
+The packaged runtime, Chinese UI, canonical ZIP and WorkSwarm ZIP are unchanged.
+This test-isolation correction does not alter the user-tested behavior.

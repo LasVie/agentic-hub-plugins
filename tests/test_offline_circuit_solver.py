@@ -4,13 +4,20 @@ import importlib.util
 import json
 import math
 from pathlib import Path
+import sys
 import unittest
 
 
 ROOT = Path(__file__).resolve().parents[1]
 SPEC = importlib.util.spec_from_file_location("offline_circuit_solver", ROOT / "plugins/offline-circuit-lab/offline-circuit-lab/runtime/solver.py")
 SOLVER = importlib.util.module_from_spec(SPEC)
-SPEC.loader.exec_module(SOLVER)
+# Keep test imports from adding caches to the immutable release payload.
+_old_bytecode = sys.dont_write_bytecode
+try:
+    sys.dont_write_bytecode = True
+    SPEC.loader.exec_module(SOLVER)
+finally:
+    sys.dont_write_bytecode = _old_bytecode
 
 
 def component(ident, kind, a, b, value):

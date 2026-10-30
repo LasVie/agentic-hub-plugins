@@ -3,6 +3,7 @@ import importlib.util
 import http.client
 import json
 from pathlib import Path
+import sys
 import tempfile
 import time
 import unittest
@@ -12,7 +13,13 @@ ROOT = Path(__file__).resolve().parents[1]
 FILE = ROOT / 'plugins/offline-circuit-lab/offline-circuit-lab/runtime/lab.py'
 spec = importlib.util.spec_from_file_location('test_circuit_lab_runtime', FILE)
 lab = importlib.util.module_from_spec(spec)
-spec.loader.exec_module(lab)
+# Keep test imports from adding caches to the immutable release payload.
+_old_bytecode = sys.dont_write_bytecode
+try:
+    sys.dont_write_bytecode = True
+    spec.loader.exec_module(lab)
+finally:
+    sys.dont_write_bytecode = _old_bytecode
 
 DIVIDER = {'components': [
     {'id':'V1','type':'V','a':'1','b':'0','value':5},
