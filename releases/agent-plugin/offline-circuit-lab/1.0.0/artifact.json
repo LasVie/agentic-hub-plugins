@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:offline-circuit-lab",
+  "type": "agent-plugin",
+  "name": "offline-circuit-lab",
+  "version": "1.0.0",
+  "zip": "offline-circuit-lab-1.0.0.zip",
+  "sha256": "f588be67bf47de305e5622c671e017fc53e2f54c1aa4acc634ddc27b7b23fab7",
+  "payload_sha256": {
+    "README.md": "67936cedfdd80f1a36d8987fb7738a3a5b9e5ce6ce96a5ba66e48adeb332dd26",
+    "THIRD_PARTY_NOTICES.md": "c7f1e40499570d84d43b2e7f7f1924b3632465e2ceda65f76100d4319b21f384",
+    "licenses/circuitjs/LICENSE": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+    "licenses/circuitjs/upstream/CapacitorElm.ts": "84d78ee77eed8c0318894f98ef358285d4d20b3104ea0dff317fdac13feabc5d",
+    "licenses/circuitjs/upstream/Inductor.ts": "2256ebc668b53444995ad4680301f1530befd2922d2dc63c1413ad9d102e5794",
+    "licenses/circuitjs/upstream/ResistorElm.ts": "f8e4c560a87788b8552e570d386ecf003f027ebda0c2643e7707cbec3bb150e4",
+    "licenses/circuitjs/upstream/SimulationManager.ts": "7754d920a638ed735948608dea391616eb357c84387c80f882e0a6ff4c907949",
+    "manifest.json": "b80f65877c09f42a320f47625319dc2fd1edf87dd72002235011512d08e9a531",
+    "runtime/lab.py": "ec0860872f43a4dee394cc532ec0e140fbf074598920ed6a622fc8fb3c1a9768",
+    "runtime/solver.py": "5fadbfb301ac05b62d95a3efb96f735465da419578e059bdb7b26b321702de62",
+    "skills/circuit-lab/SKILL.md": "1bd64c1d2a5eb9de751ab46fa0d6db1e7480ad49fb2ca1f84c2859f20110bf42",
+    "tools/circuit_tools.py": "9c2f5b71ba13dc3e71d43b12c9975ff810ce0dc8d9f4ccafbc53d772efbc8415",
+    "web/app.js": "8b159e994146fcad4f8d3712ea06fba19c8ee13a95f7c5f72b80485beca338d6",
+    "web/index.html": "b8406493700ea8fcba70c5b8c38f0445a1f840169215298b396f14176b3cd345",
+    "web/style.css": "7e3486458e0e0a82da52db422924a35cac7ee4a1fae191ec0c64397cb47a08c3"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "28dd005940ab4fc235225fce4cebff24b1cbd5bf0a67a339c218cf998fb947d8",
+  "functional_test_report_sha256": "f4fd91a5f6344d4a0ae79d416d270fd9afbdfb8c01d01323c72921ca59ef5018"
+}

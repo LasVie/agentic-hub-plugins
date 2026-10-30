@@ -1,0 +1,41 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/pfalstad/circuitjs1",
+      "revision": "e952e788a4135a693bfd4cee7883f9b3314e3e76",
+      "license_expression": "GPL-2.0-or-later",
+      "license_evidence": [
+        {
+          "path": "licenses/circuitjs/LICENSE",
+          "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+        },
+        {
+          "path": "licenses/circuitjs/upstream/ResistorElm.ts",
+          "sha256": "f8e4c560a87788b8552e570d386ecf003f027ebda0c2643e7707cbec3bb150e4"
+        },
+        {
+          "path": "licenses/circuitjs/upstream/CapacitorElm.ts",
+          "sha256": "84d78ee77eed8c0318894f98ef358285d4d20b3104ea0dff317fdac13feabc5d"
+        },
+        {
+          "path": "licenses/circuitjs/upstream/Inductor.ts",
+          "sha256": "2256ebc668b53444995ad4680301f1530befd2922d2dc63c1413ad9d102e5794"
+        },
+        {
+          "path": "licenses/circuitjs/upstream/SimulationManager.ts",
+          "sha256": "7754d920a638ed735948608dea391616eb357c84387c80f882e0a6ff4c907949"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "runtime/solver.py",
+    "licenses/circuitjs/upstream/ResistorElm.ts",
+    "licenses/circuitjs/upstream/CapacitorElm.ts",
+    "licenses/circuitjs/upstream/Inductor.ts",
+    "licenses/circuitjs/upstream/SimulationManager.ts"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

@@ -1,0 +1,139 @@
+{
+  "verified_at": "2026-10-28T08:29:14.067427+00:00",
+  "plugin_id": "offline-circuit-lab",
+  "display_name": "离线电路实验室",
+  "version": "1.0.0",
+  "frontend_url": "http://127.0.0.1:6393/",
+  "backend_websocket_url": "ws://127.0.0.1:29310/ws",
+  "host_root": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/.research/ebook-workswarm-20261027",
+  "model_requests": 0,
+  "host_code_changes": false,
+  "service_restarts": false,
+  "verification_scope": "Supported running-backend import/install/catalog and payload integrity only.",
+  "native_tool_execution_through_chat_worker": "Not exercised; requires separate manual conversation testing.",
+  "connection_state_limitation": "For a package without MCP connectors, connected mirrors installed and does not prove native-tool loading or execution.",
+  "sdk_invocation": "Not performed by this helper; report separately if tested.",
+  "supported_interface_evidence": {
+    "host_paths_relative_to_source": {
+      "jiuwenswarm/channels/web/frontend/src/services/pluginPackagesApi.ts:145": "show; importLocal at154; install at159.",
+      "jiuwenswarm/common/schema/message.py:406": "Supported plugin package WS request-method declarations.",
+      "jiuwenswarm/server/runtime/extension_package_manager.py:4126": "import_plugin_package; install_plugin_package at4308.",
+      "jiuwenswarm/server/runtime/extension_package_manager.py:639": "Native-only connected state mirrors installed.",
+      "jiuwenswarm/server/runtime/agent_adapter/interface_deep.py:2909": "Selected chat plugins load through DeepAgent.load_plugin at2936."
+    },
+    "sdk_paths_relative_to_openjiuwen": {
+      "harness/deep_agent.py:2196": "Public DeepAgent.load_plugin API.",
+      "harness/resources/extension_resolver.py:103": "resolve_plugin_parts resolves manifest-declared native tools and skills."
+    },
+    "unsupported_test_path": "No generic native Tool.invoke request is declared in the inspected WorkSwarm WS schema. No test endpoint, monkey-patch, or fake-model conversation is used."
+  },
+  "catalog_before": [
+    {
+      "id": "offline-ebook-reader",
+      "installed": true,
+      "connection_state": "connected"
+    },
+    {
+      "id": "word-citation-notes",
+      "installed": true,
+      "connection_state": "connected"
+    }
+  ],
+  "config_sha256_before": "7c5d0dcb0b1e408f3f89102677c5fdb1923b5d73f5f6b4dcde061fc5820939fb",
+  "other_plugin_files_before": 18,
+  "host_source": {
+    "revision": "3ef1de9bf0b4813e2a0e8674dedc499c78e53df2",
+    "tracked_files_checked": 6098,
+    "changed": [],
+    "missing": [],
+    "matches_upstream": true
+  },
+  "sdk_distribution": {
+    "version": "0.1.19",
+    "code_config_files_checked": 2726,
+    "changed": [],
+    "missing": [],
+    "matches_distribution_record": true
+  },
+  "frontend_http": 200,
+  "websocket_proxy_ping_pong": true,
+  "websocket_direct_ping_pong": true,
+  "native_zip": {
+    "path": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/plugins/offline-circuit-lab/test-packages/offline-circuit-lab-1.0.0-workswarm.zip",
+    "sha256": "66075b03aacacd969c37d1f70c6ed64fc331b76de20788860daf242b5d9f2f05",
+    "payload_files": 15
+  },
+  "import_local": true,
+  "install": true,
+  "payload_matches_zip": true,
+  "payload_sha256": {
+    "README.md": "67936cedfdd80f1a36d8987fb7738a3a5b9e5ce6ce96a5ba66e48adeb332dd26",
+    "THIRD_PARTY_NOTICES.md": "c7f1e40499570d84d43b2e7f7f1924b3632465e2ceda65f76100d4319b21f384",
+    "licenses/circuitjs/LICENSE": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+    "licenses/circuitjs/upstream/CapacitorElm.ts": "84d78ee77eed8c0318894f98ef358285d4d20b3104ea0dff317fdac13feabc5d",
+    "licenses/circuitjs/upstream/Inductor.ts": "2256ebc668b53444995ad4680301f1530befd2922d2dc63c1413ad9d102e5794",
+    "licenses/circuitjs/upstream/ResistorElm.ts": "f8e4c560a87788b8552e570d386ecf003f027ebda0c2643e7707cbec3bb150e4",
+    "licenses/circuitjs/upstream/SimulationManager.ts": "7754d920a638ed735948608dea391616eb357c84387c80f882e0a6ff4c907949",
+    "manifest.json": "b80f65877c09f42a320f47625319dc2fd1edf87dd72002235011512d08e9a531",
+    "runtime/lab.py": "ec0860872f43a4dee394cc532ec0e140fbf074598920ed6a622fc8fb3c1a9768",
+    "runtime/solver.py": "5fadbfb301ac05b62d95a3efb96f735465da419578e059bdb7b26b321702de62",
+    "skills/circuit-lab/SKILL.md": "1bd64c1d2a5eb9de751ab46fa0d6db1e7480ad49fb2ca1f84c2859f20110bf42",
+    "tools/circuit_tools.py": "9c2f5b71ba13dc3e71d43b12c9975ff810ce0dc8d9f4ccafbc53d772efbc8415",
+    "web/app.js": "8b159e994146fcad4f8d3712ea06fba19c8ee13a95f7c5f72b80485beca338d6",
+    "web/index.html": "b8406493700ea8fcba70c5b8c38f0445a1f840169215298b396f14176b3cd345",
+    "web/style.css": "7e3486458e0e0a82da52db422924a35cac7ee4a1fae191ec0c64397cb47a08c3"
+  },
+  "installed_card": {
+    "id": "offline-circuit-lab",
+    "version": "1.0.0",
+    "displayName": {
+      "zh": "离线电路实验室",
+      "en": "离线电路实验室"
+    },
+    "installed": true,
+    "connection_state": "connected"
+  },
+  "config_sha256_after": "7c5d0dcb0b1e408f3f89102677c5fdb1923b5d73f5f6b4dcde061fc5820939fb",
+  "model_config_unchanged": true,
+  "other_plugin_payloads_unchanged": true,
+  "catalog_after": [
+    {
+      "id": "offline-circuit-lab",
+      "installed": true,
+      "connection_state": "connected"
+    },
+    {
+      "id": "offline-ebook-reader",
+      "installed": true,
+      "connection_state": "connected"
+    },
+    {
+      "id": "word-citation-notes",
+      "installed": true,
+      "connection_state": "connected"
+    }
+  ],
+  "other_plugin_catalog_unchanged": true,
+  "passed": true,
+  "extensions_ui": {
+    "browser": "Chrome",
+    "frontend": "http://127.0.0.1:6393/",
+    "my_extensions_card_visible": true,
+    "display_name": "离线电路实验室",
+    "detail_skill": "circuit-lab",
+    "detail_tools": [
+      "本机电路实验室",
+      "RLC数值仿真"
+    ],
+    "chinese_rendering_readable": true,
+    "create_upload_dialog_opened": true,
+    "dialog_formats": [
+      ".zip",
+      ".tar"
+    ],
+    "upload_os_file_chooser_tested": false,
+    "installation_used_supported_backend_api": true,
+    "chat_or_model_request_sent": false,
+    "user_manual_testing": "Pending; these are agent checks only."
+  }
+}

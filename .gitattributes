@@ -44,3 +44,7 @@
 
 /plugins/rss-daily/** -text
 /releases/agent-plugin/rss-daily/** -text
+
+# Preserve the exact user-tested circuit payload, licenses and package hashes.
+/plugins/offline-circuit-lab/** -text
+/releases/agent-plugin/offline-circuit-lab/** -text
