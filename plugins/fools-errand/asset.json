@@ -1,0 +1,21 @@
+{
+  "type": "agent-plugin",
+  "name": "fools-errand",
+  "version": "1.0.0",
+  "display_name": "糊涂勇者历险记",
+  "description": "在聊天中主持轻松的中世纪文字冒险，提供选择和自由行动，追踪金币、体面、奶酪、物品及三项任务，并在当前对话内完成结局。",
+  "publisher": "Wang Jie",
+  "category": "生活与健康",
+  "tags": ["文字冒险", "互动游戏", "轻松故事"],
+  "functional_tags": ["单人文字冒险", "回合选择", "会话内状态"],
+  "scope": "原始 Plugin 的中文移植，使用宿主已有模型和 Skill 加载能力；无 MCP、脚本、账号或额外运行依赖。只在明确点名要求游玩时启动，不提供图形界面、跨对话存档、外部世界引擎或保证确定性的数值执行。Wang Jie 已完成当前 1.0.0 包的本轮 WorkSwarm 用户测试并授权 GitHub 交付；实际覆盖范围见 TEST_REPORT.md。",
+  "candidate_id": "CAND-CLD-142",
+  "task_id": "AH-20261027-fools-errand",
+  "related_asset_ids": [
+    "aaba97dca39f4812a96475934aa200a5",
+    "e777781bd9584066a6147d0ddd028baf",
+    "4e455beaee5e4416bd05cfc1a17979b3",
+    "3877dbc05fba498b8ae6e50f24a0dd7b",
+    "f0911ebc45294177bc8bbf958dd759ed"
+  ]
+}
