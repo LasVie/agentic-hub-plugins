@@ -1,0 +1,1 @@
+{"mcpServers":{"change-verification":{"command":"python3","args":["../../runtime/launch.py"],"timeout_s":60,"description":"本地 Git 变更影响、人工回归清单、中文结果与截图面板；无运行时 npm 依赖。"}}}

@@ -1,0 +1,77 @@
+{
+  "pinned_head": "b4f3c8e3be2b756ad9966463a65331e69fdee5f8",
+  "base": "24a6540e7cba06a357925cc0371124aa50e840bd",
+  "changed": [
+    {
+      "path": "CHANGELOG.md",
+      "status": "M"
+    },
+    {
+      "path": "README.en.md",
+      "status": "M"
+    },
+    {
+      "path": "README.md",
+      "status": "M"
+    },
+    {
+      "path": "docs/GUIDE.en.md",
+      "status": "M"
+    },
+    {
+      "path": "docs/GUIDE.md",
+      "status": "M"
+    },
+    {
+      "path": "package.json",
+      "status": "M"
+    },
+    {
+      "path": "packages/adapters/crashlytics/package.json",
+      "status": "M"
+    },
+    {
+      "path": "packages/core/package.json",
+      "status": "M"
+    },
+    {
+      "path": "packages/dsh-tracescope/package.json",
+      "status": "M"
+    },
+    {
+      "path": "packages/mcp/package.json",
+      "status": "M"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "status": "M"
+    }
+  ],
+  "scan": {
+    "base": {
+      "tree_count": 378,
+      "indexed_count": 334,
+      "indexed_bytes": 2781818,
+      "omissions": {
+        "保护路径或不支持的类型": 41,
+        "单文件超限": 3
+      }
+    },
+    "head": {
+      "tree_count": 378,
+      "indexed_count": 334,
+      "indexed_bytes": 2781818,
+      "omissions": {
+        "保护路径或不支持的类型": 41,
+        "单文件超限": 3
+      }
+    },
+    "ripple_candidates": 0
+  },
+  "direct": 11,
+  "ripple": 0,
+  "all_pending": true,
+  "config_sha256_before_and_after": "84230b4ed906a31f3ab9a126bea84aedc730a65183be57f030bb32ab6ca799c9",
+  "worktree_status_sha256_before_and_after": "214a375a8e74ed246261c6a466d363172bbdfa78525259c15ffdc31bb1d0cfcd",
+  "statement": "只读分析已下载上游的两个实际 release 提交；没有执行项目功能，不是业务功能回归通过。"
+}

@@ -1,0 +1,15 @@
+{
+  "type": "agent-plugin",
+  "name": "change-verification",
+  "version": "1.0.0",
+  "display_name": "变更影响与回归检查台",
+  "description": "对比本地 Git 提交，识别直接变更与静态依赖候选，在中文面板中记录人工回归结果、备注和截图，导出可交接报告。",
+  "publisher": "Wang Jie",
+  "category": "软件开发",
+  "tags": ["变更分析", "人工回归", "证据报告"],
+  "functional_tags": ["Git 端点差异", "静态反向依赖", "人工结果记录"],
+  "scope": "复用 TraceScope 的纯内存引用索引、反向依赖扩散与风险启发式，接入中文 WorkSwarm stdio MCP 和本地浏览器面板。只分析用户授权的本地 Git 已有提交，包含删除项及两个快照的依赖；人工结果由面板录入，支持备注、PNG/JPEG 截图和离线报告。macOS/Linux，Python 3.9+、Node 20+、Git；macOS 优先使用 WorkSwarm 内置 Node，无运行时 npm 依赖。不执行项目代码，不拉取远程，不改仓库配置，不移植 DSH 注入、设计平台、崩溃服务或远程缺陷提交。静态候选有数量、语言与文本边界，不证明测试通过或完整覆盖。",
+  "candidate_id": "CAND-DSH-145",
+  "task_id": "AH-20261102-change-verification",
+  "related_asset_ids": ["62e0712de2884cdb86abd80145b429d8", "747494162b0c4725ae6ca95b9803b501", "49643efa99be468c8c5e1794a38aa9ec", "1750742f01fc44c18e1e90ae27de2673"]
+}

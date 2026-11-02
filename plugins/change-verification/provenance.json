@@ -1,0 +1,44 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/rebornace/dsh-tracescope",
+      "revision": "b4f3c8e3be2b756ad9966463a65331e69fdee5f8",
+      "version": "0.3.5",
+      "license_expression": "MIT",
+      "source_sha256": {
+        "LICENSE": "da9c3ba5b56f1eddacc9eebe375b174b1cf03c0cd13ed303328e98954d480ea6",
+        "packages/core/src/deps.ts": "2f1acd367d31aba8d1cf4359d6f4d04b619393cac99b40fb0fd3923af847d079",
+        "packages/core/src/deps-refs.ts": "cf30f886a1d4f087de7faae0420c8e27648ef4580e695cbbccb2607720fe14f5",
+        "packages/core/src/heuristics.ts": "c4f2654d2791063bda8e94feaa861827edc6b4fe3211c547759c60267cfc8939",
+        "packages/core/src/skip-paths.ts": "d0d0251a9296a69593492423b7ef830440700e55bcf422f6a0bee0d696ebc4e4",
+        "packages/core/tests/deps-languages.test.ts": "d3c97abcc375e8e59029c57e9bb44a5239ac60e4334f4f7b23bfae53556b933b",
+        "packages/core/tests/deps-index-filter.test.ts": "f20b0ec605fccbabe9b0f5218245a6f1348c9c3e03dd1565c466b994fbb4a92c"
+      },
+      "license_evidence": [
+        {
+          "path": "licenses/dsh-tracescope/LICENSE",
+          "sha256": "da9c3ba5b56f1eddacc9eebe375b174b1cf03c0cd13ed303328e98954d480ea6"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "vendor/deps.ts",
+    "vendor/deps.js",
+    "vendor/deps-refs.ts",
+    "vendor/deps-refs.js",
+    "vendor/heuristics.ts",
+    "vendor/heuristics.js",
+    "vendor/skip-paths.ts",
+    "vendor/skip-paths.js"
+  ],
+  "audit_file": "SOURCE_REVIEW.md",
+  "build_evidence": {
+    "typescript": "5.9.3",
+    "vitest": "3.2.7",
+    "development_lock_sha256": "b556433b0bd20d8f190ab9146f2be97e78f37103b1b56def9b4c8195d537ef9f",
+    "development_lock_origin": "Generated locally during the isolated upstream-core development install; not a file in the pinned Git tree and not included in the runtime payload."
+  }
+}
