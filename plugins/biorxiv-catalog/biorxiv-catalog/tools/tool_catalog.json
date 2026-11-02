@@ -1,0 +1,432 @@
+{
+  "search_preprints": {
+    "class": "SearchPreprintsTool",
+    "description_zh": "按日期、学科与预印本平台浏览实际预印本目录。不是关键词全文检索。时间范围三选一：日期对、recent_days 或 recent_count。 默认用简体中文整理，保留题名、作者、DOI、许可、版本和来源日期；不自动重试。",
+    "input_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "date_from": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "开始日期，YYYY-MM-DD；须与 date_to 同时提供，范围不超过 366 天。"
+        },
+        "date_to": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "结束日期，YYYY-MM-DD，不能早于开始日期。"
+        },
+        "recent_count": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "最近条目选择器，1–100；实际返回数量仍由 limit 决定，与其他时间选择器互斥。",
+          "maximum": 100
+        },
+        "recent_days": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "最近多少天，1–366；与日期范围、recent_count 互斥。",
+          "maximum": 366
+        },
+        "category": {
+          "anyOf": [
+            {
+              "enum": [
+                "animal behavior and cognition",
+                "biochemistry",
+                "bioengineering",
+                "bioinformatics",
+                "biophysics",
+                "cancer biology",
+                "cell biology",
+                "clinical trials",
+                "developmental biology",
+                "ecology",
+                "epidemiology",
+                "evolutionary biology",
+                "genetics",
+                "genomics",
+                "immunology",
+                "microbiology",
+                "molecular biology",
+                "neuroscience",
+                "paleontology",
+                "pathology",
+                "pharmacology and toxicology",
+                "physiology",
+                "plant biology",
+                "scientific communication and education",
+                "synthetic biology",
+                "systems biology",
+                "zoology",
+                "生物信息学",
+                "神经科学",
+                "遗传学",
+                "基因组学",
+                "微生物学",
+                "免疫学",
+                "细胞生物学",
+                "生态学"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "来源学科分类；常用中文别名如生物信息学、遗传学、神经科学可自动映射。"
+        },
+        "server": {
+          "default": "biorxiv",
+          "enum": [
+            "biorxiv",
+            "medrxiv",
+            "生物预印本",
+            "医学预印本"
+          ],
+          "type": "string",
+          "description": "biorxiv 为生物预印本，medrxiv 为医学预印本；也支持对应中文别名。",
+          "maxLength": 512
+        },
+        "cursor": {
+          "default": 0,
+          "minimum": 0,
+          "type": "integer",
+          "description": "来源分页游标，0–100000；不要据此自动翻页或批量抓取。",
+          "maximum": 100000
+        },
+        "limit": {
+          "default": 10,
+          "maximum": 100,
+          "minimum": 1,
+          "type": "integer",
+          "description": "本次最多返回 1–100 条；建议测试时设置为 1 或 2。"
+        }
+      },
+      "type": "object"
+    }
+  },
+  "get_preprint": {
+    "class": "GetPreprintTool",
+    "description_zh": "按实际 DOI 读取预印本题名、作者、摘要、版本和许可等元数据；保留来源未知值。 默认用简体中文整理，保留题名、作者、DOI、许可、版本和来源日期；不自动重试。",
+    "input_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "doi": {
+          "type": "string",
+          "description": "预印本 DOI，或 https://doi.org/ 开头的 DOI 地址；不得包含空白、查询或片段。",
+          "maxLength": 512
+        },
+        "server": {
+          "default": "biorxiv",
+          "enum": [
+            "biorxiv",
+            "medrxiv",
+            "生物预印本",
+            "医学预印本"
+          ],
+          "type": "string",
+          "description": "biorxiv 为生物预印本，medrxiv 为医学预印本；也支持对应中文别名。",
+          "maxLength": 512
+        }
+      },
+      "required": [
+        "doi"
+      ],
+      "type": "object"
+    }
+  },
+  "get_categories": {
+    "class": "CategoriesTool",
+    "description_zh": "读取服务当前提供的学科分类，不自行补充未返回的分类。 默认用简体中文整理，保留题名、作者、DOI、许可、版本和来源日期；不自动重试。",
+    "input_schema": {
+      "additionalProperties": false,
+      "properties": {},
+      "type": "object"
+    }
+  },
+  "search_published_preprints": {
+    "class": "PublishedPreprintsTool",
+    "description_zh": "查询预印本与已发表论文的关联；可按出版社 DOI 前缀筛选。时间范围三选一。检索不到不能证明从未发表。 默认用简体中文整理，保留题名、作者、DOI、许可、版本和来源日期；不自动重试。",
+    "input_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "server": {
+          "default": "biorxiv",
+          "enum": [
+            "biorxiv",
+            "medrxiv",
+            "生物预印本",
+            "医学预印本"
+          ],
+          "type": "string",
+          "description": "biorxiv 为生物预印本，medrxiv 为医学预印本；也支持对应中文别名。",
+          "maxLength": 512
+        },
+        "publisher": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "可选出版社 DOI 前缀，例如 10.1038；不是出版社名称。"
+        },
+        "include_details": {
+          "default": true,
+          "type": "boolean",
+          "description": "是否包含来源提供的作者和摘要等详细信息。"
+        },
+        "date_from": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "开始日期，YYYY-MM-DD；须与 date_to 同时提供，范围不超过 366 天。"
+        },
+        "date_to": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "结束日期，YYYY-MM-DD，不能早于开始日期。"
+        },
+        "recent_count": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "最近条目选择器，1–100；实际返回数量仍由 limit 决定，与其他时间选择器互斥。",
+          "maximum": 100
+        },
+        "recent_days": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "最近多少天，1–366；与日期范围、recent_count 互斥。",
+          "maximum": 366
+        },
+        "cursor": {
+          "default": 0,
+          "minimum": 0,
+          "type": "integer",
+          "description": "来源分页游标，0–100000；不要据此自动翻页或批量抓取。",
+          "maximum": 100000
+        },
+        "limit": {
+          "default": 10,
+          "maximum": 100,
+          "minimum": 1,
+          "type": "integer",
+          "description": "本次最多返回 1–100 条；建议测试时设置为 1 或 2。"
+        }
+      },
+      "type": "object"
+    }
+  },
+  "search_by_funder": {
+    "class": "FunderTool",
+    "description_zh": "按资助机构 ROR 标识符、日期和可选学科查询预印本；覆盖从 2025-04-10 起。不把机构名称当作 ROR 标识符。 默认用简体中文整理，保留题名、作者、DOI、许可、版本和来源日期；不自动重试。",
+    "input_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "funder_ror_id": {
+          "type": "string",
+          "description": "资助机构 9 位 ROR 标识符，例如官方 API 示例 00k4n6c32。",
+          "maxLength": 512
+        },
+        "date_from": {
+          "type": "string",
+          "description": "开始日期，YYYY-MM-DD；须与 date_to 同时提供，范围不超过 366 天。",
+          "maxLength": 512
+        },
+        "date_to": {
+          "type": "string",
+          "description": "结束日期，YYYY-MM-DD，不能早于开始日期。",
+          "maxLength": 512
+        },
+        "category": {
+          "anyOf": [
+            {
+              "enum": [
+                "animal behavior and cognition",
+                "biochemistry",
+                "bioengineering",
+                "bioinformatics",
+                "biophysics",
+                "cancer biology",
+                "cell biology",
+                "clinical trials",
+                "developmental biology",
+                "ecology",
+                "epidemiology",
+                "evolutionary biology",
+                "genetics",
+                "genomics",
+                "immunology",
+                "microbiology",
+                "molecular biology",
+                "neuroscience",
+                "paleontology",
+                "pathology",
+                "pharmacology and toxicology",
+                "physiology",
+                "plant biology",
+                "scientific communication and education",
+                "synthetic biology",
+                "systems biology",
+                "zoology",
+                "生物信息学",
+                "神经科学",
+                "遗传学",
+                "基因组学",
+                "微生物学",
+                "免疫学",
+                "细胞生物学",
+                "生态学"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "来源学科分类；常用中文别名如生物信息学、遗传学、神经科学可自动映射。"
+        },
+        "server": {
+          "default": "biorxiv",
+          "enum": [
+            "biorxiv",
+            "medrxiv",
+            "生物预印本",
+            "医学预印本"
+          ],
+          "type": "string",
+          "description": "biorxiv 为生物预印本，medrxiv 为医学预印本；也支持对应中文别名。",
+          "maxLength": 512
+        },
+        "cursor": {
+          "default": 0,
+          "minimum": 0,
+          "type": "integer",
+          "description": "来源分页游标，0–100000；不要据此自动翻页或批量抓取。",
+          "maximum": 100000
+        },
+        "limit": {
+          "default": 10,
+          "maximum": 100,
+          "minimum": 1,
+          "type": "integer",
+          "description": "本次最多返回 1–100 条；建议测试时设置为 1 或 2。"
+        }
+      },
+      "required": [
+        "funder_ror_id",
+        "date_from",
+        "date_to"
+      ],
+      "type": "object"
+    }
+  },
+  "get_content_statistics": {
+    "class": "ContentStatisticsTool",
+    "description_zh": "读取来源月度或年度内容统计，区分新投稿与修订，不将统计当作质量评分。 默认用简体中文整理，保留题名、作者、DOI、许可、版本和来源日期；不自动重试。",
+    "input_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "interval": {
+          "default": "monthly",
+          "enum": [
+            "monthly",
+            "yearly",
+            "月度",
+            "年度"
+          ],
+          "type": "string",
+          "description": "monthly（月度）或 yearly（年度）；也支持中文别名。",
+          "maxLength": 512
+        }
+      },
+      "type": "object"
+    }
+  },
+  "get_usage_statistics": {
+    "class": "UsageStatisticsTool",
+    "description_zh": "读取来源月度或年度使用统计；区分摘要浏览、全文浏览和 PDF 下载，不推断独立读者或科学影响力。 默认用简体中文整理，保留题名、作者、DOI、许可、版本和来源日期；不自动重试。",
+    "input_schema": {
+      "additionalProperties": false,
+      "properties": {
+        "interval": {
+          "default": "monthly",
+          "enum": [
+            "monthly",
+            "yearly",
+            "月度",
+            "年度"
+          ],
+          "type": "string",
+          "description": "monthly（月度）或 yearly（年度）；也支持中文别名。",
+          "maxLength": 512
+        }
+      },
+      "type": "object"
+    }
+  }
+}

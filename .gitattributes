@@ -66,3 +66,7 @@
 /plugins/pdf-viewer/test-packages/**/*.png binary
 /plugins/pdf-viewer/evidence/**/*.png binary
 /plugins/pdf-viewer/evidence/**/*.json text eol=lf
+
+# Preserve exact bioRxiv adapter, license and package bytes.
+/plugins/biorxiv-catalog/** -text
+/releases/agent-plugin/biorxiv-catalog/** -text

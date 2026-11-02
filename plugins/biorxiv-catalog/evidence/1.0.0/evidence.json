@@ -1,0 +1,115 @@
+{
+  "task_id": "AH-20261102-biorxiv-catalog",
+  "candidate_id": "CAND-CLD-274",
+  "owner": "Nguyen Trung Dung",
+  "display_name": "预印本目录助手",
+  "version": "1.0.0",
+  "native_zip_sha256": "9996c01204cf1f7b31eb5d194ac5bfa72ce19638c67295cc9a2367972b96ebeb",
+  "canonical_zip_sha256": "609fdd83f6480ab765c7f09627f965c691b7a0691386a569da23ca6846c935bd",
+  "confirmation_date": "2026-11-02",
+  "timezone": "Asia/Singapore",
+  "confirmation_report_id": "RPT-20261102-biorxiv-catalog-confirmed-100",
+  "user_statement": "Testing results are as expected, shown in these screenshots",
+  "source": "Current conversation; exact message timestamp/permalink unavailable",
+  "images": [
+    {
+      "file": "01-plugin-enabled.png",
+      "original_filename": "codex-clipboard-5f5e4e2d-9fbc-4c3b-98a6-00aba51036f7.png",
+      "sha256": "506e7ba7c3e5252ec7f5c183c55baea6ed6d41d3e18b784202320c62276af37d",
+      "bytes": 46079,
+      "dimensions": [
+        756,
+        536
+      ],
+      "scope_and_limits": "Chinese plugin name is visible and enabled; other displayed plugins are disabled."
+    },
+    {
+      "file": "02-categories.png",
+      "original_filename": "codex-clipboard-a787fef4-ed6e-41a9-a92f-b9fe060ed001.png",
+      "sha256": "519a3aa47ba5fb3962e6b24098920bc29c02e92c6fbf61080ba5091c26df25b7",
+      "bytes": 74043,
+      "dimensions": [
+        1190,
+        735
+      ],
+      "scope_and_limits": "Actual biorxiv_get_categories call and Chinese report with source/version/retrieval timestamp; category rows are outside the crop."
+    },
+    {
+      "file": "03-chinese-search.png",
+      "original_filename": "codex-clipboard-004e9619-30c5-42aa-a4d6-5ef64d0b62de.png",
+      "sha256": "b14aae50b945a37d88d3005f3bdf50f1102cc82b989b52f8c79ab936e94e815b",
+      "bytes": 72777,
+      "dimensions": [
+        1172,
+        720
+      ],
+      "scope_and_limits": "Expanded search shows original Chinese category/platform arguments, normalized API values, ok:true, and actual first DOI 10.1101/2023.12.30.573742; complete response is cropped."
+    },
+    {
+      "file": "04-doi-metadata.png",
+      "original_filename": "codex-clipboard-20ba335e-485b-4d1f-b3f2-c7bfcce96435.png",
+      "sha256": "81324a0ae4f3db1b1bba8889041522658030427a4782055b4a729bd2826a7888",
+      "bytes": 82300,
+      "dimensions": [
+        1211,
+        673
+      ],
+      "scope_and_limits": "Expanded actual first-result DOI lookup shows ok:true, matching DOI, title, authors, version, date and license; the original source abstract begins in the crop."
+    },
+    {
+      "file": "05-publication-links.png",
+      "original_filename": "codex-clipboard-384f4a93-84eb-41e6-a01e-44ce7ef20f67.png",
+      "sha256": "3b261a937fd40874342737562c64af787897f82b35fae51de17e89e282c55a14",
+      "bytes": 45743,
+      "dimensions": [
+        1217,
+        660
+      ],
+      "scope_and_limits": "Actual published-preprints tool name and expected date/include_details/limit arguments are visible; returned body is below the crop, so this image alone does not establish its successful data."
+    },
+    {
+      "file": "06-funder.png",
+      "original_filename": "codex-clipboard-9857e291-14f4-4178-80b3-4770b024d0a3.png",
+      "sha256": "5656b4217c4d51eb9f219c32b6a962945a9fd3d9bb11eda611a231c9c7c1df88",
+      "bytes": 65599,
+      "dimensions": [
+        1312,
+        700
+      ],
+      "scope_and_limits": "Expanded funder call shows the specified ROR/date/limit arguments and ok:true/success:true with a real DOI/title; remainder of response is cropped."
+    },
+    {
+      "file": "07-statistics.png",
+      "original_filename": "codex-clipboard-b0e6416c-31e9-4488-9737-d4eaf6439119.png",
+      "sha256": "45d5500d31eb3a117f63ff21b13dbb42204c25fcafe50e25dd286fc6df635940",
+      "bytes": 65521,
+      "dimensions": [
+        1282,
+        777
+      ],
+      "scope_and_limits": "Both content and usage statistics tool calls and Chinese success report are visible; actual record values are below the crop."
+    },
+    {
+      "file": "08-medrxiv.png",
+      "original_filename": "codex-clipboard-2187f5ee-1b4f-4215-ac35-1569c4c18721.png",
+      "sha256": "73a1728352baaea17d28052ca0b501dbd8e2117c4273c9c50427dc34290c0a4f",
+      "bytes": 63566,
+      "dimensions": [
+        1206,
+        717
+      ],
+      "scope_and_limits": "Requested medrxiv query, actual tool call and Chinese report are visible; expanded arguments and response records are outside this crop."
+    },
+    {
+      "file": "09-invalid-date-rejection.png",
+      "original_filename": "codex-clipboard-2d87e774-8754-487f-a9e7-726bf3011f42.png",
+      "sha256": "494a11f079334c8687d22f91c8316eabc1966b7ab15ce010d81e97a6ebfdf228",
+      "bytes": 49931,
+      "dimensions": [
+        1233,
+        655
+      ],
+      "scope_and_limits": "Expanded exact reversed-date input returns ok:false, INVALID_ARGUMENTS and the Chinese start-date message. This deliberate validation rejection is a passing test; DONE alone is not the criterion."
+    }
+  ]
+}
