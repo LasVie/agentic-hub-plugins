@@ -1,0 +1,129 @@
+{
+  "verified_at": "2026-11-02T12:30:59.410100+00:00",
+  "plugin_id": "offline-observing-planner",
+  "version": "1.0.0",
+  "canonical_zip": "releases/agent-plugin/offline-observing-planner/1.0.0/offline-observing-planner-1.0.0.zip",
+  "canonical_sha256": "64903378e0b7906a0a9b178ff2046cf66d273c9f54a7e551497a48813a099ef9",
+  "native_zip": "plugins/offline-observing-planner/test-packages/offline-observing-planner-1.0.0-workswarm.zip",
+  "native_sha256": "6e9d379e35ce0b5a7d8e2d373c5eab3668cbbd091f47895ae340997749fb9b68",
+  "payload_identical": true,
+  "source_payload_identical": true,
+  "payload_files": 13,
+  "files_sha256": {
+    "README.md": "af485845e9a3275ce18867e136595b2cc53262e7eea8c8fde697cee9c76b4b6a",
+    "THIRD_PARTY_NOTICES.md": "b2dfcea50d9e7719140c2a7d90b75bafe6fe71971ec85b6aeab3f0bd84052611",
+    "assets/app.js": "d89afe1533d5306c95571fe2b02ed4a9cdea568212866aabab421c7b3cc25711",
+    "assets/index.html": "a280c8f6ecdf88d1c95c47253c4fbee0dc37e053544aead54ff96b63cd233174",
+    "assets/style.css": "f2a718b9bac8ffbc6140741bb586352d42ade8e8156ac16d06029ddb427af73f",
+    "licenses/astronomy-engine/LICENSE": "a76df666a7db8a06f599d08e07c3ff74c4b250b50b49c43353af2bd5bb34604e",
+    "licenses/astronomy-engine/PYTHON_LICENSE": "b4d9dd0fd80fce3879c4cd9e3754364f74fc5ec046f33276475ba3876785c8b7",
+    "manifest.json": "2784e5f30e621f8fce10dded5fb5990d1efd905fef87753e82e69c41adb60b8d",
+    "runtime/astronomy.py": "41248c7b1edbf9d11119528eef7455a6dc55abde9f1aab40d363015e956c1729",
+    "runtime/engine.py": "94adc4ff9c5b2a6ea1b59c4e4391aa25ff8f1fb099c4e3d0a155ea1f0e08c358",
+    "runtime/lab.py": "f02760f94dad68a646e40af218965bf9f023b5abb3329fe3ed3e1d562946c179",
+    "skills/observing-planner/SKILL.md": "0264cd9741fac0482a6d629b9456672029cfe8519b931d1ebbe4ebbc19286a9a",
+    "tools/observing_tools.py": "63acb2c43dde874d521a07958bfd07213aa457413f130f2c1cbd44c64ac1844e"
+  },
+  "artifact_payload_hashes_verified": true,
+  "declared_paths_verified": true,
+  "license_and_module_hashes_verified": true,
+  "upstream_revision": "865d3da7d8112bbc7911238052c6af4aaf877181",
+  "utf8_files_verified": true,
+  "forbidden_junk_absent": true,
+  "extracted_baseline": {
+    "request": {
+      "latitude": 1.3521,
+      "longitude": 103.8198,
+      "elevation_m": 15,
+      "start_utc": "2026-10-30T12:00:00Z",
+      "duration_hours": 24,
+      "step_minutes": 30,
+      "bodies": [
+        "Sun",
+        "Moon",
+        "Mercury",
+        "Venus",
+        "Mars",
+        "Jupiter",
+        "Saturn"
+      ],
+      "display_offset_minutes": 480
+    },
+    "sample_count": 49,
+    "first_positions": {
+      "Sun": {
+        "utc": "2026-10-30T12:00:00Z",
+        "display": "2026-10-30T20:00:00+08:00",
+        "altitude_deg": -17.70447398963809,
+        "azimuth_deg": 255.86198318914816,
+        "ra_hours": 14.31547402914852,
+        "dec_deg": -13.874789970871381
+      },
+      "Moon": {
+        "utc": "2026-10-30T12:00:00Z",
+        "display": "2026-10-30T20:00:00+08:00",
+        "altitude_deg": -38.211545947018095,
+        "azimuth_deg": 53.53604585398551,
+        "ra_hours": 6.501839852687882,
+        "dec_deg": 26.88800655852394
+      },
+      "Mercury": {
+        "utc": "2026-10-30T12:00:00Z",
+        "display": "2026-10-30T20:00:00+08:00",
+        "altitude_deg": -7.527179519124047,
+        "azimuth_deg": 250.88179194264694,
+        "ra_hours": 15.009484741901352,
+        "dec_deg": -19.12902428812027
+      },
+      "Venus": {
+        "utc": "2026-10-30T12:00:00Z",
+        "display": "2026-10-30T20:00:00+08:00",
+        "altitude_deg": -28.782427446383892,
+        "azimuth_deg": 253.28027187889091,
+        "ra_hours": 13.541042636283219,
+        "dec_deg": -15.274190894262857
+      },
+      "Mars": {
+        "utc": "2026-10-30T12:00:00Z",
+        "display": "2026-10-30T20:00:00+08:00",
+        "altitude_deg": -71.58887720026658,
+        "azimuth_deg": 5.566165721025755,
+        "ra_hours": 9.387038609226305,
+        "dec_deg": 16.969817203922283
+      },
+      "Jupiter": {
+        "utc": "2026-10-30T12:00:00Z",
+        "display": "2026-10-30T20:00:00+08:00",
+        "altitude_deg": -74.01830483058754,
+        "azimuth_deg": 345.6345237695324,
+        "ra_hours": 9.778682935542486,
+        "dec_deg": 14.120545499695618
+      },
+      "Saturn": {
+        "utc": "2026-10-30T12:00:00Z",
+        "display": "2026-10-30T20:00:00+08:00",
+        "altitude_deg": 42.9793838821591,
+        "azimuth_deg": 89.5576680344492,
+        "ra_hours": 0.6449549039701676,
+        "dec_deg": 1.2453029300720873
+      }
+    }
+  },
+  "shifted_time_moon": {
+    "baseline_altitude_deg": -38.211545947018095,
+    "shifted_altitude_deg": 36.733327117727704,
+    "changed_by_more_than_one_degree": true
+  },
+  "extracted_chinese_errors": {
+    "invalid_latitude": {
+      "code": "out_of_range",
+      "message": "纬度必须是 -80 到 80 之间的数值。"
+    },
+    "invalid_utc": {
+      "code": "invalid_time",
+      "message": "起始时间必须明确使用 UTC，格式为 YYYY-MM-DDTHH:MM:SSZ。"
+    }
+  },
+  "passed": true,
+  "scope": "ZIP/source equality, declared paths, licensing/provenance, UTF-8, artifact hashes and extracted real engine_call functionality. Not an independent accuracy reference, browser test, WorkSwarm chat/model invocation or manual user acceptance test."
+}

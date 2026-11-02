@@ -1,0 +1,49 @@
+{
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "id": "offline-observing-planner",
+  "name": "离线观星规划台",
+  "description": "离线计算太阳、月亮与五颗亮行星的位置、升落和暮光，交互查看地平图与24小时高度曲线并导出数据。",
+  "skills": [
+    {
+      "dir": "skills/observing-planner",
+      "mode": "all"
+    }
+  ],
+  "source": "local",
+  "category": "数据与科学研究",
+  "display_name": {
+    "zh": "离线观星规划台",
+    "en": "离线观星规划台"
+  },
+  "display_description": {
+    "zh": "离线计算太阳、月亮与五颗亮行星的位置、升落和暮光，交互查看地平图与24小时高度曲线并导出数据。",
+    "en": "离线计算太阳、月亮与五颗亮行星的位置、升落和暮光，交互查看地平图与24小时高度曲线并导出数据。"
+  },
+  "tools": [
+    {
+      "file": "tools/observing_tools.py",
+      "class": "ComputeObservingPlanTool",
+      "display_name": {
+        "zh": "计算观测计划",
+        "en": "计算观测计划"
+      },
+      "display_description": {
+        "zh": "只读计算指定地点和UTC时间的真实星历与事件",
+        "en": "只读计算指定地点和UTC时间的真实星历与事件"
+      }
+    },
+    {
+      "file": "tools/observing_tools.py",
+      "class": "LocalObservingPlannerTool",
+      "display_name": {
+        "zh": "本机观星规划台",
+        "en": "本机观星规划台"
+      },
+      "display_description": {
+        "zh": "启动、查询或关闭中文离线交互规划界面",
+        "en": "启动、查询或关闭中文离线交互规划界面"
+      }
+    }
+  ]
+}

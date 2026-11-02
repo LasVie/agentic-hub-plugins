@@ -1,0 +1,133 @@
+{
+  "verified_at": "2026-10-30T09:30:28.120232+00:00",
+  "plugin_id": "offline-observing-planner",
+  "display_name": "离线观星规划台",
+  "version": "1.0.0",
+  "frontend_url": "http://127.0.0.1:6393/",
+  "backend_websocket_url": "ws://127.0.0.1:29310/ws",
+  "host_root": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/.research/ebook-workswarm-20261027",
+  "model_requests": 0,
+  "host_code_changes": false,
+  "service_restarts": false,
+  "verification_scope": "Supported running-backend import/install/catalog and payload integrity only.",
+  "native_tool_execution_through_chat_worker": "Not exercised; requires separate manual conversation testing.",
+  "connection_state_limitation": "For a package without MCP connectors, connected mirrors installed and does not prove native-tool loading or execution.",
+  "sdk_invocation": "Not performed by this helper; report separately if tested.",
+  "supported_interface_evidence": {
+    "host_paths_relative_to_source": {
+      "jiuwenswarm/channels/web/frontend/src/services/pluginPackagesApi.ts:145": "show; importLocal at154; install at159.",
+      "jiuwenswarm/common/schema/message.py:406": "Supported plugin package WS request-method declarations.",
+      "jiuwenswarm/server/runtime/extension_package_manager.py:4126": "import_plugin_package; install_plugin_package at4308.",
+      "jiuwenswarm/server/runtime/extension_package_manager.py:639": "Native-only connected state mirrors installed.",
+      "jiuwenswarm/server/runtime/agent_adapter/interface_deep.py:2909": "Selected chat plugins load through DeepAgent.load_plugin at2936."
+    },
+    "sdk_paths_relative_to_openjiuwen": {
+      "harness/deep_agent.py:2196": "Public DeepAgent.load_plugin API.",
+      "harness/resources/extension_resolver.py:103": "resolve_plugin_parts resolves manifest-declared native tools and skills."
+    },
+    "unsupported_test_path": "No generic native Tool.invoke request is declared in the inspected WorkSwarm WS schema. No test endpoint, monkey-patch, or fake-model conversation is used."
+  },
+  "catalog_before": [
+    {
+      "id": "molecule-structure-lab",
+      "installed": true,
+      "connection_state": "connected"
+    },
+    {
+      "id": "offline-circuit-lab",
+      "installed": true,
+      "connection_state": "connected"
+    },
+    {
+      "id": "offline-ebook-reader",
+      "installed": true,
+      "connection_state": "connected"
+    },
+    {
+      "id": "offline-optics-lab",
+      "installed": true,
+      "connection_state": "connected"
+    },
+    {
+      "id": "word-citation-notes",
+      "installed": true,
+      "connection_state": "connected"
+    }
+  ],
+  "config_sha256_before": "7c5d0dcb0b1e408f3f89102677c5fdb1923b5d73f5f6b4dcde061fc5820939fb",
+  "other_plugin_files_before": 119,
+  "prior_host_sdk_evidence": "Reused maintained offline-circuit-lab/host-verification.json plus current read-only host inspection; this helper changes only supported installation of this plugin.",
+  "frontend_http": 200,
+  "websocket_proxy_ping_pong": true,
+  "websocket_direct_ping_pong": true,
+  "native_zip": {
+    "path": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/dist/offline-observing-planner/1.0.0/offline-observing-planner-1.0.0-workswarm.zip",
+    "sha256": "6e9d379e35ce0b5a7d8e2d373c5eab3668cbbd091f47895ae340997749fb9b68",
+    "payload_files": 13
+  },
+  "import_local": true,
+  "install": true,
+  "payload_matches_zip": true,
+  "payload_sha256": {
+    "README.md": "af485845e9a3275ce18867e136595b2cc53262e7eea8c8fde697cee9c76b4b6a",
+    "THIRD_PARTY_NOTICES.md": "b2dfcea50d9e7719140c2a7d90b75bafe6fe71971ec85b6aeab3f0bd84052611",
+    "assets/app.js": "d89afe1533d5306c95571fe2b02ed4a9cdea568212866aabab421c7b3cc25711",
+    "assets/index.html": "a280c8f6ecdf88d1c95c47253c4fbee0dc37e053544aead54ff96b63cd233174",
+    "assets/style.css": "f2a718b9bac8ffbc6140741bb586352d42ade8e8156ac16d06029ddb427af73f",
+    "licenses/astronomy-engine/LICENSE": "a76df666a7db8a06f599d08e07c3ff74c4b250b50b49c43353af2bd5bb34604e",
+    "licenses/astronomy-engine/PYTHON_LICENSE": "b4d9dd0fd80fce3879c4cd9e3754364f74fc5ec046f33276475ba3876785c8b7",
+    "manifest.json": "2784e5f30e621f8fce10dded5fb5990d1efd905fef87753e82e69c41adb60b8d",
+    "runtime/astronomy.py": "41248c7b1edbf9d11119528eef7455a6dc55abde9f1aab40d363015e956c1729",
+    "runtime/engine.py": "94adc4ff9c5b2a6ea1b59c4e4391aa25ff8f1fb099c4e3d0a155ea1f0e08c358",
+    "runtime/lab.py": "f02760f94dad68a646e40af218965bf9f023b5abb3329fe3ed3e1d562946c179",
+    "skills/observing-planner/SKILL.md": "0264cd9741fac0482a6d629b9456672029cfe8519b931d1ebbe4ebbc19286a9a",
+    "tools/observing_tools.py": "63acb2c43dde874d521a07958bfd07213aa457413f130f2c1cbd44c64ac1844e"
+  },
+  "installed_card": {
+    "id": "offline-observing-planner",
+    "version": "1.0.0",
+    "displayName": {
+      "zh": "离线观星规划台",
+      "en": "离线观星规划台"
+    },
+    "installed": true,
+    "connection_state": "connected"
+  },
+  "config_sha256_after": "7c5d0dcb0b1e408f3f89102677c5fdb1923b5d73f5f6b4dcde061fc5820939fb",
+  "model_config_unchanged": true,
+  "other_plugin_payloads_unchanged": true,
+  "catalog_after": [
+    {
+      "id": "molecule-structure-lab",
+      "installed": true,
+      "connection_state": "connected"
+    },
+    {
+      "id": "offline-circuit-lab",
+      "installed": true,
+      "connection_state": "connected"
+    },
+    {
+      "id": "offline-ebook-reader",
+      "installed": true,
+      "connection_state": "connected"
+    },
+    {
+      "id": "offline-observing-planner",
+      "installed": true,
+      "connection_state": "connected"
+    },
+    {
+      "id": "offline-optics-lab",
+      "installed": true,
+      "connection_state": "connected"
+    },
+    {
+      "id": "word-citation-notes",
+      "installed": true,
+      "connection_state": "connected"
+    }
+  ],
+  "other_plugin_catalog_unchanged": true,
+  "passed": true
+}

@@ -1,0 +1,22 @@
+{
+  "type": "agent-plugin",
+  "name": "offline-observing-planner",
+  "version": "1.0.0",
+  "display_name": "离线观星规划台",
+  "description": "离线计算太阳、月亮与五颗亮行星的位置、升落和暮光，交互查看地平图与24小时高度曲线并导出数据。",
+  "publisher": "Cai Zhenze",
+  "category": "数据与科学研究",
+  "tags": [
+    "离线观星",
+    "星历计算",
+    "观测规划"
+  ],
+  "functional_tags": [
+    "Offline Ephemerides",
+    "Observing Planning",
+    "Horizon Coordinates"
+  ],
+  "scope": "Python3.11+、macOS/Linux、桌面浏览器；2000–2100年、纬度±80度、最长24小时。理想地平线，不预测天气、地形或实际可见性。",
+  "candidate_id": "CAND-EXT-005",
+  "task_id": "AH-20261030-offline-observing-planner"
+}

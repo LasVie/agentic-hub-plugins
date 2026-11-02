@@ -1,0 +1,30 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/cosinekitty/astronomy",
+      "revision": "865d3da7d8112bbc7911238052c6af4aaf877181",
+      "version": "2.1.19",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/astronomy-engine/LICENSE",
+          "sha256": "a76df666a7db8a06f599d08e07c3ff74c4b250b50b49c43353af2bd5bb34604e"
+        },
+        {
+          "path": "licenses/astronomy-engine/PYTHON_LICENSE",
+          "sha256": "b4d9dd0fd80fce3879c4cd9e3754364f74fc5ec046f33276475ba3876785c8b7"
+        },
+        {
+          "path": "runtime/astronomy.py",
+          "sha256": "41248c7b1edbf9d11119528eef7455a6dc55abde9f1aab40d363015e956c1729"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "runtime/astronomy.py"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

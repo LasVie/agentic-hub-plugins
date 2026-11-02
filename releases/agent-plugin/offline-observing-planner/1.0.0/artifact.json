@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:offline-observing-planner",
+  "type": "agent-plugin",
+  "name": "offline-observing-planner",
+  "version": "1.0.0",
+  "zip": "offline-observing-planner-1.0.0.zip",
+  "sha256": "64903378e0b7906a0a9b178ff2046cf66d273c9f54a7e551497a48813a099ef9",
+  "payload_sha256": {
+    "README.md": "af485845e9a3275ce18867e136595b2cc53262e7eea8c8fde697cee9c76b4b6a",
+    "THIRD_PARTY_NOTICES.md": "b2dfcea50d9e7719140c2a7d90b75bafe6fe71971ec85b6aeab3f0bd84052611",
+    "assets/app.js": "d89afe1533d5306c95571fe2b02ed4a9cdea568212866aabab421c7b3cc25711",
+    "assets/index.html": "a280c8f6ecdf88d1c95c47253c4fbee0dc37e053544aead54ff96b63cd233174",
+    "assets/style.css": "f2a718b9bac8ffbc6140741bb586352d42ade8e8156ac16d06029ddb427af73f",
+    "licenses/astronomy-engine/LICENSE": "a76df666a7db8a06f599d08e07c3ff74c4b250b50b49c43353af2bd5bb34604e",
+    "licenses/astronomy-engine/PYTHON_LICENSE": "b4d9dd0fd80fce3879c4cd9e3754364f74fc5ec046f33276475ba3876785c8b7",
+    "manifest.json": "2784e5f30e621f8fce10dded5fb5990d1efd905fef87753e82e69c41adb60b8d",
+    "runtime/astronomy.py": "41248c7b1edbf9d11119528eef7455a6dc55abde9f1aab40d363015e956c1729",
+    "runtime/engine.py": "94adc4ff9c5b2a6ea1b59c4e4391aa25ff8f1fb099c4e3d0a155ea1f0e08c358",
+    "runtime/lab.py": "f02760f94dad68a646e40af218965bf9f023b5abb3329fe3ed3e1d562946c179",
+    "skills/observing-planner/SKILL.md": "0264cd9741fac0482a6d629b9456672029cfe8519b931d1ebbe4ebbc19286a9a",
+    "tools/observing_tools.py": "63acb2c43dde874d521a07958bfd07213aa457413f130f2c1cbd44c64ac1844e"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "06acfe2e1e189264fbbadb83ca92cf149dce49807996f9f61096e83ba6f094a7",
+  "functional_test_report_sha256": "47d792538aa8e5b0aafaf45ca282859d8be62ec5ef82073dec46c9bd86b0b9f1"
+}

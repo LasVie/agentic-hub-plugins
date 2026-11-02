@@ -1,0 +1,47 @@
+{
+  "source": "U.S. Naval Observatory Astronomical Applications Department",
+  "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-10-30&coords=1.3521,103.8198&tz=0",
+  "documentation": "https://aa.usno.navy.mil/data/api",
+  "api_version": "4.0.1",
+  "retrieved_date": "2026-10-30",
+  "raw_sha256": "bf6d9f9d6c63e6a62c86c245c1144d309e71b28bfadda1e17c3c82f265346c1c",
+  "raw_file": ".research/astronomy-engine-reference-evidence-20261030/usno_singapore_20261030.json",
+  "latitude": 1.3521,
+  "longitude": 103.8198,
+  "elevation_m": 0,
+  "start_utc": "2026-10-30T00:00:00Z",
+  "tolerance_seconds": 60,
+  "convention": "Sea-level unobstructed horizon, standard refraction and Sun/Moon upper limb for rise/set; civil twilight at solar center -6deg. Returned times have one-minute resolution. UTC and UT1 differ by less than0.9s at this epoch.",
+  "events": [
+    {
+      "body": "Sun",
+      "kind": "rise",
+      "utc": "2026-10-30T22:46:00Z"
+    },
+    {
+      "body": "Sun",
+      "kind": "set",
+      "utc": "2026-10-30T10:50:00Z"
+    },
+    {
+      "body": "Moon",
+      "kind": "rise",
+      "utc": "2026-10-30T15:02:00Z"
+    },
+    {
+      "body": "Moon",
+      "kind": "set",
+      "utc": "2026-10-30T02:34:00Z"
+    },
+    {
+      "body": "Sun",
+      "kind": "civil_dawn",
+      "utc": "2026-10-30T22:25:00Z"
+    },
+    {
+      "body": "Sun",
+      "kind": "civil_dusk",
+      "utc": "2026-10-30T11:12:00Z"
+    }
+  ]
+}

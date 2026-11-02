@@ -70,3 +70,7 @@
 # Preserve exact bioRxiv adapter, license and package bytes.
 /plugins/biorxiv-catalog/** -text
 /releases/agent-plugin/biorxiv-catalog/** -text
+
+# Preserve exact user-confirmed observing payload, notices and archive bytes.
+/plugins/offline-observing-planner/** -text
+/releases/agent-plugin/offline-observing-planner/** -text
