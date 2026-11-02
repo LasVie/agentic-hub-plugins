@@ -1,0 +1,859 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-30",
+  "upstream": {
+    "repository": "https://github.com/mbloch/mapshaper",
+    "version": "0.7.101",
+    "commit": "b44c0fa95effac3d91526c8b62dc0de0ab88b464",
+    "npm_archive": "https://registry.npmjs.org/mapshaper/-/mapshaper-0.7.101.tgz",
+    "npm_archive_sha256": "65af2bcc4fd563845bed9228abfaccecd7cc14c494c6d1e62fc0359bbc936f2c"
+  },
+  "runtime_files": [
+    {
+      "path": "web/vendor/mapshaper.js",
+      "sha256": "20bd08942346edd6a2518f23ad40829ab80829cdb116a8b8d8cddb102d5cddc9",
+      "bytes": 3592274,
+      "modified": false,
+      "modification_note": "原始发布字节未修改。"
+    },
+    {
+      "path": "web/vendor/modules.js",
+      "sha256": "535f573e5d49ff743690d5955a9b6299864b8e591e12195f809017222833b544",
+      "bytes": 1098484,
+      "modified": false,
+      "modification_note": "原始发布字节未修改。"
+    }
+  ],
+  "corresponding_source": {
+    "path": "licenses/mapshaper/sources/mapshaper-0.7.101-source.zip",
+    "sha256": "f14d8fde00e66460c5b122c396e1b52be11aa2582463de7eceac040d7a06b512",
+    "bytes": 1199494,
+    "modified": true,
+    "modification_note": "归档经过范围筛选，增加构建说明和目标选择器；原始源码文件未修改。"
+  },
+  "dependencies": [
+    {
+      "name": "d3-color",
+      "version": "3.1.0",
+      "slug": "d3-color",
+      "url": "https://registry.npmjs.org/d3-color/-/d3-color-3.1.0.tgz",
+      "sha256": "d41bbcd99dd4f00e696546bffc73fed9b8fb6c3354905b6ea1721bff25f33b42",
+      "registry_integrity": "sha512-zg/chbXyeBtMQ1LbD/WSoW2DpC3I0mpmPdW+ynRTj/x2DAWYrIY7qeZIHidozwV24m4iavr15lNwIwLxRmOxhA==",
+      "repository": {
+        "url": "git+https://github.com/d3/d3-color.git",
+        "type": "git"
+      },
+      "git_head": "7a1573ed260de4fd97d061975244841132adde92",
+      "declared_license": "ISC"
+    },
+    {
+      "name": "d3-interpolate",
+      "version": "3.0.1",
+      "slug": "d3-interpolate",
+      "url": "https://registry.npmjs.org/d3-interpolate/-/d3-interpolate-3.0.1.tgz",
+      "sha256": "7e8df78d233cd102a0bb518658dc0b7d5c38442b6f2dbc8b95ffc14ba87c7c33",
+      "registry_integrity": "sha512-3bYs1rOD33uo8aqJfKP3JWPAibgw8Zm2+L9vBKEHJ2Rg+viTR7o5Mmv5mZcieN+FRYaAOWX5SJATX6k1PWz72g==",
+      "repository": {
+        "url": "git+https://github.com/d3/d3-interpolate.git",
+        "type": "git"
+      },
+      "git_head": "6562b85040f7a9b96efe49b54a77eb6fceafa1c1",
+      "declared_license": "ISC"
+    },
+    {
+      "name": "d3-scale-chromatic",
+      "version": "3.0.0",
+      "slug": "d3-scale-chromatic",
+      "url": "https://registry.npmjs.org/d3-scale-chromatic/-/d3-scale-chromatic-3.0.0.tgz",
+      "sha256": "17d3368477bcdbaa8ae698df4467aabed83bc5cecdfd8d478c3cc2a6d7f18b58",
+      "registry_integrity": "sha512-Lx9thtxAKrO2Pq6OO2Ua474opeziKr279P/TKZsMAhYyNDD3EnCffdbgeSYN5O7m2ByQsxtuP2CSDczNUIZ22g==",
+      "repository": {
+        "url": "git+https://github.com/d3/d3-scale-chromatic.git",
+        "type": "git"
+      },
+      "git_head": "2aa3ad24197136a5adeb1647502270dba5d74668",
+      "declared_license": "ISC"
+    },
+    {
+      "name": "delaunator",
+      "version": "5.0.0",
+      "slug": "delaunator",
+      "url": "https://registry.npmjs.org/delaunator/-/delaunator-5.0.0.tgz",
+      "sha256": "aaaf3b14a93f903b91c89f3c43bfe105d73811f0f4246a2e0fb327f48783fe7c",
+      "registry_integrity": "sha512-AyLvtyJdbv/U1GkiS6gUUzclRoAY4Gs75qkMygJJhU75LW4DNuSF2RMzpxs9jw9Oz1BobHjTdkG3zdP55VxAqw==",
+      "repository": {
+        "url": "git+https://github.com/mapbox/delaunator.git",
+        "type": "git"
+      },
+      "git_head": "141d30bba9ae95deee53c4ead9af57de47be1942",
+      "declared_license": "ISC"
+    },
+    {
+      "name": "robust-predicates",
+      "version": "3.0.2",
+      "slug": "robust-predicates",
+      "url": "https://registry.npmjs.org/robust-predicates/-/robust-predicates-3.0.2.tgz",
+      "sha256": "962cacbec5dc58976307fa534c335331c11a1f8f315fc698776c4e1fc931e17e",
+      "registry_integrity": "sha512-IXgzBWvWQwE6PrDI05OvmXUIruQTcoMDzRsOd5CDvHCVLcLHMTSYvOK5Cm46kWqlV3yAbuSpBZdJ5oP5OUoStg==",
+      "repository": {
+        "url": "git+https://github.com/mourner/robust-predicates.git",
+        "type": "git"
+      },
+      "git_head": "c20b0ab9ab4c4f2969f3611908c41ce76aa0e7a7",
+      "declared_license": "Unlicense"
+    },
+    {
+      "name": "flatbush",
+      "version": "4.6.0",
+      "slug": "flatbush",
+      "url": "https://registry.npmjs.org/flatbush/-/flatbush-4.6.0.tgz",
+      "sha256": "2c02f01eee3dcb3a4907512582baa533080a881bff77577f331a6fe6f91447b7",
+      "registry_integrity": "sha512-oeEuOY/SieR/ZxYVx3WGYRBihhaaqPYVqae9fjUflBCq4fm76wSrk/A0zSv3cVhzc600hd3DW3W2IJ+hg8KYhw==",
+      "repository": {
+        "url": "git+https://github.com/mourner/flatbush.git",
+        "type": "git"
+      },
+      "git_head": "9fc3793a82a0624f64d45d8a3766641c38c88476",
+      "declared_license": "ISC"
+    },
+    {
+      "name": "flatqueue",
+      "version": "3.1.0",
+      "slug": "flatqueue",
+      "url": "https://registry.npmjs.org/flatqueue/-/flatqueue-3.1.0.tgz",
+      "sha256": "e0f98e97cb4ebd1e8700f536c737e23c681bed5312336b36275e9f2daa5dad35",
+      "registry_integrity": "sha512-Ia4qIYrrsEqIRx3c3XhkT+QDLQuUV5ovsr6ah1rIgKT5wclhoGK3lAMS1bWRAWxlx7wtlTBpV7QXB5d9fOSRxA==",
+      "repository": {
+        "url": "git+https://github.com/mourner/flatqueue.git",
+        "type": "git"
+      },
+      "git_head": "eee96a6df7705e57f8dbb3702aa3efc40bb6e4b5",
+      "declared_license": "ISC"
+    },
+    {
+      "name": "fflate",
+      "version": "0.8.3",
+      "slug": "fflate",
+      "url": "https://registry.npmjs.org/fflate/-/fflate-0.8.3.tgz",
+      "sha256": "38c2cd824402407b43153c782274aec2ea83ea688e4aa0b743c5f2c305857d92",
+      "registry_integrity": "sha512-tbZNuJrLwGUp3zshBtdy4W+ORxZuIh8a5ilyIEQDC5rY1f3U20JMry0Ll3WBzU58EZKsEuJFXhb5gwv8CsPvgA==",
+      "repository": {
+        "url": "git+https://github.com/101arrowz/fflate.git",
+        "type": "git"
+      },
+      "git_head": null,
+      "declared_license": "MIT"
+    },
+    {
+      "name": "msgpackr",
+      "version": "1.11.13",
+      "slug": "msgpackr",
+      "url": "https://registry.npmjs.org/msgpackr/-/msgpackr-1.11.13.tgz",
+      "sha256": "8c884fa1d5b62989c6d8300c2b78f5e652415b0b4bb47e54d09d3ef890b9ed9d",
+      "registry_integrity": "sha512-pWaxg0k1iiNdkAayUQ7Zlz/vYNfVefUttmHxqFcQjjtyqFa3w4x5rginOEzy/GvbWhBDD9K65/ZXyq8qz8utaQ==",
+      "repository": {
+        "url": "git+ssh://git@github.com/kriszyp/msgpackr.git",
+        "type": "git"
+      },
+      "git_head": "e3cd65898f413fe89de6ce186c1da357d84c5617",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "flatgeobuf",
+      "version": "4.3.4",
+      "slug": "flatgeobuf",
+      "url": "https://registry.npmjs.org/flatgeobuf/-/flatgeobuf-4.3.4.tgz",
+      "sha256": "d4c770de6fdc10e0c7b3c5cafa5ff56b492525362816c0900e75fc257bd02c7e",
+      "registry_integrity": "sha512-dYHHu+o/QQWBzVTLsP7+qkc3B3TpRS2DaYdcx/mymAnCYRkOsNZ1Eqmx9CH1SkDgrgXURPnsN03cN0RoLea4uA==",
+      "repository": {
+        "url": "git+https://github.com/flatgeobuf/flatgeobuf.git",
+        "type": "git"
+      },
+      "git_head": null,
+      "declared_license": "BSD-3-Clause"
+    },
+    {
+      "name": "flatbuffers",
+      "version": "25.9.23",
+      "slug": "flatbuffers",
+      "url": "https://registry.npmjs.org/flatbuffers/-/flatbuffers-25.9.23.tgz",
+      "sha256": "484129ef89da43decec3d004810863a70fad9b2aa6df6246602e58d9ba207d26",
+      "registry_integrity": "sha512-MI1qs7Lo4Syw0EOzUl0xjs2lsoeqFku44KpngfIduHBYvzm8h2+7K8YMQh1JtVVVrUvhLpNwqVi4DERegUJhPQ==",
+      "repository": {
+        "url": "git+https://github.com/google/flatbuffers.git",
+        "type": "git"
+      },
+      "git_head": "187240970746d00bbd26b0f5873ed54d2477f9f3",
+      "declared_license": "Apache-2.0"
+    },
+    {
+      "name": "tinyqueue",
+      "version": "2.0.3",
+      "slug": "tinyqueue",
+      "url": "https://registry.npmjs.org/tinyqueue/-/tinyqueue-2.0.3.tgz",
+      "sha256": "c8a2f31e55556eed08cc9dd64def856ecb9adee44db4685b5f54074bb6f2ac63",
+      "registry_integrity": "sha512-ppJZNDuKGgxzkHihX8v9v9G5f+18gzaTfrukGrq6ueg0lmH4nqVnA2IPG0AEH3jKEk2GRJCUhDoqpoiw3PHLBA==",
+      "repository": {
+        "url": "git+https://github.com/mourner/tinyqueue.git",
+        "type": "git"
+      },
+      "git_head": "9dbd2aa55837588001c776115fa04b9bbafc404b",
+      "declared_license": "ISC"
+    },
+    {
+      "name": "big.js",
+      "version": "7.0.1",
+      "slug": "big.js",
+      "url": "https://registry.npmjs.org/big.js/-/big.js-7.0.1.tgz",
+      "sha256": "2eb61eac4dbf5edcbbb74b254e3946ac89617df9cd4f288e1bfd831e1c7384e8",
+      "registry_integrity": "sha512-iFgV784tD8kq4ccF1xtNMZnXeZzVuXWWM+ERFzKQjv+A5G9HC8CY3DuV45vgzFFcW+u2tIvmF95+AzWgs6BjCg==",
+      "repository": {
+        "url": "git+https://github.com/MikeMcl/big.js.git",
+        "type": "git"
+      },
+      "git_head": "e19cc83cb965bdef18cb31423d81f60140c9e7be",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "buffer",
+      "version": "5.7.1",
+      "slug": "buffer",
+      "url": "https://registry.npmjs.org/buffer/-/buffer-5.7.1.tgz",
+      "sha256": "98bfac55b7a37ade644f5eccbcf94a59269afd13e1f9af597e61fd06c057c0bc",
+      "registry_integrity": "sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==",
+      "repository": {
+        "url": "git://github.com/feross/buffer.git",
+        "type": "git"
+      },
+      "git_head": "edc667080ba3220ac35d4d1f64f2a78d89127c1b",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "base64-js",
+      "version": "1.5.1",
+      "slug": "base64-js",
+      "url": "https://registry.npmjs.org/base64-js/-/base64-js-1.5.1.tgz",
+      "sha256": "b1b7a945b52685269083425216d6597e33d97bf21699d656e92fdb3eb5210a85",
+      "registry_integrity": "sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==",
+      "repository": {
+        "url": "git://github.com/beatgammit/base64-js.git",
+        "type": "git"
+      },
+      "git_head": "88957c9943c7e2a0f03cdf73e71d579e433627d3",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "ieee754",
+      "version": "1.2.1",
+      "slug": "ieee754",
+      "url": "https://registry.npmjs.org/ieee754/-/ieee754-1.2.1.tgz",
+      "sha256": "8ef14b9b397e339db89db97881fb714f49319d8f0eb1275901f45567b28f9dac",
+      "registry_integrity": "sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==",
+      "repository": {
+        "url": "git://github.com/feross/ieee754.git",
+        "type": "git"
+      },
+      "git_head": "b60d148be9cad718f9ff007c211c2427cdc180a4",
+      "declared_license": "BSD-3-Clause"
+    },
+    {
+      "name": "iconv-lite",
+      "version": "0.6.3",
+      "slug": "iconv-lite",
+      "url": "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.6.3.tgz",
+      "sha256": "7127ec148f994f031eff658a50dc0629f6010775a8202213b0526ec5e30fc8f4",
+      "registry_integrity": "sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==",
+      "repository": {
+        "url": "git://github.com/ashtuchkin/iconv-lite.git",
+        "type": "git"
+      },
+      "git_head": "d13de386c07a1574425811f8f219c181c633e88d",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "safer-buffer",
+      "version": "2.1.2",
+      "slug": "safer-buffer",
+      "url": "https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz",
+      "sha256": "78812f65ae3b98071ce1c9bacbe0666f4220d0b2753c2a11530eb27df440a3b3",
+      "registry_integrity": "sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==",
+      "repository": {
+        "url": "git+https://github.com/ChALkeR/safer-buffer.git",
+        "type": "git"
+      },
+      "git_head": "e8ac214944eda30e1e6c6b7d7e7f6a21cf7dce7c",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "idb-keyval",
+      "version": "6.2.0",
+      "slug": "idb-keyval",
+      "url": "https://registry.npmjs.org/idb-keyval/-/idb-keyval-6.2.0.tgz",
+      "sha256": "a745e568261b254bbbba29b6f6cbcfd372376593378936a092750f4bfd26194f",
+      "registry_integrity": "sha512-uw+MIyQn2jl3+hroD7hF8J7PUviBU7BPKWw4f/ISf32D4LoGu98yHjrzWWJDASu9QNrX10tCJqk9YY0ClWm8Ng==",
+      "repository": {
+        "url": "git+https://github.com/jakearchibald/idb-keyval.git",
+        "type": "git"
+      },
+      "git_head": "a7225849d1d9a57ac6615b3fd0aadd07178f6a08",
+      "declared_license": "Apache-2.0"
+    },
+    {
+      "name": "safari-14-idb-fix",
+      "version": "3.0.0",
+      "slug": "safari-14-idb-fix",
+      "url": "https://registry.npmjs.org/safari-14-idb-fix/-/safari-14-idb-fix-3.0.0.tgz",
+      "sha256": "287ee7181241f3057b1a33b122264e3e275f4a6bad3c6d4f4e194dde5306cfe4",
+      "registry_integrity": "sha512-eBNFLob4PMq8JA1dGyFn6G97q3/WzNtFK4RnzT1fnLq+9RyrGknzYiM/9B12MnKAxuj1IXr7UKYtTNtjyKMBog==",
+      "repository": null,
+      "git_head": "2a9084feb17a1226a5aed0fd3f3d3a49c5b3e9eb",
+      "declared_license": "Apache-2.0"
+    },
+    {
+      "name": "@placemarkio/tokml",
+      "version": "0.3.3",
+      "slug": "placemarkio--tokml",
+      "url": "https://registry.npmjs.org/@placemarkio/tokml/-/tokml-0.3.3.tgz",
+      "sha256": "5e94bbfc13148cecb46b3efbd68773978045e24a728f948f3fa41eae515780af",
+      "registry_integrity": "sha512-Y6lprxpPfDxLoUyeNcI/vfxMkeWlTjNFvh73zlxfQtZ8TWIj+rmPY99l5wNFVkHQOAwCzLaBXyxULpbtaMGyHQ==",
+      "repository": null,
+      "git_head": "53a4791c4114651bc4212fd0631b60ae6bbbb519",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "@tmcw/togeojson",
+      "version": "5.6.0",
+      "slug": "tmcw--togeojson",
+      "url": "https://registry.npmjs.org/@tmcw/togeojson/-/togeojson-5.6.0.tgz",
+      "sha256": "00489f39db85d6c3110d16fb7677e739a0b8c23546308a9760703f7804dd3ebc",
+      "registry_integrity": "sha512-p+c0kbSY/tIwd3C0rpmTf3iFAOUYV6bkJbDiq0oQDGROOc7c6uh/X8r/mijY6SIFYIkVuKc8MS2REKhur2e6Jw==",
+      "repository": {
+        "url": "git://github.com/placemark/togeojson.git",
+        "type": "git"
+      },
+      "git_head": "9eca1937cc5acc2d7faecb6ef8fa5c5ad182eb9b",
+      "declared_license": "BSD-2-Clause"
+    },
+    {
+      "name": "mproj",
+      "version": "0.1.6",
+      "slug": "mproj",
+      "url": "https://registry.npmjs.org/mproj/-/mproj-0.1.6.tgz",
+      "sha256": "823bbc29105eb5ec766a000d5a0ce412f35c48392ca04e14ae8f6c4113fff8d7",
+      "registry_integrity": "sha512-tw30j10qLYWJoc1Q448T5cfcQ26wO4yc3KdYyHcX9ts9u83lC0qoXg+/FNQbiV3wb40R0rzU15bPyO6N+lpkxg==",
+      "repository": {
+        "url": "git+https://github.com/mbloch/mapshaper-proj.git",
+        "type": "git"
+      },
+      "git_head": "f645951ff15d5c43a1bfa78ade96e83f204ccf38",
+      "declared_license": "MIT"
+    },
+    {
+      "name": "kdbush",
+      "version": "3.0.0",
+      "slug": "kdbush",
+      "url": "https://registry.npmjs.org/kdbush/-/kdbush-3.0.0.tgz",
+      "sha256": "d79b58b0bf4b3dc5fac583d7bca53713dfa5fb156f7d0f2c240227a6a6026f75",
+      "registry_integrity": "sha512-hRkd6/XW4HTsA9vjVpY9tuXJYLSlelnkTmVFu4M9/7MIYQtFcHpbugAU7UbOfjOiVSVYl2fqgBuJ32JUmRo5Ew==",
+      "repository": {
+        "url": "git://github.com/mourner/kdbush.git",
+        "type": "git"
+      },
+      "git_head": "5ff01fb69666443270db1f136b79ba4588645ab8",
+      "declared_license": "ISC"
+    },
+    {
+      "name": "geographiclib-geodesic",
+      "version": "2.2.0",
+      "slug": "geographiclib-geodesic",
+      "url": "https://registry.npmjs.org/geographiclib-geodesic/-/geographiclib-geodesic-2.2.0.tgz",
+      "sha256": "e35a1033b30873278880bd30faa37570502d1d5803d78bf7f45372d53cabec76",
+      "registry_integrity": "sha512-cIedo9VTYb0DFufodgibDmVfsWe9EASqb/kUByl09xc6PZYvLvlc89BHCThtGTPf2OII/zWJGxsR3Uz6O7QOVw==",
+      "repository": {
+        "url": "git+https://github.com/geographiclib/geographiclib-js.git",
+        "type": "git"
+      },
+      "git_head": null,
+      "declared_license": "MIT"
+    },
+    {
+      "name": "geographiclib",
+      "version": "1.48.0",
+      "slug": "geographiclib",
+      "url": "https://registry.npmjs.org/geographiclib/-/geographiclib-1.48.0.tgz",
+      "sha256": "44e9225db45cf4d6cccc19c8fb438b9f3c35acef8de1b4421e179975368a3adf",
+      "registry_integrity": "sha512-WIpDKKj2Gu+E4jkF3f3fg7OPF6T1/35tQXKc4jLLQrwjNiTZ5KrrYF5Gp0dQ/YbJIoCjb9vs2/abWTRsCEoi2w==",
+      "repository": {
+        "url": "git://git.code.sourceforge.net/p/geographiclib/code",
+        "type": "git"
+      },
+      "git_head": null,
+      "declared_license": "MIT"
+    },
+    {
+      "name": "rw",
+      "version": "1.3.3",
+      "slug": "rw",
+      "url": "https://registry.npmjs.org/rw/-/rw-1.3.3.tgz",
+      "sha256": "2dcde28200167d3774d1f0f2b66942790c762dc37ad211fb1135959e87fb85fb",
+      "registry_integrity": "sha512-PdhdWy89SiZogBLaw42zdeqtRJ//zFd2PgQavcICDUgJT5oW10QCRKbJ6bg4r0/UY2M6BWd5tkxuGFRvCkgfHQ==",
+      "repository": {
+        "url": "git+ssh://git@github.com/mbostock/rw.git",
+        "type": "git"
+      },
+      "git_head": "59819802cb6718a44aad42bb75ccb4f93f6efad5",
+      "declared_license": "BSD-3-Clause"
+    },
+    {
+      "name": "@repeaterjs/repeater",
+      "version": "3.0.6",
+      "slug": "repeaterjs--repeater",
+      "url": "https://registry.npmjs.org/@repeaterjs/repeater/-/repeater-3.0.6.tgz",
+      "sha256": "fbfedec003be0f46303748111bcb87527f63ef94e4ff88ef946b1bb0e6f3bc5c",
+      "registry_integrity": "sha512-Javneu5lsuhwNCryN+pXH93VPQ8g0dBX7wItHFgYiwQmzE1sVdg5tWHiOgHywzL2W21XQopa7IwIEnNbmeUJYA==",
+      "repository": {
+        "url": "https://github.com/repeaterjs/repeater",
+        "type": "git",
+        "directory": "packages/repeater"
+      },
+      "git_head": null,
+      "declared_license": "MIT"
+    },
+    {
+      "name": "slice-source",
+      "version": "0.4.1",
+      "slug": "slice-source",
+      "url": "https://registry.npmjs.org/slice-source/-/slice-source-0.4.1.tgz",
+      "sha256": "308785ec925e48e87dfc7513a6734e123c3bb5916bd6cf4f99767b36698d0192",
+      "registry_integrity": "sha512-YiuPbxpCj4hD9Qs06hGAz/OZhQ0eDuALN0lRWJez0eD/RevzKqGdUx1IOMUnXgpr+sXZLq3g8ERwbAH0bCb8vg==",
+      "repository": {
+        "url": "git+ssh://git@github.com/mbostock/slice-source.git",
+        "type": "git"
+      },
+      "git_head": "78535bcbe07d44eeee5afaab3ba5cf1f21e6ddab",
+      "declared_license": "BSD-3-Clause"
+    },
+    {
+      "name": "rollup-plugin-polyfill-node",
+      "version": "0.13.0",
+      "slug": "rollup-plugin-polyfill-node",
+      "url": "https://registry.npmjs.org/rollup-plugin-polyfill-node/-/rollup-plugin-polyfill-node-0.13.0.tgz",
+      "sha256": "27b5e645f1a4e529613cea6a374db2246cfdec57c651b4584cc582eafaf30960",
+      "registry_integrity": "sha512-FYEvpCaD5jGtyBuBFcQImEGmTxDTPbiHjJdrYIp+mFIwgXiXabxvKUK7ZT9P31ozu2Tqm9llYQMRWsfvTMTAOw==",
+      "repository": {
+        "url": "git+https://github.com/FredKSchott/rollup-plugin-polyfill-node.git",
+        "type": "git"
+      },
+      "git_head": "31face71b94b8408a907f04753318dff589adc2f",
+      "declared_license": "MIT"
+    }
+  ],
+  "additional_license_sources": [
+    {
+      "name": "tokml-LICENSE",
+      "url": "https://raw.githubusercontent.com/placemark/tokml/4cd5c52ae4e482693812565311b790a5fd54e0fa/LICENSE",
+      "sha256": "3749b3c116d102a9991a8a2d2e52205ae1cb5e42fbe018672b08c23d487abfd1",
+      "bytes": 1066
+    },
+    {
+      "name": "repeater-LICENSE",
+      "url": "https://raw.githubusercontent.com/bikeshaving/repeater/638a53f2729f5197875ec12a9d578c274c5f6709/LICENSE",
+      "sha256": "123e3ba9ae3aa1e0c2b28eec6b5cfa8941ddf6147a2d6914f906d063e34b5119",
+      "bytes": 1049
+    },
+    {
+      "name": "Apache-2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "name": "MPL-2.0",
+      "url": "https://www.mozilla.org/media/MPL/2.0/index.815ca599c9df.txt",
+      "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85",
+      "bytes": 16726
+    },
+    {
+      "name": "d3-geo-projection-LICENSE",
+      "url": "https://raw.githubusercontent.com/d3/d3-geo-projection/v2.0.0/LICENSE",
+      "sha256": "8b5304265ccedbd17567aa14a0dc6b9bf4013fee44964c46aa54fdf8527d6a68",
+      "bytes": 1475
+    },
+    {
+      "name": "d3-geo-polygon-LICENSE",
+      "url": "https://raw.githubusercontent.com/d3/d3-geo-polygon/0a64950e7c080d6abfeb69ecf7fb7a343e75b285/LICENSE",
+      "sha256": "1d6e942c537991732b63d3c54dbef2853689f9b41ca06cc21c3c17b8dc85fdc4",
+      "bytes": 1313
+    },
+    {
+      "name": "d3-geo-LICENSE",
+      "url": "https://raw.githubusercontent.com/d3/d3-geo/8c53a90ae70c94bace73ecb02f2c792c649c86ba/LICENSE",
+      "sha256": "3e3edc1224eec9c39cd26491a21304a62883c1e5b6a65c5283ccc7a6cc94baee",
+      "bytes": 1857
+    },
+    {
+      "name": "d3-dsv-LICENSE",
+      "url": "https://raw.githubusercontent.com/d3/d3-dsv/a2facce660bb4895b56c62a655d0f252efc3d99f/LICENSE",
+      "sha256": "7842a82012622e5a37bfe4f6c1b67cd3bae6350716b5bf87f36cea0bdc1319dc",
+      "bytes": 731
+    },
+    {
+      "name": "imago-LICENSE",
+      "url": "https://raw.githubusercontent.com/jkunimune/Map-Projections/028222e91a533ef14f4ba96431117d4c28914a7f/LICENSE.md",
+      "sha256": "b6d61e6d2de8fc582aae34dce7ba6ab59c3127f367ac5ee802b141588a1ea60d",
+      "bytes": 1072
+    },
+    {
+      "name": "imago-Projection.java",
+      "url": "https://raw.githubusercontent.com/jkunimune/Map-Projections/028222e91a533ef14f4ba96431117d4c28914a7f/src/maps/Projection.java",
+      "sha256": "1c14ceecb5dfe685aad3f4ef555744d7ccce4ac68237ad77a3c74b3e2ff44145",
+      "bytes": 27006
+    },
+    {
+      "name": "imago-Polyhedral.java",
+      "url": "https://raw.githubusercontent.com/jkunimune/Map-Projections/028222e91a533ef14f4ba96431117d4c28914a7f/src/maps/Polyhedral.java",
+      "sha256": "b243618a6e6bfe3cf5f7ffa11f271e4bf98dcf30a8eef7e40f5cbd59f8d9e361",
+      "bytes": 25563
+    },
+    {
+      "name": "mustache-LICENSE",
+      "url": "https://raw.githubusercontent.com/janl/mustache.js/972fd2b27a036888acfcb60d6119317744fac7ee/LICENSE",
+      "sha256": "e60b280838180a70cbb4b934f825c8119cdcf8912259ff4c6da20b284231c832",
+      "bytes": 1183
+    },
+    {
+      "name": "underscore-LICENSE",
+      "url": "https://raw.githubusercontent.com/jashkenas/underscore/5c1e5f686f8500af9c9d15614ed60289d6d35d6b/LICENSE",
+      "sha256": "92905fb54f5d168a27e6d5dc7c2197020add11842be4c70689d084bae3bfe37a",
+      "bytes": 1139
+    },
+    {
+      "name": "node-process-LICENSE",
+      "url": "https://raw.githubusercontent.com/defunctzombie/node-process/77caa43cdaee4ea710aa14d11cea1705293c0ef3/LICENSE",
+      "sha256": "59a400d04c5078579acc27ddd6452c1bdf763f9506e01364700935fbb1a7c91b",
+      "bytes": 1098
+    },
+    {
+      "name": "browser-process-hrtime-LICENSE",
+      "url": "https://raw.githubusercontent.com/kumavis/browser-process-hrtime/38920d3d06ddecf0ad1b51f0f6872db946e3c035/LICENSE",
+      "sha256": "2243bd3accba231c98cfffe649d73042fa6d072922cc25f02cc9254aef69662c",
+      "bytes": 1260
+    },
+    {
+      "name": "phpjs-LICENSE",
+      "url": "https://raw.githubusercontent.com/locutusjs/locutus/c57a814de23460dad15a1c0802396f97120e391d/LICENSE.txt",
+      "sha256": "61cd914fad645fe7eb5ee66df80dedbe3365e335f28673a9d1d5e4ed02a22ff3",
+      "bytes": 1144
+    },
+    {
+      "name": "phpjs-addslashes.js",
+      "url": "https://raw.githubusercontent.com/locutusjs/locutus/c57a814de23460dad15a1c0802396f97120e391d/functions/strings/addslashes.js",
+      "sha256": "eb44066cd8b4efaae689b4dd281139685ea8174d16bb88c8048e499d89301fe1",
+      "bytes": 615
+    },
+    {
+      "name": "devillard-wirth.c",
+      "url": "http://ndevilla.free.fr/median/median/src/wirth.c",
+      "sha256": "9844b91826a642f9cfefa905df5bed03bd8d49fb5fc3fb87335aeaa436759cae",
+      "bytes": 1472
+    }
+  ],
+  "license_files": [
+    {
+      "path": "licenses/apache-2.0/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "path": "licenses/base64-js/LICENSE",
+      "sha256": "5b37224c080cdcc97c871ada971c224e9926370fe74f11b539aa1cf9f3b1aca1",
+      "bytes": 1081
+    },
+    {
+      "path": "licenses/big.js/LICENSE",
+      "sha256": "def75ba75d6426f1c3f02addf8e175fbe6e0d8a82e541cbdffc16d2bd8fd7d6a",
+      "bytes": 1147
+    },
+    {
+      "path": "licenses/browser-process-hrtime/LICENSE",
+      "sha256": "2243bd3accba231c98cfffe649d73042fa6d072922cc25f02cc9254aef69662c",
+      "bytes": 1260
+    },
+    {
+      "path": "licenses/buffer/LICENSE",
+      "sha256": "06bafa45fdad2579ba0e43b0c9b2c6290287c99c4203c300254a462b38a307f6",
+      "bytes": 1106
+    },
+    {
+      "path": "licenses/crameri/LICENSE",
+      "sha256": "a2be6853dc6d79ff145d7f683cc36a2194b77e6170f13fc2a8d2f0d97a4d5b52",
+      "bytes": 1595
+    },
+    {
+      "path": "licenses/d3-color/LICENSE",
+      "sha256": "faa682e3e430941f958d26180458f5934a62f58dac4d70ccdd15608c15d0f884",
+      "bytes": 731
+    },
+    {
+      "path": "licenses/d3-dsv/LICENSE",
+      "sha256": "7842a82012622e5a37bfe4f6c1b67cd3bae6350716b5bf87f36cea0bdc1319dc",
+      "bytes": 731
+    },
+    {
+      "path": "licenses/d3-geo/LICENSE",
+      "sha256": "3e3edc1224eec9c39cd26491a21304a62883c1e5b6a65c5283ccc7a6cc94baee",
+      "bytes": 1857
+    },
+    {
+      "path": "licenses/d3-geo-polygon/LICENSE",
+      "sha256": "1d6e942c537991732b63d3c54dbef2853689f9b41ca06cc21c3c17b8dc85fdc4",
+      "bytes": 1313
+    },
+    {
+      "path": "licenses/d3-geo-projection/LICENSE",
+      "sha256": "8b5304265ccedbd17567aa14a0dc6b9bf4013fee44964c46aa54fdf8527d6a68",
+      "bytes": 1475
+    },
+    {
+      "path": "licenses/d3-interpolate/LICENSE",
+      "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee",
+      "bytes": 731
+    },
+    {
+      "path": "licenses/d3-scale-chromatic/LICENSE",
+      "sha256": "b061fce8110a2f4cebd8472f4ed070db13998ffc8201c63dbf514bc9dc241098",
+      "bytes": 12783
+    },
+    {
+      "path": "licenses/d3-scale-chromatic/UPSTREAM-LICENSE",
+      "sha256": "dadb5ea138eef5ab133854c3d26bd0a158f649d0bd433b3eebe177f6d981730e",
+      "bytes": 1423
+    },
+    {
+      "path": "licenses/delaunator/LICENSE",
+      "sha256": "27043d1a6a0e1985fde12660decbbd3b23c67de900b00609c90d4f0aa492f425",
+      "bytes": 738
+    },
+    {
+      "path": "licenses/devillard/LICENSE",
+      "sha256": "a8be5ff63df59ea25af7b3af7e80453d3e1e4e87cced655f404658965501d8f0",
+      "bytes": 105
+    },
+    {
+      "path": "licenses/devillard/wirth.c",
+      "sha256": "9844b91826a642f9cfefa905df5bed03bd8d49fb5fc3fb87335aeaa436759cae",
+      "bytes": 1472
+    },
+    {
+      "path": "licenses/equal-earth/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "path": "licenses/equal-earth/SOURCE_NOTICES.txt",
+      "sha256": "de65845a841c06c9d05f4854e8c64c145aec89eeff23f3f8ec85f7719e7c009d",
+      "bytes": 1219
+    },
+    {
+      "path": "licenses/fflate/LICENSE",
+      "sha256": "0a1df3a083d0c010560aa342e87959c8c1070e6fd54545741f083f22d0c8b551",
+      "bytes": 1069
+    },
+    {
+      "path": "licenses/flatbuffers/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "path": "licenses/flatbush/LICENSE",
+      "sha256": "08a9d45b1300baf1925a966bcbec26cf9bd4137883d96b79089cba2c72d872bc",
+      "bytes": 750
+    },
+    {
+      "path": "licenses/flatgeobuf/LICENSE",
+      "sha256": "82b5250889974b120ef38428a73982e1d1054ea778e2b54312d8721ead5bfd93",
+      "bytes": 1271
+    },
+    {
+      "path": "licenses/flatqueue/LICENSE",
+      "sha256": "dda6815257c8b5dd1c557507e0f49b592001a515fe4e9f152a2e7683f9d3a3b5",
+      "bytes": 751
+    },
+    {
+      "path": "licenses/geographiclib/LICENSE",
+      "sha256": "edc9241a9e81d2bb2bcd6d7317134c527926286aa2ae0627368a14a3b972c6f3",
+      "bytes": 1153
+    },
+    {
+      "path": "licenses/geographiclib-geodesic/LICENSE",
+      "sha256": "8df0455c90f6bb3efbabf3e225122654c438a09c2be5635cdd79472a0970247e",
+      "bytes": 1089
+    },
+    {
+      "path": "licenses/geokdbush/LICENSE",
+      "sha256": "51db91bc5605bab6d7cf0de3e84becb4f129c3582d40ab6b62581a5c8b198129",
+      "bytes": 756
+    },
+    {
+      "path": "licenses/iconv-lite/LICENSE",
+      "sha256": "ac779f7314c74f232ef847ea86e714abe25cf6eeb5cc97b69451b74e2af6492d",
+      "bytes": 1064
+    },
+    {
+      "path": "licenses/idb-keyval/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "path": "licenses/idb-keyval/UPSTREAM-LICENSE",
+      "sha256": "20c27d6339619eeb3113cb865d4e98a3f559e52964fc75caea9cb5fa72674565",
+      "bytes": 555
+    },
+    {
+      "path": "licenses/ieee754/LICENSE",
+      "sha256": "18d45466ba3253deae04667e267a91ea8de8548f18c1125264d1c9db28194cc1",
+      "bytes": 1465
+    },
+    {
+      "path": "licenses/imago/LICENSE",
+      "sha256": "b6d61e6d2de8fc582aae34dce7ba6ab59c3127f367ac5ee802b141588a1ea60d",
+      "bytes": 1072
+    },
+    {
+      "path": "licenses/imago/SOURCE_NOTICES.txt",
+      "sha256": "42682451077800e5988b148bcc16e6de279c6cf6ae7809d5d1b91fcb85c9817c",
+      "bytes": 2350
+    },
+    {
+      "path": "licenses/kdbush/LICENSE",
+      "sha256": "597034cb7c11c916ad407344ea99a0b08e3c443a6b4421460f1d23c411c69707",
+      "bytes": 750
+    },
+    {
+      "path": "licenses/mapshaper/LICENSE",
+      "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85",
+      "bytes": 16726
+    },
+    {
+      "path": "licenses/mapshaper/SOURCE_AVAILABILITY.md",
+      "sha256": "579f8c7bb77244faf27daf753efc059a8b0cc953bb84989a0855994e34acc441",
+      "bytes": 1088
+    },
+    {
+      "path": "licenses/mapshaper/UPSTREAM-LICENSE",
+      "sha256": "13c471adb52fa94f41af499838778f020ccd59af07afb46f9f4ba43ff122a429",
+      "bytes": 227
+    },
+    {
+      "path": "licenses/mapshaper/sources/SOURCE_FILES.json",
+      "sha256": "9af95e6b824cc7d11ae1a534753827fa01deae45f72f36153dbcd5b6af509f8e",
+      "bytes": 103115
+    },
+    {
+      "path": "licenses/mapshaper/sources/mapshaper-0.7.101-source.zip",
+      "sha256": "f14d8fde00e66460c5b122c396e1b52be11aa2582463de7eceac040d7a06b512",
+      "bytes": 1199494
+    },
+    {
+      "path": "licenses/microsoft-helpers/LICENSE",
+      "sha256": "8145ff2f35883ffd1794579b777562aa13bf53f72352fc769ab5a27ef4b7d032",
+      "bytes": 830
+    },
+    {
+      "path": "licenses/mproj/LICENSE",
+      "sha256": "428e6b0ae5431c8d426b9e66e737b212da785bf6c035e08815bb2c39f555db76",
+      "bytes": 2040
+    },
+    {
+      "path": "licenses/msgpackr/LICENSE",
+      "sha256": "d00470775464c789c7ac04cfba3bf1b79ef149790eb72556d1c51d8f50c8e7f3",
+      "bytes": 1065
+    },
+    {
+      "path": "licenses/mustache/LICENSE",
+      "sha256": "e60b280838180a70cbb4b934f825c8119cdcf8912259ff4c6da20b284231c832",
+      "bytes": 1183
+    },
+    {
+      "path": "licenses/node-process/LICENSE",
+      "sha256": "59a400d04c5078579acc27ddd6452c1bdf763f9506e01364700935fbb1a7c91b",
+      "bytes": 1098
+    },
+    {
+      "path": "licenses/node-string-decoder/LICENSE",
+      "sha256": "6b78af629346aedd10f05152706d8252cd45a8c1ab432145efde8dab3147b47f",
+      "bytes": 1153
+    },
+    {
+      "path": "licenses/phpjs/LICENSE",
+      "sha256": "61cd914fad645fe7eb5ee66df80dedbe3365e335f28673a9d1d5e4ed02a22ff3",
+      "bytes": 1144
+    },
+    {
+      "path": "licenses/phpjs/SOURCE_NOTICES.txt",
+      "sha256": "26bd663e5555ac893c133f0600012cc7c3507d2d6e0166a87f23d3ada2d9138f",
+      "bytes": 412
+    },
+    {
+      "path": "licenses/placemarkio-tokml/LICENSE",
+      "sha256": "3749b3c116d102a9991a8a2d2e52205ae1cb5e42fbe018672b08c23d487abfd1",
+      "bytes": 1066
+    },
+    {
+      "path": "licenses/polylabel/LICENSE",
+      "sha256": "7354ced9ea9e47dc45c85d4979f59e7afffac98a5f823a31e8b06e3868bf735b",
+      "bytes": 930
+    },
+    {
+      "path": "licenses/repeaterjs-repeater/LICENSE",
+      "sha256": "123e3ba9ae3aa1e0c2b28eec6b5cfa8941ddf6147a2d6914f906d063e34b5119",
+      "bytes": 1049
+    },
+    {
+      "path": "licenses/robust-predicates/LICENSE",
+      "sha256": "88d9b4eb60579c191ec391ca04c16130572d7eedc4a86daa58bf28c6e14c9bcd",
+      "bytes": 1210
+    },
+    {
+      "path": "licenses/rollup-plugin-polyfill-node/LICENSE",
+      "sha256": "35ebfced43835b096ee196a5d63d1b220752e63c900d59aa79bd1dfb2564c483",
+      "bytes": 2322
+    },
+    {
+      "path": "licenses/rw/LICENSE",
+      "sha256": "e273680c43c2ab5bb3b50af28de6a08000b333396834db7bf6129cd6f130c9cd",
+      "bytes": 1429
+    },
+    {
+      "path": "licenses/safari-14-idb-fix/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "path": "licenses/safer-buffer/LICENSE",
+      "sha256": "4bc935e71be198c67ddf3c2b5fddb195f6edc182bfc155a96a6db61b44b494b9",
+      "bytes": 1094
+    },
+    {
+      "path": "licenses/slice-source/LICENSE",
+      "sha256": "e81ac14059c1bbe343b1df8bbdd44149221e3c608201245029b4b1e1614adc79",
+      "bytes": 1424
+    },
+    {
+      "path": "licenses/tinyqueue/LICENSE",
+      "sha256": "780453e05abdc22307ee01c706a2e73f508d3e484fc4c804485ebf6fe0964694",
+      "bytes": 750
+    },
+    {
+      "path": "licenses/tmcw-togeojson/LICENSE",
+      "sha256": "7cb180a3e5857ed9f27742bee2371b0a3055e3d302877ed91f62f390a12f5080",
+      "bytes": 1299
+    },
+    {
+      "path": "licenses/underscore/LICENSE",
+      "sha256": "92905fb54f5d168a27e6d5dc7c2197020add11842be4c70689d084bae3bfe37a",
+      "bytes": 1139
+    }
+  ],
+  "notes": "运行时保持 npm 原始字节。缺少独立 npm 许可文件的依赖已在 THIRD_PARTY_NOTICES.md 中用固定上游证据补全；未编造未声明的最初复制版本。"
+}

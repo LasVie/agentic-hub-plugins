@@ -1,0 +1,2758 @@
+{
+  "upstream_commit": "b44c0fa95effac3d91526c8b62dc0de0ab88b464",
+  "archive_sha256": "f14d8fde00e66460c5b122c396e1b52be11aa2582463de7eceac040d7a06b512",
+  "files": [
+    {
+      "path": "mapshaper-0.7.101-source/BUILD.zh-CN.md",
+      "sha256": "37f2f312df8d47ce8d2d37448b32d18630ea51bf20e3e842efe2179d5dbc2ec3",
+      "bytes": 1101,
+      "plugin_added": true
+    },
+    {
+      "path": "mapshaper-0.7.101-source/LICENSE",
+      "sha256": "13c471adb52fa94f41af499838778f020ccd59af07afb46f9f4ba43ff122a429",
+      "bytes": 227,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/MPL-2.0.txt",
+      "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85",
+      "bytes": 16726,
+      "plugin_added": true,
+      "source_role": "supplemental_original_license",
+      "source_name": "Mozilla",
+      "source_url": "https://www.mozilla.org/media/MPL/2.0/index.815ca599c9df.txt",
+      "authored_by_plugin": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/build-runtime.config.mjs",
+      "sha256": "57939784a88c4b7c1a57db10c10621227745ed6872fe7d971fd2cb2b3ddc0315",
+      "bytes": 358,
+      "plugin_added": true
+    },
+    {
+      "path": "mapshaper-0.7.101-source/package-lock.json",
+      "sha256": "1198ede6748e5418afcee8a375d4e2810a51818b45741081e6da0e9270834258",
+      "bytes": 163614,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/package.json",
+      "sha256": "6c9464e6b80b60da463080c627e9cb98ec710ab38dba3f9bcaea6164f98dd009",
+      "bytes": 3542,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/rollup.config.mjs",
+      "sha256": "225bfb1800511e0290a89f302cb29384d7f06047b55f136531bec24a849ee86c",
+      "bytes": 4139,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/buffer/mapshaper-buffer-builder.mjs",
+      "sha256": "160d7d8d83cd49472a447e8798ab2b2a5abcf7a1299d280d39e9edc9c91f8a69",
+      "bytes": 2863,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/buffer/mapshaper-buffer-common.mjs",
+      "sha256": "a07c0e6f41b489da9b556fdb17fe253768ce2b05f402f229a70c4a9ab66aa01c",
+      "bytes": 10714,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/buffer/mapshaper-buffer-loop-removal.mjs",
+      "sha256": "897d1440943ab170788ae18c868e2baba8792a9f25d563af309a3639e3a4d29c",
+      "bytes": 32076,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/buffer/mapshaper-buffer-seam-edge.mjs",
+      "sha256": "37da20c14b68aca5ae4d8c2457e020a3fda4e5c1b3388e6eacae3d4e96d8a8c3",
+      "bytes": 2559,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/buffer/mapshaper-buffer-v4-utils.mjs",
+      "sha256": "8b8474c5931afd2b2dc648e3f6d99ad2e0e3693c3a8788bd0dbfb0fcc4e5d8e8",
+      "bytes": 15561,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/buffer/mapshaper-buffer-voronoi.mjs",
+      "sha256": "0a227e550c22eaa296eecd4624473f32632e1a9c48c752ae053ae102fa40f720",
+      "bytes": 59140,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/buffer/mapshaper-path-buffer-v4.mjs",
+      "sha256": "d958b64b8afd8f371348cd8e3953faddca226d92e2c7e3e950678f5ba449b4a7",
+      "bytes": 63690,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/buffer/mapshaper-point-buffer.mjs",
+      "sha256": "d52dced2e10d068a3aa40e32b728ee3ba9a47baf7f6174fc205a7bbd0db362c9",
+      "bytes": 3982,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/buffer/mapshaper-polygon-buffer.mjs",
+      "sha256": "21ba8e127f26784e9b7103a00b2a07413b95ad13b542497e2ee727067d6f289a",
+      "bytes": 116031,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/buffer/mapshaper-polyline-buffer.mjs",
+      "sha256": "0bb90d52ad01d7d72f4bd2d756909097e5add8e96e25e8de57014bf74aef2e75",
+      "bytes": 43442,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/buffer/mapshaper-wedge-exposure.mjs",
+      "sha256": "2e130d765a95c3c5861d5e76cdf348b401cc0311056b12508a86b04728d62818",
+      "bytes": 4062,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/classification/mapshaper-blacki.mjs",
+      "sha256": "48655e21a9abd041b953a0e0582fca01e18c924ccae9b9fe1b4e8299694c4c2e",
+      "bytes": 2346,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/classification/mapshaper-categorical-classifier.mjs",
+      "sha256": "0c1d698539581b9905e2ad03df738bb7fde2629cc94c8f8ebd3064f18b59c02c",
+      "bytes": 757,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/classification/mapshaper-class-stats.mjs",
+      "sha256": "4a7b9c697885e8cca4c8adfa3896ad993b52618eb71ab1687f3f88fa0e11fcba",
+      "bytes": 4371,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/classification/mapshaper-classification.mjs",
+      "sha256": "b23f1d8db9a5d3b353dfe9ee517b8407382a5d5731765362acb0d5d651144a67",
+      "bytes": 779,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/classification/mapshaper-classify-methods.mjs",
+      "sha256": "f07caca12c7b8d851a527382972822f7c724a40d84140610fea935b7a80ada23",
+      "bytes": 1319,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/classification/mapshaper-classify-ramps.mjs",
+      "sha256": "e291e1ce878f877bd1066d1384798ecc85d5bdce016f1b96bba966b91cac6469",
+      "bytes": 7184,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/classification/mapshaper-diverging.mjs",
+      "sha256": "3b96db57d1c9d8e1ca34c31b6844de3e6b9d762cb41125dac277819e2ecb1bd1",
+      "bytes": 18491,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/classification/mapshaper-indexed-classifier.mjs",
+      "sha256": "9fe1d44cd8bc83ba75425a72ca1746cba6dd836a3f17bfa9e52d9a48364948bd",
+      "bytes": 1018,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/classification/mapshaper-interpolation.mjs",
+      "sha256": "33819eb57f0772898c518a5045539093929b58ee89dc97b3cd7b22853d65e0de",
+      "bytes": 4982,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/classification/mapshaper-nice-breaks.mjs",
+      "sha256": "217ebb150005d75c2cfd04c59d063f7aef67f662ec6dbf04c9036ae5a77eb01e",
+      "bytes": 4214,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/classification/mapshaper-sequential-classifier.mjs",
+      "sha256": "0d1cdc97df5fa5cad1e83ebb13a126705eec00264f1cb11a16c9439466d2b0d5",
+      "bytes": 9315,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/cli/mapshaper-cli-utils.mjs",
+      "sha256": "77f26b2c532537d65162b6532187fff5e9ee18a84729181596d42658ab8ef597",
+      "bytes": 5646,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/cli/mapshaper-command-info.mjs",
+      "sha256": "ec230e315704f02b5345ed99b4a95ff68b49650d24605bbe7282942d5226ed5b",
+      "bytes": 992,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/cli/mapshaper-command-parser.mjs",
+      "sha256": "4f857546ba8ab99bff7280305260919a7850583a38ac4fdfe00708fd83453a65",
+      "bytes": 16139,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/cli/mapshaper-command-utils.mjs",
+      "sha256": "2630a36bb192ba3d44d5f971b5404ab18e29c4672349f0268b1eb24568076203",
+      "bytes": 4579,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/cli/mapshaper-examples.mjs",
+      "sha256": "5f444249f47f132ef95a557159c99747c2772b9995de0b4ee1c14a1757e55304",
+      "bytes": 11426,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/cli/mapshaper-option-parsing-utils.mjs",
+      "sha256": "579835e9de7581a39d07bfde41c00052b899b2b2cd1ba0bb90fa8cecd7a3b30f",
+      "bytes": 4948,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/cli/mapshaper-option-validation.mjs",
+      "sha256": "6f91c41d274ab558ae476c145838d188c74140c0272ea9d0b0f69e3f0337aed0",
+      "bytes": 5516,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/cli/mapshaper-options.mjs",
+      "sha256": "5651dacbdfe891f84ea6a7f52f6f259fa4b376ba1c534de4eacbbdf28a33054f",
+      "bytes": 104134,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/cli/mapshaper-parse-commands.mjs",
+      "sha256": "4c60c11f0b9a5e986984bcf7fe11e892b937ff8fb5fa79a332597e85c1ecaebf",
+      "bytes": 6376,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/cli/mapshaper-run-command-file.mjs",
+      "sha256": "4c3e5e3c7b5eb51b6b8d0419ae164c39be4d0585bda2fe707fffe0cc6ae2fe0f",
+      "bytes": 3481,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/cli/mapshaper-run-command.mjs",
+      "sha256": "3aa5392666e1de2d500e79d52aa3e770f7d3fa87da928a975e51b58fa0000675",
+      "bytes": 34030,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/cli/mapshaper-run-commands.mjs",
+      "sha256": "8483edff7cf5b74699a16d654aea3068f20e225c1e502dc277daff8e3a906d1e",
+      "bytes": 13168,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/cli/mapshaper-vars-utils.mjs",
+      "sha256": "5c85e6d5dd5e87554c8e4e34eb759097609e3cb4dc10c26630adff822523c059",
+      "bytes": 6328,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/clipping/mapshaper-bbox-clipping.mjs",
+      "sha256": "1a188f5aad74a23665da030d385975b97442ab71637b3a0b63405097cae2f26e",
+      "bytes": 7426,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/clipping/mapshaper-bbox2-clipping.mjs",
+      "sha256": "8a5f32b96a31b90d37f7e276889478836f2fb54f07c71f530d01680ae1c8aa39",
+      "bytes": 4380,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/clipping/mapshaper-clip-erase-lines.mjs",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/clipping/mapshaper-clip-utils.mjs",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/clipping/mapshaper-overlay-utils.mjs",
+      "sha256": "8a25a852843948077c382178f3c96f5134a9a474eb664e173273a8aadfdeb9f1",
+      "bytes": 3522,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/clipping/mapshaper-point-clipping.mjs",
+      "sha256": "590e478a96a9027d046b49c58bdba02b83f9b6cd5232949ef58cc7259cc7bc5f",
+      "bytes": 607,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/clipping/mapshaper-polygon-clipping.mjs",
+      "sha256": "5c9413444aa0861d45797dba1a1c8e3f65859796454b3ee0018a948c01649376",
+      "bytes": 7971,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/clipping/mapshaper-polyline-clipping.mjs",
+      "sha256": "b8058fda2e0bab21205eb329c60fa7bdda5c866d9c5660949a3f41c202ee1d29",
+      "bytes": 927,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/color/blending.mjs",
+      "sha256": "ad8723de5e383ebe637a8bfdd3e51e18af159a72be4936302801f88999c8fe9f",
+      "bytes": 1070,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/color/color-names.mjs",
+      "sha256": "f71af2f8a9c635bfba43d0e8671ad1f174149a10730273caef0f6ad39ca44d4b",
+      "bytes": 3694,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/color/color-ramps.mjs",
+      "sha256": "30e69cfe9b122500210fa87d292cc774fec4486edc92adeb4dfc2989b52a00b0",
+      "bytes": 4394,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/color/color-schemes.mjs",
+      "sha256": "ca9552e45c8306af313cc865a337fb14ea199cf7c05cd6e2c88a8b5c876ac6a1",
+      "bytes": 11692,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/color/color-utils.mjs",
+      "sha256": "ae78c43af21640bc8a8baa7e3658ff31cd3cd12f62517ddcbe3bc3f88d40ecf5",
+      "bytes": 3551,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/color/crameri-schemes.mjs",
+      "sha256": "c593c7270d0c69d69f30beccecb121f3d76424504b669c8cc93389e72b989b97",
+      "bytes": 5424,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/color/graph-color.mjs",
+      "sha256": "879d0c22dda236703aeb0be03fe5e81960cf34f8cfda3e0aac9915ae8ad33bd5",
+      "bytes": 4399,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/color/nyt-schemes.mjs",
+      "sha256": "e9955900af62d8d610937306344753f70b2617a80807634c7516e6cc24050900",
+      "bytes": 1749,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/color/oklab.mjs",
+      "sha256": "daf1fd379b7e9b856c7d2af7cd3ffbb88e2476f47457ad88288d761453e42c95",
+      "bytes": 13285,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-add-label.mjs",
+      "sha256": "fe9b0e732b422f464f7eef56de7327b9b320187c6b302d9736c12adf5dde28f8",
+      "bytes": 5624,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-add-layer.mjs",
+      "sha256": "c3b92c0237a4314e1a19100e3ba02201015096ae0fc87608f697161496e72dde",
+      "bytes": 1840,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-add-shape.mjs",
+      "sha256": "61a1b9a4db82dd556b8c24ee64fe44de7e9f8f26aed3693db99c013fa24d9eb9",
+      "bytes": 12655,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-affine.mjs",
+      "sha256": "4d3671a6fe519bdbb303145da399096e0752aa2bebc2a34483e161d0c6c215ec",
+      "bytes": 6627,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-alpha-shapes.mjs",
+      "sha256": "3727ecc729b3eb0f8784aab38723588ef426c8a50c41d31367043bdb7395aeee",
+      "bytes": 3380,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-blur.mjs",
+      "sha256": "78d69b01464282717fabda3097d4654fc7dddf2053b768dcf15d0f951ea6cdde",
+      "bytes": 1361,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-buffer.mjs",
+      "sha256": "892cda8dff41f8be5a2a6e5965527356aeee0ba9485f6ee3e07bf4f8736757f1",
+      "bytes": 7283,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-calc.mjs",
+      "sha256": "81e618044919c9afc8916ec7a1eaa026f1864d70b3fdf42f3f1e3e6036141819",
+      "bytes": 7478,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-check-geometry.mjs",
+      "sha256": "ce91adb233bb3d4e66d09910bfa7b77e7afe3304696911ede615d74d4af79108",
+      "bytes": 826,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-classify.mjs",
+      "sha256": "190ace7724d1fff17039400fc57b4f612f56e17ba506e7e25127cc7108acc2ea",
+      "bytes": 10972,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-clean.mjs",
+      "sha256": "bb79e2fc18ace53d680f4514bb30c84df17debe65b58ab541622e689671d8217",
+      "bytes": 8144,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-clip-erase.mjs",
+      "sha256": "8fb67d5968434cd24e09516c76511f08fb19998e6155bbe75a79031c020a1053",
+      "bytes": 14252,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-cluster.mjs",
+      "sha256": "f3daf0a149ec95a0ab9941e55e6fe8396a38517b75fa18b57b4807ab5afcad3d",
+      "bytes": 6405,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-colorizer.mjs",
+      "sha256": "1d3ac33394274538e065a67ab612c903953eef1b8fe9d2b96558875a044d0e24",
+      "bytes": 3056,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-comment.mjs",
+      "sha256": "16f70cd3d5855b92f53d1b20f512e9a5b76ce7b7d173a12fa9543628ced7fd71",
+      "bytes": 274,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-contours.mjs",
+      "sha256": "a9a1321fc6744ba29794f9244f96af6bd2d2b2f398a20684e07924d7db930646",
+      "bytes": 5882,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-dashlines.mjs",
+      "sha256": "e4ed27d6983dab69ae286774a6355f175c13cf7cc632131e712442ee3a6fb877",
+      "bytes": 4770,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-data-fill.mjs",
+      "sha256": "865e180fe5a6b302a8b89d18960a09851ec4b16f88f3c56319eb98a13f6df198",
+      "bytes": 8799,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-define.mjs",
+      "sha256": "2dcecaad598fbff82f28b8cab9b032d55b8fd35e2170332c2d118a139ab9f90b",
+      "bytes": 817,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-densify-command.mjs",
+      "sha256": "74119b0c3102ec133e66828a9920e960dfcbfb0fd3b8170fd299c8b24a6d0233",
+      "bytes": 8053,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-dissolve.mjs",
+      "sha256": "dc2f40035b2c74c3d753641a73483e33afa6f5d4ee4073bcec09fd56efed5cff",
+      "bytes": 8560,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-dissolve2.mjs",
+      "sha256": "ca9dc81c051009bfdaf663b4d5e8e97e1335d27d3fecb4a29596fe6e20b72226",
+      "bytes": 809,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-divide.mjs",
+      "sha256": "2300c8f2c245d139358312de1192bf5d5ae5f78e501c82bafd948e44964b2a13",
+      "bytes": 4031,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-dots.mjs",
+      "sha256": "074aada3565ae2029c1b16d0e868bae6b0ab50877e3b17ca70d8cd85a8d7109b",
+      "bytes": 4287,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-drop.mjs",
+      "sha256": "07709a4795086122afe44c09ecafe7683d3cae2e89c32abd3bf0ba7c16172cb3",
+      "bytes": 1721,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-each.mjs",
+      "sha256": "f35c36909e2c73e9cd28125ae02acea34d90f1a1874f1738aaed2245cbc1ac5f",
+      "bytes": 1735,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-explode.mjs",
+      "sha256": "de10f3b4e5bc655785eb0b7aab1eebba37822f765c93792203e98d02c54e30d4",
+      "bytes": 2497,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-external.mjs",
+      "sha256": "22bba9b06c0d20a7a42243b4ede73389002975508d6e74b80b0254e36fd9956b",
+      "bytes": 3255,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-filter-detail.mjs",
+      "sha256": "ce55631d8a38c734286c32559d51c7e10d29cac626064c4a8e24bfbaa05ca7df",
+      "bytes": 2803,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-filter-geom.mjs",
+      "sha256": "c8cd336b44a699f8af10f672bae7decc3bc50ebd39cd5e257a2adf032e9deb84",
+      "bytes": 3881,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-filter-islands.mjs",
+      "sha256": "9fd3ea56fe9ef1c7a8bcc3b08555b63e06aaecf37a41297f3926ac24c38d7eaa",
+      "bytes": 3071,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-filter-islands2.mjs",
+      "sha256": "3956ebabdc522cf05c45235e3fd108e6f03060f4bd8f13cf3495d5777faa3531",
+      "bytes": 3816,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-filter-points.mjs",
+      "sha256": "85491cad17ce48ec77a3d5311ceb49de80bca18ccc36d28ed1e09dfaf99942d6",
+      "bytes": 1614,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-filter-rename-fields.mjs",
+      "sha256": "08a4678165c197ead7fb935acd7c211d464055389e1faf0f6a54e9294bd246a3",
+      "bytes": 2541,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-filter-slivers.mjs",
+      "sha256": "2eed357b084152afa951707d0b55b68dbece14f17a08939751ed9d48f5ba00ab",
+      "bytes": 3341,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-filter.mjs",
+      "sha256": "c4bb6211a777da4190a2dad3abebc02600a0015f102ddd326fee1c48b3b34323",
+      "bytes": 3882,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-frame.mjs",
+      "sha256": "5574ff74b2caa19e501b9fda61a1fa45a8bb42fa08cbc97c8ee6e98de4259064",
+      "bytes": 24279,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-fuzzy-join.mjs",
+      "sha256": "5dc578b530130b7e56c7bf6bbb5f554d8e9ada633f390e00f2660a4e6b2290a7",
+      "bytes": 6308,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-graticule.mjs",
+      "sha256": "cea935b34fa24c301fcd2787c00c3ca5deca871593862b0dfd81d86f4a1005e5",
+      "bytes": 8842,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-help.mjs",
+      "sha256": "b61216a683539bee23b7b2ae23239cacd589b39d57956a4b8722a2bab7e6a33a",
+      "bytes": 479,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-if-elif-else-endif.mjs",
+      "sha256": "2b67a1238f3271d805176483249a91e82312be937166ab8bcfb990aaf46e489e",
+      "bytes": 1560,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-ignore.mjs",
+      "sha256": "5988593ac5d4b9ef7c4353ff55e5382645395065bea7d41e9af986ada03d16a3",
+      "bytes": 319,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-include.mjs",
+      "sha256": "b4ae087d52b7559c8693a81a0f320eb6174dd1e5b0c40f7e30686c722fdf0f23",
+      "bytes": 1504,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-info.mjs",
+      "sha256": "af5d28d3d813972b4c44f7b8bf308a6658679bf3849d62f790661019b7a4aa3b",
+      "bytes": 9143,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-inlay.mjs",
+      "sha256": "7421c54f7f887f3588668b2e23da005bc6d6cf70b11ea5f30375211e3db26eb2",
+      "bytes": 1308,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-innerlines.mjs",
+      "sha256": "01cb504b14889e85c1339700b60df73c944e539299cddf39f7cf3aeb7f613844",
+      "bytes": 806,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-inspect.mjs",
+      "sha256": "0174efe0f85db88dcede2d2666f0e49e7e24e808630d326e55f462e0dc8bfb53",
+      "bytes": 2636,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-join.mjs",
+      "sha256": "6a0b9d433b74beed0beeb4507597ac71611635dd2354b4330a15e01d3355bfa1",
+      "bytes": 5395,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-label-geom.mjs",
+      "sha256": "ca55c9af20640668dea0bee299d937113ec02a00290f357fc618c34a0510aaa1",
+      "bytes": 2479,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-labels.mjs",
+      "sha256": "3d33e270b5f2e8314c9dc56b4c17790961d2324bcf8553cf62eb0abec5c86cd5",
+      "bytes": 1543,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-lines.mjs",
+      "sha256": "720f51c41ee39231c759f264561ec557fea705fc9369145f64a367c6957697b0",
+      "bytes": 8958,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-merge-layers.mjs",
+      "sha256": "a945a52141e1fd9e7a4743c2a503ddc67aace9be1bc57c6366b7d38e4530ab21",
+      "bytes": 5356,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-mosaic.mjs",
+      "sha256": "9ed0bfdc4139363bd59d99b2c49d487eb2b50e49c16a86ca1d6f998d8dd42a65",
+      "bytes": 1370,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-point-grid.mjs",
+      "sha256": "3130fdd712cde640cf4fbbe4da717cc70e99519e6f1ed7b9bc6905cf7c8b4164",
+      "bytes": 2334,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-point-to-grid.mjs",
+      "sha256": "b828bcd27edbf909f383bbe0d800b4a226e1ac30ee1a98b82b44544e2a91973c",
+      "bytes": 4414,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-points.mjs",
+      "sha256": "334f2d62b529e78b0a44761267c7e933f85122b2e348bb54f2dbd1fe5bf2d886",
+      "bytes": 11470,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-polygon-grid.mjs",
+      "sha256": "41ab65c7b8962f90bebdd4a015682d29d8ec9bdfcfa34b5788f466f7974afade",
+      "bytes": 19844,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-polygons.mjs",
+      "sha256": "9a78b5828fe04c21aa2b9449762905a34db9c95985958743373015768ca23fe5",
+      "bytes": 2575,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-print.mjs",
+      "sha256": "c97acf6beb95b7c97f14ce9ed45aa3b15b92036215865ee44e07a9d80d575ad9",
+      "bytes": 146,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-proj.mjs",
+      "sha256": "556637c55248da89e3818b76dece911fe34ef2ae1c1d3db6c5b6d4fc8a3cd188",
+      "bytes": 28407,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-rectangle.mjs",
+      "sha256": "f10d913eb00e536521a31144217dbe98b16fbb6541afc48583a5a1c12d7567aa",
+      "bytes": 6760,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-rename-layers.mjs",
+      "sha256": "825cebd96b65ddcce87c549a466095bdbcc3fe56bbbf9d9887c9add3a801924e",
+      "bytes": 1663,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-repel.mjs",
+      "sha256": "5e1a05a3effc73b0eb29f755948287d1c8dfb864205392b256fa08915b2e1241",
+      "bytes": 14558,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-require.mjs",
+      "sha256": "27f1b9305bf00e68ca105b2164783205e1d608b8fec2723a8a529d72ca1ba2e0",
+      "bytes": 1692,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-rotate.mjs",
+      "sha256": "3a6db57ef0c4c8efe9f3eb5759400b47b390e429b7a9df25a4f0d77be576a4bf",
+      "bytes": 3679,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-run.mjs",
+      "sha256": "69cfe6082d8f1e280140df1f3a42f494ba3772121f68ed6d11f47f0441824fc5",
+      "bytes": 3189,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-scalebar.mjs",
+      "sha256": "bfc7f766b95ad92d5dbc989f4ce5d8a004b9cd9451dfffaaf90529ff86180c1e",
+      "bytes": 31545,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-shape.mjs",
+      "sha256": "0054326dea935f489b280dbb35a6cceeab484c207360c047e7a34fa61742ee21",
+      "bytes": 3073,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-simplify.mjs",
+      "sha256": "36fc490ac99db961817dbbf43c9ea188d415ff8f3a5ef927395ac8e07e5e2ab5",
+      "bytes": 8706,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-smooth.mjs",
+      "sha256": "14e2415ae41b46f95b74d2b07233cc84f9bc5c87ada9b8b90c9213bbe1466cf7",
+      "bytes": 7290,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-snap.mjs",
+      "sha256": "7697821aa50d4201f1480ae979e0f59675d75906c7b994612bb9978c032f839d",
+      "bytes": 2084,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-sort.mjs",
+      "sha256": "e9bbba85be57f0cba9e39c59cae7985d991613fe7ca2187b11dcfda1f05e1ea2",
+      "bytes": 1278,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-split-on-grid.mjs",
+      "sha256": "c955664dda82427c406aa527428fadf9a751f348e818a216949736a3cab8fd38",
+      "bytes": 2530,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-split.mjs",
+      "sha256": "5a1db67fd9c1023edbf84c68dcf06e0564d00454fcc68e52dcd7336300188667",
+      "bytes": 3425,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-stitch.mjs",
+      "sha256": "110a5841ef34eabe09570f6f46a0a10f426d7fcf9e374bb8656824f821d7de80",
+      "bytes": 2314,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-stop.mjs",
+      "sha256": "784f620c7c19cba4e097b1dd6c41aa4450c05f58e76a74863d607cc236520f61",
+      "bytes": 137,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-subdivide.mjs",
+      "sha256": "49e184c2157ae17c5d4774310c9a2261915eac08f0b1df8cf9c266e2a0c4d671",
+      "bytes": 3023,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-svg-style.mjs",
+      "sha256": "5c2e9031965bf04045968d601d90adc577c2b27d23be076c2469c9dcd843fd2e",
+      "bytes": 9558,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-symbols.mjs",
+      "sha256": "0268f6b4c5bc8ebb2633dd6efc75b69cc9c4fcb35b85a798a2627cde934903a1",
+      "bytes": 18523,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-target.mjs",
+      "sha256": "d723b4aacc3c42469484349e6293da961bddfad6ba366f3136433abdda991ca6",
+      "bytes": 1570,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-union.mjs",
+      "sha256": "443cca7142cb7e82fcf9b398510de9438b8b504dfe3fa024beffbb55fe5d9a1e",
+      "bytes": 2897,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-uniq.mjs",
+      "sha256": "1dcbc2003eb6a2162bd724ae793ec492b3e2d66957c8fc11b1c1b132629fd7de",
+      "bytes": 1781,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-update-frame.mjs",
+      "sha256": "3f697e4b3ce41e4b45c506fbbf5f22ad4a8a289a6daefae53d75701f9ca70d74",
+      "bytes": 8545,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-update-label.mjs",
+      "sha256": "14ed753eb951cab707fff27760a9b93b25d2e0bb5fd3b9143a2e5636b2c47557",
+      "bytes": 4657,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-update-line.mjs",
+      "sha256": "97b19b232f43932d78c560feb6fee856b45b4af22d8f481fd1a4e62ac7fe3fab",
+      "bytes": 2654,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-update-point.mjs",
+      "sha256": "066b9c436ea5961ba7f72cfd6409c26b04460ca2848b2b77c6a32c4f3161ce62",
+      "bytes": 725,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-update-symbol.mjs",
+      "sha256": "36963a58a01d36aeeb5760fe6f3ced1cec74abc79ead94348f51d24ee1fa52c1",
+      "bytes": 1253,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/commands/mapshaper-vars.mjs",
+      "sha256": "91d0e1e18268ec922f393784d8013d550718cac54a01ab7148bcfcd6d497ba56",
+      "bytes": 1709,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/crs/mapshaper-butterfly-projections.mjs",
+      "sha256": "321267efe9164c34ab1fcd707325539f0a8c255e5e36b2bf56dbe1a85a007b39",
+      "bytes": 12027,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/crs/mapshaper-cahill-keyes.mjs",
+      "sha256": "c6f62db8a9c8f3fb8199a807c9c2685cada8bf92cab7982b292e32b3fd769747",
+      "bytes": 10867,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/crs/mapshaper-custom-projections.mjs",
+      "sha256": "f3ba7f3c9f3310cc976cb6238e469f51d46f6ad234687fadc449389d7954c837",
+      "bytes": 3203,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/crs/mapshaper-densify.mjs",
+      "sha256": "ebec0b6feffd174fb2e5302199b7720696d76230d65fe562a4b810861c4986d4",
+      "bytes": 6629,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/crs/mapshaper-dymaxion.mjs",
+      "sha256": "52ba1fb207ada6cb00292f4b80f9ab5d4bedf01328cc43a0f448569454859501",
+      "bytes": 6033,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/crs/mapshaper-hemispheres.mjs",
+      "sha256": "0dbe57c7890dd53e3124b77faacd4cfa520dea0b512168895d9b2a11460b7da7",
+      "bytes": 20672,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/crs/mapshaper-lee-tetrahedral.mjs",
+      "sha256": "46e150389fed6b1fff41c546f6217efd226ca55b545f02cc5dbf499c238bcaed",
+      "bytes": 26193,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/crs/mapshaper-mixed-projection.mjs",
+      "sha256": "065b9816b1f924c4a39e93a3011d0188999535df1dc685d39974a8ece8365696",
+      "bytes": 4004,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/crs/mapshaper-narukawa2022.mjs",
+      "sha256": "d3db99334ea1b31e974c6e0577b6d5b3c53761f7725109b647c2f6bf2f48213f",
+      "bytes": 25090,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/crs/mapshaper-polyhedral-projection.mjs",
+      "sha256": "cd802d56f92b72bc96b171c4b335bddfe215e08725d4f5fac90785388feefa33",
+      "bytes": 19150,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/crs/mapshaper-proj-extents.mjs",
+      "sha256": "483c40b97bcb8b56c95b6234da1d9792704300f7e9f4fc6ea178b0750158b56f",
+      "bytes": 10433,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/crs/mapshaper-proj-info.mjs",
+      "sha256": "540cf2b3c103f3c455a92958acc8f8d8480d276cb8bf3e05f54889723fe1bf95",
+      "bytes": 2062,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/crs/mapshaper-proj-utils.mjs",
+      "sha256": "e72fdcd540e320d5e6d69f11cd6bd584906847aff74e088a9b919436d1c5957a",
+      "bytes": 488,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/crs/mapshaper-projection-frame-cuts.mjs",
+      "sha256": "cbe5a6e5ca153e913d6d123a5a14280924c0102806b5f70f859dde1d42db619b",
+      "bytes": 4968,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/crs/mapshaper-projection-geom.mjs",
+      "sha256": "868199e997e5d559545d6aa8a70ab4cbef575988a1bc54055d2d4d71b6e98d2a",
+      "bytes": 3436,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/crs/mapshaper-projection-params.mjs",
+      "sha256": "d634901d9beb18f17b10c1ebd70df27d073e928192081dcc7c9c60ada3dd31b6",
+      "bytes": 5784,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/crs/mapshaper-projection-topology.mjs",
+      "sha256": "eb048fc29a70b535e138399bfa9a45ccb900ba12808198bd5dbad744ca3580b5",
+      "bytes": 5514,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/crs/mapshaper-projections.mjs",
+      "sha256": "103281624b1f78b50c96b7ec8df66bb9ee50951a77b9df88a274dd85f78d13af",
+      "bytes": 19850,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/crs/mapshaper-radial-facet.mjs",
+      "sha256": "5ef4a9602aa1a421696c4f08ccd1ca8546a7754bed220ed7c08eb4d2aee6a03b",
+      "bytes": 4094,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/crs/mapshaper-slice-and-dice.mjs",
+      "sha256": "87edbea1a88200954ca62848c35eb464f542ffa657071b04958c75e404d6675a",
+      "bytes": 6218,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/crs/mapshaper-spherical-clipping.mjs",
+      "sha256": "7b3375e072217df34639065f5c7e33c2825c702d88210fe48edddf76eae258cb",
+      "bytes": 10544,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/crs/mapshaper-spherical-rotation.mjs",
+      "sha256": "50024bb759810ad1df5104d90cfa0585b84a4ad8b92fa3364f74b70d061cac6e",
+      "bytes": 2545,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/curves/mapshaper-curve-fit.mjs",
+      "sha256": "d459463785f3e5e83c10b1734aec8d6a553b6fa77f291f8efd14cc17c7e66328",
+      "bytes": 27571,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/curves/mapshaper-pencil-gaussian.mjs",
+      "sha256": "b23283922bf9fecb7f1eb3d4224fb5f2ed31d8d595847e6c650f0df26fc66273",
+      "bytes": 9520,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/dataset/mapshaper-catalog.mjs",
+      "sha256": "043a2a29fcaa4623ba085f43a10b78750b69d7612affac4b2d9f016b735191f9",
+      "bytes": 11163,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/dataset/mapshaper-command-utils.mjs",
+      "sha256": "f16051346a857f4ed645f20b4324b1939028257bd03d34e0be40dd23ab9342cb",
+      "bytes": 1325,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/dataset/mapshaper-dataset-editor.mjs",
+      "sha256": "1590f3efc9a8dd7b159120a365898be8c923b52d3eb2e82c33c0f9065c2ca3f1",
+      "bytes": 2194,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/dataset/mapshaper-dataset-ids.mjs",
+      "sha256": "ca8b08e23efecb4fbb701b6420dcf1a301fcf6b528a7567121fbc48fa2833dc9",
+      "bytes": 2044,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/dataset/mapshaper-dataset-utils.mjs",
+      "sha256": "3af1be8a20c481be2ce2e1da215b6da129db82ee001c15d62f29582e76867025",
+      "bytes": 9837,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/dataset/mapshaper-frame-membership.mjs",
+      "sha256": "2b3ee54525c97a44f03d2675bfcb38c0f8797a472bd0301e57b5dbbf6b6c01a5",
+      "bytes": 1316,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/dataset/mapshaper-layer-stacking.mjs",
+      "sha256": "12ed2ae7a11727b4e5a40553d5e93278c5e81741f3cf7c35f0fb568478d66333",
+      "bytes": 3558,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/dataset/mapshaper-layer-type-utils.mjs",
+      "sha256": "33a4c7610b23005925a1d8eeaf41e68a08078d5fdc271433e347bfbffd667092",
+      "bytes": 1001,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/dataset/mapshaper-layer-utils.mjs",
+      "sha256": "f012eccd3976194453dd8e11ef96e191cf5e9b6c32495ee107072b5ff6b08147",
+      "bytes": 13612,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/dataset/mapshaper-merging.mjs",
+      "sha256": "d7932851c68740a094d47ecfa63aa15b86f08ccab4e3d387cefc7c141666b9f0",
+      "bytes": 8155,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/dataset/mapshaper-metadata.mjs",
+      "sha256": "d741866e043029e55f20f2ccfeb5fb89e3073a7bcd959c2dcfcfe18e0cb3fce2",
+      "bytes": 414,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/dataset/mapshaper-source-utils.mjs",
+      "sha256": "427d914099fe763468af1dc21f1b35ee883f107d5b8544b50e1b18e76cb310da",
+      "bytes": 1835,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/dataset/mapshaper-target-utils.mjs",
+      "sha256": "00f2e9c15d9b3d72458106fbfcac0b90fa80dd75e4b26775da1a56ba9a909a2b",
+      "bytes": 4794,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/datatable/mapshaper-data-table.mjs",
+      "sha256": "8b4ee236894b95747cc95e53a35c6b2ae5c7c6d398894b8796e0862c91cd8e1f",
+      "bytes": 4178,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/datatable/mapshaper-data-utils.mjs",
+      "sha256": "13c19c54fbae6a42e04be0ecfad345b9e88bdd14d0d36ae0b2db28d590e24630",
+      "bytes": 6176,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/datatable/mapshaper-json-table.mjs",
+      "sha256": "65167772099a26756bd7373e3aabfe0580752d83720bf5819e901b847f0f814d",
+      "bytes": 952,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/datatable/mapshaper-match-field-types.mjs",
+      "sha256": "767e424d5d2bb1372f60907a3c37da0a3693fecfe15e348f62ad83b533d9fc59",
+      "bytes": 2200,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/dissolve/mapshaper-data-aggregation.mjs",
+      "sha256": "197f549240e12128cfd030ffbf72e484d999e6ff00ca92e1e1b3306888f84412",
+      "bytes": 3309,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/dissolve/mapshaper-dissolve-compose.mjs",
+      "sha256": "35d2d476cd88f6f77ad132c0eadc3fd35d667fa140842e75ce16c79c0f16fc37",
+      "bytes": 1555,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/dissolve/mapshaper-point-dissolve.mjs",
+      "sha256": "dacd8c0afd5ff37568cb57a4cabe8fb813f05ef80d7190853524de0b09d18548",
+      "bytes": 2040,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/dissolve/mapshaper-polygon-dissolve.mjs",
+      "sha256": "13d9125063caa4cf41a341c6fca1306fcfb971c4db8c044238ba098922f0ddfe",
+      "bytes": 6449,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/dissolve/mapshaper-polygon-dissolve2.mjs",
+      "sha256": "ac6a81e1103040a0d5ea9474c778d8ad742e71b8ad9cc5fe126557090d3842fe",
+      "bytes": 5581,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/dissolve/mapshaper-polygon-dissolver.mjs",
+      "sha256": "bf026f38afdf0b93a202057843b804d5b2c1d73932120324c98ce3fe36dca65d",
+      "bytes": 1570,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/dissolve/mapshaper-polyline-dissolve.mjs",
+      "sha256": "12ecd2a51171ddeb67b35e5bc332c9559067958effb580786a678957843327fb",
+      "bytes": 2585,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/expressions/mapshaper-each-geojson.mjs",
+      "sha256": "22210dc6afb2bf3aff60bdbaf1d6b9b67fa13cf49db5d6e6868030d18c29b3c5",
+      "bytes": 2087,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/expressions/mapshaper-expression-globals.mjs",
+      "sha256": "279dda1cc183f695698c20722dbf675a1dbbb45027dfc27580954ad042669042",
+      "bytes": 4058,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/expressions/mapshaper-expression-utils.mjs",
+      "sha256": "301ace18abbc6c7f408831f14e1f92bbfd32e80cf0f20a24089fd569d3a4a81f",
+      "bytes": 2749,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/expressions/mapshaper-expressions.mjs",
+      "sha256": "56bdf9e73ed895da95f36eebfe639c1dcd320ceaeb686aa2e02dee1bad10d13c",
+      "bytes": 3541,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/expressions/mapshaper-feature-expressions.mjs",
+      "sha256": "0d571c48477fa4f81e55d237a7bea77e64f609710225015ebe949b7e7d4e3906",
+      "bytes": 6049,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/expressions/mapshaper-feature-proxy.mjs",
+      "sha256": "13b88329622918fc84aa8dfda15fe16f67c49a1c3195064d4a4c0dc354c368d8",
+      "bytes": 7562,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/expressions/mapshaper-io-proxy.mjs",
+      "sha256": "2475670bd5d891e2407ee509aef0f05c56746c1f337c69ae8e12dad233d32821",
+      "bytes": 449,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/expressions/mapshaper-layer-expressions.mjs",
+      "sha256": "3b44e0cc2e43f669f4a68969fa2badf5e3c4890f021d3836a8f6a04243a88115",
+      "bytes": 1800,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/expressions/mapshaper-layer-proxy.mjs",
+      "sha256": "6932f5e62474d48807d21e98952fb9faeab6eb2f72d17a2f5b342d0b8bd2b26c",
+      "bytes": 2599,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/expressions/mapshaper-target-proxy.mjs",
+      "sha256": "4b62e3e0472404d8bf9648a8ce3860c3b323266f5bcfae65113a29a481e72750",
+      "bytes": 1605,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/expressions/mapshaper-template-expressions.mjs",
+      "sha256": "d0a91b3ce4b66f867eaf74706bb5de608de2bf3036aca7dca3d4e902fb4e03be",
+      "bytes": 3877,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/flatgeobuf/mapshaper-flatgeobuf-export.mjs",
+      "sha256": "7b947dd44f0a62ac0e55d53111a00ce8e070719b09601b56a99a240d01739723",
+      "bytes": 7404,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/flatgeobuf/mapshaper-flatgeobuf-lib.mjs",
+      "sha256": "a0a7c86a5ff6ebec81c2fd31efd1d4f996dbadec6cd26ded1b1d21a774f2186a",
+      "bytes": 13017,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/flatgeobuf/mapshaper-flatgeobuf.mjs",
+      "sha256": "91eeee6aa87ce889b5cb1516f842b1075335c8e41f3749532c91d96364c9493c",
+      "bytes": 2122,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/fonts/mapshaper-font-lookup.mjs",
+      "sha256": "215c8a7037d249b49f7729268b058d41c171647d5d6141d78a036bfbfef5cfba",
+      "bytes": 19857,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/fonts/mapshaper-resvg-fonts.mjs",
+      "sha256": "8de83ffe7287d0f402a1da8d3c70daee8304a61b283f1398e2b576c1f9fe5e80",
+      "bytes": 12327,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/fonts/mapshaper-text-measure.mjs",
+      "sha256": "3a0ad09b7781644d637d09e050662a8fd9ded3f59bfff1d2917e52efa4cf743b",
+      "bytes": 9137,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/furniture/mapshaper-frame-export.mjs",
+      "sha256": "788474d22f4d88120aa8366c541660d1e30d479df61938f617c40c4da3d1c4bb",
+      "bytes": 4068,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/furniture/mapshaper-frame-fit.mjs",
+      "sha256": "6b71624e1cc8153c7259dd8b3553d7d0f2ee147f832e3a052a273e27617aea0c",
+      "bytes": 7789,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/furniture/mapshaper-frame-members.mjs",
+      "sha256": "5c63b6f0fa25205adaae00ed549103577ae92595c2ba79f61d0ccdbd31d66d58",
+      "bytes": 14022,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/furniture/mapshaper-frame-projection.mjs",
+      "sha256": "4960a7ad1a36f2ff69095f80826ae46cd0e015d0ab962f3af69f27985f7ef804",
+      "bytes": 7763,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/furniture/mapshaper-frame-resolver.mjs",
+      "sha256": "aece50ad05ed65b61950aaad5b5aeecfb8eff0047ddbb614af472990a5592381",
+      "bytes": 5215,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/furniture/mapshaper-frame-utils.mjs",
+      "sha256": "066c789f80b2c59ddb093aa0f5a6947d5064289ef1d5efcbc89b1d6d6cab8ee3",
+      "bytes": 13408,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/furniture/mapshaper-furniture-cmd.mjs",
+      "sha256": "11d467f77ae8eae4ace12e26d1ed919d62b1d7f8a95b6e897481fe3fa2a28491",
+      "bytes": 2073,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/furniture/mapshaper-furniture-utils.mjs",
+      "sha256": "b47c1687b168713a929ed42a296b262bb113d0188f146ef2aff158de56fb9606",
+      "bytes": 864,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/furniture/mapshaper-furniture.mjs",
+      "sha256": "19833422b5c2ccddae82f542601df2c5c26a44b24247f90e25325dfd423443d7",
+      "bytes": 1819,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/furniture/mapshaper-key.mjs",
+      "sha256": "f4a1fe583cbfe960c71250acf2c62997cf8b2be05ad9b28206c206dbca458f0a",
+      "bytes": 9658,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/furniture/mapshaper-overlays.mjs",
+      "sha256": "235ef84011eef1a21f5b1c7ff116fc2174148b070507fe5c32efb444f2838aef",
+      "bytes": 10880,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geojson/geojson-common.mjs",
+      "sha256": "42b96d85a20ce643f001d062f1fde0cd1bdf953c677ac7db517a19ca3b7075e9",
+      "bytes": 1039,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geojson/geojson-export.mjs",
+      "sha256": "28891693c3db0f87a130918661547513193bab814e9a592bb28058e6cb881ea1",
+      "bytes": 14004,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geojson/geojson-import.mjs",
+      "sha256": "9c5b3ec453f50ec4845a1e6399d888a0d1323eab4d57405d4b6e37196449ed76",
+      "bytes": 7945,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geojson/json-parser.mjs",
+      "sha256": "0bfacc0fc3e6e09d43c69c4e5b8986d32003ee9b249604b511e208b631aff83b",
+      "bytes": 15122,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geojson/mapshaper-stringify.mjs",
+      "sha256": "fde5209da9531d1e2872b47748af6cc46293f49751196790b7d10ca7f1603a22",
+      "bytes": 1182,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geom/mapshaper-antimeridian-cuts.mjs",
+      "sha256": "c56727194436ba2b5ddd2b922326011ceff3a89f39e9606f3a1f68619b559e9e",
+      "bytes": 8176,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geom/mapshaper-basic-geom.mjs",
+      "sha256": "d0e056b0c4af1d051d7fa87c390dafc8b8b5edb63b1300b94d4ae287e760a416",
+      "bytes": 8422,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geom/mapshaper-bigint-utils.mjs",
+      "sha256": "6f4d12cab0c57e986eb7085abd6bc33c4e0631db41a9ff4ab34fe75838ee3843",
+      "bytes": 1583,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geom/mapshaper-bounds-geom.mjs",
+      "sha256": "f1ba047d0c825da57e2b780232b67c137f9a9e0b58b1d08d593bdbd58eb10285",
+      "bytes": 543,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geom/mapshaper-bounds-search.mjs",
+      "sha256": "f9a7a339fe83e7a9eb6f2e7d4880a14ee3275fa3874296b4aad97efc30f9e8be",
+      "bytes": 768,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geom/mapshaper-bounds.mjs",
+      "sha256": "e2d2cf29c5991f7bfa8933f40e67c46c079f091ee508667d6ddeac660ab19378",
+      "bytes": 7028,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geom/mapshaper-dms.mjs",
+      "sha256": "937726e6687598947770813b81150466fbc7791e24ec66fa13fce733574e48de",
+      "bytes": 3673,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geom/mapshaper-geodesic.mjs",
+      "sha256": "c235701ac0a25fea4ac72d59ca17d19c35c741a762d37b8b209e0589bb4138c2",
+      "bytes": 4341,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geom/mapshaper-geom-constants.mjs",
+      "sha256": "70b0e55c745f5b9fba4de52c9807ba7e97dcdc1a3ff28316da2750af9ae46e74",
+      "bytes": 207,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geom/mapshaper-geom.mjs",
+      "sha256": "6886b23efaca4b1a8206268a998e06b7dac0d7beedbf72ea3e372f69dbf722d5",
+      "bytes": 404,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geom/mapshaper-latlon.mjs",
+      "sha256": "6c48067d007354950021a815cb5606513917c60d6f2f155739f0e0235306d469",
+      "bytes": 826,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geom/mapshaper-matrix2d.mjs",
+      "sha256": "288a6b15a835726e0368db3f108a8d995435320419e855f2b190ff8fa060f47b",
+      "bytes": 1073,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geom/mapshaper-path-geom.mjs",
+      "sha256": "974ac2c1b2e7f7a99d3f5dcf54cf03a70c7b266a2ac5165b9ea6006b88aa987f",
+      "bytes": 3733,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geom/mapshaper-perimeter-calc.mjs",
+      "sha256": "ee4c1d94b23fabb2aadaf760e03a390b1e1efb6ca87c20b2f7d6db2ff3d39a68",
+      "bytes": 1361,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geom/mapshaper-polygon-geom.mjs",
+      "sha256": "6ee56217357bd4822a64fbf08b08ab430a6279fd1f0c177d440c7e1c360dc5a7",
+      "bytes": 7735,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geom/mapshaper-rounding.mjs",
+      "sha256": "612cb64659609d9546aca1c60252e54c0949bd643e11e9426fea2d97f6f3139b",
+      "bytes": 3933,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geom/mapshaper-segment-geom-big.mjs",
+      "sha256": "51722f4bdbb8ac1f211f5cd6cde5af189391fd857b655902361e1cb26c62f1a4",
+      "bytes": 2466,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geom/mapshaper-segment-geom.mjs",
+      "sha256": "14681ec2ab5223e05fdf66b740e39a56aa06138e59d65edbba593dce22ebfeb9",
+      "bytes": 14959,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geom/mapshaper-transform.mjs",
+      "sha256": "03d03035ee08ff4adbb11c49be36d14404e51714b1d1feda02970c47639b3940",
+      "bytes": 712,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geom/mapshaper-units.mjs",
+      "sha256": "79690292955ef9ee1218e51af72f715e9ce108bfcdfa0b481d87a90ce1897b1a",
+      "bytes": 5760,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geopackage/mapshaper-geopackage-export.mjs",
+      "sha256": "1c1159e28aa917e807a18e88951d92f28440e770991b5aa4c5f05ecb8967df68",
+      "bytes": 17882,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geopackage/mapshaper-geopackage-import.mjs",
+      "sha256": "0e974e2543c334f37c52519f599cc1094ad4885a0e80078018e1316238e9a98b",
+      "bytes": 16534,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geoparquet/mapshaper-geoparquet-export.mjs",
+      "sha256": "fa08022c6fddfcbf1d8542c921e5c9bd9496146be7d598b84d6770e84d507996",
+      "bytes": 20292,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geoparquet/mapshaper-geoparquet-import.mjs",
+      "sha256": "ea5b26a536daf4fc1457564e6df7458dd4537f549cc017440bb252ee15476522",
+      "bytes": 12113,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geotiff/mapshaper-geotiff-aux.mjs",
+      "sha256": "2527984d3126de3e799b883d207766c6e4e8e5e2155d15e6dcffe4c981e6ebf3",
+      "bytes": 1942,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geotiff/mapshaper-geotiff-encode.mjs",
+      "sha256": "5ae51340227dea1165c0325236fc90792f0103850eeeba5e78266833f1e852b3",
+      "bytes": 14622,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geotiff/mapshaper-geotiff-export.mjs",
+      "sha256": "da9cebbd855a791b095dbf5703b1b880fbb3df1294e9d4a87c701bd217a053cd",
+      "bytes": 5652,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geotiff/mapshaper-geotiff-geokeys.mjs",
+      "sha256": "5664f26409a282a57cd8b3655510dd85f0db9b4aea5d440701ec71c4d7cc8d79",
+      "bytes": 14825,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/geotiff/mapshaper-geotiff-import.mjs",
+      "sha256": "ec5f3db8359ca060c1e7965db9630b295f6fad43e70d3fb4a1f9f16957061cf6",
+      "bytes": 23101,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/grids/mapshaper-grid-to-point-index.mjs",
+      "sha256": "97b0b5809a1ee627cf202803fbad88f4e3decb30ec30b24ca9997c370cdc75af",
+      "bytes": 1422,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/grids/mapshaper-grid-utils.mjs",
+      "sha256": "577e2f6f867a14f9fd320b371735fda4f53ec9b5667b77418dc14bf2ea4c8701",
+      "bytes": 595,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/grids/mapshaper-hex-grid.mjs",
+      "sha256": "15bde1bee130f9668bcb71554c0a58e9305ac807fcb460d8cb629a0ee412a878",
+      "bytes": 8185,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/grids/mapshaper-square-grid.mjs",
+      "sha256": "8cc95e37887fb25b9159a6e97b8ba8ddc6a130494b3361f4b0bec5bf4967c702",
+      "bytes": 4101,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/html/html-font-stacks.mjs",
+      "sha256": "029d2bd93a86268508c7eb7c98386e8f7ac63ca0ab927d0391245abea70e57a0",
+      "bytes": 5740,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/html/html-labels.mjs",
+      "sha256": "65cf2f600cd6a6b62d033e300a68bf1ce54fa5e4c30ec6cbeff52dcd5b76baef",
+      "bytes": 10478,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/html/html-text-classes.mjs",
+      "sha256": "f729a7ff6a63d041aabfc340a66f86de22ebcfeb87e4d1ca571d09ea6b058e4f",
+      "bytes": 3635,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/html/mapshaper-html-export.mjs",
+      "sha256": "13f7c0139f046f76692b84bc532ad9e1a361162528bb7c1a5ccf829f61143660",
+      "bytes": 19755,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/indexing/mapshaper-id-lookup-index.mjs",
+      "sha256": "39f9467a2e39dc2b7132d5fa886b8ccb92d587bcad9e82d3932f77f684b4d540",
+      "bytes": 1858,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/indexing/mapshaper-id-test-index.mjs",
+      "sha256": "7b7b45263b354c4f76f73be79c0f0c65fb7c4ec334cce5368682d8e0ce4da634",
+      "bytes": 1211,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/io/mapshaper-dataset-formats.mjs",
+      "sha256": "3a5cf6db4c9b80ba3427c765909477109306e887740311c68153dfd35b5b935a",
+      "bytes": 894,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/io/mapshaper-export.mjs",
+      "sha256": "1d0bc781d872e6c06bb5354df53f97339b63b62c022f69270c7c6c2fe8ea387a",
+      "bytes": 21389,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/io/mapshaper-file-export.mjs",
+      "sha256": "22cd156cebd45c0fe411ae12d056ff614a496809363d38aec9e97293d0c17f26",
+      "bytes": 3930,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/io/mapshaper-file-import.mjs",
+      "sha256": "61200f5d93fdf46795e4763e7312b2bc6850813dda578cef92b3c60150837faf",
+      "bytes": 17248,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/io/mapshaper-file-reader.mjs",
+      "sha256": "8ff087629a1247a5b5a3d04d4e477b01191b89a0d67239cc331d5a6d3b27e076",
+      "bytes": 7772,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/io/mapshaper-file-types.mjs",
+      "sha256": "443aea659499f95319f1a979a2158166151ddce67a05e3c206ffc408dcee70f0",
+      "bytes": 6810,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/io/mapshaper-gzip.mjs",
+      "sha256": "38228e3c69637e7d091a81a51fd55256df10630583b3622089451ed528a09645",
+      "bytes": 2176,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/io/mapshaper-import.mjs",
+      "sha256": "a1596fc1039d8e381c59eccd62c3f44e8a6e41989e2648b4fc211e46eba96550",
+      "bytes": 7700,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/io/mapshaper-json-import.mjs",
+      "sha256": "14b984fa5a3878521bb509353f724fd96ad15116ea83fb80a3db8fc52d5993c5",
+      "bytes": 8297,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/io/mapshaper-output-format.mjs",
+      "sha256": "a07120ca1a826bd34e95b96fe8a503e81746452bbce86076f35b5bef6b785332",
+      "bytes": 2630,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/io/mapshaper-zip.mjs",
+      "sha256": "5e82fba3e4c1b5374e87138becf60d61c068cb3c531ff18646367be4990689c2",
+      "bytes": 3839,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/join/mapshaper-join-calc.mjs",
+      "sha256": "aa96bd0bfd35b253b2705f5b47fac0e3978c5811365bb063169ff1558bce35d3",
+      "bytes": 326,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/join/mapshaper-join-filter.mjs",
+      "sha256": "bd2149cb6d8668af459c2f7a0e1ecca75c4fcce57cdbff74195fbb3f74ffb698",
+      "bytes": 2858,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/join/mapshaper-join-polygons-via-mosaic.mjs",
+      "sha256": "938c2cc5f65b69cc0e5662a48be84a5873a8bb7d00d6206638de675ab6372857",
+      "bytes": 10210,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/join/mapshaper-join-polygons-via-points.mjs",
+      "sha256": "9899d9341548f7360b2a8ca06bb031d0907ee233071b0af952f3af03cf222b20",
+      "bytes": 1296,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/join/mapshaper-join-tables.mjs",
+      "sha256": "fe54816f5b3a716cf443df8b8249431b40369f27d4ee5eaa011f313b3956bd5a",
+      "bytes": 14412,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/join/mapshaper-point-point-join.mjs",
+      "sha256": "aeb226c207701e03b6ed850e3d53f643d89f340110b19ccf3ac6dc0e0e22d398",
+      "bytes": 1008,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/join/mapshaper-point-polygon-join.mjs",
+      "sha256": "4d4027635693cc05a01f02cf52efd24d4e3bf4996ed10f42d913f57d68eb4086",
+      "bytes": 2984,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/join/mapshaper-polygon-polygon-join.mjs",
+      "sha256": "e9b92885c592522528e82f1e2615524881e0fa20136b0911ba78d90573aba51e",
+      "bytes": 442,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/join/mapshaper-polyline-polygon-join.mjs",
+      "sha256": "7315643b658bd4c5d7dafbb5805bfc5e1f52db17cb6d144fbbaedd6861d00798",
+      "bytes": 1223,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/kml/kml-export.mjs",
+      "sha256": "40d299e6db8cebd823218555601ae2c3b99767a034288b1d644254127401c278",
+      "bytes": 860,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/kml/kml-import.mjs",
+      "sha256": "c1cd34fa7ecf4850a1332437b112a5e87e6c0aa368e459fb7f2b7cc9cd32cec3",
+      "bytes": 412,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/mapshaper-api.mjs",
+      "sha256": "1202814576c87a50788b79e11ab0d5dbb72f859ecac8cdf0b32aada1c809e841",
+      "bytes": 1109,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/mapshaper-cmd.mjs",
+      "sha256": "d247410459484841cb6ffef8e8e7c005cdb58faca225e9cd7a621be03ed09e07",
+      "bytes": 80,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/mapshaper-control-flow.mjs",
+      "sha256": "35d4320e75fdcc8c4717f0f19a84e81d6deabbd62f26fffd90823b6219d15773",
+      "bytes": 1272,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/mapshaper-env.mjs",
+      "sha256": "4a2b69ebc7aa43fb3f6ca503e92ae5778d58580199c0ccb5ffca0c2f091f90a6",
+      "bytes": 122,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/mapshaper-gui-modules.mjs",
+      "sha256": "c7a020fa3bb697a080027465bbda5cf470106ea3476156acf15a74274c1ccbaa",
+      "bytes": 522,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/mapshaper-internal.mjs",
+      "sha256": "bbe61079c010f1bce430e06725a7118937c54e2e8cd418a88cc9c1ee97e133f6",
+      "bytes": 16390,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/mapshaper-job.mjs",
+      "sha256": "21984f86a0474af1aa7bebadbacbca0083795da4dcdbd50207bbb32314e4c049",
+      "bytes": 1848,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/mapshaper-require.mjs",
+      "sha256": "6485c90a04d411ac380befa9af6c4d7f54d230f7eec8ef800b7a16234b1b89a7",
+      "bytes": 403,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/mapshaper-stash.mjs",
+      "sha256": "974d5d9e8a3959eed6dd65bcf92294f585fe1c3cab17b71b007d1ae78cc610ff",
+      "bytes": 911,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/mapshaper.mjs",
+      "sha256": "324396ec61f55d99bbdeb3fd620bc43a5da00fd442184b1852c39778b68bec6f",
+      "bytes": 240,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/pack/mapshaper-pack-constants.mjs",
+      "sha256": "9ce8804be9cbaa3dcbce937163ed0cca6f5ee2c8f29ebe207674bfd97779d46e",
+      "bytes": 351,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/pack/mapshaper-pack.mjs",
+      "sha256": "47da0c7541044ad76a498c6cecd8125e3f0320b26da1cd3870a3e4661a459956",
+      "bytes": 6513,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/pack/mapshaper-packed-table.mjs",
+      "sha256": "162f9d1710bb5fa97a5f61afd8be96f6d28cbf132eb88b923bd3d02baae3ddc6",
+      "bytes": 3375,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/pack/mapshaper-unpack.mjs",
+      "sha256": "2d9d13409c17ac73e5440cb88c2c449280c88112880e8aae30443dd8d2bb32e8",
+      "bytes": 5310,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/paths/mapshaper-arc-clean.mjs",
+      "sha256": "572995cbdc24d35c6d39c0dbef211415a21752174109293f2117616489652a54",
+      "bytes": 2947,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/paths/mapshaper-arc-dissolve.mjs",
+      "sha256": "32661f2769566b8208e01569c07a2f3725310ba6edd4f5a652c58b0f4e96306c",
+      "bytes": 6862,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/paths/mapshaper-arc-editor.mjs",
+      "sha256": "1b1bf6c77861cf1dfb5df79dc43ad33be0cef919981d784301aa4c5e879f6745",
+      "bytes": 1413,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/paths/mapshaper-arc-split.mjs",
+      "sha256": "06e882d76410fc221efa897cea73a6fcc5d3ea6f5195d1c3160e5789ba43c73e",
+      "bytes": 8461,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/paths/mapshaper-arc-utils.mjs",
+      "sha256": "c0d0f22760010f3c33632cb5a83be70019f3679defe2e876b675c9b92d9adc09",
+      "bytes": 6012,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/paths/mapshaper-arcs.mjs",
+      "sha256": "ee5ca672f33d7d924a3e4b11d12ef617d9f07c90a39d845143e2d7a7675c8fa5",
+      "bytes": 23076,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/paths/mapshaper-coordinate-utils.mjs",
+      "sha256": "9f051df88565443328f625b1256aae123e008b90564297e7c41ef72938c32ecb",
+      "bytes": 1629,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/paths/mapshaper-detail-filter.mjs",
+      "sha256": "5d8fd2c58d2c926267ae8b572fffb18edaf720fb529eae70df1745d4249492f1",
+      "bytes": 17192,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/paths/mapshaper-intersection-cuts.mjs",
+      "sha256": "8282893d6dfdb8751cce3231d15b9ef54be1c804a2623ecbe650628c2a619f53",
+      "bytes": 15310,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/paths/mapshaper-path-endpoints.mjs",
+      "sha256": "250ef906933c0a994f1b56437c1dc6aa30cd54681ac4afe6d8c6a93da15dbce7",
+      "bytes": 1799,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/paths/mapshaper-path-export.mjs",
+      "sha256": "c4027a3717be5883affd9488c9bf94a28b3b579628c622350109a9dec5d65bd6",
+      "bytes": 2049,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/paths/mapshaper-path-import.mjs",
+      "sha256": "8664055757fa2c040810f46c4cf8b7a44ef12f9d28f0dffd02cbfd855bec9005",
+      "bytes": 7958,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/paths/mapshaper-path-index.mjs",
+      "sha256": "3f3a4b334a21b9652a372b633f6fe19089e31091f04248a8103e7a08edbfd9b2",
+      "bytes": 8431,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/paths/mapshaper-path-repair-utils.mjs",
+      "sha256": "de69b96916d2aef767fa4cdb237a408d40c0fc62e354797d2c1289b4296b3bd8",
+      "bytes": 6944,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/paths/mapshaper-path-utils.mjs",
+      "sha256": "2c89d42d2d74f905c76b1cd4939f083246b67fbd52016f338330080118ff31ce",
+      "bytes": 6829,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/paths/mapshaper-pathfinder-utils.mjs",
+      "sha256": "dbb1f9d058c56c19b6cf3188839e72ff295171d1d7413f4613e0c3112f018ff1",
+      "bytes": 4529,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/paths/mapshaper-pathfinder.mjs",
+      "sha256": "f7244c29d1f1ebe114d78c88948c842a98652ffc796e788cfcd57eaea70a2ce7",
+      "bytes": 7395,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/paths/mapshaper-polyline-to-point.mjs",
+      "sha256": "9c9f1d8e494574b3577801cab77980739c35d543aee791d08fcdd16f49bebae5",
+      "bytes": 2382,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/paths/mapshaper-rectangle-utils.mjs",
+      "sha256": "82d699cb8eb00033e7c9d343f08ea143a4bf1ebca9b8f958ecdfac86ea90c123",
+      "bytes": 691,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/paths/mapshaper-segment-intersection-info.mjs",
+      "sha256": "191063445feaf4a1b34746c91ca98067b4625c8524f06573bb65e7d8690fff43",
+      "bytes": 927,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/paths/mapshaper-segment-intersection-repair.mjs",
+      "sha256": "a1a3f77a96bda52f9554079e3837b27a576de71b5254e861600922a9310a4417",
+      "bytes": 5441,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/paths/mapshaper-segment-intersection.mjs",
+      "sha256": "6a3e14c13740544168435cea1cf0c64df62781db04968dca134d05af4e75487f",
+      "bytes": 11305,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/paths/mapshaper-segment-sorting.mjs",
+      "sha256": "f5208d32765a8f48c3b8bcce0e65a37416e0679c94db6b9f4a9faada3a4ba57e",
+      "bytes": 3071,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/paths/mapshaper-shape-iter.mjs",
+      "sha256": "1ccab96485fc0417c8caf229a73b1ba33a1de974055dd536c0c412abcd8e5823",
+      "bytes": 2837,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/paths/mapshaper-shape-utils.mjs",
+      "sha256": "92854a7d29d76038728edad404f42adc1b53dae62b9f5595b629fc0397e430dc",
+      "bytes": 2102,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/paths/mapshaper-snapping.mjs",
+      "sha256": "a977f1599f7169c105c8b89f593bd07f7ad9e02b854eb54c8d80e9b42060961d",
+      "bytes": 5951,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/paths/mapshaper-vertex-utils.mjs",
+      "sha256": "ca4f0c2e2dee5267031e806d971e283b9be3dfae9010239de7bf3be705e239ad",
+      "bytes": 3386,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/points/mapshaper-anchor-points-v3.mjs",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/points/mapshaper-anchor-points.mjs",
+      "sha256": "2f1d5e16627b441c89d5c12063013c434f60a054829b8dc5c04c0047c4379063",
+      "bytes": 9957,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/points/mapshaper-dot-density.mjs",
+      "sha256": "8d061a2b634f7ee780f2f643cd38bb57e1123a3b6ff714f1c4c1b09777db6df8",
+      "bytes": 13094,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/points/mapshaper-point-index.mjs",
+      "sha256": "5690a81e4db83ba27b82413ca65d939d86865ec6b18d65f50e0f2fd84543af7a",
+      "bytes": 1637,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/points/mapshaper-point-utils.mjs",
+      "sha256": "9ed6ade46ebac3b41443a36e4eee0cb081126b7315df71b4ac8c53a263cd536d",
+      "bytes": 1792,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/points/mapshaper-polygon-centroid.mjs",
+      "sha256": "9d7b64792cb9b1a496802e53f3c0b43b808b2803aa9e1f4e213d720cd8acf393",
+      "bytes": 1085,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/points/mapshaper-polylabel.mjs",
+      "sha256": "2609eb3272f92d4b6e8da949015b424969a2522b1a6dfce03c065be5455be7d7",
+      "bytes": 16139,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/points/mapshaper-symbol-collisions.mjs",
+      "sha256": "916ac3562b2e780ffe943201815728751153299173cdbd4abe402a7750e08f15",
+      "bytes": 9241,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/points/mapshaper-symbol-containment.mjs",
+      "sha256": "695588030ef3f4403c8e98975a6f398f3c3ae2f5c16eb60ad2db48c96a4ccfa1",
+      "bytes": 3186,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/polygons/mapshaper-close-gaps.mjs",
+      "sha256": "1d27ed21ea789721da50b59070988046b6753fce007f5a4324ee6375255f716e",
+      "bytes": 28733,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/polygons/mapshaper-mosaic-index.mjs",
+      "sha256": "d526f812d919de3c0b987109d2ec59c1a64c61202935f16b0cdd40232d51974a",
+      "bytes": 26410,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/polygons/mapshaper-partition-gaps.mjs",
+      "sha256": "c5eb21ba822f19f3a67e6b82755b6a85f32e4ab212bee4da1e1ea99711791cb8",
+      "bytes": 19625,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/polygons/mapshaper-polygon-connectivity.mjs",
+      "sha256": "735c1f46d29166bdbc0e8a7e180b4f9dc925166bee98385104a33c1cc589dfe3",
+      "bytes": 1304,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/polygons/mapshaper-polygon-holes.mjs",
+      "sha256": "094cd2453456535d885fe4e5d02a64e29a41fe72e090b845ccdc55877e345148",
+      "bytes": 1398,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/polygons/mapshaper-polygon-index.mjs",
+      "sha256": "815eb6760ed52514246d25a96332e2a863a381bd31697081f91fb6e176564822",
+      "bytes": 4169,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/polygons/mapshaper-polygon-mosaic.mjs",
+      "sha256": "6f1662f9758fc0aa3db039ccbf499e5fcdebbcf877a9b0f9f6efd53a4a56b084",
+      "bytes": 5099,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/polygons/mapshaper-polygon-neighbors.mjs",
+      "sha256": "967cf8761ddb7474da8070fbfded36b02c0da87a73de65f2aeda738bab7bbb6b",
+      "bytes": 2140,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/polygons/mapshaper-polygon-repair.mjs",
+      "sha256": "91e7c1c7bf53c6e8d314ea7262d322c11019b5df5e686f97e4e861faa1469b76",
+      "bytes": 2866,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/polygons/mapshaper-polygon-tiler.mjs",
+      "sha256": "55daf8ad9d65cf49de5b04097b2ba65ccb4326d13fa5d87e68fac617da9e5de4",
+      "bytes": 5275,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/polygons/mapshaper-ring-nesting.mjs",
+      "sha256": "e7cc4695af0cf0da1698bafb0850a5f5f0d149561f01893ca50136ff8033b0a1",
+      "bytes": 6125,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/polygons/mapshaper-slivers.mjs",
+      "sha256": "e297f84a494a23d11fe5c5a4f42d1ca96f24a8b1b0e6996d6d70c1d84f3a103b",
+      "bytes": 9225,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/polygons/mapshaper-tile-shape-index.mjs",
+      "sha256": "8334702aa7611824805ac4c7add87081b3947114c2525d0d1455c1fbcb133fc2",
+      "bytes": 4381,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/polylines/mapshaper-polyline-clean.mjs",
+      "sha256": "e3127843ffde0e3ac4a630a40cc0a4a16899dbac8f01b45a8bb8b75d98e15178",
+      "bytes": 5737,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/rasters/mapshaper-image-import.mjs",
+      "sha256": "a3d85c93ffa39fb373a37142667daa8063b8db32a4bd99e9745db0437e653e25",
+      "bytes": 13314,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/rasters/mapshaper-raster-blur.mjs",
+      "sha256": "2a0134b26b45d009918f23fb2d6012927bfea04235f24626fc43f6653deec002",
+      "bytes": 9181,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/rasters/mapshaper-raster-contour-bands.mjs",
+      "sha256": "a8d8d41a277e7a0194ed368005ac52e67e7d6141faf21c13681dbf412df90e6d",
+      "bytes": 10480,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/rasters/mapshaper-raster-contours.mjs",
+      "sha256": "c37dd2ee9a1bd0332c38353a7337a4d8ecefc68fd2d6bb7dfbeab999792d25d3",
+      "bytes": 17982,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/rasters/mapshaper-raster-grid.mjs",
+      "sha256": "bb71d933e6bd7e88c77e973643c29cee65f76f1bf92dbae00aa9252ced914a10",
+      "bytes": 3001,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/rasters/mapshaper-raster-import-size.mjs",
+      "sha256": "08abb624781cad356e0956c9175eb2b6fcebeaca6e0d836a96d45cd16c48a9a2",
+      "bytes": 1893,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/rasters/mapshaper-raster-reprojection.mjs",
+      "sha256": "e557622cebbc9290d6b7c4cba0fc9ba1b76cf6b70cb395e01f8b6401620d408c",
+      "bytes": 46275,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/rasters/mapshaper-raster-utils.mjs",
+      "sha256": "1f86440463d14035a4913b3e86438e5a9dfb015e92bc6c7972057e8cb5995f07",
+      "bytes": 31194,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/shapefile/dbf-export.mjs",
+      "sha256": "e083098228d4ac7ed70bdeb96a7e3b652422cf05cb9c55441282f89e4f92af8a",
+      "bytes": 1661,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/shapefile/dbf-import.mjs",
+      "sha256": "64b84c9c2b22f95ad0a6ec44f4d782cef7c011cad56e32fa2f481ea5073e5aad",
+      "bytes": 2842,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/shapefile/dbf-reader.mjs",
+      "sha256": "5cf6193a16e15a5408c7313398897a777a21ebb40ea998bcb590d64d4d1650e2",
+      "bytes": 15014,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/shapefile/dbf-writer.mjs",
+      "sha256": "72e60e63969521d4fa5e6de413f5620d04ade5df916d3e5e0d2bf19a69f9f642",
+      "bytes": 13891,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/shapefile/shp-common.mjs",
+      "sha256": "6659bb97462aace6ad0c2e259871b833a7795cb6b249932b42c56f04d99f6e96",
+      "bytes": 611,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/shapefile/shp-export.mjs",
+      "sha256": "40b27e617013acc73b6ebc1dc20b00dfe9821bf863383575067c66509b166260",
+      "bytes": 6140,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/shapefile/shp-import.mjs",
+      "sha256": "1750b15d244ee45e8d8dc5ef22f0e7bc5693499dddc63d4a1515d055ea5bf905",
+      "bytes": 1509,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/shapefile/shp-reader.mjs",
+      "sha256": "fc2ff91023486ffa4f91e7f50176b8ed511b24f2cdaca2770b823b956831d09f",
+      "bytes": 6989,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/shapefile/shp-record.mjs",
+      "sha256": "1772d4880d9909b834105a2e9ebe35a3e47d9a9a68bd20414c218315e36141f2",
+      "bytes": 7490,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/shapefile/shp-type.mjs",
+      "sha256": "256f173459f28dbc716ae14c48c455292e3415190adf69f1beb94ee9d9a48810",
+      "bytes": 905,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/simplify/mapshaper-dp.mjs",
+      "sha256": "bf6a64a1883f7039cce7df36a880f04eb9cc3b3fafcd4d85d40ddbd07cbf8844",
+      "bytes": 2187,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/simplify/mapshaper-heap.mjs",
+      "sha256": "6fc52a10245b87d7c7c35f60f5a7614b044536cbc08511cfc374f03fd7828ede",
+      "bytes": 3708,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/simplify/mapshaper-keep-shapes.mjs",
+      "sha256": "66248e1b2606b86cfdc44775d594ca982d5d408d2d0ebf47ccedb013bff7ed32",
+      "bytes": 3025,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/simplify/mapshaper-post-simplify-repair.mjs",
+      "sha256": "6b2f51e27cf3c36556c4f652994ef816d08a1120c13a5d5805c5f6741e6782e0",
+      "bytes": 5845,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/simplify/mapshaper-simplify-fast.mjs",
+      "sha256": "c4650c423b1c259ae975843a078bb32fb2bc211d5f796495de8ff2c0468c83f7",
+      "bytes": 1426,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/simplify/mapshaper-simplify-info.mjs",
+      "sha256": "f9e9488dec4529da67cbe660e5bbd1b43e76ddaff961b8a98b908e0c33591c7f",
+      "bytes": 2348,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/simplify/mapshaper-simplify-options.mjs",
+      "sha256": "14f499687dd77ea95a8a64233e4e7ba1171325526165a5a4e38269dc2ee6e2ad",
+      "bytes": 450,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/simplify/mapshaper-simplify-pct.mjs",
+      "sha256": "e40e3bff4a649d0ffba8e8064f352f77cb8cac2f89621464b0f2d35692ac075b",
+      "bytes": 1595,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/simplify/mapshaper-simplify-stats.mjs",
+      "sha256": "ebed3e4036f2a5c8379f27d9a583710a28fc185c640c7175c81c2efd345a4cb2",
+      "bytes": 3363,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/simplify/mapshaper-variable-simplify.mjs",
+      "sha256": "bf3441e81f5f8239e637956724863f6f32009ea8f1c65b2b38d5a36f41d7f82b",
+      "bytes": 4312,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/simplify/mapshaper-visvalingam.mjs",
+      "sha256": "ff8c8d62e2a0151acfaf5d34040da648516d3c6bd7e1d40fc9f4852b5d2ce319",
+      "bytes": 4783,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/smooth/mapshaper-smooth-algos.mjs",
+      "sha256": "8129772917849b773b42869e7fce346a113e42c75681b4a2f64f124f0d906467",
+      "bytes": 45542,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/smooth/mapshaper-smooth-corners.mjs",
+      "sha256": "97f39ae1d7d3f5399ef57028a2fe273c88b8a095c156fec9124e8f72bda9a915",
+      "bytes": 31100,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/geojson-to-svg.mjs",
+      "sha256": "5f43084d86394a53f4e5d89568d4f15a4ec6522bc47084647b6412949f823c64",
+      "bytes": 5943,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/mapshaper-map-image-export.mjs",
+      "sha256": "ff02ba34207963f19c652a385ce83a1251166e625290f4fad21740e840c6f8b4",
+      "bytes": 1316,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/mapshaper-svg-import.mjs",
+      "sha256": "ade9d68666c9785dfea1144f2ec118ee57110db9dbe4af887626a1cfc020674b",
+      "bytes": 24828,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/mapshaper-svg-rasterize.mjs",
+      "sha256": "2fe989dd8568f2a1c2619ea2b3898c7a6ee5ac36a5f9d02f8cccb963f3580d28",
+      "bytes": 3529,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/mapshaper-svg.mjs",
+      "sha256": "95c07e295b91158c4cd702edde4cade2b4dcb273f90e392ef7e7e5d3c2ff1296",
+      "bytes": 26208,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/svg-arrowheads.mjs",
+      "sha256": "dec435b516442b3b343d4f2d85b2d6117a6ebd9782de14df0fb71f19f96fc01c",
+      "bytes": 3241,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/svg-curve-symbols.mjs",
+      "sha256": "7704f359308467db40fdb2e356371a81b72f60faeebb9fc94e82249c8cd87d83",
+      "bytes": 3887,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/svg-definitions.mjs",
+      "sha256": "34d5dfdcc2907a0e11047c9334c0c59dfd59df23d29ed3a6c4bb80b0f5099ce1",
+      "bytes": 5373,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/svg-effect.mjs",
+      "sha256": "36f4ddb822f48d64f5f879d038887bd934d918d5fe326fff62618c3a66f0bfc9",
+      "bytes": 1121,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/svg-feature-utils.mjs",
+      "sha256": "41f13c7f512259c737fc790a694dbae737ea2c1156f440309dcdb9c56e5b52ad",
+      "bytes": 2417,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/svg-geom-primitives.mjs",
+      "sha256": "5bdbb7034b76f54e389a8b6ec666dbf43d762299abff864d21754309f3f78101",
+      "bytes": 1577,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/svg-glow.mjs",
+      "sha256": "3b6043cad5f1e96f244b8ae2dbad9779abaef085f75a97e8c5388ee71fa709cb",
+      "bytes": 10847,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/svg-hatch.mjs",
+      "sha256": "543ba4bbd751085d78f6baa126ce100d081045ca0afa82cad2343352e8cbf370",
+      "bytes": 11358,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/svg-icons.mjs",
+      "sha256": "b8ecf34f1d11d6d8b9918b35580715b6447c762cd194212ce97af9e78344dc79",
+      "bytes": 699,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/svg-label-align.mjs",
+      "sha256": "8702ef1ce32fab7e060b5a9bd8216cb9ef83db344ede4bca0b57b370b4505245",
+      "bytes": 3095,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/svg-label-background.mjs",
+      "sha256": "f70410e448c7e98e8a472d1f4edcfa25661c16b6689877b852776d167c3e0e3e",
+      "bytes": 1822,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/svg-label-box.mjs",
+      "sha256": "158a8d84ad5670f490c2bb7ba09acf2d100aea1097983abbb6d083831c641fa4",
+      "bytes": 4121,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/svg-label-callout.mjs",
+      "sha256": "fbb4c1dbd9e3752feb19e6a7ceebfef7189d42f317e086254b78be4a1ca9ee5f",
+      "bytes": 23281,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/svg-label-fit.mjs",
+      "sha256": "af622a59723e5a0cd056d2a3bab690b9324e5ab4bedd81752b2de2e05a23304d",
+      "bytes": 1430,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/svg-label-halo.mjs",
+      "sha256": "fed4ddb3375a91470cda3bae0c539b65bbdf04a2519c54ede3c70d4b5d125a74",
+      "bytes": 5845,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/svg-label-markup.mjs",
+      "sha256": "595674bd4b9eab3afb4a12af3d673a6331c921bbb7bc78f60f15cb92f314901a",
+      "bytes": 3626,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/svg-label-metrics.mjs",
+      "sha256": "dc4cfff2a72e62f272448403e23c771b9dafa551d424f271560fbd750cd76d34",
+      "bytes": 6494,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/svg-label-paths.mjs",
+      "sha256": "8cd844ebd3b3b7de435417d25109cc18ad1baa8f97f6f19f1dff04199f074bf8",
+      "bytes": 9786,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/svg-labels.mjs",
+      "sha256": "b83baf3f67681afcf193596679477c8a51e9d1e298bfdb7726b5da3055b610bf",
+      "bytes": 9352,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/svg-line-arrows.mjs",
+      "sha256": "41a5f990d7d9a879c5278b203e0f33e929b28a277bd9d32e4332acbd1284aea3",
+      "bytes": 15293,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/svg-line-casing.mjs",
+      "sha256": "2238eaf60fb10c1547ec9f3ce04fc233f4cac9423a5541d469ed54ff70a00198",
+      "bytes": 6773,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/svg-line-taper.mjs",
+      "sha256": "3332ce9639749126435183cd81fbc144a81f86b1eff608de8cc3839cc822b2c4",
+      "bytes": 16882,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/svg-path-utils.mjs",
+      "sha256": "29aead51139e85a68113a6af0d27861459643a80723d54a1ebf2fe45c91e85b8",
+      "bytes": 1326,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/svg-properties.mjs",
+      "sha256": "ebf8fd3fc91788ac146f12b91ffacd0d53bc0c4c4401519f994402ff43314681",
+      "bytes": 24358,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/svg-stringify.mjs",
+      "sha256": "c5824733136b29f7b329b7435ba5068ee2f2c57a782553ad0a98359daf16352b",
+      "bytes": 1829,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/svg-symbol-bounds.mjs",
+      "sha256": "39daa06fd810f5be8a6ea6442f6217e3b94fcbba2e9a21e2210cc1781a5a3a7a",
+      "bytes": 8257,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/svg/svg-symbols.mjs",
+      "sha256": "e6b9fc776e7254c720fe9c5501b5c90fa0606ea7089531832e3889c46e65503b",
+      "bytes": 9764,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/symbols/mapshaper-arrow-symbols.mjs",
+      "sha256": "98bccb88d87e1651720570d680699b9c643ab41ddf6c73f9203752f723202f45",
+      "bytes": 5869,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/symbols/mapshaper-basic-symbols.mjs",
+      "sha256": "8b52a97456ddd8729cb1323e8ad4a132137d9e3c773cfd47fc43ee1dcfc9bfa5",
+      "bytes": 1277,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/symbols/mapshaper-icon-symbols.mjs",
+      "sha256": "3553b2fe85b8177294a075d93231568793c4297dd1c5a7c2cb62ed2aa8c09bc3",
+      "bytes": 13038,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/symbols/mapshaper-path-symbols.mjs",
+      "sha256": "0abfe09c0ed6eeb902cf7fa9b50d4ca784b5b2b4e1d634b183173e42cbc7cffe",
+      "bytes": 939,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/symbols/mapshaper-pie-symbols.mjs",
+      "sha256": "1364c5b76c08201eb10bc65fb7da77635b9969e9b737d205e54ba0ebdcb6f202",
+      "bytes": 5859,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/symbols/mapshaper-ring-symbols.mjs",
+      "sha256": "0cd7c54fbc690d28a399afd87f2bf307a3400c81b16dea5eeccebe6a98bbac1a",
+      "bytes": 1775,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/symbols/mapshaper-star-symbols.mjs",
+      "sha256": "1a0e61811eb5554d26dc61eb2cc31a9d8fd0b749dcc9ebf7032908be23cc2294",
+      "bytes": 1588,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/symbols/mapshaper-symbol-utils.mjs",
+      "sha256": "f1b33ae546205afcc39f43ec089f08f4ffe5edf5c6f5dbb234870d39301e55f9",
+      "bytes": 6071,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/text/mapshaper-delim-export.mjs",
+      "sha256": "3330afd3cacc5c4423c3944c1f467188ee830f47723b2777647cec45a567209f",
+      "bytes": 4106,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/text/mapshaper-delim-import.mjs",
+      "sha256": "b14f7181a475d95921983ddaf1f64342bd3da02ef6aea1c9385cf9a541533193",
+      "bytes": 10412,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/text/mapshaper-delim-reader.mjs",
+      "sha256": "fec3dc456542693d3592b208b7908a815411b1cf129840aa3b7f3e31e2e3689d",
+      "bytes": 12138,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/text/mapshaper-encoding-detection.mjs",
+      "sha256": "e5d7ba3750f234f074aeb73550f259b9eadd43572d97f556dc3482c24b283e3d",
+      "bytes": 7808,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/text/mapshaper-encodings.mjs",
+      "sha256": "fdcfd34126cb3d703a6be9fd59f652415dc537954c24aea0156f85bb693ae51b",
+      "bytes": 4745,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/text/mapshaper-fixed-width.mjs",
+      "sha256": "d010da9be2b7411c7fe13ab698e86d5714a7a3d5c1d0f670346aaced44afa8ec",
+      "bytes": 3651,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/thirdparty/geokdbush.mjs",
+      "sha256": "24e7ae47db26b0e935d97d6eaeef7afa0d4210bf940ead874a6cc777e8304cfb",
+      "bytes": 6787,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/topojson/topojson-arc-prune.mjs",
+      "sha256": "0bda548288d4d5afdb34ac389256eece9424db692c46e2b500e8fcf68af9dbbe",
+      "bytes": 1598,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/topojson/topojson-common.mjs",
+      "sha256": "057858b5ce7776c99fd9b63fd076c6793370a223c3ad3990bba9ea63e3d890d7",
+      "bytes": 1241,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/topojson/topojson-export.mjs",
+      "sha256": "3adaae96c63d3eb0d9d59848727a29dc131955d35bd55ffdd421908b0befc425",
+      "bytes": 11173,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/topojson/topojson-import.mjs",
+      "sha256": "1c14016f20bea08491ebc7e02aabf8e9fe4192ebbb62fe337b9c091bae317278",
+      "bytes": 7312,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/topojson/topojson-presimplify.mjs",
+      "sha256": "e8b86b6be2ec3eccfd44b0e11b0c88164c6b287e8ca4759c982ed237d5df5e32",
+      "bytes": 318,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/topojson/topojson-split.mjs",
+      "sha256": "3e54cc0da4240ecf1fe914739f9c34ed19ed206bd2c7d5db7dd7824783ca0b98",
+      "bytes": 673,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/topojson/topojson-validation.mjs",
+      "sha256": "f364b47bc16e1b3465b57e1d69e29471850aa87f79c51b5cd6ef91197d0bdacd",
+      "bytes": 833,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/topology/mapshaper-arc-classifier.mjs",
+      "sha256": "9c407e149feb757cfb5b61f62f4b82507d717ef96501a22f0244ea46432445dc",
+      "bytes": 1834,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/topology/mapshaper-arc-index.mjs",
+      "sha256": "d62fb7ab23d35bb3b5d2b7a1750d10e9a69d65eb3268c5c04b842c097bcb02c8",
+      "bytes": 4315,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/topology/mapshaper-hash-function.mjs",
+      "sha256": "5adaefaee456cbb01caa18516c266ae8e2d5cfe698a275b45eea300fcb01e155",
+      "bytes": 965,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/topology/mapshaper-nodes.mjs",
+      "sha256": "e18edc90a828634227633752b1ae4ef35e09ab5aade5d84dd61f2d1a3d5a0e75",
+      "bytes": 7680,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/topology/mapshaper-topology-chains-v1.mjs",
+      "sha256": "92c0856c52a92903913f5182dab0cf9574bac6929e9d238430d6e575fef48245",
+      "bytes": 1636,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/topology/mapshaper-topology-chains-v2.mjs",
+      "sha256": "7c60bcdf0abf4396b1d64c6ff7bcecfb423d2ea63ef65ab8929067298c342c55",
+      "bytes": 1654,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/topology/mapshaper-topology.mjs",
+      "sha256": "bc6580c9e77fb4aa7242a6b2807d9ed4230c2c8c93f801fbd7871ad75b0e67be",
+      "bytes": 10942,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/topology/mapshaper-undershoots.mjs",
+      "sha256": "55b041ca3c8d6383e30053e8486854352137981badb81daec64d9816be5666e0",
+      "bytes": 4475,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/undo/mapshaper-undo-tracking.mjs",
+      "sha256": "863f434edbde518447f4e20a46de7c8e06716437eb0146560d3c633c1dbd2d89",
+      "bytes": 6078,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/undo/mapshaper-undo-transaction.mjs",
+      "sha256": "1999f427aba718580df0c17da27fa232c7c0916501a489d036731a9f1a3b4bda",
+      "bytes": 24611,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/utils/mapshaper-binarray.mjs",
+      "sha256": "a491c18c4deca30c1eaffc723461092c75294f47d496ffd7cc55aed588ee25bc",
+      "bytes": 7017,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/utils/mapshaper-calc-utils.mjs",
+      "sha256": "6be9da69e8d9e074a34ab2ca27137224658d5b29c2b12d169f90eda05842a7e2",
+      "bytes": 1420,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/utils/mapshaper-debug-utils.mjs",
+      "sha256": "c8a1210023afee0f6c49f31cd753fb12b1c96d20ddd294424cac7ead4e8cc09e",
+      "bytes": 2612,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/utils/mapshaper-filename-utils.mjs",
+      "sha256": "12b4e74759070da6bb869021fde4601a916467ed6483fa2c1d2c6fe25291d1ca",
+      "bytes": 2873,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/utils/mapshaper-logging.mjs",
+      "sha256": "c37c2be8b3eea4e8a21fedc69d604b2b93c1f8c6d1d96f6ac772f502077e3629",
+      "bytes": 6120,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/utils/mapshaper-node-buffer.mjs",
+      "sha256": "efb3f7af40efb468b02ded100ced7c0b251f433a7e9d163f05eaf1e9b731b199",
+      "bytes": 189,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/utils/mapshaper-profile.mjs",
+      "sha256": "410c5baeb64325976df858a49c2fbbb2d209a69e4c4c5e250d795b69bbb19ceb",
+      "bytes": 4829,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/utils/mapshaper-sha1.mjs",
+      "sha256": "aefa1c6e702dda0ebd5ac8bd6b6242efd16468bcf0aded892d8e7bcc29268676",
+      "bytes": 1186,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/utils/mapshaper-timing.mjs",
+      "sha256": "bdbc05515874607dc1d9755b7eb09c6e8b1fd71e5c9e943efb3351097de7d011",
+      "bytes": 409,
+      "plugin_added": false
+    },
+    {
+      "path": "mapshaper-0.7.101-source/src/utils/mapshaper-utils.mjs",
+      "sha256": "abbdd0f6146355df26d99f35c64beeafdb18b38bb7e0e1908107ecf53fb7557f",
+      "bytes": 26931,
+      "plugin_added": false
+    }
+  ]
+}
