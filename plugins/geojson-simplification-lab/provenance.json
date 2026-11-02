@@ -1,0 +1,690 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "audit_file": "SOURCE_REVIEW.md",
+  "sources": [
+    {
+      "name": "d3-color",
+      "url": "https://github.com/d3/d3-color.git",
+      "revision": "3.1.0",
+      "license_expression": "ISC",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。",
+      "license_evidence": [
+        {
+          "path": "licenses/d3-color/LICENSE",
+          "sha256": "faa682e3e430941f958d26180458f5934a62f58dac4d70ccdd15608c15d0f884"
+        }
+      ]
+    },
+    {
+      "name": "d3-interpolate",
+      "url": "https://github.com/d3/d3-interpolate.git",
+      "revision": "3.0.1",
+      "license_expression": "ISC",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。",
+      "license_evidence": [
+        {
+          "path": "licenses/d3-interpolate/LICENSE",
+          "sha256": "e008c5e25a6be382593089c29bfabbc553c6378eee02895aec46ce396cc404ee"
+        }
+      ]
+    },
+    {
+      "name": "d3-scale-chromatic",
+      "url": "https://github.com/d3/d3-scale-chromatic.git",
+      "revision": "3.0.0",
+      "license_expression": "ISC AND Apache-2.0",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。",
+      "license_evidence": [
+        {
+          "path": "licenses/d3-scale-chromatic/LICENSE",
+          "sha256": "b061fce8110a2f4cebd8472f4ed070db13998ffc8201c63dbf514bc9dc241098"
+        },
+        {
+          "path": "licenses/d3-scale-chromatic/UPSTREAM-LICENSE",
+          "sha256": "dadb5ea138eef5ab133854c3d26bd0a158f649d0bd433b3eebe177f6d981730e"
+        }
+      ]
+    },
+    {
+      "name": "delaunator",
+      "url": "https://github.com/mapbox/delaunator.git",
+      "revision": "5.0.0",
+      "license_expression": "ISC",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。",
+      "license_evidence": [
+        {
+          "path": "licenses/delaunator/LICENSE",
+          "sha256": "27043d1a6a0e1985fde12660decbbd3b23c67de900b00609c90d4f0aa492f425"
+        }
+      ]
+    },
+    {
+      "name": "robust-predicates",
+      "url": "https://github.com/mourner/robust-predicates.git",
+      "revision": "3.0.2",
+      "license_expression": "Unlicense",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。",
+      "license_evidence": [
+        {
+          "path": "licenses/robust-predicates/LICENSE",
+          "sha256": "88d9b4eb60579c191ec391ca04c16130572d7eedc4a86daa58bf28c6e14c9bcd"
+        }
+      ]
+    },
+    {
+      "name": "flatbush",
+      "url": "https://github.com/mourner/flatbush.git",
+      "revision": "4.6.0",
+      "license_expression": "ISC",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。",
+      "license_evidence": [
+        {
+          "path": "licenses/flatbush/LICENSE",
+          "sha256": "08a9d45b1300baf1925a966bcbec26cf9bd4137883d96b79089cba2c72d872bc"
+        }
+      ]
+    },
+    {
+      "name": "flatqueue",
+      "url": "https://github.com/mourner/flatqueue.git",
+      "revision": "3.1.0",
+      "license_expression": "ISC",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。",
+      "license_evidence": [
+        {
+          "path": "licenses/flatqueue/LICENSE",
+          "sha256": "dda6815257c8b5dd1c557507e0f49b592001a515fe4e9f152a2e7683f9d3a3b5"
+        }
+      ]
+    },
+    {
+      "name": "fflate",
+      "url": "https://github.com/101arrowz/fflate.git",
+      "revision": "0.8.3",
+      "license_expression": "MIT",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。",
+      "license_evidence": [
+        {
+          "path": "licenses/fflate/LICENSE",
+          "sha256": "0a1df3a083d0c010560aa342e87959c8c1070e6fd54545741f083f22d0c8b551"
+        }
+      ]
+    },
+    {
+      "name": "msgpackr",
+      "url": "ssh://git@github.com/kriszyp/msgpackr.git",
+      "revision": "1.11.13",
+      "license_expression": "MIT",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。",
+      "license_evidence": [
+        {
+          "path": "licenses/msgpackr/LICENSE",
+          "sha256": "d00470775464c789c7ac04cfba3bf1b79ef149790eb72556d1c51d8f50c8e7f3"
+        }
+      ]
+    },
+    {
+      "name": "flatgeobuf",
+      "url": "https://github.com/flatgeobuf/flatgeobuf.git",
+      "revision": "4.3.4",
+      "license_expression": "BSD-2-Clause",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。 包元数据标记 BSD-3-Clause，但实际 LICENSE 只有两条条件；本记录依原文标记 BSD-2-Clause。",
+      "license_evidence": [
+        {
+          "path": "licenses/flatgeobuf/LICENSE",
+          "sha256": "82b5250889974b120ef38428a73982e1d1054ea778e2b54312d8721ead5bfd93"
+        }
+      ]
+    },
+    {
+      "name": "flatbuffers",
+      "url": "https://github.com/google/flatbuffers.git",
+      "revision": "25.9.23",
+      "license_expression": "Apache-2.0",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。",
+      "license_evidence": [
+        {
+          "path": "licenses/flatbuffers/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "name": "tinyqueue",
+      "url": "https://github.com/mourner/tinyqueue.git",
+      "revision": "2.0.3",
+      "license_expression": "ISC",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。",
+      "license_evidence": [
+        {
+          "path": "licenses/tinyqueue/LICENSE",
+          "sha256": "780453e05abdc22307ee01c706a2e73f508d3e484fc4c804485ebf6fe0964694"
+        }
+      ]
+    },
+    {
+      "name": "big.js",
+      "url": "https://github.com/MikeMcl/big.js.git",
+      "revision": "7.0.1",
+      "license_expression": "MIT",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。",
+      "license_evidence": [
+        {
+          "path": "licenses/big.js/LICENSE",
+          "sha256": "def75ba75d6426f1c3f02addf8e175fbe6e0d8a82e541cbdffc16d2bd8fd7d6a"
+        }
+      ]
+    },
+    {
+      "name": "buffer",
+      "url": "https://github.com/feross/buffer.git",
+      "revision": "5.7.1",
+      "license_expression": "MIT",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。",
+      "license_evidence": [
+        {
+          "path": "licenses/buffer/LICENSE",
+          "sha256": "06bafa45fdad2579ba0e43b0c9b2c6290287c99c4203c300254a462b38a307f6"
+        }
+      ]
+    },
+    {
+      "name": "base64-js",
+      "url": "https://github.com/beatgammit/base64-js.git",
+      "revision": "1.5.1",
+      "license_expression": "MIT",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。",
+      "license_evidence": [
+        {
+          "path": "licenses/base64-js/LICENSE",
+          "sha256": "5b37224c080cdcc97c871ada971c224e9926370fe74f11b539aa1cf9f3b1aca1"
+        }
+      ]
+    },
+    {
+      "name": "ieee754",
+      "url": "https://github.com/feross/ieee754.git",
+      "revision": "1.2.1",
+      "license_expression": "BSD-3-Clause",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。",
+      "license_evidence": [
+        {
+          "path": "licenses/ieee754/LICENSE",
+          "sha256": "18d45466ba3253deae04667e267a91ea8de8548f18c1125264d1c9db28194cc1"
+        }
+      ]
+    },
+    {
+      "name": "iconv-lite",
+      "url": "https://github.com/ashtuchkin/iconv-lite.git",
+      "revision": "0.6.3",
+      "license_expression": "MIT",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。",
+      "license_evidence": [
+        {
+          "path": "licenses/iconv-lite/LICENSE",
+          "sha256": "ac779f7314c74f232ef847ea86e714abe25cf6eeb5cc97b69451b74e2af6492d"
+        }
+      ]
+    },
+    {
+      "name": "safer-buffer",
+      "url": "https://github.com/ChALkeR/safer-buffer.git",
+      "revision": "2.1.2",
+      "license_expression": "MIT",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。",
+      "license_evidence": [
+        {
+          "path": "licenses/safer-buffer/LICENSE",
+          "sha256": "4bc935e71be198c67ddf3c2b5fddb195f6edc182bfc155a96a6db61b44b494b9"
+        }
+      ]
+    },
+    {
+      "name": "idb-keyval",
+      "url": "https://github.com/jakearchibald/idb-keyval.git",
+      "revision": "6.2.0",
+      "license_expression": "Apache-2.0",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。",
+      "license_evidence": [
+        {
+          "path": "licenses/idb-keyval/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "path": "licenses/idb-keyval/UPSTREAM-LICENSE",
+          "sha256": "20c27d6339619eeb3113cb865d4e98a3f559e52964fc75caea9cb5fa72674565"
+        }
+      ]
+    },
+    {
+      "name": "safari-14-idb-fix",
+      "url": "https://registry.npmjs.org/safari-14-idb-fix/-/safari-14-idb-fix-3.0.0.tgz",
+      "revision": "3.0.0",
+      "license_expression": "Apache-2.0",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。",
+      "license_evidence": [
+        {
+          "path": "licenses/safari-14-idb-fix/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "name": "@placemarkio/tokml",
+      "url": "https://github.com/placemark/tokml",
+      "revision": "0.3.3; npm gitHead 53a4791c4114651bc4212fd0631b60ae6bbbb519; licensed-source evidence 4cd5c52ae4e482693812565311b790a5fd54e0fa",
+      "license_expression": "MIT",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。 npm 包缺少许可文件；带 MIT 许可提交与发布提交的 lib/ 树完全相同（a9aa38705fe3e6cd22572f428a98e8d9d91eda25）。",
+      "license_evidence": [
+        {
+          "path": "licenses/placemarkio-tokml/LICENSE",
+          "sha256": "3749b3c116d102a9991a8a2d2e52205ae1cb5e42fbe018672b08c23d487abfd1"
+        }
+      ]
+    },
+    {
+      "name": "@tmcw/togeojson",
+      "url": "https://github.com/placemark/togeojson.git",
+      "revision": "5.6.0",
+      "license_expression": "BSD-2-Clause",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。",
+      "license_evidence": [
+        {
+          "path": "licenses/tmcw-togeojson/LICENSE",
+          "sha256": "7cb180a3e5857ed9f27742bee2371b0a3055e3d302877ed91f62f390a12f5080"
+        }
+      ]
+    },
+    {
+      "name": "mproj",
+      "url": "https://github.com/mbloch/mapshaper-proj.git",
+      "revision": "0.1.6",
+      "license_expression": "MIT",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。",
+      "license_evidence": [
+        {
+          "path": "licenses/mproj/LICENSE",
+          "sha256": "428e6b0ae5431c8d426b9e66e737b212da785bf6c035e08815bb2c39f555db76"
+        }
+      ]
+    },
+    {
+      "name": "kdbush",
+      "url": "https://github.com/mourner/kdbush.git",
+      "revision": "3.0.0",
+      "license_expression": "ISC",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。",
+      "license_evidence": [
+        {
+          "path": "licenses/kdbush/LICENSE",
+          "sha256": "597034cb7c11c916ad407344ea99a0b08e3c443a6b4421460f1d23c411c69707"
+        }
+      ]
+    },
+    {
+      "name": "geographiclib-geodesic",
+      "url": "https://github.com/geographiclib/geographiclib-js.git",
+      "revision": "2.2.0",
+      "license_expression": "MIT",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。",
+      "license_evidence": [
+        {
+          "path": "licenses/geographiclib-geodesic/LICENSE",
+          "sha256": "8df0455c90f6bb3efbabf3e225122654c438a09c2be5635cdd79472a0970247e"
+        }
+      ]
+    },
+    {
+      "name": "geographiclib",
+      "url": "https://git.code.sourceforge.net/p/geographiclib/code",
+      "revision": "1.48.0",
+      "license_expression": "MIT",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。",
+      "license_evidence": [
+        {
+          "path": "licenses/geographiclib/LICENSE",
+          "sha256": "edc9241a9e81d2bb2bcd6d7317134c527926286aa2ae0627368a14a3b972c6f3"
+        }
+      ]
+    },
+    {
+      "name": "rw",
+      "url": "ssh://git@github.com/mbostock/rw.git",
+      "revision": "1.3.3",
+      "license_expression": "BSD-3-Clause",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。",
+      "license_evidence": [
+        {
+          "path": "licenses/rw/LICENSE",
+          "sha256": "e273680c43c2ab5bb3b50af28de6a08000b333396834db7bf6129cd6f130c9cd"
+        }
+      ]
+    },
+    {
+      "name": "@repeaterjs/repeater",
+      "url": "https://github.com/bikeshaving/repeater",
+      "revision": "3.0.6; publish source 638a53f2729f5197875ec12a9d578c274c5f6709",
+      "license_expression": "MIT",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。 npm 包缺少许可文件；从该版本发布提交的仓库根目录保留完整 MIT 文本。",
+      "license_evidence": [
+        {
+          "path": "licenses/repeaterjs-repeater/LICENSE",
+          "sha256": "123e3ba9ae3aa1e0c2b28eec6b5cfa8941ddf6147a2d6914f906d063e34b5119"
+        }
+      ]
+    },
+    {
+      "name": "slice-source",
+      "url": "ssh://git@github.com/mbostock/slice-source.git",
+      "revision": "0.4.1",
+      "license_expression": "BSD-3-Clause",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。",
+      "license_evidence": [
+        {
+          "path": "licenses/slice-source/LICENSE",
+          "sha256": "e81ac14059c1bbe343b1df8bbdd44149221e3c608201245029b4b1e1614adc79"
+        }
+      ]
+    },
+    {
+      "name": "rollup-plugin-polyfill-node",
+      "url": "https://github.com/FredKSchott/rollup-plugin-polyfill-node.git",
+      "revision": "0.13.0",
+      "license_expression": "MIT",
+      "scope": "已发布浏览器文件内的依赖代码，或随附首选源码所引用的依赖；保留原始许可，不将整个组合重新许可。",
+      "license_evidence": [
+        {
+          "path": "licenses/rollup-plugin-polyfill-node/LICENSE",
+          "sha256": "35ebfced43835b096ee196a5d63d1b220752e63c900d59aa79bd1dfb2564c483"
+        }
+      ]
+    },
+    {
+      "name": "d3-geo-projection",
+      "url": "https://raw.githubusercontent.com/d3/d3-geo-projection/v2.0.0/LICENSE",
+      "revision": "v2.0.0",
+      "license_expression": "BSD-3-Clause",
+      "scope": "mproj 中的 Natural Earth 等投影出处；原始复制版本未声明，保留已核查历史完整许可。 此提交固定许可审查证据；未将它冒充为上游未记录的原始复制提交。",
+      "license_evidence": [
+        {
+          "path": "licenses/d3-geo-projection/LICENSE",
+          "sha256": "8b5304265ccedbd17567aa14a0dc6b9bf4013fee44964c46aa54fdf8527d6a68"
+        }
+      ]
+    },
+    {
+      "name": "d3-geo-polygon",
+      "url": "https://raw.githubusercontent.com/d3/d3-geo-polygon/0a64950e7c080d6abfeb69ecf7fb7a343e75b285/LICENSE",
+      "revision": "0a64950e7c080d6abfeb69ecf7fb7a343e75b285",
+      "license_expression": "ISC AND LicenseRef-Gray-Fuller-Public-Domain",
+      "scope": "Mapshaper 多面体、Cahill–Keyes、蝴蝶、Lee 投影适配；保留 Gray–Fuller 公有领域声明。 此提交固定许可审查证据；未将它冒充为上游未记录的原始复制提交。",
+      "license_evidence": [
+        {
+          "path": "licenses/d3-geo-polygon/LICENSE",
+          "sha256": "1d6e942c537991732b63d3c54dbef2853689f9b41ca06cc21c3c17b8dc85fdc4"
+        }
+      ]
+    },
+    {
+      "name": "d3-geo",
+      "url": "https://raw.githubusercontent.com/d3/d3-geo/8c53a90ae70c94bace73ecb02f2c792c649c86ba/LICENSE",
+      "revision": "8c53a90ae70c94bace73ecb02f2c792c649c86ba",
+      "license_expression": "ISC AND MIT",
+      "scope": "球面旋转等适配；完整许可还包含 Charles Karney 的 GeographicLib MIT 文本。 此提交固定许可审查证据；未将它冒充为上游未记录的原始复制提交。",
+      "license_evidence": [
+        {
+          "path": "licenses/d3-geo/LICENSE",
+          "sha256": "3e3edc1224eec9c39cd26491a21304a62883c1e5b6a65c5283ccc7a6cc94baee"
+        }
+      ]
+    },
+    {
+      "name": "d3-dsv",
+      "url": "https://raw.githubusercontent.com/d3/d3-dsv/a2facce660bb4895b56c62a655d0f252efc3d99f/LICENSE",
+      "revision": "a2facce660bb4895b56c62a655d0f252efc3d99f",
+      "license_expression": "ISC",
+      "scope": "分隔文本解析适配。 此提交固定许可审查证据；未将它冒充为上游未记录的原始复制提交。",
+      "license_evidence": [
+        {
+          "path": "licenses/d3-dsv/LICENSE",
+          "sha256": "7842a82012622e5a37bfe4f6c1b67cd3bae6350716b5bf87f36cea0bdc1319dc"
+        }
+      ]
+    },
+    {
+      "name": "imago",
+      "url": "https://raw.githubusercontent.com/jkunimune/Map-Projections/028222e91a533ef14f4ba96431117d4c28914a7f/LICENSE.md",
+      "revision": "028222e91a533ef14f4ba96431117d4c28914a7f",
+      "license_expression": "MIT",
+      "scope": "Justin Kunimune 的 Imago 变换适配；根目录 2023 年和源码文件 2017 年完整许可均保留。 此提交固定许可审查证据；未将它冒充为上游未记录的原始复制提交。",
+      "license_evidence": [
+        {
+          "path": "licenses/imago/LICENSE",
+          "sha256": "b6d61e6d2de8fc582aae34dce7ba6ab59c3127f367ac5ee802b141588a1ea60d"
+        },
+        {
+          "path": "licenses/imago/SOURCE_NOTICES.txt",
+          "sha256": "42682451077800e5988b148bcc16e6de279c6cf6ae7809d5d1b91fcb85c9817c"
+        }
+      ]
+    },
+    {
+      "name": "mustache",
+      "url": "https://raw.githubusercontent.com/janl/mustache.js/972fd2b27a036888acfcb60d6119317744fac7ee/LICENSE",
+      "revision": "972fd2b27a036888acfcb60d6119317744fac7ee",
+      "license_expression": "MIT",
+      "scope": "mapshaper-utils 中 HTML 转义表与函数的适配。 此提交固定许可审查证据；未将它冒充为上游未记录的原始复制提交。",
+      "license_evidence": [
+        {
+          "path": "licenses/mustache/LICENSE",
+          "sha256": "e60b280838180a70cbb4b934f825c8119cdcf8912259ff4c6da20b284231c832"
+        }
+      ]
+    },
+    {
+      "name": "underscore",
+      "url": "https://raw.githubusercontent.com/jashkenas/underscore/5c1e5f686f8500af9c9d15614ed60289d6d35d6b/LICENSE",
+      "revision": "5c1e5f686f8500af9c9d15614ed60289d6d35d6b",
+      "license_expression": "MIT",
+      "scope": "mapshaper-utils 中 isObject 出处。 此提交固定许可审查证据；未将它冒充为上游未记录的原始复制提交。",
+      "license_evidence": [
+        {
+          "path": "licenses/underscore/LICENSE",
+          "sha256": "92905fb54f5d168a27e6d5dc7c2197020add11842be4c70689d084bae3bfe37a"
+        }
+      ]
+    },
+    {
+      "name": "node-process",
+      "url": "https://raw.githubusercontent.com/defunctzombie/node-process/77caa43cdaee4ea710aa14d11cea1705293c0ef3/LICENSE",
+      "revision": "77caa43cdaee4ea710aa14d11cea1705293c0ef3",
+      "license_expression": "MIT",
+      "scope": "modules.js 浏览器 process 兼容代码。 此提交固定许可审查证据；未将它冒充为上游未记录的原始复制提交。",
+      "license_evidence": [
+        {
+          "path": "licenses/node-process/LICENSE",
+          "sha256": "59a400d04c5078579acc27ddd6452c1bdf763f9506e01364700935fbb1a7c91b"
+        }
+      ]
+    },
+    {
+      "name": "browser-process-hrtime",
+      "url": "https://raw.githubusercontent.com/kumavis/browser-process-hrtime/38920d3d06ddecf0ad1b51f0f6872db946e3c035/LICENSE",
+      "revision": "38920d3d06ddecf0ad1b51f0f6872db946e3c035",
+      "license_expression": "BSD-2-Clause",
+      "scope": "modules.js 浏览器 hrtime 兼容代码。 此提交固定许可审查证据；未将它冒充为上游未记录的原始复制提交。",
+      "license_evidence": [
+        {
+          "path": "licenses/browser-process-hrtime/LICENSE",
+          "sha256": "2243bd3accba231c98cfffe649d73042fa6d072922cc25f02cc9254aef69662c"
+        }
+      ]
+    },
+    {
+      "name": "phpjs",
+      "url": "https://raw.githubusercontent.com/locutusjs/locutus/c57a814de23460dad15a1c0802396f97120e391d/LICENSE.txt",
+      "revision": "c57a814de23460dad15a1c0802396f97120e391d",
+      "license_expression": "MIT",
+      "scope": "mapshaper-utils 中 addslashes 适配；历史函数贡献者声明另行保留。 此提交固定许可审查证据；未将它冒充为上游未记录的原始复制提交。",
+      "license_evidence": [
+        {
+          "path": "licenses/phpjs/LICENSE",
+          "sha256": "61cd914fad645fe7eb5ee66df80dedbe3365e335f28673a9d1d5e4ed02a22ff3"
+        },
+        {
+          "path": "licenses/phpjs/SOURCE_NOTICES.txt",
+          "sha256": "26bd663e5555ac893c133f0600012cc7c3507d2d6e0166a87f23d3ada2d9138f"
+        }
+      ]
+    },
+    {
+      "name": "polylabel",
+      "url": "https://github.com/mbloch/mapshaper/blob/b44c0fa95effac3d91526c8b62dc0de0ab88b464/src/points/mapshaper-polylabel.mjs",
+      "revision": "b44c0fa95effac3d91526c8b62dc0de0ab88b464",
+      "license_expression": "ISC",
+      "scope": "Mapbox Polylabel 2.1.0 的上游适配，原作者 Vladimir Agafonkin。 从固定发布内容保留；本插件未修改这些字节。",
+      "license_evidence": [
+        {
+          "path": "licenses/polylabel/LICENSE",
+          "sha256": "7354ced9ea9e47dc45c85d4979f59e7afffac98a5f823a31e8b06e3868bf735b"
+        }
+      ]
+    },
+    {
+      "name": "geokdbush",
+      "url": "https://github.com/mbloch/mapshaper/blob/b44c0fa95effac3d91526c8b62dc0de0ab88b464/src/thirdparty/geokdbush.mjs",
+      "revision": "b44c0fa95effac3d91526c8b62dc0de0ab88b464",
+      "license_expression": "ISC",
+      "scope": "Vladimir Agafonkin 的 geokdbush。 从固定发布内容保留；本插件未修改这些字节。",
+      "license_evidence": [
+        {
+          "path": "licenses/geokdbush/LICENSE",
+          "sha256": "51db91bc5605bab6d7cf0de3e84becb4f129c3582d40ab6b62581a5c8b198129"
+        }
+      ]
+    },
+    {
+      "name": "crameri",
+      "url": "https://github.com/mbloch/mapshaper/blob/b44c0fa95effac3d91526c8b62dc0de0ab88b464/src/color/crameri-schemes.mjs",
+      "revision": "b44c0fa95effac3d91526c8b62dc0de0ab88b464",
+      "license_expression": "MIT",
+      "scope": "Fabio Crameri Scientific colour maps 8.0.1；上游取样和调整说明保留。 从固定发布内容保留；本插件未修改这些字节。",
+      "license_evidence": [
+        {
+          "path": "licenses/crameri/LICENSE",
+          "sha256": "a2be6853dc6d79ff145d7f683cc36a2194b77e6170f13fc2a8d2f0d97a4d5b52"
+        }
+      ]
+    },
+    {
+      "name": "microsoft-helpers",
+      "url": "https://github.com/mbloch/mapshaper/blob/b44c0fa95effac3d91526c8b62dc0de0ab88b464/www/mapshaper.js",
+      "revision": "b44c0fa95effac3d91526c8b62dc0de0ab88b464",
+      "license_expression": "LicenseRef-Microsoft-Permissive",
+      "scope": "编译生成的 Microsoft 辅助代码，完整原始宽松许可；不将其错误标记为标准 MIT。 从固定发布内容保留；本插件未修改这些字节。",
+      "license_evidence": [
+        {
+          "path": "licenses/microsoft-helpers/LICENSE",
+          "sha256": "8145ff2f35883ffd1794579b777562aa13bf53f72352fc769ab5a27ef4b7d032"
+        }
+      ]
+    },
+    {
+      "name": "equal-earth",
+      "url": "https://github.com/mbloch/mapshaper/blob/b44c0fa95effac3d91526c8b62dc0de0ab88b464/www/modules.js",
+      "revision": "b44c0fa95effac3d91526c8b62dc0de0ab88b464",
+      "license_expression": "Apache-2.0",
+      "scope": "Bernie Jenny 2018 Equal Earth；保留 Matthew Bloch 2018 年 JavaScript 移植修改声明。 从固定发布内容保留；本插件未修改这些字节。",
+      "license_evidence": [
+        {
+          "path": "licenses/equal-earth/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        },
+        {
+          "path": "licenses/equal-earth/SOURCE_NOTICES.txt",
+          "sha256": "de65845a841c06c9d05f4854e8c64c145aec89eeff23f3f8ec85f7719e7c009d"
+        }
+      ]
+    },
+    {
+      "name": "node-string-decoder",
+      "url": "https://github.com/mbloch/mapshaper/blob/b44c0fa95effac3d91526c8b62dc0de0ab88b464/www/modules.js",
+      "revision": "b44c0fa95effac3d91526c8b62dc0de0ab88b464",
+      "license_expression": "MIT",
+      "scope": "Joyent 与 Node contributors 的字符串解码兼容代码。 从固定发布内容保留；本插件未修改这些字节。",
+      "license_evidence": [
+        {
+          "path": "licenses/node-string-decoder/LICENSE",
+          "sha256": "6b78af629346aedd10f05152706d8252cd45a8c1ab432145efde8dab3147b47f"
+        }
+      ]
+    },
+    {
+      "name": "N. Devillard Wirth selection",
+      "url": "http://ndevilla.free.fr/median/median/src/wirth.c",
+      "revision": "retrieved 2026-10-30; SHA-256 9844b91826a642f9cfefa905df5bed03bd8d49fb5fc3fb87335aeaa436759cae",
+      "license_expression": "LicenseRef-Public-Domain",
+      "scope": "作者原始实现明确声明 public domain；原站只提供 HTTP，此哈希固定实际读取字节，不声称已验证 TLS 或作者签名。",
+      "license_evidence": [
+        {
+          "path": "licenses/devillard/LICENSE",
+          "sha256": "a8be5ff63df59ea25af7b3af7e80453d3e1e4e87cced655f404658965501d8f0"
+        },
+        {
+          "path": "licenses/devillard/wirth.c",
+          "sha256": "9844b91826a642f9cfefa905df5bed03bd8d49fb5fc3fb87335aeaa436759cae"
+        }
+      ]
+    },
+    {
+      "name": "Mapshaper",
+      "url": "https://github.com/mbloch/mapshaper",
+      "revision": "b44c0fa95effac3d91526c8b62dc0de0ab88b464 (npm 0.7.101)",
+      "license_expression": "MPL-2.0",
+      "scope": "核心和浏览器依赖入口保持原始字节；对应首选源码随包提供。MPL 适用文件继续受 MPL 约束；独立插件适配层不冒充上游作品。",
+      "license_evidence": [
+        {
+          "path": "licenses/mapshaper/LICENSE",
+          "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85"
+        },
+        {
+          "path": "licenses/mapshaper/UPSTREAM-LICENSE",
+          "sha256": "13c471adb52fa94f41af499838778f020ccd59af07afb46f9f4ba43ff122a429"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "web/vendor/mapshaper.js",
+    "web/vendor/modules.js",
+    "licenses/mapshaper/sources/mapshaper-0.7.101-source.zip"
+  ],
+  "reused_file_hashes": [
+    {
+      "path": "web/vendor/mapshaper.js",
+      "sha256": "20bd08942346edd6a2518f23ad40829ab80829cdb116a8b8d8cddb102d5cddc9",
+      "bytes": 3592274,
+      "modified": false,
+      "modification_note": "原始发布字节未修改。"
+    },
+    {
+      "path": "web/vendor/modules.js",
+      "sha256": "535f573e5d49ff743690d5955a9b6299864b8e591e12195f809017222833b544",
+      "bytes": 1098484,
+      "modified": false,
+      "modification_note": "原始发布字节未修改。"
+    },
+    {
+      "path": "licenses/mapshaper/sources/mapshaper-0.7.101-source.zip",
+      "sha256": "f14d8fde00e66460c5b122c396e1b52be11aa2582463de7eceac040d7a06b512",
+      "bytes": 1199494,
+      "modified": true,
+      "modification_note": "归档经过范围筛选，增加构建说明和目标选择器；原始源码文件未修改。"
+    }
+  ],
+  "third_party_notices": "THIRD_PARTY_NOTICES.md",
+  "source_availability": "licenses/mapshaper/SOURCE_AVAILABILITY.md",
+  "verification_limits": "Source/notice evidence reviewed before copying. Final ZIP extraction and functional/host/user tests are separate gates. No independent reproducible build or publisher signature verification is claimed."
+}

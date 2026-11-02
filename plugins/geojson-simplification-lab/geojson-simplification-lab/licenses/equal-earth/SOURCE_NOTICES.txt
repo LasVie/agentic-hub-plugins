@@ -1,0 +1,27 @@
+/**
+	 * Copyright 2018 Bernie Jenny, Monash University, Melbourne, Australia.
+	 *
+	 * Licensed under the Apache License, Version 2.0 (the "License");
+	 * you may not use this file except in compliance with the License.
+	 * You may obtain a copy of the License at
+	 *
+	 * http://www.apache.org/licenses/LICENSE-2.0
+	 *
+	 * Unless required by applicable law or agreed to in writing, software
+	 * distributed under the License is distributed on an "AS IS" BASIS,
+	 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	 * See the License for the specific language governing permissions and
+	 * limitations under the License.
+	 *
+	 * Equal Earth is a projection inspired by the Robinson projection, but unlike
+	 * the Robinson projection retains the relative size of areas. The projection
+	 * was designed in 2018 by Bojan Savric, Tom Patterson and Bernhard Jenny.
+	 *
+	 * Publication:
+	 * Bojan Savric, Tom Patterson & Bernhard Jenny (2018). The Equal Earth map
+	 * projection, International Journal of Geographical Information Science,
+	 * DOI: 10.1080/13658816.2018.1504949
+	 *
+	 * Code released August 2018
+	 * Ported to JavaScript and adapted for mapshaper-proj by Matthew Bloch August 2018
+	 */

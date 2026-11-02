@@ -1,0 +1,38 @@
+{
+  "verified_at": "2026-10-30T09:55:43.489075+00:00",
+  "plugin_id": "geojson-simplification-lab",
+  "version": "1.0.1",
+  "purpose": "Remove only owned verification installation so the user can manually import the exact native ZIP without an ID collision.",
+  "native_zip": "/Users/IDLE_And_R/.codex/worktrees/581d/agentic-hub-plugins/dist/geojson-simplification-lab/1.0.1/geojson-simplification-lab-1.0.1-workswarm.zip",
+  "native_zip_sha256": "32b0bb79a8881d184ea5ad5f01a19357c3c6dfb313fe63dc769795d6f9753e1a",
+  "installed_payload_verified_before_cleanup": true,
+  "owned_workbench_port": 60790,
+  "owned_workbench_stopped": true,
+  "supported_uninstall_method": "plugin_packages.uninstall",
+  "catalog_before": [
+    {
+      "id": "geojson-simplification-lab",
+      "installed": true,
+      "connection_state": "connected"
+    }
+  ],
+  "catalog_after": [],
+  "local_package_directory_absent": true,
+  "reimport_performed": false,
+  "manual_import_ready": true,
+  "manual_import_basis": "Exact ZIP was previously imported successfully through supported import_local; own package directory and catalog ID are now absent. No new import was performed.",
+  "manual_workspace": "/Users/IDLE_And_R/.codex/worktrees/581d/agentic-hub-plugins/dist/geojson-simplification-lab/1.0.1/manual-workspace-user-20261030",
+  "manual_workspace_empty": true,
+  "frontend_url": "http://127.0.0.1:6394/",
+  "frontend_http": 200,
+  "websocket_proxy_ping_pong": true,
+  "websocket_direct_ping_pong": true,
+  "host_services_left_running": true,
+  "host_service_restarts": false,
+  "model_config_unchanged": true,
+  "model_requests": 0,
+  "main_or_other_instances_modified": false,
+  "pre_cleanup_host_evidence_preserved": true,
+  "pre_cleanup_host_evidence_sha256": "319e286b7e323ce9a700faa28c790e20a16439236b8cb80c9afdc031d694b78f",
+  "passed": true
+}

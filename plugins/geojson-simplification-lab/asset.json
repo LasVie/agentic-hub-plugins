@@ -1,0 +1,22 @@
+{
+  "type": "agent-plugin",
+  "name": "geojson-simplification-lab",
+  "version": "1.0.1",
+  "display_name": "离线地图简化工作台",
+  "description": "离线简化 GeoJSON 多边形共享边界，对照原图、检查属性及环损失，导出 GeoJSON 与 SVG。",
+  "publisher": "Cai Zhenze",
+  "category": "数据与科学研究",
+  "tags": [
+    "离线地图",
+    "边界简化",
+    "GeoJSON"
+  ],
+  "functional_tags": [
+    "Offline Polygon Simplification",
+    "Shared Boundaries",
+    "GeoJSON Transformation"
+  ],
+  "scope": "macOS/Linux、Python3.11+、现代桌面浏览器；有限二维WGS84多边形，仅本机计算，不修改宿主，无外部GIS依赖。",
+  "candidate_id": "CAND-EXT-004",
+  "task_id": "AH-20261030-geojson-simplification-lab"
+}

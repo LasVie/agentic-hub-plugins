@@ -1,0 +1,50 @@
+{
+  "version": "1.0.1",
+  "package_type": "plugin",
+  "id": "geojson-simplification-lab",
+  "name": "离线地图简化工作台",
+  "description": "离线简化 GeoJSON 多边形共享边界，对照原图、检查属性及环损失，导出 GeoJSON 与 SVG。",
+  "skills": [
+    {
+      "dir": "skills/geojson-workbench",
+      "mode": "all"
+    }
+  ],
+  "display_name": {
+    "en": "离线地图简化工作台",
+    "zh": "离线地图简化工作台"
+  },
+  "display_description": {
+    "en": "离线简化 GeoJSON 多边形共享边界，对照原图、检查属性及环损失，导出 GeoJSON 与 SVG。",
+    "zh": "离线简化 GeoJSON 多边形共享边界，对照原图、检查属性及环损失，导出 GeoJSON 与 SVG。"
+  },
+  "tools": [
+    {
+      "file": "tools/geojson_tools.py",
+      "class": "GeojsonWorkbenchTool",
+      "display_name": {
+        "en": "管理地图简化工作台",
+        "zh": "管理地图简化工作台"
+      },
+      "display_description": {
+        "en": "启动或查询本插件的独立本机浏览器工作台。",
+        "zh": "启动或查询本插件的独立本机浏览器工作台。"
+      }
+    }
+  ],
+  "category": "Others",
+  "tags": [
+    {
+      "en": "离线地图",
+      "zh": "离线地图"
+    },
+    {
+      "en": "边界简化",
+      "zh": "边界简化"
+    },
+    {
+      "en": "GeoJSON",
+      "zh": "GeoJSON"
+    }
+  ]
+}

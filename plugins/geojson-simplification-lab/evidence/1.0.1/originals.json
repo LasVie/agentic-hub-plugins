@@ -1,0 +1,68 @@
+{
+  "task_id": "AH-20261030-geojson-simplification-lab",
+  "candidate_id": "CAND-EXT-004",
+  "owner": "Cai Zhenze",
+  "name": "离线地图简化工作台",
+  "version": "1.0.1",
+  "received_date": "2026-11-02",
+  "timezone": "Asia/Singapore",
+  "source": "Original user attachments in this Codex conversation; no resizing, cropping or recompression",
+  "files": [
+    {
+      "file": "user-test-01.png",
+      "original_filename": "Screenshot 2026-11-02 at 9.53.06 PM.png",
+      "bytes": 308115,
+      "width": 586,
+      "height": 1650,
+      "sha256": "b22927fdd2a16b695040f82940dbd396f5920847c25efee2610c2f0ceea493f3"
+    },
+    {
+      "file": "user-test-02.png",
+      "original_filename": "Screenshot 2026-11-02 at 9.53.17 PM.png",
+      "bytes": 363164,
+      "width": 1666,
+      "height": 1694,
+      "sha256": "2d117e9181e4cbc1c92366b53a9e2fad8c0081fbaf9da9047204929e6b79fea0"
+    },
+    {
+      "file": "user-test-03.png",
+      "original_filename": "Screenshot 2026-11-02 at 9.53.40 PM.png",
+      "bytes": 360630,
+      "width": 1654,
+      "height": 1686,
+      "sha256": "f1e54c5196367c995d5561c13c76c0ed1c3cfc6fcbfaf76ff3fc93555397a563"
+    },
+    {
+      "file": "user-test-04.png",
+      "original_filename": "Screenshot 2026-11-02 at 9.53.57 PM.png",
+      "bytes": 397159,
+      "width": 1630,
+      "height": 1760,
+      "sha256": "f3af4ab344ea9f3aa0897f780f7ccff58b6f008033edaad78228291f9405919a"
+    },
+    {
+      "file": "user-test-05.png",
+      "original_filename": "Screenshot 2026-11-02 at 9.54.26 PM.png",
+      "bytes": 380667,
+      "width": 1646,
+      "height": 1696,
+      "sha256": "b7ea77548ab39c742d09a49cfadcfcee4db6c9cf5a1e43d95bca9c076241239a"
+    },
+    {
+      "file": "user-test-06.png",
+      "original_filename": "Screenshot 2026-11-02 at 9.58.37 PM.png",
+      "bytes": 421513,
+      "width": 1614,
+      "height": 1768,
+      "sha256": "264c58915f909dadd8e3809b366d5758817893e8279914db33a13c93515c5f1b"
+    },
+    {
+      "file": "user-test-07.png",
+      "original_filename": "Screenshot 2026-11-02 at 9.58.53 PM.png",
+      "bytes": 402850,
+      "width": 1630,
+      "height": 1686,
+      "sha256": "e635953b8f3daf3cfb67fc4266e4aa28764104789b77bf72103755baff71da11"
+    }
+  ]
+}

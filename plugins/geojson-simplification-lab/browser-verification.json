@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-30",
+  "version": "1.0.1",
+  "verification": "AI-controlled Chrome against exact installed native payload; not user manual acceptance or running-host chat dispatch",
+  "native_zip_sha256": "32b0bb79a8881d184ea5ad5f01a19357c3c6dfb313fe63dc769795d6f9753e1a",
+  "installed_sdk_returned_url_opened": true,
+  "sample": {
+    "percent": 20,
+    "vertices_before": 206,
+    "vertices_after": 40,
+    "features": 2,
+    "svg_overlay_paths": 4
+  },
+  "input_edit_cleared_results_and_disabled_both_exports": true,
+  "invalid_collection_error": "unsupported_collection",
+  "example_recovery": true,
+  "downloads": [
+    {
+      "path": "/Users/IDLE_And_R/Downloads/地图简化-20pct (1).geojson",
+      "bytes": 1140,
+      "sha256": "9f46cd45c4c77b1ea7ae9c57478aa1abe1139c9bfa4d915f4819661273f628b4",
+      "independently_parsed": true
+    },
+    {
+      "path": "/Users/IDLE_And_R/Downloads/地图简化-20pct (1).svg",
+      "bytes": 1134,
+      "sha256": "e973b8997799f6c5a2e0a0d3cb15931554f2c7bc9e6b1a4e08577cf27e59c0eb",
+      "independently_parsed": true
+    }
+  ],
+  "preview_screenshot": "/Users/IDLE_And_R/.codex/worktrees/581d/agentic-hub-plugins/dist/geojson-simplification-lab/1.0.1/verification/installed-workbench-preview.png",
+  "reused_1_0_0_browser_checks": [
+    "overlay toggle",
+    "ratio invalidation",
+    "restore imported text",
+    "GeoJSON file chooser reimport",
+    "small hole/island loss warning"
+  ],
+  "reuse_basis": "No runtime logic change; 1.0.1 corrects source inventory attribution and version declarations.",
+  "not_verified": [
+    "User manual acceptance",
+    "Actual running-host chat dispatch",
+    "Independent SVG viewer rendering",
+    "Linux and Windows runtime"
+  ],
+  "cleanup": "Own verification service stopped and own test install removed; isolated host left running for manual ZIP import."
+}
