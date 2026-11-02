@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>离线观星规划台</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <header class="masthead">
+      <div class="brand-mark" aria-hidden="true"><span></span>◒</div>
+      <div><p class="eyebrow">此地，此刻，下一段夜空</p><h1>离线观星规划台</h1><p class="subtitle">v1.0.0 · 太阳系天体位置与观测时段</p></div>
+      <span class="local-badge"><i></i> 仅本机 · 离线计算</span>
+    </header>
+
+    <div id="notice" class="notice" role="status" aria-live="polite">选择地点与 UTC 起始时间，然后计算。图表只显示实际计算结果。</div>
+
+    <div class="workspace">
+      <section class="card controls" aria-labelledby="input-title">
+        <div class="section-top"><span class="section-number">01 / 设定观察条件</span><span class="small-tag">最长 24 小时</span></div>
+        <h2 id="input-title">从一个地点出发</h2>
+        <div class="presets" aria-label="示例观察地点">
+          <button type="button" data-place="singapore">新加坡</button>
+          <button type="button" data-place="beijing">北京</button>
+          <button type="button" data-place="north">北纬 70°</button>
+        </div>
+        <form id="plan-form">
+          <div class="two-fields">
+            <label>纬度 <span>°，北正南负</span><input name="latitude" type="number" min="-80" max="80" step="any" value="1.3521" required></label>
+            <label>经度 <span>°，东正西负</span><input name="longitude" type="number" min="-180" max="180" step="any" value="103.8198" required></label>
+          </div>
+          <label>海拔 <span>米；不含地形遮挡</span><input name="elevation_m" type="number" min="-500" max="10000" step="any" value="15" required></label>
+          <label>起始时间 <span>UTC，必须带 Z</span><input name="start_utc" type="text" value="2026-10-30T10:00:00Z" placeholder="2026-10-30T10:00:00Z" autocomplete="off" spellcheck="false" required></label>
+          <p class="field-note">范围为 2000–2100 年。这里填写 UTC，不是本地时钟时间。</p>
+          <div class="two-fields">
+            <label>计划时长 <span>小时，至少 1 秒</span><input name="duration_hours" type="number" min="0.000001" max="24" step="any" value="24" required></label>
+            <label>采样间隔 <span>分钟，5–60</span><input name="step_minutes" type="number" min="5" max="60" step="1" value="30" required></label>
+          </div>
+          <label>显示时差 <span>相对 UTC 的固定分钟数</span><select name="display_offset_minutes"><option value="480" selected>UTC+08:00（+480 分钟）</option><option value="0">UTC（0 分钟）</option><option value="custom">自定义固定时差</option></select></label>
+          <label id="custom-offset-label" hidden>自定义时差 <span>−840 至 +840 分钟</span><input id="custom-offset" type="number" min="-840" max="840" step="1" value="0"></label>
+          <p class="field-note">仅改变显示，不改变计算时刻；不自动识别时区或夏令时。</p>
+          <fieldset><legend>计算天体</legend><div class="body-options">
+            <label><input type="checkbox" name="bodies" value="Sun" checked><i class="body-dot" data-body="Sun"></i>太阳</label>
+            <label><input type="checkbox" name="bodies" value="Moon" checked><i class="body-dot" data-body="Moon"></i>月球</label>
+            <label><input type="checkbox" name="bodies" value="Mercury" checked><i class="body-dot" data-body="Mercury"></i>水星</label>
+            <label><input type="checkbox" name="bodies" value="Venus" checked><i class="body-dot" data-body="Venus"></i>金星</label>
+            <label><input type="checkbox" name="bodies" value="Mars" checked><i class="body-dot" data-body="Mars"></i>火星</label>
+            <label><input type="checkbox" name="bodies" value="Jupiter" checked><i class="body-dot" data-body="Jupiter"></i>木星</label>
+            <label><input type="checkbox" name="bodies" value="Saturn" checked><i class="body-dot" data-body="Saturn"></i>土星</label>
+          </div></fieldset>
+          <button type="submit" class="primary" id="calculate">计算观测计划 <span aria-hidden="true">↗</span></button>
+        </form>
+        <p class="scope-note">不是可见性保证。云层、光污染、地形、消光和仪器条件均未建模。不要用本工具进行航海、飞行或望远镜安全控制。</p>
+      </section>
+
+      <section class="card sky-card" aria-labelledby="sky-title">
+        <div class="section-top"><span class="section-number">02 / 看此刻的方位</span><span class="small-tag" id="result-version">等待计算</span></div>
+        <div class="title-row"><h2 id="sky-title">地平坐标</h2><span id="above-count" class="quiet">—</span></div>
+        <div class="sky-frame"><svg id="sky-chart" viewBox="0 0 600 470" role="img" aria-label="当前采样时刻的天体地平位置"></svg><p id="sky-empty" class="chart-empty">计算后显示地平线以上的天体<br><span>真北为 0°，方位角向东增加</span></p></div>
+        <div class="time-control"><div><span class="section-number">选择实际采样时刻</span><strong id="selected-time">尚无结果</strong><small id="selected-utc">UTC 为计算基准</small></div><input id="time-index" type="range" min="0" max="0" value="0" step="1" disabled aria-label="采样时刻"></div>
+        <p class="chart-note">圆心为天顶，外圈为几何地平线。图中只画高度角 ≥ 0° 的天体；地平线以下仍列在读数表中。位置未加大气折射。</p>
+      </section>
+    </div>
+
+    <section class="card timeline-card" aria-labelledby="timeline-title">
+      <div class="section-top"><span class="section-number">03 / 沿时间观察</span><span id="sample-info" class="quiet">—</span></div>
+      <div class="title-row"><h2 id="timeline-title">高度角与晨昏</h2><button type="button" id="export-csv" disabled>导出实际读数 CSV ↓</button></div>
+      <div class="timeline-frame"><svg id="timeline-chart" viewBox="0 0 1100 330" role="img" aria-label="天体高度角随时间变化及太阳高度分段"></svg><p id="timeline-empty" class="chart-empty">尚未计算高度轨迹</p></div>
+      <div id="legend" class="legend"></div>
+      <div class="twilight-legend"><span><i class="day"></i>太阳 ≥ 0°</span><span><i class="civil"></i>0° 至 −6°</span><span><i class="nautical"></i>−6° 至 −12°</span><span><i class="astronomical"></i>−12° 至 −18°</span><span><i class="night"></i>太阳 &lt; −18°</span></div>
+      <p class="chart-note">背景按太阳的实际采样高度分段，边界是采样近似；下方晨昏事件另行数值求解。折线连接采样点，不代表连续求解。</p>
+    </section>
+
+    <section class="card readings-card" aria-labelledby="readings-title">
+      <div class="section-top"><span class="section-number">04 / 核对数值</span><span class="small-tag">北 0° · 东 90°</span></div>
+      <h2 id="readings-title">当前读数与区间事件</h2>
+      <div class="table-scroll"><table><thead><tr><th>天体</th><th>高度角</th><th>方位角</th><th>几何地平线</th><th>区间内升起</th><th>区间内落下</th></tr></thead><tbody id="readings"><tr><td colspan="6" class="empty-cell">计算后显示读数；空事件不代表天体永不升起或永不落下。</td></tr></tbody></table></div>
+      <div id="twilight-events" class="twilight-events"></div>
+      <details class="conventions"><summary>计算约定、误差与适用边界</summary><div id="conventions"><p>数值引擎为 Astronomy Engine 2.1.19。仅计算太阳、月球、水星、金星、火星、木星和土星。纬度限 ±80°，时段最长 24 小时。</p></div><p>升落事件使用引擎的标准大气折射及日月视半径约定，与上方无折射高度角不同；实际大气与近地平线环境会造成偏差。无区间事件只说明这个时间窗内没有找到事件。</p><p>这是计划辅助工具，不是专业星历保证或实际天气预测。没有恒星图、星座、卫星、食相、自动定位或外部数据请求。</p></details>
+    </section>
+
+    <section class="card persistence"><div><p class="section-number">保留条件，再次计算</p><h2>保存 · 比较 · 重现</h2><p class="quiet">只保存输入条件。读取或导入后重新计算，避免把旧结果当成当前结果。</p></div><div class="actions"><button id="save-plan" type="button">保存计划</button><button id="load-plan" type="button">读取已保存</button><button id="export-json" type="button">导出 JSON ↓</button><button id="import-json" type="button">导入 JSON ↑</button><input id="import-file" type="file" accept=".json,application/json" hidden></div></section>
+    <footer><span>独立观察 · 本机计算</span><span>离线观星规划台 / 1.0.0 · <a href="licenses.txt" target="_blank" rel="noreferrer">Astronomy Engine MIT 许可</a> · <a href="notices.md" target="_blank" rel="noreferrer">来源与声明</a></span></footer>
+  </main>
+</body>
+</html>

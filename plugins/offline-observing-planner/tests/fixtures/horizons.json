@@ -1,0 +1,663 @@
+{
+  "source": "NASA/JPL Solar System Dynamics Group, Horizons On-Line Ephemeris System",
+  "url": "https://ssd.jpl.nasa.gov/api/horizons.api",
+  "api_version": "1.2",
+  "observed_date": "2026-10-30",
+  "coordinate_convention": "Earth WGS84 geodetic latitude, east-positive longitude, elevation kilometers in SITE_COORD. Apparent airless topocentric target-center azimuth clockwise north; elevation relative to local zenith plane; UT output is UTC after1962. No weather refraction.",
+  "cases": [
+    {
+      "id": "singapore_sun",
+      "body": "Sun",
+      "number": 10,
+      "latitude": 1.3521,
+      "longitude": 103.8198,
+      "elevation_m": 15,
+      "times": [
+        "2000-01-01 00:00:00",
+        "2026-10-30 12:00:00",
+        "2026-10-30 18:00:00",
+        "2100-12-30 12:00:00"
+      ],
+      "expected": [
+        {
+          "utc": "2000-01-01T00:00:00Z",
+          "azimuth_deg": 113.874206867,
+          "altitude_deg": 11.451781413,
+          "separation_tolerance_arcmin": 1.0
+        },
+        {
+          "utc": "2026-10-30T12:00:00Z",
+          "azimuth_deg": 255.86203214,
+          "altitude_deg": -17.704091849,
+          "separation_tolerance_arcmin": 1.0
+        },
+        {
+          "utc": "2026-10-30T18:00:00Z",
+          "azimuth_deg": 126.313068647,
+          "altitude_deg": -68.263089224,
+          "separation_tolerance_arcmin": 1.0
+        },
+        {
+          "utc": "2100-12-30T12:00:00Z",
+          "azimuth_deg": 246.577014445,
+          "altitude_deg": -12.69057289,
+          "separation_tolerance_arcmin": 1.0
+        }
+      ],
+      "request": {
+        "format": "text",
+        "COMMAND": "10",
+        "OBJ_DATA": "NO",
+        "MAKE_EPHEM": "YES",
+        "EPHEM_TYPE": "OBSERVER",
+        "CENTER": "coord@399",
+        "COORD_TYPE": "GEODETIC",
+        "SITE_COORD": "103.8198,1.3521,0.015",
+        "TLIST": "2451544.5,2461344.0,2461344.25,2488433.0",
+        "TLIST_TYPE": "JD",
+        "QUANTITIES": "4",
+        "APPARENT": "AIRLESS",
+        "CSV_FORMAT": "YES",
+        "EXTRA_PREC": "YES",
+        "TIME_DIGITS": "SECONDS",
+        "CAL_TYPE": "GREGORIAN",
+        "TIME_TYPE": "UT"
+      },
+      "raw_file": ".research/astronomy-engine-reference-evidence-20261030/singapore_sun.txt",
+      "raw_sha256": "9dae2fede1828a0acb21b4bb999c8eeb8a574ea7d81158165e304f2abadfa7f3",
+      "retrieved_utc": "2026-10-30T09:15:28.120565+00:00"
+    },
+    {
+      "id": "singapore_moon",
+      "body": "Moon",
+      "number": 301,
+      "latitude": 1.3521,
+      "longitude": 103.8198,
+      "elevation_m": 15,
+      "times": [
+        "2000-01-01 00:00:00",
+        "2026-10-30 12:00:00",
+        "2026-10-30 18:00:00",
+        "2100-12-30 12:00:00"
+      ],
+      "expected": [
+        {
+          "utc": "2000-01-01T00:00:00Z",
+          "azimuth_deg": 129.104574724,
+          "altitude_deg": 73.249390283,
+          "separation_tolerance_arcmin": 1.0
+        },
+        {
+          "utc": "2026-10-30T12:00:00Z",
+          "azimuth_deg": 53.536293303,
+          "altitude_deg": -38.210641143,
+          "separation_tolerance_arcmin": 1.0
+        },
+        {
+          "utc": "2026-10-30T18:00:00Z",
+          "azimuth_deg": 56.59309416,
+          "altitude_deg": 36.733945482,
+          "separation_tolerance_arcmin": 1.0
+        },
+        {
+          "utc": "2100-12-30T12:00:00Z",
+          "azimuth_deg": 241.051419697,
+          "altitude_deg": -19.779314542,
+          "separation_tolerance_arcmin": 2.0
+        }
+      ],
+      "request": {
+        "format": "text",
+        "COMMAND": "301",
+        "OBJ_DATA": "NO",
+        "MAKE_EPHEM": "YES",
+        "EPHEM_TYPE": "OBSERVER",
+        "CENTER": "coord@399",
+        "COORD_TYPE": "GEODETIC",
+        "SITE_COORD": "103.8198,1.3521,0.015",
+        "TLIST": "2451544.5,2461344.0,2461344.25,2488433.0",
+        "TLIST_TYPE": "JD",
+        "QUANTITIES": "4",
+        "APPARENT": "AIRLESS",
+        "CSV_FORMAT": "YES",
+        "EXTRA_PREC": "YES",
+        "TIME_DIGITS": "SECONDS",
+        "CAL_TYPE": "GREGORIAN",
+        "TIME_TYPE": "UT"
+      },
+      "raw_file": ".research/astronomy-engine-reference-evidence-20261030/singapore_moon.txt",
+      "raw_sha256": "10a91562b868bd400909f81150c094cf4d8728f229f29c820480a2443a285bd1",
+      "retrieved_utc": "2026-10-30T09:15:29.824261+00:00"
+    },
+    {
+      "id": "singapore_mercury",
+      "body": "Mercury",
+      "number": 199,
+      "latitude": 1.3521,
+      "longitude": 103.8198,
+      "elevation_m": 15,
+      "times": [
+        "2000-01-01 00:00:00",
+        "2026-10-30 12:00:00",
+        "2026-10-30 18:00:00",
+        "2100-12-30 12:00:00"
+      ],
+      "expected": [
+        {
+          "utc": "2000-01-01T00:00:00Z",
+          "azimuth_deg": 116.58373546,
+          "altitude_deg": 19.855742665,
+          "separation_tolerance_arcmin": 1.0
+        },
+        {
+          "utc": "2026-10-30T12:00:00Z",
+          "azimuth_deg": 250.883079697,
+          "altitude_deg": -7.527677299,
+          "separation_tolerance_arcmin": 1.0
+        },
+        {
+          "utc": "2026-10-30T18:00:00Z",
+          "azimuth_deg": 156.657518514,
+          "altitude_deg": -70.706350797,
+          "separation_tolerance_arcmin": 1.0
+        },
+        {
+          "utc": "2100-12-30T12:00:00Z",
+          "azimuth_deg": 246.962012997,
+          "altitude_deg": 4.732229291,
+          "separation_tolerance_arcmin": 1.0
+        }
+      ],
+      "request": {
+        "format": "text",
+        "COMMAND": "199",
+        "OBJ_DATA": "NO",
+        "MAKE_EPHEM": "YES",
+        "EPHEM_TYPE": "OBSERVER",
+        "CENTER": "coord@399",
+        "COORD_TYPE": "GEODETIC",
+        "SITE_COORD": "103.8198,1.3521,0.015",
+        "TLIST": "2451544.5,2461344.0,2461344.25,2488433.0",
+        "TLIST_TYPE": "JD",
+        "QUANTITIES": "4",
+        "APPARENT": "AIRLESS",
+        "CSV_FORMAT": "YES",
+        "EXTRA_PREC": "YES",
+        "TIME_DIGITS": "SECONDS",
+        "CAL_TYPE": "GREGORIAN",
+        "TIME_TYPE": "UT"
+      },
+      "raw_file": ".research/astronomy-engine-reference-evidence-20261030/singapore_mercury.txt",
+      "raw_sha256": "720fa4e0ff05fb7b63f8776850d15fb55e75431597bc049f88e7e9cb848d57ba",
+      "retrieved_utc": "2026-10-30T09:15:31.325755+00:00"
+    },
+    {
+      "id": "singapore_venus",
+      "body": "Venus",
+      "number": 299,
+      "latitude": 1.3521,
+      "longitude": 103.8198,
+      "elevation_m": 15,
+      "times": [
+        "2000-01-01 00:00:00",
+        "2026-10-30 12:00:00",
+        "2026-10-30 18:00:00",
+        "2100-12-30 12:00:00"
+      ],
+      "expected": [
+        {
+          "utc": "2000-01-01T00:00:00Z",
+          "azimuth_deg": 121.09371187,
+          "altitude_deg": 49.939249936,
+          "separation_tolerance_arcmin": 1.0
+        },
+        {
+          "utc": "2026-10-30T12:00:00Z",
+          "azimuth_deg": 253.281024622,
+          "altitude_deg": -28.777247551,
+          "separation_tolerance_arcmin": 1.0
+        },
+        {
+          "utc": "2026-10-30T18:00:00Z",
+          "azimuth_deg": 116.717921849,
+          "altitude_deg": -57.454760524,
+          "separation_tolerance_arcmin": 1.0
+        },
+        {
+          "utc": "2100-12-30T12:00:00Z",
+          "azimuth_deg": 244.728816274,
+          "altitude_deg": -27.49486365,
+          "separation_tolerance_arcmin": 1.0
+        }
+      ],
+      "request": {
+        "format": "text",
+        "COMMAND": "299",
+        "OBJ_DATA": "NO",
+        "MAKE_EPHEM": "YES",
+        "EPHEM_TYPE": "OBSERVER",
+        "CENTER": "coord@399",
+        "COORD_TYPE": "GEODETIC",
+        "SITE_COORD": "103.8198,1.3521,0.015",
+        "TLIST": "2451544.5,2461344.0,2461344.25,2488433.0",
+        "TLIST_TYPE": "JD",
+        "QUANTITIES": "4",
+        "APPARENT": "AIRLESS",
+        "CSV_FORMAT": "YES",
+        "EXTRA_PREC": "YES",
+        "TIME_DIGITS": "SECONDS",
+        "CAL_TYPE": "GREGORIAN",
+        "TIME_TYPE": "UT"
+      },
+      "raw_file": ".research/astronomy-engine-reference-evidence-20261030/singapore_venus.txt",
+      "raw_sha256": "2d6f8e80cc77c943906d987e6228e2f829529c054f1aee4c4ac2365cb237dab7",
+      "retrieved_utc": "2026-10-30T09:15:32.529877+00:00"
+    },
+    {
+      "id": "singapore_mars",
+      "body": "Mars",
+      "number": 499,
+      "latitude": 1.3521,
+      "longitude": 103.8198,
+      "elevation_m": 15,
+      "times": [
+        "2000-01-01 00:00:00",
+        "2026-10-30 12:00:00",
+        "2026-10-30 18:00:00",
+        "2100-12-30 12:00:00"
+      ],
+      "expected": [
+        {
+          "utc": "2000-01-01T00:00:00Z",
+          "azimuth_deg": 105.461282892,
+          "altitude_deg": -35.604670276,
+          "separation_tolerance_arcmin": 1.0
+        },
+        {
+          "utc": "2026-10-30T12:00:00Z",
+          "azimuth_deg": 5.564870167,
+          "altitude_deg": -71.588472743,
+          "separation_tolerance_arcmin": 1.0
+        },
+        {
+          "utc": "2026-10-30T18:00:00Z",
+          "azimuth_deg": 73.100875524,
+          "altitude_deg": 2.260638757,
+          "separation_tolerance_arcmin": 1.0
+        },
+        {
+          "utc": "2100-12-30T12:00:00Z",
+          "azimuth_deg": 242.069499044,
+          "altitude_deg": -38.270869051,
+          "separation_tolerance_arcmin": 1.0
+        }
+      ],
+      "request": {
+        "format": "text",
+        "COMMAND": "499",
+        "OBJ_DATA": "NO",
+        "MAKE_EPHEM": "YES",
+        "EPHEM_TYPE": "OBSERVER",
+        "CENTER": "coord@399",
+        "COORD_TYPE": "GEODETIC",
+        "SITE_COORD": "103.8198,1.3521,0.015",
+        "TLIST": "2451544.5,2461344.0,2461344.25,2488433.0",
+        "TLIST_TYPE": "JD",
+        "QUANTITIES": "4",
+        "APPARENT": "AIRLESS",
+        "CSV_FORMAT": "YES",
+        "EXTRA_PREC": "YES",
+        "TIME_DIGITS": "SECONDS",
+        "CAL_TYPE": "GREGORIAN",
+        "TIME_TYPE": "UT"
+      },
+      "raw_file": ".research/astronomy-engine-reference-evidence-20261030/singapore_mars.txt",
+      "raw_sha256": "110061862357ce0497605900a482b62b28e5653949fb6dfbd0279d351f352b25",
+      "retrieved_utc": "2026-10-30T09:15:33.529176+00:00"
+    },
+    {
+      "id": "singapore_jupiter",
+      "body": "Jupiter",
+      "number": 599,
+      "latitude": 1.3521,
+      "longitude": 103.8198,
+      "elevation_m": 15,
+      "times": [
+        "2000-01-01 00:00:00",
+        "2026-10-30 12:00:00",
+        "2026-10-30 18:00:00",
+        "2100-12-30 12:00:00"
+      ],
+      "expected": [
+        {
+          "utc": "2000-01-01T00:00:00Z",
+          "azimuth_deg": 359.631088027,
+          "altitude_deg": -80.063193818,
+          "separation_tolerance_arcmin": 1.0
+        },
+        {
+          "utc": "2026-10-30T12:00:00Z",
+          "azimuth_deg": 345.631908616,
+          "altitude_deg": -74.017796573,
+          "separation_tolerance_arcmin": 1.0
+        },
+        {
+          "utc": "2026-10-30T18:00:00Z",
+          "azimuth_deg": 75.777223276,
+          "altitude_deg": -3.377975622,
+          "separation_tolerance_arcmin": 1.0
+        },
+        {
+          "utc": "2100-12-30T12:00:00Z",
+          "azimuth_deg": 234.799144939,
+          "altitude_deg": -64.124902085,
+          "separation_tolerance_arcmin": 1.0
+        }
+      ],
+      "request": {
+        "format": "text",
+        "COMMAND": "599",
+        "OBJ_DATA": "NO",
+        "MAKE_EPHEM": "YES",
+        "EPHEM_TYPE": "OBSERVER",
+        "CENTER": "coord@399",
+        "COORD_TYPE": "GEODETIC",
+        "SITE_COORD": "103.8198,1.3521,0.015",
+        "TLIST": "2451544.5,2461344.0,2461344.25,2488433.0",
+        "TLIST_TYPE": "JD",
+        "QUANTITIES": "4",
+        "APPARENT": "AIRLESS",
+        "CSV_FORMAT": "YES",
+        "EXTRA_PREC": "YES",
+        "TIME_DIGITS": "SECONDS",
+        "CAL_TYPE": "GREGORIAN",
+        "TIME_TYPE": "UT"
+      },
+      "raw_file": ".research/astronomy-engine-reference-evidence-20261030/singapore_jupiter.txt",
+      "raw_sha256": "52460b62d7454f2813b65a3f9e96935e3a3810fc3d4f4d35b6bdf5a7d43c67a0",
+      "retrieved_utc": "2026-10-30T09:15:34.545059+00:00"
+    },
+    {
+      "id": "singapore_saturn",
+      "body": "Saturn",
+      "number": 699,
+      "latitude": 1.3521,
+      "longitude": 103.8198,
+      "elevation_m": 15,
+      "times": [
+        "2000-01-01 00:00:00",
+        "2026-10-30 12:00:00",
+        "2026-10-30 18:00:00",
+        "2100-12-30 12:00:00"
+      ],
+      "expected": [
+        {
+          "utc": "2000-01-01T00:00:00Z",
+          "azimuth_deg": 313.626482389,
+          "altitude_deg": -69.591781124,
+          "separation_tolerance_arcmin": 1.0
+        },
+        {
+          "utc": "2026-10-30T12:00:00Z",
+          "azimuth_deg": 89.557164669,
+          "altitude_deg": 42.976098464,
+          "separation_tolerance_arcmin": 1.0
+        },
+        {
+          "utc": "2026-10-30T18:00:00Z",
+          "azimuth_deg": 270.371649301,
+          "altitude_deg": 46.786248289,
+          "separation_tolerance_arcmin": 1.0
+        },
+        {
+          "utc": "2100-12-30T12:00:00Z",
+          "azimuth_deg": 229.919713582,
+          "altitude_deg": -73.970901004,
+          "separation_tolerance_arcmin": 1.0
+        }
+      ],
+      "request": {
+        "format": "text",
+        "COMMAND": "699",
+        "OBJ_DATA": "NO",
+        "MAKE_EPHEM": "YES",
+        "EPHEM_TYPE": "OBSERVER",
+        "CENTER": "coord@399",
+        "COORD_TYPE": "GEODETIC",
+        "SITE_COORD": "103.8198,1.3521,0.015",
+        "TLIST": "2451544.5,2461344.0,2461344.25,2488433.0",
+        "TLIST_TYPE": "JD",
+        "QUANTITIES": "4",
+        "APPARENT": "AIRLESS",
+        "CSV_FORMAT": "YES",
+        "EXTRA_PREC": "YES",
+        "TIME_DIGITS": "SECONDS",
+        "CAL_TYPE": "GREGORIAN",
+        "TIME_TYPE": "UT"
+      },
+      "raw_file": ".research/astronomy-engine-reference-evidence-20261030/singapore_saturn.txt",
+      "raw_sha256": "bd800c6efc726f163ad8228f0a45ad839be5757cb9ba0f0a4ec1f4e3a6c59548",
+      "retrieved_utc": "2026-10-30T09:15:35.683922+00:00"
+    },
+    {
+      "id": "issue383_mercury",
+      "body": "Mercury",
+      "number": 199,
+      "latitude": 37.2,
+      "longitude": -121.84,
+      "elevation_m": 0,
+      "times": [
+        "2025-03-10 18:30:00"
+      ],
+      "expected": [
+        {
+          "utc": "2025-03-10T18:30:00Z",
+          "azimuth_deg": 119.007960993,
+          "altitude_deg": 40.183314019,
+          "separation_tolerance_arcmin": 1.0
+        }
+      ],
+      "request": {
+        "format": "text",
+        "COMMAND": "199",
+        "OBJ_DATA": "NO",
+        "MAKE_EPHEM": "YES",
+        "EPHEM_TYPE": "OBSERVER",
+        "CENTER": "coord@399",
+        "COORD_TYPE": "GEODETIC",
+        "SITE_COORD": "-121.84,37.2,0.0",
+        "TLIST": "2460745.2708333335",
+        "TLIST_TYPE": "JD",
+        "QUANTITIES": "4",
+        "APPARENT": "AIRLESS",
+        "CSV_FORMAT": "YES",
+        "EXTRA_PREC": "YES",
+        "TIME_DIGITS": "SECONDS",
+        "CAL_TYPE": "GREGORIAN",
+        "TIME_TYPE": "UT"
+      },
+      "raw_file": ".research/astronomy-engine-reference-evidence-20261030/issue383_mercury.txt",
+      "raw_sha256": "f5046e0125fff346edced19117cd95603a6323df91f9e5d7f6d0ba2ae15676de",
+      "retrieved_utc": "2026-10-30T09:15:36.772956+00:00"
+    },
+    {
+      "id": "issue383_mars",
+      "body": "Mars",
+      "number": 499,
+      "latitude": 37.2,
+      "longitude": -121.84,
+      "elevation_m": 0,
+      "times": [
+        "2025-03-10 18:30:00"
+      ],
+      "expected": [
+        {
+          "utc": "2025-03-10T18:30:00Z",
+          "azimuth_deg": 32.504460469,
+          "altitude_deg": -19.665872255,
+          "separation_tolerance_arcmin": 1.0
+        }
+      ],
+      "request": {
+        "format": "text",
+        "COMMAND": "499",
+        "OBJ_DATA": "NO",
+        "MAKE_EPHEM": "YES",
+        "EPHEM_TYPE": "OBSERVER",
+        "CENTER": "coord@399",
+        "COORD_TYPE": "GEODETIC",
+        "SITE_COORD": "-121.84,37.2,0.0",
+        "TLIST": "2460745.2708333335",
+        "TLIST_TYPE": "JD",
+        "QUANTITIES": "4",
+        "APPARENT": "AIRLESS",
+        "CSV_FORMAT": "YES",
+        "EXTRA_PREC": "YES",
+        "TIME_DIGITS": "SECONDS",
+        "CAL_TYPE": "GREGORIAN",
+        "TIME_TYPE": "UT"
+      },
+      "raw_file": ".research/astronomy-engine-reference-evidence-20261030/issue383_mars.txt",
+      "raw_sha256": "3375a491f4eeb2b582743623b5f207c4c90819d1a7c651fc7c0a5671344c29cb",
+      "retrieved_utc": "2026-10-30T09:15:38.019266+00:00"
+    },
+    {
+      "id": "polar_sun",
+      "body": "Sun",
+      "number": 10,
+      "latitude": 80,
+      "longitude": 0,
+      "elevation_m": 0,
+      "times": [
+        "2026-06-21 00:00:00",
+        "2026-06-21 12:00:00",
+        "2026-12-21 00:00:00",
+        "2026-12-21 12:00:00"
+      ],
+      "expected": [
+        {
+          "utc": "2026-06-21T00:00:00Z",
+          "azimuth_deg": 359.59784588,
+          "altitude_deg": 13.435450129,
+          "separation_tolerance_arcmin": 1.0
+        },
+        {
+          "utc": "2026-06-21T12:00:00Z",
+          "azimuth_deg": 179.501202289,
+          "altitude_deg": 33.435510348,
+          "separation_tolerance_arcmin": 1.0
+        },
+        {
+          "utc": "2026-12-21T00:00:00Z",
+          "azimuth_deg": 0.60021305,
+          "altitude_deg": -33.436041171,
+          "separation_tolerance_arcmin": 1.0
+        },
+        {
+          "utc": "2026-12-21T12:00:00Z",
+          "azimuth_deg": 180.456565559,
+          "altitude_deg": -13.439631382,
+          "separation_tolerance_arcmin": 1.0
+        }
+      ],
+      "request": {
+        "format": "text",
+        "COMMAND": "10",
+        "OBJ_DATA": "NO",
+        "MAKE_EPHEM": "YES",
+        "EPHEM_TYPE": "OBSERVER",
+        "CENTER": "coord@399",
+        "COORD_TYPE": "GEODETIC",
+        "SITE_COORD": "0,80,0.0",
+        "TLIST": "2461212.5,2461213.0,2461395.5,2461396.0",
+        "TLIST_TYPE": "JD",
+        "QUANTITIES": "4",
+        "APPARENT": "AIRLESS",
+        "CSV_FORMAT": "YES",
+        "EXTRA_PREC": "YES",
+        "TIME_DIGITS": "SECONDS",
+        "CAL_TYPE": "GREGORIAN",
+        "TIME_TYPE": "UT"
+      },
+      "raw_file": ".research/astronomy-engine-reference-evidence-20261030/polar_sun.txt",
+      "raw_sha256": "272f12a6b236d98468c85455b97c1da4fcbb5d6625797bf68220ea1cbbab4cd3",
+      "retrieved_utc": "2026-10-30T09:15:39.255291+00:00"
+    },
+    {
+      "id": "polar_moon",
+      "body": "Moon",
+      "number": 301,
+      "latitude": 80,
+      "longitude": 0,
+      "elevation_m": 0,
+      "times": [
+        "2026-06-21 00:00:00",
+        "2026-06-21 12:00:00",
+        "2026-12-21 00:00:00",
+        "2026-12-21 12:00:00"
+      ],
+      "expected": [
+        {
+          "utc": "2026-06-21T00:00:00Z",
+          "azimuth_deg": 280.560021401,
+          "altitude_deg": 0.361238364,
+          "separation_tolerance_arcmin": 1.0
+        },
+        {
+          "utc": "2026-06-21T12:00:00Z",
+          "azimuth_deg": 94.808106735,
+          "altitude_deg": -0.046738382,
+          "separation_tolerance_arcmin": 1.0
+        },
+        {
+          "utc": "2026-12-21T00:00:00Z",
+          "azimuth_deg": 230.860611111,
+          "altitude_deg": 27.242800023,
+          "separation_tolerance_arcmin": 1.0
+        },
+        {
+          "utc": "2026-12-21T12:00:00Z",
+          "azimuth_deg": 38.018671541,
+          "altitude_deg": 14.871704505,
+          "separation_tolerance_arcmin": 1.0
+        }
+      ],
+      "request": {
+        "format": "text",
+        "COMMAND": "301",
+        "OBJ_DATA": "NO",
+        "MAKE_EPHEM": "YES",
+        "EPHEM_TYPE": "OBSERVER",
+        "CENTER": "coord@399",
+        "COORD_TYPE": "GEODETIC",
+        "SITE_COORD": "0,80,0.0",
+        "TLIST": "2461212.5,2461213.0,2461395.5,2461396.0",
+        "TLIST_TYPE": "JD",
+        "QUANTITIES": "4",
+        "APPARENT": "AIRLESS",
+        "CSV_FORMAT": "YES",
+        "EXTRA_PREC": "YES",
+        "TIME_DIGITS": "SECONDS",
+        "CAL_TYPE": "GREGORIAN",
+        "TIME_TYPE": "UT"
+      },
+      "raw_file": ".research/astronomy-engine-reference-evidence-20261030/polar_moon.txt",
+      "raw_sha256": "39823fdba5356cda4ff60bb9fbd01b5a00b15be238d922e761898f7c5a52846d",
+      "retrieved_utc": "2026-10-30T09:15:41.138975+00:00"
+    }
+  ],
+  "data_scope": "Small numerical facts selected for regression testing; raw JPL narrative responses remain in ignored local research evidence, not in repository deliverables or runtime ZIP. No blanket public-domain or MIT claim for JPL material.",
+  "documentation": [
+    "https://ssd-api.jpl.nasa.gov/doc/horizons.html",
+    "https://ssd.jpl.nasa.gov/horizons/manual.html#observer-table",
+    "https://ssd.jpl.nasa.gov/faq.html"
+  ],
+  "future_moon_diagnostic": {
+    "utc": "2100-12-30T12:00:00Z",
+    "jpl_tdb_minus_utc_seconds": 69.18386,
+    "raw_sha256": "7c6ef20b2d4d026417f7bffd25ffd4a06c6a7f8a6051271d663896a6df1e77b6",
+    "raw_file": ".research/astronomy-engine-reference-evidence-20261030/future_moon_timescale.txt",
+    "request_extra_quantities": "4,30",
+    "note": "JPL freezes the latest future TAI−UTC; Astronomy Engine extrapolates Espenak/Meeus DeltaT. Matching this time-scale only in a diagnostic isolates most of the 1.395arcmin difference. Production engine is unmodified."
+  }
+}

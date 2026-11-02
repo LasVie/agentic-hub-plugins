@@ -1,0 +1,781 @@
+{
+  "verified_at": "2026-10-30T09:36:39.606527+00:00",
+  "scope": "Standalone SDK DeepAgent.load_plugin plus registered Tool.invoke; not running WorkSwarm chat-worker execution.",
+  "plugin_id": "offline-observing-planner",
+  "version": "1.0.0",
+  "payload": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/.research/ebook-workswarm-20261027/data/agent/workspace/plugins/plugin_packages/local/offline-observing-planner",
+  "workspace": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/dist/offline-observing-planner/1.0.0/sdk-installed-check",
+  "model_requests": 0,
+  "external_network": "Denied by audit hook in this verification subprocess.",
+  "records": [
+    {
+      "tool": "local_observing_planner",
+      "inputs": {
+        "action": "status",
+        "workspace": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/dist/offline-observing-planner/1.0.0/sdk-installed-check"
+      },
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "running": false,
+        "message": "此工作目录没有可验证的运行会话。"
+      }
+    },
+    {
+      "tool": "local_observing_planner",
+      "inputs": {
+        "action": "start",
+        "workspace": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/dist/offline-observing-planner/1.0.0/sdk-installed-check"
+      },
+      "result": {
+        "ok": false,
+        "version": "1.0.0",
+        "error": {
+          "code": "confirmation_required",
+          "message": "启动或关闭服务须先获用户明确授权，随后设置 confirmed=true。"
+        }
+      }
+    },
+    {
+      "tool": "compute_observing_plan",
+      "inputs": {
+        "request": {
+          "latitude": 1.3521,
+          "longitude": 103.8198,
+          "elevation_m": 0,
+          "start_utc": "2026-10-30T12:00:00Z",
+          "duration_hours": 24,
+          "step_minutes": 30,
+          "bodies": [
+            "Sun",
+            "Moon",
+            "Jupiter"
+          ],
+          "display_offset_minutes": 480
+        }
+      },
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "engine_version": "2.1.19",
+        "request": {
+          "latitude": 1.3521,
+          "longitude": 103.8198,
+          "elevation_m": 0.0,
+          "start_utc": "2026-10-30T12:00:00Z",
+          "duration_hours": 24.0,
+          "step_minutes": 30,
+          "bodies": [
+            "Sun",
+            "Moon",
+            "Jupiter"
+          ],
+          "display_offset_minutes": 480
+        },
+        "bodies": [
+          {
+            "id": "Sun",
+            "name": "太阳",
+            "rise_set": {
+              "rise": [
+                {
+                  "utc": "2026-10-30T22:46:16.163Z",
+                  "display": "2026-10-31T06:46:16.163+08:00"
+                }
+              ],
+              "set": [
+                {
+                  "utc": "2026-10-31T10:50:23.993Z",
+                  "display": "2026-10-31T18:50:23.993+08:00"
+                }
+              ],
+              "status": "events",
+              "message": "已列出区间内的升落事件。"
+            },
+            "sample_count": 49,
+            "track_preview": [
+              {
+                "utc": "2026-10-30T12:00:00Z",
+                "display": "2026-10-30T20:00:00+08:00",
+                "altitude_deg": -17.704473984127077,
+                "azimuth_deg": 255.86198318914816,
+                "ra_hours": 14.315474029526424,
+                "dec_deg": -13.874789971165328
+              },
+              {
+                "utc": "2026-10-30T12:30:00Z",
+                "display": "2026-10-30T20:30:00+08:00",
+                "altitude_deg": -24.96669102066106,
+                "azimuth_deg": 255.30169524734566,
+                "ra_hours": 14.316833051328839,
+                "dec_deg": -13.881521057587335
+              },
+              {
+                "utc": "2026-10-30T13:00:00Z",
+                "display": "2026-10-30T21:00:00+08:00",
+                "altitude_deg": -32.204478232470606,
+                "azimuth_deg": 254.40211206703816,
+                "ra_hours": 14.318194779860908,
+                "dec_deg": -13.888254825265971
+              }
+            ],
+            "last_sample": {
+              "utc": "2026-10-31T12:00:00Z",
+              "display": "2026-10-31T20:00:00+08:00",
+              "altitude_deg": -17.69791201988899,
+              "azimuth_deg": 255.5209848848814,
+              "ra_hours": 14.380424466973569,
+              "dec_deg": -14.199521151113393
+            }
+          },
+          {
+            "id": "Moon",
+            "name": "月球",
+            "rise_set": {
+              "rise": [
+                {
+                  "utc": "2026-10-30T15:01:59.286Z",
+                  "display": "2026-10-30T23:01:59.286+08:00"
+                }
+              ],
+              "set": [
+                {
+                  "utc": "2026-10-31T03:37:15.989Z",
+                  "display": "2026-10-31T11:37:15.989+08:00"
+                }
+              ],
+              "status": "events",
+              "message": "已列出区间内的升落事件。"
+            },
+            "sample_count": 49,
+            "track_preview": [
+              {
+                "utc": "2026-10-30T12:00:00Z",
+                "display": "2026-10-30T20:00:00+08:00",
+                "altitude_deg": -38.21154412241066,
+                "azimuth_deg": 53.53604585398552,
+                "ra_hours": 6.501839729742205,
+                "dec_deg": 26.888007348320087
+              },
+              {
+                "utc": "2026-10-30T12:30:00Z",
+                "display": "2026-10-30T20:30:00+08:00",
+                "altitude_deg": -32.39131998077798,
+                "azimuth_deg": 56.570583236040235,
+                "ra_hours": 6.530411430298387,
+                "dec_deg": 26.899229886089756
+              },
+              {
+                "utc": "2026-10-30T13:00:00Z",
+                "display": "2026-10-30T21:00:00+08:00",
+                "altitude_deg": -26.377816467658732,
+                "azimuth_deg": 58.861865997207566,
+                "ra_hours": 6.558064902550873,
+                "dec_deg": 26.913943890655627
+              }
+            ],
+            "last_sample": {
+              "utc": "2026-10-31T12:00:00Z",
+              "display": "2026-10-31T20:00:00+08:00",
+              "altitude_deg": -50.690726930418606,
+              "azimuth_deg": 46.873826040504156,
+              "ra_hours": 7.539226819631922,
+              "dec_deg": 24.499881545015064
+            }
+          },
+          {
+            "id": "Jupiter",
+            "name": "木星",
+            "rise_set": {
+              "rise": [
+                {
+                  "utc": "2026-10-30T18:11:34.203Z",
+                  "display": "2026-10-31T02:11:34.203+08:00"
+                }
+              ],
+              "set": [
+                {
+                  "utc": "2026-10-31T06:17:13.080Z",
+                  "display": "2026-10-31T14:17:13.080+08:00"
+                }
+              ],
+              "status": "events",
+              "message": "已列出区间内的升落事件。"
+            },
+            "sample_count": 49,
+            "track_preview": [
+              {
+                "utc": "2026-10-30T12:00:00Z",
+                "display": "2026-10-30T20:00:00+08:00",
+                "altitude_deg": -74.01830483030113,
+                "azimuth_deg": 345.63452376953234,
+                "ra_hours": 9.778682935547522,
+                "dec_deg": 14.120545499972492
+              },
+              {
+                "utc": "2026-10-30T12:30:00Z",
+                "display": "2026-10-30T20:30:00+08:00",
+                "altitude_deg": -74.14900095915576,
+                "azimuth_deg": 12.441241498716193,
+                "ra_hours": 9.778857323318936,
+                "dec_deg": 14.11974587776649
+              },
+              {
+                "utc": "2026-10-30T13:00:00Z",
+                "display": "2026-10-30T21:00:00+08:00",
+                "altitude_deg": -71.07845278492877,
+                "azimuth_deg": 34.78310231586764,
+                "ra_hours": 9.77903161516191,
+                "dec_deg": 14.118948420060907
+              }
+            ],
+            "last_sample": {
+              "utc": "2026-10-31T12:00:00Z",
+              "display": "2026-10-31T20:00:00+08:00",
+              "altitude_deg": -74.24808950276662,
+              "azimuth_deg": 348.5859254796388,
+              "ra_hours": 9.786789392937727,
+              "dec_deg": 14.082522754880637
+            }
+          }
+        ],
+        "twilight": [
+          {
+            "kind": "civil",
+            "name": "民用曙暮光",
+            "altitude_deg": -6,
+            "dawn": [
+              {
+                "utc": "2026-10-30T22:24:58.455Z",
+                "display": "2026-10-31T06:24:58.455+08:00"
+              }
+            ],
+            "dusk": [
+              {
+                "utc": "2026-10-31T11:11:42.627Z",
+                "display": "2026-10-31T19:11:42.627+08:00"
+              }
+            ],
+            "status": "events",
+            "message": "已列出区间内的太阳中心高度穿越事件。"
+          },
+          {
+            "kind": "nautical",
+            "name": "航海曙暮光",
+            "altitude_deg": -12,
+            "dawn": [
+              {
+                "utc": "2026-10-30T22:00:14.135Z",
+                "display": "2026-10-31T06:00:14.135+08:00"
+              }
+            ],
+            "dusk": [
+              {
+                "utc": "2026-10-31T11:36:28.180Z",
+                "display": "2026-10-31T19:36:28.180+08:00"
+              }
+            ],
+            "status": "events",
+            "message": "已列出区间内的太阳中心高度穿越事件。"
+          },
+          {
+            "kind": "astronomical",
+            "name": "天文曙暮光",
+            "altitude_deg": -18,
+            "dawn": [
+              {
+                "utc": "2026-10-30T21:35:28.751Z",
+                "display": "2026-10-31T05:35:28.751+08:00"
+              }
+            ],
+            "dusk": [
+              {
+                "utc": "2026-10-30T12:01:13.166Z",
+                "display": "2026-10-30T20:01:13.166+08:00"
+              }
+            ],
+            "status": "events",
+            "message": "已列出区间内的太阳中心高度穿越事件。"
+          }
+        ],
+        "conventions": {
+          "coordinates": "曲线为地心历表经观测者视差、光行时和光行差修正后的站心、当日赤道坐标转地平坐标；高度为不含大气折射的天体中心高度。方位角自北向东增加。",
+          "rise_set": "升落使用引擎的标准大气折射与地平线模型；太阳、月球按上边缘，行星按中心。与无折射曲线的 0° 交点并非同一约定；实际大气与地形会改变时刻。",
+          "twilight": "曙暮光为太阳中心无折射高度穿越 -6°、-12°、-18° 的时刻；曲线阴影只依据采样值。",
+          "time": "输入与计算采用 UTC。显示时差是用户指定的固定偏移，不推断时区或夏令时。轨迹含结束采样点；事件区间为起点包含、终点不包含。"
+        },
+        "warnings": [
+          "仅用于有限范围内的观测规划，不保证可见性，也不用于导航、望远镜控制或太阳观测安全判断。",
+          "未考虑天气、光污染、山体遮挡和实际折射；不提供恒星、卫星或食象预测。",
+          "远期时间尺度与闰秒预测存在不确定性：2100-12-30 的月球核对样例与 JPL 相差约 1.4 角分，主要来自时间尺度假设差异；不保证所有日期均达到 1 角分精度。",
+          "图中采样点之间的连线不是额外数值求解；接近天顶时方位角可能迅速变化。"
+        ],
+        "sample_count": 49,
+        "preview_truncated": true,
+        "preview_note": "工具每个天体仅展示前3个和最后1个采样点；事件来自完整有界计算。完整轨迹与CSV请在本机界面查看。采样高度不是精确极值。"
+      }
+    },
+    {
+      "tool": "compute_observing_plan",
+      "inputs": {
+        "request": {
+          "latitude": 1.3521,
+          "longitude": 103.8198,
+          "elevation_m": 0,
+          "start_utc": "2026-10-30T18:00:00Z",
+          "duration_hours": 24,
+          "step_minutes": 30,
+          "bodies": [
+            "Sun",
+            "Moon",
+            "Jupiter"
+          ],
+          "display_offset_minutes": 480
+        }
+      },
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "engine_version": "2.1.19",
+        "request": {
+          "latitude": 1.3521,
+          "longitude": 103.8198,
+          "elevation_m": 0.0,
+          "start_utc": "2026-10-30T18:00:00Z",
+          "duration_hours": 24.0,
+          "step_minutes": 30,
+          "bodies": [
+            "Sun",
+            "Moon",
+            "Jupiter"
+          ],
+          "display_offset_minutes": 480
+        },
+        "bodies": [
+          {
+            "id": "Sun",
+            "name": "太阳",
+            "rise_set": {
+              "rise": [
+                {
+                  "utc": "2026-10-30T22:46:16.163Z",
+                  "display": "2026-10-31T06:46:16.163+08:00"
+                }
+              ],
+              "set": [
+                {
+                  "utc": "2026-10-31T10:50:23.926Z",
+                  "display": "2026-10-31T18:50:23.926+08:00"
+                }
+              ],
+              "status": "events",
+              "message": "已列出区间内的升落事件。"
+            },
+            "sample_count": 49,
+            "track_preview": [
+              {
+                "utc": "2026-10-30T18:00:00Z",
+                "display": "2026-10-31T02:00:00+08:00",
+                "altitude_deg": -68.26279383460661,
+                "azimuth_deg": 126.31268409379831,
+                "ra_hours": 14.331903500659463,
+                "dec_deg": -13.955937001644056
+              },
+              {
+                "utc": "2026-10-30T18:30:00Z",
+                "display": "2026-10-31T02:30:00+08:00",
+                "altitude_deg": -61.888179340925916,
+                "azimuth_deg": 117.90743372185256,
+                "ra_hours": 14.333276069356636,
+                "dec_deg": -13.962749211804415
+              },
+              {
+                "utc": "2026-10-30T19:00:00Z",
+                "display": "2026-10-31T03:00:00+08:00",
+                "altitude_deg": -55.102411161615606,
+                "azimuth_deg": 112.84488380337707,
+                "ra_hours": 14.334647495455737,
+                "dec_deg": -13.96956902979724
+              }
+            ],
+            "last_sample": {
+              "utc": "2026-10-31T18:00:00Z",
+              "display": "2026-11-01T02:00:00+08:00",
+              "altitude_deg": -68.07222239147313,
+              "azimuth_deg": 127.01712301363948,
+              "ra_hours": 14.3969100562455,
+              "dec_deg": -14.279730431702582
+            }
+          },
+          {
+            "id": "Moon",
+            "name": "月球",
+            "rise_set": {
+              "rise": [
+                {
+                  "utc": "2026-10-31T16:03:30.452Z",
+                  "display": "2026-11-01T00:03:30.452+08:00"
+                }
+              ],
+              "set": [
+                {
+                  "utc": "2026-10-31T03:37:15.990Z",
+                  "display": "2026-10-31T11:37:15.990+08:00"
+                }
+              ],
+              "status": "events",
+              "message": "已列出区间内的升落事件。"
+            },
+            "sample_count": 49,
+            "track_preview": [
+              {
+                "utc": "2026-10-30T18:00:00Z",
+                "display": "2026-10-31T02:00:00+08:00",
+                "altitude_deg": 36.73332901597358,
+                "azimuth_deg": 56.59370089491333,
+                "ra_hours": 6.773258990908038,
+                "dec_deg": 27.07999848824043
+              },
+              {
+                "utc": "2026-10-30T18:30:00Z",
+                "display": "2026-10-31T02:30:00+08:00",
+                "altitude_deg": 42.70233233829223,
+                "azimuth_deg": 53.28436127474417,
+                "ra_hours": 6.788794804342043,
+                "dec_deg": 27.079621877454677
+              },
+              {
+                "utc": "2026-10-30T19:00:00Z",
+                "display": "2026-10-31T03:00:00+08:00",
+                "altitude_deg": 48.38738264634437,
+                "azimuth_deg": 48.779924520109546,
+                "ra_hours": 6.803506765639703,
+                "dec_deg": 27.072961883762098
+              }
+            ],
+            "last_sample": {
+              "utc": "2026-10-31T18:00:00Z",
+              "display": "2026-11-01T02:00:00+08:00",
+              "altitude_deg": 24.6784683294522,
+              "azimuth_deg": 63.872125396567284,
+              "ra_hours": 7.820307314000868,
+              "dec_deg": 24.198240366832803
+            }
+          },
+          {
+            "id": "Jupiter",
+            "name": "木星",
+            "rise_set": {
+              "rise": [
+                {
+                  "utc": "2026-10-30T18:11:34.205Z",
+                  "display": "2026-10-31T02:11:34.205+08:00"
+                }
+              ],
+              "set": [
+                {
+                  "utc": "2026-10-31T06:17:13.123Z",
+                  "display": "2026-10-31T14:17:13.123+08:00"
+                }
+              ],
+              "status": "events",
+              "message": "已列出区间内的升落事件。"
+            },
+            "sample_count": 49,
+            "track_preview": [
+              {
+                "utc": "2026-10-30T18:00:00Z",
+                "display": "2026-10-31T02:00:00+08:00",
+                "altitude_deg": -3.377077470715463,
+                "azimuth_deg": 75.7775422436974,
+                "ra_hours": 9.78075597937708,
+                "dec_deg": 14.111071989661557
+              },
+              {
+                "utc": "2026-10-30T18:30:00Z",
+                "display": "2026-10-31T02:30:00+08:00",
+                "altitude_deg": 3.911781984722211,
+                "azimuth_deg": 75.94739939802977,
+                "ra_hours": 9.780925610408612,
+                "dec_deg": 14.110290351020659
+              },
+              {
+                "utc": "2026-10-30T19:00:00Z",
+                "display": "2026-10-31T03:00:00+08:00",
+                "altitude_deg": 11.202370667180631,
+                "azimuth_deg": 75.88283858319903,
+                "ra_hours": 9.78109465462632,
+                "dec_deg": 14.109508907992215
+              }
+            ],
+            "last_sample": {
+              "utc": "2026-10-31T18:00:00Z",
+              "display": "2026-11-01T02:00:00+08:00",
+              "altitude_deg": -2.5404520311937375,
+              "azimuth_deg": 75.84675922582821,
+              "ra_hours": 9.788824489932331,
+              "dec_deg": 14.073233856007217
+            }
+          }
+        ],
+        "twilight": [
+          {
+            "kind": "civil",
+            "name": "民用曙暮光",
+            "altitude_deg": -6,
+            "dawn": [
+              {
+                "utc": "2026-10-30T22:24:58.455Z",
+                "display": "2026-10-31T06:24:58.455+08:00"
+              }
+            ],
+            "dusk": [
+              {
+                "utc": "2026-10-31T11:11:42.547Z",
+                "display": "2026-10-31T19:11:42.547+08:00"
+              }
+            ],
+            "status": "events",
+            "message": "已列出区间内的太阳中心高度穿越事件。"
+          },
+          {
+            "kind": "nautical",
+            "name": "航海曙暮光",
+            "altitude_deg": -12,
+            "dawn": [
+              {
+                "utc": "2026-10-30T22:00:14.135Z",
+                "display": "2026-10-31T06:00:14.135+08:00"
+              }
+            ],
+            "dusk": [
+              {
+                "utc": "2026-10-31T11:36:28.089Z",
+                "display": "2026-10-31T19:36:28.089+08:00"
+              }
+            ],
+            "status": "events",
+            "message": "已列出区间内的太阳中心高度穿越事件。"
+          },
+          {
+            "kind": "astronomical",
+            "name": "天文曙暮光",
+            "altitude_deg": -18,
+            "dawn": [
+              {
+                "utc": "2026-10-30T21:35:28.751Z",
+                "display": "2026-10-31T05:35:28.751+08:00"
+              }
+            ],
+            "dusk": [
+              {
+                "utc": "2026-10-31T12:01:14.893Z",
+                "display": "2026-10-31T20:01:14.893+08:00"
+              }
+            ],
+            "status": "events",
+            "message": "已列出区间内的太阳中心高度穿越事件。"
+          }
+        ],
+        "conventions": {
+          "coordinates": "曲线为地心历表经观测者视差、光行时和光行差修正后的站心、当日赤道坐标转地平坐标；高度为不含大气折射的天体中心高度。方位角自北向东增加。",
+          "rise_set": "升落使用引擎的标准大气折射与地平线模型；太阳、月球按上边缘，行星按中心。与无折射曲线的 0° 交点并非同一约定；实际大气与地形会改变时刻。",
+          "twilight": "曙暮光为太阳中心无折射高度穿越 -6°、-12°、-18° 的时刻；曲线阴影只依据采样值。",
+          "time": "输入与计算采用 UTC。显示时差是用户指定的固定偏移，不推断时区或夏令时。轨迹含结束采样点；事件区间为起点包含、终点不包含。"
+        },
+        "warnings": [
+          "仅用于有限范围内的观测规划，不保证可见性，也不用于导航、望远镜控制或太阳观测安全判断。",
+          "未考虑天气、光污染、山体遮挡和实际折射；不提供恒星、卫星或食象预测。",
+          "远期时间尺度与闰秒预测存在不确定性：2100-12-30 的月球核对样例与 JPL 相差约 1.4 角分，主要来自时间尺度假设差异；不保证所有日期均达到 1 角分精度。",
+          "图中采样点之间的连线不是额外数值求解；接近天顶时方位角可能迅速变化。"
+        ],
+        "sample_count": 49,
+        "preview_truncated": true,
+        "preview_note": "工具每个天体仅展示前3个和最后1个采样点；事件来自完整有界计算。完整轨迹与CSV请在本机界面查看。采样高度不是精确极值。"
+      }
+    },
+    {
+      "tool": "compute_observing_plan",
+      "inputs": {
+        "request": {
+          "latitude": 90,
+          "longitude": 103.8198,
+          "elevation_m": 0,
+          "start_utc": "2026-10-30T12:00:00Z",
+          "duration_hours": 24,
+          "step_minutes": 30,
+          "bodies": [
+            "Sun",
+            "Moon",
+            "Jupiter"
+          ],
+          "display_offset_minutes": 480
+        }
+      },
+      "result": {
+        "ok": false,
+        "version": "1.0.0",
+        "error": {
+          "code": "out_of_range",
+          "message": "纬度必须是 -80 到 80 之间的数值。"
+        }
+      }
+    },
+    {
+      "tool": "compute_observing_plan",
+      "inputs": {
+        "request": {
+          "latitude": 1.3521,
+          "longitude": 103.8198,
+          "elevation_m": 0,
+          "start_utc": "2026-10-30T12:00:00",
+          "duration_hours": 24,
+          "step_minutes": 30,
+          "bodies": [
+            "Sun",
+            "Moon",
+            "Jupiter"
+          ],
+          "display_offset_minutes": 480
+        }
+      },
+      "result": {
+        "ok": false,
+        "version": "1.0.0",
+        "error": {
+          "code": "invalid_time",
+          "message": "起始时间必须明确使用 UTC，格式为 YYYY-MM-DDTHH:MM:SSZ。"
+        }
+      }
+    },
+    {
+      "tool": "local_observing_planner",
+      "inputs": {
+        "action": "start",
+        "workspace": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/dist/offline-observing-planner/1.0.0/sdk-installed-check",
+        "confirmed": true
+      },
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "plugin": "offline-observing-planner",
+        "running": true,
+        "runtime_id": "e37f2b74e5be0eb3f731859c7ea6bf5b906768088f90c4735d5c85dd9c51070d",
+        "reused": false,
+        "message": "请在独立浏览器打开实际返回的完整地址；空闲30分钟后关闭。地址含本机凭据，截图请隐藏地址栏。"
+      }
+    },
+    {
+      "tool": "local_observing_planner",
+      "inputs": {
+        "action": "status",
+        "workspace": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/dist/offline-observing-planner/1.0.0/sdk-installed-check"
+      },
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "plugin": "offline-observing-planner",
+        "running": true,
+        "runtime_id": "e37f2b74e5be0eb3f731859c7ea6bf5b906768088f90c4735d5c85dd9c51070d"
+      }
+    },
+    {
+      "tool": "local_observing_planner",
+      "inputs": {
+        "action": "stop",
+        "workspace": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/dist/offline-observing-planner/1.0.0/sdk-installed-check",
+        "confirmed": true
+      },
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "running": false,
+        "message": "已确认本插件会话停止；保存观测计划仍保留。"
+      }
+    },
+    {
+      "tool": "local_observing_planner",
+      "inputs": {
+        "action": "start",
+        "workspace": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/dist/offline-observing-planner/1.0.0/sdk-installed-check",
+        "confirmed": true
+      },
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "plugin": "offline-observing-planner",
+        "running": true,
+        "runtime_id": "e37f2b74e5be0eb3f731859c7ea6bf5b906768088f90c4735d5c85dd9c51070d",
+        "reused": false,
+        "message": "请在独立浏览器打开实际返回的完整地址；空闲30分钟后关闭。地址含本机凭据，截图请隐藏地址栏。"
+      }
+    },
+    {
+      "tool": "local_observing_planner",
+      "inputs": {
+        "action": "stop",
+        "workspace": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/dist/offline-observing-planner/1.0.0/sdk-installed-check",
+        "confirmed": true
+      },
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "running": false,
+        "message": "已确认本插件会话停止；保存观测计划仍保留。"
+      }
+    },
+    {
+      "tool": "local_observing_planner",
+      "inputs": {
+        "action": "status",
+        "workspace": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/dist/offline-observing-planner/1.0.0/sdk-installed-check"
+      },
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "running": false,
+        "message": "此工作目录没有可验证的运行会话。"
+      }
+    }
+  ],
+  "passed": true,
+  "payload_sha256": {
+    "README.md": "af485845e9a3275ce18867e136595b2cc53262e7eea8c8fde697cee9c76b4b6a",
+    "THIRD_PARTY_NOTICES.md": "b2dfcea50d9e7719140c2a7d90b75bafe6fe71971ec85b6aeab3f0bd84052611",
+    "assets/app.js": "d89afe1533d5306c95571fe2b02ed4a9cdea568212866aabab421c7b3cc25711",
+    "assets/index.html": "a280c8f6ecdf88d1c95c47253c4fbee0dc37e053544aead54ff96b63cd233174",
+    "assets/style.css": "f2a718b9bac8ffbc6140741bb586352d42ade8e8156ac16d06029ddb427af73f",
+    "licenses/astronomy-engine/LICENSE": "a76df666a7db8a06f599d08e07c3ff74c4b250b50b49c43353af2bd5bb34604e",
+    "licenses/astronomy-engine/PYTHON_LICENSE": "b4d9dd0fd80fce3879c4cd9e3754364f74fc5ec046f33276475ba3876785c8b7",
+    "manifest.json": "2784e5f30e621f8fce10dded5fb5990d1efd905fef87753e82e69c41adb60b8d",
+    "runtime/astronomy.py": "41248c7b1edbf9d11119528eef7455a6dc55abde9f1aab40d363015e956c1729",
+    "runtime/engine.py": "94adc4ff9c5b2a6ea1b59c4e4391aa25ff8f1fb099c4e3d0a155ea1f0e08c358",
+    "runtime/lab.py": "f02760f94dad68a646e40af218965bf9f023b5abb3329fe3ed3e1d562946c179",
+    "skills/observing-planner/SKILL.md": "0264cd9741fac0482a6d629b9456672029cfe8519b931d1ebbe4ebbc19286a9a",
+    "tools/observing_tools.py": "63acb2c43dde874d521a07958bfd07213aa457413f130f2c1cbd44c64ac1844e"
+  },
+  "registered_refs": [
+    {
+      "kind": "tool",
+      "identity": "compute_observing_plan_offline-observing-sdk-4dea20544f504087b5ce98f8791a8131"
+    },
+    {
+      "kind": "tool",
+      "identity": "local_observing_planner_offline-observing-sdk-4dea20544f504087b5ce98f8791a8131"
+    },
+    {
+      "kind": "skill",
+      "identity": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/.research/ebook-workswarm-20261027/data/agent/workspace/plugins/plugin_packages/local/offline-observing-planner/skills/observing-planner"
+    }
+  ],
+  "registered_tools": [
+    "compute_observing_plan",
+    "local_observing_planner"
+  ],
+  "start_status_same_session": true,
+  "local_ui_http": 200,
+  "immediate_restart_new_session": true,
+  "stopped_service_verified": true,
+  "invocations": 12,
+  "unloaded_refs": 3
+}
