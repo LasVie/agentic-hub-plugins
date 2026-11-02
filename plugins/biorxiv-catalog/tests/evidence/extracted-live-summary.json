@@ -1,0 +1,146 @@
+{
+  "checked_at_utc": "2026-11-02T06:35:17.058809+00:00",
+  "model_calls": 0,
+  "passed": 7,
+  "planned": 7,
+  "checks": [
+    {
+      "tool": "search_preprints",
+      "inputs": {
+        "date_from": "2024-01-01",
+        "date_to": "2024-01-07",
+        "category": "生物信息学",
+        "server": "生物预印本",
+        "limit": 2
+      },
+      "ok": true,
+      "assertion": "Two actual date/category-matched papers; DOI and inconsistent-total warning verified.",
+      "source_version": "3.2.0",
+      "data_keys": [
+        "success",
+        "results",
+        "cursor",
+        "count",
+        "total",
+        "error"
+      ],
+      "received_count": 2,
+      "response_sha256": "97d602734d0dc6d13c01f0d8e41f0e96556a3c308663286321dad386b51184b6",
+      "error": null
+    },
+    {
+      "tool": "get_preprint",
+      "inputs": {
+        "doi": "10.1101/2023.12.30.573742",
+        "server": "biorxiv"
+      },
+      "ok": true,
+      "assertion": "DOI/title/version/license from previous actual result verified.",
+      "source_version": "3.2.0",
+      "data_keys": [
+        "success",
+        "preprint",
+        "error"
+      ],
+      "received_count": null,
+      "response_sha256": "37457282569e8367c694c8130ceb9db15eed385ebb0000720cb559a6026c784b",
+      "error": null
+    },
+    {
+      "tool": "get_categories",
+      "inputs": {},
+      "ok": true,
+      "assertion": "Actual subject catalog includes bioinformatics.",
+      "source_version": "3.2.0",
+      "data_keys": [
+        "success",
+        "categories",
+        "error"
+      ],
+      "received_count": null,
+      "response_sha256": "9a506f2f679b469c6c9215bb525c92f73192dbe7c3198a6bf6edd988b1071005",
+      "error": null
+    },
+    {
+      "tool": "search_published_preprints",
+      "inputs": {
+        "date_from": "2024-01-01",
+        "date_to": "2024-01-07",
+        "include_details": false,
+        "limit": 2
+      },
+      "ok": true,
+      "assertion": "Actual preprint/published DOI pairs and publication dates verified; null journal/author values retained.",
+      "source_version": "3.2.0",
+      "data_keys": [
+        "success",
+        "results",
+        "cursor",
+        "count",
+        "total",
+        "error"
+      ],
+      "received_count": 2,
+      "response_sha256": "913725ebbc1128751e7ddba5880aedf732871c5df329186b731a7705fae2cb1e",
+      "error": null
+    },
+    {
+      "tool": "search_by_funder",
+      "inputs": {
+        "funder_ror_id": "00k4n6c32",
+        "date_from": "2025-04-10",
+        "date_to": "2025-07-10",
+        "limit": 1
+      },
+      "ok": true,
+      "assertion": "Actual dated preprint from the requested documented ROR query; missing award details not invented.",
+      "source_version": "3.2.0",
+      "data_keys": [
+        "success",
+        "results",
+        "cursor",
+        "count",
+        "total",
+        "error"
+      ],
+      "received_count": 1,
+      "response_sha256": "e5644e804fdea725a8f6995700dd56acf8f387f6aa70b74d7b07ca82ac41c0c4",
+      "error": null
+    },
+    {
+      "tool": "get_content_statistics",
+      "inputs": {
+        "interval": "月度"
+      },
+      "ok": true,
+      "assertion": "Actual nonnegative source metrics verified; absent periods/abstract-view counts explicitly warned and not filled.",
+      "source_version": "3.2.0",
+      "data_keys": [
+        "success",
+        "results",
+        "error"
+      ],
+      "received_count": 156,
+      "response_sha256": "dab563aef1c8d7870a1a36e4ae4aab62ad7a47b585f1b5a8e03e29343038ef5d",
+      "error": null
+    },
+    {
+      "tool": "get_usage_statistics",
+      "inputs": {
+        "interval": "monthly"
+      },
+      "ok": true,
+      "assertion": "Actual nonnegative source metrics verified; absent periods/abstract-view counts explicitly warned and not filled.",
+      "source_version": "3.2.0",
+      "data_keys": [
+        "success",
+        "results",
+        "error"
+      ],
+      "received_count": 154,
+      "response_sha256": "d9754f132633f73b8c939273f8c13b2e4e9d1d64c7cc79068dd257bee3879f3c",
+      "error": null
+    }
+  ],
+  "scope": "Actual source/extracted native tools. No frontend conversation or user completion; empty results do not prove corpus completeness. Article abstracts/full datasets omitted from this summary."
+}

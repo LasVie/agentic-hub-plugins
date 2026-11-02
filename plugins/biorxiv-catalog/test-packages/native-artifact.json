@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "zip": "biorxiv-catalog-1.0.0-native.zip",
+  "size_bytes": 48082,
+  "sha256": "9996c01204cf1f7b31eb5d194ac5bfa72ce19638c67295cc9a2367972b96ebeb",
+  "payload_sha256": {
+    "connection.json": "87c295cb4c68c65dd77f020625e752d9cf5b29a7ea1fdf9368b18f0b850128a3",
+    "licenses/anthropic-bio-research/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "manifest.json": "e411e1ec0eb7a45e82781f7e0957e1bf5cff253f64864c4dec440e451f115df6",
+    "README.md": "39f155cc0c6a697ab8ec1cdd07110491748fad571101bc500929cff2cf9ef21f",
+    "requirements.txt": "5f0a6f12fc5d7749e162638320c37e0ba9976fe1f7b8cbcd46276b469a37c4aa",
+    "skills/biorxiv-catalog/SKILL.md": "0caf1b7043f92104cedc89df0c263ec6cecf4ce261c69cc8559a54c14860460a",
+    "THIRD_PARTY_NOTICES.md": "a2d77d337d76c15784feebb353fd67bb28b3cb3d3f59d8030e7b07b808f1191a",
+    "tools/biorxiv_tools.py": "75fca15d85c45859f0d4dec42629d265b1139d23b0fa2fcc516aa0c52ec06cd1",
+    "tools/tool_catalog.json": "39c61af727324866a9038aa422881827d836d24a7dd461afc4bfcffa2aa5cfee"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "_修改说明": "2026-11-02 Nguyen Trung Dung：从 Anthropic bio-research/.mcp.json 提取 bioRxiv 连接，删除其他服务。上游 2574e29377c7173d0cecffef29a6ecbd7f8ccb5d，Apache-2.0；见 THIRD_PARTY_NOTICES.md。",
+  "mcpServers": {
+    "biorxiv": {
+      "type": "http",
+      "url": "https://hcls.mcp.claude.com/biorxiv/mcp"
+    }
+  }
+}

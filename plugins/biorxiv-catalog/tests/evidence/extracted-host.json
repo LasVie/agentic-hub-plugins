@@ -1,0 +1,41 @@
+{
+  "checked_at_utc": "2026-11-02T06:35:03.559918+00:00",
+  "payload": "D:\\jiuwen_repos\\outputs\\biorxiv-build\\extracted-native",
+  "model_calls": 0,
+  "real_deepagent": true,
+  "real_runner": true,
+  "real_skill_rail": true,
+  "model_visible_direct_tools": [
+    "biorxiv_get_categories",
+    "biorxiv_get_content_statistics",
+    "biorxiv_get_preprint",
+    "biorxiv_get_usage_statistics",
+    "biorxiv_search_by_funder",
+    "biorxiv_search_preprints",
+    "biorxiv_search_published_preprints"
+  ],
+  "seven_tools_loaded": true,
+  "registered_tool_invalid_input_rejected": true,
+  "live_categories_via_runner": true,
+  "live_medrxiv_via_runner": true,
+  "all_tools_unloaded": true,
+  "unload_result": [
+    "skill:D:\\jiuwen_repos\\outputs\\biorxiv-build\\extracted-native\\skills\\biorxiv-catalog",
+    "tool:biorxiv_get_usage_statistics_biorxiv-test-58848c529b2445a7b87cb118345b52a5",
+    "tool:biorxiv_get_content_statistics_biorxiv-test-58848c529b2445a7b87cb118345b52a5",
+    "tool:biorxiv_search_by_funder_biorxiv-test-58848c529b2445a7b87cb118345b52a5",
+    "tool:biorxiv_search_published_preprints_biorxiv-test-58848c529b2445a7b87cb118345b52a5",
+    "tool:biorxiv_get_categories_biorxiv-test-58848c529b2445a7b87cb118345b52a5",
+    "tool:biorxiv_get_preprint_biorxiv-test-58848c529b2445a7b87cb118345b52a5",
+    "tool:biorxiv_search_preprints_biorxiv-test-58848c529b2445a7b87cb118345b52a5"
+  ],
+  "payload_unchanged": true,
+  "versions": {
+    "mcp": "1.26.0",
+    "jsonschema": "4.26.0",
+    "httpx": "0.28.1",
+    "pydantic": "2.12.5"
+  },
+  "sdk_source": "D:\\jiuwen_repos\\agent-core-latest\\openjiuwen\\__init__.py",
+  "frontend_conversation": "not performed"
+}

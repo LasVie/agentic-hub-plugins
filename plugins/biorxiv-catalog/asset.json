@@ -1,0 +1,28 @@
+{
+  "type": "agent-plugin",
+  "name": "biorxiv-catalog",
+  "version": "1.0.0",
+  "display_name": "预印本目录助手",
+  "description": "通过七个原生只读工具浏览 bioRxiv/medRxiv 目录，核对 DOI、版本、发表关联、资助信息和来源统计；默认用简体中文。",
+  "publisher": "LasVie/agentic-hub-plugins",
+  "category": "数据与科学研究",
+  "tags": [
+    "preprint",
+    "biorxiv",
+    "medrxiv",
+    "research"
+  ],
+  "functional_tags": [
+    "预印本版本核对",
+    "发表关联",
+    "资助来源查询"
+  ],
+  "scope": "现有文献检索流程的中文目录伴随插件，七个原生只读工具。依赖官方匿名网络服务和宿主 SDK；不下载论文全文、批量抓取、提供医学建议或自动文献综述。",
+  "candidate_id": "CAND-CLD-274",
+  "task_id": "AH-20261102-biorxiv-catalog",
+  "related_asset_ids": [
+    "857c5bc03bd848ca838c1b563734e85b",
+    "1f4e4a2df62a40879bbbd77580973b99",
+    "1395c2191e7e49608fc277edf073a384"
+  ]
+}

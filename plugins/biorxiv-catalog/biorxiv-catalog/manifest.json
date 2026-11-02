@@ -1,0 +1,77 @@
+{
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "source": "local",
+  "id": "biorxiv-catalog",
+  "name": "预印本目录助手",
+  "description": "通过七个原生只读工具浏览 bioRxiv/medRxiv 目录，核对 DOI、版本、发表关联、资助信息和来源统计；默认用简体中文。",
+  "display_name": {
+    "en": "预印本目录助手",
+    "zh": "预印本目录助手"
+  },
+  "display_description": {
+    "en": "通过七个原生只读工具浏览 bioRxiv/medRxiv 目录，核对 DOI、版本、发表关联、资助信息和来源统计；默认用简体中文。",
+    "zh": "通过七个原生只读工具浏览 bioRxiv/medRxiv 目录，核对 DOI、版本、发表关联、资助信息和来源统计；默认用简体中文。"
+  },
+  "category": "数据与科学研究",
+  "tags": [
+    {
+      "en": "预印本目录",
+      "zh": "预印本目录"
+    },
+    {
+      "en": "科研来源核对",
+      "zh": "科研来源核对"
+    }
+  ],
+  "default_init_input": {
+    "en": "查询预印本目录并用中文核对来源：",
+    "zh": "查询预印本目录并用中文核对来源："
+  },
+  "quick_inputs": [
+    {
+      "en": "调用 biorxiv_get_categories，列出服务实际返回的学科。",
+      "zh": "调用 biorxiv_get_categories，列出服务实际返回的学科。"
+    },
+    {
+      "en": "读取 2024-01-01 至 2024-01-07 的生物信息学预印本，最多两条。",
+      "zh": "读取 2024-01-01 至 2024-01-07 的生物信息学预印本，最多两条。"
+    }
+  ],
+  "skills": [
+    {
+      "dir": "skills/biorxiv-catalog",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/biorxiv_tools.py",
+      "class": "SearchPreprintsTool"
+    },
+    {
+      "file": "tools/biorxiv_tools.py",
+      "class": "GetPreprintTool"
+    },
+    {
+      "file": "tools/biorxiv_tools.py",
+      "class": "CategoriesTool"
+    },
+    {
+      "file": "tools/biorxiv_tools.py",
+      "class": "PublishedPreprintsTool"
+    },
+    {
+      "file": "tools/biorxiv_tools.py",
+      "class": "FunderTool"
+    },
+    {
+      "file": "tools/biorxiv_tools.py",
+      "class": "ContentStatisticsTool"
+    },
+    {
+      "file": "tools/biorxiv_tools.py",
+      "class": "UsageStatisticsTool"
+    }
+  ]
+}
