@@ -1,0 +1,39 @@
+{
+  "node_modules/property-graph/dist/index.mjs": {
+    "bytes": 16685,
+    "imports": [],
+    "format": "esm"
+  },
+  "node_modules/@gltf-transform/core/dist/index.js": {
+    "bytes": 209490,
+    "imports": [
+      {
+        "path": "node_modules/property-graph/dist/index.mjs",
+        "kind": "import-statement",
+        "original": "property-graph"
+      },
+      {
+        "path": "node:fs",
+        "kind": "dynamic-import",
+        "external": true
+      },
+      {
+        "path": "node:path",
+        "kind": "dynamic-import",
+        "external": true
+      }
+    ],
+    "format": "esm"
+  },
+  "../../../tools/dev_five/texture-resize.mjs": {
+    "bytes": 1357,
+    "imports": [
+      {
+        "path": "node_modules/@gltf-transform/core/dist/index.js",
+        "kind": "import-statement",
+        "original": "@gltf-transform/core"
+      }
+    ],
+    "format": "esm"
+  }
+}

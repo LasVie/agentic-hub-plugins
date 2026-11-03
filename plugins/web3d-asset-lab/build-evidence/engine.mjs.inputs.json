@@ -1,0 +1,148 @@
+{
+  "node_modules/property-graph/dist/index.mjs": {
+    "bytes": 16685,
+    "imports": [],
+    "format": "esm"
+  },
+  "node_modules/@gltf-transform/core/dist/index.js": {
+    "bytes": 209490,
+    "imports": [
+      {
+        "path": "node_modules/property-graph/dist/index.mjs",
+        "kind": "import-statement",
+        "original": "property-graph"
+      },
+      {
+        "path": "node:fs",
+        "kind": "dynamic-import",
+        "external": true
+      },
+      {
+        "path": "node:path",
+        "kind": "dynamic-import",
+        "external": true
+      }
+    ],
+    "format": "esm"
+  },
+  "bounded-pixels.mjs": {
+    "bytes": 222,
+    "imports": [],
+    "format": "esm"
+  },
+  "node_modules/ktx-parse/dist/ktx-parse.modern.js": {
+    "bytes": 40532,
+    "imports": [],
+    "format": "esm"
+  },
+  "node_modules/@gltf-transform/extensions/dist/index.js": {
+    "bytes": 257940,
+    "imports": [
+      {
+        "path": "node_modules/@gltf-transform/core/dist/index.js",
+        "kind": "import-statement",
+        "original": "@gltf-transform/core"
+      },
+      {
+        "path": "node_modules/ktx-parse/dist/ktx-parse.modern.js",
+        "kind": "import-statement",
+        "original": "ktx-parse"
+      }
+    ],
+    "format": "esm"
+  },
+  "node_modules/iota-array/iota.js": {
+    "bytes": 150,
+    "imports": [],
+    "format": "cjs"
+  },
+  "node_modules/is-buffer/index.js": {
+    "bytes": 698,
+    "imports": [],
+    "format": "cjs"
+  },
+  "node_modules/ndarray/ndarray.js": {
+    "bytes": 9925,
+    "imports": [
+      {
+        "path": "node_modules/iota-array/iota.js",
+        "kind": "require-call",
+        "original": "iota-array"
+      },
+      {
+        "path": "node_modules/is-buffer/index.js",
+        "kind": "require-call",
+        "original": "is-buffer"
+      }
+    ],
+    "format": "cjs"
+  },
+  "node_modules/ndarray-lanczos/dist/ndarray-lanczos.modern.js": {
+    "bytes": 2039,
+    "imports": [
+      {
+        "path": "node_modules/ndarray/ndarray.js",
+        "kind": "import-statement",
+        "original": "ndarray"
+      }
+    ],
+    "format": "esm"
+  },
+  "node_modules/@gltf-transform/functions/dist/index.js": {
+    "bytes": 230980,
+    "imports": [
+      {
+        "path": "node_modules/@gltf-transform/core/dist/index.js",
+        "kind": "import-statement",
+        "original": "@gltf-transform/core"
+      },
+      {
+        "path": "bounded-pixels.mjs",
+        "kind": "import-statement",
+        "original": "ndarray-pixels"
+      },
+      {
+        "path": "node_modules/@gltf-transform/extensions/dist/index.js",
+        "kind": "import-statement",
+        "original": "@gltf-transform/extensions"
+      },
+      {
+        "path": "node_modules/ktx-parse/dist/ktx-parse.modern.js",
+        "kind": "import-statement",
+        "original": "ktx-parse"
+      },
+      {
+        "path": "node_modules/ndarray/ndarray.js",
+        "kind": "import-statement",
+        "original": "ndarray"
+      },
+      {
+        "path": "node_modules/ndarray-lanczos/dist/ndarray-lanczos.modern.js",
+        "kind": "import-statement",
+        "original": "ndarray-lanczos"
+      }
+    ],
+    "format": "esm"
+  },
+  "../../../tools/dev_five/gltf-engine.mjs": {
+    "bytes": 3942,
+    "imports": [
+      {
+        "path": "node_modules/@gltf-transform/core/dist/index.js",
+        "kind": "import-statement",
+        "original": "@gltf-transform/core"
+      },
+      {
+        "path": "node_modules/@gltf-transform/functions/dist/index.js",
+        "kind": "import-statement",
+        "original": "@gltf-transform/functions"
+      },
+      {
+        "path": "node:zlib",
+        "kind": "import-statement",
+        "external": true
+      }
+    ],
+    "format": "esm"
+  }
+}

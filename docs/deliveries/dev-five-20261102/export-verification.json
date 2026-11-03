@@ -1,0 +1,167 @@
+{
+  "verified_at": "2026-11-03",
+  "scope": "Real local HTTP export endpoints; PostgreSQL snapshot additionally downloaded through the GUI. UI editing/operations separately captured in original screenshots.",
+  "files": [
+    {
+      "slug": "api-mock-lab",
+      "filename": "mock-project.json",
+      "bytes": 791,
+      "sha256": "21e634f62b682c44ce7c2341eb19deb1b7f952036ad67093a905c65f7932ac4e",
+      "http_download_and_saved_file_equal": true
+    },
+    {
+      "slug": "visual-web-studio",
+      "filename": "website.html",
+      "bytes": 3395,
+      "sha256": "db73afbc60607ca0d39441e63aefcd7dcd9d62bac69007386e709db26d55e50c",
+      "http_download_and_saved_file_equal": true
+    },
+    {
+      "slug": "visual-web-studio",
+      "filename": "page-project.json",
+      "bytes": 12283,
+      "sha256": "39f9b23715a66d71f794971c82219881d65cf63a9b176a0487c26f1b82fcc64c",
+      "http_download_and_saved_file_equal": false
+    },
+    {
+      "slug": "postgres-local-lab",
+      "filename": "database-host_demo.tar.gz",
+      "bytes": 4581183,
+      "sha256": "819de20feb2207d328f55b8c4197c1715a0c1da66fec1eb02e05a7f2d4ed0bf4",
+      "http_download_and_saved_file_equal": true
+    },
+    {
+      "slug": "bundle-insight",
+      "filename": "report-host_large.html",
+      "bytes": 3930,
+      "sha256": "5b15ba4d3ace3f17078c5619390271779119fc8a3de98c367bc136729605b51d",
+      "http_download_and_saved_file_equal": true
+    },
+    {
+      "slug": "bundle-insight",
+      "filename": "snapshot-host_large.json",
+      "bytes": 1002,
+      "sha256": "7d99839fd9f5b726632a5a5396152fdc98d5aab70ad28f2c8d85961da9778cc1",
+      "http_download_and_saved_file_equal": true
+    },
+    {
+      "slug": "web3d-asset-lab",
+      "filename": "original.glb",
+      "bytes": 6114024,
+      "sha256": "5ecb9ead652de1cd9cc52fe569b2dcb3126b69fac50c89969228eb9260555779",
+      "http_download_and_saved_file_equal": true
+    },
+    {
+      "slug": "web3d-asset-lab",
+      "filename": "optimized.glb",
+      "bytes": 5456,
+      "sha256": "671b82cece8cb205d41f37942a9881d29b22da49ae2b0319c9f0d347db9af68a",
+      "http_download_and_saved_file_equal": true
+    },
+    {
+      "slug": "web3d-asset-lab",
+      "filename": "model-report.json",
+      "bytes": 1274,
+      "sha256": "77d371c142ca3bb230ab2dc4b93e00e4027ba2e9e6f0687d016dd0b65e856514",
+      "http_download_and_saved_file_equal": true
+    }
+  ],
+  "chinese_page_export_and_resumable_project": true,
+  "postgres_snapshot_has_pg_version": true,
+  "model_stats": {
+    "before": {
+      "bytes": 6114024,
+      "meshes": 16,
+      "nodes": 16,
+      "materials": 16,
+      "textures": 16,
+      "textureBytes": 6096944,
+      "textureDimensions": [
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ]
+      ],
+      "accessors": 48,
+      "animations": 0
+    },
+    "after": {
+      "bytes": 5456,
+      "meshes": 1,
+      "nodes": 16,
+      "materials": 1,
+      "textures": 1,
+      "textureBytes": 2976,
+      "textureDimensions": [
+        [
+          128,
+          128
+        ]
+      ],
+      "accessors": 3,
+      "animations": 0
+    },
+    "savedBytes": 6108568,
+    "note": "用户明确选择缩放彩色贴图；这是有损的分辨率调整，原始文件保留"
+  }
+}

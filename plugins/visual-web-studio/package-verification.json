@@ -1,0 +1,32 @@
+{
+  "version": "1.0.4",
+  "canonical_sha256": "da46bbdd170fc874f70ca001e36544e616f9b43c04235f43353f243584bb29b0",
+  "native_sha256": "d0a42af75f66bc01d212f724f8f0bc5c6887d16c54c7fecd99d1a4f1e46fc362",
+  "payload_files": 23,
+  "runtime_payloads_equal": true,
+  "payload_sha256": {
+    "README.md": "daeecac05d30c371399da3794a42c7ee47a9da16ba6f14842cea12f4f6a01ad8",
+    "THIRD_PARTY_NOTICES.md": "f71ee113581318e9700db484b4a7ac59618e1e549b2868cff68fd9116e53b151",
+    "licenses/COMPONENTS.json": "bbdd2b0574ec1d678cb73f148579a5678fb876c8d5cb2516f8030c6e72d5f5c4",
+    "licenses/backbone--1.4.1/LICENSE": "3a9bdf3d9bd0f4305453364bfcb036cee1fa8a20291f2e5fb5381d8194bc2d26",
+    "licenses/backbone-undo--0.2.6/LICENSE": "586aea09a6c3788ee503ba5f6bb3e56ead55949ec0b09d1c0a335cbd4024dda2",
+    "licenses/codemirror--5.63.0/LICENSE": "a3f2fe2ac6b471aa80c737c5d283dd049bdc903a73835ee6d4d2cac02fdd53bf",
+    "licenses/grapesjs--0.23.8/LICENSE": "1a7603ac82661e3ec4f0ad015e37f68ab62c85c725f07659b81760edb459ff8d",
+    "licenses/promise-polyfill--8.3.0/LICENSE": "453a712c58161b74efa998578aaf10fd7ad8204120730de38ca04d7f47f3ea46",
+    "licenses/underscore--1.13.8/LICENSE": "92905fb54f5d168a27e6d5dc7c2197020add11842be4c70689d084bae3bfe37a",
+    "manifest.json": "b1ee2ece5e2edb920b86f11ccc15d947dc8d5966aabfe7fd36c860c313a355d9",
+    "runtime/config.json": "5970c7ede06634b8f99b8c5feba118c45efbe86e8804629f9ba62bc88d15435e",
+    "runtime/handler.cjs": "1588da22e3b7a6cb7dbb857a1059a3a8f46c411733e8d6260db00f03c73f9703",
+    "runtime/launcher.py": "b55bf580a6f651dd2cbc03569fd71d8a4de5e0197819a6e9b27b22bc14a2310f",
+    "runtime/service.cjs": "3c30957c981c416c5d91d30d9d32dcb632b7fd4e62ecddc6e4158340c862dd68",
+    "skills/visual-web-studio/SKILL.md": "2dda058eb4cead3b689612ada4e339a7bba85c7408e6107e1a6f3b3d946e0c5b",
+    "tools/workbench_tools.py": "8edb709bf9eb6d12f365443d73511ac79cb5dccdcf7ce81b1cd9f3179fcd8a6b",
+    "vendor/grapes.css": "fb55e939b3349c280d68c0617dc87e56baa3eab55ea56a1855db9f5efcc7268d",
+    "vendor/grapes.mjs": "92d57cfa791cdd26164f44184324de7df5863b53fe8a4ebdccb4ba198fcee27d",
+    "vendor/zh.mjs": "71d3878724028d0a6f816019a5a5a7c69205a5d3a9fbd0088901fb3693724989",
+    "web/app.js": "e9dcbe3272c742e59182d5e8abf06089663b2cc3a6a991c8c3ae10e834a0f0bf",
+    "web/common.js": "2050a610c699528afe18ebdeec26b7b657c9a21ca9751e567999fd3e9a34fb26",
+    "web/index.html": "a71b34c4698fcff92793ec99a2f29a3c3ef3df64b013ae18439305cd656e3433",
+    "web/style.css": "d5cd2a305273847b767670d0f8acacd9fed5ece3a618e816e58d7f0c198db840"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://www.npmjs.com/package/backbone/v/1.4.1",
+      "revision": "1.4.1",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/backbone--1.4.1/LICENSE",
+          "sha256": "3a9bdf3d9bd0f4305453364bfcb036cee1fa8a20291f2e5fb5381d8194bc2d26"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/backbone-undo/v/0.2.6",
+      "revision": "0.2.6",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/backbone-undo--0.2.6/LICENSE",
+          "sha256": "586aea09a6c3788ee503ba5f6bb3e56ead55949ec0b09d1c0a335cbd4024dda2"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/codemirror/v/5.63.0",
+      "revision": "5.63.0",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/codemirror--5.63.0/LICENSE",
+          "sha256": "a3f2fe2ac6b471aa80c737c5d283dd049bdc903a73835ee6d4d2cac02fdd53bf"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/grapesjs/v/0.23.8",
+      "revision": "0.23.8",
+      "license_expression": "BSD-3-Clause",
+      "license_evidence": [
+        {
+          "path": "licenses/grapesjs--0.23.8/LICENSE",
+          "sha256": "1a7603ac82661e3ec4f0ad015e37f68ab62c85c725f07659b81760edb459ff8d"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/promise-polyfill/v/8.3.0",
+      "revision": "8.3.0",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/promise-polyfill--8.3.0/LICENSE",
+          "sha256": "453a712c58161b74efa998578aaf10fd7ad8204120730de38ca04d7f47f3ea46"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/underscore/v/1.13.8",
+      "revision": "1.13.8",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/underscore--1.13.8/LICENSE",
+          "sha256": "92905fb54f5d168a27e6d5dc7c2197020add11842be4c70689d084bae3bfe37a"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "vendor/grapes.css",
+    "vendor/grapes.mjs",
+    "vendor/zh.mjs"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

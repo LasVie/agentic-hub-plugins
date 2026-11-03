@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "api-mock-lab",
+    "version": "1.0.3",
+    "files": 170,
+    "source_canonical_native_equal": true,
+    "installed_equal": true,
+    "canonical_sha256": "a099a96f612f1cf353534bc839c99e6f0cecf4f11184ab7ca83c9a0771b3ad30",
+    "native_sha256": "567095c4a9fee0b52e8d7da25e499713bb0a126af1292c06fb7d078715ebd53d"
+  },
+  {
+    "slug": "visual-web-studio",
+    "version": "1.0.4",
+    "files": 23,
+    "source_canonical_native_equal": true,
+    "installed_equal": true,
+    "canonical_sha256": "da46bbdd170fc874f70ca001e36544e616f9b43c04235f43353f243584bb29b0",
+    "native_sha256": "d0a42af75f66bc01d212f724f8f0bc5c6887d16c54c7fecd99d1a4f1e46fc362"
+  },
+  {
+    "slug": "postgres-local-lab",
+    "version": "1.0.3",
+    "files": 37,
+    "source_canonical_native_equal": true,
+    "installed_equal": true,
+    "canonical_sha256": "eb1307a005d322efdc17abafbeb52c17063692a87cadb6b44a3b6a522f963b3f",
+    "native_sha256": "66e577e8cff0933649b19c5c807738bb49904058b5a5b0b32d8cbdf0a822160c"
+  },
+  {
+    "slug": "bundle-insight",
+    "version": "1.0.4",
+    "files": 32,
+    "source_canonical_native_equal": true,
+    "installed_equal": true,
+    "canonical_sha256": "4570ac345abeb3f8597f8f521be1da20f64d2f11835a243f54b12c5927ae699b",
+    "native_sha256": "d772a86ed0ce5ca09cf066670bdd74db231ac53f57f26cb734397cf924402c0d"
+  },
+  {
+    "slug": "web3d-asset-lab",
+    "version": "1.0.4",
+    "files": 27,
+    "source_canonical_native_equal": true,
+    "installed_equal": true,
+    "canonical_sha256": "b8ede1eaae52659cdd030f6f13a07576703c904081c5cc741059d998a19eca67",
+    "native_sha256": "d26594e8c0217ea5d029b80322a18cc3765ded770ef3b655bf6c13792376bb88"
+  }
+]

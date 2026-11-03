@@ -1,0 +1,11 @@
+{
+  "slug": "visual-web-studio",
+  "name": "可视化网页搭建台",
+  "candidate_id": "CAND-EXT-007",
+  "upstream": "GrapesJS",
+  "repository": "GrapesJS/grapesjs",
+  "package": "grapesjs",
+  "version": "1.0.4",
+  "asset_version": "1.0.4",
+  "upstream_version": "0.23.8"
+}

@@ -1,0 +1,168 @@
+{
+  "at": "2026-11-03T01:47:00.654Z",
+  "scope": "Supported running WorkSwarm plugin_packages import/install/show/list. Actual chat-worker invocation and GUI tests are verified separately.",
+  "frontend": "http://127.0.0.1:5173",
+  "records": [
+    {
+      "id": "api-mock-lab",
+      "version": "1.0.3",
+      "installed": true,
+      "nativeSha256": "567095c4a9fee0b52e8d7da25e499713bb0a126af1292c06fb7d078715ebd53d",
+      "detailKeys": [
+        "package"
+      ],
+      "cardKeys": [
+        "id",
+        "displayName",
+        "displayDescription",
+        "source",
+        "avatar",
+        "version",
+        "details",
+        "tags",
+        "skills",
+        "tools",
+        "rails",
+        "mcps",
+        "installed",
+        "connection_state",
+        "pending_connectors",
+        "quickInputs"
+      ],
+      "displayName": {
+        "zh": "接口模拟与联调台",
+        "en": "接口模拟与联调台"
+      }
+    },
+    {
+      "id": "visual-web-studio",
+      "version": "1.0.4",
+      "installed": true,
+      "nativeSha256": "d0a42af75f66bc01d212f724f8f0bc5c6887d16c54c7fecd99d1a4f1e46fc362",
+      "detailKeys": [
+        "package"
+      ],
+      "cardKeys": [
+        "id",
+        "displayName",
+        "displayDescription",
+        "source",
+        "avatar",
+        "version",
+        "details",
+        "tags",
+        "skills",
+        "tools",
+        "rails",
+        "mcps",
+        "installed",
+        "connection_state",
+        "pending_connectors",
+        "quickInputs"
+      ],
+      "displayName": {
+        "zh": "可视化网页搭建台",
+        "en": "可视化网页搭建台"
+      }
+    },
+    {
+      "id": "postgres-local-lab",
+      "version": "1.0.3",
+      "installed": true,
+      "nativeSha256": "66e577e8cff0933649b19c5c807738bb49904058b5a5b0b32d8cbdf0a822160c",
+      "detailKeys": [
+        "package"
+      ],
+      "cardKeys": [
+        "id",
+        "displayName",
+        "displayDescription",
+        "source",
+        "avatar",
+        "version",
+        "details",
+        "tags",
+        "skills",
+        "tools",
+        "rails",
+        "mcps",
+        "installed",
+        "connection_state",
+        "pending_connectors",
+        "quickInputs"
+      ],
+      "displayName": {
+        "zh": "离线 PostgreSQL 实验台",
+        "en": "离线 PostgreSQL 实验台"
+      }
+    },
+    {
+      "id": "bundle-insight",
+      "version": "1.0.4",
+      "installed": true,
+      "nativeSha256": "d772a86ed0ce5ca09cf066670bdd74db231ac53f57f26cb734397cf924402c0d",
+      "detailKeys": [
+        "package"
+      ],
+      "cardKeys": [
+        "id",
+        "displayName",
+        "displayDescription",
+        "source",
+        "avatar",
+        "version",
+        "details",
+        "tags",
+        "skills",
+        "tools",
+        "rails",
+        "mcps",
+        "installed",
+        "connection_state",
+        "pending_connectors",
+        "quickInputs"
+      ],
+      "displayName": {
+        "zh": "前端包体积透视台",
+        "en": "前端包体积透视台"
+      }
+    },
+    {
+      "id": "web3d-asset-lab",
+      "version": "1.0.4",
+      "installed": true,
+      "nativeSha256": "d26594e8c0217ea5d029b80322a18cc3765ded770ef3b655bf6c13792376bb88",
+      "detailKeys": [
+        "package"
+      ],
+      "cardKeys": [
+        "id",
+        "displayName",
+        "displayDescription",
+        "source",
+        "avatar",
+        "version",
+        "details",
+        "tags",
+        "skills",
+        "tools",
+        "rails",
+        "mcps",
+        "installed",
+        "connection_state",
+        "pending_connectors",
+        "quickInputs"
+      ],
+      "displayName": {
+        "zh": "网页 3D 模型瘦身台",
+        "en": "网页 3D 模型瘦身台"
+      }
+    }
+  ],
+  "configBeforeSha256": "5fb9238d05b09fca411bc54670257e3678aba39847e5653b57582faede10054e",
+  "otherCatalogBefore": [],
+  "configAfterSha256": "5fb9238d05b09fca411bc54670257e3678aba39847e5653b57582faede10054e",
+  "configUnchanged": true,
+  "otherCatalogAfter": [],
+  "otherCatalogUnchanged": true
+}

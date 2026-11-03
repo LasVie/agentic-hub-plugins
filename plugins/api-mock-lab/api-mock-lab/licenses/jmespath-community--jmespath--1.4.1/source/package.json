@@ -1,0 +1,98 @@
+{
+  "name": "@jmespath-community/jmespath",
+  "description": "Typescript implementation of the JMESPath Community specification",
+  "version": "1.4.1",
+  "author": {
+    "name": "JMESPath Community",
+    "email": "springcomp@users.noreply.github.com",
+    "url": "https://jmespath.site"
+  },
+  "type": "module",
+  "bin": {
+    "jp": "./dist/cli.mjs"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "browser": "./dist/index.umd.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "browser": {
+        "import": "./dist/index.esm.js",
+        "require": "./dist/index.umd.js",
+        "default": "./dist/index.umd.js"
+      },
+      "node": {
+        "import": "./dist/index.mjs",
+        "require": "./dist/index.cjs"
+      },
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./cli": {
+      "types": "./dist/cli.d.ts",
+      "import": "./dist/cli.mjs",
+      "require": "./dist/cli.cjs"
+    }
+  },
+  "files": [
+    "dist/"
+  ],
+  "homepage": "https://github.com/jmespath-community/typescript-jmespath",
+  "bugs": {
+    "url": "https://github.com/jmespath-community/typescript-jmespath/issues"
+  },
+  "keywords": [
+    "jmespath",
+    "jsonpath",
+    "query",
+    "json",
+    "jq",
+    "xpath"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmespath-community/typescript-jmespath.git"
+  },
+  "license": "MPL-2.0",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "lint": "biome check",
+    "lint:fix": "biome check --write",
+    "lint:ci": "biome check --diagnostic-level=error",
+    "prebuild": "rimraf dist",
+    "build": "tsup",
+    "dev": "ts-node src/cli.ts",
+    "perf": "node --expose-gc scripts/perf.js",
+    "perf:stream": "node --expose-gc scripts/stream-perf.js",
+    "start": "tsup --watch",
+    "test": "vitest --run",
+    "test:watch": "vitest",
+    "test:prod": "npm run lint:ci && npm run test",
+    "test:build": "npm run build && npm test -- test/build-artifacts.spec.ts",
+    "coverage": "vitest run --coverage",
+    "deploy-docs": "ts-node scripts/gh-pages-publish",
+    "report-coverage": "cat ./coverage/lcov.info | coveralls"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.2",
+    "@vitest/coverage-v8": "^4.0.6",
+    "clean-publish": "^6.0.1",
+    "coveralls-next": "^6.0.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.6",
+    "rimraf": "^6.1.0",
+    "shelljs": "^0.10.0",
+    "tinybench": "^5.1.0",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.6"
+  }
+}

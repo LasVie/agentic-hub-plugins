@@ -1,0 +1,52 @@
+[
+  {
+    "slug": "api-mock-lab",
+    "name": "接口模拟与联调台",
+    "candidate_id": "CAND-EXT-006",
+    "upstream": "Mockoon",
+    "repository": "mockoon/mockoon",
+    "package": "@mockoon/commons-server",
+    "version": "9.10.0",
+    "asset_version": "1.0.3"
+  },
+  {
+    "slug": "visual-web-studio",
+    "name": "可视化网页搭建台",
+    "candidate_id": "CAND-EXT-007",
+    "upstream": "GrapesJS",
+    "repository": "GrapesJS/grapesjs",
+    "package": "grapesjs",
+    "version": "0.23.8",
+    "asset_version": "1.0.4"
+  },
+  {
+    "slug": "postgres-local-lab",
+    "name": "离线 PostgreSQL 实验台",
+    "candidate_id": "CAND-EXT-008",
+    "upstream": "PGlite",
+    "repository": "electric-sql/pglite",
+    "package": "@electric-sql/pglite",
+    "version": "0.5.14",
+    "asset_version": "1.0.3"
+  },
+  {
+    "slug": "bundle-insight",
+    "name": "前端包体积透视台",
+    "candidate_id": "CAND-EXT-009",
+    "upstream": "Rollup Plugin Visualizer",
+    "repository": "btd/rollup-plugin-visualizer",
+    "package": "rollup-plugin-visualizer",
+    "version": "7.1.1",
+    "asset_version": "1.0.4"
+  },
+  {
+    "slug": "web3d-asset-lab",
+    "name": "网页 3D 模型瘦身台",
+    "candidate_id": "CAND-EXT-010",
+    "upstream": "glTF Transform",
+    "repository": "donmccurdy/glTF-Transform",
+    "package": "@gltf-transform/core",
+    "version": "4.5.1",
+    "asset_version": "1.0.4"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "slug": "postgres-local-lab",
+  "name": "离线 PostgreSQL 实验台",
+  "candidate_id": "CAND-EXT-008",
+  "upstream": "PGlite",
+  "repository": "electric-sql/pglite",
+  "package": "@electric-sql/pglite",
+  "version": "1.0.3",
+  "asset_version": "1.0.3",
+  "upstream_version": "0.5.14"
+}

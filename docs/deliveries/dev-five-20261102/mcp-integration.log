@@ -1,0 +1,101 @@
+$ /Applications/WorkSwarm.app/Contents/Resources/node-runtime/bin/node --version
+v22.12.0
+$ /Applications/WorkSwarm.app/Contents/Resources/node-runtime/bin/npm --version
+10.9.0
+{"python": "3.11.17", "node": "v22.12.0", "npm": "10.9.0", "plugin": "1.0.4"}
+$ /Applications/WorkSwarm.app/Contents/Resources/node-runtime/bin/npm ci --ignore-scripts --no-audit --no-fund --cache /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/npm-cache --registry https://registry.npmjs.org --prefix /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/tools
+
+added 150 packages in 10s
+npm notice
+npm notice New major version of npm available! 10.9.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice
+$ /Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/worktrees/dev-five-20261102/.research/dev-five/venv/bin/python /Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/worktrees/dev-five-20261102/plugins/mcp-server-dev/mcp-server-dev/scripts/devkit.py scaffold --kind app --output /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/app --name tested-app --author Vannes Wijaya
+{
+  "plugin_version": "1.0.4",
+  "kind": "app",
+  "project": "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/app",
+  "name": "tested-app",
+  "generated_version": "0.1.0",
+  "runtime": "Node.js >=20",
+  "commands": [
+    "npm ci --ignore-scripts",
+    "npm run build",
+    "node server.mjs"
+  ],
+  "license_note": "分发前请审查生成代码和已安装依赖的实际许可及适用范围。"
+}
+$ /Applications/WorkSwarm.app/Contents/Resources/node-runtime/bin/npm ci --ignore-scripts --no-audit --no-fund --cache /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/npm-cache --registry https://registry.npmjs.org --prefix /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/app
+
+added 99 packages in 431ms
+$ /Applications/WorkSwarm.app/Contents/Resources/node-runtime/bin/node --check /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/app/widget.mjs
+$ /Applications/WorkSwarm.app/Contents/Resources/node-runtime/bin/node --check /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/app/collect-licenses.mjs
+$ /Applications/WorkSwarm.app/Contents/Resources/node-runtime/bin/node --check /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/app/build.mjs
+$ /Applications/WorkSwarm.app/Contents/Resources/node-runtime/bin/node --check /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/app/server.mjs
+$ /Applications/WorkSwarm.app/Contents/Resources/node-runtime/bin/node /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/app/build.mjs
+已收集 99 个已安装依赖的完整许可与 NOTICE 证据
+已生成 widget.html，并内联本地 SDK 构建产物
+$ /Applications/WorkSwarm.app/Contents/Resources/node-runtime/bin/node /Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/worktrees/dev-five-20261102/tests/mcp_server_dev_smoke.mjs /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/app app /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/tools/node_modules
+{"kind":"app","project":"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/app","initialize":"passed","tools_list":"passed","add_2_3":5,"invalid_inputs":"rejected","unknown_tool":"rejected","recovery":"passed","resource":"UI URI/MIME/local HTML verified"}
+$ /Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/worktrees/dev-five-20261102/.research/dev-five/venv/bin/python /Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/worktrees/dev-five-20261102/plugins/mcp-server-dev/mcp-server-dev/scripts/devkit.py scaffold --kind mcpb --output /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/mcpb --name tested-mcpb --author Vannes Wijaya
+{
+  "plugin_version": "1.0.4",
+  "kind": "mcpb",
+  "project": "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/mcpb",
+  "name": "tested-mcpb",
+  "generated_version": "0.1.0",
+  "runtime": "Node.js >=20",
+  "commands": [
+    "npm ci --ignore-scripts --omit=dev",
+    "node collect-licenses.mjs",
+    "mcpb validate manifest.json",
+    "mcpb pack"
+  ],
+  "license_note": "分发前请审查生成代码和已安装依赖的实际许可及适用范围。"
+}
+$ /Applications/WorkSwarm.app/Contents/Resources/node-runtime/bin/npm ci --ignore-scripts --no-audit --no-fund --cache /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/npm-cache --registry https://registry.npmjs.org --prefix /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/mcpb --omit=dev
+
+added 95 packages in 364ms
+$ /Applications/WorkSwarm.app/Contents/Resources/node-runtime/bin/node --check /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/mcpb/collect-licenses.mjs
+$ /Applications/WorkSwarm.app/Contents/Resources/node-runtime/bin/node --check /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/mcpb/server.mjs
+$ /Applications/WorkSwarm.app/Contents/Resources/node-runtime/bin/node /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/mcpb/collect-licenses.mjs
+已收集 95 个已安装依赖的完整许可与 NOTICE 证据
+$ /Applications/WorkSwarm.app/Contents/Resources/node-runtime/bin/node /Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/worktrees/dev-five-20261102/tests/mcp_server_dev_smoke.mjs /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/mcpb mcpb /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/tools/node_modules
+{"kind":"mcpb","project":"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/mcpb","initialize":"passed","tools_list":"passed","add_2_3":5,"invalid_inputs":"rejected","unknown_tool":"rejected","recovery":"passed","resource":"not applicable"}
+$ /Applications/WorkSwarm.app/Contents/Resources/node-runtime/bin/node /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/tools/node_modules/@anthropic-ai/mcpb/dist/cli/cli.js validate /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/mcpb/manifest.json
+Manifest schema validation passes!
+$ /Applications/WorkSwarm.app/Contents/Resources/node-runtime/bin/node /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/tools/node_modules/@anthropic-ai/mcpb/dist/cli/cli.js validate /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/invalid-manifest.json
+ERROR: Manifest validation failed:
+
+  - name: Required
+  - version: Required
+  - description: Required
+  - author: Required
+  - server: Required
+$ /Applications/WorkSwarm.app/Contents/Resources/node-runtime/bin/node /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/tools/node_modules/@anthropic-ai/mcpb/dist/cli/cli.js pack /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/mcpb /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/tested.mcpb
+Validating manifest...
+Manifest schema validation passes!
+
+📦  tested-mcpb@0.1.0
+Archive Contents
+  12.2MB ../../../ [and 2467 more files]
+
+Archive Details
+name: tested-mcpb
+version: 0.1.0
+filename: tested-mcpb-0.1.0.mcpb
+package size: 3.8MB
+unpacked size: 12.2MB
+shasum: 599717205831fcc7a77d91c19fa21562b42f7e24
+total files: 2467
+ignored (.mcpbignore) files: 1289
+
+Output: /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/tested.mcpb
+MCPB archive: 2467 files; no traversal; runtime dependency licenses present
+$ /Applications/WorkSwarm.app/Contents/Resources/node-runtime/bin/node /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/tools/node_modules/@anthropic-ai/mcpb/dist/cli/cli.js unpack /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/tested.mcpb /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/relocated
+Extension unpacked successfully to /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/relocated
+$ /Applications/WorkSwarm.app/Contents/Resources/node-runtime/bin/node /Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/worktrees/dev-five-20261102/tests/mcp_server_dev_smoke.mjs /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/relocated mcpb /var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/tools/node_modules
+{"kind":"mcpb","project":"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/mcp-dev-functional-9v5ub2ij/relocated","initialize":"passed","tools_list":"passed","add_2_3":5,"invalid_inputs":"rejected","unknown_tool":"rejected","recovery":"passed","resource":"not applicable"}
+PASS: real App protocol, text fallback, invalid inputs, MCPB validate/pack/unpack/relocation
+Host UI rendering, target-desktop install and Hub submission remain separate evidence.

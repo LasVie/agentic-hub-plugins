@@ -1,0 +1,11 @@
+{
+  "slug": "api-mock-lab",
+  "name": "接口模拟与联调台",
+  "candidate_id": "CAND-EXT-006",
+  "upstream": "Mockoon",
+  "repository": "mockoon/mockoon",
+  "package": "@mockoon/commons-server",
+  "version": "1.0.3",
+  "asset_version": "1.0.3",
+  "upstream_version": "9.10.0"
+}

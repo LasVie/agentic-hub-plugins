@@ -1,0 +1,1 @@
+MPL-2.0 Source Code Form is supplied in source/. Fixed upstream revision f04b204f5919ad607a4945a23331810b07cc13ae at https://github.com/jmespath-community/typescript-jmespath/tree/f04b204f5919ad607a4945a23331810b07cc13ae . No upstream source edits; bundling is a build transformation. The surrounding plugin is a larger work, not a relicense of this component.
