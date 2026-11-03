@@ -1,0 +1,3 @@
+# Native WorkSwarm test archive
+
+picturereader-1.0.0-workswarm.zip is the unchanged previously checked-in native archive, relocated to its owning plugin on 2026-11-03. Its payload matches current 1.0.0 source. Original test confirmation/evidence remains in this asset directory and its historical delivery PR. Canonical Hub wrapper packages remain under releases/agent-plugin/picturereader/; this location change does not rebuild or re-confirm the package.

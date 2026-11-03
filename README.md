@@ -7,9 +7,14 @@ Shared Google Sheets tracker: [open and edit](https://docs.google.com/spreadshee
 - `skills/<slug>/`：技能源码、打包 metadata、来源审查。
 - `plugins/<slug>/`：插件源码、manifest、来源审查。
 - `releases/<type>/<slug>/<version>/`：经测试后通过 PR 合入的 ZIP、SHA-256 和载荷清单。
+- `plugins/<slug>/test-packages/`、`skills/<slug>/test-packages/`：对应资产的原生安装/测试 ZIP；与当前源码不同的旧包放在 `history/` 并标明版本。
+- `plugins/<slug>/tests/fixtures/`、`skills/<slug>/tests/fixtures/`：可编辑测试输入，位于运行载荷之外。
+- `docs/deliveries/<batch>/`：跨资产交付说明，链接到各资产目录；仓库根目录不放安装 ZIP 或插件测试素材。
 - `templates/`：开发脚手架，不能作为已有成品统计。
 - `tracking/tracker.json`：同一份在线追踪表的页签及字段映射，含 Plugin Candidates；维护时仍须读取实时表头。
 - `docs/FORMAT_RESEARCH.md`：实际下载样包与官方格式依据。
+
+2026-11-03 目录整理的旧路径、新路径和原文件哈希见[迁移记录](docs/maintenance/repository-layout-20261103.json)。历史测试包只移动位置，没有重打包；当前标准发布包仍以 `releases/` 中的版本为准。
 
 ```bash
 python -m pip install -r requirements-dev.txt

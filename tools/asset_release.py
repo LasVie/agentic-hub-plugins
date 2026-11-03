@@ -257,6 +257,10 @@ def audit_upstream(root: Path) -> dict:
 
 
 def check_repo(root: Path = ROOT) -> dict:
+    misplaced = sorted(root.glob("*.zip")) + sorted((root / "test-packages").rglob("*.zip"))
+    require(not misplaced, "archives in wrong repository location: "
+            + ", ".join(str(p.relative_to(root)) for p in misplaced)
+            + "; use the owning asset's test-packages/ or canonical releases/ directory")
     source_count = archive_count = 0
     for area in ("skills", "plugins"):
         for f in sorted((root / area).glob("*/asset.json")):

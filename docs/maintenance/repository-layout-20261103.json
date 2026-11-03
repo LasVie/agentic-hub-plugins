@@ -1,0 +1,115 @@
+{
+  "date": "2026-11-03",
+  "base_commit": "de13a4b415af1c5ed13b9cc759db157c01d6b880",
+  "scope": "Repository-only path maintenance; no runtime, release ZIP, version, test confirmation or tracker state changes.",
+  "moves": [
+    {
+      "old_path": "dsh-fs-encoding-1.0.1-workswarm.zip",
+      "new_path": "plugins/dsh-fs-encoding/test-packages/history/dsh-fs-encoding-1.0.1-workswarm.zip",
+      "sha256_before": "9572f21c28380903c389ec9aa2ab49c329edc0d69843c382a87a954b5f78d194",
+      "sha256_after_move": "9572f21c28380903c389ec9aa2ab49c329edc0d69843c382a87a954b5f78d194",
+      "bytes": 7580,
+      "content_changed": false
+    },
+    {
+      "old_path": "dsh-latex-guard-1.0.0-workswarm.zip",
+      "new_path": "plugins/dsh-latex-guard/test-packages/history/dsh-latex-guard-1.0.0-workswarm.zip",
+      "sha256_before": "a7f580891765a0c29e6a158dcc483e8be2551d0f51f1aeae0621833c0767e4d2",
+      "sha256_after_move": "a7f580891765a0c29e6a158dcc483e8be2551d0f51f1aeae0621833c0767e4d2",
+      "bytes": 7803,
+      "content_changed": false
+    },
+    {
+      "old_path": "dsh-latex-guard-test-files.zip",
+      "new_path": "plugins/dsh-latex-guard/test-packages/dsh-latex-guard-test-files.zip",
+      "sha256_before": "c1a2deb974f9240d188f862195faadf49c1a6d76535bd110755630d1e5b174e0",
+      "sha256_after_move": "c1a2deb974f9240d188f862195faadf49c1a6d76535bd110755630d1e5b174e0",
+      "bytes": 1204,
+      "content_changed": false
+    },
+    {
+      "old_path": "picturereader-1.0.0-workswarm.zip",
+      "new_path": "plugins/picturereader/test-packages/picturereader-1.0.0-workswarm.zip",
+      "sha256_before": "4118f7c64584247ca3b3087b53beb3dd74171f9dae2f52bf24c412a92fb268fa",
+      "sha256_after_move": "4118f7c64584247ca3b3087b53beb3dd74171f9dae2f52bf24c412a92fb268fa",
+      "bytes": 6621,
+      "content_changed": false
+    },
+    {
+      "old_path": "dsh-latex-guard-test-files/TEST_PROMPTS.md",
+      "new_path": "plugins/dsh-latex-guard/tests/fixtures/manual/TEST_PROMPTS.md",
+      "sha256_before": "08c4023183cbd4d87f915c10c509d1cb13abb53509124e4fd62e5431475dcd87",
+      "sha256_after_move": "08c4023183cbd4d87f915c10c509d1cb13abb53509124e4fd62e5431475dcd87",
+      "bytes": 838,
+      "content_changed": false
+    },
+    {
+      "old_path": "dsh-latex-guard-test-files/main.bib",
+      "new_path": "plugins/dsh-latex-guard/tests/fixtures/manual/main.bib",
+      "sha256_before": "8222ec9b6c20b07a4e8814c2c59f439a41f810cdaab837f8fbff05f624cbf53f",
+      "sha256_after_move": "8222ec9b6c20b07a4e8814c2c59f439a41f810cdaab837f8fbff05f624cbf53f",
+      "bytes": 177,
+      "content_changed": false
+    },
+    {
+      "old_path": "dsh-latex-guard-test-files/main.tex",
+      "new_path": "plugins/dsh-latex-guard/tests/fixtures/manual/main.tex",
+      "sha256_before": "87b57d46c20ecb9b0bbacc799b095838295b8ba3dc1c519f1492d4025d4549fe",
+      "sha256_after_move": "87b57d46c20ecb9b0bbacc799b095838295b8ba3dc1c519f1492d4025d4549fe",
+      "bytes": 123,
+      "content_changed": false
+    },
+    {
+      "old_path": "test-packages/song-three-plugins-20261022/README.md",
+      "new_path": "docs/deliveries/song-three-plugins-20261022/README.md",
+      "sha256_before": "d813efa8759f10a3cc7578274da08cb5032873235929b33619a9e909e35bee90",
+      "sha256_after_move": "d813efa8759f10a3cc7578274da08cb5032873235929b33619a9e909e35bee90",
+      "bytes": 601,
+      "content_changed": true,
+      "sha256_after_documentation_update": "88d1a391788441307c4c6469a0b8ccdf6fa4ede0336500cd57be47543162a3ec"
+    },
+    {
+      "old_path": "test-packages/song-three-plugins-20261022/dsh-pianist-1.0.0-workswarm.zip",
+      "new_path": "plugins/dsh-pianist/test-packages/dsh-pianist-1.0.0-workswarm.zip",
+      "sha256_before": "ab958ffb941b5e94653f250e1cdb33535146ca9cb694178423d961ec95443a1e",
+      "sha256_after_move": "ab958ffb941b5e94653f250e1cdb33535146ca9cb694178423d961ec95443a1e",
+      "bytes": 37101,
+      "content_changed": false
+    },
+    {
+      "old_path": "test-packages/song-three-plugins-20261022/dsh-simulated-life-1.0.0-workswarm.zip",
+      "new_path": "plugins/dsh-simulated-life/test-packages/dsh-simulated-life-1.0.0-workswarm.zip",
+      "sha256_before": "d4f8679550432e7a72f9f5f08d13d92f50a5822ad7bb4339048730e00b64d774",
+      "sha256_after_move": "d4f8679550432e7a72f9f5f08d13d92f50a5822ad7bb4339048730e00b64d774",
+      "bytes": 21670,
+      "content_changed": false
+    },
+    {
+      "old_path": "test-packages/song-three-plugins-20261022/dsh-vault-1.0.0-workswarm.zip",
+      "new_path": "plugins/dsh-vault/test-packages/dsh-vault-1.0.0-workswarm.zip",
+      "sha256_before": "2911404a57c3a55fe8f46973ec80bfe9d719e8b0d9d94854c03453dc8b3026a6",
+      "sha256_after_move": "2911404a57c3a55fe8f46973ec80bfe9d719e8b0d9d94854c03453dc8b3026a6",
+      "bytes": 20430,
+      "content_changed": false
+    }
+  ],
+  "historical_native_archives": [
+    {
+      "asset": "dsh-fs-encoding",
+      "archived_version": "1.0.1",
+      "current_source_version": "1.0.4"
+    },
+    {
+      "asset": "dsh-latex-guard",
+      "archived_version": "1.0.0",
+      "current_source_version": "1.0.3"
+    }
+  ],
+  "verification": {
+    "all_ten_package_and_fixture_files_byte_identical": true,
+    "batch_readme_only_updated_for_new_links": true,
+    "latex_editable_fixture_bytes_match_original_download_zip": true,
+    "canonical_release_zips_unchanged": 66
+  },
+  "historical_links": "Old commit and PR links remain valid in Git history; current relative references use the new locations."
+}
