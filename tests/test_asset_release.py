@@ -207,6 +207,17 @@ class PackagingContractTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "requires a tested release ZIP"):
             release.check_repo(root)
 
+    def test_repo_rejects_misplaced_installation_archives(self):
+        for relative in ("plugin-workswarm.zip", "test-packages/batch/plugin-workswarm.zip"):
+            with self.subTest(relative=relative), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                archive = root / relative
+                archive.parent.mkdir(parents=True, exist_ok=True)
+                with zipfile.ZipFile(archive, "w") as z:
+                    z.writestr("manifest.json", '{"id":"example-plugin","version":"1.0.0"}')
+                with self.assertRaisesRegex(ValueError, "archives in wrong repository location"):
+                    release.check_repo(root)
+
 
 if __name__ == "__main__":
     unittest.main()

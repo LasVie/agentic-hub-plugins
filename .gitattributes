@@ -1,3 +1,6 @@
+# Preserve the relocated manual test inputs exactly, including line endings.
+/plugins/dsh-latex-guard/tests/fixtures/manual/** -text
+
 # Keep Windows Toolkit's packaged text identical on LF and CRLF Git clients.
 /plugins/windows-toolkit/**/*.md text eol=lf
 /plugins/windows-toolkit/**/*.py text eol=lf

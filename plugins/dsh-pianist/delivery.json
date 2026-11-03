@@ -69,7 +69,7 @@
   "test_report": "TEST_REPORT.md",
   "source_review": "SOURCE_REVIEW.md",
   "confirmation_report_id": "RPT-20261022-dsh-pianist-confirm-100",
-  "native_test_archive": "test-packages/song-three-plugins-20261022/dsh-pianist-1.0.0-workswarm.zip",
+  "native_test_archive": "plugins/dsh-pianist/test-packages/dsh-pianist-1.0.0-workswarm.zip",
   "original_images": [
     {
       "filename": "dsh-pianist-workswarm.jpg",
