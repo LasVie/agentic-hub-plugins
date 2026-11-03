@@ -1,0 +1,11 @@
+{
+  "slug": "bundle-insight",
+  "name": "前端包体积透视台",
+  "candidate_id": "CAND-EXT-009",
+  "upstream": "Rollup Plugin Visualizer",
+  "repository": "btd/rollup-plugin-visualizer",
+  "package": "rollup-plugin-visualizer",
+  "version": "1.0.4",
+  "asset_version": "1.0.4",
+  "upstream_version": "7.1.1"
+}

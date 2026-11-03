@@ -1,0 +1,14 @@
+[
+  {
+    "name": "@electric-sql/pglite",
+    "version": "0.5.14",
+    "license": "Apache-2.0",
+    "package_sha256": "abcb0adb932d11bdb38e9fbb5af5daea70127c1fb6276a7ec61d3ed4c1b79e2c",
+    "licenses": [
+      {
+        "path": "licenses/electric-sql--pglite--0.5.14/LICENSE",
+        "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9"
+      }
+    ]
+  }
+]

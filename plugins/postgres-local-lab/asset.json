@@ -1,0 +1,20 @@
+{
+  "type": "agent-plugin",
+  "name": "postgres-local-lab",
+  "version": "1.0.3",
+  "display_name": "离线 PostgreSQL 实验台",
+  "description": "离线 PostgreSQL 实验台：中文本地工作台与真实引擎工具，保存、恢复并导出实际成果。",
+  "publisher": "Song Haoran",
+  "category": "软件开发",
+  "tags": [
+    "开发工具",
+    "本地运行"
+  ],
+  "functional_tags": [
+    "Software Development",
+    "Local Interactive Workbench"
+  ],
+  "scope": "macOS，宿主SDK、Node.js22+和支持WebGL的桌面浏览器；运行数据在专用工作目录。其他平台未经本轮验证。",
+  "candidate_id": "CAND-EXT-008",
+  "task_id": "AH-20261102-postgres-local-lab"
+}

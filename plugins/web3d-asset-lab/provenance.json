@@ -1,0 +1,122 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://www.npmjs.com/package/@gltf-transform/core/v/4.5.1",
+      "revision": "4.5.1",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/gltf-transform--core--4.5.1/LICENSE",
+          "sha256": "2c4f111d00dbf22b10d31a14813c5f5de6a828640f7311f26b9dda89b3fce165"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/@gltf-transform/extensions/v/4.5.1",
+      "revision": "4.5.1",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/gltf-transform--extensions--4.5.1/LICENSE",
+          "sha256": "2c4f111d00dbf22b10d31a14813c5f5de6a828640f7311f26b9dda89b3fce165"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/@gltf-transform/functions/v/4.5.1",
+      "revision": "4.5.1",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/gltf-transform--functions--4.5.1/LICENSE",
+          "sha256": "2c4f111d00dbf22b10d31a14813c5f5de6a828640f7311f26b9dda89b3fce165"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/iota-array/v/1.0.0",
+      "revision": "1.0.0",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/iota-array--1.0.0/LICENSE",
+          "sha256": "e67aed7df22dc8031e4fcf5338fe91cb33e3817e5c58a99a2a2802eea9069791"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/is-buffer/v/1.1.6",
+      "revision": "1.1.6",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/is-buffer--1.1.6/LICENSE",
+          "sha256": "c7cc929b57080f4b9d0c6cf57669f0463fc5b39906344dfc8d3bc43426b30eac"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/ktx-parse/v/1.1.0",
+      "revision": "1.1.0",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/ktx-parse--1.1.0/LICENSE",
+          "sha256": "79847431f9ecef9cf399085cb863452e71a6dab99738f4f0c1ea06c6484b5692"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/ndarray/v/1.1.1",
+      "revision": "1.1.1",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/ndarray--1.1.1/LICENSE",
+          "sha256": "f149791eb5101f10b1fb88997310f2b054604106c4bf6050e0aee66a5bd35cc7"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/ndarray-lanczos/v/0.3.0",
+      "revision": "0.3.0",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/ndarray-lanczos--0.3.0/LICENSE",
+          "sha256": "ec5114155d92f326802c964dcf9eb5261e09192c62f14d195d2a8be49eb1d489"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/property-graph/v/4.1.0",
+      "revision": "4.1.0",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/property-graph--4.1.0/LICENSE",
+          "sha256": "ec5114155d92f326802c964dcf9eb5261e09192c62f14d195d2a8be49eb1d489"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/three/v/0.187.0",
+      "revision": "0.187.0",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/three--0.187.0/LICENSE",
+          "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "vendor/engine.mjs",
+    "vendor/model-view.mjs",
+    "vendor/texture-resize.mjs"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

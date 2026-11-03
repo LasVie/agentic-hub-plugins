@@ -1,0 +1,74 @@
+[
+  {
+    "name": "backbone",
+    "version": "1.4.1",
+    "license": "MIT",
+    "package_sha256": "fe14b7c4c7ee9ed07f5ff9c8f2221cbe53ae3480df1cde83f0885e99c17631d3",
+    "licenses": [
+      {
+        "path": "licenses/backbone--1.4.1/LICENSE",
+        "sha256": "3a9bdf3d9bd0f4305453364bfcb036cee1fa8a20291f2e5fb5381d8194bc2d26"
+      }
+    ]
+  },
+  {
+    "name": "backbone-undo",
+    "version": "0.2.6",
+    "license": "MIT",
+    "package_sha256": "f885a3d83fdcde617200e717e3f437e3d810e667ec2580e24e99ef97a507977c",
+    "licenses": [
+      {
+        "path": "licenses/backbone-undo--0.2.6/LICENSE",
+        "sha256": "586aea09a6c3788ee503ba5f6bb3e56ead55949ec0b09d1c0a335cbd4024dda2"
+      }
+    ]
+  },
+  {
+    "name": "codemirror",
+    "version": "5.63.0",
+    "license": "MIT",
+    "package_sha256": "01bfa863e0d5b6ef80a1098ca29342fafde10577faed24781084a90534f6a123",
+    "licenses": [
+      {
+        "path": "licenses/codemirror--5.63.0/LICENSE",
+        "sha256": "a3f2fe2ac6b471aa80c737c5d283dd049bdc903a73835ee6d4d2cac02fdd53bf"
+      }
+    ]
+  },
+  {
+    "name": "grapesjs",
+    "version": "0.23.8",
+    "license": "BSD-3-Clause",
+    "package_sha256": "70597ed395cfefa8d8415a1417bc18e4d2474bf58e1766b19a5dac42a3d62597",
+    "licenses": [
+      {
+        "path": "licenses/grapesjs--0.23.8/LICENSE",
+        "sha256": "1a7603ac82661e3ec4f0ad015e37f68ab62c85c725f07659b81760edb459ff8d"
+      }
+    ]
+  },
+  {
+    "name": "promise-polyfill",
+    "version": "8.3.0",
+    "license": "MIT",
+    "package_sha256": "738734b85659b8650714c92f548efd77439d3e726b14269bf72672b05676dd34",
+    "licenses": [
+      {
+        "path": "licenses/promise-polyfill--8.3.0/LICENSE",
+        "sha256": "453a712c58161b74efa998578aaf10fd7ad8204120730de38ca04d7f47f3ea46"
+      }
+    ]
+  },
+  {
+    "name": "underscore",
+    "version": "1.13.8",
+    "license": "MIT",
+    "package_sha256": "081688728dc50bbdeca2c3929500194892fd7caaf62679e252da3687064f4522",
+    "licenses": [
+      {
+        "path": "licenses/underscore--1.13.8/LICENSE",
+        "sha256": "92905fb54f5d168a27e6d5dc7c2197020add11842be4c70689d084bae3bfe37a"
+      }
+    ]
+  }
+]

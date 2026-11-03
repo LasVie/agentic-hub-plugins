@@ -1,0 +1,194 @@
+[
+  {
+    "name": "@rollup/wasm-node",
+    "version": "4.67.4",
+    "license": "MIT",
+    "package_sha256": "17c261308044cfda50415facf8a1c5a77a2f480c96cc863c9e7282429b32a07f",
+    "licenses": [
+      {
+        "path": "licenses/rollup--wasm-node--4.67.4/LICENSE",
+        "sha256": "fa1bd040c5bdeefe65b3821cebf474f2733ce65df13089bd151dda1778e62fe8"
+      }
+    ]
+  },
+  {
+    "name": "bundle-name",
+    "version": "4.1.1",
+    "license": "MIT",
+    "package_sha256": "5255a5a5a08777b6b77c7c630c7dba93049380bc65c58c3640cfbc611ae2365d",
+    "licenses": [
+      {
+        "path": "licenses/bundle-name--4.1.1/LICENSE",
+        "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+      }
+    ]
+  },
+  {
+    "name": "default-browser",
+    "version": "5.5.1",
+    "license": "MIT",
+    "package_sha256": "13a8cc1c9348cbc58c1b1093ce68ab89fa04e025454cf55b055a0ccc0a08cdbf",
+    "licenses": [
+      {
+        "path": "licenses/default-browser--5.5.1/LICENSE",
+        "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+      }
+    ]
+  },
+  {
+    "name": "default-browser-id",
+    "version": "5.0.1",
+    "license": "MIT",
+    "package_sha256": "33d93cd9f507c701ecf0551213ddd0f22fba3ee958be14c4ef7045be79520f3c",
+    "licenses": [
+      {
+        "path": "licenses/default-browser-id--5.0.1/LICENSE",
+        "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+      }
+    ]
+  },
+  {
+    "name": "define-lazy-prop",
+    "version": "3.0.0",
+    "license": "MIT",
+    "package_sha256": "178f70857bc4e5186ba8efb7a1e7d93d1c821fbf3bd3651f885dad08505fa795",
+    "licenses": [
+      {
+        "path": "licenses/define-lazy-prop--3.0.0/LICENSE",
+        "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+      }
+    ]
+  },
+  {
+    "name": "is-docker",
+    "version": "3.0.0",
+    "license": "MIT",
+    "package_sha256": "927cc3f8e5e49d545679ebe9be754137f805a0f7f82de14a80492c3b627ca688",
+    "licenses": [
+      {
+        "path": "licenses/is-docker--3.0.0/LICENSE",
+        "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+      }
+    ]
+  },
+  {
+    "name": "is-in-ssh",
+    "version": "1.0.0",
+    "license": "MIT",
+    "package_sha256": "5e5c2126dc1741ba763d522a76c5aa81ac3a6df7611cac6e449e1d18c7b5fd6a",
+    "licenses": [
+      {
+        "path": "licenses/is-in-ssh--1.0.0/LICENSE",
+        "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+      }
+    ]
+  },
+  {
+    "name": "is-inside-container",
+    "version": "1.0.0",
+    "license": "MIT",
+    "package_sha256": "b030fc11899d813c3fab0dbb09639eab25f8a5d4af24d3854f1329bc0255bc2f",
+    "licenses": [
+      {
+        "path": "licenses/is-inside-container--1.0.0/LICENSE",
+        "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+      }
+    ]
+  },
+  {
+    "name": "is-wsl",
+    "version": "3.1.1",
+    "license": "MIT",
+    "package_sha256": "d4b5a0df9783c78951de0dbd94832822d0660e553b0b5e2ffc0e19e5721a5af5",
+    "licenses": [
+      {
+        "path": "licenses/is-wsl--3.1.1/LICENSE",
+        "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+      }
+    ]
+  },
+  {
+    "name": "open",
+    "version": "11.0.4",
+    "license": "MIT",
+    "package_sha256": "c8535767011e4d2d483cbc9146ee75d9a8e2cdc2372b8b5ec5f42dcee809b86a",
+    "licenses": [
+      {
+        "path": "licenses/open--11.0.4/LICENSE",
+        "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+      }
+    ]
+  },
+  {
+    "name": "powershell-utils",
+    "version": "0.2.1",
+    "license": "MIT",
+    "package_sha256": "6b3fe84d5a0ac13ca76b03e5b90372e43a5997007a6299c21fb5c2362fa77e29",
+    "licenses": [
+      {
+        "path": "licenses/powershell-utils--0.2.1/LICENSE",
+        "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+      }
+    ]
+  },
+  {
+    "name": "rollup-plugin-visualizer",
+    "version": "7.1.1",
+    "license": "MIT",
+    "package_sha256": "09caeae05b264dfa5577e187a1d0da475755485033faadf2ae4a8535b2cdf21f",
+    "licenses": [
+      {
+        "path": "licenses/rollup-plugin-visualizer--7.1.1/LICENSE",
+        "sha256": "975abd563775a4953726209bc094d541510e2e1614b325ff8bc32ad94c5e3ab2"
+      }
+    ]
+  },
+  {
+    "name": "picomatch",
+    "version": "4.0.7",
+    "license": "MIT",
+    "package_sha256": "479b70b87aa7b44344d62c8a459ae7e53dd2bca6c61f1396bd55e63e9de73fc6",
+    "licenses": [
+      {
+        "path": "licenses/picomatch--4.0.7/LICENSE",
+        "sha256": "d0cd141b0c322fded5dfad1d4645bb2fedfc05b7321fe1009469638190d59ef9"
+      }
+    ]
+  },
+  {
+    "name": "source-map",
+    "version": "0.8.0",
+    "license": "BSD-3-Clause",
+    "package_sha256": "02a1b8dba5238f6bbaa295b30ee6059ad9fb8e4ae45bd51c786ca33d8a846fdd",
+    "licenses": [
+      {
+        "path": "licenses/source-map--0.8.0/LICENSE",
+        "sha256": "6cb0631f71c7749763fd3dd1d5bee52dd1070ec17f2edc1710079ad070bd2fbd"
+      }
+    ]
+  },
+  {
+    "name": "run-applescript",
+    "version": "7.1.0",
+    "license": "MIT",
+    "package_sha256": "6b82907e9fcc0cdb36c40abdc2a9ca0dcd51a8799a668ecff05a0bcd37e0d8be",
+    "licenses": [
+      {
+        "path": "licenses/run-applescript--7.1.0/LICENSE",
+        "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+      }
+    ]
+  },
+  {
+    "name": "wsl-utils",
+    "version": "1.0.1",
+    "license": "MIT",
+    "package_sha256": "78a281ad10faa7a3847ada4c5e391e08e5196ba4fb085b012b14535ec52a795b",
+    "licenses": [
+      {
+        "path": "licenses/wsl-utils--1.0.1/LICENSE",
+        "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+      }
+    ]
+  }
+]

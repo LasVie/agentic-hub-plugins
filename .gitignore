@@ -8,6 +8,8 @@ __pycache__/
 .research/
 tracking/pending/
 dist/
+!/plugins/postgres-local-lab/postgres-local-lab/vendor/pglite/dist/
+!/plugins/postgres-local-lab/postgres-local-lab/vendor/pglite/dist/**
 .pytest_cache/
 
 # releases/ 下的交付 ZIP 必须进入 PR；不要全局忽略 *.zip。

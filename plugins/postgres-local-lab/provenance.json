@@ -1,0 +1,51 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://www.npmjs.com/package/@electric-sql/pglite/v/0.5.14",
+      "revision": "0.5.14",
+      "license_expression": "Apache-2.0",
+      "license_evidence": [
+        {
+          "path": "licenses/electric-sql--pglite--0.5.14/LICENSE",
+          "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/electric-sql/pglite/blob/0974bdf1ab3b100a1b25ffbcb1a15ff6446db6d4/POSTGRES-LICENSE",
+      "revision": "0974bdf1ab3b100a1b25ffbcb1a15ff6446db6d4",
+      "license_expression": "PostgreSQL",
+      "license_evidence": [
+        {
+          "path": "licenses/postgresql/LICENSE",
+          "sha256": "31ccadc0a70e8e0e8a35c5833567b64388dfe34987d962e1911554e271294105"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "vendor/pglite/LICENSE",
+    "vendor/pglite/dist/chunk-66APQTYC.js",
+    "vendor/pglite/dist/chunk-ADHRU2LT.js",
+    "vendor/pglite/dist/chunk-CE4NCHVO.js",
+    "vendor/pglite/dist/chunk-EP7TJL7B.js",
+    "vendor/pglite/dist/chunk-F4GETNPB.js",
+    "vendor/pglite/dist/chunk-INORSRB2.js",
+    "vendor/pglite/dist/chunk-OZV2R5MQ.js",
+    "vendor/pglite/dist/chunk-QY3QWFKW.js",
+    "vendor/pglite/dist/chunk-ZKGLEABV.js",
+    "vendor/pglite/dist/index.cjs",
+    "vendor/pglite/dist/index.js",
+    "vendor/pglite/dist/initdb.js",
+    "vendor/pglite/dist/initdb.wasm",
+    "vendor/pglite/dist/pglite.cjs",
+    "vendor/pglite/dist/pglite.data",
+    "vendor/pglite/dist/pglite.js",
+    "vendor/pglite/dist/pglite.wasm",
+    "vendor/pglite/dist/templating.cjs",
+    "vendor/pglite/dist/templating.js"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

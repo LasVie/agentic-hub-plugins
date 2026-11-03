@@ -1,0 +1,63 @@
+{
+  "id": "bundle-insight",
+  "version": "1.0.4",
+  "package_type": "plugin",
+  "name": "前端包体积透视台",
+  "description": "前端包体积透视台：提供独立本机工作台、真实引擎执行和可保存导出的成果。",
+  "display_name": {
+    "zh": "前端包体积透视台",
+    "en": "前端包体积透视台"
+  },
+  "display_description": {
+    "zh": "前端包体积透视台，通过原生工具打开和执行操作。",
+    "en": "前端包体积透视台，通过原生工具打开和执行操作。"
+  },
+  "category": "Engineering",
+  "source": "local",
+  "tags": [
+    {
+      "zh": "开发工具",
+      "en": "开发工具"
+    },
+    {
+      "zh": "本地工作台",
+      "en": "本地工作台"
+    }
+  ],
+  "default_init_input": {
+    "zh": "请打开前端包体积透视台，先确认当前任务的专用工作目录，然后调用插件原生工具启动。",
+    "en": "请打开前端包体积透视台，先确认当前任务的专用工作目录，然后调用插件原生工具启动。"
+  },
+  "skills": [
+    {
+      "dir": "skills/bundle-insight",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/workbench_tools.py",
+      "class": "WorkbenchTool",
+      "display_name": {
+        "zh": "工作台控制",
+        "en": "工作台控制"
+      },
+      "display_description": {
+        "zh": "打开、查询或关闭当前插件的中文本机工作台",
+        "en": "打开、查询或关闭当前插件的中文本机工作台"
+      }
+    },
+    {
+      "file": "tools/workbench_tools.py",
+      "class": "EngineTool",
+      "display_name": {
+        "zh": "真实引擎操作",
+        "en": "真实引擎操作"
+      },
+      "display_description": {
+        "zh": "执行当前插件的真实引擎操作并返回实际结果",
+        "en": "执行当前插件的真实引擎操作并返回实际结果"
+      }
+    }
+  ]
+}

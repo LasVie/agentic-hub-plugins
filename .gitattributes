@@ -74,3 +74,16 @@
 # Preserve exact user-confirmed observing payload, notices and archive bytes.
 /plugins/offline-observing-planner/** -text
 /releases/agent-plugin/offline-observing-planner/** -text
+
+# Preserve exact developer-workbench payloads, licenses and delivery ZIP hashes.
+/plugins/api-mock-lab/** -text
+/releases/agent-plugin/api-mock-lab/** -text
+/plugins/visual-web-studio/** -text
+/releases/agent-plugin/visual-web-studio/** -text
+/plugins/postgres-local-lab/** -text
+/releases/agent-plugin/postgres-local-lab/** -text
+/plugins/bundle-insight/** -text
+/releases/agent-plugin/bundle-insight/** -text
+/plugins/web3d-asset-lab/** -text
+/releases/agent-plugin/web3d-asset-lab/** -text
+/docs/deliveries/dev-five-20261102/images/*.jpg -text

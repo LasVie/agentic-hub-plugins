@@ -1,0 +1,19 @@
+test_01_lifecycle_and_confirmation (test_dev_workbenches.DevelopmentWorkbenchTests.test_01_lifecycle_and_confirmation) ... ok
+test_02_mock_actual_http_scenarios (test_dev_workbenches.DevelopmentWorkbenchTests.test_02_mock_actual_http_scenarios) ... ok
+test_03_openapi_is_real_and_external_refs_rejected (test_dev_workbenches.DevelopmentWorkbenchTests.test_03_openapi_is_real_and_external_refs_rejected) ... ok
+test_04_mock_invalid_definition_preserves_saved_project (test_dev_workbenches.DevelopmentWorkbenchTests.test_04_mock_invalid_definition_preserves_saved_project) ... ok
+test_05_page_project_is_persistent_and_exportable (test_dev_workbenches.DevelopmentWorkbenchTests.test_05_page_project_is_persistent_and_exportable) ... ok
+test_06_postgres_real_jsonb_write_and_restart (test_dev_workbenches.DevelopmentWorkbenchTests.test_06_postgres_real_jsonb_write_and_restart) ... ok
+test_07_postgres_isolation_error_and_export (test_dev_workbenches.DevelopmentWorkbenchTests.test_07_postgres_isolation_error_and_export) ... ok
+test_08_actual_rollup_statistics_and_comparison (test_dev_workbenches.DevelopmentWorkbenchTests.test_08_actual_rollup_statistics_and_comparison) ... ok
+test_09_bundle_invalid_input_does_not_create_snapshot (test_dev_workbenches.DevelopmentWorkbenchTests.test_09_bundle_invalid_input_does_not_create_snapshot) ... ok
+test_10_gltf_real_optimization_and_persistence (test_dev_workbenches.DevelopmentWorkbenchTests.test_10_gltf_real_optimization_and_persistence) ... ok
+test_11_cross_origin_and_health_ownership (test_dev_workbenches.DevelopmentWorkbenchTests.test_11_cross_origin_and_health_ownership) ... ok
+test_12_foreign_record_and_symlink_refused (test_dev_workbenches.DevelopmentWorkbenchTests.test_12_foreign_record_and_symlink_refused) ... ok
+test_13_binary_and_large_result_never_enter_host_messages (test_dev_workbenches.DevelopmentWorkbenchTests.test_13_binary_and_large_result_never_enter_host_messages) ... ok
+test_14_duplicate_module_parts_compare_symmetrically (test_dev_workbenches.DevelopmentWorkbenchTests.test_14_duplicate_module_parts_compare_symmetrically) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 4.903s
+
+OK

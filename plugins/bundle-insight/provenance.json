@@ -1,0 +1,187 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://www.npmjs.com/package/@rollup/wasm-node/v/4.67.4",
+      "revision": "4.67.4",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/rollup--wasm-node--4.67.4/LICENSE",
+          "sha256": "fa1bd040c5bdeefe65b3821cebf474f2733ce65df13089bd151dda1778e62fe8"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/bundle-name/v/4.1.1",
+      "revision": "4.1.1",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/bundle-name--4.1.1/LICENSE",
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/default-browser/v/5.5.1",
+      "revision": "5.5.1",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/default-browser--5.5.1/LICENSE",
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/default-browser-id/v/5.0.1",
+      "revision": "5.0.1",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/default-browser-id--5.0.1/LICENSE",
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/define-lazy-prop/v/3.0.0",
+      "revision": "3.0.0",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/define-lazy-prop--3.0.0/LICENSE",
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/is-docker/v/3.0.0",
+      "revision": "3.0.0",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/is-docker--3.0.0/LICENSE",
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/is-in-ssh/v/1.0.0",
+      "revision": "1.0.0",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/is-in-ssh--1.0.0/LICENSE",
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/is-inside-container/v/1.0.0",
+      "revision": "1.0.0",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/is-inside-container--1.0.0/LICENSE",
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/is-wsl/v/3.1.1",
+      "revision": "3.1.1",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/is-wsl--3.1.1/LICENSE",
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/open/v/11.0.4",
+      "revision": "11.0.4",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/open--11.0.4/LICENSE",
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/powershell-utils/v/0.2.1",
+      "revision": "0.2.1",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/powershell-utils--0.2.1/LICENSE",
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/rollup-plugin-visualizer/v/7.1.1",
+      "revision": "7.1.1",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/rollup-plugin-visualizer--7.1.1/LICENSE",
+          "sha256": "975abd563775a4953726209bc094d541510e2e1614b325ff8bc32ad94c5e3ab2"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/picomatch/v/4.0.7",
+      "revision": "4.0.7",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/picomatch--4.0.7/LICENSE",
+          "sha256": "d0cd141b0c322fded5dfad1d4645bb2fedfc05b7321fe1009469638190d59ef9"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/source-map/v/0.8.0",
+      "revision": "0.8.0",
+      "license_expression": "BSD-3-Clause",
+      "license_evidence": [
+        {
+          "path": "licenses/source-map--0.8.0/LICENSE",
+          "sha256": "6cb0631f71c7749763fd3dd1d5bee52dd1070ec17f2edc1710079ad070bd2fbd"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/run-applescript/v/7.1.0",
+      "revision": "7.1.0",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/run-applescript--7.1.0/LICENSE",
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ]
+    },
+    {
+      "url": "https://www.npmjs.com/package/wsl-utils/v/1.0.1",
+      "revision": "1.0.1",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/wsl-utils--1.0.1/LICENSE",
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "vendor/visualizer/plugin/render-template/bindings_wasm_bg.wasm",
+    "vendor/visualizer/plugin/render-template/engine.mjs"
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

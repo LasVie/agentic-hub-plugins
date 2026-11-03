@@ -1,0 +1,11 @@
+{
+  "slug": "web3d-asset-lab",
+  "name": "网页 3D 模型瘦身台",
+  "candidate_id": "CAND-EXT-010",
+  "upstream": "glTF Transform",
+  "repository": "donmccurdy/glTF-Transform",
+  "package": "@gltf-transform/core",
+  "version": "1.0.4",
+  "asset_version": "1.0.4",
+  "upstream_version": "4.5.1"
+}

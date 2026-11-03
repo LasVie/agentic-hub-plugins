@@ -1,0 +1,94 @@
+[
+  {
+    "file": "images/api-mock-lab.jpg",
+    "sha256": "f24274bdc0e684ebb232a642e9d5569a7413cd212f87c461db606751f7f5020f",
+    "bytes": 104381,
+    "version": "1.0.3",
+    "slug": "api-mock-lab",
+    "task_id": "AH-20261102-api-mock-lab",
+    "candidate_id": "CAND-EXT-006",
+    "captured_at": "2026-11-03T09:38:06.470064+08:00",
+    "kind": "original agent-run browser JPEG; no resizing or reconstruction"
+  },
+  {
+    "file": "images/visual-web-studio.jpg",
+    "sha256": "d841b071c321146c2b5b087a9162e48d867af3d4b89ebc3a35e5fdf1bea816f9",
+    "bytes": 105784,
+    "version": "1.0.4",
+    "slug": "visual-web-studio",
+    "task_id": "AH-20261102-visual-web-studio",
+    "candidate_id": "CAND-EXT-007",
+    "captured_at": "2026-11-03T09:38:20.515851+08:00",
+    "kind": "original agent-run browser JPEG; no resizing or reconstruction"
+  },
+  {
+    "file": "images/visual-web-mobile.jpg",
+    "sha256": "106b4482311f9b73d184577f293ad66d92eb0d7c561107c28912ffd17470ad09",
+    "bytes": 97165,
+    "version": "1.0.4",
+    "slug": "visual-web-studio",
+    "task_id": "AH-20261102-visual-web-studio",
+    "candidate_id": "CAND-EXT-007",
+    "captured_at": "2026-11-03T09:38:20.329910+08:00",
+    "kind": "original agent-run browser JPEG; no resizing or reconstruction"
+  },
+  {
+    "file": "images/postgres-local-lab.jpg",
+    "sha256": "cfdc091d2a66862c7a343fd885d35decfada0d243f8109d4936ecfdbfdbfb270",
+    "bytes": 97539,
+    "version": "1.0.3",
+    "slug": "postgres-local-lab",
+    "task_id": "AH-20261102-postgres-local-lab",
+    "candidate_id": "CAND-EXT-008",
+    "captured_at": "2026-11-03T09:37:27.203220+08:00",
+    "kind": "original agent-run browser JPEG; no resizing or reconstruction"
+  },
+  {
+    "file": "images/bundle-insight.jpg",
+    "sha256": "edcceec5b956cac165eb081c295a7ec25d6009877260093c67c0de48d0b229e7",
+    "bytes": 113920,
+    "version": "1.0.4",
+    "slug": "bundle-insight",
+    "task_id": "AH-20261102-bundle-insight",
+    "candidate_id": "CAND-EXT-009",
+    "captured_at": "2026-11-03T09:48:50.254491+08:00",
+    "kind": "original agent-run browser JPEG; no resizing or reconstruction"
+  },
+  {
+    "file": "images/web3d-geometry.jpg",
+    "sha256": "9e6ea95ee02515e0fe29bb2d713ec61785590deb8fa24407e73a32bdb1efdda1",
+    "bytes": 139905,
+    "version": "1.0.4",
+    "slug": "web3d-asset-lab",
+    "task_id": "AH-20261102-web3d-asset-lab",
+    "candidate_id": "CAND-EXT-010",
+    "captured_at": "2026-11-03T09:40:45.827164+08:00",
+    "kind": "original agent-run browser JPEG; no resizing or reconstruction"
+  },
+  {
+    "file": "images/web3d-textures.jpg",
+    "sha256": "283bc61c57cd88e7b190007ea8562b5a5b64778c71ac3941b3137b19736898b9",
+    "bytes": 143505,
+    "version": "1.0.4",
+    "slug": "web3d-asset-lab",
+    "task_id": "AH-20261102-web3d-asset-lab",
+    "candidate_id": "CAND-EXT-010",
+    "captured_at": "2026-11-03T09:41:16.361481+08:00",
+    "kind": "original agent-run browser JPEG; no resizing or reconstruction"
+  },
+  {
+    "file": "images/workswarm-native-tools.jpg",
+    "sha256": "72abee1bbeb8188b78e7ac3305aee1367642cbb57c8a2ac28e9958923f61d861",
+    "bytes": 89402,
+    "scope": "Actual native-tool session; final status image records all final versions. Session history also contains explicitly labeled earlier trial versions.",
+    "kind": "original agent-run browser JPEG"
+  },
+  {
+    "file": "images/workswarm-final-status.jpg",
+    "sha256": "4f985bc6119b14913b2b48085355ab3cc29e85c36eb6c0fb22c9f7c81352aac6",
+    "bytes": 72253,
+    "scope": "Actual native-tool session; final status image records all final versions. Session history also contains explicitly labeled earlier trial versions.",
+    "kind": "original agent-run browser JPEG",
+    "captured_at": "2026-11-03T09:48:44.288499+08:00"
+  }
+]

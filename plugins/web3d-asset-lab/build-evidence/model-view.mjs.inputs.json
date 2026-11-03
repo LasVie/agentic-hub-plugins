@@ -1,0 +1,98 @@
+{
+  "node_modules/three/build/three.core.js": {
+    "bytes": 1474799,
+    "imports": [],
+    "format": "esm"
+  },
+  "node_modules/three/build/three.module.js": {
+    "bytes": 658900,
+    "imports": [
+      {
+        "path": "node_modules/three/build/three.core.js",
+        "kind": "import-statement",
+        "original": "./three.core.js"
+      },
+      {
+        "path": "node_modules/three/build/three.core.js",
+        "kind": "import-statement",
+        "original": "./three.core.js"
+      }
+    ],
+    "format": "esm"
+  },
+  "node_modules/three/examples/jsm/utils/BufferGeometryUtils.js": {
+    "bytes": 39153,
+    "imports": [
+      {
+        "path": "node_modules/three/build/three.module.js",
+        "kind": "import-statement",
+        "original": "three"
+      }
+    ],
+    "format": "esm"
+  },
+  "node_modules/three/examples/jsm/utils/SkeletonUtils.js": {
+    "bytes": 11535,
+    "imports": [
+      {
+        "path": "node_modules/three/build/three.module.js",
+        "kind": "import-statement",
+        "original": "three"
+      }
+    ],
+    "format": "esm"
+  },
+  "node_modules/three/examples/jsm/loaders/GLTFLoader.js": {
+    "bytes": 119861,
+    "imports": [
+      {
+        "path": "node_modules/three/build/three.module.js",
+        "kind": "import-statement",
+        "original": "three"
+      },
+      {
+        "path": "node_modules/three/examples/jsm/utils/BufferGeometryUtils.js",
+        "kind": "import-statement",
+        "original": "../utils/BufferGeometryUtils.js"
+      },
+      {
+        "path": "node_modules/three/examples/jsm/utils/SkeletonUtils.js",
+        "kind": "import-statement",
+        "original": "../utils/SkeletonUtils.js"
+      }
+    ],
+    "format": "esm"
+  },
+  "node_modules/three/examples/jsm/controls/OrbitControls.js": {
+    "bytes": 40918,
+    "imports": [
+      {
+        "path": "node_modules/three/build/three.module.js",
+        "kind": "import-statement",
+        "original": "three"
+      }
+    ],
+    "format": "esm"
+  },
+  "../../../tools/dev_five/model-view.mjs": {
+    "bytes": 2006,
+    "imports": [
+      {
+        "path": "node_modules/three/build/three.module.js",
+        "kind": "import-statement",
+        "original": "three"
+      },
+      {
+        "path": "node_modules/three/examples/jsm/loaders/GLTFLoader.js",
+        "kind": "import-statement",
+        "original": "three/examples/jsm/loaders/GLTFLoader.js"
+      },
+      {
+        "path": "node_modules/three/examples/jsm/controls/OrbitControls.js",
+        "kind": "import-statement",
+        "original": "three/examples/jsm/controls/OrbitControls.js"
+      }
+    ],
+    "format": "esm"
+  }
+}
