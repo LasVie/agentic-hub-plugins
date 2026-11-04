@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-02",
+  "task_id": "AH-20261102-change-verification",
+  "candidate_id": "CAND-DSH-145",
+  "version": "1.0.0",
+  "upstream_partial_tests": {
+    "passed": 11,
+    "vitest": "3.2.7",
+    "typescript": "5.9.3"
+  },
+  "runtime_tests_source": {
+    "passed": 17,
+    "failed": 0
+  },
+  "runtime_tests_extracted": {
+    "passed": 17,
+    "failed": 0
+  },
+  "source_sdk_browser": {
+    "assertions": 39,
+    "launcher": "declared python3 ../../runtime/launch.py, PATH=/usr/bin:/bin",
+    "mcp": "independent SDK stdio",
+    "browser": "156.0.8078.74",
+    "developer_automation_only": true,
+    "report_id": "9e04c37756b747219c7be8a8379e8f89",
+    "expected_counts": {
+      "pending": 3,
+      "pass": 0,
+      "fail": 1,
+      "skip": 1
+    },
+    "page_errors": [],
+    "stderr": [],
+    "statement": "独立客户端与受控浏览器开发者检查，不是 WorkSwarm 用户验收。"
+  },
+  "extracted_sdk_browser": {
+    "assertions": 39,
+    "launcher": "declared python3 ../../runtime/launch.py, PATH=/usr/bin:/bin",
+    "mcp": "independent SDK stdio",
+    "browser": "156.0.8078.74",
+    "developer_automation_only": true,
+    "report_id": "5ce4f360322c4b52b5ec6e5508a0f068",
+    "expected_counts": {
+      "pending": 3,
+      "pass": 0,
+      "fail": 1,
+      "skip": 1
+    },
+    "page_errors": [],
+    "stderr": [],
+    "statement": "独立客户端与受控浏览器开发者检查，不是 WorkSwarm 用户验收。"
+  },
+  "payload_file_count": 25,
+  "source_canonical_native_extracted_equal": true,
+  "canonical_sha256": "e1ca8c8f2ef5e27f518f950fbf62b6da041bc32db118e3d9cde058d74a31faaa",
+  "workswarm_sha256": "4d760812e23fe870e32a8fba986df5eaf332fd3bdce579f69ebc3052712dd40d",
+  "repository_existing_tests": {
+    "ran": 579,
+    "passed": 489,
+    "skipped": 90
+  },
+  "new_repository_entry_test": {
+    "passed": 1
+  },
+  "check_repo": {
+    "source_assets": 54,
+    "release_zips": 64
+  },
+  "user_workswarm_testing": "pending",
+  "original_user_screenshots": "pending",
+  "github_delivery": "not started"
+}

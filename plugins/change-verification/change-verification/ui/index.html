@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>变更影响与回归检查台</title><link rel="stylesheet" href="/style.css"><script type="module" src="/app.js"></script></head>
+<body>
+  <header class="top"><div class="brand"><span class="logo">验</span>变更影响与回归检查台 <span class="version">1.0.0</span></div><span class="local">● 本地工作台</span></header>
+  <main>
+    <div class="eyebrow">变更有迹可循 · 回归逐项记录</div>
+    <div class="hero"><div><h1>把代码变更，变成回归清单。</h1><p>检查影响路径，记录实际观察，留下可以交接的证据。</p></div><span id="kind" class="badge">正在读取</span></div>
+    <div id="message" role="status" aria-live="polite">正在读取真实报告……</div>
+    <section class="summary"><div id="identity"></div><div id="counts" class="counts"></div></section>
+    <div class="notice">这是一份静态分析候选清单，不会执行项目代码。请在实际验证后自行选择结果；未验证、失败和跳过会原样保留。</div>
+    <details id="scope"><summary>查看比较范围、扫描统计与限制</summary><pre id="scope-text"></pre></details>
+    <div class="toolbar"><div><h2>人工回归清单 <span id="total"></span></h2><label class="filter">筛选 <select id="filter"><option value="all">全部项目</option><option value="pending">未验证</option><option value="fail">失败</option><option value="pass">通过</option><option value="skip">跳过</option></select></label></div><div class="actions"><button id="refresh">刷新结果</button><button id="export-md">导出 Markdown</button><button id="export-csv">导出 CSV</button><button class="primary" id="export-html">下载完整 HTML 报告</button></div></div>
+    <div id="items"></div><p class="footer">状态与截图仅记录你的输入，不代替独立验收。导出的 HTML 内嵌截图，可离线查看；报告没有自动上传到外部平台。</p>
+  </main>
+</body></html>

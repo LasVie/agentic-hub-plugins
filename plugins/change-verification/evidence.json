@@ -1,0 +1,133 @@
+{
+  "task_id": "AH-20261102-change-verification",
+  "candidate_id": "CAND-DSH-145",
+  "version": "1.0.0",
+  "native_zip_sha256": "4d760812e23fe870e32a8fba986df5eaf332fd3bdce579f69ebc3052712dd40d",
+  "canonical_zip_sha256": "e1ca8c8f2ef5e27f518f950fbf62b6da041bc32db118e3d9cde058d74a31faaa",
+  "source": "Eleven user-provided PNG byte streams from current conversation message 2026-11-02T06:47:06.737Z, saved unchanged without resizing, cropping or conversion.",
+  "images": [
+    {
+      "file": "01-workswarm-user-test.png",
+      "width": 2556,
+      "height": 1540,
+      "bytes": 358659,
+      "sha256": "8ce2aac75e4dc5c965b056307fcff95b0ad70f74300b97995ea5dc368fa5a9e6",
+      "conversation_timestamp_utc": "2026-11-02T06:47:06.737Z",
+      "image_position_in_message": 1,
+      "caption": "中文面板保存后统计：修订1、四项未验证与一项跳过",
+      "url": "https://github.com/user-attachments/assets/f3c57567-95d7-4c99-a733-151b0a4a56f9?raw=true"
+    },
+    {
+      "file": "02-workswarm-user-test.png",
+      "width": 2540,
+      "height": 1570,
+      "bytes": 434986,
+      "sha256": "1c76cd2175a55e2da76f4ea82ec48124d9d0b00ada6b00ccf55a69d1f33f3ef9",
+      "conversation_timestamp_utc": "2026-11-02T06:47:06.737Z",
+      "image_position_in_message": 2,
+      "caption": "登录与结算权限的跳过状态和已保存备注",
+      "url": "https://github.com/user-attachments/assets/e4d98239-59f2-4458-a450-6c476df49f92?raw=true"
+    },
+    {
+      "file": "03-workswarm-user-test.png",
+      "width": 2168,
+      "height": 1372,
+      "bytes": 370199,
+      "sha256": "4374b8ddb318be73e16bef71c536c5c0759e037fd5af35275a7a7fe0dbe7131e",
+      "conversation_timestamp_utc": "2026-11-02T06:47:06.737Z",
+      "image_position_in_message": 3,
+      "caption": "WorkSwarm 实际发现并调用插件工具",
+      "url": "https://github.com/user-attachments/assets/14afebc9-1a4c-4e0e-80aa-bd91ddb1f8c3?raw=true"
+    },
+    {
+      "file": "04-workswarm-user-test.png",
+      "width": 2100,
+      "height": 1310,
+      "bytes": 384618,
+      "sha256": "c44f0285316206dfb2b8c883f7973343d47344a5b269317f8e2a2b13ec052074",
+      "conversation_timestamp_utc": "2026-11-02T06:47:06.737Z",
+      "image_position_in_message": 4,
+      "caption": "静态依赖两层扩散及删除项旧调用关系",
+      "url": "https://github.com/user-attachments/assets/9a0a8ce3-f773-4633-b3d8-0e3deab3f000?raw=true"
+    },
+    {
+      "file": "05-workswarm-user-test.png",
+      "width": 1962,
+      "height": 1352,
+      "bytes": 327490,
+      "sha256": "8b9812ac59b372c43541033c32a6e1262ce6b1fdd2ebf3ea559504184840606c",
+      "conversation_timestamp_utc": "2026-11-02T06:47:06.737Z",
+      "image_position_in_message": 5,
+      "caption": "实际读取并导出报告，按磁盘状态核对",
+      "url": "https://github.com/user-attachments/assets/b2eed42b-e02d-4af6-aa57-5697285160a7?raw=true"
+    },
+    {
+      "file": "06-workswarm-user-test.png",
+      "width": 1864,
+      "height": 1218,
+      "bytes": 319970,
+      "sha256": "ee2c59f60973a351b4a5d2dbc76218e4d23babf95cdb1eacf72168f847a6adc3",
+      "conversation_timestamp_utc": "2026-11-02T06:47:06.737Z",
+      "image_position_in_message": 6,
+      "caption": "四种状态及逐项备注与实际保存结果",
+      "url": "https://github.com/user-attachments/assets/98039bf9-09c1-48eb-b982-35bf98ac8009?raw=true"
+    },
+    {
+      "file": "07-workswarm-user-test.png",
+      "width": 2138,
+      "height": 1336,
+      "bytes": 357417,
+      "sha256": "21bca346c7c9f57bdd5c82ecc47912749e97ae0b334016b52fc61d68a9e0d420",
+      "conversation_timestamp_utc": "2026-11-02T06:47:06.737Z",
+      "image_position_in_message": 7,
+      "caption": "导出的中文报告、版本、提交与统计",
+      "url": "https://github.com/user-attachments/assets/c216e215-0d6f-4508-8d79-f38750256b5b?raw=true"
+    },
+    {
+      "file": "08-workswarm-user-test.png",
+      "width": 2232,
+      "height": 1260,
+      "bytes": 371067,
+      "sha256": "f3a2b845775acf3c43856589b121f057b5766b736b1cb8d94a977da08a1829dd",
+      "conversation_timestamp_utc": "2026-11-02T06:47:06.737Z",
+      "image_position_in_message": 8,
+      "caption": "中文报告保留未验证项及结果来源",
+      "url": "https://github.com/user-attachments/assets/72a61b82-15f8-47a7-8525-d4a766532ef5?raw=true"
+    },
+    {
+      "file": "09-workswarm-user-test.png",
+      "width": 2526,
+      "height": 1552,
+      "bytes": 357622,
+      "sha256": "62e77f4c308bf4371e0e683f90b24562588ffa7513122e303f794e97bcfadacd",
+      "conversation_timestamp_utc": "2026-11-02T06:47:06.737Z",
+      "image_position_in_message": 9,
+      "caption": "第四步：重新打开同一报告后的面板",
+      "url": "https://github.com/user-attachments/assets/8ed135d8-8559-4416-a69e-d41b16b15ba2?raw=true"
+    },
+    {
+      "file": "10-workswarm-user-test.png",
+      "width": 2074,
+      "height": 1326,
+      "bytes": 285402,
+      "sha256": "f9f99237037b92503116d7186da464584e14b51613326e86cc73631f4a115af9",
+      "conversation_timestamp_utc": "2026-11-02T06:47:06.737Z",
+      "image_position_in_message": 10,
+      "caption": "第四步：新对话列出、查询并打开已有报告",
+      "url": "https://github.com/user-attachments/assets/a8328a06-cf3e-4c47-894d-ca0d2a21dd13?raw=true"
+    },
+    {
+      "file": "11-workswarm-user-test.png",
+      "width": 2078,
+      "height": 1338,
+      "bytes": 317042,
+      "sha256": "a9a8bde20a476a79166a0acd689ac87131a8581ec17bb99280b6e2ee390824f9",
+      "conversation_timestamp_utc": "2026-11-02T06:47:06.737Z",
+      "image_position_in_message": 11,
+      "caption": "第四步：新对话保留备注和状态",
+      "url": "https://github.com/user-attachments/assets/ce2e21c1-7534-44e1-97e1-b49584c54b1b?raw=true"
+    }
+  ],
+  "verification": "All 11 public GitHub attachments were downloaded and their original PNG byte hashes matched the received images; no resizing, cropping or conversion.",
+  "hosting_issue": "https://github.com/dashingsss/agentic-hub-plugins/issues/5"
+}
