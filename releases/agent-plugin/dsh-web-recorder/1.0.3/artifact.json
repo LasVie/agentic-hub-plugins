@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:dsh-web-recorder",
+  "type": "agent-plugin",
+  "name": "dsh-web-recorder",
+  "version": "1.0.3",
+  "zip": "dsh-web-recorder-1.0.3.zip",
+  "sha256": "a1f12e93ec1f3779a18eb8a386d0d83ef5714aa6a25f8a673425c34538e50673",
+  "payload_sha256": {
+    "README.md": "783af48849d1b96f6a16b560ccdcf145206be9cc71b3b11c0ea88a2b7ed3c72e",
+    "manifest.json": "6d819b99849a772a046df15d57c1c43849feb828643d0761538247f56ab36a7d",
+    "skills/web-recorder/SKILL.md": "87bd049764511cf578ce3970c5307b7e271d719919dae109cd2c58288f4acb0d",
+    "tools/web_recorder.py": "abf194ceb54baf41598a4661e782626539c088d6aa3c5fc256a90f3e7620c67e"
+  },
+  "provenance_mode": "native",
+  "source_review_sha256": "e9bdeee0ec83bc15951177227b63553795a45f2863824def48eac377e6a486ff",
+  "functional_test_report_sha256": "4b1485994e2a449e64b7d9c04496d5f9ff1845755f955dd4b6b60c412447b34e"
+}

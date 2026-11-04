@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "slug": "dsh-web-recorder",
+  "display_name": "网页会话记录器",
+  "version": "1.0.3",
+  "task_id": "AH-20261023-dsh-web-recorder",
+  "candidate_id": "CAND-DSH-172",
+  "responsible_owner": "Siu Lok Yin",
+  "original_publisher": "WorkSwarm",
+  "native_zip_sha256": "6bafe91b1e0f14b924ae2f08f28e4b0049f1bf70efa0ad190e69b9a175233dba",
+  "canonical_zip_sha256": "a1f12e93ec1f3779a18eb8a386d0d83ef5714aa6a25f8a673425c34538e50673",
+  "gui_test_status": "Actual current-package delegated GUI recording/status/stop workflow passed; first model summary error retained and corrected.",
+  "human_performed_testing": false,
+  "new_verbal_user_test_pass_confirmation": null,
+  "authorization": {
+    "user_instruction": "你帮我完成测试，用我本地打开的workswarm，测试导入和prompt，如果成功，留存screenshot并pr更新现有内容，但注意负责人的名字不要改，其他的field按需更新，可以使用多agent加速，需要我打开ultra和我说",
+    "later_direct_submission_instruction_as_supplied_by_root": "未合并的合并进去，然后全部推送",
+    "source": "Actual conversation instructions; no message permalink is available and none is invented.",
+    "scope": "Explicit AI-delegated testing/originals and current PR/Hub work, not personal human testing or a new verbal pass. No repeated confirmation requested."
+  },
+  "host": {
+    "desktop_app": "WorkSwarm 0.2.8",
+    "Python": "3.12.13",
+    "aiohttp": "3.13.5",
+    "model": "gpt-6.1-sol"
+  },
+  "browser": "Google Chrome for Testing 157.0.8103.38 task-local official binary; independent temporary profile",
+  "chat_id": "web_1a1a5573525_73417e2b087b",
+  "session_id": "c00d12dca9b0",
+  "recording_started_local": "2026-11-04T14:55:30",
+  "recording_stopped_local": "2026-11-04T15:20:22",
+  "time_scope": "Local recording timestamps as emitted. Long idle while CUA app selection was delayed is included; not a performance benchmark or tool latency measurement.",
+  "live_UI_turn_durations_seconds": {
+    "start": 20.01,
+    "stop": 49.49,
+    "correction": 16.33
+  },
+  "exported_summary_turn_durations_seconds": {
+    "start": 20.16,
+    "stop": 49.52,
+    "correction": 16.36
+  },
+  "duration_scope": "Distinct actual UI/export observations; no invented single precise duration.",
+  "event_count": 25,
+  "seq_contiguous_1_to_25": true,
+  "counts": {
+    "click": 4,
+    "input": 9,
+    "change": 1,
+    "submit": 0,
+    "navigation": 3,
+    "network": 8
+  },
+  "network_records_by_phase": {
+    "request": 4,
+    "response": 4
+  },
+  "network_scope": "8 records = 4 request records + 4 response records, not eight requests.",
+  "last_input_length": 12,
+  "synthetic_input_plaintext_absent_from_events_and_report": true,
+  "input_value_fields_absent": true,
+  "submit_scope": "No submit event in this actual workflow; no successful submit observation claimed.",
+  "first_summary_correction": {
+    "initial_error": "Model claimed events.jsonl missed seq1 and contained 24 events / 7 network records.",
+    "actual_read_parameter": "Actual raw native tool trace: read_file offset=1 skipped the first raw line; corrected read used offset=0. The original root prompt guessed start_line; that historical wording is not treated as an actual tool parameter.",
+    "corrected_read_parameter": "offset=0",
+    "result": "Model explicitly withdrew initial missing-seq1 / 24-record / 7-network conclusions after a fresh first-line read. Raw JSONL has 25 contiguous seq1..25 records and the report agrees.",
+    "raw_output_files_changed_for_correction": false,
+    "first_summary_was_not_correct": true
+  },
+  "raw_outputs": [
+    {
+      "file": "session/events.jsonl",
+      "bytes": 4286,
+      "sha256": "bea32883986441f6b27947c766189ff9f3726c9e3004a0cebed4dbbc0bcccd5b",
+      "original_bytes_preserved": true
+    },
+    {
+      "file": "session/report.md",
+      "bytes": 2497,
+      "sha256": "f84f3785ac1160ae9aa4f1ec13c92c0fae126427e035279a9a34047ac0c11d41",
+      "original_bytes_preserved": true
+    },
+    {
+      "file": "session/state.json",
+      "bytes": 1090,
+      "sha256": "32f1159fda6b5430168ed5558465ca9b17ba8217ee89d035aed37735ec228e0f",
+      "original_bytes_preserved": true
+    },
+    {
+      "file": "session/result.json",
+      "bytes": 634,
+      "sha256": "321e9ad0450d20be972cb4bd050250e60df10b9a7775ca20fc0e6b71313b4124",
+      "original_bytes_preserved": true
+    }
+  ],
+  "raw_output_hashes_still_match_before_correction_record": true,
+  "cleanup": {
+    "session_id": "c00d12dca9b0",
+    "active": false,
+    "phase": "completed",
+    "fixture_port_still_open": false,
+    "browser_debug_port_still_open": false,
+    "recording_worker_pid": 82106,
+    "cleanup_scope": "Task-owned synthetic fixture stopped after native web_record_stop returned completed. No user browser/profile was stopped.",
+    "recording_worker_observed_ps": "82106 <defunct>",
+    "recording_worker_scope": "Worker had exited execution and was a zombie awaiting parent reaping at the read-only process observation; do not claim PID absence. Both local ports were verified closed.",
+    "fixture_shutdown": "Own exec session27131 sent Ctrl-C after asset stop; expected KeyboardInterrupt exit1 preserved in gui-fixture-server.log"
+  },
+  "cleanup_scope": "Retain root observation worker 82106 <defunct>: execution had ended, awaiting parent reaping. Do not claim PID disappeared. Root stopped only own fixture exec 27131; ports 52939 / 53085 closed at recorded cleanup.",
+  "all_four_installed_file_hashes_match_frozen_payload": true,
+  "installed_payload_sha256": {
+    "README.md": "783af48849d1b96f6a16b560ccdcf145206be9cc71b3b11c0ea88a2b7ed3c72e",
+    "manifest.json": "6d819b99849a772a046df15d57c1c43849feb828643d0761538247f56ab36a7d",
+    "skills/web-recorder/SKILL.md": "87bd049764511cf578ce3970c5307b7e271d719919dae109cd2c58288f4acb0d",
+    "tools/web_recorder.py": "abf194ceb54baf41598a4661e782626539c088d6aa3c5fc256a90f3e7620c67e"
+  },
+  "original_images_directory": "test-evidence/20261104-zh-1.0.3",
+  "original_images": [
+    {
+      "file": "workswarm-final-counts-original.jpg",
+      "bytes": 473622,
+      "sha256": "808df19eb6cb65f90faabd58ae555c6833d09d359b1238b2b2f35aa6eed70642",
+      "dimensions": [
+        3200,
+        2000
+      ],
+      "original_bytes_preserved": true,
+      "content_review": "Root visually reviewed actual GUI originals; captures show different stages/windows of the same recording, not independent test runs."
+    },
+    {
+      "file": "workswarm-stop-tooltrace-original.jpg",
+      "bytes": 422519,
+      "sha256": "27b8fe659762a60816af0e96c73a444bec7b98d7b028273391b46444bf5b735e",
+      "dimensions": [
+        3200,
+        2000
+      ],
+      "original_bytes_preserved": true,
+      "content_review": "Root visually reviewed actual GUI originals; captures show different stages/windows of the same recording, not independent test runs."
+    },
+    {
+      "file": "workswarm-start-result-original.jpg",
+      "bytes": 492485,
+      "sha256": "6de095d60f5de44f03663dc9ef0e0c713f5fb7660a0611c33327c5528ee6c597",
+      "dimensions": [
+        3200,
+        2000
+      ],
+      "original_bytes_preserved": true,
+      "content_review": "Root visually reviewed actual GUI originals; captures show different stages/windows of the same recording, not independent test runs."
+    },
+    {
+      "file": "workswarm-installed-detail-original.jpg",
+      "bytes": 370649,
+      "sha256": "eb6df1eeae3a30af3189ecb6105ea3f0c3ba9085d2cf989c995ec1189849401e",
+      "dimensions": [
+        3200,
+        2000
+      ],
+      "original_bytes_preserved": true,
+      "content_review": "Root visually reviewed actual GUI originals; captures show different stages/windows of the same recording, not independent test runs."
+    },
+    {
+      "file": "workswarm-start-prompt-original.jpg",
+      "bytes": 365743,
+      "sha256": "481edb0d9555a55eab4f77ec3f603785d808e20d1faf2dca9121d3a744883a41",
+      "dimensions": [
+        3200,
+        2000
+      ],
+      "original_bytes_preserved": true,
+      "content_review": "Root visually reviewed actual GUI originals; captures show different stages/windows of the same recording, not independent test runs."
+    },
+    {
+      "file": "workswarm-import-original.jpg",
+      "bytes": 589350,
+      "sha256": "cd2246f67200fad996bb085677ce50b1cf6b0c3a79cbcdb4fedf81bb35fc93d1",
+      "dimensions": [
+        3200,
+        2000
+      ],
+      "original_bytes_preserved": true,
+      "content_review": "Root visually reviewed actual GUI originals; captures show different stages/windows of the same recording, not independent test runs."
+    },
+    {
+      "file": "workswarm-stop-result-original.jpg",
+      "bytes": 603887,
+      "sha256": "8df4ae4bb1ca7cedbd85e82605bbab0c18888c417c793cd16b843b7fc585970d",
+      "dimensions": [
+        3200,
+        2000
+      ],
+      "original_bytes_preserved": true,
+      "content_review": "Root visually reviewed actual GUI originals; captures show different stages/windows of the same recording, not independent test runs."
+    },
+    {
+      "file": "workswarm-stop-prompt-original.jpg",
+      "bytes": 586301,
+      "sha256": "11262df23ed649af0d9190def2ebfd59c6ebbea5ea1e836a0b4dcf2cddc25874",
+      "dimensions": [
+        3200,
+        2000
+      ],
+      "original_bytes_preserved": true,
+      "content_review": "Root visually reviewed actual GUI originals; captures show different stages/windows of the same recording, not independent test runs."
+    },
+    {
+      "file": "workswarm-corrected-result-original.jpg",
+      "bytes": 476508,
+      "sha256": "466f34484be56f8fa39509c176bee75f1b6b59d1bd33405ca947466f7d18afac",
+      "dimensions": [
+        3200,
+        2000
+      ],
+      "original_bytes_preserved": true,
+      "content_review": "Root visually reviewed actual GUI originals; captures show different stages/windows of the same recording, not independent test runs."
+    },
+    {
+      "file": "gui-browser-interactions-original.jpg",
+      "bytes": 246510,
+      "sha256": "7f909185578a14ded6845f03bacc45286b724d90f674580c5dab96301a4c0b36",
+      "dimensions": [
+        2400,
+        2172
+      ],
+      "original_bytes_preserved": true,
+      "content_review": "Root visually reviewed actual GUI originals; captures show different stages/windows of the same recording, not independent test runs."
+    },
+    {
+      "file": "jiuwenswarm-share-20261104-152641.png",
+      "bytes": 1879841,
+      "sha256": "3511affcfaab92d7dbc70793039ddff04d33ea4549da60384cb9b0ad81146c36",
+      "dimensions": [
+        2250,
+        12183
+      ],
+      "original_bytes_preserved": true,
+      "content_review": "Child independently viewed complete native exported conversation PNG; exact chat/session, initial wrong summary and explicit correction visible. No cropping/resizing/recompression of source bytes."
+    }
+  ],
+  "image_count_scope": "Ten JPEG originals plus one native exported long PNG show stages of one workflow; not eleven independent tests.",
+  "evidence_PR_permalink": null,
+  "remote_original_bytes_verified": false,
+  "delivery_status": "Local delivery metadata prepared only. No push, new PR, merge or Hub submission claimed."
+}

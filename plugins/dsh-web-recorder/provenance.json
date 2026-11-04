@@ -4,5 +4,15 @@
   "sources": [],
   "reused_paths": [],
   "audit_file": "SOURCE_REVIEW.md",
-  "independent_spec": "NATIVE_DESIGN.md"
+  "independent_spec": "NATIVE_DESIGN.md",
+  "localization_history": [
+    {
+      "date": "2026-11-04",
+      "previous_version": "1.0.2",
+      "version": "1.0.3",
+      "scope": "Chinese default asset metadata, README, Skill, tool descriptions, diagnostics and user-facing reports. Machine identifiers, schemas and operational behavior remain unchanged; original native design and no copied upstream material status retained.",
+      "responsible_owner": "Siu Lok Yin",
+      "current_package_gui_test": "Completed 2026-11-04 in actual WorkSwarm desktop 0.2.8 / Python 3.12.13 / aiohttp 3.13.5 under explicit AI delegation; actual start/status/stop, raw25 contiguous events and original images verified. Initial model read-offset error retained and explicitly corrected; raw files unchanged. Not personally performed human testing or a new verbal pass. See GUI_TEST_RECORD_1.0.3.json."
+    }
+  ]
 }

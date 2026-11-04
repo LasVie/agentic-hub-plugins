@@ -1,0 +1,25 @@
+{"seq": 1, "ts": 1793775332750, "rel_ms": 2317, "kind": "network", "phase": "request", "method": "GET", "url": "http://127.0.0.1:52939/", "resource_type": "Document", "request_id": "37853640BB6DC1F12BD36DEBD2373DF5"}
+{"seq": 2, "ts": 1793775332783, "rel_ms": 2349, "kind": "network", "phase": "response", "status": 200, "mime_type": "text/html", "url": "http://127.0.0.1:52939/", "request_id": "37853640BB6DC1F12BD36DEBD2373DF5"}
+{"seq": 3, "ts": 1793775332790, "rel_ms": 2356, "kind": "navigation", "via": "load", "url": "http://127.0.0.1:52939/"}
+{"seq": 4, "ts": 1793775332820, "rel_ms": 2386, "kind": "network", "phase": "request", "method": "GET", "url": "http://127.0.0.1:52939/favicon.ico", "resource_type": "Other", "request_id": "82122.2"}
+{"seq": 5, "ts": 1793775332825, "rel_ms": 2391, "kind": "network", "phase": "response", "status": 200, "mime_type": "text/html", "url": "http://127.0.0.1:52939/favicon.ico", "request_id": "82122.2"}
+{"seq": 6, "ts": 1793776745809, "rel_ms": 1415375, "kind": "click", "target": "input#field[name=field]", "x": 256, "y": 196, "url": "http://127.0.0.1:52939/"}
+{"seq": 7, "ts": 1793776745946, "rel_ms": 1415512, "kind": "input", "target": "input#field[name=field]", "value_len": 1, "url": "http://127.0.0.1:52939/"}
+{"seq": 8, "ts": 1793776745947, "rel_ms": 1415513, "kind": "input", "target": "input#field[name=field]", "value_len": 2, "url": "http://127.0.0.1:52939/"}
+{"seq": 9, "ts": 1793776745948, "rel_ms": 1415514, "kind": "input", "target": "input#field[name=field]", "value_len": 3, "url": "http://127.0.0.1:52939/"}
+{"seq": 10, "ts": 1793776745949, "rel_ms": 1415515, "kind": "input", "target": "input#field[name=field]", "value_len": 4, "url": "http://127.0.0.1:52939/"}
+{"seq": 11, "ts": 1793776745949, "rel_ms": 1415515, "kind": "input", "target": "input#field[name=field]", "value_len": 5, "url": "http://127.0.0.1:52939/"}
+{"seq": 12, "ts": 1793776745949, "rel_ms": 1415515, "kind": "input", "target": "input#field[name=field]", "value_len": 6, "url": "http://127.0.0.1:52939/"}
+{"seq": 13, "ts": 1793776745950, "rel_ms": 1415516, "kind": "input", "target": "input#field[name=field]", "value_len": 7, "url": "http://127.0.0.1:52939/"}
+{"seq": 14, "ts": 1793776745950, "rel_ms": 1415516, "kind": "input", "target": "input#field[name=field]", "value_len": 8, "url": "http://127.0.0.1:52939/"}
+{"seq": 15, "ts": 1793776746643, "rel_ms": 1416209, "kind": "change", "target": "input#field[name=field]", "url": "http://127.0.0.1:52939/"}
+{"seq": 16, "ts": 1793776746693, "rel_ms": 1416259, "kind": "click", "target": "button#go \"发送本地请求\"", "x": 453, "y": 196, "url": "http://127.0.0.1:52939/"}
+{"seq": 17, "ts": 1793776746696, "rel_ms": 1416262, "kind": "network", "phase": "request", "method": "GET", "url": "http://127.0.0.1:52939/api/data", "resource_type": "Fetch", "request_id": "82122.3"}
+{"seq": 18, "ts": 1793776746702, "rel_ms": 1416268, "kind": "network", "phase": "response", "status": 200, "mime_type": "application/json", "url": "http://127.0.0.1:52939/api/data", "request_id": "82122.3"}
+{"seq": 19, "ts": 1793776747687, "rel_ms": 1417253, "kind": "click", "target": "a#next \"定位完成\"", "x": 569, "y": 195, "url": "http://127.0.0.1:52939/"}
+{"seq": 20, "ts": 1793776747694, "rel_ms": 1417260, "kind": "navigation", "via": "popstate", "url": "http://127.0.0.1:52939/#%E5%AE%8C%E6%88%90"}
+{"seq": 21, "ts": 1793776747696, "rel_ms": 1417262, "kind": "navigation", "via": "hashchange", "url": "http://127.0.0.1:52939/#%E5%AE%8C%E6%88%90"}
+{"seq": 22, "ts": 1793776747700, "rel_ms": 1417266, "kind": "network", "phase": "request", "method": "GET", "url": "http://127.0.0.1:52939/favicon.ico", "resource_type": "Other", "request_id": "82122.4"}
+{"seq": 23, "ts": 1793776747706, "rel_ms": 1417272, "kind": "network", "phase": "response", "status": 200, "mime_type": "text/html", "url": "http://127.0.0.1:52939/favicon.ico", "request_id": "82122.4"}
+{"seq": 24, "ts": 1793776766597, "rel_ms": 1436163, "kind": "click", "target": "input#field[name=field]", "x": 256, "y": 196, "url": "http://127.0.0.1:52939/#%E5%AE%8C%E6%88%90"}
+{"seq": 25, "ts": 1793776766837, "rel_ms": 1436403, "kind": "input", "target": "input#field[name=field]", "value_len": 12, "url": "http://127.0.0.1:52939/#%E5%AE%8C%E6%88%90"}

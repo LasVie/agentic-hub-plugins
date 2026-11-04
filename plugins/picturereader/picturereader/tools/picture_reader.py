@@ -1,4 +1,7 @@
-"""Native local pixel-to-text evidence tools for WorkSwarm/OpenJiuwen."""
+"""WorkSwarm/OpenJiuwen 原生本地图像像素证据工具。
+
+2026-11-04：中文化说明和诊断；保留原生算法、接口与保护规则。
+"""
 from __future__ import annotations
 
 import math
@@ -25,33 +28,33 @@ def _error(code: str, message: str) -> Dict[str, Any]:
 
 def _load(path_value: Any) -> Tuple[Image.Image, Path]:
     if not isinstance(path_value, str) or not path_value.strip():
-        raise ValueError("file_path is required")
+        raise ValueError("必须提供 file_path 图像路径")
     path = Path(path_value).expanduser().resolve()
     if not path.is_file():
-        raise FileNotFoundError(f"image not found: {path}")
+        raise FileNotFoundError(f"找不到图像文件：{path}")
     if path.stat().st_size > MAX_BYTES:
-        raise ValueError(f"image exceeds {MAX_BYTES} byte limit")
+        raise ValueError(f"图像文件超过 {MAX_BYTES} 字节限制")
     try:
         with Image.open(path) as src:
             if src.width * src.height > MAX_PIXELS:
-                raise ValueError(f"image exceeds {MAX_PIXELS} pixel limit")
+                raise ValueError(f"图像超过 {MAX_PIXELS} 像素限制")
             src.seek(0)
             return ImageOps.exif_transpose(src).convert("RGB").copy(), path
     except (UnidentifiedImageError, OSError) as exc:
-        raise ValueError(f"unsupported or corrupt image: {exc}") from exc
+        raise ValueError(f"图像格式不受支持或文件已损坏：{exc}") from exc
 
 
 def _region(image: Image.Image, value: Any) -> Tuple[Image.Image, Dict[str, int]]:
     if value in (None, {}):
         return image, {"x": 0, "y": 0, "width": image.width, "height": image.height}
     if not isinstance(value, dict):
-        raise ValueError("region must be an object with x, y, width, height")
+        raise ValueError("region 必须是包含 x、y、width、height 的对象")
     try:
         x, y, w, h = (int(value[k]) for k in ("x", "y", "width", "height"))
     except (KeyError, TypeError, ValueError) as exc:
-        raise ValueError("region requires integer x, y, width, height") from exc
+        raise ValueError("region 的 x、y、width、height 必须为整数") from exc
     if x < 0 or y < 0 or w <= 0 or h <= 0 or x + w > image.width or y + h > image.height:
-        raise ValueError(f"region outside image bounds {image.width}x{image.height}")
+        raise ValueError(f"region 超出图像边界 {image.width}x{image.height}")
     return image.crop((x, y, x + w, y + h)), {"x": x, "y": y, "width": w, "height": h}
 
 
@@ -114,12 +117,12 @@ def _structure(rows: List[List[Tuple[int, int, int]]]) -> Dict[str, float]:
 def _invoke_error(exc: Exception) -> Dict[str, Any]:
     if isinstance(exc, FileNotFoundError):
         return _error("NOT_FOUND", str(exc))
-    return _error("INVALID_IMAGE", str(exc))
+    return _error("INVALID_IMAGE", "图像处理失败：" + str(exc))
 
 
 class ImageScanTool(Tool):
     def __init__(self) -> None:
-        super().__init__(ToolCard(id="image_scan", name="image_scan", description="Convert a local image or region into bounded pixel grids and measured structure evidence.", input_params={"type": "object", "properties": {"file_path": {"type": "string"}, "grid_width": {"type": "integer", "default": 24}, "palette_count": {"type": "integer", "default": 6}, "region": {"type": "object", "properties": {"x": {"type": "integer"}, "y": {"type": "integer"}, "width": {"type": "integer"}, "height": {"type": "integer"}}}}, "required": ["file_path"]}, parallel_safe=True))
+        super().__init__(ToolCard(id="image_scan", name="image_scan", description="将本地图像或区域转换为有界像素网格和结构测量证据。", input_params={"type": "object", "properties": {"file_path": {"type": "string"}, "grid_width": {"type": "integer", "default": 24}, "palette_count": {"type": "integer", "default": 6}, "region": {"type": "object", "properties": {"x": {"type": "integer"}, "y": {"type": "integer"}, "width": {"type": "integer"}, "height": {"type": "integer"}}}}, "required": ["file_path"]}, parallel_safe=True))
 
     async def invoke(self, inputs: Dict[str, Any], **kwargs: Any) -> Dict[str, Any]:
         try:
@@ -137,22 +140,22 @@ class ImageScanTool(Tool):
 
 class ImageSampleTool(Tool):
     def __init__(self) -> None:
-        super().__init__(ToolCard(id="image_sample", name="image_sample", description="Return exact or locally averaged RGB/HEX/luminance values at image coordinates.", input_params={"type": "object", "properties": {"file_path": {"type": "string"}, "points": {"type": "array", "items": {"type": "object", "properties": {"x": {"type": "integer"}, "y": {"type": "integer"}}, "required": ["x", "y"]}, "minItems": 1, "maxItems": 64}, "radius": {"type": "integer", "default": 0}}, "required": ["file_path", "points"]}, parallel_safe=True))
+        super().__init__(ToolCard(id="image_sample", name="image_sample", description="读取指定图像坐标处的精确或局部平均 RGB、HEX 与亮度值。", input_params={"type": "object", "properties": {"file_path": {"type": "string"}, "points": {"type": "array", "items": {"type": "object", "properties": {"x": {"type": "integer"}, "y": {"type": "integer"}}, "required": ["x", "y"]}, "minItems": 1, "maxItems": 64}, "radius": {"type": "integer", "default": 0}}, "required": ["file_path", "points"]}, parallel_safe=True))
 
     async def invoke(self, inputs: Dict[str, Any], **kwargs: Any) -> Dict[str, Any]:
         try:
             image, path = _load(inputs.get("file_path"))
             points = inputs.get("points")
             if not isinstance(points, list) or not 1 <= len(points) <= 64:
-                raise ValueError("points must contain 1 to 64 coordinate objects")
+                raise ValueError("points 必须包含 1 至 64 个坐标对象")
             radius = int(inputs.get("radius", 0))
             if not 0 <= radius <= 32:
-                raise ValueError("radius must be between 0 and 32")
+                raise ValueError("radius 必须在 0 至 32 之间")
             samples = []
             for point in points:
                 x, y = int(point["x"]), int(point["y"])
                 if not (0 <= x < image.width and 0 <= y < image.height):
-                    raise ValueError(f"point ({x},{y}) outside image bounds {image.width}x{image.height}")
+                    raise ValueError(f"坐标 ({x},{y}) 超出图像边界 {image.width}x{image.height}")
                 box = (max(0, x-radius), max(0, y-radius), min(image.width, x+radius+1), min(image.height, y+radius+1))
                 crop = image.crop(box)
                 pixels = list(crop.getdata())
@@ -168,7 +171,7 @@ class ImageSampleTool(Tool):
 
 class ImagePaletteTool(Tool):
     def __init__(self) -> None:
-        super().__init__(ToolCard(id="image_palette", name="image_palette", description="Measure dominant local image colors and proportions.", input_params={"type": "object", "properties": {"file_path": {"type": "string"}, "count": {"type": "integer", "default": 6}, "region": {"type": "object"}}, "required": ["file_path"]}, parallel_safe=True))
+        super().__init__(ToolCard(id="image_palette", name="image_palette", description="测量本地图像的主色及所占比例。", input_params={"type": "object", "properties": {"file_path": {"type": "string"}, "count": {"type": "integer", "default": 6}, "region": {"type": "object"}}, "required": ["file_path"]}, parallel_safe=True))
 
     async def invoke(self, inputs: Dict[str, Any], **kwargs: Any) -> Dict[str, Any]:
         try:
@@ -184,7 +187,7 @@ class ImagePaletteTool(Tool):
 
 class ImageCropTool(Tool):
     def __init__(self) -> None:
-        super().__init__(ToolCard(id="image_crop", name="image_crop", description="Export an explicit source-image region as PNG without modifying the source.", input_params={"type": "object", "properties": {"file_path": {"type": "string"}, "region": {"type": "object"}, "output_path": {"type": "string"}, "overwrite": {"type": "boolean", "default": False}}, "required": ["file_path", "region", "output_path"]}, parallel_safe=False))
+        super().__init__(ToolCard(id="image_crop", name="image_crop", description="将明确指定的图像区域导出为 PNG，保留源文件。", input_params={"type": "object", "properties": {"file_path": {"type": "string"}, "region": {"type": "object"}, "output_path": {"type": "string"}, "overwrite": {"type": "boolean", "default": False}}, "required": ["file_path", "region", "output_path"]}, parallel_safe=False))
 
     async def invoke(self, inputs: Dict[str, Any], **kwargs: Any) -> Dict[str, Any]:
         try:
@@ -192,14 +195,14 @@ class ImageCropTool(Tool):
             crop, region = _region(image, inputs.get("region"))
             output_value = inputs.get("output_path")
             if not isinstance(output_value, str) or not output_value.strip():
-                raise ValueError("output_path is required")
+                raise ValueError("必须提供 output_path 输出路径")
             output = Path(output_value).expanduser().resolve()
             if output.suffix.lower() != ".png":
-                raise ValueError("output_path must end in .png")
+                raise ValueError("output_path 必须以 .png 结尾")
             if output == path:
-                raise ValueError("output_path must not overwrite the source image")
+                raise ValueError("output_path 不得覆盖源图像")
             if output.exists() and not bool(inputs.get("overwrite", False)):
-                return _error("OUTPUT_EXISTS", f"output already exists: {output}")
+                return _error("OUTPUT_EXISTS", f"输出文件已存在：{output}")
             output.parent.mkdir(parents=True, exist_ok=True)
             crop.save(output, format="PNG", optimize=True)
             return {"ok": True, "source_path": str(path), "output_path": str(output), "region": region, "width": crop.width, "height": crop.height, "bytes": output.stat().st_size}

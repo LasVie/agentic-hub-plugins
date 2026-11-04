@@ -1,0 +1,52 @@
+Window: "WorkSwarm", App: WorkSwarm.
+0 standard window WorkSwarm, Secondary Actions: Raise
+	1 container WorkSwarm
+		2 container
+			3 HTML content WorkSwarm, URL: 127.0.0.1:6173/chat/new
+				4 container
+					5 Unlabeled image Logo. To get missing image descriptions, open the context menu.
+					6 button 任务
+					7 button 专家
+					8 button 技能
+					9 button 扩展
+						10 image
+						11 text 扩展
+					12 button RSI
+						13 image
+						14 text RSI
+					15 button 设置
+					16 button 更新
+					17 button 主题外观
+					18 container
+						19 heading WorkSwarm 轻松解决工作每个问题！, Value: 2
+							20 text WorkSwarm 轻松解决工作每个问题！
+						21 container
+							22 text 活动
+							23 button 关闭
+							24 text 小九特地为大家提供了限时免费的模型，请各位大佬笑纳
+							25 button 去领取
+							26 image WorkSwarm 标志
+							27 text entry area (settable) 请只使用“网页会话记录器”1.0.3，开始记录 http://127.0.0.1:52939/。browser_path 必须为 /Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/test-browser/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing，headless=false，port=0，output_dir 为 /Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/dsh-web-recorder/gui-session。只记录本轮合成页面。返回真实 session_id 后停下来等我完成操作，不要立即停止，不要代操作私人页面。
+这是受委托的当前中文版导入测试。保留浏览器默认安全设置；若启动失败请返回真实错误，等待处理。
+								28 text 请只使用“网页会话记录器”1.0.3，开始记录 http://127.0.0.1:52939/。browser_path 必须为 /Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/test-browser/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing，headless=false，port=0，output_dir 为 /Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/dsh-web-recorder/gui-session。只记录本轮合成页面。返回真实 session_id 后停下来等我完成操作，不要立即停止，不要代操作私人页面。
+								29 text 这是受委托的当前中文版导入测试。保留浏览器默认安全设置；若启动失败请返回真实错误，等待处理。
+							30 pop up button 上传文件
+							31 pop up button 单Agent模式
+							32 pop up button 完全访问权限
+							33 pop up button gpt-6.1-sol
+							34 button dsh-web-recorder 不在项目中工作
+								35 text dsh-web-recorder
+								36 button 不在项目中工作
+						37 text 内容由AI生成，仅供参考
+	38 close button
+	39 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	40 minimize button
+41 menu bar
+	42 WorkSwarm
+	43 File
+	44 Edit
+	45 View
+	46 Window
+
+The focused UI element is 27 text entry area (settable) 请只使用“网页会话记录器”1.0.3，开始记录 http://127.0.0.1:52939/。browser_path 必须为 /Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/test-browser/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing，headless=false，port=0，output_dir 为 /Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/dsh-web-recorder/gui-session。只记录本轮合成页面。返回真实 session_id 后停下来等我完成操作，不要立即停止，不要代操作私人页面。
+这是受委托的当前中文版导入测试。保留浏览器默认安全设置；若启动失败请返回真实错误，等待处理。

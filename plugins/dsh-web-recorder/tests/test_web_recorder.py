@@ -24,20 +24,20 @@ sys.path.insert(0, str(PAYLOAD_TOOLS))
 
 import web_recorder  # noqa: E402
 
-PAGE = b"""<!doctype html><html><head><title>rec-test</title>
+PAGE = """<!doctype html><html><head><title>rec-test</title>
 <style>body{font:18px system-ui;margin:48px;max-width:850px} .card{padding:24px;border:2px solid #315efb;border-radius:14px} #result{margin-top:22px;padding:16px;background:#eef3ff;white-space:pre-wrap}</style></head>
-<body><div class="card"><h1>Web Session Recorder 1.0.2</h1><p>Automated local integration test</p>
+<body><div class="card"><h1>网页会话记录器 1.0.3</h1><p>本地自动化集成测试</p>
 <input id="field" name="field" />
-<button id="go">Go</button>
-<a id="next" href="/next">next</a>
-<div id="result">Waiting for interaction...</div>
+<button id="go">执行</button>
+<a id="next" href="/next">下一页</a>
+<div id="result">等待交互……</div>
 <script>
 document.getElementById('go').addEventListener('click', () => {
   fetch('/api/data').then(r => r.text()).then(() => {
-    document.getElementById('result').textContent = 'PASS: /api/data returned successfully';
+    document.getElementById('result').textContent = '通过：/api/data 已成功返回';
   });
 });
-</script></div></body></html>"""
+</script></div></body></html>""".encode("utf-8")
 
 NEXT = b"<!doctype html><html><head><title>next</title></head><body>next page</body></html>"
 
@@ -51,9 +51,9 @@ class Handler(BaseHTTPRequestHandler):
             body = b'{"ok": true}'
             ctype = "application/json"
         elif self.path.startswith("/next"):
-            body, ctype = NEXT, "text/html"
+            body, ctype = NEXT, "text/html; charset=utf-8"
         else:
-            body, ctype = PAGE, "text/html"
+            body, ctype = PAGE, "text/html; charset=utf-8"
         self.send_response(200)
         self.send_header("Content-Type", ctype)
         self.send_header("Content-Length", str(len(body)))
@@ -126,7 +126,7 @@ async def run() -> int:
         "expression": f"document.getElementById('result').textContent={json.dumps(summary)}"
     }, sid=page_sid)
     shot = await _cdp(session, "Page.captureScreenshot", {"format": "png"}, sid=page_sid)
-    evidence = HERE.parents[1] / "test-evidence" / "dsh-web-recorder-1.0.2-functional.png"
+    evidence = HERE.parents[1] / "test-evidence" / "dsh-web-recorder-1.0.3-functional.png"
     evidence.parent.mkdir(parents=True, exist_ok=True)
     evidence.write_bytes(base64.b64decode(shot["data"]))
     print("automated evidence:", evidence)
@@ -145,8 +145,10 @@ async def run() -> int:
         "navigation>=1": counts["navigation"] >= 1,
         "network>=2": counts["network"] >= 2,
         "events.jsonl non-empty": len(events) >= 4,
-        "report has timeline": "## Timeline" in report and "| click |" in report.replace(" ", " "),
+        "report has timeline": "## 事件时间线" in report and "点击（click）" in report.replace(" ", " "),
         "network has api/data": any(e.get("kind") == "network" and "/api/data" in str(e.get("url", "")) for e in events),
+        "initial document request captured": any(e.get("kind") == "network" and e.get("phase") == "request" and str(e.get("url", "")).rstrip("/") == base for e in events),
+        "input length without value contents": any(e.get("kind") == "input" and e.get("value_len") == 5 for e in events) and all("value" not in e for e in events if e.get("kind") == "input"),
     }
     print("\nchecks:")
     for k, v in checks.items():

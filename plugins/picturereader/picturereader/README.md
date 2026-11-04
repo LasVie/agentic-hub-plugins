@@ -1,14 +1,22 @@
-# Pixel Evidence Reader
+# 像素证据读图器
 
-An offline WorkSwarm/OpenJiuwen Plugin for turning local raster images into deterministic evidence a text-only model can inspect.
+将本地图像转换为文本模型可以核对的确定性像素证据，适用于离线检查颜色、布局和局部细节。
 
-Tools:
+## 工具与用法
 
-- `image_scan`: luminance and color grids, dominant colors, brightness, edge energy, and approximate symmetry; accepts an optional `{x,y,width,height}` region.
-- `image_sample`: exact RGB/HEX/luminance samples at selected coordinates, optionally averaged over a radius.
-- `image_palette`: dominant measured colors with proportions.
-- `image_crop`: non-destructively export an explicit region as PNG for rescan.
+- `image_scan`：提供 `file_path`，读取亮度与颜色网格、主色、亮度、边缘能量和近似对称性。可用 `region: {x,y,width,height}` 指定区域；`grid_width` 限制在 4–64，输出高度限制在 2–48。
+- `image_sample`：提供 `file_path` 与 `points: [{x,y}]`，读取精确 RGB、HEX 和亮度；`radius` 为 0 时采样单点，1–32 时返回邻域平均值。每次支持 1–64 个坐标。
+- `image_palette`：测量整图或区域主色及比例，`count` 限制在 2–12。
+- `image_crop`：提供源图、明确区域和 `.png` 输出路径，导出局部以便重新扫描；默认拒绝覆盖已有输出，且不得覆盖源图。
 
-The Plugin never makes network calls and never modifies the source image. It requires OpenJiuwen and Pillow in the host environment. Supported formats follow the installed Pillow build (normally PNG, JPEG, WebP, BMP, and GIF first frame).
+建议先扫描整图，再按明确坐标裁剪并重扫，最后用采样验证关键颜色。结论应区分测量结果与推测，并注明图像路径、区域和坐标。网格代码与 JSON 字段是稳定机器标识，不是自然语言描述。
 
-This scope intentionally excludes OCR, semantic image Q&A, external vision APIs, DSH model-adapter interception, web settings, and document conversion. Use an existing OCR or multimodal asset when those capabilities are required.
+## 依赖与限制
+
+宿主需安装 OpenJiuwen 和 Pillow。图像格式取决于本机 Pillow 构建，通常包括 PNG、JPEG、WebP、BMP 和 GIF 首帧。输入限制为 50 MiB、1 亿像素；源文件保持不变。工具本身不发起网络请求。
+
+本插件不执行 OCR、物体识别、语义图像问答、文档转换或外部视觉模型路由。像素与颜色不能单独证明文字、物体身份或品牌；需要时另用 OCR 或多模态能力。
+
+## 版本与来源
+
+1.0.1 将用户界面、Skill、工具说明和诊断改为中文；算法、接口和保护规则沿用原生实现。公开功能资料仅用作需求输入，未复制上游代码、提示、文档或素材；原始设计与审查记录位于本资产的 `NATIVE_DESIGN.md` 和 `SOURCE_REVIEW.md`。

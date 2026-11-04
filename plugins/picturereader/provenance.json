@@ -4,5 +4,15 @@
   "sources": [],
   "reused_paths": [],
   "audit_file": "SOURCE_REVIEW.md",
-  "independent_spec": "NATIVE_DESIGN.md"
+  "independent_spec": "NATIVE_DESIGN.md",
+  "localization_history": [
+    {
+      "date": "2026-11-04",
+      "previous_version": "1.0.0",
+      "version": "1.0.1",
+      "scope": "Chinese default asset metadata, README, Skill, tool descriptions, diagnostics and user-facing reports. Machine identifiers, schemas and operational behavior remain unchanged; original native design and no copied upstream material status retained.",
+      "responsible_owner": "Siu Lok Yin",
+      "current_package_gui_test": "Completed 2026-11-04 in actual WorkSwarm desktop 0.2.8 / Python 3.12.13 / Pillow 12.2.0 by Agent under explicit user delegation; six native calls, original screenshots and installed bytes verified. Not personally performed human testing; no new verbal pass invented. See GUI_TEST_RECORD_1.0.1.json."
+    }
+  ]
 }

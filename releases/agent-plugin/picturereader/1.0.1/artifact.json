@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:picturereader",
+  "type": "agent-plugin",
+  "name": "picturereader",
+  "version": "1.0.1",
+  "zip": "picturereader-1.0.1.zip",
+  "sha256": "94e4e4f161a2792097f6c2592990a47709e664ae4c765298d7fdcd534071a386",
+  "payload_sha256": {
+    "README.md": "6fe63da925e52901cea0d0b3029f4a47487000f6227f5669a4c3449568fbe629",
+    "manifest.json": "582766ddc04aac19a7549c5597d34c1086792f93dc2d82106f469a1ea6ae5c37",
+    "skills/pixel-evidence-reading/SKILL.md": "bda88b712b0f490e8d9ea05f894b0a853731b62e0b4f65e788c9788f562875c6",
+    "tools/picture_reader.py": "8396b8973fa9f77f1b022f3fd44c5355fc42ec65b7f7af43796de3f5a639b6c4"
+  },
+  "provenance_mode": "native",
+  "source_review_sha256": "a64412920215c78c01d2d64e28256bba7c570e6a48a6e127cf1e5c1104eaf8cc",
+  "functional_test_report_sha256": "a8ad9c63db389f22e0ee37fec7f0e9fb4f84f5df32c7239ef242cf1ad7d5f31a"
+}

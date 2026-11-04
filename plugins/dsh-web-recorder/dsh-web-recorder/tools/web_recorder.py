@@ -1,13 +1,7 @@
-"""Independent WorkSwarm/OpenJiuwen implementation of a user-guided web session recorder.
+"""原生网页会话记录工具，直接通过 CDP 捕获真实浏览器事件。
 
-Native design (see ../NATIVE_DESIGN.md). Written from the public functional
-description of the DSH ``dsh-web-recorder`` candidate (record real clicks, inputs,
-navigation and network traffic in a user-guided browser session, then emit a
-Markdown timeline report plus an events.jsonl log). No upstream DSH/Cordis code,
-prompts or assets were copied; the DSH bundle/Cordis runtime is not portable to
-this host. Capture is implemented directly over the Chrome DevTools Protocol
-(CDP) using ``aiohttp`` (a declared host dependency) and an installed
-Chrome/Edge/Chromium browser, which the host already assumes for browser tooling.
+2026-11-04：中文化说明、诊断和 Markdown 报告；保留原生实现与协议。
+未复制上游 DSH/Cordis 代码、提示或素材。
 """
 from __future__ import annotations
 
@@ -26,6 +20,11 @@ from typing import Any, AsyncIterator, Dict, List, Optional
 import aiohttp
 
 from openjiuwen.core.foundation.tool import Tool, ToolCard
+
+_EVENT_LABELS = {
+    "click": "点击", "input": "输入", "change": "更改", "submit": "提交",
+    "navigation": "导航", "network": "网络",
+}
 
 # In-process sessions are retained for the integration harness. Normal host
 # calls use a detached worker plus file-backed state because WorkSwarm may load
@@ -60,7 +59,7 @@ _INJECT_JS = r"""
 
 
 def _error(code: str, message: str) -> Dict[str, Any]:
-    return {"ok": False, "error": {"code": code, "message": message}}
+    return {"ok": False, "error": {"code": code, "message": "网页记录失败：" + message}}
 
 
 def _now_ms() -> int:
@@ -323,17 +322,17 @@ class RecordingSession:
         started = time.strftime("%Y-%m-%dT%H:%M:%S", time.localtime(self.started_ms / 1000))
         stopped = time.strftime("%Y-%m-%dT%H:%M:%S", time.localtime((self.stopped_ms or _now_ms()) / 1000))
         lines = [
-            f"# Web Session Recording — {self.id}",
+            f"# 网页会话记录 — {self.id}",
             "",
-            f"- Started: {started}",
-            f"- Stopped: {stopped}",
-            f"- Endpoint: {self.endpoint}",
-            f"- Total events: {len(self.events)}",
-            "- Breakdown: " + ", ".join(f"{k}={v}" for k, v in counts.items()),
+            f"- 开始时间：{started}",
+            f"- 停止时间：{stopped}",
+            f"- 调试端点：{self.endpoint}",
+            f"- 事件总数：{len(self.events)}",
+            "- 分类计数：" + "，".join(f"{_EVENT_LABELS[k]}（{k}）={v}" for k, v in counts.items()),
             "",
-            "## Timeline",
+            "## 事件时间线",
             "",
-            "| # | +ms | kind | detail |",
+            "| 序号 | 相对时间（毫秒） | 事件类型 | 详情 |",
             "| --- | --- | --- | --- |",
         ]
         for e in self.events:
@@ -348,11 +347,11 @@ class RecordingSession:
             elif kind in ("click", "change", "submit"):
                 detail = e.get("target", "")
             elif kind == "input":
-                detail = f"{e.get('target', '')} (len={e.get('value_len', 0)})"
+                detail = f"{e.get('target', '')} (输入长度={e.get('value_len', 0)})"
             else:
                 detail = ""
             detail = str(detail).replace("|", "\\|").replace("\n", " ")
-            lines.append(f"| {e.get('seq')} | {e.get('rel_ms')} | {kind} | {detail} |")
+            lines.append(f"| {e.get('seq')} | {e.get('rel_ms')} | {_EVENT_LABELS.get(kind, kind)}（{kind}） | {detail} |")
         lines.append("")
         return "\n".join(lines)
 
@@ -400,7 +399,7 @@ async def _launch_browser(session: RecordingSession, browser_path: str, port: in
         deadline = time.time() + 20
         while time.time() < deadline:
             if session._proc.poll() is not None:
-                raise RuntimeError("browser process exited before the debug endpoint was ready")
+                raise RuntimeError("浏览器在调试端点就绪前退出")
             # Chrome writes the actual port to DevToolsActivePort (required when port=0).
             real_port = port
             if active_port_file.exists():
@@ -413,7 +412,7 @@ async def _launch_browser(session: RecordingSession, browser_path: str, port: in
                 if ws:
                     return ws
             await asyncio.sleep(0.25)
-        raise RuntimeError("timed out waiting for the browser remote-debugging endpoint")
+        raise RuntimeError("等待浏览器远程调试端点超时")
     finally:
         await discover.close()
 
@@ -427,11 +426,11 @@ async def _connect_session(session: RecordingSession, config: Dict[str, Any]) ->
         finally:
             await http.close()
         if not ws_url:
-            raise RuntimeError(f"no DevTools endpoint at {attach_url}; launch Chrome with --remote-debugging-port")
+            raise RuntimeError(f"{attach_url} 没有可用的 DevTools 端点；请使用 --remote-debugging-port 启动 Chrome")
     else:
         browser = _find_browser(config.get("browser_path"))
         if not browser:
-            raise RuntimeError("no Chrome/Edge/Chromium found; install one or pass browser_path/DSH_WEB_RECORDER_BROWSER")
+            raise RuntimeError("未找到 Chrome、Edge 或 Chromium；请先安装兼容浏览器，或设置 browser_path / DSH_WEB_RECORDER_BROWSER")
         ws_url = await _launch_browser(session, browser, int(config.get("port", 9222)), bool(config.get("headless", False)))
     await session.connect(ws_url)
     await session.wait_first_page(timeout=8.0)
@@ -458,7 +457,7 @@ async def _daemon_run(config_path: Path) -> int:
         session.write_state(active=True, phase="recording")
         while not stop_path.exists():
             if session._ws is None or session._ws.closed:
-                raise RuntimeError("browser debugging connection closed before stop")
+                raise RuntimeError("记录停止前浏览器调试连接已关闭")
             await asyncio.sleep(0.2)
         stop_request = _read_json(stop_path) or {}
         session.stopped_ms = _now_ms()
@@ -493,7 +492,7 @@ async def _start_in_process(session_id: str, output_dir: Path, inputs: Dict[str,
     return {"ok": True, "session_id": session_id, "endpoint": session.endpoint,
             "attached": bool(inputs.get("attach_url")), "headless": bool(inputs.get("headless", False)),
             "output_dir": str(output_dir),
-            "note": "Interact with the browser now, then call web_record_stop with this session_id."}
+            "note": "请现在操作浏览器，完成后使用此 session_id 调用 web_record_stop。"}
 
 
 class WebRecordStartTool(Tool):
@@ -501,16 +500,16 @@ class WebRecordStartTool(Tool):
         super().__init__(ToolCard(
             id="web_record_start",
             name="web_record_start",
-            description="Start recording a user-guided browser session (clicks, inputs, navigation and network).",
+            description="开始记录用户操作的浏览器会话，捕获点击、输入长度、导航和网络元数据。",
             input_params={
                 "type": "object",
                 "properties": {
-                    "url": {"type": "string", "description": "Optional page to open when recording starts."},
-                    "attach_url": {"type": "string", "description": "Attach to an already-running browser DevTools endpoint, e.g. http://127.0.0.1:9222, instead of launching one."},
-                    "headless": {"type": "boolean", "default": False, "description": "Launch the browser headless (used for automated tests)."},
-                    "port": {"type": "integer", "default": 9222, "description": "Remote debugging port used when launching a browser."},
-                    "browser_path": {"type": "string", "description": "Explicit browser executable path; otherwise an installed Chrome/Edge/Chromium is auto-detected."},
-                    "output_dir": {"type": "string", "description": "Directory for report.md and events.jsonl; defaults to ./dsh-web-recorder-sessions/<id>."},
+                    "url": {"type": "string", "description": "开始记录时打开的网址；可省略。"},
+                    "attach_url": {"type": "string", "description": "接入已运行且获授权的浏览器 DevTools 端点，例如 http://127.0.0.1:9222；此时不新建浏览器。"},
+                    "headless": {"type": "boolean", "default": False, "description": "以无头模式启动浏览器，主要用于自动化测试。"},
+                    "port": {"type": "integer", "default": 9222, "description": "新建浏览器时使用的远程调试端口。"},
+                    "browser_path": {"type": "string", "description": "浏览器可执行文件路径；省略时自动查找已安装的 Chrome、Edge 或 Chromium。"},
+                    "output_dir": {"type": "string", "description": "report.md 与 events.jsonl 的输出目录；默认是 ./dsh-web-recorder-sessions/<id>。"},
                 },
             },
             parallel_safe=False,
@@ -538,7 +537,7 @@ class WebRecordStartTool(Tool):
             )
         except OSError as exc:
             _registry_path(session_id).unlink(missing_ok=True)
-            return _error("START_FAILED", f"could not start recorder worker: {exc}")
+            return _error("START_FAILED", f"无法启动记录器后台进程：{exc}")
 
         deadline = time.time() + 30
         state_path = output_dir / "state.json"
@@ -553,9 +552,9 @@ class WebRecordStartTool(Tool):
                 return {"ok": True, "session_id": session_id, "endpoint": state.get("endpoint"),
                         "attached": bool(inputs.get("attach_url")), "headless": bool(inputs.get("headless", False)),
                         "output_dir": str(output_dir), "worker_pid": state.get("pid"),
-                        "note": "Recording runs in a persistent worker. Interact with the browser, then call web_record_stop with this session_id."}
+                        "note": "记录正在独立后台进程中运行。请操作浏览器，完成后使用此 session_id 调用 web_record_stop。"}
             await asyncio.sleep(0.1)
-        return _error("START_FAILED", "recorder worker did not become ready within 30 seconds")
+        return _error("START_FAILED", "记录器后台进程在 30 秒内未就绪")
 
     async def stream(self, inputs: Dict[str, Any], **kwargs: Any) -> AsyncIterator[Dict[str, Any]]:
         yield await self.invoke(inputs, **kwargs)
@@ -566,12 +565,12 @@ class WebRecordStopTool(Tool):
         super().__init__(ToolCard(
             id="web_record_stop",
             name="web_record_stop",
-            description="Stop a recording session and write report.md plus events.jsonl.",
+            description="停止指定记录会话，写出中文 report.md 与结构化 events.jsonl。",
             input_params={
                 "type": "object",
                 "properties": {
                     "session_id": {"type": "string"},
-                    "keep_browser_open": {"type": "boolean", "default": False, "description": "Leave an attached/launched browser running after stopping."},
+                    "keep_browser_open": {"type": "boolean", "default": False, "description": "停止记录后保留接入或新建的浏览器进程。"},
                 },
                 "required": ["session_id"],
             },
@@ -581,7 +580,7 @@ class WebRecordStopTool(Tool):
     async def invoke(self, inputs: Dict[str, Any], **kwargs: Any) -> Dict[str, Any]:
         session_id = inputs.get("session_id")
         if not session_id:
-            return _error("INVALID_INPUT", "session_id is required")
+            return _error("INVALID_INPUT", "必须提供 session_id")
         session = _SESSIONS.get(str(session_id))
         if session:
             session.stopped_ms = _now_ms()
@@ -593,13 +592,13 @@ class WebRecordStopTool(Tool):
 
         paths = _session_paths(str(session_id))
         if not paths:
-            return _error("NOT_FOUND", f"no active session {session_id}")
+            return _error("NOT_FOUND", f"找不到活动会话：{session_id}")
         existing = _read_json(paths["result"])
         if existing:
             return existing
         state = _read_json(paths["state"])
         if not state or not state.get("active"):
-            return _error("NOT_FOUND", f"no active session {session_id}")
+            return _error("NOT_FOUND", f"找不到活动会话：{session_id}")
         _write_json(paths["stop"], {"keep_browser_open": bool(inputs.get("keep_browser_open", False)), "requested_ms": _now_ms()})
         deadline = time.time() + 30
         while time.time() < deadline:
@@ -608,7 +607,7 @@ class WebRecordStopTool(Tool):
                 _registry_path(str(session_id)).unlink(missing_ok=True)
                 return result
             await asyncio.sleep(0.1)
-        return _error("STOP_TIMEOUT", f"recorder worker did not stop session {session_id} within 30 seconds")
+        return _error("STOP_TIMEOUT", f"记录器后台进程未在 30 秒内停止会话 {session_id}")
 
     async def stream(self, inputs: Dict[str, Any], **kwargs: Any) -> AsyncIterator[Dict[str, Any]]:
         yield await self.invoke(inputs, **kwargs)
@@ -619,7 +618,7 @@ class WebRecordStatusTool(Tool):
         super().__init__(ToolCard(
             id="web_record_status",
             name="web_record_status",
-            description="List active recording sessions and their current event counts.",
+            description="列出活动记录会话及当前事件计数。",
             input_params={"type": "object", "properties": {"session_id": {"type": "string"}}},
             idempotent=True,
         ))
@@ -633,12 +632,12 @@ class WebRecordStatusTool(Tool):
                         "counts": session.counts(), "output_dir": str(session.output_dir)}
             paths = _session_paths(str(sid))
             if not paths:
-                return _error("NOT_FOUND", f"no active session {sid}")
+                return _error("NOT_FOUND", f"找不到活动会话：{sid}")
             result = _read_json(paths["result"])
             if result:
                 return result
             state = _read_json(paths["state"])
-            return state or _error("NOT_FOUND", f"no active session {sid}")
+            return state or _error("NOT_FOUND", f"找不到活动会话：{sid}")
         active = [{"session_id": s.id, "total_events": len(s.events), "counts": s.counts()}
                   for s in _SESSIONS.values()]
         if _REGISTRY.exists():

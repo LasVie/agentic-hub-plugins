@@ -1,0 +1,145 @@
+Window: "WorkSwarm", App: WorkSwarm.
+0 standard window WorkSwarm, Secondary Actions: Raise
+	1 container WorkSwarm
+		2 container
+			3 HTML content WorkSwarm, URL: 127.0.0.1:6173/chat/web_1a1a55030d9_5f82abe2c5d5
+				4 container
+					5 Unlabeled image Logo. To get missing image descriptions, open the context menu.
+					6 button 任务
+					7 button 专家
+					8 button 技能
+					9 button 扩展
+						10 image
+						11 text 扩展
+					12 button RSI
+						13 image
+						14 text RSI
+					15 button 设置
+					16 button 更新
+					17 button 主题外观
+					18 container
+						19 heading 扩展, Value: 2
+							20 text 扩展
+						21 text 创建并管理插件、连接器
+						22 tab group
+							23 tab (settable, integer) 插件广场, Value: 0
+							24 tab (settable, integer) 连接器广场, Value: 0
+							25 tab (selected) 我的扩展, Value: 1
+						26 button 全部
+							27 text 全部
+							28 image
+						29 image
+						30 text field (settable) 搜索插件
+						31 button 创建
+							32 text 创建
+							33 image
+						34 button 插件
+						35 text |
+						36 button 连接器
+						37 container
+							38 text 行 行动优先表达
+							39 button 使用
+							40 text 明确开启、关闭和查询行动优先表达模式，状态保存在用户指定的工作目录内；不作医疗效果承诺。
+						41 container
+							42 text 交 交互图谱校验与交付
+							43 button 使用
+							44 text 为 Playground 补充结构化图谱校验与离线交付；从中文 JSON 生成可交互 HTML，保留源文件和校验结果。
+						45 container
+							46 text 代 代码简化 代码可读性 行为保持 可维护性
+							47 button 使用
+							48 text 在保持行为不变的前提下，遵循项目规范简化近期修改的代码，提升可读性与可维护性。
+						49 container
+							50 text 塔 塔罗牌查询与抽牌 塔罗牌 反思 离线 日记
+							51 button 使用
+							52 text 离线查询 78 张塔罗牌，按种子复现不放回抽牌，并生成六种牌阵；用于反思、写作与娱乐。
+						53 container
+							54 text 文 文件编码守护 文件编码 旧编码文本 安全编辑
+							55 button 使用
+							56 text 通过专用工具读取、写入、编辑、搜索和撤销旧编码文本文件，保留原始编码、BOM 与换行符，并拒绝无法表示的字符。
+						57 container
+							58 text L LaTeX 引用守卫 LaTeX BibTeX 引用审计
+							59 button 使用
+							60 text 检查 BibTeX 重复键与缺失字段，通过 Crossref 补全空白字段，并对照文献库审计 LaTeX 引用键。
+						61 container
+							62 text 离 离线钢琴演奏
+							63 button 使用
+							64 text 用本地合成音色生成钢琴演奏、WAV 与可交互的中文播放器。
+						65 container
+							66 text 本 本地模拟生活
+							67 button 使用
+							68 text 读取近24小时虚构生活事件、会话去重，并原子回写感受、思考与行动。
+						69 container
+							70 text 智 智能下载 下载 校验 续传
+							71 button 使用
+							72 text 通过 HTTP(S) 下载文件，支持服务器分段加速、安全续传、任务状态查询和可选的 SHA-256 校验。
+						73 container
+							74 text 本 本地凭据保险库
+							75 button 使用
+							76 text 无需服务账号的本地 AES-256-GCM 加密凭据管理、掩码查询和动态验证码。
+						77 container
+							78 text 网 网页会话记录器 浏览器记录 会话记录 网络抓取
+							79 button 使用
+							80 text 通过 Chrome DevTools Protocol 记录用户操作中的点击、输入长度、导航及网络元数据，输出中文 Markdown 时间线与结构化 events.jsonl，辅助梳理网页流程和接口调用。
+						81 container
+							82 text 本 本机环境探针
+							83 button 使用
+							84 text 主动观测本机系统、标准位置工具链和 TCP 监听端口，保存与比较快照，提供中文筛选界面；不结束进程、不读取密钥。
+						85 container
+							86 text G Git 分支全景
+							87 button 使用
+							88 text 只读本地 Git 分支拓扑、父提交与关联工作树，比较两个引用的独有提交和共同祖先，提供可搜索、可点选的中文图谱。
+						89 container
+							90 text 本 本地五子棋
+							91 button 使用
+							92 text 15×15 自由五子棋的本地状态、合法落子、胜负判定和中文棋盘导出；用当前会话模型对弈，无需额外账号。
+						93 container
+							94 text 学 学习式编程指导 编程教学 动手练习 实现指导
+							95 button 使用
+							96 text 在真实编程任务中解释实现取舍，准备函数或代码骨架，并邀请学习者完成一处有意义的 5–10 行关键逻辑。基于宿主原有模型与工具提供逐步指导。
+						97 container
+							98 text M MCP 应用与打包开发助手 MCP 开发 交互界面 本地打包
+							99 container MCP 开发 · 交互界面 · 本地打包 · 协议验证
+							100 button 使用
+							101 text 为 MCP Builder 补充接入路径规划、MCP App UI 与 MCPB 本地打包开发：生成 Node.js 示例工程并验证协议；不自动部署或发布。
+						102 container
+							103 text 电 电机方案粗筛
+							104 button 使用
+							105 text 本地生成电机方案矩阵、执行物理规则校验并按公式估算排序；仅用于相对粗筛，不是工程认证或仿真结论。
+						106 container
+							107 text 像 像素证据读图器 图像分析 离线 像素证据
+							108 button 使用
+							109 text 将本地图像转换为可复现的像素证据：亮度与颜色网格、边缘和对称性测量、指定坐标采样、主色色板与区域裁剪，供文本模型按证据分析。
+						110 container
+							111 text 流 流程执行台
+							112 button 使用
+							113 text 校验多阶段流程模板，冻结每次运行快照，以实际文件 SHA-256 记录环节完成证据，提供中文交互看板。
+						114 container
+							115 text Q Qt 开发审校
+							116 button 使用
+							117 text 只读审查指定的 Qt C++/QML 文件，输出中文规则定位和审校报告；无需 Qt 安装，不替代编译和人工审查。
+						118 container
+							119 text 小 小说创作台
+							120 button 使用
+							121 text 管理本地小说项目、人物、章节与修订历史；在中文编辑器中添加可重新定位的原文批注，不自动生成或改写正文。
+						122 container
+							123 text 词 词汇练习室
+							124 button 使用
+							125 text 按学习者保存英文词条、出现次数与连对掌握状态；在中文交互界面完成四选一、错词复习和导出，无需额外账号。
+						126 container
+							127 text W WorkSwarm 壁纸引擎 桌面主题 动态背景 启动动画
+							128 button 使用
+							129 text 为 WorkSwarm 提供应用内静态/动态背景、启动开场动画与开场音乐、主题切换、外观配置与主题包导入。包含完整主题引擎及科研终端、流光极昼、晨雾蓝图三个主题。首次需执行应用扩展安装并重启 WorkSwarm。
+					130 container
+						131 text 插件导入成功
+						132 button close
+	133 close button
+	134 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	135 minimize button
+136 menu bar
+	137 WorkSwarm
+	138 File
+	139 Edit
+	140 View
+	141 Window
+
+The focused UI element is 3 HTML content WorkSwarm, URL: 127.0.0.1:6173/chat/web_1a1a55030d9_5f82abe2c5d5

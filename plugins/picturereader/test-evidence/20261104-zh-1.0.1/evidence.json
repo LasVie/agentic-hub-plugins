@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "slug": "picturereader",
+  "display_name": "像素证据读图器",
+  "version": "1.0.1",
+  "task_id": "AH-20261023-picturereader",
+  "candidate_id": "CAND-DSH-177",
+  "responsible_owner": "Siu Lok Yin",
+  "original_publisher": "WorkSwarm",
+  "native_zip_sha256": "dce99062ee78e84454345be5ae0bd705660593bdb9836a6e96d2d17945db0066",
+  "canonical_zip_sha256": "94e4e4f161a2792097f6c2592990a47709e664ae4c765298d7fdcd534071a386",
+  "gui_test_status": "Passed within recorded workflow; Agent operated under explicit user delegation",
+  "human_performed_testing": false,
+  "new_verbal_user_test_pass_confirmation": null,
+  "authorization": {
+    "user_instruction": "你帮我完成测试，用我本地打开的workswarm，测试导入和prompt，如果成功，留存screenshot并pr更新现有内容，但注意负责人的名字不要改，其他的field按需更新，可以使用多agent加速，需要我打开ultra和我说",
+    "later_direct_submission_instruction_as_supplied_by_root": "未合并的合并进去，然后全部推送",
+    "source": "Actual current conversation instructions supplied to this agent; no message permalink available and none invented.",
+    "scope": "Authorizes delegated AI local WorkSwarm testing, originals and PR/Hub work within the current task. It is not a claim the user personally tested or gave a new verbal pass after this run."
+  },
+  "host": {
+    "desktop_app": "WorkSwarm 0.2.8",
+    "Python": "3.12.13",
+    "Pillow": "12.2.0",
+    "model": "gpt-6.1-sol"
+  },
+  "chat_id": "web_1a1a55030d9_5f82abe2c5d5",
+  "started_local": "2026-11-04 14:47 Asia/Singapore",
+  "completed_at_local": "2026-11-04 14:48 Asia/Singapore",
+  "live_UI_duration_seconds": 53.69,
+  "exported_summary_duration_seconds": 54.2,
+  "duration_scope": "Two real UI observations from the same workflow, not an invented exact wall-clock duration.",
+  "displayed_tool_records": 13,
+  "actual_native_tool_calls": 6,
+  "tool_record_breakdown": "1 tool_search + 6 tool_call wrappers + 6 actual native calls; not 13 functional cases.",
+  "native_calls": [
+    "image_scan original120x80 grid20x7",
+    "image_sample four quadrants",
+    "image_palette count5",
+    "image_crop region60,40,60,40 overwrite=false",
+    "image_scan exported60x40 crop",
+    "image_sample invalid999,1"
+  ],
+  "expected_negative": {
+    "ok": false,
+    "code": "INVALID_IMAGE",
+    "message": "图像处理失败：坐标 (999,1) 超出图像边界 120x80"
+  },
+  "crop": {
+    "file": "gui-crop.png",
+    "bytes": 116,
+    "sha256": "4dbc5e9138bd18a9995f307765986c1641d41098371da27311e448f6df57048b",
+    "dimensions": [
+      60,
+      40
+    ],
+    "matches_exact_source_region_pixels": true,
+    "source_region": {
+      "x": 60,
+      "y": 40,
+      "width": 60,
+      "height": 40
+    }
+  },
+  "fixture": {
+    "file": "fixture.png",
+    "bytes": 276,
+    "current_sha256": "552f1ad1a45a1fc54c5aa1265d12383d199e5387f42e17b68d87e8b68a9428b6",
+    "retained_baseline_exists": true,
+    "retained_baseline_sha256_now": "552f1ad1a45a1fc54c5aa1265d12383d199e5387f42e17b68d87e8b68a9428b6",
+    "retained_baseline_bytes_equal_now": true,
+    "fixture_mtime": "2026-11-04T11:58:31.381268",
+    "independent_pre_GUI_SHA256_snapshot_found": false,
+    "boundary": "Current source bytes exactly match the retained earlier functional-test fixture recorded by path in the pre-GUI development log. No explicit pre-GUI SHA-256 value was found in available current-package files; this does not invent a separately recorded before/after hash pair."
+  },
+  "fixture_input_file": "tests/fixtures/gui-1.0.1/fixture.png",
+  "all_four_installed_file_hashes_match_frozen_payload": true,
+  "installed_payload_sha256": {
+    "README.md": "6fe63da925e52901cea0d0b3029f4a47487000f6227f5669a4c3449568fbe629",
+    "manifest.json": "582766ddc04aac19a7549c5597d34c1086792f93dc2d82106f469a1ea6ae5c37",
+    "skills/pixel-evidence-reading/SKILL.md": "bda88b712b0f490e8d9ea05f894b0a853731b62e0b4f65e788c9788f562875c6",
+    "tools/picture_reader.py": "8396b8973fa9f77f1b022f3fd44c5355fc42ec65b7f7af43796de3f5a639b6c4"
+  },
+  "original_images": [
+    {
+      "file": "workswarm-import-original.jpg",
+      "bytes": 573920,
+      "sha256": "7fc02f35f8e635f732b011f56211c7c45605bc8109dd5d4af69d0b2c2b425dfe",
+      "original_bytes_preserved": true,
+      "content_review": "Root visually reviewed JPEG originals; child independently viewed the exported long PNG. Different views of one workflow, not separate independent tests."
+    },
+    {
+      "file": "workswarm-installed-detail-original.jpg",
+      "bytes": 368775,
+      "sha256": "c6482d6bb2769ec2e08b5b32116231b97c1da434a094a285325668b12fa8a8f1",
+      "original_bytes_preserved": true,
+      "content_review": "Root visually reviewed JPEG originals; child independently viewed the exported long PNG. Different views of one workflow, not separate independent tests."
+    },
+    {
+      "file": "workswarm-prompt-original.jpg",
+      "bytes": 386544,
+      "sha256": "d60010f8e1802ae6de45b006aeac9abbd752364d6396ac08b20f2479a6e0b5a0",
+      "original_bytes_preserved": true,
+      "content_review": "Root visually reviewed JPEG originals; child independently viewed the exported long PNG. Different views of one workflow, not separate independent tests."
+    },
+    {
+      "file": "workswarm-result-original.jpg",
+      "bytes": 442745,
+      "sha256": "1bf49b32b0192ee6b89517d0c719ef7e963c980b3c98204b7e7fe4c542072fca",
+      "original_bytes_preserved": true,
+      "content_review": "Root visually reviewed JPEG originals; child independently viewed the exported long PNG. Different views of one workflow, not separate independent tests."
+    },
+    {
+      "file": "workswarm-sample-details-original.jpg",
+      "bytes": 560241,
+      "sha256": "d0aaa93943b4d94cd6e75768536caf8aad27a163068db7f90528ada2584fc29a",
+      "original_bytes_preserved": true,
+      "content_review": "Root visually reviewed JPEG originals; child independently viewed the exported long PNG. Different views of one workflow, not separate independent tests."
+    },
+    {
+      "file": "workswarm-samples-palette-original.jpg",
+      "bytes": 444115,
+      "sha256": "0fa0d3a360f82d8f8b2110ca38cd12433b1a3418b875bdf57090a2c817103ec2",
+      "original_bytes_preserved": true,
+      "content_review": "Root visually reviewed JPEG originals; child independently viewed the exported long PNG. Different views of one workflow, not separate independent tests."
+    },
+    {
+      "file": "workswarm-tooltrace-original.jpg",
+      "bytes": 546748,
+      "sha256": "d4cb37a5932cf9b32731c8f585b978ad2f1bd9ae0e95dd084a0533a0c192a1ac",
+      "original_bytes_preserved": true,
+      "content_review": "Root visually reviewed JPEG originals; child independently viewed the exported long PNG. Different views of one workflow, not separate independent tests."
+    },
+    {
+      "file": "jiuwenswarm-share-20261104-144945.png",
+      "bytes": 1212052,
+      "sha256": "9bdc07cd95cbf054f5076c6ddfe591f02b3e9812f155da88e521c8a297d7952e",
+      "original_bytes_preserved": true,
+      "content_review": "Root visually reviewed JPEG originals; child independently viewed the exported long PNG. Different views of one workflow, not separate independent tests."
+    }
+  ],
+  "image_count_scope": "Seven JPEG captures and one native exported conversation PNG, all original bytes; eight images of one workflow, not eight independent tests.",
+  "long_PNG_scope": "Rendered conversation summary without expanded tool trace. Raw JPEG/AX trace and installed-file hash association support the actual native calls and precise version.",
+  "evidence_PR_permalink": null,
+  "remote_original_bytes_verified": false,
+  "delivery_status": "Local Build materials updated; no push, PR, merge or Hub submission for this release claimed.",
+  "fixture_path_base": "Owning asset root plugins/picturereader",
+  "original_images_directory": "test-evidence/20261104-zh-1.0.1",
+  "crop_evidence_file": "test-evidence/20261104-zh-1.0.1/gui-crop.png"
+}

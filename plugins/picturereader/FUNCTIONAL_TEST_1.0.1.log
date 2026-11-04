@@ -1,0 +1,228 @@
+2026-11-04 11:58:31 | common | default_trace_id | INFO | Registered connector pool type: default
+2026-11-04 11:58:31 | common | default_trace_id | INFO | Registered connector pool type: httpx
+2026-11-04 11:58:31 | common | default_trace_id | INFO | Registered query expression support for milvus
+2026-11-04 11:58:31 | common | default_trace_id | INFO | Registered query expression support for chroma
+2026-11-04 11:58:31 | common | default_trace_id | INFO | Registered parser ExcelParser for .xlsx
+2026-11-04 11:58:31 | common | default_trace_id | INFO | Registered parser ExcelParser for .csv
+2026-11-04 11:58:31 | common | default_trace_id | INFO | Registered parser ExcelParser for .tsv
+2026-11-04 11:58:31 | common | default_trace_id | INFO | Registered parser TxtMdParser for .txt
+2026-11-04 11:58:31 | common | default_trace_id | INFO | Registered parser TxtMdParser for .md
+2026-11-04 11:58:31 | common | default_trace_id | INFO | Registered parser TxtMdParser for .markdown
+2026-11-04 11:58:31 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .htm
+2026-11-04 11:58:31 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .html
+2026-11-04 11:58:31 | common | default_trace_id | INFO | Registered parser JSONParser for .json
+2026-11-04 11:58:32 | common | default_trace_id | INFO | Registered parser PDFParser for .pdf
+2026-11-04 11:58:32 | common | default_trace_id | INFO | Registered parser WordParser for .docx
+2026-11-04 11:58:32 | common | default_trace_id | INFO | Registered parser ImageParser for .png
+2026-11-04 11:58:32 | common | default_trace_id | INFO | Registered parser ImageParser for .jpg
+2026-11-04 11:58:32 | common | default_trace_id | INFO | Registered parser ImageParser for .jpeg
+2026-11-04 11:58:32 | common | default_trace_id | INFO | Registered parser ImageParser for .webp
+2026-11-04 11:58:32 | common | default_trace_id | INFO | Registered parser ImageParser for .gif
+2026-11-04 11:58:32 | common | default_trace_id | INFO | Registered parser ImageParser for .jfif
+{
+  "fixture": "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/picturereader-test-tqycmwj0/fixture.png",
+  "checks": [
+    [
+      "scan .png",
+      true
+    ],
+    [
+      "scan .jpg",
+      true
+    ],
+    [
+      "scan .webp",
+      true
+    ],
+    [
+      "region scan is red-dominant",
+      true
+    ],
+    [
+      "structure metrics bounded",
+      true
+    ],
+    [
+      "exact quadrant samples",
+      true
+    ],
+    [
+      "palette proportions",
+      true
+    ],
+    [
+      "crop output",
+      true
+    ],
+    [
+      "source unchanged",
+      true
+    ],
+    [
+      "overwrite protection",
+      true
+    ],
+    [
+      "invalid coordinate rejected",
+      true
+    ],
+    [
+      "Chinese required-path diagnostic",
+      true
+    ]
+  ],
+  "scan_summary": {
+    "ok": true,
+    "file_path": "/private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/picturereader-test-tqycmwj0/fixture.png",
+    "image": {
+      "width": 120,
+      "height": 80
+    },
+    "region": {
+      "x": 0,
+      "y": 0,
+      "width": 60,
+      "height": 40
+    },
+    "grid": {
+      "width": 24,
+      "height": 8,
+      "luminance": [
+        "::::::::::::::::::::::::",
+        "::::::::::::::::::::::::",
+        "::::::::::::::::::::::::",
+        "::::::::::::::::::::::::",
+        "::::::::::::::::::::::::",
+        "::::::::::::::::::::::::",
+        "::::::::::::::::::::::::",
+        "::::::::::::::::::::::::"
+      ],
+      "colors": [
+        "RRRRRRRRRRRRRRRRRRRRRRRR",
+        "RRRRRRRRRRRRRRRRRRRRRRRR",
+        "RRRRRRRRRRRRRRRRRRRRRRRR",
+        "RRRRRRRRRRRRRRRRRRRRRRRR",
+        "RRRRRRRRRRRRRRRRRRRRRRRR",
+        "RRRRRRRRRRRRRRRRRRRRRRRR",
+        "RRRRRRRRRRRRRRRRRRRRRRRR",
+        "RRRRRRRRRRRRRRRRRRRRRRRR"
+      ],
+      "legend": {
+        "K": "#000000",
+        "W": "#FFFFFF",
+        "R": "#DC2D2D",
+        "O": "#EB8723",
+        "Y": "#E6D732",
+        "G": "#2DAF4B",
+        "C": "#2DBEC8",
+        "B": "#375FD2",
+        "P": "#9646BE",
+        "M": "#D24191",
+        "N": "#875F3C",
+        "S": "#808080"
+      }
+    },
+    "measurements": {
+      "mean_luminance": 54.21,
+      "horizontal_edge_energy": 0.0,
+      "vertical_edge_energy": 0.0,
+      "edge_energy": 0.0,
+      "left_right_symmetry": 1.0
+    },
+    "palette": [
+      {
+        "rgb": [
+          255,
+          0,
+          0
+        ],
+        "hex": "#FF0000",
+        "share": 1.0
+      }
+    ]
+  },
+  "sample_summary": {
+    "ok": true,
+    "file_path": "/private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/picturereader-test-tqycmwj0/fixture.png",
+    "image": {
+      "width": 120,
+      "height": 80
+    },
+    "samples": [
+      {
+        "x": 10,
+        "y": 10,
+        "radius": 0,
+        "rgb": [
+          255,
+          0,
+          0
+        ],
+        "hex": "#FF0000",
+        "luminance": 54.21
+      },
+      {
+        "x": 90,
+        "y": 10,
+        "radius": 0,
+        "rgb": [
+          0,
+          255,
+          0
+        ],
+        "hex": "#00FF00",
+        "luminance": 182.38
+      },
+      {
+        "x": 10,
+        "y": 60,
+        "radius": 0,
+        "rgb": [
+          0,
+          0,
+          255
+        ],
+        "hex": "#0000FF",
+        "luminance": 18.41
+      },
+      {
+        "x": 90,
+        "y": 60,
+        "radius": 0,
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "hex": "#FFFFFF",
+        "luminance": 255.0
+      }
+    ]
+  },
+  "crop": {
+    "ok": true,
+    "source_path": "/private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/picturereader-test-tqycmwj0/fixture.png",
+    "output_path": "/private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/picturereader-test-tqycmwj0/zoom.png",
+    "region": {
+      "x": 60,
+      "y": 40,
+      "width": 60,
+      "height": 40
+    },
+    "width": 60,
+    "height": 40,
+    "bytes": 116
+  }
+}
+[PASS] scan .png
+[PASS] scan .jpg
+[PASS] scan .webp
+[PASS] region scan is red-dominant
+[PASS] structure metrics bounded
+[PASS] exact quadrant samples
+[PASS] palette proportions
+[PASS] crop output
+[PASS] source unchanged
+[PASS] overwrite protection
+[PASS] invalid coordinate rejected
+[PASS] Chinese required-path diagnostic

@@ -1,14 +1,24 @@
 {
   "type": "agent-plugin",
   "name": "dsh-web-recorder",
-  "version": "1.0.2",
-  "display_name": "Web Session Recorder",
-  "description": "Record a user-guided browser session — clicks, inputs, navigation and network traffic — over the Chrome DevTools Protocol, then export a Markdown timeline (report.md) and a structured events.jsonl log to reverse-engineer web flows and build API-level skills.",
+  "version": "1.0.3",
+  "display_name": "网页会话记录器",
+  "description": "通过 Chrome DevTools Protocol 记录用户操作中的点击、输入长度、导航及网络元数据，输出中文 Markdown 时间线与结构化 events.jsonl，辅助梳理网页流程和接口调用。",
   "publisher": "WorkSwarm",
   "category": "软件开发",
-  "tags": ["browser", "recorder", "network-capture", "cdp", "api-discovery"],
-  "functional_tags": ["Browsers and Web", "Testing and Debugging", "APIs and MCP"],
-  "scope": "Records and summarizes a human-driven Chromium-family browser session into report.md + events.jsonl. It does not drive/automate the browser for the user, capture request/response bodies, store input value contents (only lengths), download a browser, or support Firefox/WebKit. Requires an installed Chrome/Edge/Chromium on the host.",
+  "tags": [
+    "浏览器记录",
+    "会话时间线",
+    "网络元数据",
+    "CDP",
+    "接口分析"
+  ],
+  "functional_tags": [
+    "Browsers and Web",
+    "Testing and Debugging",
+    "APIs and MCP"
+  ],
+  "scope": "观察用户操作的 Chrome、Edge 或 Chromium 会话并导出 report.md 与 events.jsonl；不代替用户操作，不自动生成或执行重放，不记录输入值正文或网络请求响应正文，不下载浏览器，不支持 Firefox 或 WebKit。依赖宿主 OpenJiuwen、aiohttp 与已安装的兼容浏览器。",
   "candidate_id": "CAND-DSH-172",
   "task_id": "AH-20261023-dsh-web-recorder",
   "related_asset_ids": []
