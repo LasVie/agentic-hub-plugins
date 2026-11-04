@@ -1,0 +1,9 @@
+{
+  "actual_browser_download": "gui-geometry-download.glb",
+  "bytes": 383548,
+  "sha256": "01e56b06d99e8400f06f830236fd0c6e1f186720a7f73af38220c3420ef1146a",
+  "byte_identical_to_saved_model": true,
+  "original_bytes": 6114024,
+  "original_sha256": "5ecb9ead652de1cd9cc52fe569b2dcb3126b69fac50c89969228eb9260555779",
+  "report_original_bytes_preserved": "gui-geometry-report.json"
+}

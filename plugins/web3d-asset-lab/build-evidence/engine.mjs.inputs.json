@@ -25,7 +25,7 @@
     ],
     "format": "esm"
   },
-  "bounded-pixels.mjs": {
+  "web3d-bounded:bounded-pixels": {
     "bytes": 222,
     "imports": [],
     "format": "esm"
@@ -51,45 +51,8 @@
     ],
     "format": "esm"
   },
-  "node_modules/iota-array/iota.js": {
-    "bytes": 150,
-    "imports": [],
-    "format": "cjs"
-  },
-  "node_modules/is-buffer/index.js": {
-    "bytes": 698,
-    "imports": [],
-    "format": "cjs"
-  },
-  "node_modules/ndarray/ndarray.js": {
-    "bytes": 9925,
-    "imports": [
-      {
-        "path": "node_modules/iota-array/iota.js",
-        "kind": "require-call",
-        "original": "iota-array"
-      },
-      {
-        "path": "node_modules/is-buffer/index.js",
-        "kind": "require-call",
-        "original": "is-buffer"
-      }
-    ],
-    "format": "cjs"
-  },
-  "node_modules/ndarray-lanczos/dist/ndarray-lanczos.modern.js": {
-    "bytes": 2039,
-    "imports": [
-      {
-        "path": "node_modules/ndarray/ndarray.js",
-        "kind": "import-statement",
-        "original": "ndarray"
-      }
-    ],
-    "format": "esm"
-  },
   "node_modules/@gltf-transform/functions/dist/index.js": {
-    "bytes": 230980,
+    "bytes": 229697,
     "imports": [
       {
         "path": "node_modules/@gltf-transform/core/dist/index.js",
@@ -97,7 +60,7 @@
         "original": "@gltf-transform/core"
       },
       {
-        "path": "bounded-pixels.mjs",
+        "path": "web3d-bounded:bounded-pixels",
         "kind": "import-statement",
         "original": "ndarray-pixels"
       },
@@ -110,21 +73,11 @@
         "path": "node_modules/ktx-parse/dist/ktx-parse.modern.js",
         "kind": "import-statement",
         "original": "ktx-parse"
-      },
-      {
-        "path": "node_modules/ndarray/ndarray.js",
-        "kind": "import-statement",
-        "original": "ndarray"
-      },
-      {
-        "path": "node_modules/ndarray-lanczos/dist/ndarray-lanczos.modern.js",
-        "kind": "import-statement",
-        "original": "ndarray-lanczos"
       }
     ],
     "format": "esm"
   },
-  "../../../tools/dev_five/gltf-engine.mjs": {
+  "web3d-geometry-entry.mjs": {
     "bytes": 3942,
     "imports": [
       {

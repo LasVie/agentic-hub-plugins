@@ -1,6 +1,6 @@
 {
   "id": "web3d-asset-lab",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "package_type": "plugin",
   "name": "网页 3D 模型瘦身台",
   "description": "网页 3D 模型瘦身台：提供独立本机工作台、真实引擎执行和可保存导出的成果。",

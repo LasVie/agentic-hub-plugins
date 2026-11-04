@@ -1,3 +1,44 @@
+# Test report: 网页 3D 模型瘦身台 1.0.5
+
+**Current result: source/extracted-package engine regression and actual Agent-operated WorkSwarm GUI passed.** Owner Song Haoran; Task AH-20261102-web3d-asset-lab; Candidate CAND-EXT-010. This records delegated Agent execution, not personal human acceptance.
+
+## Frozen delivered package
+
+| Package | Bytes | SHA-256 |
+| --- | ---: | --- |
+| Canonical 1.0.5 | 1,861,915 | `bfa66c5faa59cf88127633e94137de808b16c521a15a196e41ee0fb539384c0a` |
+| Native 1.0.5 | 373,986 | `1dafe82986d6cda8b328b463b70b2dcbb01b9fbd16c4b208b2e0c5a02d935cce` |
+
+All 27 source, canonical, native and artifact payload hashes match; all 27 actual installed files also match with no extra/missing files. No runtime file or ZIP changed after the frozen package's GUI import. Current package-verification.json records those values; both outer artifact report references are refreshed after this final report.
+
+## Source-level build and real engine regression
+
+Node v22.12.0 with fixed original-lock esbuild 0.28.2/TypeScript 5.9.3 built the official glTF Transform 4.5.1 source derivative exporting only dedup/weld/prune and genuinely removing unused ndarray/lanczos imports. Original transform algorithms and the existing unsupported-native-codec boundary remain. The emitted dependency graph excludes ndarray/iota-array/is-buffer/lanczos; AST review found no retained direct Function/eval-family call or string timer. This is bounded inspection, not a formal security guarantee or Hub approval.
+
+The source suite passed **42/42**, then actual canonical ZIP extraction passed **42/42**. It compared fixture, inspect and optimized bytes against frozen 1.0.4 for demo and animated data, checked preserved nodes/animations, repeated optimization, four validator reports, and thirteen malformed/unsupported cases through both inspect and optimize. Actual fixture→optimization also passed Node `--disallow-code-generation-from-strings`. Eight final source/extracted validator reports have zero errors/warnings. Unsupported names initially added only to a synthetic animation fixture were removed before the recorded final run; its initial warnings remain in local audit history. No plugin bytes changed for that fixture correction.
+
+Commands:
+- `WEB3D_BUILD_DEPS=<isolated pinned deps> node plugins/web3d-asset-lab/build/rebuild_engine.mjs`
+- `node plugins/web3d-asset-lab/tests/geometry_subset_regression.mjs <payload> <frozen 1.0.4 engine> <output> <isolated pinned deps>`
+
+Final results: [source](tests/results/1.0.5/engine-regression-results.json), [extracted canonical](tests/results/1.0.5-extracted/engine-regression-results.json), [build](build-evidence/geometry-subset-build.json). Isolated official downloads totaled 10,343,146 compressed bytes across thirteen integrity-verified fixed archives; no global installation/lifecycle script or Sharp/libvips distribution occurred.
+
+## Actual current WorkSwarm GUI
+
+2026-11-04 15:30–15:43 Asia/Singapore: **WorkSwarm desktop 0.2.8 / Python 3.12.13 / Node 22.12.0**, with the actual native internal BrowserWindow. This is distinct from older isolated SDK/1.0.4 environments. The root Agent completed current native import/install, status/start prompt, both rendered model views and rotation, real geometry optimization, explicit lossy 128×128 color-texture resize, native Save-panel GLB/report exports, second native EngineTool load, restore, own-service stop/start persistence and final stop.
+
+Observed actual fixture sizes: 6,114,024 → 383,548 bytes (geometry), then 5,456 bytes after explicit lossy texture resize. Meshes 16→1, nodes 16→16. Downloaded final GLB/report equal saved files exactly; original GLB SHA stayed unchanged. Three actual GUI GLBs validate with zero errors/warnings/infos. Both test ports were confirmed closed after final stop.
+
+See [GUI_TEST_REPORT.md](GUI_TEST_REPORT.md), [full session](evidence/1.0.5/gui-test-session.json), [16 unmodified originals](evidence/1.0.5/originals.json), [actual export hashes](evidence/1.0.5/gui-export-verification.json), [actual validators](evidence/1.0.5/actual-gui-validator/actual-gui-glb-validation-index.json), and [current Agent test authority](USER_TEST_CONFIRMATION.md). All old 1.0.4 full records remain in build-evidence/history/ and below.
+
+Limits: GUI fixture has no animation, so playback was not verified. Automated animated-data tests do not establish playback. Other platforms, arbitrary models/extensions, guaranteed compression or total absence of vulnerability are not claimed. The GUI pass does not imply PR merge, Hub acceptance or Project Lead acceptance.
+
+---
+
+# Historical 1.0.4 report (original text preserved below)
+
+Historical path map: its native archive is now test-packages/history/web3d-asset-lab-1.0.4-workswarm.zip; its exact original package-verification.json is build-evidence/history/package-verification-1.0.4.json. The full original historical report is also retained byte-for-byte as build-evidence/history/TEST_REPORT-1.0.4-original.md.
+
 # Test report: 网页 3D 模型瘦身台 1.0.4
 
 Task AH-20261102-web3d-asset-lab; candidate CAND-EXT-010; owner Song Haoran. Tested 2026-11-02–2026-11-03 (Asia/Singapore).

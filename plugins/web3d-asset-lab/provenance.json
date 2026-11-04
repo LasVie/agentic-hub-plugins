@@ -44,7 +44,8 @@
           "path": "licenses/iota-array--1.0.0/LICENSE",
           "sha256": "e67aed7df22dc8031e4fcf5338fe91cb33e3817e5c58a99a2a2802eea9069791"
         }
-      ]
+      ],
+      "scope": "Historical license notice only; no code in current 1.0.5 runtime."
     },
     {
       "url": "https://www.npmjs.com/package/is-buffer/v/1.1.6",
@@ -55,7 +56,8 @@
           "path": "licenses/is-buffer--1.1.6/LICENSE",
           "sha256": "c7cc929b57080f4b9d0c6cf57669f0463fc5b39906344dfc8d3bc43426b30eac"
         }
-      ]
+      ],
+      "scope": "Historical license notice only; no code in current 1.0.5 runtime."
     },
     {
       "url": "https://www.npmjs.com/package/ktx-parse/v/1.1.0",
@@ -77,7 +79,8 @@
           "path": "licenses/ndarray--1.1.1/LICENSE",
           "sha256": "f149791eb5101f10b1fb88997310f2b054604106c4bf6050e0aee66a5bd35cc7"
         }
-      ]
+      ],
+      "scope": "Historical license notice only; no code in current 1.0.5 runtime."
     },
     {
       "url": "https://www.npmjs.com/package/ndarray-lanczos/v/0.3.0",
@@ -88,7 +91,8 @@
           "path": "licenses/ndarray-lanczos--0.3.0/LICENSE",
           "sha256": "ec5114155d92f326802c964dcf9eb5261e09192c62f14d195d2a8be49eb1d489"
         }
-      ]
+      ],
+      "scope": "Historical license notice only; no code in current 1.0.5 runtime."
     },
     {
       "url": "https://www.npmjs.com/package/property-graph/v/4.1.0",
@@ -118,5 +122,28 @@
     "vendor/model-view.mjs",
     "vendor/texture-resize.mjs"
   ],
-  "audit_file": "SOURCE_REVIEW.md"
+  "audit_file": "SOURCE_REVIEW.md",
+  "modifications": [
+    {
+      "path": "vendor/engine.mjs",
+      "upstream": "@gltf-transform/functions@4.5.1",
+      "source_path": "dist/index.js",
+      "commit": "41156dfa2324ac6c44ddf0a40ec0da194c4731d6",
+      "summary": "Source-level geometry subset: only dedup/weld/prune exports, genuinely unused ndarray/lanczos imports and generated array-code modules removed. Original algorithms and terms retained.",
+      "build_record": "build-evidence/geometry-subset-build.json"
+    }
+  ],
+  "delivery_evidence": {
+    "version": "1.0.5",
+    "test_type": "Agent-operated actual WorkSwarm under explicit user delegation; not personal human testing",
+    "gui_report": "GUI_TEST_REPORT.md",
+    "gui_session": "evidence/1.0.5/gui-test-session.json",
+    "originals": "evidence/1.0.5/originals.json",
+    "installed_bytes": "evidence/1.0.5/installed-byte-verification.json",
+    "exports": "evidence/1.0.5/gui-export-verification.json",
+    "actual_glb_validators": "evidence/1.0.5/actual-gui-validator/actual-gui-glb-validation-index.json",
+    "test_report": "TEST_REPORT.md",
+    "human_acceptance": "Pending Acceptance",
+    "hub_status": "No current submission/approval claimed"
+  }
 }

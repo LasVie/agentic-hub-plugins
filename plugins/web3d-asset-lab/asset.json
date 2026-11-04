@@ -1,7 +1,7 @@
 {
   "type": "agent-plugin",
   "name": "web3d-asset-lab",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "display_name": "网页 3D 模型瘦身台",
   "description": "网页 3D 模型瘦身台：中文本地工作台与真实引擎工具，保存、恢复并导出实际成果。",
   "publisher": "Song Haoran",

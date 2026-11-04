@@ -1,0 +1,364 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-11-04T07:29:56.665247+00:00",
+  "type": "Actual installed-file read and byte/hash comparison; no plugin execution or UI operation",
+  "slug": "web3d-asset-lab",
+  "expected_version": "1.0.5",
+  "installed_manifest_version": "1.0.5",
+  "installed_manifest_id": "web3d-asset-lab",
+  "installed_display_name": "网页 3D 模型瘦身台",
+  "installed_directory": "/Users/lasvie/.jiuwenswarm/agent/workspace/plugins/plugin_packages/local/web3d-asset-lab",
+  "frozen_source_directory": "/private/tmp/agentic-hub-web3d-compatibility-20261104/plugins/web3d-asset-lab/web3d-asset-lab",
+  "artifact_path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/web3d-compatibility-rebuild/artifact.json",
+  "canonical_path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/web3d-compatibility-rebuild/web3d-asset-lab-1.0.5.zip",
+  "canonical_sha256": "bfa66c5faa59cf88127633e94137de808b16c521a15a196e41ee0fb539384c0a",
+  "canonical_matches_expected": true,
+  "native_path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/web3d-compatibility-rebuild/web3d-asset-lab-1.0.5-workswarm.zip",
+  "native_sha256": "1dafe82986d6cda8b328b463b70b2dcbb01b9fbd16c4b208b2e0c5a02d935cce",
+  "native_matches_expected": true,
+  "expected_payload_files": 27,
+  "installed_expected_files_checked": 27,
+  "all_27_files_equal": true,
+  "installed_extra_files": [],
+  "installed_missing_files": [],
+  "installed_file_set_exact": true,
+  "file_results": [
+    {
+      "path": "README.md",
+      "bytes": 1470,
+      "sha256": {
+        "installed": "552cd0962514d8c9e16aee89d45ff4891c4ee3ad7d0d33dd1c07ed0531f3645b",
+        "source": "552cd0962514d8c9e16aee89d45ff4891c4ee3ad7d0d33dd1c07ed0531f3645b",
+        "canonical": "552cd0962514d8c9e16aee89d45ff4891c4ee3ad7d0d33dd1c07ed0531f3645b",
+        "native": "552cd0962514d8c9e16aee89d45ff4891c4ee3ad7d0d33dd1c07ed0531f3645b",
+        "artifact": "552cd0962514d8c9e16aee89d45ff4891c4ee3ad7d0d33dd1c07ed0531f3645b"
+      },
+      "all_five_equal": true
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 2252,
+      "sha256": {
+        "installed": "3e51c7c2e4a5ff3e3f079aec7d92277ffa90991be8f406debcd302ba3e291d26",
+        "source": "3e51c7c2e4a5ff3e3f079aec7d92277ffa90991be8f406debcd302ba3e291d26",
+        "canonical": "3e51c7c2e4a5ff3e3f079aec7d92277ffa90991be8f406debcd302ba3e291d26",
+        "native": "3e51c7c2e4a5ff3e3f079aec7d92277ffa90991be8f406debcd302ba3e291d26",
+        "artifact": "3e51c7c2e4a5ff3e3f079aec7d92277ffa90991be8f406debcd302ba3e291d26"
+      },
+      "all_five_equal": true
+    },
+    {
+      "path": "licenses/COMPONENTS.json",
+      "bytes": 4732,
+      "sha256": {
+        "installed": "f2a6bbfd4808327538d45e9a0db35e0ea7d3947929f482fa3075ba7a9b36a722",
+        "source": "f2a6bbfd4808327538d45e9a0db35e0ea7d3947929f482fa3075ba7a9b36a722",
+        "canonical": "f2a6bbfd4808327538d45e9a0db35e0ea7d3947929f482fa3075ba7a9b36a722",
+        "native": "f2a6bbfd4808327538d45e9a0db35e0ea7d3947929f482fa3075ba7a9b36a722",
+        "artifact": "f2a6bbfd4808327538d45e9a0db35e0ea7d3947929f482fa3075ba7a9b36a722"
+      },
+      "all_five_equal": true
+    },
+    {
+      "path": "licenses/gltf-transform--core--4.5.1/LICENSE",
+      "bytes": 1078,
+      "sha256": {
+        "installed": "2c4f111d00dbf22b10d31a14813c5f5de6a828640f7311f26b9dda89b3fce165",
+        "source": "2c4f111d00dbf22b10d31a14813c5f5de6a828640f7311f26b9dda89b3fce165",
+        "canonical": "2c4f111d00dbf22b10d31a14813c5f5de6a828640f7311f26b9dda89b3fce165",
+        "native": "2c4f111d00dbf22b10d31a14813c5f5de6a828640f7311f26b9dda89b3fce165",
+        "artifact": "2c4f111d00dbf22b10d31a14813c5f5de6a828640f7311f26b9dda89b3fce165"
+      },
+      "all_five_equal": true
+    },
+    {
+      "path": "licenses/gltf-transform--extensions--4.5.1/LICENSE",
+      "bytes": 1078,
+      "sha256": {
+        "installed": "2c4f111d00dbf22b10d31a14813c5f5de6a828640f7311f26b9dda89b3fce165",
+        "source": "2c4f111d00dbf22b10d31a14813c5f5de6a828640f7311f26b9dda89b3fce165",
+        "canonical": "2c4f111d00dbf22b10d31a14813c5f5de6a828640f7311f26b9dda89b3fce165",
+        "native": "2c4f111d00dbf22b10d31a14813c5f5de6a828640f7311f26b9dda89b3fce165",
+        "artifact": "2c4f111d00dbf22b10d31a14813c5f5de6a828640f7311f26b9dda89b3fce165"
+      },
+      "all_five_equal": true
+    },
+    {
+      "path": "licenses/gltf-transform--functions--4.5.1/LICENSE",
+      "bytes": 1078,
+      "sha256": {
+        "installed": "2c4f111d00dbf22b10d31a14813c5f5de6a828640f7311f26b9dda89b3fce165",
+        "source": "2c4f111d00dbf22b10d31a14813c5f5de6a828640f7311f26b9dda89b3fce165",
+        "canonical": "2c4f111d00dbf22b10d31a14813c5f5de6a828640f7311f26b9dda89b3fce165",
+        "native": "2c4f111d00dbf22b10d31a14813c5f5de6a828640f7311f26b9dda89b3fce165",
+        "artifact": "2c4f111d00dbf22b10d31a14813c5f5de6a828640f7311f26b9dda89b3fce165"
+      },
+      "all_five_equal": true
+    },
+    {
+      "path": "licenses/iota-array--1.0.0/LICENSE",
+      "bytes": 1082,
+      "sha256": {
+        "installed": "e67aed7df22dc8031e4fcf5338fe91cb33e3817e5c58a99a2a2802eea9069791",
+        "source": "e67aed7df22dc8031e4fcf5338fe91cb33e3817e5c58a99a2a2802eea9069791",
+        "canonical": "e67aed7df22dc8031e4fcf5338fe91cb33e3817e5c58a99a2a2802eea9069791",
+        "native": "e67aed7df22dc8031e4fcf5338fe91cb33e3817e5c58a99a2a2802eea9069791",
+        "artifact": "e67aed7df22dc8031e4fcf5338fe91cb33e3817e5c58a99a2a2802eea9069791"
+      },
+      "all_five_equal": true
+    },
+    {
+      "path": "licenses/is-buffer--1.1.6/LICENSE",
+      "bytes": 1081,
+      "sha256": {
+        "installed": "c7cc929b57080f4b9d0c6cf57669f0463fc5b39906344dfc8d3bc43426b30eac",
+        "source": "c7cc929b57080f4b9d0c6cf57669f0463fc5b39906344dfc8d3bc43426b30eac",
+        "canonical": "c7cc929b57080f4b9d0c6cf57669f0463fc5b39906344dfc8d3bc43426b30eac",
+        "native": "c7cc929b57080f4b9d0c6cf57669f0463fc5b39906344dfc8d3bc43426b30eac",
+        "artifact": "c7cc929b57080f4b9d0c6cf57669f0463fc5b39906344dfc8d3bc43426b30eac"
+      },
+      "all_five_equal": true
+    },
+    {
+      "path": "licenses/ktx-parse--1.1.0/LICENSE",
+      "bytes": 1078,
+      "sha256": {
+        "installed": "79847431f9ecef9cf399085cb863452e71a6dab99738f4f0c1ea06c6484b5692",
+        "source": "79847431f9ecef9cf399085cb863452e71a6dab99738f4f0c1ea06c6484b5692",
+        "canonical": "79847431f9ecef9cf399085cb863452e71a6dab99738f4f0c1ea06c6484b5692",
+        "native": "79847431f9ecef9cf399085cb863452e71a6dab99738f4f0c1ea06c6484b5692",
+        "artifact": "79847431f9ecef9cf399085cb863452e71a6dab99738f4f0c1ea06c6484b5692"
+      },
+      "all_five_equal": true
+    },
+    {
+      "path": "licenses/ndarray--1.1.1/LICENSE",
+      "bytes": 1087,
+      "sha256": {
+        "installed": "f149791eb5101f10b1fb88997310f2b054604106c4bf6050e0aee66a5bd35cc7",
+        "source": "f149791eb5101f10b1fb88997310f2b054604106c4bf6050e0aee66a5bd35cc7",
+        "canonical": "f149791eb5101f10b1fb88997310f2b054604106c4bf6050e0aee66a5bd35cc7",
+        "native": "f149791eb5101f10b1fb88997310f2b054604106c4bf6050e0aee66a5bd35cc7",
+        "artifact": "f149791eb5101f10b1fb88997310f2b054604106c4bf6050e0aee66a5bd35cc7"
+      },
+      "all_five_equal": true
+    },
+    {
+      "path": "licenses/ndarray-lanczos--0.3.0/LICENSE",
+      "bytes": 1078,
+      "sha256": {
+        "installed": "ec5114155d92f326802c964dcf9eb5261e09192c62f14d195d2a8be49eb1d489",
+        "source": "ec5114155d92f326802c964dcf9eb5261e09192c62f14d195d2a8be49eb1d489",
+        "canonical": "ec5114155d92f326802c964dcf9eb5261e09192c62f14d195d2a8be49eb1d489",
+        "native": "ec5114155d92f326802c964dcf9eb5261e09192c62f14d195d2a8be49eb1d489",
+        "artifact": "ec5114155d92f326802c964dcf9eb5261e09192c62f14d195d2a8be49eb1d489"
+      },
+      "all_five_equal": true
+    },
+    {
+      "path": "licenses/property-graph--4.1.0/LICENSE",
+      "bytes": 1078,
+      "sha256": {
+        "installed": "ec5114155d92f326802c964dcf9eb5261e09192c62f14d195d2a8be49eb1d489",
+        "source": "ec5114155d92f326802c964dcf9eb5261e09192c62f14d195d2a8be49eb1d489",
+        "canonical": "ec5114155d92f326802c964dcf9eb5261e09192c62f14d195d2a8be49eb1d489",
+        "native": "ec5114155d92f326802c964dcf9eb5261e09192c62f14d195d2a8be49eb1d489",
+        "artifact": "ec5114155d92f326802c964dcf9eb5261e09192c62f14d195d2a8be49eb1d489"
+      },
+      "all_five_equal": true
+    },
+    {
+      "path": "licenses/three--0.187.0/LICENSE",
+      "bytes": 1081,
+      "sha256": {
+        "installed": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+        "source": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+        "canonical": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+        "native": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+        "artifact": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+      },
+      "all_five_equal": true
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 1923,
+      "sha256": {
+        "installed": "fdd5e383ff543f98a5fef1809c4e597d879d3a6a87f06d931208d82417cfb4e2",
+        "source": "fdd5e383ff543f98a5fef1809c4e597d879d3a6a87f06d931208d82417cfb4e2",
+        "canonical": "fdd5e383ff543f98a5fef1809c4e597d879d3a6a87f06d931208d82417cfb4e2",
+        "native": "fdd5e383ff543f98a5fef1809c4e597d879d3a6a87f06d931208d82417cfb4e2",
+        "artifact": "fdd5e383ff543f98a5fef1809c4e597d879d3a6a87f06d931208d82417cfb4e2"
+      },
+      "all_five_equal": true
+    },
+    {
+      "path": "runtime/config.json",
+      "bytes": 300,
+      "sha256": {
+        "installed": "29239d0f028f32749a2f78189e9c7059d8cae8bd67ce45217f071030b4a9e45b",
+        "source": "29239d0f028f32749a2f78189e9c7059d8cae8bd67ce45217f071030b4a9e45b",
+        "canonical": "29239d0f028f32749a2f78189e9c7059d8cae8bd67ce45217f071030b4a9e45b",
+        "native": "29239d0f028f32749a2f78189e9c7059d8cae8bd67ce45217f071030b4a9e45b",
+        "artifact": "29239d0f028f32749a2f78189e9c7059d8cae8bd67ce45217f071030b4a9e45b"
+      },
+      "all_five_equal": true
+    },
+    {
+      "path": "runtime/handler.cjs",
+      "bytes": 2644,
+      "sha256": {
+        "installed": "a0085274a13572bc1bb74265e5d4e89fc6f39eb7215faac5f04c483fa5987aa1",
+        "source": "a0085274a13572bc1bb74265e5d4e89fc6f39eb7215faac5f04c483fa5987aa1",
+        "canonical": "a0085274a13572bc1bb74265e5d4e89fc6f39eb7215faac5f04c483fa5987aa1",
+        "native": "a0085274a13572bc1bb74265e5d4e89fc6f39eb7215faac5f04c483fa5987aa1",
+        "artifact": "a0085274a13572bc1bb74265e5d4e89fc6f39eb7215faac5f04c483fa5987aa1"
+      },
+      "all_five_equal": true
+    },
+    {
+      "path": "runtime/launcher.py",
+      "bytes": 7516,
+      "sha256": {
+        "installed": "b55bf580a6f651dd2cbc03569fd71d8a4de5e0197819a6e9b27b22bc14a2310f",
+        "source": "b55bf580a6f651dd2cbc03569fd71d8a4de5e0197819a6e9b27b22bc14a2310f",
+        "canonical": "b55bf580a6f651dd2cbc03569fd71d8a4de5e0197819a6e9b27b22bc14a2310f",
+        "native": "b55bf580a6f651dd2cbc03569fd71d8a4de5e0197819a6e9b27b22bc14a2310f",
+        "artifact": "b55bf580a6f651dd2cbc03569fd71d8a4de5e0197819a6e9b27b22bc14a2310f"
+      },
+      "all_five_equal": true
+    },
+    {
+      "path": "runtime/service.cjs",
+      "bytes": 6571,
+      "sha256": {
+        "installed": "3c30957c981c416c5d91d30d9d32dcb632b7fd4e62ecddc6e4158340c862dd68",
+        "source": "3c30957c981c416c5d91d30d9d32dcb632b7fd4e62ecddc6e4158340c862dd68",
+        "canonical": "3c30957c981c416c5d91d30d9d32dcb632b7fd4e62ecddc6e4158340c862dd68",
+        "native": "3c30957c981c416c5d91d30d9d32dcb632b7fd4e62ecddc6e4158340c862dd68",
+        "artifact": "3c30957c981c416c5d91d30d9d32dcb632b7fd4e62ecddc6e4158340c862dd68"
+      },
+      "all_five_equal": true
+    },
+    {
+      "path": "skills/web3d-asset-lab/SKILL.md",
+      "bytes": 1303,
+      "sha256": {
+        "installed": "af3dab6832dbed8f3f82d00385519adadb77408616bd4f8717591a87a6e770c9",
+        "source": "af3dab6832dbed8f3f82d00385519adadb77408616bd4f8717591a87a6e770c9",
+        "canonical": "af3dab6832dbed8f3f82d00385519adadb77408616bd4f8717591a87a6e770c9",
+        "native": "af3dab6832dbed8f3f82d00385519adadb77408616bd4f8717591a87a6e770c9",
+        "artifact": "af3dab6832dbed8f3f82d00385519adadb77408616bd4f8717591a87a6e770c9"
+      },
+      "all_five_equal": true
+    },
+    {
+      "path": "tools/workbench_tools.py",
+      "bytes": 2335,
+      "sha256": {
+        "installed": "59cae2d5a1ca5b18cc6ac5f71bfc0231e8d41a9af668907698c0a5518e8c5416",
+        "source": "59cae2d5a1ca5b18cc6ac5f71bfc0231e8d41a9af668907698c0a5518e8c5416",
+        "canonical": "59cae2d5a1ca5b18cc6ac5f71bfc0231e8d41a9af668907698c0a5518e8c5416",
+        "native": "59cae2d5a1ca5b18cc6ac5f71bfc0231e8d41a9af668907698c0a5518e8c5416",
+        "artifact": "59cae2d5a1ca5b18cc6ac5f71bfc0231e8d41a9af668907698c0a5518e8c5416"
+      },
+      "all_five_equal": true
+    },
+    {
+      "path": "vendor/engine.mjs",
+      "bytes": 233601,
+      "sha256": {
+        "installed": "a7569edcec46ccd710d11ef0b1a82ac1b1a1317a4ba465cc91baa50cd25e3f92",
+        "source": "a7569edcec46ccd710d11ef0b1a82ac1b1a1317a4ba465cc91baa50cd25e3f92",
+        "canonical": "a7569edcec46ccd710d11ef0b1a82ac1b1a1317a4ba465cc91baa50cd25e3f92",
+        "native": "a7569edcec46ccd710d11ef0b1a82ac1b1a1317a4ba465cc91baa50cd25e3f92",
+        "artifact": "a7569edcec46ccd710d11ef0b1a82ac1b1a1317a4ba465cc91baa50cd25e3f92"
+      },
+      "all_five_equal": true
+    },
+    {
+      "path": "vendor/model-view.mjs",
+      "bytes": 1386325,
+      "sha256": {
+        "installed": "7b645a47b52c59c580f33766d1b2442141e8540c595032bf3e82dafd7fe9cf56",
+        "source": "7b645a47b52c59c580f33766d1b2442141e8540c595032bf3e82dafd7fe9cf56",
+        "canonical": "7b645a47b52c59c580f33766d1b2442141e8540c595032bf3e82dafd7fe9cf56",
+        "native": "7b645a47b52c59c580f33766d1b2442141e8540c595032bf3e82dafd7fe9cf56",
+        "artifact": "7b645a47b52c59c580f33766d1b2442141e8540c595032bf3e82dafd7fe9cf56"
+      },
+      "all_five_equal": true
+    },
+    {
+      "path": "vendor/texture-resize.mjs",
+      "bytes": 184371,
+      "sha256": {
+        "installed": "8ab0684f6649faef715d22923eada76e29892b74800a08619e79d92ee1fb0323",
+        "source": "8ab0684f6649faef715d22923eada76e29892b74800a08619e79d92ee1fb0323",
+        "canonical": "8ab0684f6649faef715d22923eada76e29892b74800a08619e79d92ee1fb0323",
+        "native": "8ab0684f6649faef715d22923eada76e29892b74800a08619e79d92ee1fb0323",
+        "artifact": "8ab0684f6649faef715d22923eada76e29892b74800a08619e79d92ee1fb0323"
+      },
+      "all_five_equal": true
+    },
+    {
+      "path": "web/app.js",
+      "bytes": 2377,
+      "sha256": {
+        "installed": "d1cf997d5c87c598aecf0a7ebc07bcf11989987d894e6701989759c0f06b3165",
+        "source": "d1cf997d5c87c598aecf0a7ebc07bcf11989987d894e6701989759c0f06b3165",
+        "canonical": "d1cf997d5c87c598aecf0a7ebc07bcf11989987d894e6701989759c0f06b3165",
+        "native": "d1cf997d5c87c598aecf0a7ebc07bcf11989987d894e6701989759c0f06b3165",
+        "artifact": "d1cf997d5c87c598aecf0a7ebc07bcf11989987d894e6701989759c0f06b3165"
+      },
+      "all_five_equal": true
+    },
+    {
+      "path": "web/common.js",
+      "bytes": 2504,
+      "sha256": {
+        "installed": "2050a610c699528afe18ebdeec26b7b657c9a21ca9751e567999fd3e9a34fb26",
+        "source": "2050a610c699528afe18ebdeec26b7b657c9a21ca9751e567999fd3e9a34fb26",
+        "canonical": "2050a610c699528afe18ebdeec26b7b657c9a21ca9751e567999fd3e9a34fb26",
+        "native": "2050a610c699528afe18ebdeec26b7b657c9a21ca9751e567999fd3e9a34fb26",
+        "artifact": "2050a610c699528afe18ebdeec26b7b657c9a21ca9751e567999fd3e9a34fb26"
+      },
+      "all_five_equal": true
+    },
+    {
+      "path": "web/index.html",
+      "bytes": 1925,
+      "sha256": {
+        "installed": "27a7cb8926ca1d9c44e9f2a71bc1421b94507fbc7193a3ad94e8c4988cfa93c5",
+        "source": "27a7cb8926ca1d9c44e9f2a71bc1421b94507fbc7193a3ad94e8c4988cfa93c5",
+        "canonical": "27a7cb8926ca1d9c44e9f2a71bc1421b94507fbc7193a3ad94e8c4988cfa93c5",
+        "native": "27a7cb8926ca1d9c44e9f2a71bc1421b94507fbc7193a3ad94e8c4988cfa93c5",
+        "artifact": "27a7cb8926ca1d9c44e9f2a71bc1421b94507fbc7193a3ad94e8c4988cfa93c5"
+      },
+      "all_five_equal": true
+    },
+    {
+      "path": "web/style.css",
+      "bytes": 3340,
+      "sha256": {
+        "installed": "d5cd2a305273847b767670d0f8acacd9fed5ece3a618e816e58d7f0c198db840",
+        "source": "d5cd2a305273847b767670d0f8acacd9fed5ece3a618e816e58d7f0c198db840",
+        "canonical": "d5cd2a305273847b767670d0f8acacd9fed5ece3a618e816e58d7f0c198db840",
+        "native": "d5cd2a305273847b767670d0f8acacd9fed5ece3a618e816e58d7f0c198db840",
+        "artifact": "d5cd2a305273847b767670d0f8acacd9fed5ece3a618e816e58d7f0c198db840"
+      },
+      "all_five_equal": true
+    }
+  ],
+  "errors": [],
+  "passed": true,
+  "limitations": [
+    "Byte identity and manifest version prove which package is installed. Functional GUI/prompt/rendering/resize/export/restart tests remain for the root agent.",
+    "The reviewer did not execute plugin code or change any installed/source/package/UI/PR/Sheet state."
+  ],
+  "mutation_audit": {
+    "installed_files_modified": false,
+    "source_or_ZIP_modified": false,
+    "plugin_executed": false,
+    "UI_used": false,
+    "external_write": false
+  }
+}

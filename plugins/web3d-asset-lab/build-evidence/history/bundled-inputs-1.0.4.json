@@ -1,0 +1,27 @@
+{
+  "inputs": [
+    "node_modules/property-graph/dist/index.mjs",
+    "node_modules/@gltf-transform/core/dist/index.js",
+    "../../../tools/dev_five/texture-resize.mjs",
+    "node_modules/property-graph/dist/index.mjs",
+    "node_modules/@gltf-transform/core/dist/index.js",
+    "bounded-pixels.mjs",
+    "node_modules/ktx-parse/dist/ktx-parse.modern.js",
+    "node_modules/@gltf-transform/extensions/dist/index.js",
+    "node_modules/iota-array/iota.js",
+    "node_modules/is-buffer/index.js",
+    "node_modules/ndarray/ndarray.js",
+    "node_modules/ndarray-lanczos/dist/ndarray-lanczos.modern.js",
+    "node_modules/@gltf-transform/functions/dist/index.js",
+    "../../../tools/dev_five/gltf-engine.mjs",
+    "node_modules/three/build/three.core.js",
+    "node_modules/three/build/three.module.js",
+    "node_modules/three/examples/jsm/utils/BufferGeometryUtils.js",
+    "node_modules/three/examples/jsm/utils/SkeletonUtils.js",
+    "node_modules/three/examples/jsm/loaders/GLTFLoader.js",
+    "node_modules/three/examples/jsm/controls/OrbitControls.js",
+    "../../../tools/dev_five/model-view.mjs"
+  ],
+  "formatter_excluded": true,
+  "native_image_codecs_excluded": true
+}

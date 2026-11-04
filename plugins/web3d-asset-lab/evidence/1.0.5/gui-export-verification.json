@@ -1,0 +1,124 @@
+{
+  "passed": true,
+  "original_unchanged": true,
+  "download_glb_matches_saved": true,
+  "download_report_matches_saved": true,
+  "actual_report": {
+    "before": {
+      "bytes": 6114024,
+      "meshes": 16,
+      "nodes": 16,
+      "materials": 16,
+      "textures": 16,
+      "textureBytes": 6096944,
+      "textureDimensions": [
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          512,
+          512
+        ]
+      ],
+      "accessors": 48,
+      "animations": 0
+    },
+    "after": {
+      "bytes": 5456,
+      "meshes": 1,
+      "nodes": 16,
+      "materials": 1,
+      "textures": 1,
+      "textureBytes": 2976,
+      "textureDimensions": [
+        [
+          128,
+          128
+        ]
+      ],
+      "accessors": 3,
+      "animations": 0
+    },
+    "savedBytes": 6108568,
+    "note": "用户明确选择缩放彩色贴图；这是有损的分辨率调整，原始文件保留"
+  },
+  "files": [
+    {
+      "path": "hub-all-submission-20261104/web3d-compatibility-rebuild/gui-workspace-1.0.5/.web3d-asset-lab/original.glb",
+      "bytes": 6114024,
+      "sha256": "5ecb9ead652de1cd9cc52fe569b2dcb3126b69fac50c89969228eb9260555779"
+    },
+    {
+      "path": "hub-all-submission-20261104/web3d-compatibility-rebuild/gui-geometry-download.glb",
+      "bytes": 383548,
+      "sha256": "01e56b06d99e8400f06f830236fd0c6e1f186720a7f73af38220c3420ef1146a"
+    },
+    {
+      "path": "hub-all-submission-20261104/web3d-compatibility-rebuild/gui-texture-download.glb",
+      "bytes": 5456,
+      "sha256": "671b82cece8cb205d41f37942a9881d29b22da49ae2b0319c9f0d347db9af68a"
+    },
+    {
+      "path": "hub-all-submission-20261104/web3d-compatibility-rebuild/gui-report-download.json",
+      "bytes": 1274,
+      "sha256": "77d371c142ca3bb230ab2dc4b93e00e4027ba2e9e6f0687d016dd0b65e856514"
+    }
+  ]
+}

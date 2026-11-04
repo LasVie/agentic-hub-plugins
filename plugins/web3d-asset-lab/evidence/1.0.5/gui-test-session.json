@@ -1,0 +1,163 @@
+{
+  "task_id": "AH-20261102-web3d-asset-lab",
+  "candidate_id": "CAND-EXT-010",
+  "name": "网页 3D 模型瘦身台",
+  "version": "1.0.5",
+  "native_sha256": "1dafe82986d6cda8b328b463b70b2dcbb01b9fbd16c4b208b2e0c5a02d935cce",
+  "canonical_sha256": "bfa66c5faa59cf88127633e94137de808b16c521a15a196e41ee0fb539384c0a",
+  "chat_id": "web_1a1a5770b5f_e53a4b63b88d",
+  "host": "WorkSwarm desktop0.2.8/Python3.12.13/Node22.12.0",
+  "model": "gpt-6.1-sol",
+  "testing_authority": "Explicit user delegation in current conversation; AI-operated actual UI, not personally performed human testing",
+  "status": "Agent-operated GUI passed",
+  "started_local": "2026-11-04 15:30 Asia/Singapore",
+  "gui_completed": true,
+  "old_version_rejection_preserved": "1.0.4 rejected by Hub validator; original failed attempt and PR71 evidence retained",
+  "completed_local": "2026-11-04 15:43 Asia/Singapore",
+  "human_performed_testing": false,
+  "actual_start_url": "http://127.0.0.1:53610/",
+  "actual_restart_url": "http://127.0.0.1:53972/",
+  "test_service_stopped": true,
+  "loopback_ports_closed": {
+    "53610": true,
+    "53972": true
+  },
+  "original_images": [
+    {
+      "file": "jiuwenswarm-share-20261104-154347.png",
+      "bytes": 1287815,
+      "sha256": "b214d40ea617bb864bc6e3bd1383532a03669071e1435f7c03e011a2b637da09"
+    },
+    {
+      "file": "workbench-before-original.jpg",
+      "bytes": 170075,
+      "sha256": "b33c3bfd8d82215ffc894f830e3a8c0b31873d5d811111ce44220843b997f0d1"
+    },
+    {
+      "file": "workbench-demo-max-original.jpg",
+      "bytes": 523685,
+      "sha256": "dff983c1dea4792b074c3114eba278a893584de17caa89047e59874aa758d2c3"
+    },
+    {
+      "file": "workbench-demo-original.jpg",
+      "bytes": 214175,
+      "sha256": "61d65a60ee18e5aad9c7b197b9ad4eee7bfe97445a00b97623afb30cac99a6ec"
+    },
+    {
+      "file": "workbench-geometry-original.jpg",
+      "bytes": 631927,
+      "sha256": "a98ea4ea1263994214bb9feec4439f4cb0306252619a2c8a61d150cac9ee5210"
+    },
+    {
+      "file": "workbench-restarted-restored-original.jpg",
+      "bytes": 627781,
+      "sha256": "bea2ef24dee9d767f11d43c2fa048d7aa0fa25c5a278d85083330644bbb78078"
+    },
+    {
+      "file": "workbench-restored-original.jpg",
+      "bytes": 626271,
+      "sha256": "4a4223d254e974bb5afb65baeb51d7772d4a29fb0069001af8450ea98d7ed949"
+    },
+    {
+      "file": "workbench-rotation-original.jpg",
+      "bytes": 667213,
+      "sha256": "8804355c119462c0cc85e96ee7754f7608b1ae94b658e6843852eb20208c7d23"
+    },
+    {
+      "file": "workbench-texture-original.jpg",
+      "bytes": 635530,
+      "sha256": "94f970a35b6e1966b2e911258df50dd2ade7e2cc9ab9592873c3e9b02be05747"
+    },
+    {
+      "file": "workswarm-import-original.jpg",
+      "bytes": 589555,
+      "sha256": "6bf4326104b76051ed4357310ecefcfa262c4c8e0d1cd4ad17c077d0e998264d"
+    },
+    {
+      "file": "workswarm-installed-detail-original.jpg",
+      "bytes": 297321,
+      "sha256": "30b164fb099c6c27a54cc962913dca2662c0b9ab068738aee7e5024328711f9b"
+    },
+    {
+      "file": "workswarm-load-result-original.jpg",
+      "bytes": 696663,
+      "sha256": "310c7f9d64f43b76b314e861b22ba24535862e42c5a35b96af822c6ddaf53213"
+    },
+    {
+      "file": "workswarm-restart-result-original.jpg",
+      "bytes": 791703,
+      "sha256": "f495f4cea694a62e3655766d45073d24125465052de67ed2372f3b963742789e"
+    },
+    {
+      "file": "workswarm-start-prompt-original.jpg",
+      "bytes": 381852,
+      "sha256": "8daa2c9cd677df1ccf97e9f554ca5da538a3c515f9304f2de55aba6ac5d37bdf"
+    },
+    {
+      "file": "workswarm-start-result-original.jpg",
+      "bytes": 510294,
+      "sha256": "8a925ae9515dbd9ee4526fc52d72bb81102b0fdac533bbd266586f7a1f51482c"
+    },
+    {
+      "file": "workswarm-stop-result-original.jpg",
+      "bytes": 762227,
+      "sha256": "c1242982ffcc901e7c7a75a11422c2bcd5ecd4f036091c309e84015307f133af"
+    }
+  ],
+  "actual_GUI_results": {
+    "native_import": "pass; exact native ZIP, 27 installed payload hashes match",
+    "start_native_calls": [
+      "web3d_asset_lab_workbench status (running false,version1.0.5)",
+      "web3d_asset_lab_workbench start confirmed true (version1.0.5, actual53610)"
+    ],
+    "native_load": "web3d_asset_lab_operate operation=load arguments={} confirmed=true actual ok true; bounded result before6114024 after5456 meshes16to1 nodes16to16",
+    "live_task_seconds": {
+      "start": 20.02,
+      "load": 17.45,
+      "restart": 16.94,
+      "stop": 9.65
+    },
+    "browser": "WorkSwarm native internal BrowserWindow via actual tool-returned link; not Safari for workbench testing",
+    "geometry": {
+      "before_bytes": 6114024,
+      "after_bytes": 383548,
+      "meshes": [
+        16,
+        1
+      ],
+      "nodes": [
+        16,
+        16
+      ],
+      "both_model_canvases_rendered": true,
+      "both_drag_rotation_executed": true,
+      "browser_download_verified": true
+    },
+    "lossy_texture": {
+      "explicit_button": "缩小彩色贴图 · 有损",
+      "after_bytes": 5456,
+      "textures": [
+        16,
+        1
+      ],
+      "dimensions_before": [
+        512,
+        512
+      ],
+      "dimensions_after": [
+        128,
+        128
+      ],
+      "texture_bytes": 2976,
+      "model_canvases_rendered": true,
+      "saved_bytes": 6108568
+    },
+    "export": "actual native Save panels downloaded geometryGLB,finalGLB,report; final GLB/report exactly equal saved workspace bytes",
+    "persistence": "clicked restore; native stop/start same workspace, actual new URL53972, reopened rendered saved values and clicked restore; exact source GLB still retained",
+    "validator": "3 actual GUI output GLBs; zero errors/warnings/infos each",
+    "limits": "Synthetic demo contains no animation; animated fixture regression is separate automated evidence. No test of arbitrary model or fixed compression guarantee. Native file chooser labels remain host English."
+  },
+  "export_verification": "gui-export-verification.json",
+  "actual_validator_index": "actual-gui-validator/actual-gui-glb-validation-index.json",
+  "native_long_image": "jiuwenswarm-share-20261104-154347.png"
+}

@@ -5,7 +5,7 @@
   "upstream": "glTF Transform",
   "repository": "donmccurdy/glTF-Transform",
   "package": "@gltf-transform/core",
-  "version": "1.0.4",
-  "asset_version": "1.0.4",
+  "version": "1.0.5",
+  "asset_version": "1.0.5",
   "upstream_version": "4.5.1"
 }
