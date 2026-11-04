@@ -1,0 +1,11 @@
+{
+  "mode": "original",
+  "permission_status": "not-applicable",
+  "sources": [],
+  "reused_paths": [],
+  "runtime_dependencies": [
+    {"name": "markdown-it-py", "license_expression": "MIT", "bundled": false},
+    {"name": "Google Chrome or LibreOffice (headless PDF print)", "bundled": false}
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "pc-build-team",
+  "package_type": "agent_group",
+  "avatar": "avatars/avatar.png",
+  "version": "0.2.1",
+  "description": "按预算和用途配一台电脑：选配件、逐条校验兼容性与电源余量，输出一份含图表和装机示意图的中英双语 PDF",
+  "display_name": {
+    "zh": "装机专家团",
+    "en": "PC Build Expert Team"
+  },
+  "display_description": {
+    "zh": "按预算和用途配一台电脑：选配件、逐条校验兼容性与电源余量，输出一份含图表和装机示意图的中英双语 PDF",
+    "en": "Plans a PC for your budget and use: picks parts, checks compatibility and power headroom rule by rule, and delivers one bilingual Chinese/English PDF with charts and assembly diagrams."
+  },
+  "category": "productivity",
+  "tags": [
+    {"id": "pc-build", "zh": "电脑装机", "en": "PC building"},
+    {"id": "hardware", "zh": "硬件选购", "en": "Hardware"}
+  ],
+  "instruction": "Leader 先确认预算与币种、地区或商店、用途、尺寸与噪音、已有配件和外观偏好，再分派：parts_researcher 选主方案与省钱版、性能版并记录规格、价格、链接和核价日期；compat_engineer 用 build_checker 校验三套方案并与选型师修正失败项；assembly_guide 写装机步骤、BIOS 设置、首次开机检查和风险。所有面向用户的文字都要中英双语且含义一致。只有 build_checker 返回无失败才可称兼容，只有 export 成功并返回路径才可称已生成 PDF。不编造规格、价格或链接，不代用户购买或付款。",
+  "agents": [
+    "leader",
+    "parts_researcher",
+    "compat_engineer",
+    "assembly_guide"
+  ],
+  "skills": [
+    "pc-build"
+  ],
+  "quick_inputs": [
+    {
+      "zh": "预算 6000 元人民币，主要玩 2K 分辨率 3A 游戏，帮我配一台电脑并输出 PDF",
+      "en": "Plan a PC for 1440p AAA gaming on a budget of 6000 CNY and give me the PDF."
+    },
+    {
+      "zh": "我要一台安静的小机箱电脑，用来剪 4K 视频，预算 2500 新加坡元",
+      "en": "I want a quiet small-form-factor PC for 4K video editing, budget 2500 SGD."
+    }
+  ]
+}
