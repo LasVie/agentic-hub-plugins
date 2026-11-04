@@ -1,0 +1,63 @@
+2026-11-04 12:04:12 | common | default_trace_id | INFO | Registered connector pool type: default
+2026-11-04 12:04:12 | common | default_trace_id | INFO | Registered connector pool type: httpx
+2026-11-04 12:04:13 | common | default_trace_id | INFO | Registered query expression support for milvus
+2026-11-04 12:04:13 | common | default_trace_id | INFO | Registered query expression support for chroma
+2026-11-04 12:04:13 | common | default_trace_id | INFO | Registered parser ExcelParser for .xlsx
+2026-11-04 12:04:13 | common | default_trace_id | INFO | Registered parser ExcelParser for .csv
+2026-11-04 12:04:13 | common | default_trace_id | INFO | Registered parser ExcelParser for .tsv
+2026-11-04 12:04:13 | common | default_trace_id | INFO | Registered parser TxtMdParser for .txt
+2026-11-04 12:04:13 | common | default_trace_id | INFO | Registered parser TxtMdParser for .md
+2026-11-04 12:04:13 | common | default_trace_id | INFO | Registered parser TxtMdParser for .markdown
+2026-11-04 12:04:13 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .htm
+2026-11-04 12:04:13 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .html
+2026-11-04 12:04:13 | common | default_trace_id | INFO | Registered parser JSONParser for .json
+2026-11-04 12:04:13 | common | default_trace_id | INFO | Registered parser PDFParser for .pdf
+2026-11-04 12:04:13 | common | default_trace_id | INFO | Registered parser WordParser for .docx
+2026-11-04 12:04:13 | common | default_trace_id | INFO | Registered parser ImageParser for .png
+2026-11-04 12:04:13 | common | default_trace_id | INFO | Registered parser ImageParser for .jpg
+2026-11-04 12:04:13 | common | default_trace_id | INFO | Registered parser ImageParser for .jpeg
+2026-11-04 12:04:13 | common | default_trace_id | INFO | Registered parser ImageParser for .webp
+2026-11-04 12:04:13 | common | default_trace_id | INFO | Registered parser ImageParser for .gif
+2026-11-04 12:04:13 | common | default_trace_id | INFO | Registered parser ImageParser for .jfif
+start: {"ok": true, "session_id": "80f51eb05868", "endpoint": "ws://127.0.0.1:64890/devtools/browser/94b7d98e-5a01-4c51-a2ad-59783839ce06", "attached": false, "headless": true, "output_dir": "/private/tmp/agentic-hub-english-localization-20261104/dsh-web-recorder-sessions/80f51eb05868", "note": "\u8bf7\u73b0\u5728\u64cd\u4f5c\u6d4f\u89c8\u5668\uff0c\u5b8c\u6210\u540e\u4f7f\u7528\u6b64 session_id \u8c03\u7528 web_record_stop\u3002"}
+status: {"ok": true, "session_id": "80f51eb05868", "active": true, "total_events": 12, "counts": {"click": 1, "input": 1, "change": 0, "submit": 0, "navigation": 2, "network": 8}, "output_dir": "/private/tmp/agentic-hub-english-localization-20261104/dsh-web-recorder-sessions/80f51eb05868"}
+automated evidence: /private/tmp/agentic-hub-english-localization-20261104/plugins/dsh-web-recorder/test-evidence/dsh-web-recorder-1.0.3-functional.png
+stop: {"ok": true, "session_id": "80f51eb05868", "total_events": 12, "counts": {"click": 1, "input": 1, "change": 0, "submit": 0, "navigation": 2, "network": 8}, "output_dir": "/private/tmp/agentic-hub-english-localization-20261104/dsh-web-recorder-sessions/80f51eb05868", "report_md": "/private/tmp/agentic-hub-english-localization-20261104/dsh-web-recorder-sessions/80f51eb05868/report.md", "events_jsonl": "/private/tmp/agentic-hub-english-localization-20261104/dsh-web-recorder-sessions/80f51eb05868/events.jsonl"}
+
+checks:
+  [PASS] click>=1
+  [PASS] input>=1
+  [PASS] navigation>=1
+  [PASS] network>=2
+  [PASS] events.jsonl non-empty
+  [PASS] report has timeline
+  [PASS] network has api/data
+  [PASS] initial document request captured
+  [PASS] input length without value contents
+
+counts: {"click": 1, "input": 1, "change": 0, "submit": 0, "navigation": 2, "network": 8}
+report.md first 40 lines:
+# 网页会话记录 — 80f51eb05868
+
+- 开始时间：2026-11-04T12:04:13
+- 停止时间：2026-11-04T12:04:17
+- 调试端点：ws://127.0.0.1:64890/devtools/browser/94b7d98e-5a01-4c51-a2ad-59783839ce06
+- 事件总数：12
+- 分类计数：点击（click）=1，输入（input）=1，更改（change）=0，提交（submit）=0，导航（navigation）=2，网络（network）=8
+
+## 事件时间线
+
+| 序号 | 相对时间（毫秒） | 事件类型 | 详情 |
+| --- | --- | --- | --- |
+| 1 | 704 | 网络（network） | GET http://127.0.0.1:64888/ [Document] |
+| 2 | 710 | 网络（network） | ← 200 text/html http://127.0.0.1:64888/ |
+| 3 | 714 | 导航（navigation） | load → http://127.0.0.1:64888/ |
+| 4 | 748 | 网络（network） | GET http://127.0.0.1:64888/favicon.ico [Other] |
+| 5 | 750 | 网络（network） | ← 200 text/html http://127.0.0.1:64888/favicon.ico |
+| 6 | 2530 | 输入（input） | input#field[name=field] (输入长度=5) |
+| 7 | 2531 | 点击（click） | button#go "执行" |
+| 8 | 2532 | 网络（network） | GET http://127.0.0.1:64888/api/data [Fetch] |
+| 9 | 2535 | 网络（network） | ← 200 application/json http://127.0.0.1:64888/api/data |
+| 10 | 3343 | 导航（navigation） | popstate → http://127.0.0.1:64888/next |
+| 11 | 3346 | 网络（network） | GET http://127.0.0.1:64888/favicon.ico [Other] |
+| 12 | 3346 | 网络（network） | ← 200 text/html http://127.0.0.1:64888/favicon.ico |

@@ -1,0 +1,56 @@
+Window: "WorkSwarm", App: WorkSwarm.
+0 standard window WorkSwarm, Secondary Actions: Raise
+	1 container WorkSwarm
+		2 container
+			3 HTML content WorkSwarm, URL: 127.0.0.1:6173/chat/web_1a1a55030d9_5f82abe2c5d5
+				4 container
+					5 Unlabeled image Logo. To get missing image descriptions, open the context menu.
+					6 button 任务
+					7 button 专家
+					8 button 技能
+					9 button 扩展
+						10 image
+						11 text 扩展
+					12 button RSI
+						13 image
+						14 text RSI
+					15 button 设置
+					16 button 更新
+					17 button 主题外观
+					18 button 返回
+					19 container
+						20 text 网 网页会话记录器 浏览器记录 会话记录 网络抓取
+						21 button 发布
+						22 button 卸载
+						23 button 使用
+						24 heading 基本信息, Value: 2
+							25 text 基本信息
+						26 text 通过 Chrome DevTools Protocol 记录用户操作中的点击、输入长度、导航及网络元数据，输出中文 Markdown 时间线与结构化 events.jsonl，辅助梳理网页流程和接口调用。
+						27 heading 试试这样用, Value: 2
+							28 text 试试这样用
+						29 button 记录我在以下网址的浏览器会话：
+						30 button 停止当前记录并总结时间线
+						31 button 接入我已在运行的 Chrome（http://127.0.0.1:9222）并记录
+						32 heading 技能, Value: 2
+							33 text 技能
+						34 container
+							35 text W web-recorder 记录用户操作的浏览器会话，捕获点击、输入长度、导航和网络元数据，导出中文 Markdown 时间线与 events.jsonl，用于梳理网页流程和接口调用。
+						36 heading 工具, Value: 2
+							37 text 工具
+						38 container
+							39 text 开始记录 启动或接入浏览器并开始捕获会话。
+						40 container
+							41 text 停止记录 停止会话并写出 report.md 与 events.jsonl。
+						42 container
+							43 text 记录状态 列出进行中的记录会话与实时事件计数。
+	44 close button
+	45 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	46 minimize button
+47 menu bar
+	48 WorkSwarm
+	49 File
+	50 Edit
+	51 View
+	52 Window
+
+The focused UI element is 3 HTML content WorkSwarm, URL: 127.0.0.1:6173/chat/web_1a1a55030d9_5f82abe2c5d5

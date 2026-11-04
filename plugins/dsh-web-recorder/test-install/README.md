@@ -1,10 +1,5 @@
-# Test-install package (local host)
+# 历史导入包位置
 
-`dsh-web-recorder-1.0.2-flat.zip` is the **inner payload with `manifest.json` at the archive root**, for installing into a WorkSwarm/OpenJiuwen host whose plugin uploader expects a root-level `manifest.json` (verified: the host's `find_plugin_manifest` + `load_plugin_package` load it as a `PluginSpec`). This is the form used for the real-host functional test.
+旧版 `dsh-web-recorder-1.0.2-flat.zip` 已原字节迁移到本资产 `test-packages/history/`，SHA-256 保持 `4fcc08a669c8a63662b510df15aab6df291e06e0277048afb4b3757e8647d2e6`。
 
-- SHA-256: `4fcc08a669c8a63662b510df15aab6df291e06e0277048afb4b3757e8647d2e6`
-- Same payload bytes as the canonical package; only the wrapping differs.
-
-The **canonical marketplace deliverable** remains the double-nested wrapper produced by `tools/asset_release.py pack` at `releases/agent-plugin/dsh-web-recorder/1.0.2/dsh-web-recorder-1.0.2.zip` (`<slug>/plugin.yaml` + `<slug>/<slug>/manifest.json`).
-
-Note for the Project Lead: the local host plugin uploader expected the root-level‑manifest form, not the marketplace wrapper. If the Agentic Hub plugin uploader has the same expectation, the repo delivery contract (wrapper vs flat payload) should be reconciled — this affects all plugins, not just this one.
+当前中文版本及原生包见 `../test-packages/README.md`。这次路径迁移没有重打包旧版，也没有将旧版测试当作新版本确认。规范 Hub 包继续采用市场外壳，WorkSwarm 使用根级 `manifest.json` 的原生 ZIP。

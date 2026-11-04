@@ -1,30 +1,29 @@
 ---
 name: web-recorder
-description: Record a user-guided browser session (clicks, inputs, navigation, network) and export a Markdown timeline and events.jsonl for reverse-engineering web flows and building API-level skills.
+description: 记录用户操作的浏览器会话，捕获点击、输入长度、导航和网络元数据，导出中文 Markdown 时间线与 events.jsonl，用于梳理网页流程和接口调用。
 ---
 
-# Web Session Recorder
+# 网页会话记录器
 
-Capture what a human actually does in a browser, then turn it into evidence.
+默认使用简体中文说明步骤与结果；保留工具名、参数名、路径、会话 ID 和协议标识原值。记录用户实际进行的操作并形成证据，不替用户操作浏览器，也不自动生成或执行重放脚本。
 
-## When to use
-Use when the user wants to observe a real, human-driven browsing session — not script one — so they can understand a site's flow or the network/API calls behind it, then build a skill from that. This records; it does not drive the browser for the user.
+## 工具
 
-## Tools
-- `web_record_start` — launch a fresh Chrome/Edge/Chromium (or `attach_url` to one already started with `--remote-debugging-port`), then begin capturing. Returns a `session_id`. Optional `url` opens a page; `headless: true` is for automated tests; `output_dir` overrides where results go.
-- `web_record_stop` — end the session by `session_id`; writes `report.md` (chronological timeline) and `events.jsonl` (one JSON event per line) and returns counts and paths.
-- `web_record_status` — list active sessions and live event counts.
+- `web_record_start`：启动新的 Chrome、Edge 或 Chromium；或用 `attach_url` 接入已启动且获用户授权的 DevTools 端点。返回 `session_id`。`url` 指定开始时打开的页面；`headless: true` 主要用于自动化测试；`output_dir` 指定结果目录。
+- `web_record_status`：查询同一 `session_id` 的状态与当前计数，或列出活动会话。
+- `web_record_stop`：停止指定会话，写出时间线 `report.md` 与逐行 JSON 日志 `events.jsonl`，返回实际计数和文件路径。
 
-## Workflow
-1. Call `web_record_start`. For the most complete capture, start first, then let the user browse — instrumentation is installed before they act.
-2. Tell the user to perform the actions they want recorded in the opened browser window.
-3. When they are done, call `web_record_stop` with the same `session_id` and summarize the timeline and captured network/API calls from `report.md`.
+## 工作流程
 
-## What is captured
-Clicks, `input`/`change`/`submit` events, same-document navigation (popstate/hashchange) and full navigations, and network requests/responses (method, URL, resource type, status, MIME type).
+1. 确认用户希望记录的浏览器与范围，仅接入用户已授权的调试端点。调用 `web_record_start`；最好先开始记录，再让用户浏览。
+2. 明确告诉用户在打开的浏览器中完成希望记录的操作。保留本次 `session_id`，停下来等待用户完成；不能在同一轮自行假定操作已经结束。
+3. 用户明确完成或要求停止后，用同一 `session_id` 调用 `web_record_stop`。根据返回路径读取实际报告，概述时间线与网络或接口元数据。
+4. 若开始、状态或停止失败，报告真实错误。某类事件未出现时应明确说明未捕获，不能补写或推测成已发生事件。
 
-## Privacy and honesty
-Only the **length** of input values is recorded, never their contents. Network bodies are not captured — only request/response metadata. Recordings can still contain sensitive URLs or query strings; review `report.md`/`events.jsonl` before sharing. Report only what was actually captured; if an event kind is absent, say so rather than inferring it.
+## 捕获范围与隐私
 
-## Requirements
-An installed Chrome/Edge/Chromium on the host (none is downloaded). Auto-detected, or set `browser_path` / the `DSH_WEB_RECORDER_BROWSER` env var. Uses the host's `aiohttp`; no extra install, no Node, no MCP required.
+记录点击、`input` / `change` / `submit`、同文档与整页导航、网络请求及响应的元数据。输入只保存长度，不保存正文；网络正文不被捕获。元素文本、网址和查询参数仍可能包含敏感信息，分享前检查 `report.md` 和 `events.jsonl`。接入前已经完成的网络请求无法恢复。
+
+## 运行条件
+
+宿主需提供 OpenJiuwen 和 `aiohttp`，并安装 Chrome、Edge 或 Chromium；可自动查找，或设置 `browser_path` / `DSH_WEB_RECORDER_BROWSER`。本插件不会下载浏览器，不需要 Node、Playwright 或 MCP 服务，不支持 Firefox 或 WebKit。不要将环境缺少依赖写成已成功开始记录。

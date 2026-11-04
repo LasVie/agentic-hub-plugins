@@ -1,0 +1,550 @@
+Window: "WorkSwarm", App: WorkSwarm.
+0 standard window WorkSwarm, Secondary Actions: Raise
+	1 container WorkSwarm
+		2 container
+			3 HTML content WorkSwarm, URL: 127.0.0.1:6173/chat/web_1a1a55030d9_5f82abe2c5d5
+				4 container
+					5 Unlabeled image Logo. To get missing image descriptions, open the context menu.
+					6 button 任务
+					7 button 专家
+					8 button 技能
+					9 button 扩展
+						10 image
+						11 text 扩展
+					12 button RSI
+						13 image
+						14 text RSI
+					15 button 设置
+					16 button 更新
+					17 button 主题外观
+					18 container
+						19 container
+							20 text 请只使用“像素证据读图器”检查本地图像 /Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/e
+							21 text picturereader
+							22 button 导出长图
+								23 image
+							24 button 心跳任务
+							25 button
+							26 button
+							27 container
+								28 text 请只使用“像素证据读图器”检查本地图像 /Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/fixture.png。先用 image_scan（grid_width=20）扫描整图；用 image_sample 采样 (10,10)、(90,10)、(10,60)、(90,60)；用 image_palette 测量5色主色板；将 x=60、y=40、width=60、height=40 裁剪到 /Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/gui-crop.png，再扫描裁剪图。最后用越界坐标 (999,1) 调用采样，确认返回真实中文错误。按实际数值用中文总结，注明图像路径、区域和坐标，区分测量与推测；不要进行 OCR 或声称已识别物体。输出文件已存在时
+								29 text 2026-11-04 14:47
+								30 button
+								31 button 从此消息新建会话分支
+								32 image team_leader avatar
+								33 text Jiuwen
+								34 button 任务用时 53.69s
+								35 button 已完成 13 次工具调用
+								36 container
+									37 button 已完成：搜索 · Tool search 加载像素证据读图器四个原生工具的参数定义
+										38 text 已完成：搜索 · Tool search
+										39 text 加载像素证据读图器四个原生工具的参数定义
+									40 text 工具名称
+									41 text tool_search
+									42 text 参数
+									43 text {
+  "query": "image_scan image_sample image_palette image_crop 本地图像 像素 网格 采样 主色 裁剪",
+  "limit": 4
+}
+									44 text 结果 完成
+									45 text 4 tool(s) matched "image_scan image_sample image_palette image_crop 本地图像 像素 网格 采样 主色 裁剪".
+
+## image_scan
+将本地图像或区域转换为有界像素网格和结构测量证据。
+Parameters: {"type": "object", "properties": {"file_path": {"type": "string"}, "grid_width": {"type": "integer", "default": 24}, "palette_count": {"type": "integer", "default": 6}, "region": {"type": "object", "properties": {"x": {"type": "integer"}, "y": {"type": "integer"}, "width": {"type": "integer"}, "height": {"type": "integer"}}}}, "required": ["file_path"]}
+
+## image_pal
+									46 button 已完成：工具 · Tool call 扫描原图的整图像素证据
+										47 text 已完成：工具 · Tool call
+										48 text 扫描原图的整图像素证据
+									49 text 工具名称
+									50 text tool_call
+									51 text 参数
+									52 text {
+  "name": "image_scan",
+  "args": {
+    "file_path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/fixture.png",
+    "grid_width": 20
+  }
+}
+									53 text 结果 完成
+									54 text {'ok': True, 'file_path': '/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/fixture.png', 'image': {'width': 120, 'height': 80}, 'region': {'x': 0, 'y': 0, 'width': 120, 'height': 80}, 'grid': {'width': 20, 'height': 7, 'luminance': ['::::::::::=#########', '::::::::::=#########', '::::::::::=#########', '..........+%%%%%%%%%', '          *@@@@@@@@@', '          *@@@@@@@@@', '          *@@@@@@@@@'], 'colors': ['RRRRRRRRRRGGGGGGGGGG', 'RRRRRRRR
+									55 button 已完成：工具 · Image scan
+									56 text 工具名称
+									57 text image_scan
+									58 text 参数
+									59 text {
+  "file_path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/fixture.png",
+  "grid_width": 20
+}
+									60 text 结果 完成
+									61 text {'ok': True, 'file_path': '/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/fixture.png', 'image': {'width': 120, 'height': 80}, 'region': {'x': 0, 'y': 0, 'width': 120, 'height': 80}, 'grid': {'width': 20, 'height': 7, 'luminance': ['::::::::::=#########', '::::::::::=#########', '::::::::::=#########', '..........+%%%%%%%%%', '          *@@@@@@@@@', '          *@@@@@@@@@', '          *@@@@@@@@@'], 'colors': ['RRRRRRRRRRGGGGGGGGGG', 'RRRRRRRR
+									62 button 已完成：工具 · Tool call
+									63 text 工具名称
+									64 text tool_call
+									65 text 参数
+									66 text {
+  "name": "image_sample",
+  "args": {
+    "file_path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/fixture.png",
+    "points": [
+      {
+        "x": 10,
+        "y": 10
+      },
+      {
+        "x": 90,
+        "y": 10
+      },
+      {
+        "x": 10,
+        "y": 60
+      },
+      {
+        "x": 90,
+        "y": 60
+      }
+    ],
+    "radius": 0
+  }
+}
+									67 text 结果 完成
+									68 text {'ok': True, 'file_path': '/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/fixture.png', 'image': {'width': 120, 'height': 80}, 'samples': [{'x': 10, 'y': 10, 'radius': 0, 'rgb': [255, 0, 0], 'hex': '#FF0000', 'luminance': 54.21}, {'x': 90, 'y': 10, 'radius': 0, 'rgb': [0, 255, 0], 'hex': '#00FF00', 'luminance': 182.38}, {'x': 10, 'y': 60, 'radius': 0, 'rgb': [0, 0, 255], 'hex': '#0000FF', 'luminance': 18.41}, {'x': 90, 'y': 60, 'radius': 0, 
+									69 button 已完成：工具 · Image sample
+									70 text 工具名称
+									71 text image_sample
+									72 text 参数
+									73 text {
+  "file_path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/fixture.png",
+  "points": [
+    {
+      "x": 10,
+      "y": 10
+    },
+    {
+      "x": 90,
+      "y": 10
+    },
+    {
+      "x": 10,
+      "y": 60
+    },
+    {
+      "x": 90,
+      "y": 60
+    }
+  ],
+  "radius": 0
+}
+									74 text 结果 完成
+									75 text {'ok': True, 'file_path': '/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/fixture.png', 'image': {'width': 120, 'height': 80}, 'samples': [{'x': 10, 'y': 10, 'radius': 0, 'rgb': [255, 0, 0], 'hex': '#FF0000', 'luminance': 54.21}, {'x': 90, 'y': 10, 'radius': 0, 'rgb': [0, 255, 0], 'hex': '#00FF00', 'luminance': 182.38}, {'x': 10, 'y': 60, 'radius': 0, 'rgb': [0, 0, 255], 'hex': '#0000FF', 'luminance': 18.41}, {'x': 90, 'y': 60, 'radius': 0, 
+									76 button 已完成：工具 · Tool call
+									77 text 工具名称
+									78 text tool_call
+									79 text 参数
+									80 text {
+  "name": "image_palette",
+  "args": {
+    "file_path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/fixture.png",
+    "count": 5
+  }
+}
+									81 text 结果 完成
+									82 text {'ok': True, 'file_path': '/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/fixture.png', 'region': {'x': 0, 'y': 0, 'width': 120, 'height': 80}, 'palette': [{'rgb': [0, 0, 255], 'hex': '#0000FF', 'share': 0.25}, {'rgb': [255, 0, 0], 'hex': '#FF0000', 'share': 0.25}, {'rgb': [0, 255, 0], 'hex': '#00FF00', 'share': 0.2417}, {'rgb': [255, 255, 255], 'hex': '#FFFFFF', 'share': 0.2417}, {'rgb': [0, 0, 0], 'hex': '#000000', 'share': 0.0167}]}
+									83 button 已完成：工具 · Image palette
+									84 text 工具名称
+									85 text image_palette
+									86 text 参数
+									87 text {
+  "file_path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/fixture.png",
+  "count": 5
+}
+									88 text 结果 完成
+									89 text {'ok': True, 'file_path': '/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/fixture.png', 'region': {'x': 0, 'y': 0, 'width': 120, 'height': 80}, 'palette': [{'rgb': [0, 0, 255], 'hex': '#0000FF', 'share': 0.25}, {'rgb': [255, 0, 0], 'hex': '#FF0000', 'share': 0.25}, {'rgb': [0, 255, 0], 'hex': '#00FF00', 'share': 0.2417}, {'rgb': [255, 255, 255], 'hex': '#FFFFFF', 'share': 0.2417}, {'rgb': [0, 0, 0], 'hex': '#000000', 'share': 0.0167}]}
+									90 button 已完成：工具 · Tool call
+									91 text 工具名称
+									92 text tool_call
+									93 text 参数
+									94 text {
+  "name": "image_crop",
+  "args": {
+    "file_path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/fixture.png",
+    "region": {
+      "x": 60,
+      "y": 40,
+      "width": 60,
+      "height": 40
+    },
+    "output_path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/gui-crop.png",
+    "overwrite": false
+  }
+}
+									95 text 结果 完成
+									96 text {'ok': True, 'source_path': '/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/fixture.png', 'output_path': '/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/gui-crop.png', 'region': {'x': 60, 'y': 40, 'width': 60, 'height': 40}, 'width': 60, 'height': 40, 'bytes': 116}
+									97 button 已完成：工具 · Image crop
+									98 text 工具名称
+									99 text image_crop
+									100 text 参数
+									101 text {
+  "file_path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/fixture.png",
+  "region": {
+    "x": 60,
+    "y": 40,
+    "width": 60,
+    "height": 40
+  },
+  "output_path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/gui-crop.png",
+  "overwrite": false
+}
+									102 text 结果 完成
+									103 text {'ok': True, 'source_path': '/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/fixture.png', 'output_path': '/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/gui-crop.png', 'region': {'x': 60, 'y': 40, 'width': 60, 'height': 40}, 'width': 60, 'height': 40, 'bytes': 116}
+									104 button 已完成：工具 · Tool call
+									105 text 工具名称
+									106 text tool_call
+									107 text 参数
+									108 text {
+  "name": "image_scan",
+  "args": {
+    "file_path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/gui-crop.png",
+    "grid_width": 20
+  }
+}
+									109 text 结果 完成
+									110 text {'ok': True, 'file_path': '/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/gui-crop.png', 'image': {'width': 60, 'height': 40}, 'region': {'x': 0, 'y': 0, 'width': 60, 'height': 40}, 'grid': {'width': 20, 'height': 7, 'luminance': ['-@@@@@@@@@@@@@@@@@@@', '-@@@@@@@@@@@@@@@@@@@', '-@@@@@@@@@@@@@@@@@@@', '-@@@@@@@@@@@@@@@@@@@', '-@@@@@@@@@@@@@@@@@@@', '-@@@@@@@@@@@@@@@@@@@', '-@@@@@@@@@@@@@@@@@@@'], 'colors': ['NWWWWWWWWWWWWWWWWWWW', 'NWWWWWWWW
+									111 button 已完成：工具 · Image scan
+									112 text 工具名称
+									113 text image_scan
+									114 text 参数
+									115 text {
+  "file_path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/gui-crop.png",
+  "grid_width": 20
+}
+									116 text 结果 完成
+									117 text {'ok': True, 'file_path': '/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/gui-crop.png', 'image': {'width': 60, 'height': 40}, 'region': {'x': 0, 'y': 0, 'width': 60, 'height': 40}, 'grid': {'width': 20, 'height': 7, 'luminance': ['-@@@@@@@@@@@@@@@@@@@', '-@@@@@@@@@@@@@@@@@@@', '-@@@@@@@@@@@@@@@@@@@', '-@@@@@@@@@@@@@@@@@@@', '-@@@@@@@@@@@@@@@@@@@', '-@@@@@@@@@@@@@@@@@@@', '-@@@@@@@@@@@@@@@@@@@'], 'colors': ['NWWWWWWWWWWWWWWWWWWW', 'NWWWWWWWW
+									118 button 已完成：工具 · Tool call
+									119 text 工具名称
+									120 text tool_call
+									121 text 参数
+									122 text {
+  "name": "image_sample",
+  "args": {
+    "file_path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/fixture.png",
+    "points": [
+      {
+        "x": 999,
+        "y": 1
+      }
+    ],
+    "radius": 0
+  }
+}
+									123 text 结果 完成
+									124 text {'ok': False, 'error': {'code': 'INVALID_IMAGE', 'message': '图像处理失败：坐标 (999,1) 超出图像边界 120x80'}}
+									125 button 已完成：工具 · Image sample
+									126 text 工具名称
+									127 text image_sample
+									128 text 参数
+									129 text {
+  "file_path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/fixture.png",
+  "points": [
+    {
+      "x": 999,
+      "y": 1
+    }
+  ],
+  "radius": 0
+}
+									130 text 结果 完成
+									131 text {'ok': False, 'error': {'code': 'INVALID_IMAGE', 'message': '图像处理失败：坐标 (999,1) 超出图像边界 120x80'}}
+								132 container
+									133 text 已按顺序完成原生工具实测；实际图像操作仅使用 
+									134 container
+										135 text ` image_scan `
+									136 text 、
+									137 container
+										138 text ` image_sample `
+									139 text 、
+									140 container
+										141 text ` image_palette `
+									142 text 、
+									143 container
+										144 text ` image_crop `
+									145 text ，未进行 OCR 或物体识别。
+									146 heading 1. 整图扫描, Value: 2
+										147 text 1. 整图扫描
+									148 text 图像路径：
+									149 text /Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/fixture.png
+
+									150 content list
+										151 container
+											152 AXListMarker • 
+											153 text 图像尺寸： 120 × 80 像素
+										154 container
+											155 AXListMarker • 
+											156 text 扫描区域： ` x=0, y=0, width=120, height=80 `
+										157 container
+											158 AXListMarker • 
+											159 text 参数： ` grid_width=20 `
+										160 container
+											161 AXListMarker • 
+											162 text 返回网格： 20 × 7
+									163 table
+										164 row
+											165 column header
+												166 text 测量字段
+											167 column header
+												168 text 实际返回值
+										169 row
+											170 cell
+												171 text mean_luminance
+											172 cell
+												173 text 123.84
+										174 row
+											175 cell
+												176 text horizontal_edge_energy
+											177 cell
+												178 text 0.0376
+										179 row
+											180 cell
+												181 text vertical_edge_energy
+											182 cell
+												183 text 0.0346
+										184 row
+											185 cell
+												186 text edge_energy
+											187 cell
+												188 text 0.0361
+										189 row
+											190 cell
+												191 text left_right_symmetry
+											192 cell
+												193 text 0.3905
+									194 heading 2. 指定坐标采样, Value: 2
+										195 text 2. 指定坐标采样
+									196 text 采样对象为上述原图，
+									197 container
+										198 text ` radius=0 `
+									199 text ，即读取单个像素。
+									200 table
+										201 row
+											202 column header
+												203 text 坐标 (x,y)
+											204 column header
+												205 text RGB
+											206 column header
+												207 text HEX
+											208 column header
+												209 text luminance
+										210 row
+											211 cell
+												212 text (10,10)
+											213 cell
+												214 text [255, 0, 0]
+											215 cell
+												216 text #FF0000
+											217 cell
+												218 text 54.21
+										219 row
+											220 cell
+												221 text (90,10)
+											222 cell
+												223 text [0, 255, 0]
+											224 cell
+												225 text #00FF00
+											226 cell
+												227 text 182.38
+										228 row
+											229 cell
+												230 text (10,60)
+											231 cell
+												232 text [0, 0, 255]
+											233 cell
+												234 text #0000FF
+											235 cell
+												236 text 18.41
+										237 row
+											238 cell
+												239 text (90,60)
+											240 cell
+												241 text [255, 255, 255]
+											242 cell
+												243 text #FFFFFF
+											244 cell
+												245 text 255.0
+									246 heading 3. 整图五色主色板, Value: 2
+										247 text 3. 整图五色主色板
+									248 text 调用参数为 
+									249 container
+										250 text ` count=5 `
+									251 text ；测量区域为整图。
+									252 table
+										253 row
+											254 column header
+												255 text RGB
+											256 column header
+												257 text HEX
+											258 column header
+												259 text share（工具原值）
+										260 row
+											261 cell
+												262 text [0, 0, 255]
+											263 cell
+												264 text #0000FF
+											265 cell
+												266 text 0.25
+										267 row
+											268 cell
+												269 text [255, 0, 0]
+											270 cell
+												271 text #FF0000
+											272 cell
+												273 text 0.25
+										274 row
+											275 cell
+												276 text [0, 255, 0]
+											277 cell
+												278 text #00FF00
+											279 cell
+												280 text 0.2417
+										281 row
+											282 cell
+												283 text [255, 255, 255]
+											284 cell
+												285 text #FFFFFF
+											286 cell
+												287 text 0.2417
+										288 row
+											289 cell
+												290 text [0, 0, 0]
+											291 cell
+												292 text #000000
+											293 cell
+												294 text 0.0167
+									295 heading 4. 裁剪与裁剪图扫描, Value: 2
+										296 text 4. 裁剪与裁剪图扫描
+									297 text 原图裁剪区域：
+									298 container
+										299 text ` x=60, y=40, width=60, height=40 `
+									300 text 输出路径：
+									301 text /Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/hub-all-submission-20261104/english-localization/picturereader/gui-crop.png
+
+									302 text 裁剪调用明确设置了 
+									303 container
+										304 text ` overwrite=false `
+									305 text 。工具返回成功，未返回文件已存在错误；输出尺寸为 
+									306 text 60 × 40 像素
+									307 text ，文件大小为 
+									308 text 116 字节
+									309 text ，未执行覆盖操作。 随后对裁剪图使用 
+									310 container
+										311 text ` grid_width=20 `
+									312 text  扫描：
+									313 content list
+										314 container
+											315 AXListMarker • 
+											316 text 扫描区域为裁剪图自身坐标： ` x=0, y=0, width=60, height=40 `
+										317 container
+											318 AXListMarker • 
+											319 text 返回网格： 20 × 7
+									320 table
+										321 row
+											322 column header
+												323 text 测量字段
+											324 column header
+												325 text 实际返回值
+										326 row
+											327 cell
+												328 text mean_luminance
+											329 cell
+												330 text 246.5
+										331 row
+											332 cell
+												333 text horizontal_edge_energy
+											334 cell
+												335 text 0.0351
+										336 row
+											337 cell
+												338 text vertical_edge_energy
+											339 cell
+												340 text 0.0
+										341 row
+											342 cell
+												343 text edge_energy
+											344 cell
+												345 text 0.0175
+										346 row
+											347 cell
+												348 text left_right_symmetry
+											349 cell
+												350 text 0.9333
+									351 text 裁剪图扫描返回的主色：
+									352 content list
+										353 container
+											354 AXListMarker • 
+											355 text ` #FFFFFF ` ，RGB  ` [255, 255, 255] ` ， ` share=0.9667 `
+										356 container
+											357 AXListMarker • 
+											358 text ` #000000 ` ，RGB  ` [0, 0, 0] ` ， ` share=0.0333 `
+									359 heading 5. 越界错误实测, Value: 2
+										360 text 5. 越界错误实测
+									361 text 最后对原图坐标 
+									362 text (999,1)
+									363 text  调用 
+									364 container
+										365 text ` image_sample `
+									366 text ，实际返回：
+									367 text {
+  "ok": false,
+  "error": {
+    "code": "INVALID_IMAGE",
+    "message": "图像处理失败：坐标 (999,1) 超出图像边界 120x80"
+  }
+}
+
+									368 text 确认返回了真实中文错误消息
+									369 text ，并保留了实际错误码 
+									370 container
+										371 text ` INVALID_IMAGE `
+									372 text 。 以上均为工具测量或执行回执，不包含物体身份、文字内容或场景含义的推测。本次调用验证了这些功能的实际返回，但工具回执没有提供版本号，因而不能仅凭这些结果独立确认插件版本为 
+									373 container
+										374 text ` 1.0.1 `
+									375 text 。
+								376 text 2026-11-04 14:48
+								377 button
+								378 button
+								379 button 从此消息新建会话分支
+							380 container
+								381 text entry area (settable) 需要帮你做些什么？输入“/”快速引用技能及指令
+									382 text 需要帮你做些什么？输入“/”快速引用技能及指令
+								383 pop up button 上传文件
+								384 pop up button 单Agent模式
+								385 pop up button 完全访问权限
+								386 pop up button 上下文用量 10.2%
+								387 pop up button gpt-6.1-sol
+							388 text 内容由AI生成，仅供参考
+						389 container
+							390 text 进度
+							391 button
+							392 button 展开
+						393 text 当前暂无任务
+						394 container
+							395 text 素材
+							396 button
+						397 container
+							398 text 产物
+							399 button
+							400 button 展开
+						401 container
+							402 text 参考信息
+							403 button
+	404 close button
+	405 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	406 minimize button
+407 menu bar
+	408 WorkSwarm
+	409 File
+	410 Edit
+	411 View
+	412 Window
+
+The focused UI element is 69 button 已完成：工具 · Image sample

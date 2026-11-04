@@ -1,0 +1,48 @@
+{
+  "start": {
+    "ok": true,
+    "session_id": "2237ab2848be",
+    "endpoint": "ws://127.0.0.1:64910/devtools/browser/065bcb02-9cfc-44b2-ae3a-c5e85ddd1637",
+    "attached": false,
+    "headless": true,
+    "output_dir": "/private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/web-recorder-cross-process-hkk9gczr/recording",
+    "worker_pid": 77977,
+    "note": "\u8bb0\u5f55\u6b63\u5728\u72ec\u7acb\u540e\u53f0\u8fdb\u7a0b\u4e2d\u8fd0\u884c\u3002\u8bf7\u64cd\u4f5c\u6d4f\u89c8\u5668\uff0c\u5b8c\u6210\u540e\u4f7f\u7528\u6b64 session_id \u8c03\u7528 web_record_stop\u3002"
+  },
+  "status": {
+    "ok": true,
+    "session_id": "2237ab2848be",
+    "active": true,
+    "total_events": 5,
+    "counts": {
+      "click": 0,
+      "input": 0,
+      "change": 0,
+      "submit": 0,
+      "navigation": 1,
+      "network": 4
+    },
+    "output_dir": "/private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/web-recorder-cross-process-hkk9gczr/recording",
+    "endpoint": "ws://127.0.0.1:64910/devtools/browser/065bcb02-9cfc-44b2-ae3a-c5e85ddd1637",
+    "pid": 77977,
+    "phase": "recording"
+  },
+  "stop": {
+    "ok": true,
+    "session_id": "2237ab2848be",
+    "active": false,
+    "total_events": 5,
+    "counts": {
+      "click": 0,
+      "input": 0,
+      "change": 0,
+      "submit": 0,
+      "navigation": 1,
+      "network": 4
+    },
+    "output_dir": "/private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/web-recorder-cross-process-hkk9gczr/recording",
+    "report_md": "/private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/web-recorder-cross-process-hkk9gczr/recording/report.md",
+    "events_jsonl": "/private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/web-recorder-cross-process-hkk9gczr/recording/events.jsonl"
+  }
+}
+PASS separate-process start/status/stop persistence

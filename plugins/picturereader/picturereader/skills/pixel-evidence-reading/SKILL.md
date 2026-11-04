@@ -1,14 +1,16 @@
 ---
 name: pixel-evidence-reading
-description: Read local raster images methodically using deterministic scan grids, structure measurements, exact pixel samples, palettes, and region crops. Use when a text-only model needs auditable local image evidence without external vision calls.
+description: 通过确定性扫描网格、结构测量、精确像素采样、色板和区域裁剪，有步骤地检查本地图像。适用于文本模型需要可复现的像素证据、且不调用外部视觉服务的场景。
 ---
 
-# Pixel Evidence Reading
+# 像素证据读图
 
-1. Call `image_scan` on the whole image first. Treat grids as coarse measurements, not semantic recognition.
-2. Use dimensions, dominant colors, brightness, edge energy, and symmetry to form limited layout hypotheses. Clearly label hypotheses.
-3. If a small or ambiguous feature matters, call `image_crop` on explicit coordinates and scan the exported region at higher density.
-4. Use `image_sample` to verify exact colors or boundaries at named coordinates. Use a radius only when local averaging is appropriate.
-5. Use `image_palette` for measured color proportions. Do not infer branding, objects, or text from color alone.
-6. For text, object identity, or scene semantics, state that pixel evidence is insufficient and combine it with a dedicated OCR or multimodal asset.
-7. Cite image path, region, grid dimensions, and sampled coordinates in the conclusion so another run can reproduce the evidence.
+默认使用简体中文说明步骤与结论，保留工具名、参数名、路径、数值和网格代码的原值。
+
+1. 先对整张图调用 `image_scan`。网格表示粗粒度像素测量，不代表语义识别结果。
+2. 根据尺寸、主色、亮度、边缘能量和对称性提出有限的布局推测，并明确标注为推测。
+3. 若细小或含糊的区域影响结论，使用明确坐标调用 `image_crop`，再以较高网格密度扫描导出的区域。不得覆盖源图；覆盖已有导出文件前取得用户明确同意。
+4. 用 `image_sample` 核对指定坐标的精确颜色或边界。只有需要局部平均时才设置非零半径。
+5. 用 `image_palette` 获取测得的颜色比例。不能仅凭颜色推断品牌、物体或文字。
+6. 若用户需要文字内容、物体身份或场景语义，明确说明像素证据不足，并建议结合专门的 OCR 或多模态能力；不将推测写成已识别事实。
+7. 在结论中注明图像路径、区域、网格尺寸与采样坐标，以便另一轮执行复现。只有实际工具结果能支持的测量才可报告；工具报错时说明错误，不虚构结果。

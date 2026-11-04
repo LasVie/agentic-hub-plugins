@@ -34,6 +34,7 @@ async def run() -> int:
     palette_tool = picture_reader.ImagePaletteTool()
     crop_tool = picture_reader.ImageCropTool()
 
+    original_hash = hashlib.sha256(source.read_bytes()).hexdigest()
     checks = []
     for fixture in (source, root / "fixture.jpg", root / "fixture.webp"):
         result = await scan_tool.invoke({"file_path": str(fixture), "grid_width": 20})
@@ -52,12 +53,14 @@ async def run() -> int:
     crop_path = root / "zoom.png"
     crop = await crop_tool.invoke({"file_path": str(source), "region": {"x": 60, "y": 40, "width": 60, "height": 40}, "output_path": str(crop_path)})
     checks.append(("crop output", crop.get("ok") and crop_path.exists() and Image.open(crop_path).size == (60, 40)))
-    original_hash = hashlib.sha256(source.read_bytes()).hexdigest()
     checks.append(("source unchanged", original_hash == hashlib.sha256(source.read_bytes()).hexdigest()))
     exists = await crop_tool.invoke({"file_path": str(source), "region": {"x": 0, "y": 0, "width": 10, "height": 10}, "output_path": str(crop_path)})
     checks.append(("overwrite protection", not exists.get("ok") and exists["error"]["code"] == "OUTPUT_EXISTS"))
     invalid = await sample_tool.invoke({"file_path": str(source), "points": [{"x": 999, "y": 1}]})
     checks.append(("invalid coordinate rejected", not invalid.get("ok") and invalid["error"]["code"] == "INVALID_IMAGE"))
+
+    missing = await scan_tool.invoke({})
+    checks.append(("Chinese required-path diagnostic", not missing.get("ok") and "必须提供 file_path" in missing["error"]["message"]))
 
     print(json.dumps({"fixture": str(source), "checks": checks, "scan_summary": scan, "sample_summary": sample, "crop": crop}, indent=2))
     for name, passed in checks:
