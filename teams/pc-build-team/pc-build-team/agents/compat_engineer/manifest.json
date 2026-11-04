@@ -1,0 +1,20 @@
+{
+  "package_type": "agent_template",
+  "name": "兼容与电源工程师",
+  "description": "用 build_checker 校验兼容性与电源余量并推动修正",
+  "persona": {
+    "dir": "."
+  },
+  "tools": [
+    {
+      "file": "tools/build_checker.py",
+      "class": "BuildCheckerTool"
+    }
+  ],
+  "rails": [
+    {
+      "file": "rails/pc_build_rail.py",
+      "class": "PcBuildRail"
+    }
+  ]
+}

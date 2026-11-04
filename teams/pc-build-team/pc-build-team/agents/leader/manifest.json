@@ -1,0 +1,20 @@
+{
+  "package_type": "agent_template",
+  "name": "装机总顾问",
+  "description": "确认需求、分派任务、验收方案并导出中英双语 PDF",
+  "persona": {
+    "dir": "."
+  },
+  "tools": [
+    {
+      "file": "tools/build_checker.py",
+      "class": "BuildCheckerTool"
+    }
+  ],
+  "rails": [
+    {
+      "file": "rails/pc_build_rail.py",
+      "class": "PcBuildRail"
+    }
+  ]
+}

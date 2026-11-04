@@ -1,0 +1,20 @@
+{
+  "package_type": "agent_template",
+  "name": "装机指导",
+  "description": "编写装机步骤、BIOS 设置、首次开机检查与风险点",
+  "persona": {
+    "dir": "."
+  },
+  "tools": [
+    {
+      "file": "tools/build_checker.py",
+      "class": "BuildCheckerTool"
+    }
+  ],
+  "rails": [
+    {
+      "file": "rails/pc_build_rail.py",
+      "class": "PcBuildRail"
+    }
+  ]
+}

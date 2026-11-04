@@ -198,6 +198,12 @@ Source: `plugins/<slug>/asset.json`, `provenance.json`, `SOURCE_REVIEW.md`, and 
 
 The manifest `id = asset.json.name = plugin.yaml.name`; all three versions must match, and `package_type = plugin`. The root manifest must not contain `persona`, `agent_card`, `model`, `subagents`, `memories`, or `rubrics`. Do not substitute host Extension or Claude marketplace package formats. Every declared Skill, tool, rail, and MCP file must exist, and paths must stay within the package. Even if Hub's structural validation accepts a declaration with missing files, this repository must verify it and perform functional tests.
 
+### Expert Team (agent_group)
+
+Approved by the Project Lead on 2026-11-04 (relayed by Vannes Wijaya). Tracker Component Type `Expert Team`.
+Source: `teams/<slug>/asset.json` (`type: agent-group`), `provenance.json`, `SOURCE_REVIEW.md`, `TEST_REPORT.md`, the native package directory `teams/<slug>/<slug>/` (WorkSwarm `manifest.json` with `package_type: agent_group`, `agents/`, `skills/`, `avatars/`), optional `src/` and `tests/`, screenshots in `evidence/<version>/`, and the tested ZIP plus `artifact.json` in `teams/<slug>/release/<version>/`.
+The ZIP is the host's native agent_group package (files at the archive root, no marketplace wrapper) and must load with WorkSwarm's `load_agent_group_package_bundle`. `asset_release.py` does not cover this format yet: record the ZIP and payload SHA-256 in `artifact.json` and verify them by hand. The same Chinese-package, user-test, screenshot and PR gates apply.
+
 ### Requirements Shared by Both Formats
 
 - Keep repository locations distinct: canonical Hub ZIPs and `artifact.json` belong in `releases/<type>/<slug>/<version>/`; native host-installation ZIPs belong in the owning `skills/<slug>/test-packages/` or `plugins/<slug>/test-packages/`. Do not put ZIPs in the repository root or a repository-level `test-packages/` directory. Downloaded format-research samples remain under `docs/research/` and are not team deliverables.

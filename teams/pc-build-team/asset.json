@@ -1,0 +1,13 @@
+{
+  "type": "agent-group",
+  "name": "pc-build-team",
+  "version": "0.2.1",
+  "display_name": "装机专家团",
+  "description": "按预算和用途配一台电脑：选配件、逐条校验兼容性与电源余量，输出一份含图表和装机示意图的中英双语 PDF",
+  "publisher": "Vannes Wijaya",
+  "category": "productivity",
+  "tags": ["电脑装机", "硬件选购"],
+  "members": ["leader", "parts_researcher", "compat_engineer", "assembly_guide"],
+  "candidate_id": null,
+  "task_id": "AH-20261104-pc-build-team"
+}
