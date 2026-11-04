@@ -1,0 +1,389 @@
+{
+  "version": "1.0.5",
+  "type": "actual Node engine and validator, not GUI",
+  "checks": 42,
+  "passed": 42,
+  "results": [
+    {
+      "name": "self-generated fixture remains byte identical",
+      "passed": true,
+      "bytes": 6114024,
+      "sha256": "5ecb9ead652de1cd9cc52fe569b2dcb3126b69fac50c89969228eb9260555779"
+    },
+    {
+      "name": "demo inspection equals original engine",
+      "passed": true,
+      "before": {
+        "bytes": 6114024,
+        "meshes": 16,
+        "nodes": 16,
+        "materials": 16,
+        "textures": 16,
+        "textureBytes": 6096944,
+        "textureDimensions": [
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ]
+        ],
+        "accessors": 48,
+        "animations": 0
+      }
+    },
+    {
+      "name": "demo optimization byte-identical to original",
+      "passed": true,
+      "before_bytes": 6114024,
+      "after_bytes": 383548,
+      "sha256": "01e56b06d99e8400f06f830236fd0c6e1f186720a7f73af38220c3420ef1146a"
+    },
+    {
+      "name": "demo preserves scene nodes and animations",
+      "passed": true,
+      "nodes": 16,
+      "animations": 0
+    },
+    {
+      "name": "demo second optimization matches original",
+      "passed": true
+    },
+    {
+      "name": "demo original GLB validator has zero errors",
+      "passed": true,
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0
+    },
+    {
+      "name": "demo optimized GLB validator has zero errors",
+      "passed": true,
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0
+    },
+    {
+      "name": "animated inspection equals original engine",
+      "passed": true,
+      "before": {
+        "bytes": 6114488,
+        "meshes": 16,
+        "nodes": 16,
+        "materials": 16,
+        "textures": 16,
+        "textureBytes": 6096944,
+        "textureDimensions": [
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ],
+          [
+            512,
+            512
+          ]
+        ],
+        "accessors": 50,
+        "animations": 1
+      }
+    },
+    {
+      "name": "animated optimization byte-identical to original",
+      "passed": true,
+      "before_bytes": 6114488,
+      "after_bytes": 384004,
+      "sha256": "c88dafbfd8f01787baba8fd8cdaeb22b1438d0fbbce4049b4d33fb39232857f5"
+    },
+    {
+      "name": "animated preserves scene nodes and animations",
+      "passed": true,
+      "nodes": 16,
+      "animations": 1
+    },
+    {
+      "name": "animated second optimization matches original",
+      "passed": true
+    },
+    {
+      "name": "animated original GLB validator has zero errors",
+      "passed": true,
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0
+    },
+    {
+      "name": "animated optimized GLB validator has zero errors",
+      "passed": true,
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0
+    },
+    {
+      "name": "truncated header rejected identically by inspect",
+      "passed": true,
+      "error": "只接受25 MiB以内的GLB文件"
+    },
+    {
+      "name": "truncated header rejected identically by optimize",
+      "passed": true,
+      "error": "只接受25 MiB以内的GLB文件"
+    },
+    {
+      "name": "wrong magic rejected identically by inspect",
+      "passed": true,
+      "error": "只接受25 MiB以内的GLB文件"
+    },
+    {
+      "name": "wrong magic rejected identically by optimize",
+      "passed": true,
+      "error": "只接受25 MiB以内的GLB文件"
+    },
+    {
+      "name": "unsupported GLB version rejected identically by inspect",
+      "passed": true,
+      "error": "GLB结构无效"
+    },
+    {
+      "name": "unsupported GLB version rejected identically by optimize",
+      "passed": true,
+      "error": "GLB结构无效"
+    },
+    {
+      "name": "incorrect total length rejected identically by inspect",
+      "passed": true,
+      "error": "GLB结构无效"
+    },
+    {
+      "name": "incorrect total length rejected identically by optimize",
+      "passed": true,
+      "error": "GLB结构无效"
+    },
+    {
+      "name": "oversized JSON chunk rejected identically by inspect",
+      "passed": true,
+      "error": "GLB结构无效"
+    },
+    {
+      "name": "oversized JSON chunk rejected identically by optimize",
+      "passed": true,
+      "error": "GLB结构无效"
+    },
+    {
+      "name": "wrong JSON chunk type rejected identically by inspect",
+      "passed": true,
+      "error": "GLB结构无效"
+    },
+    {
+      "name": "wrong JSON chunk type rejected identically by optimize",
+      "passed": true,
+      "error": "GLB结构无效"
+    },
+    {
+      "name": "malformed JSON rejected identically by inspect",
+      "passed": true,
+      "error": "Unexpected token '!', \"!\"asset\":{\"... is not valid JSON"
+    },
+    {
+      "name": "malformed JSON rejected identically by optimize",
+      "passed": true,
+      "error": "Unexpected token '!', \"!\"asset\":{\"... is not valid JSON"
+    },
+    {
+      "name": "external buffer URI rejected identically by inspect",
+      "passed": true,
+      "error": "首版仅处理资源完全内嵌的GLB，不加载外部地址"
+    },
+    {
+      "name": "external buffer URI rejected identically by optimize",
+      "passed": true,
+      "error": "首版仅处理资源完全内嵌的GLB，不加载外部地址"
+    },
+    {
+      "name": "external image URI rejected identically by inspect",
+      "passed": true,
+      "error": "首版仅处理资源完全内嵌的GLB，不加载外部地址"
+    },
+    {
+      "name": "external image URI rejected identically by optimize",
+      "passed": true,
+      "error": "首版仅处理资源完全内嵌的GLB，不加载外部地址"
+    },
+    {
+      "name": "required decoder extension rejected identically by inspect",
+      "passed": true,
+      "error": "首版不处理需要额外解码器的扩展：KHR_draco_mesh_compression"
+    },
+    {
+      "name": "required decoder extension rejected identically by optimize",
+      "passed": true,
+      "error": "首版不处理需要额外解码器的扩展：KHR_draco_mesh_compression"
+    },
+    {
+      "name": "too many nodes rejected identically by inspect",
+      "passed": true,
+      "error": "模型超出有界处理范围"
+    },
+    {
+      "name": "too many nodes rejected identically by optimize",
+      "passed": true,
+      "error": "模型超出有界处理范围"
+    },
+    {
+      "name": "accessor count above bound rejected identically by inspect",
+      "passed": true,
+      "error": "模型超出有界处理范围"
+    },
+    {
+      "name": "accessor count above bound rejected identically by optimize",
+      "passed": true,
+      "error": "模型超出有界处理范围"
+    },
+    {
+      "name": "file above 25 MiB rejected identically by inspect",
+      "passed": true,
+      "error": "只接受25 MiB以内的GLB文件"
+    },
+    {
+      "name": "file above 25 MiB rejected identically by optimize",
+      "passed": true,
+      "error": "只接受25 MiB以内的GLB文件"
+    },
+    {
+      "name": "actual new engine initializes and optimizes with Node string-code generation disabled",
+      "passed": true,
+      "stdout": "prune: Removed types... Primitive (15), Accessor (3)\n{\"before\":{\"bytes\":6114024,\"meshes\":16,\"nodes\":16,\"materials\":16,\"textures\":16,\"textureBytes\":6096944,\"textureDimensions\":[[512,512],[512,512],[512,512],[512,512],[512,512],[512,512],[512,512],[512,512],[512,512],[512,512],[512,512],[512,512],[512,512],[512,512],[512,512],[512,512]],\"accessors\":48,\"animations\":0},\"after\":{\"bytes\":383548,\"meshes\":1,\"nodes\":16,\"materials\":1,\"textures\":1,\"textureBytes\":381059,\"textureDimensions\":[[512,512]],\"accessors\":3,\"animations\":0}}",
+      "stderr": ""
+    },
+    {
+      "name": "vendor/model-view.mjs retained bytes recorded",
+      "passed": true,
+      "sha256": "7b645a47b52c59c580f33766d1b2442141e8540c595032bf3e82dafd7fe9cf56",
+      "bytes": 1386325
+    },
+    {
+      "name": "vendor/texture-resize.mjs retained bytes recorded",
+      "passed": true,
+      "sha256": "8ab0684f6649faef715d22923eada76e29892b74800a08619e79d92ee1fb0323",
+      "bytes": 184371
+    }
+  ],
+  "limitations": [
+    "New local WorkSwarm GUI import/prompt and browser Canvas/Three.js retest remain pending.",
+    "Fixture animation data is validated and preserved; playback is not claimed.",
+    "No arbitrary extension, OS or fixed compression-ratio guarantee."
+  ]
+}

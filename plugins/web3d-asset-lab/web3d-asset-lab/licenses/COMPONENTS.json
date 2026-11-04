@@ -9,7 +9,8 @@
         "path": "licenses/gltf-transform--core--4.5.1/LICENSE",
         "sha256": "2c4f111d00dbf22b10d31a14813c5f5de6a828640f7311f26b9dda89b3fce165"
       }
-    ]
+    ],
+    "code_in_current_runtime": true
   },
   {
     "name": "@gltf-transform/extensions",
@@ -21,7 +22,8 @@
         "path": "licenses/gltf-transform--extensions--4.5.1/LICENSE",
         "sha256": "2c4f111d00dbf22b10d31a14813c5f5de6a828640f7311f26b9dda89b3fce165"
       }
-    ]
+    ],
+    "code_in_current_runtime": true
   },
   {
     "name": "@gltf-transform/functions",
@@ -33,7 +35,9 @@
         "path": "licenses/gltf-transform--functions--4.5.1/LICENSE",
         "sha256": "2c4f111d00dbf22b10d31a14813c5f5de6a828640f7311f26b9dda89b3fce165"
       }
-    ]
+    ],
+    "code_in_current_runtime": true,
+    "modification": "Geometry-only source build exports dedup/weld/prune and removes unused ndarray/lanczos imports; see build/rebuild_engine.mjs and build-evidence/geometry-subset-build.json."
   },
   {
     "name": "iota-array",
@@ -45,7 +49,9 @@
         "path": "licenses/iota-array--1.0.0/LICENSE",
         "sha256": "e67aed7df22dc8031e4fcf5338fe91cb33e3817e5c58a99a2a2802eea9069791"
       }
-    ]
+    ],
+    "code_in_current_runtime": false,
+    "notice_scope": "Historical 1.0.4 dependency; complete original MIT notice retained conservatively. Its code is not in the 1.0.5 runtime."
   },
   {
     "name": "is-buffer",
@@ -57,7 +63,9 @@
         "path": "licenses/is-buffer--1.1.6/LICENSE",
         "sha256": "c7cc929b57080f4b9d0c6cf57669f0463fc5b39906344dfc8d3bc43426b30eac"
       }
-    ]
+    ],
+    "code_in_current_runtime": false,
+    "notice_scope": "Historical 1.0.4 dependency; complete original MIT notice retained conservatively. Its code is not in the 1.0.5 runtime."
   },
   {
     "name": "ktx-parse",
@@ -69,7 +77,8 @@
         "path": "licenses/ktx-parse--1.1.0/LICENSE",
         "sha256": "79847431f9ecef9cf399085cb863452e71a6dab99738f4f0c1ea06c6484b5692"
       }
-    ]
+    ],
+    "code_in_current_runtime": true
   },
   {
     "name": "ndarray",
@@ -81,7 +90,9 @@
         "path": "licenses/ndarray--1.1.1/LICENSE",
         "sha256": "f149791eb5101f10b1fb88997310f2b054604106c4bf6050e0aee66a5bd35cc7"
       }
-    ]
+    ],
+    "code_in_current_runtime": false,
+    "notice_scope": "Historical 1.0.4 dependency; complete original MIT notice retained conservatively. Its code is not in the 1.0.5 runtime."
   },
   {
     "name": "ndarray-lanczos",
@@ -93,7 +104,9 @@
         "path": "licenses/ndarray-lanczos--0.3.0/LICENSE",
         "sha256": "ec5114155d92f326802c964dcf9eb5261e09192c62f14d195d2a8be49eb1d489"
       }
-    ]
+    ],
+    "code_in_current_runtime": false,
+    "notice_scope": "Historical 1.0.4 dependency; complete original MIT notice retained conservatively. Its code is not in the 1.0.5 runtime."
   },
   {
     "name": "property-graph",
@@ -105,7 +118,8 @@
         "path": "licenses/property-graph--4.1.0/LICENSE",
         "sha256": "ec5114155d92f326802c964dcf9eb5261e09192c62f14d195d2a8be49eb1d489"
       }
-    ]
+    ],
+    "code_in_current_runtime": true
   },
   {
     "name": "three",
@@ -117,6 +131,7 @@
         "path": "licenses/three--0.187.0/LICENSE",
         "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
       }
-    ]
+    ],
+    "code_in_current_runtime": true
   }
 ]

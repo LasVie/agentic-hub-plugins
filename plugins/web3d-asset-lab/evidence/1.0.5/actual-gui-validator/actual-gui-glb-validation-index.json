@@ -1,0 +1,33 @@
+{
+  "validator": "gltf-validator@2.0.0-dev.3.10",
+  "scope": "Actual files supplied after GUI operation; no GUI interaction or human acceptance inferred by this validator",
+  "records": [
+    {
+      "file": "hub-all-submission-20261104/web3d-compatibility-rebuild/gui-workspace-1.0.5/.web3d-asset-lab/original.glb",
+      "bytes": 6114024,
+      "sha256": "5ecb9ead652de1cd9cc52fe569b2dcb3126b69fac50c89969228eb9260555779",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "report": "hub-all-submission-20261104/web3d-compatibility-rebuild/actual-gui-validator/1-original.glb-validator.json"
+    },
+    {
+      "file": "hub-all-submission-20261104/web3d-compatibility-rebuild/gui-geometry-download.glb",
+      "bytes": 383548,
+      "sha256": "01e56b06d99e8400f06f830236fd0c6e1f186720a7f73af38220c3420ef1146a",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "report": "hub-all-submission-20261104/web3d-compatibility-rebuild/actual-gui-validator/2-gui-geometry-download.glb-validator.json"
+    },
+    {
+      "file": "hub-all-submission-20261104/web3d-compatibility-rebuild/gui-texture-download.glb",
+      "bytes": 5456,
+      "sha256": "671b82cece8cb205d41f37942a9881d29b22da49ae2b0319c9f0d347db9af68a",
+      "errors": 0,
+      "warnings": 0,
+      "infos": 0,
+      "report": "hub-all-submission-20261104/web3d-compatibility-rebuild/actual-gui-validator/3-gui-texture-download.glb-validator.json"
+    }
+  ]
+}

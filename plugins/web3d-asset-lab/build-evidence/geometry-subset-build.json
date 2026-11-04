@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-04",
+  "upstream": "@gltf-transform/functions@4.5.1",
+  "upstream_commit": "41156dfa2324ac6c44ddf0a40ec0da194c4731d6",
+  "upstream_dist_sha256": "d0baa93e6e2434ca133d01b83d6937036a9e94a1f91277325fb92306141b2baf",
+  "derived_dist_sha256": "d15d01491da03327418d479998fc5b035df69cf48e0817c11fd5d9ec866c7dde",
+  "removed_imports": [
+    {
+      "module": "ndarray",
+      "source": "import ndarray from \"ndarray\";"
+    },
+    {
+      "module": "ndarray-lanczos",
+      "source": "import { lanczos2, lanczos3 } from \"ndarray-lanczos\";"
+    }
+  ],
+  "exports": [
+    "dedup",
+    "weld",
+    "prune"
+  ],
+  "native_image_io": "Existing explicit unsupported-codec error retained; prune catches it and skips decoded texture analysis",
+  "emitted_sha256": "a7569edcec46ccd710d11ef0b1a82ac1b1a1317a4ba465cc91baa50cd25e3f92",
+  "emitted_bytes": 233601,
+  "ast_string_compilation_violations": [],
+  "removed_array_modules_absent": true,
+  "inputs": [
+    "node_modules/property-graph/dist/index.mjs",
+    "node_modules/@gltf-transform/core/dist/index.js",
+    "web3d-bounded:bounded-pixels",
+    "node_modules/ktx-parse/dist/ktx-parse.modern.js",
+    "node_modules/@gltf-transform/extensions/dist/index.js",
+    "node_modules/@gltf-transform/functions/dist/index.js",
+    "web3d-geometry-entry.mjs"
+  ],
+  "not_changed": [
+    "vendor/model-view.mjs",
+    "vendor/texture-resize.mjs",
+    "runtime/handler.cjs",
+    "web/app.js"
+  ]
+}

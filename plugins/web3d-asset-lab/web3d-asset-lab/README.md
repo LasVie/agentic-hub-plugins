@@ -1,4 +1,4 @@
-# 网页 3D 模型瘦身台 1.0.4
+# 网页 3D 模型瘦身台 1.0.5
 
 上游：glTF Transform → 网页 3D 模型瘦身台 → `web3d-asset-lab`。
 

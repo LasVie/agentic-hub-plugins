@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "scope": "Independent byte/hash/readback and seven original images viewed; root performed actual UI. Chat long image proves start/load/restart/stop reply/version mapping; separate current workbench originals and saved/downloaded file hashes support actual render/persistence. Native restart reply alone explicitly did not claim restored-model verification.",
+  "images_verified": 16,
+  "images_actually_viewed": [
+    "jiuwenswarm-share-20261104-154347.png",
+    "workbench-geometry-original.jpg",
+    "workbench-restarted-restored-original.jpg",
+    "workbench-texture-original.jpg",
+    "workswarm-installed-detail-original.jpg",
+    "workswarm-load-result-original.jpg",
+    "workswarm-start-result-original.jpg"
+  ],
+  "long_image_original_dimensions": [
+    2250,
+    8319
+  ],
+  "long_image_sha256": "b214d40ea617bb864bc6e3bd1383532a03669071e1435f7c03e011a2b637da09",
+  "no_image_editing": true,
+  "actual_files": [
+    {
+      "path": "hub-all-submission-20261104/web3d-compatibility-rebuild/gui-workspace-1.0.5/.web3d-asset-lab/original.glb",
+      "bytes": 6114024,
+      "sha256": "5ecb9ead652de1cd9cc52fe569b2dcb3126b69fac50c89969228eb9260555779",
+      "matches_root_record": true
+    },
+    {
+      "path": "hub-all-submission-20261104/web3d-compatibility-rebuild/gui-geometry-download.glb",
+      "bytes": 383548,
+      "sha256": "01e56b06d99e8400f06f830236fd0c6e1f186720a7f73af38220c3420ef1146a",
+      "matches_root_record": true
+    },
+    {
+      "path": "hub-all-submission-20261104/web3d-compatibility-rebuild/gui-texture-download.glb",
+      "bytes": 5456,
+      "sha256": "671b82cece8cb205d41f37942a9881d29b22da49ae2b0319c9f0d347db9af68a",
+      "matches_root_record": true
+    },
+    {
+      "path": "hub-all-submission-20261104/web3d-compatibility-rebuild/gui-report-download.json",
+      "bytes": 1274,
+      "sha256": "77d371c142ca3bb230ab2dc4b93e00e4027ba2e9e6f0687d016dd0b65e856514",
+      "matches_root_record": true
+    }
+  ],
+  "actual_downloads_match_saved": true,
+  "actual_three_validator_reports_zero_errors_warnings_infos": true,
+  "ports_at_independent_check": {
+    "53610": "closed",
+    "53972": "closed"
+  },
+  "not_personal_human_test_confirmation": true
+}

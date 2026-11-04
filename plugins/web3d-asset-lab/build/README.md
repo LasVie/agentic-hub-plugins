@@ -1,0 +1,7 @@
+# Geometry-only build, 1.0.5
+
+Use an isolated build directory with the official registry packages and exact integrity records from ../build-evidence/npm-build.lock.json: esbuild 0.28.2 plus its matching platform package, TypeScript 5.9.3, glTF Transform core/extensions/functions 4.5.1, property-graph 4.1.0 and ktx-parse 1.1.0. The isolated verification directory also uses gltf-validator 2.0.0-dev.3.10; these build/test tools never enter runtime ZIPs. No npm lifecycle script or global installation is required.
+
+Run WEB3D_BUILD_DEPS=<isolated build directory> node plugins/web3d-asset-lab/build/rebuild_engine.mjs from the repository. gltf-engine.mjs preserves the existing bounded real GLB operations. rebuild_engine.mjs derives a module exporting exactly dedup/weld/prune and removes actual unused ndarray/lanczos imports before compilation. Other transforms are not part of the subset. The emitted AST rejects their residual identifiers and Function/eval calls. Original source digest, derivative digest, actual input graph and output hash are written to build-evidence/geometry-subset-build.json. Original complete MIT terms remain in the runtime licenses directory.
+
+Build prerequisites are fixed by the original lock; do not resolve floating upstream versions. Native image codecs remain explicitly unsupported as before. Browser Canvas texture resize and Three.js vendor files are not rebuilt or replaced by this change. No new GUI/Hub pass is implied.
