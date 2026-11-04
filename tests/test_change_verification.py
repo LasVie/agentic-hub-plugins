@@ -18,8 +18,9 @@ class ChangeVerificationTests(unittest.TestCase):
         root = Path(__file__).resolve().parents[1]
         env = dict(os.environ)
         env.pop('CHANGE_VERIFICATION_PAYLOAD', None)
-        result = subprocess.run([node, '--test', str(root / 'plugins/change-verification/tests/runtime.test.mjs')],
+        result = subprocess.run([node, '--test', '--test-reporter=tap', str(root / 'plugins/change-verification/tests/runtime.test.mjs')],
                                 cwd=root, env=env, text=True, stdout=subprocess.PIPE,
                                 stderr=subprocess.STDOUT, timeout=120)
         self.assertEqual(result.returncode, 0, result.stdout)
         self.assertIn('# pass 17', result.stdout)
+        self.assertIn('# fail 0', result.stdout)
