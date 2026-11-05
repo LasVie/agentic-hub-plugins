@@ -39,3 +39,11 @@ Hub 对部分 capability 文件采用宽松结构校验；本仓更严格，声�
 当前已核对的 Hub 通用限制：ZIP/累计解压 512 MiB、条目数 1000、预检压缩比 50；图标如有为合法 PNG 且不超过 5 MiB；名称/展示名/描述/标签还受字段长度约束。本仓额外将 ZIP 限制为 95 MiB，并使用确定性不压缩成员以避免压缩比误报。本地校验器不是 Hub 全部内容安全规则的完整复刻，最终仍以平台实际响应为准。
 
 后续平台格式改变时，应一起更新此文、模板、打包器与契约测试；不能只改文件扩展名或凭旧样包继续发布。
+
+## Connector / Expert Team 格式补充（2026-11-05）
+
+现行开发规则采用按需读取：先读 [AGENTS.md](../AGENTS.md)，再读对应的 [Skill](../skills/README.md)、[Plugin](../plugins/README.md)、[Connector](../connectors/README.md) 或 [Expert Team](../expert-teams/README.md) 指南。统一包装、原生测试包与交付包的一致性、文件位置和工具覆盖范围见 [公共打包规则](PACKAGING.md)。本文上面的四份样包记录保留为历史调研证据，不代表新类型已经通过测试。
+
+Connector 使用外层 `agent-mcp` / 内层 `mcp`，身份字段为 `id`；Expert Team 使用外层 `agent-group` / 内层 `agent_group`，身份字段为 `name`。两者均有 `manifest.json`，但组成与运行校验不同，不能套用 Plugin 的 `package_type: plugin`。各指南附有固定版本的官方 Hub 校验器、WorkSwarm 加载器和 SDK 规范链接。
+
+Hub 的结构校验比实际宿主宽松：连接器需核实单个 MCP 服务、凭据占位与真实能力；专家团需完整成员包、Leader、persona、共享/成员专用技能以及实际协作测试。当前本仓打包器与 CI 尚未覆盖这两类，按公共规则使用官方 CLI 和目标宿主校验，不能仅改类型字段后沿用旧校验结果。

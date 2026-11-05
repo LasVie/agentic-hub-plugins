@@ -1,13 +1,15 @@
 # Agentic Hub 插件交付仓
 
-保存团队已开发、测试的 Skill / SwarmSkill / Plugin 源码与发布 ZIP。AI 维护者先阅读 [AGENTS.md](AGENTS.md)。
+保存团队已开发、测试的 Skill / SwarmSkill / Plugin / Connector / Expert Team 源码与发布 ZIP。AI 维护者先阅读 [AGENTS.md](AGENTS.md)，再按资产类型读取对应指南；制作或提交时另读[公共打包规则](docs/PACKAGING.md)。
 
 Shared Google Sheets tracker: [open and edit](https://docs.google.com/spreadsheets/d/12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM/edit?usp=sharing). Update the existing workbook in place using a configured connector or an available browser; link sharing does not configure connector/API authentication. See [tracker access instructions](AGENTS.md#shared-google-sheets-tracker-access).
 
-- `skills/<slug>/`：技能源码、打包 metadata、来源审查。
-- `plugins/<slug>/`：插件源码、manifest、来源审查。
-- `releases/<type>/<slug>/<version>/`：经测试后通过 PR 合入的 ZIP、SHA-256 和载荷清单。
-- `plugins/<slug>/test-packages/`、`skills/<slug>/test-packages/`：对应资产的原生安装/测试 ZIP；与当前源码不同的旧包放在 `history/` 并标明版本。
+- [`skills/<slug>/`](skills/README.md)：Skill / SwarmSkill 源码及专属格式、测试指南。
+- [`plugins/<slug>/`](plugins/README.md)：Plugin 源码及专属格式、测试指南。
+- [`connectors/<slug>/`](connectors/README.md)：Connector（MCP / CLI / Skill-only）源码、集成及认证规范。
+- [`expert-teams/<slug>/`](expert-teams/README.md)：Expert Team 源码、成员组成、能力归属及协作测试规范；原 `teams/pc-build-team/` 已迁入，文件及已测试 ZIP 内容不变。
+- `releases/<type>/<slug>/<version>/`：当前打包器支持的 Skill / SwarmSkill / Plugin 标准 ZIP、SHA-256 和载荷清单。Connector / Expert Team 暂用各自 `release/<version>/` 保存交付包和校验记录，详见公共打包规则。
+- 各类型 `<slug>/test-packages/`：对应资产的原生安装/测试 ZIP；与当前源码不同的旧包放在 `history/` 并标明版本。装机专家团 0.2.1 保留既有原生交付包和原哈希。
 - `plugins/<slug>/tests/fixtures/`、`skills/<slug>/tests/fixtures/`：可编辑测试输入，位于运行载荷之外。
 - `docs/deliveries/<batch>/`：跨资产交付说明，链接到各资产目录；仓库根目录不放安装 ZIP 或插件测试素材。
 - `templates/`：开发脚手架，不能作为已有成品统计。
@@ -25,7 +27,7 @@ python tools/asset_release.py pack skills/my-skill
 python tools/asset_release.py check-repo
 ```
 
-`check` 只验证来源记录和本仓固定格式；每个真实插件还必须有自己的功能测试。MIT / Apache-2.0 的许可保留、署名、修改声明及授权不明时的处理，按 [AGENTS.md](AGENTS.md#licensing-and-distribution-requirements) 执行。第三方材料保留各自适用许可；本项目自身的统一许可证仍待总控决定，不能由 AI 默认选定。
+上面的本仓打包器命令目前只覆盖 Skill / SwarmSkill / Plugin，未覆盖 Connector / Expert Team；后两类须按各自指南执行官方 CLI 校验、目标 WorkSwarm 加载和实际功能测试，不能把当前 CI 通过当作新类型验收。`check` 只验证来源记录和本仓固定格式；每个真实插件还必须有自己的功能测试。MIT / Apache-2.0 的许可保留、署名、修改声明及授权不明时的处理，按 [AGENTS.md](AGENTS.md#licensing-and-distribution-requirements) 执行。第三方材料保留各自适用许可；本项目自身的统一许可证仍待总控决定，不能由 AI 默认选定。
 
 维护流程以 [AGENTS.md](AGENTS.md) 为准：
 
