@@ -1,0 +1,5 @@
+# User test confirmation
+
+User test confirmation: “I confirm manual testing of 离线力学实验室 v1.0.0 passed.” Confirmed by Cai Zhenze on 2026-11-05 Asia/Singapore. Task AH-20261102-offline-mechanics-lab, candidate CAND-EXT-011, version 1.0.0. Canonical ZIP SHA-256 b69f0177931df25d7103aede52ac8e2177cc5e8e5ff252d36ac48edd724f758b. Native WorkSwarm ZIP SHA-256 e850a5458ea3fb7ef22b31bdfd79f68482f6144ed17508e1d86e4fa4bdf69319. Known blocking issues: none reported. Source: current conversation. Nine original PNGs recovered byte for byte. Eight browser captures show free fall, pendulum and edited collision scenes at different sample times. The WorkSwarm start/status capture includes a private session URL and is retained locally. User confirmation covers the manual test; screenshots document the visible scenes and readings. Both ZIP hashes, all 13 runtime files, MIT license evidence and the current repository package contract were verified.
+
+Progress report: `RPT-20261105-offline-mechanics-lab-confirmed`. GitHub delivery authorized in the current conversation. Project Lead acceptance is separate.

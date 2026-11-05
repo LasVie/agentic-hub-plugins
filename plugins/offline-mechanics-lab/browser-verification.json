@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-02T13:38:03.458Z",
+  "plugin": "offline-mechanics-lab",
+  "version": "1.0.0",
+  "scope": "Automated real browser/service/worker tests; not user manual testing or chat-worker invocation",
+  "checks": [
+    "real-worker-freefall-241-frames",
+    "play-pause-real-samples",
+    "collision-browser-reference-velocity",
+    "actual-csv-722-rows",
+    "persist-restart-load-Chinese-input-and-no-stale-result",
+    "edit-clears-readings-and-disables-export",
+    "invalid-input-fails-closed-in-Chinese",
+    "JSON-roundtrip-and-recompute",
+    "invalid-import-clears-old-results",
+    "pointer-drag-edits-real-initial-coordinates",
+    "input-change-cancels-pending-worker",
+    "worker-stall-timeout-no-results",
+    "late-load-does-not-clobber-edits",
+    "no-page-errors-or-external-page-requests"
+  ],
+  "errors": [],
+  "external_request_count": 0,
+  "passed": true
+}

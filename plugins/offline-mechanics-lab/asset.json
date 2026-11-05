@@ -1,0 +1,10 @@
+{
+  "type": "agent-plugin", "name": "offline-mechanics-lab", "version": "1.0.0",
+  "display_name": "离线力学实验室",
+  "description": "编辑二维刚体与约束，离线计算碰撞、自由落体和摆动；逐帧查看轨迹与数值，保存场景并导出实际采样数据。",
+  "publisher": "Cai Zhenze", "category": "数据与科学研究",
+  "tags": ["离线力学", "刚体碰撞", "交互实验"],
+  "functional_tags": ["Offline Rigid Body Simulation", "Collision Experiments", "Constraint Dynamics"],
+  "scope": "macOS/Linux、Python3.10+、桌面Chrome；矩形、近似圆和距离约束；固定步长、有界实验，不用于工程安全验证。",
+  "candidate_id": "CAND-EXT-011", "task_id": "AH-20261102-offline-mechanics-lab"
+}
