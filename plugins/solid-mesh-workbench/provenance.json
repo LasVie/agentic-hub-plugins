@@ -1,0 +1,197 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/elalish/manifold",
+      "revision": "ce50d78021d64507f89e8c9fc2c2e51018117857",
+      "version": "3.5.4",
+      "license_expression": "Apache-2.0 AND MIT AND Zlib AND LicenseRef-Sun-Math AND LicenseRef-Public-Domain AND BSD-3-Clause",
+      "license_evidence": [
+        {
+          "path": "licenses/manifold/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        {
+          "path": "licenses/manifold/AUTHORS",
+          "sha256": "ce32e1a3ec7d22bcc44f8d44b98a66ea34d5b7a114900e749135bb9a8b812388"
+        },
+        {
+          "path": "licenses/dset/LICENSE",
+          "sha256": "96e026523acf9bf38e4e1799de74d1b8ab3b8ddbbaf2cef2fef2708deb5f4f07"
+        },
+        {
+          "path": "licenses/tbtsvd/LICENSE",
+          "sha256": "f14d104e7287f2393836a00f3122bc8583e602c0bb8873b153e0da33a2613ba8"
+        },
+        {
+          "path": "licenses/sun-math/LICENSE",
+          "sha256": "fab59bf30f8584efc423cafe2e71d9f055b165708a505f80209db0ba34ea7b27"
+        },
+        {
+          "path": "licenses/linalg/UPSTREAM_STATEMENT.txt",
+          "sha256": "98fb8ed4a98307eb236ad9b2b61fa178f8ab940e2271277519f59c920f0fbf30"
+        },
+        {
+          "path": "licenses/quickhull/LICENSE",
+          "sha256": "a5588410e33cebe3e60a14e088a931626d9c80d5af29c3e0ab3f125c5ed42c7b"
+        },
+        {
+          "path": "licenses/physx/UPSTREAM_STATEMENT.txt",
+          "sha256": "34a15353a2ad0e403683e92d7adb3f56926fb610d4f66764a5f888b6d2fc6eca"
+        }
+      ],
+      "scope": "Unmodified official manifold.js/manifold.wasm; exact embedded header attributions inventoried at the pinned source. Original upstream fragment revisions are not specified by Manifold; no separate copied implementation from their latest trees."
+    },
+    {
+      "url": "https://github.com/AngusJohnson/Clipper2",
+      "revision": "46f639177fe418f9689e8ddb74f08a870c71f5b4",
+      "license_expression": "BSL-1.0",
+      "license_evidence": [
+        {
+          "path": "licenses/clipper2/LICENSE",
+          "sha256": "ea056d2c64294936b226f7360c265e77c52adc4ba171ee61029357f101f439cf"
+        },
+        {
+          "path": "licenses/clipper2/COPYRIGHT.txt",
+          "sha256": "f21fc3683c7b997065e69571f30f3cba08ac490302fbb97bed6ab828b3f52609"
+        }
+      ],
+      "scope": "Default CrossSection backend compiled into the unmodified official WASM; source pin verified from Manifold workflow and cmake/manifoldDeps.cmake."
+    },
+    {
+      "url": "https://github.com/emscripten-core/emscripten",
+      "revision": "dc80f645ee70178c11666de0c3860d9e064d50e4",
+      "version": "5.0.2",
+      "license_expression": "MIT AND Apache-2.0 WITH LLVM-exception AND BSD-2-Clause AND LicenseRef-Sun-Math AND CC0-1.0",
+      "license_evidence": [
+        {
+          "path": "licenses/dlmalloc/LICENSE",
+          "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+        },
+        {
+          "path": "licenses/dlmalloc/UPSTREAM_STATEMENT.txt",
+          "sha256": "158da3494a2b9ce8a84eca360d0d7046f862e50267f1ee1bb137cd2c704b41b3"
+        },
+        {
+          "path": "licenses/emscripten/AUTHORS",
+          "sha256": "8585fa1b981f576f52806833481323007ccac5c00f31a873215e31c0f42820f0"
+        },
+        {
+          "path": "licenses/emscripten/LICENSE",
+          "sha256": "1d678c6d3e6fca3245faaf72b66097b8df241172b38c8d9a16601e3a72b66386"
+        },
+        {
+          "path": "licenses/llvm-compiler-rt/CREDITS.TXT",
+          "sha256": "a9901f47a089da41e4690682d00ce4cedaa2baf41fedbe79beee366d43ac2461"
+        },
+        {
+          "path": "licenses/llvm-compiler-rt/LICENSE",
+          "sha256": "b606c871f483c0023ee92cb62e271fce42467407da220b7bc9e22208eada9d25"
+        },
+        {
+          "path": "licenses/llvm-libcxx/CREDITS.TXT",
+          "sha256": "054e099bf5954c8821b880f5751d2fbf221bf43cf7c57ac1c2c5ff6263d6d9c3"
+        },
+        {
+          "path": "licenses/llvm-libcxx/LICENSE",
+          "sha256": "3f3d1da78246d5c2ffc879f8239d6e856b19ba813b8349cbe48f85bd018ee3af"
+        },
+        {
+          "path": "licenses/llvm-libcxxabi/CREDITS.TXT",
+          "sha256": "a259fff28a51623f14917dd68f97f3af7804984087ddc1bfd8196d08ebb75b83"
+        },
+        {
+          "path": "licenses/llvm-libcxxabi/LICENSE",
+          "sha256": "b043b7c5fdaf8df24b2c3b50f7651e6acfc8bdd73cc152ec5d090b8a7e0ede33"
+        },
+        {
+          "path": "licenses/musl/LICENSE",
+          "sha256": "dd3d670b96794146071703a75b07421203e23e4ef11b4f8c484d90c465bcd6f5"
+        },
+        {
+          "path": "licenses/musl/THIRD_PARTY_COPYRIGHTS.txt",
+          "sha256": "42aeb498a238ba320acc01e8b74c8c92bf56f72458a0cc074e73c7729a4ac52d"
+        }
+      ],
+      "scope": "Generated JS support and conservatively covered embedded C/C++ runtimes; MIT chosen for Emscripten dual license; full LLVM texts including legacy notices retained. musl per-file copyright blocks preserved. dlmalloc public-domain statement references CC0."
+    },
+    {
+      "url": "https://github.com/sgorsten/linalg",
+      "revision": "tree:4460f1f5b85ccc81ffcf49aa450d454db58ca90e; license-blob:00d2e135a7ee7b81c27fed80ddf6ee341c8d6752",
+      "license_expression": "Unlicense",
+      "license_evidence": [
+        {
+          "path": "licenses/linalg/LICENSE",
+          "sha256": "7e12e5df4bae12cb21581ba157ced20e1986a0508dd10d0e8a4ab9a4cf94e85c"
+        },
+        {
+          "path": "licenses/linalg/UPSTREAM_STATEMENT.txt",
+          "sha256": "98fb8ed4a98307eb236ad9b2b61fa178f8ab940e2271277519f59c920f0fbf30"
+        }
+      ],
+      "scope": "License evidence only; the actual embedded implementation is Manifold pinned linalg.h adaptation based on linalg2.2."
+    },
+    {
+      "url": "https://github.com/akuukka/quickhull",
+      "revision": "tree:4ef66c68950cb4db11d3b75bfe4034d807485ad0; readme-blob:a36c081b78551c58c53c46aca3b98b187683e5ff",
+      "license_expression": "LicenseRef-Public-Domain",
+      "license_evidence": [
+        {
+          "path": "licenses/quickhull/LICENSE",
+          "sha256": "a5588410e33cebe3e60a14e088a931626d9c80d5af29c3e0ab3f125c5ed42c7b"
+        },
+        {
+          "path": "licenses/quickhull/UPSTREAM_STATEMENT.txt",
+          "sha256": "33a17d786038d3beb8f18c81c81e5ac02b2174788088a6ba04e15ce4a5d0b40e"
+        }
+      ],
+      "scope": "Public-domain evidence only; actual embedded implementation is the Manifold pinned adaptation with retained Apache attribution."
+    },
+    {
+      "url": "https://github.com/NVIDIA-Omniverse/PhysX",
+      "revision": "tree:b97365c6ddb32fda8469bc788ec18024862b0368; license-blob:2388f6f9a26a42277e0dd0bf4b7b55af5aee29e5",
+      "license_expression": "BSD-3-Clause",
+      "license_evidence": [
+        {
+          "path": "licenses/physx/LICENSE",
+          "sha256": "5adc30791adb9809dae74882afee13002d31560f6b0d78c01373edca0873d79f"
+        },
+        {
+          "path": "licenses/physx/UPSTREAM_STATEMENT.txt",
+          "sha256": "34a15353a2ad0e403683e92d7adb3f56926fb610d4f66764a5f888b6d2fc6eca"
+        }
+      ],
+      "scope": "Full license evidence for snippets identified in pinned Manifold src/tri_dist.h; original snippet commit not specified upstream."
+    }
+  ],
+  "reused_paths": [
+    "vendor/manifold.js",
+    "vendor/manifold.wasm"
+  ],
+  "audit_file": "SOURCE_REVIEW.md",
+  "review_date": "2026-10-31",
+  "upstream_name": "Manifold / manifold-3d",
+  "display_name": "立体网格布尔工坊",
+  "internal_slug": "solid-mesh-workbench",
+  "upstream_artifact": {
+    "url": "https://registry.npmjs.org/manifold-3d/-/manifold-3d-3.5.4.tgz",
+    "version": "3.5.4",
+    "git_head": "ce50d78021d64507f89e8c9fc2c2e51018117857",
+    "sha256": "cf57c91fcd33b6315bff28e424ac8c5f04acb5410e9dd8e9886838303910c568",
+    "registry_integrity": "sha512-WWsme5HabwLHVcWPHT9m+s7mdmDVSEvCny+uXH1E7jEc8FbFUgM75C3Dh6NVw57Eeh3Ow7+xHCuXfxDMOemi9A==",
+    "integrity_verification": "SHA-512 matched registry integrity; signatures not separately verified",
+    "files": [
+      {
+        "path": "vendor/manifold.js",
+        "bytes": 82371,
+        "sha256": "ca3c8a88df63bb3083013d1eb7f700bf23216594f6e98a2566e34f55d7341ce8"
+      },
+      {
+        "path": "vendor/manifold.wasm",
+        "bytes": 541470,
+        "sha256": "73e3b419ad31294f6b1cc478173944e50efc4a34bfdeeff0107bdfc12975f11c"
+      }
+    ]
+  }
+}

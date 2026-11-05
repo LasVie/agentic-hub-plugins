@@ -1,0 +1,122 @@
+{
+  "verified_at": "2026-10-31T05:04:10.061352+00:00",
+  "plugin_id": "solid-mesh-workbench",
+  "display_name": "立体网格布尔工坊",
+  "version": "1.0.0",
+  "frontend_url": "http://127.0.0.1:6401/",
+  "backend_websocket_url": "ws://127.0.0.1:29360/ws",
+  "host_root": "/private/tmp/main3-solid-mesh-20261031-host6401",
+  "model_requests": 0,
+  "source_commit": "3ef1de9bf0b4813e2a0e8674dedc499c78e53df2",
+  "runtime_dependencies": "Fresh task-owned venv; unchanged host uv.lock with uv sync --frozen --no-dev --no-install-project; Python 3.12.14, openjiuwen 0.1.19.",
+  "isolation": "Dedicated source copy, frontend build, venv, cache, data, home, tasks and ports; no shared dependencies or host source changed.",
+  "host_network_configuration": "Localhost:9 disabled model endpoint; agent prewarm=0; JIUWENSWARM_CONFIG_URL=off; no credentials copied.",
+  "host_code_changes": false,
+  "service_restarts_during_verification": false,
+  "verified_service_pids": {
+    "frontend": 88653,
+    "gateway": 88652
+  },
+  "verification_scope": "Supported running-backend import/install/catalog and payload integrity only.",
+  "native_tool_execution_through_chat_worker": "Not exercised; requires separate manual conversation testing.",
+  "connection_state_limitation": "For a package without MCP connectors, connected mirrors installed and does not prove native-tool loading or execution.",
+  "sdk_invocation": "Not performed by this helper; report separately if tested.",
+  "supported_interface_evidence": {
+    "host_paths_relative_to_source": {
+      "jiuwenswarm/channels/web/frontend/src/services/pluginPackagesApi.ts:145": "show; importLocal at154; install at159.",
+      "jiuwenswarm/common/schema/message.py:406": "Supported plugin package WS request-method declarations.",
+      "jiuwenswarm/server/runtime/extension_package_manager.py:4126": "import_plugin_package; install_plugin_package at4308.",
+      "jiuwenswarm/server/runtime/extension_package_manager.py:639": "Native-only connected state mirrors installed.",
+      "jiuwenswarm/server/runtime/agent_adapter/interface_deep.py:2909": "Selected chat plugins load through DeepAgent.load_plugin at2936."
+    },
+    "sdk_paths_relative_to_openjiuwen": {
+      "harness/deep_agent.py:2196": "Public DeepAgent.load_plugin API.",
+      "harness/resources/extension_resolver.py:103": "resolve_plugin_parts resolves manifest-declared native tools and skills."
+    },
+    "unsupported_test_path": "No generic native Tool.invoke request is declared in the inspected WorkSwarm WS schema. No test endpoint, monkey-patch, or fake-model conversation is used."
+  },
+  "catalog_before": [],
+  "config_sha256_before": "0328e26203e03a25220e760548972fc05711637e63139f9487d933e993f88bfd",
+  "other_plugin_files_before": 0,
+  "prior_host_sdk_evidence": "Maintained offline-optics-lab verification pattern; current pinned host source independently inspected, and current real SDK invocation reported separately.",
+  "frontend_http": 200,
+  "websocket_proxy_ping_pong": true,
+  "websocket_direct_ping_pong": true,
+  "native_zip": {
+    "path": "/Users/IDLE_And_R/.codex/worktrees/4dbb/agentic-hub-plugins/plugins/solid-mesh-workbench/test-packages/solid-mesh-workbench-1.0.0-workswarm.zip",
+    "sha256": "6d5bd3e547633f0ba05f1298c8da69fdc180538871d4d937ae891e7a1fe469cb",
+    "payload_files": 45
+  },
+  "import_local": true,
+  "install": true,
+  "payload_matches_zip": true,
+  "payload_sha256": {
+    "README.md": "809bf8aee388fb12c7462bace487a00f0f8511f8c73513e61a9f5b02e153c175",
+    "THIRD_PARTY_NOTICES.md": "04838f7dd08293a86c92e4e2fdfffc57a4a3a2d84602fa7db38f78dfc6be4033",
+    "engine/cli.mjs": "2849ff66907663828d031aa95fee9d1a4f241e6c8d58df4c7187d072dda0a894",
+    "engine/core.mjs": "5dc2db231a6c7a0f615ac12e6cbd230dcd6aa215a3cd496dd6a51e6e01a9d49e",
+    "examples/方块开孔.json": "a20da2164062ff6737a2a1dfc21c5462288da62efd2d5aa9d7c72a4ccae5f2cf",
+    "examples/重叠方块.json": "f98d04a5629412e1e308003e5344ff6f53e5a8d1a94b0cd6db1d632e96a3f507",
+    "examples/错误示例-破洞.obj": "cf2c1866a6c5777faae7a8e8005962beed0237eb2401c2dbf022105175dc86a9",
+    "examples/闭合方块.obj": "cadfbf0f00b378ad8c56c236e82fb5c64d0f971aa98f601c3a61cb6412fa891e",
+    "licenses/clipper2/COPYRIGHT.txt": "f21fc3683c7b997065e69571f30f3cba08ac490302fbb97bed6ab828b3f52609",
+    "licenses/clipper2/LICENSE": "ea056d2c64294936b226f7360c265e77c52adc4ba171ee61029357f101f439cf",
+    "licenses/dlmalloc/LICENSE": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+    "licenses/dlmalloc/UPSTREAM_STATEMENT.txt": "158da3494a2b9ce8a84eca360d0d7046f862e50267f1ee1bb137cd2c704b41b3",
+    "licenses/dset/LICENSE": "96e026523acf9bf38e4e1799de74d1b8ab3b8ddbbaf2cef2fef2708deb5f4f07",
+    "licenses/emscripten/AUTHORS": "8585fa1b981f576f52806833481323007ccac5c00f31a873215e31c0f42820f0",
+    "licenses/emscripten/LICENSE": "1d678c6d3e6fca3245faaf72b66097b8df241172b38c8d9a16601e3a72b66386",
+    "licenses/linalg/LICENSE": "7e12e5df4bae12cb21581ba157ced20e1986a0508dd10d0e8a4ab9a4cf94e85c",
+    "licenses/linalg/UPSTREAM_STATEMENT.txt": "98fb8ed4a98307eb236ad9b2b61fa178f8ab940e2271277519f59c920f0fbf30",
+    "licenses/llvm-compiler-rt/CREDITS.TXT": "a9901f47a089da41e4690682d00ce4cedaa2baf41fedbe79beee366d43ac2461",
+    "licenses/llvm-compiler-rt/LICENSE": "b606c871f483c0023ee92cb62e271fce42467407da220b7bc9e22208eada9d25",
+    "licenses/llvm-libcxx/CREDITS.TXT": "054e099bf5954c8821b880f5751d2fbf221bf43cf7c57ac1c2c5ff6263d6d9c3",
+    "licenses/llvm-libcxx/LICENSE": "3f3d1da78246d5c2ffc879f8239d6e856b19ba813b8349cbe48f85bd018ee3af",
+    "licenses/llvm-libcxxabi/CREDITS.TXT": "a259fff28a51623f14917dd68f97f3af7804984087ddc1bfd8196d08ebb75b83",
+    "licenses/llvm-libcxxabi/LICENSE": "b043b7c5fdaf8df24b2c3b50f7651e6acfc8bdd73cc152ec5d090b8a7e0ede33",
+    "licenses/manifold/AUTHORS": "ce32e1a3ec7d22bcc44f8d44b98a66ea34d5b7a114900e749135bb9a8b812388",
+    "licenses/manifold/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "licenses/musl/LICENSE": "dd3d670b96794146071703a75b07421203e23e4ef11b4f8c484d90c465bcd6f5",
+    "licenses/musl/THIRD_PARTY_COPYRIGHTS.txt": "42aeb498a238ba320acc01e8b74c8c92bf56f72458a0cc074e73c7729a4ac52d",
+    "licenses/physx/LICENSE": "5adc30791adb9809dae74882afee13002d31560f6b0d78c01373edca0873d79f",
+    "licenses/physx/UPSTREAM_STATEMENT.txt": "34a15353a2ad0e403683e92d7adb3f56926fb610d4f66764a5f888b6d2fc6eca",
+    "licenses/quickhull/LICENSE": "a5588410e33cebe3e60a14e088a931626d9c80d5af29c3e0ab3f125c5ed42c7b",
+    "licenses/quickhull/UPSTREAM_STATEMENT.txt": "33a17d786038d3beb8f18c81c81e5ac02b2174788088a6ba04e15ce4a5d0b40e",
+    "licenses/sun-math/LICENSE": "fab59bf30f8584efc423cafe2e71d9f055b165708a505f80209db0ba34ea7b27",
+    "licenses/tbtsvd/LICENSE": "f14d104e7287f2393836a00f3122bc8583e602c0bb8873b153e0da33a2613ba8",
+    "manifest.json": "95176f71aa6e0620137eb6bd848388cc7dfb909b1fbf7593127f1b42d965d6cc",
+    "runtime/runtime.py": "fb9c172f34de44d7f5b908cb1953420d70cdafc91e4e08d085e3fd547b110fc2",
+    "runtime/server.py": "d1c6b3ed51841f480e725d1ab54ba72a9a0114d6db676f550387fb67b083a610",
+    "skills/solid-mesh/SKILL.md": "37f10d1dff53d52562dc56b277d017530b7f6feeb9363bfc020f3b2980df1d8c",
+    "tools/solid_mesh_tools.py": "88dba1bb840c1d4ee251f8fd0015634351c94a3d4ed0e46ac188d8d16f020682",
+    "vendor/manifold.js": "ca3c8a88df63bb3083013d1eb7f700bf23216594f6e98a2566e34f55d7341ce8",
+    "vendor/manifold.wasm": "73e3b419ad31294f6b1cc478173944e50efc4a34bfdeeff0107bdfc12975f11c",
+    "vendor/package.json": "89c47db7851f89caec72da4f215ebc21cf1e294aeef3b45d2583562d846ab035",
+    "web/app.js": "f0e628f1c3e682c78fa316a9dd82c124d0353bc5c0b3218849bed2bc2d251681",
+    "web/index.html": "79ca95cac274b822ecbd248fac80180f71af5a1c53f2bdbe7964790cb9998433",
+    "web/style.css": "4eff55056f5cd293985b4b23a45832ad3042a6d920738ad937f8326162824662",
+    "web/ui_helpers.mjs": "09ba358561976827cef1a8832c559cfffa8f352195c6b2e14abe9b1360a9b62b"
+  },
+  "installed_card": {
+    "id": "solid-mesh-workbench",
+    "version": "1.0.0",
+    "displayName": {
+      "zh": "立体网格布尔工坊",
+      "en": "立体网格布尔工坊"
+    },
+    "installed": true,
+    "connection_state": "connected"
+  },
+  "config_sha256_after": "0328e26203e03a25220e760548972fc05711637e63139f9487d933e993f88bfd",
+  "model_config_unchanged": true,
+  "other_plugin_payloads_unchanged": true,
+  "catalog_after": [
+    {
+      "id": "solid-mesh-workbench",
+      "installed": true,
+      "connection_state": "connected"
+    }
+  ],
+  "other_plugin_catalog_unchanged": true,
+  "passed": true
+}
