@@ -1,0 +1,23 @@
+{
+  "type": "agent-plugin",
+  "name": "offline-score-workbench",
+  "version": "1.0.0",
+  "display_name": "离线乐谱工作台",
+  "description": "在本机导入和编辑乐谱 XML，查看分页五线谱，检查音符的音高和时序，导出 SVG 与 MIDI。",
+  "publisher": "Cai Zhenze",
+  "category": "内容创作",
+  "tags": [
+    "乐谱",
+    "离线",
+    "MusicXML",
+    "MEI"
+  ],
+  "functional_tags": [
+    "Score Engraving",
+    "MusicXML",
+    "MIDI Export"
+  ],
+  "scope": "有限 MusicXML 与 MEI 乐谱的离线排版和导出。不含音频合成、压缩乐谱或扫描识别。",
+  "candidate_id": "CAND-EXT-012",
+  "task_id": "AH-20261105-offline-score-workbench"
+}

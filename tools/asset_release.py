@@ -11,6 +11,7 @@ import re
 import stat
 import sys
 import zipfile
+from collections.abc import Iterable
 from pathlib import Path, PurePosixPath
 
 import yaml
@@ -22,6 +23,13 @@ KINDS = {"skill", "swarmskill", "agent-plugin"}
 CATEGORIES = {"软件开发", "办公与生产力", "内容创作", "多模态与媒体", "数据与科学研究", "合规与法律", "生活与健康", "金融与财富管理"}
 MAX_BYTES = 95 * 1024 * 1024
 FORBIDDEN = {"persona", "agent_card", "model", "subagents", "memories", "rubrics"}
+# Raw-text signatures from openJiuwen-ai/skillhub@c8ee4ef44be0453470114aa5a19f4e1017462907,
+# marketplace/plugins_market/validation/content_security.py. Include vendor files.
+HUB_JS_SUFFIXES = (".js", ".mjs", ".cjs", ".ts")
+HUB_DYNAMIC_JS = (
+    (re.compile(r"\beval\s*\("), "eval dynamic code execution"),
+    (re.compile(r"\bnew\s+Function\s*\("), "Function dynamic code execution"),
+)
 
 
 def require(ok: bool, message: str) -> None:
@@ -189,17 +197,21 @@ def build_bytes(c: dict, payload: Path) -> tuple[bytes, dict]:
     return out.getvalue(), hashes
 
 
+def safe_zip_entries(archive: zipfile.ZipFile) -> list[zipfile.ZipInfo]:
+    infos = archive.infolist()
+    require(len(infos) <= 1000 and sum(i.file_size for i in infos) <= 512 * 1024 * 1024, "ZIP expansion limit")
+    require(len(infos) == len({i.filename.casefold() for i in infos}), "duplicate/case-colliding ZIP paths")
+    for info in infos:
+        p = PurePosixPath(info.filename)
+        require(not p.is_absolute() and ".." not in p.parts and "\\" not in info.filename and ":" not in info.filename, "unsafe ZIP path")
+        require(not stat.S_ISLNK(info.external_attr >> 16), "ZIP symlink forbidden")
+    return infos
+
+
 def inspect_zip(body: bytes) -> tuple[dict, dict]:
     require(len(body) <= MAX_BYTES, "oversized archive")
     with zipfile.ZipFile(io.BytesIO(body)) as z:
-        infos = z.infolist()
-        require(len(infos) <= 1000 and sum(i.file_size for i in infos) <= 512 * 1024 * 1024, "ZIP expansion limit")
-        names = [i.filename for i in infos]
-        require(len(names) == len(set(n.casefold() for n in names)), "duplicate/case-colliding ZIP paths")
-        for info in infos:
-            p = PurePosixPath(info.filename)
-            require(not p.is_absolute() and ".." not in p.parts and "\\" not in info.filename and ":" not in info.filename, "unsafe ZIP path")
-            require(not stat.S_ISLNK(info.external_attr >> 16), "ZIP symlink forbidden")
+        names = [i.filename for i in safe_zip_entries(z)]
         wrappers = [n for n in names if n.endswith("/plugin.yaml")]
         require(len(wrappers) == 1 and len(PurePosixPath(wrappers[0]).parts) == 2, "one outer plugin.yaml required")
         c = yaml.safe_load(z.read(wrappers[0]))
@@ -221,8 +233,42 @@ def inspect_zip(body: bytes) -> tuple[dict, dict]:
         return c, payload
 
 
+def javascript_members(path: Path) -> Iterable[tuple[str, bytes]]:
+    require(not path.is_symlink(), "preflight input cannot be a symlink")
+    if path.is_dir():
+        for member in sorted(path.rglob("*")):
+            relative = member.relative_to(path).as_posix()
+            require(not member.is_symlink(), f"preflight symlink forbidden: {relative}")
+            if member.is_file() and relative.lower().endswith(HUB_JS_SUFFIXES):
+                yield relative, member.read_bytes()
+        return
+    require(path.is_file() and path.suffix.lower() == ".zip", "preflight input must be a payload directory or ZIP")
+    require(path.stat().st_size <= MAX_BYTES, "oversized archive")
+    with zipfile.ZipFile(path) as archive:
+        for member in safe_zip_entries(archive):
+            if not member.is_dir() and member.filename.lower().endswith(HUB_JS_SUFFIXES):
+                yield member.filename, archive.read(member)
+
+
+def preflight(path: Path) -> dict:
+    """Check the two published JavaScript signatures associated with known Hub rejections."""
+    findings = []
+    files = 0
+    for filename, body in javascript_members(path):
+        files += 1
+        source = body.decode("utf-8", errors="replace")
+        for signature, reason in HUB_DYNAMIC_JS:
+            match = signature.search(source)
+            if match:
+                line = source.count("\n", 0, match.start()) + 1
+                findings.append(f"{filename}:{line}: {reason}")
+    require(not findings, "known Hub JavaScript signatures found:\n" + "\n".join(findings))
+    return {"path": str(path), "javascript_files_scanned": files, "known_dynamic_js_signatures": 0}
+
+
 def pack(asset: Path, output: Path | None = None) -> Path:
     c, payload, provenance = check_asset(asset)
+    preflight(payload)
     test_report = relative_file(asset, "TEST_REPORT.md")
     require(bool(test_report.read_text(encoding="utf-8").strip()), "functional test report is empty")
     body, hashes = build_bytes(c, payload)
@@ -291,7 +337,7 @@ def check_repo(root: Path = ROOT) -> dict:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
-    for name in ("check", "pack", "audit-upstream"):
+    for name in ("check", "pack", "audit-upstream", "preflight"):
         p = sub.add_parser(name)
         p.add_argument("path", type=Path)
         if name == "pack":
@@ -305,6 +351,8 @@ def main() -> None:
         result = audit_upstream(a.path)
     elif a.command == "pack":
         result = {"zip": str(pack(a.path, a.output))}
+    elif a.command == "preflight":
+        result = preflight(a.path)
     else:
         c, _, _ = check_asset(a.path)
         result = {"name": c["name"], "type": c["type"], "version": c["version"], "format_ok": True}

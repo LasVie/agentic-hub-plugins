@@ -154,6 +154,42 @@ class PackagingContractTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "unsafe ZIP"):
             release.inspect_zip(buf.getvalue())
 
+    def test_preflight_rejects_known_vendor_signatures_in_both_zip_forms(self):
+        asset = self.fixture("plugin")
+        payload = asset / "example-plugin"
+        scripts = {
+            "web/vendor/mapshaper.js": "(0,eval (source));",
+            "vendor/rdkit/RDKit_minimal.js": 'new\nFunction("return 1")();',
+        }
+        for name, source in scripts.items():
+            file = payload / name
+            file.parent.mkdir(parents=True, exist_ok=True)
+            file.write_text(source, encoding="utf-8")
+        native = self.base / "native.zip"
+        with zipfile.ZipFile(native, "w") as archive:
+            for file in payload.rglob("*"):
+                if file.is_file():
+                    archive.write(file, file.relative_to(payload).as_posix())
+        with self.assertRaisesRegex(ValueError, "known Hub JavaScript signatures"):
+            release.pack(asset, self.base / "out")
+        self.assertFalse((self.base / "out").exists())
+        metadata, _, _ = release.check_asset(asset)
+        wrapped = self.base / "historical.zip"
+        wrapped.write_bytes(release.build_bytes(metadata, payload)[0])
+        for path in (payload, native, wrapped):
+            with self.subTest(path=path), self.assertRaises(ValueError) as error:
+                release.preflight(path)
+            for filename, reason in zip(scripts, ("eval", "Function")):
+                self.assertIn(f"{filename}:1: {reason} dynamic code execution", str(error.exception))
+
+    def test_preflight_matches_published_raw_text_rules(self):
+        (self.base / "regex.MJS").write_text("const match = /x/.exec(source);", encoding="utf-8")
+        (self.base / "NOTES.md").write_text("Do not ship eval(source).", encoding="utf-8")
+        self.assertEqual(release.preflight(self.base)["javascript_files_scanned"], 1)
+        (self.base / "regex.MJS").write_text("// old code: eval(source)", encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, r"regex\.MJS:1: eval"):
+            release.preflight(self.base)
+
     def test_existing_version_cannot_silently_change(self):
         asset = self.fixture()
         release.pack(asset, self.base / "out")

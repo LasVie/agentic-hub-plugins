@@ -1,0 +1,36 @@
+# Source and distribution review
+
+Reviewed on 2026-11-05 for Cai Zhenze. CAND-EXT-012, AH-20261105-offline-score-workbench. Verovio → 离线乐谱工作台 → `offline-score-workbench`. Internal identity `repo:agent-plugin:offline-score-workbench`.
+
+This is a port with an original browser interface, native WorkSwarm tool and local launcher. 离线钢琴演奏 plays explicit note arrays, 音频韵律分析 analyzes audio, and 本地音乐库 manages playback. The new asset imports symbolic scores, engraves staff notation, exposes engine-computed note timing and exports SVG and MIDI.
+
+## Exact input and output
+
+- Verovio 6.4.0, tag `version-6.4.0`, commit `cb5fcfa1178238138aa7f51f1e55f6a743eb26cc`. The [pinned source archive](https://codeload.github.com/rism-digital/verovio/tar.gz/cb5fcfa1178238138aa7f51f1e55f6a743eb26cc) SHA-256 is `4d5b723af2805453d58cc9b6a9de8934973f95d8d711affa8e19018ada80e8cb`. Source and notices apply to the files actually used. Verovio's package declares LGPL-3.0-only and the pinned checkout provides COPYING.LESSER and COPYING.
+- The inspected official [release ZIP](https://github.com/rism-digital/verovio/releases/download/version-6.4.0/verovio-toolkit-wasm.js.zip) SHA-256 is `5740078fa5fa61d4dd10eec1351aca02ec9b33bb9b30729758145bf670a72514`. Its UMD SHA-256 is `c9902c00b58cc290c6fa42c7c4ab53aa82f7948a8c8c9ef8ee3794591db0e448`. The [npm 6.4.0 archive](https://registry.npmjs.org/verovio/-/verovio-6.4.0.tgz) contains the identical UMD. Both artifacts were inspected to establish the original build and test baseline.
+- Shipped `web/vendor/verovio-toolkit-wasm.js` is a local build from pinned source. SHA-256 `586d4e04f4ac4596436ca62081fb1d0c0ad7a14477cbe19f631dba5d62242df5`. It keeps the upstream JavaScript interface and does not use downloaded runtime scripts. The original prebuilt files were excluded from both delivery ZIPs.
+- `licenses/verovio/verovio-6.4.0-corresponding-source.tar.gz` SHA-256 `5565814a9ba13a4277b066003b6a0e04a8413979fa65307be130a00d65ac19f4`. It includes the C++ engine and headers, MEI generation inputs, edited resource selection, font metric generator and inputs, actual Emscripten build commands, CMake configuration, JavaScript API source and exact npm build lock. It excludes unrelated language bindings, CI, example media, runtime caches and Humdrum source. The source archive is documentation and build input kept outside the web tree.
+- Emscripten 4.0.23, compiler source `7a5d93b50f6a3a35e85a0d2fc9e667b8498e6aed`, official macOS ARM64 distribution `aaa43392544d695232b70eda706d751f18980c2a`, compiler archive SHA-256 `54234e108d6612eca5dc9280d1779ccec3d49ad4d8c8562a6b2046b0a5a8d5d4`. CMake 3.31.8 and Node.js 22.16.0 were used in isolated scratch. Development toolchains and npm build dependencies are build requirements only. No browser runtime package dependencies are installed.
+
+## Reused materials
+
+| Material | Covered paths in corresponding source or rebuilt bundle | License and retained evidence |
+| --- | --- | --- |
+| Verovio engraving and parsing core | `src/`, `include/`, `libmei/addons/`, `tools/c_wrapper.*`, browser toolkit API under `emscripten/npm/src/` | LGPL-3.0-only. Both GNU license texts and upstream file headers retained under `licenses/verovio/` and corresponding source. |
+| LibMEI and MEI schema | `libmei/tools/`, `libmei/dist/`, `libmei/mei/` | Original LibMEI MIT text and authors, plus MEI ECL-2.0 and file-level authors. Generated sources retain headers and ODD inputs retain existing customization and attribution. |
+| JSON++, pugixml 1.16, MidiFile | `include/json/`, `src/json/`, `include/pugi/`, `src/pugi/`, `include/midi/`, `src/midi/` | Hong Jiang's MIT, Arseny Kapoulkine's MIT, Craig Stuart Sapp's BSD-2-Clause. Complete original texts under `licenses/`. |
+| miniz-cpp / miniz | `include/zip/zip_file.hpp` | Pinned Thomas Fussell wrapper, MIT. Underlying miniz 2.2.0 notices include MIT and public-domain/Unlicense grants. Preserve Verovio's existing modification notice and exact header. The MXL importer is disabled. |
+| Tuning, CRC and Base64 | `include/tuning-library/`, `src/crc/`, `src/vrv.cpp` | Paul Walker MIT, Michael Barr public-domain notice, René Nyffenegger permissive notice. Preserve terms verbatim. |
+| Leipzig and Bravura | `emscripten/data/Leipzig*`, `emscripten/data/Bravura*`, corresponding font inputs | SIL OFL 1.1. Preserve upstream engraving contours unchanged, font sources and original metadata. Exact author notices, license texts and Leipzig FONTLOG supplied. No separate font sales, branding or endorsement. |
+| Liberation Serif metric inputs | `fonts/liberation-2.1.5/` and generated `emscripten/data/text/` | SIL OFL 1.1. Unmodified Serif faces from Debian `fonts-liberation2_2.1.5-1_all.deb`, SHA-256 `35ffaa54f117e633e89a5da89af235a073b34dbe582726fbf6989568f7fd9bda`. Four XML tables regenerate using the included FontTools script. Text uses system fonts in rendered SVG. |
+| Linked compiler runtime | Rebuilt JS/WASM | Emscripten MIT option with full original dual-license text, musl original notices, LLVM runtime Apache-2.0 with LLVM exceptions and historical notices, dlmalloc CC0. The four individual LLVM runtime license texts and applicable disclaimers are bundled. |
+
+The original `data/Liberation.css` embeds Liberation Serif 1.04 with © 2007 Ascender metadata. Its legacy GPLv2 terms with font exception differ from the upstream font README's blanket OFL description. The rebuilt payload excludes the original CSS, original text metric tables and unused fonts. Modern OFL Serif inputs provide replacement metrics without embedding text font binaries into the browser engine. The original footer image and other upstream media are excluded. The demo score and browser UI are original.
+
+The LGPL library stays separable. The plugin loads it by a fixed relative path and has no cryptographic replacement lock. Recipients receive the preferred source and Chinese instructions to rebuild or substitute a compatible modified engine. Modification of the library and reverse engineering to debug such modifications are permitted. Release hashing fixes the tested distribution bytes for project handoff and does not constrain recipients' copies.
+
+## Dynamic execution
+
+The locally rebuilt vendor sets Emscripten `DYNAMIC_EXECUTION=0`. This is a build option and the output is a normally loaded UMD with embedded WASM, without source obfuscation or runtime download substitution. The rebuilt engine passes all four fixture tests with Node's string-code-generation prohibition active. The actual copied library and each script in the corresponding-source archive were scanned against the [published Hub content-security implementation](https://github.com/openJiuwen-ai/skillhub/blob/c8ee4ef44be0453470114aa5a19f4e1017462907/marketplace/plugins_market/validation/content_security.py), including its JavaScript, Python and shell rules. This is local evidence for that published revision.
+
+Licenses and pinned sources are recorded in `provenance.json` with exact evidence-file SHA-256 values. Source reuse is verified for these specific materials and subject to the included terms. Final ZIP identity, extraction checks and functional results are recorded separately in `TEST_REPORT.md` and the release artifact.

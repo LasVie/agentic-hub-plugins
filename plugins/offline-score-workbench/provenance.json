@@ -1,0 +1,284 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "audit_file": "SOURCE_REVIEW.md",
+  "sources": [
+    {
+      "name": "verovio",
+      "url": "https://github.com/rism-digital/verovio",
+      "revision": "cb5fcfa1178238138aa7f51f1e55f6a743eb26cc",
+      "license_expression": "LGPL-3.0-only",
+      "scope": "Verovio 6.4.0 C++ engraving/import/MIDI engine, browser interface and corresponding source. Rebuilt with local audited resource set.",
+      "license_evidence": [
+        {
+          "path": "licenses/verovio/LICENSE",
+          "sha256": "a5681bf9b05db14d86776930017c647ad9e6e56ff6bbcfdf21e5848288dfaf1b"
+        },
+        {
+          "path": "licenses/verovio/COPYING",
+          "sha256": "8b1ba204bb69a0ade2bfcf65ef294a920f6bb361b317dba43c7ef29d96332b9b"
+        },
+        {
+          "path": "licenses/verovio/重建说明.md",
+          "sha256": "816562f3ff324dcbac196bcdb5c9b072e1091d101ff45afbb1cb2a5fc6dc69c7"
+        }
+      ]
+    },
+    {
+      "name": "libmei",
+      "url": "https://github.com/rism-digital/libmei",
+      "revision": "Verovio snapshot cb5fcfa1178238138aa7f51f1e55f6a743eb26cc",
+      "license_expression": "MIT",
+      "scope": "Andrew Hankinson, Alastair Porter and others. Modified code generator and generated classes included in corresponding source.",
+      "license_evidence": [
+        {
+          "path": "licenses/libmei/LICENSE",
+          "sha256": "4bb251131b31fcc9bbcdb8e03edfcd849492c4ec98cc0afaec741e2514b8c0a6"
+        },
+        {
+          "path": "licenses/libmei/AUTHORS",
+          "sha256": "a0b1c4890385792ed9a3307fec397515400c7ef532a81fd88a882d328d898d22"
+        }
+      ]
+    },
+    {
+      "name": "mei-schema",
+      "url": "https://github.com/music-encoding/music-encoding",
+      "revision": "Verovio ODD snapshot cb5fcfa1178238138aa7f51f1e55f6a743eb26cc; MEI commit recorded inside libmei/mei/mei-commit.txt",
+      "license_expression": "ECL-2.0",
+      "scope": "Music Encoding Initiative Board; original ODD schema inputs included in corresponding source for LibMEI generation.",
+      "license_evidence": [
+        {
+          "path": "licenses/mei-schema/LICENSE",
+          "sha256": "8e47bca4301168e231638375a29b5a86e14f009bf03b19648d8d2fa19480a35c"
+        }
+      ]
+    },
+    {
+      "name": "jsonxx",
+      "url": "https://github.com/hjiang/jsonxx",
+      "revision": "Verovio snapshot cb5fcfa1178238138aa7f51f1e55f6a743eb26cc",
+      "license_expression": "MIT",
+      "scope": "Hong Jiang. Embedded include/json and src/json.",
+      "license_evidence": [
+        {
+          "path": "licenses/jsonxx/LICENSE",
+          "sha256": "3e85b6b2dafb95819f34cabbf91f6faf79bcf107567d10486dec9935bd38c308"
+        }
+      ]
+    },
+    {
+      "name": "pugixml",
+      "url": "https://pugixml.org/",
+      "revision": "1.16 as vendored in cb5fcfa1178238138aa7f51f1e55f6a743eb26cc",
+      "license_expression": "MIT",
+      "scope": "Arseny Kapoulkine. Embedded include/pugi and src/pugi.",
+      "license_evidence": [
+        {
+          "path": "licenses/pugixml/LICENSE",
+          "sha256": "03425a580fe7947a8308bfb287db67603d5a0e6fc850ec319e24591c05a22f86"
+        }
+      ]
+    },
+    {
+      "name": "midifile",
+      "url": "https://github.com/craigsapp/midifile",
+      "revision": "Verovio snapshot cb5fcfa1178238138aa7f51f1e55f6a743eb26cc (January 2021 MidiFile header)",
+      "license_expression": "BSD-2-Clause",
+      "scope": "Craig Stuart Sapp. Embedded include/midi and src/midi.",
+      "license_evidence": [
+        {
+          "path": "licenses/midifile/LICENSE",
+          "sha256": "42e99d613230355a66309528b6fcf1a11c4a9b0e707773eabf21ba6c67e35af1"
+        }
+      ]
+    },
+    {
+      "name": "miniz-cpp",
+      "url": "https://github.com/kkzi/miniz-cpp",
+      "revision": "62ec5c46c276d1880ba3b5a121d5a5dc24667b9e as adapted in Verovio",
+      "license_expression": "MIT AND Unlicense",
+      "scope": "Thomas Fussell, RAD Game Tools, Valve Software, Rich Geldreich, Tenacious Software, Martin Raiber. Upstream ZIP reader header and all unchanged in-source notices preserved. No MXL UI.",
+      "license_evidence": [
+        {
+          "path": "licenses/miniz-cpp/LICENSE",
+          "sha256": "599268cfb785bb89b5a6760c5241756d366cf3f32974ed54b2718d66004e1037"
+        },
+        {
+          "path": "licenses/miniz-cpp/MINIZ-NOTICES",
+          "sha256": "3578c5695b5a7bb2f95057261fa38c097e37551ac0cb04a1d6c7ae3cce3359c2"
+        }
+      ]
+    },
+    {
+      "name": "tuning-library",
+      "url": "https://github.com/surge-synthesizer/tuning-library",
+      "revision": "Verovio snapshot cb5fcfa1178238138aa7f51f1e55f6a743eb26cc",
+      "license_expression": "MIT",
+      "scope": "Paul Walker. Verovio tuning-library headers.",
+      "license_evidence": [
+        {
+          "path": "licenses/tuning-library/LICENSE",
+          "sha256": "ee3bd73591efbb9272e28d066fc430790a1e9eeb75b6658864f4377fe79dc558"
+        }
+      ]
+    },
+    {
+      "name": "crc",
+      "url": "https://barrgroup.com/blog/crc-series-part-3-crc-implementation-code-cc",
+      "revision": "Verovio snapshot cb5fcfa1178238138aa7f51f1e55f6a743eb26cc",
+      "license_expression": "LicenseRef-CRC-Public-Domain",
+      "scope": "Michael Barr. Original public-domain notice retained in src/crc.",
+      "license_evidence": [
+        {
+          "path": "licenses/crc/LICENSE",
+          "sha256": "ef85b1da4b78112b87a3ed1135ffd2ef4ba6cb6ea76c910268bd6a76f025e9ae"
+        }
+      ]
+    },
+    {
+      "name": "base64",
+      "url": "https://renenyffenegger.ch/notes/development/Base64/Encoding-and-decoding-base-64-with-cpp",
+      "revision": "Verovio snapshot cb5fcfa1178238138aa7f51f1e55f6a743eb26cc",
+      "license_expression": "LicenseRef-Nyffenegger-Base64",
+      "scope": "René Nyffenegger. Original permissive terms and notice preserved in src/vrv.cpp.",
+      "license_evidence": [
+        {
+          "path": "licenses/base64/LICENSE",
+          "sha256": "27a32cd69f644b8d1be19b68d1e75486329a24fb90c8015bd4cdb2b99c32b222"
+        }
+      ]
+    },
+    {
+      "name": "leipzig",
+      "url": "https://github.com/rism-digital/leipzig",
+      "revision": "5.2.102 as vendored in cb5fcfa1178238138aa7f51f1e55f6a743eb26cc",
+      "license_expression": "OFL-1.1",
+      "scope": "Etienne Darbellay, Jean-Francois Marti, Laurent Pugin, Klaus Rettinghaus. Original source and unchanged upstream engraving outlines.",
+      "license_evidence": [
+        {
+          "path": "licenses/leipzig/LICENSE",
+          "sha256": "77b3d0cfb6fa5f4784d64b9ddabffc1f8c9544b0389c4a13088e7b94defe1763"
+        },
+        {
+          "path": "licenses/leipzig/NOTICE",
+          "sha256": "615e89dc46117bbf5bce1640c07caba48221ce53ae09aaf73894127807c6dc5a"
+        },
+        {
+          "path": "licenses/leipzig/FONTLOG.txt",
+          "sha256": "be3b8d43e2c0deec9dd0388c2b35b70378da55bd27b787b4ae7ad385dcb9fd38"
+        }
+      ]
+    },
+    {
+      "name": "bravura",
+      "url": "https://github.com/steinbergmedia/bravura",
+      "revision": "Verovio snapshot cb5fcfa1178238138aa7f51f1e55f6a743eb26cc; original notice dated 2021",
+      "license_expression": "OFL-1.1",
+      "scope": "Steinberg Media Technologies GmbH and Daniel Spreadbury. Original source and unchanged upstream engraving outlines. Includes 2021 exact font metadata as well as full OFL text.",
+      "license_evidence": [
+        {
+          "path": "licenses/bravura/LICENSE",
+          "sha256": "bdca252186865f3b2c0e76da4a4e335c14ba1d37f80194fca254ddfa88e84fbf"
+        },
+        {
+          "path": "licenses/bravura/NOTICE",
+          "sha256": "3dd8032195bfbbf3c6ae08ea0d6ed4062f47c28a86a13524e2fabdc5536ef0c5"
+        }
+      ]
+    },
+    {
+      "name": "liberation-fonts",
+      "url": "https://github.com/liberationfonts/liberation-fonts",
+      "revision": "2.1.5; Debian fonts-liberation2_2.1.5-1_all.deb",
+      "license_expression": "OFL-1.1",
+      "scope": "Google Corporation and Red Hat. Four unmodified OFL Serif faces in rebuild inputs only. Generated XML describes metric bounds; no text font loaded at runtime.",
+      "license_evidence": [
+        {
+          "path": "licenses/liberation-fonts/LICENSE",
+          "sha256": "93fed46019c38bbe566b479d22148e2e8a1e85ada614accb0211c37b2c61c19b"
+        },
+        {
+          "path": "licenses/liberation-fonts/DEBIAN-COPYRIGHT",
+          "sha256": "e4593eea6be55531c930388446f950ce97b5c730f5bc5dfd0167489402e91de4"
+        }
+      ]
+    },
+    {
+      "name": "emscripten",
+      "url": "https://github.com/emscripten-core/emscripten",
+      "revision": "4.0.23 / 7a5d93b50f6a3a35e85a0d2fc9e667b8498e6aed",
+      "license_expression": "MIT",
+      "scope": "Emscripten authors. MIT option selected for generated runtime glue and Emscripten library portions; complete dual-license file retained.",
+      "license_evidence": [
+        {
+          "path": "licenses/emscripten/LICENSE",
+          "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86"
+        },
+        {
+          "path": "licenses/emscripten/AUTHORS",
+          "sha256": "8585fa1b981f576f52806833481323007ccac5c00f31a873215e31c0f42820f0"
+        }
+      ]
+    },
+    {
+      "name": "musl",
+      "url": "https://musl.libc.org/",
+      "revision": "Emscripten 4.0.23 sysroot snapshot",
+      "license_expression": "MIT",
+      "scope": "Rich Felker and contributors. Complete upstream sysroot musl notice, including component exceptions.",
+      "license_evidence": [
+        {
+          "path": "licenses/musl/LICENSE",
+          "sha256": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af"
+        }
+      ]
+    },
+    {
+      "name": "llvm-runtime",
+      "url": "https://github.com/llvm/llvm-project",
+      "revision": "Emscripten 4.0.23 sysroot snapshots",
+      "license_expression": "Apache-2.0 WITH LLVM-exception",
+      "scope": "LLVM contributors. Runtime portions linked from libc++, libc++abi, compiler-rt and libunwind. Exact files retain historical notices and LLVM exceptions.",
+      "license_evidence": [
+        {
+          "path": "licenses/llvm-runtime/LICENSE",
+          "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b"
+        },
+        {
+          "path": "licenses/llvm-runtime/LIBCXXABI-LICENSE",
+          "sha256": "e2b35be49f7284a45b7baca8fc7b3ab7440e7902392b2528a457816b5bb2a15c"
+        },
+        {
+          "path": "licenses/llvm-runtime/COMPILER-RT-LICENSE",
+          "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d"
+        },
+        {
+          "path": "licenses/llvm-runtime/LIBUNWIND-LICENSE",
+          "sha256": "b5efebcaca80879234098e52d1725e6d9eb8fb96a19fce625d39184b705f7b6d"
+        }
+      ]
+    },
+    {
+      "name": "dlmalloc",
+      "url": "https://gee.cs.oswego.edu/dl/html/malloc.html",
+      "revision": "2.8.6 as included in Emscripten 4.0.23",
+      "license_expression": "CC0-1.0",
+      "scope": "Doug Lea. The allocator’s original release statement and referenced CC0 terms are preserved.",
+      "license_evidence": [
+        {
+          "path": "licenses/dlmalloc/LICENSE",
+          "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+        },
+        {
+          "path": "licenses/dlmalloc/NOTICE",
+          "sha256": "46fdfb7382ff0119b2246609c343fafefef5521976f73d17cbcbb025432daecb"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "web/vendor/verovio-toolkit-wasm.js",
+    "licenses/verovio/verovio-6.4.0-corresponding-source.tar.gz"
+  ]
+}
