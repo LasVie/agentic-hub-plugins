@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0", "package_type": "plugin", "id": "solid-mesh-workbench",
+  "name": "立体网格布尔工坊",
+  "description": "离线处理闭合三角网格，执行并集、差集、交集并导出可检查的几何结果。",
+  "source": "local", "category": "数据与科学研究",
+  "display_name": {"zh": "立体网格布尔工坊", "en": "立体网格布尔工坊"},
+  "display_description": {"zh": "闭合网格布尔运算、几何测量与交互检查", "en": "闭合网格布尔运算、几何测量与交互检查"},
+  "tags": [{"zh": "离线建模", "en": "离线建模"}, {"zh": "网格布尔运算", "en": "网格布尔运算"}],
+  "skills": [{"dir": "skills/solid-mesh", "mode": "all"}],
+  "tools": [
+    {"file": "tools/solid_mesh_tools.py", "class": "SolidMeshWorkbenchTool", "display_name": {"zh": "立体网格工作台", "en": "立体网格工作台"}, "display_description": {"zh": "启动、查询或关闭插件专用本机工作台", "en": "启动、查询或关闭插件专用本机工作台"}},
+    {"file": "tools/solid_mesh_tools.py", "class": "CalculateSolidMeshTool", "display_name": {"zh": "闭合网格布尔计算", "en": "闭合网格布尔计算"}, "display_description": {"zh": "真实计算几何结果及体积；不调用模型或外网", "en": "真实计算几何结果及体积；不调用模型或外网"}}
+  ]
+}

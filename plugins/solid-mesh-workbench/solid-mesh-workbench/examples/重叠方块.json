@@ -1,0 +1,26 @@
+{
+  "schema": "solid-mesh-workbench/v1",
+  "units": "mm",
+  "operation": "union",
+  "a": {
+    "kind": "box",
+    "size": [
+      20,
+      20,
+      20
+    ]
+  },
+  "b": {
+    "kind": "box",
+    "size": [
+      20,
+      20,
+      20
+    ],
+    "translate": [
+      10,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>立体网格布尔工坊</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div class="brand"><span class="mark" aria-hidden="true">◈</span><div><h1>立体网格布尔工坊</h1><p>离线几何 · Manifold 3.5.4 · 版本 1.0.0</p></div></div><div class="header-actions"><span class="badge">本机计算 / 毫米</span><button id="stop" class="quiet">关闭工作台</button></div></header>
+<main>
+<section class="inputs" aria-label="网格输入">
+<div class="section-heading"><h2>构造与导入</h2><button id="reset" class="quiet">重置示例</button></div>
+<label class="wide">演示场景<select id="example"><option value="boxes">重叠方块 · 精确体积</option><option value="bore">方块开孔 · 圆柱刀具</option><option value="empty">不相交 · 有效空结果</option></select></label>
+<div id="operands"></div>
+<section class="operation-panel"><h2>运算</h2><div class="operation" role="group" aria-label="选择布尔运算"><button data-operation="union" aria-pressed="true">并集 A ∪ B</button><button data-operation="difference" aria-pressed="false">差集 A − B</button><button data-operation="intersection" aria-pressed="false">交集 A ∩ B</button></div><div class="run-row"><button id="calculate" class="primary">计算结果</button><button id="cancel" disabled>取消</button></div></section>
+<p class="boundary">只接受闭合且朝向一致的三角网格。OBJ 限定为顶点与三角面子集；不修复破洞，不加载材质、脚本或外部资源。</p>
+</section>
+<section class="workspace" aria-label="几何结果">
+<div class="section-heading"><div><h2>几何检查</h2><p class="muted">拖动旋转 · 滚轮缩放 · 双击居中</p></div><label class="toggle"><input id="show-operands" type="checkbox" checked>显示输入轮廓</label></div>
+<div class="viewport"><canvas id="viewport" tabindex="0" aria-label="三维网格预览，方向键旋转，加减键缩放"></canvas><div class="legend"><span class="dot a"></span>A 输入 <span class="dot b"></span>B 输入 <span class="dot result"></span>运算结果</div><div id="empty-view" class="empty-view">选择输入并计算，检查真实几何结果</div><button id="fit" class="fit quiet">视图复位</button></div>
+<div id="status" class="status" role="status" aria-live="polite">准备就绪。示例尺寸单位为毫米。</div>
+<section class="metrics" aria-label="结果测量"><div><span>体积</span><strong id="volume">—</strong><small>mm³</small></div><div><span>表面积</span><strong id="area">—</strong><small>mm²</small></div><div><span>三角面</span><strong id="triangles">—</strong><small>个</small></div><div><span>包围盒尺寸</span><strong id="bounds">—</strong><small>mm</small></div></section>
+<div class="exports"><button id="export-obj" disabled>导出结果 OBJ</button><button id="save-project" disabled>保存项目 JSON</button><button id="save-report" disabled>下载测量报告</button><label class="file-button">打开项目<input id="load-project" type="file" accept=".json,application/json"></label></div>
+<details class="help"><summary>格式、精度与使用边界</summary><p>支持正整数顶点索引的三角 OBJ（v / f），以及本插件导出的项目 JSON。OBJ 本身没有单位；导入即按毫米解释。项目保存经过校验的内部网格和变换，坐标采用 Float32。改变输入会使旧结果失效，须重新计算后导出。</p><p>不支持任意多边形、负索引、法线/纹理索引、材质、外链、动画或脚本。不承诺修复自相交、重复壳层、破洞或近重合面。空交集是有效结果。本工具不提供制造安全或可打印性认证。</p><p>计算不访问外网。关闭工作台会结束该插件的专用服务；请先保存项目。工作台与宿主界面相互独立。</p><p><a href="licenses.txt" target="_blank" rel="noopener">第三方来源与许可证</a></p></details>
+</section>
+</main><footer>立体网格布尔工坊 · 数值引擎执行真实网格运算；预览不代替几何校验。</footer>
+<script type="module" src="app.js"></script>
+</body></html>

@@ -1,0 +1,15 @@
+{
+  "type": "agent-plugin",
+  "name": "solid-mesh-workbench",
+  "version": "1.0.0",
+  "display_name": "立体网格布尔工坊",
+  "description": "在本机离线导入闭合三角网格，执行并集、差集和交集，旋转检查结果、读取体积与表面积，并导出 OBJ 或可重载项目。",
+  "publisher": "Cai Zhenze",
+  "category": "数据与科学研究",
+  "tags": ["离线建模", "网格布尔运算", "三维测量"],
+  "functional_tags": ["Closed Triangle Mesh Boolean", "Offline Geometry", "Mesh Measurements"],
+  "scope": "macOS/Linux 上有界闭合三角网格的布尔运算；明确采用毫米。需要已有 Python 3.11+、Node.js 22+ 和现代桌面浏览器。不含通用网格修复、STEP 转换、材质动画或可打印性认证。",
+  "candidate_id": "Not Applicable",
+  "task_id": "AH-20261031-solid-mesh-workbench",
+  "related_asset_ids": ["0e1febdb63934c92b64fe4f64d8c2a01"]
+}
