@@ -1,0 +1,46 @@
+{
+  "id": "offline-score-workbench",
+  "name": "离线乐谱工作台",
+  "description": "在本机导入和编辑乐谱 XML，查看分页五线谱，检查音符的音高和时序，导出 SVG 与 MIDI。",
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "display_name": {
+    "zh": "离线乐谱工作台",
+    "en": "Offline Score Workbench"
+  },
+  "display_description": {
+    "zh": "在本机导入和编辑乐谱 XML，查看分页五线谱，检查音符的音高和时序，导出 SVG 与 MIDI。",
+    "en": "Engrave and inspect a local score and export SVG or MIDI."
+  },
+  "category": "Others",
+  "tags": [
+    {
+      "zh": "乐谱",
+      "en": "Music scores"
+    },
+    {
+      "zh": "离线",
+      "en": "Offline"
+    }
+  ],
+  "skills": [
+    {
+      "dir": "skills/offline-score-workbench",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/score_tools.py",
+      "class": "ScoreWorkbenchTool",
+      "display_name": {
+        "zh": "管理离线乐谱工作台",
+        "en": "Manage offline score workbench"
+      },
+      "display_description": {
+        "zh": "启动、查询或停止本插件的本机工作台。",
+        "en": "Start, check, or stop this plugin's local workbench."
+      }
+    }
+  ]
+}

@@ -66,6 +66,17 @@ python tools/asset_release.py check-repo
 
 The packer writes the deterministic wrapped ZIP and `artifact.json` under `releases/<type>/<slug>/<version>/`. It uses uncompressed ZIP members to avoid compression-ratio false positives. Run the asset's own tests, including failure cases, and record the real environment, commands, results and runtime requirements. Packaging-tool tests do not replace functional tests.
 
+## Dynamic JavaScript preflight
+
+For new or updated packages, run the preflight on the native payload directory as early as possible. The repository packer also enforces it before writing a wrapped ZIP. Repeat it on each exact ZIP given to testers or prepared for delivery, including the WorkSwarm installation ZIP when one exists. Historical ZIPs remain inspectable with `check-repo`.
+
+```bash
+python tools/asset_release.py preflight <native-payload-directory>
+python tools/asset_release.py preflight <canonical-or-native-zip>
+```
+
+The check covers the two published raw-text signatures for `eval` and `new Function` in `.js`, `.mjs`, `.cjs` and `.ts`, including vendored bundles. The published rules also match comments, strings and unreachable branches. On a finding, remove the dynamic execution or use a dependency build that omits it, then rerun functional tests on the resulting payload. Record the result against each exact ZIP hash and retain historical artifacts as evidence. The local check covers these two signatures and leaves other platform checks to the platform. [Published validator](https://github.com/openJiuwen-ai/skillhub/blob/c8ee4ef44be0453470114aa5a19f4e1017462907/marketplace/plugins_market/validation/content_security.py)
+
 ## Connector / Expert Team procedure
 
 `asset_release.py check`, `pack`, `inspect` and `check-repo` do not validate these types. `check-repo` currently scans only `skills/`, `plugins/` and supported `releases/` archives. Its passing result or the existing CI is therefore not a Connector/Expert Team sign-off. Keep their releases in the asset-owned paths above until the repository tool explicitly supports them; do not place an unsupported archive under `releases/` or relabel it as a Plugin.
