@@ -1,6 +1,6 @@
-# Plugin Maintenance: Review, Build, Submit
+# Asset Maintenance: Review, Build, Submit
 
-This repository stores team-developed and tested Skill / SwarmSkill / Plugin source code and ZIP packages suitable for Agentic Hub submission. The Project Lead is Song Haoran. Read this entire file at the start of every task and choose the workflow that matches the user's current instruction. Do not count candidate research, downloaded research samples, scaffolding, or code-only results as delivered plugins.
+This repository stores team-developed and tested Skill / SwarmSkill / Plugin / Connector / Expert Team source code and ZIP packages suitable for Agentic Hub submission. The Project Lead is Song Haoran. Read this entire file at the start of every task and choose the workflow that matches the user's current instruction. Do not count candidate research, downloaded research samples, scaffolding, or code-only results as delivered plugins.
 
 | Phase | Trigger and responsible role | Outcome |
 | --- | --- | --- |
@@ -16,9 +16,24 @@ This repository stores team-developed and tested Skill / SwarmSkill / Plugin sou
 
 **Language and identity.** The same [shared tracker](https://docs.google.com/spreadsheets/d/12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM/edit?usp=sharing) contains `Overview`, `Asset Ledger`, `Plugin Candidates`, `Development Tasks`, `Progress Reports`, and `Members`. In the tracker, write purposes, scope, tags, notes, task names, progress text, and statuses in English. Preserve stable IDs, member names, URLs, versions, dates, and original source filenames. Preserve original candidate/research names and historical catalog names for traceability. New asset display names may be chosen under the Chinese-package naming rule below; retain their exact Chinese spelling in identity fields while writing tracker narrative in English. `tracking/tracker.json` provides field and workflow mappings. Still read live headers, dropdown options, and target rows before each update; update by ID, re-read before writing, and verify afterward. Do not overwrite other people's progress with old snapshots. If a connection or access is unavailable, report unsynchronized items. Actual plugin tasks may keep a record in `tracking/pending/`; never claim the cloud sheet was updated when it was not.
 
+## Read the Matching Asset Guide
+
+Read this entire AGENTS.md for the common workflow, permissions, licensing, evidence and tracker rules. Then read only the guide for the asset being reviewed, created or modified. The generic term “plugin asset” in the workflow includes these supported asset types; keep the existing spreadsheet tabs, field mappings, statuses and update timing unchanged.
+
+| Asset being changed | Read next | Source directory | Hub runtime type | Native entry |
+| --- | --- | --- | --- | --- |
+| Skill / SwarmSkill | [Skill guide](skills/README.md) | `skills/<slug>/` | `skill` for both | `SKILL.md`; SwarmSkill also declares its kind and roles |
+| Plugin | [Plugin guide](plugins/README.md) | `plugins/<slug>/` | `agent-plugin` | `manifest.json`, `package_type: plugin` |
+| Connector | [Connector guide](connectors/README.md) | `connectors/<slug>/` | `agent-mcp` | `manifest.json`, `package_type: mcp` |
+| Expert Team | [Expert Team guide](expert-teams/README.md) | `expert-teams/<slug>/` | `agent-group` | `manifest.json`, `package_type: agent_group` |
+
+For Build or Submit, also read [the shared packaging contract](docs/PACKAGING.md). Read another type's guide only when changing that type or investigating a concrete integration with it. During candidate screening, use the relevant guide when needed to distinguish capabilities; do not preload all type specifications. For cross-type packages, validate each embedded component under its actual format without creating duplicate tracker records. Pure repository maintenance reads only the guides relevant to the maintenance.
+
+These guides specify package structure and type-specific validation; they do not replace or relax the Review → Build → Submit gates, Chinese editions, source/license review, user test confirmation, screenshot collection, Project Lead acceptance, cancellation rules, or official-catalog-only Asset Ledger updates in this file. Contributors still stop at the GitHub handoff; Song Haoran handles Hub operations.
+
 ## Chinese Test and Final Packages; Functional Naming
 
-Both the user test package and the final release/delivery package for every Skill, SwarmSkill, and Plugin must be Chinese-language editions. The final package must be the exact version/payload and ZIP hash confirmed in user testing.
+Both the user test package and the final release/delivery package for every Skill, SwarmSkill, Plugin, Connector, and Expert Team must be Chinese-language editions. The final package must be the exact version/payload and ZIP hash confirmed in user testing.
 
 - Use Simplified Chinese for translatable display names and descriptions, bundled README and installation/usage instructions, examples and templates, Skill instructions, user-facing help/prompts, interface labels, and human-readable results or error messages. Localize the actual packaged files before handing the package to the user.
 - Configure agent instructions and generated reports/content to use Chinese by default. Follow an end user's explicit request for another output language when that is part of the plugin's task.
@@ -79,7 +94,7 @@ Perform this review after the user's selection and claim/task registration, befo
 
 ### Package in Our Format, Test, and Collect Delivery Materials
 
-1. Use the templates and fixed formats below to build the selected Skill / SwarmSkill / Plugin as a Chinese-language package installable and runnable in the target host. Preserve source and actual runtime requirements. Local branches/commits may preserve work; keep delivery changes local until the complete Phase 3 gate is satisfied.
+1. Use the matching asset-type guide and the shared packaging contract linked below to build the selected asset as a Chinese-language package installable and runnable in the target host. Preserve source and actual runtime requirements. Local branches/commits may preserve work; keep delivery changes local until the complete Phase 3 gate is satisfied.
 2. Run format checks, the asset's own functional tests, Chinese-language checks and packaging. Extract the test ZIP to verify runtime contents, declared paths and license files. Give the user the Chinese test ZIP/inner Skill directory, display name, version, SHA-256, installation steps, key operations, expected results and known issues. Packaging-tool tests do not replace asset functional tests.
 3. Set `Ready for Testing` when the Chinese package is ready and `User Testing` when testing starts. Keep the candidate `Planned`. Append actual progress, tests, package version/hash and next steps to the original task's reports.
 4. Wait for explicit user confirmation that testing of this task/version/package is complete or has passed, with known blockers resolved. AI self-tests, CI, downloading a package, starting tests, a screenshot alone or vague feedback do not establish completion. Return to Build for fixes when issues remain. Preserve valid user confirmation rather than asking for it again.
@@ -149,7 +164,7 @@ Perform this review after the user's selection and claim/task registration, befo
 
 ## Licensing and Distribution Requirements
 
-The Project Lead approved the following requirements, reviewed on 2026-10-22. They apply to Skills, SwarmSkills, and Plugins. Assess the actual license text, covered materials, and intended use; do not automatically approve reuse based only on a repository name or SPDX label.
+The Project Lead approved the following requirements, reviewed on 2026-10-22. They apply to Skills, SwarmSkills, Plugins, Connectors, and Expert Teams. Assess the actual license text, covered materials, and intended use; do not automatically approve reuse based only on a repository name or SPDX label.
 
 1. **Check coverage item by item.** In `SOURCE_REVIEW.md`, record upstream URLs, pinned commits/versions, existing rightsholder statements, reused/modified paths, applicable licenses, and distribution conditions. Check code, prompts, documents, icons, fonts, data, and dependencies separately. Open-source code does not automatically authorize brand assets, third-party data, or API services. Satisfy every applicable license in a mixed-license package. For dual licensing, record the actual choice; do not arbitrarily remove obligations joined by `AND` or invent an `OR` option.
 2. **MIT.** When reusing or distributing copies or substantial portions of the software, retain the original copyright and permission notices. This repository requires bundling the complete upstream MIT text, including its disclaimer, and preserving original file headers. Links, SPDX fields, and new copyright notices do not replace original notices. Recording modifications is a repository tracking convention, not a separate MIT requirement. Reference: [MIT license text](https://opensource.org/license/mit).
@@ -159,57 +174,3 @@ The Project Lead approved the following requirements, reviewed on 2026-10-22. Th
 6. **Review before release.** Extract the final ZIP and check that every reused path has matching license/notice coverage, change notices are complete, and `license_evidence` paths and hashes match the actual bundled files. Record results and ZIP paths in `SOURCE_REVIEW.md`. The PR must list fulfilled and unresolved conditions; do not merge the asset while any required condition remains unmet. `audit-upstream`, `check`, CI, and Hub accepting an upload do not replace this content review.
 
 This policy does not relicense the entire repository, team-owned work, or upstream materials under one license. AI must not guess copyright ownership, remove upstream authors, or make new relicensing decisions for the Project Lead. Independent implementation must not be described as an automatic exemption from other rights such as patents, trademarks, or service terms.
-
-## Fixed Package Formats: Skills and Plugins Differ
-
-This repository uses native directories plus deterministic marketplace-wrapper ZIPs. See [Format Research](docs/FORMAT_RESEARCH.md) for references and four actual downloaded sample packages. This is the repository delivery contract; the server accepting some more permissive historical formats does not justify relaxing repository test requirements.
-
-### Skill / SwarmSkill
-
-Source: `skills/<slug>/asset.json`, `provenance.json`, `SOURCE_REVIEW.md`, and `skills/<slug>/<slug>/SKILL.md`. `SKILL.md` uses UTF-8; its YAML frontmatter `name` matches the directory name and `description` is nonempty. Slugs start with a lowercase letter, contain lowercase letters/digits/single hyphens, and are at most 64 characters. Repository versions use `x.y.z`; a frontmatter version, if present, must match asset.json.
-
-```text
-<slug>-<version>.zip
-└── <slug>/
-    ├── plugin.yaml            # runtime.type: skill
-    └── <slug>/
-        ├── SKILL.md           # native Skill entry; no manifest.json required
-        ├── scripts/           # optional
-        ├── references/        # optional
-        └── assets/            # optional, including required source/license files
-```
-
-SwarmSkill also uses `runtime.type: skill`, but frontmatter must include `kind: swarm-skill` and at least two distinct `roles[].id` values, and asset.json must identify the asset as `swarmskill`. Do not infer type from whether the name contains “swarm.”
-
-### Plugin
-
-Source: `plugins/<slug>/asset.json`, `provenance.json`, `SOURCE_REVIEW.md`, and `plugins/<slug>/<slug>/manifest.json`.
-
-```text
-<slug>-<version>.zip
-└── <slug>/
-    ├── plugin.yaml            # runtime.type: agent-plugin
-    └── <slug>/
-        ├── manifest.json      # native Plugin entry; package_type: plugin
-        ├── README.md
-        ├── skills/<skill>/SKILL.md
-        └── tools/             # optional; rails, mcps, etc. may also be included as needed
-```
-
-The manifest `id = asset.json.name = plugin.yaml.name`; all three versions must match, and `package_type = plugin`. The root manifest must not contain `persona`, `agent_card`, `model`, `subagents`, `memories`, or `rubrics`. Do not substitute host Extension or Claude marketplace package formats. Every declared Skill, tool, rail, and MCP file must exist, and paths must stay within the package. Even if Hub's structural validation accepts a declaration with missing files, this repository must verify it and perform functional tests.
-
-### Expert Team (agent_group)
-
-Approved by the Project Lead on 2026-11-04 (relayed by Vannes Wijaya). Tracker Component Type `Expert Team`.
-Source: `teams/<slug>/asset.json` (`type: agent-group`), `provenance.json`, `SOURCE_REVIEW.md`, `TEST_REPORT.md`, the native package directory `teams/<slug>/<slug>/` (WorkSwarm `manifest.json` with `package_type: agent_group`, `agents/`, `skills/`, `avatars/`), optional `src/` and `tests/`, screenshots in `evidence/<version>/`, and the tested ZIP plus `artifact.json` in `teams/<slug>/release/<version>/`.
-The ZIP is the host's native agent_group package (files at the archive root, no marketplace wrapper) and must load with WorkSwarm's `load_agent_group_package_bundle`. `asset_release.py` does not cover this format yet: record the ZIP and payload SHA-256 in `artifact.json` and verify them by hand. The same Chinese-package, user-test, screenshot and PR gates apply.
-
-### Requirements Shared by Both Formats
-
-- Keep repository locations distinct: canonical Hub ZIPs and `artifact.json` belong in `releases/<type>/<slug>/<version>/`; native host-installation ZIPs belong in the owning `skills/<slug>/test-packages/` or `plugins/<slug>/test-packages/`. Do not put ZIPs in the repository root or a repository-level `test-packages/` directory. Downloaded format-research samples remain under `docs/research/` and are not team deliverables.
-- Keep editable asset-specific test inputs under the owning asset's `tests/fixtures/`, outside its runtime payload. Put cross-asset delivery notes under `docs/deliveries/<batch>/` and link to the asset-owned packages. Preserve an older native archive under its owner's `test-packages/history/` when it does not match the current source; label its actual version and retain its bytes. A file move does not authorize repacking a confirmed ZIP or treating a historical archive as current. Update affected current path references and verify hashes after relocation; preserve historical PR/commit evidence.
-- Copy scaffolding from `templates/` into `skills/` or `plugins/`, then provide actual metadata, authorship, sources, and independent design. Templates themselves do not count as assets.
-- Run `python tools/asset_release.py check <asset-directory>`, then the asset's own tests. Record the environment, commands, results, failure cases, and dependencies. Repository packaging-tool tests do not replace plugin functional tests.
-- Run `python tools/asset_release.py pack <asset-directory>`; write the ZIP and `artifact.json` to `releases/<type>/<slug>/<version>/`. The ZIP contains only the runtime payload and marketplace wrapper, without tests, task tables, or development caches in the wrapper. Put any required bundled source/license files inside the inner payload.
-- The marketplace outer directory contains only `plugin.yaml`, optional `icon.png`, and one inner directory with the same name. Do not silently overwrite versions. Local references, SHA-256 hashes, and archive paths must be verifiable. Repository ZIPs are limited to 95 MiB to fit GitHub's single-file constraints; the Project Lead decides how larger assets are delivered.
-- `audit-upstream` and local validation do not establish a legal conclusion, successful actual execution, or Hub review approval. The four downloaded sample packages are for static research only; do not run them or submit them as team deliverables.
