@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:offline-mechanics-lab",
+  "type": "agent-plugin",
+  "name": "offline-mechanics-lab",
+  "version": "1.0.0",
+  "zip": "offline-mechanics-lab-1.0.0.zip",
+  "sha256": "b69f0177931df25d7103aede52ac8e2177cc5e8e5ff252d36ac48edd724f758b",
+  "payload_sha256": {
+    "README.md": "fccc25b1ac13282bc5aa25b7e9a7a723a7fc5cdda3ba94ba12f1f588e997bd41",
+    "THIRD_PARTY_NOTICES.md": "d0ec865edcfa6dce08d622a9d89b673a38f3ecfcb84bb803cebec6fcf51a76df",
+    "assets/app.js": "14c02fbd0dab9e19347faa5d10478a5fd9986a0867cc67ab359320fec39fbf03",
+    "assets/engine.js": "694143167b275be9c1c19d294c094d60b421fb7fe37250a82bb0f6adbb9c48e7",
+    "assets/index.html": "63c30069bee2073ec8b440da265493154cceb76e022c4df39e81a0ef7b17ff37",
+    "assets/style.css": "8044d4327e486f4650835e929a3a206ca3808009ab3aeae355b6496d934926b1",
+    "assets/vendor/matter.js": "016f108075a42e8bb8f75c43cf5b6d9f07b1d88857975ed9d96b0ede921416ce",
+    "assets/worker.js": "eee4cf09543673e70880b7431c0768bedb2ace9af83015de53da190bced20d40",
+    "licenses/matter-js/LICENSE": "ed182087be5b26734aa6d4789743de3a97417950e8c1e3ff2e3d19c6462720d3",
+    "manifest.json": "ebd81a1b73175229b8fdfda33b526db905a54b8f584fa24aba2e139851b49ba0",
+    "runtime/lab.py": "e81b8b14337dbf9b04c245fd55a15d9674fa3a4c1bd7dcc2f054ffb265fe1739",
+    "skills/mechanics-lab/SKILL.md": "10a3952e31e856f7bcf843103c8c6c4d23727e7ce1f273a1fc54f6c28dd38b3d",
+    "tools/mechanics_tools.py": "e5b4afb19d6ad1c87958a670b15a4bbe0630986565f3c7c00a5660bd66cd41dc"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "892e68e76f7318eb8fb5d93b64480bfbcf47e621401603ac2889360064bfdec2",
+  "functional_test_report_sha256": "1a2608cbc1ef385a925e416565c70e93feaee551ff652b9f56863fec665fad83"
+}

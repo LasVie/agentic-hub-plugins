@@ -1,0 +1,37 @@
+{
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "id": "offline-mechanics-lab",
+  "name": "离线力学实验室",
+  "description": "编辑二维刚体与约束，离线计算碰撞、自由落体和摆动；逐帧查看轨迹与数值，保存场景并导出实际采样数据。",
+  "skills": [
+    {
+      "dir": "skills/mechanics-lab",
+      "mode": "all"
+    }
+  ],
+  "source": "local",
+  "category": "数据与科学研究",
+  "display_name": {
+    "zh": "离线力学实验室",
+    "en": "离线力学实验室"
+  },
+  "display_description": {
+    "zh": "编辑二维刚体与约束，离线计算碰撞、自由落体和摆动；逐帧查看轨迹与数值，保存场景并导出实际采样数据。",
+    "en": "编辑二维刚体与约束，离线计算碰撞、自由落体和摆动；逐帧查看轨迹与数值，保存场景并导出实际采样数据。"
+  },
+  "tools": [
+    {
+      "file": "tools/mechanics_tools.py",
+      "class": "LocalMechanicsLabTool",
+      "display_name": {
+        "zh": "本机力学实验室",
+        "en": "本机力学实验室"
+      },
+      "display_description": {
+        "zh": "启动、查询或关闭离线二维力学界面；数值计算在浏览器内进行",
+        "en": "启动、查询或关闭离线二维力学界面；数值计算在浏览器内进行"
+      }
+    }
+  ]
+}
