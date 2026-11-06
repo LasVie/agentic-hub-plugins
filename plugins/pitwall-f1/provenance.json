@@ -1,0 +1,25 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/darshjoshi/pitwall-f1/tree/04d65d386d96b85362e2eec37f39ca9018b13ee3",
+      "revision": "04d65d386d96b85362e2eec37f39ca9018b13ee3",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/pitwall-f1/LICENSE",
+          "sha256": "44a481b6b6a342037e8f4071f32df9515db040afbc987d1c17436f8a9bf82b7c"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "tools/pitwall_tools.py"
+  ],
+  "audit_file": "SOURCE_REVIEW.md",
+  "native_components": {
+    "spec": "NATIVE_DESIGN.md",
+    "note": "OpenF1 工具（f1_list_sessions、f1_session_results、f1_drivers、f1_laps、f1_pit_stops、f1_tyre_stints、f1_weather、f1_race_control）及校验、限流、缓存、错误处理与中文输出均为本团队独立编写，不含上游代码。"
+  }
+}

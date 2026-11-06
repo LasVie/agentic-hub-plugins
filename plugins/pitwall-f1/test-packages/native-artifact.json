@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "zip": "pitwall-f1-1.0.0-native.zip",
+  "size_bytes": 63131,
+  "sha256": "8d5c293156423fba68f1ae5e2c7bf554fe33d3d62e65f39f188a6f2b06cb1178",
+  "payload_sha256": {
+    "licenses/pitwall-f1/LICENSE": "44a481b6b6a342037e8f4071f32df9515db040afbc987d1c17436f8a9bf82b7c",
+    "manifest.json": "9cd0668336d8e3003eef4b398283b14743a31eea7634a1b936913efffb0fe486",
+    "README.md": "1cce006baf69b140c779be956adbcd4f35a729115278cf77ebda47ad9e4bfeae",
+    "skills/pitwall-f1/SKILL.md": "9131ac3ef9ebbb6b6f5efd7f2e720005cd17ed8768fdfbf822c3cf4296204778",
+    "THIRD_PARTY_NOTICES.md": "344bc470d527d220ad6e1b69992415252e17837de8441e671a95fb7af6025d5f",
+    "tools/pitwall_tools.py": "599db9b1536f3678fee75ba61def1c1a72419dbcfb346a6c9b50645246f7232d"
+  }
+}
