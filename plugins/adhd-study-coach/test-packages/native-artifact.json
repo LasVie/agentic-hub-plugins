@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "zip": "adhd-study-coach-1.0.0-native.zip",
+  "size_bytes": 56098,
+  "sha256": "67844108ca8f3b498d967be36056f37aad018e8011fe40138fcdc02fa7b47e2d",
+  "payload_sha256": {
+    "licenses/adhd-study-coach/LICENSE": "d9487d7e75e16293408fe8556dc940f400c0d6e7fbeed42a7d149a5be43fd748",
+    "manifest.json": "f0260df3890d8b29f357962b8eb4e900c7b6084d490aa79eab40c09457674660",
+    "README.md": "c5b31c9aea6f7e21e9b58cef8dc95eadabd62a2213963c89283d718a40c836c6",
+    "skills/adhd-study-coach/SKILL.md": "a999abbc861b700d6eb74cebdbd64cc9c27f40dc1eca975f18d0f261ca536315",
+    "THIRD_PARTY_NOTICES.md": "4079f338f7725b2803a86ed32387cc63793103d4f5e65d6eaf2d9034c28a3f0e",
+    "tools/study_card.py": "ed18e375493ed95f4057553d881a77b823a93a7f1b2c184dbe2a9a10b487e6fe"
+  }
+}

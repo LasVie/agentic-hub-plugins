@@ -93,3 +93,6 @@
 # Preserve the exact confirmed pitwall-f1 payload, license and package hashes.
 /plugins/pitwall-f1/** -text
 /releases/agent-plugin/pitwall-f1/** -text
+# Preserve the exact confirmed adhd-study-coach payload, license and package hashes.
+/plugins/adhd-study-coach/** -text
+/releases/agent-plugin/adhd-study-coach/** -text
