@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:pitwall-f1",
+  "type": "agent-plugin",
+  "name": "pitwall-f1",
+  "version": "1.0.0",
+  "zip": "pitwall-f1-1.0.0.zip",
+  "sha256": "f3567f21daf21b317f4059457a804a874ef6ffd9b718f80d080a587f29e5225a",
+  "payload_sha256": {
+    "licenses/pitwall-f1/LICENSE": "44a481b6b6a342037e8f4071f32df9515db040afbc987d1c17436f8a9bf82b7c",
+    "manifest.json": "9cd0668336d8e3003eef4b398283b14743a31eea7634a1b936913efffb0fe486",
+    "README.md": "1cce006baf69b140c779be956adbcd4f35a729115278cf77ebda47ad9e4bfeae",
+    "skills/pitwall-f1/SKILL.md": "9131ac3ef9ebbb6b6f5efd7f2e720005cd17ed8768fdfbf822c3cf4296204778",
+    "THIRD_PARTY_NOTICES.md": "344bc470d527d220ad6e1b69992415252e17837de8441e671a95fb7af6025d5f",
+    "tools/pitwall_tools.py": "599db9b1536f3678fee75ba61def1c1a72419dbcfb346a6c9b50645246f7232d"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "d473792b72fa8920964ff5d2645f7603b2a200f682e2a103f8874921e47d95d6",
+  "functional_test_report_sha256": "5c140825bc4b4816b7ce5b0886cc19971767eb3e20c7ca2dfd14528266fbef1a"
+}

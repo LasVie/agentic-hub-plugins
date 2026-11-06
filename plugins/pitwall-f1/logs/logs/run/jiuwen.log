@@ -1,0 +1,224 @@
+2026-11-06 11:45:57 | common | default_trace_id | INFO | Registered connector pool type: default
+2026-11-06 11:45:57 | common | default_trace_id | INFO | Registered connector pool type: httpx
+2026-11-06 11:47:35 | common | default_trace_id | INFO | Registered query expression support for milvus
+2026-11-06 11:47:35 | common | default_trace_id | INFO | Registered query expression support for chroma
+2026-11-06 11:47:36 | common | default_trace_id | INFO | Registered parser ExcelParser for .xlsx
+2026-11-06 11:47:36 | common | default_trace_id | INFO | Registered parser ExcelParser for .csv
+2026-11-06 11:47:36 | common | default_trace_id | INFO | Registered parser ExcelParser for .tsv
+2026-11-06 11:47:38 | common | default_trace_id | INFO | Registered parser TxtMdParser for .txt
+2026-11-06 11:47:38 | common | default_trace_id | INFO | Registered parser TxtMdParser for .md
+2026-11-06 11:47:38 | common | default_trace_id | INFO | Registered parser TxtMdParser for .markdown
+2026-11-06 11:47:38 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .htm
+2026-11-06 11:47:38 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .html
+2026-11-06 11:47:38 | common | default_trace_id | INFO | Registered parser JSONParser for .json
+2026-11-06 11:47:38 | common | default_trace_id | INFO | Registered parser PDFParser for .pdf
+2026-11-06 11:47:39 | common | default_trace_id | INFO | Registered parser WordParser for .docx
+2026-11-06 11:47:39 | common | default_trace_id | INFO | Registered parser ImageParser for .png
+2026-11-06 11:47:39 | common | default_trace_id | INFO | Registered parser ImageParser for .jpg
+2026-11-06 11:47:39 | common | default_trace_id | INFO | Registered parser ImageParser for .jpeg
+2026-11-06 11:47:39 | common | default_trace_id | INFO | Registered parser ImageParser for .webp
+2026-11-06 11:47:39 | common | default_trace_id | INFO | Registered parser ImageParser for .gif
+2026-11-06 11:47:39 | common | default_trace_id | INFO | Registered parser ImageParser for .jfif
+2026-11-06 11:48:17 | common | default_trace_id | INFO | Registered connector pool type: default
+2026-11-06 11:48:17 | common | default_trace_id | INFO | Registered connector pool type: httpx
+2026-11-06 11:48:18 | common | default_trace_id | INFO | Registered query expression support for milvus
+2026-11-06 11:48:18 | common | default_trace_id | INFO | Registered query expression support for chroma
+2026-11-06 11:48:18 | common | default_trace_id | INFO | Registered parser ExcelParser for .xlsx
+2026-11-06 11:48:18 | common | default_trace_id | INFO | Registered parser ExcelParser for .csv
+2026-11-06 11:48:18 | common | default_trace_id | INFO | Registered parser ExcelParser for .tsv
+2026-11-06 11:48:18 | common | default_trace_id | INFO | Registered parser TxtMdParser for .txt
+2026-11-06 11:48:18 | common | default_trace_id | INFO | Registered parser TxtMdParser for .md
+2026-11-06 11:48:18 | common | default_trace_id | INFO | Registered parser TxtMdParser for .markdown
+2026-11-06 11:48:18 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .htm
+2026-11-06 11:48:18 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .html
+2026-11-06 11:48:18 | common | default_trace_id | INFO | Registered parser JSONParser for .json
+2026-11-06 11:48:18 | common | default_trace_id | INFO | Registered parser PDFParser for .pdf
+2026-11-06 11:48:18 | common | default_trace_id | INFO | Registered parser WordParser for .docx
+2026-11-06 11:48:18 | common | default_trace_id | INFO | Registered parser ImageParser for .png
+2026-11-06 11:48:18 | common | default_trace_id | INFO | Registered parser ImageParser for .jpg
+2026-11-06 11:48:18 | common | default_trace_id | INFO | Registered parser ImageParser for .jpeg
+2026-11-06 11:48:18 | common | default_trace_id | INFO | Registered parser ImageParser for .webp
+2026-11-06 11:48:18 | common | default_trace_id | INFO | Registered parser ImageParser for .gif
+2026-11-06 11:48:18 | common | default_trace_id | INFO | Registered parser ImageParser for .jfif
+2026-11-06 11:48:33 | common | default_trace_id | INFO | Registered connector pool type: default
+2026-11-06 11:48:33 | common | default_trace_id | INFO | Registered connector pool type: httpx
+2026-11-06 11:48:34 | common | default_trace_id | INFO | Registered query expression support for milvus
+2026-11-06 11:48:34 | common | default_trace_id | INFO | Registered query expression support for chroma
+2026-11-06 11:48:35 | common | default_trace_id | INFO | Registered parser ExcelParser for .xlsx
+2026-11-06 11:48:35 | common | default_trace_id | INFO | Registered parser ExcelParser for .csv
+2026-11-06 11:48:35 | common | default_trace_id | INFO | Registered parser ExcelParser for .tsv
+2026-11-06 11:48:35 | common | default_trace_id | INFO | Registered parser TxtMdParser for .txt
+2026-11-06 11:48:35 | common | default_trace_id | INFO | Registered parser TxtMdParser for .md
+2026-11-06 11:48:35 | common | default_trace_id | INFO | Registered parser TxtMdParser for .markdown
+2026-11-06 11:48:35 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .htm
+2026-11-06 11:48:35 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .html
+2026-11-06 11:48:35 | common | default_trace_id | INFO | Registered parser JSONParser for .json
+2026-11-06 11:48:35 | common | default_trace_id | INFO | Registered parser PDFParser for .pdf
+2026-11-06 11:48:35 | common | default_trace_id | INFO | Registered parser WordParser for .docx
+2026-11-06 11:48:35 | common | default_trace_id | INFO | Registered parser ImageParser for .png
+2026-11-06 11:48:35 | common | default_trace_id | INFO | Registered parser ImageParser for .jpg
+2026-11-06 11:48:35 | common | default_trace_id | INFO | Registered parser ImageParser for .jpeg
+2026-11-06 11:48:35 | common | default_trace_id | INFO | Registered parser ImageParser for .webp
+2026-11-06 11:48:35 | common | default_trace_id | INFO | Registered parser ImageParser for .gif
+2026-11-06 11:48:35 | common | default_trace_id | INFO | Registered parser ImageParser for .jfif
+2026-11-06 11:50:34 | common | default_trace_id | INFO | Registered connector pool type: default
+2026-11-06 11:50:34 | common | default_trace_id | INFO | Registered connector pool type: httpx
+2026-11-06 11:50:35 | common | default_trace_id | INFO | Registered query expression support for milvus
+2026-11-06 11:50:35 | common | default_trace_id | INFO | Registered query expression support for chroma
+2026-11-06 11:50:35 | common | default_trace_id | INFO | Registered parser ExcelParser for .xlsx
+2026-11-06 11:50:35 | common | default_trace_id | INFO | Registered parser ExcelParser for .csv
+2026-11-06 11:50:35 | common | default_trace_id | INFO | Registered parser ExcelParser for .tsv
+2026-11-06 11:50:35 | common | default_trace_id | INFO | Registered parser TxtMdParser for .txt
+2026-11-06 11:50:35 | common | default_trace_id | INFO | Registered parser TxtMdParser for .md
+2026-11-06 11:50:35 | common | default_trace_id | INFO | Registered parser TxtMdParser for .markdown
+2026-11-06 11:50:35 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .htm
+2026-11-06 11:50:35 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .html
+2026-11-06 11:50:35 | common | default_trace_id | INFO | Registered parser JSONParser for .json
+2026-11-06 11:50:35 | common | default_trace_id | INFO | Registered parser PDFParser for .pdf
+2026-11-06 11:50:35 | common | default_trace_id | INFO | Registered parser WordParser for .docx
+2026-11-06 11:50:35 | common | default_trace_id | INFO | Registered parser ImageParser for .png
+2026-11-06 11:50:35 | common | default_trace_id | INFO | Registered parser ImageParser for .jpg
+2026-11-06 11:50:35 | common | default_trace_id | INFO | Registered parser ImageParser for .jpeg
+2026-11-06 11:50:35 | common | default_trace_id | INFO | Registered parser ImageParser for .webp
+2026-11-06 11:50:35 | common | default_trace_id | INFO | Registered parser ImageParser for .gif
+2026-11-06 11:50:35 | common | default_trace_id | INFO | Registered parser ImageParser for .jfif
+2026-11-06 11:51:09 | common | default_trace_id | INFO | Registered connector pool type: default
+2026-11-06 11:51:10 | common | default_trace_id | INFO | Registered connector pool type: httpx
+2026-11-06 11:51:11 | common | default_trace_id | INFO | Registered query expression support for milvus
+2026-11-06 11:51:11 | common | default_trace_id | INFO | Registered query expression support for chroma
+2026-11-06 11:51:11 | common | default_trace_id | INFO | Registered parser ExcelParser for .xlsx
+2026-11-06 11:51:11 | common | default_trace_id | INFO | Registered parser ExcelParser for .csv
+2026-11-06 11:51:11 | common | default_trace_id | INFO | Registered parser ExcelParser for .tsv
+2026-11-06 11:51:11 | common | default_trace_id | INFO | Registered parser TxtMdParser for .txt
+2026-11-06 11:51:11 | common | default_trace_id | INFO | Registered parser TxtMdParser for .md
+2026-11-06 11:51:11 | common | default_trace_id | INFO | Registered parser TxtMdParser for .markdown
+2026-11-06 11:51:11 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .htm
+2026-11-06 11:51:11 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .html
+2026-11-06 11:51:11 | common | default_trace_id | INFO | Registered parser JSONParser for .json
+2026-11-06 11:51:11 | common | default_trace_id | INFO | Registered parser PDFParser for .pdf
+2026-11-06 11:51:11 | common | default_trace_id | INFO | Registered parser WordParser for .docx
+2026-11-06 11:51:11 | common | default_trace_id | INFO | Registered parser ImageParser for .png
+2026-11-06 11:51:11 | common | default_trace_id | INFO | Registered parser ImageParser for .jpg
+2026-11-06 11:51:11 | common | default_trace_id | INFO | Registered parser ImageParser for .jpeg
+2026-11-06 11:51:11 | common | default_trace_id | INFO | Registered parser ImageParser for .webp
+2026-11-06 11:51:11 | common | default_trace_id | INFO | Registered parser ImageParser for .gif
+2026-11-06 11:51:11 | common | default_trace_id | INFO | Registered parser ImageParser for .jfif
+2026-11-06 11:51:12 | common | default_trace_id | INFO | [DeepAgent] inner ReAct max_iterations=unbounded (default)
+2026-11-06 11:51:12 | common | default_trace_id | WARNING | [DeepAgent] online training rail factory unavailable: No module named 'redis'
+2026-11-06 11:51:12 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=skill_tool_pitwall-test-c03982d9937f4515913a57562adc3cb0, changed from [] to [GLOBAL]
+2026-11-06 11:51:12 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=f1_historical_results_pitwall-test-c03982d9937f4515913a57562adc3cb0, changed from [] to [GLOBAL]
+2026-11-06 11:51:12 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=f1_championship_standings_pitwall-test-c03982d9937f4515913a57562adc3cb0, changed from [] to [GLOBAL]
+2026-11-06 11:51:12 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=f1_race_winners_history_pitwall-test-c03982d9937f4515913a57562adc3cb0, changed from [] to [GLOBAL]
+2026-11-06 11:51:12 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=f1_circuit_fastest_lap_pitwall-test-c03982d9937f4515913a57562adc3cb0, changed from [] to [GLOBAL]
+2026-11-06 11:51:12 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=f1_list_sessions_pitwall-test-c03982d9937f4515913a57562adc3cb0, changed from [] to [GLOBAL]
+2026-11-06 11:51:12 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=f1_session_results_pitwall-test-c03982d9937f4515913a57562adc3cb0, changed from [] to [GLOBAL]
+2026-11-06 11:51:12 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=f1_drivers_pitwall-test-c03982d9937f4515913a57562adc3cb0, changed from [] to [GLOBAL]
+2026-11-06 11:51:12 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=f1_laps_pitwall-test-c03982d9937f4515913a57562adc3cb0, changed from [] to [GLOBAL]
+2026-11-06 11:51:12 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=f1_pit_stops_pitwall-test-c03982d9937f4515913a57562adc3cb0, changed from [] to [GLOBAL]
+2026-11-06 11:51:12 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=f1_tyre_stints_pitwall-test-c03982d9937f4515913a57562adc3cb0, changed from [] to [GLOBAL]
+2026-11-06 11:51:12 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=f1_weather_pitwall-test-c03982d9937f4515913a57562adc3cb0, changed from [] to [GLOBAL]
+2026-11-06 11:51:12 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=f1_race_control_pitwall-test-c03982d9937f4515913a57562adc3cb0, changed from [] to [GLOBAL]
+2026-11-06 11:51:12 | common | default_trace_id | WARNING | Failed to load description from D:\jiuwen_repos\agentic-hub-plugins\plugins\pitwall-f1\pitwall-f1\skills\pitwall-f1\SKILL.md: 'NoneType' object has no attribute 'fs'
+2026-11-06 11:51:17 | common | default_trace_id | INFO | Removed resource. resource_id=f1_race_control_pitwall-test-c03982d9937f4515913a57562adc3cb0, removed_tags=['__global__']
+2026-11-06 11:51:17 | common | default_trace_id | INFO | Removed resource. resource_id=f1_weather_pitwall-test-c03982d9937f4515913a57562adc3cb0, removed_tags=['__global__']
+2026-11-06 11:51:17 | common | default_trace_id | INFO | Removed resource. resource_id=f1_tyre_stints_pitwall-test-c03982d9937f4515913a57562adc3cb0, removed_tags=['__global__']
+2026-11-06 11:51:17 | common | default_trace_id | INFO | Removed resource. resource_id=f1_pit_stops_pitwall-test-c03982d9937f4515913a57562adc3cb0, removed_tags=['__global__']
+2026-11-06 11:51:17 | common | default_trace_id | INFO | Removed resource. resource_id=f1_laps_pitwall-test-c03982d9937f4515913a57562adc3cb0, removed_tags=['__global__']
+2026-11-06 11:51:17 | common | default_trace_id | INFO | Removed resource. resource_id=f1_drivers_pitwall-test-c03982d9937f4515913a57562adc3cb0, removed_tags=['__global__']
+2026-11-06 11:51:17 | common | default_trace_id | INFO | Removed resource. resource_id=f1_session_results_pitwall-test-c03982d9937f4515913a57562adc3cb0, removed_tags=['__global__']
+2026-11-06 11:51:17 | common | default_trace_id | INFO | Removed resource. resource_id=f1_list_sessions_pitwall-test-c03982d9937f4515913a57562adc3cb0, removed_tags=['__global__']
+2026-11-06 11:51:17 | common | default_trace_id | INFO | Removed resource. resource_id=f1_circuit_fastest_lap_pitwall-test-c03982d9937f4515913a57562adc3cb0, removed_tags=['__global__']
+2026-11-06 11:51:17 | common | default_trace_id | INFO | Removed resource. resource_id=f1_race_winners_history_pitwall-test-c03982d9937f4515913a57562adc3cb0, removed_tags=['__global__']
+2026-11-06 11:51:17 | common | default_trace_id | INFO | Removed resource. resource_id=f1_championship_standings_pitwall-test-c03982d9937f4515913a57562adc3cb0, removed_tags=['__global__']
+2026-11-06 11:51:17 | common | default_trace_id | INFO | Removed resource. resource_id=f1_historical_results_pitwall-test-c03982d9937f4515913a57562adc3cb0, removed_tags=['__global__']
+2026-11-06 11:51:56 | common | default_trace_id | INFO | Registered connector pool type: default
+2026-11-06 11:51:56 | common | default_trace_id | INFO | Registered connector pool type: httpx
+2026-11-06 11:51:57 | common | default_trace_id | INFO | Registered query expression support for milvus
+2026-11-06 11:51:57 | common | default_trace_id | INFO | Registered query expression support for chroma
+2026-11-06 11:51:57 | common | default_trace_id | INFO | Registered parser ExcelParser for .xlsx
+2026-11-06 11:51:57 | common | default_trace_id | INFO | Registered parser ExcelParser for .csv
+2026-11-06 11:51:57 | common | default_trace_id | INFO | Registered parser ExcelParser for .tsv
+2026-11-06 11:51:57 | common | default_trace_id | INFO | Registered parser TxtMdParser for .txt
+2026-11-06 11:51:57 | common | default_trace_id | INFO | Registered parser TxtMdParser for .md
+2026-11-06 11:51:57 | common | default_trace_id | INFO | Registered parser TxtMdParser for .markdown
+2026-11-06 11:51:57 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .htm
+2026-11-06 11:51:57 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .html
+2026-11-06 11:51:57 | common | default_trace_id | INFO | Registered parser JSONParser for .json
+2026-11-06 11:51:57 | common | default_trace_id | INFO | Registered parser PDFParser for .pdf
+2026-11-06 11:51:57 | common | default_trace_id | INFO | Registered parser WordParser for .docx
+2026-11-06 11:51:57 | common | default_trace_id | INFO | Registered parser ImageParser for .png
+2026-11-06 11:51:57 | common | default_trace_id | INFO | Registered parser ImageParser for .jpg
+2026-11-06 11:51:57 | common | default_trace_id | INFO | Registered parser ImageParser for .jpeg
+2026-11-06 11:51:57 | common | default_trace_id | INFO | Registered parser ImageParser for .webp
+2026-11-06 11:51:57 | common | default_trace_id | INFO | Registered parser ImageParser for .gif
+2026-11-06 11:51:57 | common | default_trace_id | INFO | Registered parser ImageParser for .jfif
+2026-11-06 11:52:04 | common | default_trace_id | INFO | Registered connector pool type: default
+2026-11-06 11:52:04 | common | default_trace_id | INFO | Registered connector pool type: httpx
+2026-11-06 11:52:05 | common | default_trace_id | INFO | Registered query expression support for milvus
+2026-11-06 11:52:05 | common | default_trace_id | INFO | Registered query expression support for chroma
+2026-11-06 11:52:06 | common | default_trace_id | INFO | Registered parser ExcelParser for .xlsx
+2026-11-06 11:52:06 | common | default_trace_id | INFO | Registered parser ExcelParser for .csv
+2026-11-06 11:52:06 | common | default_trace_id | INFO | Registered parser ExcelParser for .tsv
+2026-11-06 11:52:06 | common | default_trace_id | INFO | Registered parser TxtMdParser for .txt
+2026-11-06 11:52:06 | common | default_trace_id | INFO | Registered parser TxtMdParser for .md
+2026-11-06 11:52:06 | common | default_trace_id | INFO | Registered parser TxtMdParser for .markdown
+2026-11-06 11:52:06 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .htm
+2026-11-06 11:52:06 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .html
+2026-11-06 11:52:06 | common | default_trace_id | INFO | Registered parser JSONParser for .json
+2026-11-06 11:52:06 | common | default_trace_id | INFO | Registered parser PDFParser for .pdf
+2026-11-06 11:52:06 | common | default_trace_id | INFO | Registered parser WordParser for .docx
+2026-11-06 11:52:06 | common | default_trace_id | INFO | Registered parser ImageParser for .png
+2026-11-06 11:52:06 | common | default_trace_id | INFO | Registered parser ImageParser for .jpg
+2026-11-06 11:52:06 | common | default_trace_id | INFO | Registered parser ImageParser for .jpeg
+2026-11-06 11:52:06 | common | default_trace_id | INFO | Registered parser ImageParser for .webp
+2026-11-06 11:52:06 | common | default_trace_id | INFO | Registered parser ImageParser for .gif
+2026-11-06 11:52:06 | common | default_trace_id | INFO | Registered parser ImageParser for .jfif
+2026-11-06 11:53:02 | common | default_trace_id | INFO | Registered connector pool type: default
+2026-11-06 11:53:02 | common | default_trace_id | INFO | Registered connector pool type: httpx
+2026-11-06 11:53:03 | common | default_trace_id | INFO | Registered query expression support for milvus
+2026-11-06 11:53:03 | common | default_trace_id | INFO | Registered query expression support for chroma
+2026-11-06 11:53:03 | common | default_trace_id | INFO | Registered parser ExcelParser for .xlsx
+2026-11-06 11:53:03 | common | default_trace_id | INFO | Registered parser ExcelParser for .csv
+2026-11-06 11:53:03 | common | default_trace_id | INFO | Registered parser ExcelParser for .tsv
+2026-11-06 11:53:03 | common | default_trace_id | INFO | Registered parser TxtMdParser for .txt
+2026-11-06 11:53:03 | common | default_trace_id | INFO | Registered parser TxtMdParser for .md
+2026-11-06 11:53:03 | common | default_trace_id | INFO | Registered parser TxtMdParser for .markdown
+2026-11-06 11:53:03 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .htm
+2026-11-06 11:53:03 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .html
+2026-11-06 11:53:03 | common | default_trace_id | INFO | Registered parser JSONParser for .json
+2026-11-06 11:53:03 | common | default_trace_id | INFO | Registered parser PDFParser for .pdf
+2026-11-06 11:53:03 | common | default_trace_id | INFO | Registered parser WordParser for .docx
+2026-11-06 11:53:03 | common | default_trace_id | INFO | Registered parser ImageParser for .png
+2026-11-06 11:53:03 | common | default_trace_id | INFO | Registered parser ImageParser for .jpg
+2026-11-06 11:53:03 | common | default_trace_id | INFO | Registered parser ImageParser for .jpeg
+2026-11-06 11:53:03 | common | default_trace_id | INFO | Registered parser ImageParser for .webp
+2026-11-06 11:53:03 | common | default_trace_id | INFO | Registered parser ImageParser for .gif
+2026-11-06 11:53:03 | common | default_trace_id | INFO | Registered parser ImageParser for .jfif
+2026-11-06 11:53:04 | common | default_trace_id | INFO | [DeepAgent] inner ReAct max_iterations=unbounded (default)
+2026-11-06 11:53:04 | common | default_trace_id | WARNING | [DeepAgent] online training rail factory unavailable: No module named 'redis'
+2026-11-06 11:53:04 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=skill_tool_pitwall-test-b3a78a978ddf41299a1e2a48ac54afd1, changed from [] to [GLOBAL]
+2026-11-06 11:53:04 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=f1_historical_results_pitwall-test-b3a78a978ddf41299a1e2a48ac54afd1, changed from [] to [GLOBAL]
+2026-11-06 11:53:04 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=f1_championship_standings_pitwall-test-b3a78a978ddf41299a1e2a48ac54afd1, changed from [] to [GLOBAL]
+2026-11-06 11:53:04 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=f1_race_winners_history_pitwall-test-b3a78a978ddf41299a1e2a48ac54afd1, changed from [] to [GLOBAL]
+2026-11-06 11:53:04 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=f1_circuit_fastest_lap_pitwall-test-b3a78a978ddf41299a1e2a48ac54afd1, changed from [] to [GLOBAL]
+2026-11-06 11:53:04 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=f1_list_sessions_pitwall-test-b3a78a978ddf41299a1e2a48ac54afd1, changed from [] to [GLOBAL]
+2026-11-06 11:53:04 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=f1_session_results_pitwall-test-b3a78a978ddf41299a1e2a48ac54afd1, changed from [] to [GLOBAL]
+2026-11-06 11:53:04 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=f1_drivers_pitwall-test-b3a78a978ddf41299a1e2a48ac54afd1, changed from [] to [GLOBAL]
+2026-11-06 11:53:04 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=f1_laps_pitwall-test-b3a78a978ddf41299a1e2a48ac54afd1, changed from [] to [GLOBAL]
+2026-11-06 11:53:04 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=f1_pit_stops_pitwall-test-b3a78a978ddf41299a1e2a48ac54afd1, changed from [] to [GLOBAL]
+2026-11-06 11:53:04 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=f1_tyre_stints_pitwall-test-b3a78a978ddf41299a1e2a48ac54afd1, changed from [] to [GLOBAL]
+2026-11-06 11:53:04 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=f1_weather_pitwall-test-b3a78a978ddf41299a1e2a48ac54afd1, changed from [] to [GLOBAL]
+2026-11-06 11:53:04 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=f1_race_control_pitwall-test-b3a78a978ddf41299a1e2a48ac54afd1, changed from [] to [GLOBAL]
+2026-11-06 11:53:04 | common | default_trace_id | WARNING | Failed to load description from D:\jiuwen_repos\outputs\pitwall-build\extracted-native\pitwall-f1\skills\pitwall-f1\SKILL.md: 'NoneType' object has no attribute 'fs'
+2026-11-06 11:53:09 | common | default_trace_id | INFO | Removed resource. resource_id=f1_race_control_pitwall-test-b3a78a978ddf41299a1e2a48ac54afd1, removed_tags=['__global__']
+2026-11-06 11:53:09 | common | default_trace_id | INFO | Removed resource. resource_id=f1_weather_pitwall-test-b3a78a978ddf41299a1e2a48ac54afd1, removed_tags=['__global__']
+2026-11-06 11:53:09 | common | default_trace_id | INFO | Removed resource. resource_id=f1_tyre_stints_pitwall-test-b3a78a978ddf41299a1e2a48ac54afd1, removed_tags=['__global__']
+2026-11-06 11:53:09 | common | default_trace_id | INFO | Removed resource. resource_id=f1_pit_stops_pitwall-test-b3a78a978ddf41299a1e2a48ac54afd1, removed_tags=['__global__']
+2026-11-06 11:53:09 | common | default_trace_id | INFO | Removed resource. resource_id=f1_laps_pitwall-test-b3a78a978ddf41299a1e2a48ac54afd1, removed_tags=['__global__']
+2026-11-06 11:53:09 | common | default_trace_id | INFO | Removed resource. resource_id=f1_drivers_pitwall-test-b3a78a978ddf41299a1e2a48ac54afd1, removed_tags=['__global__']
+2026-11-06 11:53:09 | common | default_trace_id | INFO | Removed resource. resource_id=f1_session_results_pitwall-test-b3a78a978ddf41299a1e2a48ac54afd1, removed_tags=['__global__']
+2026-11-06 11:53:09 | common | default_trace_id | INFO | Removed resource. resource_id=f1_list_sessions_pitwall-test-b3a78a978ddf41299a1e2a48ac54afd1, removed_tags=['__global__']
+2026-11-06 11:53:09 | common | default_trace_id | INFO | Removed resource. resource_id=f1_circuit_fastest_lap_pitwall-test-b3a78a978ddf41299a1e2a48ac54afd1, removed_tags=['__global__']
+2026-11-06 11:53:09 | common | default_trace_id | INFO | Removed resource. resource_id=f1_race_winners_history_pitwall-test-b3a78a978ddf41299a1e2a48ac54afd1, removed_tags=['__global__']
+2026-11-06 11:53:09 | common | default_trace_id | INFO | Removed resource. resource_id=f1_championship_standings_pitwall-test-b3a78a978ddf41299a1e2a48ac54afd1, removed_tags=['__global__']
+2026-11-06 11:53:09 | common | default_trace_id | INFO | Removed resource. resource_id=f1_historical_results_pitwall-test-b3a78a978ddf41299a1e2a48ac54afd1, removed_tags=['__global__']

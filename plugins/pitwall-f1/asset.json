@@ -1,0 +1,24 @@
+{
+  "type": "agent-plugin",
+  "name": "pitwall-f1",
+  "version": "1.0.0",
+  "display_name": "F1 赛事数据助手",
+  "description": "用十二个原生只读工具查询 F1 历史成绩、积分榜、赛道冠军，以及 2023 年起的场次成绩、圈速、进站、轮胎、天气和赛事控制信息；无需账号，默认用简体中文。",
+  "publisher": "LasVie/agentic-hub-plugins",
+  "category": "生活与健康",
+  "tags": [
+    "f1",
+    "formula1",
+    "motorsport",
+    "race-results"
+  ],
+  "functional_tags": [
+    "F1历史成绩查询",
+    "场次圈速与轮胎策略查询",
+    "赛事积分榜查询"
+  ],
+  "scope": "十二个原生只读工具：Jolpica-F1 提供 1950 年起的成绩、积分榜、分站冠军与赛道最快圈，OpenF1 提供 2023 年起的场次成绩、车手、逐圈圈速、进站、轮胎、天气和赛事控制信息。依赖两个匿名公共网络服务和宿主 SDK；不含遥测曲线、实时计时、绘图、预测、博彩建议，也不使用需要 F1 TV 账号的官方计时流。非官方工具。",
+  "candidate_id": "CAND-CLD-299",
+  "task_id": "AH-20261106-pitwall-f1",
+  "related_asset_ids": []
+}

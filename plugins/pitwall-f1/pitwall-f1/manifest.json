@@ -1,0 +1,101 @@
+{
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "source": "local",
+  "id": "pitwall-f1",
+  "name": "F1 赛事数据助手",
+  "description": "用十二个原生只读工具查询 F1 历史成绩、积分榜、赛道冠军，以及 2023 年起的场次成绩、圈速、进站、轮胎、天气和赛事控制信息；无需账号，默认用简体中文。",
+  "display_name": {
+    "en": "F1 赛事数据助手",
+    "zh": "F1 赛事数据助手"
+  },
+  "display_description": {
+    "en": "用十二个原生只读工具查询 F1 历史成绩、积分榜、赛道冠军，以及 2023 年起的场次成绩、圈速、进站、轮胎、天气和赛事控制信息；无需账号，默认用简体中文。",
+    "zh": "用十二个原生只读工具查询 F1 历史成绩、积分榜、赛道冠军，以及 2023 年起的场次成绩、圈速、进站、轮胎、天气和赛事控制信息；无需账号，默认用简体中文。"
+  },
+  "category": "生活与健康",
+  "tags": [
+    {
+      "en": "F1 赛事数据",
+      "zh": "F1 赛事数据"
+    },
+    {
+      "en": "赛车成绩查询",
+      "zh": "赛车成绩查询"
+    }
+  ],
+  "default_init_input": {
+    "en": "查询 F1 赛事数据并用中文整理：",
+    "zh": "查询 F1 赛事数据并用中文整理："
+  },
+  "quick_inputs": [
+    {
+      "en": "查询 2024 年意大利大奖赛（蒙扎）正赛的前十名成绩。",
+      "zh": "查询 2024 年意大利大奖赛（蒙扎）正赛的前十名成绩。"
+    },
+    {
+      "en": "2024 年车手总积分榜前五名是谁？",
+      "zh": "2024 年车手总积分榜前五名是谁？"
+    },
+    {
+      "en": "勒克莱尔在 2024 年蒙扎正赛用了哪些轮胎、第几圈进站？",
+      "zh": "勒克莱尔在 2024 年蒙扎正赛用了哪些轮胎、第几圈进站？"
+    }
+  ],
+  "skills": [
+    {
+      "dir": "skills/pitwall-f1",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/pitwall_tools.py",
+      "class": "HistoricalResultsTool"
+    },
+    {
+      "file": "tools/pitwall_tools.py",
+      "class": "ChampionshipStandingsTool"
+    },
+    {
+      "file": "tools/pitwall_tools.py",
+      "class": "RaceWinnersHistoryTool"
+    },
+    {
+      "file": "tools/pitwall_tools.py",
+      "class": "CircuitFastestLapTool"
+    },
+    {
+      "file": "tools/pitwall_tools.py",
+      "class": "ListSessionsTool"
+    },
+    {
+      "file": "tools/pitwall_tools.py",
+      "class": "SessionResultsTool"
+    },
+    {
+      "file": "tools/pitwall_tools.py",
+      "class": "DriversTool"
+    },
+    {
+      "file": "tools/pitwall_tools.py",
+      "class": "LapsTool"
+    },
+    {
+      "file": "tools/pitwall_tools.py",
+      "class": "PitStopsTool"
+    },
+    {
+      "file": "tools/pitwall_tools.py",
+      "class": "TyreStintsTool"
+    },
+    {
+      "file": "tools/pitwall_tools.py",
+      "class": "WeatherTool"
+    },
+    {
+      "file": "tools/pitwall_tools.py",
+      "class": "RaceControlTool"
+    }
+  ]
+}

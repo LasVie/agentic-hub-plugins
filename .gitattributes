@@ -90,3 +90,6 @@
 /plugins/web3d-asset-lab/** -text
 /releases/agent-plugin/web3d-asset-lab/** -text
 /docs/deliveries/dev-five-20261102/images/*.jpg -text
+# Preserve the exact confirmed pitwall-f1 payload, license and package hashes.
+/plugins/pitwall-f1/** -text
+/releases/agent-plugin/pitwall-f1/** -text
