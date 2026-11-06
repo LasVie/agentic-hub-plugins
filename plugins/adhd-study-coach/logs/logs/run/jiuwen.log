@@ -1,0 +1,101 @@
+2026-11-06 15:51:35 | common | default_trace_id | INFO | Registered connector pool type: default
+2026-11-06 15:51:35 | common | default_trace_id | INFO | Registered connector pool type: httpx
+2026-11-06 15:51:39 | common | default_trace_id | INFO | Registered query expression support for milvus
+2026-11-06 15:51:39 | common | default_trace_id | INFO | Registered query expression support for chroma
+2026-11-06 15:51:40 | common | default_trace_id | INFO | Registered parser ExcelParser for .xlsx
+2026-11-06 15:51:40 | common | default_trace_id | INFO | Registered parser ExcelParser for .csv
+2026-11-06 15:51:40 | common | default_trace_id | INFO | Registered parser ExcelParser for .tsv
+2026-11-06 15:51:40 | common | default_trace_id | INFO | Registered parser TxtMdParser for .txt
+2026-11-06 15:51:40 | common | default_trace_id | INFO | Registered parser TxtMdParser for .md
+2026-11-06 15:51:40 | common | default_trace_id | INFO | Registered parser TxtMdParser for .markdown
+2026-11-06 15:51:40 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .htm
+2026-11-06 15:51:40 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .html
+2026-11-06 15:51:40 | common | default_trace_id | INFO | Registered parser JSONParser for .json
+2026-11-06 15:51:40 | common | default_trace_id | INFO | Registered parser PDFParser for .pdf
+2026-11-06 15:51:40 | common | default_trace_id | INFO | Registered parser WordParser for .docx
+2026-11-06 15:51:40 | common | default_trace_id | INFO | Registered parser ImageParser for .png
+2026-11-06 15:51:40 | common | default_trace_id | INFO | Registered parser ImageParser for .jpg
+2026-11-06 15:51:40 | common | default_trace_id | INFO | Registered parser ImageParser for .jpeg
+2026-11-06 15:51:40 | common | default_trace_id | INFO | Registered parser ImageParser for .webp
+2026-11-06 15:51:40 | common | default_trace_id | INFO | Registered parser ImageParser for .gif
+2026-11-06 15:51:40 | common | default_trace_id | INFO | Registered parser ImageParser for .jfif
+2026-11-06 15:52:33 | common | default_trace_id | INFO | Registered connector pool type: default
+2026-11-06 15:52:33 | common | default_trace_id | INFO | Registered connector pool type: httpx
+2026-11-06 15:52:36 | common | default_trace_id | INFO | Registered query expression support for milvus
+2026-11-06 15:52:36 | common | default_trace_id | INFO | Registered query expression support for chroma
+2026-11-06 15:52:37 | common | default_trace_id | INFO | Registered parser ExcelParser for .xlsx
+2026-11-06 15:52:37 | common | default_trace_id | INFO | Registered parser ExcelParser for .csv
+2026-11-06 15:52:37 | common | default_trace_id | INFO | Registered parser ExcelParser for .tsv
+2026-11-06 15:52:37 | common | default_trace_id | INFO | Registered parser TxtMdParser for .txt
+2026-11-06 15:52:37 | common | default_trace_id | INFO | Registered parser TxtMdParser for .md
+2026-11-06 15:52:37 | common | default_trace_id | INFO | Registered parser TxtMdParser for .markdown
+2026-11-06 15:52:37 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .htm
+2026-11-06 15:52:37 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .html
+2026-11-06 15:52:37 | common | default_trace_id | INFO | Registered parser JSONParser for .json
+2026-11-06 15:52:37 | common | default_trace_id | INFO | Registered parser PDFParser for .pdf
+2026-11-06 15:52:37 | common | default_trace_id | INFO | Registered parser WordParser for .docx
+2026-11-06 15:52:37 | common | default_trace_id | INFO | Registered parser ImageParser for .png
+2026-11-06 15:52:37 | common | default_trace_id | INFO | Registered parser ImageParser for .jpg
+2026-11-06 15:52:37 | common | default_trace_id | INFO | Registered parser ImageParser for .jpeg
+2026-11-06 15:52:37 | common | default_trace_id | INFO | Registered parser ImageParser for .webp
+2026-11-06 15:52:37 | common | default_trace_id | INFO | Registered parser ImageParser for .gif
+2026-11-06 15:52:37 | common | default_trace_id | INFO | Registered parser ImageParser for .jfif
+2026-11-06 15:53:05 | common | default_trace_id | INFO | Registered connector pool type: default
+2026-11-06 15:53:05 | common | default_trace_id | INFO | Registered connector pool type: httpx
+2026-11-06 15:53:06 | common | default_trace_id | INFO | Registered query expression support for milvus
+2026-11-06 15:53:06 | common | default_trace_id | INFO | Registered query expression support for chroma
+2026-11-06 15:53:07 | common | default_trace_id | INFO | Registered parser ExcelParser for .xlsx
+2026-11-06 15:53:07 | common | default_trace_id | INFO | Registered parser ExcelParser for .csv
+2026-11-06 15:53:07 | common | default_trace_id | INFO | Registered parser ExcelParser for .tsv
+2026-11-06 15:53:07 | common | default_trace_id | INFO | Registered parser TxtMdParser for .txt
+2026-11-06 15:53:07 | common | default_trace_id | INFO | Registered parser TxtMdParser for .md
+2026-11-06 15:53:07 | common | default_trace_id | INFO | Registered parser TxtMdParser for .markdown
+2026-11-06 15:53:07 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .htm
+2026-11-06 15:53:07 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .html
+2026-11-06 15:53:07 | common | default_trace_id | INFO | Registered parser JSONParser for .json
+2026-11-06 15:53:07 | common | default_trace_id | INFO | Registered parser PDFParser for .pdf
+2026-11-06 15:53:07 | common | default_trace_id | INFO | Registered parser WordParser for .docx
+2026-11-06 15:53:07 | common | default_trace_id | INFO | Registered parser ImageParser for .png
+2026-11-06 15:53:07 | common | default_trace_id | INFO | Registered parser ImageParser for .jpg
+2026-11-06 15:53:07 | common | default_trace_id | INFO | Registered parser ImageParser for .jpeg
+2026-11-06 15:53:07 | common | default_trace_id | INFO | Registered parser ImageParser for .webp
+2026-11-06 15:53:07 | common | default_trace_id | INFO | Registered parser ImageParser for .gif
+2026-11-06 15:53:07 | common | default_trace_id | INFO | Registered parser ImageParser for .jfif
+2026-11-06 15:53:11 | common | default_trace_id | INFO | [DeepAgent] inner ReAct max_iterations=unbounded (default)
+2026-11-06 15:53:11 | common | default_trace_id | WARNING | [DeepAgent] online training rail factory unavailable: No module named 'redis'
+2026-11-06 15:53:11 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=skill_tool_adhd-coach-test-b83e20fc69e34f80a4069e39ab577279, changed from [] to [GLOBAL]
+2026-11-06 15:53:12 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=adhd_card_inspect_adhd-coach-test-b83e20fc69e34f80a4069e39ab577279, changed from [] to [GLOBAL]
+2026-11-06 15:53:12 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=adhd_card_review_adhd-coach-test-b83e20fc69e34f80a4069e39ab577279, changed from [] to [GLOBAL]
+2026-11-06 15:53:12 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=adhd_card_log_session_adhd-coach-test-b83e20fc69e34f80a4069e39ab577279, changed from [] to [GLOBAL]
+2026-11-06 15:53:12 | common | default_trace_id | WARNING | Failed to load description from D:\jiuwen_repos\agentic-hub-plugins\plugins\adhd-study-coach\adhd-study-coach\skills\adhd-study-coach\SKILL.md: 'NoneType' object has no attribute 'fs'
+2026-11-06 15:53:22 | common | default_trace_id | INFO | Registered connector pool type: default
+2026-11-06 15:53:24 | common | default_trace_id | INFO | Registered connector pool type: httpx
+2026-11-06 15:53:25 | common | default_trace_id | INFO | Registered query expression support for milvus
+2026-11-06 15:53:25 | common | default_trace_id | INFO | Registered query expression support for chroma
+2026-11-06 15:53:25 | common | default_trace_id | INFO | Registered parser ExcelParser for .xlsx
+2026-11-06 15:53:25 | common | default_trace_id | INFO | Registered parser ExcelParser for .csv
+2026-11-06 15:53:25 | common | default_trace_id | INFO | Registered parser ExcelParser for .tsv
+2026-11-06 15:53:25 | common | default_trace_id | INFO | Registered parser TxtMdParser for .txt
+2026-11-06 15:53:25 | common | default_trace_id | INFO | Registered parser TxtMdParser for .md
+2026-11-06 15:53:25 | common | default_trace_id | INFO | Registered parser TxtMdParser for .markdown
+2026-11-06 15:53:25 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .htm
+2026-11-06 15:53:25 | common | default_trace_id | INFO | Registered parser HTMLFileParser for .html
+2026-11-06 15:53:25 | common | default_trace_id | INFO | Registered parser JSONParser for .json
+2026-11-06 15:53:25 | common | default_trace_id | INFO | Registered parser PDFParser for .pdf
+2026-11-06 15:53:26 | common | default_trace_id | INFO | Registered parser WordParser for .docx
+2026-11-06 15:53:26 | common | default_trace_id | INFO | Registered parser ImageParser for .png
+2026-11-06 15:53:26 | common | default_trace_id | INFO | Registered parser ImageParser for .jpg
+2026-11-06 15:53:26 | common | default_trace_id | INFO | Registered parser ImageParser for .jpeg
+2026-11-06 15:53:26 | common | default_trace_id | INFO | Registered parser ImageParser for .webp
+2026-11-06 15:53:26 | common | default_trace_id | INFO | Registered parser ImageParser for .gif
+2026-11-06 15:53:26 | common | default_trace_id | INFO | Registered parser ImageParser for .jfif
+2026-11-06 15:53:28 | common | default_trace_id | INFO | [DeepAgent] inner ReAct max_iterations=unbounded (default)
+2026-11-06 15:53:28 | common | default_trace_id | WARNING | [DeepAgent] online training rail factory unavailable: No module named 'redis'
+2026-11-06 15:53:28 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=skill_tool_adhd-coach-test-2a22e8b7e3ad41cbaea1992db0c5d4d4, changed from [] to [GLOBAL]
+2026-11-06 15:53:29 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=adhd_card_inspect_adhd-coach-test-2a22e8b7e3ad41cbaea1992db0c5d4d4, changed from [] to [GLOBAL]
+2026-11-06 15:53:29 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=adhd_card_review_adhd-coach-test-2a22e8b7e3ad41cbaea1992db0c5d4d4, changed from [] to [GLOBAL]
+2026-11-06 15:53:29 | common | default_trace_id | INFO | Added GLOBAL tag to resource. resource_id=adhd_card_log_session_adhd-coach-test-2a22e8b7e3ad41cbaea1992db0c5d4d4, changed from [] to [GLOBAL]
+2026-11-06 15:53:29 | common | default_trace_id | WARNING | Failed to load description from D:\jiuwen_repos\agentic-hub-plugins\plugins\adhd-study-coach\adhd-study-coach\skills\adhd-study-coach\SKILL.md: 'NoneType' object has no attribute 'fs'
+2026-11-06 15:53:29 | common | default_trace_id | INFO | Removed resource. resource_id=adhd_card_log_session_adhd-coach-test-2a22e8b7e3ad41cbaea1992db0c5d4d4, removed_tags=['__global__']
+2026-11-06 15:53:29 | common | default_trace_id | INFO | Removed resource. resource_id=adhd_card_review_adhd-coach-test-2a22e8b7e3ad41cbaea1992db0c5d4d4, removed_tags=['__global__']
+2026-11-06 15:53:29 | common | default_trace_id | INFO | Removed resource. resource_id=adhd_card_inspect_adhd-coach-test-2a22e8b7e3ad41cbaea1992db0c5d4d4, removed_tags=['__global__']

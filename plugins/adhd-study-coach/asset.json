@@ -1,0 +1,24 @@
+{
+  "type": "agent-plugin",
+  "name": "adhd-study-coach",
+  "version": "1.0.0",
+  "display_name": "ADHD 学习教练",
+  "description": "面向 ADHD 学习者的学习陪伴：到期自动热身复习（间隔重复）、小步讲解、讲回来式反思和每 5 次一次的整体回顾，进度保存在可复制粘贴的进度卡里，复习日期由原生工具计算；无需账号和网络，默认用简体中文。",
+  "publisher": "LasVie/agentic-hub-plugins",
+  "category": "生活与健康",
+  "tags": [
+    "adhd",
+    "study-coach",
+    "spaced-repetition",
+    "learning"
+  ],
+  "functional_tags": [
+    "ADHD学习陪伴",
+    "间隔重复复习计划",
+    "讲回来式学习反思"
+  ],
+  "scope": "一个技能加三个原生计算工具：技能提供入门、热身复习、小步讲解、反思、整体回顾五个环节；工具读取和更新用户自己保存的纯文本进度卡，并按 1、3、7、16、35、90 天的序列计算复习日期。不联网、不读写文件、不保存任何内容，没有跨对话的自动记忆；不诊断 ADHD、不提供治疗或医疗建议、不承诺提高成绩。改编自上游 ADHD Study Coach 的教练说明（MIT），不是上游作者发布的版本。",
+  "candidate_id": "CAND-CLD-288",
+  "task_id": "AH-20261106-adhd-study-coach",
+  "related_asset_ids": []
+}

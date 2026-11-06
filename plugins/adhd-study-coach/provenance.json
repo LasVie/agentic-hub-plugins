@@ -1,0 +1,25 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/itsAalaa7/adhd-study-coach/tree/eec04896c443b76d34546698905ec0911fa3f17f",
+      "revision": "eec04896c443b76d34546698905ec0911fa3f17f",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/adhd-study-coach/LICENSE",
+          "sha256": "d9487d7e75e16293408fe8556dc940f400c0d6e7fbeed42a7d149a5be43fd748"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "skills/adhd-study-coach/SKILL.md"
+  ],
+  "audit_file": "SOURCE_REVIEW.md",
+  "native_components": {
+    "spec": "NATIVE_DESIGN.md",
+    "note": "tools/study_card.py 中的三个原生计算工具（adhd_card_inspect、adhd_card_review、adhd_card_log_session）、中文进度卡格式、校验与错误处理均为本团队独立编写，不含上游代码；间隔序列与改期规则取自上游说明文字。"
+  }
+}

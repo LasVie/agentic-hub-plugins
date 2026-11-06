@@ -1,0 +1,69 @@
+{
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "source": "local",
+  "id": "adhd-study-coach",
+  "name": "ADHD 学习教练",
+  "description": "面向 ADHD 学习者的学习陪伴：到期自动热身复习（间隔重复）、小步讲解、讲回来式反思和每 5 次一次的整体回顾，进度保存在可复制粘贴的进度卡里，复习日期由原生工具计算；无需账号和网络，默认用简体中文。",
+  "display_name": {
+    "en": "ADHD 学习教练",
+    "zh": "ADHD 学习教练"
+  },
+  "display_description": {
+    "en": "面向 ADHD 学习者的学习陪伴：到期自动热身复习（间隔重复）、小步讲解、讲回来式反思和每 5 次一次的整体回顾，进度保存在可复制粘贴的进度卡里，复习日期由原生工具计算；无需账号和网络，默认用简体中文。",
+    "zh": "面向 ADHD 学习者的学习陪伴：到期自动热身复习（间隔重复）、小步讲解、讲回来式反思和每 5 次一次的整体回顾，进度保存在可复制粘贴的进度卡里，复习日期由原生工具计算；无需账号和网络，默认用简体中文。"
+  },
+  "category": "生活与健康",
+  "tags": [
+    {
+      "en": "ADHD 学习",
+      "zh": "ADHD 学习"
+    },
+    {
+      "en": "间隔复习",
+      "zh": "间隔复习"
+    },
+    {
+      "en": "学习陪伴",
+      "zh": "学习陪伴"
+    }
+  ],
+  "default_init_input": {
+    "en": "作为我的学习教练：",
+    "zh": "作为我的学习教练："
+  },
+  "quick_inputs": [
+    {
+      "en": "新的。我想学光合作用，每周学 3 天，每次 25 分钟。",
+      "zh": "新的。我想学光合作用，每周学 3 天，每次 25 分钟。"
+    },
+    {
+      "en": "考考我之前学过的内容。",
+      "zh": "考考我之前学过的内容。"
+    },
+    {
+      "en": "今天先学到这里，帮我收个尾。",
+      "zh": "今天先学到这里，帮我收个尾。"
+    }
+  ],
+  "skills": [
+    {
+      "dir": "skills/adhd-study-coach",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/study_card.py",
+      "class": "InspectCardTool"
+    },
+    {
+      "file": "tools/study_card.py",
+      "class": "ReviewCardTool"
+    },
+    {
+      "file": "tools/study_card.py",
+      "class": "LogSessionTool"
+    }
+  ]
+}
