@@ -1,0 +1,123 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "audit_file": "SOURCE_REVIEW.md",
+  "sources": [
+    {
+      "name": "epanet-js",
+      "url": "https://github.com/epanet-js/epanet-js-toolkit",
+      "revision": "84fcb48880a640119ad968161d08a97815931584 / npm 0.9.0",
+      "license_expression": "MIT",
+      "scope": "Bundled runtime/component notices; see SOURCE_REVIEW.md for exact use and conditions.",
+      "license_evidence": [
+        {
+          "path": "licenses/epanet-js/LICENSE",
+          "sha256": "a7da5a861dfbac597e0713df02ba1e723463cc40f73c88b324e34ba8925ff436"
+        }
+      ]
+    },
+    {
+      "name": "owa-epanet",
+      "url": "https://github.com/OpenWaterAnalytics/EPANET",
+      "revision": "444725fbf16ab28b0470ef0ed281dc4849d49583 / 2.3.5",
+      "license_expression": "MIT",
+      "scope": "Bundled runtime/component notices; see SOURCE_REVIEW.md for exact use and conditions.",
+      "license_evidence": [
+        {
+          "path": "licenses/owa-epanet/AUTHORS",
+          "sha256": "f279d25f1df1e23b3c16d3d9adc96e6886f09b9bd4c71099946840031d9700b7"
+        },
+        {
+          "path": "licenses/owa-epanet/COMPONENT-NOTICES",
+          "sha256": "bf95e258f8ab097f4547a5326ac18abc57c87300ab8da5a6f37203a6be72e263"
+        },
+        {
+          "path": "licenses/owa-epanet/LICENSE",
+          "sha256": "5eb3c40beb6ee076bc006c70878b924e068434cc971abb137553b3b05064f00d"
+        }
+      ]
+    },
+    {
+      "name": "emscripten",
+      "url": "https://github.com/emscripten-core/emscripten",
+      "revision": "4.0.6; MIT option",
+      "license_expression": "MIT",
+      "scope": "Bundled runtime/component notices; see SOURCE_REVIEW.md for exact use and conditions.",
+      "license_evidence": [
+        {
+          "path": "licenses/emscripten/AUTHORS",
+          "sha256": "56f7df65203d4858dac19cafe3a84a8c49abaff56b67d32d2d463d5fef6e440b"
+        },
+        {
+          "path": "licenses/emscripten/LICENSE",
+          "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86"
+        }
+      ]
+    },
+    {
+      "name": "musl",
+      "url": "https://musl.libc.org/",
+      "revision": "Emscripten 4.0.6 sysroot",
+      "license_expression": "MIT",
+      "scope": "Bundled runtime/component notices; see SOURCE_REVIEW.md for exact use and conditions.",
+      "license_evidence": [
+        {
+          "path": "licenses/musl/COMPONENT-NOTICES",
+          "sha256": "10af8a69e35b3964063f26b912a85e41e3de1cbceb9f436d68963ace0562b602"
+        },
+        {
+          "path": "licenses/musl/LICENSE",
+          "sha256": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af"
+        }
+      ]
+    },
+    {
+      "name": "compiler-rt",
+      "url": "https://github.com/llvm/llvm-project",
+      "revision": "Emscripten 4.0.6 sysroot",
+      "license_expression": "Apache-2.0 WITH LLVM-exception",
+      "scope": "Bundled runtime/component notices; see SOURCE_REVIEW.md for exact use and conditions.",
+      "license_evidence": [
+        {
+          "path": "licenses/compiler-rt/LICENSE",
+          "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d"
+        }
+      ]
+    },
+    {
+      "name": "graphics-gems",
+      "url": "https://github.com/erich666/GraphicsGems",
+      "revision": "Original permissive repository license retrieved 2026-11-10",
+      "license_expression": "LicenseRef-Graphics-Gems",
+      "scope": "Bundled runtime/component notices; see SOURCE_REVIEW.md for exact use and conditions.",
+      "license_evidence": [
+        {
+          "path": "licenses/graphics-gems/LICENSE",
+          "sha256": "7205a055fc9b7e2d3345724e9e0b181212c7730e2f6356ce3a0a1dbfe9045294"
+        }
+      ]
+    },
+    {
+      "name": "dlmalloc",
+      "url": "https://gee.cs.oswego.edu/dl/html/malloc.html",
+      "revision": "2.8.6 in Emscripten 4.0.6",
+      "license_expression": "CC0-1.0",
+      "scope": "Unmodified allocator runtime; original release statement retained.",
+      "license_evidence": [
+        {
+          "path": "licenses/dlmalloc/LICENSE",
+          "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+        },
+        {
+          "path": "licenses/dlmalloc/NOTICE",
+          "sha256": "46fdfb7382ff0119b2246609c343fafefef5521976f73d17cbcbb025432daecb"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "web/vendor/epanet/index.mjs",
+    "web/vendor/epanet/_engine.mjs",
+    "web/vendor/epanet/EpanetEngine.wasm"
+  ]
+}

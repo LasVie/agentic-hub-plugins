@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "version": "1.0.0",
+  "payload_files": 33,
+  "payload_equal_source_native_canonical_installed": true,
+  "source_license_evidence_verified": true,
+  "native": {
+    "path": "/Users/IDLE_And_R/.codex/worktrees/581d/agentic-hub-plugins/plugins/offline-pipe-network-workbench/test-packages/offline-pipe-network-workbench-1.0.0-workswarm.zip",
+    "sha256": "1414048b02e90649ed7708035fd2be68715b1fa5189b58686d33f11b397be6df",
+    "bytes": 597238
+  },
+  "canonical": {
+    "path": "/Users/IDLE_And_R/.codex/worktrees/581d/agentic-hub-plugins/releases/agent-plugin/offline-pipe-network-workbench/1.0.0/offline-pipe-network-workbench-1.0.0.zip",
+    "sha256": "dd16d4fe65be52c55a3f379a2014e69cdc11e3f1a6eb8e730e9091668bc1d3f6",
+    "bytes": 601844
+  },
+  "payload_sha256": {
+    "THIRD_PARTY_NOTICES.md": "8618315c5600352c339fc7b1a015028d2ed6f4b585b870a269069864befd26d5",
+    "README.md": "e647cd95215124ff81fb1b6bd8f8f05ed1c501140ce819b34c0914f066d09b51",
+    "manifest.json": "92d5093052657b80a85eac0a92e9b680d5b8d46ee503adcde267820bd7c749d4",
+    "tools/server.py": "f72f5adae4cd4380c3d89c7ed93ccfa8a06b466ee4fdcaaa9379d0f9217493a1",
+    "tools/runtime.py": "546eab72e05d820f89342ba37da1d147bb210e32860d830bb397509411265cb9",
+    "tools/pipe_tools.py": "4ff99a9e7d01949ef5089c5228a1dc76048307ebc2026dc7e039b9e34fb37898",
+    "web/loop.json": "e26fecb1de81b2674da0b6b0de0609f44ed9fec68a325cabfd637af05b23a3af",
+    "web/index.html": "2352cb029caf98344fec6aa2684a60b5694f6adc5510ba408cd685415d141ca2",
+    "web/worker.js": "5f0a0bf0efa9a34fcd931ca7240b50f93b7af67a17aacf89604dd481bdf1aedd",
+    "web/one-pipe.json": "f7c159f3d3427ab71828fd1c4b465fcb28d8f77e4e949ab426de5961e769ad32",
+    "web/package.json": "89c47db7851f89caec72da4f215ebc21cf1e294aeef3b45d2583562d846ab035",
+    "web/style.css": "452d24756798681b0d35adf429868a0582423de8485d8ecd3113365cb6b372fd",
+    "web/hydraulics.js": "457255461d07e9907d6f5598cf851c7dc85ac4f0fef9dfbdc0eeedd7f894a03c",
+    "web/presentation.js": "2c39b6693087b1f14231dc6122e6df4a8c9e4415d17ed47fcab25f130b082a55",
+    "web/network.js": "451ad2ef36d0cb3db161e043c0240ef01fe18a6fb242dc580c7e70272fc7f8ac",
+    "web/app.js": "02226a33d20ce530548927102d85f0ea057cd900450096e50d3438d9c5cdd6e6",
+    "skills/pipe-network-workbench/SKILL.md": "56694bd812cc427ef81d9d5393277d5dbf9ee94bced9978686689312b7e160ad",
+    "web/vendor/epanet/_engine.mjs": "16acc98f4837af57a86ac7a22d460ff0919fd056307b6fa0469fd7b3746ceec6",
+    "web/vendor/epanet/EpanetEngine.wasm": "f3f0f4aad13dfb21d9f26fb6587474bc200cc52a28337a8ee4cc32d38cf08f29",
+    "web/vendor/epanet/index.mjs": "13f8402606a0a604a0136bfb4fea66041b67bb070e1daf5997d1520ee3cf40f9",
+    "web/vendor/epanet/UPSTREAM.json": "456cacfbadb9de4823bf42c54ceee62cc7a246f39170e4fae767a8fad0a2a48e",
+    "licenses/graphics-gems/LICENSE": "7205a055fc9b7e2d3345724e9e0b181212c7730e2f6356ce3a0a1dbfe9045294",
+    "licenses/compiler-rt/LICENSE": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d",
+    "licenses/musl/LICENSE": "f9bc4423732350eb0b3f7ed7e91d530298476f8fec0c6c427a1c04ade22655af",
+    "licenses/musl/COMPONENT-NOTICES": "10af8a69e35b3964063f26b912a85e41e3de1cbceb9f436d68963ace0562b602",
+    "licenses/owa-epanet/LICENSE": "5eb3c40beb6ee076bc006c70878b924e068434cc971abb137553b3b05064f00d",
+    "licenses/owa-epanet/AUTHORS": "f279d25f1df1e23b3c16d3d9adc96e6886f09b9bd4c71099946840031d9700b7",
+    "licenses/owa-epanet/COMPONENT-NOTICES": "bf95e258f8ab097f4547a5326ac18abc57c87300ab8da5a6f37203a6be72e263",
+    "licenses/emscripten/LICENSE": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86",
+    "licenses/emscripten/AUTHORS": "56f7df65203d4858dac19cafe3a84a8c49abaff56b67d32d2d463d5fef6e440b",
+    "licenses/epanet-js/LICENSE": "a7da5a861dfbac597e0713df02ba1e723463cc40f73c88b324e34ba8925ff436",
+    "licenses/dlmalloc/LICENSE": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+    "licenses/dlmalloc/NOTICE": "46fdfb7382ff0119b2246609c343fafefef5521976f73d17cbcbb025432daecb"
+  }
+}

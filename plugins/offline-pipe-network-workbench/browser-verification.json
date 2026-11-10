@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "url": "http://127.0.0.1:61420/74b97bac4b8b0712ae7e390b6dd35e12db8db4b123575053d9d68912d733ee4e/web/index.html",
+  "version": "1.0.0",
+  "engine_version": "2.3.5",
+  "actual_browser": "Chrome",
+  "model_calls": 0,
+  "tests": [
+    "real WASM solve",
+    "diagram selection",
+    "numeric edits invalidate",
+    "changed hydraulics",
+    "four actual downloads",
+    "model reimport roundtrip",
+    "duplicate-key rejection",
+    "restore and error recovery",
+    "negative-pressure warning",
+    "actual non-convergence rejection",
+    "delayed-import freshness",
+    "edit-during-run cancellation"
+  ],
+  "outside_requests": [],
+  "page_errors": [],
+  "downloads": {
+    "json": {
+      "filename": "管网模型.json",
+      "sha256": "91765266286aabd1fff0add102fb3a6cc9b50a099d2c63abad9e19cee11b9896",
+      "bytes": 2135
+    },
+    "report": {
+      "filename": "管网水力结果.json",
+      "sha256": "66b9de8bca50ea6da204e200fa60483bc4edb28f75e9d03b0550b6698bb323c6",
+      "bytes": 1510
+    },
+    "csv": {
+      "filename": "管网水力结果.csv",
+      "sha256": "98ede6d812cb70df6d778669aa1086bd4394beb08c949d525e80c4a2cd16e9f0",
+      "bytes": 1351
+    },
+    "svg": {
+      "filename": "管网流向与压力.svg",
+      "sha256": "c165b40c64bdb9e1c4560a18c697ec7d1cc3d2d37a1bce5d11d4e92c39d20fa7",
+      "bytes": 4382
+    }
+  },
+  "download_scope": "Model/CSV/SVG hashes from the initial two-loop solve; report hash from the final single-pipe solve. Numerical comparisons were performed per actual download."
+}

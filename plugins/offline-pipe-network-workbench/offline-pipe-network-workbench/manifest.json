@@ -1,0 +1,46 @@
+{
+  "id": "offline-pipe-network-workbench",
+  "name": "离线管网水力工作台",
+  "description": "编辑有限水库、需水节点和管道网络，离线计算流量、水头与压力，比较方案并导出 JSON、CSV 和 SVG。",
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "display_name": {
+    "zh": "离线管网水力工作台",
+    "en": "Offline Pipe Network Workbench"
+  },
+  "display_description": {
+    "zh": "离线计算有限管网的稳态水力平衡。",
+    "en": "Solve bounded steady-state pipe-network hydraulics offline."
+  },
+  "category": "Others",
+  "tags": [
+    {
+      "zh": "管网水力",
+      "en": "Hydraulics"
+    },
+    {
+      "zh": "离线",
+      "en": "Offline"
+    }
+  ],
+  "skills": [
+    {
+      "dir": "skills/pipe-network-workbench",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/pipe_tools.py",
+      "class": "PipeNetworkWorkbenchTool",
+      "display_name": {
+        "zh": "管理管网水力工作台",
+        "en": "Manage pipe-network workbench"
+      },
+      "display_description": {
+        "zh": "查询或经确认启动、停止本插件工作台。",
+        "en": "Check, start or stop the owned local workbench."
+      }
+    }
+  ]
+}

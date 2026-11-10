@@ -1,0 +1,86 @@
+{
+  "verified_at": "2026-11-10T08:40:48.792928+00:00",
+  "plugin_id": "offline-pipe-network-workbench",
+  "display_name": "离线管网水力工作台",
+  "version": "1.0.0",
+  "frontend_url": "http://127.0.0.1:6431/",
+  "backend_websocket_url": "ws://127.0.0.1:29431/ws",
+  "host_root": "/private/tmp/pipe-network-build-a_akev3v/host",
+  "model_requests": 0,
+  "dedicated_instance": true,
+  "host_source_commit": "3ef1de9bf0b4813e2a0e8674dedc499c78e53df2",
+  "host_code_changes": false,
+  "initial_setup_correction": "Task-owned first startup logs retained; corrected isolated gateway port and disabled image probes via supported config. Other services unchanged.",
+  "verification_scope": "Supported running-backend import/install/catalog and payload integrity only.",
+  "native_tool_execution_through_chat_worker": "Not exercised; requires separate manual conversation testing.",
+  "connection_state_limitation": "For a package without MCP connectors, connected mirrors installed and does not prove native-tool loading or execution.",
+  "sdk_invocation": {
+    "passed": true,
+    "openjiuwen_version": "0.1.19",
+    "loader": "openjiuwen.harness.resources.load_plugin_package",
+    "resolver": "openjiuwen.harness.resources.resolve_plugin_parts",
+    "tool_id": "pipe_network_workbench",
+    "chinese_skill_loaded": true,
+    "status_no_writes": true,
+    "confirmation_rejected": true,
+    "start_reuse_stream_stop": true,
+    "chinese_entry_http_200": true,
+    "page_csp_no_eval": true,
+    "model_calls": 0,
+    "scope": "Public native SDK in separate verification process; not actual chat dispatch."
+  },
+  "supported_interface_evidence": {
+    "host_paths_relative_to_source": {
+      "jiuwenswarm/channels/web/frontend/src/services/pluginPackagesApi.ts:145": "show; importLocal at154; install at159.",
+      "jiuwenswarm/common/schema/message.py:406": "Supported plugin package WS request-method declarations.",
+      "jiuwenswarm/server/runtime/extension_package_manager.py:4126": "import_plugin_package; install_plugin_package at4308.",
+      "jiuwenswarm/server/runtime/extension_package_manager.py:639": "Native-only connected state mirrors installed.",
+      "jiuwenswarm/server/runtime/agent_adapter/interface_deep.py:2909": "Selected chat plugins load through DeepAgent.load_plugin at2936."
+    },
+    "sdk_paths_relative_to_openjiuwen": {
+      "harness/deep_agent.py:2196": "Public DeepAgent.load_plugin API.",
+      "harness/resources/extension_resolver.py:103": "resolve_plugin_parts resolves manifest-declared native tools and skills."
+    },
+    "unsupported_test_path": "No generic native Tool.invoke request is declared in the inspected WorkSwarm WS schema. No test endpoint, monkey-patch, or fake-model conversation is used."
+  },
+  "catalog_before": [],
+  "config_sha256_before": "3e381baa08a149ef4e38f3c6145bf53d502a831a9e2eab337243a1c7bb3589b1",
+  "other_plugin_files_before": 0,
+  "prior_host_sdk_evidence": "Adapted maintained geojson-simplification-lab/verify_workswarm.py supported APIs; this instance has independent source/dependencies/data/runtime/cache and only this plugin is imported.",
+  "frontend_http": 200,
+  "websocket_proxy_ping_pong": true,
+  "websocket_direct_ping_pong": true,
+  "native_zip": {
+    "path": "/Users/IDLE_And_R/.codex/worktrees/581d/agentic-hub-plugins/plugins/offline-pipe-network-workbench/test-packages/offline-pipe-network-workbench-1.0.0-workswarm.zip",
+    "sha256": "1414048b02e90649ed7708035fd2be68715b1fa5189b58686d33f11b397be6df",
+    "payload_files": 33
+  },
+  "import_local": true,
+  "install": true,
+  "payload_matches_zip": true,
+  "installed_card": {
+    "id": "offline-pipe-network-workbench",
+    "version": "1.0.0",
+    "displayName": {
+      "zh": "离线管网水力工作台",
+      "en": "Offline Pipe Network Workbench"
+    },
+    "installed": true,
+    "connection_state": "connected"
+  },
+  "sdk_payload_unchanged": true,
+  "config_sha256_after": "3e381baa08a149ef4e38f3c6145bf53d502a831a9e2eab337243a1c7bb3589b1",
+  "model_config_unchanged": true,
+  "other_plugin_payloads_unchanged": true,
+  "catalog_after": [
+    {
+      "id": "offline-pipe-network-workbench",
+      "installed": true,
+      "connection_state": "connected"
+    }
+  ],
+  "other_plugin_catalog_unchanged": true,
+  "host_source_files_unchanged": true,
+  "source_copy_inventory_sha256": "6a755e23cbdf60ca6aa13c01b02103091466f4fffd1bb9a2626b05fec0d100dc",
+  "passed": true
+}

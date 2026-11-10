@@ -1,0 +1,22 @@
+{
+  "type": "agent-plugin",
+  "name": "offline-pipe-network-workbench",
+  "version": "1.0.0",
+  "display_name": "离线管网水力工作台",
+  "description": "编辑有限水库、需水节点和管道网络，离线计算流量、水头与压力，比较方案并导出 JSON、CSV 和 SVG。",
+  "publisher": "Cai Zhenze",
+  "category": "数据与科学研究",
+  "tags": [
+    "管网",
+    "水力",
+    "离线",
+    "EPANET"
+  ],
+  "functional_tags": [
+    "Hydraulic Networks",
+    "Steady-State Simulation"
+  ],
+  "scope": "有限水库、固定需水节点和管道的稳态 H-W 水力计算；不含水质、泵阀、动态控制或实际供水认证。",
+  "candidate_id": "CAND-EXT-013",
+  "task_id": "AH-20261110-offline-pipe-network-workbench"
+}

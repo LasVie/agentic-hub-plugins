@@ -1,0 +1,14 @@
+{
+  "package": "epanet-js",
+  "version": "0.9.0",
+  "toolkit_commit": "84fcb48880a640119ad968161d08a97815931584",
+  "engine_commit": "444725fbf16ab28b0470ef0ed281dc4849d49583",
+  "engine_version": "2.3.5",
+  "npm_archive_sha256": "8ee2b2bc8a0f31f254dba3d664865ccefeb21b04262d2686eda298740e76d035",
+  "files": {
+    "_engine.mjs": "16acc98f4837af57a86ac7a22d460ff0919fd056307b6fa0469fd7b3746ceec6",
+    "EpanetEngine.wasm": "f3f0f4aad13dfb21d9f26fb6587474bc200cc52a28337a8ee4cc32d38cf08f29",
+    "index.mjs": "13f8402606a0a604a0136bfb4fea66041b67bb070e1daf5997d1520ee3cf40f9"
+  },
+  "modifications": "None; explicit non-MSX engine only. Toolkit root bundle and app excluded."
+}
