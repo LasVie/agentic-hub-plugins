@@ -1,0 +1,13 @@
+{
+  "type": "agent-group",
+  "name": "grant-proposal-team",
+  "version": "0.1.1",
+  "display_name": "基金申请书专家团",
+  "description": "按资助方指南写基金申请书：拆解评审要点、调研文献与研究空白、设计方案与预算、模拟评审打分，逐项校验后交付申请书草稿",
+  "publisher": "Vannes Wijaya",
+  "category": "research",
+  "tags": ["基金申请", "项目申请书", "科研"],
+  "members": ["leader", "call_analyst", "literature_scout", "methods_budget_planner", "mock_reviewer"],
+  "candidate_id": null,
+  "task_id": "AH-20261110-grant-proposal-team"
+}

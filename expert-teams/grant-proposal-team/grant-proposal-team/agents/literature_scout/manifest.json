@@ -1,0 +1,14 @@
+{
+  "package_type": "agent_template",
+  "name": "文献与空白调研员",
+  "description": "检索真实文献，梳理研究现状并提炼可论证的研究空白",
+  "persona": {
+    "dir": "."
+  },
+  "rails": [
+    {
+      "file": "rails/grant_proposal_rail.py",
+      "class": "GrantProposalRail"
+    }
+  ]
+}
