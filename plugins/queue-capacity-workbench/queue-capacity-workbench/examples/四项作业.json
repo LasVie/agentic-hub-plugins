@@ -1,0 +1,31 @@
+{
+  "schema": "queue-capacity-workbench/v1",
+  "name": "四项作业容量对照",
+  "units": "minutes",
+  "capacities": [
+    1,
+    2
+  ],
+  "jobs": [
+    {
+      "id": "作业1",
+      "arrival": 0,
+      "service": 4
+    },
+    {
+      "id": "作业2",
+      "arrival": 1,
+      "service": 4
+    },
+    {
+      "id": "作业3",
+      "arrival": 2,
+      "service": 4
+    },
+    {
+      "id": "作业4",
+      "arrival": 3,
+      "service": 4
+    }
+  ]
+}

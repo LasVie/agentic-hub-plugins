@@ -1,0 +1,113 @@
+{
+  "verified_at": "2026-11-10T07:55:14.984911+00:00",
+  "plugin_id": "queue-capacity-workbench",
+  "display_name": "离线排队容量实验台",
+  "version": "1.0.1",
+  "frontend_url": "http://127.0.0.1:6427/",
+  "backend_websocket_url": "ws://127.0.0.1:29427/ws",
+  "host_root": "/private/tmp/main3-queue-capacity-20261110/host-025",
+  "verification_helper_model_requests": 0,
+  "source_commit": "3ef1de9bf0b4813e2a0e8674dedc499c78e53df2",
+  "runtime_dependencies": "Fresh task-owned venv; unchanged host uv.lock with uv sync --frozen --no-dev --no-install-project; Python 3.12.14, openjiuwen 0.1.19.",
+  "isolation": "Dedicated source copy, frontend build, venv, cache, data, home, tasks and ports; no shared dependencies or host source changed.",
+  "host_network_configuration": "Verified isolated runtime config uses localhost:9, explicit supports_vision=false, agent prewarm=0 and JIUWENSWARM_CONFIG_URL=off; no credentials copied. Initial bootstrap used template example.com and attempted two failing dummy image-probe HTTP requests before this correction; no paid credentials or paid endpoint were present.",
+  "host_code_changes": false,
+  "service_restarts_during_verification": false,
+  "verified_service_pids": {
+    "frontend": 33784,
+    "gateway": 33783
+  },
+  "verification_scope": "Supported running-backend import/install/catalog and payload integrity only.",
+  "native_tool_execution_through_chat_worker": "Not exercised; requires separate manual conversation testing.",
+  "connection_state_limitation": "For a package without MCP connectors, connected mirrors installed and does not prove native-tool loading or execution.",
+  "sdk_invocation": "Not performed by this helper; report separately if tested.",
+  "supported_interface_evidence": {
+    "host_paths_relative_to_source": {
+      "jiuwenswarm/channels/web/frontend/src/services/pluginPackagesApi.ts:145": "show; importLocal at154; install at159.",
+      "jiuwenswarm/common/schema/message.py:406": "Supported plugin package WS request-method declarations.",
+      "jiuwenswarm/server/runtime/extension_package_manager.py:4126": "import_plugin_package; install_plugin_package at4308.",
+      "jiuwenswarm/server/runtime/extension_package_manager.py:639": "Native-only connected state mirrors installed.",
+      "jiuwenswarm/server/runtime/agent_adapter/interface_deep.py:2909": "Selected chat plugins load through DeepAgent.load_plugin at2936."
+    },
+    "sdk_paths_relative_to_openjiuwen": {
+      "harness/deep_agent.py:2196": "Public DeepAgent.load_plugin API.",
+      "harness/resources/extension_resolver.py:103": "resolve_plugin_parts resolves manifest-declared native tools and skills."
+    },
+    "unsupported_test_path": "No generic native Tool.invoke request is declared in the inspected WorkSwarm WS schema. No test endpoint, monkey-patch, or fake-model conversation is used."
+  },
+  "catalog_before": [
+    {
+      "id": "queue-capacity-workbench",
+      "installed": true,
+      "connection_state": "connected"
+    }
+  ],
+  "config_sha256_before": "55e711bd77d9255fb514a8c66e6b2ff589d97c43198e2e75cf10c6bf93a9f13e",
+  "other_plugin_files_before": 0,
+  "prior_host_sdk_evidence": "Maintained offline-optics-lab verification pattern; current pinned host source independently inspected, and current real SDK invocation reported separately.",
+  "frontend_http": 200,
+  "websocket_proxy_ping_pong": true,
+  "websocket_direct_ping_pong": true,
+  "native_zip": {
+    "path": "/Users/IDLE_And_R/.codex/worktrees/4dbb/agentic-hub-plugins/plugins/queue-capacity-workbench/test-packages/queue-capacity-workbench-1.0.1-workswarm.zip",
+    "sha256": "378588d14ab74941b102542cff782973096a9fe4a944d9c91788bc8043d38413",
+    "payload_files": 31
+  },
+  "installation_reused": true,
+  "payload_matches_zip": true,
+  "payload_sha256": {
+    "README.md": "fe66e248f189dde9988c9d7aaa7811a67209ef414b42a97388643714fb44f08d",
+    "THIRD_PARTY_NOTICES.md": "76a1a6a5c4e2783f1071a84ebfc1d93edf67852e88edeb0b6bbd8cf9fa3c01b7",
+    "examples/四项作业.json": "1678d0bc80ae82290ad68d9e24d2fd3eb892b56147996e9a5ed9f4e16f164b37",
+    "licenses/simpy/AUTHORS.rst": "ef59078ae326f51446494bf6560bca7ae157fbe63f6503f902b1de00886e7ed8",
+    "licenses/simpy/LICENSE": "5f09a7bdf08f239271b15df1cbe2ba7f62649f8b497988274626f48638b84802",
+    "manifest.json": "1b279993d26b79b2ca1b359fb64ee55f955ad76b97800ff1a847c20e2d44d38c",
+    "runtime/runtime.py": "3d088d2007b50eb093ed03e1edb02899a15de5b8400103bd53d2edf631f4fa18",
+    "runtime/server.py": "124559546a1c7116886783f5ab8d86c0c19218c089e1aa396998fa2ed6cd1113",
+    "runtime/worker.py": "fb383b701afa2f42320756e72a960dac6487d499bdbb06379ebe0c2e7fcdd039",
+    "skills/queue-capacity/SKILL.md": "1faeaad51e318456da2f451bdb8037d083d4617158288ed5a6f535df74205884",
+    "tools/queue_tools.py": "cd1f214895fb36e41f3236dfd05c18269fb1b68db6529e81fa80111e72e5158b",
+    "vendor/simpy-4.1.2.dist-info/METADATA": "9b10e803500d554851b3170db09e35b32b773a7cad63c49491fd18fdc61019b6",
+    "vendor/simpy-4.1.2.dist-info/RECORD": "6abbf7dbf8cb6fbd7ded2326dbc3f3f5528ddeb0b076382ce10771eedaeb1ba5",
+    "vendor/simpy-4.1.2.dist-info/WHEEL": "69e6228a0d35958183cc1812f07c565ce837b95eb51bd8a33acba9fa4f68d6c9",
+    "vendor/simpy-4.1.2.dist-info/licenses/LICENSE.rst": "5f09a7bdf08f239271b15df1cbe2ba7f62649f8b497988274626f48638b84802",
+    "vendor/simpy-4.1.2.dist-info/top_level.txt": "bdd4b50e937c9ff7bf1c08505011bd2aea1ad6edbedfb3826f560fd09c89ea41",
+    "vendor/simpy/__init__.py": "5bb6b329ccef90656f4362133a7d8346e19b2c46016cc0ff0a6b6f4f60ff3aa2",
+    "vendor/simpy/core.py": "05abddf46dca568598006fd42727f9b4913b47a8afb59359f999878a28fbf437",
+    "vendor/simpy/events.py": "b58a8ee5df683cfd0cfc0afa0a5e3e78db16cad0ca01694b693cc6914002b570",
+    "vendor/simpy/exceptions.py": "819033bb90da5e9eeae43c7d936c80d45c02111bfce3bdead2239811bc19ebf9",
+    "vendor/simpy/py.typed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "vendor/simpy/resources/__init__.py": "85376d218f852a766427d1074379aa79b76bbbfa746d496f8bdff6621c254255",
+    "vendor/simpy/resources/base.py": "915e6b66e26e573fdd7740a876eeae224284e09ad43d5bece67eec78092c22b0",
+    "vendor/simpy/resources/container.py": "989417edbd3abd102f3d9946fb5b544cb8dc5d8120df6968f1b42245961c6876",
+    "vendor/simpy/resources/resource.py": "780bcd474925ac74ea3e01c680a05f21c7232c43b9a973e1c6550e5d20d41a4f",
+    "vendor/simpy/resources/store.py": "0f7b3f4eab715b365091215c1c664d21e08b3b7cf9f38ac97ecd404d0fbff481",
+    "vendor/simpy/rt.py": "01fea11ae217d74ed51583394d4b0ca7f57382150cbfa81e5487b523ec17f227",
+    "vendor/simpy/util.py": "d21b8d20a1343c39882354ca353369a7a51082f10ad8cd78fc63874022390dbc",
+    "web/app.js": "b341425f87f6072d59850b7b665e98e0df72d28c76fcf94c196f36573f328130",
+    "web/index.html": "97e0b9299ccd937c8cd04558cb4b0e3bb49596b30e15be36283ce4f2229f3857",
+    "web/style.css": "d1eefc4d7588d3a8eb4d62af345cbbda254a24b4726632f3b28ef948bf76b01c"
+  },
+  "installed_card": {
+    "id": "queue-capacity-workbench",
+    "version": "1.0.1",
+    "displayName": {
+      "zh": "离线排队容量实验台",
+      "en": "离线排队容量实验台"
+    },
+    "installed": true,
+    "connection_state": "connected"
+  },
+  "config_sha256_after": "55e711bd77d9255fb514a8c66e6b2ff589d97c43198e2e75cf10c6bf93a9f13e",
+  "model_config_unchanged": true,
+  "other_plugin_payloads_unchanged": true,
+  "catalog_after": [
+    {
+      "id": "queue-capacity-workbench",
+      "installed": true,
+      "connection_state": "connected"
+    }
+  ],
+  "other_plugin_catalog_unchanged": true,
+  "passed": true
+}

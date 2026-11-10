@@ -1,0 +1,50 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://gitlab.com/team-simpy/simpy",
+      "revision": "f43816490c6f76f336ad6e457d3cab9f386894af",
+      "version": "4.1.2",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/simpy/LICENSE",
+          "sha256": "5f09a7bdf08f239271b15df1cbe2ba7f62649f8b497988274626f48638b84802"
+        },
+        {
+          "path": "licenses/simpy/AUTHORS.rst",
+          "sha256": "ef59078ae326f51446494bf6560bca7ae157fbe63f6503f902b1de00886e7ed8"
+        }
+      ],
+      "scope": "Entire official Python wheel, byte-identical files; full license and authors from matching source distribution."
+    }
+  ],
+  "reused_paths": [
+    "vendor/simpy/__init__.py",
+    "vendor/simpy/core.py",
+    "vendor/simpy/events.py",
+    "vendor/simpy/exceptions.py",
+    "vendor/simpy/py.typed",
+    "vendor/simpy/resources/__init__.py",
+    "vendor/simpy/resources/base.py",
+    "vendor/simpy/resources/container.py",
+    "vendor/simpy/resources/resource.py",
+    "vendor/simpy/resources/store.py",
+    "vendor/simpy/rt.py",
+    "vendor/simpy/util.py",
+    "vendor/simpy-4.1.2.dist-info/METADATA",
+    "vendor/simpy-4.1.2.dist-info/RECORD",
+    "vendor/simpy-4.1.2.dist-info/WHEEL",
+    "vendor/simpy-4.1.2.dist-info/licenses/LICENSE.rst",
+    "vendor/simpy-4.1.2.dist-info/top_level.txt"
+  ],
+  "audit_file": "SOURCE_REVIEW.md",
+  "review_date": "2026-11-10",
+  "upstream_name": "SimPy",
+  "display_name": "离线排队容量实验台",
+  "internal_slug": "queue-capacity-workbench",
+  "upstream_wheel_sha256": "43071f84b6512c9b4fcb33ef057f240ccb1d1f3b263f9b4f9229d072e310b372",
+  "upstream_sdist_sha256": "76ef36b71e0436ba94e55febc001c78879e493a323f045bbcfbb0b216e9b1fbc",
+  "repository_reuse": "Ownership-checked lifecycle and fixed-file HTTP transport adapted from solid-mesh-workbench at 89967f5; no other plugin files modified."
+}

@@ -1,0 +1,25 @@
+{
+  "type": "agent-plugin",
+  "name": "queue-capacity-workbench",
+  "version": "1.0.1",
+  "display_name": "离线排队容量实验台",
+  "description": "离线运行单阶段 FIFO 队列，比较服务容量，回放事件并导出可复核结果。",
+  "publisher": "Cai Zhenze",
+  "category": "数据与科学研究",
+  "tags": [
+    "离线模拟",
+    "容量比较",
+    "事件回放"
+  ],
+  "functional_tags": [
+    "Finite FIFO Queue Simulation",
+    "Capacity Comparison",
+    "Event Trace"
+  ],
+  "scope": "macOS/Linux，已有 Python 3.11+ 及现代桌面浏览器；单阶段、同质服务台、非抢占 FIFO、固定到达和服务时间。最多500作业、8种容量、每种1至32台。不包含随机拟合、优先级、多阶段网络或最优容量承诺。",
+  "candidate_id": "Not Applicable",
+  "task_id": "AH-20261110-queue-capacity-workbench",
+  "related_asset_ids": [
+    "77909c7e4fdd4b0ea0243251998f8c30"
+  ]
+}
