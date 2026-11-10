@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "name": "单管解析核验",
+  "headloss": "H-W",
+  "nodes": [
+    {
+      "id": "R",
+      "type": "reservoir",
+      "head_m": 100,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "J",
+      "type": "junction",
+      "elevation_m": 0,
+      "demand_lps": 1,
+      "x": 100,
+      "y": 0
+    }
+  ],
+  "pipes": [
+    {
+      "id": "P",
+      "from": "R",
+      "to": "J",
+      "length_m": 100,
+      "diameter_mm": 100,
+      "roughness": 100
+    }
+  ]
+}

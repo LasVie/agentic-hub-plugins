@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "name": "双环街区供水示例（公开虚构）",
+  "headloss": "H-W",
+  "nodes": [
+    {
+      "id": "R",
+      "type": "reservoir",
+      "head_m": 60,
+      "x": 0,
+      "y": 1
+    },
+    {
+      "id": "A",
+      "type": "junction",
+      "elevation_m": 20,
+      "demand_lps": 2,
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "B",
+      "type": "junction",
+      "elevation_m": 21,
+      "demand_lps": 3,
+      "x": 2,
+      "y": 0
+    },
+    {
+      "id": "C",
+      "type": "junction",
+      "elevation_m": 19,
+      "demand_lps": 3,
+      "x": 2,
+      "y": 2
+    },
+    {
+      "id": "D",
+      "type": "junction",
+      "elevation_m": 22,
+      "demand_lps": 4,
+      "x": 3,
+      "y": 1
+    },
+    {
+      "id": "E",
+      "type": "junction",
+      "elevation_m": 20,
+      "demand_lps": 2,
+      "x": 4,
+      "y": 0
+    },
+    {
+      "id": "F",
+      "type": "junction",
+      "elevation_m": 21,
+      "demand_lps": 2,
+      "x": 4,
+      "y": 2
+    }
+  ],
+  "pipes": [
+    {
+      "id": "P0",
+      "to": "A",
+      "length_m": 400,
+      "diameter_mm": 180,
+      "roughness": 120,
+      "from": "R"
+    },
+    {
+      "id": "P1",
+      "to": "B",
+      "length_m": 500,
+      "diameter_mm": 110,
+      "roughness": 120,
+      "from": "A"
+    },
+    {
+      "id": "P2",
+      "to": "C",
+      "length_m": 500,
+      "diameter_mm": 110,
+      "roughness": 120,
+      "from": "A"
+    },
+    {
+      "id": "P3",
+      "to": "D",
+      "length_m": 400,
+      "diameter_mm": 100,
+      "roughness": 120,
+      "from": "B"
+    },
+    {
+      "id": "P4",
+      "to": "D",
+      "length_m": 400,
+      "diameter_mm": 100,
+      "roughness": 120,
+      "from": "C"
+    },
+    {
+      "id": "P5",
+      "to": "E",
+      "length_m": 400,
+      "diameter_mm": 90,
+      "roughness": 120,
+      "from": "D"
+    },
+    {
+      "id": "P6",
+      "to": "F",
+      "length_m": 400,
+      "diameter_mm": 90,
+      "roughness": 120,
+      "from": "D"
+    },
+    {
+      "id": "P7",
+      "to": "F",
+      "length_m": 500,
+      "diameter_mm": 80,
+      "roughness": 120,
+      "from": "E"
+    }
+  ]
+}

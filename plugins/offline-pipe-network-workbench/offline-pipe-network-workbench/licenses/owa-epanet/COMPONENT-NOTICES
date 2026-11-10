@@ -1,0 +1,79 @@
+/*
+ ******************************************************************************
+ Project:      OWA EPANET
+ Version:      2.3
+ Module:       mempool.c
+ Description:  a simple fast poooled memory allocation package
+ Authors:      see AUTHORS
+ Copyright:    see AUTHORS
+ License:      see LICENSE
+ Last Updated: 08/02/2023
+
+ This module is based on code by Steve Hill in Graphics Gems III,
+ David Kirk (ed.), Academic Press, Boston, MA, 1992
+ ******************************************************************************
+*/
+
+/*  MULTIPLE MINIMUM DEGREE ROW RE-ORDERING ALGORITHM 
+ *
+ *  Modified to work with Fortran-style arrays and be thread-safe.
+ *
+ */
+
+#include <math.h>
+
+
+/* genmmd.f -- translated by f2c (version of 23 April 1993  18:34:30).
+   You must link the resulting object file with the libraries:
+        -lf2c -lm   (in that order)
+*/
+
+//#include "f2c.h"
+
+/* Sivan: I modified INTEGER*2 -> INTEGER*4 */
+/* *************************************************************** */
+/* *************************************************************** */
+/* ****     GENMMD ..... MULTIPLE MINIMUM EXTERNAL DEGREE     **** */
+/* *************************************************************** */
+/* *************************************************************** */
+
+/*     AUTHOR - JOSEPH W.H. LIU */
+/*              DEPT OF COMPUTER SCIENCE, YORK UNIVERSITY. */
+
+/*     PURPOSE - THIS ROUTINE IMPLEMENTS THE MINIMUM DEGREE */
+/*        ALGORITHM.  IT MAKES USE OF THE IMPLICIT REPRESENTATION */
+/*        OF ELIMINATION GRAPHS BY QUOTIENT GRAPHS, AND THE */
+/*        NOTION OF INDISTINGUISHABLE NODES.  IT ALSO IMPLEMENTS */
+/*        THE MODIFICATIONS BY MULTIPLE ELIMINATION AND MINIMUM */
+/*        EXTERNAL DEGREE. */
+/*        --------------------------------------------- */
+/*        CAUTION - THE ADJACENCY VECTOR ADJNCY WILL BE */
+/*        DESTROYED. */
+/*        --------------------------------------------- */
+
+/*     INPUT PARAMETERS - */
+/*        NEQNS  - NUMBER OF EQUATIONS. */
+/*        (XADJ,ADJNCY) - THE ADJACENCY STRUCTURE. */
+/*        DELTA  - TOLERANCE VALUE FOR MULTIPLE ELIMINATION. */
+/*        MAXINT - MAXIMUM MACHINE REPRESENTABLE (SHORT) INTEGER */
+/*                 (ANY SMALLER ESTIMATE WILL DO) FOR MARKING */
+/*                 NODES. */
+
+/*     OUTPUT PARAMETERS - */
+/*        PERM   - THE MINIMUM DEGREE ORDERING. */
+/*        INVP   - THE INVERSE OF PERM. */
+/*        NOFSUB - AN UPPER BOUND ON THE NUMBER OF NONZERO */
+/*                 SUBSCRIPTS FOR THE COMPRESSED STORAGE SCHEME. */
+
+/*     WORKING PARAMETERS - */
+/*        DHEAD  - VECTOR FOR HEAD OF DEGREE LISTS. */
+/*        INVP   - USED TEMPORARILY FOR DEGREE FORWARD LINK. */
+/*        PERM   - USED TEMPORARILY FOR DEGREE BACKWARD LINK. */
+/*        QSIZE  - VECTOR FOR SIZE OF SUPERNODES. */
+/*        LLIST  - VECTOR FOR TEMPORARY LINKED LISTS. */
+/*        MARKER - A TEMPORARY MARKER VECTOR. */
+
+/*     PROGRAM SUBROUTINES - */
+/*        MMDELM, MMDINT, MMDNUM, MMDUPD. */
+
+/* *************************************************************** */
