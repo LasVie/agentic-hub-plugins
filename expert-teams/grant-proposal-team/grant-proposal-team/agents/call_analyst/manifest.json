@@ -1,0 +1,20 @@
+{
+  "package_type": "agent_template",
+  "name": "指南解读师",
+  "description": "把申请指南与评审细则拆成带权重的评审要点、篇幅限制与预算规则",
+  "persona": {
+    "dir": "."
+  },
+  "tools": [
+    {
+      "file": "tools/proposal_checker.py",
+      "class": "ProposalCheckerTool"
+    }
+  ],
+  "rails": [
+    {
+      "file": "rails/grant_proposal_rail.py",
+      "class": "GrantProposalRail"
+    }
+  ]
+}

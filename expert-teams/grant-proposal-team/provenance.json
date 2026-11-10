@@ -1,0 +1,11 @@
+{
+  "mode": "original",
+  "permission_status": "not-applicable",
+  "sources": [],
+  "reused_paths": [],
+  "runtime_dependencies": [
+    {"name": "openjiuwen (WorkSwarm host SDK)", "bundled": false},
+    {"name": "pydantic", "license_expression": "MIT", "bundled": false}
+  ],
+  "audit_file": "SOURCE_REVIEW.md"
+}

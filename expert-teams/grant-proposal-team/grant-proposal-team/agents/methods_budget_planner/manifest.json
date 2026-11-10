@@ -1,0 +1,20 @@
+{
+  "package_type": "agent_template",
+  "name": "方案与预算规划师",
+  "description": "设计研究目标、技术路线、里程碑与风险预案，按驱动编制可复算的预算",
+  "persona": {
+    "dir": "."
+  },
+  "tools": [
+    {
+      "file": "tools/proposal_checker.py",
+      "class": "ProposalCheckerTool"
+    }
+  ],
+  "rails": [
+    {
+      "file": "rails/grant_proposal_rail.py",
+      "class": "GrantProposalRail"
+    }
+  ]
+}

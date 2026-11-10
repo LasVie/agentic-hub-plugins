@@ -1,0 +1,58 @@
+{
+  "name": "grant-proposal-team",
+  "package_type": "agent_group",
+  "avatar": "avatars/avatar.png",
+  "version": "0.1.1",
+  "description": "按资助方指南写基金申请书：拆解评审要点、调研文献与研究空白、设计方案与预算、模拟评审打分，逐项校验后交付申请书草稿",
+  "display_name": {
+    "zh": "基金申请书专家团",
+    "en": "Grant Proposal Expert Team"
+  },
+  "display_description": {
+    "zh": "把申请指南拆成评审要点清单，逐条映射到章节并核对证据；调研文献与研究空白，设计技术路线与可复算的预算；最后由模拟评审按细则打分，交付申请书草稿、自评表和待补清单。",
+    "en": "Turns a funding call into a criteria checklist mapped to sections with verified evidence, researches literature and gaps, designs methods and a recomputable budget, then has a mock reviewer score it against the rubric. Delivers a proposal draft, a self-review sheet and a gap list."
+  },
+  "category": "research",
+  "tags": [
+    {
+      "id": "grant",
+      "zh": "基金申请",
+      "en": "Grant writing"
+    },
+    {
+      "id": "proposal",
+      "zh": "项目申请书",
+      "en": "Proposal"
+    },
+    {
+      "id": "research",
+      "zh": "科研",
+      "en": "Research"
+    }
+  ],
+  "instruction": "Leader 先确认资助方与项目类型、申请指南或评审细则原文、截止日期、预算上限与币种、篇幅限制、研究主题与已有成果，再分派：call_analyst 把指南拆成带权重的评审要点清单、篇幅限制和预算规则；literature_scout 检索文献，写出研究现状与空白，只引用真实检索到的条目；methods_budget_planner 设计研究目标、技术路线、里程碑与风险预案，并按数量×单价×年数编制预算；mock_reviewer 按评审细则逐条打分并给出修改意见。Leader 撰写申请书并让成员修改，直到 proposal_checker 的 review 返回 ready_to_submit 为 true。只有工具通过才可称预算一致、篇幅合规或要点全覆盖。不编造文献、前期成果或资助方规则，不代用户在申报系统提交。默认用中文写作，用户要求其他语言时照办。",
+  "agents": [
+    "leader",
+    "call_analyst",
+    "literature_scout",
+    "methods_budget_planner",
+    "mock_reviewer"
+  ],
+  "skills": [
+    "grant-proposal"
+  ],
+  "quick_inputs": [
+    {
+      "zh": "我要申请国家自然科学基金青年项目，主题是低资源语言的检索增强生成，帮我写申请书初稿",
+      "en": "Help me draft an NSFC Young Scientists proposal on retrieval-augmented generation for low-resource languages."
+    },
+    {
+      "zh": "这是申请指南和我的草稿，按评审要点帮我做一次模拟评审并列出修改清单",
+      "en": "Here are the call and my draft — run a mock review against the criteria and list what to fix."
+    },
+    {
+      "zh": "帮我核对这份三年预算，总额上限 50 万元，设备费不超过 30%",
+      "en": "Check this three-year budget: cap 500,000 CNY, equipment no more than 30%."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "package_type": "agent_template",
+  "name": "模拟评审专家",
+  "description": "按评审细则逐条打分、指出薄弱项并给出可执行的修改意见",
+  "persona": {
+    "dir": "."
+  },
+  "tools": [
+    {
+      "file": "tools/proposal_checker.py",
+      "class": "ProposalCheckerTool"
+    }
+  ],
+  "rails": [
+    {
+      "file": "rails/grant_proposal_rail.py",
+      "class": "GrantProposalRail"
+    }
+  ]
+}

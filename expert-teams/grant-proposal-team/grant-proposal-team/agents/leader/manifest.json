@@ -1,0 +1,20 @@
+{
+  "package_type": "agent_template",
+  "name": "申请书主理人",
+  "description": "确认需求、分派任务、撰写申请书并以工具校验结果验收",
+  "persona": {
+    "dir": "."
+  },
+  "tools": [
+    {
+      "file": "tools/proposal_checker.py",
+      "class": "ProposalCheckerTool"
+    }
+  ],
+  "rails": [
+    {
+      "file": "rails/grant_proposal_rail.py",
+      "class": "GrantProposalRail"
+    }
+  ]
+}
