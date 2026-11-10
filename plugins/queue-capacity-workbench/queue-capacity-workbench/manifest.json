@@ -1,0 +1,59 @@
+{
+  "version": "1.0.1",
+  "package_type": "plugin",
+  "id": "queue-capacity-workbench",
+  "name": "离线排队容量实验台",
+  "description": "离线运行单阶段 FIFO 队列，比较服务容量，回放事件并导出可复核结果。",
+  "source": "local",
+  "category": "数据与科学研究",
+  "display_name": {
+    "zh": "离线排队容量实验台",
+    "en": "离线排队容量实验台"
+  },
+  "display_description": {
+    "zh": "确定性排队模拟、容量比较与事件回放",
+    "en": "确定性排队模拟、容量比较与事件回放"
+  },
+  "tags": [
+    {
+      "zh": "排队模拟",
+      "en": "排队模拟"
+    },
+    {
+      "zh": "容量规划",
+      "en": "容量规划"
+    }
+  ],
+  "skills": [
+    {
+      "dir": "skills/queue-capacity",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/queue_tools.py",
+      "class": "QueueCapacityWorkbenchTool",
+      "display_name": {
+        "zh": "排队容量工作台",
+        "en": "排队容量工作台"
+      },
+      "display_description": {
+        "zh": "启动、查询或关闭插件专用本机界面",
+        "en": "启动、查询或关闭插件专用本机界面"
+      }
+    },
+    {
+      "file": "tools/queue_tools.py",
+      "class": "SimulateQueueCapacityTool",
+      "display_name": {
+        "zh": "离线排队容量计算",
+        "en": "离线排队容量计算"
+      },
+      "display_description": {
+        "zh": "用 SimPy 真实计算有限 FIFO 场景，不调用外网或模型",
+        "en": "用 SimPy 真实计算有限 FIFO 场景，不调用外网或模型"
+      }
+    }
+  ]
+}
