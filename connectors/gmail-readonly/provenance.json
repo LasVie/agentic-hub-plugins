@@ -1,0 +1,604 @@
+{
+  "mode": "native",
+  "permission_status": "original",
+  "version": "1.0.0",
+  "review_date": "2026-11-10",
+  "task_id": "AH-20261110-gmail-readonly",
+  "candidate_id": null,
+  "owner": "Cai Zhenze",
+  "naming": {
+    "original_request": "Gmail",
+    "display_name": "Gmail 只读邮件连接器",
+    "slug": "gmail-readonly"
+  },
+  "audit_file": "SOURCE_REVIEW.md",
+  "independent_spec": "NATIVE_DESIGN.md",
+  "sources": [],
+  "reused_paths": [],
+  "materials_seen": [
+    {
+      "name": "Gmail 邮件助手",
+      "asset_id": "e4922fd9c9a54287957a2606728a46c4",
+      "version": "1.0.0",
+      "url": "https://docs.google.com/spreadsheets/d/12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM/edit",
+      "permission_status": "unknown",
+      "use": "Catalog functional description and prior review only; no implementation, prompts or media reused."
+    },
+    {
+      "url": "https://github.com/taylorwilsdon/google_workspace_mcp",
+      "revision": "53c392dc426ca8795e27dcf0301f92b5abe85688",
+      "version": "2.4.0",
+      "license_expression": "MIT",
+      "license_sha256": "6c1f0beeb232472e68f961f11a0bd1b98f21513ccdbb88770d392fc95f17149a",
+      "permission_status": "verified",
+      "use": "Read-only source suitability review; not copied, ported, installed or executed. Default base identity scopes, broader read/export tools and runtime dependencies exceed selected boundary."
+    },
+    {
+      "url": "https://developers.google.com/workspace/gmail/api/guides/configure-mcp-server",
+      "use": "Official remote MCP preview evaluated, not selected; no endpoint calls."
+    },
+    {
+      "url": "https://developers.google.com/identity/protocols/oauth2/native-app",
+      "use": "Public Desktop OAuth/PKCE/loopback interface specification; no copied sample implementation."
+    },
+    {
+      "url": "https://developers.google.com/workspace/gmail/api/auth/scopes",
+      "use": "Restricted Gmail read-only scope and verification requirements."
+    },
+    {
+      "url": "https://developers.google.com/identity/protocols/oauth2#expiration",
+      "use": "Refresh-token expiration and reauthentication requirements."
+    },
+    {
+      "url": "https://developers.google.com/workspace/gmail/api/reference/quota",
+      "use": "Current standard-use cost, quota units and planned overage billing; actual project billing/usage unverified."
+    }
+  ],
+  "runtime_dependencies": [
+    {
+      "name": "annotated-types",
+      "version": "0.8.0",
+      "license_metadata": "MIT",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "annotated_types-0.8.0.dist-info/licenses/LICENSE",
+          "sha256": "fe1049884b1a0d9342901e88e07f32925d24b3121d9972b6a6805fb9824b095d"
+        }
+      ]
+    },
+    {
+      "name": "anyio",
+      "version": "4.16.0",
+      "license_metadata": "MIT",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "anyio-4.16.0.dist-info/licenses/LICENSE",
+          "sha256": "5361ac9dc58f2ef5fd2e9b09c68297c17f04950909bbc8023bdb82eacf22c2b0"
+        }
+      ]
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0",
+      "license_metadata": "MIT",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "attrs-26.1.0.dist-info/licenses/LICENSE",
+          "sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f"
+        }
+      ]
+    },
+    {
+      "name": "cachetools",
+      "version": "6.2.6",
+      "license_metadata": "MIT",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "cachetools-6.2.6.dist-info/licenses/LICENSE",
+          "sha256": "28c000b52b0ee27138a68ef778227e4057046e86b65f62f1cacb99b0cc49e0d2"
+        }
+      ]
+    },
+    {
+      "name": "certifi",
+      "version": "2026.10.23",
+      "license_metadata": "MPL-2.0",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "certifi-2026.10.23.dist-info/licenses/LICENSE",
+          "sha256": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7"
+        }
+      ]
+    },
+    {
+      "name": "cffi",
+      "version": "2.1.1",
+      "license_metadata": "MIT-0",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "cffi-2.1.1.dist-info/licenses/LICENSE",
+          "sha256": "5ba24ddc57067f9249add644c3afc41a5d6dc37e23433ef759d95df370b0af63"
+        }
+      ]
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.5.2",
+      "license_metadata": "MIT",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "charset_normalizer-3.5.2.dist-info/licenses/LICENSE",
+          "sha256": "6d0d41bfe170ac6c7dc248c9a63e254d0fb45a60d50a8257d0af92c6e249b887"
+        }
+      ]
+    },
+    {
+      "name": "click",
+      "version": "8.5.1",
+      "license_metadata": "BSD-3-Clause",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "click-8.5.1.dist-info/licenses/LICENSE.txt",
+          "sha256": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d"
+        }
+      ]
+    },
+    {
+      "name": "cryptography",
+      "version": "50.0.2",
+      "license_metadata": "Apache-2.0 OR BSD-3-Clause",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "cryptography-50.0.2.dist-info/licenses/LICENSE",
+          "sha256": "3e0c7c091a948b82533ba98fd7cbb40432d6f1a9acbf85f5922d2f99a93ae6bb"
+        },
+        {
+          "distribution_path": "cryptography-50.0.2.dist-info/licenses/LICENSE.APACHE",
+          "sha256": "aac73b3148f6d1d7111dbca32099f68d26c644c6813ae1e4f05f6579aa2663fe"
+        },
+        {
+          "distribution_path": "cryptography-50.0.2.dist-info/licenses/LICENSE.BSD",
+          "sha256": "602c4c7482de6479dd2e9793cda275e5e63d773dacd1eca689232ab7008fb4fb"
+        }
+      ]
+    },
+    {
+      "name": "google-auth",
+      "version": "2.41.1",
+      "license_metadata": "Apache 2.0",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "google_auth-2.41.1.dist-info/licenses/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ]
+    },
+    {
+      "name": "google-auth-oauthlib",
+      "version": "1.2.3",
+      "license_metadata": "Apache 2.0",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "google_auth_oauthlib-1.2.3.dist-info/licenses/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0",
+      "license_metadata": "MIT",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "h11-0.16.0.dist-info/licenses/LICENSE.txt",
+          "sha256": "37db5bb85926db28a427a25867f10b1232003aea1be69ccb851138adb8e6f361"
+        }
+      ]
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.9",
+      "license_metadata": "BSD-3-Clause",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "httpcore-1.0.9.dist-info/licenses/LICENSE.md",
+          "sha256": "fdcb59154c74cbaba16a11242f7740bea9f23d6feb5547917d8c5f94a80392a5"
+        }
+      ]
+    },
+    {
+      "name": "httpx",
+      "version": "0.28.1",
+      "license_metadata": "BSD-3-Clause",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "httpx-0.28.1.dist-info/licenses/LICENSE.md",
+          "sha256": "4ec59d544f12b5f539a3a716fd321ac58ccd8030b465221f2c880200cdf28d8d"
+        }
+      ]
+    },
+    {
+      "name": "httpx-sse",
+      "version": "0.4.3",
+      "license_metadata": "MIT",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "httpx_sse-0.4.3.dist-info/licenses/LICENSE",
+          "sha256": "beec67e4ee83a7af26f242bed9987aa863d6d2dfb776106aa2360c4187f31901"
+        }
+      ]
+    },
+    {
+      "name": "idna",
+      "version": "3.20",
+      "license_metadata": "BSD-3-Clause",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "idna-3.20.dist-info/licenses/LICENSE.md",
+          "sha256": "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04"
+        }
+      ]
+    },
+    {
+      "name": "jsonschema",
+      "version": "4.26.0",
+      "license_metadata": "MIT",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "jsonschema-4.26.0.dist-info/licenses/COPYING",
+          "sha256": "4f92a015a13c4d1a040bef018aa13430b4f1bc73b41b16bb846c346766de7439"
+        }
+      ]
+    },
+    {
+      "name": "jsonschema-specifications",
+      "version": "2025.9.1",
+      "license_metadata": "MIT",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "jsonschema_specifications-2025.9.1.dist-info/licenses/COPYING",
+          "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c"
+        }
+      ]
+    },
+    {
+      "name": "mcp",
+      "version": "1.25.0",
+      "license_metadata": "MIT",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "mcp-1.25.0.dist-info/licenses/LICENSE",
+          "sha256": "5e13dbbc1d120fc2a03cecde7c91424ae2d7de11b63d58ded2f4431e261ee50d"
+        }
+      ]
+    },
+    {
+      "name": "oauthlib",
+      "version": "4.0.1",
+      "license_metadata": "BSD-3-Clause",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "oauthlib-4.0.1.dist-info/licenses/LICENSE",
+          "sha256": "0028aa4763a8a0b09ca4c68d585263474cf9aaa6ec69ffbef3a31a9eccdd3b91"
+        }
+      ]
+    },
+    {
+      "name": "pyasn1",
+      "version": "0.6.5",
+      "license_metadata": "BSD-2-Clause",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "pyasn1-0.6.5.dist-info/licenses/LICENSE.rst",
+          "sha256": "2aad5fc00f705c4a1addb83eed10a6a75d286a3779f0cf8519d87e62bc4735fd"
+        }
+      ]
+    },
+    {
+      "name": "pyasn1-modules",
+      "version": "0.4.2",
+      "license_metadata": "BSD",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "pyasn1_modules-0.4.2.dist-info/licenses/LICENSE.txt",
+          "sha256": "2aad5fc00f705c4a1addb83eed10a6a75d286a3779f0cf8519d87e62bc4735fd"
+        }
+      ]
+    },
+    {
+      "name": "pycparser",
+      "version": "3.12",
+      "license_metadata": "BSD-3-Clause",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "pycparser-3.12.dist-info/licenses/LICENSE",
+          "sha256": "0a9e78156ae8b96caf1b4f11ac2df424b83de29736f9e757630548a6272fdf90"
+        }
+      ]
+    },
+    {
+      "name": "pydantic",
+      "version": "2.14.3",
+      "license_metadata": "MIT",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "pydantic-2.14.3.dist-info/licenses/LICENSE",
+          "sha256": "a9e186f3ca16b5eef84318e7a701721351a00cb7b8ae3a4394b67b49e3529ef3"
+        }
+      ]
+    },
+    {
+      "name": "pydantic-core",
+      "version": "2.50.4",
+      "license_metadata": "MIT",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "pydantic_core-2.50.4.dist-info/licenses/LICENSE",
+          "sha256": "2afdd30d54b4d62b6f488a6bcc1546e84ec5061f13f4209c03d012348783795a"
+        }
+      ]
+    },
+    {
+      "name": "pydantic-settings",
+      "version": "2.16.2",
+      "license_metadata": "MIT",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "pydantic_settings-2.16.2.dist-info/licenses/LICENSE",
+          "sha256": "eb355a753e020346d33d83bf9769135b89fc610568ac531a01c295bcee7fd998"
+        }
+      ]
+    },
+    {
+      "name": "pyjwt",
+      "version": "2.15.1",
+      "license_metadata": "MIT",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "pyjwt-2.15.1.dist-info/licenses/AUTHORS.rst",
+          "sha256": "925ce43461029eedbf558ec0b7cf7fc4b045def5120ebb97937c70814071cf07"
+        },
+        {
+          "distribution_path": "pyjwt-2.15.1.dist-info/licenses/LICENSE",
+          "sha256": "797a7a20231d4c433e9f1911db1731d06b5828b98f499819a034f7c0f56f5ce5"
+        }
+      ]
+    },
+    {
+      "name": "python-dotenv",
+      "version": "1.2.4",
+      "license_metadata": "BSD-3-Clause",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "python_dotenv-1.2.4.dist-info/licenses/LICENSE",
+          "sha256": "80619b7049f08c81683ad0e01f08f257a840652dd71ee83146d36658c7d2c2b9"
+        }
+      ]
+    },
+    {
+      "name": "python-multipart",
+      "version": "0.0.33",
+      "license_metadata": "Apache-2.0",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "python_multipart-0.0.33.dist-info/licenses/LICENSE.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "name": "referencing",
+      "version": "0.37.0",
+      "license_metadata": "MIT",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "referencing-0.37.0.dist-info/licenses/COPYING",
+          "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c"
+        }
+      ]
+    },
+    {
+      "name": "requests",
+      "version": "2.32.5",
+      "license_metadata": "Apache-2.0",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "requests-2.32.5.dist-info/licenses/LICENSE",
+          "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b"
+        }
+      ]
+    },
+    {
+      "name": "requests-oauthlib",
+      "version": "2.0.0",
+      "license_metadata": "ISC",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "requests_oauthlib-2.0.0.dist-info/LICENSE",
+          "sha256": "ae01846afad8a8291fe6a08966f3015af9a8ff675d84b981f9793c122f7876e8"
+        }
+      ]
+    },
+    {
+      "name": "rpds-py",
+      "version": "2026.9.1",
+      "license_metadata": "MIT",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "rpds_py-2026.9.1.dist-info/licenses/LICENSE",
+          "sha256": "314e4e91be3baa93c0fb4bccc9e4e97cd643eb839b065af921782c2175fe9909"
+        }
+      ]
+    },
+    {
+      "name": "rsa",
+      "version": "4.9.1",
+      "license_metadata": "Apache-2.0",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "rsa-4.9.1.dist-info/LICENSE",
+          "sha256": "073f28b7d389c8fe74f607e17c27f81eaa5ace69edc43a884f23f41b41c5c726"
+        }
+      ]
+    },
+    {
+      "name": "sse-starlette",
+      "version": "3.7.0",
+      "license_metadata": "BSD-3-Clause",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "sse_starlette-3.7.0.dist-info/licenses/AUTHORS",
+          "sha256": "c2ff63d2ecf128bbda8ab1b2016830a5da124202fbb97168685bb9946aed3f1a"
+        },
+        {
+          "distribution_path": "sse_starlette-3.7.0.dist-info/licenses/LICENSE",
+          "sha256": "80af6bfccbebd2c14d4aab96695cab9950e177190cc80f5ef819e99996883e8e"
+        }
+      ]
+    },
+    {
+      "name": "starlette",
+      "version": "1.10.0",
+      "license_metadata": "BSD-3-Clause",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "starlette-1.10.0.dist-info/licenses/LICENSE.md",
+          "sha256": "dcb95677a02240243187e964f941847d19b17821cf99e5afae684fab328c19bf"
+        }
+      ]
+    },
+    {
+      "name": "typing-extensions",
+      "version": "4.16.0",
+      "license_metadata": "PSF-2.0",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "typing_extensions-4.16.0.dist-info/licenses/LICENSE",
+          "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+        }
+      ]
+    },
+    {
+      "name": "typing-inspection",
+      "version": "0.4.5",
+      "license_metadata": "MIT",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "typing_inspection-0.4.5.dist-info/licenses/LICENSE",
+          "sha256": "804b59b25f2c31bd278f9202a19ae49a3945aa2664387e2d0a128c7cacc61ec3"
+        }
+      ]
+    },
+    {
+      "name": "urllib3",
+      "version": "2.8.0",
+      "license_metadata": "MIT",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "urllib3-2.8.0.dist-info/licenses/LICENSE.txt",
+          "sha256": "130e3a64d5fdd5d096a752694634a7d9df284469de86e5732100268041e3d686"
+        }
+      ]
+    },
+    {
+      "name": "uvicorn",
+      "version": "0.54.0",
+      "license_metadata": "BSD-3-Clause",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "uvicorn-0.54.0.dist-info/licenses/LICENSE.md",
+          "sha256": "efe1acf3e62fb99c288b0ec73e5a773b7268ef4320fe757ea994214e4b63c371"
+        }
+      ]
+    }
+  ],
+  "runtime_lock": {
+    "path": "requirements.txt",
+    "sha256": "ffa2214133edf527ff076b38648ca6b6835fb228aa802c48cf9ec843b3bb3504",
+    "platform_audited": "macOS / Python 3.12",
+    "distribution_count": 40,
+    "audit_kind": "Installed distribution metadata and license-file presence/hashes, not exhaustive embedded source/security audit"
+  },
+  "license_reference_files": [
+    {
+      "name": "mcp",
+      "version": "1.25.0",
+      "url": "https://github.com/modelcontextprotocol/python-sdk",
+      "path": "licenses/mcp/LICENSE",
+      "sha256": "5e13dbbc1d120fc2a03cecde7c91424ae2d7de11b63d58ded2f4431e261ee50d",
+      "source_distribution_path": "mcp-1.25.0.dist-info/licenses/LICENSE"
+    },
+    {
+      "name": "google-auth-oauthlib",
+      "version": "1.2.3",
+      "url": "https://github.com/googleapis/google-auth-library-python-oauthlib",
+      "path": "licenses/google-auth-oauthlib/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "source_distribution_path": "google_auth_oauthlib-1.2.3.dist-info/licenses/LICENSE"
+    },
+    {
+      "name": "google-auth",
+      "version": "2.41.1",
+      "url": "https://github.com/googleapis/google-auth-library-python",
+      "path": "licenses/google-auth/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "source_distribution_path": "google_auth-2.41.1.dist-info/licenses/LICENSE"
+    },
+    {
+      "name": "requests",
+      "version": "2.32.5",
+      "url": "https://github.com/psf/requests",
+      "path": "licenses/requests/LICENSE",
+      "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b",
+      "source_distribution_path": "requests-2.32.5.dist-info/licenses/LICENSE"
+    }
+  ],
+  "distribution_notes": [
+    "No third-party implementation files, dependency wheels, virtualenv, brand assets or user mailbox data are included in payload.",
+    "License-reference files are copied unchanged from exact installed distributions; no code from those distributions is vendored.",
+    "Runtime dependencies install separately from a version/hash-locked requirements file. The lock is not a grant to modify shared host dependencies.",
+    "Certifi metadata identifies MPL-2.0. Do not claim an entirely permissive or copyleft-free dependency graph.",
+    "No common license is assigned to team-owned code. Retain upstream license scopes and copyright statements.",
+    "Source audit does not establish live Google authorization, mailbox access, host listing, manual testing or production verification."
+  ]
+}

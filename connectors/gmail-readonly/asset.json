@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "type": "agent-mcp",
+  "name": "gmail-readonly",
+  "display_name": "Gmail 只读邮件连接器",
+  "version": "1.0.0",
+  "owner": "Cai Zhenze",
+  "task_id": "AH-20261110-gmail-readonly",
+  "candidate_id": null,
+  "internal_asset_id": "repo:agent-mcp:gmail-readonly",
+  "description": "Chinese read-only Gmail MCP Connector with explicit browser OAuth and bounded search/read tools.",
+  "native_path": "gmail-readonly"
+}
