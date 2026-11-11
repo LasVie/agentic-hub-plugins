@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "package_type": "mcp",
+  "id": "gmail-readonly",
+  "name": "Gmail 只读邮件连接器",
+  "description": "通过真实 MCP 工具检索与读取授权邮箱；独立浏览器登录，仅申请 gmail.readonly，不发送或修改邮件。",
+  "display_name": {"zh": "Gmail 只读邮件连接器", "en": "Gmail Read-only Connector"},
+  "display_description": {"zh": "浏览器授权后，有限检索邮件、读取邮件和会话。需要一次性开发者 OAuth 客户端配置。", "en": "Bounded Gmail search and message/thread reading with connector-owned browser OAuth."},
+  "integration": {"type": "stdio-mcp", "file": "mcp.json"},
+  "skills": [{"dir": "skills/gmail-readonly-guide", "mode": "all"}]
+}

@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "asset_type": "agent-mcp",
+  "name": "gmail-readonly",
+  "display_name": "Gmail 只读邮件连接器",
+  "version": "1.0.0",
+  "task_id": "AH-20261110-gmail-readonly",
+  "internal_asset_id": "repo:agent-mcp:gmail-readonly",
+  "created_at_utc": "2026-11-10T07:34:35.472590+00:00",
+  "artifacts": [
+    {
+      "form": "native",
+      "path": "connectors/gmail-readonly/test-packages/gmail-readonly-1.0.0-native.zip",
+      "filename": "gmail-readonly-1.0.0-native.zip",
+      "sha256": "b396d4adaedcfe48c7749570d777564482d50c9f23bfdc4d56b16b34a4051f52",
+      "size_bytes": 142811
+    },
+    {
+      "form": "agent-mcp_wrapped",
+      "path": "connectors/gmail-readonly/release/1.0.0/gmail-readonly-1.0.0-agent-mcp.zip",
+      "filename": "gmail-readonly-1.0.0-agent-mcp.zip",
+      "sha256": "9fb5f0ad60109cbd3d8cafd8087475147808be711a46c5d07efeb2766f26f9a4",
+      "size_bytes": 63214
+    }
+  ],
+  "payload_sha256": {
+    "README.md": "95dd4394143d4a67bb0ab3ae15f5773be18badeed47294a23e744e1222720ad1",
+    "THIRD_PARTY_NOTICES.md": "4d1a7245172acf7d8541f3acbefa460a4aa8010242c28360db931385ba285502",
+    "auth.py": "c9861cab8060b1409ae82cae9278a7f7c96237cbab1b240cb849abc8641b53e6",
+    "gmail_service.py": "0e1edce66ab64fa74c5a7de0abd2da97766df0602f9512ec5701c9c3e1a3def5",
+    "launcher.py": "42f54b006011cc0f667416ed64923405a0cc6f17c90c2154e05b72bda6dbd0a8",
+    "licenses/google-auth/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "licenses/google-auth-oauthlib/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "licenses/mcp/LICENSE": "5e13dbbc1d120fc2a03cecde7c91424ae2d7de11b63d58ded2f4431e261ee50d",
+    "licenses/requests/LICENSE": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b",
+    "manifest.json": "ed5fcccb6dfe24aff685aa1ab03013f5bdbb249bf8ee7d66ad8834cf36d77b62",
+    "mcp.json": "986f6a3195ed4ba77e0f76f60462f57989e77508d41917fb5cb9c7f74fdec6a7",
+    "requirements.in": "4a753f3063f506f9ccf15f61a7591c8732f557a06210539bc86aa6ce16e4c67d",
+    "requirements.txt": "ffa2214133edf527ff076b38648ca6b6835fb228aa802c48cf9ec843b3bb3504",
+    "server.py": "ecffdb1b01f0664caa6e3ff19a8180563b666b0e512ff44ffdb68d5de312eea3",
+    "skills/gmail-readonly-guide/SKILL.md": "e06e092eb636f632077b22cf1c3e4c0677c8dacb77fd993ce3476a35a320ce15"
+  },
+  "review_files_sha256": {
+    "SOURCE_REVIEW.md": "b172350c70ad2f40b2d209cc451f6dde21dea21282d9e91d97a892e891dad055",
+    "TEST_REPORT.md": "241391b9b5144448347c8d05866ef06f2c7ca5add025f21cf2aa35cd72d2e14a",
+    "provenance.json": "5ea4cece0bf86975f91b9294cdbeef842f80d261d527754b75d1f7e9c9e3b35c"
+  },
+  "official_cli": {
+    "distribution": "openjiuwen-agentichub",
+    "version": "0.0.1",
+    "source": "https://github.com/openJiuwen-ai/skillhub",
+    "source_commit": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+    "commands": [
+      [
+        "/private/tmp/gmail-hub-cli/venv/bin/agentichub",
+        "init",
+        "gmail-readonly",
+        "--type",
+        "agent-mcp"
+      ],
+      [
+        "/private/tmp/gmail-hub-cli/venv/bin/agentichub",
+        "validate",
+        "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/gmail-connector-pack-ns54qx46/gmail-readonly"
+      ],
+      [
+        "/private/tmp/gmail-hub-cli/venv/bin/agentichub",
+        "pack",
+        "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/gmail-connector-pack-ns54qx46/gmail-readonly",
+        "--output",
+        "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/gmail-connector-pack-ns54qx46/out"
+      ],
+      [
+        "/private/tmp/gmail-hub-cli/venv/bin/python",
+        "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/tools/asset_release.py",
+        "preflight",
+        "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/connectors/gmail-readonly/gmail-readonly"
+      ],
+      [
+        "/private/tmp/gmail-hub-cli/venv/bin/python",
+        "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/tools/asset_release.py",
+        "preflight",
+        "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/gmail-connector-pack-ns54qx46/native.zip"
+      ],
+      [
+        "/private/tmp/gmail-hub-cli/venv/bin/python",
+        "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/tools/asset_release.py",
+        "preflight",
+        "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/gmail-connector-pack-ns54qx46/out/gmail-readonly-1.0.0.zip"
+      ]
+    ]
+  },
+  "checks": [
+    {
+      "step": "official_init",
+      "output": "Plugin initialized at: /private/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/gmail-connector-pack-ns54qx46/gmail-readonly"
+    },
+    {
+      "step": "official_validate",
+      "output": "Plugin validation passed."
+    },
+    {
+      "step": "official_pack",
+      "output": "Packed: /private/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/gmail-connector-pack-ns54qx46/out/gmail-readonly-1.0.0.zip"
+    },
+    {
+      "step": "javascript_preflight_native_source",
+      "output": "{\n  \"path\": \"/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/connectors/gmail-readonly/gmail-readonly\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_native_zip",
+      "output": "{\n  \"path\": \"/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/gmail-connector-pack-ns54qx46/native.zip\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_wrapped_zip",
+      "output": "{\n  \"path\": \"/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/gmail-connector-pack-ns54qx46/out/gmail-readonly-1.0.0.zip\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    }
+  ],
+  "verification_limits": "Packaging/JavaScript preflight and byte-equivalence only; not authenticated Gmail or user manual-test acceptance.",
+  "local_host_verification": {
+    "date": "2026-11-10",
+    "host_revision": "fa91394e42a7af731424222db82b02351e694de9",
+    "host_branch": "local/connector-import",
+    "host_uncommitted_feature_preserved": true,
+    "host_source_hashes_unchanged": 28,
+    "url": "http://127.0.0.1:6411/",
+    "import_status": 200,
+    "marketplace_source": "local_test",
+    "native_id": "gmail-readonly",
+    "native_version": "1.0.0",
+    "mcp_tools": [
+      "gmail_search_messages",
+      "gmail_read_message",
+      "gmail_read_thread"
+    ],
+    "missing_auth": "not_signed_in",
+    "invalid_input": "invalid_argument",
+    "disconnected_call": "MCP_NOT_FOUND",
+    "duplicate_import_status": 400,
+    "installed_payload_matches": true,
+    "browser_card_verified": true,
+    "authenticated_gmail_verified": true,
+    "user_manual_testing_passed": true
+  },
+  "functional_tests": {
+    "passed": 90,
+    "upstream_warnings": 2,
+    "real_google_calls": null,
+    "real_google_calls_performed": true,
+    "api_request_count_independently_instrumented": false,
+    "real_account_authorization": true,
+    "details": "90 offline/protocol tests retained; actual authorized Google OAuth/search/message/thread/explicit-refresh and WorkSwarm lifecycle verification recorded separately; no user manual acceptance."
+  },
+  "local_oauth_setup": {
+    "date": "2026-11-10",
+    "desktop_client_configured": true,
+    "protected_copy_verified": true,
+    "directory_mode": "700",
+    "file_mode": "600",
+    "google_contacted": true,
+    "token_present": true,
+    "test_account_messages_authorized": true,
+    "provider_project_setup_verified": false
+  },
+  "live_gmail_verification": {
+    "date": "2026-11-10",
+    "authority": "Current conversation; two test accounts newest five each, plus single thread containing newest message of second account",
+    "account_aliases": [
+      "test-account-1",
+      "test-account-2"
+    ],
+    "browser_oauth_callback_succeeded_both": true,
+    "message_search_counts": [
+      5,
+      5
+    ],
+    "initial_message_read_success_counts": [
+      5,
+      5
+    ],
+    "selected_second_account_thread_messages_available": 1,
+    "selected_second_account_thread_messages_returned": 1,
+    "selected_second_account_thread_truncated": false,
+    "explicit_refresh_succeeded_both": true,
+    "backend_disconnect_reconnect_succeeded_both": true,
+    "same_bounded_text_and_labels_after_reconnect_both": true,
+    "first_account_local_logout_blocks_read": true,
+    "second_account_left_connected": true,
+    "provider_denied_consent_verified": false,
+    "provider_revocation_verified": false,
+    "natural_expiry_verified_live": false,
+    "whole_host_restart_verified_for_gmail": false,
+    "mailbox_write_operations": 0,
+    "mail_contents_or_identifiers_recorded": false,
+    "user_manual_acceptance_confirmed": true
+  },
+  "user_test_confirmation": {
+    "date": "2026-11-11",
+    "source": "Current conversation; exact timestamp/permalink unavailable",
+    "native_zip_confirmed_passed": true,
+    "canonical_wrapper_confirmation_pending": false,
+    "pending_live_failure_checks_disposition_supplied": true,
+    "original_screenshots_received": 6,
+    "evidence_inventory": "USER_TEST_CONFIRMATION.md",
+    "delivery_gate_complete": false,
+    "canonical_wrapper_confirmed_passed": true,
+    "live_denied_and_revocation_checks": "Untested; user explicitly authorized GitHub merge with this disclosed limitation",
+    "delivery_materials_gate_complete": true,
+    "remaining_gate": "Verified PR screenshot attachments/permalinks and required CI before merge"
+  }
+}
