@@ -96,3 +96,6 @@
 # Preserve the exact confirmed adhd-study-coach payload, license and package hashes.
 /plugins/adhd-study-coach/** -text
 /releases/agent-plugin/adhd-study-coach/** -text
+# Preserve the exact japan-rain-alert payload, license and package hashes.
+/plugins/japan-rain-alert/** -text
+/releases/agent-plugin/japan-rain-alert/** -text

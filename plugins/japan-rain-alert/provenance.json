@@ -1,0 +1,26 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/okura1234/claude-plugins/tree/412612b0c1f2e6f000d9d287c2ed494730264d67/plugins/amedas-rain",
+      "revision": "412612b0c1f2e6f000d9d287c2ed494730264d67",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/amedas-rain/LICENSE",
+          "sha256": "65872a348d23a191311ff7284791c3eef8259dbba4146e6c78aa16a054d81d92"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "tools/jma_tools.py",
+    "skills/japan-rain-alert/SKILL.md"
+  ],
+  "audit_file": "SOURCE_REVIEW.md",
+  "native_components": {
+    "spec": "NATIVE_DESIGN.md",
+    "note": "PNG 解码、五个工具的参数校验与结构化中文输出、请求限流、响应大小限制、内存缓存、由坐标经国土地理院逆地理编码和气象厅区域表解析预报区、日本范围检查、数据来源署名、错误处理均为本团队独立编写，不含上游代码；上游的警报代码表、府县预报区表、观测点读取方式、色阶表、WBGT 公式和技能流程已按 MIT 以 ported 方式记录。"
+  }
+}

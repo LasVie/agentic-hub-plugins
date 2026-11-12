@@ -1,0 +1,25 @@
+{
+  "type": "agent-plugin",
+  "name": "japan-rain-alert",
+  "version": "1.0.0",
+  "display_name": "日本雨量预警助手",
+  "description": "用五个原生只读工具查询日本任意位置的最近观测站雨量、市町村警报与注意报、正上方 1 km 网格的解析雨量和キキクル警戒级别，以及估算暑热指数（WBGT）；数据来自气象厅等公开服务，无需账号，默认用简体中文。",
+  "publisher": "LasVie/agentic-hub-plugins",
+  "category": "生活与健康",
+  "tags": [
+    "japan",
+    "weather",
+    "rainfall",
+    "jma"
+  ],
+  "functional_tags": [
+    "日本观测站雨量查询",
+    "市町村警报注意报查询",
+    "1km网格雨量与警戒级别",
+    "暑热指数估算"
+  ],
+  "scope": "五个原生只读工具：按邮编、地址、经纬度或观测站名定位日本境内位置；读取气象厅 AMeDAS 速报值的最近观测站雨量（最近 1～7 天）、市町村警报与注意报和气象台展望原文、1 km 网格的解析雨量与キキクル三类警戒级别（地图瓦片色块，仅档位），并估算暑热指数。依赖气象厅、国土地理院、环境省和 zipcloud 的匿名公共网络服务和宿主 SDK；不含气象预测、避难或防灾指挥建议、日本以外地区、历史确定值统计，也不抓取民间天气网站。非官方工具。",
+  "candidate_id": "CAND-CLD-203",
+  "task_id": "AH-20261112-japan-rain-alert",
+  "related_asset_ids": []
+}

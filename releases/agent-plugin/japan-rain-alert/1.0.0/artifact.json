@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:japan-rain-alert",
+  "type": "agent-plugin",
+  "name": "japan-rain-alert",
+  "version": "1.0.0",
+  "zip": "japan-rain-alert-1.0.0.zip",
+  "sha256": "e11e752652289c9ac02607e5541f14cbff06cc5994aa3ff1a2d561f08add97e3",
+  "payload_sha256": {
+    "licenses/amedas-rain/LICENSE": "65872a348d23a191311ff7284791c3eef8259dbba4146e6c78aa16a054d81d92",
+    "manifest.json": "b799fde1638b02243c71531332caf2a1ced9cc0927232d3658fc5fd7977afb7c",
+    "README.md": "2867fb72fb90f494fa8de7f5136f52e670def63d0a737b34f9d5a3e25caaca9c",
+    "skills/japan-rain-alert/SKILL.md": "ca4717ba202781388158880b62279cf430029afc36070377f053a4246c0eef8d",
+    "THIRD_PARTY_NOTICES.md": "393b1527c48b9e1c15cc765ba996d0751623faff8fc1eaa8b2c70a6b558c933d",
+    "tools/jma_tools.py": "5454529961672b490e3383ceb5e1f8ec4de99a146014908fb66e0f54e757e82c"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "e9a80aff9e92c93eebb8e35878efbfa4ab90bfbe8b7950dbd816fded3393bd37",
+  "functional_test_report_sha256": "1b369e183ba049439d5ceaf642900edb4fa5f71da453be23ddcc54878372fa10"
+}

@@ -1,0 +1,73 @@
+{
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "source": "local",
+  "id": "japan-rain-alert",
+  "name": "日本雨量预警助手",
+  "description": "用五个原生只读工具查询日本任意位置的最近观测站雨量、市町村警报与注意报、正上方 1 km 网格的解析雨量和キキクル警戒级别，以及估算暑热指数（WBGT）；数据来自气象厅等公开服务，无需账号，默认用简体中文。",
+  "display_name": {
+    "en": "日本雨量预警助手",
+    "zh": "日本雨量预警助手"
+  },
+  "display_description": {
+    "en": "用五个原生只读工具查询日本任意位置的最近观测站雨量、市町村警报与注意报、正上方 1 km 网格的解析雨量和キキクル警戒级别，以及估算暑热指数（WBGT）；数据来自气象厅等公开服务，无需账号，默认用简体中文。",
+    "zh": "用五个原生只读工具查询日本任意位置的最近观测站雨量、市町村警报与注意报、正上方 1 km 网格的解析雨量和キキクル警戒级别，以及估算暑热指数（WBGT）；数据来自气象厅等公开服务，无需账号，默认用简体中文。"
+  },
+  "category": "生活与健康",
+  "tags": [
+    {
+      "en": "日本天气",
+      "zh": "日本天气"
+    },
+    {
+      "en": "雨量与警报查询",
+      "zh": "雨量与警报查询"
+    }
+  ],
+  "default_init_input": {
+    "en": "查询日本某个位置的雨量和警报，并用中文整理：",
+    "zh": "查询日本某个位置的雨量和警报，并用中文整理："
+  },
+  "quick_inputs": [
+    {
+      "en": "查询东京最近 4 天的降雨量，并说明数据来自哪个观测站。",
+      "zh": "查询东京最近 4 天的降雨量，并说明数据来自哪个观测站。"
+    },
+    {
+      "en": "邮编 100-0005 所在的区现在有警报或注意报吗？",
+      "zh": "邮编 100-0005 所在的区现在有警报或注意报吗？"
+    },
+    {
+      "en": "坐标 35.681,139.767 正上方 1 km 网格现在的降雨和土砂灾害警戒级别是多少？",
+      "zh": "坐标 35.681,139.767 正上方 1 km 网格现在的降雨和土砂灾害警戒级别是多少？"
+    }
+  ],
+  "skills": [
+    {
+      "dir": "skills/japan-rain-alert",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/jma_tools.py",
+      "class": "LocateTool"
+    },
+    {
+      "file": "tools/jma_tools.py",
+      "class": "RainfallTool"
+    },
+    {
+      "file": "tools/jma_tools.py",
+      "class": "WarningsTool"
+    },
+    {
+      "file": "tools/jma_tools.py",
+      "class": "SiteRainRiskTool"
+    },
+    {
+      "file": "tools/jma_tools.py",
+      "class": "WbgtTool"
+    }
+  ]
+}
