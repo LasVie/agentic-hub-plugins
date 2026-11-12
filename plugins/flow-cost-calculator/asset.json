@@ -1,0 +1,24 @@
+{
+  "type": "agent-plugin",
+  "name": "flow-cost-calculator",
+  "version": "1.0.0",
+  "display_name": "流动效率与持续成本测算",
+  "description": "用两个原生计算工具做项目与服务工作的两类测算：一是流动效率（周期、处理时间、等待时间和两个改进杠杆），二是把持续运行成本算进去的商业论证（运行成本占比、回收期、投资回报率、盈亏平衡）；每一步公式都带代入数字，可自行复算，不给“正常值”；无需账号和网络，默认用简体中文。",
+  "publisher": "LasVie/agentic-hub-plugins",
+  "category": "办公与生产力",
+  "tags": [
+    "flow-efficiency",
+    "business-case",
+    "running-costs",
+    "project-management"
+  ],
+  "functional_tags": [
+    "流动效率测算",
+    "含运行成本的商业论证",
+    "盈亏平衡分析"
+  ],
+  "scope": "两个技能加两个原生计算工具：flow_cost_flow_efficiency 由周期天数和处理小时数算流动效率、等待时间和两个改进杠杆；flow_cost_business_case 由一次性成本、每年运行成本、每年收益和期限（3 或 5 年）算运行成本占比、回收期、投资回报率、盈亏平衡用量与盈亏平衡成本超支及两种偏离情形。工具用精确有理数运算，每步公式带代入数字，只做算术，不联网、不读写文件、不保存内容，不给“正常值”或经验法则，不折现、不含税和折旧，不能替代财务或流程分析。技能说明改编自上游 Agile Forge Praxis（MIT），不是上游作者发布的版本。",
+  "candidate_id": "CAND-CLD-161",
+  "task_id": "AH-20261112-agile-forge-praxis",
+  "related_asset_ids": []
+}

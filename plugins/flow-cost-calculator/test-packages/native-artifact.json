@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "zip": "flow-cost-calculator-1.0.0-native.zip",
+  "size_bytes": 49208,
+  "sha256": "fd00eb2942c388963f6e633e4ca9fca5acf1bcce9e99ae7de89d4b6d937fa802",
+  "payload_sha256": {
+    "licenses/agile-forge-praxis-plugin/LICENSE": "e48574787df82fe240185a85682b0020e066ca48d53810d4ae91d38df7e642be",
+    "manifest.json": "6fd6a1ee81e654ad1e5168f21610c18c04b033a8c77ec592b1adf4810d684d9e",
+    "README.md": "41c605a23b193102d2136aa1f330581f09a89fcccecb45b0834a9de16a5ed0aa",
+    "skills/business-case-running-costs/SKILL.md": "92faa9bbbca8667ead790031cb2ac62fbc13969038722c3c467842f5c2525d64",
+    "skills/flow-efficiency/SKILL.md": "f1e126460f1e2263140d5558e61d61c310c062d8f461ec08b8f27d8453a441bd",
+    "THIRD_PARTY_NOTICES.md": "964504002c2479035c645d09474066c2ee776de3d92f0b7c3cb07bdce01f9d66",
+    "tools/flow_cost.py": "c401b80b7deff5f067e8bc4c084a6e736a4df6ab06d5b56bc383b603695e043e"
+  }
+}
