@@ -99,3 +99,6 @@
 # Preserve the exact japan-rain-alert payload, license and package hashes.
 /plugins/japan-rain-alert/** -text
 /releases/agent-plugin/japan-rain-alert/** -text
+# Preserve the exact flow-cost-calculator payload, license and package hashes.
+/plugins/flow-cost-calculator/** -text
+/releases/agent-plugin/flow-cost-calculator/** -text

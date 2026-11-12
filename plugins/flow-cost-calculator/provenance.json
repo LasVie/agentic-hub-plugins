@@ -1,0 +1,26 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/agileforge01-arch/agile-forge-praxis-plugin/tree/db7c20facb516b7b7c0c2088882f52368c54468b",
+      "revision": "db7c20facb516b7b7c0c2088882f52368c54468b",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/agile-forge-praxis-plugin/LICENSE",
+          "sha256": "e48574787df82fe240185a85682b0020e066ca48d53810d4ae91d38df7e642be"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "skills/flow-efficiency/SKILL.md",
+    "skills/business-case-running-costs/SKILL.md"
+  ],
+  "audit_file": "SOURCE_REVIEW.md",
+  "native_components": {
+    "spec": "NATIVE_DESIGN.md",
+    "note": "tools/flow_cost.py 中的两个原生计算工具（flow_cost_flow_efficiency、flow_cost_business_case）、有理数运算、输入校验与错误处理、偏离情形参数和输出格式均为本团队独立编写，不含上游代码；公式取自上游说明文字里写出的算法。"
+  }
+}
