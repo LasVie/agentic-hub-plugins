@@ -1,0 +1,27 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/Aphro4266/adds-up/tree/501af9e40e709780849cbedfd73af45d1eb7c6bd",
+      "revision": "501af9e40e709780849cbedfd73af45d1eb7c6bd",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/adds-up/LICENSE",
+          "sha256": "8e64120969b71eee850ba6cfccf0245dd0c72cb7c8118dc7665f38a37c00b501"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "tools/adds_up.py",
+    "skills/document-number-check/SKILL.md",
+    "skills/document-number-check/references/checks.md"
+  ],
+  "audit_file": "SOURCE_REVIEW.md",
+  "native_components": {
+    "spec": "DESIGN.md",
+    "note": "tools/adds_up.py 前面的规则、数字解析和各类文件的提取逻辑移植自上游 skills/check/scripts/adds_up.py（逐字节取自固定提交的 Git blob e4cf7d0f2351a7f49ce96dad0d487667b213e27c），并按 SOURCE_REVIEW.md 的修改摘要增加中文支持、中文输出和安全上限；文件末尾的两个原生工具（adds_up_extract、adds_up_grim）、输入校验、并发保护、输出截断和错误处理为本团队独立编写。"
+  }
+}
