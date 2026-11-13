@@ -55,6 +55,7 @@ def block_external_io(monkeypatch):
         raise AssertionError("A test attempted unmocked network or browser I/O")
     monkeypatch.setattr(requests.sessions.Session, "request", forbidden)
     monkeypatch.setattr(webbrowser, "get", forbidden)
+    monkeypatch.setenv("GMAIL_WORKSPACE_OAUTH_URL", "")
 
 
 @pytest.fixture
@@ -64,6 +65,30 @@ def private_state(tmp_path, monkeypatch):
     assert auth.state_root() == root
     auth._write(root / "client.json", client())
     return root
+
+
+def test_card_login_can_use_explicit_managed_origin_without_local_client(tmp_path, monkeypatch):
+    root = tmp_path / "private-state"
+    monkeypatch.setenv("GMAIL_READONLY_HOME", str(root))
+    monkeypatch.setenv("GMAIL_WORKSPACE_OAUTH_URL", "https://oauth.example.invalid")
+    calls = []
+
+    def managed_sign_in(base, *, open_browser):
+        assert not (root / "client.json").exists()
+        calls.append((base, open_browser))
+        return {"ok": True}
+
+    monkeypatch.setattr(auth, "_managed_sign_in", managed_sign_in)
+    assert auth.sign_in(open_browser=False) == {"ok": True}
+    assert calls == [("https://oauth.example.invalid", False)]
+
+
+def test_card_login_defaults_to_user_supplied_desktop_configuration(tmp_path, monkeypatch):
+    monkeypatch.setenv("GMAIL_READONLY_HOME", str(tmp_path / "private-state"))
+    monkeypatch.delenv("GMAIL_WORKSPACE_OAUTH_URL", raising=False)
+    with pytest.raises(auth.ConnectorError) as error:
+        auth.sign_in(open_browser=False)
+    assert error.value.code == "client_config_required"
 
 
 def mock_flow(monkeypatch, *, creds=None, effect=None):
@@ -85,7 +110,7 @@ def mock_flow(monkeypatch, *, creds=None, effect=None):
 def test_login_uses_loopback_pkce_exact_scope_and_private_persistence(private_state, monkeypatch, capsys):
     captured, flow = mock_flow(monkeypatch)
     assert auth.sign_in()["ok"]
-    assert captured["scopes"] == [auth.SCOPE]
+    assert captured["scopes"] == auth.SCOPES
     assert captured["constructor"]["autogenerate_code_verifier"] is True
     assert captured["run"]["host"] == "127.0.0.1"
     assert captured["run"]["port"] == 0
@@ -332,7 +357,7 @@ def test_real_library_loopback_callback_and_state_pkce_without_google(private_st
         captured["token_requests"].append(kwargs)
         response = requests.Response()
         response.status_code = 200
-        response._content = json.dumps({"access_token": "synthetic-loopback-access", "refresh_token": "synthetic-loopback-refresh", "token_type": "Bearer", "expires_in": 3600, "scope": auth.SCOPE}).encode()
+        response._content = json.dumps({"access_token": "synthetic-loopback-access", "refresh_token": "synthetic-loopback-refresh", "token_type": "Bearer", "expires_in": 3600, "scope": " ".join(auth.SCOPES)}).encode()
         response.headers["Content-Type"] = "application/json"
         response.request = requests.Request(method, url, data=kwargs.get("data")).prepare()
         return response
@@ -378,9 +403,35 @@ def test_real_library_loopback_callback_and_state_pkce_without_google(private_st
         worker.join(timeout=6)
         assert not worker.is_alive()
     assert not captured["callback_errors"] and captured["callback_status"] == 200
-    assert captured["authorization"]["scope"] == [auth.SCOPE]
+    assert captured["authorization"]["scope"] == [" ".join(auth.SCOPES)]
     assert captured["authorization"]["code_challenge_method"] == ["S256"]
     assert len(captured["authorization"]["code_challenge"][0]) >= 43
     output = capsys.readouterr()
     for sensitive in ("synthetic-loopback-refresh", "synthetic-loopback-access", "synthetic-callback-code", "synthetic-client-secret"):
         assert sensitive not in output.out + output.err + caplog.text
+
+
+def test_readonly_upgrade_preserves_session_until_full_consent(private_state, monkeypatch):
+    legacy = store_token(private_state, scopes=[auth.SCOPE])
+    assert auth.load_credentials().scopes == [auth.SCOPE]
+    assert auth.session_status()["write_enabled"] is False
+    with pytest.raises(auth.ConnectorError) as error:
+        auth.load_credentials(require_compose=True)
+    assert error.value.code == "compose_required"
+
+    partially_granted = credentials(scopes=auth.SCOPES)
+    partially_granted._granted_scopes = [auth.SCOPE]
+    mock_flow(monkeypatch, creds=partially_granted)
+    with pytest.raises(auth.ConnectorError) as error:
+        auth.sign_in()
+    assert error.value.code == "scope_mismatch"
+    assert auth._read(private_state / "token.json") == legacy
+
+    def verify_old_session():
+        assert auth._read(private_state / "token.json") == legacy
+
+    mock_flow(monkeypatch, effect=verify_old_session)
+    assert auth.sign_in()["ok"]
+    assert auth.load_credentials(require_compose=True).scopes == auth.SCOPES
+    assert auth.session_status()["write_enabled"] is True
+    assert auth._read(private_state / "token.json")["session_id"] != legacy["session_id"]

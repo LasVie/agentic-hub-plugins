@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "asset_type": "agent-mcp",
+  "name": "gmail-readonly",
+  "display_name": "Gmail 邮件连接器",
+  "version": "1.5.1",
+  "task_id": "AH-20261111-gmail-connection",
+  "internal_asset_id": "repo:agent-mcp:gmail-readonly",
+  "created_at_utc": "2026-11-13T08:20:00.415464+00:00",
+  "artifacts": [
+    {
+      "form": "native",
+      "path": "connectors/gmail-readonly/test-packages/gmail-readonly-1.5.1-native.zip",
+      "filename": "gmail-readonly-1.5.1-native.zip",
+      "sha256": "80520d1d95f20b49cbbc69fa42119e19cd2fbf28cc1e3cd42c8b1dbf16404a6f",
+      "size_bytes": 129329
+    },
+    {
+      "form": "agent-mcp_wrapped",
+      "path": "connectors/gmail-readonly/release/1.5.1/gmail-readonly-1.5.1-agent-mcp.zip",
+      "filename": "gmail-readonly-1.5.1-agent-mcp.zip",
+      "sha256": "9140035cb10415cf88f4394ec9cf34f6642ef591052d66d48fcb705781f11f2e",
+      "size_bytes": 49215
+    }
+  ],
+  "payload_sha256": {
+    "README.md": "c5e3f332a93bbf4142acd0da0a6dd7677279f217b444f778c6ff698c907133f0",
+    "THIRD_PARTY_NOTICES.md": "c05e346d61323e34a1b6fd7fd5fa3ee2d4a654555ea371eb5eb8275ddce150e3",
+    "auth.py": "eeff0b7cc5b26c98342aacab11916f0bb4c5185866efadb06d42189b60702bed",
+    "cli.json": "fe653992195d6488de067f641dda3522c8388bfa82c2a71e0bd3d8f5cb7b7b6f",
+    "gmail_message.py": "1802e747e9c0770f8319c779330a3d383aeeef78f21c74c7335ab6a63a0c91bb",
+    "gmail_service.py": "615c46c03c71a7dffa752d4f51eec0803c4b7dfa2834a37b04e8e3ca67116fab",
+    "launcher.py": "001f16527fa23b242ef10f6357369add84c2d934301578416044f765a99ff952",
+    "licenses/google-auth/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "licenses/google-auth-oauthlib/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "licenses/requests/LICENSE": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b",
+    "manifest.json": "f461f8150677de95e71ee8c824773794543ffb528f5b17494183368f4b3cc75f",
+    "requirements.in": "e67055fe9c69ee3c5a048963ff3cb498fc0240d7da7980ebffba9af92101493a",
+    "requirements.txt": "8cba403f6a10b86445df444e7e93d66aaeabc209ce90c22a8f09b82ff8dad51e",
+    "skills/gmail-readonly-guide/SKILL.md": "1626b6103a4a1c639dd2b2249998893eb96458c8ee6aaaa4bb2737910736fd17",
+    "workspace_oauth.py": "f8bd4427a5bc645380c8e6000cdccad7810d10180e9c9ed79d8462be6a0093af"
+  },
+  "review_files_sha256": {
+    "SOURCE_REVIEW.md": "03d78c3fc6738cf82e4ef725c175a1a1269afcc14e3dec3e90b3d9f922fca500",
+    "TEST_REPORT.md": "88f386a43bf933cd57fd932401bedc117a54a0b6fb36bc178bc61cec6683e587",
+    "provenance.json": "0807ef1ae1fa091b645a67fd1afbcc2aafdb4eb0c953d181e8805bf2b9622f52"
+  },
+  "official_cli": {
+    "distribution": "openjiuwen-agentichub",
+    "version": "0.0.1",
+    "source": "https://github.com/openJiuwen-ai/skillhub",
+    "source_commit": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+    "commands": [
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "init",
+        "gmail-readonly",
+        "--type",
+        "agent-mcp"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "validate",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/gmail-connector-pack-fkvjnv6m/gmail-readonly"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "pack",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/gmail-connector-pack-fkvjnv6m/gmail-readonly",
+        "--output",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/gmail-connector-pack-fkvjnv6m/out"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/agentic-hub-gmail-byo/tools/asset_release.py",
+        "preflight",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/agentic-hub-gmail-byo/connectors/gmail-readonly/gmail-readonly"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/agentic-hub-gmail-byo/tools/asset_release.py",
+        "preflight",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/gmail-connector-pack-fkvjnv6m/native.zip"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/agentic-hub-gmail-byo/tools/asset_release.py",
+        "preflight",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/gmail-connector-pack-fkvjnv6m/out/gmail-readonly-1.5.1.zip"
+      ]
+    ]
+  },
+  "checks": [
+    {
+      "step": "official_init",
+      "output": "Plugin initialized at: /private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/gmail-connector-pack-fkvjnv6m/gmail-readonly"
+    },
+    {
+      "step": "official_validate",
+      "output": "Plugin validation passed."
+    },
+    {
+      "step": "official_pack",
+      "output": "Packed: /private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/gmail-connector-pack-fkvjnv6m/out/gmail-readonly-1.5.1.zip"
+    },
+    {
+      "step": "javascript_preflight_native_source",
+      "output": "{\n  \"path\": \"/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/agentic-hub-gmail-byo/connectors/gmail-readonly/gmail-readonly\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_native_zip",
+      "output": "{\n  \"path\": \"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/gmail-connector-pack-fkvjnv6m/native.zip\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_wrapped_zip",
+      "output": "{\n  \"path\": \"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/gmail-connector-pack-fkvjnv6m/out/gmail-readonly-1.5.1.zip\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    }
+  ],
+  "verification_limits": "Packaging/JavaScript preflight and byte-equivalence only; not authenticated Gmail or user manual-test acceptance."
+}

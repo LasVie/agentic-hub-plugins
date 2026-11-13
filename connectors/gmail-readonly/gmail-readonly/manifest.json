@@ -1,11 +1,28 @@
 {
-  "version": "1.0.0",
+  "version": "1.5.1",
   "package_type": "mcp",
   "id": "gmail-readonly",
-  "name": "Gmail 只读邮件连接器",
-  "description": "通过真实 MCP 工具检索与读取授权邮箱；独立浏览器登录，仅申请 gmail.readonly，不发送或修改邮件。",
-  "display_name": {"zh": "Gmail 只读邮件连接器", "en": "Gmail Read-only Connector"},
-  "display_description": {"zh": "浏览器授权后，有限检索邮件、读取邮件和会话。需要一次性开发者 OAuth 客户端配置。", "en": "Bounded Gmail search and message/thread reading with connector-owned browser OAuth."},
-  "integration": {"type": "stdio-mcp", "file": "mcp.json"},
-  "skills": [{"dir": "skills/gmail-readonly-guide", "mode": "all"}]
+  "name": "Gmail 邮件连接器",
+  "description": "使用自建 Google Cloud 项目的 Desktop OAuth 配置，在聊天中搜索和读取邮件、编辑草稿、发送和回复邮件。",
+  "display_name": {
+    "zh": "Gmail 邮件连接器",
+    "en": "Gmail Connector"
+  },
+  "display_description": {
+    "zh": "需自建 Google Cloud 项目并导入 Desktop OAuth JSON。连接后可读邮件、编辑草稿、发送和回复。",
+    "en": "Use your own Google Cloud Desktop OAuth client to read Gmail, edit drafts, send mail, and reply within a thread."
+  },
+  "integration": {
+    "type": "cli",
+    "file": "cli.json"
+  },
+  "credentials": {
+    "type": "cli-oauth"
+  },
+  "skills": [
+    {
+      "dir": "skills/gmail-readonly-guide",
+      "mode": "all"
+    }
+  ]
 }

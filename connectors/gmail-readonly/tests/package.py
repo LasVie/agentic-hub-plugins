@@ -137,7 +137,7 @@ def build(cli: Path, cli_python: Path) -> dict:
     wrapper = {
         "name": name, "version": version, "display_name": asset["display_name"],
         "description": manifest["description"], "runtime": {"type": "agent-mcp"},
-        "metadata": {"author": "Cai Zhenze", "tags": ["邮件", "只读", "MCP", "浏览器授权"]},
+        "metadata": {"author": "Cai Zhenze", "tags": ["邮件", "Gmail", "浏览器授权"]},
     }
     native_target = ASSET / "test-packages" / f"{name}-{version}-native.zip"
     wrapped_target = ASSET / "release" / version / f"{name}-{version}-agent-mcp.zip"
@@ -159,7 +159,10 @@ def build(cli: Path, cli_python: Path) -> dict:
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_bytes(contents)
         (stage / "plugin.yaml").write_text(yaml.safe_dump(wrapper, allow_unicode=True, sort_keys=False), encoding="utf-8")
-        (stage / "README.md").write_text("# Gmail 只读邮件连接器\n\n实际说明位于原生目录中的 README.md。\n", encoding="utf-8")
+        (stage / "README.md").write_text(
+            f"# {asset['display_name']}\n\n实际说明位于原生目录中的 README.md。\n",
+            encoding="utf-8",
+        )
         validate = [str(cli), "validate", str(stage)]
         commands.append(validate)
         checks.append({"step": "official_validate", "output": run(validate)})
