@@ -165,3 +165,76 @@ canonical `release/1.0.0/gmail-readonly-1.0.0-agent-mcp.zip` SHA-256
 `9fb5f0ad60109cbd3d8cafd8087475147808be711a46c5d07efeb2766f26f9a4`.
 Neither archive contains a Google client, token, account data, dependency wheel,
 runtime environment or screenshot. Authentication acceptance remains pending.
+# Gmail 1.1.0 update (2026-11-11)
+
+- Task `AH-20261111-gmail-connection` (Song Haoran), version 1.1.0. This is an update to the team-owned native implementation delivered in PR #85, merge `ab3bab18fc746f76954ffffcbf0d113a09fedcff` (Cai Zhenze).
+- Updated connector-owned CLI OAuth handoff, the declared stdio entry and MIME alternative selection. Dependency pins and bundled license texts are unchanged. No upstream implementation, prompts, media, or client credentials were added to the payload.
+- The WorkSwarm compatibility change is in its separate checkout. The new package declares `integration.mcp_file` and uses the host's existing CLI authorization dialog. The original source review below remains the evidence for the retained files and dependencies.
+
+
+## Gmail 1.2.0 CLI + Skill update
+
+Task `AH-20261111-gmail-connection` continues under Song Haoran. Reuses the
+team-owned Gmail OAuth and API implementation from PR #85 plus the local
+1.1.0 MIME regression fix. The CLI entry point and skill are original.
+Feishu's published manifest and CLI configuration served as references
+for the existing WorkSwarm contract. No Feishu source or materials are
+bundled. The previous MCP entry point and its dependency were removed
+from the current payload. Distribution still uses the repository's
+`agent-mcp` wrapper for native CLI connectors.
+
+## Gmail 1.3.0 draft editing, send and reply
+
+Continues `AH-20261111-gmail-connection` under Song Haoran. Reuses the
+team-owned v1.2.0 CLI, REST transport, OAuth state and Gmail parsing.
+The implementation uses Python standard-library MIME handling. No
+third-party source code or dependencies were added. The [Gmail scope
+reference](https://developers.google.com/workspace/gmail/api/auth/scopes),
+[draft update](https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.drafts/update),
+[message send](https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.messages/send),
+[draft send](https://developers.google.com/workspace/gmail/api/reference/rest/v1/users.drafts/send)
+and [thread rules](https://developers.google.com/workspace/gmail/api/guides/threads)
+were used as public interface specifications. Existing license references
+and hash-locked runtime dependencies still apply.
+## v1.4.0 macOS Hub bootstrap
+
+Continues `AH-20261111-gmail-connection` under Song Haoran. The macOS CLI manifest uses the system `env -S` launcher and the installed Hub payload. This is repository-owned glue code. No WorkSwarm source, third-party implementation, or OAuth client credentials are copied. Python dependencies and bundled notices are unchanged.
+
+## v1.5.0 managed Google Workspace OAuth
+
+The connector client and shared OAuth service are repository-owned
+implementations based on Google's public OAuth and scope specifications.
+No upstream implementation or client credentials are copied. The
+distributable connector reuses its existing pinned Requests and Google
+Auth dependencies and notices. The separately deployed service consumes
+Flask (BSD-3-Clause), Gunicorn (MIT), google-cloud-firestore and Requests
+(Apache-2.0), and cryptography (Apache-2.0 or BSD-3-Clause) as installed
+dependencies. Its source, Dockerfile, dependency declarations, and tests
+are outside the Hub ZIP. The managed release retains PRODUCTION_SETUP.md
+with official OAuth, deployment, and verification references.
+
+## v1.6.0 packaged team OAuth origin
+
+Continues task `AH-20261111-gmail-connection` under Song Haoran. The
+distribution now sets the existing managed OAuth client to
+`https://google-auth.workswarm.app` by default. The only new runtime
+configuration is that public origin. Dependency pins and bundled license
+texts are identical to v1.5.0. OAuth service code, Web client credentials
+and runtime tokens remain outside both connector archives.
+
+## v1.6.1 macOS interpreter discovery
+
+Uses the same packaged OAuth origin, dependencies, and notices as v1.6.0.
+Repository-owned launcher code locates an already installed Python 3.11
+or 3.12 when WorkSwarm starts with the macOS system Python on PATH.
+
+## v1.5.1 user-managed Desktop OAuth
+
+Continues task `AH-20261111-gmail-connection` under Song Haoran. Gmail →
+Gmail 邮件连接器 → `gmail-readonly` retains the asset identity. This version
+uses the existing team-owned v1.6.1 launcher and Gmail operations, with
+Desktop OAuth as the default and Chinese instructions for importing a
+user-supplied OAuth JSON. Version 1.5.1 sorts below the preserved 1.6.1
+managed release so Hub can upgrade to its exact artifact later. The
+existing dependency pins and bundled notices are reused. No OAuth client
+JSON, account credentials or tokens enter the package.
