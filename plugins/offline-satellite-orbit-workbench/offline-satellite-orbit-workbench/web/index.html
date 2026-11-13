@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>离线卫星轨道工作台</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="masthead">
+    <div class="brand"><svg aria-hidden="true" viewBox="0 0 52 52"><circle cx="26" cy="26" r="10"/><ellipse cx="26" cy="26" rx="24" ry="12" transform="rotate(-35 26 26)"/><circle cx="44" cy="12" r="3" class="satellite-icon"/></svg><div><p class="eyebrow">本地计算 · 卫星轨道</p><h1>离线卫星轨道工作台</h1></div></div>
+    <div class="versions"><span class="badge"><i></i>离线工作台</span><p>插件 1.0.0 · Satellite.js 7.2.0</p></div>
+    <p class="intro">从轨道根数到地面轨迹。选择一个观测点，看清卫星的方位、仰角与距离。</p>
+  </header>
+
+  <main>
+    <section class="panel inputs" aria-labelledby="input-title">
+      <h2 id="input-title"><span>01</span> 定义轨道与观测点</h2>
+      <div class="actions"><button type="button" id="example">TLE 历史示例</button><button type="button" id="omm-example">OMM 历史示例</button><label class="file-button">导入根数文件<input id="file" type="file" accept=".tle,.txt,.json,text/plain,application/json" aria-label="导入轨道根数文件"></label><button type="button" id="restore">恢复导入原文</button></div>
+      <form id="orbit-form" novalidate>
+        <label for="format">根数格式</label>
+        <select id="format"><option value="tle">TLE · 两行轨道根数</option><option value="omm">OMM · 单个 JSON 对象</option></select>
+        <label for="elements">轨道根数 <span>可以编辑</span></label>
+        <textarea id="elements" spellcheck="false" maxlength="16384" rows="8" aria-describedby="elements-help"></textarea>
+        <p class="hint" id="elements-help">仅处理一颗卫星。TLE 每行须为 69 个字符并通过校验；可在首行添加名称。OMM 只支持 SGP4 所需的根数。输入仅作为数据。</p>
+        <label for="start">开始时刻（UTC）</label>
+        <input id="start" type="text" spellcheck="false" placeholder="2000-06-27T18:50:19.733568Z" aria-describedby="time-help">
+        <p class="hint" id="time-help">使用带 Z 的完整 UTC 时间；小数秒最多 6 位。整个计算窗口须位于根数历元前后 7 天内。</p>
+        <div class="field-grid">
+          <div><label for="duration">窗口长度（小时）</label><input id="duration" type="number" min="0.25" max="24" step="0.25" value="24"></div>
+          <div><label for="step">采样间隔（秒）</label><input id="step" type="number" min="10" max="600" step="1" value="60"></div>
+        </div>
+        <div class="subhead">观测点 <span>经纬度为十进制度</span></div>
+        <div class="field-grid">
+          <div><label for="latitude">纬度（北纬为正）</label><input id="latitude" type="number" min="-89.9" max="89.9" step="any" value="1.3521"></div>
+          <div><label for="longitude">经度（东经为正）</label><input id="longitude" type="number" min="-180" max="180" step="any" value="103.8198"></div>
+          <div><label for="height">观测点椭球高（m）</label><input id="height" type="number" min="0" max="9000" step="any" value="0"></div>
+          <div><label for="threshold">最低仰角（°）</label><input id="threshold" type="number" min="0" max="89" step="any" value="10"></div>
+        </div>
+        <p class="hint">观测点高度相对 WGS84 参考椭球，不是海平面高程。</p>
+        <button type="submit" id="run" class="primary">计算轨道 <span aria-hidden="true">↗</span></button>
+        <button type="button" id="cancel" disabled>取消计算</button>
+      </form>
+      <p class="message" id="message" role="status" aria-live="polite">历史示例已准备。点击“计算轨道”查看实际计算结果。</p>
+      <p class="hint bounds">完全本地　单次最多 24 小时、8,641 个采样点和 12 秒计算时间。不会请求外部轨道目录、地图或定位服务。修改输入后，旧结果与导出立即失效。</p>
+    </section>
+
+    <div class="output-column">
+      <section class="panel plot-panel" aria-labelledby="track-title">
+        <div class="panel-heading"><h2 id="track-title"><span>02</span> 地面轨迹</h2><span id="state" class="state">尚未计算</span></div>
+        <div class="plot-meta"><span class="legend-item"><i class="line-key"></i>星下点轨迹</span><span class="legend-item"><i class="observer-key"></i>观测点</span><span class="plot-note">经纬度示意 · 无底图</span></div>
+        <div id="ground" class="chart"><div class="empty"><svg aria-hidden="true" viewBox="0 0 100 80"><ellipse cx="50" cy="40" rx="44" ry="21" transform="rotate(-25 50 40)"/><circle cx="50" cy="40" r="20"/><circle cx="86" cy="22" r="5"/></svg><strong>尚未生成轨道</strong><span>根数、时间与观测点确认后，开始本地计算。</span></div></div>
+        <p class="chart-caption">星下点为卫星在参考椭球上的经纬度投影。跨越 ±180° 经线时分段绘制；图上连线是采样点之间的示意。</p>
+      </section>
+
+      <section class="panel" aria-labelledby="elevation-title">
+        <div class="panel-heading"><h2 id="elevation-title"><span>03</span> 观测仰角</h2><span id="window-label" class="muted">等待计算</span></div>
+        <div id="elevation" class="chart short-chart"><div class="empty compact"><strong>等待轨道计算</strong><span>横轴为 UTC 时间；仰角从本地地平线起算。</span></div></div>
+        <div id="sample-controls" hidden>
+          <label for="sample-index" class="sample-label">检查采样点 <output id="sample-label">—</output></label><input id="sample-index" type="range" min="0" max="0" step="1" value="0">
+          <div class="sample-metrics"><div><span>方位角（北 0° · 东 90°）</span><strong id="azimuth">—</strong></div><div><span>仰角 · °</span><strong id="sample-elevation">—</strong></div><div><span>观测点距离 · km</span><strong id="range">—</strong></div><div><span>卫星椭球高 · km</span><strong id="altitude">—</strong></div></div>
+        </div>
+      </section>
+
+      <section class="panel" aria-labelledby="summary-title">
+        <div class="panel-heading"><h2 id="summary-title"><span>04</span> 本次结果</h2><span id="satellite-name" class="muted">—</span></div>
+        <div class="metrics"><div><span>采样点</span><strong id="sample-count">—</strong></div><div><span>达到仰角阈值的区间</span><strong id="interval-count">—</strong></div><div><span>根数历元 · UTC</span><strong id="epoch" class="date-value">—</strong></div></div>
+        <div id="warnings" role="note"></div>
+        <div class="table-scroll"><table><caption>几何仰角区间</caption><thead><tr><th scope="col">开始 · UTC</th><th scope="col">结束 · UTC</th><th scope="col">采样峰值 · °</th><th scope="col">窗口边界</th></tr></thead><tbody id="intervals"><tr><td colspan="4" class="table-empty">计算后显示；没有区间也会明确报告。</td></tr></tbody></table></div>
+        <p class="hint">阈值交点在已发现的采样括区间内细化。相邻采样之间的短暂或擦边过境可能未被发现；区间被窗口截断时会标注。峰值为采样峰值。</p>
+        <div class="export-row"><div><strong>导出当前结果</strong><p class="hint">JSON 保留输入、版本与计算数值。CSV 为 UTF-8。</p></div><div class="actions"><button id="export-json" disabled>导出 JSON</button><button id="export-csv" disabled>导出 CSV</button><button id="export-svg" disabled>导出图表 SVG</button></div></div>
+      </section>
+
+      <section class="panel" aria-labelledby="numeric-title">
+        <div class="panel-heading"><h2 id="numeric-title"><span>05</span> 数值核对</h2><div class="actions pagination"><button id="previous" disabled aria-label="上一页采样数据">上一页</button><span id="page">0 / 0</span><button id="next" disabled aria-label="下一页采样数据">下一页</button></div></div>
+        <div class="table-scroll"><table><caption>每页最多 30 个采样点；JSON / CSV 包含全部采样。</caption><thead><tr><th scope="col">UTC</th><th scope="col">纬度 · °</th><th scope="col">经度 · °</th><th scope="col">椭球高 · km</th><th scope="col">方位 · °</th><th scope="col">仰角 · °</th><th scope="col">距离 · km</th></tr></thead><tbody id="samples"><tr><td colspan="7" class="table-empty">暂无数据</td></tr></tbody></table></div>
+        <p class="hint">屏幕显示经过四舍五入。原始位置为 TEME 坐标（km），速度为 TEME 速度（km/s），可在 JSON 中核对；不是 J2000 坐标。</p>
+      </section>
+    </div>
+  </main>
+  <footer><strong>使用边界</strong><p>仅对所给根数做有限时间的模型推算。达到几何仰角阈值不代表肉眼可见；不计算太阳照明、天气、地形遮挡或光污染。历史示例不代表卫星当前状态。</p><p>不连接在线目录，不控制卫星，不用于导航、碰撞预警或任务安全认证。请独立核对根数的新鲜度、时间、单位与结果。</p></footer>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

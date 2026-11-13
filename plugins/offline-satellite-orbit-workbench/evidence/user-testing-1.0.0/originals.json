@@ -1,0 +1,48 @@
+{
+  "task_id": "AH-20261112-offline-satellite-orbit-workbench",
+  "candidate_id": "CAND-EXT-014",
+  "owner": "Cai Zhenze",
+  "display_name": "离线卫星轨道工作台",
+  "version": "1.0.0",
+  "confirmation_date": "2026-11-13",
+  "source": "Original user attachments in this conversation; exact message timestamp unavailable.",
+  "native_zip_sha256": "d554e61da463cfbf6124d776190aafbf407dc8a941396029d5e4c5a7cdb16710",
+  "canonical_zip_sha256": "3527dcede1c53acb0e556ba9520fb5f22d95f80a4d9be7b43d7d30fe0c923e60",
+  "originals": [
+    {
+      "file": "Screenshot 2026-11-13 at 5.11.50 PM.png",
+      "bytes": 384576,
+      "width": 1128,
+      "height": 1982,
+      "sha256": "945d0fe139f77f1bcc02715d7001170190ae894d1c98670ce2fe37157c7f0890"
+    },
+    {
+      "file": "Screenshot 2026-11-13 at 5.12.02 PM.png",
+      "bytes": 388287,
+      "width": 1142,
+      "height": 1984,
+      "sha256": "cfe262db4b7dafa0ae466d81db677fdb11b8222cc692913f735214a19df3e462"
+    },
+    {
+      "file": "Screenshot 2026-11-13 at 5.12.22 PM.png",
+      "bytes": 379341,
+      "width": 1134,
+      "height": 1976,
+      "sha256": "b58aaa1f193d228e8612fae7e65019b538b27c1893eb2ccf57b6e4712b0bdca1"
+    },
+    {
+      "file": "Screenshot 2026-11-13 at 5.12.32 PM.png",
+      "bytes": 388058,
+      "width": 1190,
+      "height": 1984,
+      "sha256": "689e4d9c95fdc3bbe5861edf50bb91bfdfe7305767cafc58bd04dc7519668b54"
+    },
+    {
+      "file": "Screenshot 2026-11-13 at 5.12.42 PM.png",
+      "bytes": 334060,
+      "width": 1278,
+      "height": 1394,
+      "sha256": "381abb21525397232d500986e90f3e40218f83fd1bebc925de62a7ebcf61fb2c"
+    }
+  ]
+}

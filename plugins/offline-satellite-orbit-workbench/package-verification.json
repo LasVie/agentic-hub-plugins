@@ -1,0 +1,19 @@
+{
+  "name": "offline-satellite-orbit-workbench",
+  "version": "1.0.0",
+  "native_zip": "/Users/IDLE_And_R/.codex/worktrees/581d/agentic-hub-plugins/plugins/offline-satellite-orbit-workbench/test-packages/offline-satellite-orbit-workbench-1.0.0-workswarm.zip",
+  "native_sha256": "d554e61da463cfbf6124d776190aafbf407dc8a941396029d5e4c5a7cdb16710",
+  "canonical_zip": "/Users/IDLE_And_R/.codex/worktrees/581d/agentic-hub-plugins/releases/agent-plugin/offline-satellite-orbit-workbench/1.0.0/offline-satellite-orbit-workbench-1.0.0.zip",
+  "canonical_sha256": "3527dcede1c53acb0e556ba9520fb5f22d95f80a4d9be7b43d7d30fe0c923e60",
+  "payload_file_count": 36,
+  "native_canonical_payload_equal": true,
+  "extracted_dir": "/private/tmp/orbit-final-extracted-klr56qzt",
+  "safe_paths": true,
+  "crc_ok": true,
+  "chinese_utf8_checked": true,
+  "dynamic_js_preflight": {
+    "javascript_files": 20,
+    "findings": 0
+  },
+  "payload_map_reference": "test-packages/artifact.json#payload_files"
+}

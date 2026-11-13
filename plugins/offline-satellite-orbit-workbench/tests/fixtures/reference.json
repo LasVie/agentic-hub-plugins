@@ -1,0 +1,53 @@
+{
+  "source": "https://celestrak.org/publications/AIAA/2006-6753/",
+  "archive_sha256": "3642043b706c76be87cf012db3f22e04da6b80498d00f515e51879e0ffadc115",
+  "reference_files": [
+    "sgp4/cpp/testsgp4/SGP4-VER.TLE",
+    "sgp4/for/tforverf.out"
+  ],
+  "frame": "TEME",
+  "position_units": "km",
+  "velocity_units": "km/s",
+  "satellite": "00005",
+  "vectors": [
+    {
+      "minutesSinceEpoch": 0,
+      "position": [
+        7022.46529266,
+        -1400.08296755,
+        0.03995155
+      ],
+      "velocity": [
+        1.893841015,
+        6.405893759,
+        4.53480725
+      ]
+    },
+    {
+      "minutesSinceEpoch": 360,
+      "position": [
+        -7154.03120202,
+        -3783.17682504,
+        -3536.19412294
+      ],
+      "velocity": [
+        4.741887409,
+        -4.151817765,
+        -2.093935425
+      ]
+    },
+    {
+      "minutesSinceEpoch": 720,
+      "position": [
+        -7134.59340119,
+        6531.68641334,
+        3260.27186483
+      ],
+      "velocity": [
+        -4.113793027,
+        -2.911922039,
+        -2.557327851
+      ]
+    }
+  ]
+}
