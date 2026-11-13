@@ -1,0 +1,27 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "sources": [
+    {
+      "url": "https://github.com/petrovicistefan/claude-code-plugins/tree/0b19c0dd919c2b5e0b992fb1610ef2ca427a357f/a11y-enforcer",
+      "revision": "0b19c0dd919c2b5e0b992fb1610ef2ca427a357f",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/a11y-enforcer/LICENSE",
+          "sha256": "5f434c88921e448707dc3b7983a41364721fdbec7468735c26dba2200f183d04"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "tools/a11y_enforcer.py",
+    "skills/web-accessibility-check/SKILL.md",
+    "skills/web-accessibility-check/references/rules.md"
+  ],
+  "audit_file": "SOURCE_REVIEW.md",
+  "native_components": {
+    "spec": "DESIGN.md",
+    "note": "tools/a11y_enforcer.py 中“移植自上游”的一段（扫描规则和对比度算法）取自上游 skills/a11y-enforcer/scripts/a11y_scan.py（Git blob 798293a064dc58015fb86bcc4d5e22808a49559a）和 contrast.py（Git blob d71961c8cd2d8f0f184ddfd1f8e351b68a0c6530），按 tests/port/build_tool.py 的精确替换改动（中文输出、有界匹配与时间上限、去掉命令行入口、颜色数值范围检查），其余保持原样；文件头部的有界匹配与时间上限函数，以及文件末尾的两个原生工具（a11y_scan、a11y_contrast）、输入校验和错误处理为本团队独立编写。"
+  }
+}
