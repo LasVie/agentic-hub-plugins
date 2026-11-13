@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "zip": "adds-up-1.0.0-native.zip",
+  "size_bytes": 181108,
+  "sha256": "55fecb1b36179c77e24ee18c8077f2459a2beaace21b833d8ef720a7b2fd205f",
+  "payload_sha256": {
+    "licenses/adds-up/LICENSE": "8e64120969b71eee850ba6cfccf0245dd0c72cb7c8118dc7665f38a37c00b501",
+    "manifest.json": "f6d12d749b900d67f7c987db98ed4979e5bc592707c809d0a248049d14716148",
+    "README.md": "bf997f4f36aa56b91606d514d70299a0110d669ad290e3a95ea612b807dc6566",
+    "skills/document-number-check/references/checks.md": "07a29ccab763175246fd3a69a04f40c0d08b2a47d4f08e2138648c33a0fee54a",
+    "skills/document-number-check/SKILL.md": "10dc1ac7d83e16499138b6452d9bf645d464683aeb2277723c83649b79e40a84",
+    "THIRD_PARTY_NOTICES.md": "9945276ae9d722320ce0f9010b73aed949dda608ee3b861f136e520bbf3967f7",
+    "tools/adds_up.py": "4f40c9fa566a09ebe66dbaecee301201cf3e0a47ddc9d341e1842a27b99b7fc8"
+  }
+}

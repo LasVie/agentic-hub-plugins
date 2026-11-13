@@ -102,3 +102,7 @@
 # Preserve the exact flow-cost-calculator payload, license and package hashes.
 /plugins/flow-cost-calculator/** -text
 /releases/agent-plugin/flow-cost-calculator/** -text
+
+# Preserve the exact adds-up payload, license and package hashes.
+/plugins/adds-up/** -text
+/releases/agent-plugin/adds-up/** -text

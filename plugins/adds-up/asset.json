@@ -1,0 +1,27 @@
+{
+  "type": "agent-plugin",
+  "name": "adds-up",
+  "version": "1.0.0",
+  "display_name": "文档数字核对",
+  "description": "核对文档里的数字对不对得上：用两个原生只读工具读取 Word、PowerPoint、Excel、CSV、Markdown、文本和 PDF，按规则找出合计与分项、百分比与个数、星期与日期、时长与起止日期、公式范围、单位混用等对不上的地方，并用 GRIM 检验百分比或平均值能否由整数得到；配一个中文技能写出带验算过程的核对报告。只读文件，不改文件、不联网、不需要账号，默认用简体中文。",
+  "publisher": "LasVie/agentic-hub-plugins",
+  "category": "办公与生产力",
+  "tags": [
+    "number-check",
+    "proofreading",
+    "spreadsheet",
+    "consistency"
+  ],
+  "functional_tags": [
+    "文档数字核对",
+    "合计与百分比验算",
+    "GRIM 检验"
+  ],
+  "scope": "一个技能加两个原生只读工具：adds_up_extract 读取 docx、pptx、xlsx/xlsm、csv/tsv、md/txt、pdf，取出文字、表格和公式，并按规则列出算术线索（合计与分项、行内计算、占比、百分比之和、句子里的“N 人中有 n 人占 p%”、百分点与百分比、星期与日期、时长与起止日期、公式 SUM 范围少算、手填数字夹在公式之间、单位混用、数字写法混用），同时报告规则检验了多少、多少相符；adds_up_grim 检验报告的百分比或平均值能否由整数得到。技能负责通读、确认线索、重算并写出带验算过程的中文报告。规则识别中文的合计/小计/平均/其中标签、“2026年3月5日”日期、星期三/周三、“共 14 周”时长和全角百分号，同时保留上游对英语、德语、土耳其语、法语、西班牙语标签的识别。只读指定文件，不改文件、不联网、不保存内容；不核实文档里的外部事实，不检验大写金额，不读图片和扫描页里的数字；PDF 需要环境里已装 pdfplumber 或 pypdf；线索只是候选，不能替代审计。移植自上游 Adds Up（MIT），不是上游作者发布的版本。",
+  "candidate_id": "CAND-CLD-292",
+  "task_id": "AH-20261113-adds-up",
+  "related_asset_ids": [
+    "3cbddcad49f1496a90d20f7af5acca3a",
+    "fa6d49332f7c4eb7bdae8697f114f24a"
+  ]
+}
