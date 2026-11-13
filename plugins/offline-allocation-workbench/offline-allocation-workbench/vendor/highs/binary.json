@@ -1,0 +1,25 @@
+{
+  "version": "1.16.0",
+  "sha256": "c2f3c6d27708eac52d9c16b9306996c2511780e49c87b292d8617572593eb109",
+  "bytes": 10980040,
+  "source_commit": "f3f113d230429a8c0014b12ab0dd1a3847e58c55",
+  "platform": "darwin",
+  "architectures": [
+    "x86_64",
+    "arm64"
+  ],
+  "minimum_macos": "26.0",
+  "sdk": "26.5",
+  "upstream_archive_sha256": "a3a1504a173aa1a6dffefd3243bcc4bb2d095e04683095fa43cf311edb36321c",
+  "upstream_source_archive_sha256": "05ba0a408e31fe933e4ee4ec9d0e244a0e3c5bd2613e7b138701f62708eceed9",
+  "corresponding_source": "source/HiGHS-1.16.0-corresponding-source.tar.gz",
+  "corresponding_source_sha256": "4a08127fd603af48a8449bf1c98eb876355f41ddbd8a4d4ce3e82704fc380c85",
+  "license_expression": "MIT AND BSD-3-Clause AND Zlib AND LGPL-2.1-or-later",
+  "hconfig": "#ifndef HCONFIG_H_\n#define HCONFIG_H_\n\n#define FAST_BUILD\n#define ZLIB_FOUND\n#define CUPDLP_CPU\n/* #undef CUPDLP_GPU */\n/* #undef HIPO */\n/* #undef HIGHS_SHARED_EXTRAS_LIBRARY */\n#define CMAKE_BUILD_TYPE \"Release\"\n/* #undef HIGHSINT64 */\n/* #undef HIGHS_NO_DEFAULT_THREADS */\n/* #undef HIGHS_HAVE_MM_PAUSE */\n#define HIGHS_HAVE_BUILTIN_CLZ\n/* #undef HIGHS_HAVE_BITSCAN_REVERSE */\n\n#define HIGHS_GITHASH \"f3f113d\"\n#define HIGHS_VERSION_MAJOR 1\n#define HIGHS_VERSION_MINOR 16\n#define HIGHS_VERSION_PATCH 0\n\n#endif /* HCONFIG_H_ */\n",
+  "system_dynamic_libraries": [
+    "/usr/lib/libz.1.dylib",
+    "/usr/lib/libc++.1.dylib",
+    "/usr/lib/libSystem.B.dylib"
+  ],
+  "unmodified_upstream_binary": true
+}

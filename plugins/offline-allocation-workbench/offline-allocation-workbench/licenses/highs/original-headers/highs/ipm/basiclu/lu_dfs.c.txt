@@ -1,0 +1,9 @@
+/*
+ * lu_dfs.c
+ *
+ * Copyright (C) 2016-2018  ERGO-Code
+ *
+ * Depth first search in a graph
+ *
+ */
+

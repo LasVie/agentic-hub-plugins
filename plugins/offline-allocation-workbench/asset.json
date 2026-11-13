@@ -1,0 +1,26 @@
+{
+  "type": "agent-plugin",
+  "name": "offline-allocation-workbench",
+  "version": "1.0.0",
+  "display_name": "离线资源配置优化台",
+  "description": "离线选择预算内的整项作业，比较扩容方案，显示真实求解状态并导出可核对结果。",
+  "publisher": "Cai Zhenze",
+  "category": "数据与科学研究",
+  "tags": [
+    "资源优化",
+    "离线求解",
+    "预算比较"
+  ],
+  "functional_tags": [
+    "Binary Resource Allocation",
+    "Mixed Integer Optimization",
+    "Capacity What-if"
+  ],
+  "scope": "macOS26+，Intel/Apple Silicon，Python3.11+与兼容原生插件SDK；1至100项不可拆分作业，1至8种资源，有界非负整数预算/用量/价值。求解5秒、进程8秒；不包含排程、连续/负数决策、真实业务效益保证或数学形式化证明。",
+  "candidate_id": "Not Applicable",
+  "task_id": "AH-20261112-offline-allocation-workbench",
+  "related_asset_ids": [
+    "45e9aed9a31a46e1a9d6c2eb92c039ef",
+    "3883980b474348049a57709ec9c75dad"
+  ]
+}

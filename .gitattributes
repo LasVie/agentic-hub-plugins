@@ -110,3 +110,7 @@
 # Preserve the exact a11y-enforcer payload, license and package hashes.
 /plugins/a11y-enforcer/** -text
 /releases/agent-plugin/a11y-enforcer/** -text
+
+# Preserve the exact confirmed HiGHS payload, notices and package bytes.
+/plugins/offline-allocation-workbench/** -text
+/releases/agent-plugin/offline-allocation-workbench/** -text

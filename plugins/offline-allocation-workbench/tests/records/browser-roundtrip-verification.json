@@ -1,0 +1,25 @@
+{
+  "task_id": "AH-20261112-offline-allocation-workbench",
+  "version": "1.0.0",
+  "native_zip_sha256": "5bf081fdd1216bb801d855fedb9642499091cb3901255c8c1f8c3f7d9607d147",
+  "scope": "AI-operated Chrome on unchanged installed payload; not user manual acceptance",
+  "passed": [
+    "CSV download and saved-byte parse: objective14, selected C/D",
+    "JSON download and saved-byte parse: machine capacity6",
+    "Reset confirmed through native browser dialog: machine5 and result cleared",
+    "Actual file chooser imported downloaded JSON, strict validation and real recomputation: B/C objective17",
+    "Close confirmation displayed; owned lifecycle/API stop and stopped-state verification"
+  ],
+  "not_verified": [
+    "Completing Close using the browser confirmation: automation controls stalled",
+    "Running-model chat dispatch; user manual acceptance"
+  ],
+  "test_service_stopped": true,
+  "manual_session_refreshed": true,
+  "screenshot": {
+    "path": "browser-import-verified.png",
+    "sha256": "ce9151465e12a0863080c86758dd36171af23079cb6155fe52872dc8bd229e8c",
+    "kind": "AI verification, not original user screenshot"
+  },
+  "download_evidence": "browser-downloads.json"
+}
