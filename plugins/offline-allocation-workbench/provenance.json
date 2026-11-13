@@ -1,0 +1,338 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "upstream_name": "HiGHS",
+  "display_name": "离线资源配置优化台",
+  "internal_slug": "offline-allocation-workbench",
+  "owner": "Cai Zhenze",
+  "task_id": "AH-20261112-offline-allocation-workbench",
+  "candidate_id": null,
+  "review_date": "2026-11-12",
+  "audit_file": "SOURCE_REVIEW.md",
+  "sources": [
+    {
+      "url": "https://github.com/ERGO-Code/HiGHS",
+      "revision": "f3f113d230429a8c0014b12ab0dd1a3847e58c55",
+      "version": "1.16.0",
+      "license_expression": "MIT AND BSD-3-Clause AND Zlib AND LGPL-2.1-or-later",
+      "license_evidence": [
+        {
+          "path": "licenses/highs/AUTHORS",
+          "sha256": "16c676ba3d06c94e99186cee4552cd337238495a6c7bd6a2bacb61a67b94b648"
+        },
+        {
+          "path": "licenses/highs/EXTERNAL_DEPENDENCIES.md",
+          "sha256": "84823c3ce16f63698870f1748200fedc207aa241a9782868c72872a19639bf3f"
+        },
+        {
+          "path": "licenses/highs/LICENSE",
+          "sha256": "795e6090936bcf2e1a0bfb339053de0c5bb6f3102035ead0ecc0ed4a7c41f1b7"
+        },
+        {
+          "path": "licenses/highs/REBUILD.zh-CN.md",
+          "sha256": "c61cc9a52900646cc102044dcfb4765ce77d9b9d8791e18c95f337144b0f3c05"
+        },
+        {
+          "path": "licenses/highs/UPSTREAM_THIRD_PARTY_NOTICES.md",
+          "sha256": "a93082ab82d5f0a01c86b48a142ccea2ed2175f7dccb9e95a04770f4e2ae39a2"
+        },
+        {
+          "path": "licenses/highs/amd/LICENSE",
+          "sha256": "e50fdd9a587f4860ce1d503b94576bfff47bccc421f758d1bdc8706c8cd36108"
+        },
+        {
+          "path": "licenses/highs/basiclu/LICENSE",
+          "sha256": "5e33126f0888989c8ff1f74effc7228a2b8e1d1e46e078e82a74137c74ff90ed"
+        },
+        {
+          "path": "licenses/highs/cli11/LICENSE",
+          "sha256": "52eb747df24ee120dbcd952075b6354f1214a5cbab5b3e71d80ffa61df9d59e7"
+        },
+        {
+          "path": "licenses/highs/csparse/GPL-2.0.txt",
+          "sha256": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6"
+        },
+        {
+          "path": "licenses/highs/csparse/LICENSE",
+          "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95"
+        },
+        {
+          "path": "licenses/highs/csparse/NOTICE",
+          "sha256": "860590b6bc331e88731d870e1f0d9353550c5cee336f8887507e82265935ad9e"
+        },
+        {
+          "path": "licenses/highs/cupdlp/AUTHORS",
+          "sha256": "3939941dcbab3d555c09d7c8c3b80e6def3caea887da7c28da9e37dde876b711"
+        },
+        {
+          "path": "licenses/highs/cupdlp/LICENSE",
+          "sha256": "41c622a03c428fa0ead1fd81ff7c2bbd84dab7c852ad83e11920ca0e64945ab4"
+        },
+        {
+          "path": "licenses/highs/cupdlp/SPARSE_PROVENANCE.txt",
+          "sha256": "4f622570ebed681d1e7f93b89d866de7855587e4ea59f99d33ffdc7b53518e23"
+        },
+        {
+          "path": "licenses/highs/cupdlp/UPSTREAM_COMPONENT_NOTICES.txt",
+          "sha256": "aeec97d24d0603c0333c0a6ca888971ba9a40fdfa63f699e8ce704fca7857759"
+        },
+        {
+          "path": "licenses/highs/cupdlp/UPSTREAM_ORIGIN.md",
+          "sha256": "a8164ab6005666e8e7c81871c13f5ee049a9c1f078e7f27bf5c26298eeca5b96"
+        },
+        {
+          "path": "licenses/highs/ipx/LICENSE",
+          "sha256": "51d39f4b00c0a6a1229dfadf4ff65bf9cb92fbc6463aaf9f9ba5db73edcac3a3"
+        },
+        {
+          "path": "licenses/highs/original-headers/extern/pdqsort/pdqsort.h.txt",
+          "sha256": "cf3271a6e3adc9b12f50b33c900f385956bb51563b1b0bee4c892cc9ef9b3d18"
+        },
+        {
+          "path": "licenses/highs/original-headers/extern/zstr/zstr.hpp.txt",
+          "sha256": "e32efa73bf0b6cb4b8795dab341078b4c31d03bb32b5046f00f054779be75d31"
+        },
+        {
+          "path": "licenses/highs/original-headers/highs/ipm/basiclu/lu_dfs.c.txt",
+          "sha256": "9f73d91fb1988b2ff58d6b9cbef447877a018e77e485ec99bcf7172bed06d5a0"
+        },
+        {
+          "path": "licenses/highs/original-headers/highs/ipm/ipx/kkt_solver_diag.cc.txt",
+          "sha256": "7e82107f63af5480f9db5bd8b0d5a1bc5f0481a5a46b867d1dea0cb2025ad975"
+        },
+        {
+          "path": "licenses/highs/original-headers/highs/ipm/ipx/sparse_utils.h.txt",
+          "sha256": "f70c05e81b21e89b7e709c7812fd13e52d96e1821b1bd023988ea0e1d57a4d9a"
+        },
+        {
+          "path": "licenses/highs/original-headers/highs/pdlp/cupdlp/cupdlp_cs.c.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "licenses/highs/pdqsort/LICENSE",
+          "sha256": "323fc18e35fcf058d69d684022ef844f206cb8fefb2bac1298fa1767e0b9ae38"
+        },
+        {
+          "path": "licenses/highs/rcm/LICENSE",
+          "sha256": "0d706fbfd83795f271c730a679ce8a84c2f922aade7d9fe0af518e7e6b5de3e5"
+        },
+        {
+          "path": "licenses/highs/zstr/LICENSE",
+          "sha256": "bd61d5fb15992f4c188a0f96dd836b20d449cd080b4e949ab89f9eda3f61c59a"
+        }
+      ],
+      "scope": "Unmodified official universal macOS CLI, CLI11/pdqsort/zstr/IPX/BasicLU/cuPDLP CPU, CSparse-derived adapters and required AMD/RCM/BLAS interface headers; complete corresponding combined CLI source bundled. Optional provider implementations and test framework omitted; five source files receive dated license comments only."
+    },
+    {
+      "url": "https://github.com/ERGO-Code/ipx",
+      "revision": "e6cbac171d42bbb9b3c01b382a1c3392d84d0ce3",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/highs/ipx/LICENSE",
+          "sha256": "51d39f4b00c0a6a1229dfadf4ff65bf9cb92fbc6463aaf9f9ba5db73edcac3a3"
+        }
+      ],
+      "scope": "License evidence for integrated IPX; MIT option selected. Actual numerical source is the HiGHS pinned snapshot, not this later repository tree; CSparse-derived parts retain LGPL terms."
+    },
+    {
+      "url": "https://github.com/ERGO-Code/basiclu",
+      "revision": "a2828782151288efa5e2cb2e0c1ac21925ed9db9",
+      "license_expression": "MIT",
+      "license_evidence": [
+        {
+          "path": "licenses/highs/basiclu/LICENSE",
+          "sha256": "5e33126f0888989c8ff1f74effc7228a2b8e1d1e46e078e82a74137c74ff90ed"
+        }
+      ],
+      "scope": "License evidence for integrated BasicLU; MIT option selected. Actual numerical source is the HiGHS pinned snapshot; CSparse-derived lu_dfs.c retains LGPL terms."
+    },
+    {
+      "url": "https://github.com/COPT-Public/cuPDLP-C",
+      "revision": "7b94c41efca42fa176a129a935b59718e1455fad",
+      "license_expression": "MIT AND LGPL-2.1-or-later",
+      "license_evidence": [
+        {
+          "path": "licenses/highs/csparse/LICENSE",
+          "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95"
+        },
+        {
+          "path": "licenses/highs/csparse/NOTICE",
+          "sha256": "860590b6bc331e88731d870e1f0d9353550c5cee336f8887507e82265935ad9e"
+        },
+        {
+          "path": "licenses/highs/cupdlp/LICENSE",
+          "sha256": "41c622a03c428fa0ead1fd81ff7c2bbd84dab7c852ad83e11920ca0e64945ab4"
+        },
+        {
+          "path": "licenses/highs/cupdlp/SPARSE_PROVENANCE.txt",
+          "sha256": "4f622570ebed681d1e7f93b89d866de7855587e4ea59f99d33ffdc7b53518e23"
+        }
+      ],
+      "scope": "HiGHS integration README pins this source family/revision. COPT-Public MIT grant retained for project-owned code; CSparse adapters separately LGPL. Later official notice evidence at f81f459235c948b4a53fc96f359847eaedd4f0a9 is evidence only, not new numerical code."
+    },
+    {
+      "url": "https://github.com/DrTimothyAldenDavis/SuiteSparse",
+      "revision": "v7.11.0",
+      "license_expression": "LGPL-2.1-or-later",
+      "license_evidence": [
+        {
+          "path": "licenses/highs/csparse/LICENSE",
+          "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95"
+        },
+        {
+          "path": "licenses/highs/csparse/NOTICE",
+          "sha256": "860590b6bc331e88731d870e1f0d9353550c5cee336f8887507e82265935ad9e"
+        }
+      ],
+      "scope": "CSparse license-source evidence only; exact original CSparse revision used by adaptations is not specified upstream. Full corresponding source plus LGPL6(a) rebuild/relink rights are supplied."
+    }
+  ],
+  "reused_paths": [
+    "vendor/highs/bin/highs",
+    "vendor/highs/source/HiGHS-1.16.0-corresponding-source.tar.gz",
+    "runtime/runtime.py",
+    "runtime/server.py"
+  ],
+  "upstream_artifact": {
+    "url": "https://github.com/ERGO-Code/HiGHS/releases/download/v1.16.0/highs-1.16.0-arm-apple-static-mit.tar.gz",
+    "sha256": "a3a1504a173aa1a6dffefd3243bcc4bb2d095e04683095fa43cf311edb36321c",
+    "bytes": 11095570,
+    "copied_archive_member": "bin/highs",
+    "copied_payload_sha256": "c2f3c6d27708eac52d9c16b9306996c2511780e49c87b292d8617572593eb109",
+    "source_archive_url": "https://github.com/ERGO-Code/HiGHS/releases/download/v1.16.0/source-archive.tar.gz",
+    "source_archive_sha256": "05ba0a408e31fe933e4ee4ec9d0e244a0e3c5bd2613e7b138701f62708eceed9",
+    "source_archive_git_head_verified": "f3f113d230429a8c0014b12ab0dd1a3847e58c55"
+  },
+  "corresponding_source": {
+    "path": "vendor/highs/source/HiGHS-1.16.0-corresponding-source.tar.gz",
+    "sha256": "4a08127fd603af48a8449bf1c98eb876355f41ddbd8a4d4ce3e82704fc380c85",
+    "bytes": 1583197,
+    "entries": 606,
+    "original_files": 598,
+    "source_manifest_path": "HiGHS-1.16.0/SOURCE_MANIFEST.json",
+    "source_manifest_sha256": "fc54460b91183d1aef7eda08c52ea1c8d4f8fb6eb8a9226b3811ea7636547240",
+    "modified_files": {
+      "highs/ipm/basiclu/lu_dfs.c": {
+        "original_sha256": "33d03165f67cccc6da62593115eada336d9d28dc60882463c5b02cb9c93e31ec",
+        "distributed_sha256": "0c371bf70c4684c178efaae6f892b469378d502db2130d238e92ad4c257a9791",
+        "change": "License/origin comment prepended on 2026-11-12; numerical code unchanged."
+      },
+      "highs/ipm/ipx/sparse_utils.cc": {
+        "original_sha256": "7931398782af6a556628d7ffe2d376b92a6c0c8bcfaf3c49ae6c2a7d0cce973c",
+        "distributed_sha256": "7971324c61c5a8a8984ebd73ebb9b1349a3f82d625e2948af21220d60ed2473b",
+        "change": "License/origin comment prepended on 2026-11-12; numerical code unchanged."
+      },
+      "highs/ipm/ipx/sparse_utils.h": {
+        "original_sha256": "23eb0c877727f5b81163ac022ad4a06d284b51426483d6175fb3fa48b38827ff",
+        "distributed_sha256": "d8663f975395f56bdc9f4231b1277d339be766330a692ea5e8aa7b0516098d40",
+        "change": "License/origin comment prepended on 2026-11-12; numerical code unchanged."
+      },
+      "highs/pdlp/cupdlp/cupdlp_cs.c": {
+        "original_sha256": "fc0d8f96dd8230f1fade7b0331f5ad977fdf6d75689badf62a8cbc14737e0b84",
+        "distributed_sha256": "67a3ce311aa367db10777f0639cc51e4b8d1ddd92d6fa5dc93428ce091622c43",
+        "change": "License/origin comment prepended on 2026-11-12; numerical code unchanged."
+      },
+      "highs/pdlp/cupdlp/cupdlp_cs.h": {
+        "original_sha256": "50c9c9b144c113d8320c3b4fbfbb34a93333998909bed483e3c74a81aa394108",
+        "distributed_sha256": "b2035b954f1782d6e6b8e9ebf6c32cd1e4e5d84d036885956e079eda53afc291",
+        "change": "License/origin comment prepended on 2026-11-12; numerical code unchanged."
+      }
+    },
+    "rebuild_instructions": "licenses/highs/REBUILD.zh-CN.md",
+    "omitted_unselected_optional_source_count": 69
+  },
+  "team_authored_scope": "New allocation-specific model/validation, HiGHS adapter/sandbox executor, Tool/Skill integration and Chinese UI; maintained lifecycle, loopback transport, deterministic packager and verification scaffolding adapted from Cai Zhenze’s queue-capacity-workbench at a858017d8f3fa928647e05027f99165c38a1e071. No repository-wide license is asserted.",
+  "final_zip_audit": {
+    "status": "passed",
+    "date": "2026-11-12",
+    "version": "1.0.0",
+    "native": {
+      "path": "plugins/offline-allocation-workbench/test-packages/offline-allocation-workbench-1.0.0-workswarm.zip",
+      "sha256": "5bf081fdd1216bb801d855fedb9642499091cb3901255c8c1f8c3f7d9607d147",
+      "bytes": 12766435,
+      "payload_files": 45,
+      "zip_crc_passed": true,
+      "path_safety_passed": true,
+      "extracted_payload_matches_zip": true,
+      "stored_zip_members": true
+    },
+    "canonical": {
+      "path": "releases/agent-plugin/offline-allocation-workbench/1.0.0/offline-allocation-workbench-1.0.0.zip",
+      "sha256": "35eae9aa6c620da7b901ccb6c73dbcb477bce557ea83f84b8b1cda1930fcf089",
+      "bytes": 12772148,
+      "payload_files": 45,
+      "zip_crc_passed": true,
+      "path_safety_passed": true,
+      "extracted_payload_matches_zip": true,
+      "stored_zip_members": true
+    },
+    "payloads_equal_to_each_other_and_current_reviewed_source": true,
+    "payload_file_count": 45,
+    "payload_manifest_sha256": "371ead404e8490b3f398495c746f8130462ecf4f06ceed435bcfb9105e66c54e",
+    "license_evidence_files_verified": 26,
+    "all_recorded_license_hashes_match_both_extracted_packages": true,
+    "engine_sha256": "c2f3c6d27708eac52d9c16b9306996c2511780e49c87b292d8617572593eb109",
+    "corresponding_source": {
+      "path": "vendor/highs/source/HiGHS-1.16.0-corresponding-source.tar.gz",
+      "sha256": "4a08127fd603af48a8449bf1c98eb876355f41ddbd8a4d4ce3e82704fc380c85",
+      "entries": 606,
+      "original_files_verified": 598,
+      "source_manifest_sha256": "fc54460b91183d1aef7eda08c52ea1c8d4f8fb6eb8a9226b3811ea7636547240",
+      "five_license_only_modifications_verified": true,
+      "all_required_licenses_and_cli_build_inputs_present": true,
+      "same_source_as_successful_private_universal_rebuild": true
+    },
+    "limitations": [
+      "ZIP/source/legal audit only; it does not replace actual host/tool functional testing or user manual testing.",
+      "macOS26.0+ universal package only; Linux/Windows/older macOS compatibility is not claimed.",
+      "The optional original-header excerpt licenses/highs/original-headers/highs/pdlp/cupdlp/cupdlp_cs.c.txt is empty and is not relied on as attribution evidence; full exact source file with original CSparse origin plus complete notices/licenses is present in the corresponding-source archive."
+    ],
+    "payload_modified_during_audit": false
+  },
+  "repository_reuse": {
+    "source": "plugins/queue-capacity-workbench",
+    "revision": "a858017d8f3fa928647e05027f99165c38a1e071",
+    "owner": "Cai Zhenze",
+    "authority": "Existing own repository work confirmed by current task assignment and source asset publisher metadata; not inferred from GitHub account identity. The user approved this independent plugin build and preservation of other plugins.",
+    "files": [
+      {
+        "source_path": "plugins/queue-capacity-workbench/queue-capacity-workbench/runtime/runtime.py",
+        "destination_path": "plugins/offline-allocation-workbench/offline-allocation-workbench/runtime/runtime.py",
+        "source_sha256": "3d088d2007b50eb093ed03e1edb02899a15de5b8400103bd53d2edf631f4fa18",
+        "adapted_sha256": "8ef691571c14eefb5c148909fcc736ffca0d1dcb9364a9d969856a72437d5b76",
+        "scope": "Ownership-checked state directory/file-lock and start/status/stop lifecycle, bounded subprocess cancellation/output."
+      },
+      {
+        "source_path": "plugins/queue-capacity-workbench/queue-capacity-workbench/runtime/server.py",
+        "destination_path": "plugins/offline-allocation-workbench/offline-allocation-workbench/runtime/server.py",
+        "source_sha256": "124559546a1c7116886783f5ab8d86c0c19218c089e1aa396998fa2ed6cd1113",
+        "adapted_sha256": "7d6d863d2d69c6538e06adfac9910838f9f69e806da46e313cb67cdbc39d7c6f",
+        "scope": "Authenticated ephemeral loopback transport, fixed asset allowlist, origin/host checks and workbench service lifecycle."
+      },
+      {
+        "source_path": "plugins/queue-capacity-workbench/build_packages.py",
+        "destination_path": "plugins/offline-allocation-workbench/build_packages.py",
+        "source_sha256": "b7d822965488771a4bb08b19d0b0c99c9c951a19c9fe482b4918b46c3a9cdc5c",
+        "adapted_sha256": "dd18c0ee9651ee740f4b1b3272d938c69e0777c93b3b0b060ce812269255fd30",
+        "scope": "Deterministic native ZIP/companion artifact packaging from the canonical payload."
+      },
+      {
+        "source_path": "plugins/queue-capacity-workbench/verify_sdk.py",
+        "destination_path": "plugins/offline-allocation-workbench/verify_sdk.py",
+        "source_sha256": "3d13ad304dd6530fa901820bcf0a546aea39f5d82d36a479fc2c6041a22efb89",
+        "adapted_sha256": "893a805e49ef97bcee864d9fe5c6223a4cccc612fa7c6a25f2d02ea890a9bbe5",
+        "scope": "Public SDK verification scaffolding adapted for allocation-specific tools and scenarios."
+      },
+      {
+        "source_path": "plugins/queue-capacity-workbench/verify_workswarm.py",
+        "destination_path": "plugins/offline-allocation-workbench/verify_workswarm.py",
+        "source_sha256": "6ea73efd4e0135652c9d53884df51c2a1b7508e6811aca6e46779cd9c22296b3",
+        "adapted_sha256": "2f9fc0d16419fe493c24bf42c79780ed86151df1fca6e09da1be3e148efd5cbb",
+        "scope": "Native WorkSwarm package import/install verification scaffolding adapted to isolated allocation runtime."
+      }
+    ],
+    "external_vendor_scope": "No SimPy implementation, queue model or queue UI is copied. Existing plugin source, branch, dependencies, tracker records and runtime are unchanged.",
+    "license_statement": "Internal maintained-code adaptation; no external or repository-wide licensing assertion. Preserve applicable existing ownership and source history. New allocation-specific wrapper/model/UI do not imply lifecycle/transport/packager was independently written."
+  }
+}

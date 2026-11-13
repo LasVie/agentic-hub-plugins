@@ -1,0 +1,47 @@
+{
+  "verified_at": "2026-11-12T04:25:35.446824+00:00",
+  "task_id": "AH-20261112-offline-allocation-workbench",
+  "plugin_id": "offline-allocation-workbench",
+  "display_name": "离线资源配置优化台",
+  "version": "1.0.0",
+  "host_commit": "fa91394e42a7af731424222db82b02351e694de9",
+  "native_zip_sha256": "5bf081fdd1216bb801d855fedb9642499091cb3901255c8c1f8c3f7d9607d147",
+  "native_payload_files": 45,
+  "model_requests": 0,
+  "host_code_changes": false,
+  "dependency_scope": "physical unchanged copy; computer-use native dependency absent; not complete frozen lock validation",
+  "scope": "Running local native import/install/catalog; standalone SDK execution is recorded separately; running chat-worker dispatch is untested.",
+  "connection_state_limitation": "For a no-MCP plugin, connected mirrors installation and does not prove native tool execution.",
+  "catalog_before": [],
+  "catalog_after": [
+    {
+      "id": "offline-allocation-workbench",
+      "installed": true,
+      "connection_state": "connected"
+    }
+  ],
+  "passed": true,
+  "frontend_http": 200,
+  "direct_and_proxy_websocket_ping_pong": true,
+  "supported_local_import": true,
+  "supported_local_install": true,
+  "installed_payload_matches_zip": true,
+  "model_config_unchanged": true,
+  "other_plugin_payloads_unchanged": true,
+  "other_plugin_catalog_unchanged": true,
+  "host_source": "Clean archive of local committed baseline, not verified as official packaged stock release.",
+  "python_version": "3.13.5",
+  "openjiuwen_version": "0.1.20",
+  "openjiuwen_commit": "f3f8f576164cc405c046e43079c8ad00ee17f0c4",
+  "network_history": {
+    "initial_blocked_remote_config_dns_lookups": 2,
+    "successful_external_requests": 0,
+    "correction": "Documented JIUWENSWARM_CONFIG_URL=off; only ownership-verified task services restarted.",
+    "additional_blocked_lookups_after_correction_observed": 0,
+    "guard": "Task-only Python audit hook rejects non-loopback getaddrinfo/connect; no host or SDK code changes."
+  },
+  "verification_helper_sha256": "2f9fc0d16419fe493c24bf42c79780ed86151df1fca6e09da1be3e148efd5cbb",
+  "host_source_files_verified": 6943,
+  "dependency_files_verified": 41880,
+  "post_package_execution_source_and_dependencies_unchanged": true
+}

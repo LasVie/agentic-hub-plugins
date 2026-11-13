@@ -1,0 +1,16 @@
+test_binary_hash_guard_and_os_network_denial (test_allocation.AllocationEngine.test_binary_hash_guard_and_os_network_denial) ... ok
+test_boundaries_labels_and_csv_safety (test_allocation.AllocationEngine.test_boundaries_labels_and_csv_safety) ... ok
+test_fixture_expansion_and_impossible (test_allocation.AllocationEngine.test_fixture_expansion_and_impossible) ... ok
+test_invalid_declarative_inputs (test_allocation.AllocationEngine.test_invalid_declarative_inputs) ... ok
+test_real_owned_child_cancellation_and_wall_limit (test_allocation.AllocationEngine.test_real_owned_child_cancellation_and_wall_limit) ... ok
+test_seeded_independent_subsets (test_allocation.AllocationEngine.test_seeded_independent_subsets) ... ok
+test_untrusted_solution_status_and_values (test_allocation.AllocationEngine.test_untrusted_solution_status_and_values) ... ok
+test_invalid_project_recovery_and_state_ownership (test_allocation.AllocationTransport.test_invalid_project_recovery_and_state_ownership) ... ok
+test_owned_start_stop_restart (test_allocation.AllocationTransport.test_owned_start_stop_restart) ... ok
+test_symlink_paths_and_foreign_permissions (test_allocation.AllocationTransport.test_symlink_paths_and_foreign_permissions) ... ok
+test_transport_and_persistence (test_allocation.AllocationTransport.test_transport_and_persistence) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 3.537s
+
+OK

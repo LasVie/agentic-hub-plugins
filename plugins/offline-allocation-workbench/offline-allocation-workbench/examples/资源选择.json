@@ -1,0 +1,55 @@
+{
+  "schema": "offline-allocation/v1",
+  "name": "资源选择 · 双预算",
+  "min_jobs": 0,
+  "resources": [
+    {
+      "id": "labour",
+      "name": "人工",
+      "capacity": 7
+    },
+    {
+      "id": "machine",
+      "name": "机时",
+      "capacity": 5
+    }
+  ],
+  "jobs": [
+    {
+      "id": "A",
+      "name": "作业A",
+      "value": 10,
+      "uses": {
+        "labour": 6,
+        "machine": 2
+      }
+    },
+    {
+      "id": "B",
+      "name": "作业B",
+      "value": 9,
+      "uses": {
+        "labour": 4,
+        "machine": 4
+      }
+    },
+    {
+      "id": "C",
+      "name": "作业C",
+      "value": 8,
+      "uses": {
+        "labour": 3,
+        "machine": 2
+      }
+    },
+    {
+      "id": "D",
+      "name": "作业D",
+      "value": 6,
+      "uses": {
+        "labour": 2,
+        "machine": 3
+      }
+    }
+  ]
+}
