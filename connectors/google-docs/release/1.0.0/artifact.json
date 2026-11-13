@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "asset_type": "agent-mcp",
+  "name": "google-docs",
+  "display_name": "Google 文档连接器",
+  "version": "1.0.0",
+  "task_id": "AH-20261113-google-docs",
+  "internal_asset_id": "repo:agent-mcp:google-docs",
+  "created_at_utc": "2026-11-13T08:48:03.901692+00:00",
+  "artifacts": [
+    {
+      "form": "native",
+      "path": "connectors/google-docs/test-packages/history/google-docs-1.0.0-native.zip",
+      "filename": "google-docs-1.0.0-native.zip",
+      "sha256": "d06b174de216f1b1747a959d9f03ddf888dc06964abbd6deaf1014b2821adaee",
+      "size_bytes": 96013
+    },
+    {
+      "form": "agent-mcp_wrapped",
+      "path": "connectors/google-docs/release/1.0.0/google-docs-1.0.0-agent-mcp.zip",
+      "filename": "google-docs-1.0.0-agent-mcp.zip",
+      "sha256": "2cb4d8106002ce5308e803e19eef8578f740b251c89c1aaaeaed8948051646b4",
+      "size_bytes": 39229
+    }
+  ],
+  "payload_sha256": {
+    "README.md": "c4ddf631e358819a6b90c26cf461fa68bedd0467cfc0f2740804af275816d069",
+    "THIRD_PARTY_NOTICES.md": "cbf17699a49f08b83aea34cc242849a8136298bc6191cc69d0e14388e0e724e9",
+    "bootstrap_lock.py": "3fc47a2daf6c60d2a006584e342b14f7471db27055f86c43fe0225186459db25",
+    "cli.json": "0d0f0f11c484a2223eb53a575f0303617cab60c0d559e56d3fb5097317890d08",
+    "google_api.py": "a4dab67257d098cd17716e5f91b4ba9a04fc44567bb16f5b88e509ec7e527b77",
+    "launcher.py": "24e29925fdc33f1de77b1415f47862d36d8bfa88f22877c74f43c4aca5682050",
+    "licenses/google-auth/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "licenses/google-auth-oauthlib/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "licenses/requests/LICENSE": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b",
+    "manifest.json": "e55572432755e714519a24f75ad76b0f20ec66ceb51203e73767ff30ffb3a77b",
+    "oauth.py": "1b8b9ff7083368321282f2ea99fa1c8e39ecc8581f8088f40a2747552e0c4723",
+    "requirements.in": "e67055fe9c69ee3c5a048963ff3cb498fc0240d7da7980ebffba9af92101493a",
+    "requirements.txt": "8cba403f6a10b86445df444e7e93d66aaeabc209ce90c22a8f09b82ff8dad51e",
+    "service.py": "130f85a540cd82fae66373a5a0a2de6d35bf63767daf958108fd898fa0441188",
+    "skills/google-docs-guide/SKILL.md": "13e558cc56d909049b1d2c1410cdcf7114e30e81b3d5d91da5f35d324a0a7843"
+  },
+  "review_files_sha256": {
+    "SOURCE_REVIEW.md": "160933d530ffa7c7f381446be9ec709865d536c0b5d5b252137a6650c6fe811b",
+    "TEST_REPORT.md": "ecaec5fd48f43c7e8027e93fb6690b40b5961e2e082f5556a19b7bcfeb917ad8",
+    "provenance.json": "45cbbb31a4175cc12486fac128caba1ae11a05da469279926325b27c065c94ed"
+  },
+  "official_cli": {
+    "distribution": "openjiuwen-agentichub",
+    "version": "0.0.1",
+    "source": "https://github.com/openJiuwen-ai/skillhub",
+    "source_commit": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+    "commands": [
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/../gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "init",
+        "google-docs",
+        "--type",
+        "agent-mcp"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/../gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "validate",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-tyd5ibeg/google-docs"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/../gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "pack",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-tyd5ibeg/google-docs",
+        "--output",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-tyd5ibeg/out"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/../gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/tools/asset_release.py",
+        "preflight",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/connectors/google-docs/google-docs"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/../gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/tools/asset_release.py",
+        "preflight",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-tyd5ibeg/native.zip"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/../gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/tools/asset_release.py",
+        "preflight",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-tyd5ibeg/out/google-docs-1.0.0.zip"
+      ]
+    ]
+  },
+  "checks": [
+    {
+      "step": "official_init",
+      "output": "Plugin initialized at: /private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-tyd5ibeg/google-docs"
+    },
+    {
+      "step": "official_validate",
+      "output": "Plugin validation passed."
+    },
+    {
+      "step": "official_pack",
+      "output": "Packed: /private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-tyd5ibeg/out/google-docs-1.0.0.zip"
+    },
+    {
+      "step": "javascript_preflight_native_source",
+      "output": "{\n  \"path\": \"/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/connectors/google-docs/google-docs\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_native_zip",
+      "output": "{\n  \"path\": \"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-tyd5ibeg/native.zip\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_wrapped_zip",
+      "output": "{\n  \"path\": \"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-tyd5ibeg/out/google-docs-1.0.0.zip\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    }
+  ],
+  "verification_limits": "Packaging/JavaScript preflight and byte-equivalence only; not authenticated provider access or user manual-test acceptance."
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "type": "agent-mcp",
+  "name": "google-sheets",
+  "display_name": "Google 表格连接器",
+  "version": "1.0.0",
+  "owner": "Song Haoran",
+  "task_id": "AH-20261113-google-sheets",
+  "candidate_id": null,
+  "internal_asset_id": "repo:agent-mcp:google-sheets",
+  "description": "Create spreadsheets, read or update bounded ranges, and append rows.",
+  "native_path": "google-sheets"
+}
