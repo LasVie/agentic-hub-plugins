@@ -30,10 +30,12 @@ All six inline images are readable and associated with the current title, versio
 
 Known functional blocking issues: **none reported by the user**, who explicitly confirms the complete manual test passed. Historical AI Close-dialog automation and host dependency-subset limitations remain documented separately; they must not be misrepresented as a failed user test or as additional independently instrumented verification.
 
-## Delivery access hold
+## Delivery access hold — resolved 2026-11-13
 
 The six original paths supplied by the user are in macOS `NSIRD_screencaptureui_*` temporary folders. Shell listings initially appeared empty, but an explicit access check returned `Operation not permitted`. Finder visibly shows the first original PNG at the supplied path, so that empty listing does **not** prove deletion. An attempted ordinary Finder file copy did not produce an uploadable preserved original, and the subsequent folder controls failed. No permissions were weakened, no inline preview was recaptured/recompressed, and no image hash was invented.
 
-Original file-byte preservation and GitHub upload/readback are therefore **pending access**, even though the six images and valid confirmation have been received in this conversation. The required pre-push/PR material gate remains on hold. No delivery push, PR, merge, Release or Hub action has occurred. Copying the unchanged original PNGs into the local `user-test-originals/` directory will unblock preservation and hash verification without changing the tested package or requiring a retest.
+The user subsequently copied the six unchanged originals into `user-test-originals/` and replied **Done**. All six PNGs are readable and their dimensions match the original attachment metadata. The saving application assigned `ChatGPT Image ...` filenames; those supplied names are preserved and mapped to the original attachment names in `user-test-originals/index.json`, with SHA-256, dimensions, sizes and captions. The agent did not resize, recompress or edit any image. Direct byte comparison to the OS-protected temporary source was unavailable, so provenance is the user-provided unchanged copy; GitHub attachment readback must match these exact files.
+
+The screenshot access blocker is resolved and the pre-push materials gate is complete: exact Chinese source/ZIPs, license/source review, functional evidence, instructions, valid user confirmation and six original user screenshots are available. This does not claim PR attachment, CI or merge success before those actions occur. No Release or Hub action is authorized.
 
 Project Lead acceptance is separate and remains pending. Asset Ledger remains unchanged.

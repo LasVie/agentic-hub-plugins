@@ -1,0 +1,67 @@
+{
+  "task_id": "AH-20261112-offline-allocation-workbench",
+  "candidate_id": "Not Applicable",
+  "display_name": "离线资源配置优化台",
+  "version": "1.0.0",
+  "native_zip_sha256": "5bf081fdd1216bb801d855fedb9642499091cb3901255c8c1f8c3f7d9607d147",
+  "canonical_zip_sha256": "35eae9aa6c620da7b901ccb6c73dbcb477bce557ea83f84b8b1cda1930fcf089",
+  "received": "2026-11-13 Asia/Singapore; current Main3.0 conversation, user confirmed copied unchanged originals and replied Done",
+  "provenance": "User-preserved copies. All dimensions match original attachment metadata. Agent did not resize, recompress or edit. Direct byte comparison to the protected temporary source remains unavailable; upload readback will compare these provided files.",
+  "public_sharing_review": "No visible keys, credentials, private contacts or capability token URLs. Authorized local test directory appears in the chat capture.",
+  "files": [
+    {
+      "attachment_filename": "Screenshot 2026-11-13 at 5.23.10 PM.png",
+      "preserved_filename": "ChatGPT Image 13 Nov 2026, 17_48_33.png",
+      "sha256": "64c3502ae22095ca7725851f4afb4430c6c8664749a1a14d6bd3de34d0ac99bd",
+      "bytes": 532522,
+      "width": 3232,
+      "height": 1972,
+      "caption": "Default optimum14, C+D"
+    },
+    {
+      "attachment_filename": "Screenshot 2026-11-13 at 5.23.25 PM.png",
+      "preserved_filename": "ChatGPT Image 13 Nov 2026, 17_48_48.png",
+      "sha256": "cacb1376122a5f41e016c3c09282f9acf144d899a4c32134215a8625cf7d91b4",
+      "bytes": 238830,
+      "width": 574,
+      "height": 1508,
+      "caption": "Actual WorkSwarm tool results14/17/infeasible and workbench start"
+    },
+    {
+      "attachment_filename": "Screenshot 2026-11-13 at 5.24.00 PM.png",
+      "preserved_filename": "ChatGPT Image 13 Nov 2026, 17_48_53.png",
+      "sha256": "4cebeffaed973a169ed4313aea9ab33d571a1956eba772484499875e04bfb469",
+      "bytes": 475560,
+      "width": 3284,
+      "height": 1774,
+      "caption": "Expanded capacity optimum17, B+C"
+    },
+    {
+      "attachment_filename": "Screenshot 2026-11-13 at 5.24.12 PM.png",
+      "preserved_filename": "ChatGPT Image 13 Nov 2026, 17_48_57.png",
+      "sha256": "036f298a52dbc9f4955e2db97738b046c7e658e8bc31d4d1a3182a89c8bf55a2",
+      "bytes": 404063,
+      "width": 3244,
+      "height": 1814,
+      "caption": "Infeasible with minimum3jobs; export disabled"
+    },
+    {
+      "attachment_filename": "Screenshot 2026-11-13 at 5.24.32 PM.png",
+      "preserved_filename": "ChatGPT Image 13 Nov 2026, 17_49_00.png",
+      "sha256": "e7e9c7100324d2d68e3775733ce699172ba2d75215a32298cb749df897975185",
+      "bytes": 473582,
+      "width": 3248,
+      "height": 1768,
+      "caption": "Edited values: selectA, objective12"
+    },
+    {
+      "attachment_filename": "Screenshot 2026-11-13 at 5.25.17 PM.png",
+      "preserved_filename": "ChatGPT Image 13 Nov 2026, 17_49_03.png",
+      "sha256": "f8460f01895f31a0abcf6ffcbe65c93f78b5d9e50ea8bb36d782ce91d3c845bf",
+      "bytes": 473271,
+      "width": 3292,
+      "height": 1734,
+      "caption": "Edited labour requirements: selectB, objective11"
+    }
+  ]
+}
