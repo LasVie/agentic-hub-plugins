@@ -1,0 +1,30 @@
+{
+  "id": "offline-satellite-orbit-workbench",
+  "name": "离线卫星轨道工作台",
+  "description": "编辑单颗卫星的 TLE 或 OMM，离线计算有限时间段的轨道、地面投影、几何仰角与距离，并导出 CSV、JSON 和 SVG。",
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "display_name": {
+    "zh": "离线卫星轨道工作台",
+    "en": "Offline Satellite Orbit Workbench"
+  },
+  "display_description": {
+    "zh": "从轨道要素计算可检查的卫星轨道与观测几何。",
+    "en": "Compute and inspect satellite orbits and observer geometry from orbital elements."
+  },
+  "category": "Others",
+  "tags": [
+    {"zh": "卫星轨道", "en": "Satellite orbits"},
+    {"zh": "离线计算", "en": "Offline computation"}
+  ],
+  "skills": [{"dir": "skills/satellite-orbit-workbench", "mode": "all"}],
+  "tools": [{
+    "file": "tools/orbit_tools.py",
+    "class": "SatelliteOrbitWorkbenchTool",
+    "display_name": {"zh": "管理卫星轨道工作台", "en": "Manage satellite-orbit workbench"},
+    "display_description": {
+      "zh": "只读查询或经确认启动、停止本插件的独立本机服务。",
+      "en": "Check, start or stop this plugin's verified local service."
+    }
+  }]
+}

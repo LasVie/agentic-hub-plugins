@@ -1,0 +1,51 @@
+{
+  "version": "1.0.0",
+  "sample_count": 1441,
+  "interval_count": 7,
+  "csv_rows": 1442,
+  "svg_well_formed": true,
+  "files": {
+    "json": {
+      "path": "/Users/IDLE_And_R/Downloads/卫星轨道-5-1.0.0.json",
+      "bytes": 810779,
+      "sha256": "2ee359bf61bf4c02ad3fb9643af354615efc48286aeff205c4b934940213bc40"
+    },
+    "csv": {
+      "path": "/Users/IDLE_And_R/Downloads/卫星轨道-5-1.0.0.csv",
+      "bytes": 432990,
+      "sha256": "3172dfb44900c210609f8ceac7f938d33677c07be32c2977ebf3c427a13f222c"
+    },
+    "svg": {
+      "path": "/Users/IDLE_And_R/Downloads/卫星轨道-5-1.0.0.svg",
+      "bytes": 62925,
+      "sha256": "7cca32ef0c2d51940e82496585493702b7d5d7a7ee28ae80b69e510265aec0f0"
+    }
+  },
+  "actual_installed_payload": true,
+  "workbench_url": "http://127.0.0.1:60310/ed271aba78664bb9ed7e87aabc38d69f4a66c9116f53212e8ff8767b8c93ab7a/web/index.html",
+  "observed_cases": [
+    "TLE1441samples7intervals",
+    "sampleSliderFinalReadoutAndPage49",
+    "observerChange",
+    "inputInvalidation",
+    "invalidUtcRecovery",
+    "tleChecksumRecovery",
+    "duplicateOmmRecovery",
+    "OMMExample",
+    "actualFilePickerOMMImport",
+    "JSONCSVSVGDownloadsParsed"
+  ],
+  "developer_screenshot": "/private/tmp/satellite-orbit-browser-evidence/orbit-final.png",
+  "manual_user_testing": "pending",
+  "running_chat_dispatch": "pending",
+  "browser_cancel_and_timeout": "unverified: permitted calculations completed before cancellation click",
+  "full_network_trace": "not exercised; static audit only",
+  "verification_date": "2026-11-12",
+  "subsequent_user_confirmation": {
+    "date": "2026-11-13",
+    "status": "passed",
+    "running_chat_dispatch": "verified by original user chat screenshot",
+    "report": "RPT-20261113-offline-satellite-orbit-workbench-confirmed",
+    "evidence_manifest": "evidence/user-testing-1.0.0/originals.json"
+  }
+}

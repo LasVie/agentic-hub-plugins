@@ -111,6 +111,10 @@
 /plugins/a11y-enforcer/** -text
 /releases/agent-plugin/a11y-enforcer/** -text
 
+# Preserve satellite engine/license bytes and deterministic plugin packages.
+/plugins/offline-satellite-orbit-workbench/** -text
+/releases/agent-plugin/offline-satellite-orbit-workbench/** -text
+
 # Preserve the exact confirmed HiGHS payload, notices and package bytes.
 /plugins/offline-allocation-workbench/** -text
 /releases/agent-plugin/offline-allocation-workbench/** -text

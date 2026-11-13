@@ -1,14 +1,21 @@
 {
   "mode": "native",
   "permission_status": "original",
-  "version": "1.0.0",
-  "review_date": "2026-11-10",
-  "task_id": "AH-20261110-gmail-readonly",
+  "version": "1.5.1",
+  "review_date": "2026-11-11",
+  "task_id": "AH-20261111-gmail-connection",
   "candidate_id": null,
-  "owner": "Cai Zhenze",
+  "owner": "Song Haoran",
+  "previous_delivery": {
+    "version": "1.0.0",
+    "task_id": "AH-20261110-gmail-readonly",
+    "owner": "Cai Zhenze",
+    "revision": "ab3bab18fc746f76954ffffcbf0d113a09fedcff",
+    "url": "https://github.com/LasVie/agentic-hub-plugins/pull/85"
+  },
   "naming": {
     "original_request": "Gmail",
-    "display_name": "Gmail 只读邮件连接器",
+    "display_name": "Gmail 邮件连接器",
     "slug": "gmail-readonly"
   },
   "audit_file": "SOURCE_REVIEW.md",
@@ -52,45 +59,13 @@
     {
       "url": "https://developers.google.com/workspace/gmail/api/reference/quota",
       "use": "Current standard-use cost, quota units and planned overage billing; actual project billing/usage unverified."
+    },
+    {
+      "url": "https://developers.google.com/workspace/gmail/api/guides/threads",
+      "use": "Gmail draft update and threaded reply contract, with official linked REST reference. No implementation reused."
     }
   ],
   "runtime_dependencies": [
-    {
-      "name": "annotated-types",
-      "version": "0.8.0",
-      "license_metadata": "MIT",
-      "bundled_code": false,
-      "evidence": [
-        {
-          "distribution_path": "annotated_types-0.8.0.dist-info/licenses/LICENSE",
-          "sha256": "fe1049884b1a0d9342901e88e07f32925d24b3121d9972b6a6805fb9824b095d"
-        }
-      ]
-    },
-    {
-      "name": "anyio",
-      "version": "4.16.0",
-      "license_metadata": "MIT",
-      "bundled_code": false,
-      "evidence": [
-        {
-          "distribution_path": "anyio-4.16.0.dist-info/licenses/LICENSE",
-          "sha256": "5361ac9dc58f2ef5fd2e9b09c68297c17f04950909bbc8023bdb82eacf22c2b0"
-        }
-      ]
-    },
-    {
-      "name": "attrs",
-      "version": "26.1.0",
-      "license_metadata": "MIT",
-      "bundled_code": false,
-      "evidence": [
-        {
-          "distribution_path": "attrs-26.1.0.dist-info/licenses/LICENSE",
-          "sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f"
-        }
-      ]
-    },
     {
       "name": "cachetools",
       "version": "6.2.6",
@@ -116,18 +91,6 @@
       ]
     },
     {
-      "name": "cffi",
-      "version": "2.1.1",
-      "license_metadata": "MIT-0",
-      "bundled_code": false,
-      "evidence": [
-        {
-          "distribution_path": "cffi-2.1.1.dist-info/licenses/LICENSE",
-          "sha256": "5ba24ddc57067f9249add644c3afc41a5d6dc37e23433ef759d95df370b0af63"
-        }
-      ]
-    },
-    {
       "name": "charset-normalizer",
       "version": "3.5.2",
       "license_metadata": "MIT",
@@ -136,38 +99,6 @@
         {
           "distribution_path": "charset_normalizer-3.5.2.dist-info/licenses/LICENSE",
           "sha256": "6d0d41bfe170ac6c7dc248c9a63e254d0fb45a60d50a8257d0af92c6e249b887"
-        }
-      ]
-    },
-    {
-      "name": "click",
-      "version": "8.5.1",
-      "license_metadata": "BSD-3-Clause",
-      "bundled_code": false,
-      "evidence": [
-        {
-          "distribution_path": "click-8.5.1.dist-info/licenses/LICENSE.txt",
-          "sha256": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d"
-        }
-      ]
-    },
-    {
-      "name": "cryptography",
-      "version": "50.0.2",
-      "license_metadata": "Apache-2.0 OR BSD-3-Clause",
-      "bundled_code": false,
-      "evidence": [
-        {
-          "distribution_path": "cryptography-50.0.2.dist-info/licenses/LICENSE",
-          "sha256": "3e0c7c091a948b82533ba98fd7cbb40432d6f1a9acbf85f5922d2f99a93ae6bb"
-        },
-        {
-          "distribution_path": "cryptography-50.0.2.dist-info/licenses/LICENSE.APACHE",
-          "sha256": "aac73b3148f6d1d7111dbca32099f68d26c644c6813ae1e4f05f6579aa2663fe"
-        },
-        {
-          "distribution_path": "cryptography-50.0.2.dist-info/licenses/LICENSE.BSD",
-          "sha256": "602c4c7482de6479dd2e9793cda275e5e63d773dacd1eca689232ab7008fb4fb"
         }
       ]
     },
@@ -196,54 +127,6 @@
       ]
     },
     {
-      "name": "h11",
-      "version": "0.16.0",
-      "license_metadata": "MIT",
-      "bundled_code": false,
-      "evidence": [
-        {
-          "distribution_path": "h11-0.16.0.dist-info/licenses/LICENSE.txt",
-          "sha256": "37db5bb85926db28a427a25867f10b1232003aea1be69ccb851138adb8e6f361"
-        }
-      ]
-    },
-    {
-      "name": "httpcore",
-      "version": "1.0.9",
-      "license_metadata": "BSD-3-Clause",
-      "bundled_code": false,
-      "evidence": [
-        {
-          "distribution_path": "httpcore-1.0.9.dist-info/licenses/LICENSE.md",
-          "sha256": "fdcb59154c74cbaba16a11242f7740bea9f23d6feb5547917d8c5f94a80392a5"
-        }
-      ]
-    },
-    {
-      "name": "httpx",
-      "version": "0.28.1",
-      "license_metadata": "BSD-3-Clause",
-      "bundled_code": false,
-      "evidence": [
-        {
-          "distribution_path": "httpx-0.28.1.dist-info/licenses/LICENSE.md",
-          "sha256": "4ec59d544f12b5f539a3a716fd321ac58ccd8030b465221f2c880200cdf28d8d"
-        }
-      ]
-    },
-    {
-      "name": "httpx-sse",
-      "version": "0.4.3",
-      "license_metadata": "MIT",
-      "bundled_code": false,
-      "evidence": [
-        {
-          "distribution_path": "httpx_sse-0.4.3.dist-info/licenses/LICENSE",
-          "sha256": "beec67e4ee83a7af26f242bed9987aa863d6d2dfb776106aa2360c4187f31901"
-        }
-      ]
-    },
-    {
       "name": "idna",
       "version": "3.20",
       "license_metadata": "BSD-3-Clause",
@@ -252,42 +135,6 @@
         {
           "distribution_path": "idna-3.20.dist-info/licenses/LICENSE.md",
           "sha256": "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04"
-        }
-      ]
-    },
-    {
-      "name": "jsonschema",
-      "version": "4.26.0",
-      "license_metadata": "MIT",
-      "bundled_code": false,
-      "evidence": [
-        {
-          "distribution_path": "jsonschema-4.26.0.dist-info/licenses/COPYING",
-          "sha256": "4f92a015a13c4d1a040bef018aa13430b4f1bc73b41b16bb846c346766de7439"
-        }
-      ]
-    },
-    {
-      "name": "jsonschema-specifications",
-      "version": "2025.9.1",
-      "license_metadata": "MIT",
-      "bundled_code": false,
-      "evidence": [
-        {
-          "distribution_path": "jsonschema_specifications-2025.9.1.dist-info/licenses/COPYING",
-          "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c"
-        }
-      ]
-    },
-    {
-      "name": "mcp",
-      "version": "1.25.0",
-      "license_metadata": "MIT",
-      "bundled_code": false,
-      "evidence": [
-        {
-          "distribution_path": "mcp-1.25.0.dist-info/licenses/LICENSE",
-          "sha256": "5e13dbbc1d120fc2a03cecde7c91424ae2d7de11b63d58ded2f4431e261ee50d"
         }
       ]
     },
@@ -328,106 +175,6 @@
       ]
     },
     {
-      "name": "pycparser",
-      "version": "3.12",
-      "license_metadata": "BSD-3-Clause",
-      "bundled_code": false,
-      "evidence": [
-        {
-          "distribution_path": "pycparser-3.12.dist-info/licenses/LICENSE",
-          "sha256": "0a9e78156ae8b96caf1b4f11ac2df424b83de29736f9e757630548a6272fdf90"
-        }
-      ]
-    },
-    {
-      "name": "pydantic",
-      "version": "2.14.3",
-      "license_metadata": "MIT",
-      "bundled_code": false,
-      "evidence": [
-        {
-          "distribution_path": "pydantic-2.14.3.dist-info/licenses/LICENSE",
-          "sha256": "a9e186f3ca16b5eef84318e7a701721351a00cb7b8ae3a4394b67b49e3529ef3"
-        }
-      ]
-    },
-    {
-      "name": "pydantic-core",
-      "version": "2.50.4",
-      "license_metadata": "MIT",
-      "bundled_code": false,
-      "evidence": [
-        {
-          "distribution_path": "pydantic_core-2.50.4.dist-info/licenses/LICENSE",
-          "sha256": "2afdd30d54b4d62b6f488a6bcc1546e84ec5061f13f4209c03d012348783795a"
-        }
-      ]
-    },
-    {
-      "name": "pydantic-settings",
-      "version": "2.16.2",
-      "license_metadata": "MIT",
-      "bundled_code": false,
-      "evidence": [
-        {
-          "distribution_path": "pydantic_settings-2.16.2.dist-info/licenses/LICENSE",
-          "sha256": "eb355a753e020346d33d83bf9769135b89fc610568ac531a01c295bcee7fd998"
-        }
-      ]
-    },
-    {
-      "name": "pyjwt",
-      "version": "2.15.1",
-      "license_metadata": "MIT",
-      "bundled_code": false,
-      "evidence": [
-        {
-          "distribution_path": "pyjwt-2.15.1.dist-info/licenses/AUTHORS.rst",
-          "sha256": "925ce43461029eedbf558ec0b7cf7fc4b045def5120ebb97937c70814071cf07"
-        },
-        {
-          "distribution_path": "pyjwt-2.15.1.dist-info/licenses/LICENSE",
-          "sha256": "797a7a20231d4c433e9f1911db1731d06b5828b98f499819a034f7c0f56f5ce5"
-        }
-      ]
-    },
-    {
-      "name": "python-dotenv",
-      "version": "1.2.4",
-      "license_metadata": "BSD-3-Clause",
-      "bundled_code": false,
-      "evidence": [
-        {
-          "distribution_path": "python_dotenv-1.2.4.dist-info/licenses/LICENSE",
-          "sha256": "80619b7049f08c81683ad0e01f08f257a840652dd71ee83146d36658c7d2c2b9"
-        }
-      ]
-    },
-    {
-      "name": "python-multipart",
-      "version": "0.0.33",
-      "license_metadata": "Apache-2.0",
-      "bundled_code": false,
-      "evidence": [
-        {
-          "distribution_path": "python_multipart-0.0.33.dist-info/licenses/LICENSE.txt",
-          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
-        }
-      ]
-    },
-    {
-      "name": "referencing",
-      "version": "0.37.0",
-      "license_metadata": "MIT",
-      "bundled_code": false,
-      "evidence": [
-        {
-          "distribution_path": "referencing-0.37.0.dist-info/licenses/COPYING",
-          "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c"
-        }
-      ]
-    },
-    {
       "name": "requests",
       "version": "2.32.5",
       "license_metadata": "Apache-2.0",
@@ -452,18 +199,6 @@
       ]
     },
     {
-      "name": "rpds-py",
-      "version": "2026.9.1",
-      "license_metadata": "MIT",
-      "bundled_code": false,
-      "evidence": [
-        {
-          "distribution_path": "rpds_py-2026.9.1.dist-info/licenses/LICENSE",
-          "sha256": "314e4e91be3baa93c0fb4bccc9e4e97cd643eb839b065af921782c2175fe9909"
-        }
-      ]
-    },
-    {
       "name": "rsa",
       "version": "4.9.1",
       "license_metadata": "Apache-2.0",
@@ -472,58 +207,6 @@
         {
           "distribution_path": "rsa-4.9.1.dist-info/LICENSE",
           "sha256": "073f28b7d389c8fe74f607e17c27f81eaa5ace69edc43a884f23f41b41c5c726"
-        }
-      ]
-    },
-    {
-      "name": "sse-starlette",
-      "version": "3.7.0",
-      "license_metadata": "BSD-3-Clause",
-      "bundled_code": false,
-      "evidence": [
-        {
-          "distribution_path": "sse_starlette-3.7.0.dist-info/licenses/AUTHORS",
-          "sha256": "c2ff63d2ecf128bbda8ab1b2016830a5da124202fbb97168685bb9946aed3f1a"
-        },
-        {
-          "distribution_path": "sse_starlette-3.7.0.dist-info/licenses/LICENSE",
-          "sha256": "80af6bfccbebd2c14d4aab96695cab9950e177190cc80f5ef819e99996883e8e"
-        }
-      ]
-    },
-    {
-      "name": "starlette",
-      "version": "1.10.0",
-      "license_metadata": "BSD-3-Clause",
-      "bundled_code": false,
-      "evidence": [
-        {
-          "distribution_path": "starlette-1.10.0.dist-info/licenses/LICENSE.md",
-          "sha256": "dcb95677a02240243187e964f941847d19b17821cf99e5afae684fab328c19bf"
-        }
-      ]
-    },
-    {
-      "name": "typing-extensions",
-      "version": "4.16.0",
-      "license_metadata": "PSF-2.0",
-      "bundled_code": false,
-      "evidence": [
-        {
-          "distribution_path": "typing_extensions-4.16.0.dist-info/licenses/LICENSE",
-          "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
-        }
-      ]
-    },
-    {
-      "name": "typing-inspection",
-      "version": "0.4.5",
-      "license_metadata": "MIT",
-      "bundled_code": false,
-      "evidence": [
-        {
-          "distribution_path": "typing_inspection-0.4.5.dist-info/licenses/LICENSE",
-          "sha256": "804b59b25f2c31bd278f9202a19ae49a3945aa2664387e2d0a128c7cacc61ec3"
         }
       ]
     },
@@ -538,36 +221,16 @@
           "sha256": "130e3a64d5fdd5d096a752694634a7d9df284469de86e5732100268041e3d686"
         }
       ]
-    },
-    {
-      "name": "uvicorn",
-      "version": "0.54.0",
-      "license_metadata": "BSD-3-Clause",
-      "bundled_code": false,
-      "evidence": [
-        {
-          "distribution_path": "uvicorn-0.54.0.dist-info/licenses/LICENSE.md",
-          "sha256": "efe1acf3e62fb99c288b0ec73e5a773b7268ef4320fe757ea994214e4b63c371"
-        }
-      ]
     }
   ],
   "runtime_lock": {
     "path": "requirements.txt",
-    "sha256": "ffa2214133edf527ff076b38648ca6b6835fb228aa802c48cf9ec843b3bb3504",
-    "platform_audited": "macOS / Python 3.12",
-    "distribution_count": 40,
+    "sha256": "8cba403f6a10b86445df444e7e93d66aaeabc209ce90c22a8f09b82ff8dad51e",
+    "platform_audited": "macOS / Python 3.11",
+    "distribution_count": 13,
     "audit_kind": "Installed distribution metadata and license-file presence/hashes, not exhaustive embedded source/security audit"
   },
   "license_reference_files": [
-    {
-      "name": "mcp",
-      "version": "1.25.0",
-      "url": "https://github.com/modelcontextprotocol/python-sdk",
-      "path": "licenses/mcp/LICENSE",
-      "sha256": "5e13dbbc1d120fc2a03cecde7c91424ae2d7de11b63d58ded2f4431e261ee50d",
-      "source_distribution_path": "mcp-1.25.0.dist-info/licenses/LICENSE"
-    },
     {
       "name": "google-auth-oauthlib",
       "version": "1.2.3",

@@ -1,7 +1,6 @@
-"""Synthetic Gmail/API and real SDK registration tests; no account calls."""
+"""Synthetic Gmail/API tests; no account calls."""
 from __future__ import annotations
 
-import asyncio
 import base64
 import json
 import sys
@@ -102,7 +101,7 @@ def test_both_api_and_refresh_transports_ignore_environment_and_close(monkeypatc
     marker = object()
     monkeypatch.setattr(gs, "Session", AuthTransport)
     monkeypatch.setattr(gs, "AuthorizedSession", ApiTransport)
-    monkeypatch.setattr(gs, "load_credentials", lambda: marker)
+    monkeypatch.setattr(gs, "load_credentials", lambda **kwargs: marker)
     with gs._google_session() as session:
         assert session.trust_env is False
         assert captured["auth_request"].session is captured["auth_session"]
@@ -145,12 +144,12 @@ def test_search_argument_bounds_precede_auth_or_network(kwargs):
     assert not session.calls
 
 
-@pytest.mark.parametrize("path", ["profile", "labels", "messages/m1/modify", "messages/m1/attachments/a1", "drafts", "threads/t1/trash", "../messages", "https://evil.example/messages", "messages?x=1", "messages/m1%2Fmodify"])
+@pytest.mark.parametrize("path", ["labels", "messages/m1/modify", "messages/m1/attachments/a1", "drafts/d1/delete", "threads/t1/trash", "../messages", "https://evil.example/messages", "messages?x=1", "messages/m1%2Fmodify"])
 def test_endpoint_allowlist_blocks_unexpected_operations(path):
     api, session, _ = service({})
     with pytest.raises(ConnectorError) as exc:
         api._get(path, {})
-    assert exc.value.code == "read_only_violation"
+    assert exc.value.code == "unsupported_operation"
     assert not session.calls
 
 
@@ -188,6 +187,19 @@ def test_plain_alternative_preferred_and_attachment_not_fetched():
     assert result["body_text"] == "原始纯文本"
     assert any("附件未下载" in s for s in result["warnings"])
     assert len(session.calls) == 1
+
+
+def test_empty_plain_alternative_uses_html_text():
+    payload = {
+        "mimeType": "multipart/alternative",
+        "parts": [
+            {"mimeType": "text/plain", "body": {"data": ""}},
+            {"mimeType": "text/html", "body": {"data": encoded("<p>可见正文</p><script>skip()</script>")}},
+        ],
+    }
+    body, warnings = gs._part_text(payload)
+    assert body.strip() == "可见正文"
+    assert warnings
 
 
 def test_html_becomes_text_without_scripts_styles_or_remote_resources():
@@ -298,27 +310,148 @@ def test_attached_message_not_expanded():
     assert len(session.calls) == 1
 
 
-def test_exact_mcp_tools_and_read_only_annotations():
-    import server
-    tools = asyncio.run(server.mcp.list_tools())
-    assert {t.name for t in tools} == {"gmail_search_messages", "gmail_read_message", "gmail_read_thread"}
-    assert all(t.annotations.readOnlyHint and not t.annotations.destructiveHint for t in tools)
-    assert all(t.description and any("\u4e00" <= c <= "\u9fff" for c in t.description) for t in tools)
+
+class RouteSession(Session):
+    """Serve exact in-memory Gmail routes and record method and payload."""
+    def __init__(self, routes):
+        super().__init__(None)
+        self.routes = routes
+
+    def get(self, url, **kwargs):
+        return self.request("GET", url, **kwargs)
+
+    def request(self, method, url, **kwargs):
+        assert url.startswith(gs.BASE_URL)
+        path = url.removeprefix(gs.BASE_URL)
+        self.calls.append((method, path, kwargs))
+        assert kwargs["allow_redirects"] is False
+        payload = self.routes[method, path]
+        if isinstance(payload, Exception):
+            raise payload
+        return payload if isinstance(payload, Response) else Response(payload)
 
 
-def test_mcp_result_marks_mail_untrusted_and_uses_sanitized_errors(monkeypatch):
-    import server
-    class FakeService:
-        def search_messages(self, **kwargs):
-            return {"messages": []}
-    monkeypatch.setattr(server, "GmailService", FakeService)
-    result = server.gmail_search_messages("中文测试")
-    assert result["ok"] and result["version"] == "1.0.0"
-    assert "不可信" in result["untrusted_data_notice"]
-    class FailedService:
-        def search_messages(self, **kwargs):
-            raise ValueError("secret-token/private-mail")
-    monkeypatch.setattr(server, "GmailService", FailedService)
-    result = server.gmail_search_messages()
-    assert result["ok"] is False and result["error"]["code"] == "internal_error"
-    assert "secret-token" not in json.dumps(result)
+def test_draft_list_and_preview_use_draft_id_and_show_bcc():
+    raw = message()
+    raw["payload"]["headers"].append({"name": "Bcc", "value": "hidden@example.invalid"})
+    session = RouteSession({
+        ("GET", "drafts"): {"drafts": [{"id": "d1", "message": {"id": "m1", "threadId": "t1"}}], "nextPageToken": "p2"},
+        ("GET", "drafts/d1"): {"id": "d1", "message": raw},
+    })
+    api = gs.GmailService(lambda: session)
+    assert api.list_drafts(1)["drafts"] == [{"draft_id": "d1", "message_id": "m1", "thread_id": "t1"}]
+    result = api.read_draft("d1", 2)
+    assert result["headers"]["Bcc"] == "hidden@example.invalid" and result["body_truncated"]
+
+
+@pytest.mark.parametrize("subject", [None, "新主题"])
+def test_edit_draft_preserves_unedited_addresses_and_attachment(subject):
+    from email.message import EmailMessage
+    from gmail_message import decode_draft, encode_message
+
+    draft = EmailMessage()
+    draft["From"] = "self@example.invalid"
+    draft["To"] = "before@example.invalid"
+    draft["Cc"] = "copy@example.invalid"
+    draft["Subject"] = "旧主题"
+    draft.set_content("旧正文")
+    draft.add_alternative("<p>旧格式</p>", subtype="html")
+    draft.add_attachment(b"attachment", maintype="application", subtype="octet-stream", filename="keep.bin")
+    session = RouteSession({
+        ("GET", "drafts/d1"): {"id": "d1", "message": {"raw": encode_message(draft), "threadId": "t1"}},
+        ("PUT", "drafts/d1"): {"id": "d1"},
+    })
+    api = gs.GmailService(lambda: session)
+    result = api.edit_draft("d1", to=["after@example.invalid"], subject=subject, body="新正文 <内容>")
+    assert result == {"draft_id": "d1"}
+    sent = session.calls[1][2]["json"]["message"]
+    assert sent.get("threadId") == ("t1" if subject is None else None)
+    updated = decode_draft(sent["raw"])
+    assert updated["Subject"] == (subject or "旧主题") and updated["To"] == "after@example.invalid"
+    assert updated["Cc"] == "copy@example.invalid" and updated["From"] == "self@example.invalid"
+    assert updated.get_body(("plain",)).get_content().strip() == "新正文 <内容>"
+    assert "&lt;内容&gt;" in updated.get_body(("html",)).get_content()
+    assert next(updated.iter_attachments()).get_content() == b"attachment"
+
+
+def test_send_message_uses_authenticated_sender_and_explicit_recipients():
+    from gmail_message import decode_draft
+
+    session = RouteSession({
+        ("GET", "profile"): {"emailAddress": "self@example.invalid"},
+        ("POST", "messages/send"): {"id": "sent1", "threadId": "thread1"},
+    })
+    api = gs.GmailService(lambda: session)
+    assert api.send_message(["alice@example.invalid", "bob@example.invalid"], "中文主题", "正文") == {
+        "message_id": "sent1", "thread_id": "thread1",
+    }
+    raw = session.calls[1][2]["json"]["raw"]
+    message = decode_draft(raw)
+    assert message["From"] == "self@example.invalid"
+    assert [address.addr_spec for address in message["To"].addresses] == ["alice@example.invalid", "bob@example.invalid"]
+    assert message["Subject"] == "中文主题" and message.get_content().strip() == "正文"
+
+
+def test_send_draft_only_posts_the_draft_id():
+    session = RouteSession({("POST", "drafts/send"): {"id": "sent1", "threadId": "t1"}})
+    result = gs.GmailService(lambda: session).send_draft("d1")
+    assert result["message_id"] == "sent1"
+    assert session.calls[0][2]["json"] == {"id": "d1"}
+
+
+def test_reply_matches_thread_headers_and_uses_reply_to():
+    from gmail_message import decode_draft
+
+    headers = {
+        "Subject": "中文原主题",
+        "From": "Original <from@example.invalid>",
+        "Reply-To": "Alice <reply@example.invalid>",
+        "Message-ID": "<message@example.invalid>",
+        "References": "<root@example.invalid>",
+    }
+    session = RouteSession({
+        ("GET", "messages/m1"): {"id": "m1", "threadId": "t1", "payload": {"headers": [
+            {"name": name, "value": value} for name, value in headers.items()
+        ]}},
+        ("GET", "profile"): {"emailAddress": "self@example.invalid"},
+        ("POST", "messages/send"): {"id": "sent1", "threadId": "t1"},
+    })
+    assert gs.GmailService(lambda: session).reply("m1", "测试回复")["thread_id"] == "t1"
+    assert session.calls[0][2]["params"]["format"] == "metadata"
+    payload = session.calls[-1][2]["json"]
+    message = decode_draft(payload["raw"])
+    assert payload["threadId"] == "t1"
+    assert message["To"] == "reply@example.invalid" and message["Subject"] == headers["Subject"]
+    assert message["In-Reply-To"] == "<message@example.invalid>"
+    assert message["References"] == "<root@example.invalid> <message@example.invalid>"
+
+
+@pytest.mark.parametrize("address, subject", [
+    ("alice@example.invalid\r\nBcc: intruder@example.invalid", "测试"),
+    ("alice@example.invalid", "测试\nBcc: intruder@example.invalid"),
+    ("missing-address", "测试"),
+])
+def test_invalid_outbound_header_is_rejected_before_network(address, subject):
+    session = RouteSession({})
+    with pytest.raises(ConnectorError):
+        gs.GmailService(lambda: session).send_message([address], subject, "正文")
+    assert not session.calls
+
+
+@pytest.mark.parametrize("response", [ConnectionError("private-provider-details"), Response({}, status=503), Response({})])
+def test_uncertain_send_never_automatically_retries(response):
+    session = RouteSession({("POST", "drafts/send"): response})
+    with pytest.raises(ConnectorError) as failure:
+        gs.GmailService(lambda: session).send_draft("d1")
+    assert failure.value.code == "write_outcome_unknown"
+    assert "private-provider-details" not in str(failure.value)
+    assert len(session.calls) == 1
+
+
+@pytest.mark.parametrize("method, path", [("DELETE", "drafts/d1"), ("POST", "messages/m1/trash"), ("PUT", "messages/m1")])
+def test_write_allowlist_rejects_other_mailbox_changes(method, path):
+    session = RouteSession({})
+    with pytest.raises(ConnectorError) as error:
+        gs.GmailService(lambda: session)._request(session, method, path, payload={})
+    assert error.value.code == "unsupported_operation"
+    assert not session.calls

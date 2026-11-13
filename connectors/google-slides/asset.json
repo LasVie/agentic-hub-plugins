@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "type": "agent-mcp",
+  "name": "google-slides",
+  "display_name": "Google 幻灯片连接器",
+  "version": "1.0.1",
+  "owner": "Song Haoran",
+  "task_id": "AH-20261113-google-slides",
+  "candidate_id": null,
+  "internal_asset_id": "repo:agent-mcp:google-slides",
+  "description": "Read, create and edit native Google Slides presentations.",
+  "native_path": "google-slides"
+}

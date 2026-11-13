@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "package_type": "mcp",
+  "id": "google-sheets",
+  "name": "Google 表格连接器",
+  "description": "新建表格、列出工作表、读取或更新指定区域、在逻辑表末尾追加行。需要用户自建 Google Cloud 项目并配置 Desktop OAuth。",
+  "display_name": {
+    "zh": "Google 表格连接器",
+    "en": "Google Sheets Connector"
+  },
+  "display_description": {
+    "zh": "新建表格、列出工作表、读取或更新指定区域、在逻辑表末尾追加行。",
+    "en": "Create spreadsheets, read or update bounded ranges, and append rows."
+  },
+  "integration": {
+    "type": "cli",
+    "file": "cli.json"
+  },
+  "credentials": {
+    "type": "cli-oauth"
+  },
+  "skills": [
+    {
+      "dir": "skills/google-sheets-guide",
+      "mode": "all"
+    }
+  ]
+}

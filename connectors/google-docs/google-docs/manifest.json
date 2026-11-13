@@ -1,0 +1,28 @@
+{
+  "version": "1.0.1",
+  "package_type": "mcp",
+  "id": "google-docs",
+  "name": "Google 文档连接器",
+  "description": "读取指定标签页、新建文档、追加或替换指定标签页的正文。需要用户自建 Google Cloud 项目并配置 Desktop OAuth。",
+  "display_name": {
+    "zh": "Google 文档连接器",
+    "en": "Google Docs Connector"
+  },
+  "display_description": {
+    "zh": "读取指定标签页、新建文档、追加或替换指定标签页的正文。",
+    "en": "Read, create and edit specific tabs in native Google Docs."
+  },
+  "integration": {
+    "type": "cli",
+    "file": "cli.json"
+  },
+  "credentials": {
+    "type": "cli-oauth"
+  },
+  "skills": [
+    {
+      "dir": "skills/google-docs-guide",
+      "mode": "all"
+    }
+  ]
+}

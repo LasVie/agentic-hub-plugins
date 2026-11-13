@@ -1,0 +1,72 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "audit_file": "SOURCE_REVIEW.md",
+  "sources": [
+    {
+      "name": "satellite.js",
+      "url": "https://github.com/shashwatak/satellite-js",
+      "revision": "02cd3def8cd7a29ad2342c6382bea7d2098a893c / npm 7.2.0",
+      "license_expression": "MIT",
+      "scope": "Unchanged published JavaScript SGP4/SDP4 and coordinate-transform dependency closure.",
+      "license_evidence": [
+        {
+          "path": "licenses/satellite-js/LICENSE",
+          "sha256": "1432ff8b94b91db9f242d908e09f2ecb1a0804a03f76ba844cf052c7bb614d9e"
+        },
+        {
+          "path": "licenses/satellite-js/ORIGINAL-PKG-INFO",
+          "sha256": "4ab039a2b5506d5525633be3f36af61ef62513cbfb565602beae1c8329839b57"
+        }
+      ]
+    },
+    {
+      "name": "python-sgp4",
+      "url": "https://github.com/brandon-rhodes/python-sgp4",
+      "revision": "9442470d5a286b4071ac105fbfe5173ef2b33ab7",
+      "license_expression": "MIT",
+      "scope": "Attribution and full grant for the implementation ancestry; no Python runtime is bundled.",
+      "license_evidence": [
+        {
+          "path": "licenses/python-sgp4/LICENSE",
+          "sha256": "4474ea9eccbb829c6bc3652381bfe78b1c815de021d4a284a2a5b383a374d030"
+        }
+      ]
+    },
+    {
+      "name": "original-celestrak-sgp4",
+      "url": "https://github.com/CelesTrak/fundamentals-of-astrodynamics",
+      "revision": "49df0479c950917c0a2c5ac31f2db6477bba57f6",
+      "license_expression": "LicenseRef-CelesTrak-Original-SGP4",
+      "scope": "Original C++ SGP4 unrestricted grant and attribution only; other AGPL repository implementations are excluded.",
+      "license_evidence": [
+        {
+          "path": "licenses/celestrak-sgp4/NOTICE",
+          "sha256": "3b90f5a746be2899b444e3794e74cf13ffe6183ea32f52498ba16522e5ca56bd"
+        },
+        {
+          "path": "licenses/celestrak-sgp4/LICENSE",
+          "sha256": "3b90f5a746be2899b444e3794e74cf13ffe6183ea32f52498ba16522e5ca56bd"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "web/vendor/satellite-js/constants.js",
+    "web/vendor/satellite-js/ext.js",
+    "web/vendor/satellite-js/io.js",
+    "web/vendor/satellite-js/propagation.js",
+    "web/vendor/satellite-js/propagation/SatRec.js",
+    "web/vendor/satellite-js/propagation/check-for-decay.js",
+    "web/vendor/satellite-js/propagation/dpper.js",
+    "web/vendor/satellite-js/propagation/dscom.js",
+    "web/vendor/satellite-js/propagation/dsinit.js",
+    "web/vendor/satellite-js/propagation/dspace.js",
+    "web/vendor/satellite-js/propagation/gstime.js",
+    "web/vendor/satellite-js/propagation/initl.js",
+    "web/vendor/satellite-js/propagation/propagate.js",
+    "web/vendor/satellite-js/propagation/sgp4.js",
+    "web/vendor/satellite-js/propagation/sgp4init.js",
+    "web/vendor/satellite-js/transforms.js"
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "asset_type": "agent-mcp",
+  "name": "google-slides",
+  "display_name": "Google 幻灯片连接器",
+  "version": "1.0.1",
+  "task_id": "AH-20261113-google-slides",
+  "internal_asset_id": "repo:agent-mcp:google-slides",
+  "created_at_utc": "2026-11-13T08:54:11.542192+00:00",
+  "artifacts": [
+    {
+      "form": "native",
+      "path": "connectors/google-slides/test-packages/google-slides-1.0.1-native.zip",
+      "filename": "google-slides-1.0.1-native.zip",
+      "sha256": "91e1b19281685d465cf15c87f32fdd1c7cbc377ec052c1b5c0f0020dfc54b83c",
+      "size_bytes": 96668
+    },
+    {
+      "form": "agent-mcp_wrapped",
+      "path": "connectors/google-slides/release/1.0.1/google-slides-1.0.1-agent-mcp.zip",
+      "filename": "google-slides-1.0.1-agent-mcp.zip",
+      "sha256": "343cd6d9d78b0b514e04e8891ed77b2a720ec6bc98c2ae6a3f2c8ff2b3d772d6",
+      "size_bytes": 39370
+    }
+  ],
+  "payload_sha256": {
+    "README.md": "4f247730311918e001bf665a83f26ba1954f926bd046765edc29344a2fe5dc9a",
+    "THIRD_PARTY_NOTICES.md": "cbf17699a49f08b83aea34cc242849a8136298bc6191cc69d0e14388e0e724e9",
+    "bootstrap_lock.py": "3fc47a2daf6c60d2a006584e342b14f7471db27055f86c43fe0225186459db25",
+    "cli.json": "b3157ad0ff0951fbc04115072675cf2b8e7e5ad858ac6a6fc6204c1f183062ad",
+    "google_api.py": "a4dab67257d098cd17716e5f91b4ba9a04fc44567bb16f5b88e509ec7e527b77",
+    "launcher.py": "6160d1d34089219f81754e83a0d1009e799c9d817fd5dab94d61f43b5e6f9384",
+    "licenses/google-auth/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "licenses/google-auth-oauthlib/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "licenses/requests/LICENSE": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b",
+    "manifest.json": "6caf4083276011607e3123fb256943b32e6a645254f63a3658d6f2148d68e004",
+    "oauth.py": "1b8b9ff7083368321282f2ea99fa1c8e39ecc8581f8088f40a2747552e0c4723",
+    "requirements.in": "e67055fe9c69ee3c5a048963ff3cb498fc0240d7da7980ebffba9af92101493a",
+    "requirements.txt": "8cba403f6a10b86445df444e7e93d66aaeabc209ce90c22a8f09b82ff8dad51e",
+    "service.py": "43ba0a24af288abd657635e6818afecaf4e0bda43501c8e5b64b7e5c4c71c76a",
+    "skills/google-slides-guide/SKILL.md": "586fe14d7efd26095737f15a745e9055f17728de9ba5ffb471660dc1e4e5d06d"
+  },
+  "review_files_sha256": {
+    "SOURCE_REVIEW.md": "f2fcc377c81340dae917d673bc1d2da84e1821beea66f5fa81623445994b90d4",
+    "TEST_REPORT.md": "7e6ead3714e75ea3d688bf5247631069c938a4ace2738a1813ebdd8abcc28bc3",
+    "provenance.json": "43f2342a55f37a271919f8a2bd13c5d10eab9cc9dd68ff458b1f0b65b4030d33"
+  },
+  "official_cli": {
+    "distribution": "openjiuwen-agentichub",
+    "version": "0.0.1",
+    "source": "https://github.com/openJiuwen-ai/skillhub",
+    "source_commit": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+    "commands": [
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/../gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "init",
+        "google-slides",
+        "--type",
+        "agent-mcp"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/../gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "validate",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-iac6ixt3/google-slides"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/../gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "pack",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-iac6ixt3/google-slides",
+        "--output",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-iac6ixt3/out"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/../gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/tools/asset_release.py",
+        "preflight",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/connectors/google-slides/google-slides"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/../gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/tools/asset_release.py",
+        "preflight",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-iac6ixt3/native.zip"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/../gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/tools/asset_release.py",
+        "preflight",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-iac6ixt3/out/google-slides-1.0.1.zip"
+      ]
+    ]
+  },
+  "checks": [
+    {
+      "step": "official_init",
+      "output": "Plugin initialized at: /private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-iac6ixt3/google-slides"
+    },
+    {
+      "step": "official_validate",
+      "output": "Plugin validation passed."
+    },
+    {
+      "step": "official_pack",
+      "output": "Packed: /private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-iac6ixt3/out/google-slides-1.0.1.zip"
+    },
+    {
+      "step": "javascript_preflight_native_source",
+      "output": "{\n  \"path\": \"/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/connectors/google-slides/google-slides\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_native_zip",
+      "output": "{\n  \"path\": \"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-iac6ixt3/native.zip\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_wrapped_zip",
+      "output": "{\n  \"path\": \"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-iac6ixt3/out/google-slides-1.0.1.zip\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    }
+  ],
+  "verification_limits": "Packaging/JavaScript preflight and byte-equivalence only; not authenticated provider access or user manual-test acceptance."
+}

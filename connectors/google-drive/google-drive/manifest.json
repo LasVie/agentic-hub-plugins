@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "package_type": "mcp",
+  "id": "google-drive",
+  "name": "Google 云端硬盘连接器",
+  "description": "搜索文件和目录、下载普通文件、导出 Google 原生文件。需要用户自建 Google Cloud 项目并配置 Desktop OAuth。",
+  "display_name": {
+    "zh": "Google 云端硬盘连接器",
+    "en": "Google Drive Connector"
+  },
+  "display_description": {
+    "zh": "搜索文件和目录、下载普通文件、导出 Google 原生文件。",
+    "en": "Search files and folders, download files and export Google Workspace files."
+  },
+  "integration": {
+    "type": "cli",
+    "file": "cli.json"
+  },
+  "credentials": {
+    "type": "cli-oauth"
+  },
+  "skills": [
+    {
+      "dir": "skills/google-drive-guide",
+      "mode": "all"
+    }
+  ]
+}
