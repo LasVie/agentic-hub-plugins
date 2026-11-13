@@ -110,3 +110,7 @@
 # Preserve the exact a11y-enforcer payload, license and package hashes.
 /plugins/a11y-enforcer/** -text
 /releases/agent-plugin/a11y-enforcer/** -text
+
+# Preserve satellite engine/license bytes and deterministic plugin packages.
+/plugins/offline-satellite-orbit-workbench/** -text
+/releases/agent-plugin/offline-satellite-orbit-workbench/** -text

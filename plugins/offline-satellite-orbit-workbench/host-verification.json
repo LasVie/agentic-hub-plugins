@@ -1,0 +1,206 @@
+{
+  "verified_at": "2026-11-12T04:08:01.866654+00:00",
+  "plugin_id": "offline-satellite-orbit-workbench",
+  "display_name": "离线卫星轨道工作台",
+  "version": "1.0.0",
+  "frontend_url": "http://127.0.0.1:6461/",
+  "backend_websocket_url": "ws://127.0.0.1:29461/ws",
+  "host_root": "/private/tmp/satellite-orbit-build-9kma9kmq/host-025",
+  "model_requests": 0,
+  "dedicated_instance": true,
+  "current_host_028_attempt": {
+    "status": "unresolved",
+    "source_commit": "fa91394e42a7af731424222db82b02351e694de9",
+    "sdk_commit": "f3f8f576164cc405c046e43079c8ad00ee17f0c4",
+    "reason": "Pinned openjiuwen-computeruse@96afb268 native macOS build fails on installed Swift6.0.3 with non-Sendable actor-boundary errors. No host/dependency patch or stub used.",
+    "log": "/private/tmp/satellite-orbit-build-9kma9kmq/host/runtime/dependency-install-retry.log"
+  },
+  "host_source_commit": "3ef1de9bf0b4813e2a0e8674dedc499c78e53df2",
+  "host_workswarm_version": "0.2.5.beta1",
+  "host_launch_mode": "Unmodified pinned source via PYTHONPATH, isolated dependencies",
+  "installed_openjiuwen_version": "0.1.19",
+  "host_code_changes": false,
+  "initial_setup": "Fresh task-owned WorkSwarm 0.2.5.beta1 source archive. Independently copied prior verified dependencies and frontend artifacts without modifying their source installation. Supported isolated config/data/logs; models disabled.",
+  "verification_scope": "Supported running-backend import/install/catalog and payload integrity only.",
+  "native_tool_execution_through_chat_worker": "Not exercised; requires separate manual conversation testing.",
+  "connection_state_limitation": "For a package without MCP connectors, connected mirrors installed and does not prove native-tool loading or execution.",
+  "sdk_invocation": {
+    "passed": true,
+    "openjiuwen_version": "0.1.19",
+    "loader": "openjiuwen.harness.resources.load_plugin_package",
+    "resolver": "openjiuwen.harness.resources.resolve_plugin_parts",
+    "tool_id": "satellite_orbit_workbench",
+    "chinese_skill_loaded": true,
+    "status_no_writes": true,
+    "confirmation_rejected": true,
+    "start_reuse_stream_stop": true,
+    "chinese_entry_http_200": true,
+    "page_csp_no_eval": true,
+    "model_calls": 0,
+    "scope": "Public native SDK in separate verification process; not actual chat dispatch."
+  },
+  "supported_interface_evidence": {
+    "host_source": "3ef1de9bf0b4813e2a0e8674dedc499c78e53df2",
+    "sdk_source": "07b9632391c060e3bdff656d1c653719d9d1fe97",
+    "backend_interfaces": [
+      "plugin_packages.list",
+      "plugin_packages.import_local",
+      "plugin_packages.install",
+      "plugin_packages.show"
+    ],
+    "sdk_interfaces": [
+      "Tool",
+      "ToolCard",
+      "load_plugin_package",
+      "resolve_plugin_parts"
+    ],
+    "unsupported_test_path": "No synthetic dispatcher, fake-model conversation, host patch or paid model call. Native SDK invocation in a separate process is not running-chat dispatch."
+  },
+  "catalog_before": [],
+  "config_sha256_before": "e66131601a561b39b12e40f0fdac235596b5eaf067956ab8a71dd3e6cf02a549",
+  "other_plugin_files_before": 0,
+  "frontend_http": 200,
+  "websocket_proxy_ping_pong": true,
+  "websocket_direct_ping_pong": true,
+  "native_zip": {
+    "path": "/Users/IDLE_And_R/.codex/worktrees/581d/agentic-hub-plugins/plugins/offline-satellite-orbit-workbench/test-packages/offline-satellite-orbit-workbench-1.0.0-workswarm.zip",
+    "sha256": "d554e61da463cfbf6124d776190aafbf407dc8a941396029d5e4c5a7cdb16710",
+    "payload_files": 36
+  },
+  "import_local": true,
+  "install": true,
+  "payload_matches_zip": true,
+  "payload_sha256": {
+    "README.md": "e52c2ae198084900feeee6ead0550ad3f925a74e674dd0245095fe6ddf54c7e0",
+    "THIRD_PARTY_NOTICES.md": "5246c889473cf4c295f0243e330e29257cbec8896f32fb6824dd8843ea76dbc8",
+    "licenses/celestrak-sgp4/LICENSE": "3b90f5a746be2899b444e3794e74cf13ffe6183ea32f52498ba16522e5ca56bd",
+    "licenses/celestrak-sgp4/NOTICE": "3b90f5a746be2899b444e3794e74cf13ffe6183ea32f52498ba16522e5ca56bd",
+    "licenses/python-sgp4/LICENSE": "4474ea9eccbb829c6bc3652381bfe78b1c815de021d4a284a2a5b383a374d030",
+    "licenses/satellite-js/LICENSE": "1432ff8b94b91db9f242d908e09f2ecb1a0804a03f76ba844cf052c7bb614d9e",
+    "licenses/satellite-js/ORIGINAL-PKG-INFO": "4ab039a2b5506d5525633be3f36af61ef62513cbfb565602beae1c8329839b57",
+    "manifest.json": "0449f9a1b8e667d4d1042af5259237335db61c6a31bcfc428332bbb75f1b108f",
+    "skills/satellite-orbit-workbench/SKILL.md": "05364aa210d3481e47f9da81b3e8d5b3bec129d9b34f9a9075cb812c7efe9d24",
+    "tools/orbit_tools.py": "697e71f0849e1a5d800b916941df883d91c7c829832be13d8aec827a069ea14d",
+    "tools/runtime.py": "cb145fc465e97d457d942bfd9291eea8375b3723b579f2d41bfef9e300231306",
+    "tools/server.py": "95390f3a98124a8e8b1fca7af4becd0d8c94b6bb78c86bf6ed3f03fdb3e82de3",
+    "web/app.js": "cdedd8c8ef26b357ee18cd172da8a16882fbbf6f9286128b5c1dd482bc3e74cd",
+    "web/engine.js": "2049ca7dbb095edb1f26621f5f2355650baf8f90f1afcda77248dc1ba4de73a0",
+    "web/index.html": "8c4114823f75c0a97b014983ab2df73815fcf2e61f820787e38f61cad95bdfa0",
+    "web/package.json": "3ca9d4afd21425087cf31893b8f9f63c81b0b8408db5e343ca76e5f8aa26ab9a",
+    "web/presentation.js": "76fd6de84c860d91c7df00a55fa3eb9d19eebe79a0c0a9a3cbd1fc7c4c695062",
+    "web/style.css": "1bcbc3b5bf467306f6c220ed0d006b63a660a33658e043074f75862e2046c0f0",
+    "web/vendor/satellite-js/UPSTREAM.json": "49122451682cf98c3cd8d5a51d88e3e66141bb11583a3ab88e3b04ee2168983f",
+    "web/vendor/satellite-js/constants.js": "39efed0e8259640b7132afefd116197a6eee4171479143b363829e4f04237df1",
+    "web/vendor/satellite-js/ext.js": "713607c9f084a46e886cf089aade527cbfe5d680c539a6728fe52a392edf7194",
+    "web/vendor/satellite-js/io.js": "2cf2254f776eb35aee60f1d914edf7be257bb390edb9f8d21ef4ce3c8a59923d",
+    "web/vendor/satellite-js/propagation/SatRec.js": "edcffa5f13d8960b4480ff844286ca76ca9d2952e989d9f32fad82c14aa6fd7b",
+    "web/vendor/satellite-js/propagation/check-for-decay.js": "cd13c5ca230657ae6f94f47cac8cc2201d60a5f23f8ddf6a79bf93f580844ee1",
+    "web/vendor/satellite-js/propagation/dpper.js": "ccd5dbde780f132298da240369e685a0654f6feeca2ca99e8c1234206e632b20",
+    "web/vendor/satellite-js/propagation/dscom.js": "4163f176bb7bc196c46f05d5f485fbb64c759fd47ce9fd3c82362b746c641d4d",
+    "web/vendor/satellite-js/propagation/dsinit.js": "5d7ebdc2a28eefcb10e1d857c86cfee4b3db2443541d11d55fcb6a79a561e9ec",
+    "web/vendor/satellite-js/propagation/dspace.js": "5b34f0cd64c12080583b1b75d1d7a48100aaddbfaad267daa45cb3538e22ae17",
+    "web/vendor/satellite-js/propagation/gstime.js": "a84b7910bec97f8c07723d0054ee4d29ef1c3e9a0c746e848529b627bcc8d7cf",
+    "web/vendor/satellite-js/propagation/initl.js": "fe57ab8af951bccfd95f8e6166f1d5374a9dd126291fda183b658ddfa9523ac7",
+    "web/vendor/satellite-js/propagation/propagate.js": "e937521a49439d9881b46b5c015f9d8e4716ae9646797b34a3a55f4f00ce7ee4",
+    "web/vendor/satellite-js/propagation/sgp4.js": "9dd959b01f49395996e93bf483f906696d20b7bb64d4ba1e61d1d73c1c2d7f04",
+    "web/vendor/satellite-js/propagation/sgp4init.js": "cc47b4efcf8bf9ecca73f40e7a922e18668d0de7082f942b4bdedddaca182b78",
+    "web/vendor/satellite-js/propagation.js": "98bffd4671df7ba2550f65c2cd4c2a3e100ed59cf6861044352462b9ec98ba06",
+    "web/vendor/satellite-js/transforms.js": "21666598552a4bba263b1f315d989f116d89d99f33385e94d3cabf676b504ece",
+    "web/worker.js": "ad987f4a7e47bb5e43d50d82773881b98f5c5b5ebf0258c9e4271ed7372e7483"
+  },
+  "installed_card": {
+    "id": "offline-satellite-orbit-workbench",
+    "version": "1.0.0",
+    "displayName": {
+      "zh": "离线卫星轨道工作台",
+      "en": "Offline Satellite Orbit Workbench"
+    },
+    "installed": true,
+    "connection_state": "connected"
+  },
+  "sdk_payload_unchanged": true,
+  "config_sha256_after": "e66131601a561b39b12e40f0fdac235596b5eaf067956ab8a71dd3e6cf02a549",
+  "model_config_unchanged": true,
+  "other_plugin_payloads_unchanged": true,
+  "catalog_after": [
+    {
+      "id": "offline-satellite-orbit-workbench",
+      "installed": true,
+      "connection_state": "connected"
+    }
+  ],
+  "other_plugin_catalog_unchanged": true,
+  "host_source_files_unchanged": true,
+  "source_copy_inventory_sha256": "3649fca01a4e3fe4fee6420ac402443866121b83dcd196bf4c9a02cdd1bcfde1",
+  "passed": true,
+  "verification_helper_origin": "Adapted maintained offline-pipe-network-workbench/verify_workswarm.py supported APIs; this instance has independent source/dependencies/data/runtime/cache and only this plugin is imported.",
+  "current_sdk_standalone": {
+    "passed": true,
+    "openjiuwen_version": "0.1.20",
+    "loader": "openjiuwen.harness.resources.load_plugin_package",
+    "resolver": "openjiuwen.harness.resources.resolve_plugin_parts",
+    "tool_id": "satellite_orbit_workbench",
+    "chinese_skill_loaded": true,
+    "status_no_writes": true,
+    "confirmation_rejected": true,
+    "start_reuse_stream_stop": true,
+    "chinese_entry_http_200": true,
+    "page_csp_no_eval": true,
+    "model_calls": 0,
+    "scope": "Public native SDK in separate verification process; not actual chat dispatch.",
+    "source": {
+      "url": "https://gitcode.com/openJiuwen/agent-core.git",
+      "vcs_info": {
+        "vcs": "git",
+        "commit_id": "f3f8f576164cc405c046e43079c8ad00ee17f0c4",
+        "requested_revision": "f3f8f576164cc405c046e43079c8ad00ee17f0c4"
+      }
+    },
+    "payload_unchanged": true,
+    "limitation": "Standalone current SDK only, not a running WorkSwarm0.2.8 host or chat dispatch.",
+    "extra_qa_service_cleanup": "Stopped only its separately created current-SDK test service through identity-verified Tool stop; the installed WorkSwarm0.2.5 browser-QA service remains running."
+  },
+  "workbench_tool_results": {
+    "workspace": "/private/tmp/satellite-orbit-build-9kma9kmq/host-025/runtime/installed-workbench-qa",
+    "status_before": {
+      "ok": true,
+      "version": "1.0.0",
+      "running": false,
+      "reused": false,
+      "url": null,
+      "message": "此工作目录尚无本插件运行记录。",
+      "idle_timeout_seconds": 1800,
+      "boundary": "只向本机浏览器提供插件自带网页和示例；轨道要素在浏览器本地校验和轨道计算，导出由浏览器下载，不修改宿主或原件。"
+    },
+    "start": {
+      "ok": true,
+      "version": "1.0.0",
+      "running": true,
+      "reused": false,
+      "url": "http://127.0.0.1:58102/269ef457dc9743bdeba1e0c657cf885124dea9b574f0d7a26dbd089d850167ba/web/index.html",
+      "message": "已启动本插件独立工作台；请用本机正常浏览器打开地址。",
+      "idle_timeout_seconds": 1800,
+      "boundary": "只向本机浏览器提供插件自带网页和示例；轨道要素在浏览器本地校验和轨道计算，导出由浏览器下载，不修改宿主或原件。"
+    },
+    "reuse": {
+      "ok": true,
+      "version": "1.0.0",
+      "running": true,
+      "reused": true,
+      "url": "http://127.0.0.1:58102/269ef457dc9743bdeba1e0c657cf885124dea9b574f0d7a26dbd089d850167ba/web/index.html",
+      "message": "复用此工作目录中已验证的本插件服务。",
+      "idle_timeout_seconds": 1800,
+      "boundary": "只向本机浏览器提供插件自带网页和示例；轨道要素在浏览器本地校验和轨道计算，导出由浏览器下载，不修改宿主或原件。"
+    },
+    "status_after": {
+      "ok": true,
+      "version": "1.0.0",
+      "running": true,
+      "reused": false,
+      "url": "http://127.0.0.1:58102/269ef457dc9743bdeba1e0c657cf885124dea9b574f0d7a26dbd089d850167ba/web/index.html",
+      "message": "本插件服务正在运行。",
+      "idle_timeout_seconds": 1800,
+      "boundary": "只向本机浏览器提供插件自带网页和示例；轨道要素在浏览器本地校验和轨道计算，导出由浏览器下载，不修改宿主或原件。"
+    }
+  }
+}

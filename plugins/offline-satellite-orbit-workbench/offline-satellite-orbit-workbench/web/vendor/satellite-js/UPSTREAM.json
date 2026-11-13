@@ -1,0 +1,38 @@
+{
+  "name": "satellite.js",
+  "version": "7.2.0",
+  "commit": "02cd3def8cd7a29ad2342c6382bea7d2098a893c",
+  "archive_url": "https://registry.npmjs.org/satellite.js/-/satellite.js-7.2.0.tgz",
+  "archive_sha256": "eebc66f7d16609a9cd67552facb67fa919cb471adbc6823001348195e912a6d2",
+  "runtime_dependencies": [],
+  "included_modules": {
+    "constants.js": "39efed0e8259640b7132afefd116197a6eee4171479143b363829e4f04237df1",
+    "ext.js": "713607c9f084a46e886cf089aade527cbfe5d680c539a6728fe52a392edf7194",
+    "io.js": "2cf2254f776eb35aee60f1d914edf7be257bb390edb9f8d21ef4ce3c8a59923d",
+    "propagation.js": "98bffd4671df7ba2550f65c2cd4c2a3e100ed59cf6861044352462b9ec98ba06",
+    "propagation/SatRec.js": "edcffa5f13d8960b4480ff844286ca76ca9d2952e989d9f32fad82c14aa6fd7b",
+    "propagation/check-for-decay.js": "cd13c5ca230657ae6f94f47cac8cc2201d60a5f23f8ddf6a79bf93f580844ee1",
+    "propagation/dpper.js": "ccd5dbde780f132298da240369e685a0654f6feeca2ca99e8c1234206e632b20",
+    "propagation/dscom.js": "4163f176bb7bc196c46f05d5f485fbb64c759fd47ce9fd3c82362b746c641d4d",
+    "propagation/dsinit.js": "5d7ebdc2a28eefcb10e1d857c86cfee4b3db2443541d11d55fcb6a79a561e9ec",
+    "propagation/dspace.js": "5b34f0cd64c12080583b1b75d1d7a48100aaddbfaad267daa45cb3538e22ae17",
+    "propagation/gstime.js": "a84b7910bec97f8c07723d0054ee4d29ef1c3e9a0c746e848529b627bcc8d7cf",
+    "propagation/initl.js": "fe57ab8af951bccfd95f8e6166f1d5374a9dd126291fda183b658ddfa9523ac7",
+    "propagation/propagate.js": "e937521a49439d9881b46b5c015f9d8e4716ae9646797b34a3a55f4f00ce7ee4",
+    "propagation/sgp4.js": "9dd959b01f49395996e93bf483f906696d20b7bb64d4ba1e61d1d73c1c2d7f04",
+    "propagation/sgp4init.js": "cc47b4efcf8bf9ecca73f40e7a922e18668d0de7082f942b4bdedddaca182b78",
+    "transforms.js": "21666598552a4bba263b1f315d989f116d89d99f33385e94d3cabf676b504ece"
+  },
+  "included_bytes": 106103,
+  "modifications": "None: copied byte for byte from published dist modules. Optional WASM and unrelated exports omitted.",
+  "licenses": {
+    "satellite-js/LICENSE": "1432ff8b94b91db9f242d908e09f2ecb1a0804a03f76ba844cf052c7bb614d9e",
+    "satellite-js/ORIGINAL-PKG-INFO": "4ab039a2b5506d5525633be3f36af61ef62513cbfb565602beae1c8329839b57",
+    "python-sgp4/LICENSE": "4474ea9eccbb829c6bc3652381bfe78b1c815de021d4a284a2a5b383a374d030",
+    "celestrak-sgp4/NOTICE": "3b90f5a746be2899b444e3794e74cf13ffe6183ea32f52498ba16522e5ca56bd",
+    "celestrak-sgp4/LICENSE": "3b90f5a746be2899b444e3794e74cf13ffe6183ea32f52498ba16522e5ca56bd"
+  },
+  "python_sgp4_license_commit": "9442470d5a286b4071ac105fbfe5173ef2b33ab7",
+  "celestrak_notice_commit": "49df0479c950917c0a2c5ac31f2db6477bba57f6",
+  "celestrak_license_filename_note": "LICENSE preserves the complete original grant text verbatim from official NOTICE; upstream did not name this separate unrestricted C++ grant LICENSE."
+}

@@ -1,0 +1,14 @@
+{
+  "type": "agent-plugin",
+  "name": "offline-satellite-orbit-workbench",
+  "version": "1.0.0",
+  "display_name": "离线卫星轨道工作台",
+  "description": "输入卫星轨道根数、UTC 时段和观察地点，离线计算轨道、星下点和几何仰角区间，检查数值并导出 JSON、CSV 与 SVG。",
+  "publisher": "Cai Zhenze",
+  "category": "数据与科学研究",
+  "tags": ["卫星", "轨道", "离线", "SGP4"],
+  "functional_tags": ["Satellite Orbit Propagation", "Geometric Pass Planning"],
+  "scope": "单颗卫星的受限 TLE/OMM、最长 24 小时且距根数历元不超过 7 天的 SGP4/SDP4 计算；不含联网星历、真实可见性、航天器控制、碰撞分析或导航认证。",
+  "candidate_id": "CAND-EXT-014",
+  "task_id": "AH-20261112-offline-satellite-orbit-workbench"
+}
