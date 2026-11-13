@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "zip": "a11y-enforcer-1.0.0-native.zip",
+  "size_bytes": 54559,
+  "sha256": "5faef2928eed506c873812bd19a00fbb888c0c9891a55196d94081c0af0f7897",
+  "payload_sha256": {
+    "licenses/a11y-enforcer/LICENSE": "5f434c88921e448707dc3b7983a41364721fdbec7468735c26dba2200f183d04",
+    "manifest.json": "c63dd2eb478da041d2721ec4b5324f626570f85eb19543f2b7dc2fde27e00e8b",
+    "README.md": "3b67539a30c1f159b1f4395cef06de0a61238e9de81eb1befdc91dae3fe8bcbd",
+    "skills/web-accessibility-check/references/rules.md": "5bdabb26f3a61842555c36b9e0a1c1b245701903ea459647bd9ae4813f225513",
+    "skills/web-accessibility-check/SKILL.md": "4cbf8f5a3d95649cab8c538489abbcd51c5127a7172dae0f906f9aee31b11fc6",
+    "THIRD_PARTY_NOTICES.md": "1457234b6a18546f585db364bca1171822deda551785312b4142c13715e2395d",
+    "tools/a11y_enforcer.py": "0947812494d28d2e26af48d2e1802a699b2e599c7032d1be21945535fadc92cc"
+  }
+}

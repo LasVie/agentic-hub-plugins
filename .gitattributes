@@ -106,3 +106,7 @@
 # Preserve the exact adds-up payload, license and package hashes.
 /plugins/adds-up/** -text
 /releases/agent-plugin/adds-up/** -text
+
+# Preserve the exact a11y-enforcer payload, license and package hashes.
+/plugins/a11y-enforcer/** -text
+/releases/agent-plugin/a11y-enforcer/** -text
