@@ -1,0 +1,39 @@
+{
+  "init": {
+    "darwin": "/usr/bin/env -S 'PYTHONPATH=${JIUWENSWARM_DATA_DIR}/agent/workspace/mcp/mcp_hub:${HOME}/.jiuwenswarm/agent/workspace/mcp/mcp_hub python3 -u -B -c \"import sys; sys.path.pop(0); import runpy; runpy.run_module(\\\"google-drive.launcher\\\", run_name=\\\"__main__\\\", alter_sys=True)\" prepare'",
+    "linux": "env -S 'PYTHONPATH=${JIUWENSWARM_DATA_DIR}/agent/workspace/mcp/mcp_hub:${HOME}/.jiuwenswarm/agent/workspace/mcp/mcp_hub python3 -u -B -c \"import sys; sys.path.pop(0); import runpy; runpy.run_module(\\\"google-drive.launcher\\\", run_name=\\\"__main__\\\", alter_sys=True)\" prepare'",
+    "win32": "py -3.12 -u -B -c \"import os,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');p=root/'agent'/'workspace'/'mcp'/'mcp_hub'/'google-drive'/'launcher.py';import sys;sys.path.insert(0,str(p.parent));runpy.run_path(str(p),run_name='__main__')\" prepare"
+  },
+  "versionCheck": {
+    "minVersion": "1.0.0",
+    "command": {
+      "darwin": "/usr/bin/env -S 'PYTHONPATH=${JIUWENSWARM_DATA_DIR}/agent/workspace/mcp/mcp_hub:${HOME}/.jiuwenswarm/agent/workspace/mcp/mcp_hub python3 -u -B -c \"import sys; sys.path.pop(0); import runpy; runpy.run_module(\\\"google-drive.launcher\\\", run_name=\\\"__main__\\\", alter_sys=True)\" runtime-version'",
+      "linux": "env -S 'PYTHONPATH=${JIUWENSWARM_DATA_DIR}/agent/workspace/mcp/mcp_hub:${HOME}/.jiuwenswarm/agent/workspace/mcp/mcp_hub python3 -u -B -c \"import sys; sys.path.pop(0); import runpy; runpy.run_module(\\\"google-drive.launcher\\\", run_name=\\\"__main__\\\", alter_sys=True)\" runtime-version'",
+      "win32": "py -3.12 -u -B -c \"import os,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');p=root/'agent'/'workspace'/'mcp'/'mcp_hub'/'google-drive'/'launcher.py';import sys;sys.path.insert(0,str(p.parent));runpy.run_path(str(p),run_name='__main__')\" runtime-version"
+    }
+  },
+  "auth": [
+    {
+      "command": {
+        "darwin": "/usr/bin/env -S 'PYTHONPATH=${JIUWENSWARM_DATA_DIR}/agent/workspace/mcp/mcp_hub:${HOME}/.jiuwenswarm/agent/workspace/mcp/mcp_hub python3 -u -B -c \"import sys; sys.path.pop(0); import runpy; runpy.run_module(\\\"google-drive.launcher\\\", run_name=\\\"__main__\\\", alter_sys=True)\" login --no-open-browser'",
+        "linux": "env -S 'PYTHONPATH=${JIUWENSWARM_DATA_DIR}/agent/workspace/mcp/mcp_hub:${HOME}/.jiuwenswarm/agent/workspace/mcp/mcp_hub python3 -u -B -c \"import sys; sys.path.pop(0); import runpy; runpy.run_module(\\\"google-drive.launcher\\\", run_name=\\\"__main__\\\", alter_sys=True)\" login --no-open-browser'",
+        "win32": "py -3.12 -u -B -c \"import os,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');p=root/'agent'/'workspace'/'mcp'/'mcp_hub'/'google-drive'/'launcher.py';import sys;sys.path.insert(0,str(p.parent));runpy.run_path(str(p),run_name='__main__')\" login --no-open-browser"
+      },
+      "authUrlDomain": "accounts.google.com",
+      "authWaitForExit": true
+    }
+  ],
+  "status": {
+    "darwin": "/usr/bin/env -S 'PYTHONPATH=${JIUWENSWARM_DATA_DIR}/agent/workspace/mcp/mcp_hub:${HOME}/.jiuwenswarm/agent/workspace/mcp/mcp_hub python3 -u -B -c \"import sys; sys.path.pop(0); import runpy; runpy.run_module(\\\"google-drive.launcher\\\", run_name=\\\"__main__\\\", alter_sys=True)\" status'",
+    "linux": "env -S 'PYTHONPATH=${JIUWENSWARM_DATA_DIR}/agent/workspace/mcp/mcp_hub:${HOME}/.jiuwenswarm/agent/workspace/mcp/mcp_hub python3 -u -B -c \"import sys; sys.path.pop(0); import runpy; runpy.run_module(\\\"google-drive.launcher\\\", run_name=\\\"__main__\\\", alter_sys=True)\" status'",
+    "win32": "py -3.12 -u -B -c \"import os,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');p=root/'agent'/'workspace'/'mcp'/'mcp_hub'/'google-drive'/'launcher.py';import sys;sys.path.insert(0,str(p.parent));runpy.run_path(str(p),run_name='__main__')\" status"
+  },
+  "statusMatchJson": {
+    "signed_in_local": "true"
+  },
+  "unAuth": {
+    "darwin": "/usr/bin/env -S 'PYTHONPATH=${JIUWENSWARM_DATA_DIR}/agent/workspace/mcp/mcp_hub:${HOME}/.jiuwenswarm/agent/workspace/mcp/mcp_hub python3 -u -B -c \"import sys; sys.path.pop(0); import runpy; runpy.run_module(\\\"google-drive.launcher\\\", run_name=\\\"__main__\\\", alter_sys=True)\" logout'",
+    "linux": "env -S 'PYTHONPATH=${JIUWENSWARM_DATA_DIR}/agent/workspace/mcp/mcp_hub:${HOME}/.jiuwenswarm/agent/workspace/mcp/mcp_hub python3 -u -B -c \"import sys; sys.path.pop(0); import runpy; runpy.run_module(\\\"google-drive.launcher\\\", run_name=\\\"__main__\\\", alter_sys=True)\" logout'",
+    "win32": "py -3.12 -u -B -c \"import os,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');p=root/'agent'/'workspace'/'mcp'/'mcp_hub'/'google-drive'/'launcher.py';import sys;sys.path.insert(0,str(p.parent));runpy.run_path(str(p),run_name='__main__')\" logout"
+  }
+}

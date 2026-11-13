@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "asset_type": "agent-mcp",
+  "name": "google-drive",
+  "display_name": "Google 云端硬盘连接器",
+  "version": "1.0.0",
+  "task_id": "AH-20261113-google-drive",
+  "internal_asset_id": "repo:agent-mcp:google-drive",
+  "created_at_utc": "2026-11-13T08:47:59.857629+00:00",
+  "artifacts": [
+    {
+      "form": "native",
+      "path": "connectors/google-drive/test-packages/google-drive-1.0.0-native.zip",
+      "filename": "google-drive-1.0.0-native.zip",
+      "sha256": "a26bf9070f435ab14dcc5a0485a727ad29510d257dd65bb8f06f9de12a1c01e8",
+      "size_bytes": 95905
+    },
+    {
+      "form": "agent-mcp_wrapped",
+      "path": "connectors/google-drive/release/1.0.0/google-drive-1.0.0-agent-mcp.zip",
+      "filename": "google-drive-1.0.0-agent-mcp.zip",
+      "sha256": "565843dce7a9af51f7d43d4edab6a4580d2eda97a57af9c98d308bb4e8afcc22",
+      "size_bytes": 39820
+    }
+  ],
+  "payload_sha256": {
+    "README.md": "f300a781b93b09b535f997bf479d1063cc5198ecd97b0301d547bd6397c55c45",
+    "THIRD_PARTY_NOTICES.md": "cbf17699a49f08b83aea34cc242849a8136298bc6191cc69d0e14388e0e724e9",
+    "bootstrap_lock.py": "3fc47a2daf6c60d2a006584e342b14f7471db27055f86c43fe0225186459db25",
+    "cli.json": "390d7a75bc76c3b8cdf4315ebb135a2dc17ed8f585bae06fffd8935991ac5319",
+    "google_api.py": "a4dab67257d098cd17716e5f91b4ba9a04fc44567bb16f5b88e509ec7e527b77",
+    "launcher.py": "24e29925fdc33f1de77b1415f47862d36d8bfa88f22877c74f43c4aca5682050",
+    "licenses/google-auth/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "licenses/google-auth-oauthlib/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "licenses/requests/LICENSE": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b",
+    "manifest.json": "c7faf947c39f1db803777faaf9f9a2023333d8d80b492d1595e247bb0c54f651",
+    "oauth.py": "1b8b9ff7083368321282f2ea99fa1c8e39ecc8581f8088f40a2747552e0c4723",
+    "requirements.in": "e67055fe9c69ee3c5a048963ff3cb498fc0240d7da7980ebffba9af92101493a",
+    "requirements.txt": "8cba403f6a10b86445df444e7e93d66aaeabc209ce90c22a8f09b82ff8dad51e",
+    "service.py": "ed647496d353ca23399fe86e7516a0d24df537c670e30e6d79f88da0e30f0366",
+    "skills/google-drive-guide/SKILL.md": "e443847cf9714de12c6fc43f608f8964b186ecd1cdb640d8237cc023772f1fde"
+  },
+  "review_files_sha256": {
+    "SOURCE_REVIEW.md": "224cd08a9049df56f43c0fa477a054f609581921b515e1c9c9d517c7bbbb19c1",
+    "TEST_REPORT.md": "18f0c84b5466105d30871702be867285a93a0a921f5ef954d09b7b8529cf3cf3",
+    "provenance.json": "1bfcd27753ce0a14473270166b996c9091e8118a5b3d109d15f8c522f29ec0fb"
+  },
+  "official_cli": {
+    "distribution": "openjiuwen-agentichub",
+    "version": "0.0.1",
+    "source": "https://github.com/openJiuwen-ai/skillhub",
+    "source_commit": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+    "commands": [
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/../gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "init",
+        "google-drive",
+        "--type",
+        "agent-mcp"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/../gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "validate",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-wm2q6oyy/google-drive"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/../gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "pack",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-wm2q6oyy/google-drive",
+        "--output",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-wm2q6oyy/out"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/../gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/tools/asset_release.py",
+        "preflight",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/connectors/google-drive/google-drive"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/../gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/tools/asset_release.py",
+        "preflight",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-wm2q6oyy/native.zip"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/../gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/tools/asset_release.py",
+        "preflight",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-wm2q6oyy/out/google-drive-1.0.0.zip"
+      ]
+    ]
+  },
+  "checks": [
+    {
+      "step": "official_init",
+      "output": "Plugin initialized at: /private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-wm2q6oyy/google-drive"
+    },
+    {
+      "step": "official_validate",
+      "output": "Plugin validation passed."
+    },
+    {
+      "step": "official_pack",
+      "output": "Packed: /private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-wm2q6oyy/out/google-drive-1.0.0.zip"
+    },
+    {
+      "step": "javascript_preflight_native_source",
+      "output": "{\n  \"path\": \"/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-workspace/connectors/google-drive/google-drive\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_native_zip",
+      "output": "{\n  \"path\": \"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-wm2q6oyy/native.zip\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_wrapped_zip",
+      "output": "{\n  \"path\": \"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-wm2q6oyy/out/google-drive-1.0.0.zip\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    }
+  ],
+  "verification_limits": "Packaging/JavaScript preflight and byte-equivalence only; not authenticated provider access or user manual-test acceptance."
+}

@@ -1,0 +1,28 @@
+{
+  "version": "1.0.1",
+  "package_type": "mcp",
+  "id": "google-slides",
+  "name": "Google 幻灯片连接器",
+  "description": "读取、创建和修改原生 Google 幻灯片。需要用户自建 Google Cloud 项目并配置 Desktop OAuth。",
+  "display_name": {
+    "zh": "Google 幻灯片连接器",
+    "en": "Google Slides Connector"
+  },
+  "display_description": {
+    "zh": "读取、创建和修改原生 Google 幻灯片。",
+    "en": "Read, create and edit native Google Slides presentations."
+  },
+  "integration": {
+    "type": "cli",
+    "file": "cli.json"
+  },
+  "credentials": {
+    "type": "cli-oauth"
+  },
+  "skills": [
+    {
+      "dir": "skills/google-slides-guide",
+      "mode": "all"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "type": "agent-mcp",
+  "name": "google-drive",
+  "display_name": "Google 云端硬盘连接器",
+  "version": "1.0.0",
+  "owner": "Song Haoran",
+  "task_id": "AH-20261113-google-drive",
+  "candidate_id": null,
+  "internal_asset_id": "repo:agent-mcp:google-drive",
+  "description": "Search files and folders, download files and export Google Workspace files.",
+  "native_path": "google-drive"
+}
