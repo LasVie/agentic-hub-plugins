@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-plugin:a11y-enforcer",
+  "type": "agent-plugin",
+  "name": "a11y-enforcer",
+  "version": "1.0.0",
+  "zip": "a11y-enforcer-1.0.0.zip",
+  "sha256": "5fba65bdb086dbb0a9999bf179f0fdce1de83894a77bffbba26b8477c14e720a",
+  "payload_sha256": {
+    "licenses/a11y-enforcer/LICENSE": "5f434c88921e448707dc3b7983a41364721fdbec7468735c26dba2200f183d04",
+    "manifest.json": "c63dd2eb478da041d2721ec4b5324f626570f85eb19543f2b7dc2fde27e00e8b",
+    "README.md": "3b67539a30c1f159b1f4395cef06de0a61238e9de81eb1befdc91dae3fe8bcbd",
+    "skills/web-accessibility-check/references/rules.md": "5bdabb26f3a61842555c36b9e0a1c1b245701903ea459647bd9ae4813f225513",
+    "skills/web-accessibility-check/SKILL.md": "4cbf8f5a3d95649cab8c538489abbcd51c5127a7172dae0f906f9aee31b11fc6",
+    "THIRD_PARTY_NOTICES.md": "1457234b6a18546f585db364bca1171822deda551785312b4142c13715e2395d",
+    "tools/a11y_enforcer.py": "0947812494d28d2e26af48d2e1802a699b2e599c7032d1be21945535fadc92cc"
+  },
+  "provenance_mode": "ported",
+  "source_review_sha256": "950e848d3eebdc5e7d2cb515c3c8e99be5ccb37d813336716247da44095ca02b",
+  "functional_test_report_sha256": "7462ca586d2ca1c5b7e40c71a2fe1bca79b11cb3e77342cd5781596ab21c633e"
+}

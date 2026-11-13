@@ -67,3 +67,18 @@ Mapping: A11y Enforcer: WCAG Accessibility Checker -> 网页无障碍检查（�
 - 商标/署名：本包不是上游作者发布或认可的版本——README 明确写明，THIRD_PARTY_NOTICES.md 写明不授予上游名称、图标或商标的权利、也不表示上游作者认可本插件；保留 Stefan Petrovici 的版权与 MIT 全文。不使用上游图标和作者介绍。
 - 效果：本包只做静态扫描和对比度计算，没有发现问题不等于符合 WCAG，也不能替代审计。
 - 专利、商标和服务条款：移植与独立实现都不构成对这些权利的自动豁免；本审查没有对它们作出结论。WCAG 是 W3C 的标准，本包只引用成功标准编号，不复制标准原文。
+
+## 最终 ZIP 许可复核
+
+复核对象：`releases/agent-plugin/a11y-enforcer/1.0.0/a11y-enforcer-1.0.0.zip`（SHA-256 5fba65bdb086dbb0a9999bf179f0fdce1de83894a77bffbba26b8477c14e720a，56023 字节）及其内层载荷；原生测试包 `test-packages/a11y-enforcer-1.0.0-native.zip`（SHA-256 5faef2928eed506c873812bd19a00fbb888c0c9891a55196d94081c0af0f7897，54559 字节）。复核日期 2026-11-13，已读取 ZIP 内容后逐项检查：
+
+- 包装 ZIP 的内层载荷 7 个文件，与经用户测试的原生测试包逐文件、逐 SHA-256 一致（包装只多出外层 `plugin.yaml`）。
+- `provenance.json` 的 `license_evidence` 指向的 `licenses/a11y-enforcer/LICENSE` 存在于 ZIP 内，SHA-256 与记录一致（5f434c88921e448707dc3b7983a41364721fdbec7468735c26dba2200f183d04，1073 字节，LF，无 CR）；含 “Copyright (c) 2026 Stefan Petrovici”、完整的授权声明和免责声明；与上游固定提交 LICENSE 的原始 Git blob（b723472340e31da4d4c4452bb6e21a893e04f480）逐字节一致。
+- 三个复用路径 `tools/a11y_enforcer.py`、`skills/web-accessibility-check/SKILL.md`、`skills/web-accessibility-check/references/rules.md` 都在 ZIP 内，且被 `THIRD_PARTY_NOTICES.md` 逐条列出（上游路径、Git blob、复用方式、修改摘要）。
+- `THIRD_PARTY_NOTICES.md` 含上游 URL、固定提交、版权声明、许可文件路径与哈希、复制范围、修改摘要、未复用清单和授权范围说明。上游没有 NOTICE 文件，所以没有需要保留的 NOTICE（MIT 本身不要求）。
+- MIT 不要求在文件里写修改通知；本仓库约定的修改摘要放在 `THIRD_PARTY_NOTICES.md`，`tools/a11y_enforcer.py` 的文件头也写明了来源、版权人和许可。上游脚本没有版权头可保留。
+- ZIP 内没有图标、图片、字体、编译缓存、日志或可执行文件，没有绝对路径或 `..` 路径；上游图标和作者介绍未使用。
+- 对该 ZIP 运行的 JavaScript 预检：扫描 0 个 JavaScript 文件，0 个已知动态执行特征。
+- 本次未发现未满足的许可条件。尚未解决的事项（不构成许可障碍）：上游的商标和名称未获授权，也未使用；专利等其他权利没有作出结论；没有核查上游的完整提交历史和其他贡献者。
+
+`check`、`check-repo`、CI 和 Hub 接受上传都不能代替上述内容复核；本复核是人工逐项核对。

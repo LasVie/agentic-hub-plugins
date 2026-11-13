@@ -30,7 +30,7 @@ Package under test: native ZIP `test-packages/a11y-enforcer-1.0.0-native.zip`（
 
 ## 2. 仓库格式检查
 
-- `python tools/asset_release.py check plugins/a11y-enforcer`：见下方最终记录。
+- `python tools/asset_release.py check plugins/a11y-enforcer`：`format_ok: true`。
 - `python tools/asset_release.py preflight plugins/a11y-enforcer/a11y-enforcer` 和对原生 ZIP 的 `preflight`：扫描 0 个 JavaScript 文件，0 个已知动态执行特征。
 
 ## 3. 原生 ZIP 与宿主检查（真实 DeepAgent / Runner / SkillUseRail，没有模型）
@@ -73,4 +73,23 @@ Package under test: native ZIP `test-packages/a11y-enforcer-1.0.0-native.zip`（
 | --- | --- | --- | --- |
 | 原生测试包（交给用户测试） | `test-packages/a11y-enforcer-1.0.0-native.zip` | 54559 字节 | 5faef2928eed506c873812bd19a00fbb888c0c9891a55196d94081c0af0f7897 |
 
-规范包装包（`releases/agent-plugin/a11y-enforcer/1.0.0/`）在用户确认测试通过之后、交付前才构建，并核对内层载荷与上面的测试包逐文件一致。上述自动测试和宿主检查都是针对这套字节。用户测试之后如果载荷、名称或本地化有任何改动，需要重新构建、重新测试并重新确认。
+| 规范包装包（准备交付） | `releases/agent-plugin/a11y-enforcer/1.0.0/a11y-enforcer-1.0.0.zip` | 56023 字节 | 5fba65bdb086dbb0a9999bf179f0fdce1de83894a77bffbba26b8477c14e720a |
+
+两个包的 7 个内层载荷文件逐文件、逐 SHA-256 一致（包装只多出外层 `plugin.yaml`）；`tools/a11y_enforcer.py` 的 SHA-256 记录在 `test-packages/native-artifact.json` 和 `releases/.../artifact.json`。上述自动测试和宿主检查都是针对这套字节。用户测试之后如果载荷、名称或本地化有任何改动，需要重新构建、重新测试并重新确认。
+
+## 8. 用户手工测试（WorkSwarm，2026-11-13）
+
+测试人：Nguyen Trung Dung，在 WorkSwarm 里安装 `a11y-enforcer-1.0.0-native.zip`（SHA-256 5faef2928eed506c873812bd19a00fbb888c0c9891a55196d94081c0af0f7897），把 `D:\jiuwen_reposgentic-hub-plugins\ForTestings`（`tests/fixtures/manual/` 的副本）当作测试目录，用真实模型对话，约 15:21 到 15:36（Asia/Singapore）。收到 3 张界面截图和 3 张完整对话导出，看到的内容：
+
+- 工具与技能：`a11y_scan`（参数 `paths`、`max_issues`，结果 DONE）和 `a11y_contrast`（用户自选的三组颜色，结果 3.21、3.43、3.66，与独立重算的 3.2127、3.4289、3.6645 一致）被真实调用；模型通过 `skill_tool` 加载了 `web-accessibility-check`。
+- 测试 1（登录页，3 次对话）：10 条问题，8 个错误、2 个警告，与预期一致。
+- 测试 3（`商品卡片.jsx`）：6 个错误、0 个警告，与预期一致。
+- 测试 5（整个目录）：警告 5 处，与预期一致。
+- 测试 10（不在目录里的文件）：模型说明目录里只有这 4 个文件、找不到该文件，没有编造结果。
+- 测试 11（只看错误）：只报告错误，把两个警告列为按请求排除，与预期一致。
+- 测试 12（改正）：模型先询问，用户确认后才改文件；改动尽量小；用 `a11y_scan` 重扫得到 0 个错误、0 个警告；说明静态扫描不等于 WCAG 合规，并列出需要人工确认的部分。这次修改只发生在用户自己的测试副本 `ForTestings\登录页.html`，仓库里的示例文件没有变。
+- 诚实度：文件里没有颜色时，模型说明 `a11y_contrast` 没有可算的输入，没有编造比值。
+- 没有看到的测试：2、4、6、7、8、9（用户用自己选的颜色代替了 6 到 8 的示例）。
+- 非阻塞观察：第一次对话里模型对中文提问用英文回答；另外两次对话用中文回答，其中一次先加载了技能。工具返回里已有“请用简体中文向用户汇报”的提示，但模型没有遵守，属于模型的语言选择；用户认为这不构成阻塞。
+
+用户随后通过明确的问答确认：测试通过，没有阻塞问题；中文显示名保持“网页无障碍检查”。原始截图已收到，将附在交付 PR 的证据评论里。
