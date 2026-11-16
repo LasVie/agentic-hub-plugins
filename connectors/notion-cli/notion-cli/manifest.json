@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "package_type": "mcp",
+  "id": "notion-cli",
+  "name": "Notion 工作区连接器",
+  "description": "从浏览器连接 Notion，按标题找页面、读取正文，并在指定页面末尾追加文本。",
+  "display_name": {
+    "zh": "Notion 工作区连接器",
+    "en": "Notion Workspace Connector"
+  },
+  "display_description": {
+    "zh": "连接、搜索、读取和更新指定 Notion 页面。",
+    "en": "Connect, search, read, and append to Notion pages."
+  },
+  "integration": {
+    "type": "cli",
+    "file": "cli.json"
+  },
+  "credentials": {
+    "type": "cli-oauth"
+  },
+  "skills": [
+    {
+      "dir": "skills/notion-cli-guide",
+      "mode": "all"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "init": {
+    "darwin": "/usr/bin/env -S 'PYTHONPATH=${JIUWENSWARM_DATA_DIR}/agent/workspace/mcp/mcp_hub:${HOME}/.jiuwenswarm/agent/workspace/mcp/mcp_hub python3 -u -B -c \"import sys; sys.path.pop(0); import runpy; runpy.run_module(\\\"notion-cli.launcher\\\", run_name=\\\"__main__\\\", alter_sys=True)\" prepare'",
+    "linux": "python3 -u -B -c \"import os,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');runpy.run_path(str(root/'agent'/'workspace'/'mcp'/'mcp_hub'/'notion-cli'/'launcher.py'),run_name='__main__')\" prepare",
+    "win32": "py -3.11 -u -B -c \"import os,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');runpy.run_path(str(root/'agent'/'workspace'/'mcp'/'mcp_hub'/'notion-cli'/'launcher.py'),run_name='__main__')\" prepare"
+  },
+  "versionCheck": {
+    "command": {
+      "darwin": "/usr/bin/env -S 'PYTHONPATH=${JIUWENSWARM_DATA_DIR}/agent/workspace/mcp/mcp_hub:${HOME}/.jiuwenswarm/agent/workspace/mcp/mcp_hub python3 -u -B -c \"import sys; sys.path.pop(0); import runpy; runpy.run_module(\\\"notion-cli.launcher\\\", run_name=\\\"__main__\\\", alter_sys=True)\" version'",
+      "linux": "python3 -u -B -c \"import os,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');runpy.run_path(str(root/'agent'/'workspace'/'mcp'/'mcp_hub'/'notion-cli'/'launcher.py'),run_name='__main__')\" version",
+      "win32": "py -3.11 -u -B -c \"import os,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');runpy.run_path(str(root/'agent'/'workspace'/'mcp'/'mcp_hub'/'notion-cli'/'launcher.py'),run_name='__main__')\" version"
+    },
+    "minVersion": "0.23.30"
+  },
+  "auth": [
+    {
+      "command": {
+        "darwin": "/usr/bin/env -S 'PYTHONPATH=${JIUWENSWARM_DATA_DIR}/agent/workspace/mcp/mcp_hub:${HOME}/.jiuwenswarm/agent/workspace/mcp/mcp_hub python3 -u -B -c \"import sys; sys.path.pop(0); import runpy; runpy.run_module(\\\"notion-cli.launcher\\\", run_name=\\\"__main__\\\", alter_sys=True)\" login'",
+        "linux": "python3 -u -B -c \"import os,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');runpy.run_path(str(root/'agent'/'workspace'/'mcp'/'mcp_hub'/'notion-cli'/'launcher.py'),run_name='__main__')\" login",
+        "win32": "py -3.11 -u -B -c \"import os,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');runpy.run_path(str(root/'agent'/'workspace'/'mcp'/'mcp_hub'/'notion-cli'/'launcher.py'),run_name='__main__')\" login"
+      },
+      "authUrlDomain": "127.0.0.1",
+      "authWaitForExit": true
+    }
+  ],
+  "status": {
+    "darwin": "/usr/bin/env -S 'PYTHONPATH=${JIUWENSWARM_DATA_DIR}/agent/workspace/mcp/mcp_hub:${HOME}/.jiuwenswarm/agent/workspace/mcp/mcp_hub python3 -u -B -c \"import sys; sys.path.pop(0); import runpy; runpy.run_module(\\\"notion-cli.launcher\\\", run_name=\\\"__main__\\\", alter_sys=True)\" status'",
+    "linux": "python3 -u -B -c \"import os,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');runpy.run_path(str(root/'agent'/'workspace'/'mcp'/'mcp_hub'/'notion-cli'/'launcher.py'),run_name='__main__')\" status",
+    "win32": "py -3.11 -u -B -c \"import os,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');runpy.run_path(str(root/'agent'/'workspace'/'mcp'/'mcp_hub'/'notion-cli'/'launcher.py'),run_name='__main__')\" status"
+  },
+  "statusMatchJson": {
+    "connected": "true"
+  },
+  "unAuth": {
+    "darwin": "/usr/bin/env -S 'PYTHONPATH=${JIUWENSWARM_DATA_DIR}/agent/workspace/mcp/mcp_hub:${HOME}/.jiuwenswarm/agent/workspace/mcp/mcp_hub python3 -u -B -c \"import sys; sys.path.pop(0); import runpy; runpy.run_module(\\\"notion-cli.launcher\\\", run_name=\\\"__main__\\\", alter_sys=True)\" logout'",
+    "linux": "python3 -u -B -c \"import os,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');runpy.run_path(str(root/'agent'/'workspace'/'mcp'/'mcp_hub'/'notion-cli'/'launcher.py'),run_name='__main__')\" logout",
+    "win32": "py -3.11 -u -B -c \"import os,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');runpy.run_path(str(root/'agent'/'workspace'/'mcp'/'mcp_hub'/'notion-cli'/'launcher.py'),run_name='__main__')\" logout"
+  }
+}

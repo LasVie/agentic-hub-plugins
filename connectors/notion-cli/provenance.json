@@ -1,0 +1,46 @@
+{
+  "mode": "native",
+  "permission_status": "original",
+  "version": "1.0.0",
+  "review_date": "2026-11-16",
+  "task_id": "AH-20261116-notion-cli",
+  "candidate_id": null,
+  "owner": "Song Haoran",
+  "audit_file": "SOURCE_REVIEW.md",
+  "independent_spec": "NATIVE_DESIGN.md",
+  "naming": {
+    "original_request": "Official Notion CLI",
+    "display_name": "Notion 工作区连接器",
+    "slug": "notion-cli"
+  },
+  "sources": [
+    {
+      "url": "https://developers.notion.com/cli/get-started/authentication",
+      "use": "Public CLI authentication contract"
+    },
+    {
+      "url": "https://developers.notion.com/cli/guides/api-requests",
+      "use": "Public CLI request interface"
+    }
+  ],
+  "runtime_dependencies": [
+    {
+      "name": "ntn",
+      "version": "0.23.30",
+      "url": "https://registry.npmjs.org/ntn/0.23.30",
+      "sha256": "f466d18f58808d8ee58cd1f027035b14a0bdf29dffef66e83c59ce62c63b86e6",
+      "revision": "ce61d1ada2c290b4804fed73b49daad30b84271b",
+      "license_metadata": "MIT",
+      "bundled_code": false
+    }
+  ],
+  "license_evidence": [
+    {
+      "name": "Notion CLI",
+      "version": "0.23.30",
+      "path": "licenses/notion-cli/LICENSE",
+      "source_distribution_path": "package/LICENSE.md",
+      "sha256": "ed189d279fa3b5f8e1f139ca583f73693eac31df9619a6a59dd73030c65e19af"
+    }
+  ]
+}

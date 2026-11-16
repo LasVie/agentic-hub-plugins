@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "type": "agent-mcp",
+  "name": "notion-cli",
+  "display_name": "Notion 工作区连接器",
+  "version": "1.0.0",
+  "owner": "Song Haoran",
+  "task_id": "AH-20261116-notion-cli",
+  "candidate_id": null,
+  "internal_asset_id": "repo:agent-mcp:notion-cli",
+  "description": "Official Notion CLI with browser sign-in and bounded page operations.",
+  "native_path": "notion-cli"
+}

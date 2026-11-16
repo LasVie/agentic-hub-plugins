@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "asset_type": "agent-mcp",
+  "name": "notion-cli",
+  "display_name": "Notion 工作区连接器",
+  "version": "1.0.0",
+  "task_id": "AH-20261116-notion-cli",
+  "internal_asset_id": "repo:agent-mcp:notion-cli",
+  "created_at_utc": "2026-11-16T08:33:26.353747+00:00",
+  "artifacts": [
+    {
+      "form": "native",
+      "path": "connectors/notion-cli/test-packages/notion-cli-1.0.0-native.zip",
+      "filename": "notion-cli-1.0.0-native.zip",
+      "sha256": "38d0e1d64f13d350000403b52bc5cd0d734346340e1a5700834d731ed47bc3c2",
+      "size_bytes": 25869
+    },
+    {
+      "form": "agent-mcp_wrapped",
+      "path": "connectors/notion-cli/release/1.0.0/notion-cli-1.0.0-agent-mcp.zip",
+      "filename": "notion-cli-1.0.0-agent-mcp.zip",
+      "sha256": "00cbe42995c36cd713c9b01187cc428ba92022a913595ccb2e2120becc5af2ab",
+      "size_bytes": 11238
+    }
+  ],
+  "payload_sha256": {
+    "README.md": "72ff75e7f9db93effa959196afd8e1557810cc0719d10a0650836fe645a362f9",
+    "THIRD_PARTY_NOTICES.md": "168dc1383c2ff5ccfcfb0bbc33e28347a6c7e50e22ba4fc17bf404f34ad3abb8",
+    "cli.json": "f445e5207007a9cf89033f23efc07a5bf8952377bf9dc30a06bbface66fb963a",
+    "launcher.py": "6afecc76bb2ea18dfb91a24bbf324a8fa9a746ed1c31a4550f9beacb0a9036c5",
+    "licenses/notion-cli/LICENSE": "ed189d279fa3b5f8e1f139ca583f73693eac31df9619a6a59dd73030c65e19af",
+    "manifest.json": "d33df3b6b32f9c31c8cd2309f6f8913bbbe113fce5d1ee3d05ff2c61db592a9d",
+    "skills/notion-cli-guide/SKILL.md": "b8d78068952182d70c3b77202315ed3924afc8152b61ae1204bda97b34a7a0c2"
+  },
+  "review_files_sha256": {
+    "SOURCE_REVIEW.md": "c73cd4e326174d9694954fa1816500f2ed3fdd91f6b8cb9196cbbfedf55b64f4",
+    "TEST_REPORT.md": "658e62a82f9b92037edb2ee848fb9dda4287eedbe2d63fd46f84b977aeaeed7d",
+    "provenance.json": "1f9b0e43224263a0d86f66c1d5adc29970d2c9cb389235d481d70744db162042"
+  },
+  "official_cli": {
+    "distribution": "openjiuwen-agentichub",
+    "version": "0.0.1",
+    "source": "https://github.com/openJiuwen-ai/skillhub",
+    "source_commit": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+    "commands": [
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-notion-cli/../gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "init",
+        "notion-cli",
+        "--type",
+        "agent-mcp"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-notion-cli/../gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "validate",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-4kvhwe0l/notion-cli"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-notion-cli/../gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "pack",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-4kvhwe0l/notion-cli",
+        "--output",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-4kvhwe0l/out"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-notion-cli/../gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-notion-cli/tools/asset_release.py",
+        "preflight",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-notion-cli/connectors/notion-cli/notion-cli"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-notion-cli/../gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-notion-cli/tools/asset_release.py",
+        "preflight",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-4kvhwe0l/native.zip"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-notion-cli/../gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-notion-cli/tools/asset_release.py",
+        "preflight",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-4kvhwe0l/out/notion-cli-1.0.0.zip"
+      ]
+    ]
+  },
+  "checks": [
+    {
+      "step": "official_init",
+      "output": "Plugin initialized at: /private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-4kvhwe0l/notion-cli"
+    },
+    {
+      "step": "official_validate",
+      "output": "Plugin validation passed."
+    },
+    {
+      "step": "official_pack",
+      "output": "Packed: /private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-4kvhwe0l/out/notion-cli-1.0.0.zip"
+    },
+    {
+      "step": "javascript_preflight_native_source",
+      "output": "{\n  \"path\": \"/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-notion-cli/connectors/notion-cli/notion-cli\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_native_zip",
+      "output": "{\n  \"path\": \"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-4kvhwe0l/native.zip\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_wrapped_zip",
+      "output": "{\n  \"path\": \"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-4kvhwe0l/out/notion-cli-1.0.0.zip\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    }
+  ],
+  "verification_limits": "Packaging/JavaScript preflight and byte-equivalence only; not authenticated provider access or user manual-test acceptance."
+}
