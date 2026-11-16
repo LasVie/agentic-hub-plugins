@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "package_type": "mcp",
+  "id": "google-calendar",
+  "name": "Google 日历连接器",
+  "description": "从卡片授权 Google，在主日历中查询、创建和读取日程。",
+  "display_name": {
+    "zh": "Google 日历连接器",
+    "en": "Google Calendar Connector"
+  },
+  "display_description": {
+    "zh": "查询主日历、创建日程并回读确认。使用 Google Desktop OAuth。",
+    "en": "Search the primary calendar, create events, and verify them using Google Desktop OAuth."
+  },
+  "integration": {
+    "type": "cli",
+    "file": "cli.json"
+  },
+  "credentials": {
+    "type": "cli-oauth"
+  },
+  "skills": [
+    {
+      "dir": "skills/google-calendar-guide",
+      "mode": "all"
+    }
+  ]
+}
