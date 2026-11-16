@@ -30,3 +30,7 @@ Host loader: `agent-group-creator/scripts/register_group.py <extracted payload> 
 ## User test confirmation
 
 "test is complete" — Vannes Wijaya, 2026-11-10, version 0.1.1, native ZIP SHA-256 a822f1a333c9360e5b90ba8e84c44f26782ab73da3c9063d67d751a99934f2dc. Recorded as RPT-20261110-grant-proposal-team-confirm-011.
+
+## Marketplace packaging verification
+
+The 0.1.1 marketplace revision changes the outer directory and the declared avatar. All other payload files match the manually tested original. The local SkillHub marketplace validator at commit 26304c1 accepted the revised ZIP and extracted the new avatar. The proposal checker suite passed 22 of 22 tests using the tool extracted from the revised ZIP. The Project Lead reviewed the revised marketplace form and approved the specific package for submission on 2026-11-16 in the Agentic Hub release conversation. The original WorkSwarm screenshots document the unchanged functionality.
