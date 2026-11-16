@@ -24,3 +24,7 @@ Proposals cite papers found by the host's search at run time; they are not bundl
 ## Release check
 
 Extracted the 0.1.1 native ZIP and the wrapped release ZIP: no reused paths, so no notices or licence files are required; no symlinks, credentials, caches or machine-specific paths in the payload.
+
+## Marketplace packaging follow-up
+
+On 2026-11-16 Song Haoran chose the new proposal-cover artwork for the Agentic Hub card. It was generated for this asset with ImageGen and contains no reference artwork or third-party marks. It replaces the original declared avatar at the same path. The marketplace revision adds the required outer directory. The outer metadata and all 22 other payload files match the approved original bytes. The previous ZIP and artwork remain available in the original delivery.
