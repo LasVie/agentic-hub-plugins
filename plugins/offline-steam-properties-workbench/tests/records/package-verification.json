@@ -1,0 +1,34 @@
+{
+  "task_id": "AH-20261116-offline-steam-properties-workbench",
+  "version": "1.0.0",
+  "display_name": "离线水与蒸汽物性工作台",
+  "native_sha256": "41764bfdaa0799b9944adadafc922bbc857d3e0e926170f5a25692f12fac156e",
+  "canonical_sha256": "39e40862077801745b45da9140b203e4ec36671d43f646d11255ded05866b2e7",
+  "payload_files": 53,
+  "source_native_canonical_extracted_installed_equal": true,
+  "legal_audit": "passed; 4officialwheels,30legal/source records,420Eigenoriginalfiles",
+  "exact_package_tests": {
+    "properties": 12,
+    "runtime_http": 11,
+    "ui_helpers": 8,
+    "reference_checks": 57,
+    "reference_production_calls": 21,
+    "registered_sdk_invocations": 16
+  },
+  "dynamic_js_preflight": {
+    "native_js_files": 2,
+    "canonical_js_files": 2,
+    "known_signature_hits": 0
+  },
+  "check_repo": {
+    "source_assets": 77,
+    "release_zips": 90,
+    "passed": true,
+    "scope": "structural only"
+  },
+  "user_testing": "pending; no user test completion claimed",
+  "source_review_sha256": "2cf0d64e7b77128b6d053048309ca1aea6292b76b6cf0d7aef173b4e4b34e3ed",
+  "functional_test_report_sha256": "a4aca464dd593ff0b231b188997b3c0256448086f8ad8eb8384be071b8e2e9a5",
+  "original_parallel_evidence_preserved": true,
+  "commits_pushes_prs_releases_hub_actions_paid_calls": 0
+}

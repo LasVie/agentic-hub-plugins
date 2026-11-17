@@ -1,0 +1,46 @@
+# Functional test report
+
+**User testing passed for the frozen Chinese 1.0.0 package on 2026-11-17.**
+
+Task `AH-20261116-offline-steam-properties-workbench`; owner **Cai Zhenze**; 2026-11-16 Asia/Singapore. Candidate ID: **Not Applicable**. Mapping: **CoolProp 8.0.0 → 离线水与蒸汽物性工作台 → offline-steam-properties-workbench**. Version **1.0.0**; stable ID `repo:agent-plugin:offline-steam-properties-workbench`.
+
+## Frozen packages
+
+| Package | SHA-256 | Bytes |
+| --- | --- | ---: |
+| Native WorkSwarm ZIP, `test-packages/offline-steam-properties-workbench-1.0.0-workswarm.zip` | `41764bfdaa0799b9944adadafc922bbc857d3e0e926170f5a25692f12fac156e` | 44877944 |
+| Canonical ZIP, `releases/agent-plugin/offline-steam-properties-workbench/1.0.0/offline-steam-properties-workbench-1.0.0.zip` | `39e40862077801745b45da9140b203e4ec36671d43f646d11255ded05866b2e7` | 44885893 |
+
+All **53 payload files** match source, both archives, the extracted native package and the actual installed package. Canonical wrapper adds one file. CRC, duplicate/path/symlink/hidden/cache checks, stored ZIP encoding and95MiB limit passed. Four official wheel hashes,30legal/source records and420original Eigen files verified; source evidence is exact, including nlohmann/json953436-byte header. Final legal audit is in SOURCE_REVIEW.md/provenance.json/source-audit.json. No numerical engine or wheel is modified; no NumPy is redistributed.
+
+## Actual verification
+
+| Check | Observed result and evidence |
+| --- | --- |
+| Exact extracted numeric/input/recovery suite | **12 passed**,16.918s. Published atmospheric saturation/h/latent values, PT phase and saturation ambiguity, Q endpoints/mix, TQ↔PQ, full100-point bounds, unsafe/huge/nonfinite/duplicate input, changed-input rejection, cancellation, timeout, actual owned-child crash and recovery. Actual cancellation after observing an extracted wheel file reaped the complete parent-owned calculation tree. `tests/records/exact-native-properties.log`. |
+| Exact extracted lifecycle/HTTP suite | **11 passed**,2.043s, no skips. Real start/status/reuse/stop/restart, mutation authorization, private permissions, corrupt/foreign state preservation, symlink refusal, fixed module assets, token/Host/Origin checks and real calculation. Request-order cancellation fencing uses an explicitly identified deterministic own-plugin stub; actual engine cancellation is covered separately. `exact-native-runtime.log`, `runtime-http-verification.json`. |
+| Exact extracted UI helper suite | **8 passed**. SI roundtrip/conversions, strict/duplicate/prototype/unsafe imports, bounds, selection and full-precision CSV. Manual0.01°C now converts exactly to273.16K, while lower invalid values and strict SI bounds remain rejected. Presentation fixtures are synthetic and are not scientific reference results. `ui-tests.log`. |
+| Final exact-package reference cross-check | **57/57 passed**,21 production-adapter calculations. Six PT states × density/enthalpy/entropy against IF97; max relative difference0.0099684%, threshold0.5%. Inverse saturation, separate-call enthalpy/entropy/specific-volume mixture identities and latent endpoint differences passed. `reference-crosscheck.json`. IF97 is an alternative formulation inside the same reviewed binary, not an independent engine or certification. Published CoolProp examples are API regression references. |
+| Running WorkSwarm native installation | Supported `plugin_packages.import_local`/`install` and guarded replacement of this task's own preliminary package passed. Actual installed card/Chinese identity/SDK files match final ZIP. Both direct/proxied WebSocket and HTTP passed; other catalogs/payloads/config unchanged. `workswarm-028-verification.json`. |
+| Public SDK registered execution | **16 invocations passed** through actual `DeepAgent.load_plugin` and registered `Tool.invoke`/stream. Chinese Skill and both tools discovered; four real water cases, Chinese unsafe/huge-input errors, lifecycle/reuse/stop/restart. Three references unloaded and all temporary test services stopped. Installed bytes unchanged. `sdk-0120-verification.json`. This is separate from running-host chat dispatch. |
+| Child network isolation | The actual calculation OS sandbox profile denied a loopback socket attempt with PermissionError; no external address was contacted. This child sandbox is not a host patch. |
+
+Tests used the final native extraction `/private/tmp/main3-steam-20261116/tested-41764bfd`, standard CPython3.13.5, NumPy2.4.4, arm64 macOS26.5.1. The selected wheel is the official cp312-abi3 ARM build. The private worker imports its own copied venv NumPy under `-I -B`. Runtime/HTTP real-engine gate was explicitly `STEAM_TEST_ENGINE_READY=1`; test selection used `STEAM_PAYLOAD`. Node used the existing Codex runtime, with no dependency install.
+
+## Browser and Chinese flows
+
+Actual Chrome source flows verified calculation, phase/units, two enthalpy curves, keyboard endpoint navigation, stale-result/export clearing, Q0.5 save+reload with input-only restoration, cancel/recalculate, saturated PT Chinese error, reset, and rejection of an actual file containing `script`. The Celsius-minimum fix was exercised in Chrome for state0.01°C and sweep0.01/366.85°C and succeeded without weakening backend bounds. Source preview was closed with its actual page button; lifecycle status then returned running=false.
+
+The **final installed ZIP** was opened and calculated again. Observed atmospheric values:99.974296°C; density958.3675kg/m³; h419.05773kJ/kg; s1.3069208kJ/(kg·K); latent2256.4716kJ/kg. Point25 at2000kPa showed saturated hLiquid908.49808 and hVapor2798.2926kJ/kg. Three real final browser downloads were parsed: JSON retained101325Pa/Q0; CSV29rows×14columns matched reference values; SVG contained no script/event handlers. All three exports were byte-identical to the previously verified outputs. `browser-download-verification.json` and `browser-final-41764bfd.jpg` are **AI verification**, not original user screenshots.
+
+## Environment, preservation and limitations
+
+Isolated WorkSwarm: **http://127.0.0.1:6497/**. Unchanged0.2.8 source `fa91394e42a7af731424222db82b02351e694de9`, SDK0.1.20. This is an audited physically copied dependency subset without computer-use, not a complete frozen-lock installation. Host6943source/41880dependency/271frontend files and protected donor6943source/41880dependency files remain byte-identical; no extra source/dependency files. Dedicated ports/state, zero model/paid calls. `final-installed-integrity.json` records package equality and preservation. On 2026-11-16 a final installed workbench was started via the real registered tool after SDK cleanup for manual preview; this is a historical preparation record, not a current uptime claim. Its access token/URL was kept in task-private session state. Default input was saved; results are recomputed. Idle expiry is30minutes.
+
+- Actual execution is arm64/CPython3.13.5/macOS26.5.1 only. macOS11+, Intel and CPython3.11/3.12+ ABI tags are statically verified; execution on those other versions/architecture is unverified. Free-threaded Python is rejected. Windows/Linux are unsupported.
+- No running-host chat/model dispatch or same-model A/B was performed. GUI package card was observed; native installation used the supported backend API. These AI checks did not cover manual GUI ZIP upload or chat routing; the subsequently supplied user screenshot shows actual registered-tool results in the user's WorkSwarm conversation. The isolated Hub-disabled catalog displayed a refresh warning; the installed local card and workbench work. No Hub availability is claimed.
+- Only fixed HEOS::Water, PT/PQ/TQ and2–100-point saturation sweep. No mixture, arbitrary backend/config/code import, REFPROP runtime, ice or flow-network simulation. No safety certification claim.
+- No disable/uninstall callback is exposed to this plugin. Close before disabling/uninstalling; unload does not prove automatic service shutdown. Verified page close and registered stop are distinct from host disable. Idle expiry is30minutes.
+- Preliminary unconfirmed packages remain in task-private history and are excluded from delivery. Final records above use only the41764bfd/39e40862 pair.
+
+No known functional blocker remains in the confirmed scope. Cai Zhenze explicitly confirmed manual testing passed on 2026-11-17 in the current Main 3.0 Codex conversation and authorized Phase 3 GitHub delivery. Four original full-resolution PNGs were received, preserved unchanged and visually inspected before any delivery push/PR. They show saturated water, mixed steam, superheated steam and actual native-tool results, all associated with version 1.0.0/CoolProp 8.0.0. See USER_TEST_CONFIRMATION.md and user-test-originals/index.json for the exact confirmation, filenames and SHA-256 values. User confirmation covers the complete manual test; screenshots illustrate key operations and do not independently prove every checklist item. Both frozen ZIPs and all 53 payload files remain unchanged. Installation and manual acceptance steps are in MANUAL_TEST.md and the packaged Chinese README. Project Lead acceptance remains pending; no Releases or Hub actions are authorized.

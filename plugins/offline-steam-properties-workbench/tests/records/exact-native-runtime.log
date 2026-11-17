@@ -1,0 +1,16 @@
+test_authenticated_shutdown_acknowledges_and_stops_owned_server (__main__.LoopbackHttpTests.test_authenticated_shutdown_acknowledges_and_stops_owned_server) ... ok
+test_busy_wrong_id_cancel_and_late_result_are_fenced (__main__.LoopbackHttpTests.test_busy_wrong_id_cancel_and_late_result_are_fenced) ... ok
+test_cancel_before_calculate_fences_late_request_without_engine (__main__.LoopbackHttpTests.test_cancel_before_calculate_fences_late_request_without_engine) ... ok
+test_malformed_extra_nonfinite_and_huge_inputs_fail_without_saving (__main__.LoopbackHttpTests.test_malformed_extra_nonfinite_and_huge_inputs_fail_without_saving) ... ok
+test_real_numeric_http_result_matches_current_input_and_water_fixture (__main__.LoopbackHttpTests.test_real_numeric_http_result_matches_current_input_and_water_fixture) ... ok
+test_saved_project_reset_and_fresh_server_reload (__main__.LoopbackHttpTests.test_saved_project_reset_and_fresh_server_reload) ... ok
+test_tokens_host_origin_fetch_boundary_and_static_modules (__main__.LoopbackHttpTests.test_tokens_host_origin_fetch_boundary_and_static_modules) ... ok
+test_authorization_reuse_stop_and_restart (__main__.OwnedLifecycleTests.test_authorization_reuse_stop_and_restart) ... ok
+test_foreign_loopback_identity_is_never_stopped (__main__.OwnedLifecycleTests.test_foreign_loopback_identity_is_never_stopped) ... ok
+test_invalid_saved_project_recovers_with_original_backup (__main__.OwnedLifecycleTests.test_invalid_saved_project_recovers_with_original_backup) ... ok
+test_unowned_nonprivate_symlink_and_corrupt_state_are_preserved (__main__.OwnedLifecycleTests.test_unowned_nonprivate_symlink_and_corrupt_state_are_preserved) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 2.043s
+
+OK

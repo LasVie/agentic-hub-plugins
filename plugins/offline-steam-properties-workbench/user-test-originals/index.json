@@ -1,0 +1,48 @@
+{
+  "task_id": "AH-20261116-offline-steam-properties-workbench",
+  "version": "1.0.0",
+  "received_date": "2026-11-17",
+  "source": "User manual-test confirmation and four original attachments in this Main 3.0 conversation",
+  "images": [
+    {
+      "original_filename": "ChatGPT Image 17 Nov 2026, 11_39_11.png",
+      "source_path": "/Users/IDLE_And_R/Downloads/ChatGPT Image 17 Nov 2026, 11_39_11.png",
+      "preserved_path": "plugins/offline-steam-properties-workbench/user-test-originals/ChatGPT Image 17 Nov 2026, 11_39_11.png",
+      "bytes": 412931,
+      "width": 3436,
+      "height": 1714,
+      "sha256": "4d8a52396d6b7423fc5e086b88915c6d085bb6ffb8c2800cdf560bbf9382159c",
+      "unchanged_original": true
+    },
+    {
+      "original_filename": "ChatGPT Image 17 Nov 2026, 11_39_16.png",
+      "source_path": "/Users/IDLE_And_R/Downloads/ChatGPT Image 17 Nov 2026, 11_39_16.png",
+      "preserved_path": "plugins/offline-steam-properties-workbench/user-test-originals/ChatGPT Image 17 Nov 2026, 11_39_16.png",
+      "bytes": 273418,
+      "width": 564,
+      "height": 1712,
+      "sha256": "546d3c7ea176a9d6a3862bdbc9502b07db4771756d73f4ed8a94f7ba9942e6b4",
+      "unchanged_original": true
+    },
+    {
+      "original_filename": "ChatGPT Image 17 Nov 2026, 11_39_20.png",
+      "source_path": "/Users/IDLE_And_R/Downloads/ChatGPT Image 17 Nov 2026, 11_39_20.png",
+      "preserved_path": "plugins/offline-steam-properties-workbench/user-test-originals/ChatGPT Image 17 Nov 2026, 11_39_20.png",
+      "bytes": 405378,
+      "width": 3440,
+      "height": 1712,
+      "sha256": "79291288c7639714fe17ac5bd6f15c686ee5c36fc32162e60a2cb22b923289f1",
+      "unchanged_original": true
+    },
+    {
+      "original_filename": "ChatGPT Image 17 Nov 2026, 11_39_23.png",
+      "source_path": "/Users/IDLE_And_R/Downloads/ChatGPT Image 17 Nov 2026, 11_39_23.png",
+      "preserved_path": "plugins/offline-steam-properties-workbench/user-test-originals/ChatGPT Image 17 Nov 2026, 11_39_23.png",
+      "bytes": 415007,
+      "width": 3438,
+      "height": 1726,
+      "sha256": "63b7b586628b8a2a76496d4c81c9363e6c76ca715b37d56fa953df8782064b8e",
+      "unchanged_original": true
+    }
+  ]
+}

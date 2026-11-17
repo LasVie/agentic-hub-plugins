@@ -1,0 +1,151 @@
+{
+  "verified_at": "2026-11-16T09:32:22.194749+00:00",
+  "task_id": "AH-20261116-offline-steam-properties-workbench",
+  "plugin_id": "offline-steam-properties-workbench",
+  "display_name": "离线水与蒸汽物性工作台",
+  "version": "1.0.0",
+  "host_commit": "fa91394e42a7af731424222db82b02351e694de9",
+  "host_root": "/private/tmp/main3-steam-20261116/host-028",
+  "native_zip_sha256": "41764bfdaa0799b9944adadafc922bbc857d3e0e926170f5a25692f12fac156e",
+  "native_payload_files": 53,
+  "frontend_url": "http://127.0.0.1:6497/",
+  "model_requests": 0,
+  "host_code_changes": false,
+  "dependency_scope": "Task-private unpatched host; copied dependency subset, computer-use absent; no models",
+  "scope": "Running local native import/install/catalog; standalone SDK execution is recorded separately; running chat-worker dispatch is untested.",
+  "connection_state_limitation": "For a no-MCP plugin, connected mirrors installation and does not prove native tool execution.",
+  "catalog_before": [
+    {
+      "id": "offline-steam-properties-workbench",
+      "installed": true,
+      "connection_state": "connected"
+    }
+  ],
+  "payload_sha256": {
+    "README.md": "8e48e24679096a893486612ff561726987ce29ab3128d4e85bc3893547b27902",
+    "THIRD_PARTY_NOTICES.md": "b6b3b920bac8520e1192c9ee633b1c66b98ea2c51862ca9b4d476484810d5a14",
+    "examples/常压饱和水.json": "5c477508ee474a1dfef66704f9ff4058fa943c155f053c7ef32415bd0b71b877",
+    "examples/温度扫描.json": "d26bd5959c511b33cb1495cf5c27657754ff5dcb462d39c786c3eb50a2162a1f",
+    "examples/湿蒸汽.json": "4a3e54ae2cf9e76261f8e635b3abf57e2ce9b0ccb7834780b6236c0fe15c1192",
+    "examples/过热蒸汽.json": "c075d3d46df97c09ccc0dea08b100ebc058150e972bb39b82d3793b803da6500",
+    "licenses/boost/COPYRIGHT.txt": "abfad3ce7478c58cdc8bcec9e0bab2315ed198137ef4328de111cb0fca4c2535",
+    "licenses/boost/LICENSE": "ea056d2c64294936b226f7360c265e77c52adc4ba171ee61029357f101f439cf",
+    "licenses/coolprop/BEER-WARE.txt": "ec8f4cea643bbdc786aa1cc6215ba82625df46cfd5f841e22ba31bc55cd0f3ac",
+    "licenses/coolprop/LICENSE": "9bf835333ef602af4cb19338b9f9d43671e174fa029b00280e9bdba6ea4719b2",
+    "licenses/coolprop/NIST.txt": "05bdb3dc0624b17b9158bb0694aedaafe4bc3c6f370bc5e625bcde66cf2223e9",
+    "licenses/coolprop/PUBLIC-DOMAIN-CUBIC.txt": "9c24fddadab8e23aa855ec2ed373f12af68261ebbe8d154e382a4d75efcb1dfc",
+    "licenses/cython/COPYING.txt": "98b40f3b2f20d14d00bf580c85347965a3e6e0ba39ecc9f22b0d9cdc459d1fd6",
+    "licenses/eigen/COPYING.APACHE": "03379001a7b12a2ec997a25554247d985270b353c10d5bafee9ac8d6519820b7",
+    "licenses/eigen/COPYING.BSD": "51928dce36213c5333ba3172e847d735d4c6e9b7ff2722a326c49067155b82eb",
+    "licenses/eigen/COPYING.MINPACK": "c87b7f8ee88f6195e91743820c00354833583aef091b72e2d4a49c8e28e798a0",
+    "licenses/eigen/COPYING.MPL2": "66a3107d5ad6a058aab753eaac2047ccb2ed0e39465dd0fe5844da3e300d5172",
+    "licenses/eigen/COPYING.README": "db640ff2bd90c6abd6a4d3fbb351e0ee4d555417cf840492054d1cbb2ea85644",
+    "licenses/eigen/LICENSE": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5",
+    "licenses/eigen/README.md": "356dafc01129af78f891fbdd47201f137e13bbdc512aa621d43da2eb08d9ce61",
+    "licenses/eigen/eigen-5.0.1-corresponding-headers.tar.gz": "0a44ffcab8abdb2515f3b418d298da9a78ed7c309bdbfce3ed54e756d47dfca0",
+    "licenses/fmt/LICENSE": "1580c78f71dc3001a819c637894068e2cb954b7dda8651633a6af70b3eeb37d0",
+    "licenses/if97/LICENSE": "49ae7892aa64119f235acb7541730f955f2cf9df41f39d01672320314a8a9e2c",
+    "licenses/incbin/LICENSE": "7e12e5df4bae12cb21581ba157ced20e1986a0508dd10d0e8a4ab9a4cf94e85c",
+    "licenses/miniz/LICENSE": "6f20fa7672b00e2e975c291df737cf227addf3ad32e36fef3fe0f416e4664d3d",
+    "licenses/miniz/UNLICENSE.txt": "2cf817317caffc99ed2d1769b8cc055bfe417fdddac49e86b0fe4328fb5b4bdd",
+    "licenses/msgpack/COPYRIGHT.txt": "f1b4639a6d300827803167cc903833a22d8c7de6b1ce567b9c2bf760053d1b42",
+    "licenses/msgpack/LICENSE": "ea056d2c64294936b226f7360c265e77c52adc4ba171ee61029357f101f439cf",
+    "licenses/nanobind/COPYRIGHTS.txt": "a044886f19d03e728c0c54039ae7eeb2198063d30cd7cd71498ac275c4151b47",
+    "licenses/nanobind/LICENSE": "f7aeabe2cd3219e46e185670cd791653e0d460565bea2d0f788c12a83637def1",
+    "licenses/nlohmann-json/Apache-2.0.txt": "1f83bfbb6ab612d244b9619bcf615e54c2e107fc78a05eb6e16bc1ce41fd2f8f",
+    "licenses/nlohmann-json/LICENSE": "b34025ec44b080b51e0197668af52ab54579dbe9e59d72a779ff5f3d926d4a87",
+    "licenses/nlohmann-json/source/json.hpp": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63",
+    "licenses/refprop-headers/LICENSE": "700b4b0b096d402cc8bf1939ccf79fa9c95a781108080c51fae5936185900187",
+    "licenses/robin-map/LICENSE": "c5955460e9cd0d48aabbc9106bf046793bea54bd5862541c82080360702201ef",
+    "licenses/valijson/LICENSE": "122bf1710ecc0382cac450448778097300e76af95269df059ad0c2f9d2583bce",
+    "manifest.json": "e7993c6073945a3012e9cd47634a68f9dc2be874f01c35edef462897be730c23",
+    "runtime/engine.py": "564aa9098b0e8decc8affd65f082791a7b9922d5309f355accdd788ef4100226",
+    "runtime/model.py": "1f0786d043a9eb15602dfeddb743e4557186e26e53d54e86599c9685ffe74fa4",
+    "runtime/runtime.py": "33bd860ab7f1d9c1051df392f96ef9c04708412c73e5b887c1e9847e89b5d575",
+    "runtime/server.py": "66ae27f8677f281949648105299b3e578d47e48af71d9f70d0cdb444febde249",
+    "runtime/worker.py": "f9828b6eb55a2d51cac86c039247a58ec7c63e95fa1398fd59cd8609d437f600",
+    "skills/water-steam/SKILL.md": "63f093dfb67b142b39f3038f7ea7b2bd87d1af424b94047f204dbe6a303191c2",
+    "tools/steam_tools.py": "d332dc14d5ab03047f3dd9878ab2d287c81b08d6288e1b573465a38df61cdd9f",
+    "vendor/coolprop/binaries.json": "9cc14cab484cc277bd47595cd99ca9cc1829d0fc05b7df39f3f8cdb840c566e0",
+    "vendor/coolprop/coolprop-8.0.0-cp311-cp311-macosx_11_0_arm64.whl": "ad8bca80518c9777e81dd861fc274e4a56115712b54af7413504249e8fe83078",
+    "vendor/coolprop/coolprop-8.0.0-cp311-cp311-macosx_11_0_x86_64.whl": "7b8e17dd611b6e1a0b91bec887c84056c4492dcb033fda4b3e93a6b77dc9e074",
+    "vendor/coolprop/coolprop-8.0.0-cp312-abi3-macosx_11_0_arm64.whl": "46de36f51330ce8c7f8384a7360e1058739d20604736158aac6bd2abf6ae26bd",
+    "vendor/coolprop/coolprop-8.0.0-cp312-abi3-macosx_11_0_x86_64.whl": "939803aa9d849961e76512d4c3d60b15c25802c75cbecc801892edb3b023f200",
+    "web/app.js": "3bf74b9abfc3111e4de9ad88a03ca3d9af1f6ffb31e3773277078aa8e4c9d043",
+    "web/index.html": "672e92d32d2d6a73de5e886af96d5455b2ab3425e7b401dec609c1d8df726954",
+    "web/style.css": "49e056f46905c08f728b51ad7a45742f73e754f2a849a7993f112834afee53bc",
+    "web/ui_helpers.mjs": "b84ded87335522cfbb31fd876db4c90cb578e0be3ef622ac999bc879c786478b"
+  },
+  "passed": true,
+  "frontend_http": 200,
+  "direct_and_proxy_websocket_ping_pong": true,
+  "replacement_previous_native_sha256": "4ac1a4bfcca5e7f065668d0d193134c0cb196329bed8ac2f7989655b6ef2e3aa",
+  "previous_installed_payload_matches_preserved_zip": true,
+  "prior_owned_workspaces_without_live_state": [
+    "/private/tmp/main3-steam-20261116/sdk-verification-final-4ac1a4bf",
+    "/private/tmp/main3-steam-20261116/manual-installed-workspace-final-4ac1a4bf"
+  ],
+  "supported_previous_local_uninstall": true,
+  "supported_local_import": true,
+  "supported_local_install": true,
+  "installed_payload_matches_zip": true,
+  "installed_payload": "/private/tmp/main3-steam-20261116/host-028/data/domain/agent/workspace/plugins/plugin_packages/local/offline-steam-properties-workbench",
+  "installed_card": {
+    "id": "offline-steam-properties-workbench",
+    "version": "1.0.0",
+    "displayName": {
+      "zh": "离线水与蒸汽物性工作台",
+      "en": "离线水与蒸汽物性工作台"
+    },
+    "installed": true,
+    "connection_state": "connected",
+    "tools": [
+      {
+        "id": "SteamWorkbenchTool",
+        "displayName": {
+          "zh": "水与蒸汽工作台",
+          "en": "水与蒸汽工作台"
+        },
+        "displayDescription": {
+          "zh": "启动、查询或关闭本机专用物性工作台",
+          "en": "启动、查询或关闭本机专用物性工作台"
+        }
+      },
+      {
+        "id": "CalculateWaterPropertiesTool",
+        "displayName": {
+          "zh": "离线水与蒸汽计算",
+          "en": "离线水与蒸汽计算"
+        },
+        "displayDescription": {
+          "zh": "使用真实 CoolProp 8.0.0 计算纯水与蒸汽性质",
+          "en": "使用真实 CoolProp 8.0.0 计算纯水与蒸汽性质"
+        }
+      }
+    ],
+    "skills": [
+      {
+        "id": "water-steam",
+        "displayName": {
+          "zh": "water-steam",
+          "en": "water-steam"
+        },
+        "displayDescription": {
+          "zh": "在本机计算纯水与蒸汽物性，使用真实离线引擎核对饱和状态与扫描曲线。",
+          "en": "在本机计算纯水与蒸汽物性，使用真实离线引擎核对饱和状态与扫描曲线。"
+        },
+        "avatar": ""
+      }
+    ]
+  },
+  "model_config_unchanged": true,
+  "other_plugin_payloads_unchanged": true,
+  "other_plugin_catalog_unchanged": true,
+  "catalog_after": [
+    {
+      "id": "offline-steam-properties-workbench",
+      "installed": true,
+      "connection_state": "connected"
+    }
+  ]
+}

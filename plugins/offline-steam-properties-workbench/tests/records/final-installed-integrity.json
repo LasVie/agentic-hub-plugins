@@ -1,0 +1,42 @@
+{
+  "verified_at": "2026-11-16T09:35:30.382361+00:00",
+  "task_id": "AH-20261116-offline-steam-properties-workbench",
+  "passed": true,
+  "native_zip_sha256": "41764bfdaa0799b9944adadafc922bbc857d3e0e926170f5a25692f12fac156e",
+  "canonical_zip_sha256": "39e40862077801745b45da9140b203e4ec36671d43f646d11255ded05866b2e7",
+  "payload_files": 53,
+  "installed_matches_native": true,
+  "exact_extracted_matches_native": true,
+  "canonical_payload_matches_native": true,
+  "final_host_and_protected_donor_checks": {
+    "source": {
+      "audited_files": 6943,
+      "changed_or_missing": [],
+      "extra_noncache_files": []
+    },
+    "dependencies": {
+      "audited_files": 41880,
+      "changed_or_missing": [],
+      "extra_noncache_files": []
+    },
+    "frontend_dist": {
+      "audited_files": 271,
+      "changed_or_missing": [],
+      "extra_noncache_files": []
+    },
+    "protected_donor_source": {
+      "audited_files": 6943,
+      "changed_or_missing": [],
+      "mutations_performed": false
+    },
+    "protected_donor_dependencies": {
+      "audited_files": 41880,
+      "changed_or_missing": [],
+      "mutations_performed": false
+    }
+  },
+  "external_network_denials": 0,
+  "scope": "Read-only final hash audit after final supported installation, registered SDK tests and installed manual startup. Full hash inventories retained task-privately.",
+  "host_source_or_dependency_changes": false,
+  "protected_donor_mutations": false
+}

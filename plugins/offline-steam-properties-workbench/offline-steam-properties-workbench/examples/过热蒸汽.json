@@ -1,0 +1,15 @@
+{
+  "schema": "steam-properties/v1",
+  "name": "过热蒸汽",
+  "state": {
+    "pair": "PT",
+    "pressure_pa": 101325,
+    "temperature_k": 473.15
+  },
+  "sweep": {
+    "variable": "pressure_pa",
+    "start": 10000,
+    "end": 2000000,
+    "points": 25
+  }
+}

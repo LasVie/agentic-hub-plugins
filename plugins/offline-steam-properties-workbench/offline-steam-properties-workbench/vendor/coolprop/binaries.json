@@ -1,0 +1,52 @@
+{
+  "schema": "offline-steam-properties-workbench/coolprop-wheels/v1",
+  "version": "8.0.0",
+  "gitrevision": "ae81610e7d23efc57f9d051c8e70a4d66e87537f",
+  "numpy_bundled": false,
+  "wheels": [
+    {
+      "filename": "coolprop-8.0.0-cp311-cp311-macosx_11_0_arm64.whl",
+      "url": "https://files.pythonhosted.org/packages/d5/03/98285d9059117ac9b0b105741be36481a67687979fda22bdf31333ffcc92/coolprop-8.0.0-cp311-cp311-macosx_11_0_arm64.whl",
+      "sha256": "ad8bca80518c9777e81dd861fc274e4a56115712b54af7413504249e8fe83078",
+      "bytes": 10552223,
+      "architecture": "arm64",
+      "python_tag": "cp311",
+      "abi_tag": "cp311",
+      "platform_tag": "macosx_11_0_arm64",
+      "minimum_macos": "11.0"
+    },
+    {
+      "filename": "coolprop-8.0.0-cp311-cp311-macosx_11_0_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/7b/4d/6a68cbf7c1ae128f7c5bfc34045021e346c7031e054eff6949d368b13ecc/coolprop-8.0.0-cp311-cp311-macosx_11_0_x86_64.whl",
+      "sha256": "7b8e17dd611b6e1a0b91bec887c84056c4492dcb033fda4b3e93a6b77dc9e074",
+      "bytes": 10683032,
+      "architecture": "x86_64",
+      "python_tag": "cp311",
+      "abi_tag": "cp311",
+      "platform_tag": "macosx_11_0_x86_64",
+      "minimum_macos": "11.0"
+    },
+    {
+      "filename": "coolprop-8.0.0-cp312-abi3-macosx_11_0_arm64.whl",
+      "url": "https://files.pythonhosted.org/packages/33/d1/5eef80c184dc2ed99b01776ba0755f45248cddfd2e0d45e8accc025d6fd9/coolprop-8.0.0-cp312-abi3-macosx_11_0_arm64.whl",
+      "sha256": "46de36f51330ce8c7f8384a7360e1058739d20604736158aac6bd2abf6ae26bd",
+      "bytes": 10571251,
+      "architecture": "arm64",
+      "python_tag": "cp312",
+      "abi_tag": "abi3",
+      "platform_tag": "macosx_11_0_arm64",
+      "minimum_macos": "11.0"
+    },
+    {
+      "filename": "coolprop-8.0.0-cp312-abi3-macosx_11_0_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/d0/43/3f0d8d28be14ad53b4f54c7d771a89d76b49c8adc17c03c2ccbfe4d06917/coolprop-8.0.0-cp312-abi3-macosx_11_0_x86_64.whl",
+      "sha256": "939803aa9d849961e76512d4c3d60b15c25802c75cbecc801892edb3b023f200",
+      "bytes": 10672568,
+      "architecture": "x86_64",
+      "python_tag": "cp312",
+      "abi_tag": "abi3",
+      "platform_tag": "macosx_11_0_x86_64",
+      "minimum_macos": "11.0"
+    }
+  ]
+}

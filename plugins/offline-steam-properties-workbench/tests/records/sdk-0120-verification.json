@@ -1,0 +1,1477 @@
+{
+  "verified_at": "2026-11-16T09:32:42.258531+00:00",
+  "task_id": "AH-20261116-offline-steam-properties-workbench",
+  "plugin_id": "offline-steam-properties-workbench",
+  "display_name": "离线水与蒸汽物性工作台",
+  "version": "1.0.0",
+  "native_zip_sha256": "41764bfdaa0799b9944adadafc922bbc857d3e0e926170f5a25692f12fac156e",
+  "payload": "/private/tmp/main3-steam-20261116/host-028/data/domain/agent/workspace/plugins/plugin_packages/local/offline-steam-properties-workbench",
+  "workspace": "/private/tmp/main3-steam-20261116/sdk-verification-final-41764bfd",
+  "openjiuwen_version": "0.1.20",
+  "python_version": "3.13.5",
+  "model_requests": 0,
+  "scope": "Standalone actual DeepAgent.load_plugin and registered Tool.invoke; running chat-worker dispatch is untested.",
+  "external_network": "Denied by Python audit hook; CoolProp worker has its own OS network sandbox.",
+  "payload_sha256": {
+    "README.md": "8e48e24679096a893486612ff561726987ce29ab3128d4e85bc3893547b27902",
+    "THIRD_PARTY_NOTICES.md": "b6b3b920bac8520e1192c9ee633b1c66b98ea2c51862ca9b4d476484810d5a14",
+    "examples/常压饱和水.json": "5c477508ee474a1dfef66704f9ff4058fa943c155f053c7ef32415bd0b71b877",
+    "examples/温度扫描.json": "d26bd5959c511b33cb1495cf5c27657754ff5dcb462d39c786c3eb50a2162a1f",
+    "examples/湿蒸汽.json": "4a3e54ae2cf9e76261f8e635b3abf57e2ce9b0ccb7834780b6236c0fe15c1192",
+    "examples/过热蒸汽.json": "c075d3d46df97c09ccc0dea08b100ebc058150e972bb39b82d3793b803da6500",
+    "licenses/boost/COPYRIGHT.txt": "abfad3ce7478c58cdc8bcec9e0bab2315ed198137ef4328de111cb0fca4c2535",
+    "licenses/boost/LICENSE": "ea056d2c64294936b226f7360c265e77c52adc4ba171ee61029357f101f439cf",
+    "licenses/coolprop/BEER-WARE.txt": "ec8f4cea643bbdc786aa1cc6215ba82625df46cfd5f841e22ba31bc55cd0f3ac",
+    "licenses/coolprop/LICENSE": "9bf835333ef602af4cb19338b9f9d43671e174fa029b00280e9bdba6ea4719b2",
+    "licenses/coolprop/NIST.txt": "05bdb3dc0624b17b9158bb0694aedaafe4bc3c6f370bc5e625bcde66cf2223e9",
+    "licenses/coolprop/PUBLIC-DOMAIN-CUBIC.txt": "9c24fddadab8e23aa855ec2ed373f12af68261ebbe8d154e382a4d75efcb1dfc",
+    "licenses/cython/COPYING.txt": "98b40f3b2f20d14d00bf580c85347965a3e6e0ba39ecc9f22b0d9cdc459d1fd6",
+    "licenses/eigen/COPYING.APACHE": "03379001a7b12a2ec997a25554247d985270b353c10d5bafee9ac8d6519820b7",
+    "licenses/eigen/COPYING.BSD": "51928dce36213c5333ba3172e847d735d4c6e9b7ff2722a326c49067155b82eb",
+    "licenses/eigen/COPYING.MINPACK": "c87b7f8ee88f6195e91743820c00354833583aef091b72e2d4a49c8e28e798a0",
+    "licenses/eigen/COPYING.MPL2": "66a3107d5ad6a058aab753eaac2047ccb2ed0e39465dd0fe5844da3e300d5172",
+    "licenses/eigen/COPYING.README": "db640ff2bd90c6abd6a4d3fbb351e0ee4d555417cf840492054d1cbb2ea85644",
+    "licenses/eigen/LICENSE": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5",
+    "licenses/eigen/README.md": "356dafc01129af78f891fbdd47201f137e13bbdc512aa621d43da2eb08d9ce61",
+    "licenses/eigen/eigen-5.0.1-corresponding-headers.tar.gz": "0a44ffcab8abdb2515f3b418d298da9a78ed7c309bdbfce3ed54e756d47dfca0",
+    "licenses/fmt/LICENSE": "1580c78f71dc3001a819c637894068e2cb954b7dda8651633a6af70b3eeb37d0",
+    "licenses/if97/LICENSE": "49ae7892aa64119f235acb7541730f955f2cf9df41f39d01672320314a8a9e2c",
+    "licenses/incbin/LICENSE": "7e12e5df4bae12cb21581ba157ced20e1986a0508dd10d0e8a4ab9a4cf94e85c",
+    "licenses/miniz/LICENSE": "6f20fa7672b00e2e975c291df737cf227addf3ad32e36fef3fe0f416e4664d3d",
+    "licenses/miniz/UNLICENSE.txt": "2cf817317caffc99ed2d1769b8cc055bfe417fdddac49e86b0fe4328fb5b4bdd",
+    "licenses/msgpack/COPYRIGHT.txt": "f1b4639a6d300827803167cc903833a22d8c7de6b1ce567b9c2bf760053d1b42",
+    "licenses/msgpack/LICENSE": "ea056d2c64294936b226f7360c265e77c52adc4ba171ee61029357f101f439cf",
+    "licenses/nanobind/COPYRIGHTS.txt": "a044886f19d03e728c0c54039ae7eeb2198063d30cd7cd71498ac275c4151b47",
+    "licenses/nanobind/LICENSE": "f7aeabe2cd3219e46e185670cd791653e0d460565bea2d0f788c12a83637def1",
+    "licenses/nlohmann-json/Apache-2.0.txt": "1f83bfbb6ab612d244b9619bcf615e54c2e107fc78a05eb6e16bc1ce41fd2f8f",
+    "licenses/nlohmann-json/LICENSE": "b34025ec44b080b51e0197668af52ab54579dbe9e59d72a779ff5f3d926d4a87",
+    "licenses/nlohmann-json/source/json.hpp": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63",
+    "licenses/refprop-headers/LICENSE": "700b4b0b096d402cc8bf1939ccf79fa9c95a781108080c51fae5936185900187",
+    "licenses/robin-map/LICENSE": "c5955460e9cd0d48aabbc9106bf046793bea54bd5862541c82080360702201ef",
+    "licenses/valijson/LICENSE": "122bf1710ecc0382cac450448778097300e76af95269df059ad0c2f9d2583bce",
+    "manifest.json": "e7993c6073945a3012e9cd47634a68f9dc2be874f01c35edef462897be730c23",
+    "runtime/engine.py": "564aa9098b0e8decc8affd65f082791a7b9922d5309f355accdd788ef4100226",
+    "runtime/model.py": "1f0786d043a9eb15602dfeddb743e4557186e26e53d54e86599c9685ffe74fa4",
+    "runtime/runtime.py": "33bd860ab7f1d9c1051df392f96ef9c04708412c73e5b887c1e9847e89b5d575",
+    "runtime/server.py": "66ae27f8677f281949648105299b3e578d47e48af71d9f70d0cdb444febde249",
+    "runtime/worker.py": "f9828b6eb55a2d51cac86c039247a58ec7c63e95fa1398fd59cd8609d437f600",
+    "skills/water-steam/SKILL.md": "63f093dfb67b142b39f3038f7ea7b2bd87d1af424b94047f204dbe6a303191c2",
+    "tools/steam_tools.py": "d332dc14d5ab03047f3dd9878ab2d287c81b08d6288e1b573465a38df61cdd9f",
+    "vendor/coolprop/binaries.json": "9cc14cab484cc277bd47595cd99ca9cc1829d0fc05b7df39f3f8cdb840c566e0",
+    "vendor/coolprop/coolprop-8.0.0-cp311-cp311-macosx_11_0_arm64.whl": "ad8bca80518c9777e81dd861fc274e4a56115712b54af7413504249e8fe83078",
+    "vendor/coolprop/coolprop-8.0.0-cp311-cp311-macosx_11_0_x86_64.whl": "7b8e17dd611b6e1a0b91bec887c84056c4492dcb033fda4b3e93a6b77dc9e074",
+    "vendor/coolprop/coolprop-8.0.0-cp312-abi3-macosx_11_0_arm64.whl": "46de36f51330ce8c7f8384a7360e1058739d20604736158aac6bd2abf6ae26bd",
+    "vendor/coolprop/coolprop-8.0.0-cp312-abi3-macosx_11_0_x86_64.whl": "939803aa9d849961e76512d4c3d60b15c25802c75cbecc801892edb3b023f200",
+    "web/app.js": "3bf74b9abfc3111e4de9ad88a03ca3d9af1f6ffb31e3773277078aa8e4c9d043",
+    "web/index.html": "672e92d32d2d6a73de5e886af96d5455b2ab3425e7b401dec609c1d8df726954",
+    "web/style.css": "49e056f46905c08f728b51ad7a45742f73e754f2a849a7993f112834afee53bc",
+    "web/ui_helpers.mjs": "b84ded87335522cfbb31fd876db4c90cb578e0be3ef622ac999bc879c786478b"
+  },
+  "records": [
+    {
+      "tool": "steam_workbench",
+      "inputs": {
+        "workspace": "/private/tmp/main3-steam-20261116/sdk-verification-final-41764bfd",
+        "action": "status"
+      },
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "running": false
+      }
+    },
+    {
+      "tool": "steam_workbench",
+      "inputs": {
+        "workspace": "/private/tmp/main3-steam-20261116/sdk-verification-final-41764bfd",
+        "action": "start"
+      },
+      "result": {
+        "ok": false,
+        "version": "1.0.0",
+        "error": {
+          "code": "operation_failed",
+          "message": "启动或停止前需要用户明确授权，并设置 confirmed=true。"
+        }
+      }
+    },
+    {
+      "tool": "calculate_water_properties",
+      "inputs": {
+        "project": {
+          "schema": "steam-properties/v1",
+          "name": "SDK 中文常压水验证",
+          "state": {
+            "pair": "PQ",
+            "pressure_pa": 101325,
+            "quality": 0
+          },
+          "sweep": {
+            "variable": "pressure_pa",
+            "start": 10000,
+            "end": 2000000,
+            "points": 25
+          }
+        }
+      },
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "engine": {
+          "name": "CoolProp",
+          "version": "8.0.0",
+          "backend": "HEOS",
+          "fluid": "Water"
+        },
+        "input": {
+          "schema": "steam-properties/v1",
+          "name": "SDK 中文常压水验证",
+          "state": {
+            "pair": "PQ",
+            "pressure_pa": 101325,
+            "quality": 0
+          },
+          "sweep": {
+            "variable": "pressure_pa",
+            "start": 10000,
+            "end": 2000000,
+            "points": 25
+          }
+        },
+        "input_sha256": "d6af2f7edd60980e8de5bb4ccba16c2032b81bd46fe7cdd499ee1c5b089967d2",
+        "state": {
+          "pressure_pa": 101325.0,
+          "temperature_k": 373.1242958476663,
+          "density_kg_m3": 958.3674968154769,
+          "enthalpy_j_kg": 419057.7330939964,
+          "entropy_j_kg_k": 1306.920812539797,
+          "phase": "饱和液态",
+          "quality": 0.0
+        },
+        "saturation": {
+          "pressure_pa": 101325,
+          "temperature_k": 373.1242958476663,
+          "liquid": {
+            "density_kg_m3": 958.3674968154769,
+            "enthalpy_j_kg": 419057.7330939964,
+            "entropy_j_kg_k": 1306.920812539797
+          },
+          "vapor": {
+            "density_kg_m3": 0.5976567696507362,
+            "enthalpy_j_kg": 2675529.32550072,
+            "entropy_j_kg_k": 7354.427280271823
+          },
+          "latent_heat_j_kg": 2256471.5924067236
+        },
+        "sweep": [
+          {
+            "pressure_pa": 10000.0,
+            "temperature_k": 318.9563289237973,
+            "liquid_density_kg_m3": 989.8332753649839,
+            "vapor_density_kg_m3": 0.06816572230898504,
+            "liquid_enthalpy_j_kg": 191805.9445588864,
+            "vapor_enthalpy_j_kg": 2583858.6717913337,
+            "latent_heat_j_kg": 2392052.7272324474
+          },
+          {
+            "pressure_pa": 92916.66666666667,
+            "temperature_k": 370.7151454476822,
+            "liquid_density_kg_m3": 960.0829290443417,
+            "vapor_density_kg_m3": 0.5511411531426677,
+            "liquid_enthalpy_j_kg": 408898.5509174995,
+            "vapor_enthalpy_j_kg": 2671712.00547799,
+            "latent_heat_j_kg": 2262813.4545604903
+          },
+          {
+            "pressure_pa": 175833.33333333334,
+            "temperature_k": 389.33653463148806,
+            "liquid_density_kg_m3": 946.1481567884124,
+            "vapor_density_kg_m3": 1.0008682664632078,
+            "liquid_enthalpy_j_kg": 487624.81738844246,
+            "vapor_enthalpy_j_kg": 2700336.3948470536,
+            "latent_heat_j_kg": 2212711.577458611
+          },
+          {
+            "pressure_pa": 258750.0,
+            "temperature_k": 401.69845449969523,
+            "liquid_density_kg_m3": 936.0613368910704,
+            "vapor_density_kg_m3": 1.437064823257871,
+            "liquid_enthalpy_j_kg": 540192.0835025148,
+            "vapor_enthalpy_j_kg": 2718073.603921818,
+            "latent_heat_j_kg": 2177881.5204193033
+          },
+          {
+            "pressure_pa": 341666.6666666667,
+            "temperature_k": 411.1627503645515,
+            "liquid_density_kg_m3": 927.8971728223377,
+            "vapor_density_kg_m3": 1.865069497489552,
+            "liquid_enthalpy_j_kg": 580642.6472582318,
+            "vapor_enthalpy_j_kg": 2730854.899308848,
+            "latent_heat_j_kg": 2150212.2520506163
+          },
+          {
+            "pressure_pa": 424583.3333333333,
+            "temperature_k": 418.92087786755184,
+            "liquid_density_kg_m3": 920.9198284502625,
+            "vapor_density_kg_m3": 2.287457072833211,
+            "liquid_enthalpy_j_kg": 613955.1861095505,
+            "vapor_enthalpy_j_kg": 2740759.332306505,
+            "latent_heat_j_kg": 2126804.146196955
+          },
+          {
+            "pressure_pa": 507500.0,
+            "temperature_k": 425.54277686321984,
+            "liquid_density_kg_m3": 914.7602017400023,
+            "vapor_density_kg_m3": 2.7057427722501664,
+            "liquid_enthalpy_j_kg": 642512.1484108919,
+            "vapor_enthalpy_j_kg": 2748772.227056895,
+            "latent_heat_j_kg": 2106260.0786460033
+          },
+          {
+            "pressure_pa": 590416.6666666666,
+            "temperature_k": 431.3482892804284,
+            "liquid_density_kg_m3": 909.2038301730036,
+            "vapor_density_kg_m3": 3.12092198791994,
+            "liquid_enthalpy_j_kg": 667650.9890610282,
+            "vapor_enthalpy_j_kg": 2755441.8575305664,
+            "latent_heat_j_kg": 2087790.8684695382
+          },
+          {
+            "pressure_pa": 673333.3333333334,
+            "temperature_k": 436.53603089402844,
+            "liquid_density_kg_m3": 904.1138366286688,
+            "vapor_density_kg_m3": 3.5336968778110567,
+            "liquid_enthalpy_j_kg": 690202.5154162536,
+            "vapor_enthalpy_j_kg": 2761105.976428106,
+            "latent_heat_j_kg": 2070903.4610118524
+          },
+          {
+            "pressure_pa": 756250.0,
+            "temperature_k": 441.2383423202115,
+            "liquid_density_kg_m3": 899.3969352641916,
+            "vapor_density_kg_m3": 3.9445883085882674,
+            "liquid_enthalpy_j_kg": 710720.4821348608,
+            "vapor_enthalpy_j_kg": 2765987.9151750444,
+            "latent_heat_j_kg": 2055267.4330401835
+          },
+          {
+            "pressure_pa": 839166.6666666666,
+            "temperature_k": 445.5481153125085,
+            "liquid_density_kg_m3": 894.9863802150587,
+            "vapor_density_kg_m3": 4.353997494188394,
+            "liquid_enthalpy_j_kg": 729593.6966936758,
+            "vapor_enthalpy_j_kg": 2770243.27838794,
+            "latent_heat_j_kg": 2040649.5816942642
+          },
+          {
+            "pressure_pa": 922083.3333333334,
+            "temperature_k": 449.53321936739854,
+            "liquid_density_kg_m3": 890.8325871035396,
+            "vapor_density_kg_m3": 4.762242698670918,
+            "liquid_enthalpy_j_kg": 747106.3180813723,
+            "vapor_enthalpy_j_kg": 2773984.943640121,
+            "latent_heat_j_kg": 2026878.6255587484
+          },
+          {
+            "pressure_pa": 1005000.0,
+            "temperature_k": 453.24484786450466,
+            "liquid_density_kg_m3": 886.897602034934,
+            "vapor_density_kg_m3": 5.1695824294832375,
+            "liquid_enthalpy_j_kg": 763472.7471327193,
+            "vapor_enthalpy_j_kg": 2777297.462657409,
+            "latent_heat_j_kg": 2013824.7155246895
+          },
+          {
+            "pressure_pa": 1087916.6666666667,
+            "temperature_k": 456.72263110727783,
+            "liquid_density_kg_m3": 883.1516558766634,
+            "vapor_density_kg_m3": 5.576230796290301,
+            "liquid_enthalpy_j_kg": 778859.0048162098,
+            "vapor_enthalpy_j_kg": 2780245.84720772,
+            "latent_heat_j_kg": 2001386.84239151
+          },
+          {
+            "pressure_pa": 1170833.3333333333,
+            "temperature_k": 459.99791681530377,
+            "liquid_density_kg_m3": 879.5709204171209,
+            "vapor_density_kg_m3": 5.982368074726287,
+            "liquid_enthalpy_j_kg": 793396.450699835,
+            "vapor_enthalpy_j_kg": 2782881.183178616,
+            "latent_heat_j_kg": 1989484.7324787811
+          },
+          {
+            "pressure_pa": 1253750.0,
+            "temperature_k": 463.09595662943957,
+            "liquid_density_kg_m3": 876.1359927431342,
+            "vapor_density_kg_m3": 6.388148203600501,
+            "liquid_enthalpy_j_kg": 807190.9280542966,
+            "vapor_enthalpy_j_kg": 2785244.3575288076,
+            "latent_heat_j_kg": 1978053.429474511
+          },
+          {
+            "pressure_pa": 1336666.6666666667,
+            "temperature_k": 466.0374108474397,
+            "liquid_density_kg_m3": 872.8308395315246,
+            "vapor_density_kg_m3": 6.793704248115737,
+            "liquid_enthalpy_j_kg": 820329.0584611612,
+            "vapor_enthalpy_j_kg": 2787368.6130651357,
+            "latent_heat_j_kg": 1967039.5546039743
+          },
+          {
+            "pressure_pa": 1419583.3333333333,
+            "temperature_k": 468.8394125978285,
+            "liquid_density_kg_m3": 869.6420421551776,
+            "vapor_density_kg_m3": 7.199152471731066,
+            "liquid_enthalpy_j_kg": 832882.6941733235,
+            "vapor_enthalpy_j_kg": 2789281.3482137704,
+            "latent_heat_j_kg": 1956398.654040447
+          },
+          {
+            "pressure_pa": 1502500.0,
+            "temperature_k": 471.51633835516304,
+            "liquid_density_kg_m3": 866.5582445290579,
+            "vapor_density_kg_m3": 7.604595430780523,
+            "liquid_enthalpy_j_kg": 844912.1423530017,
+            "vapor_enthalpy_j_kg": 2791005.415149991,
+            "latent_heat_j_kg": 1946093.2727969892
+          },
+          {
+            "pressure_pa": 1585416.6666666667,
+            "temperature_k": 474.0803773907767,
+            "liquid_density_kg_m3": 863.569741191281,
+            "vapor_density_kg_m3": 8.01012436680159,
+            "liquid_enthalpy_j_kg": 856468.5483186742,
+            "vapor_enthalpy_j_kg": 2792560.075547797,
+            "latent_heat_j_kg": 1936091.5272291228
+          },
+          {
+            "pressure_pa": 1668333.3333333333,
+            "temperature_k": 476.5419602878122,
+            "liquid_density_kg_m3": 860.6681646136724,
+            "vapor_density_kg_m3": 8.415821083940365,
+            "liquid_enthalpy_j_kg": 867595.6892249507,
+            "vapor_enthalpy_j_kg": 2793961.7170915455,
+            "latent_heat_j_kg": 1926366.0278665947
+          },
+          {
+            "pressure_pa": 1751250.0,
+            "temperature_k": 478.91008660113397,
+            "liquid_density_kg_m3": 857.8462441486424,
+            "vapor_density_kg_m3": 8.82175944206516,
+            "liquid_enthalpy_j_kg": 878331.3457878797,
+            "vapor_enthalpy_j_kg": 2795224.399318483,
+            "latent_heat_j_kg": 1916893.0535306036
+          },
+          {
+            "pressure_pa": 1834166.6666666667,
+            "temperature_k": 481.1925790036997,
+            "liquid_density_kg_m3": 855.0976176226263,
+            "vapor_density_kg_m3": 9.228006558517865,
+            "liquid_enthalpy_j_kg": 888708.3664077458,
+            "vapor_enthalpy_j_kg": 2796360.275443793,
+            "latent_heat_j_kg": 1907651.909036047
+          },
+          {
+            "pressure_pa": 1917083.3333333333,
+            "temperature_k": 483.39628295894784,
+            "liquid_density_kg_m3": 852.4166822430117,
+            "vapor_density_kg_m3": 9.63462378582013,
+            "liquid_enthalpy_j_kg": 898755.503328095,
+            "vapor_enthalpy_j_kg": 2797379.922569138,
+            "latent_heat_j_kg": 1898624.419241043
+          },
+          {
+            "pressure_pa": 2000000.0,
+            "temperature_k": 485.52722542466324,
+            "liquid_density_kg_m3": 849.798475287243,
+            "vapor_density_kg_m3": 10.04166751489001,
+            "liquid_enthalpy_j_kg": 908498.077327761,
+            "vapor_enthalpy_j_kg": 2798292.6031981017,
+            "latent_heat_j_kg": 1889794.5258703409
+          }
+        ]
+      }
+    },
+    {
+      "tool": "calculate_water_properties",
+      "inputs": {
+        "project": {
+          "schema": "steam-properties/v1",
+          "name": "SDK 中文常压水验证",
+          "state": {
+            "pair": "PQ",
+            "pressure_pa": 101325,
+            "quality": 0.5
+          },
+          "sweep": {
+            "variable": "pressure_pa",
+            "start": 10000,
+            "end": 2000000,
+            "points": 25
+          }
+        }
+      },
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "engine": {
+          "name": "CoolProp",
+          "version": "8.0.0",
+          "backend": "HEOS",
+          "fluid": "Water"
+        },
+        "input": {
+          "schema": "steam-properties/v1",
+          "name": "SDK 中文常压水验证",
+          "state": {
+            "pair": "PQ",
+            "pressure_pa": 101325,
+            "quality": 0.5
+          },
+          "sweep": {
+            "variable": "pressure_pa",
+            "start": 10000,
+            "end": 2000000,
+            "points": 25
+          }
+        },
+        "input_sha256": "b37518227bcb9d59534b366927267b594115779cd57de338f0ecca696d3ba760",
+        "state": {
+          "pressure_pa": 101325.0,
+          "temperature_k": 373.1242958476663,
+          "density_kg_m3": 1.1945685829013908,
+          "enthalpy_j_kg": 1547293.5292973584,
+          "entropy_j_kg_k": 4330.67404640581,
+          "phase": "气液两相",
+          "quality": 0.5
+        },
+        "saturation": {
+          "pressure_pa": 101325,
+          "temperature_k": 373.1242958476663,
+          "liquid": {
+            "density_kg_m3": 958.3674968154769,
+            "enthalpy_j_kg": 419057.7330939964,
+            "entropy_j_kg_k": 1306.920812539797
+          },
+          "vapor": {
+            "density_kg_m3": 0.5976567696507362,
+            "enthalpy_j_kg": 2675529.32550072,
+            "entropy_j_kg_k": 7354.427280271823
+          },
+          "latent_heat_j_kg": 2256471.5924067236
+        },
+        "sweep": [
+          {
+            "pressure_pa": 10000.0,
+            "temperature_k": 318.9563289237973,
+            "liquid_density_kg_m3": 989.8332753649839,
+            "vapor_density_kg_m3": 0.06816572230898504,
+            "liquid_enthalpy_j_kg": 191805.9445588864,
+            "vapor_enthalpy_j_kg": 2583858.6717913337,
+            "latent_heat_j_kg": 2392052.7272324474
+          },
+          {
+            "pressure_pa": 92916.66666666667,
+            "temperature_k": 370.7151454476822,
+            "liquid_density_kg_m3": 960.0829290443417,
+            "vapor_density_kg_m3": 0.5511411531426677,
+            "liquid_enthalpy_j_kg": 408898.5509174995,
+            "vapor_enthalpy_j_kg": 2671712.00547799,
+            "latent_heat_j_kg": 2262813.4545604903
+          },
+          {
+            "pressure_pa": 175833.33333333334,
+            "temperature_k": 389.33653463148806,
+            "liquid_density_kg_m3": 946.1481567884124,
+            "vapor_density_kg_m3": 1.0008682664632078,
+            "liquid_enthalpy_j_kg": 487624.81738844246,
+            "vapor_enthalpy_j_kg": 2700336.3948470536,
+            "latent_heat_j_kg": 2212711.577458611
+          },
+          {
+            "pressure_pa": 258750.0,
+            "temperature_k": 401.69845449969523,
+            "liquid_density_kg_m3": 936.0613368910704,
+            "vapor_density_kg_m3": 1.437064823257871,
+            "liquid_enthalpy_j_kg": 540192.0835025148,
+            "vapor_enthalpy_j_kg": 2718073.603921818,
+            "latent_heat_j_kg": 2177881.5204193033
+          },
+          {
+            "pressure_pa": 341666.6666666667,
+            "temperature_k": 411.1627503645515,
+            "liquid_density_kg_m3": 927.8971728223377,
+            "vapor_density_kg_m3": 1.865069497489552,
+            "liquid_enthalpy_j_kg": 580642.6472582318,
+            "vapor_enthalpy_j_kg": 2730854.899308848,
+            "latent_heat_j_kg": 2150212.2520506163
+          },
+          {
+            "pressure_pa": 424583.3333333333,
+            "temperature_k": 418.92087786755184,
+            "liquid_density_kg_m3": 920.9198284502625,
+            "vapor_density_kg_m3": 2.287457072833211,
+            "liquid_enthalpy_j_kg": 613955.1861095505,
+            "vapor_enthalpy_j_kg": 2740759.332306505,
+            "latent_heat_j_kg": 2126804.146196955
+          },
+          {
+            "pressure_pa": 507500.0,
+            "temperature_k": 425.54277686321984,
+            "liquid_density_kg_m3": 914.7602017400023,
+            "vapor_density_kg_m3": 2.7057427722501664,
+            "liquid_enthalpy_j_kg": 642512.1484108919,
+            "vapor_enthalpy_j_kg": 2748772.227056895,
+            "latent_heat_j_kg": 2106260.0786460033
+          },
+          {
+            "pressure_pa": 590416.6666666666,
+            "temperature_k": 431.3482892804284,
+            "liquid_density_kg_m3": 909.2038301730036,
+            "vapor_density_kg_m3": 3.12092198791994,
+            "liquid_enthalpy_j_kg": 667650.9890610282,
+            "vapor_enthalpy_j_kg": 2755441.8575305664,
+            "latent_heat_j_kg": 2087790.8684695382
+          },
+          {
+            "pressure_pa": 673333.3333333334,
+            "temperature_k": 436.53603089402844,
+            "liquid_density_kg_m3": 904.1138366286688,
+            "vapor_density_kg_m3": 3.5336968778110567,
+            "liquid_enthalpy_j_kg": 690202.5154162536,
+            "vapor_enthalpy_j_kg": 2761105.976428106,
+            "latent_heat_j_kg": 2070903.4610118524
+          },
+          {
+            "pressure_pa": 756250.0,
+            "temperature_k": 441.2383423202115,
+            "liquid_density_kg_m3": 899.3969352641916,
+            "vapor_density_kg_m3": 3.9445883085882674,
+            "liquid_enthalpy_j_kg": 710720.4821348608,
+            "vapor_enthalpy_j_kg": 2765987.9151750444,
+            "latent_heat_j_kg": 2055267.4330401835
+          },
+          {
+            "pressure_pa": 839166.6666666666,
+            "temperature_k": 445.5481153125085,
+            "liquid_density_kg_m3": 894.9863802150587,
+            "vapor_density_kg_m3": 4.353997494188394,
+            "liquid_enthalpy_j_kg": 729593.6966936758,
+            "vapor_enthalpy_j_kg": 2770243.27838794,
+            "latent_heat_j_kg": 2040649.5816942642
+          },
+          {
+            "pressure_pa": 922083.3333333334,
+            "temperature_k": 449.53321936739854,
+            "liquid_density_kg_m3": 890.8325871035396,
+            "vapor_density_kg_m3": 4.762242698670918,
+            "liquid_enthalpy_j_kg": 747106.3180813723,
+            "vapor_enthalpy_j_kg": 2773984.943640121,
+            "latent_heat_j_kg": 2026878.6255587484
+          },
+          {
+            "pressure_pa": 1005000.0,
+            "temperature_k": 453.24484786450466,
+            "liquid_density_kg_m3": 886.897602034934,
+            "vapor_density_kg_m3": 5.1695824294832375,
+            "liquid_enthalpy_j_kg": 763472.7471327193,
+            "vapor_enthalpy_j_kg": 2777297.462657409,
+            "latent_heat_j_kg": 2013824.7155246895
+          },
+          {
+            "pressure_pa": 1087916.6666666667,
+            "temperature_k": 456.72263110727783,
+            "liquid_density_kg_m3": 883.1516558766634,
+            "vapor_density_kg_m3": 5.576230796290301,
+            "liquid_enthalpy_j_kg": 778859.0048162098,
+            "vapor_enthalpy_j_kg": 2780245.84720772,
+            "latent_heat_j_kg": 2001386.84239151
+          },
+          {
+            "pressure_pa": 1170833.3333333333,
+            "temperature_k": 459.99791681530377,
+            "liquid_density_kg_m3": 879.5709204171209,
+            "vapor_density_kg_m3": 5.982368074726287,
+            "liquid_enthalpy_j_kg": 793396.450699835,
+            "vapor_enthalpy_j_kg": 2782881.183178616,
+            "latent_heat_j_kg": 1989484.7324787811
+          },
+          {
+            "pressure_pa": 1253750.0,
+            "temperature_k": 463.09595662943957,
+            "liquid_density_kg_m3": 876.1359927431342,
+            "vapor_density_kg_m3": 6.388148203600501,
+            "liquid_enthalpy_j_kg": 807190.9280542966,
+            "vapor_enthalpy_j_kg": 2785244.3575288076,
+            "latent_heat_j_kg": 1978053.429474511
+          },
+          {
+            "pressure_pa": 1336666.6666666667,
+            "temperature_k": 466.0374108474397,
+            "liquid_density_kg_m3": 872.8308395315246,
+            "vapor_density_kg_m3": 6.793704248115737,
+            "liquid_enthalpy_j_kg": 820329.0584611612,
+            "vapor_enthalpy_j_kg": 2787368.6130651357,
+            "latent_heat_j_kg": 1967039.5546039743
+          },
+          {
+            "pressure_pa": 1419583.3333333333,
+            "temperature_k": 468.8394125978285,
+            "liquid_density_kg_m3": 869.6420421551776,
+            "vapor_density_kg_m3": 7.199152471731066,
+            "liquid_enthalpy_j_kg": 832882.6941733235,
+            "vapor_enthalpy_j_kg": 2789281.3482137704,
+            "latent_heat_j_kg": 1956398.654040447
+          },
+          {
+            "pressure_pa": 1502500.0,
+            "temperature_k": 471.51633835516304,
+            "liquid_density_kg_m3": 866.5582445290579,
+            "vapor_density_kg_m3": 7.604595430780523,
+            "liquid_enthalpy_j_kg": 844912.1423530017,
+            "vapor_enthalpy_j_kg": 2791005.415149991,
+            "latent_heat_j_kg": 1946093.2727969892
+          },
+          {
+            "pressure_pa": 1585416.6666666667,
+            "temperature_k": 474.0803773907767,
+            "liquid_density_kg_m3": 863.569741191281,
+            "vapor_density_kg_m3": 8.01012436680159,
+            "liquid_enthalpy_j_kg": 856468.5483186742,
+            "vapor_enthalpy_j_kg": 2792560.075547797,
+            "latent_heat_j_kg": 1936091.5272291228
+          },
+          {
+            "pressure_pa": 1668333.3333333333,
+            "temperature_k": 476.5419602878122,
+            "liquid_density_kg_m3": 860.6681646136724,
+            "vapor_density_kg_m3": 8.415821083940365,
+            "liquid_enthalpy_j_kg": 867595.6892249507,
+            "vapor_enthalpy_j_kg": 2793961.7170915455,
+            "latent_heat_j_kg": 1926366.0278665947
+          },
+          {
+            "pressure_pa": 1751250.0,
+            "temperature_k": 478.91008660113397,
+            "liquid_density_kg_m3": 857.8462441486424,
+            "vapor_density_kg_m3": 8.82175944206516,
+            "liquid_enthalpy_j_kg": 878331.3457878797,
+            "vapor_enthalpy_j_kg": 2795224.399318483,
+            "latent_heat_j_kg": 1916893.0535306036
+          },
+          {
+            "pressure_pa": 1834166.6666666667,
+            "temperature_k": 481.1925790036997,
+            "liquid_density_kg_m3": 855.0976176226263,
+            "vapor_density_kg_m3": 9.228006558517865,
+            "liquid_enthalpy_j_kg": 888708.3664077458,
+            "vapor_enthalpy_j_kg": 2796360.275443793,
+            "latent_heat_j_kg": 1907651.909036047
+          },
+          {
+            "pressure_pa": 1917083.3333333333,
+            "temperature_k": 483.39628295894784,
+            "liquid_density_kg_m3": 852.4166822430117,
+            "vapor_density_kg_m3": 9.63462378582013,
+            "liquid_enthalpy_j_kg": 898755.503328095,
+            "vapor_enthalpy_j_kg": 2797379.922569138,
+            "latent_heat_j_kg": 1898624.419241043
+          },
+          {
+            "pressure_pa": 2000000.0,
+            "temperature_k": 485.52722542466324,
+            "liquid_density_kg_m3": 849.798475287243,
+            "vapor_density_kg_m3": 10.04166751489001,
+            "liquid_enthalpy_j_kg": 908498.077327761,
+            "vapor_enthalpy_j_kg": 2798292.6031981017,
+            "latent_heat_j_kg": 1889794.5258703409
+          }
+        ]
+      }
+    },
+    {
+      "tool": "calculate_water_properties",
+      "inputs": {
+        "project": {
+          "schema": "steam-properties/v1",
+          "name": "SDK 中文常压水验证",
+          "state": {
+            "pair": "PT",
+            "pressure_pa": 101325,
+            "temperature_k": 473.15
+          },
+          "sweep": {
+            "variable": "pressure_pa",
+            "start": 10000,
+            "end": 2000000,
+            "points": 25
+          }
+        }
+      },
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "engine": {
+          "name": "CoolProp",
+          "version": "8.0.0",
+          "backend": "HEOS",
+          "fluid": "Water"
+        },
+        "input": {
+          "schema": "steam-properties/v1",
+          "name": "SDK 中文常压水验证",
+          "state": {
+            "pair": "PT",
+            "pressure_pa": 101325,
+            "temperature_k": 473.15
+          },
+          "sweep": {
+            "variable": "pressure_pa",
+            "start": 10000,
+            "end": 2000000,
+            "points": 25
+          }
+        },
+        "input_sha256": "2626adfbe6f953b8599254afda11cb24a799508d632db837aaf618b559ad5f67",
+        "state": {
+          "pressure_pa": 101325.0,
+          "temperature_k": 473.15,
+          "density_kg_m3": 0.466445108339649,
+          "enthalpy_j_kg": 2875388.8932759464,
+          "entropy_j_kg_k": 7829.3865415651835,
+          "phase": "气态",
+          "quality": null
+        },
+        "saturation": {
+          "pressure_pa": 101325,
+          "temperature_k": 373.1242958476663,
+          "liquid": {
+            "density_kg_m3": 958.3674968154769,
+            "enthalpy_j_kg": 419057.7330939964,
+            "entropy_j_kg_k": 1306.920812539797
+          },
+          "vapor": {
+            "density_kg_m3": 0.5976567696507362,
+            "enthalpy_j_kg": 2675529.32550072,
+            "entropy_j_kg_k": 7354.427280271823
+          },
+          "latent_heat_j_kg": 2256471.5924067236
+        },
+        "sweep": [
+          {
+            "pressure_pa": 10000.0,
+            "temperature_k": 318.9563289237973,
+            "liquid_density_kg_m3": 989.8332753649839,
+            "vapor_density_kg_m3": 0.06816572230898504,
+            "liquid_enthalpy_j_kg": 191805.9445588864,
+            "vapor_enthalpy_j_kg": 2583858.6717913337,
+            "latent_heat_j_kg": 2392052.7272324474
+          },
+          {
+            "pressure_pa": 92916.66666666667,
+            "temperature_k": 370.7151454476822,
+            "liquid_density_kg_m3": 960.0829290443417,
+            "vapor_density_kg_m3": 0.5511411531426677,
+            "liquid_enthalpy_j_kg": 408898.5509174995,
+            "vapor_enthalpy_j_kg": 2671712.00547799,
+            "latent_heat_j_kg": 2262813.4545604903
+          },
+          {
+            "pressure_pa": 175833.33333333334,
+            "temperature_k": 389.33653463148806,
+            "liquid_density_kg_m3": 946.1481567884124,
+            "vapor_density_kg_m3": 1.0008682664632078,
+            "liquid_enthalpy_j_kg": 487624.81738844246,
+            "vapor_enthalpy_j_kg": 2700336.3948470536,
+            "latent_heat_j_kg": 2212711.577458611
+          },
+          {
+            "pressure_pa": 258750.0,
+            "temperature_k": 401.69845449969523,
+            "liquid_density_kg_m3": 936.0613368910704,
+            "vapor_density_kg_m3": 1.437064823257871,
+            "liquid_enthalpy_j_kg": 540192.0835025148,
+            "vapor_enthalpy_j_kg": 2718073.603921818,
+            "latent_heat_j_kg": 2177881.5204193033
+          },
+          {
+            "pressure_pa": 341666.6666666667,
+            "temperature_k": 411.1627503645515,
+            "liquid_density_kg_m3": 927.8971728223377,
+            "vapor_density_kg_m3": 1.865069497489552,
+            "liquid_enthalpy_j_kg": 580642.6472582318,
+            "vapor_enthalpy_j_kg": 2730854.899308848,
+            "latent_heat_j_kg": 2150212.2520506163
+          },
+          {
+            "pressure_pa": 424583.3333333333,
+            "temperature_k": 418.92087786755184,
+            "liquid_density_kg_m3": 920.9198284502625,
+            "vapor_density_kg_m3": 2.287457072833211,
+            "liquid_enthalpy_j_kg": 613955.1861095505,
+            "vapor_enthalpy_j_kg": 2740759.332306505,
+            "latent_heat_j_kg": 2126804.146196955
+          },
+          {
+            "pressure_pa": 507500.0,
+            "temperature_k": 425.54277686321984,
+            "liquid_density_kg_m3": 914.7602017400023,
+            "vapor_density_kg_m3": 2.7057427722501664,
+            "liquid_enthalpy_j_kg": 642512.1484108919,
+            "vapor_enthalpy_j_kg": 2748772.227056895,
+            "latent_heat_j_kg": 2106260.0786460033
+          },
+          {
+            "pressure_pa": 590416.6666666666,
+            "temperature_k": 431.3482892804284,
+            "liquid_density_kg_m3": 909.2038301730036,
+            "vapor_density_kg_m3": 3.12092198791994,
+            "liquid_enthalpy_j_kg": 667650.9890610282,
+            "vapor_enthalpy_j_kg": 2755441.8575305664,
+            "latent_heat_j_kg": 2087790.8684695382
+          },
+          {
+            "pressure_pa": 673333.3333333334,
+            "temperature_k": 436.53603089402844,
+            "liquid_density_kg_m3": 904.1138366286688,
+            "vapor_density_kg_m3": 3.5336968778110567,
+            "liquid_enthalpy_j_kg": 690202.5154162536,
+            "vapor_enthalpy_j_kg": 2761105.976428106,
+            "latent_heat_j_kg": 2070903.4610118524
+          },
+          {
+            "pressure_pa": 756250.0,
+            "temperature_k": 441.2383423202115,
+            "liquid_density_kg_m3": 899.3969352641916,
+            "vapor_density_kg_m3": 3.9445883085882674,
+            "liquid_enthalpy_j_kg": 710720.4821348608,
+            "vapor_enthalpy_j_kg": 2765987.9151750444,
+            "latent_heat_j_kg": 2055267.4330401835
+          },
+          {
+            "pressure_pa": 839166.6666666666,
+            "temperature_k": 445.5481153125085,
+            "liquid_density_kg_m3": 894.9863802150587,
+            "vapor_density_kg_m3": 4.353997494188394,
+            "liquid_enthalpy_j_kg": 729593.6966936758,
+            "vapor_enthalpy_j_kg": 2770243.27838794,
+            "latent_heat_j_kg": 2040649.5816942642
+          },
+          {
+            "pressure_pa": 922083.3333333334,
+            "temperature_k": 449.53321936739854,
+            "liquid_density_kg_m3": 890.8325871035396,
+            "vapor_density_kg_m3": 4.762242698670918,
+            "liquid_enthalpy_j_kg": 747106.3180813723,
+            "vapor_enthalpy_j_kg": 2773984.943640121,
+            "latent_heat_j_kg": 2026878.6255587484
+          },
+          {
+            "pressure_pa": 1005000.0,
+            "temperature_k": 453.24484786450466,
+            "liquid_density_kg_m3": 886.897602034934,
+            "vapor_density_kg_m3": 5.1695824294832375,
+            "liquid_enthalpy_j_kg": 763472.7471327193,
+            "vapor_enthalpy_j_kg": 2777297.462657409,
+            "latent_heat_j_kg": 2013824.7155246895
+          },
+          {
+            "pressure_pa": 1087916.6666666667,
+            "temperature_k": 456.72263110727783,
+            "liquid_density_kg_m3": 883.1516558766634,
+            "vapor_density_kg_m3": 5.576230796290301,
+            "liquid_enthalpy_j_kg": 778859.0048162098,
+            "vapor_enthalpy_j_kg": 2780245.84720772,
+            "latent_heat_j_kg": 2001386.84239151
+          },
+          {
+            "pressure_pa": 1170833.3333333333,
+            "temperature_k": 459.99791681530377,
+            "liquid_density_kg_m3": 879.5709204171209,
+            "vapor_density_kg_m3": 5.982368074726287,
+            "liquid_enthalpy_j_kg": 793396.450699835,
+            "vapor_enthalpy_j_kg": 2782881.183178616,
+            "latent_heat_j_kg": 1989484.7324787811
+          },
+          {
+            "pressure_pa": 1253750.0,
+            "temperature_k": 463.09595662943957,
+            "liquid_density_kg_m3": 876.1359927431342,
+            "vapor_density_kg_m3": 6.388148203600501,
+            "liquid_enthalpy_j_kg": 807190.9280542966,
+            "vapor_enthalpy_j_kg": 2785244.3575288076,
+            "latent_heat_j_kg": 1978053.429474511
+          },
+          {
+            "pressure_pa": 1336666.6666666667,
+            "temperature_k": 466.0374108474397,
+            "liquid_density_kg_m3": 872.8308395315246,
+            "vapor_density_kg_m3": 6.793704248115737,
+            "liquid_enthalpy_j_kg": 820329.0584611612,
+            "vapor_enthalpy_j_kg": 2787368.6130651357,
+            "latent_heat_j_kg": 1967039.5546039743
+          },
+          {
+            "pressure_pa": 1419583.3333333333,
+            "temperature_k": 468.8394125978285,
+            "liquid_density_kg_m3": 869.6420421551776,
+            "vapor_density_kg_m3": 7.199152471731066,
+            "liquid_enthalpy_j_kg": 832882.6941733235,
+            "vapor_enthalpy_j_kg": 2789281.3482137704,
+            "latent_heat_j_kg": 1956398.654040447
+          },
+          {
+            "pressure_pa": 1502500.0,
+            "temperature_k": 471.51633835516304,
+            "liquid_density_kg_m3": 866.5582445290579,
+            "vapor_density_kg_m3": 7.604595430780523,
+            "liquid_enthalpy_j_kg": 844912.1423530017,
+            "vapor_enthalpy_j_kg": 2791005.415149991,
+            "latent_heat_j_kg": 1946093.2727969892
+          },
+          {
+            "pressure_pa": 1585416.6666666667,
+            "temperature_k": 474.0803773907767,
+            "liquid_density_kg_m3": 863.569741191281,
+            "vapor_density_kg_m3": 8.01012436680159,
+            "liquid_enthalpy_j_kg": 856468.5483186742,
+            "vapor_enthalpy_j_kg": 2792560.075547797,
+            "latent_heat_j_kg": 1936091.5272291228
+          },
+          {
+            "pressure_pa": 1668333.3333333333,
+            "temperature_k": 476.5419602878122,
+            "liquid_density_kg_m3": 860.6681646136724,
+            "vapor_density_kg_m3": 8.415821083940365,
+            "liquid_enthalpy_j_kg": 867595.6892249507,
+            "vapor_enthalpy_j_kg": 2793961.7170915455,
+            "latent_heat_j_kg": 1926366.0278665947
+          },
+          {
+            "pressure_pa": 1751250.0,
+            "temperature_k": 478.91008660113397,
+            "liquid_density_kg_m3": 857.8462441486424,
+            "vapor_density_kg_m3": 8.82175944206516,
+            "liquid_enthalpy_j_kg": 878331.3457878797,
+            "vapor_enthalpy_j_kg": 2795224.399318483,
+            "latent_heat_j_kg": 1916893.0535306036
+          },
+          {
+            "pressure_pa": 1834166.6666666667,
+            "temperature_k": 481.1925790036997,
+            "liquid_density_kg_m3": 855.0976176226263,
+            "vapor_density_kg_m3": 9.228006558517865,
+            "liquid_enthalpy_j_kg": 888708.3664077458,
+            "vapor_enthalpy_j_kg": 2796360.275443793,
+            "latent_heat_j_kg": 1907651.909036047
+          },
+          {
+            "pressure_pa": 1917083.3333333333,
+            "temperature_k": 483.39628295894784,
+            "liquid_density_kg_m3": 852.4166822430117,
+            "vapor_density_kg_m3": 9.63462378582013,
+            "liquid_enthalpy_j_kg": 898755.503328095,
+            "vapor_enthalpy_j_kg": 2797379.922569138,
+            "latent_heat_j_kg": 1898624.419241043
+          },
+          {
+            "pressure_pa": 2000000.0,
+            "temperature_k": 485.52722542466324,
+            "liquid_density_kg_m3": 849.798475287243,
+            "vapor_density_kg_m3": 10.04166751489001,
+            "liquid_enthalpy_j_kg": 908498.077327761,
+            "vapor_enthalpy_j_kg": 2798292.6031981017,
+            "latent_heat_j_kg": 1889794.5258703409
+          }
+        ]
+      }
+    },
+    {
+      "tool": "calculate_water_properties",
+      "inputs": {
+        "project": {
+          "schema": "steam-properties/v1",
+          "name": "SDK 中文常压水验证",
+          "state": {
+            "pair": "TQ",
+            "temperature_k": 373.15,
+            "quality": 1
+          },
+          "sweep": {
+            "variable": "temperature_k",
+            "start": 300,
+            "end": 620,
+            "points": 25
+          }
+        }
+      },
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "engine": {
+          "name": "CoolProp",
+          "version": "8.0.0",
+          "backend": "HEOS",
+          "fluid": "Water"
+        },
+        "input": {
+          "schema": "steam-properties/v1",
+          "name": "SDK 中文常压水验证",
+          "state": {
+            "pair": "TQ",
+            "temperature_k": 373.15,
+            "quality": 1
+          },
+          "sweep": {
+            "variable": "temperature_k",
+            "start": 300,
+            "end": 620,
+            "points": 25
+          }
+        },
+        "input_sha256": "10b320ed4a55364eb0b945106dd18b43b27acb8b8d1b5f089f01c1261badeeda",
+        "state": {
+          "pressure_pa": 101417.9966600156,
+          "temperature_k": 373.15,
+          "density_kg_m3": 0.5981697919259733,
+          "enthalpy_j_kg": 2675569.8844194636,
+          "entropy_j_kg_k": 7354.119145701724,
+          "phase": "饱和蒸汽",
+          "quality": 1.0
+        },
+        "saturation": {
+          "pressure_pa": 101417.9966600156,
+          "temperature_k": 373.15,
+          "liquid": {
+            "density_kg_m3": 958.3490516048603,
+            "enthalpy_j_kg": 419166.16289289255,
+            "entropy_j_kg_k": 1307.211142146641
+          },
+          "vapor": {
+            "density_kg_m3": 0.5981697919259733,
+            "enthalpy_j_kg": 2675569.8844194636,
+            "entropy_j_kg_k": 7354.119145701724
+          },
+          "latent_heat_j_kg": 2256403.721526571
+        },
+        "sweep": [
+          {
+            "pressure_pa": 3536.8067523441227,
+            "temperature_k": 300.0,
+            "liquid_density_kg_m3": 996.5130274681309,
+            "vapor_density_kg_m3": 0.025589673682919888,
+            "liquid_enthalpy_j_kg": 112564.8598535421,
+            "vapor_enthalpy_j_kg": 2549854.101094749,
+            "latent_heat_j_kg": 2437289.241241207
+          },
+          {
+            "pressure_pa": 7457.425748441138,
+            "temperature_k": 313.3333333333333,
+            "liquid_density_kg_m3": 992.10490856318,
+            "vapor_density_kg_m3": 0.05171586989419638,
+            "liquid_enthalpy_j_kg": 168299.36983867886,
+            "vapor_enthalpy_j_kg": 2573838.072973425,
+            "latent_heat_j_kg": 2405538.7031347463
+          },
+          {
+            "pressure_pa": 14675.400819090308,
+            "temperature_k": 326.6666666666667,
+            "liquid_density_kg_m3": 986.3666205352645,
+            "vapor_density_kg_m3": 0.09776893710637125,
+            "liquid_enthalpy_j_kg": 224050.7165672172,
+            "vapor_enthalpy_j_kg": 2597488.2824228057,
+            "latent_heat_j_kg": 2373437.5658555883
+          },
+          {
+            "pressure_pa": 27187.81426354152,
+            "temperature_k": 340.0,
+            "liquid_density_kg_m3": 979.503448491746,
+            "vapor_density_kg_m3": 0.17440236566416578,
+            "liquid_enthalpy_j_kg": 279865.5224381618,
+            "vapor_enthalpy_j_kg": 2620693.0847833487,
+            "latent_heat_j_kg": 2340827.562345187
+          },
+          {
+            "pressure_pa": 47767.54843806153,
+            "temperature_k": 353.3333333333333,
+            "liquid_density_kg_m3": 971.6520176212574,
+            "vapor_density_kg_m3": 0.2957191469962566,
+            "liquid_enthalpy_j_kg": 335782.07323474693,
+            "vapor_enthalpy_j_kg": 2643322.4901410276,
+            "latent_heat_j_kg": 2307540.4169062804
+          },
+          {
+            "pressure_pa": 80092.5812890565,
+            "temperature_k": 366.6666666666667,
+            "liquid_density_kg_m3": 962.9055462222476,
+            "vapor_density_kg_m3": 0.4796559030664017,
+            "liquid_enthalpy_j_kg": 391841.50015021494,
+            "vapor_enthalpy_j_kg": 2665228.4708061945,
+            "latent_heat_j_kg": 2273386.9706559796
+          },
+          {
+            "pressure_pa": 128853.05378282888,
+            "temperature_k": 380.0,
+            "liquid_density_kg_m3": 953.3274105054685,
+            "vapor_density_kg_m3": 0.748300804671887,
+            "liquid_enthalpy_j_kg": 448092.0825635939,
+            "vapor_enthalpy_j_kg": 2686245.385779395,
+            "latent_heat_j_kg": 2238153.303215801
+          },
+          {
+            "pressure_pa": 199830.7690650923,
+            "temperature_k": 393.3333333333333,
+            "liquid_density_kg_m3": 942.9588130036201,
+            "vapor_density_kg_m3": 1.1281794773856237,
+            "liquid_enthalpy_j_kg": 504590.5096298801,
+            "vapor_enthalpy_j_kg": 2706191.915961276,
+            "latent_heat_j_kg": 2201601.4063313957
+          },
+          {
+            "pressure_pa": 299949.38283728086,
+            "temperature_k": 406.6666666666667,
+            "liquid_density_kg_m3": 931.8232235011119,
+            "vapor_density_kg_m3": 1.6505587383016083,
+            "liquid_enthalpy_j_kg": 561402.0836800041,
+            "vapor_enthalpy_j_kg": 2724874.8694061916,
+            "latent_heat_j_kg": 2163472.7857261878
+          },
+          {
+            "pressure_pa": 437296.6832205554,
+            "temperature_k": 420.0,
+            "liquid_density_kg_m3": 919.9289056471974,
+            "vapor_density_kg_m3": 2.351828448387723,
+            "liquid_enthalpy_j_kg": 618600.8372564764,
+            "vapor_enthalpy_j_kg": 2742093.6023980803,
+            "latent_heat_j_kg": 2123492.765141604
+          },
+          {
+            "pressure_pa": 621122.7504475593,
+            "temperature_k": 433.33333333333337,
+            "liquid_density_kg_m3": 907.270194613902,
+            "vapor_density_kg_m3": 3.274032133501461,
+            "liquid_enthalpy_j_kg": 676270.0135286021,
+            "vapor_enthalpy_j_kg": 2757642.8961890913,
+            "latent_heat_j_kg": 2081372.882660489
+          },
+          {
+            "pressure_pa": 861819.431369037,
+            "temperature_k": 446.66666666666663,
+            "liquid_density_kg_m3": 893.8278522867065,
+            "vapor_density_kg_m3": 4.465633477578256,
+            "liquid_enthalpy_j_kg": 734503.1225395589,
+            "vapor_enthalpy_j_kg": 2771312.508872394,
+            "latent_heat_j_kg": 2036809.386332835
+          },
+          {
+            "pressure_pa": 1170887.6030405113,
+            "temperature_k": 460.0,
+            "liquid_density_kg_m3": 879.5686264544445,
+            "vapor_density_kg_m3": 5.982633762735791,
+            "liquid_enthalpy_j_kg": 793405.7119070297,
+            "vapor_enthalpy_j_kg": 2782882.8149083434,
+            "latent_heat_j_kg": 1989477.1030013137
+          },
+          {
+            "pressure_pa": 1560899.3276982186,
+            "temperature_k": 473.33333333333337,
+            "liquid_density_kg_m3": 864.4439963670427,
+            "vapor_density_kg_m3": 7.890200979169528,
+            "liquid_enthalpy_j_kg": 853098.0167863552,
+            "vapor_enthalpy_j_kg": 2792117.005146771,
+            "latent_heat_j_kg": 1939018.9883604161
+          },
+          {
+            "pressure_pa": 2045462.459408225,
+            "temperature_k": 486.66666666666663,
+            "liquid_density_kg_m3": 848.3879485308041,
+            "vapor_density_kg_m3": 10.265045887536163,
+            "liquid_enthalpy_j_kg": 913718.7583026143,
+            "vapor_enthalpy_j_kg": 2798750.596003333,
+            "latent_heat_j_kg": 1885031.8377007188
+          },
+          {
+            "pressure_pa": 2639195.871761767,
+            "temperature_k": 500.0,
+            "liquid_density_kg_m3": 831.3134495854637,
+            "vapor_density_kg_m3": 13.198906510100011,
+            "liquid_enthalpy_j_kg": 975430.5550583529,
+            "vapor_enthalpy_j_kg": 2802478.4000279093,
+            "latent_heat_j_kg": 1827047.8449695564
+          },
+          {
+            "pressure_pa": 3357724.655961347,
+            "temperature_k": 513.3333333333334,
+            "liquid_density_kg_m3": 813.1070097473612,
+            "vapor_density_kg_m3": 16.803724508818892,
+            "liquid_enthalpy_j_kg": 1038427.7511402151,
+            "vapor_enthalpy_j_kg": 2802937.8851160407,
+            "latent_heat_j_kg": 1764510.1339758257
+          },
+          {
+            "pressure_pa": 4217706.927093437,
+            "temperature_k": 526.6666666666666,
+            "liquid_density_kg_m3": 793.6202628776143,
+            "vapor_density_kg_m3": 21.219500680741902,
+            "liquid_enthalpy_j_kg": 1102948.06202701,
+            "vapor_enthalpy_j_kg": 2799686.322564256,
+            "latent_heat_j_kg": 1696738.260537246
+          },
+          {
+            "pressure_pa": 5236908.1237143185,
+            "temperature_k": 540.0,
+            "liquid_density_kg_m3": 772.6566405181295,
+            "vapor_density_kg_m3": 26.626583141301566,
+            "liquid_enthalpy_j_kg": 1169290.5367398711,
+            "vapor_enthalpy_j_kg": 2792167.1280483394,
+            "latent_heat_j_kg": 1622876.5913084683
+          },
+          {
+            "pressure_pa": 6434346.404654989,
+            "temperature_k": 553.3333333333334,
+            "liquid_density_kg_m3": 749.9495986594981,
+            "vapor_density_kg_m3": 33.265679870332235,
+            "liquid_enthalpy_j_kg": 1237844.443155408,
+            "vapor_enthalpy_j_kg": 2779656.8528280472,
+            "latent_heat_j_kg": 1541812.4096726393
+          },
+          {
+            "pressure_pa": 7830546.602619893,
+            "temperature_k": 566.6666666666667,
+            "liquid_density_kg_m3": 725.12558951035,
+            "vapor_density_kg_m3": 41.472181476776186,
+            "liquid_enthalpy_j_kg": 1309137.9820797357,
+            "vapor_enthalpy_j_kg": 2761176.4850291074,
+            "latent_heat_j_kg": 1452038.5029493717
+          },
+          {
+            "pressure_pa": 9447966.413200047,
+            "temperature_k": 580.0,
+            "liquid_density_kg_m3": 697.6378062491763,
+            "vapor_density_kg_m3": 51.73907081933793,
+            "liquid_enthalpy_j_kg": 1383925.2716199153,
+            "vapor_enthalpy_j_kg": 2735334.1846552324,
+            "latent_heat_j_kg": 1351408.913035317
+          },
+          {
+            "pressure_pa": 11311714.266553015,
+            "temperature_k": 593.3333333333333,
+            "liquid_density_kg_m3": 666.6383590060876,
+            "vapor_density_kg_m3": 64.84290818636524,
+            "liquid_enthalpy_j_kg": 1463354.5676745467,
+            "vapor_enthalpy_j_kg": 2700022.7141484353,
+            "latent_heat_j_kg": 1236668.1464738885
+          },
+          {
+            "pressure_pa": 13450812.313943904,
+            "temperature_k": 606.6666666666667,
+            "liquid_density_kg_m3": 630.691501886529,
+            "vapor_density_kg_m3": 82.12994697561956,
+            "liquid_enthalpy_j_kg": 1549345.1062281337,
+            "vapor_enthalpy_j_kg": 2651757.8168050484,
+            "latent_heat_j_kg": 1102412.7105769147
+          },
+          {
+            "pressure_pa": 15900579.38496862,
+            "temperature_k": 620.0,
+            "liquid_density_kg_m3": 586.8776188274974,
+            "vapor_density_kg_m3": 106.30709284974623,
+            "liquid_enthalpy_j_kg": 1645735.1119625198,
+            "vapor_enthalpy_j_kg": 2583899.364249049,
+            "latent_heat_j_kg": 938164.2522865294
+          }
+        ]
+      }
+    },
+    {
+      "tool": "calculate_water_properties",
+      "inputs": {
+        "project": {
+          "schema": "steam-properties/v1",
+          "name": "SDK 中文常压水验证",
+          "state": {
+            "pair": "PQ",
+            "pressure_pa": 101325,
+            "quality": 0
+          },
+          "sweep": {
+            "variable": "pressure_pa",
+            "start": 10000,
+            "end": 2000000,
+            "points": 25
+          },
+          "script": "do not execute"
+        }
+      },
+      "result": {
+        "ok": false,
+        "version": "1.0.0",
+        "error": {
+          "code": "invalid_input",
+          "message": "项目字段必须恰好为：schema、name、state、sweep；不接受脚本、后端配置或额外字段。"
+        }
+      }
+    },
+    {
+      "tool": "calculate_water_properties",
+      "inputs": {
+        "project": {
+          "schema": "steam-properties/v1",
+          "name": "SDK 中文常压水验证",
+          "state": {
+            "pair": "PQ",
+            "pressure_pa": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+            "quality": 0
+          },
+          "sweep": {
+            "variable": "pressure_pa",
+            "start": 10000,
+            "end": 2000000,
+            "points": 25
+          }
+        }
+      },
+      "result": {
+        "ok": false,
+        "version": "1.0.0",
+        "error": {
+          "code": "invalid_input",
+          "message": "绝对压力（Pa）必须为 1000 至 20000000 之间的有限数值。"
+        }
+      }
+    },
+    {
+      "tool": "steam_workbench",
+      "inputs": {
+        "workspace": "/private/tmp/main3-steam-20261116/sdk-verification-final-41764bfd",
+        "action": "start",
+        "confirmed": true
+      },
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "running": true,
+        "started": true
+      }
+    },
+    {
+      "tool": "steam_workbench",
+      "inputs": {
+        "workspace": "/private/tmp/main3-steam-20261116/sdk-verification-final-41764bfd",
+        "action": "start",
+        "confirmed": true
+      },
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "running": true,
+        "started": false,
+        "busy": false
+      }
+    },
+    {
+      "tool": "steam_workbench",
+      "inputs": {
+        "workspace": "/private/tmp/main3-steam-20261116/sdk-verification-final-41764bfd",
+        "action": "status"
+      },
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "running": true,
+        "busy": false
+      }
+    },
+    {
+      "tool": "steam_workbench.stream",
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "running": true,
+        "busy": false
+      }
+    },
+    {
+      "tool": "steam_workbench",
+      "inputs": {
+        "workspace": "/private/tmp/main3-steam-20261116/sdk-verification-final-41764bfd",
+        "action": "stop",
+        "confirmed": true
+      },
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "running": false,
+        "stopped": true
+      }
+    },
+    {
+      "tool": "steam_workbench",
+      "inputs": {
+        "workspace": "/private/tmp/main3-steam-20261116/sdk-verification-final-41764bfd",
+        "action": "start",
+        "confirmed": true
+      },
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "running": true,
+        "started": true
+      }
+    },
+    {
+      "tool": "steam_workbench",
+      "inputs": {
+        "workspace": "/private/tmp/main3-steam-20261116/sdk-verification-final-41764bfd",
+        "action": "stop",
+        "confirmed": true
+      },
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "running": false,
+        "stopped": true
+      }
+    },
+    {
+      "tool": "steam_workbench",
+      "inputs": {
+        "workspace": "/private/tmp/main3-steam-20261116/sdk-verification-final-41764bfd",
+        "action": "status"
+      },
+      "result": {
+        "ok": true,
+        "version": "1.0.0",
+        "running": false,
+        "busy": false
+      }
+    }
+  ],
+  "passed": true,
+  "registered_refs": [
+    {
+      "kind": "tool",
+      "identity": "steam_workbench_steam-sdk-fdeca0e8d3bf4a498f6d24578109bdd4"
+    },
+    {
+      "kind": "tool",
+      "identity": "calculate_water_properties_steam-sdk-fdeca0e8d3bf4a498f6d24578109bdd4"
+    },
+    {
+      "kind": "skill",
+      "identity": "/private/tmp/main3-steam-20261116/host-028/data/domain/agent/workspace/plugins/plugin_packages/local/offline-steam-properties-workbench/skills/water-steam"
+    }
+  ],
+  "registered_tools": [
+    "calculate_water_properties",
+    "steam_workbench"
+  ],
+  "declared_skill_discovered": true,
+  "start_reuse_status_same_session": true,
+  "local_ui_http": 200,
+  "immediate_restart_new_session": true,
+  "stopped_service_verified": true,
+  "invocations": 16,
+  "unloaded_refs": 3,
+  "payload_unchanged": true
+}

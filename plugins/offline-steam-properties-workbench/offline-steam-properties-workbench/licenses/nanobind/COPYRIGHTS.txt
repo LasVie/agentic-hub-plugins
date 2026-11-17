@@ -1,0 +1,193 @@
+nanobind-2.12.0/ext/robin_map/include/tsl/robin_growth_policy.h
+ * Copyright (c) 2017 Thibaut Goetghebuer-Planchon <tessil@gmx.com>
+ * The above copyright notice and this permission notice shall be included in
+
+nanobind-2.12.0/ext/robin_map/include/tsl/robin_hash.h
+ * Copyright (c) 2017 Thibaut Goetghebuer-Planchon <tessil@gmx.com>
+ * The above copyright notice and this permission notice shall be included in
+
+nanobind-2.12.0/ext/robin_map/include/tsl/robin_map.h
+ * Copyright (c) 2017 Thibaut Goetghebuer-Planchon <tessil@gmx.com>
+ * The above copyright notice and this permission notice shall be included in
+
+nanobind-2.12.0/ext/robin_map/include/tsl/robin_set.h
+ * Copyright (c) 2017 Thibaut Goetghebuer-Planchon <tessil@gmx.com>
+ * The above copyright notice and this permission notice shall be included in
+
+nanobind-2.12.0/include/nanobind/eigen/dense.h
+    Copyright (c) 2023 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/eigen/sparse.h
+    Copyright (c) 2023 Henri Menke and Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/intrusive/counter.h
+    Copyright (c) 2023 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/intrusive/ref.h
+    Copyright (c) 2023 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/nanobind.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/nb_accessor.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/nb_attr.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/nb_call.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/nb_cast.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/nb_class.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/nb_defs.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/nb_descr.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/nb_enums.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/nb_error.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/nb_func.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/nb_lib.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/nb_misc.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/nb_python.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/nb_traits.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/nb_tuple.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/nb_types.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/ndarray.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/operators.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/stl/array.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/stl/bind_vector.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/stl/chrono.h
+    Copyright (c) 2023 Hudson River Trading LLC <opensource@hudson-trading.com> and
+
+nanobind-2.12.0/include/nanobind/stl/complex.h
+    Copyright (c) 2023 Degottex Gilles and Wenzel Jakob
+    Copyright (c) 2025 High Performance Kernels LLC
+
+nanobind-2.12.0/include/nanobind/stl/detail/chrono.h
+    Copyright (c) 2023 Hudson River Trading LLC <opensource@hudson-trading.com>
+
+nanobind-2.12.0/include/nanobind/stl/detail/nb_dict.h
+    Copyright (c) 2022 Matej Ferencevic and Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/stl/detail/nb_list.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/stl/detail/nb_optional.h
+    Copyright (c) 2022 Yoshiki Matsuda and Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/stl/detail/nb_set.h
+    Copyright (c) 2022 Raymond Yun Fei and Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/stl/filesystem.h
+    Copyright (c) 2023 Qingnan Zhou and Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/stl/function.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/stl/list.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/stl/map.h
+    Copyright (c) 2022 Matej Ferencevic and Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/stl/optional.h
+    Copyright (c) 2022 Yoshiki Matsuda and Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/stl/pair.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/stl/set.h
+    Copyright (c) 2022 Raymond Yun Fei and Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/stl/shared_ptr.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/stl/string.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/stl/string_view.h
+    Copyright (c) 2022 Qingnan Zhou and Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/stl/tuple.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/stl/unique_ptr.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/stl/unordered_map.h
+    Copyright (c) 2022 Matej Ferencevic and Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/stl/unordered_set.h
+    Copyright (c) 2022 Raymond Yun Fei and Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/stl/variant.h
+    Copyright (c) 2022 Yoshiki Matsuda and Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/stl/vector.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/stl/wstring.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/trampoline.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/include/nanobind/typing.h
+    Copyright (c) 2024 Wenzel Jakob
+
+nanobind-2.12.0/src/common.cpp
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/src/error.cpp
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/src/implicit.cpp
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/src/nb_ft.h
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/src/nb_func.cpp
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/src/nb_internals.cpp
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/src/nb_type.cpp
+    Copyright (c) 2022 Wenzel Jakob
+
+nanobind-2.12.0/src/trampoline.cpp
+    Copyright (c) 2022 Wenzel Jakob
