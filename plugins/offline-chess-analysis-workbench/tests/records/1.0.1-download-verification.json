@@ -1,0 +1,38 @@
+{
+  "version": "1.0.1",
+  "date": "2026-11-16",
+  "browser": "Chrome",
+  "files": [
+    {
+      "original_download_path": "/Users/IDLE_And_R/Downloads/国际象棋-局面分析 (1).fen",
+      "evidence_path": "plugins/offline-chess-analysis-workbench/tests/records/1.0.1-browser-downloads/国际象棋-局面分析 (1).fen",
+      "bytes": 30,
+      "sha256": "c46744443ae541dd47a2fa26de90000761adc26194e4f1f76f0592aa5fcad185"
+    },
+    {
+      "original_download_path": "/Users/IDLE_And_R/Downloads/国际象棋-局面分析 (1).pgn",
+      "evidence_path": "plugins/offline-chess-analysis-workbench/tests/records/1.0.1-browser-downloads/国际象棋-局面分析 (1).pgn",
+      "bytes": 145,
+      "sha256": "37cf395e4dadd983ce2ea5378f24c09a4e34ddfeb198e34c54a020f0f6260fd4"
+    },
+    {
+      "original_download_path": "/Users/IDLE_And_R/Downloads/国际象棋-局面分析 (1).json",
+      "evidence_path": "plugins/offline-chess-analysis-workbench/tests/records/1.0.1-browser-downloads/国际象棋-局面分析 (1).json",
+      "bytes": 2682,
+      "sha256": "e6ee4e3c2dacd5b9ec75528d2aec63139bac3d86f2a0962dc080b8110ef3ef39"
+    },
+    {
+      "original_download_path": "/Users/IDLE_And_R/Downloads/国际象棋-棋盘预览 (1).svg",
+      "evidence_path": "plugins/offline-chess-analysis-workbench/tests/records/1.0.1-browser-downloads/国际象棋-棋盘预览 (1).svg",
+      "bytes": 6951,
+      "sha256": "6512c1b86ff59555ab8f970391f061438b4c05a9163d8076421e9916d5fad945"
+    }
+  ],
+  "json_input_fen_and_pgn_match_exports": true,
+  "svg_well_formed_no_script_or_external_image": true,
+  "note": "FEN and PGN represent the analysis root; SVG represents replay step1 and JSON records both. Not user manual-test completion.",
+  "all_three_downloaded_pvs_legally_replayed": true,
+  "downloaded_pgn_root_fen_verified": true,
+  "downloaded_svg_exact_replay_board_match": true,
+  "displayed_replay_checkmate": true
+}

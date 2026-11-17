@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-16",
+  "version": "1.0.1",
+  "type": "AI engineering browser QA, not user manual confirmation",
+  "browser": "Chrome",
+  "installed_tool_url": "http://127.0.0.1:58024/88d360e66bb924dd00e2b1701695bcd132bfc0d233be8daf4cd308e336a77336/web/index.html",
+  "tool_dispatch_scope": "Public installed SDK0.1.19 invocation, not running-chat dispatch",
+  "checks": [
+    {
+      "case": "normal top-level navigation",
+      "result": "Chinese UI1.0.1 and Stockfish19.0.1 loaded successfully"
+    },
+    {
+      "case": "real mate analysis",
+      "result": "Qg7#, depth245, nodes20522, time111ms; 3 legal principal variations"
+    },
+    {
+      "case": "replay",
+      "result": "Clicked first PV move; g7 queen and black checkmate shown"
+    },
+    {
+      "case": "four real browser downloads",
+      "result": "FEN30B, PGN145B, JSON2682B and SVG6951B; independent hashes, all3 legal PVs, root FEN/PGN, exact replay SVG verified",
+      "evidence": "1.0.1-download-verification.json"
+    },
+    {
+      "case": "input edit invalidation",
+      "result": "Editing FEN cleared old analysis and disabled all4 exports before loading"
+    },
+    {
+      "case": "invalid FEN",
+      "result": "Chinese six-field error and invalid_fen shown, no stale result"
+    },
+    {
+      "case": "PGN recovery",
+      "result": "Teaching PGN loaded; real search returned d3, depth17, nodes581061, time3000ms; 3 PVs. Selector wait timed out before result, subsequent fresh accessibility state confirmed successful completion."
+    }
+  ],
+  "screenshot": "1.0.1-browser-qa.jpg",
+  "not_repeated": "Unaffected1.0.0 UI checks retained as historical evidence; no claim they are new1.0.1 manual tests.",
+  "pending": "User manual upload, actual running-host chat tool dispatch and explicit completion confirmation with current original screenshots."
+}

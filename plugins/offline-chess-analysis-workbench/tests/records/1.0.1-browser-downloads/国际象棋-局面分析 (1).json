@@ -1,0 +1,119 @@
+{
+  "plugin_version": "1.0.1",
+  "rules_version": "1.4.0",
+  "generated_at": "2026-11-16T10:11:15.299Z",
+  "pgn": "[Event \"?\"]\n[Site \"?\"]\n[Date \"????.??.??\"]\n[Round \"?\"]\n[White \"?\"]\n[Black \"?\"]\n[Result \"*\"]\n[SetUp \"1\"]\n[FEN \"7k/8/5KQ1/8/8/8/8/8 w - - 0 1\"]\n *",
+  "engine_name": "Stockfish 19 Lite WASM",
+  "engine_version": "19.0.1",
+  "variant": "lite-single",
+  "fen": "7k/8/5KQ1/8/8/8/8/8 w - - 0 1",
+  "side_to_move": "w",
+  "limits": {
+    "movetime_ms": 3000,
+    "hash_mib": 32,
+    "threads": 1,
+    "multipv": 3
+  },
+  "bestmove": "g6g7",
+  "variants": [
+    {
+      "depth": 245,
+      "seldepth": 2,
+      "nodes": 20522,
+      "time_ms": 111,
+      "multipv": 1,
+      "score": {
+        "type": "mate",
+        "value": 1,
+        "bound": null,
+        "perspective": "side_to_move"
+      },
+      "pv": [
+        "g6g7"
+      ],
+      "variation": [
+        {
+          "uci": "g6g7",
+          "san": "Qg7#",
+          "fen": "7k/6Q1/5K2/8/8/8/8/8 b - - 1 1"
+        }
+      ]
+    },
+    {
+      "depth": 245,
+      "seldepth": 4,
+      "nodes": 20522,
+      "time_ms": 111,
+      "multipv": 2,
+      "score": {
+        "type": "mate",
+        "value": 2,
+        "bound": null,
+        "perspective": "side_to_move"
+      },
+      "pv": [
+        "g6g5",
+        "h8h7",
+        "g5g7"
+      ],
+      "variation": [
+        {
+          "uci": "g6g5",
+          "san": "Qg5",
+          "fen": "7k/8/5K2/6Q1/8/8/8/8 b - - 1 1"
+        },
+        {
+          "uci": "h8h7",
+          "san": "Kh7",
+          "fen": "8/7k/5K2/6Q1/8/8/8/8 w - - 2 2"
+        },
+        {
+          "uci": "g5g7",
+          "san": "Qg7#",
+          "fen": "8/6Qk/5K2/8/8/8/8/8 b - - 3 2"
+        }
+      ]
+    },
+    {
+      "depth": 245,
+      "seldepth": 4,
+      "nodes": 20522,
+      "time_ms": 111,
+      "multipv": 3,
+      "score": {
+        "type": "mate",
+        "value": 2,
+        "bound": null,
+        "perspective": "side_to_move"
+      },
+      "pv": [
+        "g6g3",
+        "h8h7",
+        "g3g7"
+      ],
+      "variation": [
+        {
+          "uci": "g6g3",
+          "san": "Qg3",
+          "fen": "7k/8/5K2/8/8/6Q1/8/8 b - - 1 1"
+        },
+        {
+          "uci": "h8h7",
+          "san": "Kh7",
+          "fen": "8/7k/5K2/8/8/6Q1/8/8 w - - 2 2"
+        },
+        {
+          "uci": "g3g7",
+          "san": "Qg7#",
+          "fen": "8/6Qk/5K2/8/8/8/8/8 b - - 3 2"
+        }
+      ]
+    }
+  ],
+  "boundary": "有限深度和时间的局面分析；评分视角为分析起点行棋方；不证明最优性或保证胜负。",
+  "replay": {
+    "line": 1,
+    "step": 1,
+    "displayed_fen": "7k/6Q1/5K2/8/8/8/8/8 b - - 1 1"
+  }
+}

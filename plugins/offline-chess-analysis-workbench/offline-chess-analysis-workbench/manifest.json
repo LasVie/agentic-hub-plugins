@@ -1,0 +1,46 @@
+{
+  "id": "offline-chess-analysis-workbench",
+  "name": "离线国际象棋分析工作台",
+  "description": "编辑标准国际象棋 FEN 或 PGN，离线检查合法着法、运行有界 Stockfish 搜索、重放主变化，并导出棋局和棋盘。",
+  "version": "1.0.1",
+  "package_type": "plugin",
+  "display_name": {
+    "zh": "离线国际象棋分析工作台",
+    "en": "离线国际象棋分析工作台"
+  },
+  "display_description": {
+    "zh": "用本地国际象棋规则库和搜索引擎检查棋局与候选变化。",
+    "en": "用本地国际象棋规则库和搜索引擎检查棋局与候选变化。"
+  },
+  "category": "Others",
+  "tags": [
+    {
+      "zh": "国际象棋",
+      "en": "国际象棋"
+    },
+    {
+      "zh": "离线分析",
+      "en": "离线分析"
+    }
+  ],
+  "skills": [
+    {
+      "dir": "skills/chess-workbench",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/chess_tools.py",
+      "class": "ChessWorkbenchTool",
+      "display_name": {
+        "zh": "管理国际象棋工作台",
+        "en": "管理国际象棋工作台"
+      },
+      "display_description": {
+        "zh": "只读查询或经确认启动、停止本插件的独立本机服务。",
+        "en": "只读查询或经确认启动、停止本插件的独立本机服务。"
+      }
+    }
+  ]
+}

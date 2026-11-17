@@ -1,0 +1,23 @@
+{
+  "type": "agent-plugin",
+  "name": "offline-chess-analysis-workbench",
+  "version": "1.0.1",
+  "display_name": "离线国际象棋分析工作台",
+  "description": "编辑 FEN 或导入 PGN，检查标准国际象棋合法走法，离线运行受限 Stockfish 分析，回放主要变化并导出棋局、分析数据与棋盘 SVG。",
+  "publisher": "Cai Zhenze",
+  "category": "数据与科学研究",
+  "tags": [
+    "国际象棋",
+    "离线",
+    "棋局分析",
+    "Stockfish"
+  ],
+  "functional_tags": [
+    "Chess Engine Analysis",
+    "Legal Move Verification",
+    "Principal Variation Replay"
+  ],
+  "scope": "标准国际象棋；单个 FEN 或最多 512 半回合 PGN；单线程、32 MiB Hash、每次最多 10 秒、最多三条主要变化。不包含联网对弈、账户、远程棋库、残局库或 Chess960；有限搜索评价不等于穷尽证明。",
+  "candidate_id": "CAND-EXT-015",
+  "task_id": "AH-20261113-offline-chess-analysis-workbench"
+}

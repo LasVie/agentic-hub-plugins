@@ -1,0 +1,95 @@
+{
+  "status": "passed",
+  "date": "2026-11-13",
+  "toolchain": "Emscripten 6.0.9 / 4e4223852a0835923411059a3929907d7df1232e",
+  "sdk_release": "f04ea239d533260dd1db760dd2d668d5f9a88d6b",
+  "build_node": "24.19.0",
+  "test_node": "v22.16.0",
+  "terser": "5.51.2",
+  "source_revision": "0d5dd7944f88c817c07a26bc4fb1905d5f9c46d6",
+  "network_sha256": "61e7af4bb97d51eeeb25d322916f86513b5cd3a827ce189c98c6e31946f99e5b",
+  "command": "MAKEFLAGS=TARGET_KERNEL=Emscripten node build.js --single-threaded --lite --no-split --strict-em-check -f",
+  "source_modifications": false,
+  "first_attempt": "Unmodified upstream default Darwin build added unsupported -arch wasm and -mdynamic-no-pic flags; no source patch.",
+  "retry": "Existing Makefile TARGET_KERNEL override selected Emscripten; full build succeeded with 2 Closure type warnings and 0 errors.",
+  "outputs": [
+    {
+      "file": "stockfish-19-lite-single.js",
+      "bytes": 28230,
+      "sha256": "ccb130d7ff29408531c47d859a49f91d59d4f482d05a53eb1a3231a4f624c91a",
+      "published_equals_rebuilt": true
+    },
+    {
+      "file": "stockfish-19-lite-single.wasm",
+      "bytes": 1845971,
+      "sha256": "ee4f115bdb2d32cadf96cada104a05b5ec257d7ad6f57582190b49bc71f096de",
+      "published_equals_rebuilt": true
+    }
+  ],
+  "build_dependency_lock": {
+    "path": "corresponding-source/stockfish-build-dependencies.lock.json",
+    "bytes": 4881,
+    "sha256": "7a831ae1a542a0bd5f00f7319b47c002c674f8c56ee1122ba4624f5ac9e1d49f"
+  },
+  "rebuild_log": {
+    "retained_in_task_scratch": "rebuild-cross-target.log",
+    "bytes": 18572,
+    "sha256": "1f3f727e3d7b776f1ce9630ed08f359a4935b07e9cef4bf95a2b060da86a3105"
+  },
+  "functional_tests": {
+    "node": "v22.16.0",
+    "tests": 9,
+    "records": [
+      {
+        "name": "rules starting-position perft 20 / 400 / 8902",
+        "passed": true,
+        "elapsed_ms": 613
+      },
+      {
+        "name": "castling moves both rooks and kings; no castle through attack",
+        "passed": true,
+        "elapsed_ms": 1
+      },
+      {
+        "name": "en-passant removes the passed pawn",
+        "passed": true,
+        "elapsed_ms": 1
+      },
+      {
+        "name": "promotion supports all four choices and requires a legal move",
+        "passed": true,
+        "elapsed_ms": 0
+      },
+      {
+        "name": "actual UCI initialization/version and engine perft 8902",
+        "passed": true,
+        "elapsed_ms": 83
+      },
+      {
+        "name": "actual engine search finds and independently verifies Qg7 mate",
+        "passed": true,
+        "elapsed_ms": 115
+      },
+      {
+        "name": "actual three-line search yields legal PVs and finite metadata",
+        "passed": true,
+        "elapsed_ms": 1085
+      },
+      {
+        "name": "actual search cancellation releases worker and next search recovers",
+        "passed": true,
+        "elapsed_ms": 191
+      },
+      {
+        "name": "worker failure releases state and next real worker recovers",
+        "passed": true,
+        "elapsed_ms": 109
+      }
+    ]
+  },
+  "limitations": [
+    "Node engine adapter does not establish running-host dispatch or real browser Worker behavior; recorded separately.",
+    "The injected Worker failure is a controlled wrapper negative test, followed by actual engine recovery.",
+    "One successful byte-identical build does not promise all future tools or environments will be identical."
+  ]
+}

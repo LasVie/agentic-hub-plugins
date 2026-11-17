@@ -1,0 +1,1219 @@
+{
+  "review_date": "2026-11-13",
+  "candidate_id": "CAND-EXT-015",
+  "task_id": "AH-20261113-offline-chess-analysis-workbench",
+  "name_mapping": [
+    "Stockfish.js",
+    "离线国际象棋分析工作台",
+    "offline-chess-analysis-workbench"
+  ],
+  "runtime_modified": false,
+  "excluded_materials": [
+    "Stockfish.js examples/ entire subtree including unused jQuery and media",
+    "upstream symlinks outside required source closure",
+    "compiler/Node executables and npm development dependency installations",
+    "Non-build dotmetadata: chess.js/.npmignore, chess.js/.eslintrc.cjs, chess.js/.prettierignore, chess.js/.gitignore, chess.js/.prettierrc, chess.js/.eslintignore, chess.js/.github/workflows/node.js.yml, stockfish.js/.gitignore, stockfish.js/.clang-format, stockfish.js/.gitattributes, stockfish.js/tests/.gitattributes, stockfish.js/scripts/.gitattributes"
+  ],
+  "downloads": [
+    {
+      "name": "stockfish-source.tar.gz",
+      "url": "https://codeload.github.com/nmrugg/stockfish.js/tar.gz/refs/tags/v19.0.1",
+      "bytes": 426054,
+      "sha256": "a18aa8a871f5265014b110b3e07804ff3637899d2e189be6ded2b99e2c17a10e"
+    },
+    {
+      "name": "chess-source.tar.gz",
+      "url": "https://codeload.github.com/jhlywa/chess.js/tar.gz/refs/tags/v1.4.0",
+      "bytes": 148559,
+      "sha256": "a927d148e7c877eaacb7752ab4ec1355780df2989b0f123532d274c30b84e9ce"
+    },
+    {
+      "name": "stockfish-19-lite-single.js",
+      "url": "https://github.com/nmrugg/stockfish.js/releases/download/v19.0.1/stockfish-19-lite-single.js",
+      "bytes": 28230,
+      "sha256": "ccb130d7ff29408531c47d859a49f91d59d4f482d05a53eb1a3231a4f624c91a"
+    },
+    {
+      "name": "stockfish-19-lite-single.wasm",
+      "url": "https://github.com/nmrugg/stockfish.js/releases/download/v19.0.1/stockfish-19-lite-single.wasm",
+      "bytes": 1845971,
+      "sha256": "ee4f115bdb2d32cadf96cada104a05b5ec257d7ad6f57582190b49bc71f096de"
+    },
+    {
+      "name": "chess.js",
+      "url": "https://unpkg.com/chess.js@1.4.0/dist/esm/chess.js",
+      "bytes": 107052,
+      "sha256": "76c7c34f0e2e9ab076521a5d6fe786a9cce537bb1b6f29d32a9c9970b5b232d2"
+    },
+    {
+      "name": "nn-61e7af4bb97d.nnue",
+      "url": "https://tests.stockfishchess.org/api/nn/nn-61e7af4bb97d.nnue",
+      "bytes": 1166381,
+      "sha256": "61e7af4bb97d51eeeb25d322916f86513b5cd3a827ce189c98c6e31946f99e5b"
+    },
+    {
+      "name": "emscripten-LICENSE",
+      "url": "https://raw.githubusercontent.com/emscripten-core/emscripten/6.0.9/LICENSE",
+      "bytes": 5093,
+      "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86"
+    },
+    {
+      "name": "emscripten-AUTHORS",
+      "url": "https://raw.githubusercontent.com/emscripten-core/emscripten/6.0.9/AUTHORS",
+      "bytes": 29142,
+      "sha256": "018d4191aa649d5c82ba1b2f9117b9902648792c89d5f0d5564a689dc4198aaa"
+    },
+    {
+      "name": "musl-COPYRIGHT",
+      "url": "https://raw.githubusercontent.com/emscripten-core/emscripten/6.0.9/system/lib/libc/musl/COPYRIGHT",
+      "bytes": 6196,
+      "sha256": "b870108ec5e7790e9f9919064f1b9421d62d5f9b0e6c230c6adf7ea2da62e97b"
+    },
+    {
+      "name": "llvm-LICENSE.TXT",
+      "url": "https://raw.githubusercontent.com/emscripten-core/emscripten/6.0.9/system/lib/compiler-rt/LICENSE.TXT",
+      "bytes": 16708,
+      "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d"
+    },
+    {
+      "name": "dlmalloc.c",
+      "url": "https://raw.githubusercontent.com/emscripten-core/emscripten/6.0.9/system/lib/dlmalloc.c",
+      "bytes": 236570,
+      "sha256": "175ef7cab6d59b858471ad8ba16ee8a2f0536ddf666742b5e044b187171695d6"
+    },
+    {
+      "name": "network-download-policy.html.j2",
+      "url": "https://raw.githubusercontent.com/official-stockfish/fishtest/f7af98f81f0c740a4de3d9a3721854709dcdc2bb/server/fishtest/templates/nns_content_fragment.html.j2",
+      "bytes": 9763,
+      "sha256": "8d4fc73da4180fb3a7863700a707e586c23f76edeaedc2033a99926030cc80ec"
+    },
+    {
+      "name": "network-upload-policy.html.j2",
+      "url": "https://raw.githubusercontent.com/official-stockfish/fishtest/f7af98f81f0c740a4de3d9a3721854709dcdc2bb/server/fishtest/templates/nn_upload.html.j2",
+      "bytes": 2627,
+      "sha256": "9259f726cb731db8f83aeb02ef65429f1e87eebdf5c7dcaf8bb90b18f5dd05a9"
+    },
+    {
+      "name": "CC0-1.0.txt",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt",
+      "bytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "name": "node-SHASUMS256.txt",
+      "url": "https://nodejs.org/dist/v22.16.0/SHASUMS256.txt",
+      "bytes": 3777,
+      "sha256": "e1f5ad5e2a5654721e7b89d84d27f406e582c46ca0b5cde304c5dcdd7bab8b31"
+    },
+    {
+      "name": "libcxx-LICENSE.TXT",
+      "url": "https://raw.githubusercontent.com/emscripten-core/emscripten/6.0.9/system/lib/libcxx/LICENSE.TXT",
+      "bytes": 16703,
+      "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b"
+    },
+    {
+      "name": "libcxxabi-LICENSE.TXT",
+      "url": "https://raw.githubusercontent.com/emscripten-core/emscripten/6.0.9/system/lib/libcxxabi/LICENSE.TXT",
+      "bytes": 16706,
+      "sha256": "e2b35be49f7284a45b7baca8fc7b3ab7440e7902392b2528a457816b5bb2a15c"
+    },
+    {
+      "name": "node-v22.16.0-darwin-arm64.tar.xz",
+      "url": "https://nodejs.org/dist/v22.16.0/node-v22.16.0-darwin-arm64.tar.xz",
+      "bytes": 24867980,
+      "sha256": "aaf7fc3c936f1b359bc312b63638e41f258689ac2303966ad932cda18c54ea00"
+    },
+    {
+      "name": "emsdk6.0.9.tar.gz",
+      "url": "https://codeload.github.com/emscripten-core/emsdk/tar.gz/refs/tags/6.0.9",
+      "bytes": 176079,
+      "sha256": "c5e3ed2e15d977c824e30da32c17e18879786e69fffc425e729fce0f2efb5530"
+    },
+    {
+      "name": "peggy-LICENSE",
+      "url": "https://raw.githubusercontent.com/peggyjs/peggy/6ce68af3334ba6c03fc729f1082ad0bbecf56569/LICENSE",
+      "bytes": 1079,
+      "sha256": "32c43eac6ae56c751cf85a9181a0753145cb9ae993943ae80699ba64e75843b0"
+    },
+    {
+      "name": "peggy-AUTHORS",
+      "url": "https://raw.githubusercontent.com/peggyjs/peggy/6ce68af3334ba6c03fc729f1082ad0bbecf56569/AUTHORS",
+      "bytes": 2253,
+      "sha256": "df057b32b11800151822dba548c9d9df5d968cb5bf5fb006aa8494faf2b331cc"
+    }
+  ],
+  "reused_files": {
+    "corresponding-source/chess.js/LICENSE": {
+      "bytes": 1315,
+      "sha256": "0b3a3c2b4432a26bb18f9d06f5bba4de015bcc980306b7db28b06025495e2186"
+    },
+    "corresponding-source/chess.js/README.md": {
+      "bytes": 26932,
+      "sha256": "4566d2e4e2cf5261ceb9aab98cb65b7528956e98480d000e40aa1e526d7bfe83"
+    },
+    "corresponding-source/chess.js/__tests__/ascii.test.ts": {
+      "bytes": 774,
+      "sha256": "e508b1120f093cdbb6e7543e17fe193bdc27272b64c5a8dec9217a57a0d297e1"
+    },
+    "corresponding-source/chess.js/__tests__/attackers.test.ts": {
+      "bytes": 6017,
+      "sha256": "dfd10f8185a9aee6d1f5b4ff2f8ee5d4a95716ca589059b82e16d00626fbf619"
+    },
+    "corresponding-source/chess.js/__tests__/board.test.ts": {
+      "bytes": 4465,
+      "sha256": "fee381fb357b89db6c51db6bca8a8addf9c8ab77db89481d62443f8d797d6f70"
+    },
+    "corresponding-source/chess.js/__tests__/castling-rights.test.ts": {
+      "bytes": 3044,
+      "sha256": "5bf887fb32bcd0dee07f2d31a3e0d20728055e6e46172933b4e17d3322736347"
+    },
+    "corresponding-source/chess.js/__tests__/clear.test.ts": {
+      "bytes": 896,
+      "sha256": "ede828221e2ea973118a14ac5041d11b9f3383f9e2581fa7e70e440331c7191c"
+    },
+    "corresponding-source/chess.js/__tests__/comments.test.ts": {
+      "bytes": 8671,
+      "sha256": "93ddb3d5dce5ee8e1ae08dd969634bafa47b2c00eb8292e1c70356d8713bd771"
+    },
+    "corresponding-source/chess.js/__tests__/fen.test.ts": {
+      "bytes": 1896,
+      "sha256": "f8c4f8f0f1dce1763bc9eaa566e07be648625be1c641c1eed3c11f4f621a983b"
+    },
+    "corresponding-source/chess.js/__tests__/find-piece.test.ts": {
+      "bytes": 1226,
+      "sha256": "7572619ee05db57a91f9cb75ea0eacd792d5eb789b22fcf9a664b0ac1c445640"
+    },
+    "corresponding-source/chess.js/__tests__/get-square-by-piece.test.ts": {
+      "bytes": 1226,
+      "sha256": "7572619ee05db57a91f9cb75ea0eacd792d5eb789b22fcf9a664b0ac1c445640"
+    },
+    "corresponding-source/chess.js/__tests__/get.test.ts": {
+      "bytes": 838,
+      "sha256": "fa46439abb3423a86c1aed2e089daaf822ffa27048141389b35612518cb8ac8a"
+    },
+    "corresponding-source/chess.js/__tests__/headers.test.ts": {
+      "bytes": 1984,
+      "sha256": "33cd7dfb300310c7ed140fc292af5c26760f9afd1976ea71355d80179097d9c3"
+    },
+    "corresponding-source/chess.js/__tests__/history.test.ts": {
+      "bytes": 32061,
+      "sha256": "624fad3c43984ed01d66b8003f1cecbcc030d09d7c654a34698d956dea8ecf85"
+    },
+    "corresponding-source/chess.js/__tests__/is-attacked.test.ts": {
+      "bytes": 4067,
+      "sha256": "69f2fd5fc0883a0299c0a1f0a6d37bd8710f8182a0360988076804159a6a3707"
+    },
+    "corresponding-source/chess.js/__tests__/is-check.test.ts": {
+      "bytes": 696,
+      "sha256": "1def0db2211e81d53d428f000c0176a753fc3c0fe2a751af6c94b98c58f73363"
+    },
+    "corresponding-source/chess.js/__tests__/is-checkmate.test.ts": {
+      "bytes": 818,
+      "sha256": "c507e380aa81231269a89faa50d6434d92dc514b76db300054f5afccb8415c69"
+    },
+    "corresponding-source/chess.js/__tests__/is-gameover.test.ts": {
+      "bytes": 549,
+      "sha256": "313c9c3cc8ce6f48657e841d4f3eacf22f3edbf5b6982089d88b6f614bc5deab"
+    },
+    "corresponding-source/chess.js/__tests__/is-insufficient-material.test.ts": {
+      "bytes": 1799,
+      "sha256": "9a673b96d8f408ad656308e0b127beac9131496ec3536f5207f684d969a0f7d5"
+    },
+    "corresponding-source/chess.js/__tests__/is-stalemate.test.ts": {
+      "bytes": 646,
+      "sha256": "0285a03d5b2fcf0337530bc0a78eee6c6fef67de22c5fc5112cbb4e6e36935af"
+    },
+    "corresponding-source/chess.js/__tests__/is-threefold-repetition.test.ts": {
+      "bytes": 950,
+      "sha256": "a137f521a296eb0fa421873f816acdbcc41d3637c1da617f484f68d90ef2f90d"
+    },
+    "corresponding-source/chess.js/__tests__/load-pgn.test.ts": {
+      "bytes": 25977,
+      "sha256": "e25aafc4719c5023e2db46dca44ed1f6a89ce6f95be1831d09b5ef04831f8ec0"
+    },
+    "corresponding-source/chess.js/__tests__/load.test.ts": {
+      "bytes": 3223,
+      "sha256": "ff6a81dc992570bd715ccbf4c1eeeb18c19c389cfadfb68fe5c57991bbeace1f"
+    },
+    "corresponding-source/chess.js/__tests__/move.test.ts": {
+      "bytes": 13613,
+      "sha256": "ee92a359bc9e35057946afa3188c768afe8c03d2f37c111dfa4fc68ce620ad1f"
+    },
+    "corresponding-source/chess.js/__tests__/moves.test.ts": {
+      "bytes": 8298,
+      "sha256": "8746402beec2c3271ef863811b8164ec44e9be33f504b28633446c6236a6a9b9"
+    },
+    "corresponding-source/chess.js/__tests__/nullmove.test.ts": {
+      "bytes": 1937,
+      "sha256": "dd0b5364d59399c36b8844de08930f4bcaf7c458befe3f5aa1f7cd2c1a93a6de"
+    },
+    "corresponding-source/chess.js/__tests__/perft.test.ts": {
+      "bytes": 1226,
+      "sha256": "d16a980165e10b16490ad00cebefba3237a535329947e45cc06442050af27d35"
+    },
+    "corresponding-source/chess.js/__tests__/pgn.test.ts": {
+      "bytes": 4746,
+      "sha256": "d07ec93ffab48dc041fb636ef3042051a1405a5ab2360532c0c90a69fcb545e5"
+    },
+    "corresponding-source/chess.js/__tests__/pgn/0.pgn": {
+      "bytes": 845,
+      "sha256": "e50c7b7fcc9dccddb3b2026f3b7a48ee9525829bfc0eebc95bb258bfaf8b81a9"
+    },
+    "corresponding-source/chess.js/__tests__/pgn/1.pgn": {
+      "bytes": 708,
+      "sha256": "b04c6b40089b5f3d1b722d70452c063a1f38acd6818ed0576b751f20058cd7e9"
+    },
+    "corresponding-source/chess.js/__tests__/pgn/2.pgn": {
+      "bytes": 119,
+      "sha256": "6f228c1df8d414c133819550e0b0c8053e79f71d9088a10b4bc99c1b7a3a8213"
+    },
+    "corresponding-source/chess.js/__tests__/pgn/3.pgn": {
+      "bytes": 210,
+      "sha256": "3d86a23120f63a6bdeeb40deebc0c72dca4ddef766d9d8d21b042d73e44296a0"
+    },
+    "corresponding-source/chess.js/__tests__/position-counts.test.ts": {
+      "bytes": 3092,
+      "sha256": "e083c73c6534fd821377bc5cd8a720326aa294ceedc1148b64760232fe416c89"
+    },
+    "corresponding-source/chess.js/__tests__/put.test.ts": {
+      "bytes": 7214,
+      "sha256": "6efe299cb73c5da0b2b91d3cdfe3187040d46416895e57e59f1386391fe763f0"
+    },
+    "corresponding-source/chess.js/__tests__/regression.test.ts": {
+      "bytes": 9644,
+      "sha256": "91d5107e14f1c83f1bfa270ab9fe102aa3e93402a6acc9e2b45fd40a8cff1b5b"
+    },
+    "corresponding-source/chess.js/__tests__/remove.test.ts": {
+      "bytes": 5587,
+      "sha256": "2f31503dd698be24399bfdad921beedc836199fd271b8a63312c91377033a6f0"
+    },
+    "corresponding-source/chess.js/__tests__/reset.test.ts": {
+      "bytes": 227,
+      "sha256": "f60a9e79629183aa1e15500b318d6101eb295cf0d3c5d285fd81c1f97e202d13"
+    },
+    "corresponding-source/chess.js/__tests__/setTurn.test.ts": {
+      "bytes": 837,
+      "sha256": "3b134c1994beccc230ff9973b6e7684d02a6f6a5ac444371eb88e1020ed110b7"
+    },
+    "corresponding-source/chess.js/__tests__/square-color.test.ts": {
+      "bytes": 727,
+      "sha256": "88f7e48ddaa90dee72819933a5c610720789f8427d8e1266a3ec0e15ea048c79"
+    },
+    "corresponding-source/chess.js/__tests__/standard-algebraic-notation.test.ts": {
+      "bytes": 1935,
+      "sha256": "9fce1725e62e114d4b05edfcbe0dd3640fa18d74c5733cc16b1552f61f1fae81"
+    },
+    "corresponding-source/chess.js/__tests__/undo.test.ts": {
+      "bytes": 309,
+      "sha256": "fc60dae59c0e9519f2ec3149e3b3be1448cb4a9c9f18025f9047041d27221173"
+    },
+    "corresponding-source/chess.js/__tests__/utils.ts": {
+      "bytes": 891,
+      "sha256": "eb266b0e5b0c7c387ef19ec6ca898cb69888aad213b9dcf3a1ab81e57d3c5e07"
+    },
+    "corresponding-source/chess.js/__tests__/validate_fen.test.ts": {
+      "bytes": 12710,
+      "sha256": "796a279a0d6c1a2159650487318eedf98921859e800cc6fe5378e82567c7bf08"
+    },
+    "corresponding-source/chess.js/__tests__/zobrist.test.ts": {
+      "bytes": 878,
+      "sha256": "2686695bb51bf645a6a977c45fb6434da8f866a9bfcb0f441c7708d513b844c9"
+    },
+    "corresponding-source/chess.js/benchmarks/bench.ts": {
+      "bytes": 1205,
+      "sha256": "0e037e9ff25b3e787aa38e8e48f83bbab08a09464b4348855a1c8990fd0c8b2b"
+    },
+    "corresponding-source/chess.js/benchmarks/benchmark.pgn": {
+      "bytes": 75957,
+      "sha256": "2ce3fbe0769ca6d824a40766cdc246f1c4c6af6973984af88c8e7950a9c89f32"
+    },
+    "corresponding-source/chess.js/debug.sh": {
+      "bytes": 50,
+      "sha256": "8d51b823e72ae06e885b0e902a6e078081f3838b9e642225d2a26853ef0185fc"
+    },
+    "corresponding-source/chess.js/package-lock.json": {
+      "bytes": 240930,
+      "sha256": "9a56b15cc57e08fe9945e528dbdb49d6142b7ca7a734bab3735feeaf5deb2093"
+    },
+    "corresponding-source/chess.js/package.json": {
+      "bytes": 1386,
+      "sha256": "36a258fdfb5e76d0816bf2b63dab3c917a0a8652f943da0e6be7e9b543765dfd"
+    },
+    "corresponding-source/chess.js/peggy.config.mjs": {
+      "bytes": 244,
+      "sha256": "8cc43c8a824e401af099cd03bd6268dc04faa2e93e516deac71ebcac265d1b12"
+    },
+    "corresponding-source/chess.js/rollup.config.mjs": {
+      "bytes": 828,
+      "sha256": "10c4e619e2e91ceb3d086a631dd8d5ced4b56af5e3e2db2688f4e3264d559197"
+    },
+    "corresponding-source/chess.js/src/chess.ts": {
+      "bytes": 71633,
+      "sha256": "a513a52ef8321615c5a52806ee6f276b909e55fa5abc2dae3d5da323943ac2fa"
+    },
+    "corresponding-source/chess.js/src/node.ts": {
+      "bytes": 112,
+      "sha256": "b54e0acb6d24daa34a9ca8daff7461af514169d1c7d1b8c492ea0008a10ea1da"
+    },
+    "corresponding-source/chess.js/src/pgn.peggy": {
+      "bytes": 2572,
+      "sha256": "7a655c393eec84511f33284eab76d7ac7ba92bc97e3e1bb72f751b0e54ce1d4d"
+    },
+    "corresponding-source/chess.js/tsconfig.cjs.json": {
+      "bytes": 114,
+      "sha256": "b205f764fb0cac3886426cb1cd21d59c3568e80fecf1aaf126fc7c8aa9bd77ba"
+    },
+    "corresponding-source/chess.js/tsconfig.esm.json": {
+      "bytes": 114,
+      "sha256": "c3524e3fcd6234747c4291e7933a506eb4541ca86a64f1d259b87387900a642d"
+    },
+    "corresponding-source/chess.js/tsconfig.json": {
+      "bytes": 214,
+      "sha256": "245ba8b65e573f699c7ec6a0436919c559dcaef7efb6f587dfff63093ba0d9ed"
+    },
+    "corresponding-source/chess.js/tsconfig.types.json": {
+      "bytes": 150,
+      "sha256": "ee54bc3c23e2b2f5e8c0d79958a4fd2f3748b4c044e97eab7082f3ca3cef1a92"
+    },
+    "corresponding-source/chess.js/vite.config.ts": {
+      "bytes": 198,
+      "sha256": "8b2a02868fff6111a23a071d10cafce604defa0e3843491f5ef00c0a3f274958"
+    },
+    "corresponding-source/stockfish.js/AUTHORS": {
+      "bytes": 6881,
+      "sha256": "f81e7d74c350626766382ec67fa262c38cda00cb8b501790f95cdebb526006c1"
+    },
+    "corresponding-source/stockfish.js/Copying.txt": {
+      "bytes": 35821,
+      "sha256": "0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b"
+    },
+    "corresponding-source/stockfish.js/README.md": {
+      "bytes": 10102,
+      "sha256": "b4fd98bf4cd5cc6587c830abf1bb1fae6b6c9cc56d53f710691e587c0e18f178"
+    },
+    "corresponding-source/stockfish.js/Top CPU Contributors.txt": {
+      "bytes": 25405,
+      "sha256": "2f5589fb7df96e732605cf4af303f4c126e7adc3f1cbbcd23b48e1cbfc6c50ca"
+    },
+    "corresponding-source/stockfish.js/build.js": {
+      "bytes": 33974,
+      "sha256": "ecbfb9d0ee4ae157eb9c14094f75419bdb05efa627b656bd6b831825c90b4ac7"
+    },
+    "corresponding-source/stockfish.js/index.js": {
+      "bytes": 588,
+      "sha256": "649d7e49e72910e1e9458efd51042497a7f528c6428bc33d8defd8f398c2e5f7"
+    },
+    "corresponding-source/stockfish.js/package.json": {
+      "bytes": 1124,
+      "sha256": "58968296c0f0fa4d7b5feb2b9bbc53b98f71935e26c64828bbba69ec268cb6fd"
+    },
+    "corresponding-source/stockfish.js/scripts/check_universal.sh": {
+      "bytes": 2357,
+      "sha256": "b1e5566a695b519c504cf13e11c2cf58a73e1338d1beb6bcf8b8af04446c781b"
+    },
+    "corresponding-source/stockfish.js/scripts/check_universal_arm.sh": {
+      "bytes": 1870,
+      "sha256": "26adf3da328e8d1ca4209554841f6d7cc05fb6242df69c67fdde306a64185139"
+    },
+    "corresponding-source/stockfish.js/scripts/check_universal_riscv.sh": {
+      "bytes": 2078,
+      "sha256": "75b4cef47585deb04c0cbea9d06df390891076b7c6d971a9f3ac24353792c68c"
+    },
+    "corresponding-source/stockfish.js/scripts/cli.js": {
+      "bytes": 211,
+      "sha256": "92914ccc003174ee2f782e2c6092ffecaa5778cc6729e93f19f63d5306b549b2"
+    },
+    "corresponding-source/stockfish.js/scripts/findEngine.js": {
+      "bytes": 1601,
+      "sha256": "6898c94e44a23e21c0cba6727cd61f65d1143eadb0330c764f73f191c13177a7"
+    },
+    "corresponding-source/stockfish.js/scripts/get_native_properties.sh": {
+      "bytes": 8958,
+      "sha256": "ff5caf017460c2b27e37987c493a4b2be4e726c1c453c3eaac90569dfed155a4"
+    },
+    "corresponding-source/stockfish.js/scripts/net.sh": {
+      "bytes": 2614,
+      "sha256": "dca31146ee32dc0d92c53a6c1fe54e8b71e421c272dd3d6dd62ce1ceba8e7686"
+    },
+    "corresponding-source/stockfish.js/scripts/postpack.js": {
+      "bytes": 353,
+      "sha256": "eef91a35f71af677db0e1b999b225e5c799b52181742b70fd39e33eae8f5698a"
+    },
+    "corresponding-source/stockfish.js/scripts/prepack.js": {
+      "bytes": 1084,
+      "sha256": "06429a2c5a4f4610d58165d7962c9255bd1062484df8c0d17c58c5d95468f16c"
+    },
+    "corresponding-source/stockfish.js/scripts/publish.sh": {
+      "bytes": 24144,
+      "sha256": "0a553507881248c76b3530f7f5e0fec7522d702098f51f94d05571c9d7d887e7"
+    },
+    "corresponding-source/stockfish.js/src/Makefile": {
+      "bytes": 48328,
+      "sha256": "147c7e194b2764a0a0ddee5a0a0076583827988b65239a14b82cb3b5b7a9a5e3"
+    },
+    "corresponding-source/stockfish.js/src/attacks.cpp": {
+      "bytes": 6182,
+      "sha256": "260c2cceb38d7a87a69e4df0f84d84e6729b1a77bbc321a13fed8cff66b2c704"
+    },
+    "corresponding-source/stockfish.js/src/attacks.h": {
+      "bytes": 11668,
+      "sha256": "561d2eb1268ba66e7aa065387a033e686a49925d8e8c58a75826239a358cb1f5"
+    },
+    "corresponding-source/stockfish.js/src/benchmark.cpp": {
+      "bytes": 27174,
+      "sha256": "5706d3a9f7990442d0adf6bc4d9b0f50fff92c7e96156f62f3d166ca146acf0c"
+    },
+    "corresponding-source/stockfish.js/src/benchmark.h": {
+      "bytes": 1345,
+      "sha256": "af18da73fecd343a43971722550524f7a260ac83f9c76e2e32e5e28ddbf4c52e"
+    },
+    "corresponding-source/stockfish.js/src/bitboard.cpp": {
+      "bytes": 1409,
+      "sha256": "b73064f2270344bce175865174666b92d1f3653c6ee4f98fd075f0fb1865b735"
+    },
+    "corresponding-source/stockfish.js/src/bitboard.h": {
+      "bytes": 8626,
+      "sha256": "5d739e8b8300a04084c4dea41b9124f2a2d59dea365ad2996804f53c5340f5b7"
+    },
+    "corresponding-source/stockfish.js/src/emscripten/credits-lite.js": {
+      "bytes": 379,
+      "sha256": "89ccf382c251ed28227b4b7b7387c263022da46cfc11779db7e73ebf9d7ae6e0"
+    },
+    "corresponding-source/stockfish.js/src/emscripten/credits.js": {
+      "bytes": 277,
+      "sha256": "4b0e0343b77099288357a9dba0c9fa368f7f205d64363f3c22f181b310fd037f"
+    },
+    "corresponding-source/stockfish.js/src/emscripten/extern-post.js": {
+      "bytes": 26350,
+      "sha256": "310a6581f251d01afca0dfc65fb1340354607e592f24c8f7fdff3aa5667fd8c8"
+    },
+    "corresponding-source/stockfish.js/src/emscripten/extern-pre.js": {
+      "bytes": 15,
+      "sha256": "41299d224dd797df5d6fee8a496f9e1b0b8ac569303a53b79e31bc70e1835a06"
+    },
+    "corresponding-source/stockfish.js/src/emscripten/extern-pre2.js": {
+      "bytes": 40,
+      "sha256": "b7d4c5a4d8db8636fdb2c5c60b87cd4c89072ea02183ebcbe4a4eaab7f2aeb9f"
+    },
+    "corresponding-source/stockfish.js/src/emscripten/pre.js": {
+      "bytes": 2229,
+      "sha256": "88bd4f1bcbe167f3924dd6b185e16aa866b60911506a321b59158312babbed32"
+    },
+    "corresponding-source/stockfish.js/src/emscripten/wasm-makefile.mk": {
+      "bytes": 7035,
+      "sha256": "217311270d2f6ef2e53717b7b0ea83f158dc32c35d9224072e43514a0c650d72"
+    },
+    "corresponding-source/stockfish.js/src/engine.cpp": {
+      "bytes": 12694,
+      "sha256": "e531ddf4f57ac2f2cc19b8d653322acee1df45112635c5046b6189de41d8bfc8"
+    },
+    "corresponding-source/stockfish.js/src/engine.h": {
+      "bytes": 4959,
+      "sha256": "f41f3e5ac1bfa54f804c904500634eab04f8fbb5caf0463d6d89fa735e11f4db"
+    },
+    "corresponding-source/stockfish.js/src/evaluate.cpp": {
+      "bytes": 3844,
+      "sha256": "68a1675ef7ae943026ca0e54368b88ab90dd0082d22b5504f743afb2765dffb7"
+    },
+    "corresponding-source/stockfish.js/src/evaluate.h": {
+      "bytes": 2049,
+      "sha256": "cc79a301bf33d81be49faaa619e465beb1695592475eb606b0561d3240de6216"
+    },
+    "corresponding-source/stockfish.js/src/glue.cpp": {
+      "bytes": 1512,
+      "sha256": "dcfdf07c45eadd3285f55772afbd348db61371fb47e2aba505666a66a95d223c"
+    },
+    "corresponding-source/stockfish.js/src/glue.hpp": {
+      "bytes": 1819,
+      "sha256": "013ecced84c1f22abe03b67afa59329babdffcc4613dc0a537d4571068ab7dd3"
+    },
+    "corresponding-source/stockfish.js/src/history.h": {
+      "bytes": 9247,
+      "sha256": "f6e957d6e717348f58aa308f88aefddb5975e6a6c1d23e936ecf3548cbb48c39"
+    },
+    "corresponding-source/stockfish.js/src/incbin/UNLICENCE": {
+      "bytes": 1292,
+      "sha256": "80f60d0578200231dac96e2a42bf508f22ce8540b96f96777b649498656842ff"
+    },
+    "corresponding-source/stockfish.js/src/incbin/incbin.h": {
+      "bytes": 16036,
+      "sha256": "70995329299ec55d414ad6df6929ddcfe0a43a40102cf6c05ff3c74ddd2765cb"
+    },
+    "corresponding-source/stockfish.js/src/main.cpp": {
+      "bytes": 3140,
+      "sha256": "55e67a50b40308e0fb58643cc24849e3a61400c8c6a875854cd2c866a0c40755"
+    },
+    "corresponding-source/stockfish.js/src/memory.cpp": {
+      "bytes": 7669,
+      "sha256": "7181c3b2c98d4ac247e7d0282b1cf265c9f00768a0e01e5adf8854de6ac24537"
+    },
+    "corresponding-source/stockfish.js/src/memory.h": {
+      "bytes": 13202,
+      "sha256": "0c96b7742ed66a4ed1fe49c8f9e78b05833790155e3e33b4c64e81ddf71487ba"
+    },
+    "corresponding-source/stockfish.js/src/misc.cpp": {
+      "bytes": 17732,
+      "sha256": "6d3195588194804886fe197010bfec2735492c6f6b71310031daf6d9f726cffb"
+    },
+    "corresponding-source/stockfish.js/src/misc.h": {
+      "bytes": 18048,
+      "sha256": "fa97bd3c16ab7ea48f1e1e392f7723843daaa6aa0056a43127facb158ccc10d4"
+    },
+    "corresponding-source/stockfish.js/src/movegen.cpp": {
+      "bytes": 9759,
+      "sha256": "a7f19e6167aae8b9f69da69cc656d346913aa37322ceecb8217597e1b91e71c2"
+    },
+    "corresponding-source/stockfish.js/src/movegen.h": {
+      "bytes": 2130,
+      "sha256": "8180128aafed4aacdfc75999b17e7cb64da250b6c94b87e06a2e1bf65b3a6276"
+    },
+    "corresponding-source/stockfish.js/src/movepick.cpp": {
+      "bytes": 11713,
+      "sha256": "5ac6b57885a7e12428422438a28207f25a24182b008aca85a788e000a7a38217"
+    },
+    "corresponding-source/stockfish.js/src/movepick.h": {
+      "bytes": 2794,
+      "sha256": "6082a59beec9cd7badae9d2463df91d5067af490ae498a377eac9bc94ad1fe06"
+    },
+    "corresponding-source/stockfish.js/src/nn-61e7af4bb97d.nnue": {
+      "bytes": 1166381,
+      "sha256": "61e7af4bb97d51eeeb25d322916f86513b5cd3a827ce189c98c6e31946f99e5b"
+    },
+    "corresponding-source/stockfish.js/src/nnue/features/full_threats.cpp": {
+      "bytes": 12348,
+      "sha256": "4bd9602142ca97cb40ba3c02718236e0e15e41e29913d5917de599288dd23277"
+    },
+    "corresponding-source/stockfish.js/src/nnue/features/full_threats.h": {
+      "bytes": 4424,
+      "sha256": "dd1d9b1cd360b8c5e41b5e0e9836c335cc250ade8a30fc28357e482f0aeff874"
+    },
+    "corresponding-source/stockfish.js/src/nnue/features/half_ka_v2_hm.cpp": {
+      "bytes": 4799,
+      "sha256": "c00c84b37f979f9ff62b7081d5147a58982805fa5b42b802b841701a04802679"
+    },
+    "corresponding-source/stockfish.js/src/nnue/features/half_ka_v2_hm.h": {
+      "bytes": 5604,
+      "sha256": "c6c24b6246a10278e992e5494f38a02f96436764fe0fb0e11f21e96e6b3b45d5"
+    },
+    "corresponding-source/stockfish.js/src/nnue/features/p_hm.cpp": {
+      "bytes": 4507,
+      "sha256": "f40f970d6e7b631b43d4e737c03b835cda99f6a0a259a3744b05bcf45e9cf1c1"
+    },
+    "corresponding-source/stockfish.js/src/nnue/features/p_hm.h": {
+      "bytes": 4570,
+      "sha256": "056f3a46567e13fe42114f947a591c8f4b0dd46695ec9ec595c2f6279682925f"
+    },
+    "corresponding-source/stockfish.js/src/nnue/features/pp_3wide.cpp": {
+      "bytes": 10602,
+      "sha256": "55dad256e38a27149d48958747131afa6c87a41f6b4771e12c6113bc82b6614f"
+    },
+    "corresponding-source/stockfish.js/src/nnue/features/pp_3wide.h": {
+      "bytes": 3153,
+      "sha256": "3889a046b7eb5c9147d0c89be69514200d414e276a68809b4f512c8fe139e635"
+    },
+    "corresponding-source/stockfish.js/src/nnue/layers/affine_transform.h": {
+      "bytes": 16937,
+      "sha256": "b0a30ba12d1f11e8fddab66d8592c42ac3ca56233d0117ccf3bb9a9c27fefda2"
+    },
+    "corresponding-source/stockfish.js/src/nnue/layers/affine_transform_sparse_input.h": {
+      "bytes": 18056,
+      "sha256": "5471180cbe69b91f7f39278bef5c79ce37f538307cb8f11d3f51fafe9a0eab14"
+    },
+    "corresponding-source/stockfish.js/src/nnue/layers/clipped_relu.h": {
+      "bytes": 7033,
+      "sha256": "13d0f93da3b40df3a7c4b23fe34a4199e5f3cee03f529eac4f060299efa64e76"
+    },
+    "corresponding-source/stockfish.js/src/nnue/layers/sqr_clipped_relu.h": {
+      "bytes": 11029,
+      "sha256": "d2b6fb4f7045d2851f7ca48c4daa9a6292655ba026dc7b94c34105706eb7504b"
+    },
+    "corresponding-source/stockfish.js/src/nnue/network.cpp": {
+      "bytes": 12894,
+      "sha256": "71db7ad1af49ff3729ec72223ec26630b8b7d4c94c56d4f07510a215ab7a3feb"
+    },
+    "corresponding-source/stockfish.js/src/nnue/network.h": {
+      "bytes": 3836,
+      "sha256": "9f5f0e8282ed8478a59005946618dfbfb4d8484a9d38923cfbe1a261436359c8"
+    },
+    "corresponding-source/stockfish.js/src/nnue/nnue_accumulator.cpp": {
+      "bytes": 39408,
+      "sha256": "9b0b44fb5af153c3db931c5b16b59b9e5aa2814d05a86a3a7a8ec953be3dccb0"
+    },
+    "corresponding-source/stockfish.js/src/nnue/nnue_accumulator.h": {
+      "bytes": 5729,
+      "sha256": "619720bd42debf3578854280c70ac15eb4355ee693fed1d911df69521bb4913d"
+    },
+    "corresponding-source/stockfish.js/src/nnue/nnue_architecture.h": {
+      "bytes": 7614,
+      "sha256": "bc142e174b53148b1a6515f15355055bc3d06fe23f77b6b068a42fe3e9bd1d40"
+    },
+    "corresponding-source/stockfish.js/src/nnue/nnue_common.h": {
+      "bytes": 10557,
+      "sha256": "89a9c40893ea8e341bb7874796fcec2e69aecf548e969b55fa33a59579b60eae"
+    },
+    "corresponding-source/stockfish.js/src/nnue/nnue_feature_transformer.h": {
+      "bytes": 18713,
+      "sha256": "865f9b9794cf0a9d7be05a1752beaa98f70dd335155935a90a3a4f8821e22235"
+    },
+    "corresponding-source/stockfish.js/src/nnue/nnue_misc.cpp": {
+      "bytes": 3115,
+      "sha256": "3008e556a3352b607b6940be7c215aba8e53b577bfc82a1d0d0b0d57cf1f8ac1"
+    },
+    "corresponding-source/stockfish.js/src/nnue/nnue_misc.h": {
+      "bytes": 2011,
+      "sha256": "658f48eec561c9f040527ace4ef42c87e1943e2bd4f17a74fe90e69e142436a7"
+    },
+    "corresponding-source/stockfish.js/src/nnue/nnz_helper.h": {
+      "bytes": 5760,
+      "sha256": "5118876cd8008d84f397c07785be4f5ad2df9715e5d671b1537888f3d469fd0b"
+    },
+    "corresponding-source/stockfish.js/src/nnue/simd.h": {
+      "bytes": 18476,
+      "sha256": "3581a018aa6bafa18e130b7ca4c65c27bd59abb987a580ae96c0815e31e2da14"
+    },
+    "corresponding-source/stockfish.js/src/numa.h": {
+      "bytes": 63163,
+      "sha256": "30fad11a28434420a2dd082322a85314f2624d9e6ed0a4dad363ea942496a9cd"
+    },
+    "corresponding-source/stockfish.js/src/perft.h": {
+      "bytes": 1994,
+      "sha256": "3fd970d05be7e38299cdeeee8a9dc45b446a5527173245ff7d7296e0d439d356"
+    },
+    "corresponding-source/stockfish.js/src/position.cpp": {
+      "bytes": 58792,
+      "sha256": "f7872302663d1cf42626629a67150ab110398a4f9cbef2f64c8d118172a44e24"
+    },
+    "corresponding-source/stockfish.js/src/position.h": {
+      "bytes": 15095,
+      "sha256": "fad48c889c951bac46925e5dc64a6eaa490a2aa6402d9a5a9cafb314e120f8ba"
+    },
+    "corresponding-source/stockfish.js/src/score.cpp": {
+      "bytes": 1414,
+      "sha256": "c5877628d70984fef345f2ace3f155ea883f316505485f2115701aac313dfb01"
+    },
+    "corresponding-source/stockfish.js/src/score.h": {
+      "bytes": 1605,
+      "sha256": "b1355a14624fb743e7bde5b68030ae40650e3b34c36a4feac6d4b4704e56efd1"
+    },
+    "corresponding-source/stockfish.js/src/search.cpp": {
+      "bytes": 94756,
+      "sha256": "ba7d68df59eb91271020b0a4032e683a7524b7ea5d4cdb5f98348f006deab433"
+    },
+    "corresponding-source/stockfish.js/src/search.h": {
+      "bytes": 14665,
+      "sha256": "74ddb896d342ed1d95297fc765b422c0ca1eb9a340c34e5273b699496d9b726a"
+    },
+    "corresponding-source/stockfish.js/src/shm.h": {
+      "bytes": 20148,
+      "sha256": "f0c660b640602b35f9fb324fb799cc37448e03c30b678200ce88f565d23a10d5"
+    },
+    "corresponding-source/stockfish.js/src/shm_unix.h": {
+      "bytes": 20190,
+      "sha256": "155defb7084b0f81bedb37dbb65c1f399929d7a06952ace2b6cec9d8c5467a70"
+    },
+    "corresponding-source/stockfish.js/src/syzygy/tbprobe.cpp": {
+      "bytes": 70928,
+      "sha256": "39d87629573a92ee75c30ea6d76bc53c8aaaa0ea16a706300a840de0a256bc32"
+    },
+    "corresponding-source/stockfish.js/src/syzygy/tbprobe.h": {
+      "bytes": 2640,
+      "sha256": "5b86ca73b73cd9850f7cd89a766a7d8e861fbb2e0dfa8ae3ebf151801e1d3930"
+    },
+    "corresponding-source/stockfish.js/src/thread.cpp": {
+      "bytes": 16892,
+      "sha256": "380ae3c5b8999cba90b696780bf19560bd8ba18ffa1ed0db02bc2f69f5fa83f5"
+    },
+    "corresponding-source/stockfish.js/src/thread.h": {
+      "bytes": 6185,
+      "sha256": "d39544eea0dc30fa6edd541f5f87ed06af554ba0364161ab04a78b4b9757a897"
+    },
+    "corresponding-source/stockfish.js/src/thread_native.h": {
+      "bytes": 5616,
+      "sha256": "f6854d06f9db56fa46aecabde6e484409fd718d79868e4d754e9ed4605a533df"
+    },
+    "corresponding-source/stockfish.js/src/timeman.cpp": {
+      "bytes": 5507,
+      "sha256": "96d3c58a5f20afe65423affc28ef43665c3325a98adad60da00b55ee84bce4b7"
+    },
+    "corresponding-source/stockfish.js/src/timeman.h": {
+      "bytes": 2373,
+      "sha256": "574f48e8fdce28ae7918712301c891220d5c9bc4b0dd5035b6c89a99c9402ed5"
+    },
+    "corresponding-source/stockfish.js/src/tt.cpp": {
+      "bytes": 10975,
+      "sha256": "ec6016262b5a20943f0f681641d448f0c6e44de250f0b8306aee780d9d9cc727"
+    },
+    "corresponding-source/stockfish.js/src/tt.h": {
+      "bytes": 3824,
+      "sha256": "0e8deb3207a9fc3adfe5f6df806bf7dd70cc818f89c3284484979aac20b15033"
+    },
+    "corresponding-source/stockfish.js/src/tune.cpp": {
+      "bytes": 3512,
+      "sha256": "3f0157baeaf981aa1e60aa178a33e9017f73efe82724d3694aa6088307fdaa36"
+    },
+    "corresponding-source/stockfish.js/src/tune.h": {
+      "bytes": 6712,
+      "sha256": "9298669723766aea05f2d4317e5cd8119cdb6ad3f1d3e48f47ecc63c25bc3703"
+    },
+    "corresponding-source/stockfish.js/src/types.h": {
+      "bytes": 16233,
+      "sha256": "9a6bae5b151595eb80b56e90c4496fefa92e013f1772bcc7b3ce60c178bb95f6"
+    },
+    "corresponding-source/stockfish.js/src/uci.cpp": {
+      "bytes": 24889,
+      "sha256": "ba3e11ecc7e356a97848b760a5550578dab06535462f43fd1e57c0b8526c7cb0"
+    },
+    "corresponding-source/stockfish.js/src/uci.h": {
+      "bytes": 3375,
+      "sha256": "127ab5c21ab229b50fb76d44c61675c3a5a21a0a8228126ef88a2ae0832c4041"
+    },
+    "corresponding-source/stockfish.js/src/ucioption.cpp": {
+      "bytes": 6326,
+      "sha256": "5d699e2fa1d57cfa5f3169412dc8fc5d26685563be38c221cdbfde7237305e8a"
+    },
+    "corresponding-source/stockfish.js/src/ucioption.h": {
+      "bytes": 3179,
+      "sha256": "85468dec1694abd49af3997edac57eb48a897a844369f86ecfb75ea575d546cb"
+    },
+    "corresponding-source/stockfish.js/src/universal/entry_arm64.cpp": {
+      "bytes": 1432,
+      "sha256": "ba9a9b2d23323827472caf13c6cd2a03fc7af632a88cde8a12b7da8234745fbc"
+    },
+    "corresponding-source/stockfish.js/src/universal/entry_riscv64.cpp": {
+      "bytes": 3158,
+      "sha256": "85ef23b0eeb56620df3dfe149ed2f60b2b6fbee2f66944e22173ac3fd9f718dc"
+    },
+    "corresponding-source/stockfish.js/src/universal/entry_x86.cpp": {
+      "bytes": 4461,
+      "sha256": "70357325360d1518c2f30efdc6f8d7fcf5399e60f6caef540e754c12b70460d3"
+    },
+    "corresponding-source/stockfish.js/src/universal/nnue_embed.cpp": {
+      "bytes": 2838,
+      "sha256": "a1c8960bb0f57ca54d83ea99c0170b79061ebeb103bacc7866212e4aba78a3a2"
+    },
+    "corresponding-source/stockfish.js/src/universal/rewrite_asm_sections.awk": {
+      "bytes": 1964,
+      "sha256": "df3279b3ecb8a87b7521746c2392978efa368aab4fc0adf8c21c5a23b1dad736"
+    },
+    "corresponding-source/stockfish.js/tester.js": {
+      "bytes": 5130,
+      "sha256": "aeaa0b0d1968fd5b875333eaf6a852d53400e89d3169d955e9db6059295c9f9b"
+    },
+    "corresponding-source/stockfish.js/tests/instrumented.py": {
+      "bytes": 26916,
+      "sha256": "f934b350b0175f7ea254ced4e8cf530a4671bcab8706d592d9130c874ec60a7f"
+    },
+    "corresponding-source/stockfish.js/tests/perft.sh": {
+      "bytes": 3318,
+      "sha256": "eb197e6d33e0b6b85592d4686103a113f61125a204f1f5a1786de8c7eb457f71"
+    },
+    "corresponding-source/stockfish.js/tests/reprosearch.sh": {
+      "bytes": 1276,
+      "sha256": "0d23820767ece5f5f10261840b37f61d44e0579ec65626730ac67a47f471ad8b"
+    },
+    "corresponding-source/stockfish.js/tests/signature.sh": {
+      "bytes": 1081,
+      "sha256": "360a4b30bc99789c5603c8627a21eff45d4b5849f42deaa32f766801bd6eb7c7"
+    },
+    "corresponding-source/stockfish.js/tests/testing.py": {
+      "bytes": 13218,
+      "sha256": "0a002681606fc2e9ed57c00e8a576c9c230e0868ac325f39a4d86539bfe72465"
+    },
+    "licenses/chess-js/LICENSE": {
+      "bytes": 1315,
+      "sha256": "0b3a3c2b4432a26bb18f9d06f5bba4de015bcc980306b7db28b06025495e2186"
+    },
+    "licenses/chess-js/ORIGINAL-PKG-INFO": {
+      "bytes": 1386,
+      "sha256": "36a258fdfb5e76d0816bf2b63dab3c917a0a8652f943da0e6be7e9b543765dfd"
+    },
+    "licenses/compiler-rt/LICENSE": {
+      "bytes": 16708,
+      "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d"
+    },
+    "licenses/dlmalloc/CC0-1.0.txt": {
+      "bytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    "licenses/dlmalloc/LICENSE": {
+      "bytes": 460,
+      "sha256": "e3325f87977501d63ad447abf7fa9d581d115781e60058946b418074b075148e"
+    },
+    "licenses/emscripten/AUTHORS": {
+      "bytes": 29142,
+      "sha256": "018d4191aa649d5c82ba1b2f9117b9902648792c89d5f0d5564a689dc4198aaa"
+    },
+    "licenses/emscripten/LICENSE": {
+      "bytes": 5093,
+      "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86"
+    },
+    "licenses/incbin/LICENSE": {
+      "bytes": 1292,
+      "sha256": "80f60d0578200231dac96e2a42bf508f22ce8540b96f96777b649498656842ff"
+    },
+    "licenses/libcxx/LICENSE": {
+      "bytes": 16703,
+      "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b"
+    },
+    "licenses/libcxxabi/LICENSE": {
+      "bytes": 16706,
+      "sha256": "e2b35be49f7284a45b7baca8fc7b3ab7440e7902392b2528a457816b5bb2a15c"
+    },
+    "licenses/musl/LICENSE": {
+      "bytes": 6196,
+      "sha256": "b870108ec5e7790e9f9919064f1b9421d62d5f9b0e6c230c6adf7ea2da62e97b"
+    },
+    "licenses/musl/MATH-NOTICES.txt": {
+      "bytes": 102388,
+      "sha256": "5e4be718cadd14b93f2b0784725ce5dca2d344e76618a2444690f085df810c99"
+    },
+    "licenses/nnue/LICENSE": {
+      "bytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    "licenses/nnue/network-download-policy.html.j2": {
+      "bytes": 9763,
+      "sha256": "8d4fc73da4180fb3a7863700a707e586c23f76edeaedc2033a99926030cc80ec"
+    },
+    "licenses/nnue/network-upload-policy.html.j2": {
+      "bytes": 2627,
+      "sha256": "9259f726cb731db8f83aeb02ef65429f1e87eebdf5c7dcaf8bb90b18f5dd05a9"
+    },
+    "licenses/stockfish/AUTHORS": {
+      "bytes": 6881,
+      "sha256": "f81e7d74c350626766382ec67fa262c38cda00cb8b501790f95cdebb526006c1"
+    },
+    "licenses/stockfish/LICENSE": {
+      "bytes": 35821,
+      "sha256": "0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b"
+    },
+    "licenses/stockfish/NON_ENGINE_MIT.txt": {
+      "bytes": 1264,
+      "sha256": "117e1b3b206514c44bed4861a62b3710b6524f52259beaccdccb235ef1f3d030"
+    },
+    "licenses/stockfish/ORIGINAL-PKG-INFO": {
+      "bytes": 1124,
+      "sha256": "58968296c0f0fa4d7b5feb2b9bbc53b98f71935e26c64828bbba69ec268cb6fd"
+    },
+    "licenses/stockfish/ORIGINAL-README.md": {
+      "bytes": 10102,
+      "sha256": "b4fd98bf4cd5cc6587c830abf1bb1fae6b6c9cc56d53f710691e587c0e18f178"
+    },
+    "vendor/chess/chess.js": {
+      "bytes": 107052,
+      "sha256": "76c7c34f0e2e9ab076521a5d6fe786a9cce537bb1b6f29d32a9c9970b5b232d2"
+    },
+    "vendor/stockfish/stockfish-19-lite-single.js": {
+      "bytes": 28230,
+      "sha256": "ccb130d7ff29408531c47d859a49f91d59d4f482d05a53eb1a3231a4f624c91a"
+    },
+    "vendor/stockfish/stockfish-19-lite-single.wasm": {
+      "bytes": 1845971,
+      "sha256": "ee4f115bdb2d32cadf96cada104a05b5ec257d7ad6f57582190b49bc71f096de"
+    },
+    "licenses/peggy/LICENSE": {
+      "bytes": 1079,
+      "sha256": "32c43eac6ae56c751cf85a9181a0753145cb9ae993943ae80699ba64e75843b0"
+    },
+    "licenses/peggy/AUTHORS": {
+      "bytes": 2253,
+      "sha256": "df057b32b11800151822dba548c9d9df5d968cb5bf5fb006aa8494faf2b331cc"
+    }
+  },
+  "source_comparison": {
+    "stockfish.js": {
+      "verified_unchanged_files": 110,
+      "paths": [
+        "AUTHORS",
+        "Copying.txt",
+        "README.md",
+        "Top CPU Contributors.txt",
+        "build.js",
+        "index.js",
+        "package.json",
+        "scripts/check_universal.sh",
+        "scripts/check_universal_arm.sh",
+        "scripts/check_universal_riscv.sh",
+        "scripts/cli.js",
+        "scripts/findEngine.js",
+        "scripts/get_native_properties.sh",
+        "scripts/net.sh",
+        "scripts/postpack.js",
+        "scripts/prepack.js",
+        "scripts/publish.sh",
+        "src/Makefile",
+        "src/attacks.cpp",
+        "src/attacks.h",
+        "src/benchmark.cpp",
+        "src/benchmark.h",
+        "src/bitboard.cpp",
+        "src/bitboard.h",
+        "src/emscripten/credits-lite.js",
+        "src/emscripten/credits.js",
+        "src/emscripten/extern-post.js",
+        "src/emscripten/extern-pre.js",
+        "src/emscripten/extern-pre2.js",
+        "src/emscripten/pre.js",
+        "src/emscripten/wasm-makefile.mk",
+        "src/engine.cpp",
+        "src/engine.h",
+        "src/evaluate.cpp",
+        "src/evaluate.h",
+        "src/glue.cpp",
+        "src/glue.hpp",
+        "src/history.h",
+        "src/incbin/UNLICENCE",
+        "src/incbin/incbin.h",
+        "src/main.cpp",
+        "src/memory.cpp",
+        "src/memory.h",
+        "src/misc.cpp",
+        "src/misc.h",
+        "src/movegen.cpp",
+        "src/movegen.h",
+        "src/movepick.cpp",
+        "src/movepick.h",
+        "src/nn-61e7af4bb97d.nnue",
+        "src/nnue/features/full_threats.cpp",
+        "src/nnue/features/full_threats.h",
+        "src/nnue/features/half_ka_v2_hm.cpp",
+        "src/nnue/features/half_ka_v2_hm.h",
+        "src/nnue/features/p_hm.cpp",
+        "src/nnue/features/p_hm.h",
+        "src/nnue/features/pp_3wide.cpp",
+        "src/nnue/features/pp_3wide.h",
+        "src/nnue/layers/affine_transform.h",
+        "src/nnue/layers/affine_transform_sparse_input.h",
+        "src/nnue/layers/clipped_relu.h",
+        "src/nnue/layers/sqr_clipped_relu.h",
+        "src/nnue/network.cpp",
+        "src/nnue/network.h",
+        "src/nnue/nnue_accumulator.cpp",
+        "src/nnue/nnue_accumulator.h",
+        "src/nnue/nnue_architecture.h",
+        "src/nnue/nnue_common.h",
+        "src/nnue/nnue_feature_transformer.h",
+        "src/nnue/nnue_misc.cpp",
+        "src/nnue/nnue_misc.h",
+        "src/nnue/nnz_helper.h",
+        "src/nnue/simd.h",
+        "src/numa.h",
+        "src/perft.h",
+        "src/position.cpp",
+        "src/position.h",
+        "src/score.cpp",
+        "src/score.h",
+        "src/search.cpp",
+        "src/search.h",
+        "src/shm.h",
+        "src/shm_unix.h",
+        "src/syzygy/tbprobe.cpp",
+        "src/syzygy/tbprobe.h",
+        "src/thread.cpp",
+        "src/thread.h",
+        "src/thread_native.h",
+        "src/timeman.cpp",
+        "src/timeman.h",
+        "src/tt.cpp",
+        "src/tt.h",
+        "src/tune.cpp",
+        "src/tune.h",
+        "src/types.h",
+        "src/uci.cpp",
+        "src/uci.h",
+        "src/ucioption.cpp",
+        "src/ucioption.h",
+        "src/universal/entry_arm64.cpp",
+        "src/universal/entry_riscv64.cpp",
+        "src/universal/entry_x86.cpp",
+        "src/universal/nnue_embed.cpp",
+        "src/universal/rewrite_asm_sections.awk",
+        "tester.js",
+        "tests/instrumented.py",
+        "tests/perft.sh",
+        "tests/reprosearch.sh",
+        "tests/signature.sh",
+        "tests/testing.py"
+      ]
+    },
+    "chess.js": {
+      "verified_unchanged_files": 59,
+      "paths": [
+        "LICENSE",
+        "README.md",
+        "__tests__/ascii.test.ts",
+        "__tests__/attackers.test.ts",
+        "__tests__/board.test.ts",
+        "__tests__/castling-rights.test.ts",
+        "__tests__/clear.test.ts",
+        "__tests__/comments.test.ts",
+        "__tests__/fen.test.ts",
+        "__tests__/find-piece.test.ts",
+        "__tests__/get-square-by-piece.test.ts",
+        "__tests__/get.test.ts",
+        "__tests__/headers.test.ts",
+        "__tests__/history.test.ts",
+        "__tests__/is-attacked.test.ts",
+        "__tests__/is-check.test.ts",
+        "__tests__/is-checkmate.test.ts",
+        "__tests__/is-gameover.test.ts",
+        "__tests__/is-insufficient-material.test.ts",
+        "__tests__/is-stalemate.test.ts",
+        "__tests__/is-threefold-repetition.test.ts",
+        "__tests__/load-pgn.test.ts",
+        "__tests__/load.test.ts",
+        "__tests__/move.test.ts",
+        "__tests__/moves.test.ts",
+        "__tests__/nullmove.test.ts",
+        "__tests__/perft.test.ts",
+        "__tests__/pgn/0.pgn",
+        "__tests__/pgn/1.pgn",
+        "__tests__/pgn/2.pgn",
+        "__tests__/pgn/3.pgn",
+        "__tests__/pgn.test.ts",
+        "__tests__/position-counts.test.ts",
+        "__tests__/put.test.ts",
+        "__tests__/regression.test.ts",
+        "__tests__/remove.test.ts",
+        "__tests__/reset.test.ts",
+        "__tests__/setTurn.test.ts",
+        "__tests__/square-color.test.ts",
+        "__tests__/standard-algebraic-notation.test.ts",
+        "__tests__/undo.test.ts",
+        "__tests__/utils.ts",
+        "__tests__/validate_fen.test.ts",
+        "__tests__/zobrist.test.ts",
+        "benchmarks/bench.ts",
+        "benchmarks/benchmark.pgn",
+        "debug.sh",
+        "package-lock.json",
+        "package.json",
+        "peggy.config.mjs",
+        "rollup.config.mjs",
+        "src/chess.ts",
+        "src/node.ts",
+        "src/pgn.peggy",
+        "tsconfig.cjs.json",
+        "tsconfig.esm.json",
+        "tsconfig.json",
+        "tsconfig.types.json",
+        "vite.config.ts"
+      ]
+    }
+  },
+  "rebuild": {
+    "status": "passed",
+    "date": "2026-11-13",
+    "toolchain": "Emscripten 6.0.9 / 4e4223852a0835923411059a3929907d7df1232e",
+    "sdk_release": "f04ea239d533260dd1db760dd2d668d5f9a88d6b",
+    "build_node": "24.19.0",
+    "test_node": "v22.16.0",
+    "terser": "5.51.2",
+    "source_revision": "0d5dd7944f88c817c07a26bc4fb1905d5f9c46d6",
+    "network_sha256": "61e7af4bb97d51eeeb25d322916f86513b5cd3a827ce189c98c6e31946f99e5b",
+    "command": "MAKEFLAGS=TARGET_KERNEL=Emscripten node build.js --single-threaded --lite --no-split --strict-em-check -f",
+    "source_modifications": false,
+    "first_attempt": "Unmodified upstream default Darwin build added unsupported -arch wasm and -mdynamic-no-pic flags; no source patch.",
+    "retry": "Existing Makefile TARGET_KERNEL override selected Emscripten; full build succeeded with 2 Closure type warnings and 0 errors.",
+    "outputs": [
+      {
+        "file": "stockfish-19-lite-single.js",
+        "bytes": 28230,
+        "sha256": "ccb130d7ff29408531c47d859a49f91d59d4f482d05a53eb1a3231a4f624c91a",
+        "published_equals_rebuilt": true
+      },
+      {
+        "file": "stockfish-19-lite-single.wasm",
+        "bytes": 1845971,
+        "sha256": "ee4f115bdb2d32cadf96cada104a05b5ec257d7ad6f57582190b49bc71f096de",
+        "published_equals_rebuilt": true
+      }
+    ],
+    "build_dependency_lock": {
+      "path": "corresponding-source/stockfish-build-dependencies.lock.json",
+      "bytes": 4881,
+      "sha256": "7a831ae1a542a0bd5f00f7319b47c002c674f8c56ee1122ba4624f5ac9e1d49f"
+    },
+    "rebuild_log": {
+      "retained_in_task_scratch": "rebuild-cross-target.log",
+      "bytes": 18572,
+      "sha256": "1f3f727e3d7b776f1ce9630ed08f359a4935b07e9cef4bf95a2b060da86a3105"
+    },
+    "functional_tests": {
+      "node": "v22.16.0",
+      "tests": 9,
+      "records": [
+        {
+          "name": "rules starting-position perft 20 / 400 / 8902",
+          "passed": true,
+          "elapsed_ms": 613
+        },
+        {
+          "name": "castling moves both rooks and kings; no castle through attack",
+          "passed": true,
+          "elapsed_ms": 1
+        },
+        {
+          "name": "en-passant removes the passed pawn",
+          "passed": true,
+          "elapsed_ms": 1
+        },
+        {
+          "name": "promotion supports all four choices and requires a legal move",
+          "passed": true,
+          "elapsed_ms": 0
+        },
+        {
+          "name": "actual UCI initialization/version and engine perft 8902",
+          "passed": true,
+          "elapsed_ms": 83
+        },
+        {
+          "name": "actual engine search finds and independently verifies Qg7 mate",
+          "passed": true,
+          "elapsed_ms": 115
+        },
+        {
+          "name": "actual three-line search yields legal PVs and finite metadata",
+          "passed": true,
+          "elapsed_ms": 1085
+        },
+        {
+          "name": "actual search cancellation releases worker and next search recovers",
+          "passed": true,
+          "elapsed_ms": 191
+        },
+        {
+          "name": "worker failure releases state and next real worker recovers",
+          "passed": true,
+          "elapsed_ms": 109
+        }
+      ]
+    },
+    "limitations": [
+      "Node engine adapter does not establish running-host dispatch or real browser Worker behavior; recorded separately.",
+      "The injected Worker failure is a controlled wrapper negative test, followed by actual engine recovery.",
+      "One successful byte-identical build does not promise all future tools or environments will be identical."
+    ]
+  },
+  "license_correction": {
+    "review_date": "2026-11-16",
+    "component": "Peggy 4.2.0 generated parser helpers",
+    "source_revision": "6ce68af3334ba6c03fc729f1082ad0bbecf56569",
+    "tag_object": "eae4dbf46974f3e5b65f1eb865fd27c374098f82",
+    "affected_runtime": "vendor/chess/chess.js",
+    "runtime_bytes_modified": false,
+    "reason": "Static parser includes reusable generated helper templates; preserve original MIT copyright/permission and AUTHORS rather than assuming chess.js BSD notice alone covers templates.",
+    "primary_source": "https://github.com/peggyjs/peggy/blob/6ce68af3334ba6c03fc729f1082ad0bbecf56569/lib/compiler/passes/generate-js.js",
+    "local_helper_lines": {
+      "subclass": 65,
+      "SyntaxError": 71,
+      "format": 94,
+      "buildMessage": 128,
+      "literalEscape": 161,
+      "classEscape": 173
+    },
+    "source_template_lines": "857-1019",
+    "exemption_review": "Pinned original LICENSE/README/docs/index.html/docs/documentation.html and relevant official GitHub issue/PR searches did not identify a generated-output license exception. Absence of a found exception is not a legal ruling; this correction conservatively retains the actual MIT notices for copied helpers."
+  }
+}

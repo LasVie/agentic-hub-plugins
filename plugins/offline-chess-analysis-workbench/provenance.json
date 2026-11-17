@@ -1,0 +1,390 @@
+{
+  "mode": "ported",
+  "permission_status": "verified",
+  "audit_file": "SOURCE_REVIEW.md",
+  "sources": [
+    {
+      "name": "Stockfish.js",
+      "url": "https://github.com/nmrugg/stockfish.js",
+      "revision": "0d5dd7944f88c817c07a26bc4fb1905d5f9c46d6 / v19.0.1",
+      "license_expression": "GPL-3.0-or-later AND MIT",
+      "scope": "Unchanged published lite-single JS/WASM; required corresponding source, original build scripts, author lists and source metadata; unused examples subtree entirely omitted. Engine CPP headers say GPLv3-or-later; published loader says GPLv3; upstream README licenses non-engine scripts MIT. Non-build Git, CI, formatting and publish-ignore dotmetadata omitted; exact omissions retained in source-audit.json.",
+      "license_evidence": [
+        {
+          "path": "licenses/stockfish/LICENSE",
+          "sha256": "0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b"
+        },
+        {
+          "path": "licenses/stockfish/AUTHORS",
+          "sha256": "f81e7d74c350626766382ec67fa262c38cda00cb8b501790f95cdebb526006c1"
+        },
+        {
+          "path": "licenses/stockfish/ORIGINAL-PKG-INFO",
+          "sha256": "58968296c0f0fa4d7b5feb2b9bbc53b98f71935e26c64828bbba69ec268cb6fd"
+        },
+        {
+          "path": "licenses/stockfish/ORIGINAL-README.md",
+          "sha256": "b4fd98bf4cd5cc6587c830abf1bb1fae6b6c9cc56d53f710691e587c0e18f178"
+        },
+        {
+          "path": "licenses/stockfish/NON_ENGINE_MIT.txt",
+          "sha256": "117e1b3b206514c44bed4861a62b3710b6524f52259beaccdccb235ef1f3d030"
+        }
+      ]
+    },
+    {
+      "name": "chess.js",
+      "url": "https://github.com/jhlywa/chess.js",
+      "revision": "v1.4.0",
+      "license_expression": "BSD-2-Clause",
+      "scope": "Unchanged published ESM and exact upstream corresponding source/build configuration/tests.",
+      "license_evidence": [
+        {
+          "path": "licenses/chess-js/LICENSE",
+          "sha256": "0b3a3c2b4432a26bb18f9d06f5bba4de015bcc980306b7db28b06025495e2186"
+        },
+        {
+          "path": "licenses/chess-js/ORIGINAL-PKG-INFO",
+          "sha256": "36a258fdfb5e76d0816bf2b63dab3c917a0a8652f943da0e6be7e9b543765dfd"
+        }
+      ]
+    },
+    {
+      "name": "Stockfish lite NNUE",
+      "url": "https://tests.stockfishchess.org/api/nn/nn-61e7af4bb97d.nnue",
+      "revision": "nn-61e7af4bb97d.nnue / sha256:61e7af4bb97d51eeeb25d322916f86513b5cd3a827ce189c98c6e31946f99e5b",
+      "license_expression": "CC0-1.0",
+      "scope": "Exact lite-network build input. Engine header credits Chris Bao (sscg13); official Fishtest grants CC0. Policy templates pinned f7af98f81f0c740a4de3d9a3721854709dcdc2bb.",
+      "license_evidence": [
+        {
+          "path": "licenses/nnue/LICENSE",
+          "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+        },
+        {
+          "path": "licenses/nnue/network-download-policy.html.j2",
+          "sha256": "8d4fc73da4180fb3a7863700a707e586c23f76edeaedc2033a99926030cc80ec"
+        },
+        {
+          "path": "licenses/nnue/network-upload-policy.html.j2",
+          "sha256": "9259f726cb731db8f83aeb02ef65429f1e87eebdf5c7dcaf8bb90b18f5dd05a9"
+        }
+      ]
+    },
+    {
+      "name": "incbin",
+      "url": "https://github.com/graphitemaster/incbin",
+      "revision": "Stockfish.js pinned src/incbin",
+      "license_expression": "Unlicense",
+      "scope": "Preserved incbin build helper source/header and original public-domain grant by Dale Weiler.",
+      "license_evidence": [
+        {
+          "path": "licenses/incbin/LICENSE",
+          "sha256": "80f60d0578200231dac96e2a42bf508f22ce8540b96f96777b649498656842ff"
+        }
+      ]
+    },
+    {
+      "name": "Emscripten",
+      "url": "https://github.com/emscripten-core/emscripten",
+      "revision": "6.0.9 / 4e4223852a0835923411059a3929907d7df1232e",
+      "license_expression": "MIT",
+      "scope": "Generated JS/runtime portions; MIT choice, complete original dual MIT/NCSA license retained, including Node ancestry. No compiler executable distributed.",
+      "license_evidence": [
+        {
+          "path": "licenses/emscripten/LICENSE",
+          "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86"
+        },
+        {
+          "path": "licenses/emscripten/AUTHORS",
+          "sha256": "018d4191aa649d5c82ba1b2f9117b9902648792c89d5f0d5564a689dc4198aaa"
+        }
+      ]
+    },
+    {
+      "name": "musl",
+      "url": "https://github.com/emscripten-core/emscripten/tree/6.0.9/system/lib/libc/musl",
+      "revision": "Emscripten 6.0.9",
+      "license_expression": "MIT AND SunPro",
+      "scope": "Standard C runtime portions; complete upstream copyright and attribution plus original mathematical-source notice headers (including Arm MIT and Sun permissive grants) preserved.",
+      "license_evidence": [
+        {
+          "path": "licenses/musl/LICENSE",
+          "sha256": "b870108ec5e7790e9f9919064f1b9421d62d5f9b0e6c230c6adf7ea2da62e97b"
+        },
+        {
+          "path": "licenses/musl/MATH-NOTICES.txt",
+          "sha256": "5e4be718cadd14b93f2b0784725ce5dca2d344e76618a2444690f085df810c99"
+        }
+      ]
+    },
+    {
+      "name": "libc++",
+      "url": "https://github.com/emscripten-core/emscripten/tree/6.0.9/system/lib/libcxx",
+      "revision": "Emscripten 6.0.9",
+      "license_expression": "Apache-2.0 WITH LLVM-exception",
+      "scope": "C++ runtime and template portions; complete upstream and historical license text retained, no runtime-source edits.",
+      "license_evidence": [
+        {
+          "path": "licenses/libcxx/LICENSE",
+          "sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b"
+        }
+      ]
+    },
+    {
+      "name": "libc++abi",
+      "url": "https://github.com/emscripten-core/emscripten/tree/6.0.9/system/lib/libcxxabi",
+      "revision": "Emscripten 6.0.9",
+      "license_expression": "Apache-2.0 WITH LLVM-exception",
+      "scope": "C++ ABI runtime portions; complete upstream and historical license text retained.",
+      "license_evidence": [
+        {
+          "path": "licenses/libcxxabi/LICENSE",
+          "sha256": "e2b35be49f7284a45b7baca8fc7b3ab7440e7902392b2528a457816b5bb2a15c"
+        }
+      ]
+    },
+    {
+      "name": "compiler-rt",
+      "url": "https://github.com/emscripten-core/emscripten/tree/6.0.9/system/lib/compiler-rt",
+      "revision": "Emscripten 6.0.9",
+      "license_expression": "Apache-2.0 WITH LLVM-exception",
+      "scope": "Compiler runtime portions; complete upstream and historical license text retained.",
+      "license_evidence": [
+        {
+          "path": "licenses/compiler-rt/LICENSE",
+          "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d"
+        }
+      ]
+    },
+    {
+      "name": "dlmalloc",
+      "url": "https://github.com/emscripten-core/emscripten/blob/6.0.9/system/lib/dlmalloc.c",
+      "revision": "Emscripten 6.0.9",
+      "license_expression": "CC0-1.0",
+      "scope": "Doug Lea original public-domain/CC0 statement and full CC0 legal text retained for allocator runtime portions.",
+      "license_evidence": [
+        {
+          "path": "licenses/dlmalloc/LICENSE",
+          "sha256": "e3325f87977501d63ad447abf7fa9d581d115781e60058946b418074b075148e"
+        },
+        {
+          "path": "licenses/dlmalloc/CC0-1.0.txt",
+          "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+        }
+      ]
+    },
+    {
+      "name": "Peggy",
+      "url": "https://github.com/peggyjs/peggy",
+      "revision": "6ce68af3334ba6c03fc729f1082ad0bbecf56569 / v4.2.0",
+      "license_expression": "MIT",
+      "scope": "Unchanged published vendor/chess/chess.js includes Peggy 4.2.0 static generated parser helpers from lib/compiler/passes/generate-js.js (SyntaxError, error formatting and position tracking). Original grammar src/pgn.peggy and build configuration are bundled; src/pgn.js is produced on rebuild and is not a separate existing distributed source file. No Peggy compiler is distributed or invoked at runtime; generator-output exemption was not identified.",
+      "license_evidence": [
+        {
+          "path": "licenses/peggy/LICENSE",
+          "sha256": "32c43eac6ae56c751cf85a9181a0753145cb9ae993943ae80699ba64e75843b0"
+        },
+        {
+          "path": "licenses/peggy/AUTHORS",
+          "sha256": "df057b32b11800151822dba548c9d9df5d968cb5bf5fb006aa8494faf2b331cc"
+        }
+      ]
+    }
+  ],
+  "reused_paths": [
+    "corresponding-source/chess.js/LICENSE",
+    "corresponding-source/chess.js/README.md",
+    "corresponding-source/chess.js/__tests__/ascii.test.ts",
+    "corresponding-source/chess.js/__tests__/attackers.test.ts",
+    "corresponding-source/chess.js/__tests__/board.test.ts",
+    "corresponding-source/chess.js/__tests__/castling-rights.test.ts",
+    "corresponding-source/chess.js/__tests__/clear.test.ts",
+    "corresponding-source/chess.js/__tests__/comments.test.ts",
+    "corresponding-source/chess.js/__tests__/fen.test.ts",
+    "corresponding-source/chess.js/__tests__/find-piece.test.ts",
+    "corresponding-source/chess.js/__tests__/get-square-by-piece.test.ts",
+    "corresponding-source/chess.js/__tests__/get.test.ts",
+    "corresponding-source/chess.js/__tests__/headers.test.ts",
+    "corresponding-source/chess.js/__tests__/history.test.ts",
+    "corresponding-source/chess.js/__tests__/is-attacked.test.ts",
+    "corresponding-source/chess.js/__tests__/is-check.test.ts",
+    "corresponding-source/chess.js/__tests__/is-checkmate.test.ts",
+    "corresponding-source/chess.js/__tests__/is-gameover.test.ts",
+    "corresponding-source/chess.js/__tests__/is-insufficient-material.test.ts",
+    "corresponding-source/chess.js/__tests__/is-stalemate.test.ts",
+    "corresponding-source/chess.js/__tests__/is-threefold-repetition.test.ts",
+    "corresponding-source/chess.js/__tests__/load-pgn.test.ts",
+    "corresponding-source/chess.js/__tests__/load.test.ts",
+    "corresponding-source/chess.js/__tests__/move.test.ts",
+    "corresponding-source/chess.js/__tests__/moves.test.ts",
+    "corresponding-source/chess.js/__tests__/nullmove.test.ts",
+    "corresponding-source/chess.js/__tests__/perft.test.ts",
+    "corresponding-source/chess.js/__tests__/pgn.test.ts",
+    "corresponding-source/chess.js/__tests__/pgn/0.pgn",
+    "corresponding-source/chess.js/__tests__/pgn/1.pgn",
+    "corresponding-source/chess.js/__tests__/pgn/2.pgn",
+    "corresponding-source/chess.js/__tests__/pgn/3.pgn",
+    "corresponding-source/chess.js/__tests__/position-counts.test.ts",
+    "corresponding-source/chess.js/__tests__/put.test.ts",
+    "corresponding-source/chess.js/__tests__/regression.test.ts",
+    "corresponding-source/chess.js/__tests__/remove.test.ts",
+    "corresponding-source/chess.js/__tests__/reset.test.ts",
+    "corresponding-source/chess.js/__tests__/setTurn.test.ts",
+    "corresponding-source/chess.js/__tests__/square-color.test.ts",
+    "corresponding-source/chess.js/__tests__/standard-algebraic-notation.test.ts",
+    "corresponding-source/chess.js/__tests__/undo.test.ts",
+    "corresponding-source/chess.js/__tests__/utils.ts",
+    "corresponding-source/chess.js/__tests__/validate_fen.test.ts",
+    "corresponding-source/chess.js/__tests__/zobrist.test.ts",
+    "corresponding-source/chess.js/benchmarks/bench.ts",
+    "corresponding-source/chess.js/benchmarks/benchmark.pgn",
+    "corresponding-source/chess.js/debug.sh",
+    "corresponding-source/chess.js/package-lock.json",
+    "corresponding-source/chess.js/package.json",
+    "corresponding-source/chess.js/peggy.config.mjs",
+    "corresponding-source/chess.js/rollup.config.mjs",
+    "corresponding-source/chess.js/src/chess.ts",
+    "corresponding-source/chess.js/src/node.ts",
+    "corresponding-source/chess.js/src/pgn.peggy",
+    "corresponding-source/chess.js/tsconfig.cjs.json",
+    "corresponding-source/chess.js/tsconfig.esm.json",
+    "corresponding-source/chess.js/tsconfig.json",
+    "corresponding-source/chess.js/tsconfig.types.json",
+    "corresponding-source/chess.js/vite.config.ts",
+    "corresponding-source/stockfish.js/AUTHORS",
+    "corresponding-source/stockfish.js/Copying.txt",
+    "corresponding-source/stockfish.js/README.md",
+    "corresponding-source/stockfish.js/Top CPU Contributors.txt",
+    "corresponding-source/stockfish.js/build.js",
+    "corresponding-source/stockfish.js/index.js",
+    "corresponding-source/stockfish.js/package.json",
+    "corresponding-source/stockfish.js/scripts/check_universal.sh",
+    "corresponding-source/stockfish.js/scripts/check_universal_arm.sh",
+    "corresponding-source/stockfish.js/scripts/check_universal_riscv.sh",
+    "corresponding-source/stockfish.js/scripts/cli.js",
+    "corresponding-source/stockfish.js/scripts/findEngine.js",
+    "corresponding-source/stockfish.js/scripts/get_native_properties.sh",
+    "corresponding-source/stockfish.js/scripts/net.sh",
+    "corresponding-source/stockfish.js/scripts/postpack.js",
+    "corresponding-source/stockfish.js/scripts/prepack.js",
+    "corresponding-source/stockfish.js/scripts/publish.sh",
+    "corresponding-source/stockfish.js/src/Makefile",
+    "corresponding-source/stockfish.js/src/attacks.cpp",
+    "corresponding-source/stockfish.js/src/attacks.h",
+    "corresponding-source/stockfish.js/src/benchmark.cpp",
+    "corresponding-source/stockfish.js/src/benchmark.h",
+    "corresponding-source/stockfish.js/src/bitboard.cpp",
+    "corresponding-source/stockfish.js/src/bitboard.h",
+    "corresponding-source/stockfish.js/src/emscripten/credits-lite.js",
+    "corresponding-source/stockfish.js/src/emscripten/credits.js",
+    "corresponding-source/stockfish.js/src/emscripten/extern-post.js",
+    "corresponding-source/stockfish.js/src/emscripten/extern-pre.js",
+    "corresponding-source/stockfish.js/src/emscripten/extern-pre2.js",
+    "corresponding-source/stockfish.js/src/emscripten/pre.js",
+    "corresponding-source/stockfish.js/src/emscripten/wasm-makefile.mk",
+    "corresponding-source/stockfish.js/src/engine.cpp",
+    "corresponding-source/stockfish.js/src/engine.h",
+    "corresponding-source/stockfish.js/src/evaluate.cpp",
+    "corresponding-source/stockfish.js/src/evaluate.h",
+    "corresponding-source/stockfish.js/src/glue.cpp",
+    "corresponding-source/stockfish.js/src/glue.hpp",
+    "corresponding-source/stockfish.js/src/history.h",
+    "corresponding-source/stockfish.js/src/incbin/UNLICENCE",
+    "corresponding-source/stockfish.js/src/incbin/incbin.h",
+    "corresponding-source/stockfish.js/src/main.cpp",
+    "corresponding-source/stockfish.js/src/memory.cpp",
+    "corresponding-source/stockfish.js/src/memory.h",
+    "corresponding-source/stockfish.js/src/misc.cpp",
+    "corresponding-source/stockfish.js/src/misc.h",
+    "corresponding-source/stockfish.js/src/movegen.cpp",
+    "corresponding-source/stockfish.js/src/movegen.h",
+    "corresponding-source/stockfish.js/src/movepick.cpp",
+    "corresponding-source/stockfish.js/src/movepick.h",
+    "corresponding-source/stockfish.js/src/nn-61e7af4bb97d.nnue",
+    "corresponding-source/stockfish.js/src/nnue/features/full_threats.cpp",
+    "corresponding-source/stockfish.js/src/nnue/features/full_threats.h",
+    "corresponding-source/stockfish.js/src/nnue/features/half_ka_v2_hm.cpp",
+    "corresponding-source/stockfish.js/src/nnue/features/half_ka_v2_hm.h",
+    "corresponding-source/stockfish.js/src/nnue/features/p_hm.cpp",
+    "corresponding-source/stockfish.js/src/nnue/features/p_hm.h",
+    "corresponding-source/stockfish.js/src/nnue/features/pp_3wide.cpp",
+    "corresponding-source/stockfish.js/src/nnue/features/pp_3wide.h",
+    "corresponding-source/stockfish.js/src/nnue/layers/affine_transform.h",
+    "corresponding-source/stockfish.js/src/nnue/layers/affine_transform_sparse_input.h",
+    "corresponding-source/stockfish.js/src/nnue/layers/clipped_relu.h",
+    "corresponding-source/stockfish.js/src/nnue/layers/sqr_clipped_relu.h",
+    "corresponding-source/stockfish.js/src/nnue/network.cpp",
+    "corresponding-source/stockfish.js/src/nnue/network.h",
+    "corresponding-source/stockfish.js/src/nnue/nnue_accumulator.cpp",
+    "corresponding-source/stockfish.js/src/nnue/nnue_accumulator.h",
+    "corresponding-source/stockfish.js/src/nnue/nnue_architecture.h",
+    "corresponding-source/stockfish.js/src/nnue/nnue_common.h",
+    "corresponding-source/stockfish.js/src/nnue/nnue_feature_transformer.h",
+    "corresponding-source/stockfish.js/src/nnue/nnue_misc.cpp",
+    "corresponding-source/stockfish.js/src/nnue/nnue_misc.h",
+    "corresponding-source/stockfish.js/src/nnue/nnz_helper.h",
+    "corresponding-source/stockfish.js/src/nnue/simd.h",
+    "corresponding-source/stockfish.js/src/numa.h",
+    "corresponding-source/stockfish.js/src/perft.h",
+    "corresponding-source/stockfish.js/src/position.cpp",
+    "corresponding-source/stockfish.js/src/position.h",
+    "corresponding-source/stockfish.js/src/score.cpp",
+    "corresponding-source/stockfish.js/src/score.h",
+    "corresponding-source/stockfish.js/src/search.cpp",
+    "corresponding-source/stockfish.js/src/search.h",
+    "corresponding-source/stockfish.js/src/shm.h",
+    "corresponding-source/stockfish.js/src/shm_unix.h",
+    "corresponding-source/stockfish.js/src/syzygy/tbprobe.cpp",
+    "corresponding-source/stockfish.js/src/syzygy/tbprobe.h",
+    "corresponding-source/stockfish.js/src/thread.cpp",
+    "corresponding-source/stockfish.js/src/thread.h",
+    "corresponding-source/stockfish.js/src/thread_native.h",
+    "corresponding-source/stockfish.js/src/timeman.cpp",
+    "corresponding-source/stockfish.js/src/timeman.h",
+    "corresponding-source/stockfish.js/src/tt.cpp",
+    "corresponding-source/stockfish.js/src/tt.h",
+    "corresponding-source/stockfish.js/src/tune.cpp",
+    "corresponding-source/stockfish.js/src/tune.h",
+    "corresponding-source/stockfish.js/src/types.h",
+    "corresponding-source/stockfish.js/src/uci.cpp",
+    "corresponding-source/stockfish.js/src/uci.h",
+    "corresponding-source/stockfish.js/src/ucioption.cpp",
+    "corresponding-source/stockfish.js/src/ucioption.h",
+    "corresponding-source/stockfish.js/src/universal/entry_arm64.cpp",
+    "corresponding-source/stockfish.js/src/universal/entry_riscv64.cpp",
+    "corresponding-source/stockfish.js/src/universal/entry_x86.cpp",
+    "corresponding-source/stockfish.js/src/universal/nnue_embed.cpp",
+    "corresponding-source/stockfish.js/src/universal/rewrite_asm_sections.awk",
+    "corresponding-source/stockfish.js/tester.js",
+    "corresponding-source/stockfish.js/tests/instrumented.py",
+    "corresponding-source/stockfish.js/tests/perft.sh",
+    "corresponding-source/stockfish.js/tests/reprosearch.sh",
+    "corresponding-source/stockfish.js/tests/signature.sh",
+    "corresponding-source/stockfish.js/tests/testing.py",
+    "licenses/chess-js/LICENSE",
+    "licenses/chess-js/ORIGINAL-PKG-INFO",
+    "licenses/compiler-rt/LICENSE",
+    "licenses/dlmalloc/CC0-1.0.txt",
+    "licenses/dlmalloc/LICENSE",
+    "licenses/emscripten/AUTHORS",
+    "licenses/emscripten/LICENSE",
+    "licenses/incbin/LICENSE",
+    "licenses/libcxx/LICENSE",
+    "licenses/libcxxabi/LICENSE",
+    "licenses/musl/LICENSE",
+    "licenses/musl/MATH-NOTICES.txt",
+    "licenses/nnue/LICENSE",
+    "licenses/nnue/network-download-policy.html.j2",
+    "licenses/nnue/network-upload-policy.html.j2",
+    "licenses/peggy/AUTHORS",
+    "licenses/peggy/LICENSE",
+    "licenses/stockfish/AUTHORS",
+    "licenses/stockfish/LICENSE",
+    "licenses/stockfish/NON_ENGINE_MIT.txt",
+    "licenses/stockfish/ORIGINAL-PKG-INFO",
+    "licenses/stockfish/ORIGINAL-README.md",
+    "vendor/chess/chess.js",
+    "vendor/stockfish/stockfish-19-lite-single.js",
+    "vendor/stockfish/stockfish-19-lite-single.wasm"
+  ]
+}

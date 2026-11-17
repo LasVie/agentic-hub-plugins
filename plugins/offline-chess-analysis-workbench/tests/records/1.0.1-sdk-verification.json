@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "openjiuwen_version": "0.1.20",
+  "loader": "openjiuwen.harness.resources.load_plugin_package",
+  "resolver": "openjiuwen.harness.resources.resolve_plugin_parts",
+  "tool_id": "chess_workbench",
+  "chinese_skill_loaded": true,
+  "status_no_writes": true,
+  "confirmation_rejected": true,
+  "start_reuse_stream_stop": true,
+  "chinese_entry_http_200": true,
+  "page_csp_no_eval": true,
+  "model_calls": 0,
+  "qa_workspace": "/private/tmp/chess-build-587frnnf/sdk-0120-check-1.0.1-20261116/runtime/installed-workbench-qa-1.0.1-sdk020",
+  "qa_tool_result": "/private/tmp/chess-build-587frnnf/sdk-0120-check-1.0.1-20261116/runtime/installed-workbench-qa-1.0.1-sdk020-tool-result.json",
+  "qa_url": "http://127.0.0.1:58151/58f4e86e1cc44fed75b6547d608eb075b69261ead9ab10d83b7a9b097ebfca56/web/index.html",
+  "scope": "Public SDK0.1.20 separate process against exact installed1.0.1 payload; no running-chat dispatch or full WorkSwarm0.2.8 claim.",
+  "installed_payload": "/private/tmp/chess-build-587frnnf/host-025/data/agent/workspace/plugins/plugin_packages/local/offline-chess-analysis-workbench",
+  "current_sdk_commit": "f3f8f576164cc405c046e43079c8ad00ee17f0c4",
+  "full_workswarm_028_verified": false,
+  "extra_qa_service_stopped": {
+    "ok": true,
+    "version": "1.0.1",
+    "running": false,
+    "reused": false,
+    "url": null,
+    "message": "已向已验证的本插件服务发送停止请求。",
+    "idle_timeout_seconds": 1800,
+    "boundary": "只向本机浏览器提供插件自带网页和示例；棋局在浏览器本地校验和引擎分析，导出由浏览器下载，不修改宿主或原件。"
+  },
+  "installed_payload_unchanged": true
+}
