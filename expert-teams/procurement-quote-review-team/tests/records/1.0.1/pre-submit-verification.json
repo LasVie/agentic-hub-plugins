@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-17",
+  "task_id": "AH-20261116-procurement-quote-review-team",
+  "version": "1.0.1",
+  "native_zip_sha256": "b6292e0650856a100bb9dd82713a5f683ac64f33c1a3cdd3ad1e7622de35638a",
+  "canonical_zip_sha256": "32adc9970b6c6095983c6cd9134a624714d9847c6f3027b961fb619ee429df39",
+  "frozen_source_native_canonical_equality": true,
+  "actual_manual_installed_payload_16_files_equal": true,
+  "saved_manual_evaluation_replay_equal": true,
+  "saved_delivery_manifest_12_file_hashes_equal": true,
+  "user_explicit_manual_pass": true,
+  "original_screenshots": 4,
+  "screenshots_c_quality": 5,
+  "unknown_quality_negative_evidence": "Separate deterministic regression, not shown by these screenshots",
+  "unchanged_checks_reused": [
+    "51 source and exact-ZIP regressions",
+    "official CLI validate/pack",
+    "actual four-member host loader",
+    "3 valid/12 invalid schema checks",
+    "two actual-host scripted two-stage handoff scenarios"
+  ],
+  "no_new_model_calls": true,
+  "known_blocking_issues": "none reported; original ranking blocker resolved"
+}

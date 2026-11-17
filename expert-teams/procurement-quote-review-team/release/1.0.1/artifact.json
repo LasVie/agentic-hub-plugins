@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-group:procurement-quote-review-team",
+  "task_id": "AH-20261116-procurement-quote-review-team",
+  "candidate_id": "Not Applicable",
+  "type": "agent-group",
+  "name": "procurement-quote-review-team",
+  "display_name": "采购报价比选复核专家团",
+  "version": "1.0.1",
+  "zip": "procurement-quote-review-team-1.0.1.zip",
+  "sha256": "32adc9970b6c6095983c6cd9134a624714d9847c6f3027b961fb619ee429df39",
+  "zip_bytes": 41307,
+  "native_test_zip": "../../test-packages/procurement-quote-review-team-1.0.1-native.zip",
+  "native_test_zip_sha256": "b6292e0650856a100bb9dd82713a5f683ac64f33c1a3cdd3ad1e7622de35638a",
+  "native_test_zip_bytes": 89785,
+  "plugin_yaml_sha256": "0379a1d19dc66892681906c52bf828532142525329e8a3895c76ab4f6583c3bc",
+  "payload_file_count": 16,
+  "payload_sha256": {
+    "README.md": "17ca7ec94f75dd643834cd03f97102c16ab7cf5fe2ee92589c20cf2b8695cc63",
+    "SOURCE_NOTES.md": "c652b2cddc60fcbf6d6a46244dff28148d6034201b52cca0209fb428b14e0af6",
+    "agents/commercial/manifest.json": "a023773b91cb7f471a2ff03744719ced27e19646fe4b137c16d09786b600af91",
+    "agents/commercial/persona/commercial.md": "d886a0963c8a73b6985fe4db0194837e5acf25b9c81f1654910bac73a36e18f1",
+    "agents/leader/AGENT.md": "ba67748e32e5d69f68790dbf4b11a90b7c3f2a7f2233e8b224b60f7b499a8c7f",
+    "agents/leader/manifest.json": "90ca9bc530e2388bd226242bac46b448a835eb8ea9d091aee2b4e021f0cc3e49",
+    "agents/leader/persona/leader.md": "aad58ed90e267dd23544efd96c8da892fe0056ac0ac04441717a22532734a096",
+    "agents/technical/manifest.json": "e5634d133d5d8534c266219c7c1a297bd6bfa508b71a4f6f00d7cc85e526c2c5",
+    "agents/technical/persona/technical.md": "3bcca7911627edc0e3d0d2c907739db27730f4dae5f0f60ff87e41558626ea4c",
+    "agents/verifier/manifest.json": "1586178a8ed934732ac9d098dd21c4584ec909f5ea1b4b1d45d00c904139433f",
+    "agents/verifier/persona/verifier.md": "3807317843cdefd381c43a20ab5d58c2842345504d4a17dc39cf926f28c14cc4",
+    "manifest.json": "be3fb9b480b9e10970afaa4a332d02137b41790a409f5ec15eba20deac1f446a",
+    "skills/quote-evaluation/SKILL.md": "1f3bef246a9a874ad8267628f072c77398d6db2a9781840864b6a0aec6d1c710",
+    "skills/quote-evaluation/references/input-format.md": "86b3c8a30bb6ceb674a3776dfbbcf166696eb129c7af90f899b2aa4250167322",
+    "skills/quote-evaluation/references/report.schema.json": "af108e352707b5784d338c7698604e4c929c3519c7475cd9e0091171c38340f6",
+    "skills/quote-evaluation/scripts/quote_review.py": "e8b78b58b87a06999068fd3c73bbb9869926fd3443f50e2b32bcca19435bd8ec"
+  },
+  "package_verification": {
+    "paths_types_sizes_ratios": "passed",
+    "native_wrapped_source_payload_equality": "passed",
+    "native_compression": "ZIP_STORED",
+    "canonical_compression": "official CLI ZIP_DEFLATED",
+    "reproducible_archive_timestamp": "2026-01-01T00:00:00"
+  },
+  "official_cli": {
+    "distribution": "openjiuwen-agentichub",
+    "version": "0.0.1",
+    "source_commit": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+    "main_py_sha256": "f3a0e0bb46c67ad17689db44ab4d9ae5ddbf32391ed8e26a1671e770f0dfaaea",
+    "plugin_py_sha256": "7d100e423a033b42ae6f1c79b7063b01ebb55ef38beb63da6d85e027ca0f6568",
+    "commands": [
+      "python -B -m openjiuwen_agentichub.main validate CLEAN_STAGING",
+      "python -B -m openjiuwen_agentichub.main pack CLEAN_STAGING --output CLEAN_OUTPUT"
+    ]
+  },
+  "source_review_sha256": "3ecd9c328df656ec84c9cd85dee9b1e0cb274f41ff73fefbaebdbc0c986734ff",
+  "functional_test_report_sha256": "5330a9e945d15b89974ab7b5514f43af1a5ff2b82c99378d3605625e098fb31d",
+  "provenance_sha256": "e9ff5b734146bd6d5216929694eba3605c6cec651ae338fbda458bb0ddfd24f2",
+  "provenance_mode": "native"
+}

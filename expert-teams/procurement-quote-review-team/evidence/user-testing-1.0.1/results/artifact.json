@@ -1,0 +1,18 @@
+{
+  "version": "1.0.1",
+  "case_sha256": "5403d27cda57fdb0d235f3489ef409f1ae388d755f31edad0ef27850e5ca362d",
+  "files_sha256": {
+    "comparison.html": "c3f3180cdfba2839f9217a21372e060f5b7dd1032d691201d196c7641b1e74b7",
+    "evaluation.json": "a11e8eeb5bd38f49c6277e13ea50294f023dd4f8f85db44d5d512b75ee722e39",
+    "compliance.csv": "0c04cbe5d2a3db0df4a1007881a8ca75422c5e2d31c9ec175c7a66308135dcaf",
+    "costs.csv": "54dda2f2fed3fef223398e11999bf93fcf478c558ca800705e026e424466ab40",
+    "review.md": "bb92d5b65f1cdb1ab58d05241e1a3e8db11f2d13786860a161113aaa4d78e06a",
+    "inputs/case/case.json": "74afb3e191f4b67597bafd8dbe1ef9547112e05c906580b7d34b3ee3afb9092e",
+    "inputs/reports/technical.json": "397cf1e773b0ef3585a247ef827dba51ab478c18f02fe24a000e823c21ac4846",
+    "inputs/reports/commercial.json": "56a9f7a3c545e2cc7d63506980a6dc955890cb9ee8b0aabdf47bfba24429a032",
+    "inputs/reports/verifier.json": "7c721a25c05a02c1c3edabefe2663023e40c5bfd5cb681e52c20bf84b6b09a23",
+    "inputs/case/\u62a5\u4ef7\u7532.md": "a3e27e91a93caf54517e9088fbeda05a62b2356660e3503545995418ae52caf9",
+    "inputs/case/\u62a5\u4ef7\u4e59.md": "57ba058249276ac46c5c390efed4af44372258c44c96896c1e033c26f9a8de74",
+    "inputs/case/\u62a5\u4ef7\u4e19.md": "e8ebf73185d498f7554b12c43f36abf701043bdfdcb2ea253e92c65dabf66d7b"
+  }
+}

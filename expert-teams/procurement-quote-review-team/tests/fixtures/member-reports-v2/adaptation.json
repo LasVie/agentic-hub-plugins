@@ -1,0 +1,32 @@
+{
+  "evidence_kind": "explicit_schema_adaptation_not_new_model_test",
+  "original_version": "1.0.0",
+  "target_contract_version": "1.0.1",
+  "original_case_sha256": "74afb3e191f4b67597bafd8dbe1ef9547112e05c906580b7d34b3ee3afb9092e",
+  "original_reports_sha256": {
+    "technical-initial.json": "6f845e7b744edf1617632c97dd2b3933e3a8aaaf94eb941fcbc654a7bc937c95",
+    "commercial-initial.json": "9db750bd4db8a4032a59412b36d54002dc41c27de8f473b01c4c7c58869d11a6",
+    "verifier-review.json": "c1ad106d23b323a9024384369467cc093ea24758d336330037e45886f2adce2c",
+    "verifier-independent.json": "e70b188f893ed6952447647d316a1555b1ae6fc531c42de4f4d756eeaa0bae7c"
+  },
+  "source_mapping": {
+    "technical.json": "technical-initial.json",
+    "commercial.json": "commercial-initial.json",
+    "verifier.json": "verifier-review.json"
+  },
+  "adapted_reports_sha256": {
+    "technical.json": "3b7fc5622585879d36c0af39e076e34edcc92f76f3e1ef548b63edd76482bbd1",
+    "commercial.json": "2d2cab8c44cd6f314e6ff727a419f9e5a0a7a402af00e9b6b5955f3f238409b8",
+    "verifier.json": "1471bcb5bc42d32153beb2ee5a7edca189a2b0a8948ad52d657f337aaba6fa6d"
+  },
+  "changes": [
+    "Only schema_version, notes and structured issues fields were adapted.",
+    "Assessment judgments, exact citations, case binding and totals were preserved.",
+    "C delivery remains fail and quality remains unknown/null.",
+    "Confirmed exclusions and successful checks/general boundaries are informational notes; C quality clarification is an offer evaluation issue."
+  ],
+  "limitations": [
+    "These authored test fixtures do not claim a new model run, actual v1.0.1 collaboration or user acceptance.",
+    "Original manual reports remain unchanged in protected local evidence."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "version": "1.0.1",
+  "report_schema_sha256": "af108e352707b5784d338c7698604e4c929c3519c7475cd9e0091171c38340f6",
+  "draft": "2020-12",
+  "schema_self_valid": true,
+  "adapted_reports_accepted": 3,
+  "structural_negatives_rejected": [
+    "technical:legacy_version",
+    "technical:missing_notes",
+    "technical:wrong_scope",
+    "technical:unknown_nested_field",
+    "commercial:legacy_version",
+    "commercial:missing_notes",
+    "commercial:wrong_scope",
+    "commercial:unknown_nested_field",
+    "verifier:legacy_version",
+    "verifier:missing_notes",
+    "verifier:wrong_scope",
+    "verifier:unknown_nested_field"
+  ],
+  "runtime_checks_separate": "Evidence, freshness, coverage, numeric and relevance guards remain enforced in quote_review.py",
+  "dependency_scope": "Existing development environment only; no packaged dependency or installation"
+}

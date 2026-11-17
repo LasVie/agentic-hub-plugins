@@ -1,0 +1,27 @@
+{
+  "url": "http://127.0.0.1:6411/",
+  "old_native_sha256": "ae9ae241de65459f7268f2a2dd43a38d41e3065c5c34c87ed9426fc817fb1cdb",
+  "native_sha256": "b6292e0650856a100bb9dd82713a5f683ac64f33c1a3cdd3ad1e7622de35638a",
+  "previous_group_version": "1.0.0",
+  "before_session_ids": [
+    "web_1a1c4b6913d_c1fdec23ea57"
+  ],
+  "matching_group_sessions": 0,
+  "model_calls": 0,
+  "uninstall": true,
+  "import": true,
+  "install": true,
+  "actual_version": "1.0.1",
+  "actual_members": [
+    "leader",
+    "technical",
+    "commercial",
+    "verifier"
+  ],
+  "source": "local",
+  "existing_session_ids_preserved": true,
+  "existing_history_hashes_preserved": true,
+  "installed_payload_byte_equal": true,
+  "manual_testing_passed": false,
+  "installation_route": "Supported own-group uninstall/import_local/install; old group files and original ZIP backed up; no model invocation"
+}

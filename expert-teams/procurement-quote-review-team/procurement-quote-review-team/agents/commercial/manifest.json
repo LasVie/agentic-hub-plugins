@@ -1,0 +1,8 @@
+{
+  "package_type": "agent_template",
+  "name": "commercial",
+  "description": "按固定币种、数量与期间独立核对一次性和周期成本，标出不能比较的缺失条件。",
+  "display_name": {"zh": "商务成本分析员", "en": "Commercial Analyst"},
+  "display_description": {"zh": "复算报价总成本并明确费用口径和缺口", "en": "Recompute comparable costs and expose missing commercial assumptions"},
+  "persona": {"dir": "persona"}
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": 2,
+  "role": "verifier",
+  "case_sha256": "5403d27cda57fdb0d235f3489ef409f1ae388d755f31edad0ef27850e5ca362d",
+  "assessments": [
+    {
+      "offer_id": "A",
+      "criterion_id": "delivery",
+      "status": "pass",
+      "score": null,
+      "evidence": [{"source_id": "a", "line": 2, "quote": "交货期：10 天；保修：24 个月。"}],
+      "rationale": "原文明确承诺交货期10天，小于等于必备上限14天；保修期不作为交期证据或额外评分。"
+    },
+    {
+      "offer_id": "A",
+      "criterion_id": "quality",
+      "status": "pass",
+      "score": "4",
+      "evidence": [{"source_id": "a", "line": 5, "quote": "技术质量等级：满足全部所列标准并提供培训。"}],
+      "rationale": "原文逐项声称满足全部所列标准并提供培训，恰对应冻结量表4分档；没有定制培训及两次现场演练的证据，不能评5分。"
+    },
+    {
+      "offer_id": "B",
+      "criterion_id": "delivery",
+      "status": "pass",
+      "score": null,
+      "evidence": [{"source_id": "b", "line": 2, "quote": "交货期：12 天；保修：24 个月。"}],
+      "rationale": "原文明确交货期12天，小于等于必备上限14天；保修期不替代交期。"
+    },
+    {
+      "offer_id": "B",
+      "criterion_id": "quality",
+      "status": "pass",
+      "score": "4",
+      "evidence": [{"source_id": "b", "line": 5, "quote": "技术质量等级：满足全部所列标准并提供培训。"}],
+      "rationale": "原文声称满足全部所列标准并提供培训，对应固定量表4分档；未承诺5分档的额外事项。"
+    },
+    {
+      "offer_id": "C",
+      "criterion_id": "delivery",
+      "status": "fail",
+      "score": null,
+      "evidence": [{"source_id": "c", "line": 2, "quote": "交货期：30 天；保修：36 个月。"}],
+      "rationale": "原文明确交货期30天，超过必备上限14天，属于已知不符合而非待澄清资格问题；36个月保修不能抵消。"
+    },
+    {
+      "offer_id": "C",
+      "criterion_id": "quality",
+      "status": "pass",
+      "score": "5",
+      "evidence": [{"source_id": "c", "line": 5, "quote": "技术质量等级：额外提供定制培训与两次现场演练。"}],
+      "rationale": "原文以技术质量等级直接声明量表5分档的额外定制培训及两次现场演练，据所给合成案例量表记录5分；这仅是报价自述，不证明供应商履约或消除30天交期不符合。"
+    }
+  ],
+  "totals": [
+    {"offer_id": "A", "total": "5800"},
+    {"offer_id": "B", "total": "4400"},
+    {"offer_id": "C", "total": "1700"}
+  ],
+  "notes": [
+    "仅依据本次case.json和列出的三份合成原文形成独立初评，未在保存前阅读技术或商务初稿；工作规程不构成真正盲审或来源真实性证明。",
+    "按CNY及24个月、数量均为1核算：A为1000×1×1+200×1×24=5800；B为2000×1×1+100×1×24=4400；C为500×1×1+50×1×24=1700。各项原文第3、4行与案例结构的金额、数量、次数一致。",
+    "丙报价原文第2行交期30天，确定不满足14天必备条件；评分与价格不能抵消。所有报价仍完整记录评分与成本。",
+    "原文均为合成测试材料，报价中的明确金额、数量和收费次数可支持本案例计算；未对未列示的税费或真实采购附加成本作存在性承诺，未联网补价。"
+  ],
+  "issues": []
+}

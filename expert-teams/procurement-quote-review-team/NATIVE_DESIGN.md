@@ -1,0 +1,21 @@
+# Native design — Procurement Quote Review Team
+
+Owner: Cai Zhenze. Task: AH-20261116-procurement-quote-review-team. Candidate: Not Applicable.
+
+This original native AgentGroup implements the user's approved bounded buyer-side quotation review. Public references describe independent initial assessment, technical/commercial separation, evidence trails and independent auditing. No upstream framework, prompts, procurement forms, tables, data, artwork or implementation is ported. The World Bank publication's noncommercial reproduction permission is not treated as a general distribution license; its text and tables are excluded. Existing repository Expert Teams were inspected only as host-format examples.
+
+## Invariants and responsibilities
+
+- Leader freezes explicit user requirements, scoring weights, currency and horizon. Technical and commercial members independently produce initial records. Verifier independently checks raw inputs before comparing those records. Leader resolves at most one correction round and preserves original records; otherwise returns clarification required.
+- The case must explicitly select `weighted-min-cost-v1`: normalized weighted technical points plus minimum eligible cost / offer cost multiplied by the cost weight. Eligible totals must be positive; other formulas are rejected. Criterion-to-score rubrics must be explicit, not invented by members.
+- Each role is a real bundled AgentTemplate. Existing task/message/file/shell mechanisms supply collaboration. A shared Skill provides a bounded deterministic CLI; no host or dependency modification is needed.
+- The CLI validates structure, exact source-line quotations, input hashes, arithmetic and cross-report agreement. It cannot prove semantic truth, reviewer independence, member identity or actual runtime participation. Those require host traces and human review. No fake participation badge is emitted.
+- Version 1.0.1 uses member-report schema 2: informational `notes` are separate from structured, scoped `issues`. All evidence and report coverage are validated first. Eligibility is determined before relevance filtering: only both reviewers failing the same mandatory criterion with no unresolved qualification uncertainty permits exclusion. Global/eligibility problems and relevant nonexcluded evaluation gaps still block; nonessential evaluation details of an excluded offer stay visible as warnings. No score is filled to obtain a ranking. Legacy reports reject rather than silently reclassifying historical text.
+- Inputs are UTF-8 JSON plus explicitly declared local text sources under the case directory. V1 supports 2–4 offers, up to 10 criteria, one explicit currency, an explicit horizon and cost amounts/quantities/occurrences. No PDF/OCR, exchange-rate lookup, imputation, vendor research, sending, purchasing or legal compliance claims.
+- Original source files are read-only. Report hashes bind to complete frozen inputs. Failed mandatory requirements exclude an offer with reasons. Missing data, cost mismatches and technical disagreements that could affect eligible ranking block it; excluded-offer nonessential warnings do not become a winner or disappear. Malformed/stale evidence always rejects, including for excluded offers.
+- Output is a new, explicitly selected directory only: Chinese HTML, Markdown, compliance/cost CSV, machine-readable JSON and input/report hash records. HTML is escaped and contains no executable script or remote resources; CSV cells protect spreadsheet formula prefixes.
+- Source paths cannot traverse outside the case directory or use symlinks. Reads, collection sizes and numeric magnitudes are bounded; outputs never overwrite existing paths.
+
+## Verification boundaries
+
+Unit/CLI tests cover arithmetic, evidence binding, missing/contradictory inputs, source mutation, malformed data, HTML/CSV escaping and existing-output rejection. Official CLI validation and actual SDK loading verify packaging separately. A local deterministic model fixture may verify real host task dispatch and member tool execution without paid calls; scripted responses do not prove model reasoning or advantage. Same-model/same-tools comparison and genuine manual collaboration remain pending user execution/authorization. No paid model calls are authorized by this design.

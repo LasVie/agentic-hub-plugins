@@ -1,0 +1,66 @@
+{
+  "task_id": "deliver-audit-v101",
+  "task": "安装版1.0.1真实交付及多格式一致性审计",
+  "preflight": "2026-11-17执行前检查授权目录存在，delivery-v101-20261117及本记录文件均不存在、非符号链接；成员初稿及原文只读。",
+  "command": "python3 -B \"/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/.research/ebook-workswarm-20261027/data/.agent_teams/agent_groups/local/procurement-quote-review-team/skills/quote-evaluation/scripts/quote_review.py\" deliver --case \"/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/expert-teams/procurement-quote-review-team/tests/fixtures/case.json\" --technical \"/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/expert-teams/procurement-quote-review-team/.local/manual-review-1.0.1-1/technical-initial.json\" --commercial \"/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/expert-teams/procurement-quote-review-team/.local/manual-review-1.0.1-1/commercial-initial.json\" --review \"/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/expert-teams/procurement-quote-review-team/.local/manual-review-1.0.1-1/verifier-formal.json\" --output-dir \"/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/expert-teams/procurement-quote-review-team/.local/manual-review-1.0.1-1/delivery-v101-20261117\"",
+  "execution": {
+    "exit_code": 0,
+    "stdout_ok": true,
+    "stdout_version": "1.0.1",
+    "stdout_status": "reviewed",
+    "stdout_case_sha256": "5403d27cda57fdb0d235f3489ef409f1ae388d755f31edad0ef27850e5ca362d",
+    "stdout_html_path": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/expert-teams/procurement-quote-review-team/.local/manual-review-1.0.1-1/delivery-v101-20261117/comparison.html",
+    "stderr": "",
+    "output_dir": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/expert-teams/procurement-quote-review-team/.local/manual-review-1.0.1-1/delivery-v101-20261117"
+  },
+  "input_paths": {
+    "case": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/expert-teams/procurement-quote-review-team/tests/fixtures/case.json",
+    "technical": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/expert-teams/procurement-quote-review-team/.local/manual-review-1.0.1-1/technical-initial.json",
+    "commercial": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/expert-teams/procurement-quote-review-team/.local/manual-review-1.0.1-1/commercial-initial.json",
+    "verifier_independent": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/expert-teams/procurement-quote-review-team/.local/manual-review-1.0.1-1/verifier-independent.json",
+    "verifier_formal": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/expert-teams/procurement-quote-review-team/.local/manual-review-1.0.1-1/verifier-formal.json"
+  },
+  "audit": {
+    "result": "PASS",
+    "version": "1.0.1",
+    "report_schema_version": 2,
+    "case_sha256": "5403d27cda57fdb0d235f3489ef409f1ae388d755f31edad0ef27850e5ca362d",
+    "status": "reviewed",
+    "currency": "CNY",
+    "horizon_months": 24,
+    "ranking_method": "weighted-min-cost-v1",
+    "technical_weight": "60",
+    "cost_weight": "40",
+    "costs": {"A": "5800", "B": "4400", "C": "1700"},
+    "eligibility": {"A": "eligible", "B": "eligible", "C": "excluded"},
+    "exclusion": "C报价原文第2行交货期30天超过必备14天；技术与正式复核对此必备项共同fail，三份报告无资格疑问；C的1700 CNY仅保留声明成本复算，不进入合格最低成本基准或排名。",
+    "eligible_min_cost": "4400",
+    "rankings": [
+      {"rank": 1, "offer_id": "B", "technical_score": "80.0", "combined_score": "88.0", "total": "4400"},
+      {"rank": 2, "offer_id": "A", "technical_score": "80.0", "combined_score": "78.3448275862068965517241379310344827586206896551724137931034", "total": "5800"}
+    ],
+    "issues": [],
+    "blocking_issues": [],
+    "warnings": [],
+    "conflicts": [],
+    "clarifications": [],
+    "notes": [
+      "技术说明：依据本次实际 inspect 返回的版本 1.0.1 与案例摘要，独立逐项核对三份报价原文；交期必备条件以 14 天为上限判定，10 天与 12 天通过，30 天已知不符合。",
+      "技术说明：报价丙的 5 分仅反映其原文声称的额外定制培训及两次现场演练；本次不进行供应商实际履约或认证核验。",
+      "商务说明：按案例指定的 CNY、24 个月比较期间与明确计费次数独立复算；未推断税费、折扣、汇率或续费。",
+      "商务说明：A：报价甲原文第 3 行一次性安装费 1000×1×1=1000 CNY，第 4 行月服务费 200×1×24=4800 CNY；合计 5800 CNY。",
+      "商务说明：B：报价乙原文第 3 行一次性安装费 2000×1×1=2000 CNY，第 4 行月服务费 100×1×24=2400 CNY；合计 4400 CNY。",
+      "商务说明：C：报价丙原文第 3 行一次性安装费 500×1×1=500 CNY，第 4 行月服务费 50×1×24=1200 CNY；合计 1700 CNY。",
+      "商务说明：所有费用的金额、数量和次数均与各自原文第 3—4 行一致；三个合计均为声明费用复算值，不代表资格合格或最终采购总价承诺。",
+      "复核说明：本正式稿在独立初稿verifier-independent.json已保存之后核对技术初稿technical-initial.json和商务初稿commercial-initial.json；三份初始记录保留未覆盖。全部六项状态、评分和三项成本合计一致，未发现需修正差异或遗漏必备不符合项。",
+      "复核说明：语义复核：甲、乙原文各第2行分别为10、12天，满足不超过14天必备条件；丙第2行30天明确失败而非资格待澄清。各第5行是报价自述的质量档位，不是履约鉴定；甲乙4分、丙5分均对应冻结量表，不能用低价或高分抵消丙的必备失败。",
+      "复核说明：CNY/24个月且数量均1，依据甲、乙、丙原文各第3—4行：甲1000×1×1＋200×1×24＝5800；乙2000×1×1＋100×1×24＝4400；丙500×1×1＋50×1×24＝1700。案例结构与三份原文的金额、数量、次数一致；未列项目不推定存在或为零。",
+      "复核说明：本次case_sha256来自安装版1.0.1 inspect实测；格式、算术及引文校验不能证明供应商报价真实、成员身份、真正盲审、采购合法或人工验收。"
+    ],
+    "format_checks": "12项清单文件均真实存在且SHA-256与artifact.json一致；7项输入快照与原文件逐字节一致；成员报告摘要一致，来源证据行与原文一致；HTML中文语言及UTF-8、四张表，符合性CSV六行、费用CSV三行、evaluation.json、review.md与资格、费用、排名、说明一致；复算最低合格成本4400，C1700未进入基准。",
+    "inventory_count": 12,
+    "input_snapshot_count": 7,
+    "participation_verified": false,
+    "boundary": "这是合成案例中的算术、引文、结构与成员记录一致性审计；不证明供应商履约、成员身份/独立性、采购合法性或人工验收，不自动授标。"
+  }
+}

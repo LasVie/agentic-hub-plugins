@@ -1,0 +1,8 @@
+{
+  "package_type": "agent_template",
+  "name": "leader",
+  "description": "确认比选边界，分派技术与商务初评，组织独立复核并交付有证据的比选档案。",
+  "display_name": {"zh": "比选主理人", "en": "Review Leader"},
+  "display_description": {"zh": "确认输入、分派任务、处理分歧并验收交付", "en": "Confirm inputs, delegate, resolve disagreements and review deliverables"},
+  "persona": {"dir": "persona"}
+}

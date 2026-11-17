@@ -1,0 +1,8 @@
+{
+  "package_type": "agent_template",
+  "name": "technical",
+  "description": "依据固定要求逐项检查报价的技术符合性与有依据的技术评分，先独立保存初评。",
+  "display_name": {"zh": "技术符合性评估员", "en": "Technical Evaluator"},
+  "display_description": {"zh": "核对必备要求与技术证据，不让低价替代符合性", "en": "Check mandatory requirements and technical evidence independently of price"},
+  "persona": {"dir": "persona"}
+}

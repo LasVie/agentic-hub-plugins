@@ -1,0 +1,338 @@
+{
+  "ok": true,
+  "version": "1.0.1",
+  "report_schema_version": 2,
+  "title": "两年设备服务采购比选（合成案例）",
+  "case_sha256": "5403d27cda57fdb0d235f3489ef409f1ae388d755f31edad0ef27850e5ca362d",
+  "input_hashes": {
+    "case.json": "74afb3e191f4b67597bafd8dbe1ef9547112e05c906580b7d34b3ee3afb9092e",
+    "source:a": "a3e27e91a93caf54517e9088fbeda05a62b2356660e3503545995418ae52caf9",
+    "source:b": "57ba058249276ac46c5c390efed4af44372258c44c96896c1e033c26f9a8de74",
+    "source:c": "e8ebf73185d498f7554b12c43f36abf701043bdfdcb2ea253e92c65dabf66d7b"
+  },
+  "report_hashes": {
+    "technical": "397cf1e773b0ef3585a247ef827dba51ab478c18f02fe24a000e823c21ac4846",
+    "commercial": "56a9f7a3c545e2cc7d63506980a6dc955890cb9ee8b0aabdf47bfba24429a032",
+    "verifier": "7c721a25c05a02c1c3edabefe2663023e40c5bfd5cb681e52c20bf84b6b09a23"
+  },
+  "status": "reviewed",
+  "currency": "CNY",
+  "horizon_months": 24,
+  "ranking_method": "weighted-min-cost-v1",
+  "eligibility": [
+    {
+      "offer_id": "A",
+      "status": "eligible",
+      "reasons": [
+        "技术与复核对全部必备要求均明确通过，未报告报价资格问题。"
+      ],
+      "exclusion_criteria": []
+    },
+    {
+      "offer_id": "B",
+      "status": "eligible",
+      "reasons": [
+        "技术与复核对全部必备要求均明确通过，未报告报价资格问题。"
+      ],
+      "exclusion_criteria": []
+    },
+    {
+      "offer_id": "C",
+      "status": "excluded",
+      "reasons": [
+        "必备要求delivery经技术与复核双方明确判定不符合：报价丙明确写交货期 30 天，超过必备期限 14 天，属于已知不符合；低价、较长保修或质量得分不能抵消。；独立复核：报价丙第2行交期30天，已知超过14天必备期限；36个月保修及价格、质量分不能抵消。"
+      ],
+      "exclusion_criteria": [
+        "delivery"
+      ]
+    }
+  ],
+  "costs": [
+    {
+      "offer_id": "A",
+      "currency": "CNY",
+      "total": "5800",
+      "lines": [
+        {
+          "id": "installation",
+          "description": "一次性安装费",
+          "subtotal": "1000"
+        },
+        {
+          "id": "service",
+          "description": "月服务费",
+          "subtotal": "4800"
+        }
+      ]
+    },
+    {
+      "offer_id": "B",
+      "currency": "CNY",
+      "total": "4400",
+      "lines": [
+        {
+          "id": "installation",
+          "description": "一次性安装费",
+          "subtotal": "2000"
+        },
+        {
+          "id": "service",
+          "description": "月服务费",
+          "subtotal": "2400"
+        }
+      ]
+    },
+    {
+      "offer_id": "C",
+      "currency": "CNY",
+      "total": "1700",
+      "lines": [
+        {
+          "id": "installation",
+          "description": "一次性安装费",
+          "subtotal": "500"
+        },
+        {
+          "id": "service",
+          "description": "月服务费",
+          "subtotal": "1200"
+        }
+      ]
+    }
+  ],
+  "compliance": [
+    {
+      "offer_id": "A",
+      "criterion_id": "delivery",
+      "mandatory": true,
+      "technical": {
+        "offer_id": "A",
+        "criterion_id": "delivery",
+        "status": "pass",
+        "score": null,
+        "evidence": [
+          {
+            "source_id": "a",
+            "line": 2,
+            "quote": "交货期：10 天；保修：24 个月。"
+          }
+        ],
+        "rationale": "报价甲明确写交货期 10 天，小于必备期限 14 天，按报价原文满足交期要求。"
+      },
+      "verification": {
+        "offer_id": "A",
+        "criterion_id": "delivery",
+        "status": "pass",
+        "score": null,
+        "evidence": [
+          {
+            "source_id": "a",
+            "line": 2,
+            "quote": "交货期：10 天；保修：24 个月。"
+          }
+        ],
+        "rationale": "报价甲第2行交期10天，不超过14天必备期限；保修月数不构成交期。"
+      }
+    },
+    {
+      "offer_id": "A",
+      "criterion_id": "quality",
+      "mandatory": false,
+      "technical": {
+        "offer_id": "A",
+        "criterion_id": "quality",
+        "status": "pass",
+        "score": "4",
+        "evidence": [
+          {
+            "source_id": "a",
+            "line": 5,
+            "quote": "技术质量等级：满足全部所列标准并提供培训。"
+          }
+        ],
+        "rationale": "报价甲逐字声明满足全部所列标准并提供培训，符合明确量表的 4 分档；没有定制培训和两次现场演练的证据，不能评 5 分。"
+      },
+      "verification": {
+        "offer_id": "A",
+        "criterion_id": "quality",
+        "status": "pass",
+        "score": "4",
+        "evidence": [
+          {
+            "source_id": "a",
+            "line": 5,
+            "quote": "技术质量等级：满足全部所列标准并提供培训。"
+          }
+        ],
+        "rationale": "报价甲第5行自述满足全部所列标准并提供培训，符合唯一明确的4分档；无额外定制培训和两次现场演练证据，不评5分。"
+      }
+    },
+    {
+      "offer_id": "B",
+      "criterion_id": "delivery",
+      "mandatory": true,
+      "technical": {
+        "offer_id": "B",
+        "criterion_id": "delivery",
+        "status": "pass",
+        "score": null,
+        "evidence": [
+          {
+            "source_id": "b",
+            "line": 2,
+            "quote": "交货期：12 天；保修：24 个月。"
+          }
+        ],
+        "rationale": "报价乙明确写交货期 12 天，小于必备期限 14 天，按报价原文满足交期要求。"
+      },
+      "verification": {
+        "offer_id": "B",
+        "criterion_id": "delivery",
+        "status": "pass",
+        "score": null,
+        "evidence": [
+          {
+            "source_id": "b",
+            "line": 2,
+            "quote": "交货期：12 天；保修：24 个月。"
+          }
+        ],
+        "rationale": "报价乙第2行交期12天，不超过14天必备期限；不以保修月数代替交期。"
+      }
+    },
+    {
+      "offer_id": "B",
+      "criterion_id": "quality",
+      "mandatory": false,
+      "technical": {
+        "offer_id": "B",
+        "criterion_id": "quality",
+        "status": "pass",
+        "score": "4",
+        "evidence": [
+          {
+            "source_id": "b",
+            "line": 5,
+            "quote": "技术质量等级：满足全部所列标准并提供培训。"
+          }
+        ],
+        "rationale": "报价乙逐字声明满足全部所列标准并提供培训，符合明确量表的 4 分档；没有定制培训和两次现场演练的证据，不能评 5 分。"
+      },
+      "verification": {
+        "offer_id": "B",
+        "criterion_id": "quality",
+        "status": "pass",
+        "score": "4",
+        "evidence": [
+          {
+            "source_id": "b",
+            "line": 5,
+            "quote": "技术质量等级：满足全部所列标准并提供培训。"
+          }
+        ],
+        "rationale": "报价乙第5行自述满足全部所列标准并提供培训，对应量表4分档，未声明5分档的额外事项。"
+      }
+    },
+    {
+      "offer_id": "C",
+      "criterion_id": "delivery",
+      "mandatory": true,
+      "technical": {
+        "offer_id": "C",
+        "criterion_id": "delivery",
+        "status": "fail",
+        "score": null,
+        "evidence": [
+          {
+            "source_id": "c",
+            "line": 2,
+            "quote": "交货期：30 天；保修：36 个月。"
+          }
+        ],
+        "rationale": "报价丙明确写交货期 30 天，超过必备期限 14 天，属于已知不符合；低价、较长保修或质量得分不能抵消。"
+      },
+      "verification": {
+        "offer_id": "C",
+        "criterion_id": "delivery",
+        "status": "fail",
+        "score": null,
+        "evidence": [
+          {
+            "source_id": "c",
+            "line": 2,
+            "quote": "交货期：30 天；保修：36 个月。"
+          }
+        ],
+        "rationale": "报价丙第2行交期30天，已知超过14天必备期限；36个月保修及价格、质量分不能抵消。"
+      }
+    },
+    {
+      "offer_id": "C",
+      "criterion_id": "quality",
+      "mandatory": false,
+      "technical": {
+        "offer_id": "C",
+        "criterion_id": "quality",
+        "status": "pass",
+        "score": "5",
+        "evidence": [
+          {
+            "source_id": "c",
+            "line": 5,
+            "quote": "技术质量等级：额外提供定制培训与两次现场演练。"
+          }
+        ],
+        "rationale": "报价丙的技术质量等级逐字声明额外提供定制培训与两次现场演练，对应案例明确量表的 5 分档；这是报价原文声称的档位，不构成外部履约证明，也不能改变其交期不符合。"
+      },
+      "verification": {
+        "offer_id": "C",
+        "criterion_id": "quality",
+        "status": "pass",
+        "score": "5",
+        "evidence": [
+          {
+            "source_id": "c",
+            "line": 5,
+            "quote": "技术质量等级：额外提供定制培训与两次现场演练。"
+          }
+        ],
+        "rationale": "报价丙第5行在技术质量等级中声明量表5分档对应的定制培训及两次现场演练，按此合成案例记5分；不证明实际履约，也不改变其必备交期失败。"
+      }
+    }
+  ],
+  "rankings": [
+    {
+      "offer_id": "B",
+      "technical_score": "80.0",
+      "total": "4400",
+      "combined_score": "88.0",
+      "rank": 1
+    },
+    {
+      "offer_id": "A",
+      "technical_score": "80.0",
+      "total": "5800",
+      "combined_score": "78.3448275862068965517241379310344827586206896551724137931034",
+      "rank": 2
+    }
+  ],
+  "issues": [],
+  "notes": [
+    "技术说明：依据本次实际 inspect 返回的版本 1.0.1 与案例摘要，独立逐项核对三份报价原文；交期必备条件以 14 天为上限判定，10 天与 12 天通过，30 天已知不符合。",
+    "技术说明：报价丙的 5 分仅反映其原文声称的额外定制培训及两次现场演练；本次不进行供应商实际履约或认证核验。",
+    "商务说明：按案例指定的 CNY、24 个月比较期间与明确计费次数独立复算；未推断税费、折扣、汇率或续费。",
+    "商务说明：A：报价甲原文第 3 行一次性安装费 1000×1×1=1000 CNY，第 4 行月服务费 200×1×24=4800 CNY；合计 5800 CNY。",
+    "商务说明：B：报价乙原文第 3 行一次性安装费 2000×1×1=2000 CNY，第 4 行月服务费 100×1×24=2400 CNY；合计 4400 CNY。",
+    "商务说明：C：报价丙原文第 3 行一次性安装费 500×1×1=500 CNY，第 4 行月服务费 50×1×24=1200 CNY；合计 1700 CNY。",
+    "商务说明：所有费用的金额、数量和次数均与各自原文第 3—4 行一致；三个合计均为声明费用复算值，不代表资格合格或最终采购总价承诺。",
+    "复核说明：本正式稿在独立初稿verifier-independent.json已保存之后核对技术初稿technical-initial.json和商务初稿commercial-initial.json；三份初始记录保留未覆盖。全部六项状态、评分和三项成本合计一致，未发现需修正差异或遗漏必备不符合项。",
+    "复核说明：语义复核：甲、乙原文各第2行分别为10、12天，满足不超过14天必备条件；丙第2行30天明确失败而非资格待澄清。各第5行是报价自述的质量档位，不是履约鉴定；甲乙4分、丙5分均对应冻结量表，不能用低价或高分抵消丙的必备失败。",
+    "复核说明：CNY/24个月且数量均1，依据甲、乙、丙原文各第3—4行：甲1000×1×1＋200×1×24＝5800；乙2000×1×1＋100×1×24＝4400；丙500×1×1＋50×1×24＝1700。案例结构与三份原文的金额、数量、次数一致；未列项目不推定存在或为零。",
+    "复核说明：本次case_sha256来自安装版1.0.1 inspect实测；格式、算术及引文校验不能证明供应商报价真实、成员身份、真正盲审、采购合法或人工验收。"
+  ],
+  "warnings": [],
+  "clarifications": [],
+  "conflicts": [],
+  "participation_verified": false,
+  "notice": "本结果仅为有界算术、引文及成员记录一致性检查。记录中的角色字段不证明真实参与或独立性；引文存在不证明语义正确。用户决定是否采纳，不自动授标。"
+}
