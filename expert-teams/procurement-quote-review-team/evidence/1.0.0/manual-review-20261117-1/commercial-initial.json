@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "role": "commercial",
+  "case_sha256": "5403d27cda57fdb0d235f3489ef409f1ae388d755f31edad0ef27850e5ca362d",
+  "totals": [
+    {"offer_id": "A", "total": "5800"},
+    {"offer_id": "B", "total": "4400"},
+    {"offer_id": "C", "total": "1700"}
+  ],
+  "issues": []
+}

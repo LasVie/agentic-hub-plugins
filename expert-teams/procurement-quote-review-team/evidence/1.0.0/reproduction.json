@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "status": "clarification_required",
+  "rankings": [],
+  "clarification_count": 8,
+  "conflicts": [],
+  "case_sha256": "5403d27cda57fdb0d235f3489ef409f1ae388d755f31edad0ef27850e5ca362d",
+  "report_hashes": {
+    "technical": "6f845e7b744edf1617632c97dd2b3933e3a8aaaf94eb941fcbc654a7bc937c95",
+    "commercial": "9db750bd4db8a4032a59412b36d54002dc41c27de8f473b01c4c7c58869d11a6",
+    "verifier": "c1ad106d23b323a9024384369467cc093ea24758d336330037e45886f2adce2c"
+  },
+  "reproduced_from": "Exact existing user-run inputs and member reports; no model calls"
+}

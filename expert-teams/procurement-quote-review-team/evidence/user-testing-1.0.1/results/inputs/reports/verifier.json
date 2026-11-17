@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "role": "verifier",
+  "case_sha256": "5403d27cda57fdb0d235f3489ef409f1ae388d755f31edad0ef27850e5ca362d",
+  "assessments": [
+    {"offer_id":"A","criterion_id":"delivery","status":"pass","score":null,"evidence":[{"source_id":"a","line":2,"quote":"交货期：10 天；保修：24 个月。"}],"rationale":"报价甲第2行交期10天，不超过14天必备期限；保修月数不构成交期。"},
+    {"offer_id":"A","criterion_id":"quality","status":"pass","score":"4","evidence":[{"source_id":"a","line":5,"quote":"技术质量等级：满足全部所列标准并提供培训。"}],"rationale":"报价甲第5行自述满足全部所列标准并提供培训，符合唯一明确的4分档；无额外定制培训和两次现场演练证据，不评5分。"},
+    {"offer_id":"B","criterion_id":"delivery","status":"pass","score":null,"evidence":[{"source_id":"b","line":2,"quote":"交货期：12 天；保修：24 个月。"}],"rationale":"报价乙第2行交期12天，不超过14天必备期限；不以保修月数代替交期。"},
+    {"offer_id":"B","criterion_id":"quality","status":"pass","score":"4","evidence":[{"source_id":"b","line":5,"quote":"技术质量等级：满足全部所列标准并提供培训。"}],"rationale":"报价乙第5行自述满足全部所列标准并提供培训，对应量表4分档，未声明5分档的额外事项。"},
+    {"offer_id":"C","criterion_id":"delivery","status":"fail","score":null,"evidence":[{"source_id":"c","line":2,"quote":"交货期：30 天；保修：36 个月。"}],"rationale":"报价丙第2行交期30天，已知超过14天必备期限；36个月保修及价格、质量分不能抵消。"},
+    {"offer_id":"C","criterion_id":"quality","status":"pass","score":"5","evidence":[{"source_id":"c","line":5,"quote":"技术质量等级：额外提供定制培训与两次现场演练。"}],"rationale":"报价丙第5行在技术质量等级中声明量表5分档对应的定制培训及两次现场演练，按此合成案例记5分；不证明实际履约，也不改变其必备交期失败。"}
+  ],
+  "totals": [
+    {"offer_id":"A","total":"5800"},
+    {"offer_id":"B","total":"4400"},
+    {"offer_id":"C","total":"1700"}
+  ],
+  "notes": [
+    "本正式稿在独立初稿verifier-independent.json已保存之后核对技术初稿technical-initial.json和商务初稿commercial-initial.json；三份初始记录保留未覆盖。全部六项状态、评分和三项成本合计一致，未发现需修正差异或遗漏必备不符合项。",
+    "语义复核：甲、乙原文各第2行分别为10、12天，满足不超过14天必备条件；丙第2行30天明确失败而非资格待澄清。各第5行是报价自述的质量档位，不是履约鉴定；甲乙4分、丙5分均对应冻结量表，不能用低价或高分抵消丙的必备失败。",
+    "CNY/24个月且数量均1，依据甲、乙、丙原文各第3—4行：甲1000×1×1＋200×1×24＝5800；乙2000×1×1＋100×1×24＝4400；丙500×1×1＋50×1×24＝1700。案例结构与三份原文的金额、数量、次数一致；未列项目不推定存在或为零。",
+    "本次case_sha256来自安装版1.0.1 inspect实测；格式、算术及引文校验不能证明供应商报价真实、成员身份、真正盲审、采购合法或人工验收。"
+  ],
+  "issues": []
+}

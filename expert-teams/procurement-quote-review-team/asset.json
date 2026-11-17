@@ -1,0 +1,22 @@
+{
+  "type": "agent-group",
+  "name": "procurement-quote-review-team",
+  "version": "1.0.1",
+  "display_name": "采购报价比选复核专家团",
+  "description": "对2–4份本地报价分别核对技术符合性、声明总成本与原文证据，经独立复核后交付中文比选档案和待澄清事项",
+  "publisher": "Cai Zhenze",
+  "category": "productivity",
+  "tags": [
+    "采购比选",
+    "报价复核",
+    "证据追溯"
+  ],
+  "members": [
+    "leader",
+    "technical",
+    "commercial",
+    "verifier"
+  ],
+  "candidate_id": null,
+  "task_id": "AH-20261116-procurement-quote-review-team"
+}

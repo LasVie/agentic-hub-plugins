@@ -1,0 +1,13 @@
+{
+  "mode": "native",
+  "permission_status": "not-applicable-original-implementation",
+  "sources": [
+    {"url": "https://thedocs.worldbank.org/en/doc/9dcb7971706bf29b2732779c39922b77-0290012025/original/Evaluating-Bids-and-Proposals-with-Rated-Criteria-Feb-4-2025.pdf", "version": "February 2025, third edition", "use": "Public workflow concepts only; no copied text, tables, forms or data"},
+    {"url": "https://arxiv.org/abs/2602.18710v2", "version": "v2, 2026-03-11", "use": "Independent analysis/auditing research reference only; no copied materials"}
+  ],
+  "reused_paths": [],
+  "bundled_third_party_files": [],
+  "runtime_dependencies": [{"name": "WorkSwarm AgentGroup/AgentTemplate and existing model/file/shell tools", "bundled": false}, {"name": "Python >=3.10 standard library", "bundled": false}],
+  "audit_file": "SOURCE_REVIEW.md",
+  "design_file": "NATIVE_DESIGN.md"
+}

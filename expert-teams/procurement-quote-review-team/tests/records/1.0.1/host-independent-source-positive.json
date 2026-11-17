@@ -1,0 +1,133 @@
+{
+  "model": "scripted local fixture; no reasoning-quality claim",
+  "url": "http://127.0.0.1:6515/",
+  "frontend_http": 200,
+  "native_zip_sha256": "b6292e0650856a100bb9dd82713a5f683ac64f33c1a3cdd3ad1e7622de35638a",
+  "session_id": "web_1a1e88e2522_ce2220a07d30",
+  "event_count": 262,
+  "delivery_exists": true,
+  "member_execution": {
+    "technical": {
+      "actual_skill_loaded": true,
+      "actual_shell_exit": 0,
+      "actual_task_status": "completed",
+      "judgment_source": "fixed synthetic fixture"
+    },
+    "commercial": {
+      "actual_skill_loaded": true,
+      "actual_shell_exit": 0,
+      "actual_task_status": "completed",
+      "judgment_source": "fixed synthetic fixture"
+    },
+    "verifier": {
+      "actual_skill_loaded": true,
+      "actual_shell_exit": 0,
+      "actual_task_status": "completed",
+      "judgment_source": "fixed synthetic fixture"
+    }
+  },
+  "human_testing_passed": false,
+  "host_revision": "fa91394e42a7af731424222db82b02351e694de9",
+  "actual_group": {
+    "id": "procurement-quote-review-team",
+    "source": "local",
+    "version": "1.0.1",
+    "leader_id": "leader",
+    "member_ids": [
+      "leader",
+      "technical",
+      "commercial",
+      "verifier"
+    ]
+  },
+  "actual_tool_counts": {
+    "leader": {
+      "skill_tool": 1,
+      "build_team": 1,
+      "bash": 1,
+      "create_task": 1
+    },
+    "technical": {
+      "skill_tool": 1,
+      "claim_task": 2,
+      "bash": 1
+    },
+    "commercial": {
+      "skill_tool": 1,
+      "claim_task": 2,
+      "bash": 1
+    },
+    "verifier": {
+      "skill_tool": 2,
+      "claim_task": 4,
+      "bash": 2
+    }
+  },
+  "model_endpoint": "http://127.0.0.1:6516/v1",
+  "case_sha256": "5403d27cda57fdb0d235f3489ef409f1ae388d755f31edad0ef27850e5ca362d",
+  "delivery_status": "reviewed",
+  "delivery_files": [
+    "comparison.html",
+    "compliance.csv",
+    "costs.csv",
+    "evaluation.json",
+    "review.md",
+    "inputs",
+    "artifact.json"
+  ],
+  "scenario": "excluded-uncertainty",
+  "scoped_report_checks": {
+    "notes_preserved": true,
+    "c_quality_still_unknown": true,
+    "actual_upstream_handoff": true,
+    "warning_retained": true,
+    "ranked_offer_ids": [
+      "B",
+      "A"
+    ],
+    "eligibility": [
+      {
+        "offer_id": "A",
+        "status": "eligible",
+        "reasons": [
+          "技术与复核对全部必备要求均明确通过，未报告报价资格问题。"
+        ],
+        "exclusion_criteria": []
+      },
+      {
+        "offer_id": "B",
+        "status": "eligible",
+        "reasons": [
+          "技术与复核对全部必备要求均明确通过，未报告报价资格问题。"
+        ],
+        "exclusion_criteria": []
+      },
+      {
+        "offer_id": "C",
+        "status": "excluded",
+        "reasons": [
+          "必备要求delivery经技术与复核双方明确判定不符合：合成夹具：逐字核对交货天数；丙质量保留人工运行中的未知，不补写基础档位证据。；独立复核：合成夹具：逐字核对交货天数；丙质量保留人工运行中的未知，不补写基础档位证据。"
+        ],
+        "exclusion_criteria": [
+          "delivery"
+        ]
+      }
+    ],
+    "html_csv_markdown_consistent": true
+  },
+  "independent_review_stages": {
+    "no_upstream_before_first_record": true,
+    "actual_independent_task_completed": true,
+    "review_depends_on_three_prior_tasks": true,
+    "leader_delivered_after_final_review": true,
+    "independent_note": [
+      "夹具独立记录：仅依据原始来源形成，尚未读取技术或商务初稿。"
+    ],
+    "actual_prior_files_sha256": {
+      "verifier-independent": "4478077631b26f0cf71828a5b8e5cc89d45f39e566e9911c55dd4fe3330356b8",
+      "technical": "8ac2c2cd233c93d3fdca55b59f2ebcb59e83df7b662e687cd9c8cb4ac1f01131",
+      "commercial": "390c918f83f3d13a7f5ed2f2eed15658d1013a947f4f671dac1d3eec78db9f06"
+    }
+  },
+  "evidence_boundary": "Real host import, delegation and tool execution; all judgments are fixed synthetic fixtures, not independent model reasoning or human acceptance."
+}

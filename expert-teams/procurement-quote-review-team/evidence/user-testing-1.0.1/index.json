@@ -1,0 +1,70 @@
+{
+  "task_id": "AH-20261116-procurement-quote-review-team",
+  "owner": "Cai Zhenze",
+  "display_name": "采购报价比选复核专家团",
+  "version": "1.0.1",
+  "native_zip_sha256": "b6292e0650856a100bb9dd82713a5f683ac64f33c1a3cdd3ad1e7622de35638a",
+  "canonical_zip_sha256": "32adc9970b6c6095983c6cd9134a624714d9847c6f3027b961fb619ee429df39",
+  "user_confirmation": "I confirm manual testing of 采购报价比选复核专家团 v1.0.1 is complete and passed. Use my attached original screenshots and proceed to Phase 3 under the latest AGENTS.md.",
+  "confirmation_source": "Current Codex conversation, 2026-11-17 Asia/Singapore; no message permalink or exact timestamp exposed",
+  "recorded_at": "2026-11-17T16:51:53+08:00",
+  "screenshots": [
+    {
+      "filename": "Screenshot 2026-11-17 at 4.46.52 PM.png",
+      "path": "evidence/user-testing-1.0.1/originals/Screenshot 2026-11-17 at 4.46.52 PM.png",
+      "source": "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/TemporaryItems/NSIRD_screencaptureui_ADToWY/Screenshot 2026-11-17 at 4.46.52 PM.png",
+      "bytes": 1061459,
+      "width": 3450,
+      "height": 1982,
+      "sha256": "1a75dcbfb1e1ddb95930332814b683532c33a44610eec7e07038681b42795ed7",
+      "caption": "Team member tool activity and v1.0.1 preflight"
+    },
+    {
+      "filename": "Screenshot 2026-11-17 at 4.47.05 PM.png",
+      "path": "evidence/user-testing-1.0.1/originals/Screenshot 2026-11-17 at 4.47.05 PM.png",
+      "source": "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/TemporaryItems/NSIRD_screencaptureui_u5Rk1q/Screenshot 2026-11-17 at 4.47.05 PM.png",
+      "bytes": 707497,
+      "width": 3454,
+      "height": 1978,
+      "sha256": "2a0567eeabf51fe8e89bf05744b75f3099150a85a6b57a5d10d02f1a2e79aedf",
+      "caption": "Actual task handoffs and delivered files"
+    },
+    {
+      "filename": "Screenshot 2026-11-17 at 4.47.16 PM.png",
+      "path": "evidence/user-testing-1.0.1/originals/Screenshot 2026-11-17 at 4.47.16 PM.png",
+      "source": "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/TemporaryItems/NSIRD_screencaptureui_zlqlz6/Screenshot 2026-11-17 at 4.47.16 PM.png",
+      "bytes": 675407,
+      "width": 3454,
+      "height": 1986,
+      "sha256": "6d72f97f94c214a2223edffe176e874e4b9d61b8a7397595eaeaf84788085ca0",
+      "caption": "Completed tasks and B/A ranking with C excluded"
+    },
+    {
+      "filename": "Screenshot 2026-11-17 at 4.47.28 PM.png",
+      "path": "evidence/user-testing-1.0.1/originals/Screenshot 2026-11-17 at 4.47.28 PM.png",
+      "source": "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/TemporaryItems/NSIRD_screencaptureui_PnKNa9/Screenshot 2026-11-17 at 4.47.28 PM.png",
+      "bytes": 441314,
+      "width": 762,
+      "height": 1822,
+      "sha256": "d16008338d126af5abf211d1811ccaaae405e33509103b210dcb1db8085434aa",
+      "caption": "Rendered Chinese v1.0.1 report; this run scored C quality 5, with no unknown-quality warning"
+    }
+  ],
+  "manual_result": {
+    "status": "reviewed",
+    "ranked_offer_ids": [
+      "B",
+      "A"
+    ],
+    "scores": [
+      "88.0",
+      "78.3448275862068965517241379310344827586206896551724137931034"
+    ],
+    "C_eligibility": "excluded",
+    "C_delivery_days": 30,
+    "mandatory_max_days": 14,
+    "C_quality_in_this_run": 5,
+    "warnings": []
+  },
+  "evidence_boundary": "User explicit confirmation establishes pass. Screenshots and saved outputs corroborate version, task activity, original-case ranking and rendered report. They do not independently prove semantic correctness, true blind review or the unknown-quality/eligible-B negative scenario; those remain separate deterministic regression evidence. No real model calls performed by delivery agent."
+}

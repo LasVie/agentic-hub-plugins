@@ -1,0 +1,8 @@
+{
+  "package_type": "agent_template",
+  "name": "verifier",
+  "description": "先从原始案例独立形成判断和复算记录，再审阅技术与商务初稿，明确错误、分歧与未知。",
+  "display_name": {"zh": "独立证据复核员", "en": "Independent Verifier"},
+  "display_description": {"zh": "复查原文、语义支持、成本与跨报告一致性", "en": "Independently check source support, costs and report agreement"},
+  "persona": {"dir": "persona"}
+}

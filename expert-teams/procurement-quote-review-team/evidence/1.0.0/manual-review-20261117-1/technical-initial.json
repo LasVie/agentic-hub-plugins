@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "role": "technical",
+  "case_sha256": "5403d27cda57fdb0d235f3489ef409f1ae388d755f31edad0ef27850e5ca362d",
+  "assessments": [
+    {
+      "offer_id": "A",
+      "criterion_id": "delivery",
+      "status": "pass",
+      "score": null,
+      "evidence": [{"source_id": "a", "line": 2, "quote": "交货期：10 天；保修：24 个月。"}],
+      "rationale": "甲报价明确交货期为10天，低于必备上限14天；此项不计分。"
+    },
+    {
+      "offer_id": "A",
+      "criterion_id": "quality",
+      "status": "pass",
+      "score": "4",
+      "evidence": [{"source_id": "a", "line": 5, "quote": "技术质量等级：满足全部所列标准并提供培训。"}],
+      "rationale": "甲报价逐字声明满足全部所列标准并提供培训，对应案例唯一明确的4分档；没有定制培训和两次现场演练的证据，不评5分。"
+    },
+    {
+      "offer_id": "B",
+      "criterion_id": "delivery",
+      "status": "pass",
+      "score": null,
+      "evidence": [{"source_id": "b", "line": 2, "quote": "交货期：12 天；保修：24 个月。"}],
+      "rationale": "乙报价明确交货期为12天，低于必备上限14天；此项不计分。"
+    },
+    {
+      "offer_id": "B",
+      "criterion_id": "quality",
+      "status": "pass",
+      "score": "4",
+      "evidence": [{"source_id": "b", "line": 5, "quote": "技术质量等级：满足全部所列标准并提供培训。"}],
+      "rationale": "乙报价逐字声明满足全部所列标准并提供培训，对应案例4分档；没有额外定制培训和两次现场演练的证据，不评5分。"
+    },
+    {
+      "offer_id": "C",
+      "criterion_id": "delivery",
+      "status": "fail",
+      "score": null,
+      "evidence": [{"source_id": "c", "line": 2, "quote": "交货期：30 天；保修：36 个月。"}],
+      "rationale": "丙报价明确交货期30天，超过必备上限14天，属于明确不满足；不得以其低价或更长保修抵消。"
+    },
+    {
+      "offer_id": "C",
+      "criterion_id": "quality",
+      "status": "unknown",
+      "score": null,
+      "evidence": [{"source_id": "c", "line": 5, "quote": "技术质量等级：额外提供定制培训与两次现场演练。"}],
+      "rationale": "丙报价仅直接声明额外提供定制培训与两次现场演练，虽与5分档的增量措辞相符，但未直接声明满足全部所列标准并提供基础培训。无法仅凭‘额外’一词确认其具备4分档基础，故无法确认4分或5分，不自行补档，待澄清。"
+    }
+  ],
+  "issues": [
+    "丙报价交货期30天，超过必备14天，技术不合格，不得参加合格报价排名。",
+    "丙报价质量等级仅明确额外提供定制培训与两次现场演练，没有直接证明满足全部所列标准并提供基础培训；请澄清其是否具备4分档基础，澄清前质量项保持unknown。"
+  ]
+}

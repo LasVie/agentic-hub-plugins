@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-17",
+  "version": "1.0.1",
+  "native_sha256": "b6292e0650856a100bb9dd82713a5f683ac64f33c1a3cdd3ad1e7622de35638a",
+  "payload_files": 16,
+  "tests_run": 51,
+  "unit_success": true,
+  "explicit_adaptation_not_model_run": true,
+  "original_case_sha256": "5403d27cda57fdb0d235f3489ef409f1ae388d755f31edad0ef27850e5ca362d",
+  "actual_status": "reviewed",
+  "actual_rankings": [
+    {
+      "offer_id": "B",
+      "technical_score": "80.0",
+      "total": "4400",
+      "combined_score": "88.0",
+      "rank": 1
+    },
+    {
+      "offer_id": "A",
+      "technical_score": "80.0",
+      "total": "5800",
+      "combined_score": "78.3448275862068965517241379310344827586206896551724137931034",
+      "rank": 2
+    }
+  ],
+  "actual_excluded": [
+    {
+      "offer_id": "C",
+      "status": "excluded",
+      "reasons": [
+        "必备要求delivery经技术与复核双方明确判定不符合：丙报价明确交货期30天，超过必备上限14天，属于明确不满足；不得以其低价或更长保修抵消。；独立复核：30 天超过 14 天必备上限，是强制不符合；36 个月保修和低报价均不能抵消。与技术初稿及独立初评一致。"
+      ],
+      "exclusion_criteria": [
+        "delivery"
+      ]
+    }
+  ],
+  "warnings": [
+    "技术：丙报价质量等级仅明确额外提供定制培训与两次现场演练，没有直接证明满足全部所列标准并提供基础培训；请澄清其是否具备4分档基础，澄清前质量项保持unknown。（报价已明确排除，保留记录，不影响其余合格报价排名）",
+    "复核：保留待澄清未知：丙报价 c 第 5 行只承诺额外定制培训与两次现场演练，不足以证明基础的全部所列标准和培训；请用户确认有无可核对原文证据支持 4/5 分档。旧/新均为 unknown/null，不能为了取得一致性而改为 5 分；即使质量澄清，交期不合格仍成立。（报价已明确排除，保留记录，不影响其余合格报价排名）",
+    "逐项核对：报价C要求quality尚未核实，未补写评分。（报价已明确排除，保留记录，不影响其余合格报价排名）"
+  ],
+  "notes_count": 5,
+  "blocking_conflicts": [],
+  "blocking_clarifications": [],
+  "human_testing_passed": false,
+  "unit_output": "...................................................\n----------------------------------------------------------------------\nRan 51 tests in 0.460s\n\nOK\n"
+}

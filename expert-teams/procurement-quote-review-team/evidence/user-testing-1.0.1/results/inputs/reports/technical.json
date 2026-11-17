@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "role": "technical",
+  "case_sha256": "5403d27cda57fdb0d235f3489ef409f1ae388d755f31edad0ef27850e5ca362d",
+  "assessments": [
+    {
+      "offer_id": "A",
+      "criterion_id": "delivery",
+      "status": "pass",
+      "score": null,
+      "evidence": [{"source_id": "a", "line": 2, "quote": "交货期：10 天；保修：24 个月。"}],
+      "rationale": "报价甲明确写交货期 10 天，小于必备期限 14 天，按报价原文满足交期要求。"
+    },
+    {
+      "offer_id": "A",
+      "criterion_id": "quality",
+      "status": "pass",
+      "score": "4",
+      "evidence": [{"source_id": "a", "line": 5, "quote": "技术质量等级：满足全部所列标准并提供培训。"}],
+      "rationale": "报价甲逐字声明满足全部所列标准并提供培训，符合明确量表的 4 分档；没有定制培训和两次现场演练的证据，不能评 5 分。"
+    },
+    {
+      "offer_id": "B",
+      "criterion_id": "delivery",
+      "status": "pass",
+      "score": null,
+      "evidence": [{"source_id": "b", "line": 2, "quote": "交货期：12 天；保修：24 个月。"}],
+      "rationale": "报价乙明确写交货期 12 天，小于必备期限 14 天，按报价原文满足交期要求。"
+    },
+    {
+      "offer_id": "B",
+      "criterion_id": "quality",
+      "status": "pass",
+      "score": "4",
+      "evidence": [{"source_id": "b", "line": 5, "quote": "技术质量等级：满足全部所列标准并提供培训。"}],
+      "rationale": "报价乙逐字声明满足全部所列标准并提供培训，符合明确量表的 4 分档；没有定制培训和两次现场演练的证据，不能评 5 分。"
+    },
+    {
+      "offer_id": "C",
+      "criterion_id": "delivery",
+      "status": "fail",
+      "score": null,
+      "evidence": [{"source_id": "c", "line": 2, "quote": "交货期：30 天；保修：36 个月。"}],
+      "rationale": "报价丙明确写交货期 30 天，超过必备期限 14 天，属于已知不符合；低价、较长保修或质量得分不能抵消。"
+    },
+    {
+      "offer_id": "C",
+      "criterion_id": "quality",
+      "status": "pass",
+      "score": "5",
+      "evidence": [{"source_id": "c", "line": 5, "quote": "技术质量等级：额外提供定制培训与两次现场演练。"}],
+      "rationale": "报价丙的技术质量等级逐字声明额外提供定制培训与两次现场演练，对应案例明确量表的 5 分档；这是报价原文声称的档位，不构成外部履约证明，也不能改变其交期不符合。"
+    }
+  ],
+  "notes": [
+    "依据本次实际 inspect 返回的版本 1.0.1 与案例摘要，独立逐项核对三份报价原文；交期必备条件以 14 天为上限判定，10 天与 12 天通过，30 天已知不符合。",
+    "报价丙的 5 分仅反映其原文声称的额外定制培训及两次现场演练；本次不进行供应商实际履约或认证核验。"
+  ],
+  "issues": []
+}

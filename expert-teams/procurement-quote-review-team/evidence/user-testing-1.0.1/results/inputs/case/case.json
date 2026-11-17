@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "title": "两年设备服务采购比选（合成案例）",
+  "currency": "CNY",
+  "horizon_months": 24,
+  "ranking_method": "weighted-min-cost-v1",
+  "technical_weight": "60",
+  "cost_weight": "40",
+  "criteria": [
+    {
+      "id": "delivery",
+      "text": "必须在 14 天以内交货",
+      "mandatory": true,
+      "weight": "0",
+      "max_score": "1"
+    },
+    {
+      "id": "quality",
+      "text": "仅按本量表评分：满足全部所列标准并提供培训为 4 分；额外提供定制培训与两次现场演练为 5 分。无法确认任一等级时标为 unknown 并澄清，不自行补充其他档位。",
+      "mandatory": false,
+      "weight": "100",
+      "max_score": "5"
+    }
+  ],
+  "sources": [
+    {
+      "id": "a",
+      "path": "报价甲.md"
+    },
+    {
+      "id": "b",
+      "path": "报价乙.md"
+    },
+    {
+      "id": "c",
+      "path": "报价丙.md"
+    }
+  ],
+  "offers": [
+    {
+      "id": "A",
+      "name": "甲供应商",
+      "source_ids": [
+        "a"
+      ],
+      "currency": "CNY",
+      "costs": [
+        {
+          "id": "installation",
+          "description": "一次性安装费",
+          "amount": "1000",
+          "quantity": "1",
+          "occurrences": 1,
+          "evidence": {
+            "source_id": "a",
+            "line": 3,
+            "quote": "一次性安装费：1000 CNY，数量 1，收取 1 次。"
+          }
+        },
+        {
+          "id": "service",
+          "description": "月服务费",
+          "amount": "200",
+          "quantity": "1",
+          "occurrences": 24,
+          "evidence": {
+            "source_id": "a",
+            "line": 4,
+            "quote": "月服务费：200 CNY，数量 1，收取 24 次。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "name": "乙供应商",
+      "source_ids": [
+        "b"
+      ],
+      "currency": "CNY",
+      "costs": [
+        {
+          "id": "installation",
+          "description": "一次性安装费",
+          "amount": "2000",
+          "quantity": "1",
+          "occurrences": 1,
+          "evidence": {
+            "source_id": "b",
+            "line": 3,
+            "quote": "一次性安装费：2000 CNY，数量 1，收取 1 次。"
+          }
+        },
+        {
+          "id": "service",
+          "description": "月服务费",
+          "amount": "100",
+          "quantity": "1",
+          "occurrences": 24,
+          "evidence": {
+            "source_id": "b",
+            "line": 4,
+            "quote": "月服务费：100 CNY，数量 1，收取 24 次。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "name": "丙供应商",
+      "source_ids": [
+        "c"
+      ],
+      "currency": "CNY",
+      "costs": [
+        {
+          "id": "installation",
+          "description": "一次性安装费",
+          "amount": "500",
+          "quantity": "1",
+          "occurrences": 1,
+          "evidence": {
+            "source_id": "c",
+            "line": 3,
+            "quote": "一次性安装费：500 CNY，数量 1，收取 1 次。"
+          }
+        },
+        {
+          "id": "service",
+          "description": "月服务费",
+          "amount": "50",
+          "quantity": "1",
+          "occurrences": 24,
+          "evidence": {
+            "source_id": "c",
+            "line": 4,
+            "quote": "月服务费：50 CNY，数量 1，收取 24 次。"
+          }
+        }
+      ]
+    }
+  ]
+}
