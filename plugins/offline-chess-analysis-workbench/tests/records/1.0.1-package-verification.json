@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-16",
+  "version": "1.0.1",
+  "display_name": "离线国际象棋分析工作台",
+  "native_zip": "plugins/offline-chess-analysis-workbench/test-packages/offline-chess-analysis-workbench-1.0.1-workswarm.zip",
+  "native_sha256": "e8baa13cb6eaead5702f122bb861dd5280b10dc1137150e52af759bf0ffc79f7",
+  "canonical_zip": "releases/agent-plugin/offline-chess-analysis-workbench/1.0.1/offline-chess-analysis-workbench-1.0.1.zip",
+  "canonical_sha256": "581bf7dccb464218a48a6a5d3ebfcd7c3386ef3685aa7a03a65b8e580daea513",
+  "payload_file_count": 209,
+  "source_native_canonical_extracted_equal": true,
+  "added_payload_paths": [
+    "licenses/peggy/AUTHORS",
+    "licenses/peggy/LICENSE"
+  ],
+  "changed_payload_paths": [
+    "README.md",
+    "THIRD_PARTY_NOTICES.md",
+    "manifest.json",
+    "tools/runtime.py",
+    "tools/server.py",
+    "web/app.js",
+    "web/index.html"
+  ],
+  "non_notice_changes_are_version_only": true,
+  "all_vendor_and_corresponding_source_bytes_unchanged": true,
+  "license_evidence_hashes_verified": 22,
+  "utf8_text_files_read": 50,
+  "extracted_directory": "/private/tmp/chess-101-extracted-124qz9m_/offline-chess-analysis-workbench",
+  "original_100_native_sha256": "fe3e1aa5c2c9146c073d84e6f82084bb2073f8a092def5a825033f6a4b4c6d3a",
+  "checker_source": "https://github.com/openJiuwen-ai/skillhub/blob/c8ee4ef44be0453470114aa5a19f4e1017462907/marketplace/plugins_market/validation/content_security.py",
+  "checker_sha256": "0f31ef77c71d628b4c59e58b337fd5eb015a90c5d9d70d4366cfb005bb51e409",
+  "static_security_results": [
+    {
+      "zip": "plugins/offline-chess-analysis-workbench/test-packages/offline-chess-analysis-workbench-1.0.1-workswarm.zip",
+      "sha256": "e8baa13cb6eaead5702f122bb861dd5280b10dc1137150e52af759bf0ffc79f7",
+      "script_files_scanned": 78,
+      "hits": []
+    },
+    {
+      "zip": "releases/agent-plugin/offline-chess-analysis-workbench/1.0.1/offline-chess-analysis-workbench-1.0.1.zip",
+      "sha256": "581bf7dccb464218a48a6a5d3ebfcd7c3386ef3685aa7a03a65b8e580daea513",
+      "script_files_scanned": 78,
+      "hits": []
+    }
+  ],
+  "user_testing": "Pending for new1.0.1 ZIP;1.0.0 pass retained separately."
+}

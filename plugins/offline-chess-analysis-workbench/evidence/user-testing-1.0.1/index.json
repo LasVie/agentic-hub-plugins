@@ -1,0 +1,88 @@
+{
+  "task_id": "AH-20261113-offline-chess-analysis-workbench",
+  "candidate_id": "CAND-EXT-015",
+  "owner": "Cai Zhenze",
+  "display_name": "离线国际象棋分析工作台",
+  "version": "1.0.1",
+  "received_date": "2026-11-17",
+  "timezone": "Asia/Singapore",
+  "source": "Current Codex conversation; user explicitly supplied these as original screenshots and requested GitHub delivery",
+  "native_zip_sha256": "e8baa13cb6eaead5702f122bb861dd5280b10dc1137150e52af759bf0ffc79f7",
+  "canonical_zip_sha256": "581bf7dccb464218a48a6a5d3ebfcd7c3386ef3685aa7a03a65b8e580daea513",
+  "transformation": "None; byte-for-byte copies of supplied original full-resolution PNGs.",
+  "applicability": "Current1.0.1 user testing; explicit overall pass comes from user confirmation, not inferred from screenshots. Individual files do not independently demonstrate every acceptance case.",
+  "files": [
+    {
+      "original_path": "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/TemporaryItems/NSIRD_screencaptureui_Uw7Wzg/Screenshot 2026-11-17 at 11.45.59 AM.png",
+      "filename": "Screenshot 2026-11-17 at 11.45.59 AM.png",
+      "bytes": 427497,
+      "dimensions": [
+        1734,
+        1900
+      ],
+      "sha256": "7f525e6dc1a5c6d37b87b872ea92faa91f9a994aa9c560b37e78c2641430bd5a",
+      "observed_content": "Initial standard position, actual3s engine search and3principal variations",
+      "privacy_review": "No credential, secret or private document content observed; user-provided local workspace path only in tool screenshot."
+    },
+    {
+      "original_path": "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/TemporaryItems/NSIRD_screencaptureui_CA8qJw/Screenshot 2026-11-17 at 11.46.24 AM.png",
+      "filename": "Screenshot 2026-11-17 at 11.46.24 AM.png",
+      "bytes": 423130,
+      "dimensions": [
+        1716,
+        1864
+      ],
+      "sha256": "182c12d9328a51575b35d1ee9ef924ec21a711e6fd87596917c4849e60485a07",
+      "observed_content": "Edited legal opening position and actual engine result c4",
+      "privacy_review": "No credential, secret or private document content observed; user-provided local workspace path only in tool screenshot."
+    },
+    {
+      "original_path": "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/TemporaryItems/NSIRD_screencaptureui_S7hjCG/Screenshot 2026-11-17 at 11.46.31 AM.png",
+      "filename": "Screenshot 2026-11-17 at 11.46.31 AM.png",
+      "bytes": 193297,
+      "dimensions": [
+        848,
+        870
+      ],
+      "sha256": "c2792f6de4de61a3a8eb931cce14e2bcf950707c75b794b461f508a6f7cdf52c",
+      "observed_content": "Actual WorkSwarm status/start/start/status all1.0.1; safe reuse, consistent tool-returned URL",
+      "privacy_review": "No credential, secret or private document content observed; user-provided local workspace path only in tool screenshot."
+    },
+    {
+      "original_path": "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/TemporaryItems/NSIRD_screencaptureui_pr32Yk/Screenshot 2026-11-17 at 11.46.46 AM.png",
+      "filename": "Screenshot 2026-11-17 at 11.46.46 AM.png",
+      "bytes": 370463,
+      "dimensions": [
+        1736,
+        1852
+      ],
+      "sha256": "8de0b862f6d1f3f38d43701c76d5a06135aecba99c84c0b309ec60d678654635",
+      "observed_content": "Mate-in-one Qg7# and3legal principal variations",
+      "privacy_review": "No credential, secret or private document content observed; user-provided local workspace path only in tool screenshot."
+    },
+    {
+      "original_path": "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/TemporaryItems/NSIRD_screencaptureui_J9bzt6/Screenshot 2026-11-17 at 11.47.29 AM.png",
+      "filename": "Screenshot 2026-11-17 at 11.47.29 AM.png",
+      "bytes": 450018,
+      "dimensions": [
+        1802,
+        1934
+      ],
+      "sha256": "a9bf8764d9bf80cf214eef820848d3ab5c8ab6da0e7ddf3a241849e4186270a6",
+      "observed_content": "Further interactive edited position and actual Qxd5 result",
+      "privacy_review": "No credential, secret or private document content observed; user-provided local workspace path only in tool screenshot."
+    },
+    {
+      "original_path": "/var/folders/y3/vlg10z196_z8w40sf19w6j480000gp/T/TemporaryItems/NSIRD_screencaptureui_wlj5PA/Screenshot 2026-11-17 at 11.48.04 AM.png",
+      "filename": "Screenshot 2026-11-17 at 11.48.04 AM.png",
+      "bytes": 426298,
+      "dimensions": [
+        1726,
+        1864
+      ],
+      "sha256": "185a02ef2aff20e6628e343333cbfd7605692b5d6a254511faa97d6dce96f43d",
+      "observed_content": "Promotion capture visible on c8 and black mate-in-one Rxd1# analysis",
+      "privacy_review": "No credential, secret or private document content observed; user-provided local workspace path only in tool screenshot."
+    }
+  ]
+}

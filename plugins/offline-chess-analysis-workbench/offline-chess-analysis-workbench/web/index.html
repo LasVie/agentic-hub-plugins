@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>离线国际象棋分析工作台</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="masthead">
+  <div class="brand"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M20 5h8v8h7v7h-7v7h8l-4 11H16l-4-11h8v-7h-7v-7h7zM13 42h22"/></svg><div><p class="eyebrow">本地计算 · 国际象棋</p><h1>离线国际象棋分析工作台</h1></div></div>
+  <div class="versions"><span class="badge"><i></i> 离线引擎</span><p>插件 1.0.1 · Stockfish.js 19.0.1</p></div>
+  <p class="intro">摆一个局面，计算一条思路。逐步回放引擎着法，核对每一步。</p>
+</header>
+<main>
+<section class="panel input-panel" aria-labelledby="input-title">
+  <h2 id="input-title"><span>01</span> 定义局面</h2>
+  <div class="actions"><button id="initial" type="button">初始局面</button><button id="mate-example" type="button">一步将死示例</button><button id="pgn-example" type="button">PGN 示例</button></div>
+  <div class="mode-tabs" role="group" aria-label="输入类型"><button id="fen-mode" type="button" aria-pressed="true">FEN 局面</button><button id="pgn-mode" type="button" aria-pressed="false">PGN 主线</button></div>
+  <div id="fen-field"><label for="fen">FEN 原文 <span>完整六个字段</span></label><textarea id="fen" rows="4" spellcheck="false" maxlength="256"></textarea></div>
+  <div id="pgn-field" hidden><label for="pgn">PGN 原文 <span>标准 SAN · 单局主线</span></label><textarea id="pgn" rows="7" spellcheck="false" maxlength="65536"></textarea><label class="file-button">导入 .pgn 文件<input id="pgn-file" type="file" accept=".pgn,text/plain" aria-label="导入 PGN 文件"></label></div>
+  <button id="load" type="button" class="secondary">载入并检查局面 <span aria-hidden="true">↗</span></button>
+  <p class="hint">FEN 最多 256 字符；PGN 最多 64 KiB、512 个半回合，仅处理主线。只支持标准国际象棋；不证明局面的历史可达性。</p>
+  <div class="subhead">有限搜索 <span>单线程 · Hash 32 MiB</span></div>
+  <div class="field-grid"><div><label for="seconds">搜索时长（秒）</label><input id="seconds" type="number" min="1" max="10" step="1" value="3"></div><div><label for="multipv">候选线数量</label><select id="multipv"><option value="1">1 条</option><option value="2">2 条</option><option value="3" selected>3 条</option></select></div></div>
+  <button id="analyze" type="button" class="primary">运行引擎分析 <span aria-hidden="true">→</span></button>
+  <button id="cancel" type="button" disabled>取消搜索</button>
+  <p id="message" class="message" role="status" aria-live="polite">初始局面已准备；可在棋盘落子或运行分析。</p>
+  <p class="hint bounds">完全本地。每次分析均启动独立工作线程，完成后释放；不读取账户，不连接在线引擎、开局库或残局库。输入或搜索设置变化后，旧结果与导出立即失效。</p>
+</section>
+<div class="output-column">
+  <section class="panel board-panel" aria-labelledby="board-title">
+    <div class="panel-heading"><h2 id="board-title"><span>02</span> 局面与回放</h2><span id="state" class="state">尚未分析</span></div>
+    <div class="board-toolbar"><strong id="position-status">白方行棋</strong><div class="actions"><button id="undo" type="button" disabled>撤回一手</button><button id="flip" type="button">翻转棋盘</button></div></div>
+    <div class="board-layout"><div class="board-frame"><div id="rank-labels" class="rank-labels" aria-hidden="true"></div><div id="board" class="board" role="group" aria-label="国际象棋棋盘"></div><div id="file-labels" class="file-labels" aria-hidden="true"></div></div><aside class="board-note"><p class="eyebrow">如何操作</p><h3>点选棋子，再点目标格</h3><p>圆点标记合法目标。升变时可选择后、车、象或马。</p><label for="promotion">兵升变为</label><select id="promotion"><option value="q">后</option><option value="r">车</option><option value="b">象</option><option value="n">马</option></select><div class="rule-note">点击棋盘会改变分析局面。主变化回放只预览，不自动落子。</div><p id="history" class="history">尚无棋谱着法</p></aside></div>
+    <div id="replay" class="replay" hidden><div class="actions"><button id="replay-home" type="button">分析起点</button><button id="replay-prev" type="button" disabled>上一步</button><output id="replay-step">0 / 0</output><button id="replay-next" type="button" disabled>下一步</button><button id="use-replay" type="button">以此局面继续</button></div><p id="replay-caption" class="hint">—</p></div>
+  </section>
+  <section class="panel analysis-panel" aria-labelledby="analysis-title">
+    <div class="panel-heading"><h2 id="analysis-title"><span>03</span> 引擎分析</h2><span id="engine-name" class="muted">等待运行</span></div>
+    <div class="metrics"><div><span>最佳候选着法</span><strong id="best-move">—</strong></div><div><span>搜索深度</span><strong id="depth">—</strong></div><div><span>搜索节点数</span><strong id="nodes">—</strong></div><div><span>引擎用时</span><strong id="elapsed">—</strong></div></div>
+    <p id="score-note" class="hint">分值以分析起点的行棋方为视角；正数有利于该方。兵值以 100 厘兵显示。有限搜索不等于最优性或胜负保证。</p>
+    <div id="variations" class="variations"><div class="empty"><svg viewBox="0 0 120 70" aria-hidden="true"><path d="M8 35h34m0 0 22-22h40M42 35l22 22h40"/><circle cx="8" cy="35" r="5"/><circle cx="106" cy="13" r="5"/><circle cx="106" cy="57" r="5"/></svg><strong>等待真实引擎结果</strong><span>候选线会逐手通过规则校验后显示。</span></div></div>
+    <div class="export-row"><div><strong>导出当前分析</strong><p class="hint">FEN / PGN 为分析起点；SVG 为当前棋盘预览；JSON 包含搜索限制与候选线。</p></div><div class="actions"><button id="export-fen" type="button" disabled>导出 FEN</button><button id="export-pgn" type="button" disabled>导出 PGN</button><button id="export-json" type="button" disabled>导出 JSON</button><button id="export-svg" type="button" disabled>导出棋盘 SVG</button></div></div>
+  </section>
+</div>
+</main>
+<footer><strong>使用边界</strong><p>只分析当前标准国际象棋局面；PGN 仅载入单局主线，FEN 不包含重复局面历史。轻量引擎的搜索能力弱于完整 Stockfish。候选线与评分可能随搜索限制变化，有限搜索不保证最优着法或最终胜负。</p><p>Stockfish 19 引擎采用 GPLv3 或后续版本，原始作者署名与完整许可、对应源码均随插件提供；不作任何担保。chess.js 1.4.0 规则库采用 BSD-2-Clause。工作台不使用外部图片或字体。</p></footer>
+<script type="module" src="app.js"></script>
+</body></html>
