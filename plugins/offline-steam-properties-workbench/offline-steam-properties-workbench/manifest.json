@@ -1,0 +1,63 @@
+{
+  "version": "1.0.0",
+  "package_type": "plugin",
+  "id": "offline-steam-properties-workbench",
+  "name": "离线水与蒸汽物性工作台",
+  "description": "离线计算纯水与蒸汽的密度、比焓、比熵、相态和饱和扫描，交互核对并导出真实引擎结果。",
+  "source": "local",
+  "category": "数据与科学研究",
+  "display_name": {
+    "zh": "离线水与蒸汽物性工作台",
+    "en": "离线水与蒸汽物性工作台"
+  },
+  "display_description": {
+    "zh": "离线计算纯水与蒸汽的密度、比焓、比熵、相态和饱和扫描，交互核对并导出真实引擎结果。",
+    "en": "离线计算纯水与蒸汽的密度、比焓、比熵、相态和饱和扫描，交互核对并导出真实引擎结果。"
+  },
+  "tags": [
+    {
+      "zh": "水与蒸汽",
+      "en": "水与蒸汽"
+    },
+    {
+      "zh": "离线物性",
+      "en": "离线物性"
+    },
+    {
+      "zh": "饱和曲线",
+      "en": "饱和曲线"
+    }
+  ],
+  "skills": [
+    {
+      "dir": "skills/water-steam",
+      "mode": "all"
+    }
+  ],
+  "tools": [
+    {
+      "file": "tools/steam_tools.py",
+      "class": "SteamWorkbenchTool",
+      "display_name": {
+        "zh": "水与蒸汽工作台",
+        "en": "水与蒸汽工作台"
+      },
+      "display_description": {
+        "zh": "启动、查询或关闭本机专用物性工作台",
+        "en": "启动、查询或关闭本机专用物性工作台"
+      }
+    },
+    {
+      "file": "tools/steam_tools.py",
+      "class": "CalculateWaterPropertiesTool",
+      "display_name": {
+        "zh": "离线水与蒸汽计算",
+        "en": "离线水与蒸汽计算"
+      },
+      "display_description": {
+        "zh": "使用真实 CoolProp 8.0.0 计算纯水与蒸汽性质",
+        "en": "使用真实 CoolProp 8.0.0 计算纯水与蒸汽性质"
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "steam-properties/v1",
+  "name": "常压饱和水",
+  "state": {
+    "pair": "PQ",
+    "pressure_pa": 101325,
+    "quality": 0
+  },
+  "sweep": {
+    "variable": "pressure_pa",
+    "start": 10000,
+    "end": 2000000,
+    "points": 25
+  }
+}

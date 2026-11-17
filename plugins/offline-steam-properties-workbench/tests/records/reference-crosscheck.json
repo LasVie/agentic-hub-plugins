@@ -1,0 +1,883 @@
+{
+  "record_schema": "steam-reference-crosscheck/v1",
+  "started_utc": "2026-11-16T09:32:20.004816+00:00",
+  "command": [
+    "/private/tmp/main3-steam-20261116/host-028/venv/bin/python",
+    "-I",
+    "-B",
+    "/Users/IDLE_And_R/.codex/worktrees/4dbb/agentic-hub-plugins/plugins/offline-steam-properties-workbench/tests/verify_reference.py",
+    "--payload",
+    "/private/tmp/main3-steam-20261116/tested-41764bfd",
+    "--output",
+    "plugins/offline-steam-properties-workbench/tests/records/reference-crosscheck.json"
+  ],
+  "test_script_sha256": "41d7faf72248933537be0962ae73aae98986f52728e4792742a599d182afe283",
+  "sources": [
+    {
+      "url": "https://coolprop.org/coolprop/HighLevelAPI.html",
+      "sections": [
+        "Versions",
+        "Vapor, Liquid, and Saturation States",
+        "Sample Code"
+      ],
+      "reviewed_date": "2026-11-16",
+      "documented_version": "8.0.0",
+      "documented_gitrevision": "ae81610e7d23efc57f9d051c8e70a4d66e87537f",
+      "use": "Published atmospheric saturation values and public PropsSI interface."
+    },
+    {
+      "url": "https://coolprop.org/fluid_properties/IF97.html",
+      "sections": [
+        "IF97 Backend",
+        "IF97 Water Property Examples"
+      ],
+      "reviewed_date": "2026-11-16",
+      "documented_version": "8.0.0",
+      "use": "Public IF97::Water backend and published IF97 density example."
+    }
+  ],
+  "scope": "Actual plugin HEOS adapter versus alternative IF97 formulation in the same reviewed CoolProp binary; published examples and mathematical invariants.",
+  "limitations": "Not an independent engine, measurement dataset, exhaustive range validation, engineering certification, or user manual test. No new dependencies or host changes.",
+  "passed": true,
+  "environment": {
+    "python_executable": "/private/tmp/main3-steam-20261116/host-028/venv/bin/python",
+    "python_version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "isolated_mode": true,
+    "write_bytecode": false,
+    "numpy_version": "2.4.4",
+    "coolprop_version": "8.0.0",
+    "coolprop_gitrevision": "ae81610e7d23efc57f9d051c8e70a4d66e87537f"
+  },
+  "subject": {
+    "payload": "/private/tmp/main3-steam-20261116/tested-41764bfd",
+    "runtime_sha256_before": {
+      "runtime/engine.py": "564aa9098b0e8decc8affd65f082791a7b9922d5309f355accdd788ef4100226",
+      "runtime/model.py": "1f0786d043a9eb15602dfeddb743e4557186e26e53d54e86599c9685ffe74fa4",
+      "runtime/runtime.py": "33bd860ab7f1d9c1051df392f96ef9c04708412c73e5b887c1e9847e89b5d575",
+      "runtime/server.py": "66ae27f8677f281949648105299b3e578d47e48af71d9f70d0cdb444febde249",
+      "runtime/worker.py": "f9828b6eb55a2d51cac86c039247a58ec7c63e95fa1398fd59cd8609d437f600"
+    },
+    "wheel_filename": "coolprop-8.0.0-cp312-abi3-macosx_11_0_arm64.whl",
+    "wheel_sha256": "46de36f51330ce8c7f8384a7360e1058739d20604736158aac6bd2abf6ae26bd",
+    "native_binary_member": "CoolProp/CoolProp.abi3.so",
+    "native_binary_sha256": "1769af71ee559ad3040f286d991617713e4442d272c56adc2e2a69fd4d33dd8f",
+    "runtime_sha256_after": {
+      "runtime/engine.py": "564aa9098b0e8decc8affd65f082791a7b9922d5309f355accdd788ef4100226",
+      "runtime/model.py": "1f0786d043a9eb15602dfeddb743e4557186e26e53d54e86599c9685ffe74fa4",
+      "runtime/runtime.py": "33bd860ab7f1d9c1051df392f96ef9c04708412c73e5b887c1e9847e89b5d575",
+      "runtime/server.py": "66ae27f8677f281949648105299b3e578d47e48af71d9f70d0cdb444febde249",
+      "runtime/worker.py": "f9828b6eb55a2d51cac86c039247a58ec7c63e95fa1398fd59cd8609d437f600"
+    },
+    "runtime_unchanged": true
+  },
+  "checks": [
+    {
+      "check": "HEOS versus IF97: density_kg_m3",
+      "context": {
+        "pair": "PT",
+        "pressure_pa": 100000,
+        "temperature_k": 300
+      },
+      "actual": 996.5563403888945,
+      "expected": 996.5574824996613,
+      "absolute_error": 0.0011421107668638797,
+      "relative_error": 1.1460560849928372e-06,
+      "relative_tolerance": 0.005,
+      "absolute_tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "HEOS versus IF97: enthalpy_j_kg",
+      "context": {
+        "pair": "PT",
+        "pressure_pa": 100000,
+        "temperature_k": 300
+      },
+      "actual": 112653.67968857854,
+      "expected": 112663.82328242596,
+      "absolute_error": 10.143593847416923,
+      "relative_error": 9.003417025879671e-05,
+      "relative_tolerance": 0.005,
+      "absolute_tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "HEOS versus IF97: entropy_j_kg_k",
+      "context": {
+        "pair": "PT",
+        "pressure_pa": 100000,
+        "temperature_k": 300
+      },
+      "actual": 393.0624338145448,
+      "expected": 393.09704726192973,
+      "absolute_error": 0.03461344738491334,
+      "relative_error": 8.805318591429052e-05,
+      "relative_tolerance": 0.005,
+      "absolute_tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "HEOS versus IF97: density_kg_m3",
+      "context": {
+        "pair": "PT",
+        "pressure_pa": 100000,
+        "temperature_k": 500
+      },
+      "actual": 0.435140075089223,
+      "expected": 0.435130902625995,
+      "absolute_error": 9.172463227957728e-06,
+      "relative_error": 2.1079778918487133e-05,
+      "relative_tolerance": 0.005,
+      "absolute_tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "HEOS versus IF97: enthalpy_j_kg",
+      "context": {
+        "pair": "PT",
+        "pressure_pa": 100000,
+        "temperature_k": 500
+      },
+      "actual": 2928558.4323608237,
+      "expected": 2928585.3328247303,
+      "absolute_error": 26.900463906582445,
+      "relative_error": 9.185480650016074e-06,
+      "relative_tolerance": 0.005,
+      "absolute_tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "HEOS versus IF97: entropy_j_kg_k",
+      "context": {
+        "pair": "PT",
+        "pressure_pa": 100000,
+        "temperature_k": 500
+      },
+      "actual": 7944.73289436465,
+      "expected": 7944.737817669579,
+      "absolute_error": 0.00492330492943438,
+      "relative_error": 6.196938202900354e-07,
+      "relative_tolerance": 0.005,
+      "absolute_tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "HEOS versus IF97: density_kg_m3",
+      "context": {
+        "pair": "PT",
+        "pressure_pa": 5000000,
+        "temperature_k": 500
+      },
+      "actual": 833.5119500464658,
+      "expected": 833.5186810378917,
+      "absolute_error": 0.00673099142591127,
+      "relative_error": 8.075393604291971e-06,
+      "relative_tolerance": 0.005,
+      "absolute_tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "HEOS versus IF97: enthalpy_j_kg",
+      "context": {
+        "pair": "PT",
+        "pressure_pa": 5000000,
+        "temperature_k": 500
+      },
+      "actual": 975953.7684472302,
+      "expected": 975987.3996062026,
+      "absolute_error": 33.63115897239186,
+      "relative_error": 3.44585995536024e-05,
+      "relative_tolerance": 0.005,
+      "absolute_tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "HEOS versus IF97: entropy_j_kg_k",
+      "context": {
+        "pair": "PT",
+        "pressure_pa": 5000000,
+        "temperature_k": 500
+      },
+      "actual": 2576.4192380002537,
+      "expected": 2576.5051586017407,
+      "absolute_error": 0.0859206014870324,
+      "relative_error": 3.334773120875922e-05,
+      "relative_tolerance": 0.005,
+      "absolute_tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "HEOS versus IF97: density_kg_m3",
+      "context": {
+        "pair": "PT",
+        "pressure_pa": 5000000,
+        "temperature_k": 800
+      },
+      "actual": 14.01685100850797,
+      "expected": 14.016882211912076,
+      "absolute_error": 3.120340410589506e-05,
+      "relative_error": 2.2261301503537803e-06,
+      "relative_tolerance": 0.005,
+      "absolute_tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "HEOS versus IF97: enthalpy_j_kg",
+      "context": {
+        "pair": "PT",
+        "pressure_pa": 5000000,
+        "temperature_k": 800
+      },
+      "actual": 3497138.3180574514,
+      "expected": 3496987.2424154915,
+      "absolute_error": 151.07564195990562,
+      "relative_error": 4.3201656593849165e-05,
+      "relative_tolerance": 0.005,
+      "absolute_tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "HEOS versus IF97: entropy_j_kg_k",
+      "context": {
+        "pair": "PT",
+        "pressure_pa": 5000000,
+        "temperature_k": 800
+      },
+      "actual": 7057.529330429707,
+      "expected": 7057.284739524006,
+      "absolute_error": 0.24459090570144326,
+      "relative_error": 3.4657933572046895e-05,
+      "relative_tolerance": 0.005,
+      "absolute_tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "HEOS versus IF97: density_kg_m3",
+      "context": {
+        "pair": "PT",
+        "pressure_pa": 20000000,
+        "temperature_k": 600
+      },
+      "actual": 675.1088955937313,
+      "expected": 675.1180409143392,
+      "absolute_error": 0.00914532060789952,
+      "relative_error": 1.3546254215801506e-05,
+      "relative_tolerance": 0.005,
+      "absolute_tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "HEOS versus IF97: enthalpy_j_kg",
+      "context": {
+        "pair": "PT",
+        "pressure_pa": 20000000,
+        "temperature_k": 600
+      },
+      "actual": 1486414.8567805558,
+      "expected": 1486266.6998901898,
+      "absolute_error": 148.1568903659936,
+      "relative_error": 9.96839197009123e-05,
+      "relative_tolerance": 0.005,
+      "absolute_tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "HEOS versus IF97: entropy_j_kg_k",
+      "context": {
+        "pair": "PT",
+        "pressure_pa": 20000000,
+        "temperature_k": 600
+      },
+      "actual": 3468.21533816678,
+      "expected": 3467.9390392620103,
+      "absolute_error": 0.27629890476964647,
+      "relative_error": 7.96723649526561e-05,
+      "relative_tolerance": 0.005,
+      "absolute_tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "HEOS versus IF97: density_kg_m3",
+      "context": {
+        "pair": "PT",
+        "pressure_pa": 20000000,
+        "temperature_k": 800
+      },
+      "actual": 63.39638281269468,
+      "expected": 63.3980612260932,
+      "absolute_error": 0.001678413398515488,
+      "relative_error": 2.6474207034973042e-05,
+      "relative_tolerance": 0.005,
+      "absolute_tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "HEOS versus IF97: enthalpy_j_kg",
+      "context": {
+        "pair": "PT",
+        "pressure_pa": 20000000,
+        "temperature_k": 800
+      },
+      "actual": 3326397.2828042647,
+      "expected": 3326455.3801098187,
+      "absolute_error": 58.09730555396527,
+      "relative_error": 1.7465229174980625e-05,
+      "relative_tolerance": 0.005,
+      "absolute_tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "HEOS versus IF97: entropy_j_kg_k",
+      "context": {
+        "pair": "PT",
+        "pressure_pa": 20000000,
+        "temperature_k": 800
+      },
+      "actual": 6252.981136885661,
+      "expected": 6252.984084934119,
+      "absolute_error": 0.002948048458165431,
+      "relative_error": 4.7146265177108495e-07,
+      "relative_tolerance": 0.005,
+      "absolute_tolerance": 0,
+      "passed": true
+    },
+    {
+      "check": "Published IF97 density at 500 K and 101325 Pa",
+      "context": {},
+      "actual": 0.4409206435977277,
+      "expected": 0.4409206435977277,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "relative_tolerance": 1e-10,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "check": "Published HEOS atmospheric saturation: temperature_k",
+      "context": {},
+      "actual": 373.1242958476663,
+      "expected": 373.12429584766636,
+      "absolute_error": 5.684341886080802e-14,
+      "relative_error": 1.5234445865196408e-16,
+      "relative_tolerance": 0,
+      "absolute_tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "Published HEOS atmospheric saturation: liquid_enthalpy_j_kg",
+      "context": {},
+      "actual": 419057.7330939964,
+      "expected": 419057.7330939922,
+      "absolute_error": 4.190951585769653e-09,
+      "relative_error": 1.0000893086561053e-14,
+      "relative_tolerance": 0,
+      "absolute_tolerance": 20,
+      "passed": true
+    },
+    {
+      "check": "Published HEOS atmospheric saturation: vapor_enthalpy_j_kg",
+      "context": {},
+      "actual": 2675529.32550072,
+      "expected": 2675529.32550072,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "relative_tolerance": 0,
+      "absolute_tolerance": 20,
+      "passed": true
+    },
+    {
+      "check": "Published HEOS atmospheric saturation: latent_heat_j_kg",
+      "context": {},
+      "actual": 2256471.5924067236,
+      "expected": 2256471.592406728,
+      "absolute_error": 4.190951585769653e-09,
+      "relative_error": 1.8573030566272854e-15,
+      "relative_tolerance": 0,
+      "absolute_tolerance": 20,
+      "passed": true
+    },
+    {
+      "check": "PQ to TQ inverse: pressure_pa",
+      "context": {
+        "pressure_pa": 10000,
+        "quality": 0
+      },
+      "actual": 10000.000000000022,
+      "expected": 10000.0,
+      "absolute_error": 2.1827872842550278e-11,
+      "relative_error": 2.1827872842550276e-15,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "check": "PQ to TQ inverse: temperature_k",
+      "context": {
+        "pressure_pa": 10000,
+        "quality": 0
+      },
+      "actual": 318.9563289237973,
+      "expected": 318.9563289237973,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "check": "PQ to TQ inverse: density_kg_m3",
+      "context": {
+        "pressure_pa": 10000,
+        "quality": 0
+      },
+      "actual": 989.8332753649839,
+      "expected": 989.8332753649839,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "check": "PQ to TQ inverse: enthalpy_j_kg",
+      "context": {
+        "pressure_pa": 10000,
+        "quality": 0
+      },
+      "actual": 191805.9445588864,
+      "expected": 191805.9445588864,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "check": "PQ to TQ inverse: entropy_j_kg_k",
+      "context": {
+        "pressure_pa": 10000,
+        "quality": 0
+      },
+      "actual": 649.1956051940292,
+      "expected": 649.1956051940292,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "check": "PQ to TQ inverse: pressure_pa",
+      "context": {
+        "pressure_pa": 101325,
+        "quality": 1
+      },
+      "actual": 101324.99999999924,
+      "expected": 101325.0,
+      "absolute_error": 7.566995918750763e-10,
+      "relative_error": 7.46804433136024e-15,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "check": "PQ to TQ inverse: temperature_k",
+      "context": {
+        "pressure_pa": 101325,
+        "quality": 1
+      },
+      "actual": 373.1242958476663,
+      "expected": 373.1242958476663,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "check": "PQ to TQ inverse: density_kg_m3",
+      "context": {
+        "pressure_pa": 101325,
+        "quality": 1
+      },
+      "actual": 0.5976567696507362,
+      "expected": 0.5976567696507362,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "check": "PQ to TQ inverse: enthalpy_j_kg",
+      "context": {
+        "pressure_pa": 101325,
+        "quality": 1
+      },
+      "actual": 2675529.32550072,
+      "expected": 2675529.32550072,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "check": "PQ to TQ inverse: entropy_j_kg_k",
+      "context": {
+        "pressure_pa": 101325,
+        "quality": 1
+      },
+      "actual": 7354.427280271823,
+      "expected": 7354.427280271823,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "check": "PQ to TQ inverse: pressure_pa",
+      "context": {
+        "pressure_pa": 1000000,
+        "quality": 0
+      },
+      "actual": 1000000.0000000037,
+      "expected": 1000000.0,
+      "absolute_error": 3.725290298461914e-09,
+      "relative_error": 3.725290298461914e-15,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "check": "PQ to TQ inverse: temperature_k",
+      "context": {
+        "pressure_pa": 1000000,
+        "quality": 0
+      },
+      "actual": 453.02800788167445,
+      "expected": 453.02800788167445,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "check": "PQ to TQ inverse: density_kg_m3",
+      "context": {
+        "pressure_pa": 1000000,
+        "quality": 0
+      },
+      "actual": 887.1292659772964,
+      "expected": 887.1292659772964,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "check": "PQ to TQ inverse: enthalpy_j_kg",
+      "context": {
+        "pressure_pa": 1000000,
+        "quality": 0
+      },
+      "actual": 762515.0697660758,
+      "expected": 762515.0697660758,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "check": "PQ to TQ inverse: entropy_j_kg_k",
+      "context": {
+        "pressure_pa": 1000000,
+        "quality": 0
+      },
+      "actual": 2138.0644702301765,
+      "expected": 2138.0644702301765,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "check": "PQ to TQ inverse: pressure_pa",
+      "context": {
+        "pressure_pa": 10000000,
+        "quality": 1
+      },
+      "actual": 9999999.9999994,
+      "expected": 10000000.0,
+      "absolute_error": 5.997717380523682e-07,
+      "relative_error": 5.997717380523681e-14,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "check": "PQ to TQ inverse: temperature_k",
+      "context": {
+        "pressure_pa": 10000000,
+        "quality": 1
+      },
+      "actual": 584.147146966515,
+      "expected": 584.147146966515,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "check": "PQ to TQ inverse: density_kg_m3",
+      "context": {
+        "pressure_pa": 10000000,
+        "quality": 1
+      },
+      "actual": 55.46308524399151,
+      "expected": 55.46308524399151,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "check": "PQ to TQ inverse: enthalpy_j_kg",
+      "context": {
+        "pressure_pa": 10000000,
+        "quality": 1
+      },
+      "actual": 2725492.4472378553,
+      "expected": 2725492.4472378553,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "check": "PQ to TQ inverse: entropy_j_kg_k",
+      "context": {
+        "pressure_pa": 10000000,
+        "quality": 1
+      },
+      "actual": 5615.950442122677,
+      "expected": 5615.950442122677,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "check": "Endpoint lever rule: enthalpy_j_kg",
+      "context": {
+        "pressure_pa": 101325,
+        "quality": 0.25
+      },
+      "actual": 983175.6311956773,
+      "expected": 983175.6311956773,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "check": "Endpoint lever rule: entropy_j_kg_k",
+      "context": {
+        "pressure_pa": 101325,
+        "quality": 0.25
+      },
+      "actual": 2818.7974294728037,
+      "expected": 2818.7974294728037,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "check": "Endpoint lever rule: specific_volume_m3_kg",
+      "context": {
+        "pressure_pa": 101325,
+        "quality": 0.25
+      },
+      "actual": 0.41908287068817524,
+      "expected": 0.4190828706881753,
+      "absolute_error": 5.551115123125783e-17,
+      "relative_error": 1.3245864986107177e-16,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "check": "Endpoint lever rule: enthalpy_j_kg",
+      "context": {
+        "pressure_pa": 101325,
+        "quality": 0.75
+      },
+      "actual": 2111411.4273990393,
+      "expected": 2111411.4273990393,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "check": "Endpoint lever rule: entropy_j_kg_k",
+      "context": {
+        "pressure_pa": 101325,
+        "quality": 0.75
+      },
+      "actual": 5842.550663338817,
+      "expected": 5842.550663338817,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "check": "Endpoint lever rule: specific_volume_m3_kg",
+      "context": {
+        "pressure_pa": 101325,
+        "quality": 0.75
+      },
+      "actual": 1.2551617299377364,
+      "expected": 1.2551617299377364,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "check": "Latent heat equals separately computed endpoint enthalpy difference",
+      "context": {
+        "pressure_pa": 101325
+      },
+      "actual": 2256471.5924067236,
+      "expected": 2256471.5924067236,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "Endpoint lever rule: enthalpy_j_kg",
+      "context": {
+        "pressure_pa": 2000000,
+        "quality": 0.25
+      },
+      "actual": 1380946.708795346,
+      "expected": 1380946.7087953463,
+      "absolute_error": 2.3283064365386963e-10,
+      "relative_error": 1.686021930976445e-16,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "check": "Endpoint lever rule: entropy_j_kg_k",
+      "context": {
+        "pressure_pa": 2000000,
+        "quality": 0.25
+      },
+      "actual": 3419.8173093617443,
+      "expected": 3419.8173093617443,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "check": "Endpoint lever rule: specific_volume_m3_kg",
+      "context": {
+        "pressure_pa": 2000000,
+        "quality": 0.25
+      },
+      "actual": 0.025778825643158712,
+      "expected": 0.02577882564315872,
+      "absolute_error": 6.938893903907228e-18,
+      "relative_error": 2.6917028727213175e-16,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "check": "Endpoint lever rule: enthalpy_j_kg",
+      "context": {
+        "pressure_pa": 2000000,
+        "quality": 0.75
+      },
+      "actual": 2325843.9717305168,
+      "expected": 2325843.9717305168,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "check": "Endpoint lever rule: entropy_j_kg_k",
+      "context": {
+        "pressure_pa": 2000000,
+        "quality": 0.75
+      },
+      "actual": 5365.943527327633,
+      "expected": 5365.943527327633,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "check": "Endpoint lever rule: specific_volume_m3_kg",
+      "context": {
+        "pressure_pa": 2000000,
+        "quality": 0.75
+      },
+      "actual": 0.07498297776683764,
+      "expected": 0.07498297776683764,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "check": "Latent heat equals separately computed endpoint enthalpy difference",
+      "context": {
+        "pressure_pa": 2000000
+      },
+      "actual": 1889794.5258703409,
+      "expected": 1889794.5258703409,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "relative_tolerance": 1e-08,
+      "absolute_tolerance": 1e-06,
+      "passed": true
+    }
+  ],
+  "plugin_calculation_count": 21,
+  "summary": {
+    "checks": 57,
+    "passed": 57,
+    "max_heos_if97_relative_error": 9.96839197009123e-05
+  },
+  "elapsed_seconds": 28.174
+}

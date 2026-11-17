@@ -1,0 +1,16 @@
+✔ display units convert SI without modifying authoritative project values (9.373791ms)
+✔ project JSON preserves SI values and all three state pairs through a fresh parse (0.378083ms)
+✔ bounded exact-key import rejects unknown code, malformed numbers, duplicate and prototype keys (0.452709ms)
+✔ physical input bounds distinguish PT from saturation input and cap scan size (0.139375ms)
+✔ edited Celsius boundaries convert exactly while strict SI limits still reject lower input (0.182542ms)
+✔ chart coordinates and hover indexes refer to actual irregular SI sample positions (0.208167ms)
+✔ chart bounds contain both phases and handle equal values without invented samples (0.111542ms)
+✔ CSV contains full SI precision, state and both saturation phases with consistent columns (0.2295ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 48.591417

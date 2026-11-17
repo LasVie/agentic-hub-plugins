@@ -1,0 +1,15 @@
+{
+  "schema": "steam-properties/v1",
+  "name": "温度扫描",
+  "state": {
+    "pair": "TQ",
+    "temperature_k": 373.15,
+    "quality": 1
+  },
+  "sweep": {
+    "variable": "temperature_k",
+    "start": 300,
+    "end": 620,
+    "points": 25
+  }
+}

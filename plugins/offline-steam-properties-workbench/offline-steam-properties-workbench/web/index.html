@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>离线水与蒸汽物性工作台</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="identity"><svg class="brand-icon" viewBox="0 0 44 44" aria-hidden="true"><path d="M22 5C18 13 9 21 9 29a13 13 0 0 0 26 0C35 21 26 13 22 5Z" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M13 29c6-7 12 7 18 0M17 20l5-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><div><p class="eyebrow">热物性 · 本机计算</p><h1>离线水与蒸汽物性工作台</h1></div></div>
+  <div class="header-right"><span class="engine-tag">CoolProp 8.0.0 <span>HEOS · Water</span></span><span class="version">v1.0.0</span><button id="shutdown" class="quiet" disabled>关闭工作台</button></div>
+</header>
+<main>
+<aside class="editor card" aria-label="项目与输入条件">
+  <div class="section-head"><h2>输入条件</h2><span id="saved-status" class="tag">正在读取</span></div>
+  <fieldset id="editor-fields" disabled>
+    <label>项目名称<input id="project-name" type="text" maxlength="80" autocomplete="off"></label>
+    <label>示例<select id="example"><option value="saturated">常压饱和水</option><option value="mixture">常压湿蒸汽 · 干度 0.5</option><option value="superheated">过热蒸汽 · 常压 / 200 °C</option><option value="temperature">按温度求饱和状态</option></select></label>
+    <div class="divider"></div>
+    <label>状态输入组合<select id="pair"><option value="PQ">压力 + 干度（P–Q）</option><option value="PT">压力 + 温度（P–T）</option><option value="TQ">温度 + 干度（T–Q）</option></select></label>
+    <div id="pressure-field"><label>绝对压力 <span class="unit">kPa</span><input id="pressure" type="number" step="any" inputmode="decimal" min="1" max="20000"></label></div>
+    <div id="temperature-field"><label>温度 <span class="unit">°C</span><input id="temperature" type="number" step="any" inputmode="decimal"></label></div>
+    <div id="quality-field"><label>干度 <span class="unit">kg 蒸汽 / kg 混合物</span><input id="quality" type="number" step="any" min="0" max="1" inputmode="decimal"></label><p class="hint">0 为饱和液体，1 为饱和蒸汽。</p></div>
+    <p class="note">全部压力均为<strong>绝对压力</strong>，不是表压。P–T 输入位于饱和线上时，请改用 P–Q 或 T–Q。</p>
+    <div class="divider"></div>
+    <h3>饱和曲线扫描</h3><p class="hint">扫描液汽平衡边界，与上方单点状态分开计算。</p>
+    <label>扫描变量<select id="sweep-variable"><option value="pressure_pa">绝对压力 / kPa</option><option value="temperature_k">温度 / °C</option></select></label>
+    <div class="field-pair"><label>起点 <span id="sweep-start-unit" class="unit">kPa</span><input id="sweep-start" type="number" step="any" inputmode="decimal"></label><label>终点 <span id="sweep-end-unit" class="unit">kPa</span><input id="sweep-end" type="number" step="any" inputmode="decimal"></label></div>
+    <label>采样点数<input id="points" type="number" step="1" min="2" max="100" inputmode="numeric"></label>
+  </fieldset>
+  <div class="run-actions"><button id="calculate" class="primary" disabled>计算状态与曲线</button><button id="cancel" disabled>取消</button></div>
+  <div class="project-actions"><button id="save" disabled>保存项目</button><button id="reset" class="quiet" disabled>重置项目</button><label class="file-button">导入 JSON<input id="import" type="file" accept=".json,application/json" disabled></label><button id="export-project" disabled>导出项目</button></div>
+  <p class="hint">保存仅记录输入；重新打开后需重新计算。计算会保存输入，重置会替换已保存项目；导入后需另行保存。</p>
+</aside>
+<section class="results" aria-label="计算结果">
+  <div id="status" class="status" role="status" aria-live="polite">正在读取本机项目…</div>
+  <div id="load-warning" class="load-warning" role="alert" hidden></div>
+  <section class="state-section card">
+    <div class="section-head"><div><p class="eyebrow">单点计算</p><h2>水 / 蒸汽状态</h2></div><span id="phase" class="phase">尚未计算</span></div>
+    <div id="state-empty" class="empty-state"><span class="empty-mark" aria-hidden="true">P · T · Q</span><p>设置输入，计算真实物性</p><small>这里仅显示当前输入对应的引擎结果。</small></div>
+    <div id="state-results" hidden><div class="metric-grid">
+      <div><span>绝对压力</span><strong id="state-pressure">—</strong><small>kPa</small></div><div><span>温度</span><strong id="state-temperature">—</strong><small>°C</small></div><div><span>密度</span><strong id="state-density">—</strong><small>kg/m³</small></div>
+      <div><span>比焓</span><strong id="state-enthalpy">—</strong><small>kJ/kg</small></div><div><span>比熵</span><strong id="state-entropy">—</strong><small>kJ/(kg·K)</small></div><div><span>干度</span><strong id="state-quality">—</strong><small id="quality-note">仅液汽两相适用</small></div>
+    </div><p id="result-source" class="result-source"></p></div>
+  </section>
+  <section class="saturation-section card">
+    <div class="section-head"><div><p class="eyebrow">液汽平衡</p><h2>对应的饱和物性</h2></div><span id="saturation-point" class="subtle">尚未计算</span></div>
+    <p id="saturation-empty" class="section-empty">计算完成后显示该压力或温度下的饱和液体与蒸汽。</p>
+    <div id="saturation-results" hidden><div class="saturation-layout"><div class="table-scroll"><table class="comparison"><thead><tr><th scope="col">物性</th><th scope="col">饱和液体</th><th scope="col">饱和蒸汽</th></tr></thead><tbody id="saturation-body"></tbody></table></div><div class="latent"><span>汽化潜热</span><strong id="latent-heat">—</strong><small>kJ/kg</small><p>同一饱和状态下<br>蒸汽比焓 − 液体比焓</p></div></div></div>
+  </section>
+  <section class="chart-section card">
+    <div class="section-head chart-heading"><div><p class="eyebrow">饱和边界扫描</p><h2>沿曲线查看变化</h2></div><label class="curve-label">显示物性<select id="curve" disabled><option value="temperature">饱和温度</option><option value="pressure">饱和压力</option><option value="enthalpy">液体 / 蒸汽比焓</option><option value="density">液体 / 蒸汽密度</option><option value="latent">汽化潜热</option></select></label></div>
+    <div id="chart-empty" class="chart-empty">计算后生成曲线；图上的每个点均来自本次扫描。</div>
+    <div id="chart-content" hidden><div class="chart-shell"><svg id="chart" viewBox="0 0 900 420" role="img" tabindex="0" aria-label="饱和物性曲线，使用左右方向键逐点查看，Home 和 End 跳转端点" aria-describedby="chart-readout"></svg></div><div class="chart-foot"><div id="chart-legend" class="legend"></div><small>移动指针或方向键查看采样点 · 相邻点以直线连接</small></div><p id="chart-readout" class="chart-readout" aria-live="polite"></p>
+    <div class="exports"><button id="export-csv" disabled>下载结果 CSV</button><button id="export-svg" disabled>下载曲线 SVG</button><span id="sample-count" class="subtle"></span></div>
+    <details class="raw-data"><summary>查看原始扫描数据（SI 单位）</summary><div class="table-scroll"><table><thead><tr><th scope="col">序号</th><th scope="col">压力 / Pa</th><th scope="col">温度 / K</th><th scope="col">液体密度 / kg·m⁻³</th><th scope="col">蒸汽密度 / kg·m⁻³</th><th scope="col">液体比焓 / J·kg⁻¹</th><th scope="col">蒸汽比焓 / J·kg⁻¹</th><th scope="col">潜热 / J·kg⁻¹</th></tr></thead><tbody id="raw-body"></tbody></table></div></details></div>
+  </section>
+  <details class="boundaries"><summary>单位、计算范围与数据说明</summary><p>工质固定为纯水，后端固定为 HEOS。界面使用 kPa、°C 和 kJ/kg；项目与 CSV 使用 Pa、K、J/kg 等 SI 单位。温度换算：K = °C + 273.15；绝对压力换算：Pa = kPa × 1000。</p><p>饱和曲线只计算有界液汽平衡区间；单相状态的干度显示为“不适用”。不接受上传脚本、HTML、样式或外部资源。修改输入后旧结果立即失效，必须重新计算才能导出结果。</p><p>仅在本机运行，不调用模型或付费接口。项目不会在输入时自动保存。请在关闭前保存需要保留的输入。</p><p><a href="licenses.txt" target="_blank" rel="noopener noreferrer">第三方来源与许可证</a></p></details>
+</section>
+</main>
+<footer>离线水与蒸汽物性工作台 · 版本 1.0.0 · 计算结果来自本次 CoolProp 调用</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>

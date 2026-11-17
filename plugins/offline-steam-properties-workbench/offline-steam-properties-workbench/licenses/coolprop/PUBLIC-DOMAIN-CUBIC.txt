@@ -1,0 +1,9 @@
+/**
+ This C++ code is the implementation of the analyses presented in the paper
+ I.Bell and A. Jäger, "Helmholtz energy translations for common cubic equations of state
+ for use in one-fluid and multi-fluid mixture models", J. Res. NIST, 2016
+
+ This code is in the public domain, though if used in academic work, we would appreciate
+ a reference back to the paper given above.
+
+ */

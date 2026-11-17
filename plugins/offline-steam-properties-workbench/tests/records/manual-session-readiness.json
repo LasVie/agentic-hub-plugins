@@ -1,0 +1,20 @@
+{
+  "verified_at": "2026-11-16T09:33:52.306607+00:00",
+  "task_id": "AH-20261116-offline-steam-properties-workbench",
+  "version": "1.0.0",
+  "native_zip_sha256": "41764bfdaa0799b9944adadafc922bbc857d3e0e926170f5a25692f12fac156e",
+  "passed": true,
+  "started_through": "Actual installed DeepAgent.load_plugin → registered steam_workbench.invoke(start,confirmed=true)",
+  "checks": {
+    "index.html": 200,
+    "app.js": 200,
+    "ui_helpers.mjs": 200,
+    "api/health": 200,
+    "api/initial": 200
+  },
+  "fresh_workspace": true,
+  "default_project": "常压饱和水",
+  "model_requests": 0,
+  "user_manual_test_completed": false,
+  "scope": "Installed-package manual workbench is live after SDK resource cleanup. Readiness only; no user manual testing claim."
+}

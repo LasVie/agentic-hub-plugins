@@ -1,0 +1,889 @@
+{
+  "reviewed_date": "2026-11-16",
+  "task_id": "AH-20261116-offline-steam-properties-workbench",
+  "owner": "Cai Zhenze",
+  "name_mapping": {
+    "upstream": "CoolProp 8.0.0",
+    "display_name": "离线水与蒸汽物性工作台",
+    "slug": "offline-steam-properties-workbench"
+  },
+  "permission_status": "verified",
+  "licensing_gate": "cleared_for_recorded_unchanged_wheels_with_bundled_notices_and_eigen_source",
+  "root_license_alone_was_not_used_as_blanket_permission": true,
+  "reviewed_upstream": "ae81610e7d23efc57f9d051c8e70a4d66e87537f",
+  "source_sdist": {
+    "filename": "coolprop-8.0.0.tar.gz",
+    "sha256": "fb77fff0acf1623a25eb84963020b4f9d0b36d9431a8d8ae4221271effc30457",
+    "bytes": 14486089,
+    "distributed": false
+  },
+  "source_recipe_hashes": {
+    "CMakeLists.txt": "2e31d239bd8ded3ea2e3546e35765a86a75e3b575f13737b4f01f1f7ec9952a0",
+    "cmake/dependencies.cmake": "eedbc0eee9cf8a74839c13ee751e331e5c3450552207cb1a31f45fb9be729f08",
+    "wrappers/Python/CMakeLists.txt": "47a971f507abcd6daf0389dc724597b049a6cb0907579924c54932fab8a6271e",
+    "pyproject.toml": "5715b28b4ac5e65589641415967b68c998fa4ea56e825baa34504a8bf91d5025",
+    ".github/workflows/python_cibuildwheel.yml": "8ffb1d8e89ffb3623495e13d51a5b8274d88d144fab140bca220eae85a191cc0",
+    ".github/workflows/python_buildwheels.yml": "2e5b21dab49f6e6c7bf9284140f9897f99ddd46f39b8d05780f5190bb6baa4b7"
+  },
+  "wheels": [
+    {
+      "filename": "coolprop-8.0.0-cp311-cp311-macosx_11_0_arm64.whl",
+      "url": "https://files.pythonhosted.org/packages/d5/03/98285d9059117ac9b0b105741be36481a67687979fda22bdf31333ffcc92/coolprop-8.0.0-cp311-cp311-macosx_11_0_arm64.whl",
+      "sha256": "ad8bca80518c9777e81dd861fc274e4a56115712b54af7413504249e8fe83078",
+      "bytes": 10552223,
+      "architecture": "arm64",
+      "python_tag": "cp311",
+      "abi_tag": "cp311",
+      "platform_tag": "macosx_11_0_arm64",
+      "minimum_macos": "11.0",
+      "wheel_metadata": "Wheel-Version: 1.0\nGenerator: scikit-build-core 0.12.2\nRoot-Is-Purelib: false\nTag: cp311-cp311-macosx_11_0_arm64\nGenerator: delocate 0.13.0\n\n",
+      "record_hashes_verified": 146,
+      "zip_entries": 168,
+      "extensions": [
+        {
+          "path": "CoolProp/State.cpython-311-darwin.so",
+          "sha256": "588b954af4d1182ae97d3fc29179ffe8fc00950ba067a37c9496a3c2b57416d5",
+          "bytes": 213736,
+          "architecture": "arm64",
+          "minimum_macos": "11.0",
+          "dynamic_libraries": [
+            "/usr/lib/libc++.1.dylib",
+            "/usr/lib/libSystem.B.dylib"
+          ],
+          "multicomplex_export_symbols_found": false,
+          "multicomplex_strings_found": false,
+          "core_contains_pinned_gitrevision": null,
+          "cython_marker": [
+            "_cython_3_2_6",
+            "_cython__"
+          ]
+        },
+        {
+          "path": "CoolProp/_constants.cpython-311-darwin.so",
+          "sha256": "437d3f53c306d487f882b60c8b7f1e52194b91950f3db12ffbbfe64bd9ea58b0",
+          "bytes": 69776,
+          "architecture": "arm64",
+          "minimum_macos": "11.0",
+          "dynamic_libraries": [
+            "/usr/lib/libc++.1.dylib",
+            "/usr/lib/libSystem.B.dylib"
+          ],
+          "multicomplex_export_symbols_found": false,
+          "multicomplex_strings_found": false,
+          "core_contains_pinned_gitrevision": null,
+          "cython_marker": []
+        },
+        {
+          "path": "CoolProp/CoolProp.cpython-311-darwin.so",
+          "sha256": "6b35e8440ebc285e05826cce8bcac454cea96649054d158747846b1215a52e16",
+          "bytes": 8303296,
+          "architecture": "arm64",
+          "minimum_macos": "11.0",
+          "dynamic_libraries": [
+            "/usr/lib/libc++.1.dylib",
+            "/usr/lib/libSystem.B.dylib"
+          ],
+          "multicomplex_export_symbols_found": false,
+          "multicomplex_strings_found": false,
+          "core_contains_pinned_gitrevision": true,
+          "cython_marker": []
+        }
+      ],
+      "all_paths_safe": true,
+      "zip_crc_passed": true,
+      "binary_was_executed": false
+    },
+    {
+      "filename": "coolprop-8.0.0-cp311-cp311-macosx_11_0_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/7b/4d/6a68cbf7c1ae128f7c5bfc34045021e346c7031e054eff6949d368b13ecc/coolprop-8.0.0-cp311-cp311-macosx_11_0_x86_64.whl",
+      "sha256": "7b8e17dd611b6e1a0b91bec887c84056c4492dcb033fda4b3e93a6b77dc9e074",
+      "bytes": 10683032,
+      "architecture": "x86_64",
+      "python_tag": "cp311",
+      "abi_tag": "cp311",
+      "platform_tag": "macosx_11_0_x86_64",
+      "minimum_macos": "11.0",
+      "wheel_metadata": "Wheel-Version: 1.0\nGenerator: scikit-build-core 0.12.2\nRoot-Is-Purelib: false\nTag: cp311-cp311-macosx_11_0_x86_64\nGenerator: delocate 0.13.0\n\n",
+      "record_hashes_verified": 146,
+      "zip_entries": 168,
+      "extensions": [
+        {
+          "path": "CoolProp/State.cpython-311-darwin.so",
+          "sha256": "e29a01dbec3d621855def60b22791bb59bd0ac2e306b6fc7778b3960f5b603ad",
+          "bytes": 175008,
+          "architecture": "x86_64",
+          "minimum_macos": "11.0",
+          "dynamic_libraries": [
+            "/usr/lib/libc++.1.dylib",
+            "/usr/lib/libSystem.B.dylib"
+          ],
+          "multicomplex_export_symbols_found": false,
+          "multicomplex_strings_found": false,
+          "core_contains_pinned_gitrevision": null,
+          "cython_marker": [
+            "_cython_3_2_6",
+            "_cython__"
+          ]
+        },
+        {
+          "path": "CoolProp/_constants.cpython-311-darwin.so",
+          "sha256": "6b3589d1bc66a19f3310646acbaffa8743a8b909e8d099bb1f12b1e430553686",
+          "bytes": 40400,
+          "architecture": "x86_64",
+          "minimum_macos": "11.0",
+          "dynamic_libraries": [
+            "/usr/lib/libc++.1.dylib",
+            "/usr/lib/libSystem.B.dylib"
+          ],
+          "multicomplex_export_symbols_found": false,
+          "multicomplex_strings_found": false,
+          "core_contains_pinned_gitrevision": null,
+          "cython_marker": []
+        },
+        {
+          "path": "CoolProp/CoolProp.cpython-311-darwin.so",
+          "sha256": "b55c0a6cb36c8671e24c56a1ab028cb4199d12b4b52be98abc096c43d33ebc2e",
+          "bytes": 8563536,
+          "architecture": "x86_64",
+          "minimum_macos": "11.0",
+          "dynamic_libraries": [
+            "/usr/lib/libc++.1.dylib",
+            "/usr/lib/libSystem.B.dylib"
+          ],
+          "multicomplex_export_symbols_found": false,
+          "multicomplex_strings_found": false,
+          "core_contains_pinned_gitrevision": true,
+          "cython_marker": []
+        }
+      ],
+      "all_paths_safe": true,
+      "zip_crc_passed": true,
+      "binary_was_executed": false
+    },
+    {
+      "filename": "coolprop-8.0.0-cp312-abi3-macosx_11_0_arm64.whl",
+      "url": "https://files.pythonhosted.org/packages/33/d1/5eef80c184dc2ed99b01776ba0755f45248cddfd2e0d45e8accc025d6fd9/coolprop-8.0.0-cp312-abi3-macosx_11_0_arm64.whl",
+      "sha256": "46de36f51330ce8c7f8384a7360e1058739d20604736158aac6bd2abf6ae26bd",
+      "bytes": 10571251,
+      "architecture": "arm64",
+      "python_tag": "cp312",
+      "abi_tag": "abi3",
+      "platform_tag": "macosx_11_0_arm64",
+      "minimum_macos": "11.0",
+      "wheel_metadata": "Wheel-Version: 1.0\nGenerator: scikit-build-core 0.12.2\nRoot-Is-Purelib: false\nTag: cp312-abi3-macosx_11_0_arm64\nGenerator: delocate 0.13.0\n\n",
+      "record_hashes_verified": 146,
+      "zip_entries": 168,
+      "extensions": [
+        {
+          "path": "CoolProp/_constants.abi3.so",
+          "sha256": "c63e90766d225fd927df28142878f14495ea132e62589d7ef76da0d78ac01ccc",
+          "bytes": 70112,
+          "architecture": "arm64",
+          "minimum_macos": "11.0",
+          "dynamic_libraries": [
+            "/usr/lib/libc++.1.dylib",
+            "/usr/lib/libSystem.B.dylib"
+          ],
+          "multicomplex_export_symbols_found": false,
+          "multicomplex_strings_found": false,
+          "core_contains_pinned_gitrevision": null,
+          "cython_marker": []
+        },
+        {
+          "path": "CoolProp/State.abi3.so",
+          "sha256": "35bc6bc53793d44ad704447698db59523c1d9c2ca0a2520a82090ce7cb3177ea",
+          "bytes": 180544,
+          "architecture": "arm64",
+          "minimum_macos": "11.0",
+          "dynamic_libraries": [
+            "/usr/lib/libc++.1.dylib",
+            "/usr/lib/libSystem.B.dylib"
+          ],
+          "multicomplex_export_symbols_found": false,
+          "multicomplex_strings_found": false,
+          "core_contains_pinned_gitrevision": null,
+          "cython_marker": [
+            "_cython_3_2_6",
+            "_cython__"
+          ]
+        },
+        {
+          "path": "CoolProp/CoolProp.abi3.so",
+          "sha256": "1769af71ee559ad3040f286d991617713e4442d272c56adc2e2a69fd4d33dd8f",
+          "bytes": 8369648,
+          "architecture": "arm64",
+          "minimum_macos": "11.0",
+          "dynamic_libraries": [
+            "/usr/lib/libc++.1.dylib",
+            "/usr/lib/libSystem.B.dylib"
+          ],
+          "multicomplex_export_symbols_found": false,
+          "multicomplex_strings_found": false,
+          "core_contains_pinned_gitrevision": true,
+          "cython_marker": []
+        }
+      ],
+      "all_paths_safe": true,
+      "zip_crc_passed": true,
+      "binary_was_executed": false
+    },
+    {
+      "filename": "coolprop-8.0.0-cp312-abi3-macosx_11_0_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/d0/43/3f0d8d28be14ad53b4f54c7d771a89d76b49c8adc17c03c2ccbfe4d06917/coolprop-8.0.0-cp312-abi3-macosx_11_0_x86_64.whl",
+      "sha256": "939803aa9d849961e76512d4c3d60b15c25802c75cbecc801892edb3b023f200",
+      "bytes": 10672568,
+      "architecture": "x86_64",
+      "python_tag": "cp312",
+      "abi_tag": "abi3",
+      "platform_tag": "macosx_11_0_x86_64",
+      "minimum_macos": "11.0",
+      "wheel_metadata": "Wheel-Version: 1.0\nGenerator: scikit-build-core 0.12.2\nRoot-Is-Purelib: false\nTag: cp312-abi3-macosx_11_0_x86_64\nGenerator: delocate 0.13.0\n\n",
+      "record_hashes_verified": 146,
+      "zip_entries": 168,
+      "extensions": [
+        {
+          "path": "CoolProp/_constants.abi3.so",
+          "sha256": "8d3583136eb4e1014bb90c727a5442e1739a15c44eb8d60785b6546139ccd3a1",
+          "bytes": 40760,
+          "architecture": "x86_64",
+          "minimum_macos": "11.0",
+          "dynamic_libraries": [
+            "/usr/lib/libc++.1.dylib",
+            "/usr/lib/libSystem.B.dylib"
+          ],
+          "multicomplex_export_symbols_found": false,
+          "multicomplex_strings_found": false,
+          "core_contains_pinned_gitrevision": null,
+          "cython_marker": []
+        },
+        {
+          "path": "CoolProp/State.abi3.so",
+          "sha256": "cd421fccc4f7c6ab11b4785d14f73f44f088710494a75af43fe3d18c2f551d2b",
+          "bytes": 154368,
+          "architecture": "x86_64",
+          "minimum_macos": "11.0",
+          "dynamic_libraries": [
+            "/usr/lib/libc++.1.dylib",
+            "/usr/lib/libSystem.B.dylib"
+          ],
+          "multicomplex_export_symbols_found": false,
+          "multicomplex_strings_found": false,
+          "core_contains_pinned_gitrevision": null,
+          "cython_marker": [
+            "_cython_3_2_6",
+            "_cython__"
+          ]
+        },
+        {
+          "path": "CoolProp/CoolProp.abi3.so",
+          "sha256": "069a89e9d56347959f53d9684c70364f57e121b754c7d149fdd79b22b77f424a",
+          "bytes": 8563624,
+          "architecture": "x86_64",
+          "minimum_macos": "11.0",
+          "dynamic_libraries": [
+            "/usr/lib/libc++.1.dylib",
+            "/usr/lib/libSystem.B.dylib"
+          ],
+          "multicomplex_export_symbols_found": false,
+          "multicomplex_strings_found": false,
+          "core_contains_pinned_gitrevision": true,
+          "cython_marker": []
+        }
+      ],
+      "all_paths_safe": true,
+      "zip_crc_passed": true,
+      "binary_was_executed": false
+    }
+  ],
+  "license_evidence": [
+    {
+      "path": "licenses/boost/COPYRIGHT.txt",
+      "sha256": "abfad3ce7478c58cdc8bcec9e0bab2315ed198137ef4328de111cb0fca4c2535"
+    },
+    {
+      "path": "licenses/boost/LICENSE",
+      "sha256": "ea056d2c64294936b226f7360c265e77c52adc4ba171ee61029357f101f439cf"
+    },
+    {
+      "path": "licenses/coolprop/BEER-WARE.txt",
+      "sha256": "ec8f4cea643bbdc786aa1cc6215ba82625df46cfd5f841e22ba31bc55cd0f3ac"
+    },
+    {
+      "path": "licenses/coolprop/LICENSE",
+      "sha256": "9bf835333ef602af4cb19338b9f9d43671e174fa029b00280e9bdba6ea4719b2"
+    },
+    {
+      "path": "licenses/coolprop/NIST.txt",
+      "sha256": "05bdb3dc0624b17b9158bb0694aedaafe4bc3c6f370bc5e625bcde66cf2223e9"
+    },
+    {
+      "path": "licenses/coolprop/PUBLIC-DOMAIN-CUBIC.txt",
+      "sha256": "9c24fddadab8e23aa855ec2ed373f12af68261ebbe8d154e382a4d75efcb1dfc"
+    },
+    {
+      "path": "licenses/cython/COPYING.txt",
+      "sha256": "98b40f3b2f20d14d00bf580c85347965a3e6e0ba39ecc9f22b0d9cdc459d1fd6"
+    },
+    {
+      "path": "licenses/eigen/COPYING.APACHE",
+      "sha256": "03379001a7b12a2ec997a25554247d985270b353c10d5bafee9ac8d6519820b7"
+    },
+    {
+      "path": "licenses/eigen/COPYING.BSD",
+      "sha256": "51928dce36213c5333ba3172e847d735d4c6e9b7ff2722a326c49067155b82eb"
+    },
+    {
+      "path": "licenses/eigen/COPYING.MINPACK",
+      "sha256": "c87b7f8ee88f6195e91743820c00354833583aef091b72e2d4a49c8e28e798a0"
+    },
+    {
+      "path": "licenses/eigen/COPYING.MPL2",
+      "sha256": "66a3107d5ad6a058aab753eaac2047ccb2ed0e39465dd0fe5844da3e300d5172"
+    },
+    {
+      "path": "licenses/eigen/COPYING.README",
+      "sha256": "db640ff2bd90c6abd6a4d3fbb351e0ee4d555417cf840492054d1cbb2ea85644"
+    },
+    {
+      "path": "licenses/eigen/LICENSE",
+      "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5"
+    },
+    {
+      "path": "licenses/eigen/README.md",
+      "sha256": "356dafc01129af78f891fbdd47201f137e13bbdc512aa621d43da2eb08d9ce61"
+    },
+    {
+      "path": "licenses/eigen/eigen-5.0.1-corresponding-headers.tar.gz",
+      "sha256": "0a44ffcab8abdb2515f3b418d298da9a78ed7c309bdbfce3ed54e756d47dfca0"
+    },
+    {
+      "path": "licenses/fmt/LICENSE",
+      "sha256": "1580c78f71dc3001a819c637894068e2cb954b7dda8651633a6af70b3eeb37d0"
+    },
+    {
+      "path": "licenses/if97/LICENSE",
+      "sha256": "49ae7892aa64119f235acb7541730f955f2cf9df41f39d01672320314a8a9e2c"
+    },
+    {
+      "path": "licenses/incbin/LICENSE",
+      "sha256": "7e12e5df4bae12cb21581ba157ced20e1986a0508dd10d0e8a4ab9a4cf94e85c"
+    },
+    {
+      "path": "licenses/miniz/LICENSE",
+      "sha256": "6f20fa7672b00e2e975c291df737cf227addf3ad32e36fef3fe0f416e4664d3d"
+    },
+    {
+      "path": "licenses/miniz/UNLICENSE.txt",
+      "sha256": "2cf817317caffc99ed2d1769b8cc055bfe417fdddac49e86b0fe4328fb5b4bdd"
+    },
+    {
+      "path": "licenses/msgpack/COPYRIGHT.txt",
+      "sha256": "f1b4639a6d300827803167cc903833a22d8c7de6b1ce567b9c2bf760053d1b42"
+    },
+    {
+      "path": "licenses/msgpack/LICENSE",
+      "sha256": "ea056d2c64294936b226f7360c265e77c52adc4ba171ee61029357f101f439cf"
+    },
+    {
+      "path": "licenses/nanobind/COPYRIGHTS.txt",
+      "sha256": "a044886f19d03e728c0c54039ae7eeb2198063d30cd7cd71498ac275c4151b47"
+    },
+    {
+      "path": "licenses/nanobind/LICENSE",
+      "sha256": "f7aeabe2cd3219e46e185670cd791653e0d460565bea2d0f788c12a83637def1"
+    },
+    {
+      "path": "licenses/nlohmann-json/Apache-2.0.txt",
+      "sha256": "1f83bfbb6ab612d244b9619bcf615e54c2e107fc78a05eb6e16bc1ce41fd2f8f"
+    },
+    {
+      "path": "licenses/nlohmann-json/LICENSE",
+      "sha256": "b34025ec44b080b51e0197668af52ab54579dbe9e59d72a779ff5f3d926d4a87"
+    },
+    {
+      "path": "licenses/nlohmann-json/source/json.hpp",
+      "sha256": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63"
+    },
+    {
+      "path": "licenses/refprop-headers/LICENSE",
+      "sha256": "700b4b0b096d402cc8bf1939ccf79fa9c95a781108080c51fae5936185900187"
+    },
+    {
+      "path": "licenses/robin-map/LICENSE",
+      "sha256": "c5955460e9cd0d48aabbc9106bf046793bea54bd5862541c82080360702201ef"
+    },
+    {
+      "path": "licenses/valijson/LICENSE",
+      "sha256": "122bf1710ecc0382cac450448778097300e76af95269df059ad0c2f9d2583bce"
+    }
+  ],
+  "multicomplex": {
+    "distribution": "excluded; no implementation copied",
+    "source_references_only_in_two_files": true,
+    "all_32_references_under_ENABLE_CATCH_guards": true,
+    "details": [
+      {
+        "path": "include/CoolProp/fluids/Helmholtz.h",
+        "all_multicomplex_references_guarded": true,
+        "references": [
+          {
+            "line": 27,
+            "guards": [
+              "#ifndef HELMHOLTZ_H",
+              "#if ENABLE_CATCH"
+            ],
+            "text": "#    include \"MultiComplex/MultiComplex.hpp\""
+          },
+          {
+            "line": 303,
+            "guards": [
+              "#ifndef HELMHOLTZ_H",
+              "#if ENABLE_CATCH"
+            ],
+            "text": "virtual mcx::MultiComplex<double> one_mcx(const mcx::MultiComplex<double>& tau, const mcx::MultiComplex<double>& delta) const {"
+          },
+          {
+            "line": 552,
+            "guards": [
+              "#ifndef HELMHOLTZ_H",
+              "#if ENABLE_CATCH"
+            ],
+            "text": "mcx::MultiComplex<double> one_mcx(const mcx::MultiComplex<double>& tau, const mcx::MultiComplex<double>& delta) const override;"
+          },
+          {
+            "line": 596,
+            "guards": [
+              "#ifndef HELMHOLTZ_H",
+              "#if ENABLE_CATCH"
+            ],
+            "text": "mcx::MultiComplex<double> one_mcx(const mcx::MultiComplex<double>& tau, const mcx::MultiComplex<double>& delta) const override;"
+          },
+          {
+            "line": 647,
+            "guards": [
+              "#ifndef HELMHOLTZ_H",
+              "#if ENABLE_CATCH"
+            ],
+            "text": "mcx::MultiComplex<double> one_mcx(const mcx::MultiComplex<double>& tau, const mcx::MultiComplex<double>& delta) const override;"
+          },
+          {
+            "line": 669,
+            "guards": [
+              "#ifndef HELMHOLTZ_H",
+              "#if ENABLE_CATCH"
+            ],
+            "text": "mcx::MultiComplex<double> one_mcx(const mcx::MultiComplex<double>& tau, const mcx::MultiComplex<double>& delta) const override;"
+          },
+          {
+            "line": 1170,
+            "guards": [
+              "#ifndef HELMHOLTZ_H",
+              "#if ENABLE_CATCH"
+            ],
+            "text": "mcx::MultiComplex<double> one_mcx(const mcx::MultiComplex<double>& tau, const mcx::MultiComplex<double>& delta) const override;"
+          },
+          {
+            "line": 1208,
+            "guards": [
+              "#ifndef HELMHOLTZ_H",
+              "#if ENABLE_CATCH"
+            ],
+            "text": "mcx::MultiComplex<double> one_mcx(const mcx::MultiComplex<double>& tau, const mcx::MultiComplex<double>& delta) const override;"
+          },
+          {
+            "line": 1244,
+            "guards": [
+              "#ifndef HELMHOLTZ_H",
+              "#if ENABLE_CATCH"
+            ],
+            "text": "mcx::MultiComplex<double> one_mcx(const mcx::MultiComplex<double>& tau, const mcx::MultiComplex<double>& delta) const override;"
+          }
+        ]
+      },
+      {
+        "path": "src/Helmholtz.cpp",
+        "all_multicomplex_references_guarded": true,
+        "references": [
+          {
+            "line": 295,
+            "guards": [
+              "#if ENABLE_CATCH"
+            ],
+            "text": "mcx::MultiComplex<double> ResidualHelmholtzGeneralizedExponential::one_mcx(const mcx::MultiComplex<double>& tau,"
+          },
+          {
+            "line": 296,
+            "guards": [
+              "#if ENABLE_CATCH"
+            ],
+            "text": "const mcx::MultiComplex<double>& delta) const {"
+          },
+          {
+            "line": 298,
+            "guards": [
+              "#if ENABLE_CATCH"
+            ],
+            "text": "mcx::MultiComplex<double> sum00 = 0.0 * tau * delta;"
+          },
+          {
+            "line": 305,
+            "guards": [
+              "#if ENABLE_CATCH"
+            ],
+            "text": "mcx::MultiComplex<double> u = 0.0 * tau * delta;"
+          },
+          {
+            "line": 560,
+            "guards": [
+              "#if ENABLE_CATCH"
+            ],
+            "text": "mcx::MultiComplex<double> ResidualHelmholtzNonAnalytic::one_mcx(const mcx::MultiComplex<double>& tau, const mcx::MultiComplex<double>& delta) const {"
+          },
+          {
+            "line": 562,
+            "guards": [
+              "#if ENABLE_CATCH"
+            ],
+            "text": "mcx::MultiComplex<double> sum00 = 0.0 * tau * delta;"
+          },
+          {
+            "line": 720,
+            "guards": [
+              "#if ENABLE_CATCH"
+            ],
+            "text": "mcx::MultiComplex<double> ResidualHelmholtzGaoB::one_mcx(const mcx::MultiComplex<double>& tau, const mcx::MultiComplex<double>& delta) const {"
+          },
+          {
+            "line": 721,
+            "guards": [
+              "#if ENABLE_CATCH"
+            ],
+            "text": "mcx::MultiComplex<double> sum00 = 0.0;"
+          },
+          {
+            "line": 778,
+            "guards": [
+              "#if ENABLE_CATCH"
+            ],
+            "text": "mcx::MultiComplex<double> ResidualHelmholtzXiangDeiters::one_mcx(const mcx::MultiComplex<double>& tau, const mcx::MultiComplex<double>& delta) const {"
+          },
+          {
+            "line": 1067,
+            "guards": [
+              "#if ENABLE_CATCH"
+            ],
+            "text": "mcx::MultiComplex<double> IdealHelmholtzCP0PolyT::one_mcx(const mcx::MultiComplex<double>& tau, const mcx::MultiComplex<double>& delta) const {"
+          },
+          {
+            "line": 1068,
+            "guards": [
+              "#if ENABLE_CATCH"
+            ],
+            "text": "mcx::MultiComplex<double> sum = 0.0;"
+          },
+          {
+            "line": 1292,
+            "guards": [
+              "#if ENABLE_CATCH"
+            ],
+            "text": "mcx::MultiComplex<double> IdealHelmholtzGERG2004Sinh::one_mcx(const mcx::MultiComplex<double>& tau, const mcx::MultiComplex<double>& delta) const {"
+          },
+          {
+            "line": 1301,
+            "guards": [
+              "#if ENABLE_CATCH"
+            ],
+            "text": "auto diff_abs = [](const mcx::MultiComplex<double>& x) { return sqrt(x * x); };  // differentiable absolute value"
+          },
+          {
+            "line": 1303,
+            "guards": [
+              "#if ENABLE_CATCH"
+            ],
+            "text": "mcx::MultiComplex<double> sum00 = 0.0;"
+          },
+          {
+            "line": 1344,
+            "guards": [
+              "#if ENABLE_CATCH"
+            ],
+            "text": "mcx::MultiComplex<double> IdealHelmholtzGERG2004Cosh::one_mcx(const mcx::MultiComplex<double>& tau, const mcx::MultiComplex<double>& delta) const {"
+          },
+          {
+            "line": 1353,
+            "guards": [
+              "#if ENABLE_CATCH"
+            ],
+            "text": "auto diff_abs = [](const mcx::MultiComplex<double>& x) { return sqrt(x * x); };  // differentiable absolute value"
+          },
+          {
+            "line": 1355,
+            "guards": [
+              "#if ENABLE_CATCH"
+            ],
+            "text": "mcx::MultiComplex<double> sum00 = 0.0;"
+          },
+          {
+            "line": 1734,
+            "guards": [
+              "#ifdef ENABLE_CATCH"
+            ],
+            "text": "using fcn_t = std::function<mcx::MultiComplex<double>(const std::vector<mcx::MultiComplex<double>>&)>;"
+          },
+          {
+            "line": 1735,
+            "guards": [
+              "#ifdef ENABLE_CATCH"
+            ],
+            "text": "fcn_t f = [&term](const std::vector<mcx::MultiComplex<double>>& x) { return term->one_mcx(x[0], x[1]); };"
+          },
+          {
+            "line": 1775,
+            "guards": [
+              "#ifdef ENABLE_CATCH"
+            ],
+            "text": "// Do calculations with multicomplex, if the one_mcx function has been implemented"
+          },
+          {
+            "line": 1799,
+            "guards": [
+              "#ifdef ENABLE_CATCH"
+            ],
+            "text": "deriv_tolerance = 1e-7;  // due to, I think, a loss in precision in the log function of multicomplex"
+          },
+          {
+            "line": 1803,
+            "guards": [
+              "#ifdef ENABLE_CATCH"
+            ],
+            "text": "val_tolerance = 1e-10;  // due to, I think, a loss in precision in the log function of multicomplex"
+          },
+          {
+            "line": 1806,
+            "guards": [
+              "#ifdef ENABLE_CATCH"
+            ],
+            "text": "val_tolerance = 1e-12;  // due to, I think, a loss in precision in the log function of multicomplex"
+          }
+        ]
+      }
+    ],
+    "python_target_include_list_omits_multicomplex": true,
+    "python_publisher_does_not_define_ENABLE_CATCH": true,
+    "binary_symbol_or_string_absence_is_supporting_evidence_not_standalone_proof": true
+  },
+  "eigen_corresponding_source": {
+    "path": "licenses/eigen/eigen-5.0.1-corresponding-headers.tar.gz",
+    "sha256": "0a44ffcab8abdb2515f3b418d298da9a78ed7c309bdbfce3ed54e756d47dfca0",
+    "original_source_archive_sha256": "e9c326dc8c05cd1e044c71f30f1b2e34a6161a3b6ecf445d56b53ff1669e3dec",
+    "original_files": 420,
+    "all_original_source_hashes_verified": true,
+    "all_Eigen_core_and_used_unsupported_Polynomials_source_included": true,
+    "no_original_source_modified": true,
+    "unrelated_tests_benchmarks_docs_media_omitted": true
+  },
+  "executed_engine_or_downloaded_source_during_source_audit": false,
+  "host_or_shared_dependencies_modified": false,
+  "runtime_requirements": {
+    "os": "macOS >=11.0",
+    "architectures": [
+      "arm64",
+      "x86_64"
+    ],
+    "python": "CPython 3.11 uses cp311-cp311; compatible CPython>=3.12 uses cp312-abi3",
+    "numpy": "Existing compatible NumPy>=1.20 required; not bundled, installed or modified"
+  },
+  "limitations": [
+    "Static source/distribution audit does not replace native numerical, host, UI, or user manual testing.",
+    "Intel execution must not be inferred from ARM results.",
+    "No byte-identical engine rebuild is claimed."
+  ],
+  "final_zip_audit": {
+    "status": "passed",
+    "audit_date": "2026-11-16",
+    "task_id": "AH-20261116-offline-steam-properties-workbench",
+    "native": {
+      "path": "plugins/offline-steam-properties-workbench/test-packages/offline-steam-properties-workbench-1.0.0-workswarm.zip",
+      "sha256": "41764bfdaa0799b9944adadafc922bbc857d3e0e926170f5a25692f12fac156e",
+      "bytes": 44877944,
+      "zip_entries": 53,
+      "payload_files": 53,
+      "zip_crc_passed": true,
+      "path_safety_passed": true,
+      "duplicates_symlinks_hidden_files_caches_absent": true,
+      "stored_zip_members": true,
+      "matches_current_payload": true,
+      "extracted_payload_matches_zip": true,
+      "below_95_mib": true
+    },
+    "canonical": {
+      "path": "releases/agent-plugin/offline-steam-properties-workbench/1.0.0/offline-steam-properties-workbench-1.0.0.zip",
+      "sha256": "39e40862077801745b45da9140b203e4ec36671d43f646d11255ded05866b2e7",
+      "bytes": 44885893,
+      "zip_entries": 54,
+      "payload_files": 53,
+      "zip_crc_passed": true,
+      "path_safety_passed": true,
+      "duplicates_symlinks_hidden_files_caches_absent": true,
+      "stored_zip_members": true,
+      "matches_current_payload": true,
+      "extracted_payload_matches_zip": true,
+      "below_95_mib": true
+    },
+    "payloads_equal_to_each_other_and_current_reviewed_source": true,
+    "payload_file_count": 53,
+    "payload_manifest_sha256": "bfc6cb890dc0e9ba1289471c1eeb5649fdc1f7fedf426a62f37c8e9e241b87bd",
+    "license_evidence_files_verified": 30,
+    "all_recorded_license_hashes_match_both_extracted_packages": true,
+    "four_original_wheel_hashes_match_both_packages": true,
+    "wheel_record_static_abi_architecture_licensing_review_reused_by_matching_unchanged_hashes": true,
+    "corresponding_source": {
+      "path": "licenses/eigen/eigen-5.0.1-corresponding-headers.tar.gz",
+      "sha256": "0a44ffcab8abdb2515f3b418d298da9a78ed7c309bdbfce3ed54e756d47dfca0",
+      "archive_entries": 421,
+      "original_files": 420,
+      "all_original_hashes_and_bytes_match_pinned_eigen_source": true,
+      "source_available_inside_both_exact_packages": true
+    },
+    "nlohmann_header": {
+      "path": "licenses/nlohmann-json/source/json.hpp",
+      "bytes": 953436,
+      "sha256": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63",
+      "both_exact_archives_match_complete_original_upstream_header": true
+    },
+    "canonical_and_native_artifact_payload_maps_verified": true,
+    "payload_modified_during_this_final_audit": false,
+    "limitations": [
+      "Archive/source/legal consistency audit only; actual engine/host/UI tests and user manual confirmation are separate.",
+      "macOS11+ arm64/x86_64 wheel scope; Intel execution is not inferred from ARM tests.",
+      "Existing compatible CPython3.11+ and NumPy>=1.20 required; no NumPy or shared dependency installation bundled.",
+      "No complete byte-identical CoolProp rebuild is claimed."
+    ],
+    "changes_since_pre_cleanup_audit": {
+      "prior_native_sha256": "4ac1a4bfcca5e7f065668d0d193134c0cb196329bed8ac2f7989655b6ef2e3aa",
+      "prior_canonical_sha256": "171940296d89ebb826d66544ac21da6f08736c058d0b85079b73d08a44249e74",
+      "only_payload_path_changed": "runtime/worker.py",
+      "prior_worker_sha256": "767d5c73e08ffcba19beed9c43e4db93e4d39d48b1458be79e033c43d2e5f88a",
+      "worker_sha256": "f9828b6eb55a2d51cac86c039247a58ec7c63e95fa1398fd59cd8609d437f600",
+      "review": "Worker TemporaryDirectory is beneath parent-owned cwd so parent cleanup reaps extracted files after worker termination.",
+      "all_other_52_payload_files_identical": true
+    },
+    "source_license_review_reuse": "All4wheel hashes and30legal/source evidence hashes are unchanged; original420Eigen source and exactnlohmann source checks reused for matching bytes."
+  },
+  "compressed_material_preflight": [
+    {
+      "path": "vendor/coolprop/coolprop-8.0.0-cp311-cp311-macosx_11_0_arm64.whl",
+      "sha256": "ad8bca80518c9777e81dd861fc274e4a56115712b54af7413504249e8fe83078",
+      "archive_entries": 168,
+      "javascript_typescript_entries": [],
+      "nested_js_preflight": "no JavaScript/TypeScript source files present",
+      "expanded_bytes": 38321791
+    },
+    {
+      "path": "vendor/coolprop/coolprop-8.0.0-cp311-cp311-macosx_11_0_x86_64.whl",
+      "sha256": "7b8e17dd611b6e1a0b91bec887c84056c4492dcb033fda4b3e93a6b77dc9e074",
+      "archive_entries": 168,
+      "javascript_typescript_entries": [],
+      "nested_js_preflight": "no JavaScript/TypeScript source files present",
+      "expanded_bytes": 38513928
+    },
+    {
+      "path": "vendor/coolprop/coolprop-8.0.0-cp312-abi3-macosx_11_0_arm64.whl",
+      "sha256": "46de36f51330ce8c7f8384a7360e1058739d20604736158aac6bd2abf6ae26bd",
+      "archive_entries": 168,
+      "javascript_typescript_entries": [],
+      "nested_js_preflight": "no JavaScript/TypeScript source files present",
+      "expanded_bytes": 38355244
+    },
+    {
+      "path": "vendor/coolprop/coolprop-8.0.0-cp312-abi3-macosx_11_0_x86_64.whl",
+      "sha256": "939803aa9d849961e76512d4c3d60b15c25802c75cbecc801892edb3b023f200",
+      "archive_entries": 168,
+      "javascript_typescript_entries": [],
+      "nested_js_preflight": "no JavaScript/TypeScript source files present",
+      "expanded_bytes": 38493693
+    },
+    {
+      "path": "licenses/eigen/eigen-5.0.1-corresponding-headers.tar.gz",
+      "sha256": "0a44ffcab8abdb2515f3b418d298da9a78ed7c309bdbfce3ed54e756d47dfca0",
+      "archive_entries": 421,
+      "javascript_typescript_entries": [],
+      "nested_js_preflight": "no JavaScript/TypeScript source files present"
+    }
+  ],
+  "repository_reuse": {
+    "source": "plugins/offline-allocation-workbench",
+    "revision": "426f7230bc0a11a0d410cda5aa4866141f491649",
+    "owner": "Cai Zhenze",
+    "authority": "Cai Zhenze explicitly approved this new plugin build; routine adaptation of their existing maintained integration mechanisms is within that scope. Source ownership was confirmed in the task context and existing asset metadata, not inferred from a GitHub account. No claim that the user explicitly named each helper as a reuse instruction.",
+    "files": [
+      {
+        "source_path": "plugins/offline-allocation-workbench/offline-allocation-workbench/runtime/runtime.py",
+        "destination_path": "plugins/offline-steam-properties-workbench/offline-steam-properties-workbench/runtime/runtime.py",
+        "source_sha256": "8ef691571c14eefb5c148909fcc736ffca0d1dcb9364a9d969856a72437d5b76",
+        "adapted_sha256": "33bd860ab7f1d9c1051df392f96ef9c04708412c73e5b887c1e9847e89b5d575",
+        "scope": "Owned state/file-lock and start/status/stop lifecycle adapted for this workbench."
+      },
+      {
+        "source_path": "plugins/offline-allocation-workbench/offline-allocation-workbench/runtime/server.py",
+        "destination_path": "plugins/offline-steam-properties-workbench/offline-steam-properties-workbench/runtime/server.py",
+        "source_sha256": "7d6d863d2d69c6538e06adfac9910838f9f69e806da46e313cb67cdbc39d7c6f",
+        "adapted_sha256": "66ae27f8677f281949648105299b3e578d47e48af71d9f70d0cdb444febde249",
+        "scope": "Authenticated loopback transport, fixed routes/assets and host/origin checks adapted for this workbench."
+      },
+      {
+        "source_path": "plugins/offline-allocation-workbench/build_packages.py",
+        "destination_path": "plugins/offline-steam-properties-workbench/build_packages.py",
+        "source_sha256": "dd18c0ee9651ee740f4b1b3272d938c69e0777c93b3b0b060ce812269255fd30",
+        "adapted_sha256": "16ecbcfcf98e21d23c94ab5387aee0030b86f775e105e5d4174a286664334372",
+        "scope": "Deterministic native ZIP/companion artifact derivation from the canonical payload."
+      },
+      {
+        "source_path": "plugins/offline-allocation-workbench/verify_sdk.py",
+        "destination_path": "plugins/offline-steam-properties-workbench/verify_sdk.py",
+        "source_sha256": "893a805e49ef97bcee864d9fe5c6223a4cccc612fa7c6a25f2d02ea890a9bbe5",
+        "adapted_sha256": "c04bd164b14ca4a5d1acaafd6eeb68fdb60cbc3956fdb8fbd04f15aa7532c79e",
+        "scope": "Public SDK verification scaffolding adapted for actual water/steam calculations."
+      },
+      {
+        "source_path": "plugins/offline-allocation-workbench/verify_workswarm.py",
+        "destination_path": "plugins/offline-steam-properties-workbench/verify_workswarm.py",
+        "source_sha256": "2f9fc0d16419fe493c24bf42c79780ed86151df1fca6e09da1be3e148efd5cbb",
+        "adapted_sha256": "a370a1a6862af0ec7895519197443d968c6b3e488e3b9649f581df0704d3922a",
+        "scope": "Native WorkSwarm import/install verification scaffolding adapted to this isolated plugin."
+      }
+    ],
+    "license_statement": "Maintained internal repository adaptation; no external uniform or repository-wide license asserted."
+  },
+  "engineering_review": {
+    "date": "2026-11-16",
+    "scope": [
+      "runtime/engine.py",
+      "runtime/worker.py",
+      "runtime/model.py"
+    ],
+    "result": "No P1/P2 issues found in read-only review after raw-name-length and free-threaded-CPython fixes.",
+    "checks": [
+      "Fixed HEOS Water and bounded declarative SI inputs.",
+      "Mass quality uses weighted enthalpy and harmonic density, saturated PT errors recover without forced phase.",
+      "Repeated wheel hash/ABI/platform checks, private extraction, isolated child interpreter and network denial.",
+      "Bounded CPU/input/output and cancellation cleanup.",
+      "Worker extraction directory is under parent calculation cwd; parent reaps child before deleting complete tree."
+    ],
+    "runtime_tests_not_duplicated_by_this_review": true,
+    "file_sha256": {
+      "runtime/engine.py": "564aa9098b0e8decc8affd65f082791a7b9922d5309f355accdd788ef4100226",
+      "runtime/worker.py": "f9828b6eb55a2d51cac86c039247a58ec7c63e95fa1398fd59cd8609d437f600",
+      "runtime/model.py": "1f0786d043a9eb15602dfeddb743e4557186e26e53d54e86599c9685ffe74fa4"
+    }
+  },
+  "nlohmann_source_fidelity": {
+    "path": "licenses/nlohmann-json/source/json.hpp",
+    "bytes": 953436,
+    "sha256": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63",
+    "matches_complete_pinned_upstream_header": true,
+    "code_modified": false,
+    "one_text_transport_newline_removed_before_user_testing": true,
+    "parent_authorized_correction": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "actual_browser_downloads": true,
+  "project_si_input_equal": true,
+  "csv_rows": 29,
+  "columns": 14,
+  "csv_matches_published_saturation_reference": true,
+  "svg_parsed_no_script_or_event_handler": true,
+  "files": {
+    "水蒸气项目.json": {
+      "sha256": "5c477508ee474a1dfef66704f9ff4058fa943c155f053c7ef32415bd0b71b877",
+      "bytes": 253
+    },
+    "水蒸气饱和曲线.svg": {
+      "sha256": "76c55d16a895f67d3e2a9fb8b8219255eee832a0a7a31f9ce7cd9739301f42d5",
+      "bytes": 8490
+    },
+    "水蒸气计算结果.csv": {
+      "sha256": "61e84406bd1941aa3c03c3c9165756cbfd40a0aeac17ccbfff0117e7707488ab",
+      "bytes": 4201
+    }
+  },
+  "final_native_zip_sha256": "41764bfdaa0799b9944adadafc922bbc857d3e0e926170f5a25692f12fac156e",
+  "final_installed_payload": true,
+  "final_browser_exports": {
+    "水蒸气项目.json": {
+      "sha256": "5c477508ee474a1dfef66704f9ff4058fa943c155f053c7ef32415bd0b71b877",
+      "bytes": 253,
+      "equal_to_prior_verified_export": true
+    },
+    "水蒸气计算结果.csv": {
+      "sha256": "61e84406bd1941aa3c03c3c9165756cbfd40a0aeac17ccbfff0117e7707488ab",
+      "bytes": 4201,
+      "equal_to_prior_verified_export": true
+    },
+    "水蒸气饱和曲线.svg": {
+      "sha256": "76c55d16a895f67d3e2a9fb8b8219255eee832a0a7a31f9ce7cd9739301f42d5",
+      "bytes": 8490,
+      "equal_to_prior_verified_export": true
+    }
+  },
+  "final_installed_rendered_state": {
+    "temperature_c": 99.974296,
+    "density_kg_m3": 958.3675,
+    "enthalpy_kj_kg": 419.05773,
+    "latent_kj_kg": 2256.4716
+  },
+  "source_preview_close_status_running": false,
+  "manual_test_claimed": false
+}

@@ -1,0 +1,23 @@
+{
+  "type": "agent-plugin",
+  "name": "offline-steam-properties-workbench",
+  "version": "1.0.0",
+  "display_name": "离线水与蒸汽物性工作台",
+  "description": "离线计算纯水与蒸汽的密度、比焓、比熵、相态和饱和扫描，交互核对并导出真实引擎结果。",
+  "publisher": "Cai Zhenze",
+  "category": "数据与科学研究",
+  "tags": [
+    "水与蒸汽",
+    "离线物性",
+    "饱和曲线"
+  ],
+  "functional_tags": [
+    "Water Steam Properties",
+    "Thermodynamic Equation of State",
+    "Saturation Sweep"
+  ],
+  "scope": "macOS11+，CPython3.11+与预装NumPy1.20+；固定HEOS::Water，PT/PQ/TQ与2至100点线性饱和扫描。无混合物、REFPROP运行库、网络模拟或代码导入。",
+  "candidate_id": "Not Applicable",
+  "task_id": "AH-20261116-offline-steam-properties-workbench",
+  "related_asset_ids": []
+}
