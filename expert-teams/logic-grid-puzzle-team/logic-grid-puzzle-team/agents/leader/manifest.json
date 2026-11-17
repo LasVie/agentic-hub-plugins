@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "leader",
+  "description": "确认需求、真实分派任务、处理复核分歧并交付当前版本的谜题包。",
+  "display_name": {
+    "zh": "统筹与交付负责人",
+    "en": "Leader"
+  },
+  "display_description": {
+    "zh": "确认需求、真实分派任务、处理复核分歧并交付当前版本的谜题包。",
+    "en": "Leader for bounded logic-grid puzzles."
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/leader-workflow",
+      "mode": "all"
+    }
+  ]
+}

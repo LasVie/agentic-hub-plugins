@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "author",
+  "description": "依据用户确认的主题和词表编制受限配对谜题，维护线索编号并修订歧义。",
+  "display_name": {
+    "zh": "原创谜题编制员",
+    "en": "Puzzle Author"
+  },
+  "display_description": {
+    "zh": "依据用户确认的主题和词表编制受限配对谜题，维护线索编号并修订歧义。",
+    "en": "Puzzle Author for bounded logic-grid puzzles."
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/author-workflow",
+      "mode": "all"
+    }
+  ]
+}

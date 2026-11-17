@@ -1,0 +1,51 @@
+{
+  "asset": "logic-grid-puzzle-team",
+  "type": "agent-group",
+  "version": "1.0.0",
+  "task_id": "AH-20261117-logic-grid-puzzle-team",
+  "tool": {
+    "name": "official agentichub",
+    "version": "0.0.1",
+    "commit": "c8ee4ef44be0453470114aa5a19f4e1017462907"
+  },
+  "payload_sha256": {
+    "README.md": "9f778d800ad4b7e568dcb13ffdf6081c772703f9b083363cb4f89923fd004bd7",
+    "agents/author/manifest.json": "561b5692343e671cc306f34ea5a132fee5de1b1604c9d7abfed935be3df22d98",
+    "agents/author/persona/role.md": "56544fcfc38e7a7cbc52e746d27369d6a41cd217bf34a76ccaa7db7caea2d8f9",
+    "agents/author/skills/author-workflow/SKILL.md": "33c79dc7192da66331000987661b8ffc485334f524436cf7b94bc3a2caca2dfe",
+    "agents/leader/AGENT.md": "108fee00a61c47877b5341a237707615fd40dec649f2d525f406bf2936684bb5",
+    "agents/leader/manifest.json": "37d34535c3e88205bceafc37ba29c00e3df3937ab3aa24e1c2ae9ae04f79f66f",
+    "agents/leader/persona/role.md": "5626183d8598f07b781878a44f44991671757651d12d6d1831ebbd41aed9960a",
+    "agents/leader/skills/leader-workflow/SKILL.md": "14f61472d720767d9ccd2ddce8e98eef77d25c9124511ec3c5ec352acbe79216",
+    "agents/leader/tools/deliver.py": "0671b74edd46dff4114b769aa808e55fa3fa8e1650d2ebf65d7ba10d2e8ebfb0",
+    "agents/modeler/manifest.json": "b9de358192e1a4cfca1adeadb3b209fe5f8571b99bb1d6c0d28abbd6801adace",
+    "agents/modeler/persona/role.md": "83cf768521f8ad161b89663da136db448341a4819ded94d931cd00894512fe00",
+    "agents/modeler/skills/modeler-workflow/SKILL.md": "3fa93a65bdd61161ba950431dc6fa349c239267c0469a70d5d60f15a5ce73648",
+    "agents/modeler/tools/model.py": "2844cea393a3a83fc85419f325d682115417325ef6a6e516e58e9e415b9abc7c",
+    "agents/reviewer/manifest.json": "49e049c64e7bd421463627c0cc1cc8447c899c6706ac1a74e90a2300f8bf87b6",
+    "agents/reviewer/persona/role.md": "466f7984c3c3669c3959d2116bf7ec5e5c1cb5da974a2c1b15b7444aeae21e2f",
+    "agents/reviewer/skills/reviewer-workflow/SKILL.md": "9b44c031e6d32933141f51797b297d30400172d712cf8b7adb21550c8f8f60a3",
+    "agents/reviewer/tools/review.py": "6872a9855cd1cee64afed79ab14fd00a5551d88d881df53436413c47a9a1d4af",
+    "examples/campus-model.json": "5b2fbce2183510b9fdb1be6139f4f08649d84d051870c51ddaed48f828154dd2",
+    "examples/four-model.json": "a9d56adc824eea1a9a866be9c698b3e0403639c777da89b36dc7def638d69bb1",
+    "manifest.json": "21d877edbd8b54ad6cb4bfc1c42885151b8f6f9f68fa9dcb756d0a3addd32494",
+    "skills/puzzle-collaboration/SKILL.md": "3737211d820f73fe0f986d3d4b5cceb662b123a6b39387510095e2b707f26b42"
+  },
+  "artifacts": {
+    "native": {
+      "path": "test-packages/logic-grid-puzzle-team-1.0.0-native.zip",
+      "sha256": "e008b203078e53852de51675dc7fc9669b57663a64c33593f8231fc822cdd1a9",
+      "bytes": 57893
+    },
+    "wrapped": {
+      "path": "release/1.0.0/logic-grid-puzzle-team-1.0.0-agent-group.zip",
+      "sha256": "7d81dc589061607be905361e9c71e60058b6b40c0ce947622118ca498f99765e",
+      "bytes": 30517
+    }
+  },
+  "source_review_sha256": "94eef6ac8c7febc12af96e75f190116795125eb7f05c513d05a1b90d84b72bc7",
+  "test_report_sha256": "0ebbc82e052584a83bc9809f5482ef1ab12a304cb98e780943a63d34acb89774",
+  "payload_equality": true,
+  "user_test_confirmation_sha256": "b48447d26caa581fc64ea07dc8e7f4346f61c3df56d1497f50df8cc8434fe804",
+  "user_screenshot_index_sha256": "93a4f59c3ca9a3d7ec3f552f0d925f4ffcbe77eb756854126d04bfcc09e28b12"
+}

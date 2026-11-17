@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "native": {
+    "path": "test-packages/logic-grid-puzzle-team-1.0.0-native.zip",
+    "sha256": "e008b203078e53852de51675dc7fc9669b57663a64c33593f8231fc822cdd1a9",
+    "bytes": 57893
+  },
+  "wrapped": {
+    "path": "release/1.0.0/logic-grid-puzzle-team-1.0.0-agent-group.zip",
+    "sha256": "7d81dc589061607be905361e9c71e60058b6b40c0ce947622118ca498f99765e",
+    "bytes": 30517
+  },
+  "payload_files": 21,
+  "source_native_wrapped_equal": true,
+  "extracted_business_tests": {
+    "passed": 22,
+    "exit_code": 0
+  },
+  "checks": [
+    "CRC",
+    "unique paths",
+    "no absolute/traversal paths",
+    "no symlinks",
+    "50:1 compression limit",
+    "95MiB limit",
+    "exact allowed wrapper entries",
+    "all per-file SHA256"
+  ]
+}

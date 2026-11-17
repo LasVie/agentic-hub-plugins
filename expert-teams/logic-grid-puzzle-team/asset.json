@@ -1,0 +1,22 @@
+{
+  "type": "agent-group",
+  "name": "logic-grid-puzzle-team",
+  "version": "1.0.0",
+  "display_name": "逻辑网格谜题编制与验解专家团",
+  "description": "把主题和词表编成中文逻辑网格谜题，经完整解数计算、独立线索复核后交付题面、答案与审计记录。",
+  "publisher": "Cai Zhenze",
+  "category": "education",
+  "tags": [
+    "逻辑谜题",
+    "独立验解",
+    "有限约束"
+  ],
+  "members": [
+    "leader",
+    "author",
+    "modeler",
+    "reviewer"
+  ],
+  "candidate_id": null,
+  "task_id": "AH-20261117-logic-grid-puzzle-team"
+}

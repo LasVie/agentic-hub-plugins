@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "puzzle_id": "ambiguous-tea-party",
+  "title": "花园茶会的饮品与宠物",
+  "categories": [
+    {
+      "id": "person",
+      "label": "人物",
+      "items": [
+        {
+          "id": "p1",
+          "label": "小林"
+        },
+        {
+          "id": "p2",
+          "label": "小周"
+        },
+        {
+          "id": "p3",
+          "label": "小陈"
+        }
+      ]
+    },
+    {
+      "id": "drink",
+      "label": "饮品",
+      "items": [
+        {
+          "id": "d1",
+          "label": "茶"
+        },
+        {
+          "id": "d2",
+          "label": "咖啡"
+        },
+        {
+          "id": "d3",
+          "label": "牛奶"
+        }
+      ]
+    },
+    {
+      "id": "pet",
+      "label": "宠物",
+      "items": [
+        {
+          "id": "t1",
+          "label": "猫"
+        },
+        {
+          "id": "t2",
+          "label": "狗"
+        },
+        {
+          "id": "t3",
+          "label": "鱼"
+        }
+      ]
+    }
+  ],
+  "clues": [
+    {
+      "id": "clue-01",
+      "op": "not_match",
+      "left": {
+        "category": "person",
+        "item": "p1"
+      },
+      "right": {
+        "category": "drink",
+        "item": "d1"
+      }
+    }
+  ]
+}
