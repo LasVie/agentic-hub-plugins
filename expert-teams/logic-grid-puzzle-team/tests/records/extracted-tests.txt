@@ -1,0 +1,27 @@
+test_algorithms_agree_on_every_nonempty_subset_of_five_clues (test_puzzle.PuzzleTests) ... ok
+test_ambiguity_reports_two_real_counterexamples (test_puzzle.PuzzleTests) ... ok
+test_bundled_examples_match_original_fixtures (test_puzzle.PuzzleTests) ... ok
+test_certificate_recomputes_and_rejects_tampered_review (test_puzzle.PuzzleTests) ... ok
+test_changed_negation_changes_source_and_model (test_puzzle.PuzzleTests) ... ok
+test_cli_nested_json_and_missing_arguments_are_chinese_json_errors (test_puzzle.PuzzleTests) ... ok
+test_controlled_text_collision_rejected_and_literal_conjunction_supported (test_puzzle.PuzzleTests) ... ok
+test_delivery_html_is_escaped_and_contains_no_answer (test_puzzle.PuzzleTests) ... ok
+test_existing_output_not_overwritten (test_puzzle.PuzzleTests) ... ok
+test_fifo_input_rejected_without_blocking (test_puzzle.PuzzleTests) ... ok
+test_four_item_unique (test_puzzle.PuzzleTests) ... ok
+test_inconsistent_clues_are_not_vacuously_explained (test_puzzle.PuzzleTests) ... ok
+test_json_duplicate_keys_nonfinite_invalid_utf8_and_oversize (test_puzzle.PuzzleTests) ... ok
+test_nonunique_or_inconsistent_delivery_refused (test_puzzle.PuzzleTests) ... ok
+test_partial_output_failure_preserves_written_file_without_success_audit (test_puzzle.PuzzleTests) ... ok
+test_real_cli_pipeline_and_chinese_failure (test_puzzle.PuzzleTests) ... ok
+test_reviewer_rejects_unsupported_chinese_wording (test_puzzle.PuzzleTests) ... ok
+test_source_unknown_fields_and_changed_rules_rejected (test_puzzle.PuzzleTests) ... ok
+test_stale_same_id_review_rejected (test_puzzle.PuzzleTests) ... ok
+test_symlink_and_traversal_input_and_output_rejected (test_puzzle.PuzzleTests) ... ok
+test_three_item_unique_and_complete_explanation (test_puzzle.PuzzleTests) ... ok
+test_unknown_missing_invalid_fields_and_bounds (test_puzzle.PuzzleTests) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 1.044s
+
+OK

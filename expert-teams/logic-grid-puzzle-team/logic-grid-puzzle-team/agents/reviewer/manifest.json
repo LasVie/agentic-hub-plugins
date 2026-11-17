@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "reviewer",
+  "description": "从学习者实际可见的中文线索重建约束，以独立算法验解并核查歧义和遗漏。",
+  "display_name": {
+    "zh": "独立验解与语义复核员",
+    "en": "Independent Reviewer"
+  },
+  "display_description": {
+    "zh": "从学习者实际可见的中文线索重建约束，以独立算法验解并核查歧义和遗漏。",
+    "en": "Independent Reviewer for bounded logic-grid puzzles."
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/reviewer-workflow",
+      "mode": "all"
+    }
+  ]
+}

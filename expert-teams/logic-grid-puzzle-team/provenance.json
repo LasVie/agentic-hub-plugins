@@ -1,0 +1,67 @@
+{
+  "mode": "native",
+  "permission_status": "not-applicable",
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/2006.06343v1",
+      "pinned_version": "v1",
+      "use": "Functional research only; no source/text/puzzle/figure copied"
+    },
+    {
+      "url": "https://proceedings.mlr.press/v267/lin25i.html",
+      "pinned_version": "ICML2025 PMLR267",
+      "use": "Functional CSP framing; no dataset/code copied"
+    },
+    {
+      "url": "https://arxiv.org/abs/2308.08155v2",
+      "pinned_version": "v2",
+      "use": "Historical multi-agent workflow reference only"
+    },
+    {
+      "url": "https://github.com/openJiuwen-ai/jiuwenswarm",
+      "commit": "9843516a165bd9a6ad9c37f394fac90be128e551",
+      "use": "Package interface reference, no bundled host source"
+    },
+    {
+      "url": "https://github.com/openJiuwen-ai/agent-core",
+      "commit": "5a35c39f0163a4e6190800df53ad7e24848756eb",
+      "use": "Loader contract reference, no SDK bundled"
+    }
+  ],
+  "reused_paths": [],
+  "license_evidence": [],
+  "runtime_dependencies": [
+    {
+      "name": "Python standard library",
+      "version_requirement": ">=3.10",
+      "bundled": false
+    },
+    {
+      "name": "Compatible WorkSwarm AgentGroup host, native delegation/file/command tools and user-authorized model",
+      "bundled": false
+    }
+  ],
+  "development_tools": [
+    {
+      "name": "official Agentic Hub CLI",
+      "version": "0.0.1",
+      "commit": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+      "bundled": false,
+      "archive_sha256": "32f8c990decd991e4ca165e5b4bd8cbc1d3e7d4753a296c65363774d42676351"
+    }
+  ],
+  "audit_file": "SOURCE_REVIEW.md",
+  "native_design": "NATIVE_DESIGN.md",
+  "materials_already_seen": [
+    "Public research abstracts and official documented multi-agent workflow",
+    "Official AgentGroup loader/specification",
+    "Repository PC/grant manifest/test records for integration conventions; no business implementation copied",
+    "Main integration harness as protocol reference; no code copied"
+  ],
+  "name_mapping": {
+    "research": "Independent Logic Grid Puzzle Authoring and Verification Team",
+    "package": "逻辑网格谜题编制与验解专家团",
+    "slug": "logic-grid-puzzle-team"
+  },
+  "task_id": "AH-20261117-logic-grid-puzzle-team"
+}

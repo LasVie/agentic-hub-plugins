@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "modeler",
+  "description": "枚举全部合法配对，报告无解、唯一解或多解，并生成不含答案的学习者原文。",
+  "display_name": {
+    "zh": "约束建模与计数员",
+    "en": "Constraint Modeler"
+  },
+  "display_description": {
+    "zh": "枚举全部合法配对，报告无解、唯一解或多解，并生成不含答案的学习者原文。",
+    "en": "Constraint Modeler for bounded logic-grid puzzles."
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/modeler-workflow",
+      "mode": "all"
+    }
+  ]
+}

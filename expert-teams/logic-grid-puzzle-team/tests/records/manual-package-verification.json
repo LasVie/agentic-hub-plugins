@@ -1,0 +1,146 @@
+{
+  "task_id": "AH-20261117-logic-grid-puzzle-team",
+  "owner": "Cai Zhenze",
+  "version": "1.0.0",
+  "reviewed_date": "2026-11-17",
+  "timezone": "Asia/Singapore",
+  "review_scope": "Read-only verification of the exact manual-installed payload, specifically identified user artifacts and six received original screenshots. No paid calls, runtime modifications or broad data collection.",
+  "packages": {
+    "native": {
+      "path": "test-packages/logic-grid-puzzle-team-1.0.0-native.zip",
+      "sha256": "e008b203078e53852de51675dc7fc9669b57663a64c33593f8231fc822cdd1a9",
+      "matches_confirmed": true
+    },
+    "wrapped": {
+      "path": "release/1.0.0/logic-grid-puzzle-team-1.0.0-agent-group.zip",
+      "sha256": "7d81dc589061607be905361e9c71e60058b6b40c0ce947622118ca498f99765e",
+      "matches_confirmed": true
+    }
+  },
+  "installed_payload": {
+    "source_location": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/.research/ebook-workswarm-20261027/data/.agent_teams/agent_groups/local/logic-grid-puzzle-team",
+    "file_count": 21,
+    "expected_file_count": 21,
+    "installed_source_and_artifact_maps_equal": true,
+    "modeler_script_sha256": "2844cea393a3a83fc85419f325d682115417325ef6a6e516e58e9e415b9abc7c",
+    "packaged_members": [
+      "leader",
+      "author",
+      "modeler",
+      "reviewer"
+    ]
+  },
+  "manual_inputs": {
+    "author-model-v1.json": {
+      "source_location": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/.research/ebook-workswarm-20261027/data/.agent_teams/jiuwen_team_web_1a1e8acacff_94516503c0b9/team-workspace/artifacts/2026-11-17/chat-1/outputs/author-model-v1.json",
+      "raw_sha256": "eec7fa3edd19fa8b116b37fea25585302cb5ddcee6e4009d7310f66a3f00b711"
+    },
+    "author-model-v2.json": {
+      "source_location": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/.research/ebook-workswarm-20261027/data/.agent_teams/jiuwen_team_web_1a1e8acacff_94516503c0b9/team-workspace/artifacts/2026-11-17/chat-1/outputs/author-model-v2.json",
+      "raw_sha256": "a5307af2407408a6bc7318a8ce4f0da8918dcf4f570e1f74eb7b3564bfeb7256"
+    },
+    "author-model-v3.json": {
+      "source_location": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/.research/ebook-workswarm-20261027/data/.agent_teams/jiuwen_team_web_1a1e8acacff_94516503c0b9/team-workspace/artifacts/2026-11-17/chat-1/outputs/author-model-v3.json",
+      "raw_sha256": "96baea8e6226ee31453bc7dafce4128fcba123f43583db4e3ae4661e670e7c5f"
+    },
+    "learner-v1.json": {
+      "source_location": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/.research/ebook-workswarm-20261027/data/.agent_teams/jiuwen_team_web_1a1e8acacff_94516503c0b9/team-workspace/artifacts/2026-11-17/chat-1/outputs/learner-v1.json",
+      "raw_sha256": "fa280388d5420f9556ceb891f0f3a9ee88de9920e49337c77453b1016f80b2d4"
+    },
+    "reviewer-review-v1.json": {
+      "source_location": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/.research/ebook-workswarm-20261027/data/.agent_teams/jiuwen_team_web_1a1e8acacff_94516503c0b9/team-workspace/artifacts/2026-11-17/chat-1/outputs/reviewer-review-v1.json",
+      "raw_sha256": "b4c44851075188a99581697481e6a4c499348d518ad16382fbd88bf1c7e5c834"
+    }
+  },
+  "manual_outputs": {
+    "puzzle.html": {
+      "source_location": "/private/tmp/logic-grid-manual-test-20261117-01/puzzle.html",
+      "raw_sha256": "cda68b98200e33170bb17151a5de0c114817125c93beddbfd1f21865a25e461b"
+    },
+    "answer.md": {
+      "source_location": "/private/tmp/logic-grid-manual-test-20261117-01/answer.md",
+      "raw_sha256": "e50fe9868f1b31139205963655d5afa7dfc56789b935ee865bafd482f7e9dbd7"
+    },
+    "audit.json": {
+      "source_location": "/private/tmp/logic-grid-manual-test-20261117-01/audit.json",
+      "raw_sha256": "41fc2386dcacaccecec106a3f51286f28cef58dac7c2d64271e3a01a52cc8bd2"
+    }
+  },
+  "recomputation": {
+    "method": "Executed unchanged packaged scripts with stdout-only inputs, no output directory or file writes. Recomputed delivery certification and renderers in memory.",
+    "modeler_candidate_count": 36,
+    "modeler_solution_count": 1,
+    "reviewer_solution_count": 1,
+    "learner_exact_reconstruction": true,
+    "review_exact_recomputation": true,
+    "certification_status": "verified_unique",
+    "audit_model_report_matches": true,
+    "audit_learner_source_matches": true,
+    "audit_explanation_matches": true,
+    "puzzle_html_byte_equal_unchanged_exporter": true,
+    "answer_md_byte_equal_unchanged_exporter": true,
+    "audit_exported_hashes_match": true,
+    "canonical_source_sha256": "abb0ffa24833b7569ba7645a6c7bd00de57b16e8ec6946f85119c531d973e538",
+    "canonical_model_sha256": "c285442bee7887a24676ff5665f058561edfa8ba54aea70850722d258c8bfc8b",
+    "canonical_review_sha256": "ec4b1d804bdfd094673877b1deab70e5819a618b830e75dbbd80b9948242120a"
+  },
+  "original_screenshot_review": [
+    {
+      "path": "evidence/user-testing-1.0.0/Screenshot 2026-11-17 at 4.51.31 PM.png",
+      "sha256": "9a696fd897c2b600935124bbfd1a584064158a8f6d8b8b8072cb83ca8bfa0c28",
+      "matches_received_index": true,
+      "width": 576,
+      "height": 1378,
+      "visual_review": "Readable; fictional puzzle data/local paths only; no visible credential or private record identified."
+    },
+    {
+      "path": "evidence/user-testing-1.0.0/Screenshot 2026-11-17 at 4.51.48 PM.png",
+      "sha256": "fa8cc03adb87a6f3e6718ed0641d25f7cacc1d8c44b153f983426ab720cf4d55",
+      "matches_received_index": true,
+      "width": 1210,
+      "height": 1218,
+      "visual_review": "Readable; fictional puzzle data/local paths only; no visible credential or private record identified."
+    },
+    {
+      "path": "evidence/user-testing-1.0.0/Screenshot 2026-11-17 at 4.51.58 PM.png",
+      "sha256": "23f444ec422d4d039b2bbdf2f138876ee19f026cc20788634648c413005fef78",
+      "matches_received_index": true,
+      "width": 1690,
+      "height": 828,
+      "visual_review": "Readable; fictional puzzle data/local paths only; no visible credential or private record identified."
+    },
+    {
+      "path": "evidence/user-testing-1.0.0/Screenshot 2026-11-17 at 4.52.10 PM.png",
+      "sha256": "79a2e5b1e87ab7dd07d05073b989b861ea0e11696a481a8e2bed079de557197a",
+      "matches_received_index": true,
+      "width": 3438,
+      "height": 1976,
+      "visual_review": "Readable; fictional puzzle data/local paths only; no visible credential or private record identified."
+    },
+    {
+      "path": "evidence/user-testing-1.0.0/Screenshot 2026-11-17 at 4.52.20 PM.png",
+      "sha256": "f7d804db8e58e8e3be04fd2e584b17bea4a8c5febbbb13385c93d7df6b069905",
+      "matches_received_index": true,
+      "width": 3446,
+      "height": 1982,
+      "visual_review": "Readable; fictional puzzle data/local paths only; no visible credential or private record identified."
+    },
+    {
+      "path": "evidence/user-testing-1.0.0/Screenshot 2026-11-17 at 4.52.29 PM.png",
+      "sha256": "829bc13261812d9f1e3edfe53c1ccf724c421dd9c85a5de4e93eaa337dfd3484",
+      "matches_received_index": true,
+      "width": 3456,
+      "height": 1984,
+      "visual_review": "Readable; fictional puzzle data/local paths only; no visible credential or private record identified."
+    }
+  ],
+  "provenance_and_limits": [
+    "User explicit current-package manual pass is accepted separately; screenshots alone do not establish confirmation.",
+    "Screenshots show invalid puzzle_id/uppercase clue IDs corrected within two repairs. These are generated input revisions, not packaged payload changes.",
+    "Additional puzzle-packager is host-spawned runtime helper, not a fifth packaged member.",
+    "Manual audit contains separately labeled host_provenance appended by the runtime. It is not a native deliver.py certification field. Original model/source/explanation and output hash fields were verified unchanged.",
+    "Member messages are evidence of reported actions; this review did not claim cryptographically blind context isolation or reconstruct an unrecorded raw command log for earlier failed attempts.",
+    "Exact finite-model uniqueness and controlled-clue consistency do not establish calibrated educational difficulty, minimum clues, human solving experience or performance beyond this manual case.",
+    "Read-only validation used the unchanged packaged scripts, not a new model call. No files in the user manual runtime were altered."
+  ]
+}

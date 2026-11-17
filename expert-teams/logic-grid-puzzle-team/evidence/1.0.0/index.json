@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0",
+  "native_sha256": "e008b203078e53852de51675dc7fc9669b57663a64c33593f8231fc822cdd1a9",
+  "screenshots": {
+    "engineering-puzzle-preview.png": {
+      "sha256": "a153fc1e00434c7527e4c4f1a8811d1b9e2dac9d5b44b49057dd0f0412769b53",
+      "type": "engineering screenshot, not original user testing"
+    },
+    "engineering-installed-team.png": {
+      "sha256": "120f6537a2f1ffb903baf7daaeab3421f256d327eff437e71605bc621dd2db30",
+      "type": "engineering screenshot, not original user testing"
+    }
+  },
+  "test_records": {
+    "host-ambiguous.json": "da3a8bc735e49b35922a080e4bef06912e20b01ccb3256e9478d74cf8cd9eb35",
+    "host-execution-four.json": "3725d9f3ced65a7cffbaa732489599fbe0b6a6427155f88b553354ccee36ad53",
+    "host-execution-three.json": "a66a851ec0a926a58c3a36640678690fa576f969834366f05af7ed53c04fe919",
+    "host-import.json": "6f68598cbf20d1f6a507d565e8929f3a9397461c1daed009c551d3d05f763145",
+    "host-inconsistent.json": "fe41793fd6304d124702a19157a0eabca28f512a1b7a4cf5481bf5bd3bc22958",
+    "host-loader.json": "992bd1420dbf6ffc42984acc202cd918e35b9ee6385630465e891319932e8bed",
+    "loader-validation.json": "20a5d78a967e81b23411f2561c0e75515b2e3985fbcd41674364354cdbc85dba",
+    "package-verification.json": "f5f8e40435b17ae9edb8497ab9750ed4618b4bf447291a045e0a400c04d44e28"
+  }
+}

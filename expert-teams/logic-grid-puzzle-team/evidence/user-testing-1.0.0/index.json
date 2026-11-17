@@ -1,0 +1,67 @@
+{
+  "task_id": "AH-20261117-logic-grid-puzzle-team",
+  "owner": "Cai Zhenze",
+  "display_name": "逻辑网格谜题编制与验解专家团",
+  "version": "1.0.0",
+  "native_sha256": "e008b203078e53852de51675dc7fc9669b57663a64c33593f8231fc822cdd1a9",
+  "wrapped_sha256": "7d81dc589061607be905361e9c71e60058b6b40c0ce947622118ca498f99765e",
+  "received_date": "2026-11-17",
+  "timezone": "Asia/Singapore",
+  "source": "Six original attachments in current Main4.0 conversation accompanying explicit manual pass. Filename times are capture times, not an inferred confirmation-message timestamp.",
+  "screenshots": [
+    {
+      "filename": "Screenshot 2026-11-17 at 4.51.31 PM.png",
+      "sha256": "9a696fd897c2b600935124bbfd1a584064158a8f6d8b8b8072cb83ca8bfa0c28",
+      "bytes": 246878,
+      "width": 576,
+      "height": 1378,
+      "scope": "Chinese original campus request, repair boundaries and final three-file delivery",
+      "original": true
+    },
+    {
+      "filename": "Screenshot 2026-11-17 at 4.51.48 PM.png",
+      "sha256": "fa8cc03adb87a6f3e6718ed0641d25f7cacc1d8c44b153f983426ab720cf4d55",
+      "bytes": 158536,
+      "width": 1210,
+      "height": 1218,
+      "scope": "Learner-only Chinese puzzle sheet and blank answer grid",
+      "original": true
+    },
+    {
+      "filename": "Screenshot 2026-11-17 at 4.51.58 PM.png",
+      "sha256": "23f444ec422d4d039b2bbdf2f138876ee19f026cc20788634648c413005fef78",
+      "bytes": 172636,
+      "width": 1690,
+      "height": 828,
+      "scope": "Separate teacher answer and complete-clue entailment explanation",
+      "original": true
+    },
+    {
+      "filename": "Screenshot 2026-11-17 at 4.52.10 PM.png",
+      "sha256": "79a2e5b1e87ab7dd07d05073b989b861ea0e11696a481a8e2bed079de557197a",
+      "bytes": 925152,
+      "width": 3438,
+      "height": 1976,
+      "scope": "Native team/member view and real tools plus final artifacts; additional host-spawned delivery helper visible",
+      "original": true
+    },
+    {
+      "filename": "Screenshot 2026-11-17 at 4.52.20 PM.png",
+      "sha256": "f7d804db8e58e8e3be04fd2e584b17bea4a8c5febbbb13385c93d7df6b069905",
+      "bytes": 1187933,
+      "width": 3446,
+      "height": 1982,
+      "scope": "Actual modeler command, learner-only reviewer handoff and provenance-only audit annotation",
+      "original": true
+    },
+    {
+      "filename": "Screenshot 2026-11-17 at 4.52.29 PM.png",
+      "sha256": "829bc13261812d9f1e3edfe53c1ccf724c421dd9c85a5de4e93eaa337dfd3484",
+      "bytes": 1141348,
+      "width": 3456,
+      "height": 1984,
+      "scope": "Invalid-ID failures, preserved model revisions and repair handoffs",
+      "original": true
+    }
+  ]
+}

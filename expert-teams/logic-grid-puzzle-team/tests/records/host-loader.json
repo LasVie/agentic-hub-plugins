@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/Users/IDLE_And_R/Downloads/Huawei/jiuwenswarm/local-only/connector-import/venv/bin/python",
+    "-B",
+    "/Users/IDLE_And_R/Downloads/Huawei/jiuwenswarm/jiuwenswarm/resources/agent/workspace/skills/agent-group-creator/scripts/register_group.py",
+    "/Users/IDLE_And_R/.codex/worktrees/0e7b/agentic-hub-plugins/expert-teams/logic-grid-puzzle-team/.local/host-manual-final/data/domain/.agent_teams/agent_groups/local/logic-grid-puzzle-team",
+    "--validate-only"
+  ],
+  "exit": 0,
+  "pass": true,
+  "native_sha256": "e008b203078e53852de51675dc7fc9669b57663a64c33593f8231fc822cdd1a9",
+  "host_version": "0.2.8",
+  "sdk_version": "0.1.20",
+  "validation": "Actual host creator and load_agent_group_package_bundle; not model reasoning"
+}
