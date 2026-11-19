@@ -1,0 +1,81 @@
+{
+  "version": "1.0.0",
+  "cases": [
+    {
+      "scenario": "positive",
+      "native_sha256": "ab0cc094891ebd6ae5ee4ea5efa14e0f49b7961b3ddedddc5a5bfd923ae7be89",
+      "status": "reviewed",
+      "verdict": "route_valid",
+      "metrics": {
+        "sum_of_costs": 7,
+        "makespan": 4
+      },
+      "events": 258,
+      "role_stages": [
+        "leader",
+        "map-analyst",
+        "verifier-model",
+        "planner",
+        "verifier-review"
+      ],
+      "actual_handoff_receipts": true
+    },
+    {
+      "scenario": "collision",
+      "native_sha256": "ab0cc094891ebd6ae5ee4ea5efa14e0f49b7961b3ddedddc5a5bfd923ae7be89",
+      "status": "blocked",
+      "verdict": "route_invalid",
+      "metrics": {
+        "sum_of_costs": 4,
+        "makespan": 2
+      },
+      "events": 263,
+      "role_stages": [
+        "leader",
+        "map-analyst",
+        "verifier-model",
+        "planner",
+        "verifier-review"
+      ],
+      "actual_handoff_receipts": true
+    },
+    {
+      "scenario": "model-gap",
+      "native_sha256": "ab0cc094891ebd6ae5ee4ea5efa14e0f49b7961b3ddedddc5a5bfd923ae7be89",
+      "status": "blocked",
+      "verdict": "route_valid",
+      "metrics": {
+        "sum_of_costs": 7,
+        "makespan": 4
+      },
+      "events": 263,
+      "role_stages": [
+        "leader",
+        "map-analyst",
+        "verifier-model",
+        "planner",
+        "verifier-review"
+      ],
+      "actual_handoff_receipts": true
+    },
+    {
+      "scenario": "search-limit",
+      "native_sha256": "ab0cc094891ebd6ae5ee4ea5efa14e0f49b7961b3ddedddc5a5bfd923ae7be89",
+      "status": "search_limit",
+      "verdict": "no_route_to_verify",
+      "metrics": null,
+      "events": 258,
+      "role_stages": [
+        "leader",
+        "map-analyst",
+        "verifier-model",
+        "planner",
+        "verifier-review"
+      ],
+      "actual_handoff_receipts": true
+    }
+  ],
+  "boundary": "Fixed local responses; genuine host orchestration and actual native scripts, not semantic collaboration or user pass.",
+  "raw_evidence_root": ".local/host-*/",
+  "paid_calls": 0
+}

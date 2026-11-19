@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "planner",
+  "description": "使用有界CBS计算同步路径，公开搜索边界和未完成状态。",
+  "display_name": {
+    "zh": "同步路径规划员",
+    "en": "Synchronized Route Planner"
+  },
+  "display_description": {
+    "zh": "使用有界CBS计算同步路径，公开搜索边界和未完成状态。",
+    "en": "Synchronized Route Planner responsibilities"
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/route-search",
+      "mode": "all"
+    }
+  ]
+}

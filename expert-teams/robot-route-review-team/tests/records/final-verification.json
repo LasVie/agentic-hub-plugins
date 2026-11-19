@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "source_native_wrapped_installed_runtime_files": 23,
+  "native_sha256": "ab0cc094891ebd6ae5ee4ea5efa14e0f49b7961b3ddedddc5a5bfd923ae7be89",
+  "canonical_sha256": "447d455cba0c4652090af5f30ebde75acafd041e9f2fc1c4031bf4376e77a22c",
+  "source_review_test_report_provenance_hashes": "passed",
+  "official_cli_hashes_match_prior_pinned_tool": true,
+  "final_exact_zip_preflight": "passed",
+  "manual_testing": "pending",
+  "github_actions": "none",
+  "hub_actions": "none",
+  "scope": "expert-teams/robot-route-review-team only"
+}

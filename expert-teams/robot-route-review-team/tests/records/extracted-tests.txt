@@ -1,0 +1,39 @@
+test_artifact_hashes_chinese_csv_html_escaping (test_routes.Routes) ... ok
+test_boolean_coordinate_rejected (test_routes.Routes) ... ok
+test_bounded_record_type_validation (test_routes.Routes) ... ok
+test_cli_actual_handoff_and_outputs (test_routes.Routes) ... ok
+test_disagreement_cannot_be_silently_accepted (test_routes.Routes) ... ok
+test_duplicate_json_key_rejected (test_routes.Routes) ... ok
+test_edge_swap (test_routes.Routes) ... ok
+test_four_robot_rotation (test_routes.Routes) ... ok
+test_goal_occupation_not_disappearance (test_routes.Routes) ... ok
+test_horizon_too_short_is_not_global_no_solution (test_routes.Routes) ... ok
+test_informational_note_does_not_block (test_routes.Routes) ... ok
+test_invalid_input_variants (test_routes.Routes) ... ok
+test_leave_goal_after_arrival (test_routes.Routes) ... ok
+test_low_search_budget_is_unknown (test_routes.Routes) ... ok
+test_map_issue_prevents_search (test_routes.Routes) ... ok
+test_missing_robot (test_routes.Routes) ... ok
+test_no_bay_finite_no_solution (test_routes.Routes) ... ok
+test_no_overwrite_results (test_routes.Routes) ... ok
+test_no_overwrite_single_report (test_routes.Routes) ... ok
+test_oracle_random_tiny_instances (test_routes.Routes) ... ok
+test_oversized_case_rejected (test_routes.Routes) ... ok
+test_passing_bay_computed_not_hardcoded (test_routes.Routes) ... ok
+test_real_model_issue_blocks (test_routes.Routes) ... ok
+test_search_budget_is_unknown (test_routes.Routes) ... ok
+test_stale_case_even_when_only_whitespace_changes (test_routes.Routes) ... ok
+test_stale_map_report (test_routes.Routes) ... ok
+test_stale_model_review (test_routes.Routes) ... ok
+test_stale_plan_bytes (test_routes.Routes) ... ok
+test_symlink_report_rejected (test_routes.Routes) ... ok
+test_tampered_metric (test_routes.Routes) ... ok
+test_three_robots_and_stationary_goal (test_routes.Routes) ... ok
+test_vertex_collision (test_routes.Routes) ... ok
+test_wall_and_jump (test_routes.Routes) ... ok
+test_wrong_start_and_goal (test_routes.Routes) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 0.195s
+
+OK

@@ -1,0 +1,12 @@
+{
+  "schema_self_check": "passed",
+  "actual_host_records_validated": {
+    "case": "case.json",
+    "map_report": "map.json",
+    "model_report": "model.json",
+    "plan": "plan.json",
+    "review": "review.json"
+  },
+  "runtime_cross_field_checks": "34 targeted business tests",
+  "boundary": "Schema validation is not path safety or member participation proof."
+}
