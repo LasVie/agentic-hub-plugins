@@ -1,0 +1,18 @@
+{
+  "slug": "jira-cloud",
+  "functional_test_version": "1.0.3",
+  "current_version": "1.0.4",
+  "changed_files": [
+    "THIRD_PARTY_NOTICES.md",
+    "cli.json",
+    "connector.py",
+    "icon.png",
+    "manifest.json"
+  ],
+  "code_change_review": [
+    {
+      "file": "connector.py",
+      "only_version_substitution": true
+    }
+  ]
+}

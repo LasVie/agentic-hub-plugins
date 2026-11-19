@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "type": "agent-mcp",
+  "name": "jira-cloud",
+  "display_name": "Jira Cloud 连接器",
+  "version": "1.0.4",
+  "owner": "Song Haoran",
+  "task_id": "AH-20261117-jira-cloud-connector",
+  "internal_asset_id": "repo:agent-mcp:jira-cloud",
+  "native_path": "jira-cloud",
+  "description": "在授权的 Jira Cloud 项目中查询、读取和创建工单。"
+}

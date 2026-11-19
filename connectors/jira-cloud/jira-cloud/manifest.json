@@ -1,0 +1,29 @@
+{
+  "version": "1.0.4",
+  "package_type": "mcp",
+  "id": "jira-cloud",
+  "name": "Jira Cloud 连接器",
+  "description": "在授权的 Jira Cloud 项目中查询、读取和创建工单。",
+  "display_name": {
+    "zh": "Jira Cloud 连接器",
+    "en": "Jira Cloud"
+  },
+  "display_description": {
+    "zh": "在授权的 Jira Cloud 项目中查询、读取和创建工单。",
+    "en": "Connect to Jira Cloud from WorkSwarm."
+  },
+  "integration": {
+    "type": "cli",
+    "file": "cli.json"
+  },
+  "credentials": {
+    "type": "cli-oauth"
+  },
+  "skills": [
+    {
+      "dir": "skills/jira-cloud-guide",
+      "mode": "all"
+    }
+  ],
+  "icon": "icon.png"
+}

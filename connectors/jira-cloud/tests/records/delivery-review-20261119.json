@@ -1,0 +1,22 @@
+{
+  "slug": "jira-cloud",
+  "name": "Jira Cloud 连接器",
+  "version": "1.0.4",
+  "task_id": "AH-20261117-jira-cloud-connector",
+  "owner": "Song Haoran",
+  "candidate_id": null,
+  "artifacts": [
+    {
+      "form": "native",
+      "path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/connectors/jira-cloud/test-packages/jira-cloud-1.0.4-native.zip",
+      "sha256": "7294221b069797e096b5c3ddb0bf7ac72c240be8fdc6a9a7e3d68b448e6b96b2"
+    },
+    {
+      "form": "agent-mcp_wrapped",
+      "path": "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/connectors/jira-cloud/release/1.0.4/jira-cloud-1.0.4-agent-mcp.zip",
+      "sha256": "3862b885ecb5e338b9a79da6f7d671ab7efa324fb8fae605c75db5af87b74750"
+    }
+  ],
+  "unit_test_returncode": 0,
+  "unit_test_output": "test_jira (test_connector.ConnectorTests.test_jira) ... ok\ntest_jira_accessible_site_prompt (test_connector.ConnectorTests.test_jira_accessible_site_prompt) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.015s\n\nOK\n"
+}
