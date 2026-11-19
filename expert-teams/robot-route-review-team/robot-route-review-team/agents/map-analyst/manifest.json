@@ -1,0 +1,16 @@
+{
+  "package_type": "agent_template",
+  "name": "map-analyst",
+  "description": "仅核对原始网格与用户意图，保存输入报告，不代替规划或独立复核。",
+  "display_name": {
+    "zh": "地图与规则核对员",
+    "en": "Map and Rule Analyst"
+  },
+  "display_description": {
+    "zh": "仅核对原始网格与用户意图，保存输入报告，不代替规划或独立复核。",
+    "en": "Map and Rule Analyst responsibilities"
+  },
+  "persona": {
+    "dir": "persona"
+  }
+}

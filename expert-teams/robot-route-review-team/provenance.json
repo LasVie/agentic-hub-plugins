@@ -1,0 +1,46 @@
+{
+  "mode": "native",
+  "permission_status": "not-applicable-original-implementation",
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/1906.08291v1",
+      "version": "v1, 2019-06-19",
+      "use": "Functional model terminology only; no copied materials"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.artint.2014.11.006",
+      "version": "Artificial Intelligence 219 (2015), 40-66",
+      "use": "Published CBS concept only; original bounded Python implementation"
+    },
+    {
+      "url": "https://github.com/whoenig/libMultiRobotPlanning",
+      "version": "4c75fa20c435c440d8b6bd6dc81668ddc7296ba0",
+      "use": "README and root MIT license inspected; no implementation copied"
+    }
+  ],
+  "reused_paths": [
+    {
+      "source": "expert-teams/procurement-quote-review-team/tests/build_package.py",
+      "ref": "4e190253f00b2a1d65fdc657161a67fecde15a48",
+      "scope": "Repository-owned packaging test mechanism adapted, not business logic"
+    },
+    {
+      "source": "expert-teams/logic-grid-puzzle-team/tests/host_integration.py",
+      "ref": "4e190253f00b2a1d65fdc657161a67fecde15a48",
+      "scope": "Owned isolated host test mechanism adapted, not business logic"
+    }
+  ],
+  "bundled_third_party_files": [],
+  "runtime_dependencies": [
+    {
+      "name": "Python >=3.10 standard library",
+      "bundled": false
+    },
+    {
+      "name": "Existing supported WorkSwarm AgentGroup, file and shell tools; user-authorized model",
+      "bundled": false
+    }
+  ],
+  "audit_file": "SOURCE_REVIEW.md",
+  "design_file": "NATIVE_DESIGN.md"
+}

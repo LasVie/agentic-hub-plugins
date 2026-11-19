@@ -1,0 +1,22 @@
+{
+  "type": "agent-group",
+  "name": "robot-route-review-team",
+  "version": "1.0.0",
+  "display_name": "多机器人路径规划复核专家团",
+  "description": "在有界模拟网格中分别核对模型、规划2–4个机器人的同步路径并独立逐步复核，交付中文离线动画与证据档案",
+  "publisher": "Cai Zhenze",
+  "category": "education",
+  "tags": [
+    "多机器人路径",
+    "独立回放",
+    "离线仿真"
+  ],
+  "members": [
+    "leader",
+    "map-analyst",
+    "planner",
+    "verifier"
+  ],
+  "candidate_id": null,
+  "task_id": "AH-20261117-robot-route-review-team"
+}

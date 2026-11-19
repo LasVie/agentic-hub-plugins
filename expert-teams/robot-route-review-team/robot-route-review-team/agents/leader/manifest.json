@@ -1,0 +1,16 @@
+{
+  "package_type": "agent_template",
+  "name": "leader",
+  "description": "澄清并冻结规则，建立真实成员任务，检查证据链和分歧后交付。",
+  "display_name": {
+    "zh": "规划复核主理人",
+    "en": "Planning Review Leader"
+  },
+  "display_description": {
+    "zh": "澄清并冻结规则，建立真实成员任务，检查证据链和分歧后交付。",
+    "en": "Planning Review Leader responsibilities"
+  },
+  "persona": {
+    "dir": "persona"
+  }
+}

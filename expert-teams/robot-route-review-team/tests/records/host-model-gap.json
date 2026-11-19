@@ -1,0 +1,137 @@
+{
+  "frontend_http": 200,
+  "native_sha256": "ab0cc094891ebd6ae5ee4ea5efa14e0f49b7961b3ddedddc5a5bfd923ae7be89",
+  "payload": {
+    "README.md": "3ed291716ab12fdc7656e886c9eaa0ee206e65a0ff8ba83805a7a8500fc4b51d",
+    "agents/leader/AGENT.md": "eb44985b2fa7b455d14a20ef3fd15efba887a634a65bcf1ed191d0c564f888cd",
+    "agents/leader/manifest.json": "a0986adb0a33c12a0c4201d629c7131516ebe9624639926d84a3ddbba45bb27d",
+    "agents/leader/persona/leader.md": "2097ef47e2597f98ab8187b653fece54a9c4b9507d521e7fbc28b341ea45b318",
+    "agents/map-analyst/manifest.json": "8db6c3018baca6f2e32d4aba20cd819ca4812bce2a9ee19c7ab696ef48a79d4f",
+    "agents/map-analyst/persona/map-analyst.md": "077caac6fac92ace5c5c35c1e1e1e6de5c313ae9742345e65248030fad8fb628",
+    "agents/planner/manifest.json": "39dcea1ea5efabf810397498474c10056b346eafaed66ad750c28d02d24d6df6",
+    "agents/planner/persona/planner.md": "7e8dae65ca7b180d07aca8457d7446a8460b280fa2e4dc1e41529a8906e88f81",
+    "agents/planner/skills/route-search/SKILL.md": "c141e93a90e85bee10dea1068b3dd7d217c84289b954a4e1248e8ca8b92b54e1",
+    "agents/planner/skills/route-search/scripts/planner.py": "412126968e24c8920e354a64be8caec7d521695f5ba7a31d8f4c3b33f1d64ea8",
+    "agents/verifier/manifest.json": "4f3e7001bfdd98dfad6451c0f33dcb4f793dc6e07f833ef8cd08501328b3058c",
+    "agents/verifier/persona/verifier.md": "dbe54f1871d982acd75f513cb2e544496d8c0c436e61e6f4d1ea073d45159b23",
+    "agents/verifier/skills/route-replay/SKILL.md": "f6e18f8728baf29f44f69515f7c7c3a8f54a74f0bce92b96be82ca6fc6df020f",
+    "agents/verifier/skills/route-replay/scripts/replay.py": "ed8b7fe670adce1ddabff81abcb774c061c8750865c7a5551e78f1b4f72f5711",
+    "examples/no-bay.json": "de75793f2ce3cd276ce031e90c39f2e245a7da9a4cfd1315a1abae6af88da9fe",
+    "examples/passing-bay.json": "eeffddb11b2528db016f64634a11c2a0b5764ea2c41825adb4b5e701d514f3bd",
+    "manifest.json": "addd9c396fffe78614cf2603238feb647b2d7d64b60413ebfb008bfc907536ea",
+    "skills/route-workflow/SKILL.md": "ff76192d27a9fe774baad6e295f0b7d896e2413c13ca841b1b7a6af2154819ae",
+    "skills/route-workflow/contracts.schema.json": "8955a486d2ccbcf4cb96670c1d74158f7fc3ff41a2cff868e9152a2b83110a6c",
+    "skills/route-workflow/scripts/dossier.py": "9658ae6896e8e088594aea5dc281a69ace6a12aa49fdecb0606e72ab17c5b21f",
+    "skills/route-workflow/scripts/protocol.py": "04f3d08ab0517a877feb2ed03d76ec1b712e74d7adf09d690511832d309b965d",
+    "skills/route-workflow/viewer.html": "76a76651197f2f7af958f4829b28d959e04816f4c65b5695892cd8b92ad78d54",
+    "来源与边界.md": "fd64f5baec8222a330b506fe97610ef9edf57d81a9c5283616738763fb75ab38"
+  },
+  "group": "robot-route-review-team",
+  "member_ids": [
+    "leader",
+    "map-analyst",
+    "planner",
+    "verifier"
+  ],
+  "version": "1.0.0",
+  "installed_equal": true,
+  "model_calls": "loopback fixed responses only",
+  "boundary": "Real host and tool execution with fixed local responses; no semantic model or manual pass.",
+  "scenario": "model-gap",
+  "final_status": "blocked",
+  "metrics": {
+    "sum_of_costs": 7,
+    "makespan": 4
+  },
+  "verdict": "route_valid",
+  "role_execution": {
+    "leader": {
+      "requests": 6,
+      "tools": [
+        "bash",
+        "build_team",
+        "create_task",
+        "skill_tool"
+      ],
+      "skills": [
+        "route-workflow"
+      ],
+      "command_exit": 0
+    },
+    "map-analyst": {
+      "requests": 5,
+      "tools": [
+        "bash",
+        "claim_task",
+        "skill_tool"
+      ],
+      "skills": [
+        "route-workflow"
+      ],
+      "command_exit": 0
+    },
+    "verifier-model": {
+      "requests": 6,
+      "tools": [
+        "bash",
+        "claim_task",
+        "skill_tool"
+      ],
+      "skills": [
+        "route-replay",
+        "route-workflow"
+      ],
+      "command_exit": 0
+    },
+    "planner": {
+      "requests": 6,
+      "tools": [
+        "bash",
+        "claim_task",
+        "skill_tool"
+      ],
+      "skills": [
+        "route-search",
+        "route-workflow"
+      ],
+      "command_exit": 0
+    },
+    "verifier-review": {
+      "requests": 6,
+      "tools": [
+        "bash",
+        "claim_task",
+        "skill_tool"
+      ],
+      "skills": [
+        "route-replay",
+        "route-workflow"
+      ],
+      "command_exit": 0
+    }
+  },
+  "model_before_plan_before_review": true,
+  "exact_snapshots": true,
+  "artifact_hashes_verified": true,
+  "actual_upstream_receipts_verified": true,
+  "event_count": 263,
+  "artifacts_sha256": {
+    "model.json": "57bb2ff269640720a5065fef23934548f7f99e115d299623062cdacddc30201b",
+    "plan.json": "37cbd5e0f6d234b7763d470e80b81d001a33f44bd061a797b7a1b1d388f23909",
+    "review.json": "3d85a1009258a5cc6f878a50c77e9ab42fd2de0da995ac9dd74d91aa651711ed",
+    "map.json": "86b28310a59d60fb24976cdd36b4a30ae108573bb7030fbf0b6a5f4c8bdec0f3",
+    "case.json": "eeffddb11b2528db016f64634a11c2a0b5764ea2c41825adb4b5e701d514f3bd",
+    "delivery/routes.html": "80c54d35f2fbf7036afffcc5f08e6f896e1c1c268b16da2bb5bd251baf39828c",
+    "delivery/timesteps.csv": "9fcfb20c5ba6a1deb30908d7e55a23d1a585d80b6daa4437d96e288a800c45e8",
+    "delivery/review.md": "98dbdc7f9245b8c8261622f305564780fc49be6203e93e56280aa9abfdf1889a",
+    "delivery/evaluation.json": "dc224b207ed418322f4692d7ff8bcf0e89d3ed539c510b3cc9b391d660bd6ddb",
+    "delivery/artifact.json": "6ca938a9c56ece3039c915914c2176db51a6a09ff87b92d7cc7640ccc97bfaf0",
+    "delivery/inputs/plan.json": "37cbd5e0f6d234b7763d470e80b81d001a33f44bd061a797b7a1b1d388f23909",
+    "delivery/inputs/map-report.json": "86b28310a59d60fb24976cdd36b4a30ae108573bb7030fbf0b6a5f4c8bdec0f3",
+    "delivery/inputs/model-review.json": "57bb2ff269640720a5065fef23934548f7f99e115d299623062cdacddc30201b",
+    "delivery/inputs/review.json": "3d85a1009258a5cc6f878a50c77e9ab42fd2de0da995ac9dd74d91aa651711ed",
+    "delivery/inputs/case.json": "eeffddb11b2528db016f64634a11c2a0b5764ea2c41825adb4b5e701d514f3bd"
+  },
+  "human_testing_passed": false,
+  "semantic_acceptance": false
+}

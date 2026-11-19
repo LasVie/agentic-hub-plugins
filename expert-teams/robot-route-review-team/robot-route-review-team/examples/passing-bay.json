@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "title": "有会车位的对向通道（合成案例）",
+  "model": "grid-4-wait-stay-v1",
+  "grid": {
+    "width": 3,
+    "height": 2,
+    "obstacles": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ]
+  },
+  "robots": [
+    {
+      "id": "A",
+      "start": [
+        0,
+        0
+      ],
+      "goal": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "B",
+      "start": [
+        2,
+        0
+      ],
+      "goal": [
+        0,
+        0
+      ]
+    }
+  ],
+  "horizon": 8
+}

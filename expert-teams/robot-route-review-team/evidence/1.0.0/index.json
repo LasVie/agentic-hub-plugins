@@ -1,0 +1,49 @@
+{
+  "task_id": "AH-20261117-robot-route-review-team",
+  "display_name": "多机器人路径规划复核专家团",
+  "version": "1.0.0",
+  "provided_date": "2026-11-19",
+  "source": "Original PNG attachments supplied by the user with manual-test confirmation in the current conversation",
+  "screenshots": [
+    {
+      "path": "originals/Screenshot 2026-11-19 at 3.49.44 PM.png",
+      "sha256": "ef855fdda492786799c60115dc20b9bfe0e61320e2a297f67f7c6e572e3b9022",
+      "bytes": 575708,
+      "width": 1890,
+      "height": 1550,
+      "description": "WorkSwarm member activity, v1.0.0 case, and reviewed run summary"
+    },
+    {
+      "path": "originals/Screenshot 2026-11-19 at 3.49.52 PM.png",
+      "sha256": "55459139078e0501928c9f1bdad92ea230bcee87b512d89c049027d06f855f9a",
+      "bytes": 312680,
+      "width": 624,
+      "height": 1506,
+      "description": "WorkSwarm task handoffs and dossier execution approvals"
+    },
+    {
+      "path": "originals/Screenshot 2026-11-19 at 3.50.25 PM.png",
+      "sha256": "8889f0041157a31aca66c77b7ef465e1cb987f5ff7b3879baec6f28a04569b50",
+      "bytes": 259360,
+      "width": 1264,
+      "height": 1602,
+      "description": "Offline Chinese replay at step 0"
+    },
+    {
+      "path": "originals/Screenshot 2026-11-19 at 3.50.54 PM.png",
+      "sha256": "9f37e3ea935b310511341606aa09d23ab1f67a9b7b51cf8c0d976b737035e6ac",
+      "bytes": 263301,
+      "width": 1310,
+      "height": 1592,
+      "description": "Offline Chinese replay at step 3 with B parked at its goal"
+    },
+    {
+      "path": "originals/Screenshot 2026-11-19 at 3.51.08 PM.png",
+      "sha256": "cf55e0fa03f0a58e5b928c8b5541fca245a53650f574e36f27d5625a0136f65f",
+      "bytes": 264919,
+      "width": 1308,
+      "height": 1674,
+      "description": "Offline Chinese replay at step 7 with both robots parked at their goals"
+    }
+  ]
+}

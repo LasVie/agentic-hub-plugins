@@ -1,0 +1,13 @@
+{
+  "base": "4e190253f00b2a1d65fdc657161a67fecde15a48",
+  "branch": "feat/robot-route-review-team",
+  "own_path": "expert-teams/robot-route-review-team",
+  "host_revision": "fa91394e42a7af731424222db82b02351e694de9",
+  "host_tracked_diff_sha256_before": "7fb7a200eea218f5fc75f2115647824f11c12242d5f5e3aaf3d2a4616a6a6d28",
+  "host_tracked_diff_sha256_after": "7fb7a200eea218f5fc75f2115647824f11c12242d5f5e3aaf3d2a4616a6a6d28",
+  "host_changes_by_this_task": false,
+  "unrelated_tracked_changes": [],
+  "paid_calls": 0,
+  "manual_test_confirmation": "pending",
+  "github_delivery": "not authorized in Build"
+}

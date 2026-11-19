@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "verifier",
+  "description": "先审查原始模型，再读取候选逐时刻独立回放，保留冲突与陈旧证据。",
+  "display_name": {
+    "zh": "独立路径复核员",
+    "en": "Independent Route Verifier"
+  },
+  "display_description": {
+    "zh": "先审查原始模型，再读取候选逐时刻独立回放，保留冲突与陈旧证据。",
+    "en": "Independent Route Verifier responsibilities"
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/route-replay",
+      "mode": "all"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "task_id": "AH-20261117-robot-route-review-team",
+  "version": "1.0.0",
+  "verification_recorded_at": "2026-11-19 16:02:43 +0800",
+  "native_sha256": "ab0cc094891ebd6ae5ee4ea5efa14e0f49b7961b3ddedddc5a5bfd923ae7be89",
+  "canonical_sha256": "447d455cba0c4652090af5f30ebde75acafd041e9f2fc1c4031bf4376e77a22c",
+  "package_check": "Verified existing archives, payload equality, recorded review and provenance hashes",
+  "source_tests_passed": 34,
+  "extracted_native_tests_passed": 34,
+  "installed_payload_files": 23,
+  "manual_case_sha256": "eeffddb11b2528db016f64634a11c2a0b5764ea2c41825adb4b5e701d514f3bd",
+  "dossier_manifest_matches": 9,
+  "dossier_files_reproduced_byte_for_byte": 10,
+  "snapshot_count": 5,
+  "csv_rows": 18,
+  "screenshot_timesteps": [
+    0,
+    3,
+    7
+  ],
+  "planner_status": "found",
+  "metrics": {
+    "sum_of_costs": 7,
+    "makespan": 4
+  },
+  "review_verdict": "route_valid",
+  "blocking_issues": [],
+  "model_report_saved_before_plan": true,
+  "completed_task_roles": {
+    "preflight-1": "map-analyst",
+    "map-report-1": "map-analyst",
+    "model-review-1": "verifier",
+    "plan-1": "planner",
+    "review-1": "verifier",
+    "delivery-1": "dossier-curator"
+  },
+  "evidence_index": "evidence/1.0.0/index.json",
+  "user_confirmation_report_id": "RPT-20261119-robot-route-review-team-confirmed-100"
+}

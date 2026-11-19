@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'none'; connect-src 'none'; object-src 'none'; base-uri 'none'">
+<title>多机器人路径规划复核 · 离线回放</title>
+<style>
+:root{color-scheme:light;--ink:#183d42;--muted:#557176;--line:#cbd9cf;--paper:#f4f3ea;--accent:#28644f}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,sans-serif}main{max-width:1240px;margin:auto;padding:32px}header{border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:24px;padding-bottom:24px}h1{font-size:30px;margin:4px 0}h2{font-size:21px;margin:0 0 16px}p{margin:8px 0}.eyebrow{font-size:13px;letter-spacing:.15em;color:var(--muted)}.badge{border:1px solid var(--line);border-radius:30px;padding:8px 14px;align-self:center;font-size:13px}.banner{margin:24px 0;background:#dfe9d6;border-left:4px solid var(--accent);padding:14px 18px}.bad{background:#f3dfd5;border-color:#b54530}.grid{display:grid;grid-template-columns:2fr 1fr;gap:22px}.panel{background:#fffdf6;border:1px solid var(--line);border-radius:12px;padding:22px;min-width:0}canvas{width:100%;aspect-ratio:1.4;background:#122e37;border-radius:8px;display:block}button,a.link{font:inherit;border:1px solid var(--line);background:#fffdf6;color:var(--ink);border-radius:6px;padding:8px 14px;cursor:pointer;text-decoration:none}button.primary{background:var(--accent);color:white}button:disabled{opacity:.5;cursor:default}.controls{display:flex;align-items:center;gap:12px;margin-top:18px;flex-wrap:wrap}input[type=range]{flex:1;min-width:140px;accent-color:var(--accent)}.legend{display:flex;gap:14px;flex-wrap:wrap;margin:14px 0;font-size:14px}.dot{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:6px}.muted{color:var(--muted);font-size:14px}.metric{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:10px 0}.metric b{font-size:23px}table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line)}section{margin-top:22px}ul{padding-left:22px}.hash{font-family:monospace;word-break:break-all;font-size:12px}details{margin-top:12px}summary{cursor:pointer}footer{margin-top:22px;border-top:1px solid var(--line);padding:18px 0;font-size:13px;color:var(--muted)}@media(max-width:800px){main{padding:18px}.grid{grid-template-columns:1fr}header{display:block}}
+</style></head><body><main>
+<header><div><div class="eyebrow">离散协作 · 逐步核对 · 保留边界</div><h1>多机器人路径规划复核</h1><p id="title"></p><div class="muted">v1.0.0 · 四方向移动/等待 · 到达终点后停留</div></div><div class="badge">完全离线 · 模拟网格</div></header>
+<div id="status" class="banner" role="status"></div>
+<div class="grid"><div class="panel"><h2>同步路径回放</h2><canvas id="board" width="840" height="600" aria-label="模拟网格、障碍、终点和当前路径位置"></canvas><div id="legend" class="legend"></div>
+<div class="controls"><button id="play" class="primary">播放</button><button id="reset">回到初始</button><input id="tick" type="range" min="0" value="0" step="1" aria-label="选择离散时刻"><output id="time"></output></div><p class="muted">圆点为机器人，方框为终点，深色格为障碍；轨迹只是离散连接，不表示连续几何避障。允许跟随，不允许同格或反向换边。</p></div>
+<aside class="panel"><h2>复核读数</h2><div class="metric"><span>到达步数总和</span><b id="cost"></b></div><div class="metric"><span>最晚到达步数</span><b id="span"></b></div><div class="metric"><span>回放发现</span><b id="count"></b></div><p id="search" class="muted"></p><h2 style="margin-top:24px">当前时刻</h2><table><thead><tr><th>机器人</th><th>位置</th><th>状态</th></tr></thead><tbody id="positions"></tbody></table><p class="muted" id="empty"></p></aside></div>
+<section class="panel"><h2>阻断项与路径发现</h2><ul id="findings"></ul><details><summary>成员信息说明</summary><ul id="notes"></ul></details><details><summary>输入与证据绑定</summary><p>案例字节 SHA-256</p><p id="hash" class="hash"></p><p class="muted">原始案例与成员报告保留在 inputs/，artifact.json 保存全部交付文件摘要。角色字段本身不证明真实参与。</p></details></section>
+<section class="panel"><h2>核对与导出</h2><div class="controls"><a class="link" href="timesteps.csv" download>逐时刻 CSV</a><a class="link" href="evaluation.json" download>完整 JSON</a><a class="link" href="review.md" download>中文复核说明</a></div><p class="muted">修改案例后须重新规划、独立复核并生成新的结果目录。限额停止不是无解证明；无路径时 CSV 只有表头。这里不修改源文件、不联网、不调用模型。</p></section>
+<footer>不控制真实机器人；不证明实际安全、无限时域无解、全局最优或人工验收通过。所有结果仅适用于冻结的离散模型。</footer>
+</main><script id="dossier" type="application/json">__DOSSIER_JSON__</script><script>
+"use strict";
+const data=JSON.parse(document.getElementById("dossier").textContent), c=data.case, plan=data.plan, review=data.review;
+const el=id=>document.getElementById(id), colors=["#ffd36b","#83d7cd","#e9a88c","#b5a4e5"], paths=plan.paths;
+const hasPaths=plan.status==="found", horizon=c.horizon;let tick=0,timer=null;
+el("title").textContent=c.title;el("status").textContent=data.status_zh;el("status").classList.toggle("bad",data.status!=="reviewed");
+el("cost").textContent=review.metrics?.sum_of_costs??"—";el("span").textContent=review.metrics?.makespan??"—";el("count").textContent=review.findings.length;
+el("hash").textContent=data.case_sha256;el("tick").max=horizon;el("tick").disabled=!hasPaths;el("play").disabled=!hasPaths;el("reset").disabled=!hasPaths;
+el("search").textContent="规划器："+plan.reason+" 高层展开 "+plan.search.high_level_expanded+"，低层展开 "+plan.search.low_level_expanded+"；时域 "+horizon+"。";
+el("empty").textContent=hasPaths?"短路径的终点在余下时刻保持占用。":"没有路径可供播放，不能把空画面当作无冲突证明。";
+function li(list,text){const node=document.createElement("li");node.textContent=text;el(list).appendChild(node);}
+for(const item of data.blocking_issues)li("findings",item.role+"："+item.message);
+for(const f of review.findings)li("findings",(f.tick===null?"费用":("时刻 "+f.tick))+" · "+f.robots.join(" / ")+" · "+f.message);
+if(!data.blocking_issues.length&&!review.findings.length)li("findings",hasPaths?"本次逐步检查未发现路径违规。请核对输入模型和真实成员交接。":"没有候选路径；此回放器不核证搜索穷尽声明。");
+for(const record of [data.map_review,data.model_review,plan,review])for(const note of record.notes)li("notes",record.role+"："+note);
+for(let i=0;i<c.robots.length;i++){const s=document.createElement("span"),dot=document.createElement("i");dot.className="dot";dot.style.background=colors[i];s.appendChild(dot);s.appendChild(document.createTextNode(c.robots[i].id));el("legend").appendChild(s);}
+function at(id,t){const p=paths[id];return p[Math.min(t,p.length-1)];}
+function stop(){if(timer!==null)clearInterval(timer);timer=null;el("play").textContent="播放";}
+function render(){const ctx=el("board").getContext("2d"),w=c.grid.width,h=c.grid.height,unit=Math.min(740/w,480/h),x0=(840-unit*w)/2,y0=(600-unit*h)/2;ctx.clearRect(0,0,840,600);ctx.fillStyle="#122e37";ctx.fillRect(0,0,840,600);
+ const center=p=>[x0+(p[0]+.5)*unit,y0+(p[1]+.5)*unit];ctx.strokeStyle="#35525a";ctx.lineWidth=1;
+ for(let x=0;x<=w;x++){ctx.beginPath();ctx.moveTo(x0+x*unit,y0);ctx.lineTo(x0+x*unit,y0+h*unit);ctx.stroke();}for(let y=0;y<=h;y++){ctx.beginPath();ctx.moveTo(x0,y0+y*unit);ctx.lineTo(x0+w*unit,y0+y*unit);ctx.stroke();}
+ ctx.fillStyle="#536873";for(const p of c.grid.obstacles)ctx.fillRect(x0+p[0]*unit+2,y0+p[1]*unit+2,unit-4,unit-4);
+ el("positions").replaceChildren();for(let i=0;i<c.robots.length;i++){const r=c.robots[i],g=center(r.goal),p=hasPaths?at(r.id,tick):r.start,xy=center(p);ctx.strokeStyle=colors[i];ctx.lineWidth=3;ctx.strokeRect(g[0]-unit*.31,g[1]-unit*.31,unit*.62,unit*.62);
+ if(hasPaths){ctx.globalAlpha=.3;ctx.beginPath();for(let t=0;t<=tick;t++){const q=center(at(r.id,t));if(t)ctx.lineTo(...q);else ctx.moveTo(...q);}ctx.stroke();ctx.globalAlpha=1;}
+ ctx.fillStyle=colors[i];ctx.beginPath();ctx.arc(...xy,unit*.22,0,2*Math.PI);ctx.fill();ctx.fillStyle="#122e37";ctx.font="bold "+Math.max(12,unit*.2)+"px system-ui";ctx.textAlign="center";ctx.textBaseline="middle";ctx.fillText(r.id,...xy);
+ const tr=document.createElement("tr");for(const value of [r.id,p.join(", "),!hasPaths?"未规划":p[0]===r.goal[0]&&p[1]===r.goal[1]?"终点停留":"移动/等待"]){const td=document.createElement("td");td.textContent=value;tr.appendChild(td);}el("positions").appendChild(tr);}
+ const conflicts=review.findings.filter(f=>f.tick===tick);if(conflicts.length){ctx.fillStyle="#ffb29c";ctx.font="bold 20px system-ui";ctx.textAlign="left";ctx.fillText("本时刻存在路径违规："+conflicts.map(f=>f.code).join(" / "),30,30);}
+ el("tick").value=tick;el("time").textContent=tick+" / "+horizon+" 步";}
+el("tick").addEventListener("input",()=>{stop();tick=Number(el("tick").value);render();});el("reset").onclick=()=>{stop();tick=0;render();};el("play").onclick=()=>{if(timer!==null){stop();return;}if(tick>=horizon)tick=0;el("play").textContent="暂停";timer=setInterval(()=>{tick++;render();if(tick>=horizon)stop();},600);render();};document.addEventListener("visibilitychange",()=>{if(document.hidden)stop();});render();
+</script></body></html>
