@@ -1,0 +1,22 @@
+{
+  "native_sha256": "d9545a66730afc6748407af543b5e2265990d61f0cfb06985339afa41bd363c9",
+  "url": "http://127.0.0.1:6645/",
+  "ports": {
+    "http": 6645,
+    "model": 6646,
+    "agent": 28645,
+    "web": 29645,
+    "gateway": 30645
+  },
+  "state": ".local/host-manual-final/",
+  "model": "loopback fixed provider only; not configured for autonomous reasoning",
+  "credentials_copied": false,
+  "gui_route": "Experts > My Experts > Expert Teams > Create > Upload file",
+  "gui_route_observed": true,
+  "gui_file_selection_completed": false,
+  "gui_blocker": "Chrome chooser did not return a file handle; native fallback unavailable while Mac locked. No extension or OS settings changed.",
+  "management_import": "Supported import_local/install/show separately verified; all 25 installed files equal the exact native ZIP",
+  "real_model_semantics": "Not run: paid model calls lack separate authorization",
+  "user_manual_pass": false,
+  "management_import_verified": true
+}

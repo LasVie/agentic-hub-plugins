@@ -1,0 +1,74 @@
+{
+  "asset": "household-chore-rota-team",
+  "type": "agent-group",
+  "version": "1.0.0",
+  "task_id": "AH-20261117-household-chore-rota-team",
+  "tool": {
+    "name": "official agentichub CLI",
+    "version": "0.0.1",
+    "commit": "c8ee4ef44be0453470114aa5a19f4e1017462907"
+  },
+  "payload_sha256": {
+    "README.md": "446ac02efa593c0a50694a093206b43b42422c1f3a29a5e7bf5b3d520d8bf606",
+    "agents/analyst/manifest.json": "366ff6da218b8f70b4a7b2eebd6fbc830a99f2d0ca578c09922d94a79d9a65e7",
+    "agents/analyst/persona/role.md": "5220ad52054680812794fa49069105df73cd5eb42d7b7da5219f109f9f4ef018",
+    "agents/analyst/skills/chore-intake/SKILL.md": "35c055f95257d1af4bc9b27dd553eebe38ffaa92b15434c97f77837e16ae0a8d",
+    "agents/analyst/tools/intake.py": "4e406418467131f1e7308796c51e6971f943d4035cce25e04b3997491e7536b8",
+    "agents/leader/AGENT.md": "72fa4be34b29c049c699385bdfce9d4686176ca0b2765a1eab30016ef06d5576",
+    "agents/leader/manifest.json": "a32215ebd5e73840ee0c455524491232bd2e6eada84e6b79537850c0cbf010b9",
+    "agents/leader/persona/role.md": "1f0a01d741db5f148a2be49b806431a2bfae8d6457d3d4057ed6dcbce52dfade",
+    "agents/leader/skills/rota-delivery/SKILL.md": "037607cd145a1e7aee085f582fa3aad6178045d38fdea5a429d68a2a3fd64104",
+    "agents/leader/tools/deliver.py": "509cea687efe9e3bf0319cf79c67eec145ee043b48f78c048b20d69f08fd6612",
+    "agents/planner/manifest.json": "794c57ef19cececd8715867fb1f3fe6bf830d946eb0ce4a523970e683f17630d",
+    "agents/planner/persona/role.md": "0223147a00c3980f56909b608d2e492d35a0f89e0f98c33c19977742207eec82",
+    "agents/planner/skills/rota-planning/SKILL.md": "9865e91f1de3ea1993e950433486b87b4629fff1e1fa8e770c138bce63c6e946",
+    "agents/planner/tools/plan.py": "4fef7280aac3e43a5b0380d5d5d776bb8a696e49fca18268593a70d3ea7058fa",
+    "agents/verifier/manifest.json": "7056fc8a31683a7c38401d5f7b081b7811ee139bca55c652560b919434211b93",
+    "agents/verifier/persona/role.md": "efef4224a4924877965dcfb00efdcca2354126c89da433212e90cd1f42b3d275",
+    "agents/verifier/skills/independent-rota-review/SKILL.md": "4d9dab0b93eef32134800b37221031f37f413cfcd90d7df760578c7ffd4618fa",
+    "agents/verifier/tools/verify.py": "883805bad9157a1a23be23a49fa080d76647d0c2801a494c492c09f00c45d43e",
+    "avatars/group.png": "b235f227436970cf3721654b467b42077e2e10620c1f33f09e8f4c31e60f7f89",
+    "examples/full-week.json": "2c1a019f0f142bc6ac22340a43a108536549d7b517b2c52b0d745a6ce1994585",
+    "examples/shared-home.json": "96b9e1efeb11aa1676eee7adfbcbf5bf0c6e6d93a77cc03b7cec7e58e734ef61",
+    "manifest.json": "8bd758b0bd29d350da95e4a2b09b90c93d6e7c3856c83d265222207be53e24d1",
+    "skills/rota-evidence/SKILL.md": "030a3e43e0e033f167d609a4bcfd1db892241568221b82de952be733ae92f77c",
+    "skills/rota-evidence/references/input-format.md": "357ffb1fc52cbf05e09972b6b1c969669f0fe1c27f6a5b19679cf95e857affd8",
+    "skills/rota-evidence/scripts/contract.py": "93ee3f564e461f3576e6cf0b4fbfe6afe6c7c8bcd67b9829f556fa72d2a7fdc9"
+  },
+  "payload_equality": true,
+  "artifacts": {
+    "native": {
+      "path": "test-packages/household-chore-rota-team-1.0.0-native.zip",
+      "sha256": "d9545a66730afc6748407af543b5e2265990d61f0cfb06985339afa41bd363c9",
+      "bytes": 75625
+    },
+    "wrapped": {
+      "path": "release/1.0.0/household-chore-rota-team-1.0.0-agent-group.zip",
+      "sha256": "7942f574b44e545b984b3674b4e781bdbb97b7567ff912b9f0ef6d37c05a26af",
+      "bytes": 39588
+    }
+  },
+  "source_review_sha256": "8a00f1a02bf1ae14e13414d49d0fada588f6a42d2a5d4b12db84cc5d88fcf63c",
+  "test_report_sha256": "0dc4bdde8767c06e9659642ef9053e823be081fc0480b47874e875c5bf03fe8d",
+  "manual_testing_sha256": "2362ed18cf5f5aa5e22242801b1bd0db4e2adee6105b3d91afc0ab1b2c686338",
+  "verification_records": {
+    "delivery-review-20261119.json": "fca746908b7519596055f0adafbb6202f6e9d629d3c698464e8cfd61579fb325",
+    "final-verification.json": "4b0d11d9149fea839d3d38c50634957152ea5f7d56223d52ef3175e98ae82b00",
+    "host-complete.json": "7d59dfb60889435000d65a7b584b91c8d2412dadcaa9f7566c3cf934cb453ea3",
+    "host-content-blocked.json": "aef46bb18a7396f51be302b4326ad442b50aa605e74f664efd67f64604576316",
+    "host-creator.json": "251913f61e877f5a532d68f9e7479c122da5d7114b5b8b457a5012545637ccd9",
+    "host-full.json": "41df0158168b655d6f4d5c04bde1ee65000813132bdb5e53a300367b2a765c67",
+    "host-import.json": "a0eaf1aec36190aaedd2b2f6e54264bbc6eeeb797376af169938348a2de11033",
+    "host-impossible.json": "3a4b5a85e0961221392ec99cdd3071eecf00bed86b6ecc91810790606d54fe7e",
+    "host-limited.json": "d5f6bfec1544311df89658feb792e8736460cdc7fc52f2207760c2f89b4841ce",
+    "host-loader.json": "5302834e53eda2e53ef45dcd8158444c94b16e0c273b2a5cfb9ce029b5a386e5",
+    "manual-host-import.json": "a0eaf1aec36190aaedd2b2f6e54264bbc6eeeb797376af169938348a2de11033",
+    "manual-host.json": "dd99771a8b0bcfdadbb7d0b8089d4e9538b259ebd31795d48ab86573bcd837b6",
+    "official-cli.json": "d976d98f7396ca1f8ef12ec44e2d73561ccd2a3a39c969f541a88843862488c3",
+    "preflight.json": "71854ff9917c9e7a5a82ed9168e46f56c408353c9bae7cfc07a750a456270fb3",
+    "source-tests.json": "2b57cbfc405965b323265979520bc50f0196bf20416b8fab39ab6e1dd2b0c3be",
+    "user-confirmation-20261119.json": "8f091cfcb515d0b4a76c19ebfef4640a0fffef69bf10e573cba62db2f262766a"
+  },
+  "user_test_evidence_index_sha256": "a5ed449f6063ad9545c65aba7623a49e89c9e005ff10cb3e1689d17100ecdf69",
+  "user_test_confirmation_report_id": "RPT-20261119-household-chore-rota-team-user-confirmation"
+}

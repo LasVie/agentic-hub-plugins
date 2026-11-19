@@ -1,0 +1,74 @@
+{
+  "loader": "actual openjiuwen.agent_teams.experts.agent_group.load_agent_group_package_bundle",
+  "sdk_version": "0.1.20",
+  "native_sha256": "d9545a66730afc6748407af543b5e2265990d61f0cfb06985339afa41bd363c9",
+  "members": {
+    "leader": {
+      "skills": [
+        "rota-delivery",
+        "rota-evidence"
+      ],
+      "prompt_sections": [
+        "identity",
+        "agent_group_leader_rules",
+        "agent_group_instruction"
+      ],
+      "runtime": "None"
+    },
+    "analyst": {
+      "skills": [
+        "chore-intake",
+        "rota-evidence"
+      ],
+      "prompt_sections": [
+        "identity",
+        "agent_group_instruction"
+      ],
+      "runtime": "None"
+    },
+    "planner": {
+      "skills": [
+        "rota-planning",
+        "rota-evidence"
+      ],
+      "prompt_sections": [
+        "identity",
+        "agent_group_instruction"
+      ],
+      "runtime": "None"
+    },
+    "verifier": {
+      "skills": [
+        "independent-rota-review",
+        "rota-evidence"
+      ],
+      "prompt_sections": [
+        "identity",
+        "agent_group_instruction"
+      ],
+      "runtime": "None"
+    }
+  },
+  "negative_controls_reused": {
+    "original_native_sha256": "1d9301ea8425f95c17a617c97cc46b7b41f2d25b43e6044e5979ad2a4300aea3",
+    "reason": "Only business report validation changed; member manifests, Leader entry and package schema are byte-identical. Three actual rejection checks remain valid.",
+    "checks": [
+      {
+        "case": "member-type",
+        "rejected": true,
+        "reason": "AgentTemplate 'analyst' must declare package_type='agent_template'"
+      },
+      {
+        "case": "leader-entry",
+        "rejected": true,
+        "reason": "AgentGroup leader AGENT.md missing: [fixture]/agents/leader/AGENT.md"
+      },
+      {
+        "case": "missing-member",
+        "rejected": true,
+        "reason": "agent directory not found: verifier"
+      }
+    ]
+  },
+  "boundary": "Fresh actual loader on exact final payload; unaffected negative assembly checks reused, no model or semantic quality claim"
+}

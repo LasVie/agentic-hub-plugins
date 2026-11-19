@@ -1,0 +1,65 @@
+{
+  "report_id": "RPT-20261119-household-chore-rota-team-user-confirmation",
+  "task_id": "AH-20261117-household-chore-rota-team",
+  "asset_id": "repo:agent-group:household-chore-rota-team",
+  "candidate_id": "Not Applicable",
+  "owner": "Cai Zhenze",
+  "display_name": "家务轮值与负担复核专家团",
+  "version": "1.0.0",
+  "source": "Current Main 4.0 Codex conversation, user message of 2026-11-19 attaching five PNGs",
+  "artifacts": {
+    "native": {
+      "path": "test-packages/household-chore-rota-team-1.0.0-native.zip",
+      "sha256": "d9545a66730afc6748407af543b5e2265990d61f0cfb06985339afa41bd363c9",
+      "bytes": 75625
+    },
+    "wrapped": {
+      "path": "release/1.0.0/household-chore-rota-team-1.0.0-agent-group.zip",
+      "sha256": "7942f574b44e545b984b3674b4e781bdbb97b7567ff912b9f0ef6d37c05a26af",
+      "bytes": 39588
+    }
+  },
+  "images": [
+    {
+      "filename": "Screenshot 2026-11-19 at 3.46.10 PM.png",
+      "bytes": 893958,
+      "width": 3340,
+      "height": 1996,
+      "sha256": "412f5e677f20044a119052de2530be8d1dc1741a1d31b8f4121d3b13b590e959",
+      "shows": "Delegated roles and source-only verifier baseline"
+    },
+    {
+      "filename": "Screenshot 2026-11-19 at 3.46.22 PM.png",
+      "bytes": 903171,
+      "width": 3318,
+      "height": 1974,
+      "sha256": "c88f801668f925ee1137ec47416f438d34cc2265ea2b3353fc94e5ddca4b5117",
+      "shows": "Proposal, independent review and completed rota"
+    },
+    {
+      "filename": "Screenshot 2026-11-19 at 3.46.30 PM.png",
+      "bytes": 943546,
+      "width": 3314,
+      "height": 1984,
+      "sha256": "478f4d2c05c9d347bf10a8922287c95a5eb5dbd1c754c594a4c95a1b6d4c91dd",
+      "shows": "Handoffs, finished assignments and three artifact paths"
+    },
+    {
+      "filename": "Screenshot 2026-11-19 at 3.47.03 PM.png",
+      "bytes": 464815,
+      "width": 1332,
+      "height": 1758,
+      "sha256": "a676d6fdc9c20f3185a39e186647cebc2f32c23249f0e1f4f53c8e143bf16570",
+      "shows": "Chinese calendar, workload and independent content review"
+    },
+    {
+      "filename": "Screenshot 2026-11-19 at 3.47.44 PM.png",
+      "bytes": 190838,
+      "width": 1146,
+      "height": 562,
+      "sha256": "870fb59580f7c80d1047725c628a353b5872bf4092bc8a09714ab4e777182caa",
+      "shows": "Chinese CSV with the sole unmet preference on c04"
+    }
+  ],
+  "scope": "User-supplied full-resolution PNG bytes. The screenshots cover the successful workflow, independent review and output. They do not depict the GUI import action or negative scenarios."
+}

@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "verifier",
+  "description": "独立负担核验员，负责本角色的实际家务交接与复核工作。",
+  "display_name": {
+    "zh": "独立负担核验员",
+    "en": "Independent Verifier"
+  },
+  "display_description": {
+    "zh": "独立负担核验员，按已约定输入协作。",
+    "en": "Independent Verifier for agreed weekly household duties."
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/independent-rota-review",
+      "mode": "all"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "mode": "native",
+  "permission_status": "not-applicable",
+  "task_id": "AH-20261117-household-chore-rota-team",
+  "name_mapping": {
+    "research": "Independent Household Chore Rota and Review Team",
+    "package": "家务轮值与负担复核专家团",
+    "slug": "household-chore-rota-team"
+  },
+  "sources": [
+    {
+      "url": "https://developers.google.com/optimization/scheduling/employee_scheduling",
+      "reviewed": "2026-11-17",
+      "use": "Functional constraint research only"
+    },
+    {
+      "url": "https://github.com/google/or-tools",
+      "commit": "c931f5f778c88050a3f71d72dfc30d3d020aa821",
+      "use": "Reference only; Apache-2.0 sample inspected, none copied"
+    },
+    {
+      "url": "https://arxiv.org/abs/2308.08155v2",
+      "pinned_version": "v2",
+      "use": "Historical multi-agent research only"
+    },
+    {
+      "url": "https://github.com/microsoft/autogen",
+      "commit": "8390985108cb1e3881f5f7297765758d8ad2540c",
+      "use": "Workflow reference only; no code, prompts, docs or runtime copied"
+    },
+    {
+      "url": "https://github.com/openJiuwen-ai/jiuwenswarm",
+      "commit": "9843516a165bd9a6ad9c37f394fac90be128e551",
+      "use": "Official package interface only"
+    },
+    {
+      "url": "https://github.com/openJiuwen-ai/agent-core",
+      "commit": "5a35c39f0163a4e6190800df53ad7e24848756eb",
+      "use": "Existing loader interface only"
+    }
+  ],
+  "reused_paths": [],
+  "license_evidence": [],
+  "runtime_dependencies": [
+    {
+      "name": "Python standard library",
+      "version_requirement": ">=3.10",
+      "bundled": false
+    },
+    {
+      "name": "Compatible WorkSwarm AgentGroup, existing delegation/file/shell tools and user-authorized model",
+      "bundled": false
+    }
+  ],
+  "audit_file": "SOURCE_REVIEW.md",
+  "native_design": "NATIVE_DESIGN.md",
+  "materials_already_seen": [
+    "OR-Tools scheduling tutorial/sample and license",
+    "AutoGen paper/reflection documentation and code/documentation licenses",
+    "Official creator/loader interfaces",
+    "Maintained repository packaging and host-integration conventions"
+  ],
+  "development_reused_paths": [
+    {
+      "source": "expert-teams/logic-grid-puzzle-team/tests/host_integration.py",
+      "commit": "4e190253f00b2a1d65fdc657161a67fecde15a48",
+      "source_sha256": "7116452d970180323f5670b3a919e0445370da9f1e94d3fa5937814f86854b28",
+      "destination": "tests/host_integration.py",
+      "scope": "Repository-owned development-only isolation, management RPC and local scripted-provider harness adapted for chore-role handoffs. Not in native/wrapped runtime payload; no new license asserted."
+    }
+  ]
+}

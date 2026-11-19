@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "leader",
+  "description": "轮值主理人，负责本角色的实际家务交接与复核工作。",
+  "display_name": {
+    "zh": "轮值主理人",
+    "en": "Rota Leader"
+  },
+  "display_description": {
+    "zh": "轮值主理人，按已约定输入协作。",
+    "en": "Rota Leader for agreed weekly household duties."
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/rota-delivery",
+      "mode": "all"
+    }
+  ]
+}

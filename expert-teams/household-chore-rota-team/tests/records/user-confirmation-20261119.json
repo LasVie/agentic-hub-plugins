@@ -1,0 +1,29 @@
+{
+  "report_id": "RPT-20261119-household-chore-rota-team-user-confirmation",
+  "task_id": "AH-20261117-household-chore-rota-team",
+  "candidate_id": "Not Applicable",
+  "asset_id": "repo:agent-group:household-chore-rota-team",
+  "owner": "Cai Zhenze",
+  "display_name": "家务轮值与负担复核专家团",
+  "version": "1.0.0",
+  "user_test_confirmed": true,
+  "confirmation": "Cai Zhenze confirmed manual testing of 家务轮值与负担复核专家团 1.0.0 was complete and passed, supplied five original screenshots, and requested Phase 3.",
+  "source": "Current Main 4.0 Codex conversation, user message of 2026-11-19 attaching five PNGs",
+  "recorded_at_singapore": "2026-11-19T15:50:24+08:00",
+  "timestamp_scope": "First clock check during confirmation intake. Exact message-send time was unavailable.",
+  "known_blocking_issues": [],
+  "artifacts": {
+    "native": {
+      "path": "test-packages/household-chore-rota-team-1.0.0-native.zip",
+      "sha256": "d9545a66730afc6748407af543b5e2265990d61f0cfb06985339afa41bd363c9",
+      "bytes": 75625
+    },
+    "wrapped": {
+      "path": "release/1.0.0/household-chore-rota-team-1.0.0-agent-group.zip",
+      "sha256": "7942f574b44e545b984b3674b4e781bdbb97b7567ff912b9f0ef6d37c05a26af",
+      "bytes": 39588
+    }
+  },
+  "screenshot_index": "evidence/user-testing-1.0.0/index.json",
+  "project_lead_acceptance": "Pending Acceptance"
+}

@@ -1,0 +1,16 @@
+{
+  "command": [
+    "<host-python>",
+    "-B",
+    "<host-source>/jiuwenswarm/resources/agent/workspace/skills/agent-group-creator/scripts/register_group.py",
+    ".local/exact-final/household-chore-rota-team",
+    "--validate-only"
+  ],
+  "exit": 0,
+  "pass": true,
+  "native_sha256": "d9545a66730afc6748407af543b5e2265990d61f0cfb06985339afa41bd363c9",
+  "original_record_sha256": "9e01ea3f2607ad2c6051d98b24708331bae5a201ecc54274ae650fc5c2ca3297",
+  "stdout_sha256": "ed513474f637332dd710f579954b8480d9657423eba3233b4c310195e4078f5e",
+  "result": "RESULT: PASS (4 agents)",
+  "boundary": "Actual supported host creator validation; no semantic model test"
+}

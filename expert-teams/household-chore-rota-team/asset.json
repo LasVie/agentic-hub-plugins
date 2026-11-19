@@ -1,0 +1,15 @@
+{
+  "type": "agent-group",
+  "name": "household-chore-rota-team",
+  "version": "1.0.0",
+  "display_name": "家务轮值与负担复核专家团",
+  "description": "根据已约定家务、可用日期和负担上限编制一周轮值，独立核对任务覆盖、限制与分钟合计，交付中文日历及待确认事项。",
+  "publisher": "Cai Zhenze",
+  "category": "生活与健康",
+  "tags": ["家务轮值", "家庭协作", "负担复核"],
+  "functional_tags": ["一周家务分配", "可用性约束", "分钟负担核算", "独立复核"],
+  "scope": "一周、2至6人、最多21项家务发生记录；用户明确的耗时、资格、不可用日、每日及每周上限和偏好。Python3.10+标准库，原生AgentGroup与宿主已有委派/文件/命令工具。不推断家庭公平标准，不作全局最优承诺，不接日历、不后台提醒、不自动指派真实人员。",
+  "candidate_id": "Not Applicable",
+  "task_id": "AH-20261117-household-chore-rota-team",
+  "asset_id": "repo:agent-group:household-chore-rota-team"
+}

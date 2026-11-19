@@ -1,0 +1,4 @@
+.local/
+/evidence/1.0.0/
+__pycache__/
+*.pyc
