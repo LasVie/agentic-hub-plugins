@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "type": "agent-mcp",
+  "name": "google-calendar",
+  "display_name": "Google 日历连接器",
+  "version": "1.0.0",
+  "owner": "Song Haoran",
+  "task_id": "AH-20261116-google-calendar",
+  "candidate_id": null,
+  "internal_asset_id": "repo:agent-mcp:google-calendar",
+  "description": "在 WorkSwarm 授权 Google 并查询、创建和回读主日历日程。",
+  "native_path": "google-calendar"
+}

@@ -1,0 +1,20 @@
+# 第三方依赖与许可说明
+
+本连接器为独立实现。运行依赖通过 `requirements.txt` 在专用 Python 环境中单独安装；
+本 ZIP 不包含依赖源码、二进制文件、安装包或虚拟环境。下列完整许可文本仅作为依赖说明
+随包提供，原文保持不变；它们不为本项目自行编写的代码重新指定许可证。
+
+| 依赖 | 审核版本 | 原作者信息与许可 | 完整许可文件 |
+| --- | --- | --- | --- |
+| [google-auth-oauthlib](https://github.com/googleapis/google-auth-library-python-oauthlib) | 1.2.3 | Google LLC 源文件版权声明；Apache-2.0 | `licenses/google-auth-oauthlib/LICENSE` |
+| [google-auth](https://github.com/googleapis/google-auth-library-python) | 2.41.1 | Google LLC 源文件版权声明；Apache-2.0 | `licenses/google-auth/LICENSE` |
+| [Requests](https://github.com/psf/requests) | 2.32.5 | 发行包作者 Kenneth Reitz；Apache-2.0 | `licenses/requests/LICENSE` |
+
+上述许可文件取自所列版本的已安装发行包；未修改依赖文件。这三个发行包的文件清单中未发现
+单独的 NOTICE 文件。安装后的其他依赖仍保留各自发行包内的许可证；本包不复制或替换这些文件。
+
+传递依赖包含 MIT、Apache-2.0、BSD、ISC 等许可。Certifi 使用 MPL-2.0。
+完整版本与审核记录见源码目录中的 `provenance.json` 和 `SOURCE_REVIEW.md`。
+若未来需要将依赖源码或二进制随包分发，必须重新检查相应源码、许可、NOTICE 与分发义务。
+
+Google 名称仅说明所连接的服务。依赖许可与 Google API 的服务条款及授权要求各自适用。

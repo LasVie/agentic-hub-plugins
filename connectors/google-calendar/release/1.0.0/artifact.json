@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "asset_type": "agent-mcp",
+  "name": "google-calendar",
+  "display_name": "Google 日历连接器",
+  "version": "1.0.0",
+  "task_id": "AH-20261116-google-calendar",
+  "internal_asset_id": "repo:agent-mcp:google-calendar",
+  "created_at_utc": "2026-11-16T09:41:34.450037+00:00",
+  "artifacts": [
+    {
+      "form": "native",
+      "path": "connectors/google-calendar/test-packages/google-calendar-1.0.0-native.zip",
+      "filename": "google-calendar-1.0.0-native.zip",
+      "sha256": "cd2fa6d786eef1a0867cff502131674c2f083a256db00b3cbabaca154f04d9e7",
+      "size_bytes": 91408
+    },
+    {
+      "form": "agent-mcp_wrapped",
+      "path": "connectors/google-calendar/release/1.0.0/google-calendar-1.0.0-agent-mcp.zip",
+      "filename": "google-calendar-1.0.0-agent-mcp.zip",
+      "sha256": "4b2c3ece4fc2d6b79689c6322d9458236a5aa500accefe98b57098789dace1f6",
+      "size_bytes": 38005
+    }
+  ],
+  "payload_sha256": {
+    "README.md": "0c7979d79797232dfca2672eb9055c1988d9ff9e27c10ea3b647b9a582a1982e",
+    "THIRD_PARTY_NOTICES.md": "cbf17699a49f08b83aea34cc242849a8136298bc6191cc69d0e14388e0e724e9",
+    "bootstrap_lock.py": "3fc47a2daf6c60d2a006584e342b14f7471db27055f86c43fe0225186459db25",
+    "cli.json": "417a180445ecccc3bb3c89247db131d901256a2a8af10e132bd839644b8ad05c",
+    "google_api.py": "550e9a06ce88bfc748b7755cf72652e65d4cb66b65845f25a47b182b4e36b749",
+    "launcher.py": "9a46b9442527879764ee1758f72880edb361abeb53a857e2d960ecd1932f64a5",
+    "licenses/google-auth/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "licenses/google-auth-oauthlib/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "licenses/requests/LICENSE": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b",
+    "manifest.json": "a0bfc3e563472b328e08bf4680f1681828100024b15dd25a002dbf3864fb2f51",
+    "oauth.py": "1b8b9ff7083368321282f2ea99fa1c8e39ecc8581f8088f40a2747552e0c4723",
+    "requirements.in": "e67055fe9c69ee3c5a048963ff3cb498fc0240d7da7980ebffba9af92101493a",
+    "requirements.txt": "8cba403f6a10b86445df444e7e93d66aaeabc209ce90c22a8f09b82ff8dad51e",
+    "service.py": "cafaf68da05c800391d8431c4f184dc1fd6ae06a07b05f125fee14c7bf8bf576",
+    "skills/google-calendar-guide/SKILL.md": "338e2a77372c3f651652aa0d0527d64634a5489813b448cd0e273676e65f9416"
+  },
+  "review_files_sha256": {
+    "SOURCE_REVIEW.md": "d03946e1e926ae4ef2dd6589e2d0b7050a41494ccfb9c68bc39f59f63e80193c",
+    "TEST_REPORT.md": "de400494542f5c894af86c82a12bea34e7731d0abf4de450ace2e3d0790229fb",
+    "provenance.json": "47b0829c0e85702dc0dbbb6e8c51a525fa4cf73482b79313702015bb77797501"
+  },
+  "official_cli": {
+    "distribution": "openjiuwen-agentichub",
+    "version": "0.0.1",
+    "source": "https://github.com/openJiuwen-ai/skillhub",
+    "source_commit": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+    "commands": [
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-calendar/../gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "init",
+        "google-calendar",
+        "--type",
+        "agent-mcp"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-calendar/../gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "validate",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-_6_rnrld/google-calendar"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-calendar/../gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "pack",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-_6_rnrld/google-calendar",
+        "--output",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-_6_rnrld/out"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-calendar/../gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-calendar/tools/asset_release.py",
+        "preflight",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-calendar/connectors/google-calendar/google-calendar"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-calendar/../gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-calendar/tools/asset_release.py",
+        "preflight",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-_6_rnrld/native.zip"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-calendar/../gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-calendar/tools/asset_release.py",
+        "preflight",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-_6_rnrld/out/google-calendar-1.0.0.zip"
+      ]
+    ]
+  },
+  "checks": [
+    {
+      "step": "official_init",
+      "output": "Plugin initialized at: /private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-_6_rnrld/google-calendar"
+    },
+    {
+      "step": "official_validate",
+      "output": "Plugin validation passed."
+    },
+    {
+      "step": "official_pack",
+      "output": "Packed: /private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-_6_rnrld/out/google-calendar-1.0.0.zip"
+    },
+    {
+      "step": "javascript_preflight_native_source",
+      "output": "{\n  \"path\": \"/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-google-calendar/connectors/google-calendar/google-calendar\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_native_zip",
+      "output": "{\n  \"path\": \"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-_6_rnrld/native.zip\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_wrapped_zip",
+      "output": "{\n  \"path\": \"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-_6_rnrld/out/google-calendar-1.0.0.zip\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    }
+  ],
+  "verification_limits": "Packaging/JavaScript preflight and byte-equivalence only; not authenticated provider access or user manual-test acceptance."
+}
