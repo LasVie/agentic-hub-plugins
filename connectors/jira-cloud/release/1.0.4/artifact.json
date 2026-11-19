@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "asset_type": "agent-mcp",
+  "name": "jira-cloud",
+  "display_name": "Jira Cloud 连接器",
+  "version": "1.0.4",
+  "task_id": "AH-20261117-jira-cloud-connector",
+  "internal_asset_id": "repo:agent-mcp:jira-cloud",
+  "created_at_utc": "2026-11-17T09:52:52.927375+00:00",
+  "artifacts": [
+    {
+      "form": "native",
+      "path": "connectors/jira-cloud/test-packages/jira-cloud-1.0.4-native.zip",
+      "filename": "jira-cloud-1.0.4-native.zip",
+      "sha256": "7294221b069797e096b5c3ddb0bf7ac72c240be8fdc6a9a7e3d68b448e6b96b2",
+      "size_bytes": 27883
+    },
+    {
+      "form": "agent-mcp_wrapped",
+      "path": "connectors/jira-cloud/release/1.0.4/jira-cloud-1.0.4-agent-mcp.zip",
+      "filename": "jira-cloud-1.0.4-agent-mcp.zip",
+      "sha256": "3862b885ecb5e338b9a79da6f7d671ab7efa324fb8fae605c75db5af87b74750",
+      "size_bytes": 14876
+    }
+  ],
+  "payload_sha256": {
+    "README.md": "04363d0fe5e50daf96acc52da41ee31ce35b4fd7f578a05d60fff85dad977c72",
+    "THIRD_PARTY_NOTICES.md": "3684bf397d3228445971157058d4bccd9647ec08b8a544165e5e72bcee0c82cb",
+    "browser_gate.py": "ed3127bcd387942d1cfcc9b6b9652c290fd35e9f242530a2f66b3e87a3de883d",
+    "cli.json": "b99d2ce5000da1bfa3019625a241ca9c662ebb1609b6726d82c1ddb2023712cf",
+    "connector.py": "32360b8b29f2adc0886ca1f0ba64e9ee7167687843036f934e36e165fa634514",
+    "icon.png": "1db5048d57adcd0bfd50c6dd2a7f62e51e9689630c2dfb5f5af438c79c97df73",
+    "manifest.json": "cce7e19bde973d85bb3cd2a956edd3c4f8010e58ab03a15c6184fc52828e635e",
+    "skills/jira-cloud-guide/SKILL.md": "e0a8316d3471e0ef884a8e026c2b3c5be0c90651bfdd7dd919c4c09acd86cf38",
+    "vendor_runtime.py": "d713361be331c3abf5d821415ab8bddb5683cf41ececb092ae83b20f1296cecd"
+  },
+  "review_files_sha256": {
+    "SOURCE_REVIEW.md": "a77c43c899c677ab2ce557d280473e63bbd9362ed0855f71f6a515059c11a0d0",
+    "TEST_REPORT.md": "5276e50f89c396a182a3e3f1db5a4bd30afecf89bdf4b6e26be49712034e5cba",
+    "provenance.json": "4be0a0910b12887745117a386ac1d6fd01ce2c0b05c09ea0be31a9bf033fe77a"
+  },
+  "official_cli": {
+    "distribution": "openjiuwen-agentichub",
+    "version": "0.0.1",
+    "source": "https://github.com/openJiuwen-ai/skillhub",
+    "source_commit": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+    "commands": [
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "init",
+        "jira-cloud",
+        "--type",
+        "agent-mcp"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "validate",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-3qltz9jx/jira-cloud"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "pack",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-3qltz9jx/jira-cloud",
+        "--output",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-3qltz9jx/out"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/tools/asset_release.py",
+        "preflight",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/connectors/jira-cloud/jira-cloud"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/tools/asset_release.py",
+        "preflight",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-3qltz9jx/native.zip"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/tools/asset_release.py",
+        "preflight",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-3qltz9jx/out/jira-cloud-1.0.4.zip"
+      ]
+    ]
+  },
+  "checks": [
+    {
+      "step": "official_init",
+      "output": "Plugin initialized at: /private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-3qltz9jx/jira-cloud"
+    },
+    {
+      "step": "official_validate",
+      "output": "Plugin validation passed."
+    },
+    {
+      "step": "official_pack",
+      "output": "Packed: /private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-3qltz9jx/out/jira-cloud-1.0.4.zip"
+    },
+    {
+      "step": "javascript_preflight_native_source",
+      "output": "{\n  \"path\": \"/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/connectors/jira-cloud/jira-cloud\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_native_zip",
+      "output": "{\n  \"path\": \"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-3qltz9jx/native.zip\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_wrapped_zip",
+      "output": "{\n  \"path\": \"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-3qltz9jx/out/jira-cloud-1.0.4.zip\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "workswarm_0.2.8_card_icon",
+      "output": "Installed the exact wrapped ZIP through a loopback Hub-compatible catalog. All installed files matched recorded payload hashes. The installed card decoded the 96 x 96 native package PNG and rendered it at 48 px."
+    },
+    {
+      "step": "existing_unit_tests",
+      "output": "2 passed"
+    }
+  ],
+  "verification_limits": "Verified packaging, exact installation and WorkSwarm 0.2.8 card rendering, plus existing unit tests. See TEST_REPORT.md for previous-version authenticated provider coverage."
+}

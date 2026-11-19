@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "asset_type": "agent-mcp",
+  "name": "jira-cloud",
+  "display_name": "Jira Cloud 连接器",
+  "version": "1.0.0",
+  "task_id": "AH-20261117-jira-cloud-connector",
+  "internal_asset_id": "repo:agent-mcp:jira-cloud",
+  "created_at_utc": "2026-11-17T02:27:44.746669+00:00",
+  "artifacts": [
+    {
+      "form": "native",
+      "path": "connectors/jira-cloud/test-packages/history/jira-cloud-1.0.0-native.zip",
+      "filename": "jira-cloud-1.0.0-native.zip",
+      "sha256": "f7913dcbed764740b143915a2ad94704c50bf03ea0fcf7436f3b1bd476881c2c",
+      "size_bytes": 20750
+    },
+    {
+      "form": "agent-mcp_wrapped",
+      "path": "connectors/jira-cloud/release/1.0.0/jira-cloud-1.0.0-agent-mcp.zip",
+      "filename": "jira-cloud-1.0.0-agent-mcp.zip",
+      "sha256": "f10d5557636a6b8f89a561307e1794985c65dcec05abf870b86d60cfba29a29b",
+      "size_bytes": 8717
+    }
+  ],
+  "payload_sha256": {
+    "README.md": "bbf051589111188ab0d65795082fc39dd9b2f953b5b7a10b0a0217cc0d4da11f",
+    "browser_gate.py": "253da12d2b68166c5f758992a721377e56bee4c02546bcf75373765fd0016f05",
+    "cli.json": "4a12ce5bcdb701fbb21234fc2da4f26bdda795e2c0b0a22b466405d7042947e4",
+    "connector.py": "2c3cae73284eef7ffd4f4ccc35799dc680c6f1d5ab49894841d5b1bc2392e434",
+    "manifest.json": "e62a7ebcca1779739b1a01ec1e4a9acc7e50103a3a468ecefdb9aba6608d03f1",
+    "skills/jira-cloud-guide/SKILL.md": "e0a8316d3471e0ef884a8e026c2b3c5be0c90651bfdd7dd919c4c09acd86cf38",
+    "vendor_runtime.py": "d713361be331c3abf5d821415ab8bddb5683cf41ececb092ae83b20f1296cecd"
+  },
+  "review_files_sha256": {
+    "SOURCE_REVIEW.md": "5346a7489cb54c75ee8ff47d4f38b9c6eb98dd913268095e698d55ea77c55c3a",
+    "TEST_REPORT.md": "95e8d371b1a2d95f2cc216821a5886aaa469f96ed21f9bfd6acff527880747cb",
+    "provenance.json": "c826e3e76e6833e0eb8eb78aa168dd418c989ac766ade8f13002ae0bb3d7c39f"
+  },
+  "official_cli": {
+    "distribution": "openjiuwen-agentichub",
+    "version": "0.0.1",
+    "source": "https://github.com/openJiuwen-ai/skillhub",
+    "source_commit": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+    "commands": [
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/../gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "init",
+        "jira-cloud",
+        "--type",
+        "agent-mcp"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/../gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "validate",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-p7yz4wpk/jira-cloud"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/../gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "pack",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-p7yz4wpk/jira-cloud",
+        "--output",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-p7yz4wpk/out"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/../gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/tools/asset_release.py",
+        "preflight",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/connectors/jira-cloud/jira-cloud"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/../gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/tools/asset_release.py",
+        "preflight",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-p7yz4wpk/native.zip"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/../gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/tools/asset_release.py",
+        "preflight",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-p7yz4wpk/out/jira-cloud-1.0.0.zip"
+      ]
+    ]
+  },
+  "checks": [
+    {
+      "step": "official_init",
+      "output": "Plugin initialized at: /private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-p7yz4wpk/jira-cloud"
+    },
+    {
+      "step": "official_validate",
+      "output": "Plugin validation passed."
+    },
+    {
+      "step": "official_pack",
+      "output": "Packed: /private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-p7yz4wpk/out/jira-cloud-1.0.0.zip"
+    },
+    {
+      "step": "javascript_preflight_native_source",
+      "output": "{\n  \"path\": \"/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/connectors/jira-cloud/jira-cloud\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_native_zip",
+      "output": "{\n  \"path\": \"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-p7yz4wpk/native.zip\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_wrapped_zip",
+      "output": "{\n  \"path\": \"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-p7yz4wpk/out/jira-cloud-1.0.0.zip\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    }
+  ],
+  "verification_limits": "Packaging/JavaScript preflight and byte-equivalence only; not authenticated provider access or user manual-test acceptance."
+}

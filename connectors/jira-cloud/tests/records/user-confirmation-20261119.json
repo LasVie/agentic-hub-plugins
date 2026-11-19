@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-19",
+  "timezone": "Asia/Shanghai",
+  "owner": "Song Haoran",
+  "task_id": "AH-20261117-jira-cloud-connector",
+  "version": "1.0.4",
+  "wrapped_zip_sha256": "3862b885ecb5e338b9a79da6f7d671ab7efa324fb8fae605c75db5af87b74750",
+  "question_item_id": "request_user_input_async/call_0b1c3247a0824106a451ea33409d11e1/0",
+  "user_reply": "确认测试完成，建立交付 PR",
+  "scope": "User explicitly accepted disclosed 1.0.3 authenticated business evidence plus exact 1.0.4 installation/payload/icon/unit coverage. Business Python changes only version literals. No new 1.0.4 authenticated business retest is claimed.",
+  "report_id": "RPT-20261119-jira-cloud-current-package-confirmed",
+  "hub_submission_approved": false
+}

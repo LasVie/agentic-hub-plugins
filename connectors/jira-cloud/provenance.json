@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "mode": "native",
+  "upstream": [
+    {
+      "source": "https://github.com/atlassian/homebrew-acli/blob/4e8f74c483ab002f2a6b0f17f9babbd62a9ffa95/Formula/acli.rb",
+      "version": "1.3.40-stable",
+      "permission_status": "unknown",
+      "copied_paths": [],
+      "use": "Public functional documentation or installation metadata only."
+    },
+    {
+      "source": "https://atlassian.design/assets/a92416454bd0/logos/jira_app.zip",
+      "version": "official brand asset retrieved 2026-11-17",
+      "permission_status": "verified",
+      "copied_paths": [
+        "icon.png"
+      ],
+      "source_path": "jira/PNG/Jira_icon.png",
+      "sha256": "1db5048d57adcd0bfd50c6dd2a7f62e51e9689630c2dfb5f5af438c79c97df73",
+      "owner": "Atlassian",
+      "terms": "https://www.atlassian.com/legal/trademark",
+      "use": "Atlassian publishes this product mark for identification and documents use outside its apps. The unmodified mark identifies the Jira service alongside the connector name and publisher.",
+      "modifications": "none",
+      "attribution": "THIRD_PARTY_NOTICES.md"
+    }
+  ]
+}
