@@ -1,0 +1,1 @@
+Pre-freeze engineering draft of version 1.0.0; not delivered for user testing. Native SHA-256 1d9301ea8425f95c17a617c97cc46b7b41f2d25b43e6044e5979ad2a4300aea3. Retained byte for byte. Superseded before handoff by strict report numeric-type and optimality-metadata checks. Use only the current native ZIP in test-packages/.

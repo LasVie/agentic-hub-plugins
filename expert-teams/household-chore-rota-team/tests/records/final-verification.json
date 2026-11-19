@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-17",
+  "task_id": "AH-20261117-household-chore-rota-team",
+  "version": "1.0.0",
+  "payload_files": 25,
+  "source_native_wrapped_extracted_manual_install_equal": true,
+  "artifacts": {
+    "native": {
+      "path": "test-packages/household-chore-rota-team-1.0.0-native.zip",
+      "sha256": "d9545a66730afc6748407af543b5e2265990d61f0cfb06985339afa41bd363c9",
+      "bytes": 75625,
+      "payload_equal": true
+    },
+    "wrapped": {
+      "path": "release/1.0.0/household-chore-rota-team-1.0.0-agent-group.zip",
+      "sha256": "7942f574b44e545b984b3674b4e781bdbb97b7567ff912b9f0ef6d37c05a26af",
+      "bytes": 39588,
+      "payload_equal": true
+    }
+  },
+  "actual_host_records_current": true,
+  "source_tests": 23,
+  "extracted_tests": 23,
+  "scripted_actual_host_cases": 5,
+  "real_model_semantic_acceptance": false,
+  "gui_file_upload_complete": false,
+  "user_manual_pass": false,
+  "evidence_index": "evidence/1.0.0/index.json",
+  "boundary": "Independent final local archive/content comparison. No model calls or user acceptance implied."
+}

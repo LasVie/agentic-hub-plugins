@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-19",
+  "timezone": "Asia/Singapore",
+  "task_id": "AH-20261117-household-chore-rota-team",
+  "version": "1.0.0",
+  "payload_files": 25,
+  "source_both_zips_extraction_and_user_host_install_byte_equal": true,
+  "archives": {
+    "native": {
+      "path": "test-packages/household-chore-rota-team-1.0.0-native.zip",
+      "sha256": "d9545a66730afc6748407af543b5e2265990d61f0cfb06985339afa41bd363c9",
+      "bytes": 75625
+    },
+    "wrapped": {
+      "path": "release/1.0.0/household-chore-rota-team-1.0.0-agent-group.zip",
+      "sha256": "7942f574b44e545b984b3674b4e781bdbb97b7567ff912b9f0ef6d37c05a26af",
+      "bytes": 39588
+    }
+  },
+  "source_case_sha256": "96b9e1efeb11aa1676eee7adfbcbf5bf0c6e6d93a77cc03b7cec7e58e734ef61",
+  "manual_baseline_sha256": "e050f850cf07df95b27da0312ff11b4fab324e1293bbff20045e0cb9930dfb1d",
+  "manual_handoff_hashes": {
+    "intake": "f206e26a9c6c52ca202dcad6bcded8a9b8cf3d705e45417c72be293a59bf8777",
+    "plan": "4e3962e34ea1fbf3b160652673b9ecc76c4e9a26860abfa2171dea6bc904068e",
+    "review": "5676fda62f121b8631f476bc969b320722b272260e51bc76dbb34bf4dccdeb5c",
+    "notes": "ba99e3755f5b939861aa4a4d2cbdb3116fb4bd74e98a16cb72e7cb610f1a2048"
+  },
+  "manual_output_sha256": {
+    "rota.html": "314c8dbf947a6171a0ec03e06aea5573eb35029eac5f7be02e70730dd76179a9",
+    "assignments.csv": "d7fc4604cca6ed836506243ac697fdde3c93fed2b470b2bd08f372472b4db8fd",
+    "review.json": "94dc4896f7345448d6c342642ad5df04e2ebd154534bee641d168d5b5d7a82b8"
+  },
+  "replay_from_exact_native_extraction_matches_manual_output": true,
+  "assignments": 7,
+  "total_minutes": 180,
+  "weekly_minutes": {
+    "lin": 55,
+    "chen": 45,
+    "wang": 80
+  },
+  "preference_misses": [
+    "c04"
+  ],
+  "independent_math": "pass",
+  "independent_content": "pass",
+  "delivery_status": "verified",
+  "scope": "Manual handoff and generated artifacts read locally. Replay used saved evidence and the exact extracted script; it did not use a model or modify manual run files.",
+  "rerun": {
+    "python": "3.10.11",
+    "source_test_count": 23,
+    "exact_extracted_test_count": 23,
+    "passed": true,
+    "preflight_passed_on": [
+      "source directory",
+      "native ZIP",
+      "wrapped ZIP"
+    ]
+  },
+  "reused_verified_phase_2_records": [
+    "official CLI validation/pack",
+    "actual WorkSwarm creator and SDK 0.1.20 loader",
+    "five real host scenarios with deterministic local model responses"
+  ],
+  "source_license_mode": "native",
+  "third_party_distribution_notices_applicable": false
+}

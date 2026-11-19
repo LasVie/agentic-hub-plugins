@@ -1,0 +1,41 @@
+{
+  "name": "household-chore-rota-team",
+  "version": "1.0.0",
+  "package_type": "agent_group",
+  "avatar": "avatars/group.png",
+  "description": "按约定编制一周家务轮值，独立核对任务覆盖、限制与分钟负担，交付中文周历和审查档案。",
+  "display_name": {
+    "zh": "家务轮值与负担复核专家团",
+    "en": "Household Chore Rota and Review Team"
+  },
+  "display_description": {
+    "zh": "资料梳理、轮值规划和独立负担复核。",
+    "en": "Weekly chore assignments with source intake and independent workload checking."
+  },
+  "instruction": "所有成员默认用简体中文，区分用户约定、程序结果和未确认事项。通过宿主原生任务与消息交接实际文件，不代写其他成员意见。每位成员读取自己的私有工作流及共享契约。硬限制或内容复核阻塞时不称通过；最多一轮修正，不能放宽输入凑结果。程序不认证成员参与或家庭公平；不修改宿主、不联网、不写外部日历、不发消息给家庭成员。",
+  "agents": [
+    "leader",
+    "analyst",
+    "planner",
+    "verifier"
+  ],
+  "skills": [
+    "rota-evidence"
+  ],
+  "tags": [
+    {
+      "zh": "家务安排",
+      "en": "Chore rota"
+    },
+    {
+      "zh": "独立复核",
+      "en": "Independent review"
+    }
+  ],
+  "quick_inputs": [
+    {
+      "zh": "根据已经约定的家务和可用日期编制一周轮值，展示每人的分钟负担并独立复核。",
+      "en": "Build a weekly rota from agreed duties and availability, then independently review workloads."
+    }
+  ]
+}

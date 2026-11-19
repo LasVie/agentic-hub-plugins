@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "analyst",
+  "description": "家务资料梳理员，负责本角色的实际家务交接与复核工作。",
+  "display_name": {
+    "zh": "家务资料梳理员",
+    "en": "Chore Analyst"
+  },
+  "display_description": {
+    "zh": "家务资料梳理员，按已约定输入协作。",
+    "en": "Chore Analyst for agreed weekly household duties."
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/chore-intake",
+      "mode": "all"
+    }
+  ]
+}

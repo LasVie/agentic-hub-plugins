@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "case_id": "shared-home",
+  "household": "合住小家",
+  "start_date": "2026-11-23",
+  "participants": [
+    {
+      "id": "lin",
+      "name": "小林",
+      "daily_limits": [
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60
+      ],
+      "weekly_limit": 90,
+      "unavailable_days": [
+        1
+      ]
+    },
+    {
+      "id": "chen",
+      "name": "小陈",
+      "daily_limits": [
+        45,
+        45,
+        45,
+        45,
+        45,
+        45,
+        45
+      ],
+      "weekly_limit": 90,
+      "unavailable_days": [
+        3
+      ]
+    },
+    {
+      "id": "wang",
+      "name": "小王",
+      "daily_limits": [
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60
+      ],
+      "weekly_limit": 120,
+      "unavailable_days": [
+        0
+      ]
+    }
+  ],
+  "duties": [
+    {
+      "id": "c01",
+      "name": "洗碗",
+      "day": 0,
+      "minutes": 20,
+      "eligible": [
+        "lin",
+        "chen"
+      ],
+      "preferred": [
+        "chen"
+      ]
+    },
+    {
+      "id": "c02",
+      "name": "倒垃圾",
+      "day": 1,
+      "minutes": 10,
+      "eligible": [
+        "lin",
+        "chen",
+        "wang"
+      ],
+      "preferred": [
+        "wang"
+      ]
+    },
+    {
+      "id": "c03",
+      "name": "吸尘",
+      "day": 2,
+      "minutes": 35,
+      "eligible": [
+        "lin",
+        "wang"
+      ],
+      "preferred": [
+        "lin"
+      ]
+    },
+    {
+      "id": "c04",
+      "name": "清洁浴室",
+      "day": 3,
+      "minutes": 40,
+      "eligible": [
+        "chen",
+        "wang"
+      ],
+      "preferred": [
+        "chen"
+      ]
+    },
+    {
+      "id": "c05",
+      "name": "擦洗厨房",
+      "day": 4,
+      "minutes": 30,
+      "eligible": [
+        "lin",
+        "chen",
+        "wang"
+      ],
+      "preferred": []
+    },
+    {
+      "id": "c06",
+      "name": "晾衣服",
+      "day": 5,
+      "minutes": 25,
+      "eligible": [
+        "chen",
+        "wang"
+      ],
+      "preferred": []
+    },
+    {
+      "id": "c07",
+      "name": "周末洗碗",
+      "day": 6,
+      "minutes": 20,
+      "eligible": [
+        "lin",
+        "chen",
+        "wang"
+      ],
+      "preferred": []
+    }
+  ],
+  "notes": [
+    "每次家务的分钟数与资格已由用户明确给定。",
+    "偏好是软约定；小陈周四不可用，即使偏好清洁浴室也不能安排给他。"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "tool": {
+    "name": "official agentichub CLI",
+    "version": "0.0.1",
+    "commit": "c8ee4ef44be0453470114aa5a19f4e1017462907"
+  },
+  "native_sha256": "d9545a66730afc6748407af543b5e2265990d61f0cfb06985339afa41bd363c9",
+  "wrapped_sha256": "7942f574b44e545b984b3674b4e781bdbb97b7567ff912b9f0ef6d37c05a26af",
+  "commands": [
+    {
+      "arguments": [
+        "init",
+        "household-chore-rota-team",
+        "--type",
+        "agent-group",
+        "--path",
+        ".local/staging/official-4m5efbv0"
+      ],
+      "exit": 0,
+      "output": "Plugin initialized at: .local/staging/official-4m5efbv0/household-chore-rota-team\n"
+    },
+    {
+      "arguments": [
+        "validate",
+        ".local/staging/official-4m5efbv0/household-chore-rota-team"
+      ],
+      "exit": 0,
+      "output": "Plugin validation passed.\n"
+    },
+    {
+      "arguments": [
+        "pack",
+        ".local/staging/official-4m5efbv0/household-chore-rota-team",
+        "--output",
+        ".local/staging/official-4m5efbv0/out"
+      ],
+      "exit": 0,
+      "output": "Packed: .local/staging/official-4m5efbv0/out/household-chore-rota-team-1.0.0.zip\n"
+    }
+  ],
+  "original_log_sha256": "12c7dbc6b47553010d83e5d476d5b89a00c3b7010ac24e09a20f734d76c0e88d",
+  "scope": "Actual official CLI on staging payload byte-identical to current native ZIP; not host team validation"
+}

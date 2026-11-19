@@ -1,0 +1,415 @@
+{
+  "schema_version": 1,
+  "case_id": "full-week",
+  "household": "六人合住一周",
+  "start_date": "2026-11-23",
+  "participants": [
+    {
+      "id": "p1",
+      "name": "室友1",
+      "daily_limits": [
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40
+      ],
+      "weekly_limit": 90,
+      "unavailable_days": []
+    },
+    {
+      "id": "p2",
+      "name": "室友2",
+      "daily_limits": [
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40
+      ],
+      "weekly_limit": 90,
+      "unavailable_days": []
+    },
+    {
+      "id": "p3",
+      "name": "室友3",
+      "daily_limits": [
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40
+      ],
+      "weekly_limit": 90,
+      "unavailable_days": []
+    },
+    {
+      "id": "p4",
+      "name": "室友4",
+      "daily_limits": [
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40
+      ],
+      "weekly_limit": 90,
+      "unavailable_days": []
+    },
+    {
+      "id": "p5",
+      "name": "室友5",
+      "daily_limits": [
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40
+      ],
+      "weekly_limit": 90,
+      "unavailable_days": []
+    },
+    {
+      "id": "p6",
+      "name": "室友6",
+      "daily_limits": [
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40
+      ],
+      "weekly_limit": 90,
+      "unavailable_days": []
+    }
+  ],
+  "duties": [
+    {
+      "id": "d01",
+      "name": "洗碗",
+      "day": 0,
+      "minutes": 20,
+      "eligible": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "preferred": []
+    },
+    {
+      "id": "d02",
+      "name": "倒垃圾",
+      "day": 0,
+      "minutes": 10,
+      "eligible": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "preferred": []
+    },
+    {
+      "id": "d03",
+      "name": "擦桌面",
+      "day": 0,
+      "minutes": 15,
+      "eligible": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "preferred": []
+    },
+    {
+      "id": "d04",
+      "name": "洗碗",
+      "day": 1,
+      "minutes": 20,
+      "eligible": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "preferred": []
+    },
+    {
+      "id": "d05",
+      "name": "倒垃圾",
+      "day": 1,
+      "minutes": 10,
+      "eligible": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "preferred": []
+    },
+    {
+      "id": "d06",
+      "name": "擦桌面",
+      "day": 1,
+      "minutes": 15,
+      "eligible": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "preferred": []
+    },
+    {
+      "id": "d07",
+      "name": "洗碗",
+      "day": 2,
+      "minutes": 20,
+      "eligible": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "preferred": []
+    },
+    {
+      "id": "d08",
+      "name": "倒垃圾",
+      "day": 2,
+      "minutes": 10,
+      "eligible": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "preferred": []
+    },
+    {
+      "id": "d09",
+      "name": "擦桌面",
+      "day": 2,
+      "minutes": 15,
+      "eligible": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "preferred": []
+    },
+    {
+      "id": "d10",
+      "name": "洗碗",
+      "day": 3,
+      "minutes": 20,
+      "eligible": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "preferred": []
+    },
+    {
+      "id": "d11",
+      "name": "倒垃圾",
+      "day": 3,
+      "minutes": 10,
+      "eligible": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "preferred": []
+    },
+    {
+      "id": "d12",
+      "name": "擦桌面",
+      "day": 3,
+      "minutes": 15,
+      "eligible": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "preferred": []
+    },
+    {
+      "id": "d13",
+      "name": "洗碗",
+      "day": 4,
+      "minutes": 20,
+      "eligible": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "preferred": []
+    },
+    {
+      "id": "d14",
+      "name": "倒垃圾",
+      "day": 4,
+      "minutes": 10,
+      "eligible": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "preferred": []
+    },
+    {
+      "id": "d15",
+      "name": "擦桌面",
+      "day": 4,
+      "minutes": 15,
+      "eligible": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "preferred": []
+    },
+    {
+      "id": "d16",
+      "name": "洗碗",
+      "day": 5,
+      "minutes": 20,
+      "eligible": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "preferred": []
+    },
+    {
+      "id": "d17",
+      "name": "倒垃圾",
+      "day": 5,
+      "minutes": 10,
+      "eligible": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "preferred": []
+    },
+    {
+      "id": "d18",
+      "name": "擦桌面",
+      "day": 5,
+      "minutes": 15,
+      "eligible": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "preferred": []
+    },
+    {
+      "id": "d19",
+      "name": "洗碗",
+      "day": 6,
+      "minutes": 20,
+      "eligible": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "preferred": []
+    },
+    {
+      "id": "d20",
+      "name": "倒垃圾",
+      "day": 6,
+      "minutes": 10,
+      "eligible": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "preferred": []
+    },
+    {
+      "id": "d21",
+      "name": "擦桌面",
+      "day": 6,
+      "minutes": 15,
+      "eligible": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6"
+      ],
+      "preferred": []
+    }
+  ]
+}
