@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "case_id": "clock-change",
+  "organizer_zone": "America/New_York",
+  "start_date": "2027-03-08",
+  "weeks": 4,
+  "duration_minutes": 30,
+  "slots": [
+    {
+      "id": "nine",
+      "start": "09:00"
+    },
+    {
+      "id": "eight",
+      "start": "08:00"
+    }
+  ],
+  "participants": [
+    {
+      "id": "new-york",
+      "label": "纽约参会者",
+      "zone": "America/New_York",
+      "weekly": {
+        "mon": [
+          [
+            "08:00",
+            "17:00"
+          ]
+        ],
+        "tue": [],
+        "wed": [],
+        "thu": [],
+        "fri": [],
+        "sat": [],
+        "sun": []
+      },
+      "overrides": {}
+    },
+    {
+      "id": "berlin",
+      "label": "柏林参会者",
+      "zone": "Europe/Berlin",
+      "weekly": {
+        "mon": [
+          [
+            "09:00",
+            "18:00"
+          ]
+        ],
+        "tue": [],
+        "wed": [],
+        "thu": [],
+        "fri": [],
+        "sat": [],
+        "sun": []
+      },
+      "overrides": {
+        "2027-03-22": [
+          [
+            "09:00",
+            "14:20"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "singapore",
+      "label": "新加坡参会者",
+      "zone": "Asia/Singapore",
+      "weekly": {
+        "mon": [
+          [
+            "09:00",
+            "22:00"
+          ]
+        ],
+        "tue": [],
+        "wed": [],
+        "thu": [],
+        "fri": [],
+        "sat": [],
+        "sun": []
+      },
+      "overrides": {}
+    }
+  ]
+}

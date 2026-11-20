@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "leader",
+  "description": "核对原始输入、规划和独立报告，处置分歧后交付。",
+  "display_name": {
+    "zh": "例会核验主理人",
+    "en": "Meeting Review Lead"
+  },
+  "display_description": {
+    "zh": "核对原始输入、规划和独立报告，处置分歧后交付。",
+    "en": "Meeting Review Lead"
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/meeting-delivery",
+      "mode": "all"
+    }
+  ]
+}

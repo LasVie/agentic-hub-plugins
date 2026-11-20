@@ -1,0 +1,65 @@
+{
+  "loader": "openjiuwen.agent_teams.experts.load_agent_group_package_bundle",
+  "sdk": "0.1.20",
+  "native_sha256": "7fd40e9c9121331ddb268c77434fc522f59074b3fe1ac9ec9cced78bc4a951d9",
+  "members": {
+    "leader": {
+      "skills": [
+        "meeting-delivery",
+        "meeting-evidence"
+      ],
+      "prompt_sections": [
+        "identity",
+        "agent_group_leader_rules",
+        "agent_group_instruction"
+      ]
+    },
+    "analyst": {
+      "skills": [
+        "meeting-evidence",
+        "meeting-intake"
+      ],
+      "prompt_sections": [
+        "identity",
+        "agent_group_instruction"
+      ]
+    },
+    "planner": {
+      "skills": [
+        "meeting-evidence",
+        "meeting-planning"
+      ],
+      "prompt_sections": [
+        "identity",
+        "agent_group_instruction"
+      ]
+    },
+    "verifier": {
+      "skills": [
+        "independent-timezone-review",
+        "meeting-evidence"
+      ],
+      "prompt_sections": [
+        "identity",
+        "agent_group_instruction"
+      ]
+    }
+  },
+  "negative_controls": [
+    {
+      "case": "wrong-member-type",
+      "rejected": true,
+      "reason": "AgentTemplate 'analyst' must declare package_type='agent_template'"
+    },
+    {
+      "case": "no-leader-entry",
+      "rejected": true,
+      "reason": "AgentGroup leader AGENT.md missing: <negative-fixture>/agents/leader/AGENT.md"
+    },
+    {
+      "case": "missing-member",
+      "rejected": true,
+      "reason": "agent directory not found: verifier"
+    }
+  ]
+}

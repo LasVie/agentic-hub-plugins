@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "planner",
+  "description": "展开固定本地周会，计算 UTC、参与者本地起止与窗口冲突。",
+  "display_name": {
+    "zh": "跨时区例会计算员",
+    "en": "Time-Zone Analyst"
+  },
+  "display_description": {
+    "zh": "展开固定本地周会，计算 UTC、参与者本地起止与窗口冲突。",
+    "en": "Time-Zone Analyst"
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/meeting-planning",
+      "mode": "all"
+    }
+  ]
+}

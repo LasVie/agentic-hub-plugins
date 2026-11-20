@@ -1,0 +1,10 @@
+{
+  "ref": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+  "files_sha256": {
+    "cli/cli_core/plugin.py": "7d100e423a033b42ae6f1c79b7063b01ebb55ef38beb63da6d85e027ca0f6568",
+    "cli/cli_core/handlers.py": "85160586732aedfb6f2142b5d555aa37d42202454beb310bcc7459ea9312ff07",
+    "cli/openjiuwen_agentichub/main.py": "f3a0e0bb46c67ad17689db44ab4d9ae5ddbf32391ed8e26a1671e770f0dfaaea",
+    "cli/openjiuwen_agentichub/pyproject.toml": "07d807d210fedbd949e360e8d547ce1288ec28d1a90f1c9776e0dff859a2f234",
+    "LICENSE": "f9f9a6236f9f12c14ce7294a58575c19fc16bb1c24dcdc91e2ae868b2b21a41a"
+  }
+}

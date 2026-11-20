@@ -1,0 +1,84 @@
+{
+  "task_id": "AH-20261119-recurring-meeting-timezone-review-team",
+  "version": "1.0.0",
+  "artifacts": {
+    "native": {
+      "path": "test-packages/recurring-meeting-timezone-review-team-1.0.0-native.zip",
+      "sha256": "7fd40e9c9121331ddb268c77434fc522f59074b3fe1ac9ec9cced78bc4a951d9",
+      "bytes": 41144
+    },
+    "wrapped": {
+      "path": "release/1.0.0/recurring-meeting-timezone-review-team-1.0.0-agent-group.zip",
+      "sha256": "b3439f95f0d6c6f19cb36015968ce737b70d624fe06b82bac1f4ef7701ee055a",
+      "bytes": 28320
+    }
+  },
+  "payload_files": 23,
+  "equal": [
+    "source",
+    "native",
+    "wrapped payload",
+    "native extraction",
+    "March host install",
+    "gap host install",
+    "manual host install"
+  ],
+  "official_cli_exit_codes": {
+    "init": 0,
+    "validate": 0,
+    "pack": 0
+  },
+  "repository_wrapper_checks": "passed",
+  "dynamic_js_signatures": {
+    "source": 0,
+    "native": 0,
+    "wrapped": 0
+  },
+  "host_creator_validate_only": 0,
+  "actual_loader_sdk": "0.1.20",
+  "functional_tests_passed": {
+    "source-tests.txt": 16,
+    "extracted-tests.txt": 16
+  },
+  "host_cases": {
+    "host-clock-change": {
+      "events": 258,
+      "scripted_model_requests": 28,
+      "occurrence_statuses": [
+        "conflict",
+        "ok",
+        "conflict",
+        "ok",
+        "ok",
+        "ok",
+        "ok",
+        "ok"
+      ]
+    },
+    "host-gap": {
+      "events": 258,
+      "scripted_model_requests": 28,
+      "occurrence_statuses": [
+        "nonexistent",
+        "conflict",
+        "conflict",
+        "conflict"
+      ]
+    }
+  },
+  "browser": {
+    "upload_dialog_reached": true,
+    "selector_returned_zip": false,
+    "installation_route": "agent_groups.import_local",
+    "installed_type": "agent_group",
+    "displayed_version": "1.0.0",
+    "visible_members": [
+      "例会核验主理人",
+      "参会时段梳理员",
+      "跨时区例会计算员",
+      "独立时刻核验员"
+    ]
+  },
+  "manual_confirmation": "pending",
+  "external_model_calls": 0
+}

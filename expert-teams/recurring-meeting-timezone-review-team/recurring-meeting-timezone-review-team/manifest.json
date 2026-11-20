@@ -1,0 +1,25 @@
+{
+  "name": "recurring-meeting-timezone-review-team",
+  "version": "1.0.0",
+  "package_type": "agent_group",
+  "description": "比较同一个本地时刻在不同周对所有参会者是否合适。输出可核查的中文例会表。",
+  "display_name": {
+    "zh": "跨时区例会时间核验专家团",
+    "en": "Recurring Meeting Time-Zone Review Team"
+  },
+  "display_description": {
+    "zh": "核对跨时区例会的各期本地时刻与可用窗口",
+    "en": "Audit recurring meetings against participant working hours"
+  },
+  "avatar": "avatars/group.png",
+  "agents": [
+    "leader",
+    "analyst",
+    "planner",
+    "verifier"
+  ],
+  "skills": [
+    "meeting-evidence"
+  ],
+  "instruction": "默认使用简体中文。只处理用户已确认的例会案例。按实际任务、文件和工具结果分工，保留原始资料，使用不同的全新证据路径。核验员先读原始输入并独立生成基线，再接收规划。角色成员不修改其他角色报告。任何时区、时刻、可用窗口或交接数据不完整时报告阻塞。工具返回和文件可核查之前不得宣称成功。"
+}

@@ -1,0 +1,239 @@
+{
+  "frontend_http": 200,
+  "native_sha256": "7fd40e9c9121331ddb268c77434fc522f59074b3fe1ac9ec9cced78bc4a951d9",
+  "payload": {
+    "README.md": "30f75bae8b3293322c405ce27c8a9c38709d116f4423fe5e96368d8dc6f061c9",
+    "agents/analyst/manifest.json": "483be653df1854ee9db341e8b2d0763c48c9ab4cd46d26f6a77c5fa9759f0d48",
+    "agents/analyst/persona/role.md": "9b3167cf454eb373d82946a5776660e6402e24c12f82d3b6070fbc8d421001df",
+    "agents/analyst/skills/meeting-intake/SKILL.md": "f900ee2dc208b5fcb85b527652ed9679b25e39c5d9a9aa509dc8c9980eb01bc2",
+    "agents/analyst/tools/intake.py": "386d1520f003639130563a05b9e098834967a64a68d92cecb4ba65135b214f34",
+    "agents/leader/AGENT.md": "597ff711f08a41f0ff65f03c4af5f54b1a146abcafa89accf366bad947b2504c",
+    "agents/leader/manifest.json": "7d20682276532b09a2813c9bf7d44c3acaaa11cf3405e18a4770417e8035b29e",
+    "agents/leader/persona/role.md": "9f7222e34ff485a941f52b0bb056e7d4cd00bdbd78cae1d34c5868d78b6594d8",
+    "agents/leader/skills/meeting-delivery/SKILL.md": "31447d3dafbf19efa881396f6f658583c678d6efba9faa04e060a58bd016f81f",
+    "agents/leader/tools/deliver.py": "e1362fb15f07018d0e231e1d7f455521077e62ac4f1ac9c6551039a81f5f4729",
+    "agents/planner/manifest.json": "c1f1fec472c5807cbdef4de4ecbb89859801d8a4cfba7c5ca0bba3621ede2ea8",
+    "agents/planner/persona/role.md": "a56920fff2a3ae441d790242bb607882ea3bf01b331897f2f37608ba0085a2e2",
+    "agents/planner/skills/meeting-planning/SKILL.md": "bdc806de3df8558d49d7f0e412d715368e0ea37288d7b2d25217680fd307e2fa",
+    "agents/planner/tools/plan.py": "4b4d8aa35e21d548816d5b48459d39ee728c56e07342c890a1e399a81697ae0b",
+    "agents/verifier/manifest.json": "3ec04ed44d8f6feacb6f28b32dc3448755efeb9051e7fb079ae3e107a6252a4e",
+    "agents/verifier/persona/role.md": "0ee7d3c251c5a75e50008a873c9ae0879504d35efc0d9837d588536ba87bbdc9",
+    "agents/verifier/skills/independent-timezone-review/SKILL.md": "aec3944c674c60a855803aeb00b28823be61c8ba77771bdd9738142c6cb56b47",
+    "agents/verifier/tools/verify.py": "b2eeda1b0535c572e5a55ffce6372a234f382721bd49dfc4348300bfc3a1b89c",
+    "avatars/group.png": "f5ebf48ee21045c74994bb21afe984170c1561e83ee8303fccc0fedea0d08bdc",
+    "examples/clock-change.json": "ae345b8917a85d1cfaff8b1739b12783b7ba1ab74ef0c395f10f2387352dc0b1",
+    "manifest.json": "f7bd9ab82c90eff2efd2f7bba7aadd619f14c47b6e8e8fce070687c65423db7b",
+    "skills/meeting-evidence/SKILL.md": "9548e760882ffc198d96808f1d4b0f76d8b1be715f8a4dea5121055b450a69dd",
+    "skills/meeting-evidence/scripts/contract.py": "dd4d53df6f9e0b3a066cd1e26bcb02ca4c319fcf030f9279923b1f1947c82abe"
+  },
+  "group": "recurring-meeting-timezone-review-team",
+  "member_ids": [
+    "leader",
+    "analyst",
+    "planner",
+    "verifier"
+  ],
+  "version": "1.0.0",
+  "installed_equal": true,
+  "model_calls": "loopback fixed provider only",
+  "boundary": "Real host integration with fixed local responses; not autonomous reasoning or manual acceptance.",
+  "session_id": "web_1a1f2edaf81_283587ad845a",
+  "role_execution": {
+    "leader": {
+      "model_requests": 6,
+      "tools_exchanged": [
+        "bash",
+        "build_team",
+        "create_task",
+        "skill_tool"
+      ],
+      "skills_read": [
+        "meeting-delivery",
+        "meeting-evidence"
+      ],
+      "private_skills_scoped": true,
+      "command_exit": 0,
+      "judgment": "fixed fixture",
+      "assembled_tools": [
+        "async_task_cancel",
+        "async_task_output",
+        "async_tasks_list",
+        "bash",
+        "build_team",
+        "create_task",
+        "edit_file",
+        "fetch_webpage",
+        "glob",
+        "grep",
+        "read_file",
+        "send_file_to_user",
+        "send_message",
+        "shutdown_member",
+        "skill_tool",
+        "spawn_expert",
+        "spawn_human_agent",
+        "spawn_teammate",
+        "tool_call",
+        "tool_search",
+        "update_task",
+        "view_expert_groups",
+        "view_experts",
+        "view_task",
+        "workspace_meta",
+        "write_file"
+      ]
+    },
+    "analyst": {
+      "model_requests": 7,
+      "tools_exchanged": [
+        "bash",
+        "claim_task",
+        "send_message",
+        "skill_tool"
+      ],
+      "skills_read": [
+        "meeting-evidence",
+        "meeting-intake"
+      ],
+      "private_skills_scoped": true,
+      "command_exit": 0,
+      "judgment": "fixed fixture",
+      "assembled_tools": [
+        "bash",
+        "claim_task",
+        "edit_file",
+        "fetch_webpage",
+        "glob",
+        "grep",
+        "read_file",
+        "send_file_to_user",
+        "send_message",
+        "skill_tool",
+        "task_tool",
+        "todo_create",
+        "todo_get",
+        "todo_list",
+        "todo_modify",
+        "tool_call",
+        "tool_search",
+        "verify_task",
+        "view_task",
+        "workspace_meta",
+        "write_file"
+      ]
+    },
+    "planner": {
+      "model_requests": 7,
+      "tools_exchanged": [
+        "bash",
+        "claim_task",
+        "send_message",
+        "skill_tool"
+      ],
+      "skills_read": [
+        "meeting-evidence",
+        "meeting-planning"
+      ],
+      "private_skills_scoped": true,
+      "command_exit": 0,
+      "judgment": "fixed fixture",
+      "assembled_tools": [
+        "bash",
+        "claim_task",
+        "edit_file",
+        "fetch_webpage",
+        "glob",
+        "grep",
+        "read_file",
+        "send_file_to_user",
+        "send_message",
+        "skill_tool",
+        "task_tool",
+        "todo_create",
+        "todo_get",
+        "todo_list",
+        "todo_modify",
+        "tool_call",
+        "tool_search",
+        "verify_task",
+        "view_task",
+        "workspace_meta",
+        "write_file"
+      ]
+    },
+    "verifier": {
+      "model_requests": 8,
+      "tools_exchanged": [
+        "bash",
+        "claim_task",
+        "send_message",
+        "skill_tool"
+      ],
+      "skills_read": [
+        "independent-timezone-review",
+        "meeting-evidence"
+      ],
+      "private_skills_scoped": true,
+      "command_exit": 0,
+      "judgment": "fixed fixture",
+      "assembled_tools": [
+        "bash",
+        "claim_task",
+        "edit_file",
+        "fetch_webpage",
+        "glob",
+        "grep",
+        "read_file",
+        "send_file_to_user",
+        "send_message",
+        "skill_tool",
+        "task_tool",
+        "todo_create",
+        "todo_get",
+        "todo_list",
+        "todo_modify",
+        "tool_call",
+        "tool_search",
+        "verify_task",
+        "view_task",
+        "workspace_meta",
+        "write_file"
+      ]
+    }
+  },
+  "expected": "gap",
+  "occurrence_statuses": [
+    "nonexistent",
+    "conflict",
+    "conflict",
+    "conflict"
+  ],
+  "independent_verdict": "pass",
+  "event_count": 258,
+  "semantic_acceptance": false,
+  "input_first_baseline": true,
+  "timezone_sources": {
+    "America/New_York": {
+      "source": "系统 TZif",
+      "tzif_sha256": "d7f2206b3a45989fc9ad63d558922532fa7352280d5f87176bf1db79cb1d1fa9"
+    },
+    "Asia/Singapore": {
+      "source": "系统 TZif",
+      "tzif_sha256": "0954b2d9a301d94f4348024606a71bbcb2fa24d3cd3709f5bc8bca605039785d"
+    },
+    "Europe/Berlin": {
+      "source": "系统 TZif",
+      "tzif_sha256": "a7fd9932d785d4d690900b834c3563c1810c1cf2e01711bcc0926af6c0767cb7"
+    }
+  },
+  "artifacts": {
+    "plan.json": "ccdc95c1117dd646664d2a96a7c2d80d4ba17a54ec1efd63a60428de6b95a9af",
+    "input.json": "edf0e61ce7f19d253e582a404906dc7bd17977cacbc5ce37aca388cb0cff3635",
+    "intake.json": "f4235858c6d7c09b3a5dfb2999b0d2b672f663b20e93844da743fc97afa183ab",
+    "review.json": "5c034e1c530f96e35ca291caac6c77bc2646f980c87cd8197eb7f3e5bd1174eb",
+    "verifier-baseline.json": "ec01ebe2823eb6af7ae8209cb29c21c10870caef3c87077b87e81cfc41441dab",
+    "delivery/meetings.csv": "50dda52f9779682d2b925de1485da47bc2111e1d2806a2dfff247bf22876c347",
+    "delivery/audit.json": "7540c0dacb7bb6ebe7e227f64258bce2cb9696d19f85e4d9e99d06fbf18bd4a7",
+    "delivery/review.md": "e12d8c13013554fd9448b52b0a52f1d0eeb42c144676e1652e7f828b3319cbe1"
+  }
+}
