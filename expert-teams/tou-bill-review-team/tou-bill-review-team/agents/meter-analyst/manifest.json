@@ -1,0 +1,11 @@
+{
+  "package_type": "agent_template",
+  "name": "meter-analyst",
+  "description": "核查区间、单位、重复与缺口，保存原始输入摘要。",
+  "display_name": {
+    "zh": "电表读数核查员"
+  },
+  "persona": {
+    "dir": "persona"
+  }
+}

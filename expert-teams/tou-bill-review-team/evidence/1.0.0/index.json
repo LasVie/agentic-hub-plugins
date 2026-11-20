@@ -1,0 +1,35 @@
+{
+  "task_id": "AH-20261120-tou-bill-review-team",
+  "version": "1.0.0",
+  "native_zip_sha256": "8281f525470dfa86164f444cead9f7320fdd5c779283f64b5791c0f3d142ec9e",
+  "source": "User-provided original screenshots in the current conversation",
+  "screenshots": [
+    {
+      "original_filename": "Screenshot 2026-11-20 at 4.04.42 PM.png",
+      "file": "originals/Screenshot 2026-11-20 at 4.04.42 PM.png",
+      "width": 3356,
+      "height": 1988,
+      "bytes": 952194,
+      "sha256": "f9525a18ff4c7d8d4a2e292367459e31a1389b67b7e2428ca635fcffac46c5d9",
+      "summary": "Installed v1.0.0 manual run with actual member tool calls, 18:00 off-peak and energy-charge comparison."
+    },
+    {
+      "original_filename": "Screenshot 2026-11-20 at 4.04.50 PM.png",
+      "file": "originals/Screenshot 2026-11-20 at 4.04.50 PM.png",
+      "width": 3336,
+      "height": 1988,
+      "bytes": 797779,
+      "sha256": "47acaa7833c2516985d94cddc627720016eed4eede0c98f19ca54b7568517dcf",
+      "summary": "Task board showing claims and completions for preflight, independent replay, meter inspection, candidate calculation and delivery audit."
+    },
+    {
+      "original_filename": "Screenshot 2026-11-20 at 4.05.11 PM.png",
+      "file": "originals/Screenshot 2026-11-20 at 4.05.11 PM.png",
+      "width": 1834,
+      "height": 1434,
+      "bytes": 222856,
+      "sha256": "333438e21da1c19d7c33544960c4662e3dc197fda8b1764874a09f8fc5a5c14b",
+      "summary": "Final Chinese HTML dossier for the synthetic case, showing 1.00 CNY billed, 0.80 recalculated and 0.20 difference."
+    }
+  ]
+}

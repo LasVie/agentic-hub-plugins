@@ -1,0 +1,11 @@
+{
+  "package_type": "agent_template",
+  "name": "reviewer",
+  "description": "仅用原始案例独立逐段复算，保存结果后才接触候选。",
+  "display_name": {
+    "zh": "独立费用复核员"
+  },
+  "persona": {
+    "dir": "persona"
+  }
+}

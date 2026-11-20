@@ -1,0 +1,36 @@
+{
+  "task_id": "AH-20261120-tou-bill-review-team",
+  "recorded_at": "2026-11-20T16:07:57+08:00",
+  "version": "1.0.0",
+  "native_zip_sha256": "8281f525470dfa86164f444cead9f7320fdd5c779283f64b5791c0f3d142ec9e",
+  "wrapped_zip_sha256": "f184969266e41f8f1110ab64f057c3c90c608a19d90102d6ce4e7a55ac87efc6",
+  "installed_payload_files_matched": 16,
+  "manual_artifact_files_reproduced_byte_for_byte": 10,
+  "manual_independent_completed_before_candidate": true,
+  "manual_artifact_manifest_sha256": "273f7bab632bdb42f26935dcd09f0774ab8c883edd15455c857377c67c0f58e8",
+  "verified_manual_file_sha256": {
+    "evaluation.json": "a73b856d13e42e9824da6e40923a4c52383dd09f4ef381e9c871faf07afcaf48",
+    "handoffs/candidate.json": "6d45e167e0bd670a64edf07051f69ab5bdc09129e94cd93221fb6f14b3dfc9ea",
+    "handoffs/independent.json": "1c8682ffd9451ed81902d6ea2791aec02d3bfcd48bdd8d4378b33a8664e580c3",
+    "handoffs/meter.json": "b506ce9dacabbe0990a4f96bfaa3d6f1fe5b69688c4d2a12a6fc9999ab18fd36",
+    "inputs/bill.json": "52084f29c94c35225a194556c6fb03b1bd16e950ef4e4560b3e81badad4e81d4",
+    "inputs/readings.csv": "c5240a1ba5763db79cf69dcb5ac8069ed01809ef9e24a38fe7b53b4d1caeb64a",
+    "inputs/tariff.json": "fd2f588c90c92ff78e85d97b04a06ea608243a213a651b458dd793c86a6bb23f",
+    "intervals.csv": "d594b961f1a8f90d73646dd13f2b4ffd70161c6039327060257e1cd26762877b",
+    "review.html": "19cd22aeddda284d2ac264364c41342847c9d68b3f4603d57455124abeab8704"
+  },
+  "manual_result": {
+    "status": "verified",
+    "18:00": "off_peak",
+    "billed_minor": 100,
+    "recalculated_minor": 80,
+    "difference_minor": 20
+  },
+  "original_screenshot_sha256": [
+    "f9525a18ff4c7d8d4a2e292367459e31a1389b67b7e2428ca635fcffac46c5d9",
+    "47acaa7833c2516985d94cddc627720016eed4eede0c98f19ca54b7568517dcf",
+    "333438e21da1c19d7c33544960c4662e3dc197fda8b1764874a09f8fc5a5c14b"
+  ],
+  "automated_source_tests_passed": 16,
+  "automated_exact_native_tests_passed": 16
+}
