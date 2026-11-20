@@ -1,0 +1,44 @@
+{
+  "native_sha256": "d0c5f772c91e44ccb2e895c91c2887a810099b8e87371755d96c36ff48d6fe79",
+  "wrapped_sha256": "06cce78661a3797ff0072a22d67fab5ef76f3ce7a96579b60e346bbdf00ce4ab",
+  "matched_payload_files": 23,
+  "verified_input_hashes": {
+    "orders.csv": "4ca7915b1f77fb889bd8d4126c625368b4685e6bd40dd22495e1986532aee79b",
+    "payments.csv": "ccc931318ba14b44e530ebaceeffc095c717a2900ee9f496127a1cfa24ea15a4",
+    "refunds.csv": "c5aedefcb5621f6f0130f2b0f59e47859c4dc159ea714634f7d09c1051cc0bb1"
+  },
+  "bundle_and_manual_script_match": true,
+  "baseline_preceded_match": true,
+  "manual_stages": 5,
+  "runtime_delivery_role": "delivery-editor",
+  "analyst_receipt_note": "The helper invocation of /bin/printf failed after intake wrote its output; wrapper exit was 0 and replay verified the register.",
+  "counts": {
+    "orders": 4,
+    "payment_entries": 6,
+    "refund_notices": 1,
+    "output_rows": 11
+  },
+  "posted_cny": {
+    "charges": 190,
+    "allocated_charges": 145,
+    "unallocated_charges": 45,
+    "refunds": 12,
+    "refund_notice_amount": 30
+  },
+  "receipt_sha256": {
+    "analyst-receipt.json": "52fa2014e7a00250f01b0f420d426a0cff5b61853e08a82da0fa8e7360ddbcac",
+    "handoff.json": "429df8cabdb6e6090eb06ec4ebfae12d286a29b85bff5baa83a9e6e6847ccc2f",
+    "matcher-receipt.json": "ecf60da69c2e11f46afc83208565614c8bebec9bbf053c518d94085fcf40c58a",
+    "verifier-receipt.json": "39cc71741533a65d476d96f20431ef4e412437450f1ace45237931e03ac6beb4",
+    "delivery-receipt.json": "a1f30dded89848a81856a0baa6d8b3c890880bacba84ef62e9c446a5d4110b2d"
+  },
+  "manual_outputs_reproduced_byte_for_byte": {
+    "review.md": "d9b987877bc7b94d4e54a2844986e0ac0decc1940321e1289d0d45d237d1ddb3",
+    "reconciliation.csv": "7d04b6e680c398fbe7d85016f5b583d341dca84afce4db16fbff45549c06ceb8",
+    "audit.json": "060386c9950757ecccc14ff041943b50a5e886b63df4d922b27465fdec7ba3ee"
+  },
+  "functional_tests": {
+    "source": 12,
+    "exact_native": 12
+  }
+}

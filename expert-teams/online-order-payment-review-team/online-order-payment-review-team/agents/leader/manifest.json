@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "leader",
+  "description": "确认核对范围、分派独立任务并依据回执交付",
+  "display_name": {
+    "zh": "网购核对主理人",
+    "en": "Order Review Leader"
+  },
+  "display_description": {
+    "zh": "确认核对范围、分派独立任务并依据回执交付",
+    "en": "Order Review Leader"
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/order-delivery",
+      "mode": "all"
+    }
+  ]
+}

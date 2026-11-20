@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "verifier",
+  "description": "先于匹配结果独立建基线，核验每条去向和金额",
+  "display_name": {
+    "zh": "独立账目核验员",
+    "en": "Independent Reconciliation Reviewer"
+  },
+  "display_description": {
+    "zh": "先于匹配结果独立建基线，核验每条去向和金额",
+    "en": "Independent Reconciliation Reviewer"
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/order-verification",
+      "mode": "all"
+    }
+  ]
+}

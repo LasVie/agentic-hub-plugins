@@ -1,0 +1,76 @@
+{
+  "asset": "online-order-payment-review-team",
+  "type": "agent-group",
+  "version": "1.0.0",
+  "task_id": "AH-20261120-online-order-payment-review-team",
+  "tool": {
+    "name": "official agentichub CLI",
+    "version": "0.0.1",
+    "commit": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+    "checks": [
+      {
+        "command": "validate",
+        "exit": 0
+      },
+      {
+        "command": "pack",
+        "exit": 0
+      }
+    ]
+  },
+  "payload_sha256": {
+    "README.md": "82c4889263b5d12271824748aec820e0239d2821df933b47d166ac33dc72e84c",
+    "agents/analyst/manifest.json": "6f45be5b75697083f9671a91a59e714aba4468f7206cad940834132df9c54828",
+    "agents/analyst/persona/role.md": "4e735eaf0e48639a928722210d5039cfd21d49f57a267d3fc2eb3e67066bfa88",
+    "agents/analyst/skills/order-intake/SKILL.md": "00bf28d5d936a829cf2cc49336e8220ae2ea4593caf7a0c978eadfc73f3d29d6",
+    "agents/leader/AGENT.md": "fa289ecd78de193af60a662cf9c90247c77fa27624d349b21c279397e26f160a",
+    "agents/leader/manifest.json": "edd8b79cb9a17ac7443567cb3a2c5b85f1251d4433d7616310b7773b349101d7",
+    "agents/leader/persona/role.md": "a366a9b69e04e76d7fa2b0674d8e8763524e20ded561ae47a1d9ecd2b39d2120",
+    "agents/leader/skills/order-delivery/SKILL.md": "c5f0fd794b654121f25e7c49b9b5a53a6b71a8359b92e11aac372cb8e3e104c2",
+    "agents/matcher/manifest.json": "ccd81d3d45dc6a3e1775e415615fbbc533442e6300c959b34383f1b62a7fc895",
+    "agents/matcher/persona/role.md": "65912f812f48d6b5e6d1d1027198862a2acd65a7638f83df9137b196ac24bcbc",
+    "agents/matcher/skills/order-matching/SKILL.md": "5e38e8098f9951b126824da48bc79d2670b7af0c84382fec8f49717ddbd81fcc",
+    "agents/verifier/manifest.json": "d1d057ab14475529026d3f377c7a8d517956296aeec83c5de434348a4dd5429d",
+    "agents/verifier/persona/role.md": "a89d7f439bd3aadf841d67ae0b373519b3d21491b3f003618ddfbad3857677b7",
+    "agents/verifier/skills/order-verification/SKILL.md": "d64136ef9f969eb838926622adb4ba6d139d6ab49fb94fcdfe323bce1d3a5ffe",
+    "examples/weekly/orders.csv": "4ca7915b1f77fb889bd8d4126c625368b4685e6bd40dd22495e1986532aee79b",
+    "examples/weekly/payments.csv": "ccc931318ba14b44e530ebaceeffc095c717a2900ee9f496127a1cfa24ea15a4",
+    "examples/weekly/refunds.csv": "c5aedefcb5621f6f0130f2b0f59e47859c4dc159ea714634f7d09c1051cc0bb1",
+    "manifest.json": "82393e6623ee554b66a68dbf25da7361c14c632e27e196cd21e78a7f42e8e013",
+    "skills/order-evidence/SKILL.md": "88387e8372ea2405855787fe5be4f05431a128d81444aaa656f78383c9aa19d6",
+    "skills/order-evidence/scripts/independent.py": "6bca96159cfab73995ecbe1954718237ffcbc7025cc717d8f1930cb579cce351",
+    "skills/order-evidence/scripts/reconcile.py": "ca61fbbb26d720f2be540b2b15f7aa595fe1469c153f3dc25ca5171c37033541",
+    "skills/order-evidence/scripts/records.py": "a833e9fe6606b34a8c3013cd694efbfcd79dcd6bcc597dc68ad1b50435a09946",
+    "skills/order-evidence/scripts/review.py": "0a6f76dad4b3df971c464206757ebf21058c8edb65908753f7c36f9e0736ed4a"
+  },
+  "payload_equality": true,
+  "artifacts": {
+    "native": {
+      "path": "test-packages/online-order-payment-review-team-1.0.0-native.zip",
+      "sha256": "d0c5f772c91e44ccb2e895c91c2887a810099b8e87371755d96c36ff48d6fe79",
+      "bytes": 37352
+    },
+    "wrapped": {
+      "path": "release/1.0.0/online-order-payment-review-team-1.0.0-agent-group.zip",
+      "sha256": "06cce78661a3797ff0072a22d67fab5ef76f3ce7a96579b60e346bbdf00ce4ab",
+      "bytes": 22773
+    }
+  },
+  "source_review_sha256": "06af5373fb9139af27fb0f2c176ac5f5e1e504f7cfefe421983dcb80e0c7e68b",
+  "manual_testing_sha256": "f59d0f09d5e1b2d5f7d8f35a1570c98094c88fb49e57af3566de921d6369dc87",
+  "test_report_sha256": "744b54516f999db7fcaac8e36a417c7997b9776895f46f09abd66be37c64177e",
+  "verification_records": {
+    "tests/records/extracted-tests.txt": "5d37183d61417dd28d5187c4714204b50bfde3d0f70880b1d82c0fa8848c16a9",
+    "tests/records/host-execution.json": "85f15d4de867ead57ba440676a64ed6f21313aa90e8a10e871c1fca8373f06a4",
+    "tests/records/host-import.json": "057a0ebeb0ec25179261d9c70f81ba7cc5a445b92d378e2af4135d458e40dc5a",
+    "tests/records/host-loader.json": "f5274e088a5eac30aeb4f8595cdab63d61cfa528946124f304914d6c46fb8d78",
+    "tests/records/package-preflight.txt": "459f179ee9531020b1430413e3c621940a59d7b22b1ee448c9eedae33b332eda",
+    "tests/records/source-tests.txt": "57a2203904c8fe2f84b51c07118a9f4223fa3e0f80ccdd8d5207c6186bb20441",
+    "tests/records/phase3-verification.json": "b234e6da50e265971ee9558e5d901dae38948f2a13ed932ed355ce2b41072ddc"
+  },
+  "manual_evidence": {
+    "index": "evidence/1.0.0/index.json",
+    "sha256": "28b499cc6eb8bf17a942c50c0e7170cda22d1b6641df6813fb543a21e30d3550",
+    "confirmation_report_id": "RPT-20261120-online-order-payment-review-team-confirmed"
+  }
+}

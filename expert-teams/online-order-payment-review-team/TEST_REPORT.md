@@ -1,0 +1,22 @@
+# Build verification — 网购扣款与退款核对专家团 1.0.0
+
+Task AH-20261120-online-order-payment-review-team · Cai Zhenze · 2026-11-20 Asia/Singapore.
+
+- Native SHA-256 `d0c5f772c91e44ccb2e895c91c2887a810099b8e87371755d96c36ff48d6fe79`.
+- Hub-compatible SHA-256 `06cce78661a3797ff0072a22d67fab5ef76f3ce7a96579b60e346bbdf00ce4ab`.
+
+The pinned official Agentic Hub CLI 0.0.1 validated and packed the wrapper. The 23-file payload of each ZIP is byte-for-byte equal to reviewed source and the WorkSwarm installation. The repository preflight ran against source and both ZIPs with zero dynamic JavaScript signatures. The package bundles no upstream data or runtime dependencies. See [artifact manifest](release/1.0.0/artifact.json), [package preflight](tests/records/package-preflight.txt), and [source review](SOURCE_REVIEW.md).
+
+The 12 focused functional tests passed against [source](tests/records/source-tests.txt) and [the final exact native extraction](tests/records/extracted-tests.txt) on Python 3.10.11. They exercise split posting, partial and excess refunds, notice-only and pending rows, ambiguous same-amount orders, explicit conflicts, missing evidence, zero posted activity, multiple currencies, precision, and untrusted identifiers in CSV. Negative controls include a duplicate transaction, future dates, a proposal supplied to the blind stage, forged matching, changed originals, missing verification and output preservation. The limit of 100 records per table was verified with 10,000 ambiguous links and four-byte Unicode identifiers, then a 101st row was rejected. Help, errors and reports were checked in Chinese and UTF-8.
+
+The WorkSwarm 0.2.8 creator reported PASS from the exact extraction. SDK 0.1.20 mounted the Leader rules and the correct shared and private Skills, and rejected a missing verifier. The supported local import and install RPCs imported the exact native ZIP in an isolated instance. All four members then used host-native tasks, Skills and real installed scripts against the fictional sample. The source-only baseline preceded matching. The host replay produced five successful stage receipts, 29 fixed loopback model requests and 267 events. The report confirmed 120 of split charges, 12 of 30 in posted credits, 45 unallocated, and the 25 uniquely matched charge. The audit linked outputs to their actual digests. See [loader](tests/records/host-loader.json), [install](tests/records/host-import.json), and [team execution](tests/records/host-execution.json).
+
+The already installed host and its settings were used read-only. The isolated fixture stored its state inside this asset and stopped after validation. Fixed responses exercise real runtime wiring. Manual desktop picker use, paste-to-CSV drafting and orchestration with the user's selected model remain for manual evaluation. At the build checkpoint, user acceptance was pending. See [manual testing instructions](MANUAL_TESTING.md).
+
+## Manual confirmation and delivery recheck
+
+On 2026-11-20, Cai Zhenze confirmed in the current Codex conversation that manual testing of the exact native 1.0.0 ZIP was complete and passed. The confirmation was recorded at 2026-11-20T17:08:45+08:00 under RPT-20261120-online-order-payment-review-team-confirmed. The three supplied full-resolution PNGs show the named version, the source-only baseline and subsequent matching, member handoffs, the three files, and the rendered Chinese report. Their original bytes are listed in [the evidence index](evidence/1.0.0/index.json).
+
+The run used source files identical to the exact ZIP and its bundled fictional example. WorkSwarm created a delivery editor at runtime, which ran the packaged delivery command after verification. The packaged roster remains four roles. The intake receipt records a missing /bin/printf helper after the register was written. The wrapper exited successfully, and the exact ZIP replay independently reproduced the register, baseline, proposal, verification and all three delivery files. The desktop ZIP picker and pasted-input preparation are outside the supplied screenshot evidence.
+
+The source-only baseline preceded matching. Four orders, six payment entries and one refund notice yielded 11 source-linked rows. CNY 190 in posted charges reconciled to 145 allocated and 45 unallocated. CNY 12 posted against a CNY 30 refund notice. All 12 tests passed again on source and exact native extraction. Both ZIPs and all 23 payload files retain their pre-test hashes. See [delivery verification](tests/records/phase3-verification.json).

@@ -1,0 +1,15 @@
+{
+  "path": "/Users/IDLE_And_R/.codex/worktrees/0e7b/agentic-hub-plugins/expert-teams/online-order-payment-review-team/online-order-payment-review-team",
+  "javascript_files_scanned": 0,
+  "known_dynamic_js_signatures": 0
+}
+{
+  "path": "/Users/IDLE_And_R/.codex/worktrees/0e7b/agentic-hub-plugins/expert-teams/online-order-payment-review-team/test-packages/online-order-payment-review-team-1.0.0-native.zip",
+  "javascript_files_scanned": 0,
+  "known_dynamic_js_signatures": 0
+}
+{
+  "path": "/Users/IDLE_And_R/.codex/worktrees/0e7b/agentic-hub-plugins/expert-teams/online-order-payment-review-team/release/1.0.0/online-order-payment-review-team-1.0.0-agent-group.zip",
+  "javascript_files_scanned": 0,
+  "known_dynamic_js_signatures": 0
+}

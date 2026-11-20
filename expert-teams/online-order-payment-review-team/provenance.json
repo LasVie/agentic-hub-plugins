@@ -1,0 +1,23 @@
+{
+  "mode": "native",
+  "candidate_id": "Not Applicable",
+  "task_id": "AH-20261120-online-order-payment-review-team",
+  "asset_id": "repo:agent-group:online-order-payment-review-team",
+  "base": "df95878c7670e93ab38fda6066aa58253f3097b8",
+  "references": [
+    {
+      "url": "https://github.com/openJiuwen-ai/skillhub",
+      "version": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+      "use": "external packaging CLI",
+      "bundled_paths": []
+    }
+  ],
+  "runtime_dependencies": [
+    "WorkSwarm AgentGroup with local file and command tools",
+    "Python standard library >=3.10"
+  ],
+  "repository_test_infrastructure": [
+    "expert-teams/business-interruption-rehearsal-team/tests/package.py",
+    "expert-teams/business-interruption-rehearsal-team/tests/host_integration.py"
+  ]
+}

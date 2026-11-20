@@ -1,0 +1,48 @@
+{
+  "sdk": "0.1.20",
+  "native_sha256": "d0c5f772c91e44ccb2e895c91c2887a810099b8e87371755d96c36ff48d6fe79",
+  "members": {
+    "leader": {
+      "skills": [
+        "order-delivery",
+        "order-evidence"
+      ],
+      "prompt_sections": [
+        "identity",
+        "agent_group_leader_rules",
+        "agent_group_instruction"
+      ]
+    },
+    "analyst": {
+      "skills": [
+        "order-evidence",
+        "order-intake"
+      ],
+      "prompt_sections": [
+        "identity",
+        "agent_group_instruction"
+      ]
+    },
+    "matcher": {
+      "skills": [
+        "order-evidence",
+        "order-matching"
+      ],
+      "prompt_sections": [
+        "identity",
+        "agent_group_instruction"
+      ]
+    },
+    "verifier": {
+      "skills": [
+        "order-evidence",
+        "order-verification"
+      ],
+      "prompt_sections": [
+        "identity",
+        "agent_group_instruction"
+      ]
+    }
+  },
+  "missing_verifier_rejected": "agent directory not found: verifier"
+}

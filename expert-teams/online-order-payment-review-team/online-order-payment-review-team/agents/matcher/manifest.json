@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "matcher",
+  "description": "提出每条已入账流水及退款的唯一去向",
+  "display_name": {
+    "zh": "扣款与退款匹配员",
+    "en": "Payment and Refund Reconciliation Specialist"
+  },
+  "display_description": {
+    "zh": "提出每条已入账流水及退款的唯一去向",
+    "en": "Payment and Refund Reconciliation Specialist"
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/order-matching",
+      "mode": "all"
+    }
+  ]
+}
