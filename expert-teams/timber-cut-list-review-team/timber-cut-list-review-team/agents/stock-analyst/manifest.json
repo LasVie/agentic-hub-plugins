@@ -1,0 +1,16 @@
+{
+  "package_type": "agent_template",
+  "name": "stock-analyst",
+  "description": "独立核对原始尺寸、库存、材质规格与数量，记录待澄清项。",
+  "display_name": {
+    "zh": "库存与尺寸核对员",
+    "en": "Stock Analyst"
+  },
+  "display_description": {
+    "zh": "独立核对原始尺寸、库存、材质规格与数量，记录待澄清项。",
+    "en": "Stock Analyst"
+  },
+  "persona": {
+    "dir": "persona"
+  }
+}

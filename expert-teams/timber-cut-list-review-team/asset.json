@@ -1,0 +1,22 @@
+{
+  "type": "agent-group",
+  "name": "timber-cut-list-review-team",
+  "version": "1.0.0",
+  "display_name": "木料定尺下料复核专家团",
+  "description": "从实际库存规划定尺零件，逐件检查材质、修边、锯缝和余料，交付中文离线排样图与可追溯下料清单。",
+  "publisher": "Cai Zhenze",
+  "category": "productivity",
+  "tags": [
+    "木料定尺下料",
+    "库存核对",
+    "离线清单"
+  ],
+  "members": [
+    "leader",
+    "stock-analyst",
+    "planner",
+    "verifier"
+  ],
+  "candidate_id": null,
+  "task_id": "AH-20261119-timber-cut-list-review-team"
+}

@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "recorded_at": "2026-11-20T11:51:05+08:00",
+  "installed_payload_files": 18,
+  "native_sha256": "917a0db257030bdbea9c82e9debce9994fcefc6ff71625115df3dbc035f9c01e",
+  "canonical_sha256": "1f32a70c78847bf6be87641b270148bae1cc29ae4317791bc3145d2fe0335387",
+  "case_sha256": "615e5fec9015460cc77923be69f2cbdf7476c23a12f465cc85a979288305d402",
+  "dossier_files_regenerated": 9,
+  "verified_manifest_entries": 8,
+  "csv_pieces": 4,
+  "remaining_mm": {
+    "B1": 9,
+    "B2": 9
+  },
+  "completed_tasks": {
+    "preflight-v100": "stock-analyst",
+    "stock-v100": "stock-analyst",
+    "plan-v100": "planner",
+    "verify-v100": "verifier",
+    "deliver-v100": "planner"
+  },
+  "source_tests_passed": 21,
+  "extracted_native_tests_passed": 21,
+  "scope": "Observed manual positive case and member handoffs. Negative-case evidence is from local automated tests."
+}

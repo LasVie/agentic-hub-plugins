@@ -1,0 +1,64 @@
+{
+  "task_id": "AH-20261119-timber-cut-list-review-team",
+  "version": "1.0.0",
+  "source": "Three original PNG attachments supplied with the manual-test confirmation on 2026-11-20",
+  "screenshots": [
+    {
+      "path": "originals/Screenshot 2026-11-20 at 11.47.43 AM.png",
+      "sha256": "3376e5f3040e12555f0ab81b562930cd565c571093b66c157ded498a5fc0d489",
+      "bytes": 127666,
+      "width": 1036,
+      "height": 880,
+      "description": "Chinese cut layout and 9 mm remaining on each board",
+      "png_chunk_types": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "cICP",
+        "eXIf",
+        "iCCP",
+        "iDOT",
+        "iTXt",
+        "pHYs"
+      ]
+    },
+    {
+      "path": "originals/Screenshot 2026-11-20 at 11.48.04 AM.png",
+      "sha256": "cee1cca1d27e011be5a3f2385a33ade8d78e7758f6f1c316dc7ea08e2eb31251",
+      "bytes": 982895,
+      "width": 3314,
+      "height": 1974,
+      "description": "WorkSwarm stock analyst, planner, and independent verifier activity",
+      "png_chunk_types": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "cICP",
+        "eXIf",
+        "iCCP",
+        "iDOT",
+        "iTXt",
+        "pHYs"
+      ]
+    },
+    {
+      "path": "originals/Screenshot 2026-11-20 at 11.48.13 AM.png",
+      "sha256": "9aaa0ee530194f527a9d6ff20e5d84660de0d561384516975489a9c3e7ab0c0d",
+      "bytes": 943663,
+      "width": 3320,
+      "height": 1974,
+      "description": "Five WorkSwarm tasks, completed handoffs, and the verified delivery summary",
+      "png_chunk_types": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "cICP",
+        "eXIf",
+        "iCCP",
+        "iDOT",
+        "iTXt",
+        "pHYs"
+      ]
+    }
+  ]
+}

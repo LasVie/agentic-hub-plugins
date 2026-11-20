@@ -1,0 +1,16 @@
+{
+  "package_type": "agent_template",
+  "name": "planner",
+  "description": "从冻结库存查找一份满足尺寸和数量要求的有界分配。",
+  "display_name": {
+    "zh": "定尺下料规划员",
+    "en": "Cut List Planner"
+  },
+  "display_description": {
+    "zh": "从冻结库存查找一份满足尺寸和数量要求的有界分配。",
+    "en": "Cut List Planner"
+  },
+  "persona": {
+    "dir": "persona"
+  }
+}

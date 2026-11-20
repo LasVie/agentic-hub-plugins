@@ -1,0 +1,17 @@
+{
+  "verified_package_files": 18,
+  "native_sha256": "917a0db257030bdbea9c82e9debce9994fcefc6ff71625115df3dbc035f9c01e",
+  "wrapped_sha256": "1f32a70c78847bf6be87641b270148bae1cc29ae4317791bc3145d2fe0335387",
+  "source_tests": 21,
+  "extracted_tests": 21,
+  "positive_workswarm": "verified",
+  "negative_workswarm": "blocked",
+  "host_creator": "RESULT: PASS (4 agents)",
+  "preflight": [
+    "source",
+    "native",
+    "wrapped"
+  ],
+  "manual_testing": "pending",
+  "workswarm_url": "http://127.0.0.1:6585/"
+}
