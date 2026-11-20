@@ -1,0 +1,48 @@
+{
+  "mode": "native",
+  "task_id": "AH-20261120-laundry-load-review-team",
+  "candidate_id": "Not Applicable",
+  "asset_id": "repo:agent-group:laundry-load-review-team",
+  "base": "df95878c7670e93ab38fda6066aa58253f3097b8",
+  "references": [
+    {
+      "url": "https://www.ginetex.net/share/article/4201/care-symbols",
+      "version": "ISO 3758:2023 description, inspected 2026-11-20",
+      "use": "maximum treatment and separate drying concepts",
+      "bundled_paths": []
+    },
+    {
+      "url": "https://www.ginetex.net/gb/labelling/care-labelling/",
+      "version": "inspected 2026-11-20",
+      "use": "trademark boundary",
+      "bundled_paths": []
+    },
+    {
+      "url": "https://www.whirlpool.com/blog/washers-and-dryers/how-to-sort-separate-laundry.html",
+      "version": "inspected 2026-11-20",
+      "use": "routine sorting context",
+      "bundled_paths": []
+    },
+    {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/6507b115562bb0a305f1958ccc87355a-Paper-Conference.pdf",
+      "version": "ICLR 2024",
+      "use": "structured role handoffs",
+      "bundled_paths": []
+    },
+    {
+      "url": "https://github.com/openJiuwen-ai/skillhub",
+      "version": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+      "use": "external packaging CLI",
+      "bundled_paths": []
+    }
+  ],
+  "repository_build_harness_reuse": [
+    "expert-teams/tou-bill-review-team/tests/build_package.py",
+    "expert-teams/tou-bill-review-team/tests/host_integration.py"
+  ],
+  "runtime_dependencies": [
+    "Python standard library >=3.10",
+    "WorkSwarm AgentGroup with file, shell and delegation tools",
+    "authorized host model for orchestration"
+  ]
+}

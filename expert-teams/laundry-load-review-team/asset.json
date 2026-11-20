@@ -1,0 +1,21 @@
+{
+  "type": "agent-group",
+  "name": "laundry-load-review-team",
+  "version": "1.0.0",
+  "display_name": "日常洗衣分批复核专家团",
+  "description": "用已确认的衣物护理条件和可用洗衣程序分批，独立复核件数、分洗规则和干燥去向，交付中文清单。",
+  "publisher": "Cai Zhenze",
+  "category": "productivity",
+  "tags": [
+    "日常洗衣",
+    "衣物护理",
+    "分批复核"
+  ],
+  "members": [
+    "leader",
+    "planner",
+    "reviewer"
+  ],
+  "candidate_id": null,
+  "task_id": "AH-20261120-laundry-load-review-team"
+}

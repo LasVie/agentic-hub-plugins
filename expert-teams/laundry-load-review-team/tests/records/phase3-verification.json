@@ -1,0 +1,56 @@
+{
+  "task_id": "AH-20261120-laundry-load-review-team",
+  "recorded_at": "2026-11-20T17:48:55+08:00",
+  "version": "1.0.0",
+  "native_zip_sha256": "5a5ee96e6a2705d73a09ed7d6358acbd5a77b8209662bd5f5384145c119560bb",
+  "wrapped_zip_sha256": "487147dce54755e37fef5a9f4fec37a350042a0814642aafa5b1718a97b5ce7d",
+  "installed_payload_files_matched": 14,
+  "manual_deliverable_files_reproduced_byte_for_byte": 7,
+  "manual_handoff_order_verified": true,
+  "manual_receipts_verified": [
+    {
+      "stage": "baseline",
+      "role": "reviewer",
+      "host_task_id": "reviewer-baseline",
+      "receipt_sha256": "c7b16f05744c34405433e3ed09f60c9bf23f328cb3e602bd4fa234e3faa0d266",
+      "output_report_sha256": "f4238fb8fbe1345be1b2235a688130989467fc1b0de288ede39226c85b5c189d"
+    },
+    {
+      "stage": "plan",
+      "role": "planner",
+      "host_task_id": "planner-candidate",
+      "receipt_sha256": "22c6436360ceaa411360583982efe85ff3ca9f9a18d7ac8b4bff2f8ae9e54476",
+      "output_report_sha256": "10dd9b2a32472b6d55786d0170f264b8fd60252b3444ce5ad7cfba406d30e982"
+    },
+    {
+      "stage": "review",
+      "role": "reviewer",
+      "host_task_id": "reviewer-verify",
+      "receipt_sha256": "0c3a61efaa226f4d6b50ebd7b8821bbaa4b366b7ae460a53e0bde9183cd9a405",
+      "output_report_sha256": "1f58cd9435a5b07b6d3113dbae2af504bc7a27913ead4a85b5a6244b863d3ebf"
+    }
+  ],
+  "manual_artifact_manifest_sha256": "646f12c5dd4196693a59f77609a1f02d2dfbb07844078735bf87ed709dc3e8fa",
+  "manual_manifest_sha256": {
+    "checklist.html": "7beb08ffb31008cc0992c82f1f911905b1213368ac9b64f3cecd057f70ddb4f2",
+    "evaluation.json": "fc95f3b6825fb15f697f3a723075e0606e6250fa235b7a110a2e8e2506a4097a",
+    "handoffs/baseline.json": "f4238fb8fbe1345be1b2235a688130989467fc1b0de288ede39226c85b5c189d",
+    "handoffs/plan.json": "10dd9b2a32472b6d55786d0170f264b8fd60252b3444ce5ad7cfba406d30e982",
+    "handoffs/review.json": "1f58cd9435a5b07b6d3113dbae2af504bc7a27913ead4a85b5a6244b863d3ebf",
+    "inputs/case.json": "49dc6494e2b38fa54cafb72154561eb2c1c505d04eaffed76b1e6e5477d47398"
+  },
+  "manual_result": {
+    "status": "reviewed_with_holds",
+    "machine_wash_batches": 3,
+    "machine_wash_pieces": 9,
+    "hold_pieces": 2,
+    "total_pieces": 11
+  },
+  "original_screenshot_sha256": [
+    "47c4da461ebf09368105754e04bfd3fd6f3b093830a73a6aa4b9958024b221bf",
+    "279659f562741fb8eb1b7fd0a5d1cce7a5d6de0630449fdfae49c4f0bcc4a10c",
+    "9bfeeee65545b00cebe444543ff431ade8ecab40f9a32e9e504c2f35b054bdc3"
+  ],
+  "automated_source_tests_passed": 16,
+  "automated_exact_native_tests_passed": 16
+}

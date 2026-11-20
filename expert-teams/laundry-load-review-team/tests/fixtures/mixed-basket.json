@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "title": "周末混合衣篮（合成案例）",
+  "profiles": {
+    "white_tee": {
+      "name": "浅色上衣",
+      "label": "机洗最高 40°C，标准，低温滚筒烘干；确认可与浅色同洗",
+      "color": "light",
+      "wash": {
+        "method": "machine",
+        "max_celsius": 40,
+        "max_action": "normal"
+      },
+      "separate": false,
+      "dry": "tumble_low"
+    },
+    "gym_top": {
+      "name": "深色运动上衣",
+      "label": "机洗最高 30°C，轻柔，悬挂晾干；确认可与深色同洗",
+      "color": "dark",
+      "wash": {
+        "method": "machine",
+        "max_celsius": 30,
+        "max_action": "gentle"
+      },
+      "separate": false,
+      "dry": "line"
+    },
+    "gym_shorts": {
+      "name": "深色运动短裤",
+      "label": "机洗最高 30°C，轻柔，允许低温滚筒烘干；确认可与深色同洗",
+      "color": "dark",
+      "wash": {
+        "method": "machine",
+        "max_celsius": 30,
+        "max_action": "gentle"
+      },
+      "separate": false,
+      "dry": "tumble_low"
+    },
+    "red": {
+      "name": "新红衣",
+      "label": "机洗最高 30°C，轻柔，分开洗，阴凉处悬挂晾干",
+      "color": "bright",
+      "wash": {
+        "method": "machine",
+        "max_celsius": 30,
+        "max_action": "gentle"
+      },
+      "separate": true,
+      "dry": "line_shade"
+    },
+    "scarf": {
+      "name": "围巾",
+      "label": "只可手洗，平摊晾干",
+      "color": null,
+      "wash": {
+        "method": "hand",
+        "max_celsius": null,
+        "max_action": null
+      },
+      "separate": null,
+      "dry": "flat"
+    },
+    "unknown": {
+      "name": "标签不清的新衣",
+      "label": "护理说明无法确认",
+      "color": null,
+      "wash": {
+        "method": "unknown",
+        "max_celsius": null,
+        "max_action": null
+      },
+      "separate": null,
+      "dry": "unknown"
+    }
+  },
+  "programs": [
+    {
+      "id": "normal40",
+      "name": "标准 40°C",
+      "celsius": 40,
+      "action": "normal",
+      "max_items": 6
+    },
+    {
+      "id": "gentle30",
+      "name": "轻柔 30°C",
+      "celsius": 30,
+      "action": "gentle",
+      "max_items": 4
+    }
+  ],
+  "basket": {
+    "white_tee": 5,
+    "gym_top": 2,
+    "gym_shorts": 1,
+    "red": 1,
+    "scarf": 1,
+    "unknown": 1
+  }
+}
