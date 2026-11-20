@@ -1,0 +1,29 @@
+{
+  "mode": "native",
+  "asset_id": "repo:agent-group:weekly-timesheet-review-team",
+  "task_id": "AH-20261120-weekly-timesheet-review-team",
+  "candidate_id": "Not Applicable",
+  "base": "2f9e4759dc05b92f7aa5aea8389497ab21c7ea79",
+  "references": [
+    {
+      "url": "https://support.toggl.com/en-us/article/detailed-report-k9bzy2/",
+      "use": "Public input context only",
+      "bundled_paths": []
+    },
+    {
+      "url": "https://github.com/openJiuwen-ai/skillhub",
+      "version": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+      "use": "External build prerequisite",
+      "bundled_paths": []
+    }
+  ],
+  "repository_build_harness_reuse": [
+    "expert-teams/laundry-load-review-team/tests/build_package.py",
+    "expert-teams/laundry-load-review-team/tests/host_integration.py"
+  ],
+  "runtime_dependencies": [
+    "Python standard library >=3.10",
+    "WorkSwarm AgentGroup delegation, file and shell tools",
+    "authorized host model"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-group:weekly-timesheet-review-team",
+  "task_id": "AH-20261120-weekly-timesheet-review-team",
+  "candidate_id": "Not Applicable",
+  "type": "agent-group",
+  "name": "weekly-timesheet-review-team",
+  "display_name": "每周工时记录复核专家团",
+  "version": "1.0.0",
+  "zip": "weekly-timesheet-review-team-1.0.0.zip",
+  "sha256": "06f15e09ce45c13319ec3cbb477c41f12fb7437273ffdaf2f32aa921bd9860e7",
+  "zip_bytes": 14756,
+  "native_test_zip": "../../test-packages/weekly-timesheet-review-team-1.0.0-native.zip",
+  "native_test_zip_sha256": "a2b935f8070ba58a82d1036d80592e92baa2b9f9afa502e84f694182aa4f4786",
+  "native_test_zip_bytes": 26731,
+  "plugin_yaml_sha256": "b6f3d74fb726c0cb3795ff6acccf21c3445eb28125bbe75487f18c25a1811ec3",
+  "payload_file_count": 11,
+  "payload_sha256": {
+    "README.md": "ebb42bf9753fc7480729dd9528e77f72ceb4ea5017af7d4c761ab85912ea7c58",
+    "agents/analyst/manifest.json": "52376c250ef3dffc2b8d3c18772e1bcf3c572ac6613536dee7c47e746696853a",
+    "agents/analyst/persona/analyst.md": "b5da400afafaedd40d328c7624ebd59c8bb6eb1422c738f0877d97bfe3f451e4",
+    "agents/leader/AGENT.md": "1cd4c40311de20e504e6c3baa69bff67796f0da3f501e382a6123590d2441e08",
+    "agents/leader/manifest.json": "cd389a7e3821899e8fec063dfb0a8dfffdec0d0865ba9e8c3abd3a755a0e3f81",
+    "agents/leader/persona/leader.md": "d852ba444bd4d58dd5c1c7307c958a2272fc3f5ea5238e50a421161d9ee47103",
+    "agents/reviewer/manifest.json": "38ac5c6a545eb32fc1b8f75ea2eb092d1559d6d55780920d250d0a1b61cce42a",
+    "agents/reviewer/persona/reviewer.md": "2165b0c893bb9b92a5138969b5b0cd6ba647c7aadcae8aa5634bf00addabb96d",
+    "manifest.json": "a242ac729758a2cf4ac3185b3cb654b69d09f8d7aa98da3571a2885caebd8197",
+    "skills/timesheet-review/SKILL.md": "b80be3ea7a2640dd84f33572f3aade175e3b24c7836351b59d2f27cad436a3f5",
+    "skills/timesheet-review/scripts/timesheet_review.py": "6f866c975619e0a781bbe937f4e672b3b1e7857c7496bd1d863cd10180999a9a"
+  },
+  "package_verification": {
+    "paths_types_sizes_ratios": "passed",
+    "native_wrapped_source_payload_equality": "passed",
+    "native_compression": "ZIP_STORED",
+    "canonical_compression": "official CLI ZIP_DEFLATED",
+    "reproducible_archive_timestamp": "2026-01-01T00:00:00"
+  },
+  "official_cli": {
+    "distribution": "openjiuwen-agentichub",
+    "version": "0.0.1",
+    "source_commit": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+    "main_py_sha256": "f3a0e0bb46c67ad17689db44ab4d9ae5ddbf32391ed8e26a1671e770f0dfaaea",
+    "plugin_py_sha256": "7d100e423a033b42ae6f1c79b7063b01ebb55ef38beb63da6d85e027ca0f6568",
+    "commands": [
+      "python -B -m openjiuwen_agentichub.main validate CLEAN_STAGING",
+      "python -B -m openjiuwen_agentichub.main pack CLEAN_STAGING --output CLEAN_OUTPUT"
+    ]
+  },
+  "source_review_sha256": "8f3650661e35fe312e72ee31d05744d0f828ac7f8553e5322bb0b30e6e89c24a",
+  "functional_test_report_sha256": "077d048d8845252e2f6519fd9939b5e1de55b8912a6aec3d35f6bfe1ba1d39b7",
+  "provenance_sha256": "584c746de00d322b6b225e129ee26db5734145b803d8fc3027c99dae31b62c03",
+  "provenance_mode": "native"
+}

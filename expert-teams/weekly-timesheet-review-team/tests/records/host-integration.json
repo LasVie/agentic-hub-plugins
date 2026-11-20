@@ -1,0 +1,124 @@
+{
+  "frontend_http": 200,
+  "native_sha256": "a2b935f8070ba58a82d1036d80592e92baa2b9f9afa502e84f694182aa4f4786",
+  "payload": {
+    "README.md": "ebb42bf9753fc7480729dd9528e77f72ceb4ea5017af7d4c761ab85912ea7c58",
+    "agents/analyst/manifest.json": "52376c250ef3dffc2b8d3c18772e1bcf3c572ac6613536dee7c47e746696853a",
+    "agents/analyst/persona/analyst.md": "b5da400afafaedd40d328c7624ebd59c8bb6eb1422c738f0877d97bfe3f451e4",
+    "agents/leader/AGENT.md": "1cd4c40311de20e504e6c3baa69bff67796f0da3f501e382a6123590d2441e08",
+    "agents/leader/manifest.json": "cd389a7e3821899e8fec063dfb0a8dfffdec0d0865ba9e8c3abd3a755a0e3f81",
+    "agents/leader/persona/leader.md": "d852ba444bd4d58dd5c1c7307c958a2272fc3f5ea5238e50a421161d9ee47103",
+    "agents/reviewer/manifest.json": "38ac5c6a545eb32fc1b8f75ea2eb092d1559d6d55780920d250d0a1b61cce42a",
+    "agents/reviewer/persona/reviewer.md": "2165b0c893bb9b92a5138969b5b0cd6ba647c7aadcae8aa5634bf00addabb96d",
+    "manifest.json": "a242ac729758a2cf4ac3185b3cb654b69d09f8d7aa98da3571a2885caebd8197",
+    "skills/timesheet-review/SKILL.md": "b80be3ea7a2640dd84f33572f3aade175e3b24c7836351b59d2f27cad436a3f5",
+    "skills/timesheet-review/scripts/timesheet_review.py": "6f866c975619e0a781bbe937f4e672b3b1e7857c7496bd1d863cd10180999a9a"
+  },
+  "group": "weekly-timesheet-review-team",
+  "member_ids": [
+    "leader",
+    "analyst",
+    "reviewer"
+  ],
+  "version": "1.0.0",
+  "installed_equal": true,
+  "model_calls": "loopback fixed responses only",
+  "boundary": "Real host and tool execution with fixed local responses; no semantic model or manual pass.",
+  "session_id": "web_1a1f8716f91_40d268e5520a",
+  "status": "reviewed_with_holds",
+  "minutes": 260,
+  "held_rows": [
+    2,
+    3,
+    4,
+    5,
+    8
+  ],
+  "findings": [
+    {
+      "code": "invalid_time",
+      "message": "起止日期时间缺失或无效",
+      "rows": [
+        8
+      ]
+    },
+    {
+      "code": "outside_week",
+      "message": "周内没有工作分钟",
+      "rows": [
+        9
+      ]
+    },
+    {
+      "code": "duplicate",
+      "message": "原始记录重复，请核对保留哪一行",
+      "rows": [
+        4,
+        5
+      ]
+    },
+    {
+      "code": "overlap",
+      "message": "工时重叠，请核对各行实际归属",
+      "minutes": 30,
+      "rows": [
+        2,
+        3
+      ]
+    },
+    {
+      "code": "expected_day_unconfirmed",
+      "date": "2026-11-18",
+      "message": "预计日期没有可汇总工时，请核实记录",
+      "rows": []
+    }
+  ],
+  "role_execution": {
+    "leader": {
+      "requests": 5,
+      "tools": [
+        "bash",
+        "build_team",
+        "create_task",
+        "skill_tool"
+      ],
+      "real_command_exit": 0
+    },
+    "baseline": {
+      "requests": 5,
+      "tools": [
+        "bash",
+        "claim_task",
+        "skill_tool"
+      ],
+      "real_command_exit": 0
+    },
+    "analyst": {
+      "requests": 5,
+      "tools": [
+        "bash",
+        "claim_task",
+        "skill_tool"
+      ],
+      "real_command_exit": 0
+    },
+    "audit": {
+      "requests": 5,
+      "tools": [
+        "bash",
+        "claim_task",
+        "skill_tool"
+      ],
+      "real_command_exit": 0
+    }
+  },
+  "actual_upstream_receipts_verified": true,
+  "independent_before_candidate_verified": true,
+  "followup_review_after_candidate_verified": true,
+  "exact_snapshots": true,
+  "artifact_hashes_verified": true,
+  "events": 189,
+  "request_count": 20,
+  "human_testing_passed": false,
+  "semantic_acceptance": false
+}
