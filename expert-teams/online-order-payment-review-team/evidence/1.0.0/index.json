@@ -1,0 +1,44 @@
+{
+  "task_id": "AH-20261120-online-order-payment-review-team",
+  "candidate": "Not Applicable",
+  "owner": "Cai Zhenze",
+  "name": "网购扣款与退款核对专家团",
+  "version": "1.0.0",
+  "confirmation_report_id": "RPT-20261120-online-order-payment-review-team-confirmed",
+  "source": "User confirmation and three original attachments in the current Codex conversation",
+  "user_confirmation": "Manual testing of the exact native ZIP is complete and passed.",
+  "confirmation_recorded_at": "2026-11-20T17:08:45+08:00",
+  "sha256": {
+    "native": "d0c5f772c91e44ccb2e895c91c2887a810099b8e87371755d96c36ff48d6fe79",
+    "wrapped": "06cce78661a3797ff0072a22d67fab5ef76f3ce7a96579b60e346bbdf00ce4ab"
+  },
+  "original_screenshots": [
+    {
+      "original_filename": "Screenshot 2026-11-20 at 5.07.06 PM.png",
+      "description": "Version, source-only baseline, and original handoff sequence",
+      "width": 3354,
+      "height": 1988,
+      "bytes": 966178,
+      "sha256": "6ea22854aa81e544b669d207e7d0446755d3ee273f9f47a2c89c8bb7e3761dea",
+      "path": "originals/Screenshot 2026-11-20 at 5.07.06 PM.png"
+    },
+    {
+      "original_filename": "Screenshot 2026-11-20 at 5.07.26 PM.png",
+      "description": "Member panels, delivered files, and final payment and refund results",
+      "width": 3346,
+      "height": 1974,
+      "bytes": 904444,
+      "sha256": "b60940e3520cdd07f033f4139886431b249e1d95e1bc51475adf289f78164e00",
+      "path": "originals/Screenshot 2026-11-20 at 5.07.26 PM.png"
+    },
+    {
+      "original_filename": "Screenshot 2026-11-20 at 5.07.35 PM.png",
+      "description": "Rendered Chinese review and posted totals",
+      "width": 2236,
+      "height": 822,
+      "bytes": 142448,
+      "sha256": "073d75af8c0496439b42b176734a1f8985b706a6749fae58ec807f89243a8a74",
+      "path": "originals/Screenshot 2026-11-20 at 5.07.35 PM.png"
+    }
+  ]
+}

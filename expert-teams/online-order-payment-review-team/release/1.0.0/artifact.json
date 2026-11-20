@@ -58,13 +58,19 @@
   },
   "source_review_sha256": "06af5373fb9139af27fb0f2c176ac5f5e1e504f7cfefe421983dcb80e0c7e68b",
   "manual_testing_sha256": "f59d0f09d5e1b2d5f7d8f35a1570c98094c88fb49e57af3566de921d6369dc87",
-  "test_report_sha256": "642a26f84500c37dc0e64d8aede67782b5d79462504f3919dc4ef543b6cc0727",
+  "test_report_sha256": "744b54516f999db7fcaac8e36a417c7997b9776895f46f09abd66be37c64177e",
   "verification_records": {
     "tests/records/extracted-tests.txt": "5d37183d61417dd28d5187c4714204b50bfde3d0f70880b1d82c0fa8848c16a9",
     "tests/records/host-execution.json": "85f15d4de867ead57ba440676a64ed6f21313aa90e8a10e871c1fca8373f06a4",
     "tests/records/host-import.json": "057a0ebeb0ec25179261d9c70f81ba7cc5a445b92d378e2af4135d458e40dc5a",
     "tests/records/host-loader.json": "f5274e088a5eac30aeb4f8595cdab63d61cfa528946124f304914d6c46fb8d78",
     "tests/records/package-preflight.txt": "459f179ee9531020b1430413e3c621940a59d7b22b1ee448c9eedae33b332eda",
-    "tests/records/source-tests.txt": "57a2203904c8fe2f84b51c07118a9f4223fa3e0f80ccdd8d5207c6186bb20441"
+    "tests/records/source-tests.txt": "57a2203904c8fe2f84b51c07118a9f4223fa3e0f80ccdd8d5207c6186bb20441",
+    "tests/records/phase3-verification.json": "b234e6da50e265971ee9558e5d901dae38948f2a13ed932ed355ce2b41072ddc"
+  },
+  "manual_evidence": {
+    "index": "evidence/1.0.0/index.json",
+    "sha256": "28b499cc6eb8bf17a942c50c0e7170cda22d1b6641df6813fb543a21e30d3550",
+    "confirmation_report_id": "RPT-20261120-online-order-payment-review-team-confirmed"
   }
 }
