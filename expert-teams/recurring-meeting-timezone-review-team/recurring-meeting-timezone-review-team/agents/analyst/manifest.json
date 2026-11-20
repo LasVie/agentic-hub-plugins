@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "analyst",
+  "description": "逐条对照输入，核对参会者的本地时区、窗口及日期例外。",
+  "display_name": {
+    "zh": "参会时段梳理员",
+    "en": "Availability Analyst"
+  },
+  "display_description": {
+    "zh": "逐条对照输入，核对参会者的本地时区、窗口及日期例外。",
+    "en": "Availability Analyst"
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/meeting-intake",
+      "mode": "all"
+    }
+  ]
+}

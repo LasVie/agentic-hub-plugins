@@ -1,0 +1,77 @@
+{
+  "task_id": "AH-20261119-recurring-meeting-timezone-review-team",
+  "candidate": "Not Applicable",
+  "display_name": "跨时区例会时间核验专家团",
+  "owner": "Cai Zhenze",
+  "version": "1.0.0",
+  "confirmation_report_id": "RPT-20261120-recurring-meeting-timezone-review-team-confirmed",
+  "confirmed_by": "Cai Zhenze, current Main 4.0 Codex conversation",
+  "user_confirmation": "Manual testing of the exact native ZIP is complete and passed.",
+  "confirmation_recorded_at": "2026-11-20T11:51:00+08:00",
+  "native_sha256": "7fd40e9c9121331ddb268c77434fc522f59074b3fe1ac9ec9cced78bc4a951d9",
+  "wrapped_sha256": "b3439f95f0d6c6f19cb36015968ce737b70d624fe06b82bac1f4ef7701ee055a",
+  "original_screenshots": [
+    {
+      "original_filename": "Screenshot 2026-11-20 at 11.45.09 AM.png",
+      "path": "originals/Screenshot 2026-11-20 at 11.45.09 AM.png",
+      "description": "Chinese weekly review",
+      "width": 1092,
+      "height": 538,
+      "bytes": 114246,
+      "sha256": "3d73c0d046fe739fb4409958351c8a59202846ce77579003d4905f9966db0197"
+    },
+    {
+      "original_filename": "Screenshot 2026-11-20 at 11.45.19 AM.png",
+      "path": "originals/Screenshot 2026-11-20 at 11.45.19 AM.png",
+      "description": "Expert Team member participation",
+      "width": 3328,
+      "height": 1974,
+      "bytes": 963332,
+      "sha256": "23a2c4eb0bda929e0b13e650450e22b5b00c83cdef29625b62d0295f85104209"
+    },
+    {
+      "original_filename": "Screenshot 2026-11-20 at 11.45.27 AM.png",
+      "path": "originals/Screenshot 2026-11-20 at 11.45.27 AM.png",
+      "description": "Independent baseline, planning and review handoffs",
+      "width": 3318,
+      "height": 1976,
+      "bytes": 1000853,
+      "sha256": "2aa50d8f37c2cbe29ba93251d0859661a5f7d685f27a4e817f943a2f3e86d0c0"
+    },
+    {
+      "original_filename": "Screenshot 2026-11-20 at 11.46.15 AM.png",
+      "path": "originals/Screenshot 2026-11-20 at 11.46.15 AM.png",
+      "description": "Chinese participant-by-occurrence CSV",
+      "width": 1468,
+      "height": 688,
+      "bytes": 322149,
+      "sha256": "628b83c4869884564178311a5549593cff08e4698e4e237c895d1d275e972cf2"
+    }
+  ],
+  "manual_artifact_verification": {
+    "case": "clock-change",
+    "manual_tools_matched_reviewed_payload": true,
+    "available_weeks": {
+      "09:00 New York": "2/4",
+      "08:00 New York": "4/4"
+    },
+    "independently_compared_occurrences": 8,
+    "csv_participant_rows": 24,
+    "handoff_sha256": {
+      "baseline": "95c6845e0c0be101671b7e1b506d6141329c21c2559ab547183a128da1ec3643",
+      "intake": "d890297a9744e8d0d76b3beaabca76f46056b357cebbcedbdb56e9e8bfdb0e4e",
+      "plan": "2592ae8673337decb7bb9cd6686162b378669f2a6d0ce0ae4ed86fbda74728ce",
+      "review": "e3727f6271909571ac173212474a834fdcb78dcf553a552b77b60d5b8e4568b8"
+    },
+    "output_sha256": {
+      "review.md": "baac4b0db9ef904656b56afde15321c79d95143e114867b84776446a08960c80",
+      "meetings.csv": "e495096c7305654522207ca4647d52b4c0266baa0a0b5f6158a552f6d885e91d",
+      "audit.json": "f6d0ece3a3b05a9a7825b0ee30c10d5b3c481e3fa940feeb1482849ff380e8c4"
+    },
+    "receipt_sha256": {
+      "independent_baseline": "c5d3477e833657e9ae9b863d88058876ee68aabe0a605ed635e38c813c510db9",
+      "independent_review": "2d2286ca3e9571e9e6f64a6bd9ae0da35c206e91dc83a502887cf2658c47d9a7",
+      "delivery": "441f2cf979a0aa4fe194918f0b2a6deea9f507d4994889900c7218aba779cb88"
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "mode": "native",
+  "permission_status": "not-applicable",
+  "task_id": "AH-20261119-recurring-meeting-timezone-review-team",
+  "source_review": "SOURCE_REVIEW.md",
+  "native_design": "NATIVE_DESIGN.md",
+  "reused_paths": [],
+  "license_evidence": [],
+  "development_reused_paths": [
+    {
+      "source": "expert-teams/household-chore-rota-team/build_packages.py",
+      "commit": "8c0c29b6a7a7fcf197946e49ca828888b0e1c05e",
+      "source_sha256": "cf8697d218fc8668e6123209f3734ac1a174bb59a2b31157e5ab58e0aa216ead",
+      "destination": "build_packages.py",
+      "scope": "Repository-owned development tooling only. Outside both ZIPs."
+    },
+    {
+      "source": "expert-teams/household-chore-rota-team/tests/host_integration.py",
+      "commit": "8c0c29b6a7a7fcf197946e49ca828888b0e1c05e",
+      "source_sha256": "752452fa0ace6cf041440d99c17cef6c7d8fa05a24e8bc6a555ebe27344e8e06",
+      "destination": "tests/host_integration.py",
+      "scope": "Repository-owned development tooling only. Outside both ZIPs."
+    }
+  ],
+  "runtime_dependencies": [
+    "Python 3.10+ standard library with installed IANA TZif data",
+    "WorkSwarm AgentGroup, existing file/shell and task tools, and a separately authorized model"
+  ],
+  "sources": [
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc5545.html",
+      "ref": "RFC 5545",
+      "use": "Functional or package-interface reference only"
+    },
+    {
+      "url": "https://peps.python.org/pep-0495/",
+      "ref": "PEP 495",
+      "use": "Functional or package-interface reference only"
+    },
+    {
+      "url": "https://peps.python.org/pep-0615/",
+      "ref": "PEP 615",
+      "use": "Functional or package-interface reference only"
+    },
+    {
+      "url": "https://www.iana.org/time-zones",
+      "ref": "host-provided data at run time",
+      "use": "Functional or package-interface reference only"
+    },
+    {
+      "url": "https://arxiv.org/abs/2308.08155v2",
+      "ref": "v2",
+      "use": "Functional or package-interface reference only"
+    },
+    {
+      "url": "https://www.anthropic.com/research/building-effective-agents",
+      "ref": "inspected 2026-11-19",
+      "use": "Functional or package-interface reference only"
+    },
+    {
+      "url": "https://github.com/openJiuwen-ai/jiuwenswarm",
+      "ref": "9843516a165bd9a6ad9c37f394fac90be128e551",
+      "use": "Functional or package-interface reference only"
+    },
+    {
+      "url": "https://github.com/openJiuwen-ai/agent-core",
+      "ref": "5a35c39f0163a4e6190800df53ad7e24848756eb",
+      "use": "Functional or package-interface reference only"
+    },
+    {
+      "url": "https://github.com/openJiuwen-ai/skillhub",
+      "ref": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+      "use": "Functional or package-interface reference only"
+    }
+  ]
+}

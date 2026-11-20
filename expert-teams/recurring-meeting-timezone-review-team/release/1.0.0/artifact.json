@@ -1,0 +1,68 @@
+{
+  "asset": "recurring-meeting-timezone-review-team",
+  "type": "agent-group",
+  "version": "1.0.0",
+  "task_id": "AH-20261119-recurring-meeting-timezone-review-team",
+  "tool": {
+    "name": "official agentichub CLI",
+    "version": "0.0.1",
+    "commit": "c8ee4ef44be0453470114aa5a19f4e1017462907"
+  },
+  "payload_sha256": {
+    "README.md": "30f75bae8b3293322c405ce27c8a9c38709d116f4423fe5e96368d8dc6f061c9",
+    "agents/analyst/manifest.json": "483be653df1854ee9db341e8b2d0763c48c9ab4cd46d26f6a77c5fa9759f0d48",
+    "agents/analyst/persona/role.md": "9b3167cf454eb373d82946a5776660e6402e24c12f82d3b6070fbc8d421001df",
+    "agents/analyst/skills/meeting-intake/SKILL.md": "f900ee2dc208b5fcb85b527652ed9679b25e39c5d9a9aa509dc8c9980eb01bc2",
+    "agents/analyst/tools/intake.py": "386d1520f003639130563a05b9e098834967a64a68d92cecb4ba65135b214f34",
+    "agents/leader/AGENT.md": "597ff711f08a41f0ff65f03c4af5f54b1a146abcafa89accf366bad947b2504c",
+    "agents/leader/manifest.json": "7d20682276532b09a2813c9bf7d44c3acaaa11cf3405e18a4770417e8035b29e",
+    "agents/leader/persona/role.md": "9f7222e34ff485a941f52b0bb056e7d4cd00bdbd78cae1d34c5868d78b6594d8",
+    "agents/leader/skills/meeting-delivery/SKILL.md": "31447d3dafbf19efa881396f6f658583c678d6efba9faa04e060a58bd016f81f",
+    "agents/leader/tools/deliver.py": "e1362fb15f07018d0e231e1d7f455521077e62ac4f1ac9c6551039a81f5f4729",
+    "agents/planner/manifest.json": "c1f1fec472c5807cbdef4de4ecbb89859801d8a4cfba7c5ca0bba3621ede2ea8",
+    "agents/planner/persona/role.md": "a56920fff2a3ae441d790242bb607882ea3bf01b331897f2f37608ba0085a2e2",
+    "agents/planner/skills/meeting-planning/SKILL.md": "bdc806de3df8558d49d7f0e412d715368e0ea37288d7b2d25217680fd307e2fa",
+    "agents/planner/tools/plan.py": "4b4d8aa35e21d548816d5b48459d39ee728c56e07342c890a1e399a81697ae0b",
+    "agents/verifier/manifest.json": "3ec04ed44d8f6feacb6f28b32dc3448755efeb9051e7fb079ae3e107a6252a4e",
+    "agents/verifier/persona/role.md": "0ee7d3c251c5a75e50008a873c9ae0879504d35efc0d9837d588536ba87bbdc9",
+    "agents/verifier/skills/independent-timezone-review/SKILL.md": "aec3944c674c60a855803aeb00b28823be61c8ba77771bdd9738142c6cb56b47",
+    "agents/verifier/tools/verify.py": "b2eeda1b0535c572e5a55ffce6372a234f382721bd49dfc4348300bfc3a1b89c",
+    "avatars/group.png": "f5ebf48ee21045c74994bb21afe984170c1561e83ee8303fccc0fedea0d08bdc",
+    "examples/clock-change.json": "ae345b8917a85d1cfaff8b1739b12783b7ba1ab74ef0c395f10f2387352dc0b1",
+    "manifest.json": "f7bd9ab82c90eff2efd2f7bba7aadd619f14c47b6e8e8fce070687c65423db7b",
+    "skills/meeting-evidence/SKILL.md": "9548e760882ffc198d96808f1d4b0f76d8b1be715f8a4dea5121055b450a69dd",
+    "skills/meeting-evidence/scripts/contract.py": "dd4d53df6f9e0b3a066cd1e26bcb02ca4c319fcf030f9279923b1f1947c82abe"
+  },
+  "payload_equality": true,
+  "artifacts": {
+    "native": {
+      "path": "test-packages/recurring-meeting-timezone-review-team-1.0.0-native.zip",
+      "sha256": "7fd40e9c9121331ddb268c77434fc522f59074b3fe1ac9ec9cced78bc4a951d9",
+      "bytes": 41144
+    },
+    "wrapped": {
+      "path": "release/1.0.0/recurring-meeting-timezone-review-team-1.0.0-agent-group.zip",
+      "sha256": "b3439f95f0d6c6f19cb36015968ce737b70d624fe06b82bac1f4ef7701ee055a",
+      "bytes": 28320
+    }
+  },
+  "source_review_sha256": "e6d77ee26f47628050762dec2c27819854e9336b392061c20315de0407439c3b",
+  "test_report_sha256": "cdcf42a5446dc7bff7577e343ba42129d68d412095d89390a65af87218994834",
+  "manual_testing_sha256": "ef87eddf5ba11c69aac1279db8d85f2a8b0f26487e33a6abcd81b5fbffd1d52b",
+  "verification_records": {
+    "tests/records/extracted-tests.txt": "a3f84f73a0d3d2d4717233ff9980a295b258697ca597f434f2890ae6ae082175",
+    "tests/records/final-verification.json": "3980db14d56eeaf083e2957870d43067529200ff5c5ad8584df59d0e48705b80",
+    "tests/records/host-clock-change.json": "f40ad251145c617f4e02399e5f086ae619a635499bd9f0e512c6e7aa35c8a548",
+    "tests/records/host-gap.json": "0d6a22ab3ae0d7de325bc44d1100f933d5b3b61c5d003f6cb96b56e854cd0714",
+    "tests/records/host-import.json": "fecddc6f4652f035ed46df2351af03cf97be25a7a2de489e6c423d43ae417843",
+    "tests/records/host-loader.json": "c46ff8f2a6578b35a5b41692db2036e03b8c04333ea2befd5401915a55939fe0",
+    "tests/records/manual-host-import.json": "fecddc6f4652f035ed46df2351af03cf97be25a7a2de489e6c423d43ae417843",
+    "tests/records/official-cli-sources.json": "65174f2af1049b00ca7c44f709f0351460a98daae5c1def37272fc687fc09bc5",
+    "tests/records/source-tests.txt": "ed2c29d651d721509b1011437b41947391b162d21eb75ffe1d3c52bfdbd63420"
+  },
+  "manual_evidence": {
+    "index": "evidence/1.0.0/index.json",
+    "sha256": "10c511a78e8e2fe749fa33eb9f4d1427aa4eadcc8067cf8142c58dc3982cee5b",
+    "confirmation_report_id": "RPT-20261120-recurring-meeting-timezone-review-team-confirmed"
+  }
+}

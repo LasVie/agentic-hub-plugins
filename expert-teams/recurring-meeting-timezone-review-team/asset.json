@@ -1,0 +1,17 @@
+{
+  "type": "agent-group",
+  "name": "recurring-meeting-timezone-review-team",
+  "version": "1.0.0",
+  "display_name": "跨时区例会时间核验专家团",
+  "description": "逐周核验跨时区例会的本地时段、时钟变化与参会可用性，交付中文核验表。",
+  "publisher": "Cai Zhenze",
+  "category": "办公与效率",
+  "tags": [
+    "跨时区",
+    "例会",
+    "时间核验"
+  ],
+  "candidate_id": "Not Applicable",
+  "task_id": "AH-20261119-recurring-meeting-timezone-review-team",
+  "asset_id": "repo:agent-group:recurring-meeting-timezone-review-team"
+}

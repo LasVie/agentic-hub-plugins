@@ -1,0 +1,21 @@
+test_actual_chain_preserves_march_stagger_and_exceptions (test_meetings.Meetings) ... ok
+test_actual_elapsed_minutes_cross_spring_transition (test_meetings.Meetings) ... ok
+test_changed_original_bytes_invalidate_receipts (test_meetings.Meetings) ... ok
+test_cross_midnight_local_and_equal_to_closing (test_meetings.Meetings) ... ok
+test_csv_labels_are_not_executed_as_formulas (test_meetings.Meetings) ... ok
+test_duplicate_headers_and_nonfinite_json_rejected (test_meetings.Meetings) ... ok
+test_gap_is_reported_without_moving_start (test_meetings.Meetings) ... ok
+test_maximum_review_stays_under_evidence_limits (test_meetings.Meetings) ... ok
+test_missing_confirmed_availability_is_never_filled_in (test_meetings.Meetings) ... ok
+test_non_hour_zone_and_full_date_closure (test_meetings.Meetings) ... ok
+test_overlap_lists_both_instants (test_meetings.Meetings) ... ok
+test_read_only_and_refuse_overwrite (test_meetings.Meetings) ... ok
+test_rewritten_plan_after_review_blocks_delivery (test_meetings.Meetings) ... ok
+test_stale_or_tampered_plan_blocks_review_and_delivery (test_meetings.Meetings) ... ok
+test_tzif_fingerprint_mismatch_is_a_disagreement (test_meetings.Meetings) ... ok
+test_unknown_iana_zone_has_readable_chinese_failure (test_meetings.Meetings) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 3.689s
+
+OK

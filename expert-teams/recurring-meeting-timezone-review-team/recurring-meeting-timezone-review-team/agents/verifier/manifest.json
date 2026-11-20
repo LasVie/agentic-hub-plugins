@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "verifier",
+  "description": "先凭原始案例独立复算，再比对实际规划与时区数据指纹。",
+  "display_name": {
+    "zh": "独立时刻核验员",
+    "en": "Independent Verifier"
+  },
+  "display_description": {
+    "zh": "先凭原始案例独立复算，再比对实际规划与时区数据指纹。",
+    "en": "Independent Verifier"
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/independent-timezone-review",
+      "mode": "all"
+    }
+  ]
+}
