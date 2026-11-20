@@ -1,0 +1,81 @@
+{
+  "N1": [
+    {
+      "line": 1,
+      "quote": "11月25日前交许可单。",
+      "op": "新增",
+      "when": "11月25日",
+      "clock": null,
+      "previous": null
+    },
+    {
+      "line": 2,
+      "quote": "11月26日归还图书。",
+      "op": "新增",
+      "when": "11月26日",
+      "clock": null,
+      "previous": null
+    }
+  ],
+  "N2": [
+    {
+      "line": 1,
+      "quote": "本周四16:30到北门接社团学生。",
+      "op": "新增",
+      "when": "本周四",
+      "clock": "16:30",
+      "previous": null
+    }
+  ],
+  "N3": [
+    {
+      "line": 1,
+      "quote": "更正 N2 中甲班本周四的社团接送，改为本周四下午5点到北门。",
+      "op": "更正",
+      "when": "本周四",
+      "clock": "下午5点",
+      "previous": "N2:1:1"
+    }
+  ],
+  "N4": [
+    {
+      "line": 1,
+      "quote": "本周五带体育用品。",
+      "op": "新增",
+      "when": "本周五",
+      "clock": null,
+      "previous": null
+    }
+  ],
+  "N5": [
+    {
+      "line": 1,
+      "quote": "取消 N4 中本周五带体育用品的安排。",
+      "op": "取消",
+      "when": null,
+      "clock": null,
+      "previous": "N4:1:1"
+    }
+  ],
+  "N6": [
+    {
+      "line": 1,
+      "quote": "明天带水彩笔。",
+      "op": "新增",
+      "when": "明天",
+      "clock": null,
+      "previous": null
+    }
+  ],
+  "N7": [
+    {
+      "line": 1,
+      "quote": "提醒 N1 的许可单仍按11月25日交。",
+      "op": "提醒",
+      "when": "11月25日",
+      "clock": null,
+      "previous": "N1:1:1"
+    }
+  ],
+  "N8": []
+}

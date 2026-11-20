@@ -1,0 +1,88 @@
+{
+  "frontend_http": 200,
+  "native_sha256": "4f34070f46787c9c57fc421d3ad736d76d9c73c70e023bc3b5ec007c5a1964c0",
+  "payload": {
+    "README.md": "de2c92491b6fb77b97ac5d87593a153d2f3369a58433f855b2331193677e376c",
+    "agents/leader/AGENT.md": "e68d8c60a8e17c18d15e887f0a8343e994e0202393be13f26bf98f5d948f6719",
+    "agents/leader/manifest.json": "eb1723889ec85aef0df65ac913d7c732c103ed002d344ee9336a3d83553ea07f",
+    "agents/leader/persona/role.md": "f60776c2e2e9364540de77e71977932cc073c82c269aec34dbc7895112835183",
+    "agents/leader/skills/notice-delivery/SKILL.md": "dd95ea19cd36352204f963d50f8bceca15c0fafa50ddd99cca15f3d4d5acc3b4",
+    "agents/notice-analyst/manifest.json": "948df9b3865f2e21446d8037de878bcef53dac89fdbe82419c97de82d7a2cb91",
+    "agents/notice-analyst/persona/role.md": "fad432483b3a321a9db367e3323005b932051e3947f173426334025abf6ee32b",
+    "agents/notice-analyst/skills/notice-analysis/SKILL.md": "8569fd793a994c9f278479082d767810d0b5c41921035d99e23cde3ef6047743",
+    "agents/verifier/manifest.json": "23d7e48ef1961b7f554aa75d1ea1313362adb639d1a4b9992964cc97df816094",
+    "agents/verifier/persona/role.md": "6a8c16f633ce5f22961d4f306d62f528a3f7f25528e29cba5f0aa363743f316a",
+    "agents/verifier/skills/notice-verification/SKILL.md": "25216553ce7d41d6d16052477e6d0a3cba4cec3ec21ceafd7b0aa65945fcd2a4",
+    "examples/weekly-notices.json": "b56612c76fe2372eb1f2189bd6e130331f51993b844f5cdc25026322071b4a6e",
+    "manifest.json": "cc4d16241f316d4ea00cb6443066214bb2dde79d5429d1e8b829faa8545560f1",
+    "skills/notice-evidence/SKILL.md": "65dc63f038d6671888282361c44bd83f45aea3f188ddee3a24385c5df166e8a5",
+    "skills/notice-evidence/scripts/checklist.py": "38b06bda15b0287075034f27c9bcd7e0d2448bc73e73ef336be38339f636363d",
+    "skills/notice-evidence/scripts/evidence.py": "d122e2c10a9bcafa04e2695dec5aecf2f81518469bd81e0d38396421a3010586",
+    "skills/notice-evidence/scripts/review.py": "d0231ed57fc82a2be4a1cf8b346837cd23a483f10d431f5afc7997e1c40b7592"
+  },
+  "group": "school-notice-action-review-team",
+  "member_ids": [
+    "leader",
+    "notice-analyst",
+    "verifier"
+  ],
+  "version": "1.0.0",
+  "installed_equal": true,
+  "model_calls": "none for management",
+  "boundary": "Real host integration with fixed local responses; not autonomous reasoning or manual acceptance.",
+  "session_id": "web_1a1f85d80e6_18e1ff885d28",
+  "role_execution": {
+    "leader": {
+      "skills": [
+        "notice-delivery",
+        "notice-evidence"
+      ],
+      "tools": [
+        "bash",
+        "build_team",
+        "create_task",
+        "skill_tool"
+      ],
+      "successful_stage_receipts": 1
+    },
+    "notice-analyst": {
+      "skills": [
+        "notice-analysis",
+        "notice-evidence"
+      ],
+      "tools": [
+        "bash",
+        "claim_task",
+        "send_message",
+        "skill_tool"
+      ],
+      "successful_stage_receipts": 1
+    },
+    "verifier": {
+      "skills": [
+        "notice-evidence",
+        "notice-verification"
+      ],
+      "tools": [
+        "bash",
+        "claim_task",
+        "send_message",
+        "skill_tool"
+      ],
+      "successful_stage_receipts": 2
+    }
+  },
+  "request_counts": {
+    "leader": 6,
+    "notice-analyst": 7,
+    "verifier": 9
+  },
+  "events": 193,
+  "baseline_preceded_draft": true,
+  "verified_sample_actions": 4,
+  "output_digests": {
+    "checklist.md": "f0fc96c979626b6cb815617f6d3f48fe9617e7230578d35c52b0e0b662a905be",
+    "changes.csv": "819f8b6dc0fb77f11ba8bc2f70b2ffa9eb7fe2be3944b724764ec547cbbce89a",
+    "audit.json": "66ce66bddb3570ffd96deaf097ae537e1cffadce3c275576b9b5db405f367d72"
+  }
+}
