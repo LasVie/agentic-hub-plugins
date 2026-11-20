@@ -1,0 +1,11 @@
+{
+  "package_type": "agent_template",
+  "name": "tariff-analyst",
+  "description": "从约定费率与经核查的读数计算候选电量费用。",
+  "display_name": {
+    "zh": "分时费率计算员"
+  },
+  "persona": {
+    "dir": "persona"
+  }
+}

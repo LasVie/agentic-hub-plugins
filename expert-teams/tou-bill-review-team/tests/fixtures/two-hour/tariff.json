@@ -1,0 +1,13 @@
+{
+  "version": "synthetic-2026-11",
+  "utc_offset": "+08:00",
+  "interval_minutes": 30,
+  "currency": "CNY",
+  "rounding": "half_up",
+  "rates": {"off_peak": "0.10", "peak": "0.30"},
+  "windows": [
+    {"start": "00:00", "end": "17:00", "band": "off_peak"},
+    {"start": "17:00", "end": "18:00", "band": "peak"},
+    {"start": "18:00", "end": "24:00", "band": "off_peak"}
+  ]
+}

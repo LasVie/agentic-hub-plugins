@@ -1,0 +1,89 @@
+{
+  "frontend_http": 200,
+  "native_sha256": "8281f525470dfa86164f444cead9f7320fdd5c779283f64b5791c0f3d142ec9e",
+  "payload": {
+    "README.md": "b4beb1b2fd85e1a6fd64171cf06eed8681d62c7719c15253f83ac890da899982",
+    "agents/leader/AGENT.md": "4c4177dbb034074295bdc08a1ec69047581acd5ce54fb80d447571ae1e7ae2e2",
+    "agents/leader/manifest.json": "536bd5fb41b740b6f478158608fb65d998bf13e3e9de58675bd7de1cc479249f",
+    "agents/leader/persona/leader.md": "2905d99fdd0af90707676f73440504f94b7aacc5d9fcebefbfc1ff27f020c1f6",
+    "agents/meter-analyst/manifest.json": "a52a4b6f3750c6c3d86577601dba446657cfb5833670ca1ac5e63343f3f1c963",
+    "agents/meter-analyst/persona/meter-analyst.md": "517017bb741b7cc4333e3ccbabdab6ce2279feae21180049b266c4e64a9d47a0",
+    "agents/reviewer/manifest.json": "958addacb27c6bbaf698dbec85a7bc005cbe74b9ed1677f0ef3c22af82362e22",
+    "agents/reviewer/persona/reviewer.md": "f82580f33bc3955e3d6d57c8562c364efbd9a551fa99cf4f8183c5342f9557cb",
+    "agents/tariff-analyst/manifest.json": "d563d56b4153d3ffbba1ed4dc3b25db91e2b537fc9b43a7e3c93e7e09578d411",
+    "agents/tariff-analyst/persona/tariff-analyst.md": "b7526662047045b04b314bdd3bb1c203b0d6812b67f1e1e94415c9843022fb39",
+    "manifest.json": "dbff8f4a0dfdf01ce951c4e6eacf40b18b76cab6ce7fde7d4ba8e1bdf6b964a9",
+    "skills/bill-review/SKILL.md": "a0e9cf1295552c2d466676cd7b27e01a3f86d358bf67b355297dac6e04080f6c",
+    "skills/bill-review/scripts/bill_review.py": "ceaac98f44b941d3bbaee25b3d7b2b1d7ec71f54f20c73d2362fc37d4a18e9c0",
+    "skills/bill-review/scripts/compute.py": "470cc4e35d50b35367bf2590166a69e7155a252b6cd85fc352cf3c0ecf705ece",
+    "skills/bill-review/scripts/inputs.py": "2d0226771d0f1885445593bc117f92074f80ebc221507ecdcaddae58e4224722",
+    "来源与边界.md": "662caff5231f49bc995b2a1b165bc8bf4f5e2488bcf3b41029744c7690519332"
+  },
+  "group": "tou-bill-review-team",
+  "member_ids": [
+    "leader",
+    "meter-analyst",
+    "reviewer",
+    "tariff-analyst"
+  ],
+  "version": "1.0.0",
+  "installed_equal": true,
+  "model_calls": "loopback fixed responses only",
+  "boundary": "Real host and tool execution with fixed local responses; no semantic model or manual pass.",
+  "session_id": "web_1a1f79fbd7b_5f9cd5896edf",
+  "scenario": "positive",
+  "status": "verified",
+  "findings": [],
+  "reported_amounts_minor": {
+    "billed_minor": 100,
+    "computed_minor": 80,
+    "difference_minor": 20
+  },
+  "role_execution": {
+    "leader": {
+      "requests": 5,
+      "tools": [
+        "bash",
+        "build_team",
+        "create_task",
+        "skill_tool"
+      ],
+      "real_command_exit": 0
+    },
+    "meter-analyst": {
+      "requests": 5,
+      "tools": [
+        "bash",
+        "claim_task",
+        "skill_tool"
+      ],
+      "real_command_exit": 0
+    },
+    "reviewer": {
+      "requests": 5,
+      "tools": [
+        "bash",
+        "claim_task",
+        "skill_tool"
+      ],
+      "real_command_exit": 0
+    },
+    "tariff-analyst": {
+      "requests": 5,
+      "tools": [
+        "bash",
+        "claim_task",
+        "skill_tool"
+      ],
+      "real_command_exit": 0
+    }
+  },
+  "actual_upstream_receipts_verified": true,
+  "independent_before_candidate_verified": true,
+  "exact_snapshots": true,
+  "artifact_hashes_verified": true,
+  "events": 191,
+  "request_count": 20,
+  "human_testing_passed": false,
+  "semantic_acceptance": false
+}

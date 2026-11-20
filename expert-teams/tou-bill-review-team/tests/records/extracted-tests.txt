@@ -1,0 +1,21 @@
+test_ambiguous_missing_and_unaligned_tariffs (__main__.BillReviewTests.test_ambiguous_missing_and_unaligned_tariffs) ... ok
+test_currency_and_missing_bill_band (__main__.BillReviewTests.test_currency_and_missing_bill_band) ... ok
+test_duplicate_json_key_and_symlink (__main__.BillReviewTests.test_duplicate_json_key_and_symlink) ... ok
+test_duplicate_reading (__main__.BillReviewTests.test_duplicate_reading) ... ok
+test_exact_positive_dossier_and_chinese_outputs (__main__.BillReviewTests.test_exact_positive_dossier_and_chinese_outputs) ... ok
+test_exact_with_large_values_and_rates (__main__.BillReviewTests.test_exact_with_large_values_and_rates) ... ok
+test_existing_dossier_preserved (__main__.BillReviewTests.test_existing_dossier_preserved) ... ok
+test_hourly_window_spanning_midnight (__main__.BillReviewTests.test_hourly_window_spanning_midnight) ... ok
+test_internally_consistent_bad_candidate_is_blocked (__main__.BillReviewTests.test_internally_consistent_bad_candidate_is_blocked) ... ok
+test_missing_reading (__main__.BillReviewTests.test_missing_reading) ... ok
+test_review_alone_rejects_candidate_parameter (__main__.BillReviewTests.test_review_alone_rejects_candidate_parameter) ... ok
+test_round_half_up_and_even_per_band (__main__.BillReviewTests.test_round_half_up_and_even_per_band) ... ok
+test_stale_evidence_with_same_arithmetic (__main__.BillReviewTests.test_stale_evidence_with_same_arithmetic) ... ok
+test_tampered_independent_evidence (__main__.BillReviewTests.test_tampered_independent_evidence) ... ok
+test_unknown_offset (__main__.BillReviewTests.test_unknown_offset) ... ok
+test_unknown_unit_and_sub_wh_precision (__main__.BillReviewTests.test_unknown_unit_and_sub_wh_precision) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 1.801s
+
+OK

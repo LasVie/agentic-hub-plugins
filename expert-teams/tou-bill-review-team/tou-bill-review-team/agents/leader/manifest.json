@@ -1,0 +1,11 @@
+{
+  "package_type": "agent_template",
+  "name": "leader",
+  "description": "委派实际成员任务，核对交接，交付中文核验档案。",
+  "display_name": {
+    "zh": "账单复核主理人"
+  },
+  "persona": {
+    "dir": "persona"
+  }
+}

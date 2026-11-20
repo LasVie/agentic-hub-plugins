@@ -1,0 +1,9 @@
+{
+  "start": "2026-11-20T16:30",
+  "end": "2026-11-20T18:30",
+  "currency": "CNY",
+  "lines": {
+    "off_peak": {"kwh": "1", "amount": "0.10"},
+    "peak": {"kwh": "3", "amount": "0.90"}
+  }
+}

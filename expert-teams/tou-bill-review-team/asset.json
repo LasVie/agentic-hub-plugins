@@ -1,0 +1,22 @@
+{
+  "type": "agent-group",
+  "name": "tou-bill-review-team",
+  "version": "1.0.0",
+  "display_name": "分时用电账单复核专家团",
+  "description": "按用户给定分时费率复算单表电量费，独立检查分段归属并交付中文证据报告。",
+  "publisher": "Cai Zhenze",
+  "category": "productivity",
+  "tags": [
+    "分时用电",
+    "账单复核",
+    "离线计算"
+  ],
+  "members": [
+    "leader",
+    "meter-analyst",
+    "tariff-analyst",
+    "reviewer"
+  ],
+  "candidate_id": null,
+  "task_id": "AH-20261120-tou-bill-review-team"
+}

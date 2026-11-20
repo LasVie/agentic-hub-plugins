@@ -1,0 +1,18 @@
+{
+  "mode": "native",
+  "task_id": "AH-20261120-tou-bill-review-team",
+  "candidate_id": "Not Applicable",
+  "asset_id": "repo:agent-group:tou-bill-review-team",
+  "base": "aa29fff6074049737f986df722204e9e12a2c38e",
+  "references": [
+    {"url": "https://www.greenbuttonalliance.org/fb04", "version": "inspected 2026-11-20", "use": "interval metering concepts", "bundled_paths": []},
+    {"url": "https://sam.nrel.gov/images/web_page_files/sam-help-2025-4-16.pdf", "version": "2025.4.16", "use": "tariff concepts", "bundled_paths": []},
+    {"url": "https://arxiv.org/abs/2308.00352", "version": "ICLR 2024", "use": "workflow reference", "bundled_paths": []},
+    {"url": "https://github.com/openJiuwen-ai/skillhub", "version": "c8ee4ef44be0453470114aa5a19f4e1017462907", "use": "external build CLI", "bundled_paths": []}
+  ],
+  "repository_build_harness_reuse": [
+    "expert-teams/timber-cut-list-review-team/tests/build_package.py",
+    "expert-teams/timber-cut-list-review-team/tests/host_integration.py"
+  ],
+  "runtime_dependencies": ["Python standard library >=3.10", "WorkSwarm native AgentGroup and shell tool", "authorized model for team orchestration"]
+}
