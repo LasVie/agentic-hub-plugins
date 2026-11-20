@@ -1,0 +1,22 @@
+{
+  "type": "agent-group",
+  "name": "online-order-payment-review-team",
+  "version": "1.0.0",
+  "display_name": "网购扣款与退款核对专家团",
+  "description": "逐笔核对本地网购订单、已入账扣款和部分退款，独立复核并交付中文清单。",
+  "publisher": "Cai Zhenze",
+  "category": "productivity",
+  "tags": [
+    "网购",
+    "退款",
+    "账目核对"
+  ],
+  "members": [
+    "leader",
+    "analyst",
+    "matcher",
+    "verifier"
+  ],
+  "candidate_id": null,
+  "task_id": "AH-20261120-online-order-payment-review-team"
+}

@@ -1,0 +1,17 @@
+test_ambiguous_competing_payments_and_explicit_conflicts (__main__.OrderReviewTests) ... ok
+test_blind_baseline_rejects_proposal (__main__.OrderReviewTests) ... ok
+test_chinese_help_and_cli_error (__main__.OrderReviewTests) ... ok
+test_csv_formula_identifiers_are_escaped (__main__.OrderReviewTests) ... ok
+test_duplicate_payment_and_future_date_rejected (__main__.OrderReviewTests) ... ok
+test_empty_payments_and_refunds_yield_useful_partial_report (__main__.OrderReviewTests) ... ok
+test_maximum_ambiguous_batch_and_over_limit (__main__.OrderReviewTests) ... ok
+test_multi_credit_and_overage (__main__.OrderReviewTests) ... ok
+test_refund_notice_is_not_payment_and_cross_currency_credit_is_unallocated (__main__.OrderReviewTests) ... ok
+test_requires_current_verification_preserves_existing_output (__main__.OrderReviewTests) ... ok
+test_split_charge_partial_refund_and_ambiguous_twins (__main__.OrderReviewTests) ... ok
+test_tampered_match_and_stale_input_stop_before_output (__main__.OrderReviewTests) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 1.862s
+
+OK

@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "analyst",
+  "description": "从授权表格核对事实并保留原始行号",
+  "display_name": {
+    "zh": "订单与支付资料梳理员",
+    "en": "Order and Payment Evidence Analyst"
+  },
+  "display_description": {
+    "zh": "从授权表格核对事实并保留原始行号",
+    "en": "Order and Payment Evidence Analyst"
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/order-intake",
+      "mode": "all"
+    }
+  ]
+}

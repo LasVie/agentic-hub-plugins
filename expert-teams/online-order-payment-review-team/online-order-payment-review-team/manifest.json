@@ -1,0 +1,24 @@
+{
+  "package_type": "agent_group",
+  "name": "online-order-payment-review-team",
+  "version": "1.0.0",
+  "description": "逐笔核对本地网购订单、已入账扣款和部分退款，独立复核并交付中文清单。",
+  "display_name": {
+    "zh": "网购扣款与退款核对专家团",
+    "en": "Online Order Payment and Refund Review Team"
+  },
+  "display_description": {
+    "zh": "逐笔核对本地网购订单、已入账扣款和部分退款，独立复核并交付中文清单。",
+    "en": "Offline review of order charges and posted refunds"
+  },
+  "instruction": "默认使用简体中文。只用用户确认的原始资料与截止日期，保留真实任务、命令与交接回执。通知、待入账与已入账有不同含义；只按给定证据核对。保留歧义，禁止操作外部账户。",
+  "agents": [
+    "leader",
+    "analyst",
+    "matcher",
+    "verifier"
+  ],
+  "skills": [
+    "order-evidence"
+  ]
+}
