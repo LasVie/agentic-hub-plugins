@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "verifier",
+  "description": "先锁独立基线，再核对每个工作项",
+  "display_name": {
+    "zh": "独立复盘核验员",
+    "en": "Independent Verifier"
+  },
+  "display_description": {
+    "zh": "先锁独立基线，再核对每个工作项",
+    "en": "Independent Verifier"
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/rehearsal-review",
+      "mode": "all"
+    }
+  ]
+}

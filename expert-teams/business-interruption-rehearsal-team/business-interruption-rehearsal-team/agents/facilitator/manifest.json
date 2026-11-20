@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "facilitator",
+  "description": "按冻结证据推进两种模拟情景",
+  "display_name": {
+    "zh": "情景演练员",
+    "en": "Exercise Facilitator"
+  },
+  "display_description": {
+    "zh": "按冻结证据推进两种模拟情景",
+    "en": "Exercise Facilitator"
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/rehearsal-scenario",
+      "mode": "all"
+    }
+  ]
+}

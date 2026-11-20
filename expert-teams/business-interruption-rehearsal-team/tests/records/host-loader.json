@@ -1,0 +1,85 @@
+{
+  "loader": "openjiuwen.agent_teams.experts.load_agent_group_package_bundle",
+  "sdk": "0.1.20",
+  "native_sha256": "62d93cb9658846ccc90363cf8a5bc8a0783328b1fad8679bbaa7ffe7ab3fe56e",
+  "members": {
+    "leader": {
+      "skills": [
+        "rehearsal-delivery",
+        "rehearsal-evidence"
+      ],
+      "prompt_sections": [
+        "identity",
+        "agent_group_leader_rules",
+        "agent_group_instruction"
+      ]
+    },
+    "analyst": {
+      "skills": [
+        "rehearsal-dependencies",
+        "rehearsal-evidence"
+      ],
+      "prompt_sections": [
+        "identity",
+        "agent_group_instruction"
+      ]
+    },
+    "fallback": {
+      "skills": [
+        "rehearsal-evidence",
+        "rehearsal-fallback"
+      ],
+      "prompt_sections": [
+        "identity",
+        "agent_group_instruction"
+      ]
+    },
+    "recovery": {
+      "skills": [
+        "rehearsal-evidence",
+        "rehearsal-restart"
+      ],
+      "prompt_sections": [
+        "identity",
+        "agent_group_instruction"
+      ]
+    },
+    "facilitator": {
+      "skills": [
+        "rehearsal-evidence",
+        "rehearsal-scenario"
+      ],
+      "prompt_sections": [
+        "identity",
+        "agent_group_instruction"
+      ]
+    },
+    "verifier": {
+      "skills": [
+        "rehearsal-evidence",
+        "rehearsal-review"
+      ],
+      "prompt_sections": [
+        "identity",
+        "agent_group_instruction"
+      ]
+    }
+  },
+  "negative_controls": [
+    {
+      "case": "wrong-member-type",
+      "rejected": true,
+      "reason": "AgentTemplate 'analyst' must declare package_type='agent_template'"
+    },
+    {
+      "case": "no-leader-entry",
+      "rejected": true,
+      "reason": "AgentGroup leader AGENT.md missing: <negative-fixture>/agents/leader/AGENT.md"
+    },
+    {
+      "case": "missing-member",
+      "rejected": true,
+      "reason": "agent directory not found: verifier"
+    }
+  ]
+}

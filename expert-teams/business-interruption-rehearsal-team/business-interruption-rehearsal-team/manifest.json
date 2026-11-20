@@ -1,0 +1,26 @@
+{
+  "package_type": "agent_group",
+  "name": "business-interruption-rehearsal-team",
+  "version": "1.0.0",
+  "display_name": {
+    "zh": "业务中断演练与复工核验专家团",
+    "en": "Business Interruption Rehearsal and Recovery Review Team"
+  },
+  "description": "演练业务中断和离线登记，独立核验复工条件及工作项。",
+  "display_description": {
+    "zh": "比较两种模拟情景，核对离线登记和复工回填",
+    "en": "Rehearse offline intake and audited service resumption"
+  },
+  "agents": [
+    "leader",
+    "analyst",
+    "fallback",
+    "recovery",
+    "facilitator",
+    "verifier"
+  ],
+  "skills": [
+    "rehearsal-evidence"
+  ],
+  "instruction": "默认使用简体中文。只运行用户明确确认的本地模拟案例。保留原始输入和独立阶段证据，不执行真实切换、数据回填或消息发送。发现事实缺失、工具失败、复盘不一致或无真实成员回执时报告阻塞。"
+}

@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "analyst",
+  "description": "核实负责人、容量和流程依赖",
+  "display_name": {
+    "zh": "业务依赖分析员",
+    "en": "Business Dependency Analyst"
+  },
+  "display_description": {
+    "zh": "核实负责人、容量和流程依赖",
+    "en": "Business Dependency Analyst"
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/rehearsal-dependencies",
+      "mode": "all"
+    }
+  ]
+}

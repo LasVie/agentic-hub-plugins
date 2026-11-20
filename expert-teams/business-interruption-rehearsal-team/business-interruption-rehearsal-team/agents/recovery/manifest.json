@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "recovery",
+  "description": "冻结复工门槛、顺序和回填规则",
+  "display_name": {
+    "zh": "复工切换规划员",
+    "en": "Recovery Planner"
+  },
+  "display_description": {
+    "zh": "冻结复工门槛、顺序和回填规则",
+    "en": "Recovery Planner"
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/rehearsal-restart",
+      "mode": "all"
+    }
+  ]
+}
