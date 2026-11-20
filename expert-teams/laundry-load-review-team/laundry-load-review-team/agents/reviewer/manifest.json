@@ -1,0 +1,11 @@
+{
+  "package_type": "agent_template",
+  "name": "reviewer",
+  "description": "先按原案列出可用程序，再独立核对候选的覆盖、分洗、护理限制和干燥动作。",
+  "display_name": {
+    "zh": "独立衣物护理复核员"
+  },
+  "persona": {
+    "dir": "persona"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "package_type": "agent_template",
+  "name": "planner",
+  "description": "按已确认的衣物标签与可用程序编排候选分批和逐组干燥去向。",
+  "display_name": {
+    "zh": "洗衣分批规划员"
+  },
+  "persona": {
+    "dir": "persona"
+  }
+}

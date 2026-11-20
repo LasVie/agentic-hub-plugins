@@ -1,0 +1,11 @@
+{
+  "package_type": "agent_template",
+  "name": "leader",
+  "description": "确认衣篮和可用程序，委派两位成员，交付核验后的洗涤与干燥清单。",
+  "display_name": {
+    "zh": "洗衣分批主理人"
+  },
+  "persona": {
+    "dir": "persona"
+  }
+}

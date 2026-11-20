@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-group:laundry-load-review-team",
+  "task_id": "AH-20261120-laundry-load-review-team",
+  "candidate_id": "Not Applicable",
+  "type": "agent-group",
+  "name": "laundry-load-review-team",
+  "display_name": "日常洗衣分批复核专家团",
+  "version": "1.0.0",
+  "zip": "laundry-load-review-team-1.0.0.zip",
+  "sha256": "487147dce54755e37fef5a9f4fec37a350042a0814642aafa5b1718a97b5ce7d",
+  "zip_bytes": 18763,
+  "native_test_zip": "../../test-packages/laundry-load-review-team-1.0.0-native.zip",
+  "native_test_zip_sha256": "5a5ee96e6a2705d73a09ed7d6358acbd5a77b8209662bd5f5384145c119560bb",
+  "native_test_zip_bytes": 33060,
+  "plugin_yaml_sha256": "9a8be78b397c8e6158c18c3d1561380b6ff0655210da6b775546a6cfa48c7265",
+  "payload_file_count": 14,
+  "payload_sha256": {
+    "README.md": "2662beb1272514f0d4399c0ab8cd17725dc247541ad4d103789f57315cdf1018",
+    "agents/leader/AGENT.md": "b7423bf8993b6d8017a5ed58e93d9e104b26503248779cfeeaf55d1646b2d5ca",
+    "agents/leader/manifest.json": "50d07e3f396095225d5d650dda476d95338b155e243e50e4210253d68f0c02ae",
+    "agents/leader/persona/leader.md": "b32bbd3dde05473dd7c4805b8dd7735e2cb1ea2174d9d468e1f76551e9f35dfc",
+    "agents/planner/manifest.json": "4501b2342d9d30f2139d0e6a973f4c05a396e510a40087a9c123bd8e073ca5ed",
+    "agents/planner/persona/planner.md": "f2198718d63297f9b99b2b852336bb04326858526dfefeabb82aa5f7dd1741b9",
+    "agents/reviewer/manifest.json": "65dc6b1b086306e818cff0dddee2200dd37315c806df4216150764cd49d454d8",
+    "agents/reviewer/persona/reviewer.md": "affb422e54f3b54a44b9cb7cab65f46a193937937cb7c61bcdccfef924f54497",
+    "manifest.json": "47dacb093ffb502372917f81d9da722349bbc3eb50aa1e671d0c3b3f8b62ef1c",
+    "skills/laundry-review/SKILL.md": "51798292cbb23016f6b8c8d303acdfc7fb1c5d1e0e37e248941991dc334950a7",
+    "skills/laundry-review/scripts/contract.py": "67edb6b40b15e7cce9aa7e352991a7319f365ec34d726102b0de42304942fa84",
+    "skills/laundry-review/scripts/laundry_review.py": "59f90799bb5079f33e5449041efad2e17da833465a54c147109f55ce34a7d6f7",
+    "skills/laundry-review/scripts/planner.py": "36ba5983a93dd1439409ec24bc418cb261ad3a6edaa835949f2ee1455e087241",
+    "skills/laundry-review/scripts/reviewer.py": "c1d667ec27103d7fdc80005b5e566d82b15f11a8fccc11f7b942f8123e093366"
+  },
+  "package_verification": {
+    "paths_types_sizes_ratios": "passed",
+    "native_wrapped_source_payload_equality": "passed",
+    "native_compression": "ZIP_STORED",
+    "canonical_compression": "official CLI ZIP_DEFLATED",
+    "reproducible_archive_timestamp": "2026-01-01T00:00:00"
+  },
+  "official_cli": {
+    "distribution": "openjiuwen-agentichub",
+    "version": "0.0.1",
+    "source_commit": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+    "main_py_sha256": "f3a0e0bb46c67ad17689db44ab4d9ae5ddbf32391ed8e26a1671e770f0dfaaea",
+    "plugin_py_sha256": "7d100e423a033b42ae6f1c79b7063b01ebb55ef38beb63da6d85e027ca0f6568",
+    "commands": [
+      "python -B -m openjiuwen_agentichub.main validate CLEAN_STAGING",
+      "python -B -m openjiuwen_agentichub.main pack CLEAN_STAGING --output CLEAN_OUTPUT"
+    ]
+  },
+  "source_review_sha256": "fee13d81e66bd22fdd4418bc69575ab6ceb88600f554219d98ad3e5d8418d9b4",
+  "functional_test_report_sha256": "61efd51fefd1b04dc4ce3bc5f2038a61e8f219b09af30be5e3f1568e58887e26",
+  "provenance_sha256": "e22dd4936fe297dd94f3a8fe0a42af8fe483210aadf53625c5da1246699f1ab6",
+  "provenance_mode": "native"
+}

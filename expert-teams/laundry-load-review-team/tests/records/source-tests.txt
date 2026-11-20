@@ -1,0 +1,21 @@
+test_baseline_rejects_candidate_input (__main__.LaundryTests) ... ok
+test_capacity_split_and_repeated_separate_group (__main__.LaundryTests) ... ok
+test_color_and_separate_restrictions (__main__.LaundryTests) ... ok
+test_count_overflow_duplicate_and_missing_coverage (__main__.LaundryTests) ... ok
+test_duplicate_json_and_non_integer_count (__main__.LaundryTests) ... ok
+test_existing_output_and_symlink_are_rejected (__main__.LaundryTests) ... ok
+test_false_hold (__main__.LaundryTests) ... ok
+test_machine_without_compatible_program (__main__.LaundryTests) ... ok
+test_missing_color_and_separate_facts (__main__.LaundryTests) ... ok
+test_positive_three_usable_loads_two_wash_holds (__main__.LaundryTests) ... ok
+test_report_escapes_user_supplied_text (__main__.LaundryTests) ... ok
+test_review_is_bound_to_exact_candidate_bytes (__main__.LaundryTests) ... ok
+test_separate_with_unknown_color_is_valid_on_its_own (__main__.LaundryTests) ... ok
+test_stale_case_and_tampered_review (__main__.LaundryTests) ... ok
+test_unknown_drying_preserves_verified_wash_assignment (__main__.LaundryTests) ... ok
+test_wrong_temperature_cycle_and_drying_are_blocked (__main__.LaundryTests) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 1.748s
+
+OK
