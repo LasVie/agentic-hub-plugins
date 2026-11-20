@@ -1,0 +1,20 @@
+{
+  "mode": "native",
+  "permission_status": "not-applicable",
+  "task_id": "AH-20261120-warehouse-stocktake-reconciliation-team",
+  "source_review": "SOURCE_REVIEW.md",
+  "native_design": "NATIVE_DESIGN.md",
+  "reused_paths": [],
+  "license_evidence": [],
+  "sources": [
+    {
+      "url": "https://github.com/LasVie/agentic-hub-plugins/blob/aa29fff6074049737f986df722204e9e12a2c38e/expert-teams/README.md",
+      "ref": "aa29fff6074049737f986df722204e9e12a2c38e",
+      "use": "Package interface reference only"
+    }
+  ],
+  "runtime_dependencies": [
+    "Python 3.10+ standard library",
+    "WorkSwarm AgentGroup and host task, file and command tools"
+  ]
+}

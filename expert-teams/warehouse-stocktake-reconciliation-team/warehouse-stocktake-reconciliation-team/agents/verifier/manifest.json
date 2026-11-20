@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "verifier",
+  "description": "仅从原始文件反向复算并复查正推结果。",
+  "display_name": {
+    "zh": "库存倒推核验员",
+    "en": "Independent verifier"
+  },
+  "display_description": {
+    "zh": "仅从原始文件反向复算并复查正推结果。",
+    "en": "Independent verifier"
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/reverse-check",
+      "mode": "all"
+    }
+  ]
+}
