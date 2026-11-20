@@ -1,0 +1,17 @@
+{
+  "type": "agent-group",
+  "name": "business-interruption-rehearsal-team",
+  "display_name": "业务中断演练与复工核验专家团",
+  "version": "1.0.0",
+  "description": "演练共享系统中断、人工登记和分阶段复工，独立核对每个工作项的去向。",
+  "publisher": "Cai Zhenze",
+  "category": "办公与效率",
+  "tags": [
+    "桌面演练",
+    "业务连续性",
+    "复工核验"
+  ],
+  "candidate_id": "Not Applicable",
+  "task_id": "AH-20261120-business-interruption-rehearsal-team",
+  "asset_id": "repo:agent-group:business-interruption-rehearsal-team"
+}

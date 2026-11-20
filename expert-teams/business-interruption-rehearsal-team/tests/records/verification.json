@@ -1,0 +1,59 @@
+{
+  "task_id": "AH-20261120-business-interruption-rehearsal-team",
+  "version": "1.0.0",
+  "payload_files": 28,
+  "artifacts": {
+    "native": {
+      "path": "test-packages/business-interruption-rehearsal-team-1.0.0-native.zip",
+      "sha256": "62d93cb9658846ccc90363cf8a5bc8a0783328b1fad8679bbaa7ffe7ab3fe56e",
+      "bytes": 51218
+    },
+    "wrapped": {
+      "path": "release/1.0.0/business-interruption-rehearsal-team-1.0.0-agent-group.zip",
+      "sha256": "edaeadf4a6ca35b21b9bea9a39685e09581758fb1208a3a73796d848e8b6b1b6",
+      "bytes": 31478
+    }
+  },
+  "official_cli_steps": {
+    "init": 0,
+    "validate": 0,
+    "pack": 0
+  },
+  "payload_matches": [
+    "source",
+    "native",
+    "wrapped",
+    "exact extraction",
+    "engineering install",
+    "manual install"
+  ],
+  "dynamic_js_preflight": {
+    "source": 0,
+    "native": 0,
+    "wrapped": 0
+  },
+  "functional_tests_passed": {
+    "source": 14,
+    "extracted": 14
+  },
+  "host_creator_agents": 6,
+  "sdk": "0.1.20",
+  "host_execution": {
+    "requests": 43,
+    "events": 402,
+    "items": 9,
+    "scenarios": [
+      true,
+      false
+    ],
+    "source_first_baseline": true,
+    "scripted": true
+  },
+  "manual_url": "http://127.0.0.1:6707/",
+  "upload_dialog_reached": true,
+  "browser_file_selected": false,
+  "native_import_route": "agent_groups.import_local",
+  "ui_version_and_six_roles_verified": true,
+  "manual_acceptance": "pending",
+  "external_model_calls": 0
+}

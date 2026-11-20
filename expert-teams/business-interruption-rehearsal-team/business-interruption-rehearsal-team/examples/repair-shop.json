@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "repair-shop",
+  "title": "维修店共享工单看板中断",
+  "staff": [
+    {"id": "desk", "name": "前台", "capacity": 2},
+    {"id": "bench", "name": "工位负责人", "capacity": 2}
+  ],
+  "workflows": [
+    {"id": "intake", "name": "受理维修请求", "owner": "desk", "needs": [], "manual_limit": 1, "startup": 0, "source": "用户确认的虚构门店约定，受理条目"},
+    {"id": "assign", "name": "分派维修任务", "owner": "desk", "needs": ["intake"], "manual_limit": 2, "startup": 5, "source": "用户确认的虚构门店约定，分派条目"},
+    {"id": "close", "name": "登记完成", "owner": "bench", "needs": ["assign"], "manual_limit": 1, "startup": 5, "source": "用户确认的虚构门店约定，完成条目"}
+  ],
+  "scenarios": [
+    {
+      "id": "routine", "title": "普通中断后完整复工", "horizon": 120, "target": 60,
+      "events": [
+        {"id": "write-ready", "minute": 25, "kind": "writable"},
+        {"id": "snapshot-ready", "minute": 30, "kind": "snapshot_verified"},
+        {"id": "approved", "minute": 30, "kind": "owner_approved"}
+      ],
+      "items": [
+        {"id": "job-a", "flow": "intake", "arrival": 4, "due": 45, "revision": 1},
+        {"id": "job-b", "flow": "intake", "arrival": 5, "due": 45, "revision": 1},
+        {"id": "job-c", "flow": "assign", "arrival": 6, "due": 50, "revision": 2},
+        {"id": "job-d", "flow": "assign", "arrival": 7, "due": 50, "revision": 1},
+        {"id": "job-e", "flow": "close", "arrival": 15, "due": 55, "revision": 1},
+        {"id": "job-f", "flow": "close", "arrival": 40, "due": 65, "revision": 1}
+      ],
+      "snapshot": [{"id": "job-c", "revision": 2}]
+    },
+    {
+      "id": "read-only", "title": "服务返回但只能读取", "horizon": 120, "target": 60,
+      "events": [
+        {"id": "read-ready", "minute": 25, "kind": "readonly"},
+        {"id": "snapshot-ready", "minute": 30, "kind": "snapshot_verified"},
+        {"id": "approved", "minute": 35, "kind": "owner_approved"}
+      ],
+      "items": [
+        {"id": "job-g", "flow": "intake", "arrival": 6, "due": 60, "revision": 1},
+        {"id": "job-h", "flow": "assign", "arrival": 12, "due": 60, "revision": 1},
+        {"id": "job-i", "flow": "close", "arrival": 17, "due": 70, "revision": 1}
+      ],
+      "snapshot": [{"id": "job-h", "revision": 1}]
+    }
+  ]
+}

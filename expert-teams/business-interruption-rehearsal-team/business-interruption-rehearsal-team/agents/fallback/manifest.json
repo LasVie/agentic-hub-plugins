@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "fallback",
+  "description": "冻结离线登记限额和待办路径",
+  "display_name": {
+    "zh": "离线作业设计员",
+    "en": "Manual Operations Designer"
+  },
+  "display_description": {
+    "zh": "冻结离线登记限额和待办路径",
+    "en": "Manual Operations Designer"
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/rehearsal-fallback",
+      "mode": "all"
+    }
+  ]
+}

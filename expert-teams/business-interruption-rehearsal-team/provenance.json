@@ -1,0 +1,54 @@
+{
+  "mode": "native",
+  "permission_status": "not-applicable",
+  "task_id": "AH-20261120-business-interruption-rehearsal-team",
+  "source_review": "SOURCE_REVIEW.md",
+  "native_design": "NATIVE_DESIGN.md",
+  "reused_paths": [],
+  "license_evidence": [],
+  "development_reused_paths": [
+    {
+      "path": "expert-teams/recurring-meeting-timezone-review-team/build_packages.py",
+      "destination": "tests/package.py",
+      "commit": "aa29fff6074049737f986df722204e9e12a2c38e",
+      "sha256": "68db78102d5318b30d2089eec0caeb4efd45e9cc426fe6610c23a6781dbe2295",
+      "scope": "Development harness only. Outside both ZIPs."
+    },
+    {
+      "path": "expert-teams/recurring-meeting-timezone-review-team/tests/host_integration.py",
+      "destination": "tests/host_integration.py",
+      "commit": "aa29fff6074049737f986df722204e9e12a2c38e",
+      "sha256": "c89079902f789923b6525a28a33de28be558e1cecc9a331b80fccc9c9de6cb2d",
+      "scope": "Development harness only. Outside both ZIPs."
+    },
+    {
+      "path": "expert-teams/recurring-meeting-timezone-review-team/tests/check_loader.py",
+      "destination": "tests/check_loader.py",
+      "commit": "aa29fff6074049737f986df722204e9e12a2c38e",
+      "sha256": "b925536695fa16bbceaa013419b487c82dc7e1b428028936a12de04c6a0a09e9",
+      "scope": "Actual SDK verification harness only. Outside both ZIPs."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://preptoolkit.fema.gov/web/hseep-resources/policy-and-guidance",
+      "ref": "HSEEP 2020",
+      "use": "method only"
+    },
+    {
+      "url": "https://csrc.nist.gov/pubs/sp/800/84/final",
+      "ref": "SP 800-84",
+      "use": "method only"
+    },
+    {
+      "url": "https://doi.org/10.1111/1468-5973.12230",
+      "ref": "2019 proceedings issue",
+      "use": "method only"
+    },
+    {
+      "url": "https://github.com/openJiuwen-ai/skillhub",
+      "ref": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+      "use": "external packaging CLI only"
+    }
+  ]
+}
