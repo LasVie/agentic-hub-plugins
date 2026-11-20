@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "leader",
+  "description": "冻结范围、落实交接、处理分歧及最终交付",
+  "display_name": {
+    "zh": "复工演练主理人",
+    "en": "Exercise Leader"
+  },
+  "display_description": {
+    "zh": "冻结范围、落实交接、处理分歧及最终交付",
+    "en": "Exercise Leader"
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/rehearsal-delivery",
+      "mode": "all"
+    }
+  ]
+}

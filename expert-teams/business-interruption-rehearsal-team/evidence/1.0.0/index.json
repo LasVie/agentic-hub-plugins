@@ -1,0 +1,62 @@
+{
+  "task_id": "AH-20261120-business-interruption-rehearsal-team",
+  "candidate": "Not Applicable",
+  "owner": "Cai Zhenze",
+  "version": "1.0.0",
+  "name": "业务中断演练与复工核验专家团",
+  "confirmation_report_id": "RPT-20261120-business-interruption-rehearsal-team-confirmed",
+  "source": "User confirmation and original attachments in the current Codex conversation",
+  "user_confirmation": "Manual testing of the exact native ZIP is complete and passed.",
+  "confirmation_recorded_at": "2026-11-20T16:04:23+08:00",
+  "sha256": {
+    "native": "62d93cb9658846ccc90363cf8a5bc8a0783328b1fad8679bbaa7ffe7ab3fe56e",
+    "wrapped": "edaeadf4a6ca35b21b9bea9a39685e09581758fb1208a3a73796d848e8b6b1b6"
+  },
+  "original_screenshots": [
+    {
+      "original_filename": "Screenshot 2026-11-20 at 3.59.50 PM.png",
+      "description": "Version, authorized sample and independent-baseline task",
+      "width": 3324,
+      "height": 1980,
+      "bytes": 1222706,
+      "sha256": "ef7f7f073a973a0e65102e9317ae95ff9598d9d3840f1a605f66d481ed9a5f58",
+      "path": "originals/Screenshot 2026-11-20 at 3.59.50 PM.png"
+    },
+    {
+      "original_filename": "Screenshot 2026-11-20 at 4.00.00 PM.png",
+      "description": "Runtime progression, independent review and four delivered files",
+      "width": 3324,
+      "height": 1984,
+      "bytes": 1229760,
+      "sha256": "ff6847288af5beb288ae57133fcd6cfd04e4cb59831400d3e9430460e68a62e3",
+      "path": "originals/Screenshot 2026-11-20 at 4.00.00 PM.png"
+    },
+    {
+      "original_filename": "Screenshot 2026-11-20 at 4.00.09 PM.png",
+      "description": "Both scenarios and unique work-item dispositions",
+      "width": 3324,
+      "height": 1974,
+      "bytes": 1192026,
+      "sha256": "945be254d1406eb30f0f381dcf073a97bfe7af85715e5e8d4e4d3b87d7e9c261",
+      "path": "originals/Screenshot 2026-11-20 at 4.00.09 PM.png"
+    },
+    {
+      "original_filename": "Screenshot 2026-11-20 at 4.00.49 PM.png",
+      "description": "Generated Chinese playbook and scenario tables",
+      "width": 1902,
+      "height": 1794,
+      "bytes": 375363,
+      "sha256": "adcb970e42865e2d08750e772e27d3fd6b7b1f91a82189e4f0f06be4e0040ec2",
+      "path": "originals/Screenshot 2026-11-20 at 4.00.49 PM.png"
+    },
+    {
+      "original_filename": "Screenshot 2026-11-20 at 4.01.22 PM.png",
+      "description": "Five member panels, tool calls and handoffs",
+      "width": 1926,
+      "height": 1926,
+      "bytes": 475217,
+      "sha256": "21a544d27c8d2936e840cf84d4c75abd1680f7a1fb5857752134f78bc6b59c6d",
+      "path": "originals/Screenshot 2026-11-20 at 4.01.22 PM.png"
+    }
+  ]
+}

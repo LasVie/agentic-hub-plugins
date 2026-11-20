@@ -1,0 +1,19 @@
+test_baseline_rejects_other_roles_inputs (test_rehearsal.Rehearsal) ... ok
+test_cycle_unknown_owner_and_boolean_limit_rejected (test_rehearsal.Rehearsal) ... ok
+test_duplicate_json_and_missing_staff_rejected (test_rehearsal.Rehearsal) ... ok
+test_forged_review_cannot_release_results (test_rehearsal.Rehearsal) ... ok
+test_full_chinese_outputs_and_item_accounting (test_rehearsal.Rehearsal) ... ok
+test_future_snapshot_item_rejected (test_rehearsal.Rehearsal) ... ok
+test_hold_conflicting_revision_and_missed_due (test_rehearsal.Rehearsal) ... ok
+test_input_and_fallback_handoff_are_frozen (test_rehearsal.Rehearsal) ... ok
+test_missing_item_invalidates_review (test_rehearsal.Rehearsal) ... ok
+test_moved_audit_event_blocks_comparison (test_rehearsal.Rehearsal) ... ok
+test_rewritten_plan_after_execution_blocks_release (test_rehearsal.Rehearsal) ... ok
+test_tampered_fallback_constraints_block_replay (test_rehearsal.Rehearsal) ... ok
+test_tampered_trace_duplicate_is_named_and_blocks_delivery (test_rehearsal.Rehearsal) ... ok
+test_two_independent_algorithms_agree_bounded_variations (test_rehearsal.Rehearsal) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 1.863s
+
+OK

@@ -1,0 +1,54 @@
+{
+  "task_id": "AH-20261120-business-interruption-rehearsal-team",
+  "version": "1.0.0",
+  "manual_confirmation_report_id": "RPT-20261120-business-interruption-rehearsal-team-confirmed",
+  "outputs_reproduced_byte_for_byte": {
+    "playbook.md": "54cfe2efa540beba0e217939de9949c220ed61973a6c151dade466d993f105b1",
+    "scenario-trace.jsonl": "1948e5c55220c813101d65b49e8746891dd66a2ae0c12cc15871f0903724ab41",
+    "actions.csv": "12dba3281d5e5fbc81db758dec9b7e7f66ac22fd7cd2e79e12d52760e074aa04",
+    "audit.json": "b8c13a59e11926c9c23eb215d44853a8a3f8a700af0f4b49210fb85babaf0d8d"
+  },
+  "manual_handoff_sha256": {
+    "baseline": "82d6ed26feade493954df76602f70d72b2c42e74f64f05a8429a340f185c494b",
+    "fallback": "a65f54d394da844e6c6636b53d64ae55c774557787db28d16b0745a0e2db10a4",
+    "mapping": "38cbfb122f47ce16b25c2a1b80271e37dde9418cb9f6e2f452e10e7f51f16a34",
+    "restart": "5d634ca8bcee5f7c3914603c2cdc70c903878e2a670650c39b6e7fa8a1052868",
+    "review": "0953ec25e59d767a29589ce652626fc57afe1062de517a3099b9e7d3c2e25eac",
+    "trace": "4497804649b39673d833210ab005b3842616a004ba373056bac25ab639c359d8"
+  },
+  "case_sha256": "7784a347b29586f902d225ef4fee0c941d1999e5f10401b968b8e244dc706027",
+  "receipt_sha256": {
+    "analyst-receipt.json": "b27af7d6775ee2acc2a281862cb42330b3d51a739e115d3a3c9e04f79826aeca",
+    "receipt.json": "1a951ebf2a2c2535eb96c41ebe6fef66c6f5c00b48293c1dda8520c34ad74259",
+    "facilitator-receipt.json": "fd0f35e38ed0261ed9c3232d939386b0e06118c129855ef22dbf22ccfee00b39",
+    "recovery-receipt.json": "a61d87d19735ad82ac97dabd7686726d3f688315dae09704f9ddc3acc064de0c",
+    "fallback-receipt.json": "a9807bb00a7db413736848bea258407c5902d59c784e064ed86a4b608923fcbf",
+    "verifier-receipt.json": "c535aa1843684e2db07a153653869345668d420039c9a36300e2e14cc155efd3",
+    "delivery-receipt.json": "604d61ac175d5d2ffbb76f3fad7ce33576ad12b18f43e244571fbed4820d045b"
+  },
+  "ordinary_reopens": [
+    30,
+    35,
+    40
+  ],
+  "readonly_reopens": [],
+  "accounted_items": 9,
+  "trace_entries": 27,
+  "action_rows": 6,
+  "verdict": "matched",
+  "input_first_baseline": true,
+  "no_overwrite_exit_then_fresh_retry": [
+    2,
+    0
+  ],
+  "rerun_functional": {
+    "source": 14,
+    "exact_native": 14
+  },
+  "preflight_sources_and_exact_zips": "passed",
+  "artifacts_sha256": {
+    "native": "62d93cb9658846ccc90363cf8a5bc8a0783328b1fad8679bbaa7ffe7ab3fe56e",
+    "wrapped": "edaeadf4a6ca35b21b9bea9a39685e09581758fb1208a3a73796d848e8b6b1b6"
+  },
+  "payload_count": 28
+}
