@@ -1,0 +1,29 @@
+{
+  "task_id": "AH-20261120-warehouse-stocktake-reconciliation-team",
+  "asset_version": "1.0.0",
+  "native_zip_sha256": "d151c13208799e268bef0312623a8c735c440253c3c2aac836342e4a278a19c0",
+  "originals": [
+    {
+      "original_filename": "jiuwenswarm-share-20261120-144827.png",
+      "path": "originals/case-01-chat.png",
+      "description": "Case 01 prompt, version and Chinese reconciliation results",
+      "sha256": "11f0e3ed47fe34bccefb0b85e306c3924beb3707f4c239dd794bf1da221b5fb0",
+      "bytes": 1453523,
+      "dimensions": [
+        2250,
+        10032
+      ]
+    },
+    {
+      "original_filename": "Screenshot 2026-11-20 150036.png",
+      "path": "originals/case-01-task-planning.png",
+      "description": "Completed WorkSwarm tasks and distinct assignee avatars",
+      "sha256": "872f9a2a9abea629615a5a7315a93d021f4a5981b03356a1481c41b9d841e2c9",
+      "bytes": 117688,
+      "dimensions": [
+        1377,
+        1025
+      ]
+    }
+  ]
+}

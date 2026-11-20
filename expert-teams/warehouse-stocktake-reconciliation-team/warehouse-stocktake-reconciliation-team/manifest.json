@@ -1,0 +1,21 @@
+{
+  "name": "warehouse-stocktake-reconciliation-team",
+  "version": "1.0.0",
+  "package_type": "agent_group",
+  "description": "按出入库流水将账面库存推算至实盘时点，独立复算并列出复盘差异。",
+  "display_name": {
+    "zh": "库存盘点差异复核专家团",
+    "en": "Warehouse Stocktake Reconciliation Team"
+  },
+  "display_description": {
+    "zh": "按出入库流水将账面库存推算至实盘时点，独立复算并列出复盘差异。",
+    "en": "Reconcile physical counts against book balances and movement logs with independent verification."
+  },
+  "agents": [
+    "leader",
+    "input_reviewer",
+    "reconciler",
+    "verifier"
+  ],
+  "instruction": "默认使用简体中文。只读用户明确授权的 CSV，保留原文件。用实际任务和文件结果交接；缺项、时点不清或结果不一致时暂停。禁止接入、修改或生成可直接导入业务系统的调账操作。"
+}

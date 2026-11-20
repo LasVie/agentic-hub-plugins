@@ -1,0 +1,40 @@
+{
+  "name": "warehouse-stocktake-reconciliation-team",
+  "version": "1.0.0",
+  "type": "agent-group",
+  "official_cli_version": "0.0.1",
+  "official_cli_ref": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+  "payload_sha256": {
+    "agents/input_reviewer/manifest.json": "36dfee0df947dfd7553c0901222808bf4f73dc1984e1e7808df2e3b94a78d2b0",
+    "agents/input_reviewer/persona/input_reviewer.md": "4b4bc77d936d11f5964dfdb2c4a163f2cecb99973d6ec6c6be404073975b86f2",
+    "agents/input_reviewer/skills/input-check/SKILL.md": "630157f62f6e784ef52225da5899cae02c236b603cdbfa0e480f209c539b3db6",
+    "agents/leader/AGENT.md": "4a239f7eae94e6c1f3d77cc93116ffedc252dd6042f04873c0e6e26e622826d0",
+    "agents/leader/manifest.json": "99f232ddf1f05238c6d1b8ebcb823a5e2f599c745941448d44f07592901c6159",
+    "agents/leader/persona/leader.md": "271e36945600ffd9885b45e128b9e6e700541fe4c09ccdc7964c85b8f68f83ab",
+    "agents/leader/skills/delivery/SKILL.md": "e535fe94618d3811ca5ba3878ef6beb714733f148ec92831ca23bb754a0aad29",
+    "agents/reconciler/manifest.json": "5bbbbe799d77968fd88c6b2079b7af43a472ee4d1d336c4082c1069dae8c22ae",
+    "agents/reconciler/persona/reconciler.md": "6b6131480c5815f22fe1424a82752aba1d96c46071b91d030aa44ddaa0f6d711",
+    "agents/reconciler/skills/forward-check/SKILL.md": "367bf3de9e8b0f928dcc752f4c25e90c6bb2bcd3f8a0a08eb5186020509e8ac6",
+    "agents/verifier/manifest.json": "9fe49ceafc404b6075ef9aae094de4ea9c1d23942f365a0d8af9abd5f8119535",
+    "agents/verifier/persona/verifier.md": "2d18c889940ab5fc7ccf056007d4316d23f56858509deb97c6177b044e321055",
+    "agents/verifier/skills/reverse-check/SKILL.md": "9650f6e3278b84044f5abc2af7d52939892a18105f1a097f98b0921acce19f93",
+    "examples/book.csv": "12870addeb22ec0ef0c2ecf91d19ee5b68c1de82b1768f99b6c9c399e4d6d766",
+    "examples/count.csv": "feefad436b21b6c4edf6c1b2ef2001da3c19329a168413f816d20578b5d150a6",
+    "examples/moves.csv": "e56e62265bff776a56bae2d9eb8e2779ff7717be2d7a4bdc33cd8ffa3b7a2c64",
+    "manifest.json": "1a685cbc831baa48423880f65809fe541aebaa9c2185fe10db266e56de3f550d",
+    "README.md": "b50e8ea3ca26d0ec35b287646129e8a2485fed1c25552ad30d9072c885539711",
+    "scripts/stocktake.py": "065d76ff917b09484e30d372dbd4bdfb1f0cca615447bf3d0b40e8d615650a8d"
+  },
+  "archives": {
+    "wrapper": {
+      "path": "release/1.0.0/warehouse-stocktake-reconciliation-team-1.0.0-agent-group.zip",
+      "sha256": "985637576a6dfa084e1b1fd790d7ec2ea48f5026e84fda914e89211ca6d4e9da"
+    },
+    "native": {
+      "path": "test-packages/warehouse-stocktake-reconciliation-team-1.0.0-native.zip",
+      "sha256": "d151c13208799e268bef0312623a8c735c440253c3c2aac836342e4a278a19c0"
+    }
+  },
+  "source_review_sha256": "a4445eb038d37e79fc2fd1b51eb566f501b94f6aa68bb3165076275d6773a6a6",
+  "test_report_sha256": "760b5f3f166236a174bacc3a77c2dd40c0d57d30a818fa132591b8906212f7bb"
+}

@@ -1,0 +1,17 @@
+{
+  "type": "agent-group",
+  "name": "warehouse-stocktake-reconciliation-team",
+  "version": "1.0.0",
+  "display_name": "库存盘点差异复核专家团",
+  "description": "按出入库流水将账面库存推算至实盘时点，独立复算并列出复盘差异。",
+  "publisher": "Nguyen Trung Dung",
+  "category": "办公与效率",
+  "tags": [
+    "库存",
+    "盘点",
+    "差异复核"
+  ],
+  "candidate_id": "Not Applicable",
+  "task_id": "AH-20261120-warehouse-stocktake-reconciliation-team",
+  "asset_id": "repo:agent-group:warehouse-stocktake-reconciliation-team"
+}

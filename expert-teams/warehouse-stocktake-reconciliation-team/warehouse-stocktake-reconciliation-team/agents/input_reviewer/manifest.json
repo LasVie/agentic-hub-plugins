@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "input_reviewer",
+  "description": "核对源文件、商品库位键、单位、时间与流水编号。",
+  "display_name": {
+    "zh": "盘点输入检查员",
+    "en": "Input reviewer"
+  },
+  "display_description": {
+    "zh": "核对源文件、商品库位键、单位、时间与流水编号。",
+    "en": "Input reviewer"
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/input-check",
+      "mode": "all"
+    }
+  ]
+}

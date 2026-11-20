@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "leader",
+  "description": "确认材料与时点口径，分派实际任务并核对交接和交付。",
+  "display_name": {
+    "zh": "盘点复核负责人",
+    "en": "Stocktake lead"
+  },
+  "display_description": {
+    "zh": "确认材料与时点口径，分派实际任务并核对交接和交付。",
+    "en": "Stocktake lead"
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/delivery",
+      "mode": "all"
+    }
+  ]
+}

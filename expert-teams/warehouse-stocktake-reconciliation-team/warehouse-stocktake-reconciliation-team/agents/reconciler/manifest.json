@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "reconciler",
+  "description": "将账面数量推算至每条盘点记录的时点。",
+  "display_name": {
+    "zh": "库存正推员",
+    "en": "Inventory reconciler"
+  },
+  "display_description": {
+    "zh": "将账面数量推算至每条盘点记录的时点。",
+    "en": "Inventory reconciler"
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/forward-check",
+      "mode": "all"
+    }
+  ]
+}
