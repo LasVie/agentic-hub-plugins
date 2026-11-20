@@ -1,0 +1,16 @@
+{
+  "package_type": "agent_template",
+  "name": "leader",
+  "description": "确认尺寸与占量规则，委派任务，核对报告摘要后交付。",
+  "display_name": {
+    "zh": "下料复核主理人",
+    "en": "Cut List Review Leader"
+  },
+  "display_description": {
+    "zh": "确认尺寸与占量规则，委派任务，核对报告摘要后交付。",
+    "en": "Cut List Review Leader"
+  },
+  "persona": {
+    "dir": "persona"
+  }
+}

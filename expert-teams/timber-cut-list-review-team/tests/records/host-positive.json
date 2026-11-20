@@ -1,0 +1,84 @@
+{
+  "frontend_http": 200,
+  "native_sha256": "917a0db257030bdbea9c82e9debce9994fcefc6ff71625115df3dbc035f9c01e",
+  "payload": {
+    "README.md": "d13def06cdbb374ee267aec571e07eeb27ac0fbe5fb45910a8c2dfe7459fe83f",
+    "agents/leader/AGENT.md": "ad972fd39cc4e86b39039e15c432b6e723b01debb3d411e64a3774c6e5c54521",
+    "agents/leader/manifest.json": "58df81d7db948e7112a35356352c136248b61d631b831cc46f5ede9c994e00b7",
+    "agents/leader/persona/leader.md": "45cea58bb97654fdd61a3c04c0e5d657c697fa6b5047566a11625c4a7d3c6898",
+    "agents/planner/manifest.json": "64248416863dc084261c60db228ad4612ae2de9f150c5ff18e019b2d04427607",
+    "agents/planner/persona/planner.md": "61fc8638d027647ede82b3143a61f1826d8bdc8a55955986f329c1c47680d71f",
+    "agents/stock-analyst/manifest.json": "b927a612562a8f34b6c49a61e5139b362d869a935946fb45302d07d19587161b",
+    "agents/stock-analyst/persona/stock-analyst.md": "5188dfb5c8d117bc7205dd16510de52f50a8c047f6b9f2ca2579cead155ccf31",
+    "agents/verifier/manifest.json": "864c3f8a825d1c370aecdc73527e883c081313289264edceb7d48d9971eadd9d",
+    "agents/verifier/persona/verifier.md": "98779390952d137615b5a419598e62370649148cbc54f11c5c1e6c1ee96b5e26",
+    "manifest.json": "3d5c605fe03a4b11a8b2503c65c70fc32482e5843f6202b11149defc4690d70c",
+    "skills/cut-workflow/SKILL.md": "fe4770919122f9ab1b6870fd089692297000d210993a2adbcdb34bbf4d1e40bf",
+    "skills/cut-workflow/scripts/audit.py": "f19516601ae8063d2d1f95bf92c27869a1f510a9b1b64d67b5df3561032e9674",
+    "skills/cut-workflow/scripts/contract.py": "edc1b9d38a6ff046de8beca52cb2a674ad686048c1ca94802613984f4360ce03",
+    "skills/cut-workflow/scripts/cut_list.py": "1f99027d62b7c896347177c94566aa8bb3f333ad03c3facbe4cc564ecec33e5b",
+    "skills/cut-workflow/scripts/planner.py": "c2a4895748d678d5ff6f4132f76ddaedd19e873575006d93224042a5b1e22308",
+    "skills/cut-workflow/scripts/report.py": "493467abea1df876b1e051ac52513e1af196c73517f789c445f6f08a614e869b",
+    "来源与边界.md": "b70538050f2bcb25e17db23def075c4326ecdd204eea3517490ac0fc5d401475"
+  },
+  "group": "timber-cut-list-review-team",
+  "member_ids": [
+    "leader",
+    "stock-analyst",
+    "planner",
+    "verifier"
+  ],
+  "version": "1.0.0",
+  "installed_equal": true,
+  "model_calls": "loopback fixed responses only",
+  "boundary": "Real host and tool execution with fixed local responses; no semantic model or manual pass.",
+  "session_id": "web_1a1f2fb5db1_559b35d8b918",
+  "scenario": "positive",
+  "status": "verified",
+  "findings": [],
+  "role_execution": {
+    "leader": {
+      "requests": 5,
+      "tools": [
+        "bash",
+        "build_team",
+        "create_task",
+        "skill_tool"
+      ],
+      "real_command_exit": 0
+    },
+    "stock-analyst": {
+      "requests": 5,
+      "tools": [
+        "bash",
+        "claim_task",
+        "skill_tool"
+      ],
+      "real_command_exit": 0
+    },
+    "planner": {
+      "requests": 5,
+      "tools": [
+        "bash",
+        "claim_task",
+        "skill_tool"
+      ],
+      "real_command_exit": 0
+    },
+    "verifier": {
+      "requests": 5,
+      "tools": [
+        "bash",
+        "claim_task",
+        "skill_tool"
+      ],
+      "real_command_exit": 0
+    }
+  },
+  "actual_upstream_receipts_verified": true,
+  "exact_snapshots": true,
+  "artifact_hashes_verified": true,
+  "events": 192,
+  "human_testing_passed": false,
+  "semantic_acceptance": false
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "title": "定尺木条示例 · 逐件可行",
+  "kerf_mm": 3,
+  "stock": [
+    {
+      "id": "B1",
+      "material": "松木-20×40",
+      "length_mm": 2410,
+      "trim_start_mm": 5,
+      "trim_end_mm": 5
+    },
+    {
+      "id": "B2",
+      "material": "松木-20×40",
+      "length_mm": 2410,
+      "trim_start_mm": 5,
+      "trim_end_mm": 5
+    }
+  ],
+  "parts": [
+    {
+      "id": "Long",
+      "material": "松木-20×40",
+      "length_mm": 1200,
+      "quantity": 2
+    },
+    {
+      "id": "Short",
+      "material": "松木-20×40",
+      "length_mm": 1185,
+      "quantity": 2
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "package_type": "agent_template",
+  "name": "verifier",
+  "description": "从原始尺寸逐件复算分配、锯缝、余料和数量，检查不一致。",
+  "display_name": {
+    "zh": "独立用量复核员",
+    "en": "Independent Cut List Verifier"
+  },
+  "display_description": {
+    "zh": "从原始尺寸逐件复算分配、锯缝、余料和数量，检查不一致。",
+    "en": "Independent Cut List Verifier"
+  },
+  "persona": {
+    "dir": "persona"
+  }
+}

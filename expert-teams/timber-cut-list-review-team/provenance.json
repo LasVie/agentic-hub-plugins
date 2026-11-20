@@ -1,0 +1,46 @@
+{
+  "mode": "native",
+  "permission_status": "not-applicable-original-implementation",
+  "sources": [
+    {
+      "url": "https://pubsonline.informs.org/doi/10.1287/opre.9.6.849",
+      "version": "Operations Research 9(6), 1961",
+      "use": "Published cutting-stock concept only"
+    },
+    {
+      "url": "https://developers.google.com/optimization/pack/bin_packing",
+      "version": "Documentation reviewed 2026-11-19",
+      "use": "Capacity-constrained assignment background only"
+    },
+    {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/6507b115562bb0a305f1958ccc87355a-Abstract-Conference.html",
+      "version": "ICLR 2024",
+      "use": "Structured handoff concept only"
+    }
+  ],
+  "reused_paths": [
+    {
+      "source": "expert-teams/robot-route-review-team/tests/build_package.py",
+      "ref": "8c0c29b6a7a7fcf197946e49ca828888b0e1c05e",
+      "scope": "Test or packaging mechanism only"
+    },
+    {
+      "source": "expert-teams/robot-route-review-team/tests/host_integration.py",
+      "ref": "8c0c29b6a7a7fcf197946e49ca828888b0e1c05e",
+      "scope": "Test or packaging mechanism only"
+    }
+  ],
+  "bundled_third_party_files": [],
+  "runtime_dependencies": [
+    {
+      "name": "Python 3.10+ standard library (macOS/Linux)",
+      "bundled": false
+    },
+    {
+      "name": "WorkSwarm AgentGroup, existing local file and shell tools, user-authorized model",
+      "bundled": false
+    }
+  ],
+  "audit_file": "SOURCE_REVIEW.md",
+  "design_file": "NATIVE_DESIGN.md"
+}
