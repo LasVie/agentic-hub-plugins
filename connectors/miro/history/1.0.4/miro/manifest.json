@@ -1,0 +1,29 @@
+{
+  "version": "1.0.4",
+  "package_type": "mcp",
+  "id": "miro",
+  "name": "Miro 白板连接器",
+  "description": "读取授权的 Miro 白板，并在用户指定的白板中创建可编辑的图形或便签。",
+  "display_name": {
+    "zh": "Miro 白板连接器",
+    "en": "Miro"
+  },
+  "display_description": {
+    "zh": "读取授权的 Miro 白板，并在用户指定的白板中创建可编辑的图形或便签。",
+    "en": "Connect to Miro from WorkSwarm."
+  },
+  "integration": {
+    "type": "cli",
+    "file": "cli.json"
+  },
+  "credentials": {
+    "type": "cli-oauth"
+  },
+  "skills": [
+    {
+      "dir": "skills/miro-guide",
+      "mode": "all"
+    }
+  ],
+  "icon": "icon.png"
+}

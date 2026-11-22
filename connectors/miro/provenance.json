@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "mode": "ported",
+  "version": "1.1.0",
+  "owner": "Song Haoran",
+  "candidate_id": "CAND-CLD-003",
+  "task_id": "AH-20261117-miro-connector",
+  "naming": {
+    "original": "Miro",
+    "display_name": "Miro 白板连接器",
+    "slug": "miro"
+  },
+  "reuse_summary": "Team bounded Node OAuth framework; MIT mcp-remote provider redirect adapter. No Miro/Claude plugin code or prompts copied. Independent Miro operation guard.",
+  "upstream": [
+    {
+      "source": "https://github.com/punkpeye/mcp-remote",
+      "version": "0.16.6",
+      "commit": "e4dc3713b0d6a727cbeb21f38324d20a6692dc5f",
+      "permission_status": "verified",
+      "license": "MIT",
+      "copyright": "Copyright (c) 2025 Cloudflare, Inc.",
+      "copied_paths": [
+        "licenses/mcp-remote/LICENSE"
+      ],
+      "adapted_code": "NodeOAuthClientProvider redirect check adapter, original MIT header retained",
+      "module_sha256": "8e4e647f0b25dc52a28a6d1cbbb6727851ae0e5ae74a6f2ea23cb4acb7b47638",
+      "adapted_paths": [
+        "skills/miro-guide/scripts/miro-cli.cjs: NodeOAuthClientProvider redirectToAuthorization adapter"
+      ]
+    },
+    {
+      "source": "https://developers.miro.com/docs/miro-mcp-server-frequently-asked-questions",
+      "version": "Official hosted MCP, metadata checked 2026-11-23",
+      "copied_paths": [],
+      "use": "Public interfaces only; no provider implementation or prompt reuse"
+    },
+    {
+      "source": "https://files.readme.io/17d4a23-miro-logo-color-square.png",
+      "version": "official brand asset retrieved 2026-11-17",
+      "permission_status": "verified",
+      "copied_paths": [
+        "icon.png"
+      ],
+      "source_path": "miro-logo-color-square.png",
+      "sha256": "8d165ee50fdb031b656084b248333b56c82f292fc3ef7c63291218fdec2cdbdb",
+      "owner": "Miro",
+      "terms": "https://miro.com/legal/developer-terms-of-use/",
+      "use": "Section 2.3 allows marks to identify compatibility. The developer icon guide publishes this square color mark for compact displays. Only the unmodified service identifier is used.",
+      "modifications": "none",
+      "attribution": "THIRD_PARTY_NOTICES.md"
+    }
+  ],
+  "license_evidence": [
+    {
+      "path": "licenses/mcp-remote/LICENSE",
+      "sha256": "5514f48637fa1d8fed2256d12d322009a75962e6111370755fc5b20773db67ad"
+    }
+  ],
+  "historical_provenance": "history/1.0.4/provenance.json",
+  "team_base": "https://github.com/LasVie/agentic-hub-plugins/pull/117",
+  "team_reused_paths": [
+    "skills/miro-guide/scripts/miro-cli.cjs: finite process/runtime/OAuth scaffolding",
+    "skills/miro-guide/scripts/login-bridge.cjs: loopback bridge"
+  ]
+}

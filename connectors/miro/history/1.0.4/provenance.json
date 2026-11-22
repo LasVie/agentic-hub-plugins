@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "mode": "native",
+  "upstream": [
+    {
+      "source": "https://developers.miro.com/changelog/canvas-tools-replace-layout-tools",
+      "version": "official hosted MCP; Claude plugin 2.0.0 reviewed as reference",
+      "permission_status": "unknown",
+      "copied_paths": [],
+      "use": "Public functional documentation or installation metadata only."
+    },
+    {
+      "source": "https://files.readme.io/17d4a23-miro-logo-color-square.png",
+      "version": "official brand asset retrieved 2026-11-17",
+      "permission_status": "verified",
+      "copied_paths": [
+        "icon.png"
+      ],
+      "source_path": "miro-logo-color-square.png",
+      "sha256": "8d165ee50fdb031b656084b248333b56c82f292fc3ef7c63291218fdec2cdbdb",
+      "owner": "Miro",
+      "terms": "https://miro.com/legal/developer-terms-of-use/",
+      "use": "Section 2.3 allows marks to identify compatibility. The developer icon guide publishes this square color mark for compact displays. Only the unmodified service identifier is used.",
+      "modifications": "none",
+      "attribution": "THIRD_PARTY_NOTICES.md"
+    }
+  ]
+}

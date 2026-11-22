@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "type": "agent-mcp",
+  "name": "miro",
+  "display_name": "Miro 白板连接器",
+  "version": "1.0.4",
+  "owner": "Song Haoran",
+  "task_id": "AH-20261117-miro-connector",
+  "internal_asset_id": "repo:agent-mcp:miro",
+  "native_path": "miro",
+  "description": "读取授权的 Miro 白板，并在用户指定的白板中创建可编辑的图形或便签。"
+}

@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "asset_type": "agent-mcp",
+  "name": "miro",
+  "display_name": "Miro 白板连接器",
+  "version": "1.0.1",
+  "task_id": "AH-20261117-miro-connector",
+  "internal_asset_id": "repo:agent-mcp:miro",
+  "created_at_utc": "2026-11-17T03:06:46.096400+00:00",
+  "artifacts": [
+    {
+      "form": "native",
+      "path": "connectors/miro/test-packages/history/miro-1.0.1-native.zip",
+      "filename": "miro-1.0.1-native.zip",
+      "sha256": "4645272333e7d03710e7945febd0293c8b31152eb87102b959d3b4ef36191346",
+      "size_bytes": 21569
+    },
+    {
+      "form": "agent-mcp_wrapped",
+      "path": "connectors/miro/release/1.0.1/miro-1.0.1-agent-mcp.zip",
+      "filename": "miro-1.0.1-agent-mcp.zip",
+      "sha256": "0fdbf2721feb219401787c05216a6b3b3d82165e14c9cd91325b308e19272907",
+      "size_bytes": 8443
+    }
+  ],
+  "payload_sha256": {
+    "README.md": "d635aa79a75a533aadfff1381e1ce4685df08f3c2b027c4b5bd3c5ec980a4283",
+    "browser_gate.py": "d68aeffde8c8abc5092fb6a08e1659d20a660d8b550fad6503251cd607f3c0cf",
+    "cli.json": "7a8884aa53b1bbf0575ee6fb4221e522e23f84efe545eca09c3d9ccdf9fe6627",
+    "connector.py": "333079599d061ddac1c827fc28b18af54807dc21e0623f7bd4afaa1d2be55a0b",
+    "manifest.json": "47fbc58b23e02c95eb7361e5e41a56e37df96b1bc933540d98ff3a3b3d0b8804",
+    "skills/miro-guide/SKILL.md": "515c6d31c032abafdb7229627dcefea7ae156c7c972f8b0f6b12e8fa1c6392ed"
+  },
+  "review_files_sha256": {
+    "SOURCE_REVIEW.md": "1ed1bc714ca30c7ec2b0c2d70ea3b3b9f1c5eac7fbcf6a43bea837768a126c90",
+    "TEST_REPORT.md": "df8e143ab4c39eef9dde14d560e4a73247ce0b1de7492c1343dd38c94e43ece8",
+    "provenance.json": "5c38fdff1d0b85797e1272b095887e7285cba1b51f034c539aae0d8b3e870596"
+  },
+  "official_cli": {
+    "distribution": "openjiuwen-agentichub",
+    "version": "0.0.1",
+    "source": "https://github.com/openJiuwen-ai/skillhub",
+    "source_commit": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+    "commands": [
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/../gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "init",
+        "miro",
+        "--type",
+        "agent-mcp"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/../gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "validate",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-dxhyiahj/miro"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/../gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "pack",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-dxhyiahj/miro",
+        "--output",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-dxhyiahj/out"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/../gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/tools/asset_release.py",
+        "preflight",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/connectors/miro/miro"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/../gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/tools/asset_release.py",
+        "preflight",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-dxhyiahj/native.zip"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/../gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/tools/asset_release.py",
+        "preflight",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-dxhyiahj/out/miro-1.0.1.zip"
+      ]
+    ]
+  },
+  "checks": [
+    {
+      "step": "official_init",
+      "output": "Plugin initialized at: /private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-dxhyiahj/miro"
+    },
+    {
+      "step": "official_validate",
+      "output": "Plugin validation passed."
+    },
+    {
+      "step": "official_pack",
+      "output": "Packed: /private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-dxhyiahj/out/miro-1.0.1.zip"
+    },
+    {
+      "step": "javascript_preflight_native_source",
+      "output": "{\n  \"path\": \"/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/connectors/miro/miro\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_native_zip",
+      "output": "{\n  \"path\": \"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-dxhyiahj/native.zip\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_wrapped_zip",
+      "output": "{\n  \"path\": \"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-dxhyiahj/out/miro-1.0.1.zip\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    }
+  ],
+  "verification_limits": "Packaging/JavaScript preflight and byte-equivalence only; not authenticated provider access or user manual-test acceptance."
+}
