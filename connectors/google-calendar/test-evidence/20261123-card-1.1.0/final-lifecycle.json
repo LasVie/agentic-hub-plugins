@@ -1,0 +1,11 @@
+{
+  "version": "1.1.0",
+  "real_google_cancel_test": true,
+  "new_token_file_absent": true,
+  "callback_port_closed": true,
+  "stock_modal_auto_dismissed": false,
+  "manual_stock_cancel_restored_connect_card": true,
+  "host_skill_copy_removed_after_disconnect": true,
+  "live_node_or_gws_descendants": 0,
+  "test_event_retained": "552d2f6e1483d78ad5fa9964cdf10f08"
+}

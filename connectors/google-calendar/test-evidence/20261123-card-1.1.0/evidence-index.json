@@ -1,0 +1,81 @@
+{
+  "version": "1.1.0",
+  "task_id": "AH-20261116-google-calendar",
+  "owner": "Song Haoran",
+  "native_sha256": "1951aa274ddc89da2eab20b62d9d3c7c39060c75d55cb13598a7fe2414fb93ba",
+  "hub_sha256": "53ba2d3dc8cda301213c7d699a9ebe04e6ad1a536d6bde04febb18cb2d7f445a",
+  "user_completion_confirmed": false,
+  "actual_stock_host": "0.2.8",
+  "original_screenshots_unmodified": true,
+  "final_connection": "disconnected; test event retained",
+  "files": {
+    "clean-bootstrap.json": {
+      "sha256": "e216231fa8a835a15e29eee9856384b401730ffd95c98e18803ca37209c54f36",
+      "size": 367
+    },
+    "credential-negative-probes.json": {
+      "sha256": "ddb8792a8f935ffdf0da83f51d936fd20a694eaf6262dcc7fe5f2c0f0961b7f1",
+      "size": 751
+    },
+    "final-chat-business.json": {
+      "sha256": "81db3ae37da65b308a9a82cc4da1212c1ccf5077473da0a213df0837648906df",
+      "size": 3911
+    },
+    "final-chat-summary-dom.txt": {
+      "sha256": "baa7c4cd1e4970ba30b94904b98451a20473aaab187cd788c2c8e1d489ba0615",
+      "size": 5088
+    },
+    "final-chat-trace-dom.txt": {
+      "sha256": "f4b2bd51a0234b1d9edef596abd30b68855968ae913355419ca9d84a736971f6",
+      "size": 19677
+    },
+    "final-denial-card-dom.txt": {
+      "sha256": "01d67086488784f1723a0bfef58ed823e6bb3f816c1ae53c12920d81482d0c21",
+      "size": 771
+    },
+    "final-lifecycle.json": {
+      "sha256": "044a200aa9d28550c13f64def42ee829d6181ddad66c527260a2f8d43c3109d0",
+      "size": 367
+    },
+    "installed-final-verification.json": {
+      "sha256": "afb0e1191cb697b3c1207fa0872674a0155c56a8267a6e2d6a706c216fc596f2",
+      "size": 311
+    },
+    "oauth-negative-probes.json": {
+      "sha256": "711f7e68b29af56cbc1455b6b7dbdf33ef77ee609b62016324c60617ffd5ac3d",
+      "size": 352
+    },
+    "screenshots/03-final-oauth-complete.jpg": {
+      "sha256": "82a292e7603d5060572ef3fd1e88b85a00ba9226a486ce66edb2e20fd8c77f94",
+      "size": 12222
+    },
+    "screenshots/04-final-stock-card-connected.jpg": {
+      "sha256": "e905cf3a7b2301b958c44308cd583abaeb6eae50ea5e1aabe2af903a11daf340",
+      "size": 23782
+    },
+    "screenshots/05-final-chat-summary.jpg": {
+      "sha256": "00fd8ae2c7bf3bd818275ee3d070e586d499257d107cc255e191292ebafe4334",
+      "size": 85992
+    },
+    "screenshots/08-real-google-denied.jpg": {
+      "sha256": "ff3df4819e47d0ec9d3c5be4d3ae9053b8d5bacd5703f78ae4f52d679346cd18",
+      "size": 9682
+    },
+    "screenshots/09-host-waiting-after-denial.jpg": {
+      "sha256": "d4907db41f559f1d11723545b0133907e52cf2a75a6da6c61ea05e34bef6f19f",
+      "size": 35163
+    },
+    "screenshots/10-final-disconnected-card.jpg": {
+      "sha256": "1b2cf02834731430f3bb84ab01dea2524626ccd2958c0e68cc5b81163bf98d70",
+      "size": 23462
+    },
+    "v110-mcp-disconnect.json": {
+      "sha256": "71883cbd8445669763e0289007966ad412ff1a9650b43c67c611dead2ce1d0b4",
+      "size": 230
+    },
+    "v110-mcp-show.json": {
+      "sha256": "6da1aca256431315a7e17a61f215eb644b9f85b84e8bad14a396388af6f8b02a",
+      "size": 229
+    }
+  }
+}
