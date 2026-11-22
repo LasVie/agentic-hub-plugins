@@ -93,5 +93,5 @@
   "independent_get_matched": true,
   "test_event_retained": true,
   "no_existing_events_updated_or_deleted": true,
-  "user_completion_confirmation": false
+  "user_completion_confirmation": true
 }

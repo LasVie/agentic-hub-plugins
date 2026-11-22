@@ -1,6 +1,6 @@
 # Google 日历连接器 1.1.0 实测记录
 
-2026-11-23，Task **AH-20261116-google-calendar**，Song Haoran。原 1.0.0 的 PR #98、测试确认、Completed/Accepted 和 Hub 拒审记录均保留；本次候选仍在本地 Build，尚未取得 1.1.0 用户完成确认，也未提交 Calendar 新 PR。
+2026-11-23，Task **AH-20261116-google-calendar**，Song Haoran。原 1.0.0 的 PR #98、测试确认、Completed/Accepted 和 Hub 拒审记录均保留；Song Haoran 已于 2026-11-23 明确确认本次 1.1.0 测试通过并接受手动取消的宿主限制，授权附原图提交 PR；新版本的 GitHub 审阅、正式 Hub 上架与历史验收分开记录。
 
 ## 结果
 
@@ -31,4 +31,8 @@ Windows、Linux、组织管理员策略、真正多页数据、自然过期、�
 - 原生 ZIP `test-packages/google-calendar-1.1.0-native.zip`：`1951aa274ddc89da2eab20b62d9d3c7c39060c75d55cb13598a7fe2414fb93ba`。
 - Hub ZIP `release/1.1.0/google-calendar-1.1.0-agent-mcp.zip`：`53ba2d3dc8cda301213c7d699a9ebe04e6ad1a536d6bde04febb18cb2d7f445a`。
 - 原图与真实调用记录：`test-evidence/20261123-card-1.1.0/`。截图未经裁剪或重新压缩；原生长图导出未产生可取得的下载，交付证据使用实际界面原图，不伪造导出文件。没有 Asana 令牌页、OAuth code/token/secret 或真实业务内容进入证据。
-- 用户 1.1.0 测试完成确认待收集。当前确认仅覆盖 Asana 1.1.0，不移用历史 Calendar 1.0.0 的确认。
+- 1.1.0 用户完成确认及实际原话保存在 `user-test-confirmation.json`；没有移用历史 1.0.0 或 Asana 的确认。
+
+## 当前包确认
+
+User test confirmation: Confirmed Google Calendar 1.1.0 tests passed and accepted the requirement to manually click Cancel connection after cancelling Google consent; requested PR submission with actual screenshots, then package-only Jira repair tested in local WorkSwarm 0.2.8. Confirmed by Song Haoran; date 2026-11-23 (Asia/Shanghai; exact message time not supplied); Task ID AH-20261116-google-calendar; version 1.1.0; native ZIP SHA256 1951aa274ddc89da2eab20b62d9d3c7c39060c75d55cb13598a7fe2414fb93ba; Hub ZIP SHA256 53ba2d3dc8cda301213c7d699a9ebe04e6ad1a536d6bde04febb18cb2d7f445a; known blocking issues none within accepted scope; documented host Cancel limitation explicitly accepted; evidence/source current conversation.

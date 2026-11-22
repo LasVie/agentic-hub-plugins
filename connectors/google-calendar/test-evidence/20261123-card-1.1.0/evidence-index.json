@@ -4,7 +4,7 @@
   "owner": "Song Haoran",
   "native_sha256": "1951aa274ddc89da2eab20b62d9d3c7c39060c75d55cb13598a7fe2414fb93ba",
   "hub_sha256": "53ba2d3dc8cda301213c7d699a9ebe04e6ad1a536d6bde04febb18cb2d7f445a",
-  "user_completion_confirmed": false,
+  "user_completion_confirmed": true,
   "actual_stock_host": "0.2.8",
   "original_screenshots_unmodified": true,
   "final_connection": "disconnected; test event retained",
@@ -18,8 +18,8 @@
       "size": 751
     },
     "final-chat-business.json": {
-      "sha256": "81db3ae37da65b308a9a82cc4da1212c1ccf5077473da0a213df0837648906df",
-      "size": 3911
+      "sha256": "0184f4099219db40c8f37d92e01cb93dfb9f067e270fe7fab6c589963f483fac",
+      "size": 3910
     },
     "final-chat-summary-dom.txt": {
       "sha256": "baa7c4cd1e4970ba30b94904b98451a20473aaab187cd788c2c8e1d489ba0615",
@@ -69,6 +69,14 @@
       "sha256": "1b2cf02834731430f3bb84ab01dea2524626ccd2958c0e68cc5b81163bf98d70",
       "size": 23462
     },
+    "screenshots/12-confirmed-disconnected-detail.jpg": {
+      "sha256": "4aa17781e0f78d524bd2b3e0d5379397419709ce165031a2e9a6bc3617cb0255",
+      "size": 31955
+    },
+    "user-test-confirmation.json": {
+      "sha256": "174ac21ea410c5cf3334908cc5c1d9fe1c07b83e000508a642281d2b541d51cc",
+      "size": 1421
+    },
     "v110-mcp-disconnect.json": {
       "sha256": "71883cbd8445669763e0289007966ad412ff1a9650b43c67c611dead2ce1d0b4",
       "size": 230
@@ -77,5 +85,6 @@
       "sha256": "6da1aca256431315a7e17a61f215eb644b9f85b84e8bad14a396388af6f8b02a",
       "size": 229
     }
-  }
+  },
+  "github_pr_submission_authorized": true
 }

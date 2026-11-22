@@ -35,4 +35,4 @@ google-auth-library 11.3.4 来自 Google 官方 googleapis/google-cloud-node 的
 
 ## 最终实物审查
 
-最终原生 ZIP SHA256 1951aa274ddc89da2eab20b62d9d3c7c39060c75d55cb13598a7fe2414fb93ba；Hub ZIP SHA256 53ba2d3dc8cda301213c7d699a9ebe04e6ad1a536d6bde04febb18cb2d7f445a。12 个载荷文件与源码/安装目录逐项相同，许可证路径及哈希见 provenance.json 与 artifact.json。无 Python、依赖源码/二进制、图标、凭据或测试资料进入最终载荷。实际卡片授权、中文查询/创建/独立回读已跑通；拒绝授权的宿主弹窗需手动取消，详见 TEST_REPORT.md。当前无新权限扩张、源许可阻塞，正式 Hub 审核仍独立待验；待用户确认当前候选后才提交 PR。
+最终原生 ZIP SHA256 1951aa274ddc89da2eab20b62d9d3c7c39060c75d55cb13598a7fe2414fb93ba；Hub ZIP SHA256 53ba2d3dc8cda301213c7d699a9ebe04e6ad1a536d6bde04febb18cb2d7f445a。12 个载荷文件与源码/安装目录逐项相同，许可证路径及哈希见 provenance.json 与 artifact.json。无 Python、依赖源码/二进制、图标、凭据或测试资料进入最终载荷。实际卡片授权、中文查询/创建/独立回读已跑通；拒绝授权的宿主弹窗需手动取消，详见 TEST_REPORT.md。当前无新权限扩张、源许可阻塞，正式 Hub 审核仍独立待验；用户已于 2026-11-23 确认当前精确包并接受宿主手动取消限制，现进入 PR 提交；运行文件和 ZIP 字节不变。

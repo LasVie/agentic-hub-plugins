@@ -23,13 +23,14 @@
     "skills/google-calendar-guide/scripts/scope.cjs": "48d59929146c583bf3f9a6d5cfaeb9dd671fa56942a7d29922fbf113093365bf",
     "skills/google-calendar-guide/scripts/storage.cjs": "11217b076fa9aaec509e6d587af6e42a49685c22550a6beb871a2e139efde372"
   },
-  "stage": "Build completed locally; awaiting explicit Calendar 1.1.0 user test completion",
+  "stage": "User-confirmed 1.1.0; preparing PR with current original screenshots",
   "review_files_sha256": {
-    "SOURCE_REVIEW.md": "1870eb776b607ef264a45857aff20d579fafc664de518cea7f15f392a1400fb4",
-    "TEST_REPORT.md": "0c7f68ba8724c361ce9579bef15fff3c74aedb583c557626c6e9a128fa11bf1f",
+    "SOURCE_REVIEW.md": "7bc898fc0d3bd79bd8cb217293c660285e8658716399d8ae71b2e118e5d8844b",
+    "TEST_REPORT.md": "5067e4714dc06ef5790bad035b5ad5522202e42ebbd98a9b93522351937bd7db",
     "provenance.json": "d4274715ae45d4096b830181018319da2e69f096c5f10cc334fae57b9f02a425",
     "NATIVE_DESIGN.md": "01601c191ab41ff34860cf2d019d28f33050e6d8818ccd11c5a39fa5a6a826e0"
   },
   "test_evidence": "test-evidence/20261123-card-1.1.0/evidence-index.json",
-  "verification_limits": "macOS stock 0.2.8 local catalog only; real Google denial needs manual Cancel connection; other OS/server/production Hub/natural expiry/multipage remain unverified"
+  "verification_limits": "macOS stock 0.2.8 local catalog only; real Google denial needs manual Cancel connection; other OS/server/production Hub/natural expiry/multipage remain unverified",
+  "user_confirmation": "test-evidence/20261123-card-1.1.0/user-test-confirmation.json"
 }
