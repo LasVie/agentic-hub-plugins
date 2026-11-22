@@ -1,13 +1,21 @@
 {
   "schema_version": 1,
-  "mode": "native",
+  "mode": "ported",
+  "version": "1.1.0",
+  "owner": "Song Haoran",
+  "task_id": "AH-20261117-jira-cloud-connector",
+  "naming": {
+    "original": "Jira Cloud",
+    "display_name": "Jira Cloud 连接器",
+    "slug": "jira-cloud"
+  },
+  "reuse_summary": "Team-owned finite Node bridge plus MIT redirect adapter, fixed externally installed MCP client; no upstream server/prompt code copied.",
   "upstream": [
     {
-      "source": "https://github.com/atlassian/homebrew-acli/blob/4e8f74c483ab002f2a6b0f17f9babbd62a9ffa95/Formula/acli.rb",
-      "version": "1.3.40-stable",
-      "permission_status": "unknown",
+      "source": "https://atlassian.github.io/atlassian-mcp-server/",
+      "version": "official hosted v2 endpoint inspected 2026-11-23",
       "copied_paths": [],
-      "use": "Public functional documentation or installation metadata only."
+      "use": "Public protocol/tool/scope specification only"
     },
     {
       "source": "https://atlassian.design/assets/a92416454bd0/logos/jira_app.zip",
@@ -23,6 +31,35 @@
       "use": "Atlassian publishes this product mark for identification and documents use outside its apps. The unmodified mark identifies the Jira service alongside the connector name and publisher.",
       "modifications": "none",
       "attribution": "THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "source": "https://github.com/punkpeye/mcp-remote",
+      "version": "0.16.6",
+      "commit": "e4dc3713b0d6a727cbeb21f38324d20a6692dc5f",
+      "permission_status": "verified",
+      "license": "MIT",
+      "copyright": "Copyright (c) 2025 Cloudflare, Inc.",
+      "copied_paths": [
+        "licenses/mcp-remote/LICENSE"
+      ],
+      "adapted_code": "NodeOAuthClientProvider.redirectToAuthorization checks adapted in jira-cli.cjs; IPC handoff replaces browser spawning; original standard client unmodified",
+      "module_sha256": "8e4e647f0b25dc52a28a6d1cbbb6727851ae0e5ae74a6f2ea23cb4acb7b47638"
     }
-  ]
+  ],
+  "license_evidence": [
+    {
+      "path": "licenses/mcp-remote/LICENSE",
+      "sha256": "5514f48637fa1d8fed2256d12d322009a75962e6111370755fc5b20773db67ad"
+    }
+  ],
+  "historical_provenance": "history/1.0.4/provenance.json",
+  "oauth_scopes": [
+    "read:jira:agent-interface",
+    "search:jira:agent-interface",
+    "write:jira:agent-interface",
+    "read:me",
+    "read:account",
+    "offline_access"
+  ],
+  "oauth_compatibility_reference": "https://jira.atlassian.com/browse/ID-9242"
 }

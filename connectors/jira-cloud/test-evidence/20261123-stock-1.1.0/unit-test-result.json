@@ -1,0 +1,9 @@
+{
+  "runner": "Bundled Node.js 22.12.0 node --test",
+  "path": "tests/test_jira_node.cjs",
+  "tests": 11,
+  "passed": 11,
+  "failed": 0,
+  "run_after_last_runtime_source_change": true,
+  "test_source_sha256": "c9d6737e8ec3d9f601dbebc6dd659b3227a05bf58eaab6a3c27a2158cedbc14d"
+}

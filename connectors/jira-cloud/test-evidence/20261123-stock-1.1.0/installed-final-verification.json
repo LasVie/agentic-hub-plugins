@@ -1,0 +1,8 @@
+{
+  "installed_files": 10,
+  "matches_reviewed_source": true,
+  "wrapped_sha256": "fa99ccbddaaf41077c1fac3455b5726b19e3dcd8d3eaa6dc28ec4f108d1fad9f",
+  "native_sha256": "d6c5a3bfa636f2d943dd12b8b17404a3687157d5eb8ef89bb55ae6d3297cf1fd",
+  "stock_workswarm": "0.2.8",
+  "local_catalog_fixture": true
+}
