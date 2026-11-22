@@ -1,0 +1,73 @@
+{
+  "version": "1.2.1",
+  "remote_grant_revoked_then_restored": true,
+  "reauthorization_from_card": true,
+  "reset_via": "stock mcp.disconnect RPC; no uninstall",
+  "new_writes": 0,
+  "passed": true,
+  "probes": [
+    {
+      "action": "status",
+      "exit_code": 0,
+      "elapsed_seconds": 1.8,
+      "response": {
+        "ok": true,
+        "connected": true,
+        "version": "1.2.1",
+        "message": "Linear 授权有效，已核对可用工具。"
+      }
+    },
+    {
+      "action": "call",
+      "exit_code": 0,
+      "elapsed_seconds": 2.35,
+      "response": {
+        "ok": true,
+        "tool": "get_issue",
+        "result": {
+          "id": "OPE-8",
+          "uuid": "eb544132-0efb-43cd-9bc8-0ff839fbb59b",
+          "title": "WorkSwarm Linear CLI 1.2.1 回归验收 20261122",
+          "description": "只用于验证 WorkSwarm 0.2.8 的短时 Node CLI、中文写入和独立回读，无真实业务数据。",
+          "priority": {
+            "value": 0,
+            "name": "No priority"
+          },
+          "url": "https://linear.app/openjiuwen/issue/OPE-8/workswarm-linear-cli-121-回归验收-20261122",
+          "gitBranchName": "openjiuwenofficial/ope-8-workswarm-linear-cli-121-回归验收",
+          "createdAt": "2026-11-22T15:12:02.129Z",
+          "updatedAt": "2026-11-22T15:12:02.129Z",
+          "archivedAt": null,
+          "completedAt": null,
+          "startedAt": null,
+          "canceledAt": null,
+          "dueDate": null,
+          "slaStartedAt": null,
+          "slaMediumRiskAt": null,
+          "slaHighRiskAt": null,
+          "slaBreachesAt": null,
+          "status": "Backlog",
+          "statusType": "backlog",
+          "labels": [],
+          "attachments": [],
+          "documents": [],
+          "stateHistory": [
+            {
+              "state": {
+                "id": "67025ca4-bd86-4b4a-9ec6-cb5c01614912",
+                "name": "Backlog",
+                "type": "backlog"
+              },
+              "startedAt": "2026-11-22T15:12:02.129Z",
+              "endedAt": null
+            }
+          ],
+          "createdBy": "openJiuwen",
+          "createdById": "745bf970-e87a-4015-8645-8cc1ed91f5cf",
+          "team": "OpenJiuwen",
+          "teamId": "31034d04-8d50-4047-a13c-7dbc74c99bf8"
+        }
+      }
+    }
+  ]
+}

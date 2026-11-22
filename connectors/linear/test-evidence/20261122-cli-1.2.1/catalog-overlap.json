@@ -1,0 +1,43 @@
+{
+  "catalog_complete": true,
+  "catalog_items": 864,
+  "mcp_count": 54,
+  "linear_input": "Authorized Linear workspace/team/Issue identifiers and text",
+  "linear_actions": [
+    "team discovery",
+    "Issue search and read",
+    "create Issue",
+    "append Issue comment",
+    "independent readback"
+  ],
+  "linear_outputs": "Linear team/Issue/comment objects and identifiers",
+  "direct_linear_asset_found": false,
+  "related_assets": [
+    {
+      "asset_id": "74b6e4aae08d4756b441bce1efa8c6e9",
+      "name": "todoist",
+      "short_desc": "读写 Todoist 的任务、项目、标签与评论：批量建任务、按条件筛未完成项、改期改优先级、拆子任务。",
+      "detail_desc": ""
+    },
+    {
+      "asset_id": "4ee266adf63a45ffaa20286f30fd5cf0",
+      "name": "sentry",
+      "short_desc": "查 Sentry 里的项目、issue 与事件：按环境和时间筛报错、看堆栈与影响用户数、定位最近一次发布引入的问题。",
+      "detail_desc": ""
+    },
+    {
+      "asset_id": "6a111723255a41ecb803d6a490b44caa",
+      "name": "tapd",
+      "short_desc": "接入腾讯 TAPD 敏捷研发平台，用自然语言查询与维护需求、任务、缺陷、迭代、发布和评论，也能直接读 TAPD 链接定位条目。",
+      "detail_desc": ""
+    },
+    {
+      "asset_id": "3a7c8d57e02f420c97992c6f6572c939",
+      "name": "github",
+      "short_desc": "在 GitHub 上克隆、推送代码，查看和管理仓库与 Pull Request，用自然语言完成代码协作。",
+      "detail_desc": ""
+    }
+  ],
+  "comparison": "Related assets expose task or issue actions for Todoist, TAPD, GitHub or Sentry. Their advertised service accounts, input objects and output IDs differ from Linear. No public catalog description identifies a complete Linear replacement. Detailed implementation/runtime claims have not been inferred from empty detail_desc.",
+  "decision": "Continue the existing Linear repair; no complete duplicate established."
+}

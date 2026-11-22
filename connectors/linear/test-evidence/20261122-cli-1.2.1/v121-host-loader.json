@@ -1,0 +1,12 @@
+{
+  "frozen": true,
+  "actual_executable": "/Applications/WorkSwarm.app/Contents/Resources/backend/workswarm",
+  "version": "1.2.1",
+  "integration_type": "cli",
+  "server_config_absent": true,
+  "credentials_type": "cli-oauth",
+  "skill_count": 1,
+  "cli_min_version": "1.2.1",
+  "auth_steps": 1,
+  "ok": true
+}

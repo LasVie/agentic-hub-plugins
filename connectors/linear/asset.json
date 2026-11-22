@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "type": "agent-mcp",
+  "name": "linear",
+  "display_name": "Linear 连接器",
+  "version": "1.2.1",
+  "owner": "Song Haoran",
+  "task_id": "AH-20261117-linear-connector",
+  "internal_asset_id": "repo:agent-mcp:linear",
+  "native_path": "linear",
+  "description": "在授权的 Linear 工作区中查询、读取、创建 Issue 与添加评论。"
+}

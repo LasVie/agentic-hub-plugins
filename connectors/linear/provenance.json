@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "mode": "native",
+  "upstream": [
+    {
+      "source": "https://linear.app/docs/mcp",
+      "version": "official hosted MCP",
+      "permission_status": "unknown",
+      "copied_paths": [],
+      "use": "Public functional documentation or installation metadata only."
+    },
+    {
+      "source": "https://static.linear.app/design-assets/Linear-Brand-Assets.zip?v=3",
+      "version": "official brand asset retrieved 2026-11-17",
+      "permission_status": "verified",
+      "copied_paths": [
+        "icon.png"
+      ],
+      "source_path": "logo-dark.png",
+      "sha256": "1fb31df139bb786a3c5662bc53b3f82bd6804629fd7ea6002ec603bb6eafb113",
+      "owner": "Linear",
+      "terms": "https://linear.app/brand",
+      "use": "The published Linear guidelines provide this logo for compact references to Linear. The mark is shown unmodified to identify the connected service, with no affiliation or endorsement claim.",
+      "modifications": "none",
+      "attribution": "THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "source": "https://github.com/punkpeye/mcp-remote",
+      "version": "0.16.6",
+      "commit": "e4dc3713b0d6a727cbeb21f38324d20a6692dc5f",
+      "permission_status": "verified",
+      "license": "MIT",
+      "copied_paths": [
+        "licenses/mcp-remote/LICENSE"
+      ],
+      "use": "Full unmodified license retained. Runtime implementation installed from pinned npm release; fixed export-module SHA-256 checked. Independently authored finite CLI imports OAuth/MCP client APIs and enforces the existing scope."
+    }
+  ],
+  "modifications_summary": "Independently authored 1.2.1 finite Node CLI and Chinese skill, using pinned MIT runtime exports for OAuth/MCP. Scope unchanged; no WorkSwarm changes or credential-file parsing."
+}

@@ -1,0 +1,217 @@
+{
+  "version": "1.2.1",
+  "task_id": "AH-20261117-linear-connector",
+  "owner": "Song Haoran",
+  "original_screenshots_unmodified": true,
+  "public_release_authorized": true,
+  "current_version_user_acceptance": true,
+  "installation_path": "stock installer with local catalog fixture; not production Hub",
+  "gui_uninstall_reinstall_reauthorization_verified": true,
+  "known_limit": "Remote revocation does not immediately refresh host card; user-initiated GUI uninstall/reinstall is verified, not automatic in-place reconnect.",
+  "excluded": "Original Safari captures with unrelated tabs, security settings, tracker screenshots and all OAuth credential files.",
+  "files": {
+    "09-read-trace-dom.txt": {
+      "sha256": "851401aeeb3b4b69da5b2316471f45cd367f9cd70dc29cf9f489e75dd0fa2c67",
+      "size_bytes": 33961
+    },
+    "10-write-trace-dom.txt": {
+      "sha256": "fb062a675a6b422e3e33133b86d54ffc8499bfd93e1b238f1d3afc7e80d56201",
+      "size_bytes": 39042
+    },
+    "12-revoked-auth-trace-dom.txt": {
+      "sha256": "9fff1c9e71bf9ffcdeee762f1e7cde9a2ace2a73fa4b94b6ab15f644834ca646",
+      "size_bytes": 11867
+    },
+    "21-gui-recovery-summary-dom.txt": {
+      "sha256": "f7995a76396481987e8a5f0d5382c92bb3be8f325fc129173d2a7d22b93682f9",
+      "size_bytes": 2526
+    },
+    "21-gui-recovery-trace-dom.txt": {
+      "sha256": "232a8b7d890d89dc364e90e23a078f9bc38ccdd453507662f9a6219d4fb36a09",
+      "size_bytes": 21662
+    },
+    "actual-chat-cli-outputs.json": {
+      "sha256": "f02319ef07503f958a2f90318ef4ad12d66295e56655fdac800792db5403e54e",
+      "size_bytes": 23887
+    },
+    "catalog-overlap.json": {
+      "sha256": "5ed1cec5862ea79dbc5e7cf3a5f95521ddad6e1d1d328d9df78325bf09a9a205",
+      "size_bytes": 1991
+    },
+    "host-lifecycle-analysis.md": {
+      "sha256": "c7986acfe0aff2c21ac74118915e94b2efa793210bbc9d8a5668feb61e9f2934",
+      "size_bytes": 2630
+    },
+    "screenshots/01-fresh-install.jpg": {
+      "sha256": "a983c6ba4dc36a17248df24f2ad109db3fd9f227776a2be4fd4755808c27de42",
+      "size_bytes": 22125
+    },
+    "screenshots/04-connected-before-chat.jpg": {
+      "sha256": "d2984ba8c4479bd1c3ae2aaf546b93bd3816a47ca55e7dc1ad45caa0c5cc2e64",
+      "size_bytes": 22979
+    },
+    "screenshots/05-disconnected-before-chat.jpg": {
+      "sha256": "983479da0b3d0fca33c8ca750a44c47a94ac5f584f1241ccb7e9d3ea95955b16",
+      "size_bytes": 22637
+    },
+    "screenshots/08-reconnected.jpg": {
+      "sha256": "d2984ba8c4479bd1c3ae2aaf546b93bd3816a47ca55e7dc1ad45caa0c5cc2e64",
+      "size_bytes": 22979
+    },
+    "screenshots/09-read-summary.jpg": {
+      "sha256": "f537986e957760d629239cf48e84cf519abbb9ab8e48a681107c5db68d31469d",
+      "size_bytes": 77980
+    },
+    "screenshots/10-write-summary.jpg": {
+      "sha256": "69765dd2ccfacea252da068c58432dc8bdabad26917f54bb18333c1cc286134e",
+      "size_bytes": 123024
+    },
+    "screenshots/11-independent-comment-readback-trace.jpg": {
+      "sha256": "9308ebfa8897eb65677bc095a5ab70e96d055c0bcd9a280288c38d953f6ecfe3",
+      "size_bytes": 99716
+    },
+    "screenshots/12-revoked-auth-chat.jpg": {
+      "sha256": "48c96da4da80094c1cde8158d5e85e152dd275740ae0bcf3022f9d9113461d2f",
+      "size_bytes": 109728
+    },
+    "screenshots/13-clean-reauthorization.jpg": {
+      "sha256": "c799ab2a36645ce655055f4d0aec355a91c0839533667ad5d07454e6f5f9c3c4",
+      "size_bytes": 330962
+    },
+    "screenshots/14-restored-after-remote-revoke.jpg": {
+      "sha256": "d2984ba8c4479bd1c3ae2aaf546b93bd3816a47ca55e7dc1ad45caa0c5cc2e64",
+      "size_bytes": 22979
+    },
+    "screenshots/16-gui-uninstall-confirmation.jpg": {
+      "sha256": "ef2a5a112a2a15d88083d4e39dfdd034e052c75bbe854b76f7dbe51a9b021cf4",
+      "size_bytes": 32933
+    },
+    "screenshots/17-gui-uninstalled.jpg": {
+      "sha256": "e87773f612f8e7fbc225dc060265d78f1c8a661ce7ff751193b9c3a4b830a275",
+      "size_bytes": 20212
+    },
+    "screenshots/18-gui-reinstall-available.jpg": {
+      "sha256": "a3e04bba509c6ad39e80a3948c6b02726aa2e2e11d3fa4baa8821f3c11f79694",
+      "size_bytes": 22126
+    },
+    "screenshots/19-gui-reinstall-oauth.jpg": {
+      "sha256": "775bb22f1230b30cddd32c29ea33f1a113b2992b92ffce51f8a0f2b39e2b973c",
+      "size_bytes": 335578
+    },
+    "screenshots/20-gui-reinstalled-connected.jpg": {
+      "sha256": "d2984ba8c4479bd1c3ae2aaf546b93bd3816a47ca55e7dc1ad45caa0c5cc2e64",
+      "size_bytes": 22979
+    },
+    "screenshots/21-gui-recovery-chat-summary.jpg": {
+      "sha256": "867ccb6c96eca2888418c40481d834b25358a7b430a8ff8dc99423ec2b7aa636",
+      "size_bytes": 74624
+    },
+    "screenshots/22-gui-recovery-comment-trace.jpg": {
+      "sha256": "5dfb377e72f4d3c196228eeb7e0290a0069b8e6309181d5d688bae532c50410c",
+      "size_bytes": 92372
+    },
+    "v121-after-revoke-mcp-disconnect.json": {
+      "sha256": "91e99d0077f0a92079e5871f0f6bff281b3bfc18bb04839413ba3533ba5619a4",
+      "size_bytes": 208
+    },
+    "v121-auth-timeout-result.json": {
+      "sha256": "9c52d4df9a69a9504cd37022076b9ba33c5430c8adaa86345a81e82302629f5e",
+      "size_bytes": 599
+    },
+    "v121-auth-timeout-start.json": {
+      "sha256": "f1970653e31ca12a949307598cdf7d6c1fbb14d6e52fd50da6cb25213ba50d81",
+      "size_bytes": 203
+    },
+    "v121-before-chat-mcp-disconnect.json": {
+      "sha256": "91e99d0077f0a92079e5871f0f6bff281b3bfc18bb04839413ba3533ba5619a4",
+      "size_bytes": 208
+    },
+    "v121-before-chat-mcp-show.json": {
+      "sha256": "7e103b46cedb59d2fb011af1412280a748ab44c3d1896c0407895a35180bbc89",
+      "size_bytes": 210
+    },
+    "v121-blocked-existing-update.json": {
+      "sha256": "44eff69b9e33b5bc120dd258cecd7aecc8a48f2e6a035d081652b66dbad153e7",
+      "size_bytes": 297
+    },
+    "v121-gui-recovery-before.json": {
+      "sha256": "efb6e336f275121a9ad4ba3d5a1ab8275296a0b058a99f462cf4fb86f60f2c66",
+      "size_bytes": 389
+    },
+    "v121-gui-recovery-result.json": {
+      "sha256": "52773af11d111049f7517b2e8cf7afe5ffd22349ac84399d1d2af41dc6f11c90",
+      "size_bytes": 1927
+    },
+    "v121-gui-recovery-status.json": {
+      "sha256": "76c72dd8030a5d580235346b101ee144ecf94ee8da66e15ee14142b0f674480c",
+      "size_bytes": 212
+    },
+    "v121-gui-reinstallation.json": {
+      "sha256": "c9a0cea930ff470f4745f1a5956535aea9b7385c3bc2acf0aed2108e15aa8472",
+      "size_bytes": 591
+    },
+    "v121-host-loader.json": {
+      "sha256": "0ca212499ca608d751e1dac7fa5ba88161e69292d11fdc5cbd88a7e29f3b3646",
+      "size_bytes": 313
+    },
+    "v121-installation.json": {
+      "sha256": "aa0233fb62a37579007025a34538066576983c8be36e96d5fc4aa94b472577b4",
+      "size_bytes": 267
+    },
+    "v121-missing-auth-status.json": {
+      "sha256": "94ff152e1baedaf7887d9b7ce7e5e7ef0b777d38c08c80a5c7b7671cb132ec84",
+      "size_bytes": 160
+    },
+    "v121-model-configuration.json": {
+      "sha256": "b2a3e3af35106a9147a53ec9f933574652c0a4b7c48feedbd9ed9eaf79a2ee9c",
+      "size_bytes": 205
+    },
+    "v121-network-failure.json": {
+      "sha256": "d1acdea9734a101de4201afd103c8662cdced5ed412a959a0ec92fe92b6226da",
+      "size_bytes": 498
+    },
+    "v121-processes-after-chinese-business.json": {
+      "sha256": "8ac18ef06505a979dd3fdb752c793653faa7c3b70035f7ee519415d614c6730f",
+      "size_bytes": 293
+    },
+    "v121-processes-connected-before-chat.json": {
+      "sha256": "c81fc5e4f4df588f7114658d744b28479f47a3e5d760616eab601e611da61175",
+      "size_bytes": 292
+    },
+    "v121-processes-disconnected-before-chat.json": {
+      "sha256": "9e4d9c08040cea663e94aa7fdc6f289bf53639cdba52dcb32a0e06ae1b72b707",
+      "size_bytes": 295
+    },
+    "v121-processes-gui-recovered-after-chat.json": {
+      "sha256": "395e372e6c3c077dcb357911f1e852560380e9eddefe9a22e4de9bed678927b8",
+      "size_bytes": 295
+    },
+    "v121-processes-gui-uninstalled-after-remote-revoke.json": {
+      "sha256": "1a20831497759701b1ad2d3316fcd3d785a8b933c2fcca80413f9958b8b9dd86",
+      "size_bytes": 306
+    },
+    "v121-processes-real-denial-and-card-cancel.json": {
+      "sha256": "f3379d15bcca0eefdd997dde92c02bb95e1ea8294da6aeca35c25accf5126817",
+      "size_bytes": 298
+    },
+    "v121-processes-restored-after-remote-revoke.json": {
+      "sha256": "8b38d907175db4e96cd7950f0ade1a4b13df6615a2516c8914847f816d84e60f",
+      "size_bytes": 299
+    },
+    "v121-remote-revoked-probe.json": {
+      "sha256": "c1b00c201bf34e2c0618c523f2d83077e82730372bfad727acfe3a59a972c50b",
+      "size_bytes": 959
+    },
+    "v121-restored-probe.json": {
+      "sha256": "dfd637732602436388b7cc9eee1a274495d4fff9660c171a3f7454d315bb50bb",
+      "size_bytes": 2314
+    }
+  },
+  "user_confirmation": {
+    "user": "Song Haoran",
+    "date": "2026-11-22",
+    "source": "current conversation",
+    "statement": "确认 Linear 1.2.1 测试通过，附上实测截图提交 PR",
+    "report_id": "RPT-20261122-linear-first-auth-repair"
+  }
+}

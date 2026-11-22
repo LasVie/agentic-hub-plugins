@@ -1,0 +1,6 @@
+{
+  "ok": false,
+  "code": "AUTH_REQUIRED",
+  "message": "Linear 尚未授权或登录已失效，请从连接器卡片重新连接。",
+  "connected": false
+}

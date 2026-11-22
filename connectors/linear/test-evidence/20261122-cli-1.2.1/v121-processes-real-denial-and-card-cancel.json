@@ -1,0 +1,8 @@
+{
+  "version": "1.2.1",
+  "stage": "real-denial-and-card-cancel",
+  "checked_at": "2026-11-22T23:02:01.336850+08:00",
+  "owned_node_processes": [],
+  "idle_without_owned_node_children": true,
+  "method": "Full descendants of all recorded isolated runtime parents; no command-path-only filtering"
+}

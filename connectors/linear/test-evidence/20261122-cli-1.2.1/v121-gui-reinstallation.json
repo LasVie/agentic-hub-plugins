@@ -1,0 +1,19 @@
+{
+  "version": "1.2.1",
+  "installation": "stock GUI card uninstall then install; local catalog fixture",
+  "no_manual_cli_install": true,
+  "no_manual_oauth_config": true,
+  "no_auth_reset_rpc": true,
+  "files": {
+    "README.md": true,
+    "THIRD_PARTY_NOTICES.md": true,
+    "cli.json": true,
+    "icon.png": true,
+    "licenses/mcp-remote/LICENSE": true,
+    "manifest.json": true,
+    "skills/linear-guide/SKILL.md": true,
+    "skills/linear-guide/scripts/linear-cli.cjs": true,
+    "skills/linear-guide/scripts/scope.cjs": true
+  },
+  "all_nine_payload_files_match_frozen_zip": true
+}

@@ -1,0 +1,51 @@
+- complementary:
+  - img "Logo"
+  - button "任务":
+    - generic: 任务
+  - button "专家":
+    - generic: 专家
+  - button "技能":
+    - generic: 技能
+  - button "扩展":
+    - generic: 扩展
+  - button "RSI":
+    - generic: RSI
+  - button "设置":
+    - generic: 设置
+  - button "更新":
+    - generic: 更新
+- main:
+  - generic "使用当前已连接的 Linear 连接器和包内技能，验证卸载重装后的读取是否恢复。先按技能核对真实工具，再读取 OPE-8 的标题、所属团队和描述，随后独立读取该工单的评论，确认是否存在标记 LINEA"
+  - button "导出长图":
+  - button "心跳任务":
+  - button:
+  - button:
+  - generic: 使用当前已连接的 Linear 连接器和包内技能，验证卸载重装后的读取是否恢复。先按技能核对真实工具，再读取 OPE-8 的标题、所属团队和描述，随后独立读取该工单的评论，确认是否存在标记 LINEAR-121-20261122。只读，不创建、不修改、不删除、不重新登录，不读取任何认证文件，不使用 Python。最多 6 行中文报告实际结果。
+  - generic: 2026-11-22 23:40
+  - button:
+  - button "从此消息新建会话分支":
+  - img "team_leader avatar"
+  - generic: Jiuwen
+  - button "任务用时 1m04s":
+    - generic: 任务用时 1m04s
+  - paragraph:
+    - text: 已按包内技能核对真实工具：连接器版本 1.2.1，
+    - code: "`get_issue`"
+    - text: 、
+    - code: "`list_comments`"
+    - text: 均调用成功，当前读取已恢复。 OPE-8 标题：WorkSwarm Linear CLI 1.2.1 回归验收 20261122 所属团队：OpenJiuwen 描述：只用于验证 WorkSwarm 0.2.8 的短时 Node CLI、中文写入和独立回读，无真实业务数据。 独立读取评论成功，共 1 条且无下一页；正文：短时 CLI 中文评论验收 LINEAR-121-20261122（确认存在指定标记）。 全程仅执行 Linear 只读操作，未创建、修改、删除、重新登录，未读取认证文件，未使用 Python。
+  - generic: 2026-11-22 23:41
+  - button:
+  - button:
+  - button "从此消息新建会话分支":
+  - generic [active]: 需要帮你做些什么？输入“/”快速引用技能及指令
+  - button "上传文件":
+  - button "单Agent模式":
+    - generic: 单Agent模式
+  - button "完全访问权限":
+    - generic: 完全访问权限
+  - button "上下文用量 10.6%":
+  - button "gpt-6.1-sol":
+    - generic: gpt-6.1-sol
+  - button [disabled]:
+  - generic: 内容由AI生成，仅供参考
