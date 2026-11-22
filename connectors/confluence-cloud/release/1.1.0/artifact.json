@@ -11,11 +11,12 @@
   },
   "review_files_sha256": {
     "SOURCE_REVIEW.md": "b8bb058b808cc89692d2c5bf3a5377ec273bb94e53b87569bd85524729f61935",
-    "TEST_REPORT.md": "07c60375badb6b1d66308382b45714e5106fc6db1a674f25511454056cf3c241",
+    "TEST_REPORT.md": "d3d135ba5b959a2cfe0d2f1d756afbd4b643ca6b5412a9e0ada5f54f3e00d1cd",
     "provenance.json": "6d5f79ed7690e87b9697f25d62d88f344ba9909ee6a7455e3869b28bc3f44610",
     "NATIVE_DESIGN.md": "106bd15e31e8b9fd17eb5b3b38a2cdf95933a3b6fd76c3cbf111285e7fd150a6",
     "tests/test_confluence_node.cjs": "0d0287009320b3e5966b55b5cc7a91931709dcd4c92a2d61529e6d43ef56dabd",
-    "tests/fixtures/workswarm-0.2.8-20261123.json": "5a70fa366b70b27baa2e9d1ab4fd6477acc6ac673bfd4442dacc6008ed4989e9"
+    "tests/fixtures/workswarm-0.2.8-20261123.json": "5a70fa366b70b27baa2e9d1ab4fd6477acc6ac673bfd4442dacc6008ed4989e9",
+    "test-evidence/20261123-stock-1.1.0/evidence.json": "43aec73d686d4d59ed85fe5169ddc9757e48330e1e6bf0bc4feee6dc38ba740e"
   },
   "payload_sha256": {
     "README.md": "500e4570ce25dbff44997fabf1d0c4763dd4d8a4db669c5b2a69515db22d4832",

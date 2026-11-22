@@ -40,3 +40,5 @@ macOS Apple silicon，原版 WorkSwarm 0.2.8 应用内置后端和 WebUI，通�
 Windows/Linux、自然过期、远端撤销、远程服务器回调、管理员限制、正式 Hub 线上安装没有实测。写 scope 宽于本包实际工具范围；本包只提供普通页面搜索/读取/新建，不开放更新、删除、评论、附件或权限修改。
 
 确认记录时间：2026-11-23T02:56:51+08:00。原话、当前对话来源、精确哈希及图片授权记录于 tests/fixtures/workswarm-0.2.8-20261123.json。未请求合并或 Hub 上架。
+
+五张公开授权原图按原字节保存在 `test-evidence/20261123-stock-1.1.0/screenshots/`，SHA256 与 `evidence.json` 对应，并嵌入 [PR #117 正文证据](https://github.com/LasVie/agentic-hub-plugins/pull/117#issue-6546381329)。原图和证据目录不在运行载荷或 ZIP 内。
