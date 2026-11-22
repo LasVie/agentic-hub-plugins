@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "type": "agent-mcp",
+  "name": "dropbox",
+  "display_name": "Dropbox 文件连接器",
+  "version": "1.0.3",
+  "owner": "Song Haoran",
+  "task_id": "AH-20261117-dropbox-connector",
+  "internal_asset_id": "repo:agent-mcp:dropbox",
+  "native_path": "dropbox",
+  "description": "搜索 Dropbox 文件名，列出文件夹，读取元数据和 UTF-8 文本。"
+}

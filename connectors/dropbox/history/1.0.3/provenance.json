@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "mode": "native",
+  "upstream": [
+    {
+      "source": "https://docs.dropboxapi.com/dropbox-api/docs/oauth",
+      "version": "Dropbox API v2 / PKCE; upstream Claude plugin 1.0.1 reviewed as reference",
+      "permission_status": "unknown",
+      "copied_paths": [],
+      "use": "Public functional documentation or installation metadata only."
+    },
+    {
+      "source": "https://www.dropbox.com/scl/fo/6qjduc7j5ujf09f75w1p7/AGATVvVEZHoOrsYEKaNctAI/Logos/Dropbox/Tab/DBX_Tab_128.png?rlkey=tkqw8jcoi7f24voc6577vakky&dl=0",
+      "version": "official brand asset retrieved 2026-11-17",
+      "permission_status": "verified",
+      "copied_paths": [
+        "icon.png"
+      ],
+      "source_path": "DBX_Tab_128.png",
+      "sha256": "77dc1afb3d82c5fcbde086580a7648e216cda8760629dad3f8079e62f25f24c8",
+      "owner": "Dropbox",
+      "terms": "https://docs.dropboxapi.com/dropbox-api/docs/developer-resources/branding-guide",
+      "use": "The developer guide allows an approved Dropbox mark within an app to identify its Dropbox integration. This exact PNG is used on the installed WorkSwarm connector card only. The Hub wrapper has no Dropbox mark and the OAuth application branding is separate.",
+      "modifications": "none",
+      "attribution": "THIRD_PARTY_NOTICES.md"
+    }
+  ]
+}
