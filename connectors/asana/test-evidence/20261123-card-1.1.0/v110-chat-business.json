@@ -1,0 +1,391 @@
+{
+  "version": "1.1.0",
+  "actual_stock_host_chat": true,
+  "read_turn_seconds": 54.41,
+  "write_turn_seconds": 28.78,
+  "read_host_tool_calls": 13,
+  "write_host_tool_calls": 7,
+  "canonical_asana_calls": [
+    {
+      "tool": "asana_status",
+      "arguments": {},
+      "result": {
+        "connected": true
+      }
+    },
+    {
+      "tool": "asana_list_tasks",
+      "arguments": {
+        "container": "1220594404826613",
+        "limit": 100
+      },
+      "result": {
+        "data": [
+          {
+            "gid": "1220699978994343",
+            "completed": false,
+            "name": "WorkSwarm 标准 MCP 中文验收 20261119",
+            "permalink_url": "https://app.asana.com/1/1220595506484888/project/1220594404826613/task/1220699978994343"
+          },
+          {
+            "gid": "1220602014785771",
+            "completed": false,
+            "name": "WorkSwarm Asana 聊天验收 WSQA-261117-A1",
+            "permalink_url": "https://app.asana.com/1/1220595506484888/project/1220594404826613/task/1220602014785771"
+          },
+          {
+            "gid": "1220595151534310",
+            "completed": false,
+            "name": "WorkSwarm Asana 连接器实测 WS-ASANA-20261117",
+            "permalink_url": "https://app.asana.com/1/1220595506484888/project/1220594404826613/task/1220595151534310"
+          },
+          {
+            "gid": "1220594404826629",
+            "completed": false,
+            "name": "Review and approve project plan updates",
+            "permalink_url": "https://app.asana.com/1/1220595506484888/project/1220594404826613/task/1220594404826629"
+          },
+          {
+            "gid": "1220594404826631",
+            "completed": false,
+            "name": "Submit feedback on deliverable",
+            "permalink_url": "https://app.asana.com/1/1220595506484888/project/1220594404826613/task/1220594404826631"
+          },
+          {
+            "gid": "1220594404826633",
+            "completed": false,
+            "name": "Request resource allocation",
+            "permalink_url": "https://app.asana.com/1/1220595506484888/project/1220594404826613/task/1220594404826633"
+          },
+          {
+            "gid": "1220594333470185",
+            "completed": false,
+            "name": "Escalate blocking issue",
+            "permalink_url": "https://app.asana.com/1/1220595506484888/project/1220594404826613/task/1220594333470185"
+          },
+          {
+            "gid": "1220594333470187",
+            "completed": false,
+            "name": "Schedule stakeholder review meeting",
+            "permalink_url": "https://app.asana.com/1/1220595506484888/project/1220594404826613/task/1220594333470187"
+          }
+        ],
+        "next_page": null
+      }
+    },
+    {
+      "tool": "asana_read_task",
+      "arguments": {
+        "item": "1220699978994343"
+      },
+      "result": {
+        "data": {
+          "gid": "1220699978994343",
+          "completed": false,
+          "name": "WorkSwarm 标准 MCP 中文验收 20261119",
+          "notes": "",
+          "permalink_url": "https://app.asana.com/1/1220595506484888/project/1220594404826613/task/1220699978994343",
+          "projects": [
+            {
+              "gid": "1220594404826613"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tool": "asana_read_task",
+      "arguments": {
+        "item": "1220602014785771"
+      },
+      "result": {
+        "data": {
+          "gid": "1220602014785771",
+          "completed": false,
+          "name": "WorkSwarm Asana 聊天验收 WSQA-261117-A1",
+          "notes": "",
+          "permalink_url": "https://app.asana.com/1/1220595506484888/project/1220594404826613/task/1220602014785771",
+          "projects": [
+            {
+              "gid": "1220594404826613"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tool": "asana_read_task",
+      "arguments": {
+        "item": "1220595151534310"
+      },
+      "result": {
+        "data": {
+          "gid": "1220595151534310",
+          "completed": false,
+          "name": "WorkSwarm Asana 连接器实测 WS-ASANA-20261117",
+          "notes": "",
+          "permalink_url": "https://app.asana.com/1/1220595506484888/project/1220594404826613/task/1220595151534310",
+          "projects": [
+            {
+              "gid": "1220594404826613"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tool": "asana_list_tasks",
+      "arguments": {
+        "container": "1220594404826613",
+        "limit": 100
+      },
+      "result": {
+        "data": [
+          {
+            "gid": "1220699978994343",
+            "completed": false,
+            "name": "WorkSwarm 标准 MCP 中文验收 20261119",
+            "permalink_url": "https://app.asana.com/1/1220595506484888/project/1220594404826613/task/1220699978994343"
+          },
+          {
+            "gid": "1220602014785771",
+            "completed": false,
+            "name": "WorkSwarm Asana 聊天验收 WSQA-261117-A1",
+            "permalink_url": "https://app.asana.com/1/1220595506484888/project/1220594404826613/task/1220602014785771"
+          },
+          {
+            "gid": "1220595151534310",
+            "completed": false,
+            "name": "WorkSwarm Asana 连接器实测 WS-ASANA-20261117",
+            "permalink_url": "https://app.asana.com/1/1220595506484888/project/1220594404826613/task/1220595151534310"
+          },
+          {
+            "gid": "1220594404826629",
+            "completed": false,
+            "name": "Review and approve project plan updates",
+            "permalink_url": "https://app.asana.com/1/1220595506484888/project/1220594404826613/task/1220594404826629"
+          },
+          {
+            "gid": "1220594404826631",
+            "completed": false,
+            "name": "Submit feedback on deliverable",
+            "permalink_url": "https://app.asana.com/1/1220595506484888/project/1220594404826613/task/1220594404826631"
+          },
+          {
+            "gid": "1220594404826633",
+            "completed": false,
+            "name": "Request resource allocation",
+            "permalink_url": "https://app.asana.com/1/1220595506484888/project/1220594404826613/task/1220594404826633"
+          },
+          {
+            "gid": "1220594333470185",
+            "completed": false,
+            "name": "Escalate blocking issue",
+            "permalink_url": "https://app.asana.com/1/1220595506484888/project/1220594404826613/task/1220594333470185"
+          },
+          {
+            "gid": "1220594333470187",
+            "completed": false,
+            "name": "Schedule stakeholder review meeting",
+            "permalink_url": "https://app.asana.com/1/1220595506484888/project/1220594404826613/task/1220594333470187"
+          }
+        ],
+        "next_page": null
+      }
+    },
+    {
+      "tool": "asana_create_task",
+      "arguments": {
+        "container": "1220594404826613",
+        "title": "WorkSwarm Asana 卡片验收 WS-ASANA-110-20261123"
+      },
+      "result": {
+        "data": {
+          "gid": "1220767735426842",
+          "resource_type": "task",
+          "created_at": "2026-11-22T16:06:35.241Z",
+          "modified_at": "2026-11-22T16:06:35.418Z",
+          "name": "WorkSwarm Asana 卡片验收 WS-ASANA-110-20261123",
+          "notes": "",
+          "actual_time_minutes": 0,
+          "completed": false,
+          "completed_at": null,
+          "due_on": null,
+          "due_at": null,
+          "start_on": null,
+          "start_at": null,
+          "resource_subtype": "default_task",
+          "num_hearts": 0,
+          "num_likes": 0,
+          "assignee": null,
+          "assignee_status": "upcoming",
+          "workspace": {
+            "gid": "1220595506484888",
+            "resource_type": "workspace",
+            "name": "My workspace"
+          },
+          "hearted": false,
+          "liked": false,
+          "parent": null,
+          "tags": [],
+          "hearts": [],
+          "likes": [],
+          "permalink_url": "https://app.asana.com/1/1220595506484888/project/1220594404826613/task/1220767735426842",
+          "projects": [
+            {
+              "gid": "1220594404826613",
+              "resource_type": "project",
+              "resource_subtype": "default_project",
+              "name": "Work requests"
+            }
+          ],
+          "memberships": [
+            {
+              "section": {
+                "gid": "1220594404826614",
+                "resource_type": "section",
+                "name": "New requests"
+              },
+              "project": {
+                "gid": "1220594404826613",
+                "resource_type": "project",
+                "resource_subtype": "default_project",
+                "name": "Work requests"
+              }
+            }
+          ],
+          "followers": [
+            {
+              "gid": "1220595506484868",
+              "resource_type": "user",
+              "name": "openJiuwen"
+            }
+          ],
+          "custom_fields": [
+            {
+              "gid": "1220594404826618",
+              "resource_type": "custom_field",
+              "enum_value": null,
+              "display_value": null,
+              "name": "Priority",
+              "is_formula_field": false,
+              "is_lookup_field": false,
+              "description": "",
+              "is_value_read_only": false,
+              "privacy_setting": "public_with_guests",
+              "default_access_level": "admin",
+              "asana_created_field": null,
+              "resource_subtype": "enum",
+              "type": "enum",
+              "enabled": true,
+              "created_by": {
+                "gid": "1220595506484868",
+                "resource_type": "user",
+                "name": "openJiuwen"
+              },
+              "enum_options": [
+                {
+                  "gid": "1220594404826619",
+                  "resource_type": "enum_option",
+                  "enabled": true,
+                  "name": "Low",
+                  "color": "yellow-orange"
+                },
+                {
+                  "gid": "1220594404826620",
+                  "resource_type": "enum_option",
+                  "enabled": true,
+                  "name": "Medium",
+                  "color": "orange"
+                },
+                {
+                  "gid": "1220594404826621",
+                  "resource_type": "enum_option",
+                  "enabled": true,
+                  "name": "High",
+                  "color": "red"
+                }
+              ]
+            },
+            {
+              "gid": "1220594404826623",
+              "resource_type": "custom_field",
+              "enum_value": null,
+              "display_value": null,
+              "name": "Requesting team",
+              "is_formula_field": false,
+              "is_lookup_field": false,
+              "description": "",
+              "is_value_read_only": false,
+              "privacy_setting": "public_with_guests",
+              "default_access_level": "admin",
+              "asana_created_field": null,
+              "resource_subtype": "enum",
+              "type": "enum",
+              "enabled": true,
+              "created_by": {
+                "gid": "1220595506484868",
+                "resource_type": "user",
+                "name": "openJiuwen"
+              },
+              "enum_options": [
+                {
+                  "gid": "1220594404826624",
+                  "resource_type": "enum_option",
+                  "enabled": true,
+                  "name": "Legal",
+                  "color": "blue"
+                },
+                {
+                  "gid": "1220594404826625",
+                  "resource_type": "enum_option",
+                  "enabled": true,
+                  "name": "Operations",
+                  "color": "orange"
+                },
+                {
+                  "gid": "1220594404826626",
+                  "resource_type": "enum_option",
+                  "enabled": true,
+                  "name": "HR",
+                  "color": "green"
+                },
+                {
+                  "gid": "1220594404826627",
+                  "resource_type": "enum_option",
+                  "enabled": true,
+                  "name": "Sales",
+                  "color": "red"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tool": "asana_read_task",
+      "arguments": {
+        "item": "1220767735426842"
+      },
+      "result": {
+        "data": {
+          "gid": "1220767735426842",
+          "completed": false,
+          "name": "WorkSwarm Asana 卡片验收 WS-ASANA-110-20261123",
+          "notes": "",
+          "permalink_url": "https://app.asana.com/1/1220595506484888/project/1220594404826613/task/1220767735426842",
+          "projects": [
+            {
+              "gid": "1220594404826613"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "wrapper_events_not_double_counted": true,
+  "created_exactly_one_test_task": true,
+  "independent_readback_matched": true,
+  "current_version_user_completion_confirmed": false
+}

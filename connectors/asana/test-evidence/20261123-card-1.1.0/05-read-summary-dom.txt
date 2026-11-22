@@ -1,0 +1,52 @@
+- complementary:
+  - img "Logo"
+  - button "任务":
+    - generic: 任务
+  - button "专家":
+    - generic: 专家
+  - button "技能":
+    - generic: 技能
+  - button "扩展":
+    - generic: 扩展
+  - button "RSI":
+    - generic: RSI
+  - button "设置":
+    - generic: 设置
+  - button "更新":
+    - generic: 更新
+- main:
+  - generic "使用当前已连接的 Asana 连接器及包内技能完成只读验收。先调用 asana_status 核对真实授权，再用 asana_list_tasks 查询专用测试项目 1220594404826613，"
+  - button "导出长图":
+  - button "心跳任务":
+  - button:
+  - button:
+  - generic: 使用当前已连接的 Asana 连接器及包内技能完成只读验收。先调用 asana_status 核对真实授权，再用 asana_list_tasks 查询专用测试项目 1220594404826613，按实际游标分页，报告测试任务数量与标题；读取其中标题含 WorkSwarm 的已有测试任务，核对标题、正文、完成状态和所属项目。只使用已加载的 Asana MCP 工具，不使用 Python、shell、浏览器或其他接口，不读取认证文件，不创建、修改或删除任何数据。任何调用失败就停止并准确报告，最多 8 行中文。
+  - generic: 2026-11-23 00:02
+  - button:
+  - button "从此消息新建会话分支":
+  - generic: 任务用时 2.67s
+  - generic: "错误: [181002] model service config error, reason: OpenAI account auth error: OpenAI account token refresh failed: Your refresh token has already been used to generate a new access token. Please try signing in again."
+  - generic: 重新执行上一条只读 Asana 验收。先 asana_status，再分页读取测试项目 1220594404826613 的任务，并用 asana_read_task 独立读取已有 WorkSwarm 测试任务的标题、正文、完成状态和项目。仅用当前连接器的已加载 MCP 工具；不创建、不修改、不删除，不读取凭据，不使用 Python、shell 或其他接口。若失败就停止，最多 8 行中文。
+  - generic: 2026-11-23 00:04
+  - button:
+  - button "从此消息新建会话分支":
+  - img "team_leader avatar"
+  - generic: Jiuwen
+  - button "任务用时 54.41s":
+    - generic: 任务用时 54.41s
+  - paragraph: 授权核验：asana_status 返回 connected=true；只读验收成功，未创建、修改或删除数据。 项目 1220594404826613 共 8 项任务，其中 3 项标题含 WorkSwarm；next_page=null，无后续分页。 已独立回读：WorkSwarm 标准 MCP 中文验收 20261119；正文=""，completed=false，所属项目=1220594404826613。 已独立回读：WorkSwarm Asana 聊天验收 WSQA-261117-A1；正文=""，completed=false，所属项目=1220594404826613。 已独立回读：WorkSwarm Asana 连接器实测 WS-ASANA-20261117；正文=""，completed=false，所属项目=1220594404826613。 其他任务标题：Review and approve project plan updates；Submit feedback on deliverable。 其他任务标题：Request resource allocation；Escalate blocking issue；Schedule stakeholder review meeting。
+  - generic: 2026-11-23 00:05
+  - button:
+  - button:
+  - button "从此消息新建会话分支":
+  - generic [active]: 需要帮你做些什么？输入“/”快速引用技能及指令
+  - button "上传文件":
+  - button "单Agent模式":
+    - generic: 单Agent模式
+  - button "完全访问权限":
+    - generic: 完全访问权限
+  - button "上下文用量 9.7%":
+  - button "gpt-6.1-sol":
+    - generic: gpt-6.1-sol
+  - button [disabled]:
+  - generic: 内容由AI生成，仅供参考

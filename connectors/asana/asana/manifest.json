@@ -1,0 +1,29 @@
+{
+  "version": "1.1.0",
+  "package_type": "mcp",
+  "id": "asana",
+  "name": "Asana 任务连接器",
+  "description": "按项目列出 Asana 任务，读取指定任务，在可写项目中创建任务。",
+  "display_name": {
+    "zh": "Asana 任务连接器",
+    "en": "Asana"
+  },
+  "display_description": {
+    "zh": "按项目列出 Asana 任务，读取指定任务，在可写项目中创建任务。",
+    "en": "Connect to Asana from WorkSwarm."
+  },
+  "integration": {
+    "type": "stdio-mcp",
+    "file": "mcp.json"
+  },
+  "credentials": {
+    "type": "token",
+    "file": "token-schema.json"
+  },
+  "skills": [
+    {
+      "dir": "skills/asana-guide",
+      "mode": "all"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "mode": "native",
+  "upstream": [
+    {
+      "source": "https://developers.asana.com/reference/gettasksforproject",
+      "version": "Asana REST API 1.0",
+      "permission_status": "unknown",
+      "copied_paths": [],
+      "use": "Public functional documentation or installation metadata only."
+    }
+  ]
+}

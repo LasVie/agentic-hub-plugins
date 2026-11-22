@@ -1,0 +1,74 @@
+{
+  "version": "1.1.0",
+  "entry": "exact native ZIP stdio entry under bundled Node 22.12.0",
+  "stock_host_chat": false,
+  "real_user_credentials_read_or_copied": false,
+  "real_user_profile_modified": false,
+  "business_writes": 0,
+  "expired_user_pat_claim": false,
+  "provider_outage_claim": false,
+  "metadata_discovery_alone_does_not_verify_provider_auth": true,
+  "results": [
+    {
+      "case": "missing",
+      "metadata_tools": [
+        "asana_create_task",
+        "asana_list_tasks",
+        "asana_read_task",
+        "asana_status"
+      ],
+      "response": {
+        "isError": true,
+        "content": [
+          {
+            "type": "text",
+            "text": "请先在 WorkSwarm 连接器卡片中填写 Asana 个人访问令牌。"
+          }
+        ]
+      },
+      "elapsed_seconds": 0.03,
+      "process_exit_code_after_stdin_close": 0
+    },
+    {
+      "case": "invalid-real-service",
+      "metadata_tools": [
+        "asana_create_task",
+        "asana_list_tasks",
+        "asana_read_task",
+        "asana_status"
+      ],
+      "response": {
+        "isError": true,
+        "content": [
+          {
+            "type": "text",
+            "text": "Asana 授权已失效，请在卡片中重新配置有效令牌。"
+          }
+        ]
+      },
+      "elapsed_seconds": 0.87,
+      "process_exit_code_after_stdin_close": 0
+    },
+    {
+      "case": "controlled-dns",
+      "metadata_tools": [
+        "asana_create_task",
+        "asana_list_tasks",
+        "asana_read_task",
+        "asana_status"
+      ],
+      "response": {
+        "isError": true,
+        "content": [
+          {
+            "type": "text",
+            "text": "Asana 请求未完成；请检查网络。写入结果不确定时，请先按唯一标题回读，勿直接重试。"
+          }
+        ]
+      },
+      "elapsed_seconds": 0.07,
+      "process_exit_code_after_stdin_close": 0
+    }
+  ],
+  "passed": true
+}

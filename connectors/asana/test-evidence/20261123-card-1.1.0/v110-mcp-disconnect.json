@@ -1,0 +1,15 @@
+{
+  "version": "1.1.0",
+  "method": "mcp.disconnect",
+  "ok": true,
+  "type": "disconnected",
+  "applied": true,
+  "integration_type": "stdio-mcp",
+  "tool_names": [],
+  "keys": [
+    "type",
+    "name",
+    "applied",
+    "item"
+  ]
+}

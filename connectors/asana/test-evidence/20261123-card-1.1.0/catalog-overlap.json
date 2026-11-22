@@ -1,0 +1,9 @@
+{
+  "baseline": "operations/hub/20261122/catalog-baseline.json",
+  "assets": 864,
+  "complete_baseline": true,
+  "matching_asana_records": 0,
+  "prior_finding_reused": "CAND-CLD-323 Confirmed New Capability; authorized Asana project/task objects differ from existing generic task workflows",
+  "scope": "Reuse prior functional comparison; absence of a matching brand alone is not treated as full deduplication proof",
+  "related_workflows": "Linear, Jira, Todoist/TAPD and local task workflows use different provider accounts/objects; no complete Asana project-task API replacement established"
+}
