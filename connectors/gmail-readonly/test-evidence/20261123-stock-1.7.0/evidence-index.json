@@ -1,0 +1,122 @@
+{
+  "task_id": "AH-20261111-gmail-connection",
+  "candidate_id": null,
+  "asset_id": "repo:agent-mcp:gmail-readonly",
+  "display_name": "Gmail 邮件连接器",
+  "version": "1.7.0",
+  "owner": "Song Haoran",
+  "date": "2026-11-23",
+  "wrapped_sha256": "1264e564ef1f60ff4e7ca597693949bd5e778248dd8ccf1d27c7e42debcfebcb",
+  "native_sha256": "38e5378f1bbf70cbd452acd0e22c0a90d2df41c79e667d3814b56899ab954be2",
+  "host": "stock WorkSwarm 0.2.8 macOS; local Hub catalog fixture, not formal Hub download",
+  "chat_id": "web_1a2066f754e_23ab7f0da338",
+  "public_upload_authorized": true,
+  "user_current_package_test_completion_confirmed": true,
+  "scope": "Only the dedicated synthetic self-mail fixtures and local connector lifecycle; no non-test mail content",
+  "screenshots": [
+    {
+      "file": "screenshots/15-final-rebuilt-callback.jpg",
+      "sha256": "82a292e7603d5060572ef3fd1e88b85a00ba9226a486ce66edb2e20fd8c77f94",
+      "bytes": 12222,
+      "dimensions": {
+        "pixelWidth": 762,
+        "pixelHeight": 1033
+      },
+      "original_unmodified": true
+    },
+    {
+      "file": "screenshots/16-final-rebuilt-card-connected.jpg",
+      "sha256": "0564c26dd843e663a8423d205b61164d69b3db7b5096c5c2dff8b7ea76eaf975",
+      "bytes": 24375,
+      "dimensions": {
+        "pixelWidth": 1280,
+        "pixelHeight": 720
+      },
+      "original_unmodified": true
+    },
+    {
+      "file": "screenshots/17-final-empty-drafts-and-search.jpg",
+      "sha256": "bb7b9b273b93a0dda3e512825a8c1c624e48aeebbafa518f18dfc7cfe9884116",
+      "bytes": 70289,
+      "dimensions": {
+        "pixelWidth": 1280,
+        "pixelHeight": 720
+      },
+      "original_unmodified": true
+    },
+    {
+      "file": "screenshots/19-final-draft-edit-readback.jpg",
+      "sha256": "f7780ae7abfb24ac63ccb966ac537131bc6b23d0036cb1920e551a2341d81f42",
+      "bytes": 53867,
+      "dimensions": {
+        "pixelWidth": 1280,
+        "pixelHeight": 720
+      },
+      "original_unmodified": true
+    },
+    {
+      "file": "screenshots/20-final-send-message-thread.jpg",
+      "sha256": "627c9a6312b291f7ff211614a792dd7f2414e6a60520190e6a6277a722f12212",
+      "bytes": 63336,
+      "dimensions": {
+        "pixelWidth": 1280,
+        "pixelHeight": 720
+      },
+      "original_unmodified": true
+    },
+    {
+      "file": "screenshots/21-final-reply-readback.jpg",
+      "sha256": "daac1da056db26dce057be20f40e88923eb5a5411d459fd749456beda12fc470",
+      "bytes": 57237,
+      "dimensions": {
+        "pixelWidth": 1280,
+        "pixelHeight": 720
+      },
+      "original_unmodified": true
+    },
+    {
+      "file": "screenshots/22-final-ordinary-send-readback.jpg",
+      "sha256": "ae7fae9609a0b666cfc448c7013d03abdbece9f1e6bac526110f9c58a1cc067c",
+      "bytes": 53655,
+      "dimensions": {
+        "pixelWidth": 1280,
+        "pixelHeight": 720
+      },
+      "original_unmodified": true
+    },
+    {
+      "file": "screenshots/23-final-disconnected-card.jpg",
+      "sha256": "eae36055e78ca0e2212c276f3c113006073ba1d3f40e8823586a271bbaccd8d9",
+      "bytes": 23918,
+      "dimensions": {
+        "pixelWidth": 1280,
+        "pixelHeight": 720
+      },
+      "original_unmodified": true
+    },
+    {
+      "file": "screenshots/24-final-cancelled-card.jpg",
+      "sha256": "4fd86d5a2c992d6cee5fa0b0a8dd6daa0c0f3617c6025846fb38734102337696",
+      "bytes": 23918,
+      "dimensions": {
+        "pixelWidth": 1280,
+        "pixelHeight": 720
+      },
+      "original_unmodified": true
+    }
+  ],
+  "supporting_files_sha256": {
+    "chat-business-proof.json": "02a805b05791b7a093ae5cc6107ca607e59ceb325cb62d056fb2c147ca343183",
+    "error-checks.json": "09f00fbb03dcae6fea52b7d24fa077f5d4e523320d78c110042dfa8f40a09431",
+    "final-card-lifecycle.json": "bcd94750c80ab8d151589aca2148f67c27c74de7d3172207247afdaf7043120a",
+    "installed-final-verification.json": "c0a1484be4a6930d185cea8546af1281aa7ff35d61d4746eab82ab2c45979d9d",
+    "lifecycle-negative-proof.json": "e27ca7b3f0d5e40cd09e35e55598766e807b931fc6a27f9ca1b9dd81ea0428ff",
+    "owned-host-teardown.json": "f8cf6eda036499c4ea841e0970f58e8055f3c84de95c6e3ba058e5b39189a75a",
+    "release-inspection.json": "1d54dd1b6f697af65fb227d571ee4ff9bb28414702a6a1d944703720a9849966",
+    "runtime-license-verification.json": "794501e60f7748f767cd19e66d94681983e9ae2f5e248d0eba401672a476cb73",
+    "unit-test-result.json": "518a5c489a7e955f7dba8c86759a13dee39125ce2500eaa51850e81c059e1aea",
+    "user-test-confirmation.json": "b464c894efb6e74f929b6442684c456698c8939294913cf819afc5fb96307916"
+  },
+  "original_images_visually_reviewed": true,
+  "confirmation_file": "user-test-confirmation.json"
+}

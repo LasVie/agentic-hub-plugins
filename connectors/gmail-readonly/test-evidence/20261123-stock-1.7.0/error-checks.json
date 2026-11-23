@@ -1,0 +1,48 @@
+{
+  "version": "1.7.0",
+  "exact_installed_scripts": true,
+  "missing_session": {
+    "exit": 0,
+    "result": {
+      "ok": false,
+      "code": "AUTH_REQUIRED",
+      "message": "Gmail 尚未授权，请从连接器卡片连接。",
+      "connected": false
+    }
+  },
+  "scope_rejected": {
+    "exit": 1,
+    "result": {
+      "ok": false,
+      "code": "SCOPE_REJECTED",
+      "message": "本包未开放此操作。"
+    }
+  },
+  "invalid_synthetic_credentials_against_real_google_token_endpoint": {
+    "exit": 0,
+    "result": {
+      "ok": false,
+      "code": "AUTH_REQUIRED",
+      "message": "Google 授权已失效，请从 Gmail 卡片重新连接。",
+      "connected": false
+    }
+  },
+  "controlled_network_failure": {
+    "result": {
+      "ok": false,
+      "code": "SERVICE_FAILED",
+      "message": "Gmail 请求未完成，请检查网络；写入先回读。"
+    },
+    "google_grant_or_gmail_request_performed": false,
+    "method": "in-process synthetic token and thrown fetch failure; no module file changed"
+  },
+  "controlled_empty_204": {
+    "result": {
+      "ok": false,
+      "code": "INVALID_RESPONSE",
+      "message": "Gmail 未返回预期 JSON，请稍后重新查询；写入先回读。"
+    },
+    "google_request_performed": false
+  },
+  "natural_expiry_or_real_account_revocation_tested": false
+}

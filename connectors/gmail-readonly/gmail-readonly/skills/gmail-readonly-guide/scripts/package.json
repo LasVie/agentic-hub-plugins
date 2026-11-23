@@ -1,0 +1,8 @@
+{
+  "name": "workswarm-gmail-node-runtime",
+  "version": "1.7.0",
+  "private": true,
+  "dependencies": {
+    "google-auth-library": "11.3.4"
+  }
+}

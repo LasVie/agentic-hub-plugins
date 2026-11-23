@@ -1,0 +1,665 @@
+{
+  "wrapped_sha256": "1264e564ef1f60ff4e7ca597693949bd5e778248dd8ccf1d27c7e42debcfebcb",
+  "version": "1.7.0",
+  "chat_id": "web_1a2066f754e_23ab7f0da338",
+  "host": "stock WorkSwarm 0.2.8 macOS; local Hub catalog fixture",
+  "account": "openjiuwen.official@gmail.com",
+  "counts": {
+    "create-draft": 1,
+    "edit-draft": 1,
+    "list-drafts": 2,
+    "read-draft": 4,
+    "read-message": 4,
+    "read-thread": 2,
+    "reply": 1,
+    "search": 3,
+    "send": 1,
+    "send-draft": 1
+  },
+  "checks": {
+    "self_only_flag_true_in_actual_chat": true,
+    "all_ten_operations_exercised": true,
+    "all_business_results_success": true,
+    "no_failed_business_command": true,
+    "send_submitted_exactly_once": true,
+    "create-draft_submitted_exactly_once": true,
+    "reply_submitted_exactly_once": true,
+    "send-draft_submitted_exactly_once": true,
+    "edit-draft_submitted_exactly_once": true,
+    "every_write_expected_same_account_and_only_self": true,
+    "draft_id_preserved_and_message_id_replaced": true,
+    "created_draft_independently_read": true,
+    "edited_draft_independently_read": true,
+    "sent_message_independently_read": true,
+    "search_found_actual_sent_id": true,
+    "reply_same_thread": true,
+    "reply_independently_read": true,
+    "full_thread_contains_both_bodies_and_reply_reference": true,
+    "ordinary_send_independently_read": true,
+    "sent_draft_no_longer_listed_after_send": true
+  },
+  "all_passed": true,
+  "results": [
+    {
+      "call_id": "call_effe46e000324bcb83144c5ecd3e951d",
+      "operation": "list-drafts",
+      "ok": true,
+      "params": {
+        "query": "subject:\"WorkSwarm Gmail Node 最终验收 20261123-D1\"",
+        "limit": 5
+      },
+      "result": {
+        "drafts": [],
+        "next_page_token": "",
+        "has_more": false
+      }
+    },
+    {
+      "call_id": "call_6da91d3acafc40b8a9f143255d0a338b",
+      "operation": "search",
+      "ok": true,
+      "params": {
+        "query": "subject:\"WorkSwarm Gmail Node 最终验收 20261123-D1\"",
+        "limit": 5
+      },
+      "result": {
+        "messages": [],
+        "next_page_token": "",
+        "result_size_estimate": 0,
+        "has_more": false
+      }
+    },
+    {
+      "call_id": "call_dff62f9092a548b2bcca623e04805f3e",
+      "operation": "create-draft",
+      "ok": true,
+      "params": {
+        "to": [
+          "openjiuwen.official@gmail.com"
+        ],
+        "subject": "WorkSwarm Gmail Node 最终验收 20261123-D1",
+        "body": "这是一封虚构测试草稿。\n标记：WSQA-GMAIL-NODE-20261123-D1",
+        "expectedAccount": "openjiuwen.official@gmail.com",
+        "expectedRecipients": {
+          "to": [
+            "openjiuwen.official@gmail.com"
+          ],
+          "cc": [],
+          "bcc": []
+        },
+        "requestId": "WSQA-GMAIL-D1-CREATE-20261123"
+      },
+      "result": {
+        "rfc822_message_id": "<e899a572-e33a-46ca-abba-98f6107890c6@workswarm.app>",
+        "draft_id": "r-845649259567416069",
+        "message_id": "1a2067101db19802",
+        "thread_id": "1a2067101db19802",
+        "account": "openjiuwen.official@gmail.com",
+        "request_id": "WSQA-GMAIL-D1-CREATE-20261123",
+        "recipients": {
+          "to": [
+            "openjiuwen.official@gmail.com"
+          ],
+          "cc": [],
+          "bcc": []
+        },
+        "submitted_once": true,
+        "readback_required": true
+      }
+    },
+    {
+      "call_id": "call_1046ebc5b89548089685aef18502a791",
+      "operation": "read-draft",
+      "ok": true,
+      "params": {
+        "draftId": "r-845649259567416069",
+        "maxChars": 12000
+      },
+      "result": {
+        "draft_id": "r-845649259567416069",
+        "message_id": "1a2067101db19802",
+        "thread_id": "1a2067101db19802",
+        "label_ids": [
+          "DRAFT"
+        ],
+        "headers": {
+          "from": "openjiuwen.official@gmail.com",
+          "to": "openjiuwen.official@gmail.com",
+          "subject": "WorkSwarm Gmail Node 最终验收 20261123-D1",
+          "date": "Sun, 22 Nov 2026 22:26:38 -0500",
+          "message-id": "<CAPhovP3YFMbBXiw-9G2na3J_9QQ4rrcm6ayx01BHvcMN9aKTkw@mail.gmail.com>"
+        },
+        "body_text": "这是一封虚构测试草稿。\n标记：WSQA-GMAIL-NODE-20261123-D1",
+        "body_chars_available": 42,
+        "body_truncated": false,
+        "warnings": [],
+        "recipients": {
+          "to": [
+            "openjiuwen.official@gmail.com"
+          ],
+          "cc": [],
+          "bcc": []
+        }
+      }
+    },
+    {
+      "call_id": "call_d2d5c8132df9415eba4fcc70893625a4",
+      "operation": "read-draft",
+      "ok": true,
+      "params": {
+        "draftId": "r-845649259567416069",
+        "maxChars": 12000
+      },
+      "result": {
+        "draft_id": "r-845649259567416069",
+        "message_id": "1a2067101db19802",
+        "thread_id": "1a2067101db19802",
+        "label_ids": [
+          "DRAFT"
+        ],
+        "headers": {
+          "from": "openjiuwen.official@gmail.com",
+          "to": "openjiuwen.official@gmail.com",
+          "subject": "WorkSwarm Gmail Node 最终验收 20261123-D1",
+          "date": "Sun, 22 Nov 2026 22:26:38 -0500",
+          "message-id": "<CAPhovP3YFMbBXiw-9G2na3J_9QQ4rrcm6ayx01BHvcMN9aKTkw@mail.gmail.com>"
+        },
+        "body_text": "这是一封虚构测试草稿。\n标记：WSQA-GMAIL-NODE-20261123-D1",
+        "body_chars_available": 42,
+        "body_truncated": false,
+        "warnings": [],
+        "recipients": {
+          "to": [
+            "openjiuwen.official@gmail.com"
+          ],
+          "cc": [],
+          "bcc": []
+        }
+      }
+    },
+    {
+      "call_id": "call_1ef54bac81bc4e71b34141d405149f82",
+      "operation": "edit-draft",
+      "ok": true,
+      "params": {
+        "draftId": "r-845649259567416069",
+        "expectedMessageId": "1a2067101db19802",
+        "body": "正文已通过 WorkSwarm 修改。\n标记：WSQA-GMAIL-NODE-20261123-D1",
+        "expectedAccount": "openjiuwen.official@gmail.com",
+        "expectedRecipients": {
+          "to": [
+            "openjiuwen.official@gmail.com"
+          ],
+          "cc": [],
+          "bcc": []
+        },
+        "requestId": "WSQA-GMAIL-D1-EDIT-20261123"
+      },
+      "result": {
+        "draft_id": "r-845649259567416069",
+        "message_id": "1a20672204913530",
+        "thread_id": "1a2067101db19802",
+        "account": "openjiuwen.official@gmail.com",
+        "request_id": "WSQA-GMAIL-D1-EDIT-20261123",
+        "recipients": {
+          "to": [
+            "openjiuwen.official@gmail.com"
+          ],
+          "cc": [],
+          "bcc": []
+        },
+        "submitted_once": true,
+        "readback_required": true
+      }
+    },
+    {
+      "call_id": "call_0c85fbb365b54224b4d048323195274c",
+      "operation": "read-draft",
+      "ok": true,
+      "params": {
+        "draftId": "r-845649259567416069",
+        "maxChars": 12000
+      },
+      "result": {
+        "draft_id": "r-845649259567416069",
+        "message_id": "1a20672204913530",
+        "thread_id": "1a2067101db19802",
+        "label_ids": [
+          "DRAFT"
+        ],
+        "headers": {
+          "from": "openjiuwen.official@gmail.com",
+          "to": "openjiuwen.official@gmail.com",
+          "subject": "WorkSwarm Gmail Node 最终验收 20261123-D1",
+          "date": "Sun, 22 Nov 2026 22:27:52 -0500",
+          "message-id": "<CAPhovP2EzZ6gnGBA0CchHONusu3NuL21BWiwJD_KLgZqqPvU-A@mail.gmail.com>"
+        },
+        "body_text": "正文已通过 WorkSwarm 修改。\n标记：WSQA-GMAIL-NODE-20261123-D1",
+        "body_chars_available": 50,
+        "body_truncated": false,
+        "warnings": [],
+        "recipients": {
+          "to": [
+            "openjiuwen.official@gmail.com"
+          ],
+          "cc": [],
+          "bcc": []
+        }
+      }
+    },
+    {
+      "call_id": "call_142fe339f78b4e9ab1dfc680ab49fadd",
+      "operation": "read-draft",
+      "ok": true,
+      "params": {
+        "draftId": "r-845649259567416069",
+        "maxChars": 12000
+      },
+      "result": {
+        "draft_id": "r-845649259567416069",
+        "message_id": "1a20672204913530",
+        "thread_id": "1a2067101db19802",
+        "label_ids": [
+          "DRAFT"
+        ],
+        "headers": {
+          "from": "openjiuwen.official@gmail.com",
+          "to": "openjiuwen.official@gmail.com",
+          "subject": "WorkSwarm Gmail Node 最终验收 20261123-D1",
+          "date": "Sun, 22 Nov 2026 22:27:52 -0500",
+          "message-id": "<CAPhovP2EzZ6gnGBA0CchHONusu3NuL21BWiwJD_KLgZqqPvU-A@mail.gmail.com>"
+        },
+        "body_text": "正文已通过 WorkSwarm 修改。\n标记：WSQA-GMAIL-NODE-20261123-D1",
+        "body_chars_available": 50,
+        "body_truncated": false,
+        "warnings": [],
+        "recipients": {
+          "to": [
+            "openjiuwen.official@gmail.com"
+          ],
+          "cc": [],
+          "bcc": []
+        }
+      }
+    },
+    {
+      "call_id": "call_28112d764f674afa8acca2347e0843b3",
+      "operation": "send-draft",
+      "ok": true,
+      "params": {
+        "draftId": "r-845649259567416069",
+        "expectedMessageId": "1a20672204913530",
+        "expectedAccount": "openjiuwen.official@gmail.com",
+        "expectedRecipients": {
+          "to": [
+            "openjiuwen.official@gmail.com"
+          ],
+          "cc": [],
+          "bcc": []
+        },
+        "requestId": "WSQA-GMAIL-D1-SEND-DRAFT-20261123"
+      },
+      "result": {
+        "draft_id": "r-845649259567416069",
+        "message_id": "1a20673315216dc4",
+        "thread_id": "1a2067101db19802",
+        "account": "openjiuwen.official@gmail.com",
+        "request_id": "WSQA-GMAIL-D1-SEND-DRAFT-20261123",
+        "recipients": {
+          "to": [
+            "openjiuwen.official@gmail.com"
+          ],
+          "cc": [],
+          "bcc": []
+        },
+        "submitted_once": true,
+        "readback_required": true
+      }
+    },
+    {
+      "call_id": "call_69730154db114223beeea230de8bb8ad",
+      "operation": "search",
+      "ok": true,
+      "params": {
+        "query": "subject:\"WorkSwarm Gmail Node 最终验收 20261123-D1\"",
+        "limit": 5
+      },
+      "result": {
+        "messages": [
+          {
+            "message_id": "1a20673315216dc4",
+            "thread_id": "1a2067101db19802"
+          }
+        ],
+        "next_page_token": "",
+        "result_size_estimate": 1,
+        "has_more": false
+      }
+    },
+    {
+      "call_id": "call_42bed2fb36e8414c8f65f4bf7604c34b",
+      "operation": "read-message",
+      "ok": true,
+      "params": {
+        "messageId": "1a20673315216dc4",
+        "maxChars": 12000
+      },
+      "result": {
+        "message_id": "1a20673315216dc4",
+        "thread_id": "1a2067101db19802",
+        "label_ids": [
+          "UNREAD",
+          "SENT",
+          "INBOX"
+        ],
+        "headers": {
+          "from": "openjiuwen.official@gmail.com",
+          "to": "openjiuwen.official@gmail.com",
+          "subject": "WorkSwarm Gmail Node 最终验收 20261123-D1",
+          "date": "Sun, 22 Nov 2026 22:29:02 -0500",
+          "message-id": "<CAPhovP25y+tqrjpt8f_x+juQXgeCN+69qVsiMTrJDsMVLdhb3A@mail.gmail.com>"
+        },
+        "body_text": "正文已通过 WorkSwarm 修改。\n标记：WSQA-GMAIL-NODE-20261123-D1",
+        "body_chars_available": 50,
+        "body_truncated": false,
+        "warnings": []
+      }
+    },
+    {
+      "call_id": "call_c84162efd8cf4a88a20b76f1328d9995",
+      "operation": "read-thread",
+      "ok": true,
+      "params": {
+        "threadId": "1a2067101db19802",
+        "maxMessages": 10,
+        "maxChars": 24000
+      },
+      "result": {
+        "thread_id": "1a2067101db19802",
+        "messages": [
+          {
+            "message_id": "1a20673315216dc4",
+            "thread_id": "1a2067101db19802",
+            "label_ids": [
+              "UNREAD",
+              "SENT",
+              "INBOX"
+            ],
+            "headers": {
+              "from": "openjiuwen.official@gmail.com",
+              "to": "openjiuwen.official@gmail.com",
+              "subject": "WorkSwarm Gmail Node 最终验收 20261123-D1",
+              "date": "Sun, 22 Nov 2026 22:29:02 -0500",
+              "message-id": "<CAPhovP25y+tqrjpt8f_x+juQXgeCN+69qVsiMTrJDsMVLdhb3A@mail.gmail.com>"
+            },
+            "body_text": "正文已通过 WorkSwarm 修改。\n标记：WSQA-GMAIL-NODE-20261123-D1",
+            "body_chars_available": 50,
+            "body_truncated": false,
+            "warnings": []
+          }
+        ],
+        "messages_available": 1,
+        "count": 1,
+        "truncated": false
+      }
+    },
+    {
+      "call_id": "call_7ebde7afca63479eb0dc8afa64b9cdf4",
+      "operation": "read-message",
+      "ok": true,
+      "params": {
+        "messageId": "1a20673315216dc4",
+        "maxChars": 12000
+      },
+      "result": {
+        "message_id": "1a20673315216dc4",
+        "thread_id": "1a2067101db19802",
+        "label_ids": [
+          "UNREAD",
+          "SENT",
+          "INBOX"
+        ],
+        "headers": {
+          "from": "openjiuwen.official@gmail.com",
+          "to": "openjiuwen.official@gmail.com",
+          "subject": "WorkSwarm Gmail Node 最终验收 20261123-D1",
+          "date": "Sun, 22 Nov 2026 22:29:02 -0500",
+          "message-id": "<CAPhovP25y+tqrjpt8f_x+juQXgeCN+69qVsiMTrJDsMVLdhb3A@mail.gmail.com>"
+        },
+        "body_text": "正文已通过 WorkSwarm 修改。\n标记：WSQA-GMAIL-NODE-20261123-D1",
+        "body_chars_available": 50,
+        "body_truncated": false,
+        "warnings": []
+      }
+    },
+    {
+      "call_id": "call_ff16a19d62b54e56840f4b1c5a9b1ab1",
+      "operation": "reply",
+      "ok": true,
+      "params": {
+        "messageId": "1a20673315216dc4",
+        "body": "这是一条通过 WorkSwarm 发出的虚构测试回复。WSQA-GMAIL-NODE-20261123-D1-REPLY",
+        "requestId": "WSQA-GMAIL-D1-REPLY-20261123",
+        "expectedAccount": "openjiuwen.official@gmail.com",
+        "expectedRecipients": {
+          "to": [
+            "openjiuwen.official@gmail.com"
+          ],
+          "cc": [],
+          "bcc": []
+        }
+      },
+      "result": {
+        "rfc822_message_id": "<cbe15d9c-3f62-4ef0-b972-eaa56b670697@workswarm.app>",
+        "reply_to_message_id": "1a20673315216dc4",
+        "thread_id": "1a2067101db19802",
+        "message_id": "1a2067502e342a25",
+        "account": "openjiuwen.official@gmail.com",
+        "request_id": "WSQA-GMAIL-D1-REPLY-20261123",
+        "recipients": {
+          "to": [
+            "openjiuwen.official@gmail.com"
+          ],
+          "cc": [],
+          "bcc": []
+        },
+        "submitted_once": true,
+        "readback_required": true
+      }
+    },
+    {
+      "call_id": "call_783972380e2c4689bcc73d7d5126337e",
+      "operation": "read-message",
+      "ok": true,
+      "params": {
+        "messageId": "1a2067502e342a25",
+        "maxChars": 12000
+      },
+      "result": {
+        "message_id": "1a2067502e342a25",
+        "thread_id": "1a2067101db19802",
+        "label_ids": [
+          "UNREAD",
+          "SENT",
+          "INBOX"
+        ],
+        "headers": {
+          "from": "openjiuwen.official@gmail.com",
+          "to": "openjiuwen.official@gmail.com",
+          "subject": "WorkSwarm Gmail Node 最终验收 20261123-D1",
+          "date": "Sun, 22 Nov 2026 22:31:01 -0500",
+          "message-id": "<CAPhovP1BAYwmyW7hs_E0=inOaRapu73GaRCWV3w0VD6nfNZrRw@mail.gmail.com>",
+          "references": "<CAPhovP25y+tqrjpt8f_x+juQXgeCN+69qVsiMTrJDsMVLdhb3A@mail.gmail.com>",
+          "in-reply-to": "<CAPhovP25y+tqrjpt8f_x+juQXgeCN+69qVsiMTrJDsMVLdhb3A@mail.gmail.com>"
+        },
+        "body_text": "这是一条通过 WorkSwarm 发出的虚构测试回复。WSQA-GMAIL-NODE-20261123-D1-REPLY",
+        "body_chars_available": 60,
+        "body_truncated": false,
+        "warnings": []
+      }
+    },
+    {
+      "call_id": "call_88782521855d49f5b3f8d790fcf7a37e",
+      "operation": "read-thread",
+      "ok": true,
+      "params": {
+        "threadId": "1a2067101db19802",
+        "maxMessages": 10,
+        "maxChars": 24000
+      },
+      "result": {
+        "thread_id": "1a2067101db19802",
+        "messages": [
+          {
+            "message_id": "1a20673315216dc4",
+            "thread_id": "1a2067101db19802",
+            "label_ids": [
+              "UNREAD",
+              "SENT",
+              "INBOX"
+            ],
+            "headers": {
+              "from": "openjiuwen.official@gmail.com",
+              "to": "openjiuwen.official@gmail.com",
+              "subject": "WorkSwarm Gmail Node 最终验收 20261123-D1",
+              "date": "Sun, 22 Nov 2026 22:29:02 -0500",
+              "message-id": "<CAPhovP25y+tqrjpt8f_x+juQXgeCN+69qVsiMTrJDsMVLdhb3A@mail.gmail.com>"
+            },
+            "body_text": "正文已通过 WorkSwarm 修改。\n标记：WSQA-GMAIL-NODE-20261123-D1",
+            "body_chars_available": 50,
+            "body_truncated": false,
+            "warnings": []
+          },
+          {
+            "message_id": "1a2067502e342a25",
+            "thread_id": "1a2067101db19802",
+            "label_ids": [
+              "UNREAD",
+              "SENT",
+              "INBOX"
+            ],
+            "headers": {
+              "from": "openjiuwen.official@gmail.com",
+              "to": "openjiuwen.official@gmail.com",
+              "subject": "WorkSwarm Gmail Node 最终验收 20261123-D1",
+              "date": "Sun, 22 Nov 2026 22:31:01 -0500",
+              "message-id": "<CAPhovP1BAYwmyW7hs_E0=inOaRapu73GaRCWV3w0VD6nfNZrRw@mail.gmail.com>",
+              "references": "<CAPhovP25y+tqrjpt8f_x+juQXgeCN+69qVsiMTrJDsMVLdhb3A@mail.gmail.com>",
+              "in-reply-to": "<CAPhovP25y+tqrjpt8f_x+juQXgeCN+69qVsiMTrJDsMVLdhb3A@mail.gmail.com>"
+            },
+            "body_text": "这是一条通过 WorkSwarm 发出的虚构测试回复。WSQA-GMAIL-NODE-20261123-D1-REPLY",
+            "body_chars_available": 60,
+            "body_truncated": false,
+            "warnings": []
+          }
+        ],
+        "messages_available": 2,
+        "count": 2,
+        "truncated": false
+      }
+    },
+    {
+      "call_id": "call_9b50ddcb68dc480cacb5b18a4c532dd8",
+      "operation": "list-drafts",
+      "ok": true,
+      "params": {
+        "query": "subject:\"WorkSwarm Gmail Node 最终验收 20261123-D1\"",
+        "limit": 5
+      },
+      "result": {
+        "drafts": [],
+        "next_page_token": "",
+        "has_more": false
+      }
+    },
+    {
+      "call_id": "call_bf33a77bc0c244d1b431042b016110e6",
+      "operation": "search",
+      "ok": true,
+      "params": {
+        "query": "subject:\"WorkSwarm Gmail Node 普通发送验收 20261123-D2\"",
+        "limit": 5
+      },
+      "result": {
+        "messages": [],
+        "next_page_token": "",
+        "result_size_estimate": 0,
+        "has_more": false
+      }
+    },
+    {
+      "call_id": "call_91e8e56fe4114f3498e41edd84ad8117",
+      "operation": "send",
+      "ok": true,
+      "params": {
+        "to": [
+          "openjiuwen.official@gmail.com"
+        ],
+        "subject": "WorkSwarm Gmail Node 普通发送验收 20261123-D2",
+        "body": "这是一封普通发送接口的虚构自收测试邮件。WSQA-GMAIL-NODE-20261123-D2",
+        "requestId": "WSQA-GMAIL-D2-SEND-20261123",
+        "expectedAccount": "openjiuwen.official@gmail.com",
+        "expectedRecipients": {
+          "to": [
+            "openjiuwen.official@gmail.com"
+          ],
+          "cc": [],
+          "bcc": []
+        }
+      },
+      "result": {
+        "rfc822_message_id": "<b2687943-bd5e-489e-a460-6367b086bda7@workswarm.app>",
+        "message_id": "1a2067829c8f6ad5",
+        "thread_id": "1a2067829c8f6ad5",
+        "account": "openjiuwen.official@gmail.com",
+        "request_id": "WSQA-GMAIL-D2-SEND-20261123",
+        "recipients": {
+          "to": [
+            "openjiuwen.official@gmail.com"
+          ],
+          "cc": [],
+          "bcc": []
+        },
+        "submitted_once": true,
+        "readback_required": true
+      }
+    },
+    {
+      "call_id": "call_33534075a50e48c29fc8471ad8fd66c5",
+      "operation": "read-message",
+      "ok": true,
+      "params": {
+        "messageId": "1a2067829c8f6ad5",
+        "maxChars": 12000
+      },
+      "result": {
+        "message_id": "1a2067829c8f6ad5",
+        "thread_id": "1a2067829c8f6ad5",
+        "label_ids": [
+          "UNREAD",
+          "SENT",
+          "INBOX"
+        ],
+        "headers": {
+          "from": "openjiuwen.official@gmail.com",
+          "to": "openjiuwen.official@gmail.com",
+          "subject": "WorkSwarm Gmail Node 普通发送验收 20261123-D2",
+          "date": "Sun, 22 Nov 2026 22:34:27 -0500",
+          "message-id": "<CAPhovP0EHVxAG4xGy11Ayzv515nYsiu0yyMXpLriGjrnWjy64Q@mail.gmail.com>"
+        },
+        "body_text": "这是一封普通发送接口的虚构自收测试邮件。WSQA-GMAIL-NODE-20261123-D2",
+        "body_chars_available": 47,
+        "body_truncated": false,
+        "warnings": []
+      }
+    }
+  ],
+  "failures": [],
+  "expected_fixture": {
+    "subject": "WorkSwarm Gmail Node 最终验收 20261123-D1",
+    "initial": "这是一封虚构测试草稿。\n标记：WSQA-GMAIL-NODE-20261123-D1",
+    "edited": "正文已通过 WorkSwarm 修改。\n标记：WSQA-GMAIL-NODE-20261123-D1",
+    "reply": "这是一条通过 WorkSwarm 发出的虚构测试回复。WSQA-GMAIL-NODE-20261123-D1-REPLY",
+    "ordinary_send_body": "这是一封普通发送接口的虚构自收测试邮件。WSQA-GMAIL-NODE-20261123-D2"
+  }
+}

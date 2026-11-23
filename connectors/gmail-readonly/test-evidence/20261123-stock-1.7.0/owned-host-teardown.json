@@ -1,0 +1,13 @@
+{
+  "profile": "/private/tmp/workswarm-gmail-1.7.0-final-20261123",
+  "command_cwd_and_owned_session_verified": true,
+  "signal": "SIGTERM",
+  "owned_host_pids": [
+    62583,
+    62584,
+    62585,
+    62586
+  ],
+  "remaining": [],
+  "user_default_workswarm_targeted": false
+}
