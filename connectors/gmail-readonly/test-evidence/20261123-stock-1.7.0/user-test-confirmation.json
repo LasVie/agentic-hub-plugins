@@ -1,0 +1,113 @@
+{
+  "task_id": "AH-20261111-gmail-connection",
+  "candidate_id": null,
+  "version": "1.7.0",
+  "display_name": "Gmail 邮件连接器",
+  "confirmed_by": "Song Haoran",
+  "recorded_at": "2026-11-23T11:43:31+08:00",
+  "confirmation_source": "Current Codex conversation, user message immediately following the final Gmail 1.7.0 local acceptance handoff; no message permalink available",
+  "user_quote": "确认 Gmail 1.7.0 测试通过，批准公开这 9 张实测原图，附上截图提交 PR，还是只改 Agentic Hub 包。",
+  "user_test_completion_confirmed": true,
+  "public_original_screenshots_approved": true,
+  "approved_screenshot_count": 9,
+  "screenshots": [
+    {
+      "file": "screenshots/15-final-rebuilt-callback.jpg",
+      "sha256": "82a292e7603d5060572ef3fd1e88b85a00ba9226a486ce66edb2e20fd8c77f94",
+      "bytes": 12222,
+      "dimensions": {
+        "pixelWidth": 762,
+        "pixelHeight": 1033
+      },
+      "original_unmodified": true
+    },
+    {
+      "file": "screenshots/16-final-rebuilt-card-connected.jpg",
+      "sha256": "0564c26dd843e663a8423d205b61164d69b3db7b5096c5c2dff8b7ea76eaf975",
+      "bytes": 24375,
+      "dimensions": {
+        "pixelWidth": 1280,
+        "pixelHeight": 720
+      },
+      "original_unmodified": true
+    },
+    {
+      "file": "screenshots/17-final-empty-drafts-and-search.jpg",
+      "sha256": "bb7b9b273b93a0dda3e512825a8c1c624e48aeebbafa518f18dfc7cfe9884116",
+      "bytes": 70289,
+      "dimensions": {
+        "pixelWidth": 1280,
+        "pixelHeight": 720
+      },
+      "original_unmodified": true
+    },
+    {
+      "file": "screenshots/19-final-draft-edit-readback.jpg",
+      "sha256": "f7780ae7abfb24ac63ccb966ac537131bc6b23d0036cb1920e551a2341d81f42",
+      "bytes": 53867,
+      "dimensions": {
+        "pixelWidth": 1280,
+        "pixelHeight": 720
+      },
+      "original_unmodified": true
+    },
+    {
+      "file": "screenshots/20-final-send-message-thread.jpg",
+      "sha256": "627c9a6312b291f7ff211614a792dd7f2414e6a60520190e6a6277a722f12212",
+      "bytes": 63336,
+      "dimensions": {
+        "pixelWidth": 1280,
+        "pixelHeight": 720
+      },
+      "original_unmodified": true
+    },
+    {
+      "file": "screenshots/21-final-reply-readback.jpg",
+      "sha256": "daac1da056db26dce057be20f40e88923eb5a5411d459fd749456beda12fc470",
+      "bytes": 57237,
+      "dimensions": {
+        "pixelWidth": 1280,
+        "pixelHeight": 720
+      },
+      "original_unmodified": true
+    },
+    {
+      "file": "screenshots/22-final-ordinary-send-readback.jpg",
+      "sha256": "ae7fae9609a0b666cfc448c7013d03abdbece9f1e6bac526110f9c58a1cc067c",
+      "bytes": 53655,
+      "dimensions": {
+        "pixelWidth": 1280,
+        "pixelHeight": 720
+      },
+      "original_unmodified": true
+    },
+    {
+      "file": "screenshots/23-final-disconnected-card.jpg",
+      "sha256": "eae36055e78ca0e2212c276f3c113006073ba1d3f40e8823586a271bbaccd8d9",
+      "bytes": 23918,
+      "dimensions": {
+        "pixelWidth": 1280,
+        "pixelHeight": 720
+      },
+      "original_unmodified": true
+    },
+    {
+      "file": "screenshots/24-final-cancelled-card.jpg",
+      "sha256": "4fd86d5a2c992d6cee5fa0b0a8dd6daa0c0f3617c6025846fb38734102337696",
+      "bytes": 23918,
+      "dimensions": {
+        "pixelWidth": 1280,
+        "pixelHeight": 720
+      },
+      "original_unmodified": true
+    }
+  ],
+  "wrapped_sha256": "1264e564ef1f60ff4e7ca597693949bd5e778248dd8ccf1d27c7e42debcfebcb",
+  "native_sha256": "38e5378f1bbf70cbd452acd0e22c0a90d2df41c79e667d3814b56899ab954be2",
+  "scope": "Submit a PR with the nine original test screenshots; Agentic Hub Gmail package only. No WorkSwarm source edits, merge or Hub publication in this requested handoff.",
+  "known_limitations_disclosed_in_previous_handoff": [
+    "Model long-turn stalls recovered through explicit read-only short follow-up by actual message ID; no resend",
+    "BYO Desktop OAuth JSON required; test Google project warning remains",
+    "Formal Hub download/install, Windows/Linux, remote callbacks, natural expiry/real remote revoke and live complex MIME not tested"
+  ]
+}

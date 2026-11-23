@@ -1,0 +1,11 @@
+{
+  "task_id": "AH-20261111-gmail-connection",
+  "version": "1.7.0",
+  "date": "2026-11-23",
+  "command": "/Applications/WorkSwarm.app/Contents/Resources/node-runtime/bin/node --test --test-reporter=spec connectors/gmail-readonly/tests/test_gmail_node.cjs",
+  "exit_code": 0,
+  "passed": 23,
+  "failed": 0,
+  "source": "Actual exec_command result in current conversation after final empty-draft fix; no full stdout file captured",
+  "mocked_scope": "Node unit contract/MIME/guards/journal; not a replacement for actual Gmail/host acceptance"
+}

@@ -1,0 +1,41 @@
+{
+  "version": "1.7.0",
+  "candidate_id": null,
+  "task_id": "AH-20261111-gmail-connection",
+  "native": {
+    "path": "test-packages/gmail-readonly-1.7.0-native.zip",
+    "sha256": "38e5378f1bbf70cbd452acd0e22c0a90d2df41c79e667d3814b56899ab954be2"
+  },
+  "wrapped": {
+    "path": "release/1.7.0/gmail-readonly-1.7.0-agent-mcp.zip",
+    "sha256": "1264e564ef1f60ff4e7ca597693949bd5e778248dd8ccf1d27c7e42debcfebcb"
+  },
+  "official_cli_distribution": "openjiuwen-agentichub",
+  "official_cli_version": "0.0.1",
+  "review_files_sha256": {
+    "SOURCE_REVIEW.md": "f71437adce99f1254fe176b1cef0660ce0eb5e526c3d2f418bddd20302a2d785",
+    "TEST_REPORT.md": "83f123e4f58e995c5e3ac2c7626a80387d637e944dadab5acb4f9693c6b8132d",
+    "NATIVE_DESIGN.md": "dae1c7727ae1bef4098461036b31341a64a2a0d672e8e459ec5a4686d55ce435",
+    "provenance.json": "cfc940f8901f71a96827ef64a606bb4a3caf7f44f59b320b5b90d7c119395bcb",
+    "tests/test_gmail_node.cjs": "c42f09ca3fb42016c584e8f6902a51087e89be21985e9e20bf74834f29d03602",
+    "USER_TEST_CONFIRMATION.md": "797f1305e0969edb41eea2e7b3ead5f18f1435808a23a9aea9222810fa4e17aa",
+    "MANUAL_TEST.md": "a8334ddf32013fb52c8fc30142fac9d84d585ce04e0424b60bca32be978e36ec"
+  },
+  "payload_sha256": {
+    "README.md": "7c90181db19aa03ce4801adf650e4cedb017f0ee493cf0e1dcf400d33b2b40f0",
+    "THIRD_PARTY_NOTICES.md": "11e96fe7c7d1157adc0ee331c4dc7dc768020b42c00c6659e3a5aca07493a20a",
+    "cli.json": "20c03c8a9295a5df0521d6d2ebf4f67742b1cd3f360c88a8e99a4195a0c15edf",
+    "licenses/google-auth-library/LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "manifest.json": "25af7a40f3c8089b99e4f6a9bf3648fa3128ece78da2a64c382561e01fce46ae",
+    "skills/gmail-readonly-guide/SKILL.md": "07e1ba8339e4af2021f0b271e7bed3f3e480084f28636ceb08cef789c5e974c3",
+    "skills/gmail-readonly-guide/scripts/gmail-cli.cjs": "3ae10e30a0c1c591ce2556ddfef1a6bae0b6426667dab5d56bfd17a5b181937a",
+    "skills/gmail-readonly-guide/scripts/gmail-message.cjs": "fc9e2d7986a9c9524e3c6b3b9ddcb50a9937528bab9976ecb6a9335b7ff9ab3b",
+    "skills/gmail-readonly-guide/scripts/operations.cjs": "43fc2517296f41fb5bd7c615203fb0d17a8f8773d479efc0ee3617e3533409f4",
+    "skills/gmail-readonly-guide/scripts/package-lock.json": "8594eee23f2821953897b3ce6c401e633ee3cbb2022d93b1c82a2aa123ab53e9",
+    "skills/gmail-readonly-guide/scripts/package.json": "49132c6c198274e0f34de8cd6d3d84cfb7b259445b1b8fca6712c6826e6cd05c",
+    "skills/gmail-readonly-guide/scripts/storage.cjs": "21451bb6de298faf8da9f861213f5086a59591ab9cb0ed58bc7bcfb706ce0d3d"
+  },
+  "stage": "Submitting: exact 1.7.0 confirmed by Song Haoran; nine original screenshots approved for public PR; no merge or Hub publication",
+  "evidence_index": "test-evidence/20261123-stock-1.7.0/evidence-index.json",
+  "evidence_index_sha256": "c33a08650b3e1fcc6aa092ad80e3d9e8e1f502f26454a10c04c49f6bb0e77023"
+}

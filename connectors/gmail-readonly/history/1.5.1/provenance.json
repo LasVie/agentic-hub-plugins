@@ -1,0 +1,267 @@
+{
+  "mode": "native",
+  "permission_status": "original",
+  "version": "1.5.1",
+  "review_date": "2026-11-11",
+  "task_id": "AH-20261111-gmail-connection",
+  "candidate_id": null,
+  "owner": "Song Haoran",
+  "previous_delivery": {
+    "version": "1.0.0",
+    "task_id": "AH-20261110-gmail-readonly",
+    "owner": "Cai Zhenze",
+    "revision": "ab3bab18fc746f76954ffffcbf0d113a09fedcff",
+    "url": "https://github.com/LasVie/agentic-hub-plugins/pull/85"
+  },
+  "naming": {
+    "original_request": "Gmail",
+    "display_name": "Gmail 邮件连接器",
+    "slug": "gmail-readonly"
+  },
+  "audit_file": "SOURCE_REVIEW.md",
+  "independent_spec": "NATIVE_DESIGN.md",
+  "sources": [],
+  "reused_paths": [],
+  "materials_seen": [
+    {
+      "name": "Gmail 邮件助手",
+      "asset_id": "e4922fd9c9a54287957a2606728a46c4",
+      "version": "1.0.0",
+      "url": "https://docs.google.com/spreadsheets/d/12MqKOUOb49c9-i4KF_lii5A2TbmsoeJBF9kCwBIO4eM/edit",
+      "permission_status": "unknown",
+      "use": "Catalog functional description and prior review only; no implementation, prompts or media reused."
+    },
+    {
+      "url": "https://github.com/taylorwilsdon/google_workspace_mcp",
+      "revision": "53c392dc426ca8795e27dcf0301f92b5abe85688",
+      "version": "2.4.0",
+      "license_expression": "MIT",
+      "license_sha256": "6c1f0beeb232472e68f961f11a0bd1b98f21513ccdbb88770d392fc95f17149a",
+      "permission_status": "verified",
+      "use": "Read-only source suitability review; not copied, ported, installed or executed. Default base identity scopes, broader read/export tools and runtime dependencies exceed selected boundary."
+    },
+    {
+      "url": "https://developers.google.com/workspace/gmail/api/guides/configure-mcp-server",
+      "use": "Official remote MCP preview evaluated, not selected; no endpoint calls."
+    },
+    {
+      "url": "https://developers.google.com/identity/protocols/oauth2/native-app",
+      "use": "Public Desktop OAuth/PKCE/loopback interface specification; no copied sample implementation."
+    },
+    {
+      "url": "https://developers.google.com/workspace/gmail/api/auth/scopes",
+      "use": "Restricted Gmail read-only scope and verification requirements."
+    },
+    {
+      "url": "https://developers.google.com/identity/protocols/oauth2#expiration",
+      "use": "Refresh-token expiration and reauthentication requirements."
+    },
+    {
+      "url": "https://developers.google.com/workspace/gmail/api/reference/quota",
+      "use": "Current standard-use cost, quota units and planned overage billing; actual project billing/usage unverified."
+    },
+    {
+      "url": "https://developers.google.com/workspace/gmail/api/guides/threads",
+      "use": "Gmail draft update and threaded reply contract, with official linked REST reference. No implementation reused."
+    }
+  ],
+  "runtime_dependencies": [
+    {
+      "name": "cachetools",
+      "version": "6.2.6",
+      "license_metadata": "MIT",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "cachetools-6.2.6.dist-info/licenses/LICENSE",
+          "sha256": "28c000b52b0ee27138a68ef778227e4057046e86b65f62f1cacb99b0cc49e0d2"
+        }
+      ]
+    },
+    {
+      "name": "certifi",
+      "version": "2026.10.23",
+      "license_metadata": "MPL-2.0",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "certifi-2026.10.23.dist-info/licenses/LICENSE",
+          "sha256": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7"
+        }
+      ]
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.5.2",
+      "license_metadata": "MIT",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "charset_normalizer-3.5.2.dist-info/licenses/LICENSE",
+          "sha256": "6d0d41bfe170ac6c7dc248c9a63e254d0fb45a60d50a8257d0af92c6e249b887"
+        }
+      ]
+    },
+    {
+      "name": "google-auth",
+      "version": "2.41.1",
+      "license_metadata": "Apache 2.0",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "google_auth-2.41.1.dist-info/licenses/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ]
+    },
+    {
+      "name": "google-auth-oauthlib",
+      "version": "1.2.3",
+      "license_metadata": "Apache 2.0",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "google_auth_oauthlib-1.2.3.dist-info/licenses/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "name": "idna",
+      "version": "3.20",
+      "license_metadata": "BSD-3-Clause",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "idna-3.20.dist-info/licenses/LICENSE.md",
+          "sha256": "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04"
+        }
+      ]
+    },
+    {
+      "name": "oauthlib",
+      "version": "4.0.1",
+      "license_metadata": "BSD-3-Clause",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "oauthlib-4.0.1.dist-info/licenses/LICENSE",
+          "sha256": "0028aa4763a8a0b09ca4c68d585263474cf9aaa6ec69ffbef3a31a9eccdd3b91"
+        }
+      ]
+    },
+    {
+      "name": "pyasn1",
+      "version": "0.6.5",
+      "license_metadata": "BSD-2-Clause",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "pyasn1-0.6.5.dist-info/licenses/LICENSE.rst",
+          "sha256": "2aad5fc00f705c4a1addb83eed10a6a75d286a3779f0cf8519d87e62bc4735fd"
+        }
+      ]
+    },
+    {
+      "name": "pyasn1-modules",
+      "version": "0.4.2",
+      "license_metadata": "BSD",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "pyasn1_modules-0.4.2.dist-info/licenses/LICENSE.txt",
+          "sha256": "2aad5fc00f705c4a1addb83eed10a6a75d286a3779f0cf8519d87e62bc4735fd"
+        }
+      ]
+    },
+    {
+      "name": "requests",
+      "version": "2.32.5",
+      "license_metadata": "Apache-2.0",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "requests-2.32.5.dist-info/licenses/LICENSE",
+          "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b"
+        }
+      ]
+    },
+    {
+      "name": "requests-oauthlib",
+      "version": "2.0.0",
+      "license_metadata": "ISC",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "requests_oauthlib-2.0.0.dist-info/LICENSE",
+          "sha256": "ae01846afad8a8291fe6a08966f3015af9a8ff675d84b981f9793c122f7876e8"
+        }
+      ]
+    },
+    {
+      "name": "rsa",
+      "version": "4.9.1",
+      "license_metadata": "Apache-2.0",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "rsa-4.9.1.dist-info/LICENSE",
+          "sha256": "073f28b7d389c8fe74f607e17c27f81eaa5ace69edc43a884f23f41b41c5c726"
+        }
+      ]
+    },
+    {
+      "name": "urllib3",
+      "version": "2.8.0",
+      "license_metadata": "MIT",
+      "bundled_code": false,
+      "evidence": [
+        {
+          "distribution_path": "urllib3-2.8.0.dist-info/licenses/LICENSE.txt",
+          "sha256": "130e3a64d5fdd5d096a752694634a7d9df284469de86e5732100268041e3d686"
+        }
+      ]
+    }
+  ],
+  "runtime_lock": {
+    "path": "requirements.txt",
+    "sha256": "8cba403f6a10b86445df444e7e93d66aaeabc209ce90c22a8f09b82ff8dad51e",
+    "platform_audited": "macOS / Python 3.11",
+    "distribution_count": 13,
+    "audit_kind": "Installed distribution metadata and license-file presence/hashes, not exhaustive embedded source/security audit"
+  },
+  "license_reference_files": [
+    {
+      "name": "google-auth-oauthlib",
+      "version": "1.2.3",
+      "url": "https://github.com/googleapis/google-auth-library-python-oauthlib",
+      "path": "licenses/google-auth-oauthlib/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "source_distribution_path": "google_auth_oauthlib-1.2.3.dist-info/licenses/LICENSE"
+    },
+    {
+      "name": "google-auth",
+      "version": "2.41.1",
+      "url": "https://github.com/googleapis/google-auth-library-python",
+      "path": "licenses/google-auth/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "source_distribution_path": "google_auth-2.41.1.dist-info/licenses/LICENSE"
+    },
+    {
+      "name": "requests",
+      "version": "2.32.5",
+      "url": "https://github.com/psf/requests",
+      "path": "licenses/requests/LICENSE",
+      "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b",
+      "source_distribution_path": "requests-2.32.5.dist-info/licenses/LICENSE"
+    }
+  ],
+  "distribution_notes": [
+    "No third-party implementation files, dependency wheels, virtualenv, brand assets or user mailbox data are included in payload.",
+    "License-reference files are copied unchanged from exact installed distributions; no code from those distributions is vendored.",
+    "Runtime dependencies install separately from a version/hash-locked requirements file. The lock is not a grant to modify shared host dependencies.",
+    "Certifi metadata identifies MPL-2.0. Do not claim an entirely permissive or copyleft-free dependency graph.",
+    "No common license is assigned to team-owned code. Retain upstream license scopes and copyright statements.",
+    "Source audit does not establish live Google authorization, mailbox access, host listing, manual testing or production verification."
+  ]
+}

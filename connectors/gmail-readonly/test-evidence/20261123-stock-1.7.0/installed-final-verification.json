@@ -1,0 +1,9 @@
+{
+  "version": "1.7.0",
+  "native_sha256": "38e5378f1bbf70cbd452acd0e22c0a90d2df41c79e667d3814b56899ab954be2",
+  "wrapped_sha256": "1264e564ef1f60ff4e7ca597693949bd5e778248dd8ccf1d27c7e42debcfebcb",
+  "installed_payload_matches_all_files": true,
+  "file_count": 12,
+  "clean_profile_original_install_and_then_stock_uninstall_reinstall": true,
+  "old_session_removed_during_stock_uninstall": true
+}

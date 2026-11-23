@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "type": "agent-mcp",
+  "name": "gmail-readonly",
+  "display_name": "Gmail 邮件连接器",
+  "version": "1.5.1",
+  "owner": "Song Haoran",
+  "task_id": "AH-20261111-gmail-connection",
+  "candidate_id": null,
+  "internal_asset_id": "repo:agent-mcp:gmail-readonly",
+  "description": "Gmail CLI connector with user-managed Desktop OAuth for search, read, draft editing, send and threaded reply.",
+  "native_path": "gmail-readonly"
+}
