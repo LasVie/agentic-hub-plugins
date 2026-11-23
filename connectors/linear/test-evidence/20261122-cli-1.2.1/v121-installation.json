@@ -1,0 +1,8 @@
+{
+  "version": "1.2.1",
+  "native_payload_exact": true,
+  "file_count": 9,
+  "native_sha256": "44d4c15357d1bb28ecc08d6489dedbb9a51e30d43c8be35f3ee7eb14eb79140e",
+  "entry": "Stock WorkSwarm0.2.8 marketplace UI against local test catalog",
+  "production_hub": false
+}

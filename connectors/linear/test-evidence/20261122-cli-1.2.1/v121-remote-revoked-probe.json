@@ -1,0 +1,33 @@
+{
+  "version": "1.2.1",
+  "remote_revoke_approved_by": "Song Haoran",
+  "scope": "Personal Authorized applications MCP Read,Write grant",
+  "local_cache_not_manually_changed_before_probe": true,
+  "credential_contents_read_or_copied": false,
+  "results": [
+    {
+      "action": "status",
+      "returncode": 0,
+      "elapsed_seconds": 5.35,
+      "ok": false,
+      "connected": false,
+      "code": "AUTH_REQUIRED",
+      "message": "Linear 尚未授权或登录已失效，请从连接器卡片重新连接。",
+      "tool": null,
+      "business_result_present": false,
+      "result_keys": []
+    },
+    {
+      "action": "call",
+      "returncode": 1,
+      "elapsed_seconds": 6.92,
+      "ok": false,
+      "connected": null,
+      "code": "AUTH_REQUIRED",
+      "message": "Linear 尚未授权或登录已失效，请从连接器卡片重新连接。",
+      "tool": null,
+      "business_result_present": false,
+      "result_keys": []
+    }
+  ]
+}

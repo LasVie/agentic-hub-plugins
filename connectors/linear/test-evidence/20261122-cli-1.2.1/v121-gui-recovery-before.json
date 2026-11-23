@@ -1,0 +1,13 @@
+{
+  "version": "1.2.1",
+  "scenario": "second real remote revocation before entirely GUI recovery",
+  "local_cache_not_manually_changed": true,
+  "no_disconnect_rpc_used": true,
+  "elapsed_seconds": 5.16,
+  "status": {
+    "ok": false,
+    "code": "AUTH_REQUIRED",
+    "message": "Linear 尚未授权或登录已失效，请从连接器卡片重新连接。",
+    "connected": false
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "version": "1.2.1",
+  "exact_installed_cli": true,
+  "fault": "Test-only Node preload injects ENOTFOUND for mcp.linear.app",
+  "real_provider_outage": false,
+  "business_operations": 0,
+  "credential_contents_read_or_copied": false,
+  "before_connected": true,
+  "fault_response": {
+    "ok": false,
+    "code": "CLIENT_FAILED",
+    "message": "Linear 请求失败，请核对参数、网络和账号权限。"
+  },
+  "fault_elapsed_seconds": 0.2,
+  "after_connected": true,
+  "passed": true
+}

@@ -1,0 +1,18 @@
+{
+  "version": "1.2.1",
+  "pid": 98074,
+  "started_at": "2026-11-22T23:02:05.906694+08:00",
+  "entry": "Actual installed CLI; deliberately leave browser consent incomplete",
+  "business_operations": 0,
+  "exit_code": 1,
+  "elapsed_seconds": 165.04,
+  "response": {
+    "ok": false,
+    "code": "TIMEOUT",
+    "message": "Linear 操作超时，请检查网络或重新连接。"
+  },
+  "callback_port_22227_rebindable": true,
+  "credential_contents_read_or_copied": false,
+  "passed": true,
+  "limit": "Real installed CLI timeout; not a claim that the stock GUI auto-dismisses a failed auth modal"
+}

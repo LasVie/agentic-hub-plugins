@@ -1,0 +1,58 @@
+{
+  "version": "1.2.1",
+  "user_approved_test_connector_uninstall_reinstall": true,
+  "remote_mcp_grant_revoked_again_before_test": true,
+  "recovery_actions": [
+    "GUI uninstall and confirm",
+    "GUI marketplace install",
+    "normal Linear OAuth with same workspace and Read/Write grant",
+    "GUI Use to Chinese chat"
+  ],
+  "manual_disconnect_or_auth_reset_rpc": false,
+  "manual_cli_install_or_oauth_configuration": false,
+  "manual_credential_cache_edits": false,
+  "workswarm_source_changes": false,
+  "chat_duration": "1m04s",
+  "host_tool_calls": 7,
+  "business_reads": [
+    {
+      "ok": true,
+      "tool": "get_issue",
+      "result": {
+        "id": "OPE-8",
+        "uuid": "eb544132-0efb-43cd-9bc8-0ff839fbb59b",
+        "title": "WorkSwarm Linear CLI 1.2.1 回归验收 20261122",
+        "team": "OpenJiuwen",
+        "teamId": "31034d04-8d50-4047-a13c-7dbc74c99bf8",
+        "description": "只用于验证 WorkSwarm 0.2.8 的短时 Node CLI、中文写入和独立回读，无真实业务数据。"
+      }
+    },
+    {
+      "ok": true,
+      "tool": "list_comments",
+      "result": {
+        "comments": [
+          {
+            "id": "16b798d3-5d83-4a88-a7d8-7a7ecfe75f98",
+            "body": "短时 CLI 中文评论验收 LINEAR-121-20261122",
+            "attachments": [],
+            "createdAt": "2026-11-22T15:12:55.407Z",
+            "updatedAt": "2026-11-22T15:12:55.391Z",
+            "parentId": null,
+            "resolvedAt": null,
+            "quotedText": null,
+            "author": {
+              "id": "745bf970-e87a-4015-8645-8cc1ed91f5cf",
+              "name": "openJiuwen"
+            },
+            "onBehalfOf": null
+          }
+        ],
+        "hasNextPage": false
+      }
+    }
+  ],
+  "remote_business_writes": 0,
+  "passed": true,
+  "remaining_limit": "Host card still does not immediately detect remote revocation; recovery is user-initiated uninstall/reinstall."
+}

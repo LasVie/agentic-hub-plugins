@@ -1,0 +1,29 @@
+{
+  "version": "1.2.1",
+  "package_type": "mcp",
+  "id": "linear",
+  "name": "Linear 连接器",
+  "description": "在授权的 Linear 工作区中查询、读取、创建 Issue 与添加评论。",
+  "display_name": {
+    "zh": "Linear 连接器",
+    "en": "Linear"
+  },
+  "display_description": {
+    "zh": "在授权的 Linear 工作区中查询、读取、创建 Issue 与添加评论。",
+    "en": "Connect to Linear from WorkSwarm."
+  },
+  "integration": {
+    "type": "cli",
+    "file": "cli.json"
+  },
+  "credentials": {
+    "type": "cli-oauth"
+  },
+  "skills": [
+    {
+      "dir": "skills/linear-guide",
+      "mode": "all"
+    }
+  ],
+  "icon": "icon.png"
+}

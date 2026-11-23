@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "asset_type": "agent-mcp",
+  "name": "linear",
+  "display_name": "Linear 连接器",
+  "version": "1.2.1",
+  "task_id": "AH-20261117-linear-connector",
+  "internal_asset_id": "repo:agent-mcp:linear",
+  "created_at_utc": "2026-11-22T14:54:26.890570+00:00",
+  "artifacts": [
+    {
+      "form": "native",
+      "path": "connectors/linear/test-packages/linear-1.2.1-native.zip",
+      "filename": "linear-1.2.1-native.zip",
+      "sha256": "44d4c15357d1bb28ecc08d6489dedbb9a51e30d43c8be35f3ee7eb14eb79140e",
+      "size_bytes": 44246
+    },
+    {
+      "form": "agent-mcp_wrapped",
+      "path": "connectors/linear/release/1.2.1/linear-1.2.1-agent-mcp.zip",
+      "filename": "linear-1.2.1-agent-mcp.zip",
+      "sha256": "1cf7401eeb36846d5a3d8a25eaf1c95b7c569f7b755f5e99b88b3c388f1e534f",
+      "size_bytes": 18128
+    }
+  ],
+  "payload_sha256": {
+    "README.md": "6d99d8398ed73d878c240b02b3729cec803d7acbdab27c2a3bb388e2857c7e3e",
+    "THIRD_PARTY_NOTICES.md": "8c331bd7a88e1d0e109e7efc30e508a2649aa89711dea42962e2197d6e06f893",
+    "cli.json": "b44aa9ff05ff480fc3874a7425825beb32aeffccfa6c1d0f160ef53621f6fbdb",
+    "icon.png": "1fb31df139bb786a3c5662bc53b3f82bd6804629fd7ea6002ec603bb6eafb113",
+    "licenses/mcp-remote/LICENSE": "5514f48637fa1d8fed2256d12d322009a75962e6111370755fc5b20773db67ad",
+    "manifest.json": "150dd65c582898ca738b2e53c9b8dd9e7f5ca2687d5f5802e4ea412ea4b80fb8",
+    "skills/linear-guide/SKILL.md": "fd2c01b5933edda280e8bcb325b95be8bf082d723437babf9dd8f9c01aaff262",
+    "skills/linear-guide/scripts/linear-cli.cjs": "d3a74649e7619743a149dfadffc8bd52e1edbffec7d719e8e51f7833a6b7222e",
+    "skills/linear-guide/scripts/scope.cjs": "fe62eec75e96f4923d3205f1e373e48974437e66816d17b04cc531054b35b377"
+  },
+  "review_files_sha256": {
+    "SOURCE_REVIEW.md": "047c9b0d9dbae020ad9b5bf72b53d823be030f6f2e647a0eb669f4d951b6ca55",
+    "TEST_REPORT.md": "9efa1dc5367c84a504ccccde4a64d535eaafce62384c565fc654ab7ccdb50f7d",
+    "provenance.json": "54bda06d832c2348703fa21214042dd9f95fe8b1cee12f6e0f22832fd99a8246"
+  },
+  "official_cli": {
+    "distribution": "openjiuwen-agentichub",
+    "version": "0.0.1",
+    "source": "https://github.com/openJiuwen-ai/skillhub",
+    "source_commit": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+    "commands": [
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "init",
+        "linear",
+        "--type",
+        "agent-mcp"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "validate",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-36m9ge3q/linear"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "pack",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-36m9ge3q/linear",
+        "--output",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-36m9ge3q/out"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-linear-standard/tools/asset_release.py",
+        "preflight",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-linear-standard/connectors/linear/linear"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-linear-standard/tools/asset_release.py",
+        "preflight",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-36m9ge3q/native.zip"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-linear-standard/tools/asset_release.py",
+        "preflight",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-36m9ge3q/out/linear-1.2.1.zip"
+      ]
+    ]
+  },
+  "checks": [
+    {
+      "step": "official_init",
+      "output": "Plugin initialized at: /private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-36m9ge3q/linear"
+    },
+    {
+      "step": "official_validate",
+      "output": "Plugin validation passed."
+    },
+    {
+      "step": "official_pack",
+      "output": "Packed: /private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-36m9ge3q/out/linear-1.2.1.zip"
+    },
+    {
+      "step": "javascript_preflight_native_source",
+      "output": "{\n  \"path\": \"/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-linear-standard/connectors/linear/linear\",\n  \"javascript_files_scanned\": 2,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_native_zip",
+      "output": "{\n  \"path\": \"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-36m9ge3q/native.zip\",\n  \"javascript_files_scanned\": 2,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_wrapped_zip",
+      "output": "{\n  \"path\": \"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-36m9ge3q/out/linear-1.2.1.zip\",\n  \"javascript_files_scanned\": 2,\n  \"known_dynamic_js_signatures\": 0\n}"
+    }
+  ],
+  "verification_limits": "Exact macOS WorkSwarm 0.2.8 local-catalog installer, OAuth, Chinese chat and lifecycle evidence collected. After a second real remote revocation, user-approved GUI uninstall/reinstall, normal OAuth and Chinese issue/comment readback passed without manual reset RPC or cache edits. Card invalidation is not automatic. Windows/Linux, server OAuth, natural expiry, production Hub installation/moderation remain unverified. Current-version user completion confirmed by Song Haoran in the current conversation on 2026-11-22. No archive or payload changes after testing.",
+  "test_evidence": "connectors/linear/test-evidence/20261122-cli-1.2.1/evidence-index.json",
+  "user_confirmation": {
+    "user": "Song Haoran",
+    "date": "2026-11-22",
+    "source": "current conversation",
+    "statement": "确认 Linear 1.2.1 测试通过，附上实测截图提交 PR",
+    "report_id": "RPT-20261122-linear-first-auth-repair"
+  }
+}
