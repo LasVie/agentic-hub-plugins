@@ -1,0 +1,55 @@
+{
+  "version": "1.1.0",
+  "task_id": "AH-20261117-dropbox-connector",
+  "date": "2026-11-23",
+  "wrapped_sha256": "194a3cad40d4aadf9a5553b65f6074ae6e2748583a7091d8e31d8596c1a52c3e",
+  "public_upload_authorized": true,
+  "images": [
+    {
+      "filename": "09-final-readonly-consent.jpg",
+      "purpose": "最终包授权完成回跳页；文件名保留，画面实际为成功页",
+      "sha256": "98852b8fd7854db43ca3ed19329c2aa57a758bad8c8e05b5d396ded6e7e21ab7",
+      "bytes": 12617,
+      "width": 762,
+      "height": 1033,
+      "original_unmodified": true
+    },
+    {
+      "filename": "10-final-card-connected.jpg",
+      "purpose": "最终包原生卡片详情及使用按钮",
+      "sha256": "8847e1529efb07ed5363d538d838544e2517972c7ef7b5d73ae27ad5081d9068",
+      "bytes": 30756,
+      "width": 1280,
+      "height": 720,
+      "original_unmodified": true
+    },
+    {
+      "filename": "14-final-chat-file-metadata.jpg",
+      "purpose": "最终新聊天的文件 ID、修订、完整读取和哈希核验",
+      "sha256": "d645f412862b5ae4bca74a8fee16033eec9e66c99bc6a4edf2d753fee9447b11",
+      "bytes": 59793,
+      "width": 1280,
+      "height": 720,
+      "original_unmodified": true
+    },
+    {
+      "filename": "12-final-chat-fulltext.jpg",
+      "purpose": "最终新聊天完整中文文本、末尾换行及 SHA-256",
+      "sha256": "efcd826ce22bf3c8737af17c761d969758ffa9d85db7b23e055b505cb28fed12",
+      "bytes": 64783,
+      "width": 1280,
+      "height": 720,
+      "original_unmodified": true
+    },
+    {
+      "filename": "08-native-file-preview.jpg",
+      "purpose": "原生 Dropbox 预览中的同一测试文件全文",
+      "sha256": "1bec207230a4c6543bcf7de55d652a4596d8aa814916fc64f03c109517385a35",
+      "bytes": 23164,
+      "width": 1280,
+      "height": 720,
+      "original_unmodified": true
+    }
+  ],
+  "approval_source": "Current conversation; reply to request_user_input_async call_e23e01e72044465998f4ba3794e07fd0"
+}

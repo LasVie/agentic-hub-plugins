@@ -1,0 +1,29 @@
+{
+  "version": "1.0.3",
+  "package_type": "mcp",
+  "id": "dropbox",
+  "name": "Dropbox 文件连接器",
+  "description": "搜索 Dropbox 文件名，列出文件夹，读取元数据和 UTF-8 文本。",
+  "display_name": {
+    "zh": "Dropbox 文件连接器",
+    "en": "Dropbox"
+  },
+  "display_description": {
+    "zh": "搜索 Dropbox 文件名，列出文件夹，读取元数据和 UTF-8 文本。",
+    "en": "Connect to Dropbox from WorkSwarm."
+  },
+  "integration": {
+    "type": "cli",
+    "file": "cli.json"
+  },
+  "credentials": {
+    "type": "cli-oauth"
+  },
+  "skills": [
+    {
+      "dir": "skills/dropbox-guide",
+      "mode": "all"
+    }
+  ],
+  "icon": "icon.png"
+}

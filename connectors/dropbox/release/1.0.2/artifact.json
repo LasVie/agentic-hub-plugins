@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "asset_type": "agent-mcp",
+  "name": "dropbox",
+  "display_name": "Dropbox 文件连接器",
+  "version": "1.0.2",
+  "task_id": "AH-20261117-dropbox-connector",
+  "internal_asset_id": "repo:agent-mcp:dropbox",
+  "created_at_utc": "2026-11-17T03:33:57.228019+00:00",
+  "artifacts": [
+    {
+      "form": "native",
+      "path": "connectors/dropbox/test-packages/dropbox-1.0.2-native.zip",
+      "filename": "dropbox-1.0.2-native.zip",
+      "sha256": "d69988034ce9f9e0d075e26e19e00c65c42caaeb3fa6ae9f6afe645ea4605287",
+      "size_bytes": 22572
+    },
+    {
+      "form": "agent-mcp_wrapped",
+      "path": "connectors/dropbox/release/1.0.2/dropbox-1.0.2-agent-mcp.zip",
+      "filename": "dropbox-1.0.2-agent-mcp.zip",
+      "sha256": "5a4d1cbf8c83d6e8d0ab0fbd494c9f7ec6e39a60e4f9144c9d0aec1d84131e9f",
+      "size_bytes": 8558
+    }
+  ],
+  "payload_sha256": {
+    "README.md": "b679b4c4d7a6655e6e9680e7cb87c33e9bfdd37ff45d3b34315e1bb5f15b7282",
+    "cli.json": "09ee60890acf2f89754fa837ad342de034fdf0dcfbd59bf0d8f1208fa47a515b",
+    "connector.py": "4865667aeb8b15986c52f7251f8b3b2624d6b422d011c69a18524b09b73aee99",
+    "http_client.py": "62734d225669a9e67d5185773525172b29a36fede91ed4fa6ab57a4bacf23318",
+    "manifest.json": "ef84948831d42249a00d01b5901d6f52286d6dde4f90b8917af9520a433a17ca",
+    "skills/dropbox-guide/SKILL.md": "2fd6c9d652816832d802203aaf6a1f3ddd5f62a428f3d26729c142d6bcdc007f"
+  },
+  "review_files_sha256": {
+    "SOURCE_REVIEW.md": "145dd18c716684007b3ceeec645d243aaa2196f415164e7933121e5ec257c8be",
+    "TEST_REPORT.md": "736c7baae0a80b1fd8f17d520aa5cd38ec2dd05f62ff45cd22881604d5b77bb3",
+    "provenance.json": "3a61ebf8f4e09d7999518ea965b8cc1b9f4d044d4df5271bee3723f295945abb"
+  },
+  "official_cli": {
+    "distribution": "openjiuwen-agentichub",
+    "version": "0.0.1",
+    "source": "https://github.com/openJiuwen-ai/skillhub",
+    "source_commit": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+    "commands": [
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/../gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "init",
+        "dropbox",
+        "--type",
+        "agent-mcp"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/../gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "validate",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-vdbt__it/dropbox"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/../gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "pack",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-vdbt__it/dropbox",
+        "--output",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-vdbt__it/out"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/../gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/tools/asset_release.py",
+        "preflight",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/connectors/dropbox/dropbox"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/../gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/tools/asset_release.py",
+        "preflight",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-vdbt__it/native.zip"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/../gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/tools/asset_release.py",
+        "preflight",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-vdbt__it/out/dropbox-1.0.2.zip"
+      ]
+    ]
+  },
+  "checks": [
+    {
+      "step": "official_init",
+      "output": "Plugin initialized at: /private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-vdbt__it/dropbox"
+    },
+    {
+      "step": "official_validate",
+      "output": "Plugin validation passed."
+    },
+    {
+      "step": "official_pack",
+      "output": "Packed: /private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-vdbt__it/out/dropbox-1.0.2.zip"
+    },
+    {
+      "step": "javascript_preflight_native_source",
+      "output": "{\n  \"path\": \"/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/connectors/dropbox/dropbox\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_native_zip",
+      "output": "{\n  \"path\": \"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-vdbt__it/native.zip\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_wrapped_zip",
+      "output": "{\n  \"path\": \"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-vdbt__it/out/dropbox-1.0.2.zip\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    }
+  ],
+  "verification_limits": "See the asset TEST_REPORT.md for the exact live checks, earlier tested versions, and remaining coverage."
+}

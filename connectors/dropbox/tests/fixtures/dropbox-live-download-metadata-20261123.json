@@ -1,0 +1,24 @@
+{
+  "metadata_keys": [
+    "client_modified",
+    "content_hash",
+    "id",
+    "is_downloadable",
+    "name",
+    "path_display",
+    "path_lower",
+    "property_groups",
+    "rev",
+    "server_modified",
+    "size"
+  ],
+  "metadata": {
+    "id": "id:Y8OcbOCWzmAAAAAAAAAABg",
+    "name": "WorkSwarm-Dropbox-QA-20261117.txt",
+    "rev": "0166070a4a280340000000348389531",
+    "size": 111,
+    "content_hash": "b7d673b3c92654d38a9b7cc07c23d8623c58a69f951cbc4acee287dd960058f6",
+    "is_downloadable": true
+  },
+  "bytes": 111
+}

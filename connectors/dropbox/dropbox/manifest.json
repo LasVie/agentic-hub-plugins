@@ -1,0 +1,29 @@
+{
+  "version": "1.1.0",
+  "package_type": "mcp",
+  "id": "dropbox",
+  "name": "Dropbox 文件连接器",
+  "description": "只读搜索 Dropbox 文件名、列目录、核对元数据及完整 UTF-8 文本。",
+  "display_name": {
+    "zh": "Dropbox 文件连接器",
+    "en": "Dropbox"
+  },
+  "display_description": {
+    "zh": "只读搜索 Dropbox 文件名、列目录、核对元数据及完整 UTF-8 文本。",
+    "en": "Read-only Dropbox filename search, metadata and verified UTF-8 text."
+  },
+  "integration": {
+    "type": "cli",
+    "file": "cli.json"
+  },
+  "credentials": {
+    "type": "cli-oauth"
+  },
+  "skills": [
+    {
+      "dir": "skills/dropbox-guide",
+      "mode": "all"
+    }
+  ],
+  "icon": "icon.png"
+}
