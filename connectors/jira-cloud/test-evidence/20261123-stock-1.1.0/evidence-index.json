@@ -1,0 +1,69 @@
+{
+  "task_id": "AH-20261117-jira-cloud-connector",
+  "owner": "Song Haoran",
+  "candidate": "Not Applicable",
+  "version": "1.1.0",
+  "native": {
+    "path": "test-packages/jira-cloud-1.1.0-native.zip",
+    "sha256": "d6c5a3bfa636f2d943dd12b8b17404a3687157d5eb8ef89bb55ae6d3297cf1fd"
+  },
+  "wrapped": {
+    "path": "release/1.1.0/jira-cloud-1.1.0-agent-mcp.zip",
+    "sha256": "fa99ccbddaaf41077c1fac3455b5726b19e3dcd8d3eaa6dc28ec4f108d1fad9f"
+  },
+  "original_screenshots": [
+    {
+      "path": "screenshots/07-final-stock-connected.jpg",
+      "sha256": "bb15ae120055d14efa84017e563b454cdfffee3229066b4228cc6ce230768e30",
+      "original_bytes": true
+    },
+    {
+      "path": "screenshots/12-final-chat-summary.jpg",
+      "sha256": "b08f01ab4369ba3cd08e128dc66331784d5229e909fc6a3ff7e8b04d196bb3c2",
+      "original_bytes": true
+    },
+    {
+      "path": "screenshots/13-real-jira-kan6.jpg",
+      "sha256": "b63c8c0138b8b48ab2be1f9491ccc07959a07294fb68fd4506f47eaa3b98a822",
+      "original_bytes": true
+    },
+    {
+      "path": "screenshots/16-real-oauth-denied.jpg",
+      "sha256": "bc270d145c35a00326ad02fc016ff2339fcb5609438c7d46b4f6e840c7c4a7da",
+      "original_bytes": true
+    },
+    {
+      "path": "screenshots/18-final-after-card-cancel.jpg",
+      "sha256": "fc9a4f042fbacf1742f64f55f60b47ce1cc2e995e5692f4e94df9009500d3087",
+      "original_bytes": true
+    }
+  ],
+  "test_scope": "Stock WorkSwarm 0.2.8 on macOS; local catalog fixture uses exact wrapped ZIP. Not public Hub installation. Real normal card OAuth and chat; denial via exact installed CLI in separate test profile; cancellation via actual stock card.",
+  "limitations": [
+    "Natural token expiry and server-side revoked-grant recovery not tested.",
+    "Windows, Linux, remote-server loopback and official Hub moderation not tested.",
+    "Detail and JQL responses omit different fields; readback evidence combines two reads, not an atomic full-field snapshot."
+  ],
+  "user_confirmation_received": true,
+  "publication_of_originals_confirmed": true,
+  "evidence_files_sha256": {
+    "final-parent-death-probe.json": "b2d4e0b3c3d43ef7579f103bce3294fdfa07c50004ef0e1df7162c7c4dd332f3",
+    "history-integrity.json": "30979e1364b085a5fed7aa23011b2a141bc69baf88a447cf3a90b39ce3ac6b54",
+    "v110-mcp-show.json": "c62be10eb80ef5b20137f789360ec96225b2618b130c8c89f481216701c87b96",
+    "final-integrity-review.json": "e0cbfd483e50f7ca18a7e02584c28546f0f4cea643f599dbae7f4cab3aeff1ba",
+    "user-test-confirmation.json": "3ae254690b649f9ed7ccc4a58a81863e9030879f9be3d84ab007f2dd5722d8ce",
+    "v110-mcp-disconnect.json": "71883cbd8445669763e0289007966ad412ff1a9650b43c67c611dead2ce1d0b4",
+    "business-evidence.json": "22edd10d8a29d1aa849dda3ac7c7e53f1e05ea1c7ea3c345e41539d5bd292a1e",
+    "unit-test-result.json": "d5fba088346d10f556634dbda049d0ba375a0188a50863d3176d157e86f9985f",
+    "final-tools.json": "3c74546ee11c65e067d9e47f165c4cdb4937c2a791eb4f0d4f9a00597f1d7d65",
+    "rules-recheck.json": "0e52cb31df04e7110bec216b5203021f49aa10364c63229367c1b58654dcc8f2",
+    "final-failure-probes.json": "1945a62eccb184ee58f93567d2deab4512b0cf026c72230eba52395c6a3e9357",
+    "installed-final-verification.json": "7d9edcbf3b9c258b09674de46a0a5776515a5d12469dc98f17c355d0e72948ec",
+    "screenshots/16-real-oauth-denied.jpg": "bc270d145c35a00326ad02fc016ff2339fcb5609438c7d46b4f6e840c7c4a7da",
+    "screenshots/13-real-jira-kan6.jpg": "b63c8c0138b8b48ab2be1f9491ccc07959a07294fb68fd4506f47eaa3b98a822",
+    "screenshots/12-final-chat-summary.jpg": "b08f01ab4369ba3cd08e128dc66331784d5229e909fc6a3ff7e8b04d196bb3c2",
+    "screenshots/18-final-after-card-cancel.jpg": "fc9a4f042fbacf1742f64f55f60b47ce1cc2e995e5692f4e94df9009500d3087",
+    "screenshots/07-final-stock-connected.jpg": "bb15ae120055d14efa84017e563b454cdfffee3229066b4228cc6ce230768e30"
+  },
+  "confirmation_file": "user-test-confirmation.json"
+}

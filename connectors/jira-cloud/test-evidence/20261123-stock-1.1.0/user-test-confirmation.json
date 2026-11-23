@@ -1,0 +1,13 @@
+{
+  "member": "Song Haoran",
+  "date": "2026-11-23",
+  "version": "1.1.0",
+  "question": "是否确认 Jira Cloud 1.1.0 本次测试通过，接受已列明的未测边界，并批准附五张实测原图提交 PR？",
+  "reply": "确认通过并提交 PR",
+  "native_sha256": "d6c5a3bfa636f2d943dd12b8b17404a3687157d5eb8ef89bb55ae6d3297cf1fd",
+  "wrapped_sha256": "fa99ccbddaaf41077c1fac3455b5726b19e3dcd8d3eaa6dc28ec4f108d1fad9f",
+  "test_completion_confirmed": true,
+  "known_untested_boundaries_accepted": true,
+  "five_original_images_publication_approved": true,
+  "merge_authorized": false
+}

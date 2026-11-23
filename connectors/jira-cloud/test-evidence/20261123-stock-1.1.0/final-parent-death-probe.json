@@ -1,0 +1,17 @@
+{
+  "real_user_consent_performed": false,
+  "bridge_first_output": true,
+  "official_auth_url_ready": true,
+  "elapsed_seconds": 3.66,
+  "authorization_host": "auth.atlassian.com",
+  "requested_scopes": [
+    "read:jira:agent-interface",
+    "search:jira:agent-interface",
+    "write:jira:agent-interface",
+    "read:me",
+    "read:account",
+    "offline_access"
+  ],
+  "callback_port": 32719,
+  "callback_closed_after_parent_sigkill": true
+}

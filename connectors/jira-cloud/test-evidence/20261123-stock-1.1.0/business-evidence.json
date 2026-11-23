@@ -1,0 +1,433 @@
+{
+  "version": "1.1.0",
+  "stock_workswarm": "0.2.8",
+  "session_id": "web_1a2046a3a46_0b0c58640c95",
+  "local_catalog_fixture": true,
+  "created_count": 1,
+  "created_key": "KAN-6",
+  "business_calls": [
+    {
+      "goal": "查询 KAN 最近五条测试工单",
+      "tool": "searchJiraIssuesUsingJql",
+      "arguments": {
+        "cloudId": "9ad9c506-db35-478f-ab8c-aa4c42579e27",
+        "jql": "project = KAN ORDER BY created DESC",
+        "maxResults": 5,
+        "fields": [
+          "summary",
+          "description",
+          "status",
+          "issuetype",
+          "project",
+          "created",
+          "updated"
+        ]
+      },
+      "response": {
+        "ok": true,
+        "tool": "searchJiraIssuesUsingJql",
+        "result": {
+          "data": {
+            "isLast": true,
+            "appliedContentFormat": "markdown",
+            "issues": [
+              {
+                "id": "10014",
+                "key": "KAN-5",
+                "fields": {
+                  "summary": "WorkSwarm Jira 聊天验收 WSQA-261117-J1",
+                  "status": {
+                    "name": "To Do",
+                    "statusCategory": {
+                      "name": "To Do"
+                    }
+                  },
+                  "issuetype": {
+                    "name": "Task"
+                  },
+                  "created": "2026-11-17T17:22:03.859+0800",
+                  "updated": "2026-11-17T17:22:04.469+0800",
+                  "project": {
+                    "key": "KAN",
+                    "name": "QA Testing"
+                  }
+                }
+              },
+              {
+                "id": "10013",
+                "key": "KAN-4",
+                "fields": {
+                  "summary": "WorkSwarm Jira 连接器实测 WS-JIRA-20261117-110014",
+                  "status": {
+                    "name": "To Do",
+                    "statusCategory": {
+                      "name": "To Do"
+                    }
+                  },
+                  "issuetype": {
+                    "name": "Task"
+                  },
+                  "created": "2026-11-17T11:00:15.739+0800",
+                  "updated": "2026-11-17T11:00:15.875+0800",
+                  "project": {
+                    "key": "KAN",
+                    "name": "QA Testing"
+                  }
+                }
+              },
+              {
+                "id": "10003",
+                "key": "KAN-3",
+                "fields": {
+                  "summary": "Subtask 2.1",
+                  "status": {
+                    "name": "To Do",
+                    "statusCategory": {
+                      "name": "To Do"
+                    }
+                  },
+                  "issuetype": {
+                    "name": "Subtask"
+                  },
+                  "created": "2026-11-17T10:12:35.552+0800",
+                  "updated": "2026-11-17T10:12:36.047+0800",
+                  "project": {
+                    "key": "KAN",
+                    "name": "QA Testing"
+                  }
+                }
+              },
+              {
+                "id": "10001",
+                "key": "KAN-2",
+                "fields": {
+                  "summary": "Task 2",
+                  "status": {
+                    "name": "In Progress",
+                    "statusCategory": {
+                      "name": "In Progress"
+                    }
+                  },
+                  "issuetype": {
+                    "name": "Story"
+                  },
+                  "created": "2026-11-17T10:12:34.777+0800",
+                  "updated": "2026-11-17T10:12:35.201+0800",
+                  "project": {
+                    "key": "KAN",
+                    "name": "QA Testing"
+                  }
+                }
+              },
+              {
+                "id": "10000",
+                "key": "KAN-1",
+                "fields": {
+                  "summary": "Task 1",
+                  "status": {
+                    "name": "To Do",
+                    "statusCategory": {
+                      "name": "To Do"
+                    }
+                  },
+                  "issuetype": {
+                    "name": "Task"
+                  },
+                  "created": "2026-11-17T10:12:33.577+0800",
+                  "updated": "2026-11-17T10:12:34.420+0800",
+                  "project": {
+                    "key": "KAN",
+                    "name": "QA Testing"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "goal": "读取指定的 KAN-5 工单",
+      "tool": "getJiraIssue",
+      "arguments": {
+        "cloudId": "9ad9c506-db35-478f-ab8c-aa4c42579e27",
+        "issueIdOrKey": "KAN-5",
+        "fields": [
+          "summary",
+          "description",
+          "status",
+          "issuetype",
+          "project",
+          "created",
+          "updated"
+        ]
+      },
+      "response": {
+        "ok": true,
+        "tool": "getJiraIssue",
+        "result": {
+          "data": {
+            "appliedContentFormat": "markdown",
+            "id": "10014",
+            "key": "KAN-5",
+            "fields": {
+              "summary": "WorkSwarm Jira 聊天验收 WSQA-261117-J1",
+              "description": "WorkSwarm Jira 聊天验收：创建后回读中文标题和描述",
+              "status": {
+                "name": "To Do",
+                "statusCategory": {
+                  "name": "To Do"
+                }
+              },
+              "updated": "2026-11-17T17:22:04.469+0800"
+            }
+          }
+        }
+      }
+    },
+    {
+      "goal": "核对项目是否支持 Task",
+      "tool": "listJiraProjectIssueTypesMetadata",
+      "arguments": {
+        "cloudId": "9ad9c506-db35-478f-ab8c-aa4c42579e27",
+        "projectIdOrKey": "KAN"
+      },
+      "response": {
+        "ok": true,
+        "tool": "listJiraProjectIssueTypesMetadata",
+        "result": {
+          "data": {
+            "issueTypes": [
+              {
+                "id": "10001",
+                "name": "Epic",
+                "description": "Epics track collections of related bugs, stories, and tasks.",
+                "subtask": false
+              },
+              {
+                "id": "10002",
+                "name": "Subtask",
+                "description": "Subtasks track small pieces of work that are part of a larger task.",
+                "subtask": true
+              },
+              {
+                "id": "10003",
+                "name": "Task",
+                "description": "Tasks track small, distinct pieces of work.",
+                "subtask": false
+              },
+              {
+                "id": "10004",
+                "name": "Story",
+                "description": "Stories track functionality or features expressed as user goals.",
+                "subtask": false
+              }
+            ],
+            "total": 4,
+            "startAt": 0,
+            "maxResults": 50
+          }
+        }
+      }
+    },
+    {
+      "goal": "查重中文验收工单",
+      "tool": "searchJiraIssuesUsingJql",
+      "arguments": {
+        "cloudId": "9ad9c506-db35-478f-ab8c-aa4c42579e27",
+        "jql": "project = KAN AND summary ~ \"\\\"WorkSwarm Jira 中文验收 20261123-Node-QA-0210\\\"\" ORDER BY created DESC",
+        "maxResults": 100,
+        "fields": [
+          "summary",
+          "description",
+          "issuetype",
+          "project"
+        ]
+      },
+      "response": {
+        "ok": true,
+        "tool": "searchJiraIssuesUsingJql",
+        "result": {
+          "data": {
+            "isLast": true,
+            "appliedContentFormat": "markdown",
+            "issues": []
+          }
+        }
+      }
+    },
+    {
+      "goal": "确认 Task 无额外必填自定义字段",
+      "tool": "getJiraIssueTypeMetaWithFields",
+      "arguments": {
+        "cloudId": "9ad9c506-db35-478f-ab8c-aa4c42579e27",
+        "projectIdOrKey": "KAN",
+        "issueTypeId": "10003",
+        "startAt": 0,
+        "maxResults": 100
+      },
+      "response": {
+        "ok": true,
+        "tool": "getJiraIssueTypeMetaWithFields",
+        "result": {
+          "data": {
+            "total": 18,
+            "startAt": 0,
+            "maxResults": 100,
+            "fields": [
+              {
+                "fieldId": "issuetype",
+                "name": "Issue Type",
+                "required": true,
+                "schema": {
+                  "type": "issuetype"
+                },
+                "allowedValues": [
+                  {
+                    "id": "10003",
+                    "name": "Task"
+                  }
+                ]
+              },
+              {
+                "fieldId": "project",
+                "name": "Project",
+                "required": true,
+                "schema": {
+                  "type": "project"
+                },
+                "allowedValues": [
+                  {
+                    "id": "10000",
+                    "name": "QA Testing"
+                  }
+                ]
+              },
+              {
+                "fieldId": "reporter",
+                "name": "Reporter",
+                "required": true,
+                "schema": {
+                  "type": "user"
+                }
+              },
+              {
+                "fieldId": "summary",
+                "name": "Summary",
+                "required": true,
+                "schema": {
+                  "type": "string"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "goal": "创建用户明确授权的一条验收工单",
+      "tool": "createJiraIssue",
+      "arguments": {
+        "cloudId": "9ad9c506-db35-478f-ab8c-aa4c42579e27",
+        "projectKey": "KAN",
+        "issueType": "Task",
+        "summary": "WorkSwarm Jira 中文验收 20261123-Node-QA-0210",
+        "description": "这是一条由 WorkSwarm 聊天创建的中文连接器测试工单，仅用于验证新建与独立回读，不包含真实业务数据。"
+      },
+      "response": {
+        "ok": true,
+        "tool": "createJiraIssue",
+        "result": {
+          "data": {
+            "id": "10047",
+            "key": "KAN-6"
+          }
+        }
+      }
+    },
+    {
+      "goal": "核对新工单项目、标题、描述与类型",
+      "tool": "getJiraIssue",
+      "arguments": {
+        "cloudId": "9ad9c506-db35-478f-ab8c-aa4c42579e27",
+        "issueIdOrKey": "KAN-6",
+        "fields": [
+          "summary",
+          "description",
+          "issuetype",
+          "project",
+          "status",
+          "created",
+          "updated"
+        ]
+      },
+      "response": {
+        "ok": true,
+        "tool": "getJiraIssue",
+        "result": {
+          "data": {
+            "appliedContentFormat": "markdown",
+            "id": "10047",
+            "key": "KAN-6",
+            "fields": {
+              "summary": "WorkSwarm Jira 中文验收 20261123-Node-QA-0210",
+              "description": "这是一条由 WorkSwarm 聊天创建的中文连接器测试工单，仅用于验证新建与独立回读，不包含真实业务数据。",
+              "status": {
+                "name": "To Do",
+                "statusCategory": {
+                  "name": "To Do"
+                }
+              },
+              "updated": "2026-11-23T02:02:17.680+0800"
+            }
+          }
+        }
+      }
+    },
+    {
+      "goal": "补做 KAN-6 项目、类型、标题和正文的只读核验",
+      "tool": "searchJiraIssuesUsingJql",
+      "arguments": {
+        "cloudId": "9ad9c506-db35-478f-ab8c-aa4c42579e27",
+        "jql": "key = KAN-6",
+        "maxResults": 1,
+        "fields": [
+          "summary",
+          "description",
+          "project",
+          "issuetype"
+        ]
+      },
+      "response": {
+        "ok": true,
+        "tool": "searchJiraIssuesUsingJql",
+        "result": {
+          "data": {
+            "isLast": true,
+            "appliedContentFormat": "markdown",
+            "issues": [
+              {
+                "id": "10047",
+                "key": "KAN-6",
+                "fields": {
+                  "summary": "WorkSwarm Jira 中文验收 20261123-Node-QA-0210",
+                  "issuetype": {
+                    "name": "Task"
+                  },
+                  "project": {
+                    "key": "KAN",
+                    "name": "QA Testing"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "final_chat_text": "验收通过：已完成搜索、读取 KAN-5，仅新建 KAN-6 一条。创建后独立详情回读核对了编号、标题和描述，接口省略项目、类型；按编号 JQL 查询核对了项目 KAN、类型 Task 和标题，接口省略描述。两次读取合并满足验收要求，无其他工单改动。\n\n唯一标题：WorkSwarm Jira 中文验收 20261123-Node-QA-0210\n链接：[KAN-6](https://openjiuwenofficial.atlassian.net/browse/KAN-6)",
+  "readback_limit": "Detail response verified title/body; a separate JQL response verified project/type/title. No atomic all-field snapshot is claimed.",
+  "user_confirmation_received": true,
+  "workswarm_source_modified": false
+}

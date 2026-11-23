@@ -1,0 +1,14 @@
+{
+  "version": "1.1.0",
+  "method": "mcp.show",
+  "ok": true,
+  "type": "detail",
+  "connection_state": "connected",
+  "source": "hub",
+  "integration_type": "cli",
+  "tool_names": [],
+  "keys": [
+    "type",
+    "item"
+  ]
+}

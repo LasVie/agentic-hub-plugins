@@ -1,0 +1,71 @@
+{
+  "version": "1.1.0",
+  "native_sha256": "d6c5a3bfa636f2d943dd12b8b17404a3687157d5eb8ef89bb55ae6d3297cf1fd",
+  "wrapped_sha256": "fa99ccbddaaf41077c1fac3455b5726b19e3dcd8d3eaa6dc28ec4f108d1fad9f",
+  "no_local_tokens": {
+    "actual_cli_status": {
+      "ok": false,
+      "code": "AUTH_REQUIRED",
+      "connected": false
+    },
+    "unexpected_browser_opened": false
+  },
+  "parent_death": {
+    "real_user_consent_performed": false,
+    "bridge_first_output": true,
+    "official_auth_url_ready": true,
+    "elapsed_seconds": 3.66,
+    "authorization_host": "auth.atlassian.com",
+    "requested_scopes": [
+      "read:jira:agent-interface",
+      "search:jira:agent-interface",
+      "write:jira:agent-interface",
+      "read:me",
+      "read:account",
+      "offline_access"
+    ],
+    "callback_port": 32719,
+    "callback_closed_after_parent_sigkill": true
+  },
+  "note": "No simulated expiration or denied-consent result is claimed here.",
+  "forbidden_installed_cli_call": {
+    "requested_tool": "editJiraIssue",
+    "exit_code": 1,
+    "result": {
+      "ok": false,
+      "code": "SCOPE_REJECTED",
+      "message": "本连接器只提供 Jira 查询、读取、新建及必要的项目元数据，不提供此工具。"
+    },
+    "business_api_not_reached": true
+  },
+  "real_oauth_denial": {
+    "environment": "Exact installed CLI with separate ungranted test profile; not a stock-card denial claim",
+    "official_page": "Authorization failed: User did not authorize the request",
+    "cli_exit_code": 1,
+    "cli_result": {
+      "ok": false,
+      "code": "CLIENT_FAILED",
+      "message": "Jira Cloud 请求失败，请核对参数、网络和账号权限。"
+    },
+    "ports_closed": {
+      "57195": true,
+      "32719": true
+    }
+  },
+  "stock_card_cancel": {
+    "action": "Clicked Cancel connection in stock WorkSwarm 0.2.8 modal",
+    "ui_final": "Not connected; Use disabled; Connect available",
+    "ports_closed": {
+      "57256": true,
+      "45483": true
+    },
+    "workswarm_source_modified": false,
+    "owned_worker_processes_after_cancel": 0,
+    "after_cancel_status": {
+      "ok": false,
+      "code": "AUTH_REQUIRED",
+      "connected": false
+    }
+  },
+  "natural_expiry_and_remote_revocation_tested": false
+}
