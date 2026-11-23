@@ -1,0 +1,15 @@
+{
+  "user": "Song Haoran",
+  "date": "2026-11-23",
+  "timezone": "Asia/Shanghai",
+  "recorded_at": "2026-11-23T03:42:27+08:00",
+  "message_timestamp_available": false,
+  "source": "Current conversation; reply to request_user_input_async call_e556f38ae531484f9f1924853eb22707",
+  "actual_reply": "确认通过并附五张原图提交 PR",
+  "task_id": "AH-20261117-miro-connector",
+  "version": "1.1.0",
+  "native_sha256": "ac5cdae05a24b024ede223feb1907075f89f2c71e129add9a9445acd8064d80b",
+  "wrapped_sha256": "fedd4957b91f38040de50775dd5641b682b448ecc00f887ad3a64a8cd5dc420e",
+  "known_blocking_issues": "none in requested macOS local-catalog flow; untested boundaries accepted as listed in TEST_REPORT.md",
+  "approved_scope": "Push package-only changes, publish five original test screenshots and create GitHub PR. No merge or Hub publication authorized."
+}

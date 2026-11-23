@@ -1,0 +1,39 @@
+{
+  "init": {
+    "darwin": "python3 -u -B -c \"import os,sys,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');p=root/'agent'/'workspace'/'mcp'/'mcp_hub'/'miro'/'connector.py';sys.path.insert(0,str(p.parent));runpy.run_path(str(p),run_name='__main__')\" prepare",
+    "linux": "python3 -u -B -c \"import os,sys,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');p=root/'agent'/'workspace'/'mcp'/'mcp_hub'/'miro'/'connector.py';sys.path.insert(0,str(p.parent));runpy.run_path(str(p),run_name='__main__')\" prepare",
+    "win32": "py -3.12 -u -B -c \"import os,sys,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');p=root/'agent'/'workspace'/'mcp'/'mcp_hub'/'miro'/'connector.py';sys.path.insert(0,str(p.parent));runpy.run_path(str(p),run_name='__main__')\" prepare"
+  },
+  "versionCheck": {
+    "command": {
+      "darwin": "python3 -u -B -c \"import os,sys,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');p=root/'agent'/'workspace'/'mcp'/'mcp_hub'/'miro'/'connector.py';sys.path.insert(0,str(p.parent));runpy.run_path(str(p),run_name='__main__')\" version",
+      "linux": "python3 -u -B -c \"import os,sys,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');p=root/'agent'/'workspace'/'mcp'/'mcp_hub'/'miro'/'connector.py';sys.path.insert(0,str(p.parent));runpy.run_path(str(p),run_name='__main__')\" version",
+      "win32": "py -3.12 -u -B -c \"import os,sys,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');p=root/'agent'/'workspace'/'mcp'/'mcp_hub'/'miro'/'connector.py';sys.path.insert(0,str(p.parent));runpy.run_path(str(p),run_name='__main__')\" version"
+    },
+    "minVersion": "1.0.4"
+  },
+  "auth": [
+    {
+      "command": {
+        "darwin": "python3 -u -B -c \"import os,sys,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');p=root/'agent'/'workspace'/'mcp'/'mcp_hub'/'miro'/'connector.py';sys.path.insert(0,str(p.parent));runpy.run_path(str(p),run_name='__main__')\" login",
+        "linux": "python3 -u -B -c \"import os,sys,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');p=root/'agent'/'workspace'/'mcp'/'mcp_hub'/'miro'/'connector.py';sys.path.insert(0,str(p.parent));runpy.run_path(str(p),run_name='__main__')\" login",
+        "win32": "py -3.12 -u -B -c \"import os,sys,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');p=root/'agent'/'workspace'/'mcp'/'mcp_hub'/'miro'/'connector.py';sys.path.insert(0,str(p.parent));runpy.run_path(str(p),run_name='__main__')\" login"
+      },
+      "authWaitForExit": true,
+      "authUrlDomain": "127.0.0.1"
+    }
+  ],
+  "status": {
+    "darwin": "python3 -u -B -c \"import os,sys,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');p=root/'agent'/'workspace'/'mcp'/'mcp_hub'/'miro'/'connector.py';sys.path.insert(0,str(p.parent));runpy.run_path(str(p),run_name='__main__')\" status",
+    "linux": "python3 -u -B -c \"import os,sys,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');p=root/'agent'/'workspace'/'mcp'/'mcp_hub'/'miro'/'connector.py';sys.path.insert(0,str(p.parent));runpy.run_path(str(p),run_name='__main__')\" status",
+    "win32": "py -3.12 -u -B -c \"import os,sys,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');p=root/'agent'/'workspace'/'mcp'/'mcp_hub'/'miro'/'connector.py';sys.path.insert(0,str(p.parent));runpy.run_path(str(p),run_name='__main__')\" status"
+  },
+  "statusMatchJson": {
+    "connected": "true"
+  },
+  "unAuth": {
+    "darwin": "python3 -u -B -c \"import os,sys,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');p=root/'agent'/'workspace'/'mcp'/'mcp_hub'/'miro'/'connector.py';sys.path.insert(0,str(p.parent));runpy.run_path(str(p),run_name='__main__')\" logout",
+    "linux": "python3 -u -B -c \"import os,sys,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');p=root/'agent'/'workspace'/'mcp'/'mcp_hub'/'miro'/'connector.py';sys.path.insert(0,str(p.parent));runpy.run_path(str(p),run_name='__main__')\" logout",
+    "win32": "py -3.12 -u -B -c \"import os,sys,runpy;from pathlib import Path;root=Path(os.environ.get('JIUWENSWARM_DATA_DIR') or Path.home()/'.jiuwenswarm');p=root/'agent'/'workspace'/'mcp'/'mcp_hub'/'miro'/'connector.py';sys.path.insert(0,str(p.parent));runpy.run_path(str(p),run_name='__main__')\" logout"
+  }
+}

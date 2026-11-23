@@ -1,0 +1,42 @@
+{
+  "version": "1.1.0",
+  "candidate_id": "CAND-CLD-003",
+  "task_id": "AH-20261117-miro-connector",
+  "native": {
+    "path": "test-packages/miro-1.1.0-native.zip",
+    "sha256": "ac5cdae05a24b024ede223feb1907075f89f2c71e129add9a9445acd8064d80b"
+  },
+  "wrapped": {
+    "path": "release/1.1.0/miro-1.1.0-agent-mcp.zip",
+    "sha256": "fedd4957b91f38040de50775dd5641b682b448ecc00f887ad3a64a8cd5dc420e"
+  },
+  "review_files_sha256": {
+    "SOURCE_REVIEW.md": "bd3b70b18a729df6e70f43b10cd2e43497985b43a705b950e3c059117e393f80",
+    "TEST_REPORT.md": "cd11705496918667c864006e93ee67229946f6a588bdabb1cc2516f1b70096a9",
+    "provenance.json": "a419007a72619cb56a1f84c06f852905aa9ba150fa1dc5d57f20f66c3fec39cd",
+    "NATIVE_DESIGN.md": "be198e10c612783929b7741997d77576d2dc14bd2891d005485da8a7f0f909f7",
+    "tests/test_miro_node.cjs": "fdf2f903dea85028e2145dce8730fc9b9164e705415196841acee2c116d2a436",
+    "tests/fixtures/miro-live-readonly-20261123.json": "6a58d6ad1f0cecee3600f4404e7f581bf2e6db441368f0ed664ca49f60e038c2",
+    "tests/fixtures/miro-stock-acceptance-20261123.json": "e64f5e1725996467a59a108c55d54527d0772103b609f97d652da410a796f9d3",
+    "tests/fixtures/miro-screenshot-manifest-20261123.json": "704c9d9af2f809274934c060a838827a85182c9b0b4b81278d0de170cd709986",
+    "test-evidence/20261123-stock-1.1.0/README.md": "7ed198a72aea3dd35b4029eef733f4c987909d8165fcd3bd920f766741cd3163",
+    "test-evidence/20261123-stock-1.1.0/user-test-confirmation.json": "efea5c46a5bdb2f2589d351e8a62962d499716172a4ff78bc40038d2a536e446",
+    "test-evidence/20261123-stock-1.1.0/manifest.json": "704c9d9af2f809274934c060a838827a85182c9b0b4b81278d0de170cd709986"
+  },
+  "stage": "Submitting: Song Haoran confirmed Miro 1.1.0 passed and approved five original screenshots and GitHub PR; exact ZIP bytes unchanged; no merge or Hub publication authorized",
+  "payload_sha256": {
+    "README.md": "b1d273a1e3bcd54fd8878b6e8fa48a1ea03c96d8ca77574bc20db7328595acf4",
+    "THIRD_PARTY_NOTICES.md": "6c4273cd63dcd867e52862e4f9903735cfb505b0b9633af5363efa58ef65895e",
+    "cli.json": "22c65fc0f9ef3799af1861be0eac26b69ba71d93c5742d1d8abdf599834b236a",
+    "icon.png": "8d165ee50fdb031b656084b248333b56c82f292fc3ef7c63291218fdec2cdbdb",
+    "licenses/mcp-remote/LICENSE": "5514f48637fa1d8fed2256d12d322009a75962e6111370755fc5b20773db67ad",
+    "manifest.json": "97cf08ae1cbb60a64af729a5b7af32e9561bccd11c3a5631654dab2fb779827d",
+    "skills/miro-guide/SKILL.md": "cfbf618cbd17bc3827037bc8bd7401e05baa3c8222acc3480c9fa1e53d0072e7",
+    "skills/miro-guide/scripts/canvas-ops.cjs": "b41f825f8d24644213501b05268259783d33ad88c032acc8cfac1b30405fb4b8",
+    "skills/miro-guide/scripts/login-bridge.cjs": "84b372ecfb71ae285388499c6a094473fec8e901e6459a52dd695abf257b5453",
+    "skills/miro-guide/scripts/miro-cli.cjs": "22df8e4f029cae897df898d6527afa9e4477b336ccdabf7bf041261d0f72fd48",
+    "skills/miro-guide/scripts/scope.cjs": "8a3a267fe1f4f30edae213d536f0650c5659a51495a5dc596024a3363c2726e1"
+  },
+  "user_test_confirmation": "test-evidence/20261123-stock-1.1.0/user-test-confirmation.json",
+  "screenshot_manifest": "test-evidence/20261123-stock-1.1.0/manifest.json"
+}

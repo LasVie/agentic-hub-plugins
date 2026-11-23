@@ -1,0 +1,29 @@
+{
+  "version": "1.1.0",
+  "package_type": "mcp",
+  "id": "miro",
+  "name": "Miro 白板连接器",
+  "description": "读取指定 Miro 白板，新建中文便签并独立回读。",
+  "display_name": {
+    "zh": "Miro 白板连接器",
+    "en": "Miro"
+  },
+  "display_description": {
+    "zh": "读取指定 Miro 白板，新建中文便签并独立回读。",
+    "en": "Read a Miro board and create one sticky note from WorkSwarm."
+  },
+  "integration": {
+    "type": "cli",
+    "file": "cli.json"
+  },
+  "credentials": {
+    "type": "cli-oauth"
+  },
+  "skills": [
+    {
+      "dir": "skills/miro-guide",
+      "mode": "all"
+    }
+  ],
+  "icon": "icon.png"
+}

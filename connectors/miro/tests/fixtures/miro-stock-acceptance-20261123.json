@@ -1,0 +1,278 @@
+{
+  "version": "1.1.0",
+  "task_id": "AH-20261117-miro-connector",
+  "host": "stock WorkSwarm 0.2.8 on macOS; local catalog fixture",
+  "business": {
+    "version": "1.1.0",
+    "host": "stock WorkSwarm 0.2.8",
+    "wrapped_sha256": "fedd4957b91f38040de50775dd5641b682b448ecc00f887ad3a64a8cd5dc420e",
+    "chat_id": "web_1a204b9e223_496ad7ae979b",
+    "board_url": "https://miro.com/app/board/uXjVENX_jBk=/",
+    "create_cli_calls": 1,
+    "results": [
+      {
+        "operation": "searchBoards",
+        "ok": true,
+        "call_id": "call_1a4f161c1f4d48728c77038dd1f20c3d",
+        "result": {
+          "data": [
+            {
+              "name": "My First Board",
+              "miro_url": "https://miro.com/app/board/uXjVENX_jBk=/",
+              "description": null,
+              "team_name": null,
+              "owner": null,
+              "modified_at": null,
+              "created_at": null
+            }
+          ],
+          "total": 1,
+          "has_more": false,
+          "nextCursor": null
+        }
+      },
+      {
+        "operation": "readCanvas",
+        "ok": true,
+        "call_id": "call_6dfa75237e3a497da8a7b2ebdeef8d39",
+        "result": {
+          "success": true,
+          "miro_url": "https://miro.com/app/board/uXjVENX_jBk=/",
+          "item_count": 2,
+          "skipped_count": 0,
+          "scope_x": 0,
+          "scope_y": 0,
+          "scope_width": 3840,
+          "scope_height": 2160,
+          "sticky_notes": [
+            {
+              "id": "3458764690672995726",
+              "text": "WorkSwarm 白板实测 WS-MIRO-20261117",
+              "x": 113,
+              "y": 100,
+              "width": 175,
+              "height": 200
+            },
+            {
+              "id": "3458764690692182654",
+              "text": "WorkSwarm Miro 聊天验收 WSQA-261117-M1",
+              "x": 550,
+              "y": 100,
+              "width": 350,
+              "height": 228
+            }
+          ]
+        }
+      },
+      {
+        "operation": "readCanvas",
+        "ok": true,
+        "call_id": "call_7160675443ad4b829c337630913b9f05",
+        "result": {
+          "success": true,
+          "miro_url": "https://miro.com/app/board/uXjVENX_jBk=/",
+          "item_count": 1,
+          "skipped_count": 0,
+          "scope_x": null,
+          "scope_y": null,
+          "scope_width": null,
+          "scope_height": null,
+          "sticky_notes": [
+            {
+              "id": "3458764690692182654",
+              "text": "WorkSwarm Miro 聊天验收 WSQA-261117-M1",
+              "x": 550,
+              "y": 100,
+              "width": 350,
+              "height": 228
+            }
+          ]
+        }
+      },
+      {
+        "operation": "readCanvas",
+        "ok": true,
+        "call_id": "call_c958b88169c54790a8c116aa40c237da",
+        "result": {
+          "success": true,
+          "miro_url": "https://miro.com/app/board/uXjVENX_jBk=/",
+          "item_count": 0,
+          "skipped_count": 0,
+          "scope_x": 1200,
+          "scope_y": 100,
+          "scope_width": 350,
+          "scope_height": 228,
+          "sticky_notes": []
+        }
+      },
+      {
+        "operation": "createStickyNote",
+        "ok": true,
+        "call_id": "call_2dffb21890a647f18453ce50d0a65ca3",
+        "result": {
+          "created": true,
+          "id": "3458764691249643739",
+          "message": "创建响应已收到。请另行按返回的控件 ID 回读全文，创建响应不是独立回读。"
+        },
+        "upstream_result": {
+          "success": true,
+          "result_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 3840 2160\"><rect id=\"ws_note\" data-type=\"sticky\" x=\"1200\" y=\"100\" width=\"350\" height=\"228\" data-color=\"light_yellow\" data-content=\"WorkSwarm 中文便签验收 WSQA-MIRO-20261123-NODE-C1\" data-miro-id=\"3458764691249643739\" /></svg>",
+          "message": "Created 1 items",
+          "created_count": 1
+        }
+      },
+      {
+        "operation": "readCanvas",
+        "ok": true,
+        "call_id": "call_cb99ab42253849399b682a7149dffd11",
+        "result": {
+          "success": true,
+          "miro_url": "https://miro.com/app/board/uXjVENX_jBk=/",
+          "item_count": 1,
+          "skipped_count": 0,
+          "scope_x": null,
+          "scope_y": null,
+          "scope_width": null,
+          "scope_height": null,
+          "sticky_notes": [
+            {
+              "id": "3458764691249643739",
+              "text": "WorkSwarm 中文便签验收 WSQA-MIRO-20261123-NODE-C1",
+              "x": 1200,
+              "y": 100,
+              "width": 350,
+              "height": 228
+            }
+          ]
+        }
+      }
+    ],
+    "acceptance_checks": {
+      "one_create_cli_call": true,
+      "upstream_created_count_one": true,
+      "independent_read_call": true,
+      "read_follows_create": true,
+      "board_matches": true,
+      "id_matches": true,
+      "full_text_matches": true,
+      "marker_present_once": true,
+      "skipped_zero": true,
+      "coordinates_match": true
+    },
+    "recovered_local_parameter_issue": "Model appended extra characters to first readback JSON and used read_file offset 1. It stopped before a readCanvas attempt. A follow-up corrected only a local JSON file and independently read the existing new ID; no package edit or second create."
+  },
+  "installed": {
+    "version": "1.1.0",
+    "file_count": 11,
+    "all_payloads_match": true,
+    "wrapped_sha256": "fedd4957b91f38040de50775dd5641b682b448ecc00f887ad3a64a8cd5dc420e",
+    "installed_payload_sha256": {
+      "icon.png": "8d165ee50fdb031b656084b248333b56c82f292fc3ef7c63291218fdec2cdbdb",
+      "cli.json": "22c65fc0f9ef3799af1861be0eac26b69ba71d93c5742d1d8abdf599834b236a",
+      "THIRD_PARTY_NOTICES.md": "6c4273cd63dcd867e52862e4f9903735cfb505b0b9633af5363efa58ef65895e",
+      "README.md": "b1d273a1e3bcd54fd8878b6e8fa48a1ea03c96d8ca77574bc20db7328595acf4",
+      "manifest.json": "97cf08ae1cbb60a64af729a5b7af32e9561bccd11c3a5631654dab2fb779827d",
+      "licenses/mcp-remote/LICENSE": "5514f48637fa1d8fed2256d12d322009a75962e6111370755fc5b20773db67ad",
+      "skills/miro-guide/SKILL.md": "cfbf618cbd17bc3827037bc8bd7401e05baa3c8222acc3480c9fa1e53d0072e7",
+      "skills/miro-guide/scripts/miro-cli.cjs": "22df8e4f029cae897df898d6527afa9e4477b336ccdabf7bf041261d0f72fd48",
+      "skills/miro-guide/scripts/canvas-ops.cjs": "b41f825f8d24644213501b05268259783d33ad88c032acc8cfac1b30405fb4b8",
+      "skills/miro-guide/scripts/login-bridge.cjs": "84b372ecfb71ae285388499c6a094473fec8e901e6459a52dd695abf257b5453",
+      "skills/miro-guide/scripts/scope.cjs": "8a3a267fe1f4f30edae213d536f0650c5659a51495a5dc596024a3363c2726e1"
+    }
+  },
+  "lifecycle": {
+    "exact_installed_version": "1.1.0",
+    "prepared": {
+      "ok": true,
+      "message": "固定版本的 Miro 标准客户端已准备完成。"
+    },
+    "missing_auth": {
+      "exit": 0,
+      "response": {
+        "ok": false,
+        "code": "AUTH_REQUIRED",
+        "message": "Miro 尚未授权或登录已失效，请从连接器卡片重新连接。",
+        "connected": false
+      }
+    },
+    "forbidden_tool": {
+      "exit": 1,
+      "response": {
+        "ok": false,
+        "code": "SCOPE_REJECTED",
+        "message": "只开放 searchBoards、readCanvas 和 createStickyNote 三个本地受限操作，不提供任意 SVG、更新、删除、评论或权限操作。"
+      }
+    },
+    "requested_scopes": [
+      "boards:read",
+      "boards:write"
+    ],
+    "parent_sigkill": {
+      "worker_exited": true,
+      "callback_closed": true,
+      "bridge_closed": true
+    },
+    "passed": true
+  },
+  "official_deny": {
+    "official_deny_clicked": true,
+    "cli_exit": 1,
+    "response": {
+      "ok": false,
+      "code": "AUTH_DENIED",
+      "message": "Miro 授权已被拒绝，可以从卡片取消或重新连接。"
+    },
+    "callback_closed": true,
+    "bridge_closed": true
+  },
+  "stock_disconnect_cancel": {
+    "stock_version": "0.2.8",
+    "version": "1.1.0",
+    "disconnected_status": {
+      "ok": false,
+      "code": "AUTH_REQUIRED",
+      "connected": false
+    },
+    "mounted_skill_removed": true,
+    "callback_listening_before_cancel": true,
+    "callback_closed_after_cancel": true,
+    "card_returned_to_connect": true
+  },
+  "missing_widget": {
+    "ok": false,
+    "code": "READ_UNVERIFIED",
+    "message": "有指定控件未返回，不能声称已读到完整目标。"
+  },
+  "archive_inspection": {
+    "version": "1.1.0",
+    "legacy_zip_count": 10,
+    "legacy_zip_bytes_unchanged": true,
+    "payload_files": 11,
+    "source_payload_matches": true,
+    "archives": [
+      {
+        "kind": "native",
+        "sha256": "ac5cdae05a24b024ede223feb1907075f89f2c71e129add9a9445acd8064d80b",
+        "matches": true,
+        "entries": 11,
+        "max_compression_ratio": 1.0
+      },
+      {
+        "kind": "wrapped",
+        "sha256": "fedd4957b91f38040de50775dd5641b682b448ecc00f887ad3a64a8cd5dc420e",
+        "matches": true,
+        "entries": 13,
+        "max_compression_ratio": 13.742788461538462
+      }
+    ]
+  },
+  "not_tested": [
+    "Windows/Linux",
+    "natural expiry and remote revoke recovery",
+    "remote callback",
+    "official Hub installation",
+    "unauthorized board",
+    "other canvas types",
+    "plan limits exhausted"
+  ]
+}
