@@ -1,0 +1,111 @@
+- complementary:
+  - img "Logo"
+  - button "任务":
+    - generic: 任务
+  - button "专家":
+    - generic: 专家
+  - button "技能":
+    - generic: 技能
+  - button "扩展":
+    - generic: 扩展
+  - button "RSI":
+    - generic: RSI
+  - button "设置":
+    - generic: 设置
+  - button "更新":
+    - generic: 更新
+- main:
+  - generic "请用已安装的 Google 日历连接器完成一次专用测试，所有时间均为北京时间 UTC+08:00。先完整查询主日历在 2026 年 11 月 24 日 00:00 至 11 月 25 日 00:00"
+  - button "导出长图":
+  - button "心跳任务":
+  - button:
+  - button:
+  - generic: 请用已安装的 Google 日历连接器完成一次专用测试，所有时间均为北京时间 UTC+08:00。先完整查询主日历在 2026 年 11 月 24 日 00:00 至 11 月 25 日 00:00 是否有完整标题「WorkSwarm 日历卡片验收 WS-CALENDAR-110-20261123」，核对全部分页。若没有，只创建一条该标题的单次个人日程：11 月 24 日 20:00 到 20:15，描述「此为 WorkSwarm Google 日历连接器 1.1.0 的专用测试日程，不涉及真实业务。」固定私密、空闲、无提醒，不加参会者、不发送通知。若已有同名日程则不要重复创建。随后必须按返回的日程 ID 单独读取，核对完整标题、描述、起止时间、状态和私密/空闲/无提醒设置，用中文报告结果与日程链接。写入结果不明确时先回读，不重试创建。
+  - generic: 2026-11-23 00:54
+  - button:
+  - button "从此消息新建会话分支":
+  - img "team_leader avatar"
+  - generic: Jiuwen
+  - button "任务用时 1m22s":
+    - generic: 任务用时 1m22s
+  - paragraph:
+    - text: 已使用已安装的 Google 日历连接器
+    - strong: 1.1.0
+    - text: 完成测试：
+    - strong: 仅创建一条日程，并已按返回的日程 ID 单独回读核验。
+  - heading "查重结果" [level=3]
+  - list:
+    - text: 查询日历：主日历（
+    - code: "`primary`"
+    - text: ）
+    - listitem: 查询范围：2026-11-24 00:00 至 2026-11-25 00:00（北京时间 UTC+08:00）
+    - text: 使用完整标题查询，返回 0 条；响应未包含
+    - code: "`nextPageToken`"
+    - text: ，无后续分页。
+  - heading "独立回读核验结果" [level=3]
+  - table:
+    - rowgroup:
+      - row "核验项 结果":
+        - columnheader "核验项"
+        - columnheader "结果"
+    - rowgroup:
+      - row "完整标题 WorkSwarm 日历卡片验收 WS-CALENDAR-110-20261123":
+        - cell "完整标题"
+        - cell "WorkSwarm 日历卡片验收 WS-CALENDAR-110-20261123"
+      - row "描述 此为 WorkSwarm Google 日历连接器 1.1.0 的专用测试日程，不涉及真实业务。":
+        - cell "描述"
+        - cell "此为 WorkSwarm Google 日历连接器 1.1.0 的专用测试日程，不涉及真实业务。"
+      - row "开始时间 2026-11-24T20:00:00+08:00":
+        - cell "开始时间"
+        - cell "2026-11-24T20:00:00+08:00"
+      - row "结束时间 2026-11-24T20:15:00+08:00":
+        - cell "结束时间"
+        - cell "2026-11-24T20:15:00+08:00"
+      - 'row "状态 `confirmed`（已确认）"':
+        - cell "状态"
+        - 'cell "`confirmed`（已确认）"':
+          - code: "`confirmed`"
+          - text: （已确认）
+      - 'row "私密设置 `private`（私密）"':
+        - cell "私密设置"
+        - 'cell "`private`（私密）"':
+          - code: "`private`"
+          - text: （私密）
+      - 'row "忙闲设置 `transparent`（空闲）"':
+        - cell "忙闲设置"
+        - 'cell "`transparent`（空闲）"':
+          - code: "`transparent`"
+          - text: （空闲）
+      - 'row "提醒 `useDefault: false`，无自定义提醒"':
+        - cell "提醒"
+        - 'cell "`useDefault: false`，无自定义提醒"':
+          - code: "`useDefault: false`"
+          - text: ，无自定义提醒
+      - 'row "日程 ID `552d2f6e1483d78ad5fa9964cdf10f08`"':
+        - cell "日程 ID"
+        - 'cell "`552d2f6e1483d78ad5fa9964cdf10f08`"':
+          - code: "`552d2f6e1483d78ad5fa9964cdf10f08`"
+  - paragraph:
+    - text: 按连接器固定规则创建为单次个人日程，未加参会者、不发送通知。回读中的时区名称为
+    - code: "`Asia/Singapore`"
+    - text: ，但起止时间均明确为
+    - strong: UTC+08:00
+    - text: ，与要求的北京时间一致。
+  - paragraph:
+    - link "打开 Google 日历日程":
+      - /url: https://www.google.com/calendar/event?eid=NTUyZDJmNmUxNDgzZDc4YWQ1ZmE5OTY0Y2RmMTBmMDggb3BlbmppdXdlbi5vZmZpY2lhbEBt
+  - generic: 2026-11-23 00:55
+  - button:
+  - button:
+  - button "从此消息新建会话分支":
+  - generic: 需要帮你做些什么？输入“/”快速引用技能及指令
+  - button "上传文件":
+  - button "单Agent模式":
+    - generic: 单Agent模式
+  - button "完全访问权限":
+    - generic: 完全访问权限
+  - button "上下文用量 10.2%":
+  - button "gpt-6.1-sol":
+    - generic: gpt-6.1-sol
+  - button [disabled]:
+  - generic: 内容由AI生成，仅供参考

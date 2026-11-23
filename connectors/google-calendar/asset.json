@@ -3,7 +3,7 @@
   "type": "agent-mcp",
   "name": "google-calendar",
   "display_name": "Google 日历连接器",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "owner": "Song Haoran",
   "task_id": "AH-20261116-google-calendar",
   "candidate_id": null,

@@ -1,0 +1,11 @@
+{
+  "version": "1.1.0",
+  "exact_final_source_bootstrap": true,
+  "root": "/private/tmp/workswarm-calendar-final-clean-bootstrap",
+  "node": "22.12.0",
+  "path_during_test": "/usr/bin:/bin:/usr/sbin:/sbin",
+  "npm_scripts_disabled": true,
+  "explicit_reviewed_gws_installer_succeeded": true,
+  "runtime_record_present": true,
+  "python_invoked_by_connector": false
+}
