@@ -1,0 +1,29 @@
+{
+  "version": "1.1.0",
+  "package_type": "mcp",
+  "id": "confluence-cloud",
+  "name": "Confluence 连接器",
+  "description": "在授权的 Confluence 空间中搜索、读取和创建页面。",
+  "display_name": {
+    "zh": "Confluence 连接器",
+    "en": "Confluence Cloud"
+  },
+  "display_description": {
+    "zh": "在授权的 Confluence 空间中搜索、读取和创建页面。",
+    "en": "Connect to Confluence Cloud from WorkSwarm."
+  },
+  "integration": {
+    "type": "cli",
+    "file": "cli.json"
+  },
+  "credentials": {
+    "type": "cli-oauth"
+  },
+  "skills": [
+    {
+      "dir": "skills/confluence-cloud-guide",
+      "mode": "all"
+    }
+  ],
+  "icon": "icon.png"
+}

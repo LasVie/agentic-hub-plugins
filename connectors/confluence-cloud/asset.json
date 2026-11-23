@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "type": "agent-mcp",
+  "name": "confluence-cloud",
+  "display_name": "Confluence 连接器",
+  "version": "1.1.0",
+  "owner": "Song Haoran",
+  "task_id": "AH-20261117-confluence-cloud-connector",
+  "internal_asset_id": "repo:agent-mcp:confluence-cloud",
+  "native_path": "confluence-cloud",
+  "description": "在授权的 Confluence 空间中搜索、读取和创建页面。"
+}

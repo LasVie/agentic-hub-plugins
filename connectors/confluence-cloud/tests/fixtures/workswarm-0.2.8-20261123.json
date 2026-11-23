@@ -1,0 +1,315 @@
+{
+  "date": "2026-11-23",
+  "owner": "Song Haoran",
+  "task_id": "AH-20261117-confluence-cloud-connector",
+  "package_only": true,
+  "workswarm_source_or_bundle_modified": false,
+  "installation": "local catalog fixture through stock WorkSwarm card; not production Hub",
+  "business": {
+    "version": "1.1.0",
+    "host": "stock WorkSwarm 0.2.8",
+    "wrapped_sha256": "3ee1f9bdc59c7d6721574a4b5b4a1fad8dcf04f22e8bb8468580e73ce6c7e35e",
+    "chat_id": "web_1a20494886f_bae1f75a5d5c",
+    "site": "https://openjiuwenofficial.atlassian.net",
+    "space_id": "229380",
+    "parent_id": "589826",
+    "create_cli_calls": 1,
+    "results": [
+      {
+        "tool": "getConfluenceSpace",
+        "ok": true,
+        "call_id": "call_8e813cef696b45a9a7664da86aa62739",
+        "data": {
+          "id": "229380",
+          "key": "SD",
+          "name": "Software Development",
+          "status": "current"
+        }
+      },
+      {
+        "tool": "searchConfluence",
+        "ok": true,
+        "call_id": "call_521b335fadf1405bbef6b71ab02e6f63",
+        "data": {
+          "cqlQuery": "type = page AND ( space = \"SD\" AND type = page AND title = \"WorkSwarm 聊天验收 Confluence WSQA-261117-C1\" )",
+          "start": 0,
+          "limit": 100,
+          "size": 1,
+          "totalSize": 1,
+          "results": [
+            {
+              "id": "589826",
+              "title": "WorkSwarm 聊天验收 Confluence WSQA-261117-C1",
+              "type": "page"
+            }
+          ]
+        }
+      },
+      {
+        "tool": "getConfluenceContent",
+        "ok": true,
+        "call_id": "call_9c6d05e4b16342808bea44d534266c18",
+        "data": {
+          "id": "589826",
+          "type": "page",
+          "title": "WorkSwarm 聊天验收 Confluence WSQA-261117-C1",
+          "status": "current",
+          "spaceId": "229380",
+          "detail": "full",
+          "body": {
+            "format": "markdown",
+            "value": "WorkSwarm Confluence 聊天验收：中文内容回读成功\n"
+          }
+        }
+      },
+      {
+        "tool": "getConfluenceSpace",
+        "ok": true,
+        "call_id": "call_17e1078c10ab45fd894afaf63f510276",
+        "data": {
+          "id": "229380",
+          "key": "SD",
+          "name": "Software Development",
+          "status": "current"
+        }
+      },
+      {
+        "tool": "searchConfluence",
+        "ok": true,
+        "call_id": "call_61423398c4654d50b8715681ba158ae4",
+        "data": {
+          "cqlQuery": "type = page AND ( space = \"SD\" AND type = page AND title = \"WorkSwarm Confluence 中文验收 20261123-Node-C1\" )",
+          "start": 0,
+          "limit": 100,
+          "size": 0,
+          "totalSize": 0,
+          "results": []
+        }
+      },
+      {
+        "tool": "getConfluenceContent",
+        "ok": true,
+        "call_id": "call_5111bb587ba7431b8f6a1cebfd65c67c",
+        "data": {
+          "id": "589826",
+          "type": "page",
+          "title": "WorkSwarm 聊天验收 Confluence WSQA-261117-C1",
+          "status": "current",
+          "spaceId": "229380",
+          "detail": "full",
+          "body": {
+            "format": "markdown",
+            "value": "WorkSwarm Confluence 聊天验收：中文内容回读成功\n"
+          }
+        }
+      },
+      {
+        "tool": "createConfluenceContent",
+        "ok": true,
+        "call_id": "call_1cfda81a2b904bfc9d61ee5b70bd5b62",
+        "data": {
+          "id": "1277953",
+          "type": "page",
+          "title": "WorkSwarm Confluence 中文验收 20261123-Node-C1",
+          "spaceId": "229380",
+          "parentId": "589826",
+          "webUrl": "/spaces/SD/pages/1277953/WorkSwarm+Confluence+20261123-Node-C1"
+        }
+      },
+      {
+        "tool": "getConfluenceContent",
+        "ok": true,
+        "call_id": "call_e9917717131541369811e3d1c695d0e4",
+        "data": {
+          "id": "1277953",
+          "type": "page",
+          "title": "WorkSwarm Confluence 中文验收 20261123-Node-C1",
+          "status": "current",
+          "spaceId": "229380",
+          "detail": "full",
+          "body": {
+            "format": "markdown",
+            "value": "# WorkSwarm Confluence 中文验收\n\n验收标记：WSQA-CONFLUENCE-20261123-NODE-C1\n\n这是一条由 WorkSwarm 0.2.8 聊天创建的虚构测试页面，用于验证中文写入与全文回读。\n\n末尾标记：中文回读确认完成。\n"
+          }
+        }
+      }
+    ],
+    "acceptance_checks": {
+      "one_create_only": true,
+      "created_page_id": "1277953",
+      "created_parent_matches": true,
+      "created_space_matches": true,
+      "independent_read_call": true,
+      "full_detail": true,
+      "markdown_body": true,
+      "full_body_matches_ignoring_terminal_newline": true,
+      "title_matches": true,
+      "read_space_matches": true
+    }
+  },
+  "unit_tests": {
+    "command": "node --test connectors/confluence-cloud/tests/test_confluence_node.cjs",
+    "passed": 12,
+    "failed": 0
+  },
+  "release_inspection": {
+    "archives": [
+      {
+        "kind": "native",
+        "sha256": "d1a538d4bc6dbeba23a695f35a9bb50c3d2ab0891330b3cc6909c54940812e7e",
+        "sha256_matches": true,
+        "unique_paths": true,
+        "safe_paths_and_no_symlinks": true,
+        "uncompressed_bytes": 55562,
+        "max_compression_ratio": 1.0,
+        "entries": 10
+      },
+      {
+        "kind": "wrapped",
+        "sha256": "3ee1f9bdc59c7d6721574a4b5b4a1fad8dcf04f22e8bb8468580e73ce6c7e35e",
+        "sha256_matches": true,
+        "unique_paths": true,
+        "safe_paths_and_no_symlinks": true,
+        "uncompressed_bytes": 58009,
+        "max_compression_ratio": 14.337236533957846,
+        "entries": 12
+      }
+    ],
+    "legacy_zip_count": 10,
+    "legacy_zips_unchanged": true,
+    "payload_file_count": 10,
+    "all_source_payload_hashes_match": true,
+    "official_cli_distribution": [
+      {
+        "name": "openjiuwen-agentichub",
+        "version": "0.0.1"
+      }
+    ]
+  },
+  "installed_payload": {
+    "version": "1.1.0",
+    "file_count": 10,
+    "all_payloads_match": true,
+    "wrapped_sha256": "3ee1f9bdc59c7d6721574a4b5b4a1fad8dcf04f22e8bb8468580e73ce6c7e35e",
+    "installed_payload_sha256": {
+      "icon.png": "739da5cf8f9a986d3890577e600186ab617ba590d4993f2c02ede921c0e826cd",
+      "cli.json": "9febb220ccccc58c26e48d343d4e33e7572f1ef701a5a1ff46ab3b150bba3a95",
+      "THIRD_PARTY_NOTICES.md": "5186eaddedc06f3409c936f95766509a395d7f55db4ca6938749a6eb6133ba31",
+      "README.md": "500e4570ce25dbff44997fabf1d0c4763dd4d8a4db669c5b2a69515db22d4832",
+      "manifest.json": "c30323d056dacf295efb7339da9b1903c8730a9ff5636ef638d791bcced5d346",
+      "licenses/mcp-remote/LICENSE": "5514f48637fa1d8fed2256d12d322009a75962e6111370755fc5b20773db67ad",
+      "skills/confluence-cloud-guide/SKILL.md": "036a65dd3b2ff30615fc8e7bf8e8732800a43633127a2d51723ffa9ad038c5ce",
+      "skills/confluence-cloud-guide/scripts/confluence-cli.cjs": "6c7c09ba1c0e78c98071237259a16fb3ccb3ac7aa63b2eb69499de968f372504",
+      "skills/confluence-cloud-guide/scripts/login-bridge.cjs": "6951a15e5ac30dce57eac1d72d7a337a54b91d58be75d7b14de8d66731f988b0",
+      "skills/confluence-cloud-guide/scripts/scope.cjs": "2c512c60390719fe7058cbd4c66651df3fa3d5d3cb96b23b3812c80f617656a0"
+    }
+  },
+  "isolated_cli_lifecycle": {
+    "exact_installed_version": "1.1.0",
+    "prepared": {
+      "ok": true,
+      "message": "固定版本的 Confluence 标准客户端已准备完成。"
+    },
+    "missing_auth": {
+      "exit": 0,
+      "response": {
+        "ok": false,
+        "code": "AUTH_REQUIRED",
+        "message": "Confluence 尚未授权或登录已失效，请从连接器卡片重新连接。",
+        "connected": false
+      }
+    },
+    "forbidden_tool": {
+      "exit": 1,
+      "response": {
+        "ok": false,
+        "code": "SCOPE_REJECTED",
+        "message": "本连接器只开放 Confluence 普通页面搜索、读取、新建及必要空间定位，不提供此工具。"
+      }
+    },
+    "requested_scopes": [
+      "offline_access",
+      "read:account",
+      "read:confluence:agent-interface",
+      "read:me",
+      "search:confluence:agent-interface",
+      "write:confluence:agent-interface"
+    ],
+    "parent_sigkill": {
+      "worker_exited": true,
+      "callback_closed": true,
+      "bridge_closed": true
+    },
+    "passed": true
+  },
+  "official_denial": {
+    "official_cancel_clicked": true,
+    "response": {
+      "ok": false,
+      "code": "AUTH_DENIED",
+      "message": "Confluence 授权已被拒绝，可以从卡片取消或重新连接。"
+    },
+    "exit": 1,
+    "callback_closed": true,
+    "bridge_closed": true,
+    "normal_profile_untouched": true
+  },
+  "stock_host_lifecycle": {
+    "callback_port": 31367,
+    "callback_listening_before_cancel": true,
+    "card_returned_to_connect": true,
+    "callback_closed_after_cancel": true,
+    "status_after_disconnect": {
+      "ok": false,
+      "code": "AUTH_REQUIRED",
+      "message": "Confluence 尚未授权或登录已失效，请从连接器卡片重新连接。",
+      "connected": false
+    },
+    "mounted_skill_removed": true
+  },
+  "original_screenshots": [
+    {
+      "file": "02-final-confluence-consent.jpg",
+      "sha256": "3484f906aa9d626c6feffe813d71f3ced6dc1d54fe892f88dbb13c9e00abbb73",
+      "bytes": 53893,
+      "unmodified": true
+    },
+    {
+      "file": "03-final-card-connected.jpg",
+      "sha256": "6e71586d23f21618779a7aa67e5114292b9beba2af95bdcbcf9e1305d75ebd41",
+      "bytes": 22868,
+      "unmodified": true
+    },
+    {
+      "file": "05-chat-search-full-read.jpg",
+      "sha256": "8f6749a12eb12f5b14e6040b83e9e468a44621a70fc359a551031b6db84369cc",
+      "bytes": 77243,
+      "unmodified": true
+    },
+    {
+      "file": "06-chat-create-readback.jpg",
+      "sha256": "0418880b73339bf2f8ad17830128a5791ec7a5557382c9cb31253bcca0e0057d",
+      "bytes": 88384,
+      "unmodified": true
+    },
+    {
+      "file": "07-confluence-native-page.jpg",
+      "sha256": "132f09b0c9a83f655622399e0c57db68fec5388d013b5c6d036728ea85f8360d",
+      "bytes": 84283,
+      "unmodified": true
+    }
+  ],
+  "user_completion_confirmation": {
+    "quote": "确认通过并附原图提交 PR",
+    "confirmed_by": "Song Haoran",
+    "recorded_at": "2026-11-23T02:56:51+08:00",
+    "source": "Current conversation; reply to request_user_input_async call_debe4d24e54348c7bb32def256091a7d",
+    "task_id": "AH-20261117-confluence-cloud-connector",
+    "version": "1.1.0",
+    "native_sha256": "d1a538d4bc6dbeba23a695f35a9bb50c3d2ab0891330b3cc6909c54940812e7e",
+    "wrapped_sha256": "3ee1f9bdc59c7d6721574a4b5b4a1fad8dcf04f22e8bb8468580e73ce6c7e35e",
+    "known_blocking_issues": "none in tested scope; user accepted listed untested boundaries",
+    "original_screenshot_count": 5,
+    "publication": "Five unmodified QA screenshots in GitHub delivery PR approved; merge not requested"
+  }
+}

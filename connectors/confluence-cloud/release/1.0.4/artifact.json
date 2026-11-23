@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "asset_type": "agent-mcp",
+  "name": "confluence-cloud",
+  "display_name": "Confluence 连接器",
+  "version": "1.0.4",
+  "task_id": "AH-20261117-confluence-cloud-connector",
+  "internal_asset_id": "repo:agent-mcp:confluence-cloud",
+  "created_at_utc": "2026-11-17T09:52:52.946806+00:00",
+  "artifacts": [
+    {
+      "form": "native",
+      "path": "connectors/confluence-cloud/test-packages/confluence-cloud-1.0.4-native.zip",
+      "filename": "confluence-cloud-1.0.4-native.zip",
+      "sha256": "fe4084825306470f7ed6b0dde9a0ecd235576fb66f3e792f9a3615373d0882ef",
+      "size_bytes": 27221
+    },
+    {
+      "form": "agent-mcp_wrapped",
+      "path": "connectors/confluence-cloud/release/1.0.4/confluence-cloud-1.0.4-agent-mcp.zip",
+      "filename": "confluence-cloud-1.0.4-agent-mcp.zip",
+      "sha256": "f698985c91d1b7e0d65f1dfcbcdf7de0b7bf74298ee9a73adc99c3b22fab873e",
+      "size_bytes": 15349
+    }
+  ],
+  "payload_sha256": {
+    "README.md": "b78fc42fd4ce7730f9485dbf71ae90600c329bfe4ca7098be409c67ce56f11d7",
+    "THIRD_PARTY_NOTICES.md": "e06057ac18245391a880c7d5e7b9d9825b1fb8e2c77b67f9af7df2a02bed5c3c",
+    "browser_gate.py": "b473fc1f38f968bfdee772e1742844f8234b6efea177cb113281781480443328",
+    "cli.json": "b376d3d9bf48e927a16df2437eb884f193b507a27773d7116edd840dac40bf40",
+    "connector.py": "ca93390454b76c27b0d98b374661661d92dc525e625c523c2ae0f05a02e2e47d",
+    "icon.png": "739da5cf8f9a986d3890577e600186ab617ba590d4993f2c02ede921c0e826cd",
+    "manifest.json": "cd7c4d27ec80449f4cedda88cf1c216f39ffb62ee8d21e82010b8a4e4441898f",
+    "skills/confluence-cloud-guide/SKILL.md": "24f7d12e19ce1ac8ae7d3e6b069db3aaa16bc100c350c28b44721ab15cd40c17",
+    "vendor_runtime.py": "64455fe3b9861936ed3931101378e10861d5db694a2e0ba13996f06745855058"
+  },
+  "review_files_sha256": {
+    "SOURCE_REVIEW.md": "91524757750a06450c3e3b21f5a39d72c6e0b33f5e96d9a1de2f5dbe0cd3e7b6",
+    "TEST_REPORT.md": "7c18094552b96298c8af5c26ec11ee87c075b94654d1d3b8dbf48eba104a6adc",
+    "provenance.json": "a5c068b0a46826d4c863b52d8c1e6f6a421e7c467283eba4d9e896a5806faf58"
+  },
+  "official_cli": {
+    "distribution": "openjiuwen-agentichub",
+    "version": "0.0.1",
+    "source": "https://github.com/openJiuwen-ai/skillhub",
+    "source_commit": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+    "commands": [
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "init",
+        "confluence-cloud",
+        "--type",
+        "agent-mcp"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "validate",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-luieamvl/confluence-cloud"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "pack",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-luieamvl/confluence-cloud",
+        "--output",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-luieamvl/out"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/tools/asset_release.py",
+        "preflight",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/connectors/confluence-cloud/confluence-cloud"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/tools/asset_release.py",
+        "preflight",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-luieamvl/native.zip"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/tools/asset_release.py",
+        "preflight",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-luieamvl/out/confluence-cloud-1.0.4.zip"
+      ]
+    ]
+  },
+  "checks": [
+    {
+      "step": "official_init",
+      "output": "Plugin initialized at: /private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-luieamvl/confluence-cloud"
+    },
+    {
+      "step": "official_validate",
+      "output": "Plugin validation passed."
+    },
+    {
+      "step": "official_pack",
+      "output": "Packed: /private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-luieamvl/out/confluence-cloud-1.0.4.zip"
+    },
+    {
+      "step": "javascript_preflight_native_source",
+      "output": "{\n  \"path\": \"/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/connectors/confluence-cloud/confluence-cloud\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_native_zip",
+      "output": "{\n  \"path\": \"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-luieamvl/native.zip\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_wrapped_zip",
+      "output": "{\n  \"path\": \"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-luieamvl/out/confluence-cloud-1.0.4.zip\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "workswarm_0.2.8_card_icon",
+      "output": "Installed the exact wrapped ZIP through a loopback Hub-compatible catalog. All installed files matched recorded payload hashes. The installed card decoded the 96 x 96 native package PNG and rendered it at 48 px."
+    },
+    {
+      "step": "existing_unit_tests",
+      "output": "1 passed"
+    }
+  ],
+  "verification_limits": "Verified packaging, exact installation and WorkSwarm 0.2.8 card rendering, plus existing unit tests. See TEST_REPORT.md for previous-version authenticated provider coverage."
+}
