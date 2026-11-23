@@ -1,0 +1,17 @@
+{
+  "version": "1.1.0",
+  "exact_native_sha256": "4110e37f8a3ace88263ecffad7ad00d485e4ea5b7b57f58b62f9b4105b2a7d1d",
+  "installation": "stock WorkSwarm 0.2.8 marketplace card; local catalog fixture",
+  "fresh_profile": true,
+  "credential_entry_pending": true,
+  "file_checks": {
+    "README.md": true,
+    "manifest.json": true,
+    "mcp.json": true,
+    "skills/asana-guide/SKILL.md": true,
+    "token-schema.json": true
+  },
+  "workswarm_source_changed": false,
+  "manual_credential_file_access": false,
+  "stage": "installation recorded before user credential entry"
+}

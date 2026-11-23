@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "type": "agent-mcp",
+  "name": "asana",
+  "display_name": "Asana 任务连接器",
+  "version": "1.1.0",
+  "owner": "Song Haoran",
+  "task_id": "AH-20261117-asana-connector",
+  "internal_asset_id": "repo:agent-mcp:asana",
+  "native_path": "asana",
+  "description": "按项目列出 Asana 任务，读取指定任务，在可写项目中创建任务。"
+}

@@ -1,0 +1,10 @@
+{
+  "fields": [
+    {
+      "key": "ASANA_PERSONAL_TOKEN",
+      "label": "个人访问令牌",
+      "type": "password",
+      "required": true
+    }
+  ]
+}
