@@ -1,0 +1,45 @@
+{
+  "task_id": "AH-20261124-icloud-mail",
+  "version": "1.0.0",
+  "date": "2026-11-24",
+  "host": "macOS WorkSwarm 0.2.8, isolated stock instance and loopback catalog",
+  "archive_hashes": {
+    "hub": "cf9a15f7dc874dbbbe4b2840e694d881c240a3f618252971deea092dcfe24867",
+    "native": "80bc03f57bdef3c35c0d000a95c672ec6c55a6c08a72f8da6b900693e73d9219"
+  },
+  "status": "Stock card save, real Apple IMAP authentication and Chinese chat search and readback passed. Song Haoran confirmed the exact tested delivery and merge on 2026-11-24.",
+  "fixture": {
+    "subject": "WorkSwarm iCloud QA 20261124",
+    "expected_body": "蓝色笔记本，星期五核对。",
+    "match_count": 1,
+    "body_format": "plain_text",
+    "truncated": false
+  },
+  "screenshots": [
+    {
+      "path": "screenshots/01-workswarm-card-credential-form.jpg",
+      "sha256": "5858c986da24551186a245c028426d77da3d446277ccc21468a38f9680b23868",
+      "observed": "Stock card form after installing the exact wrapped ZIP from the local catalog."
+    },
+    {
+      "path": "screenshots/02-workswarm-card-connected.jpg",
+      "sha256": "5ccbb237e255fd93f880890a0f8247cc84e378c1374669eedf367c1590b46b2f",
+      "observed": "Connector card after the fields were saved. Screenshot 04 shows Apple IMAP authentication."
+    },
+    {
+      "path": "screenshots/03-workswarm-installed-tools.jpg",
+      "sha256": "96944196bfdf7913e4d1cf741c22f1417c9fe9f6e0d8685b0d8b38e9085751b6",
+      "observed": "Installed connector detail lists all three read-only tools."
+    },
+    {
+      "path": "screenshots/04-workswarm-apple-imap-connected.jpg",
+      "sha256": "bac4da537e8e01c5bb5c609814d53f49106a4fdec9a1f22c7e29dc7653a95e31",
+      "observed": "Real Apple IMAP authentication and read-only INBOX succeeded on the exact installed runtime after the primary iCloud Mail address was provided."
+    },
+    {
+      "path": "screenshots/05-workswarm-chat-mail-readback.jpg",
+      "sha256": "c5b098ddc6e5f1c06364d7962a99c329394a2b97301a314f5a53bd0eaa32720d",
+      "observed": "One designated synthetic subject matched; read via returned UID and UIDVALIDITY; full Chinese body matched the self-addressed fixture."
+    }
+  ]
+}

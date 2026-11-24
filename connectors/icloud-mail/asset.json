@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "type": "agent-mcp",
+  "name": "icloud-mail",
+  "display_name": "iCloud 邮件连接器",
+  "version": "1.0.0",
+  "owner": "Song Haoran",
+  "task_id": "AH-20261124-icloud-mail",
+  "candidate_id": null,
+  "internal_asset_id": "repo:agent-mcp:icloud-mail",
+  "description": "连接 iCloud 邮件，在收件箱按主题或发件人搜索并读取邮件正文。",
+  "native_path": "icloud-mail"
+}

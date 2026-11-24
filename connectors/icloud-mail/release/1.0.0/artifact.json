@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "runtime_type": "agent-mcp",
+  "name": "icloud-mail",
+  "version": "1.0.0",
+  "source_review_sha256": "f9a5783bba722226355bdbca6b205691e3008276f93c94d06a3e30b353ad064f",
+  "test_report_sha256": "3a5781aa0a868ea41c3a0f2fe1d021599be9f16b6c00382be614a37804f8df62",
+  "official_cli": {
+    "version": "0.0.1",
+    "source_commit": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+    "validation": "validate and pack passed in clean staging"
+  },
+  "artifacts": {
+    "hub": {
+      "path": "connectors/icloud-mail/release/1.0.0/icloud-mail-1.0.0-agent-mcp.zip",
+      "sha256": "cf9a15f7dc874dbbbe4b2840e694d881c240a3f618252971deea092dcfe24867"
+    },
+    "native": {
+      "path": "connectors/icloud-mail/test-packages/icloud-mail-1.0.0-native.zip",
+      "sha256": "80bc03f57bdef3c35c0d000a95c672ec6c55a6c08a72f8da6b900693e73d9219"
+    }
+  },
+  "payload_sha256": {
+    "README.md": "f22056ffb0db95fdcd3495f9f85a8f4028d7be84e6b6d6102011537dc156a429",
+    "manifest.json": "bc2ad247f4d0b3ed630b248574d8a9f1d06f0aa5032c6fc1307e31997419e8e3",
+    "mcp.json": "3828b7d96c10d3799ba4e5b0081cb863ef13618eaf40dff9011cf949419e4a0f",
+    "skills/icloud-mail-guide/SKILL.md": "0e8e2ab3587451188a3011c818629a09dc6649559c37668bde51e3a908ae4e8b",
+    "token-schema.json": "7e53a524e33c3da0877c84d3c7ae3c461cde502d4b00f0ba23f67aeefc4c31d6"
+  }
+}
