@@ -1,0 +1,15 @@
+{
+  "version": "1.0.1",
+  "package_type": "mcp",
+  "id": "fathom",
+  "name": "Fathom 会议连接器",
+  "description": "查询 Fathom 录制会议，读取会议摘要和带时间戳的逐字稿。",
+  "display_name": {"zh": "Fathom 会议连接器", "en": "Fathom Meetings"},
+  "display_description": {
+    "zh": "查询 Fathom 录制会议，读取会议摘要和带时间戳的逐字稿。",
+    "en": "Find Fathom recordings and read meeting summaries and transcripts."
+  },
+  "integration": {"type": "stdio-mcp", "file": "mcp.json"},
+  "credentials": {"type": "token", "file": "token-schema.json"},
+  "skills": [{"dir": "skills/fathom-guide", "mode": "all"}]
+}

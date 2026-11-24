@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "mode": "native",
+  "version": "1.0.1",
+  "owner": "Song Haoran",
+  "task_id": "AH-20261124-fathom",
+  "candidate_id": null,
+  "naming": {"original": "Fathom", "display_name": "Fathom 会议连接器", "slug": "fathom"},
+  "upstream": [
+    {"source": "https://developers.fathom.ai/quickstart", "version": "REST v1, checked 2026-11-24", "permission_status": "unknown", "copied_paths": [], "use": "Public authentication and API interface semantics only."}
+  ],
+  "team_reuse": {
+    "source": "https://github.com/LasVie/agentic-hub-plugins/tree/fe4744ce839b2a28d9fcf4c34ca6fdce3453a20e/connectors/asana",
+    "paths": ["asana/manifest.json", "asana/token-schema.json", "tests/standard-mcp.cjs"],
+    "modifications": "Adapted repository-owned card configuration and stdio lifecycle for the Fathom read-only tools and transport."
+  }
+}

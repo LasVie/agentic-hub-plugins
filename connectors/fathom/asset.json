@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "type": "agent-mcp",
+  "name": "fathom",
+  "display_name": "Fathom 会议连接器",
+  "version": "1.0.1",
+  "owner": "Song Haoran",
+  "task_id": "AH-20261124-fathom",
+  "candidate_id": null,
+  "internal_asset_id": "repo:agent-mcp:fathom",
+  "description": "查询 Fathom 录制会议，读取会议摘要和带时间戳的逐字稿。",
+  "native_path": "fathom"
+}
