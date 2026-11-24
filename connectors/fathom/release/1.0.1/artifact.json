@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "runtime_type": "agent-mcp",
+  "name": "fathom",
+  "version": "1.0.1",
+  "source_review_sha256": "b6997f40cbb99f389b6635b8791075a684fd419f6f50ef2365aa5bd0695e6587",
+  "test_report_sha256": "e7abcc74acdf5484fbfc5632158b9a6249e58415f2f1812188a7b95a82a3ea89",
+  "official_cli": {
+    "version": "0.0.1",
+    "source_commit": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+    "validation": "validate and pack passed in clean staging"
+  },
+  "artifacts": {
+    "hub": {
+      "path": "connectors/fathom/release/1.0.1/fathom-1.0.1-agent-mcp.zip",
+      "sha256": "84b12114334f5852d9e6171c6144720c9c8f2d60f649dbf1f6ce7b621dbf7f44"
+    },
+    "native": {
+      "path": "connectors/fathom/test-packages/fathom-1.0.1-native.zip",
+      "sha256": "43f94ace492eeb04daf68e9ee69a400f950cb1c612246b51a4bb2827b611aba3"
+    }
+  },
+  "payload_sha256": {
+    "README.md": "9a887e68f9af3a91936afed4a6977d089dd73fd104f37d85fd0700f542702728",
+    "manifest.json": "25eea1ea391b12a757ac08cb2775788990824b726d4bf55db21bb30a2ba3e522",
+    "mcp.json": "2f6237f77d154edc69260065a3f835192234e6ceb798cad41faf29e4cd082a02",
+    "skills/fathom-guide/SKILL.md": "4ce6b998ac6dd1f527e036838b2de2590d1cab5a099ba059f47a577801bb1631",
+    "token-schema.json": "0b3a1d97988827623b6795e38de70282eb77a1d1f34399e5737c32ccbc10fec6"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "fields": [
+    {"key": "FATHOM_API_KEY", "label": "Fathom API Key", "type": "password", "required": true}
+  ]
+}
