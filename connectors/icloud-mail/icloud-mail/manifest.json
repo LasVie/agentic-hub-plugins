@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "package_type": "mcp",
+  "id": "icloud-mail",
+  "name": "iCloud 邮件连接器",
+  "description": "连接 iCloud 邮件，在收件箱按主题或发件人搜索并读取邮件正文。",
+  "display_name": {"zh": "iCloud 邮件连接器", "en": "iCloud Mail"},
+  "display_description": {
+    "zh": "使用 Apple App 专用密码连接 iCloud 邮件，搜索和读取收件箱邮件。",
+    "en": "Connect with an Apple app-specific password to search and read iCloud Mail inbox messages."
+  },
+  "integration": {"type": "stdio-mcp", "file": "mcp.json"},
+  "credentials": {"type": "token", "file": "token-schema.json"},
+  "skills": [{"dir": "skills/icloud-mail-guide", "mode": "all"}]
+}

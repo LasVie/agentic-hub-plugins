@@ -1,0 +1,6 @@
+{
+  "fields": [
+    {"key": "ICLOUD_EMAIL", "label": "iCloud 邮箱地址", "type": "text", "required": true},
+    {"key": "ICLOUD_APP_PASSWORD", "label": "Apple App 专用密码", "type": "password", "required": true}
+  ]
+}

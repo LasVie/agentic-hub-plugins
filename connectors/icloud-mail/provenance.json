@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "mode": "native",
+  "version": "1.0.0",
+  "owner": "Song Haoran",
+  "task_id": "AH-20261124-icloud-mail",
+  "candidate_id": null,
+  "naming": {"original": "iCloud Mail", "display_name": "iCloud 邮件连接器", "slug": "icloud-mail"},
+  "upstream": [
+    {"source": "https://support.apple.com/en-ie/102525", "version": "Official iCloud Mail server settings, checked 2026-11-24", "permission_status": "unknown", "copied_paths": [], "use": "Provider host, TLS and username requirements."},
+    {"source": "https://support.apple.com/en-us/102654", "version": "Official Apple Account app-specific password guide, checked 2026-11-24", "permission_status": "unknown", "copied_paths": [], "use": "User-owned app-specific credential requirements and revocation."},
+    {"source": "https://www.rfc-editor.org/rfc/rfc3501", "version": "IMAP4rev1 RFC 3501", "permission_status": "unknown", "copied_paths": [], "use": "Read-only mailbox and PEEK semantics."},
+    {"source": "https://docs.python.org/3.9/library/imaplib.html", "version": "Python 3.9 API", "permission_status": "unknown", "copied_paths": [], "use": "Uses the installed Python standard library. No Python distribution or source is included."}
+  ]
+}
