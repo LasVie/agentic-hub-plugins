@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "task_id": "AH-20261124-google-contacts",
+  "environment": "macOS, WorkSwarm 0.2.8, isolated profile, local catalog fixture",
+  "hub_zip_sha256": "ecf6ee6e497e7ad584597116dac4e677ace46a18fbe7ead6189c4845a3b72abc",
+  "native_zip_sha256": "a3937f7f99d49002e0d93ab1807fee05b777116ec97166479a806100841ff731",
+  "oauth": {
+    "scope": "https://www.googleapis.com/auth/contacts.readonly",
+    "project": "forward-aura-261913",
+    "provider and card verified": true
+  },
+  "live_cli": {
+    "confirmed status": true,
+    "name search matches": 1,
+    "email search matches": 1,
+    "independent_read_matches": true
+  },
+  "chat": {
+    "session_id": "web_1a20c420cad_e867fc2a5cc8",
+    "live search verified": true,
+    "live read verified": true,
+    "contact": "WorkSwarm联系人验收",
+    "email": "workswarm-contacts-qa@example.com",
+    "phone_present": false,
+    "staged_search_file": true
+  },
+  "screenshots": {
+    "01-synthetic-contact.jpg": "235b7e55d4a8d5187b0ff5dbbd53da69849f3252e78f67a6be0cc52b734d1992",
+    "02-google-oauth-return.jpg": "d54abde3825268cb05ad10f02021166f7345e6378d7963b0de764323652cb6bb",
+    "03-workswarm-card-connected.jpg": "2099d5da7a70fac12c55be0a1e4c7ac15622fb1b68d6470e27aa4d909413f726",
+    "04-workswarm-chat-search-read.jpg": "e400419164025f808cd0f47ea547855264d237bfad39e580c87348cc1ab26a94"
+  }
+}

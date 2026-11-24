@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "mode": "native",
+  "version": "1.0.0",
+  "owner": "Song Haoran",
+  "task_id": "AH-20261124-google-contacts",
+  "candidate_id": null,
+  "naming": {"original": "Google Contacts", "display_name": "Google 联系人连接器", "slug": "google-contacts"},
+  "upstream": [
+    {"source":"https://developers.google.com/people/v1/contacts","version":"People API v1, checked 2026-11-24","permission_status":"unknown","copied_paths":[],"use":"Public interface behavior only."},
+    {"source":"https://developers.google.com/identity/protocols/oauth2/native-app","version":"OAuth 2.0 Desktop, checked 2026-11-24","permission_status":"unknown","copied_paths":[],"use":"Public authorization protocol behavior only."}
+  ],
+  "team_reuse": {"source":"https://github.com/LasVie/agentic-hub-plugins/tree/041137539ab68da59ec65dafca1ada5c08dd659e/connectors/google-calendar",
+    "paths":["google-calendar/cli.json","google-calendar/skills/google-calendar-guide/scripts/storage.cjs"],
+    "modifications":"New identity, remove shared client auto-import, keep private atomic storage; implement People API separately."}
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "type": "agent-mcp",
+  "name": "google-contacts",
+  "display_name": "Google 联系人连接器",
+  "version": "1.0.0",
+  "owner": "Song Haoran",
+  "task_id": "AH-20261124-google-contacts",
+  "candidate_id": null,
+  "internal_asset_id": "repo:agent-mcp:google-contacts",
+  "description": "通过 WorkSwarm 卡片授权 Google，搜索和读取账号中已保存的联系人。",
+  "native_path": "google-contacts"
+}
