@@ -1,0 +1,48 @@
+{
+  "version": "1.0.0",
+  "hub_zip_sha256": "d341ac06c87bf04ab45cad5e74c48bd27bdf9a24675a366cb0eb74447fa45c42",
+  "environment": "macOS WorkSwarm 0.2.8, installed build, isolated data directory, local catalog fixture",
+  "live_oauth": {
+    "region": "US",
+    "user_completed_consent": true,
+    "stock_card_button": "使用",
+    "in_app_first_attempt": "Intercom provider missing session cookie"
+  },
+  "live_cli": {
+    "status_connected": true,
+    "conversations": {
+      "search_count": 1,
+      "selected_from_search": true,
+      "fetch_succeeded": true,
+      "provider_link_present": true,
+      "text_utf8_bytes": 509,
+      "text_sha256": "160d39c44be1a4f85da7acb78e7592031da242d21aed624313a1e6b8b9ab6e1b"
+    },
+    "contacts": {
+      "search_count": 3,
+      "selected_from_search": true,
+      "fetch_succeeded": true,
+      "provider_link_present": true,
+      "text_utf8_bytes": 232,
+      "text_sha256": "6947e2ffcb1e14bf26397a0acd94cbb21492bfbf19090af155c310685235d847"
+    }
+  },
+  "screenshots": {
+    "01-intercom-consent.jpg": "08475c582e0ba18172853ae621a63077b7f84eaad89fe56f5c2705920f37c606",
+    "02-in-app-cookie-error.jpg": "a122a11254711f6a01ff1c91a24d5135727f0ab637e11d3c6f54e8f2fa849880",
+    "03-stock-card-connected.jpg": "f9fa4f60cb483734ea140bcf0e23948f5ba7dc2b4468453cb596735bf0070e31",
+    "04-chat-conversation-search.jpg": "2e10502521a038eec93a0902da340ef2b068447b585954168ab5891c1b3a6388",
+    "05-chat-conversation-contact-read.jpg": "3df5b081a185b50a1ca268f4341e14d8e9c740feae29228689211ecda6a7144a"
+  },
+  "workswarm_chat": {
+    "session_id": "web_1a20b965c18_3854df50a0d4",
+    "conversation_search_count": 1,
+    "conversation_fetch_succeeded": true,
+    "event_type": "company_updated",
+    "body_present": false,
+    "intercom_link_present": true,
+    "contact_search_total": 4,
+    "first_contact_fetch_succeeded": true,
+    "additional_readback_confirmed": true
+  }
+}
