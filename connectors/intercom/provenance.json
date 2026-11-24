@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "mode": "native",
+  "version": "1.0.0",
+  "owner": "Song Haoran",
+  "candidate_id": "CAND-CLD-029",
+  "task_id": "AH-20261124-intercom",
+  "naming": {"original": "Intercom", "display_name": "Intercom 客服连接器", "slug": "intercom"},
+  "upstream": [
+    {"source": "https://developers.intercom.com/docs/guides/mcp", "version": "Live official documentation checked 2026-11-24", "permission_status": "unknown", "copied_paths": [], "use": "Functional interface and region/consent documentation. No upstream implementation or brand asset used."},
+    {"source": "https://modelcontextprotocol.io/specification/2025-06-18/basic/transports", "version": "2025-06-18", "permission_status": "unknown", "copied_paths": [], "use": "Streamable HTTP protocol behavior only."}
+  ],
+  "team_reuse": "Stock WorkSwarm card command and installation conventions from Confluence 1.1.0 (PR #117)."
+}

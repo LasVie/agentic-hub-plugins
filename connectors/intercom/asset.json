@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "type": "agent-mcp",
+  "name": "intercom",
+  "display_name": "Intercom 客服连接器",
+  "version": "1.0.0",
+  "owner": "Song Haoran",
+  "task_id": "AH-20261124-intercom",
+  "candidate_id": "CAND-CLD-029",
+  "internal_asset_id": "repo:agent-mcp:intercom",
+  "description": "从 WorkSwarm 卡片授权 Intercom，搜索客服会话和联系人，读取指定记录。",
+  "native_path": "intercom"
+}

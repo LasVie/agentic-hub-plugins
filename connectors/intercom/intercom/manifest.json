@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "package_type": "mcp",
+  "id": "intercom",
+  "name": "Intercom 客服连接器",
+  "description": "从 WorkSwarm 卡片授权 Intercom，搜索客服会话和联系人，读取指定记录。",
+  "display_name": {
+    "zh": "Intercom 客服连接器",
+    "en": "Intercom Support Connector"
+  },
+  "display_description": {
+    "zh": "从 WorkSwarm 卡片授权 Intercom，搜索客服会话和联系人，读取指定记录。",
+    "en": "Connect Intercom and search and read support conversations and contacts."
+  },
+  "integration": {
+    "type": "cli",
+    "file": "cli.json"
+  },
+  "credentials": {
+    "type": "cli-oauth"
+  },
+  "skills": [
+    {
+      "dir": "skills/intercom-guide",
+      "mode": "all"
+    }
+  ]
+}

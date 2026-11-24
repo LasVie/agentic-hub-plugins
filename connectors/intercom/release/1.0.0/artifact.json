@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "runtime_type": "agent-mcp",
+  "version": "1.0.0",
+  "name": "intercom",
+  "source_review_sha256": "7030198ed1079dbf16e641964335029a0bfecfcb4d2ec0460c8f81674b96e7cf",
+  "test_report_sha256": "cd6cc998ead184b08cc9c68af5d37544f433fcc99f4e89af47653b7be94b04dc",
+  "official_cli": {
+    "version": "0.0.1",
+    "source_commit": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+    "validation": "validate and pack passed in clean staging"
+  },
+  "artifacts": {
+    "hub": {
+      "path": "connectors/intercom/release/1.0.0/intercom-1.0.0-agent-mcp.zip",
+      "sha256": "d341ac06c87bf04ab45cad5e74c48bd27bdf9a24675a366cb0eb74447fa45c42"
+    },
+    "native": {
+      "path": "connectors/intercom/test-packages/intercom-1.0.0-native.zip",
+      "sha256": "7b1885a1d61f0fecafea75717ab8cd90347cf35bf4947e0f2e0bc6e911d032b4"
+    }
+  },
+  "payload_sha256": {
+    "README.md": "7da795ecb89964ebbb7f951ae140fec38343d4c00f952992333261e6e5e72a87",
+    "cli.json": "7cf8127c332dd8deb5f39b79c45c1e44f19ec8768bc4cfd00e2f4610bc8da121",
+    "manifest.json": "61afe6e19470a57601290d6b6a09ff24263abfb8ef9c4645cb8ded0ac46b852f",
+    "skills/intercom-guide/SKILL.md": "907f9a7fe23432211009dcc6213d9b7aaeed769f8b7e63f44ae752661bfbeafe",
+    "skills/intercom-guide/scripts/intercom-auth.cjs": "d556dd3d6e064ed1f125f0596f064d3401e8b41d2faaa6efec3a3827662ef82a",
+    "skills/intercom-guide/scripts/intercom-cli.cjs": "e4e268bd9a216f1dee6c60c617185ac92b3f28ed3b7e9932779ace1ec15c4c52",
+    "skills/intercom-guide/scripts/intercom-mcp.cjs": "e8c70aec651de0429af73a258539b1da3d2ed1e465ce4cf04d306ba649dd5b4c"
+  }
+}
