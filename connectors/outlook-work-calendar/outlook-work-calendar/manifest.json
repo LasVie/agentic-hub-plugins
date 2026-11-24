@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "package_type": "mcp",
+  "id": "outlook-work-calendar",
+  "name": "Outlook 工作日历连接器",
+  "description": "连接 Microsoft 365 工作或学校账号，查询并读取 Outlook 主日历日程。",
+  "display_name": {
+    "zh": "Outlook 工作日历连接器",
+    "en": "Outlook Work Calendar"
+  },
+  "display_description": {
+    "zh": "通过组织账号授权，只读查询和读取 Outlook 主日历日程。",
+    "en": "Find and read calendar events in an authorized Microsoft 365 work account."
+  },
+  "integration": {
+    "type": "cli",
+    "file": "cli.json"
+  },
+  "credentials": {
+    "type": "cli-oauth"
+  },
+  "skills": [
+    {
+      "dir": "skills/outlook-work-calendar-guide",
+      "mode": "all"
+    }
+  ]
+}
