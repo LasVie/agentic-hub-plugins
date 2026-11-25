@@ -1,0 +1,15 @@
+{
+  "version": "1.1.0",
+  "package_type": "mcp",
+  "id": "monday",
+  "name": "monday.com 连接器",
+  "description": "在指定 monday.com 看板列出、读取和新建条目。",
+  "display_name": {"zh": "monday.com 连接器", "en": "monday.com"},
+  "display_description": {
+    "zh": "使用个人 API 令牌连接 monday.com，列出指定看板的条目、按 ID 读取、新建一条并回读。",
+    "en": "Connect using a personal API token to list, read and create an item on a chosen board."
+  },
+  "integration": {"type": "stdio-mcp", "file": "mcp.json"},
+  "credentials": {"type": "token", "file": "token-schema.json"},
+  "skills": [{"dir": "skills/monday-guide", "mode": "all"}]
+}

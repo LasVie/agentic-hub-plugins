@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "type": "agent-mcp",
+  "name": "monday",
+  "display_name": "monday.com 连接器",
+  "version": "1.1.0",
+  "owner": "Song Haoran",
+  "task_id": "AH-20261117-monday-connector",
+  "candidate_id": "CAND-CLD-086",
+  "internal_asset_id": "repo:agent-mcp:monday",
+  "native_path": "monday",
+  "description": "在指定 monday.com 看板列出、读取、新建条目，并按 ID 回读。"
+}
