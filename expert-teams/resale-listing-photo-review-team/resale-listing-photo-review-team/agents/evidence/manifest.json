@@ -1,0 +1,16 @@
+{
+  "package_type": "agent_template",
+  "name": "evidence",
+  "description": "将照片关联到商品事实，给出照片覆盖和候选主图",
+  "display_name": {
+    "zh": "商品照片整理员",
+    "en": "Listing Photo Evidence Organizer"
+  },
+  "display_description": {
+    "zh": "将照片关联到商品事实，给出照片覆盖和候选主图",
+    "en": "Listing Photo Evidence Organizer"
+  },
+  "persona": {
+    "dir": "persona"
+  }
+}

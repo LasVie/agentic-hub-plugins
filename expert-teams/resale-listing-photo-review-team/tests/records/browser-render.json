@@ -1,0 +1,12 @@
+{
+  "browser": "Google Chrome headless, isolated local profile",
+  "viewport": [
+    960,
+    760
+  ],
+  "verified_zh_labels_and_result_markers": 9,
+  "visually_inspected": true,
+  "html_sha256": "7860e4b8e5d0b6b0243d7fc7d57219c040aeaf5ee68bc1c5c164d0594a5f97d3",
+  "rendered_dom_sha256": "2a59b215b1e2806913b42ec49e9113e28317a317a12c5998d8087802a9bfa7c7",
+  "preview_sha256": "c420d3abb0c25a82d48095ee2500f11a5b2aa236e7f076907964e878d3d15121"
+}

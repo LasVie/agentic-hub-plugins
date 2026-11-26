@@ -1,0 +1,23 @@
+{
+  "package_type": "agent_group",
+  "name": "resale-listing-photo-review-team",
+  "version": "1.0.0",
+  "description": "对照二手商品信息和原照片，独立复核主图及详情证据，交付上架顺序与补拍清单。",
+  "display_name": {
+    "zh": "二手商品上架照片复核专家团",
+    "en": "Resale Listing Photo Review Team"
+  },
+  "display_description": {
+    "zh": "独立核对主图、瑕疵、配件和商品对应关系",
+    "en": "Independent review of listing photos against seller facts"
+  },
+  "instruction": "默认使用简体中文。主理人冻结用户授权的原照片与说明，分别交给整理员和复核员，两人依据相同原图独立完成并封存意见。只使用用户授权给本次 WorkSwarm 视觉模型的照片。不得根据文件名猜测画面内容。归属不清、看不清或工具未返回图片时填待确认。只生成本地清单，不改原图，不代替用户发布。",
+  "agents": [
+    "leader",
+    "evidence",
+    "verifier"
+  ],
+  "skills": [
+    "listing-photo-review"
+  ]
+}

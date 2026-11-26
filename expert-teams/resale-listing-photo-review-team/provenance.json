@@ -1,0 +1,25 @@
+{
+  "mode": "native",
+  "base": "84dab8912de1bf482b702bd1dace6c8cbf35a559",
+  "asset_id": "repo:agent-group:resale-listing-photo-review-team",
+  "task_id": "AH-20261126-resale-listing-photo-review-team",
+  "candidate_id": "Not Applicable",
+  "official_category_preference": "Multimodal and Media",
+  "references": [
+    {
+      "url": "https://github.com/openJiuwen-ai/skillhub",
+      "version": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+      "use": "External build and validation",
+      "bundled_paths": []
+    }
+  ],
+  "repository_build_harness_reuse": [
+    "expert-teams/laundry-load-review-team/tests/build_package.py",
+    "expert-teams/business-interruption-rehearsal-team/tests/host_integration.py"
+  ],
+  "runtime_dependencies": [
+    "Python 3.10+ standard library",
+    "WorkSwarm AgentGroup tasks, shell and native image-enabled Read with a configured vision model",
+    "Local browser for the delivery checklist"
+  ]
+}

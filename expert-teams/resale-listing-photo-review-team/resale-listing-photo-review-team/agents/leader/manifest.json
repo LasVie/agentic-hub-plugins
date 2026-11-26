@@ -1,0 +1,16 @@
+{
+  "package_type": "agent_template",
+  "name": "leader",
+  "description": "确认输入和授权，确认两份独立意见后交付逐件清单",
+  "display_name": {
+    "zh": "上架照片复核主理人",
+    "en": "Listing Photo Review Lead"
+  },
+  "display_description": {
+    "zh": "确认输入和授权，确认两份独立意见后交付逐件清单",
+    "en": "Listing Photo Review Lead"
+  },
+  "persona": {
+    "dir": "persona"
+  }
+}

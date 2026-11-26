@@ -1,0 +1,16 @@
+{
+  "package_type": "agent_template",
+  "name": "verifier",
+  "description": "独立审阅原照片，核查商品对应、可读性和瑕疵证据",
+  "display_name": {
+    "zh": "独立上架图片复核员",
+    "en": "Independent Listing Photo Reviewer"
+  },
+  "display_description": {
+    "zh": "独立审阅原照片，核查商品对应、可读性和瑕疵证据",
+    "en": "Independent Listing Photo Reviewer"
+  },
+  "persona": {
+    "dir": "persona"
+  }
+}

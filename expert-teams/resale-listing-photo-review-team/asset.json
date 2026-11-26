@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-group:resale-listing-photo-review-team",
+  "task_id": "AH-20261126-resale-listing-photo-review-team",
+  "candidate_id": "Not Applicable",
+  "type": "agent-group",
+  "name": "resale-listing-photo-review-team",
+  "display_name": "二手商品上架照片复核专家团",
+  "version": "1.0.0",
+  "description": "核对二手商品的原始照片与卖家说明，独立复核主图和各项证据，输出上架照片顺序与补拍清单。",
+  "publisher": "Cai Zhenze",
+  "tags": ["图片复核", "二手商品", "上架准备"]
+}

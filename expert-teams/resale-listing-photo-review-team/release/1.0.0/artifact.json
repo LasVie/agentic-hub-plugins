@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-group:resale-listing-photo-review-team",
+  "task_id": "AH-20261126-resale-listing-photo-review-team",
+  "candidate_id": "Not Applicable",
+  "type": "agent-group",
+  "name": "resale-listing-photo-review-team",
+  "display_name": "二手商品上架照片复核专家团",
+  "version": "1.0.0",
+  "zip": "resale-listing-photo-review-team-1.0.0.zip",
+  "sha256": "370145392fa531eccb85b386f5c123acece1d2948ee33f9e9e01ab85633dd378",
+  "zip_bytes": 14724,
+  "native_test_zip": "../../test-packages/resale-listing-photo-review-team-1.0.0-native.zip",
+  "native_test_zip_sha256": "960bdb21abcc56acd55990b0414d8f798eba0db471009c3cda938d7f2b9b896e",
+  "native_test_zip_bytes": 24357,
+  "plugin_yaml_sha256": "ca042f87a853bb2fa88deb93f410fbf3f67de44329bdeddf2187cbcddce55b19",
+  "payload_file_count": 11,
+  "payload_sha256": {
+    "README.md": "3da9e1b6b61f9ae29a0192403cfd76ec27a18e53285c45c0a519b6de51a8f35c",
+    "agents/evidence/manifest.json": "b204d8ecd3488c706292900cabf94ee4eaee664a64bfa0298d95c309047a4dd7",
+    "agents/evidence/persona/role.md": "2f81fb23847ce0236e82bcf67348d16b544f3cf3b817d520c263d1938dfe9bd3",
+    "agents/leader/AGENT.md": "4fd3a0c91fa3946b8821d0c35f2afb3596c522e630da2f3174f6d3ab1d79ac44",
+    "agents/leader/manifest.json": "4d1d97d9c86627f0528d8c59a5ae85b250455ec4f542e6807c4538fca22584a6",
+    "agents/leader/persona/role.md": "9076adc854049764ec0b332ec440673ce2409cb3073be79c321a1da34ecd5450",
+    "agents/verifier/manifest.json": "c26a06f53c48c2398691c7a1bcf5ef66317471b7191de84288f3efb17971b117",
+    "agents/verifier/persona/role.md": "e301087d02cd3d2f2535a44dd6ebd4738a011a6a618254608613816a2bf8d202",
+    "manifest.json": "511694f9993d90c7350d79db1a0a901559e4fbcad1dfde51b0907730add290ba",
+    "skills/listing-photo-review/SKILL.md": "45b3b37c48d15ab33ae59a00af387918afc1167f702405152a5d6266b8aecd97",
+    "skills/listing-photo-review/scripts/review.py": "d44d59126352a5a1b295c5a82ecd25afeeca0919fb1318d821fbe46317352dae"
+  },
+  "package_verification": {
+    "paths_types_sizes_ratios": "passed",
+    "native_wrapped_source_payload_equality": "passed",
+    "native_compression": "ZIP_STORED",
+    "canonical_compression": "official CLI ZIP_DEFLATED",
+    "reproducible_archive_timestamp": "2026-01-01T00:00:00"
+  },
+  "official_cli": {
+    "distribution": "openjiuwen-agentichub",
+    "version": "0.0.1",
+    "source_commit": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+    "main_py_sha256": "f3a0e0bb46c67ad17689db44ab4d9ae5ddbf32391ed8e26a1671e770f0dfaaea",
+    "plugin_py_sha256": "7d100e423a033b42ae6f1c79b7063b01ebb55ef38beb63da6d85e027ca0f6568",
+    "commands": [
+      "python -B -m openjiuwen_agentichub.main validate CLEAN_STAGING",
+      "python -B -m openjiuwen_agentichub.main pack CLEAN_STAGING --output CLEAN_OUTPUT"
+    ]
+  },
+  "source_review_sha256": "38b08e08d87be8a0d0493d8367a6cf069ce75d19b3290f8bcac423709740aa88",
+  "functional_test_report_sha256": "be0a5618ce49a4e765932c585d5e846cff666d01f5fc2915984f57fdc5c4e4cd",
+  "provenance_sha256": "4a1841dd58ff4c7ff842d8855c0da3dd3b89a79526de795cb10960dc52307d03",
+  "provenance_mode": "native"
+}
