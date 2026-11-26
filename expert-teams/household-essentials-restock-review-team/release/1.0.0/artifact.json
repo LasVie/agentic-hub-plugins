@@ -51,8 +51,8 @@
     }
   },
   "records_sha256": {
-    "SOURCE_REVIEW.md": "619d4de9680338953dd817566c7885e3a61607c6a259ad692b2963beae1086d6",
-    "TEST_REPORT.md": "eb6c17572900ec2240fe4975ed0ee5486f96cd7fd53989938a5e9483ce11c87c",
+    "SOURCE_REVIEW.md": "7213ec083c6556f3945a451879ad7fb8fbd6eaf6814095844913ef54f6a5f13a",
+    "TEST_REPORT.md": "32d57294153c783aec5d084982ab692d291c732744900fb4d60fa01c94051f4a",
     "MANUAL_TESTING.md": "237d38e819e0a895f8fa8f086cb87417070e0051ba93b6d1248052c923e8b419",
     "NATIVE_DESIGN.md": "b9a1511c9d7099c394b462d3a842c4f2b341b952d9f82fa1f988bd33f975338c",
     "provenance.json": "e8021bce4d71c4c4b6950b1967a55033e78d4bd5539756d62eb53e35b031c63f",
@@ -61,6 +61,8 @@
     "tests/records/host-execution.json": "670642d4ca595b9fb25758d71c8c516e4d810330f22c083d49c4a4b85a4e50b2",
     "tests/records/host-import.json": "e31d89f39d90a8c0735bf4f3118720bb4a79b26e0e6c249d643b7b687c34434b",
     "tests/records/package-preflight.txt": "81ca0635101de4da3cad5d937bf53fd081b85950bb4338037e356bee9eea3a07",
-    "tests/records/source-tests.txt": "7ce529648975af430d4b4cf6475218f46650c1c5c121d0609f67746c0bcc8817"
+    "tests/records/source-tests.txt": "7ce529648975af430d4b4cf6475218f46650c1c5c121d0609f67746c0bcc8817",
+    "evidence/1.0.0/index.json": "1c5ee37b2c79935de2aa4356fb9de85f4ffd29c4f98bb0e923f0ba54c793194a",
+    "tests/records/phase3-verification.json": "e2f1d7bd126960f861181af5653b1a183615dac86bbef6d120118ed13134c054"
   }
 }

@@ -1,0 +1,62 @@
+{
+  "task_id": "AH-20261126-household-essentials-restock-review-team",
+  "candidate": "Not Applicable",
+  "owner": "Cai Zhenze",
+  "name": "家庭日用品补货核验专家团",
+  "version": "1.0.0",
+  "confirmation_report_id": "RPT-20261126-household-essentials-restock-review-team-user-confirmation",
+  "source": "Explicit user confirmation and five original attachments in the current Codex conversation",
+  "user_confirmation": "Manual testing of the exact native ZIP is complete and passed.",
+  "confirmation_recorded_at": "2026-11-26T16:40:08+08:00",
+  "sha256": {
+    "native": "d84845ebdd42aae9a1950058622425d2f4b99f172eca671327ebf8fcdbdd3d4d",
+    "wrapped": "6c035111a5bee2f750facde8a25436a4d750f7fb5fb36640ed4ece73cfd70e7c"
+  },
+  "original_screenshots": [
+    {
+      "original_filename": "Screenshot 2026-11-26 at 4.37.33 PM.png",
+      "description": "Rendered Chinese shopping list",
+      "width": 3064,
+      "height": 1388,
+      "bytes": 342659,
+      "sha256": "6b01e1897c29522f67b6159ee99c618a75515adfdab0cf2f7554db95ee38d26c",
+      "path": "originals/01-shopping-list.png"
+    },
+    {
+      "original_filename": "Screenshot 2026-11-26 at 4.37.41 PM.png",
+      "description": "Version, source-only baseline instructions, and participating roles",
+      "width": 3330,
+      "height": 1912,
+      "bytes": 878028,
+      "sha256": "6d938ce70d72f1092f72db3485b226a139e4ae55069a074750031792ac3c0dc4",
+      "path": "originals/02-version-and-roles.png"
+    },
+    {
+      "original_filename": "Screenshot 2026-11-26 at 4.37.58 PM.png",
+      "description": "Review result, delivery approvals, and reported process deviation",
+      "width": 3334,
+      "height": 1912,
+      "bytes": 1319847,
+      "sha256": "630dc9a535ba492a110f3857d6e16fe8dcdad5d607caee273bfde89e71656eb2",
+      "path": "originals/03-verification-and-delivery.png"
+    },
+    {
+      "original_filename": "Screenshot 2026-11-26 at 4.38.13 PM.png",
+      "description": "Final decisions, output paths, and run notes",
+      "width": 3330,
+      "height": 1916,
+      "bytes": 972140,
+      "sha256": "f744179a325275b44e2d71017085dedaf826414a31299331196945a17cd49c5d",
+      "path": "originals/04-results-and-outputs.png"
+    },
+    {
+      "original_filename": "Screenshot 2026-11-26 at 4.39.04 PM.png",
+      "description": "Rendered reconciliation CSV with four item decisions",
+      "width": 1604,
+      "height": 306,
+      "bytes": 122068,
+      "sha256": "2e1eeeb1efe705c299e428a96282e1128b1a50def8632bdcd539aef97dc740d0",
+      "path": "originals/05-restock-table.png"
+    }
+  ]
+}
