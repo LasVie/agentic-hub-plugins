@@ -1,0 +1,16 @@
+{
+  "name": "reviewer",
+  "package_type": "agent_template",
+  "description": "从原始行逐对核算重叠并逐日独立复算",
+  "display_name": {
+    "zh": "独立工时复核员",
+    "en": "Independent Timesheet Reviewer"
+  },
+  "display_description": {
+    "zh": "从原始行逐对核算重叠并逐日独立复算",
+    "en": "Independent Timesheet Reviewer for weekly time records"
+  },
+  "persona": {
+    "dir": "persona"
+  }
+}

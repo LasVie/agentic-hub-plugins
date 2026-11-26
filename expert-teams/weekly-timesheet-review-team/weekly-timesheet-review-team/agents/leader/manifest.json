@@ -1,0 +1,16 @@
+{
+  "name": "leader",
+  "package_type": "agent_template",
+  "description": "确认复核周并核对报告与真实任务回执",
+  "display_name": {
+    "zh": "工时复核主理人",
+    "en": "Timesheet Review Lead"
+  },
+  "display_description": {
+    "zh": "确认复核周并核对报告与真实任务回执",
+    "en": "Timesheet Review Lead for weekly time records"
+  },
+  "persona": {
+    "dir": "persona"
+  }
+}

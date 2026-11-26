@@ -1,0 +1,21 @@
+{
+  "type": "agent-group",
+  "name": "weekly-timesheet-review-team",
+  "version": "1.0.0",
+  "display_name": "每周工时记录复核专家团",
+  "description": "复核单人的每周工时记录，保留重复、重叠与缺项的原始行号，交付中文汇总和更正清单。",
+  "publisher": "Cai Zhenze",
+  "category": "productivity",
+  "tags": [
+    "每周工时",
+    "记录复核",
+    "办公"
+  ],
+  "members": [
+    "leader",
+    "analyst",
+    "reviewer"
+  ],
+  "candidate_id": null,
+  "task_id": "AH-20261120-weekly-timesheet-review-team"
+}

@@ -1,0 +1,36 @@
+{
+  "task_id": "AH-20261120-weekly-timesheet-review-team",
+  "version": "1.0.0",
+  "confirmation_report_id": "RPT-20261126-weekly-timesheet-review-team-user-confirmation",
+  "native_zip_sha256": "a2b935f8070ba58a82d1036d80592e92baa2b9f9afa502e84f694182aa4f4786",
+  "recorded_at": "2026-11-26T15:28:35+08:00",
+  "images": [
+    {
+      "path": "originals/01-checklist.png",
+      "original_filename": "Screenshot 2026-11-26 at 3.24.32 PM.png",
+      "width": 1222,
+      "height": 1572,
+      "bytes": 213874,
+      "sha256": "1aa2b86a87248e07d92100d547029c7aabf1c6dd55d75b59c6d7b38266c38da0",
+      "shows": "中文版清单、汇总与待核实记录"
+    },
+    {
+      "path": "originals/02-team-members.png",
+      "original_filename": "Screenshot 2026-11-26 at 3.24.48 PM.png",
+      "width": 3326,
+      "height": 1912,
+      "bytes": 892294,
+      "sha256": "4c8b984bcbd9dcd9168b3f95fd97ded7b7f3e18590bf914cd81846a949eb0ec1",
+      "shows": "已安装版本与实际会话成员"
+    },
+    {
+      "path": "originals/03-task-handoffs.png",
+      "original_filename": "Screenshot 2026-11-26 at 3.25.00 PM.png",
+      "width": 3322,
+      "height": 1906,
+      "bytes": 803618,
+      "sha256": "6ab5d24e03ca07d57b696de1f6f1e061a58c16988b8cfe63442075e3d6c18527",
+      "shows": "任务领取、完成、交接及最后统计"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "analyst",
+  "package_type": "agent_template",
+  "description": "按时间推进检查重叠并汇总日与项目工时",
+  "display_name": {
+    "zh": "工时记录分析员",
+    "en": "Timesheet Analyst"
+  },
+  "display_description": {
+    "zh": "按时间推进检查重叠并汇总日与项目工时",
+    "en": "Timesheet Analyst for weekly time records"
+  },
+  "persona": {
+    "dir": "persona"
+  }
+}
