@@ -1,0 +1,53 @@
+{
+  "task_id": "AH-20261120-school-notice-action-review-team",
+  "candidate": "Not Applicable",
+  "owner": "Cai Zhenze",
+  "name": "家校通知变更与待办核验专家团",
+  "version": "1.0.0",
+  "confirmation_report_id": "RPT-20261126-school-notice-action-review-team-confirmed",
+  "source": "User confirmation and four original attachments in the current Codex conversation",
+  "user_confirmation": "Manual testing of the exact native ZIP is complete and passed.",
+  "confirmation_recorded_at": "2026-11-26T15:28:04+08:00",
+  "sha256": {
+    "native": "4f34070f46787c9c57fc421d3ad736d76d9c73c70e023bc3b5ec007c5a1964c0",
+    "wrapped": "7acc7fe4213205def7cc06e0d199b9e8ce33e1387a6f6cb17b120d74771a907c"
+  },
+  "original_screenshots": [
+    {
+      "original_filename": "Screenshot 2026-11-26 at 3.25.58 PM.png",
+      "description": "Version, fictional source, and initial independent task assignments",
+      "width": 3318,
+      "height": 1910,
+      "bytes": 756901,
+      "sha256": "901c493d0c808c6bd7b4cb48b6e1a73d2ca77452af369c0c7395ac0f393806ad",
+      "path": "originals/Screenshot 2026-11-26 at 3.25.58 PM.png"
+    },
+    {
+      "original_filename": "Screenshot 2026-11-26 at 3.26.12 PM.png",
+      "description": "Baseline handoff, verification, and three delivered files",
+      "width": 3322,
+      "height": 1904,
+      "bytes": 740268,
+      "sha256": "ad98cdb2b068780113f280cd86e75b90d45690b0976cf88da5b4d5f65cef857c",
+      "path": "originals/Screenshot 2026-11-26 at 3.26.12 PM.png"
+    },
+    {
+      "original_filename": "Screenshot 2026-11-26 at 3.26.20 PM.png",
+      "description": "Four completed tasks and final review results",
+      "width": 3342,
+      "height": 1926,
+      "bytes": 600776,
+      "sha256": "a47c6dba507caa125acaad6a89e324285421bf9c9f777ef5180965dd35a4f96c",
+      "path": "originals/Screenshot 2026-11-26 at 3.26.20 PM.png"
+    },
+    {
+      "original_filename": "Screenshot 2026-11-26 at 3.26.51 PM.png",
+      "description": "Rendered Chinese checklist, class-specific changes, and unresolved date",
+      "width": 1472,
+      "height": 904,
+      "bytes": 178376,
+      "sha256": "1911d883d17b244e9abf50c9c71a6c52f5e13d2a04d563c99a9e2c927b800f16",
+      "path": "originals/Screenshot 2026-11-26 at 3.26.51 PM.png"
+    }
+  ]
+}

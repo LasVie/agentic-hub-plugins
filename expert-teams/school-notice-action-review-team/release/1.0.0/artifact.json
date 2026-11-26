@@ -52,13 +52,19 @@
   },
   "source_review_sha256": "cb32c1119e9130d7056fde52720647eceedb1e6c7bd64b5a1d4433d2486b6ee8",
   "manual_testing_sha256": "4b677bffb7b88d421e9d3d2b14e7b85a17d9ab3539f4eff9d6fb843ea6eefe3c",
-  "test_report_sha256": "d2352ebdcec28d92414c910ffc5e5d0e08a46e1ab77328623defec626224b2ea",
+  "test_report_sha256": "fe0939ede4924310aa553eb8dbf5614e97faece5d24a3fbcfd29e8c1c3c9d9eb",
   "verification_records": {
     "tests/records/extracted-tests.txt": "cc91f94e53e508833fe5ffd787e5b9f98047213806c71804e6f9209cc7e1104e",
     "tests/records/host-execution.json": "bbed4819affb8d32ddade15f5947f3356dca3e05a8fbfb9811e303d0048a8096",
     "tests/records/host-import.json": "56e82fad8ab390a76b9140850b8342b2d55ad1bf5283fca8659f6f1f7d71fd1a",
     "tests/records/host-loader.json": "4a8ea1696398eb456e6291ea5d0d92cf08569409e91042b61adbc9f81b72e37a",
     "tests/records/package-preflight.txt": "9f8ff68a8a2e5c7f848f5cda6d299ff6a7e18dd34fd0487a327921c2e62ac898",
-    "tests/records/source-tests.txt": "a7ca81de8577a0a046a4fc2db41143066bd9e35bb02e33d1a74e5b3b10dc5b1d"
+    "tests/records/source-tests.txt": "a7ca81de8577a0a046a4fc2db41143066bd9e35bb02e33d1a74e5b3b10dc5b1d",
+    "tests/records/phase3-verification.json": "1de373cb5405ec4cc5d9241adc59028b5f60f81680a77879f6c0d5f82ca09f42"
+  },
+  "manual_evidence": {
+    "index": "evidence/1.0.0/index.json",
+    "sha256": "f94c35a95d3115011a8e53acf865879c8c52518beae1ae460a7afc9ca1a24256",
+    "confirmation_report_id": "RPT-20261126-school-notice-action-review-team-confirmed"
   }
 }
