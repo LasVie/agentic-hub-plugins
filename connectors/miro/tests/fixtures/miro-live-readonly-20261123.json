@@ -1,0 +1,168 @@
+{
+  "read_only": true,
+  "date": "2026-11-23",
+  "schemas": {
+    "board_search_boards": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "default": "",
+          "type": "string"
+        },
+        "limit": {
+          "default": 20,
+          "maximum": 50,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "offset": {
+          "default": 0,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "owned_by_me": {
+          "default": false,
+          "type": "boolean"
+        },
+        "include_content": {
+          "default": false,
+          "type": "boolean"
+        },
+        "invocation_source": {
+          "type": "string",
+          "default": null,
+          "nullable": true
+        },
+        "is_repository": {
+          "type": "boolean",
+          "default": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "canvas_create_from_svg": {
+      "type": "object",
+      "properties": {
+        "miro_url": {
+          "type": "string"
+        },
+        "svg": {
+          "maxLength": 200000,
+          "type": "string"
+        },
+        "invocation_source": {
+          "type": "string",
+          "default": null,
+          "nullable": true
+        },
+        "is_repository": {
+          "type": "boolean",
+          "default": false
+        }
+      },
+      "required": [
+        "miro_url",
+        "svg"
+      ],
+      "additionalProperties": false
+    },
+    "canvas_get_canvas_composer_skill": {
+      "type": "object",
+      "properties": {
+        "step": {
+          "default": null,
+          "type": "string",
+          "nullable": true
+        },
+        "miro_url": {
+          "default": null,
+          "type": "string",
+          "nullable": true
+        },
+        "invocation_source": {
+          "type": "string",
+          "default": null,
+          "nullable": true
+        },
+        "is_repository": {
+          "type": "boolean",
+          "default": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "canvas_read_as_svg": {
+      "type": "object",
+      "properties": {
+        "miro_url": {
+          "type": "string"
+        },
+        "widget_ids": {
+          "default": null,
+          "items": {
+            "type": "string"
+          },
+          "type": "array",
+          "nullable": true
+        },
+        "scope_x": {
+          "default": null,
+          "type": "integer",
+          "nullable": true
+        },
+        "scope_y": {
+          "default": null,
+          "type": "integer",
+          "nullable": true
+        },
+        "scope_width": {
+          "default": null,
+          "type": "integer",
+          "nullable": true
+        },
+        "scope_height": {
+          "default": null,
+          "type": "integer",
+          "nullable": true
+        },
+        "invocation_source": {
+          "type": "string",
+          "default": null,
+          "nullable": true
+        },
+        "is_repository": {
+          "type": "boolean",
+          "default": false
+        }
+      },
+      "required": [
+        "miro_url"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "test_area": {
+    "success": true,
+    "message": "Read 2 managed + 0 foreign items",
+    "svg": "<svg viewBox=\"0 0 3840 2160\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect id=\"m3458764690672995726\" data-miro-id=\"3458764690672995726\" data-type=\"sticky\" x=\"113\" y=\"100\" width=\"175\" height=\"200\" data-content=\"WorkSwarm 白板实测 WS-MIRO-20261117\" data-color=\"light_yellow\" data-text-align=\"center\" data-text-align-vertical=\"middle\" />\n<rect id=\"m3458764690692182654\" data-miro-id=\"3458764690692182654\" data-type=\"sticky\" x=\"550\" y=\"100\" width=\"350\" height=\"228\" data-content=\"WorkSwarm Miro 聊天验收 WSQA-261117-M1\" data-color=\"light_yellow\" data-text-align=\"center\" data-text-align-vertical=\"middle\" />\n</svg>\n",
+    "item_count": 2,
+    "skipped_count": 0,
+    "miro_url": "https://miro.com/app/board/uXjVENX_jBk=/",
+    "scope_x": 0,
+    "scope_y": 0,
+    "scope_width": 3840,
+    "scope_height": 2160
+  },
+  "existing_sticky": {
+    "success": true,
+    "message": "Read 1 managed + 0 foreign items (selected 1 of 1 requested widgets)",
+    "svg": "<svg viewBox=\"0 0 3840 2160\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect id=\"m3458764690692182654\" data-miro-id=\"3458764690692182654\" data-type=\"sticky\" x=\"550\" y=\"100\" width=\"350\" height=\"228\" data-content=\"WorkSwarm Miro 聊天验收 WSQA-261117-M1\" data-color=\"light_yellow\" data-text-align=\"center\" data-text-align-vertical=\"middle\" />\n</svg>\n",
+    "item_count": 1,
+    "skipped_count": 0,
+    "miro_url": "https://miro.com/app/board/uXjVENX_jBk=/",
+    "scope_x": null,
+    "scope_y": null,
+    "scope_width": null,
+    "scope_height": null
+  }
+}

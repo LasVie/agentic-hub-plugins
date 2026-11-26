@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "runtime_type": "agent-mcp",
+  "name": "monday",
+  "version": "1.1.0",
+  "source_review_sha256": "707a05c140104914fb3f4f5e0dcee0d0ec60bf6405adb84add2c41ac574977ad",
+  "test_report_sha256": "00549698325cb2214c3700359f967477ddda818afe1ee2acbcab8af19e82419b",
+  "official_cli": {
+    "version": "0.0.1",
+    "source_commit": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+    "validation": "validate and pack passed in clean staging"
+  },
+  "artifacts": {
+    "hub": {
+      "path": "connectors/monday/release/1.1.0/monday-1.1.0-agent-mcp.zip",
+      "sha256": "7cd59b685735be5d6a8eb8e8c4695cd2f0c5b6aed4ab1d207f88f1bb9556c2fe"
+    },
+    "native": {
+      "path": "connectors/monday/test-packages/monday-1.1.0-native.zip",
+      "sha256": "5528a42a7f6616a6b563416c9377b6b601f086809151b5d68adc16c9a1375bd2"
+    }
+  },
+  "payload_sha256": {
+    "README.md": "a2f467f7b43fbd2ebf48fff64d8fbacd368d3b7feac698ec929d5e7b5944dba1",
+    "manifest.json": "64454a794e2c3cea1bf5e2e6286a1c2626bbdca8d5457319d3ef169cb1cd1b9e",
+    "mcp.json": "0849bb9f1cdc6184ed8e5b01c383828e4c37ae41b6ec5f65c618b0e58caff35e",
+    "skills/monday-guide/SKILL.md": "7bbaa9bd83344deee029efe20683df80a4f3fba1c00fb0fb28f36750508fc5d8",
+    "token-schema.json": "e40349a8abe5ac77958b32e8ca09a255fcb4504269f6cab9c4ffaec3ca1b5ac8"
+  }
+}

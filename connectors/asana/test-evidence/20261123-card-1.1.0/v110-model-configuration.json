@@ -1,0 +1,11 @@
+{
+  "target_isolated_profile": true,
+  "method": "models.replace_all",
+  "models": [
+    {
+      "name": "gpt-6.1-sol",
+      "provider": "OpenAIAccount"
+    }
+  ],
+  "credentials_read_or_copied": false
+}

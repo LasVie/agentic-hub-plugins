@@ -1,0 +1,44 @@
+{
+  "version": "1.1.0",
+  "candidate_id": "CAND-CLD-001",
+  "task_id": "AH-20261117-dropbox-connector",
+  "native": {
+    "path": "test-packages/dropbox-1.1.0-native.zip",
+    "sha256": "d757e274494432b7c014a2ea24f3cb13d6739011d399433958ec02cf725a4bbe"
+  },
+  "wrapped": {
+    "path": "release/1.1.0/dropbox-1.1.0-agent-mcp.zip",
+    "sha256": "194a3cad40d4aadf9a5553b65f6074ae6e2748583a7091d8e31d8596c1a52c3e"
+  },
+  "official_cli_distribution": "openjiuwen-agentichub",
+  "official_cli_version": "0.0.1",
+  "review_files_sha256": {
+    "SOURCE_REVIEW.md": "a91f8594458af18f1b793e54f47af63d012815ab341ad3bff446419c13fde0da",
+    "TEST_REPORT.md": "f0626a9a1285085a7dca031ce2b86d745ea2dac371f14ab4d70e6b10aac1edcf",
+    "NATIVE_DESIGN.md": "87e61ea6aabaa0748fdc3c0c28754d7d96bf0c04d8691a11e005bbc4f7860205",
+    "provenance.json": "12b4951393c816c6e700451046cb7da833c35a369c729d17955e38398bb908ac",
+    "tests/test_dropbox_node.cjs": "2764cc623a9552ad47d2d7ea4cb2538d75a6ad62c7c979ff6a8e775d4aac05da",
+    "tests/fixtures/dropbox-live-download-metadata-20261123.json": "bb7356cdf17b9108ef4b27e57d23c605373b133b6667a8c8b09bebccd2ad03ea",
+    "tests/fixtures/dropbox-qa-20261117.txt": "56f42e73df70566fc1175b2a5996aceaa06af0e317a2325871a0de62ce6a4a3e",
+    "tests/fixtures/dropbox-screenshot-manifest-20261123.json": "9bb29aa3a56583ccad643cd79f0eca47f11350c7aa8a6578ddd9466542522407",
+    "tests/fixtures/dropbox-stock-acceptance-20261123.json": "85ffdae3cbcbe826e136a81bbad0dde63c79f7e7eb274ce2c17b31bcf04dbb5e",
+    "test-evidence/20261123-stock-1.1.0/README.md": "5c8e57559d2760833db8ef85cbfcdeb3b37398350679c697fc57b33ec85f6e55",
+    "test-evidence/20261123-stock-1.1.0/manifest.json": "9bb29aa3a56583ccad643cd79f0eca47f11350c7aa8a6578ddd9466542522407",
+    "test-evidence/20261123-stock-1.1.0/user-test-confirmation.json": "9086b2d41359ffc825b32d74934314507d80a2aaff9b319f640ebd76985fb647"
+  },
+  "payload_sha256": {
+    "README.md": "58667ae4936c2f38dcb53fc146c85890d7577109291da2c84c7924c979f073e0",
+    "THIRD_PARTY_NOTICES.md": "d19f483bee26eb4e8a6c752ff64fd8ffc53e8ef03432df181f0e75803d616d08",
+    "cli.json": "36881a60957366f11d19ecbd679f78fd74bcc00126fc3fcd8590a3a155cb407f",
+    "icon.png": "77dc1afb3d82c5fcbde086580a7648e216cda8760629dad3f8079e62f25f24c8",
+    "manifest.json": "85501a2d717eb1de6c965c36cca7d2ced9e82bc99b39ab6ec74354b32747769d",
+    "skills/dropbox-guide/SKILL.md": "bf0ba120ef2fad529911120cc12fcbbe6f919dbb3c379b7aec1e86e0fcb89b45",
+    "skills/dropbox-guide/scripts/common.cjs": "449d6cdbe76af5bb5685334143483bdfc43b0383f1e066180b85dd2c7029a778",
+    "skills/dropbox-guide/scripts/dropbox-cli.cjs": "144a2eac360981384d293fccffd94bf88a710def32ac6ede60f5d9d30017de4c",
+    "skills/dropbox-guide/scripts/oauth-gate.cjs": "e446dad42c0cc1bde67a80388e6c2ac4ca47381ed945cf384eb0587e0d187443",
+    "skills/dropbox-guide/scripts/operations.cjs": "db0b021ea81f7aa2f8da8f5f189cfa306f2730bb67c6ae4ef78d1c6635e771ad"
+  },
+  "stage": "Submitting: Song Haoran confirmed exact Dropbox 1.1.0 passed and approved five originals and package-only PR. No merge or Hub publication authorized.",
+  "user_test_confirmation": "test-evidence/20261123-stock-1.1.0/user-test-confirmation.json",
+  "screenshot_manifest": "test-evidence/20261123-stock-1.1.0/manifest.json"
+}

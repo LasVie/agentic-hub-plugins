@@ -1,0 +1,6 @@
+# Source and distribution review
+
+- **Identity:** Fathom → Fathom 会议连接器 → `fathom`. Task `AH-20261124-fathom`, Song Haoran. Candidate Not Applicable.
+- **Mode:** Native. Reviewed the public Fathom REST v1 [Quickstart](https://developers.fathom.ai/quickstart), [List meetings](https://developers.fathom.ai/api-reference/meetings/list-meetings), [Get summary](https://developers.fathom.ai/api-reference/recordings/get-summary) and [Get transcript](https://developers.fathom.ai/api-reference/recordings/get-transcript) on 2026-11-24. Upstream code and media redistribution permission is unknown; only documented interface semantics inform the design. No Fathom SDK, MCP implementation, code sample or media is bundled.
+- **Team-owned pattern:** [Asana 1.1.0 at fe4744c](https://github.com/LasVie/agentic-hub-plugins/tree/fe4744ce839b2a28d9fcf4c34ca6fdce3453a20e/connectors/asana). Adapted its token schema, inline Node entry point and stdio MCP lifecycle, and implemented Fathom-specific tools and results.
+- **Distribution:** Runtime uses WorkSwarm's Node and built-in APIs. No added dependency, third-party asset, credential or code redistribution. Product names identify the service. Users need an API Key authorized for their own accessible Fathom recordings.

@@ -1,0 +1,9 @@
+{
+  "isolated_asana_model_account_reference_updated": true,
+  "source": "latest successfully used isolated Linear model account store",
+  "credential_contents_read_or_copied": false,
+  "credential_contents_modified": false,
+  "asana_pat_untouched": true,
+  "workswarm_source_untouched": true,
+  "reason": "Original model account reference was stale after the successful Linear runtime refreshed its own account store."
+}

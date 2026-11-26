@@ -1,0 +1,32 @@
+{
+  "version": "1.1.0",
+  "task_id": "AH-20261117-jira-cloud-connector",
+  "native": {
+    "path": "test-packages/jira-cloud-1.1.0-native.zip",
+    "sha256": "d6c5a3bfa636f2d943dd12b8b17404a3687157d5eb8ef89bb55ae6d3297cf1fd"
+  },
+  "wrapped": {
+    "path": "release/1.1.0/jira-cloud-1.1.0-agent-mcp.zip",
+    "sha256": "fa99ccbddaaf41077c1fac3455b5726b19e3dcd8d3eaa6dc28ec4f108d1fad9f"
+  },
+  "payload_sha256": {
+    "README.md": "9f5fe8ea5d7b01773823f85cab71ca02e0dafbf9f4954e8fdee41a58ce12a9ff",
+    "THIRD_PARTY_NOTICES.md": "0a00266ab3a780f7f27b3c25997561cdc397344e801189671ae97e2c82fe6769",
+    "cli.json": "f3b03eea12f37dc7b0f85cee74836f1b8e1b0f892db571b780697a4341e82030",
+    "icon.png": "1db5048d57adcd0bfd50c6dd2a7f62e51e9689630c2dfb5f5af438c79c97df73",
+    "licenses/mcp-remote/LICENSE": "5514f48637fa1d8fed2256d12d322009a75962e6111370755fc5b20773db67ad",
+    "manifest.json": "be96fccb4b55d19e8d41565e16c1d6b755146df147117e26e521180e7bd4fc98",
+    "skills/jira-cloud-guide/SKILL.md": "fbcaff2d78c8b690b3054888163d6c84626b740bdb40c545a5543cf4399fb18e",
+    "skills/jira-cloud-guide/scripts/jira-cli.cjs": "010e746d52d4af3a538f4906a8173639b251bc0d7faed7d7225b11c7f5e995a8",
+    "skills/jira-cloud-guide/scripts/login-bridge.cjs": "9b1a31dc71994703d4b6de6f84dcdb5a1f5286335f99cabbd6c37a8a0d541903",
+    "skills/jira-cloud-guide/scripts/scope.cjs": "3e46ff2cc64d5c6d125a1476896426bec550ccf71c0761688806c137e06be5f0"
+  },
+  "review_files_sha256": {
+    "SOURCE_REVIEW.md": "44852b017aeeb9cf99f79f854a5200ab24f6a047cd9a9ecc9d6870d47fe05157",
+    "TEST_REPORT.md": "fedffa60d8d585f278d22b511f68f6920691cba8977d3ed5db991f06e2863380",
+    "provenance.json": "07c6d023f17d7db6ee5eb433c538d5703c1f6ca56feaeb84aea06935ae0ae1d9",
+    "NATIVE_DESIGN.md": "0ea8a575b5de2e411b1038917286dc874401b50590bfa47b026a7fbd17f6571a"
+  },
+  "stage": "Submit: Song Haoran explicitly confirmed 1.1.0 tests and five original images for PR; tested ZIP bytes unchanged; no merge authorized",
+  "test_evidence": "test-evidence/20261123-stock-1.1.0/evidence-index.json"
+}

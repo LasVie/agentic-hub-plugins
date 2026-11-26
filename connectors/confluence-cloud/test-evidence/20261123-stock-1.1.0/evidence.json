@@ -1,0 +1,60 @@
+{
+  "task_id": "AH-20261117-confluence-cloud-connector",
+  "owner": "Song Haoran",
+  "candidate": "Not Applicable",
+  "display_name": "Confluence 连接器",
+  "version": "1.1.0",
+  "native_sha256": "d1a538d4bc6dbeba23a695f35a9bb50c3d2ab0891330b3cc6909c54940812e7e",
+  "wrapped_sha256": "3ee1f9bdc59c7d6721574a4b5b4a1fad8dcf04f22e8bb8468580e73ce6c7e35e",
+  "user_confirmation": {
+    "quote": "确认通过并附原图提交 PR",
+    "confirmed_by": "Song Haoran",
+    "recorded_at": "2026-11-23T02:56:51+08:00",
+    "source": "Current conversation; reply to request_user_input_async call_debe4d24e54348c7bb32def256091a7d",
+    "task_id": "AH-20261117-confluence-cloud-connector",
+    "version": "1.1.0",
+    "native_sha256": "d1a538d4bc6dbeba23a695f35a9bb50c3d2ab0891330b3cc6909c54940812e7e",
+    "wrapped_sha256": "3ee1f9bdc59c7d6721574a4b5b4a1fad8dcf04f22e8bb8468580e73ce6c7e35e",
+    "known_blocking_issues": "none in tested scope; user accepted listed untested boundaries",
+    "original_screenshot_count": 5,
+    "publication": "Five unmodified QA screenshots in GitHub delivery PR approved; merge not requested"
+  },
+  "original_images": [
+    {
+      "file": "02-final-confluence-consent.jpg",
+      "sha256": "3484f906aa9d626c6feffe813d71f3ced6dc1d54fe892f88dbb13c9e00abbb73",
+      "bytes": 53893,
+      "unmodified": true,
+      "path": "screenshots/02-final-confluence-consent.jpg"
+    },
+    {
+      "file": "03-final-card-connected.jpg",
+      "sha256": "6e71586d23f21618779a7aa67e5114292b9beba2af95bdcbcf9e1305d75ebd41",
+      "bytes": 22868,
+      "unmodified": true,
+      "path": "screenshots/03-final-card-connected.jpg"
+    },
+    {
+      "file": "05-chat-search-full-read.jpg",
+      "sha256": "8f6749a12eb12f5b14e6040b83e9e468a44621a70fc359a551031b6db84369cc",
+      "bytes": 77243,
+      "unmodified": true,
+      "path": "screenshots/05-chat-search-full-read.jpg"
+    },
+    {
+      "file": "06-chat-create-readback.jpg",
+      "sha256": "0418880b73339bf2f8ad17830128a5791ec7a5557382c9cb31253bcca0e0057d",
+      "bytes": 88384,
+      "unmodified": true,
+      "path": "screenshots/06-chat-create-readback.jpg"
+    },
+    {
+      "file": "07-confluence-native-page.jpg",
+      "sha256": "132f09b0c9a83f655622399e0c57db68fec5388d013b5c6d036728ea85f8360d",
+      "bytes": 84283,
+      "unmodified": true,
+      "path": "screenshots/07-confluence-native-page.jpg"
+    }
+  ],
+  "pr_evidence": "https://github.com/LasVie/agentic-hub-plugins/pull/117#issue-6546381329"
+}

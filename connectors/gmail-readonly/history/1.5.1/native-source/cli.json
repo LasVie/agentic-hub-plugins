@@ -1,0 +1,39 @@
+{
+  "init": {
+    "darwin": "/usr/bin/env -S 'PYTHONPATH=${JIUWENSWARM_DATA_DIR}/agent/workspace/mcp/mcp_hub:${HOME}/.jiuwenswarm/agent/workspace/mcp/mcp_hub python3 -u -B -c \"import sys; sys.path.pop(0); import runpy; runpy.run_module(\\\"gmail-readonly.launcher\\\", run_name=\\\"__main__\\\", alter_sys=True)\" prepare'",
+    "linux": "gmail-readonly prepare",
+    "win32": "gmail-readonly.cmd prepare"
+  },
+  "versionCheck": {
+    "minVersion": "1.5.1",
+    "command": {
+      "darwin": "/usr/bin/env -S 'PYTHONPATH=${JIUWENSWARM_DATA_DIR}/agent/workspace/mcp/mcp_hub:${HOME}/.jiuwenswarm/agent/workspace/mcp/mcp_hub python3 -u -B -c \"import sys; sys.path.pop(0); import runpy; runpy.run_module(\\\"gmail-readonly.launcher\\\", run_name=\\\"__main__\\\", alter_sys=True)\" runtime-version'",
+      "linux": "gmail-readonly runtime-version",
+      "win32": "gmail-readonly.cmd runtime-version"
+    }
+  },
+  "auth": [
+    {
+      "command": {
+        "darwin": "/usr/bin/env -S 'PYTHONPATH=${JIUWENSWARM_DATA_DIR}/agent/workspace/mcp/mcp_hub:${HOME}/.jiuwenswarm/agent/workspace/mcp/mcp_hub python3 -u -B -c \"import sys; sys.path.pop(0); import runpy; runpy.run_module(\\\"gmail-readonly.launcher\\\", run_name=\\\"__main__\\\", alter_sys=True)\" login --no-open-browser'",
+        "linux": "gmail-readonly login --no-open-browser",
+        "win32": "gmail-readonly.cmd login --no-open-browser"
+      },
+      "authUrlDomain": "accounts.google.com",
+      "authWaitForExit": true
+    }
+  ],
+  "status": {
+    "darwin": "/usr/bin/env -S 'PYTHONPATH=${JIUWENSWARM_DATA_DIR}/agent/workspace/mcp/mcp_hub:${HOME}/.jiuwenswarm/agent/workspace/mcp/mcp_hub python3 -u -B -c \"import sys; sys.path.pop(0); import runpy; runpy.run_module(\\\"gmail-readonly.launcher\\\", run_name=\\\"__main__\\\", alter_sys=True)\" status'",
+    "linux": "gmail-readonly status",
+    "win32": "gmail-readonly.cmd status"
+  },
+  "statusMatchJson": {
+    "signed_in_local": "true"
+  },
+  "unAuth": {
+    "darwin": "/usr/bin/env -S 'PYTHONPATH=${JIUWENSWARM_DATA_DIR}/agent/workspace/mcp/mcp_hub:${HOME}/.jiuwenswarm/agent/workspace/mcp/mcp_hub python3 -u -B -c \"import sys; sys.path.pop(0); import runpy; runpy.run_module(\\\"gmail-readonly.launcher\\\", run_name=\\\"__main__\\\", alter_sys=True)\" logout'",
+    "linux": "gmail-readonly logout",
+    "win32": "gmail-readonly.cmd logout"
+  }
+}

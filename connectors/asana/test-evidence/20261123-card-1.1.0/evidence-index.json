@@ -1,0 +1,109 @@
+{
+  "version": "1.1.0",
+  "owner": "Song Haoran",
+  "task_id": "AH-20261117-asana-connector",
+  "candidate_id": "CAND-CLD-323",
+  "current_version_user_completion_confirmed": true,
+  "public_release_authorized": true,
+  "original_screenshots_unmodified": true,
+  "installation": "stock marketplace card using local catalog fixture; not production Hub",
+  "final_test_connection_state": "disconnected; remote PAT and task retained",
+  "excluded": "Token-generation result, actual credentials and private model-error image",
+  "files": {
+    "05-read-summary-dom.txt": {
+      "sha256": "2982ce606954868a2ea7e4b217a6efc1220024d1ccd19d0bc441c73a02359cb5",
+      "size_bytes": 3535
+    },
+    "05-read-trace-dom.txt": {
+      "sha256": "07358f29c0502c39db3fe2528df6d79d541e68efa6836f8e8643fe2a35e23b5d",
+      "size_bytes": 16149
+    },
+    "06-write-summary-dom.txt": {
+      "sha256": "d6059d1bec5b32a01e6425b155b9a3524a1753ecc0287f19543181fa590f6a9d",
+      "size_bytes": 17746
+    },
+    "06-write-trace-dom.txt": {
+      "sha256": "8de25791e436c8c4b659bb469c494a2a772986242525aff9843356b3b5a043bd",
+      "size_bytes": 30743
+    },
+    "catalog-overlap.json": {
+      "sha256": "ac3041c95585906e66fc0414be25339c83e12cb6ed9076842ac1fb684566e8b9",
+      "size_bytes": 597
+    },
+    "credential-flow-analysis.md": {
+      "sha256": "50c1bf6b72dff53e06bb9fdc49b931415506c4c4cde1ac8b9437640c5c1aa91b",
+      "size_bytes": 3917
+    },
+    "model-reference-recovery.json": {
+      "sha256": "63272f62595840745f01c35b4344c973dbfe0cbd786754e1689fb3b0d53de0c0",
+      "size_bytes": 421
+    },
+    "screenshots/01-stock-card-token-form.jpg": {
+      "sha256": "640878420b91a095ad55881daca2bf31a48f6916cb81a0e059a04aee45ff4070",
+      "size_bytes": 30309
+    },
+    "screenshots/03-stock-card-connected.jpg": {
+      "sha256": "ea5101cd13a93aa27a3fb6745a996d510f5eecbed39f4e9b29844fa3a911aaa4",
+      "size_bytes": 22618
+    },
+    "screenshots/05-chinese-read-summary.jpg": {
+      "sha256": "eda6580c3f8f39e16753b11f8d3fdecef6b13d8db6d5065108421a7e0963db3d",
+      "size_bytes": 114673
+    },
+    "screenshots/06-chinese-create-readback-summary.jpg": {
+      "sha256": "15a4ce8d0736e34ae0baf3a9c3d964b6ad94b2ecf6df7d2a20d161094aae8487",
+      "size_bytes": 127646
+    },
+    "screenshots/07-independent-readback-trace.jpg": {
+      "sha256": "dd13aa85ebb20f1d489436b15b2668ea3710f6b34ddc943fcd995f6dc39bba8b",
+      "size_bytes": 97056
+    },
+    "screenshots/08-disconnected-card.jpg": {
+      "sha256": "d45c2aaacf797438a91e5058090647ed00d986ac83259dad1995c73389023e7a",
+      "size_bytes": 25811
+    },
+    "v110-chat-business.json": {
+      "sha256": "e9e8f2154ffdd30cf4813c1fc4d5771935d5355fbf65958a836a00963db32bef",
+      "size_bytes": 13117
+    },
+    "v110-credential-entry.json": {
+      "sha256": "f10545e0d06fa209f7e05fd2f82e741e171f5e341031835b17ebf2b03f874cb9",
+      "size_bytes": 352
+    },
+    "v110-installation.json": {
+      "sha256": "30c31999d6393a1b7e5a25e73bb09bb940f3e1e876901d864775b555ad790753",
+      "size_bytes": 573
+    },
+    "v110-mcp-disconnect.json": {
+      "sha256": "9b870c6ac6c75639955ec0588f0729f4982d286bf3dbacdf6719ded83249f526",
+      "size_bytes": 236
+    },
+    "v110-mcp-show.json": {
+      "sha256": "8612202e880936bd3b43ba5390aef7a0e4f1377210cabf96e6582e0c739440c4",
+      "size_bytes": 235
+    },
+    "v110-model-configuration.json": {
+      "sha256": "b2a3e3af35106a9147a53ec9f933574652c0a4b7c48feedbd9ed9eaf79a2ee9c",
+      "size_bytes": 205
+    },
+    "v110-packaged-errors.json": {
+      "sha256": "c6cbe3df2e6280cddd6379e91385dc90c69cc410abc973d5940c2ebea7371c87",
+      "size_bytes": 1936
+    },
+    "v110-processes-after-chinese-business.json": {
+      "sha256": "608a55d0f30fbaf3239c97b22a53c33ce1a3fedd62fda34f55623b87ec5394fd",
+      "size_bytes": 428
+    },
+    "v110-processes-after-disconnect.json": {
+      "sha256": "6b205ee11c7fab60d500455fe049e889ec58485c89843ee2bceaf04ef42c00f9",
+      "size_bytes": 339
+    }
+  },
+  "user_confirmation": {
+    "user": "Song Haoran",
+    "date": "2026-11-23",
+    "source": "current conversation",
+    "statement": "确认 Asana 1.1.0 测试通过，附上实测截图提交 PR",
+    "report_id": "RPT-20261122-asana-gui-auth-repair"
+  }
+}

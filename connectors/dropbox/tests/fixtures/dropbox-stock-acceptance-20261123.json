@@ -1,0 +1,238 @@
+{
+  "version": "1.1.0",
+  "task_id": "AH-20261117-dropbox-connector",
+  "node_version": "v22.12.0",
+  "unit_checks": {
+    "passed": 17,
+    "failed": 0
+  },
+  "business": {
+    "version": "1.1.0",
+    "host": "stock WorkSwarm 0.2.8 on macOS; local catalog fixture",
+    "wrapped_sha256": "194a3cad40d4aadf9a5553b65f6074ae6e2748583a7091d8e31d8596c1a52c3e",
+    "chat_id": "web_1a204e8af48_0316f1a8e229",
+    "results": [
+      {
+        "operation": "listFolder",
+        "ok": true,
+        "call_id": "call_506835ed4732462a80c6b144ce0d06ef",
+        "result": {
+          "entries": [
+            {
+              ".tag": "file",
+              "id": "id:Y8OcbOCWzmAAAAAAAAAABg",
+              "name": "WorkSwarm-Dropbox-QA-20261117.txt",
+              "path_display": "/open Jiu we/WorkSwarm-Dropbox-QA-20261117.txt",
+              "path_lower": "/open jiu we/workswarm-dropbox-qa-20261117.txt",
+              "size": 111,
+              "rev": "0166070a4a280340000000348389531",
+              "content_hash": "b7d673b3c92654d38a9b7cc07c23d8623c58a69f951cbc4acee287dd960058f6",
+              "is_downloadable": true
+            }
+          ],
+          "has_more": false,
+          "cursor": null,
+          "complete_page": true
+        }
+      },
+      {
+        "operation": "searchFiles",
+        "ok": true,
+        "call_id": "call_d1fa552e1dbf4195855328d4e4b7b852",
+        "result": {
+          "entries": [
+            {
+              ".tag": "file",
+              "id": "id:Y8OcbOCWzmAAAAAAAAAABg",
+              "name": "WorkSwarm-Dropbox-QA-20261117.txt",
+              "path_display": "/open Jiu we/WorkSwarm-Dropbox-QA-20261117.txt",
+              "path_lower": "/open jiu we/workswarm-dropbox-qa-20261117.txt",
+              "size": 111,
+              "rev": "0166070a4a280340000000348389531",
+              "content_hash": "b7d673b3c92654d38a9b7cc07c23d8623c58a69f951cbc4acee287dd960058f6",
+              "is_downloadable": true
+            }
+          ],
+          "has_more": false,
+          "cursor": null,
+          "complete_page": true,
+          "filename_only": true,
+          "search_index_may_be_incomplete": true
+        }
+      },
+      {
+        "operation": "getMetadata",
+        "ok": true,
+        "call_id": "call_f96a8c50d5bb4c61b019a390e38a8b1d",
+        "result": {
+          ".tag": "file",
+          "id": "id:Y8OcbOCWzmAAAAAAAAAABg",
+          "name": "WorkSwarm-Dropbox-QA-20261117.txt",
+          "path_display": "/open Jiu we/WorkSwarm-Dropbox-QA-20261117.txt",
+          "path_lower": "/open jiu we/workswarm-dropbox-qa-20261117.txt",
+          "size": 111,
+          "rev": "0166070a4a280340000000348389531",
+          "content_hash": "b7d673b3c92654d38a9b7cc07c23d8623c58a69f951cbc4acee287dd960058f6",
+          "is_downloadable": true
+        }
+      },
+      {
+        "operation": "readText",
+        "ok": true,
+        "call_id": "call_d8810dad493345f0a4e5273957e56329",
+        "result": {
+          "metadata": {
+            ".tag": "file",
+            "id": "id:Y8OcbOCWzmAAAAAAAAAABg",
+            "name": "WorkSwarm-Dropbox-QA-20261117.txt",
+            "path_display": "/open Jiu we/WorkSwarm-Dropbox-QA-20261117.txt",
+            "path_lower": "/open jiu we/workswarm-dropbox-qa-20261117.txt",
+            "size": 111,
+            "rev": "0166070a4a280340000000348389531",
+            "content_hash": "b7d673b3c92654d38a9b7cc07c23d8623c58a69f951cbc4acee287dd960058f6",
+            "is_downloadable": true
+          },
+          "bytes": 111,
+          "text": "WorkSwarm Dropbox QA 2026-11-17\n这是一条纯虚构的中文文本，用于验证 Dropbox 搜索和读取。\n",
+          "full_read": true,
+          "truncated": false,
+          "sha256": "56f42e73df70566fc1175b2a5996aceaa06af0e317a2325871a0de62ce6a4a3e",
+          "dropbox_content_hash_verified": true
+        }
+      }
+    ],
+    "acceptance_checks": {
+      "all_four_actual_operations": true,
+      "all_success": true,
+      "one_listed_file": true,
+      "one_exact_search_file": true,
+      "id_matches": true,
+      "revision_matches": true,
+      "size_matches": true,
+      "full_utf8_text_matches_native_preview_fixture": true,
+      "sha256_matches": true,
+      "provider_hash_verified": true,
+      "full_read_not_truncated": true,
+      "final_newline_preserved": true
+    },
+    "comparison_basis": "Two lines independently observed in native Dropbox preview; reconstructed local 111-byte fixture including final newline matches provider content_hash. Browser download event timed out; no successful browser download or recovered original upload source claimed."
+  },
+  "installed": {
+    "version": "1.1.0",
+    "file_count": 10,
+    "all_payloads_match": true,
+    "wrapped_sha256": "194a3cad40d4aadf9a5553b65f6074ae6e2748583a7091d8e31d8596c1a52c3e",
+    "installed_payload_sha256": {
+      "icon.png": "77dc1afb3d82c5fcbde086580a7648e216cda8760629dad3f8079e62f25f24c8",
+      "cli.json": "36881a60957366f11d19ecbd679f78fd74bcc00126fc3fcd8590a3a155cb407f",
+      "THIRD_PARTY_NOTICES.md": "d19f483bee26eb4e8a6c752ff64fd8ffc53e8ef03432df181f0e75803d616d08",
+      "README.md": "58667ae4936c2f38dcb53fc146c85890d7577109291da2c84c7924c979f073e0",
+      "manifest.json": "85501a2d717eb1de6c965c36cca7d2ced9e82bc99b39ab6ec74354b32747769d",
+      "skills/dropbox-guide/SKILL.md": "bf0ba120ef2fad529911120cc12fcbbe6f919dbb3c379b7aec1e86e0fcb89b45",
+      "skills/dropbox-guide/scripts/operations.cjs": "db0b021ea81f7aa2f8da8f5f189cfa306f2730bb67c6ae4ef78d1c6635e771ad",
+      "skills/dropbox-guide/scripts/common.cjs": "449d6cdbe76af5bb5685334143483bdfc43b0383f1e066180b85dd2c7029a778",
+      "skills/dropbox-guide/scripts/oauth-gate.cjs": "e446dad42c0cc1bde67a80388e6c2ac4ca47381ed945cf384eb0587e0d187443",
+      "skills/dropbox-guide/scripts/dropbox-cli.cjs": "144a2eac360981384d293fccffd94bf88a710def32ac6ede60f5d9d30017de4c"
+    }
+  },
+  "installed_lifecycle": {
+    "version": "1.1.0",
+    "exact_installed_cli": true,
+    "prepared": {
+      "exit": 0,
+      "result": {
+        "ok": true,
+        "message": "Dropbox 的 Node 内置运行环境已准备完成，无需下载 CLI。"
+      },
+      "stderr_empty": true
+    },
+    "missing_auth": {
+      "exit": 0,
+      "result": {
+        "ok": false,
+        "code": "AUTH_REQUIRED",
+        "message": "Dropbox 尚未授权或登录已失效，请从连接器卡片重新连接。",
+        "connected": false
+      },
+      "stderr_empty": true
+    },
+    "forbidden_operation": {
+      "exit": 1,
+      "result": {
+        "ok": false,
+        "code": "SCOPE_REJECTED",
+        "message": "只开放 listFolder、searchFiles、getMetadata 和 readText 四项读取操作。"
+      },
+      "stderr_empty": true
+    },
+    "parent_sigkill": {
+      "worker_exited": true,
+      "callback_closed": true
+    },
+    "passed": true
+  },
+  "official_cancel": {
+    "official_cancel_clicked": true,
+    "cli_exit": 1,
+    "response": {
+      "ok": false,
+      "code": "AUTH_DENIED",
+      "message": "Dropbox 授权已拒绝或取消，可以从卡片重新连接。"
+    },
+    "callback_closed": true
+  },
+  "stock_lifecycle": {
+    "version": "1.1.0",
+    "stock_version": "0.2.8",
+    "disconnect_applied": true,
+    "disconnected_status": {
+      "ok": false,
+      "code": "AUTH_REQUIRED",
+      "connected": false
+    },
+    "mounted_skill_removed": true,
+    "callback_listening_before_cancel": true,
+    "callback_closed_after_cancel": true,
+    "card_returned_to_connect": true
+  },
+  "release_inspection": {
+    "version": "1.1.0",
+    "payload_files": 10,
+    "legacy_zips_unchanged": 8,
+    "archives": [
+      {
+        "kind": "native",
+        "sha256": "d757e274494432b7c014a2ea24f3cb13d6739011d399433958ec02cf725a4bbe",
+        "entries": 10,
+        "max_compression_ratio": 1.0
+      },
+      {
+        "kind": "wrapped",
+        "sha256": "194a3cad40d4aadf9a5553b65f6074ae6e2748583a7091d8e31d8596c1a52c3e",
+        "entries": 11,
+        "max_compression_ratio": 14.01676646706587
+      }
+    ]
+  },
+  "app_configuration": {
+    "app_name": "openJiuwen",
+    "development": "Only you",
+    "scopes": [
+      "account_info.read",
+      "files.metadata.read",
+      "files.content.read"
+    ],
+    "callback": "http://localhost:53682/oauth/callback",
+    "settings_changed": false
+  },
+  "untested": [
+    "Windows/Linux",
+    "official Hub installation",
+    "natural expiry/remote revoke recovery",
+    "actual token refresh",
+    "remote callback",
+    "manual authorization-code fallback",
+    "other accounts/apps",
+    "plan limits exhausted"
+  ]
+}

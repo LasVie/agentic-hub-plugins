@@ -1,0 +1,43 @@
+{
+  "stock_disconnect": {
+    "version": "1.7.0",
+    "method": "mcp.disconnect",
+    "ok": true,
+    "type": "disconnected",
+    "applied": true,
+    "integration_type": "cli",
+    "tool_names": [],
+    "keys": [
+      "type",
+      "name",
+      "applied",
+      "item"
+    ]
+  },
+  "status_after_disconnect": {
+    "ok": false,
+    "code": "AUTH_REQUIRED",
+    "message": "Gmail 尚未授权，请从连接器卡片连接。",
+    "connected": false
+  },
+  "credentials_removed": true,
+  "installed_skill_removed": true,
+  "card_cancel": {
+    "port": 52261,
+    "callback_listening_before_cancel": true,
+    "callback_closed_after_cancel": true,
+    "no_new_credentials": true
+  },
+  "owned_process_check": {
+    "owned_host_pids": [
+      62583,
+      62584,
+      62585,
+      62586
+    ],
+    "gmail_processes": [],
+    "gmail_process_count": 0,
+    "method": "inspect_owned_processes.py; scoped descendant ps read after card cancel; actual command returned zero"
+  },
+  "all_passed": true
+}

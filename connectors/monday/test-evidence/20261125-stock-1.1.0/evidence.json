@@ -1,0 +1,123 @@
+{
+  "task_id": "AH-20261117-monday-connector",
+  "candidate_id": "CAND-CLD-086",
+  "version": "1.1.0",
+  "date": "2026-11-25",
+  "host": "Original macOS WorkSwarm 0.2.8, Node 22.12.0, isolated local Hub-compatible catalog",
+  "archive_hashes": {
+    "hub": "7cd59b685735be5d6a8eb8e8c4695cd2f0c5b6aed4ab1d207f88f1bb9556c2fe",
+    "native": "5528a42a7f6616a6b563416c9377b6b601f086809151b5d68adc16c9a1375bd2"
+  },
+  "api_version": "2026-10",
+  "raw_tool_checks": [
+    {
+      "tool": "mcp_monday_monday_status",
+      "success": true,
+      "result": {
+        "connected": true,
+        "api_version": "2026-10"
+      },
+      "item_count": null,
+      "target_title_matches": null,
+      "has_next_page": null
+    },
+    {
+      "tool": "mcp_monday_monday_list_board_items",
+      "success": true,
+      "result": {
+        "board_id": "5032516681",
+        "board_name": "openJiuwen"
+      },
+      "item_count": 2,
+      "target_title_matches": 0,
+      "has_next_page": true
+    },
+    {
+      "tool": "mcp_monday_monday_read_item",
+      "success": true,
+      "result": {
+        "board_id": "5032516681",
+        "id": "2910613877",
+        "title": "WorkSwarm monday.com 聊天验收 WSQA-261117-MD1",
+        "url": "https://openjiuwenofficials-team.monday.com/boards/5032516681/pulses/2910613877"
+      },
+      "item_count": null,
+      "target_title_matches": null,
+      "has_next_page": null
+    },
+    {
+      "tool": "mcp_monday_monday_list_board_items",
+      "success": true,
+      "result": {
+        "board_id": "5032516681",
+        "board_name": "openJiuwen"
+      },
+      "item_count": 2,
+      "target_title_matches": 0,
+      "has_next_page": true
+    },
+    {
+      "tool": "mcp_monday_monday_list_board_items",
+      "success": true,
+      "result": {
+        "board_id": "5032516681"
+      },
+      "item_count": 3,
+      "target_title_matches": 0,
+      "has_next_page": false
+    },
+    {
+      "tool": "mcp_monday_monday_create_item",
+      "success": true,
+      "result": {
+        "board_id": "5032516681",
+        "id": "2919596875",
+        "title": "WorkSwarm monday.com 1.1.0 中文验收 20261125",
+        "url": "https://openjiuwenofficials-team.monday.com/boards/5032516681/pulses/2919596875"
+      },
+      "item_count": null,
+      "target_title_matches": null,
+      "has_next_page": null
+    },
+    {
+      "tool": "mcp_monday_monday_read_item",
+      "success": true,
+      "result": {
+        "board_id": "5032516681",
+        "id": "2919596875",
+        "title": "WorkSwarm monday.com 1.1.0 中文验收 20261125",
+        "url": "https://openjiuwenofficials-team.monday.com/boards/5032516681/pulses/2919596875"
+      },
+      "item_count": null,
+      "target_title_matches": null,
+      "has_next_page": null
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "screenshots/01-workswarm-card-token-form.jpg",
+      "sha256": "0d67e1d815c6597fd3a7ff84a3af01fc83ee307373be8f4d11bfe194cc25c2eb",
+      "observed": "Stock credential form with no token filled or displayed."
+    },
+    {
+      "path": "screenshots/02-workswarm-installed-tools.jpg",
+      "sha256": "e753c5d95cb3e672129b9371b30fc98dda0c1e45e95b26334d9ef0e1ba7563ed",
+      "observed": "Stock connector details after original team token was saved. Four fixed tools are listed."
+    },
+    {
+      "path": "screenshots/03-workswarm-chinese-read.jpg",
+      "sha256": "55f3539f50fcd8104f13632f1a5f315b83afbc925fef2252c312b2b7e3cf24b2",
+      "observed": "Real authentication, first page and independent read of an existing test item."
+    },
+    {
+      "path": "screenshots/04-workswarm-chat-create-readback.jpg",
+      "sha256": "2c928150f6cae34e3cef891ae12c4c003715d6cee6db7a12c964704fb14e17d9",
+      "observed": "Two verified pre-write pages, zero duplicates, one create and independent matching readback."
+    },
+    {
+      "path": "screenshots/05-monday-created-test-item.jpg",
+      "sha256": "76b1b28eabc21f6e4362b917c69985565a191766cb30c9c711d759af0a19bcda",
+      "observed": "Original monday.com page showing the new synthetic item and board. No visible token or email address."
+    }
+  ]
+}

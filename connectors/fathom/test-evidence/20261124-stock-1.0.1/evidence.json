@@ -1,0 +1,36 @@
+{
+  "task_id": "AH-20261124-fathom",
+  "version": "1.0.1",
+  "environment": "macOS, WorkSwarm 0.2.8, Node.js 22.12.0, isolated profile, local catalog fixture",
+  "hub_zip_sha256": "84b12114334f5852d9e6171c6144720c9c8f2d60f649dbf1f6ce7b621dbf7f44",
+  "native_zip_sha256": "43f94ace492eeb04daf68e9ee69a400f950cb1c612246b51a4bb2827b611aba3",
+  "local": {
+    "installed_files_verified": 5,
+    "controlled_tests_passed": 10,
+    "invalid_api_key_verified_against_provider": true
+  },
+  "live": {
+    "session_id": "web_1a20c61ab25_3b725d8e3bdf",
+    "valid_api_key": true,
+    "card_tools_discovered": 4,
+    "meeting_title": "WorkSwarm Fathom QA 20261124",
+    "test_recording_id": "206199987",
+    "exact_title_matches": 1,
+    "summary_read": true,
+    "summary_share_links_absent": true,
+    "transcript_page_sizes": [
+      8,
+      6
+    ],
+    "provider_and_chat_matching_timestamps": [
+      "00:01:31",
+      "00:01:42"
+    ]
+  },
+  "screenshots": {
+    "01-fathom-test-transcript.jpg": "7411b9919b64d270d91e2e32a8e4e3c80c1bb1b95dcd7f8376a1cd19ddc835f3",
+    "02-workswarm-key-form.jpg": "da1390a4bc5ae8df5f0729852895e4b5fda7edce6e184dd294aa14383fff21ce",
+    "03-workswarm-card-connected.jpg": "1a17d07cddc4f94d67579d08df0318e846e019c825b853fe2e5d5a75135ce670",
+    "04-workswarm-chat-acceptance.jpg": "602ef818e945ee6f5fc71dc173438fc34412bcf9b7afafa22ae37cf3c74089d9"
+  }
+}

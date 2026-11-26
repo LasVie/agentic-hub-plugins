@@ -1,0 +1,11 @@
+{
+  "version": "1.2.1",
+  "input": "Existing Issue id plus create fields",
+  "business_write_executed": false,
+  "result": {
+    "ok": false,
+    "code": "SCOPE_REJECTED",
+    "message": "本连接器仅支持新建 Issue 或 Issue 评论；该参数超出允许范围。"
+  },
+  "passed": true
+}

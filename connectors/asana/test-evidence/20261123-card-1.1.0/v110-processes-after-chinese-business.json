@@ -1,0 +1,14 @@
+{
+  "version": "1.1.0",
+  "stage": "after-chinese-business",
+  "checked_at": "2026-11-23T00:08:31.056629+08:00",
+  "owned_node_processes": [
+    {
+      "pid": 99777,
+      "ppid": 99617,
+      "executable": "node"
+    }
+  ],
+  "method": "Full descendants of the isolated runtime parents; no argv or environment recorded",
+  "note": "A connected stdio MCP may retain a legitimate server; compare after disconnect separately."
+}

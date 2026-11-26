@@ -1,0 +1,8 @@
+{
+  "installed_file_count": 12,
+  "exact_payload_match": true,
+  "native_sha256": "1951aa274ddc89da2eab20b62d9d3c7c39060c75d55cb13598a7fe2414fb93ba",
+  "hub_sha256": "53ba2d3dc8cda301213c7d699a9ebe04e6ad1a536d6bde04febb18cb2d7f445a",
+  "no_workswarm_changes": true,
+  "local_catalog_not_production_hub": true
+}

@@ -1,0 +1,35 @@
+{
+  "task_id": "AH-20261120-laundry-load-review-team",
+  "version": "1.0.0",
+  "native_zip_sha256": "5a5ee96e6a2705d73a09ed7d6358acbd5a77b8209662bd5f5384145c119560bb",
+  "source": "User-provided original screenshots in the current conversation",
+  "screenshots": [
+    {
+      "original_filename": "Screenshot 2026-11-20 at 5.46.30 PM.png",
+      "file": "originals/Screenshot 2026-11-20 at 5.46.30 PM.png",
+      "width": 3332,
+      "height": 1980,
+      "bytes": 818495,
+      "sha256": "47c4da461ebf09368105754e04bfd3fd6f3b093830a73a6aa4b9958024b221bf",
+      "summary": "WorkSwarm v1.0.0 manual run, reviewer and planner tool calls, three wash loads and two care holds."
+    },
+    {
+      "original_filename": "Screenshot 2026-11-20 at 5.46.38 PM.png",
+      "file": "originals/Screenshot 2026-11-20 at 5.46.38 PM.png",
+      "width": 3338,
+      "height": 1978,
+      "bytes": 802929,
+      "sha256": "279659f562741fb8eb1b7fd0a5d1cce7a5d6de0630449fdfae49c4f0bcc4a10c",
+      "summary": "Host task board showing preflight, independent baseline, candidate planning, and final review by the same reviewer."
+    },
+    {
+      "original_filename": "Screenshot 2026-11-20 at 5.47.04 PM.png",
+      "file": "originals/Screenshot 2026-11-20 at 5.47.04 PM.png",
+      "width": 1328,
+      "height": 1956,
+      "bytes": 265611,
+      "sha256": "9bfeeee65545b00cebe444543ff431ade8ecab40f9a32e9e504c2f35b054bdc3",
+      "summary": "Final Chinese checklist for the 11-item synthetic basket, with three wash loads, drying instructions, and two items set aside."
+    }
+  ]
+}

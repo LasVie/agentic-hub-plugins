@@ -1,0 +1,21 @@
+{
+  "artifact_checks": [
+    {
+      "form": "native",
+      "sha256": "d6c5a3bfa636f2d943dd12b8b17404a3687157d5eb8ef89bb55ae6d3297cf1fd",
+      "bytes": 53244,
+      "entries": 10,
+      "max_compression_ratio": 1.0
+    },
+    {
+      "form": "wrapped",
+      "sha256": "fa99ccbddaaf41077c1fac3455b5726b19e3dcd8d3eaa6dc28ec4f108d1fad9f",
+      "bytes": 24181,
+      "entries": 12,
+      "max_compression_ratio": 14.15
+    }
+  ],
+  "credential_pattern_findings": [],
+  "payload_matches_source": true,
+  "review_hashes_current": true
+}

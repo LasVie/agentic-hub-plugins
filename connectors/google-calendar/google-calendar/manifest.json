@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "package_type": "mcp",
   "id": "google-calendar",
   "name": "Google 日历连接器",
@@ -9,7 +9,7 @@
     "en": "Google Calendar Connector"
   },
   "display_description": {
-    "zh": "查询主日历、创建日程并回读确认。使用 Google Desktop OAuth。",
+    "zh": "用 Node CLI 查询主日历、创建个人日程并独立回读。使用自建 Desktop OAuth。",
     "en": "Search the primary calendar, create events, and verify them using Google Desktop OAuth."
   },
   "integration": {

@@ -1,15 +1,15 @@
 {
-  "version": "1.5.1",
+  "version": "1.7.0",
   "package_type": "mcp",
   "id": "gmail-readonly",
   "name": "Gmail 邮件连接器",
-  "description": "使用自建 Google Cloud 项目的 Desktop OAuth 配置，在聊天中搜索和读取邮件、编辑草稿、发送和回复邮件。",
+  "description": "使用宿主 Node 在卡片配置 Desktop OAuth，搜索和读取 Gmail、编辑草稿、发送及回复。",
   "display_name": {
     "zh": "Gmail 邮件连接器",
     "en": "Gmail Connector"
   },
   "display_description": {
-    "zh": "需自建 Google Cloud 项目并导入 Desktop OAuth JSON。连接后可读邮件、编辑草稿、发送和回复。",
+    "zh": "无需 Python；卡片导入自建 Desktop OAuth JSON，连接后读邮件、编辑草稿、发送及回复。",
     "en": "Use your own Google Cloud Desktop OAuth client to read Gmail, edit drafts, send mail, and reply within a thread."
   },
   "integration": {

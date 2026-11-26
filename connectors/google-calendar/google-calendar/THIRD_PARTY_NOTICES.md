@@ -1,20 +1,9 @@
-# 第三方依赖与许可说明
+# 第三方组件说明
 
-本连接器为独立实现。运行依赖通过 `requirements.txt` 在专用 Python 环境中单独安装；
-本 ZIP 不包含依赖源码、二进制文件、安装包或虚拟环境。下列完整许可文本仅作为依赖说明
-随包提供，原文保持不变；它们不为本项目自行编写的代码重新指定许可证。
+本包的 Calendar 白名单 CLI、状态/授权页面及中文技能由团队编写。Google、gws 名称仅用于说明集成来源，不表示官方背书或获得商标许可。
 
-| 依赖 | 审核版本 | 原作者信息与许可 | 完整许可文件 |
-| --- | --- | --- | --- |
-| [google-auth-oauthlib](https://github.com/googleapis/google-auth-library-python-oauthlib) | 1.2.3 | Google LLC 源文件版权声明；Apache-2.0 | `licenses/google-auth-oauthlib/LICENSE` |
-| [google-auth](https://github.com/googleapis/google-auth-library-python) | 2.41.1 | Google LLC 源文件版权声明；Apache-2.0 | `licenses/google-auth/LICENSE` |
-| [Requests](https://github.com/psf/requests) | 2.32.5 | 发行包作者 Kenneth Reitz；Apache-2.0 | `licenses/requests/LICENSE` |
+- **gws / @googleworkspace/cli 0.22.5**：https://github.com/googleworkspace/cli/tree/705fb0ecac6f4249679958f6325b809b63fdde17 ，源码标注 Copyright 2026 Google LLC，Apache-2.0。通过已审查的未修改 npm 安装器从固定 GitHub Release 获取原生程序。完整许可证 licenses/gws/LICENSE；根源码和已检查发行文件没有另附 NOTICE。未复制 Rust 源码、品牌素材或修改其发行文件。
+- **google-auth-library 11.3.4**：https://github.com/googleapis/google-cloud-node/tree/main/core/packages/google-auth-library-nodejs ，实际使用 npm 11.3.4 完整性锁定发行版。OAuth2Client 标注 Copyright 2019 Google LLC，Apache-2.0。完整许可证 licenses/google-auth-library/LICENSE；未修改发行代码。
+- 全部网络安装依赖的精确版本、npm 来源和完整性值在 skills/google-calendar-guide/scripts/package-lock.json 中。node_modules/原生程序不在此 ZIP 中；安装后保留各发行包附带的原始许可与标头。npm ci 禁用安装脚本，随后只显式执行已审查的 gws 固定安装器。
 
-上述许可文件取自所列版本的已安装发行包；未修改依赖文件。这三个发行包的文件清单中未发现
-单独的 NOTICE 文件。安装后的其他依赖仍保留各自发行包内的许可证；本包不复制或替换这些文件。
-
-传递依赖包含 MIT、Apache-2.0、BSD、ISC 等许可。Certifi 使用 MPL-2.0。
-完整版本与审核记录见源码目录中的 `provenance.json` 和 `SOURCE_REVIEW.md`。
-若未来需要将依赖源码或二进制随包分发，必须重新检查相应源码、许可、NOTICE 与分发义务。
-
-Google 名称仅说明所连接的服务。依赖许可与 Google API 的服务条款及授权要求各自适用。
+历史 1.0.0 Python 组件已从当前运行载荷移除；其历史包、许可证和源代码记录继续保留在仓库历史目录。

@@ -1,0 +1,97 @@
+{
+  "version": "1.1.0",
+  "stock_workswarm_version": "0.2.8",
+  "real_model": "gpt-6.1-sol / OpenAIAccount",
+  "chat_duration_display": "1m22s",
+  "host_tool_events": 11,
+  "canonical_successful_calendar_calls": [
+    {
+      "operation": "status",
+      "command": "node /private/tmp/workswarm-calendar-1.1.0-20261123/agent/workspace/mcp/skills/google-calendar/google-calendar/scripts/calendar-cli.cjs status",
+      "succeeded": true,
+      "result": {
+        "ok": true,
+        "connected": true,
+        "version": "1.1.0",
+        "message": "已实际查询主日历，授权有效。"
+      }
+    },
+    {
+      "operation": "list",
+      "command": "node /private/tmp/workswarm-calendar-1.1.0-20261123/agent/workspace/mcp/skills/google-calendar/google-calendar/scripts/calendar-cli.cjs list --input-file /private/tmp/workswarm-calendar-1.1.0-20261123/tasks/2026-11-23/chat-2/work/calendar-list.json",
+      "succeeded": true,
+      "result": {
+        "ok": true,
+        "calendar": "primary",
+        "result": {
+          "items": [],
+          "timeZone": "Asia/Singapore"
+        }
+      }
+    },
+    {
+      "operation": "create",
+      "command": "node /private/tmp/workswarm-calendar-1.1.0-20261123/agent/workspace/mcp/skills/google-calendar/google-calendar/scripts/calendar-cli.cjs create --input-file /private/tmp/workswarm-calendar-1.1.0-20261123/tasks/2026-11-23/chat-2/work/calendar-create.json",
+      "succeeded": true,
+      "result": {
+        "ok": true,
+        "calendar": "primary",
+        "result": {
+          "description": "此为 WorkSwarm Google 日历连接器 1.1.0 的专用测试日程，不涉及真实业务。",
+          "end": {
+            "dateTime": "2026-11-24T20:15:00+08:00",
+            "timeZone": "Asia/Singapore"
+          },
+          "htmlLink": "https://www.google.com/calendar/event?eid=NTUyZDJmNmUxNDgzZDc4YWQ1ZmE5OTY0Y2RmMTBmMDggb3BlbmppdXdlbi5vZmZpY2lhbEBt",
+          "id": "552d2f6e1483d78ad5fa9964cdf10f08",
+          "reminders": {
+            "useDefault": false
+          },
+          "start": {
+            "dateTime": "2026-11-24T20:00:00+08:00",
+            "timeZone": "Asia/Singapore"
+          },
+          "status": "confirmed",
+          "summary": "WorkSwarm 日历卡片验收 WS-CALENDAR-110-20261123",
+          "transparency": "transparent",
+          "visibility": "private"
+        }
+      }
+    },
+    {
+      "operation": "read",
+      "command": "node /private/tmp/workswarm-calendar-1.1.0-20261123/agent/workspace/mcp/skills/google-calendar/google-calendar/scripts/calendar-cli.cjs read --input-file /private/tmp/workswarm-calendar-1.1.0-20261123/tasks/2026-11-23/chat-2/work/calendar-read.json",
+      "succeeded": true,
+      "result": {
+        "ok": true,
+        "calendar": "primary",
+        "result": {
+          "description": "此为 WorkSwarm Google 日历连接器 1.1.0 的专用测试日程，不涉及真实业务。",
+          "end": {
+            "dateTime": "2026-11-24T20:15:00+08:00",
+            "timeZone": "Asia/Singapore"
+          },
+          "htmlLink": "https://www.google.com/calendar/event?eid=NTUyZDJmNmUxNDgzZDc4YWQ1ZmE5OTY0Y2RmMTBmMDggb3BlbmppdXdlbi5vZmZpY2lhbEBt",
+          "id": "552d2f6e1483d78ad5fa9964cdf10f08",
+          "reminders": {
+            "useDefault": false
+          },
+          "start": {
+            "dateTime": "2026-11-24T20:00:00+08:00",
+            "timeZone": "Asia/Singapore"
+          },
+          "status": "confirmed",
+          "summary": "WorkSwarm 日历卡片验收 WS-CALENDAR-110-20261123",
+          "transparency": "transparent",
+          "visibility": "private"
+        }
+      }
+    }
+  ],
+  "one_initial_model_path_guess_failed_and_recovered": true,
+  "created_exactly_one_fixture": true,
+  "independent_get_matched": true,
+  "test_event_retained": true,
+  "no_existing_events_updated_or_deleted": true,
+  "user_completion_confirmation": true
+}

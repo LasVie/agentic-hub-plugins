@@ -1,47 +1,29 @@
-# Gmail 邮件连接器
+# Gmail 邮件连接器 1.7.0
 
-标识 `gmail-readonly`，版本 **1.5.1**。用你自己的 Google Cloud 项目授权后，可以在 WorkSwarm 聊天中搜索和读取邮件与会话、编辑草稿、发送和回复。
+使用 WorkSwarm 自带 Node，从连接器卡片配置自建 Google Desktop OAuth，在聊天中搜索、读取邮件和会话、创建及编辑草稿、发送和回复。保留历史内部名 gmail-readonly，不修改 WorkSwarm 源码。
 
-## 在 Google Cloud 创建自己的 OAuth 客户端
+## 安装和连接
 
-1. 在 [Google Cloud Console](https://console.cloud.google.com/) 新建或选择自己管理的项目，启用 [Gmail API](https://console.cloud.google.com/apis/library/gmail.googleapis.com)。在 Google Auth Platform 配置应用信息、用户类型和数据访问权限。
-2. 个人 Gmail 用户可以选择 External / Testing，并把要连接的 Gmail 地址加到 Test users。Google 会显示测试应用提示，Gmail 授权通常在 7 天后过期，届时从 WorkSwarm 重新连接。Google Workspace 账号还受组织管理员的应用访问策略限制。[Google 项目与测试用户说明](https://support.google.com/cloud/answer/15549945)
-3. 在 Clients 中创建 **Desktop app** 类型的 OAuth 客户端，下载 JSON。保存在本机，导入时只使用文件路径。 [Google Desktop OAuth 配置指南](https://developers.google.com/workspace/gmail/api/quickstart/python)
+1. 从 Hub 安装，点「连接」。需要 Node.js 22.12+ 和同一安装中的 npm；目标 WorkSwarm 0.2.8 自带该运行环境。首次自动下载固定 google-auth-library 11.3.4，需要访问 registry.npmjs.org；无需 Python、手工 CLI、gws 二进制或系统解压工具。
+2. 自建 Google Cloud 项目启用 Gmail API，创建 **Desktop app** OAuth 客户端并下载 JSON；配置同意屏幕和可授权用户。Testing 项目的用户名单、刷新令牌期限、组织管理员规则和 Google 审核要求仍由 Google 管理，本包不代替发布或验证。
+3. 卡片打开本机「连接 Gmail」页，选择自己的 Desktop OAuth JSON，点「保存并继续」，再点「前往 Google 授权」。JSON 仅在本机验证保存，无需终端导入。核对账号和 Gmail 读取、草稿/发送权限后亲自同意。只申请 `gmail.readonly`、`gmail.compose`，不追加邮箱/个人资料/OpenID/modify 权限。
+4. 回到 WorkSwarm；连接状态通过真实 Gmail 账户资料接口确认。点「使用」，在聊天「上传 → 扩展 → 连接器」确认已勾选 Gmail，再使用 gmail-readonly 技能。若在已有会话启用后未找到技能，可从卡片「使用」进入新会话。没有卡片显示“已安装”就声称授权成功的替代路径。
 
-| Google 权限 | 用途 |
-| --- | --- |
-| `https://www.googleapis.com/auth/gmail.readonly` | 搜索和读取邮件、会话及草稿 |
-| `https://www.googleapis.com/auth/gmail.compose` | 编辑草稿、发送新邮件或草稿、在原会话回复 |
+授权入口最多等待30分钟，Desktop 回调只绑定运行机器 127.0.0.1。浏览器与宿主在不同机器时不能直接使用另一台机器的 localhost，本版不宣称服务器回调已通过。拒绝或失败后，如宿主仍显示等待，请点「取消连接」再试。
 
-## 在 macOS WorkSwarm 0.2.8 安装和连接
+## 能力和边界
 
-1. 确认电脑已安装 Python 3.11 或 3.12，能够访问 Google、PyPI 和 Agentic Hub。在「扩展 → 连接器广场」安装 Gmail。安装过程中会准备独立运行环境。首次弹出缺少 Desktop OAuth 配置的提示后，先关闭提示。
-2. 打开 Mac 的终端，运行以下命令，把 JSON 路径改成你下载的文件路径。使用自定义 WorkSwarm 数据目录时，把下方默认路径中的 `~/.jiuwenswarm` 换成实际数据目录。
+- 搜索邮件 ID、有界分页；读取邮件、会话及草稿正文和完整 To/Cc/Bcc，不下载附件。只读结果明确标注正文/会话截断；搜索排除垃圾邮件和回收站。
+- 按用户明确要求创建普通草稿；编辑指定草稿的 To/主题/正文，核对最新内部消息 ID，保留未编辑头和附件字节。正文编辑同步纯文本/HTML部分，拒绝异常、签名或加密 MIME；草稿原始数据编辑上限4MiB。
+- 发送新普通文本邮件、发送已核对的现有草稿、向唯一明确回复目标在原会话回复。每次写入先核对当前账号和全部 To/Cc/Bcc，以唯一 requestId 防止同一请求重复提交；未知结果不自动重试，须先独立回读。
+- 不开放邮件删除、归档、标签/设置修改、附件传输、任意 API/URL。OAuth compose 权限宽于包内操作，并不代表本包开放其全部能力。
 
-   ```bash
-   python3 -B "$HOME/.jiuwenswarm/agent/workspace/mcp/mcp_hub/gmail-readonly/launcher.py" configure --client-file "/本机路径/credentials.json"
-   ```
+示例：「搜索标题为我指定主题的测试邮件，读邮件和会话」「在我指定草稿中修改正文，保留收件人和附件，回读确认」「确认只发给我的邮箱，没有抄送密送后发送，并在同一会话回复一次」。真实发信仍需用户明确指令。
 
-3. 回到 Gmail 卡片点「连接」，选择已添加的 Gmail 账号，核对权限后同意。浏览器需能访问同一台电脑上的 `127.0.0.1` 本机回调。看到卡片变成「使用」后，即可在聊天里操作 Gmail。账号到期或需要更换配置时，先在卡片断开连接。连接器将凭据保存在本机 `~/.local/share/agentic-hub/gmail-readonly/`，也可在 Google 账号设置中撤销授权。
+## 存储、网络和已测状态
 
-### 独立 CLI
+凭据、运行依赖和写入回执位于 WorkSwarm 数据目录 `connector-data/gmail-readonly/node-v1`；Unix目录700、文件600，不进入安装 ZIP。使用官方 Google 认证库处理 PKCE、令牌交换及刷新；业务是固定 Gmail REST 请求，无自动发送重试。需要访问 accounts.google.com、oauth2.googleapis.com、gmail.googleapis.com；Google账号权限、服务配额及费用由提供方管理。
 
-若需要直接在终端使用 CLI，可将原生 ZIP 解压到固定目录并运行 `python3 "/实际解压目录/launcher.py" prepare --bin-dir "$HOME/.local/bin"`，再用 `gmail-readonly configure --client-file "/本机路径/credentials.json"` 导入配置。Windows 使用 `py -3.12` 和已在 PATH 上的目录，入口为 `gmail-readonly.cmd`。共享服务器、远程浏览器或多用户环境须另行验证回调与凭据隔离。
+断开只作废本包授权尝试并删除本机 Gmail 会话，不撤销 Google 中同一客户端或其他连接器的远端授权；可在 Google 账号安全页自行管理。Desktop配置、写入回执和下载的固定依赖保留，便于重新授权和核对未知结果。
 
-## 用法
-
-| 命令 | 用途 |
-| --- | --- |
-| `gmail-readonly search --query 'subject:测试邮件' --max-results 5` | 搜索并返回邮件与会话标识 |
-| `gmail-readonly read-message --message-id '实际邮件标识'` | 读取一封邮件 |
-| `gmail-readonly read-thread --thread-id '实际会话标识'` | 读取一个会话 |
-| `gmail-readonly list-drafts --max-results 5` | 获取草稿标识 |
-| `gmail-readonly read-draft --draft-id '实际草稿标识'` | 查看草稿正文和收件人 |
-| `gmail-readonly edit-draft --draft-id '实际草稿标识' --subject '新主题' --body '新正文'` | 更新现有草稿。可用一个或多个 `--to` 替换收件人 |
-| `gmail-readonly send --to '收件人邮箱' --subject '主题' --body '正文'` | 发送新邮件 |
-| `gmail-readonly send-draft --draft-id '实际草稿标识'` | 按草稿已有收件人发送 |
-| `gmail-readonly reply --message-id '实际邮件标识' --body '回复正文'` | 在原会话中回复该邮件 |
-
-编辑草稿仅修改传入的字段，保留其他邮件头和附件。更改主题后，由 Gmail 判断草稿所属会话。编辑正文使用纯文本，原有 HTML 正文会按新文本重新生成，复杂草稿的原有版式可能变化。发送和回复使用纯文本。回复使用原邮件的 Reply-To 或发件人，沿用原主题。若操作结果无法确认，先在 Gmail 检查草稿箱或已发送邮件，再决定是否重试。
-
-实际验证范围见测试报告。共享服务器部署需要独立的回调和凭据隔离。
+此版采用用户自建 OAuth，历史团队 OAuth 服务版独立保留。本次目标为 macOS 原版 WorkSwarm 0.2.8；实际验收以外层同版本 TEST_REPORT.md 为准。平台命令声明不代表 Windows/Linux、自然过期、远程回调或正式 Hub 安装/人工审核已验证。

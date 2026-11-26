@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "mode": "native",
+  "version": "1.1.0",
+  "owner": "Song Haoran",
+  "task_id": "AH-20261117-monday-connector",
+  "candidate_id": "CAND-CLD-086",
+  "naming": {"original": "monday.com", "display_name": "monday.com 连接器", "slug": "monday"},
+  "upstream": [
+    {"source": "https://developer.monday.com/api-reference/reference/items", "version": "GraphQL API 2026-10", "permission_status": "unknown", "copied_paths": [], "use": "Public item query and mutation contract."},
+    {"source": "https://developer.monday.com/api-reference/reference/items-page", "version": "GraphQL API 2026-10", "permission_status": "unknown", "copied_paths": [], "use": "Public cursor and page contract."},
+    {"source": "https://developer.monday.com/api-reference/docs/authentication", "version": "Checked 2026-11-25", "permission_status": "unknown", "copied_paths": [], "use": "Personal API token authentication contract."}
+  ],
+  "team_reuse": [
+    {"source": "https://github.com/LasVie/agentic-hub-plugins/tree/19ec583cfa5ac9bfd7e9316e0f1bbbd644103a3f/connectors/asana", "paths": ["asana/manifest.json", "asana/token-schema.json"], "use": "Stock WorkSwarm single-field token and stdio package pattern."},
+    {"source": "https://github.com/LasVie/agentic-hub-plugins/tree/70a76980b6afaf94ac4d8d3a52f625d2a6a9e2b5/connectors/trello", "paths": ["src/trello-mcp.cjs", "src/build-config.py"], "use": "Team-authored JSON-RPC lifecycle, input validation patterns and config build script."}
+  ]
+}

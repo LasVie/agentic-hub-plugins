@@ -1,0 +1,20 @@
+{
+  "version": "1.7.0",
+  "controlled_oauth_callback": {
+    "synthetic_client_only": true,
+    "real_google_request": false,
+    "wrong_state_rejected": true,
+    "valid_state_access_denied": "AUTH_DENIED",
+    "exit": 1,
+    "callback_closed": true
+  },
+  "actual_parent_sigkill": {
+    "parent_pid": 65688,
+    "worker_pids": [
+      65689
+    ],
+    "workers_still_alive": [],
+    "callback_closed": true
+  },
+  "no_grant_saved": true
+}

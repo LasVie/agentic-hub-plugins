@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "asset_type": "agent-mcp",
+  "name": "confluence-cloud",
+  "display_name": "Confluence 连接器",
+  "version": "1.0.0",
+  "task_id": "AH-20261117-confluence-cloud-connector",
+  "internal_asset_id": "repo:agent-mcp:confluence-cloud",
+  "created_at_utc": "2026-11-17T02:27:45.140009+00:00",
+  "artifacts": [
+    {
+      "form": "native",
+      "path": "connectors/confluence-cloud/test-packages/history/confluence-cloud-1.0.0-native.zip",
+      "filename": "confluence-cloud-1.0.0-native.zip",
+      "sha256": "91393cc4d7a7ca011f9256d64ef1d81bf1c8e0f046f3d7e21824fc4dfec03f6b",
+      "size_bytes": 20989
+    },
+    {
+      "form": "agent-mcp_wrapped",
+      "path": "connectors/confluence-cloud/release/1.0.0/confluence-cloud-1.0.0-agent-mcp.zip",
+      "filename": "confluence-cloud-1.0.0-agent-mcp.zip",
+      "sha256": "e57651f430977eae023953578c04cacbc8663fb218866af71494fcb99b030c7a",
+      "size_bytes": 8962
+    }
+  ],
+  "payload_sha256": {
+    "README.md": "77967f2c27d6bb90d6995352587180c7ec6cab4e19a9fd5a695b1fc10a0e9f05",
+    "browser_gate.py": "253da12d2b68166c5f758992a721377e56bee4c02546bcf75373765fd0016f05",
+    "cli.json": "b2a1acca4a6ab48289c1579a7b546cf3f58b6e1e3c2267bba6f2a456ae2e39f1",
+    "connector.py": "5c682f2e5fcf97280fd6bef6740bd855be6836719036e5a540e043221abd9d79",
+    "manifest.json": "40025f128c37aa655afa16f5d6bbe3e030f8e3cd2659920783fa65f35bbde865",
+    "skills/confluence-cloud-guide/SKILL.md": "24f7d12e19ce1ac8ae7d3e6b069db3aaa16bc100c350c28b44721ab15cd40c17",
+    "vendor_runtime.py": "64455fe3b9861936ed3931101378e10861d5db694a2e0ba13996f06745855058"
+  },
+  "review_files_sha256": {
+    "SOURCE_REVIEW.md": "b297588e62d464309bb8ba95df5f2d5b7a1b870c2cfc88979daad8988dc97dc4",
+    "TEST_REPORT.md": "0428ca8d7c173b6bb991ce18c6a1988c9aedba486ab66695900f970344b4cca5",
+    "provenance.json": "cafc2a47ce43d634cd0ea43a74c234bf6332fb21db5783dd8060844971b5c1d1"
+  },
+  "official_cli": {
+    "distribution": "openjiuwen-agentichub",
+    "version": "0.0.1",
+    "source": "https://github.com/openJiuwen-ai/skillhub",
+    "source_commit": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+    "commands": [
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/../gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "init",
+        "confluence-cloud",
+        "--type",
+        "agent-mcp"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/../gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "validate",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-niqcarsj/confluence-cloud"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/../gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "pack",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-niqcarsj/confluence-cloud",
+        "--output",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-niqcarsj/out"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/../gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/tools/asset_release.py",
+        "preflight",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/connectors/confluence-cloud/confluence-cloud"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/../gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/tools/asset_release.py",
+        "preflight",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-niqcarsj/native.zip"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/../gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/tools/asset_release.py",
+        "preflight",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-niqcarsj/out/confluence-cloud-1.0.0.zip"
+      ]
+    ]
+  },
+  "checks": [
+    {
+      "step": "official_init",
+      "output": "Plugin initialized at: /private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-niqcarsj/confluence-cloud"
+    },
+    {
+      "step": "official_validate",
+      "output": "Plugin validation passed."
+    },
+    {
+      "step": "official_pack",
+      "output": "Packed: /private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-niqcarsj/out/confluence-cloud-1.0.0.zip"
+    },
+    {
+      "step": "javascript_preflight_native_source",
+      "output": "{\n  \"path\": \"/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-seven-connectors/connectors/confluence-cloud/confluence-cloud\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_native_zip",
+      "output": "{\n  \"path\": \"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-niqcarsj/native.zip\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_wrapped_zip",
+      "output": "{\n  \"path\": \"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-niqcarsj/out/confluence-cloud-1.0.0.zip\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    }
+  ],
+  "verification_limits": "Packaging/JavaScript preflight and byte-equivalence only; not authenticated provider access or user manual-test acceptance."
+}

@@ -1,0 +1,55 @@
+{
+  "version": "1.1.0",
+  "date": "2026-11-23",
+  "task_id": "AH-20261117-miro-connector",
+  "wrapped_sha256": "fedd4957b91f38040de50775dd5641b682b448ecc00f887ad3a64a8cd5dc420e",
+  "public_upload_authorized": true,
+  "images": [
+    {
+      "filename": "03-final-team-consent.jpg",
+      "purpose": "最终包同团队授权同意页",
+      "bytes": 48491,
+      "sha256": "dd545fb6a8f4c299e2e7f98941f24dd18cd3d5d470ee0a0a1385147be45f045e",
+      "width": 762,
+      "height": 1033,
+      "original_unmodified": true
+    },
+    {
+      "filename": "04-final-card-connected.jpg",
+      "purpose": "最终包安装卡片；按钮状态不在此图证明范围",
+      "bytes": 22507,
+      "sha256": "337c36ce8e95b346cd90c6f89c8ae90117686844eb72def7ef3872da61b25cd1",
+      "width": 762,
+      "height": 1033,
+      "original_unmodified": true
+    },
+    {
+      "filename": "06-chat-read-board.jpg",
+      "purpose": "聊天范围读取与旧控件独立回读",
+      "bytes": 84231,
+      "sha256": "bcab0dcdfe5c8a2e54af7275c2fbd6fb31cae78bdceb3fc942e196e96edc8231",
+      "width": 762,
+      "height": 1033,
+      "original_unmodified": true
+    },
+    {
+      "filename": "07-chat-create-readback.jpg",
+      "purpose": "新便签独立全文回读；累计创建一次",
+      "bytes": 75246,
+      "sha256": "1364d1c5bee08712be7eff65cb57bc3962ffae397767ecf04787d93b55f9245e",
+      "width": 762,
+      "height": 1033,
+      "original_unmodified": true
+    },
+    {
+      "filename": "08-native-sticky.jpg",
+      "purpose": "Miro 原生白板中文便签",
+      "bytes": 92245,
+      "sha256": "e46a6c1991b47d06b5754e14d329425c03cac4abd76599cdfe1cea74eac429ee",
+      "width": 1280,
+      "height": 720,
+      "original_unmodified": true
+    }
+  ],
+  "approval_source": "Current conversation; reply to request_user_input_async call_e556f38ae531484f9f1924853eb22707"
+}

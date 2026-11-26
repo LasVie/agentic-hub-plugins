@@ -1,0 +1,15 @@
+{
+  "version": "1.1.0",
+  "method": "mcp.disconnect",
+  "ok": true,
+  "type": "disconnected",
+  "applied": true,
+  "integration_type": "cli",
+  "tool_names": [],
+  "keys": [
+    "type",
+    "name",
+    "applied",
+    "item"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "version": "1.2.1",
+  "after_gui_reinstall_and_oauth": true,
+  "status": {
+    "ok": true,
+    "connected": true,
+    "version": "1.2.1",
+    "message": "Linear 授权有效，已核对可用工具。"
+  }
+}

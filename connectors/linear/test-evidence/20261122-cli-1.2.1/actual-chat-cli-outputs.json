@@ -1,0 +1,616 @@
+[
+  {
+    "source": "09-read-trace-dom.txt",
+    "result": {
+      "ok": true,
+      "tool": "list_teams",
+      "result": {
+        "teams": [
+          {
+            "id": "31034d04-8d50-4047-a13c-7dbc74c99bf8",
+            "key": "OPE",
+            "parentId": null,
+            "displayName": "OpenJiuwen",
+            "name": "OpenJiuwen",
+            "visibility": "public",
+            "createdAt": "2026-11-17T02:41:01.580Z",
+            "updatedAt": "2026-11-20T03:20:12.199Z"
+          }
+        ],
+        "hasNextPage": false
+      }
+    }
+  },
+  {
+    "source": "09-read-trace-dom.txt",
+    "result": {
+      "ok": true,
+      "tool": "list_issues",
+      "result": {
+        "issues": [
+          {
+            "id": "OPE-7",
+            "uuid": "4f3a8adf-fd6c-4b64-9988-58deed505e1d",
+            "title": "WorkSwarm Linear 1.1.1 首次授权验收 20261122",
+            "description": "只用于验证 WorkSwarm 0.2.8 全新安装、中文 MCP 写入与独立回读，无真实业务数据。",
+            "priority": {
+              "value": 0,
+              "name": "No priority"
+            },
+            "url": "https://linear.app/openjiuwen/issue/OPE-7/workswarm-linear-111-首次授权验收-20261122",
+            "gitBranchName": "openjiuwenofficial/ope-7-workswarm-linear-111-首次授权验收",
+            "createdAt": "2026-11-22T14:20:48.140Z",
+            "updatedAt": "2026-11-22T14:20:48.140Z",
+            "archivedAt": null,
+            "completedAt": null,
+            "startedAt": null,
+            "canceledAt": null,
+            "dueDate": null,
+            "slaStartedAt": null,
+            "slaMediumRiskAt": null,
+            "slaHighRiskAt": null,
+            "slaBreachesAt": null,
+            "status": "Backlog",
+            "statusType": "backlog",
+            "labels": [],
+            "createdBy": "openJiuwen",
+            "createdById": "745bf970-e87a-4015-8645-8cc1ed91f5cf",
+            "team": "OpenJiuwen",
+            "teamId": "31034d04-8d50-4047-a13c-7dbc74c99bf8"
+          },
+          {
+            "id": "OPE-6",
+            "uuid": "a0d54a33-92f3-4ecc-b5dc-ebc5c1ad9826",
+            "title": "WorkSwarm 标准 MCP 中文验证 20261119",
+            "description": "仅用于验证 Linear 连接器 1.1.0 标准 MCP 接入、中文输入与结果回读。无生产数据，不请求分配负责人。",
+            "priority": {
+              "value": 0,
+              "name": "No priority"
+            },
+            "url": "https://linear.app/openjiuwen/issue/OPE-6/workswarm-标准-mcp-中文验证-20261119",
+            "gitBranchName": "openjiuwenofficial/ope-6-workswarm-标准-mcp-中文验证-20261119",
+            "createdAt": "2026-11-19T08:57:03.449Z",
+            "updatedAt": "2026-11-19T09:13:31.312Z",
+            "archivedAt": null,
+            "completedAt": null,
+            "startedAt": null,
+            "canceledAt": null,
+            "dueDate": null,
+            "slaStartedAt": null,
+            "slaMediumRiskAt": null,
+            "slaHighRiskAt": null,
+            "slaBreachesAt": null,
+            "status": "Backlog",
+            "statusType": "backlog",
+            "labels": [],
+            "createdBy": "openJiuwen",
+            "createdById": "745bf970-e87a-4015-8645-8cc1ed91f5cf",
+            "team": "OpenJiuwen",
+            "teamId": "31034d04-8d50-4047-a13c-7dbc74c99bf8"
+          },
+          {
+            "id": "OPE-5",
+            "uuid": "4398d40f-ea1b-4e7d-807a-d8f8227be963",
+            "title": "WorkSwarm Linear 连接器实测 WS-LINEAR-20261117",
+            "description": "这是一条只用于确认 Linear 连接器创建及回读的测试工单。",
+            "priority": {
+              "value": 0,
+              "name": "No priority"
+            },
+            "url": "https://linear.app/openjiuwen/issue/OPE-5/workswarm-linear-连接器实测-ws-linear-20261117",
+            "gitBranchName": "openjiuwenofficial/ope-5-workswarm-linear-连接器实测-ws-linear",
+            "createdAt": "2026-11-17T03:17:37.351Z",
+            "updatedAt": "2026-11-17T09:05:22.073Z",
+            "archivedAt": null,
+            "completedAt": null,
+            "startedAt": null,
+            "canceledAt": null,
+            "dueDate": null,
+            "slaStartedAt": null,
+            "slaMediumRiskAt": null,
+            "slaHighRiskAt": null,
+            "slaBreachesAt": null,
+            "status": "Backlog",
+            "statusType": "backlog",
+            "labels": [],
+            "createdBy": "openJiuwen",
+            "createdById": "745bf970-e87a-4015-8645-8cc1ed91f5cf",
+            "team": "OpenJiuwen",
+            "teamId": "31034d04-8d50-4047-a13c-7dbc74c99bf8"
+          }
+        ],
+        "hasNextPage": false
+      }
+    }
+  },
+  {
+    "source": "09-read-trace-dom.txt",
+    "result": {
+      "ok": true,
+      "tool": "get_issue",
+      "result": {
+        "id": "OPE-7",
+        "uuid": "4f3a8adf-fd6c-4b64-9988-58deed505e1d",
+        "title": "WorkSwarm Linear 1.1.1 首次授权验收 20261122",
+        "description": "只用于验证 WorkSwarm 0.2.8 全新安装、中文 MCP 写入与独立回读，无真实业务数据。",
+        "priority": {
+          "value": 0,
+          "name": "No priority"
+        },
+        "url": "https://linear.app/openjiuwen/issue/OPE-7/workswarm-linear-111-首次授权验收-20261122",
+        "gitBranchName": "openjiuwenofficial/ope-7-workswarm-linear-111-首次授权验收",
+        "createdAt": "2026-11-22T14:20:48.140Z",
+        "updatedAt": "2026-11-22T14:20:48.140Z",
+        "archivedAt": null,
+        "completedAt": null,
+        "startedAt": null,
+        "canceledAt": null,
+        "dueDate": null,
+        "slaStartedAt": null,
+        "slaMediumRiskAt": null,
+        "slaHighRiskAt": null,
+        "slaBreachesAt": null,
+        "status": "Backlog",
+        "statusType": "backlog",
+        "labels": [],
+        "attachments": [],
+        "documents": [],
+        "stateHistory": [
+          {
+            "state": {
+              "id": "67025ca4-bd86-4b4a-9ec6-cb5c01614912",
+              "name": "Backlog",
+              "type": "backlog"
+            },
+            "startedAt": "2026-11-22T14:20:48.140Z",
+            "endedAt": null
+          }
+        ],
+        "createdBy": "openJiuwen",
+        "createdById": "745bf970-e87a-4015-8645-8cc1ed91f5cf",
+        "team": "OpenJiuwen",
+        "teamId": "31034d04-8d50-4047-a13c-7dbc74c99bf8"
+      }
+    }
+  },
+  {
+    "source": "09-read-trace-dom.txt",
+    "result": {
+      "ok": true,
+      "tool": "list_comments",
+      "result": {
+        "comments": [
+          {
+            "id": "e6e1df3f-baf2-4cac-bee2-2f3bc2bda5db",
+            "body": "中文评论回读验收 LINEAR-111-20261122",
+            "attachments": [],
+            "createdAt": "2026-11-22T14:21:01.565Z",
+            "updatedAt": "2026-11-22T14:21:01.546Z",
+            "parentId": null,
+            "resolvedAt": null,
+            "quotedText": null,
+            "author": {
+              "id": "745bf970-e87a-4015-8645-8cc1ed91f5cf",
+              "name": "openJiuwen"
+            },
+            "onBehalfOf": null
+          }
+        ],
+        "hasNextPage": false
+      }
+    }
+  },
+  {
+    "source": "10-write-trace-dom.txt",
+    "result": {
+      "ok": true,
+      "tool": "list_issues",
+      "result": {
+        "issues": [
+          {
+            "id": "OPE-7",
+            "uuid": "4f3a8adf-fd6c-4b64-9988-58deed505e1d",
+            "title": "WorkSwarm Linear 1.1.1 首次授权验收 20261122",
+            "description": "只用于验证 WorkSwarm 0.2.8 全新安装、中文 MCP 写入与独立回读，无真实业务数据。",
+            "priority": {
+              "value": 0,
+              "name": "No priority"
+            },
+            "url": "https://linear.app/openjiuwen/issue/OPE-7/workswarm-linear-111-首次授权验收-20261122",
+            "gitBranchName": "openjiuwenofficial/ope-7-workswarm-linear-111-首次授权验收",
+            "createdAt": "2026-11-22T14:20:48.140Z",
+            "updatedAt": "2026-11-22T14:20:48.140Z",
+            "archivedAt": null,
+            "completedAt": null,
+            "startedAt": null,
+            "canceledAt": null,
+            "dueDate": null,
+            "slaStartedAt": null,
+            "slaMediumRiskAt": null,
+            "slaHighRiskAt": null,
+            "slaBreachesAt": null,
+            "status": "Backlog",
+            "statusType": "backlog",
+            "labels": [],
+            "createdBy": "openJiuwen",
+            "createdById": "745bf970-e87a-4015-8645-8cc1ed91f5cf",
+            "team": "OpenJiuwen",
+            "teamId": "31034d04-8d50-4047-a13c-7dbc74c99bf8"
+          },
+          {
+            "id": "OPE-6",
+            "uuid": "a0d54a33-92f3-4ecc-b5dc-ebc5c1ad9826",
+            "title": "WorkSwarm 标准 MCP 中文验证 20261119",
+            "description": "仅用于验证 Linear 连接器 1.1.0 标准 MCP 接入、中文输入与结果回读。无生产数据，不请求分配负责人。",
+            "priority": {
+              "value": 0,
+              "name": "No priority"
+            },
+            "url": "https://linear.app/openjiuwen/issue/OPE-6/workswarm-标准-mcp-中文验证-20261119",
+            "gitBranchName": "openjiuwenofficial/ope-6-workswarm-标准-mcp-中文验证-20261119",
+            "createdAt": "2026-11-19T08:57:03.449Z",
+            "updatedAt": "2026-11-19T09:13:31.312Z",
+            "archivedAt": null,
+            "completedAt": null,
+            "startedAt": null,
+            "canceledAt": null,
+            "dueDate": null,
+            "slaStartedAt": null,
+            "slaMediumRiskAt": null,
+            "slaHighRiskAt": null,
+            "slaBreachesAt": null,
+            "status": "Backlog",
+            "statusType": "backlog",
+            "labels": [],
+            "createdBy": "openJiuwen",
+            "createdById": "745bf970-e87a-4015-8645-8cc1ed91f5cf",
+            "team": "OpenJiuwen",
+            "teamId": "31034d04-8d50-4047-a13c-7dbc74c99bf8"
+          },
+          {
+            "id": "OPE-5",
+            "uuid": "4398d40f-ea1b-4e7d-807a-d8f8227be963",
+            "title": "WorkSwarm Linear 连接器实测 WS-LINEAR-20261117",
+            "description": "这是一条只用于确认 Linear 连接器创建及回读的测试工单。",
+            "priority": {
+              "value": 0,
+              "name": "No priority"
+            },
+            "url": "https://linear.app/openjiuwen/issue/OPE-5/workswarm-linear-连接器实测-ws-linear-20261117",
+            "gitBranchName": "openjiuwenofficial/ope-5-workswarm-linear-连接器实测-ws-linear",
+            "createdAt": "2026-11-17T03:17:37.351Z",
+            "updatedAt": "2026-11-17T09:05:22.073Z",
+            "archivedAt": null,
+            "completedAt": null,
+            "startedAt": null,
+            "canceledAt": null,
+            "dueDate": null,
+            "slaStartedAt": null,
+            "slaMediumRiskAt": null,
+            "slaHighRiskAt": null,
+            "slaBreachesAt": null,
+            "status": "Backlog",
+            "statusType": "backlog",
+            "labels": [],
+            "createdBy": "openJiuwen",
+            "createdById": "745bf970-e87a-4015-8645-8cc1ed91f5cf",
+            "team": "OpenJiuwen",
+            "teamId": "31034d04-8d50-4047-a13c-7dbc74c99bf8"
+          },
+          {
+            "id": "OPE-4",
+            "uuid": "fa739d6a-da89-493e-8ce0-be2e1cdb5114",
+            "title": "Set up your teams",
+            "description": "This workspace is a container for your organization’s work. \n\n* [Learn more about Workspaces](<https://linear.app/docs/workspaces>)\n How to configure settings and workflows \n\nTeams are how you organize people and work in Linear.\n\n* [Learn about Teams](<https://linear.app/docs/teams>)\n How to structure teams and configure workflows\n\nTeams are made of members with defined roles (Admin, Member, Guest).\n\n* [Learn more about Members](<https://linea… (truncated, use `get_issue` for full description)",
+            "priority": {
+              "value": 0,
+              "name": "No priority"
+            },
+            "url": "https://linear.app/openjiuwen/issue/OPE-4/set-up-your-teams",
+            "gitBranchName": "openjiuwenofficial/ope-4-set-up-your-teams",
+            "createdAt": "2026-11-17T02:41:01.580Z",
+            "updatedAt": "2026-11-17T02:41:01.580Z",
+            "archivedAt": null,
+            "completedAt": null,
+            "startedAt": null,
+            "canceledAt": null,
+            "dueDate": null,
+            "slaStartedAt": null,
+            "slaMediumRiskAt": null,
+            "slaHighRiskAt": null,
+            "slaBreachesAt": null,
+            "status": "Todo",
+            "statusType": "unstarted",
+            "labels": [],
+            "team": "OpenJiuwen",
+            "teamId": "31034d04-8d50-4047-a13c-7dbc74c99bf8"
+          },
+          {
+            "id": "OPE-3",
+            "uuid": "d1117528-e989-4048-97d1-01809db1f6f2",
+            "title": "Import your data",
+            "description": "Sync data between Linear and your other tools.\n\n<linear-image>{\"type\":\"image\",\"attrs\":{\"src\":\"https://uploads.linear.app/fe63b3e2-bf87-46c0-8784-cd7d639287c8/80d7e050-dd1f-4d4f-8257-b29c16087017/65c16454-30f3-4f4a-8f25-c2428d64ff57\",\"title\":\"import-your-data.png\",\"width\":2880,\"height\":1769,\"displayWidth\":560}}</linear-image>\n\nWhether you're exploring Linear, running a pilot, or ready for full migration, we’ve got you covered. \n\n### **Exploring L… (truncated, use `get_issue` for full description)",
+            "priority": {
+              "value": 0,
+              "name": "No priority"
+            },
+            "url": "https://linear.app/openjiuwen/issue/OPE-3/import-your-data",
+            "gitBranchName": "openjiuwenofficial/ope-3-import-your-data",
+            "createdAt": "2026-11-17T02:41:01.580Z",
+            "updatedAt": "2026-11-17T02:41:01.580Z",
+            "archivedAt": null,
+            "completedAt": null,
+            "startedAt": null,
+            "canceledAt": null,
+            "dueDate": null,
+            "slaStartedAt": null,
+            "slaMediumRiskAt": null,
+            "slaHighRiskAt": null,
+            "slaBreachesAt": null,
+            "status": "Todo",
+            "statusType": "unstarted",
+            "labels": [],
+            "team": "OpenJiuwen",
+            "teamId": "31034d04-8d50-4047-a13c-7dbc74c99bf8"
+          },
+          {
+            "id": "OPE-2",
+            "uuid": "880a43f9-79bc-4fbf-9205-caa59a573897",
+            "title": "Connect your tools",
+            "description": "Integrations turn Linear into your source of truth around product development. Keep data in sync, and eliminate manual updates between tools.\n\n<linear-image>{\"type\":\"image\",\"attrs\":{\"src\":\"https://uploads.linear.app/fe63b3e2-bf87-46c0-8784-cd7d639287c8/c2eae035-37e2-4754-adcb-b8305431aa1f/c92d70c7-e6d0-4fa2-a0fd-78f6e780993a\",\"title\":\"connect-your-tools.png\",\"width\":2880,\"height\":1768,\"displayWidth\":534}}</linear-image>\n\n### **Key integrations**… (truncated, use `get_issue` for full description)",
+            "priority": {
+              "value": 0,
+              "name": "No priority"
+            },
+            "url": "https://linear.app/openjiuwen/issue/OPE-2/connect-your-tools",
+            "gitBranchName": "openjiuwenofficial/ope-2-connect-your-tools",
+            "createdAt": "2026-11-17T02:41:01.580Z",
+            "updatedAt": "2026-11-17T02:41:01.580Z",
+            "archivedAt": null,
+            "completedAt": null,
+            "startedAt": null,
+            "canceledAt": null,
+            "dueDate": null,
+            "slaStartedAt": null,
+            "slaMediumRiskAt": null,
+            "slaHighRiskAt": null,
+            "slaBreachesAt": null,
+            "status": "Todo",
+            "statusType": "unstarted",
+            "labels": [],
+            "team": "OpenJiuwen",
+            "teamId": "31034d04-8d50-4047-a13c-7dbc74c99bf8"
+          },
+          {
+            "id": "OPE-1",
+            "uuid": "6997ea65-5b81-44c3-a478-0a08e64df5e9",
+            "title": "Get familiar with Linear",
+            "description": "Welcome to Linear! \n\nWatch an introductory video and access a list of resources below.\n\n<linear-embed node-type=\"video\">{\"uploadState\":\"finished\",\"uploadId\":\"upload-1768557254876-t6pc6wu\",\"src\":\"https://uploads.linear.app/fe63b3e2-bf87-46c0-8784-cd7d639287c8/a044fb03-9b84-470c-ab6f-8eae613e2529/98d7274d-de7f-4910-b3f3-f72e8e286a98\",\"title\":\"LinearH264Version_1.mp4\",\"size\":75734656,\"controls\":true,\"height\":2160,\"width\":3840,\"metadataId\":null,\"mim… (truncated, use `get_issue` for full description)",
+            "priority": {
+              "value": 0,
+              "name": "No priority"
+            },
+            "url": "https://linear.app/openjiuwen/issue/OPE-1/get-familiar-with-linear",
+            "gitBranchName": "openjiuwenofficial/ope-1-get-familiar-with-linear",
+            "createdAt": "2026-11-17T02:41:01.580Z",
+            "updatedAt": "2026-11-17T02:41:01.580Z",
+            "archivedAt": null,
+            "completedAt": null,
+            "startedAt": null,
+            "canceledAt": null,
+            "dueDate": null,
+            "slaStartedAt": null,
+            "slaMediumRiskAt": null,
+            "slaHighRiskAt": null,
+            "slaBreachesAt": null,
+            "status": "Todo",
+            "statusType": "unstarted",
+            "labels": [],
+            "team": "OpenJiuwen",
+            "teamId": "31034d04-8d50-4047-a13c-7dbc74c99bf8"
+          }
+        ],
+        "hasNextPage": false
+      }
+    }
+  },
+  {
+    "source": "10-write-trace-dom.txt",
+    "result": {
+      "ok": true,
+      "tool": "save_issue",
+      "result": {
+        "id": "OPE-8",
+        "uuid": "eb544132-0efb-43cd-9bc8-0ff839fbb59b",
+        "title": "WorkSwarm Linear CLI 1.2.1 回归验收 20261122",
+        "description": "只用于验证 WorkSwarm 0.2.8 的短时 Node CLI、中文写入和独立回读，无真实业务数据。",
+        "priority": {
+          "value": 0,
+          "name": "No priority"
+        },
+        "url": "https://linear.app/openjiuwen/issue/OPE-8/workswarm-linear-cli-121-回归验收-20261122",
+        "gitBranchName": "openjiuwenofficial/ope-8-workswarm-linear-cli-121-回归验收",
+        "createdAt": "2026-11-22T15:12:02.129Z",
+        "updatedAt": "2026-11-22T15:12:02.129Z",
+        "archivedAt": null,
+        "completedAt": null,
+        "startedAt": null,
+        "canceledAt": null,
+        "dueDate": null,
+        "slaStartedAt": null,
+        "slaMediumRiskAt": null,
+        "slaHighRiskAt": null,
+        "slaBreachesAt": null,
+        "status": "Backlog",
+        "statusType": "backlog",
+        "labels": [],
+        "attachments": [],
+        "documents": [],
+        "createdBy": "openJiuwen",
+        "createdById": "745bf970-e87a-4015-8645-8cc1ed91f5cf",
+        "team": "OpenJiuwen",
+        "teamId": "31034d04-8d50-4047-a13c-7dbc74c99bf8"
+      }
+    }
+  },
+  {
+    "source": "10-write-trace-dom.txt",
+    "result": {
+      "ok": true,
+      "tool": "get_issue",
+      "result": {
+        "id": "OPE-8",
+        "uuid": "eb544132-0efb-43cd-9bc8-0ff839fbb59b",
+        "title": "WorkSwarm Linear CLI 1.2.1 回归验收 20261122",
+        "description": "只用于验证 WorkSwarm 0.2.8 的短时 Node CLI、中文写入和独立回读，无真实业务数据。",
+        "priority": {
+          "value": 0,
+          "name": "No priority"
+        },
+        "url": "https://linear.app/openjiuwen/issue/OPE-8/workswarm-linear-cli-121-回归验收-20261122",
+        "gitBranchName": "openjiuwenofficial/ope-8-workswarm-linear-cli-121-回归验收",
+        "createdAt": "2026-11-22T15:12:02.129Z",
+        "updatedAt": "2026-11-22T15:12:02.129Z",
+        "archivedAt": null,
+        "completedAt": null,
+        "startedAt": null,
+        "canceledAt": null,
+        "dueDate": null,
+        "slaStartedAt": null,
+        "slaMediumRiskAt": null,
+        "slaHighRiskAt": null,
+        "slaBreachesAt": null,
+        "status": "Backlog",
+        "statusType": "backlog",
+        "labels": [],
+        "attachments": [],
+        "documents": [],
+        "stateHistory": [
+          {
+            "state": {
+              "id": "67025ca4-bd86-4b4a-9ec6-cb5c01614912",
+              "name": "Backlog",
+              "type": "backlog"
+            },
+            "startedAt": "2026-11-22T15:12:02.129Z",
+            "endedAt": null
+          }
+        ],
+        "createdBy": "openJiuwen",
+        "createdById": "745bf970-e87a-4015-8645-8cc1ed91f5cf",
+        "team": "OpenJiuwen",
+        "teamId": "31034d04-8d50-4047-a13c-7dbc74c99bf8"
+      }
+    }
+  },
+  {
+    "source": "10-write-trace-dom.txt",
+    "result": {
+      "ok": true,
+      "tool": "list_comments",
+      "result": {
+        "comments": [],
+        "hasNextPage": false
+      }
+    }
+  },
+  {
+    "source": "10-write-trace-dom.txt",
+    "result": {
+      "ok": true,
+      "tool": "save_comment",
+      "result": {
+        "id": "16b798d3-5d83-4a88-a7d8-7a7ecfe75f98",
+        "body": "短时 CLI 中文评论验收 LINEAR-121-20261122",
+        "attachments": [],
+        "createdAt": "2026-11-22T15:12:55.407Z",
+        "updatedAt": "2026-11-22T15:12:55.391Z",
+        "parentId": null,
+        "resolvedAt": null,
+        "quotedText": null,
+        "author": {
+          "id": "745bf970-e87a-4015-8645-8cc1ed91f5cf",
+          "name": "openJiuwen"
+        },
+        "onBehalfOf": null
+      }
+    }
+  },
+  {
+    "source": "10-write-trace-dom.txt",
+    "result": {
+      "ok": true,
+      "tool": "list_comments",
+      "result": {
+        "comments": [
+          {
+            "id": "16b798d3-5d83-4a88-a7d8-7a7ecfe75f98",
+            "body": "短时 CLI 中文评论验收 LINEAR-121-20261122",
+            "attachments": [],
+            "createdAt": "2026-11-22T15:12:55.407Z",
+            "updatedAt": "2026-11-22T15:12:55.391Z",
+            "parentId": null,
+            "resolvedAt": null,
+            "quotedText": null,
+            "author": {
+              "id": "745bf970-e87a-4015-8645-8cc1ed91f5cf",
+              "name": "openJiuwen"
+            },
+            "onBehalfOf": null
+          }
+        ],
+        "hasNextPage": false
+      }
+    }
+  },
+  {
+    "source": "12-revoked-auth-trace-dom.txt",
+    "result": {
+      "ok": false,
+      "code": "AUTH_REQUIRED",
+      "message": "Linear 尚未授权或登录已失效，请从连接器卡片重新连接。"
+    }
+  },
+  {
+    "source": "21-gui-recovery-trace-dom.txt",
+    "result": {
+      "ok": true,
+      "tool": "get_issue",
+      "result": {
+        "id": "OPE-8",
+        "uuid": "eb544132-0efb-43cd-9bc8-0ff839fbb59b",
+        "title": "WorkSwarm Linear CLI 1.2.1 回归验收 20261122",
+        "team": "OpenJiuwen",
+        "teamId": "31034d04-8d50-4047-a13c-7dbc74c99bf8",
+        "description": "只用于验证 WorkSwarm 0.2.8 的短时 Node CLI、中文写入和独立回读，无真实业务数据。"
+      }
+    }
+  },
+  {
+    "source": "21-gui-recovery-trace-dom.txt",
+    "result": {
+      "ok": true,
+      "tool": "list_comments",
+      "result": {
+        "comments": [
+          {
+            "id": "16b798d3-5d83-4a88-a7d8-7a7ecfe75f98",
+            "body": "短时 CLI 中文评论验收 LINEAR-121-20261122",
+            "attachments": [],
+            "createdAt": "2026-11-22T15:12:55.407Z",
+            "updatedAt": "2026-11-22T15:12:55.391Z",
+            "parentId": null,
+            "resolvedAt": null,
+            "quotedText": null,
+            "author": {
+              "id": "745bf970-e87a-4015-8645-8cc1ed91f5cf",
+              "name": "openJiuwen"
+            },
+            "onBehalfOf": null
+          }
+        ],
+        "hasNextPage": false
+      }
+    }
+  }
+]

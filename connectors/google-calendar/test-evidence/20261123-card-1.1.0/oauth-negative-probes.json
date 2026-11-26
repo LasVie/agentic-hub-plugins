@@ -1,0 +1,11 @@
+{
+  "version": "1.1.0",
+  "kind": "controlled local OAuth callback test; not real Google denial",
+  "scope_exact": true,
+  "pkce_s256": true,
+  "wrong_state_rejected_flow_continued": true,
+  "matching_denial_exited": true,
+  "denial_callback_port_closed": true,
+  "sigterm_cancel_exited_and_port_closed": true,
+  "real_google_endpoint_called": false
+}

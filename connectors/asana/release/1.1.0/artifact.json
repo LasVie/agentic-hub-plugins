@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "asset_type": "agent-mcp",
+  "name": "asana",
+  "display_name": "Asana 任务连接器",
+  "version": "1.1.0",
+  "task_id": "AH-20261117-asana-connector",
+  "internal_asset_id": "repo:agent-mcp:asana",
+  "created_at_utc": "2026-11-19T09:38:10.714144+00:00",
+  "artifacts": [
+    {
+      "form": "native",
+      "path": "connectors/asana/test-packages/asana-1.1.0-native.zip",
+      "filename": "asana-1.1.0-native.zip",
+      "sha256": "4110e37f8a3ace88263ecffad7ad00d485e4ea5b7b57f58b62f9b4105b2a7d1d",
+      "size_bytes": 12584
+    },
+    {
+      "form": "agent-mcp_wrapped",
+      "path": "connectors/asana/release/1.1.0/asana-1.1.0-agent-mcp.zip",
+      "filename": "asana-1.1.0-agent-mcp.zip",
+      "sha256": "57348470aea2ccc0ea85d733de007e059a636ad10c9f57d67f17fc6ae61d45e6",
+      "size_bytes": 7072
+    }
+  ],
+  "payload_sha256": {
+    "README.md": "221498c4e6423907197718e0e34970f583bff51abdcec22e1cf1399f586a8b15",
+    "manifest.json": "0dca85552186c401a9d94ae9f1be9780fdf92949b075489daa63f211018292a9",
+    "mcp.json": "d4ae01f03bb6b0003532e849a611f206d7188866ddd8a8887f2fc81727b9b0fc",
+    "skills/asana-guide/SKILL.md": "61896f4e2aa117345f7869f54dae2118726aaf33705c579b29e72e707ecf96ad",
+    "token-schema.json": "3f598158c98d8a79a8b052c0de59afe062cd3eb26aa4306a55de9ca3a3c38154"
+  },
+  "review_files_sha256": {
+    "SOURCE_REVIEW.md": "3ef808b0126f0c34ed208abcbab8b0115fbc2c3037fe9d1c8ccac14fa73fb628",
+    "TEST_REPORT.md": "7b7a0e84d82dbb57390c7a7c28602e08b27de109d21530cbcb23a3ab8b7266d8",
+    "provenance.json": "8676be2442853e48e1f69501685c422a786dcfd129292fa066c65bbd01a5d661"
+  },
+  "official_cli": {
+    "distribution": "openjiuwen-agentichub",
+    "version": "0.0.1",
+    "source": "https://github.com/openJiuwen-ai/skillhub",
+    "source_commit": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+    "commands": [
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "init",
+        "asana",
+        "--type",
+        "agent-mcp"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "validate",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-rdp0eg5g/asana"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/agentichub",
+        "pack",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-rdp0eg5g/asana",
+        "--output",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-rdp0eg5g/out"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-linear-standard/tools/asset_release.py",
+        "preflight",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-linear-standard/connectors/asana/asana"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-linear-standard/tools/asset_release.py",
+        "preflight",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-rdp0eg5g/native.zip"
+      ],
+      [
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/gmail-connector-work/tooling/pack-venv/bin/python",
+        "/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-linear-standard/tools/asset_release.py",
+        "preflight",
+        "/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-rdp0eg5g/out/asana-1.1.0.zip"
+      ]
+    ]
+  },
+  "checks": [
+    {
+      "step": "official_init",
+      "output": "Plugin initialized at: /private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-rdp0eg5g/asana"
+    },
+    {
+      "step": "official_validate",
+      "output": "Plugin validation passed."
+    },
+    {
+      "step": "official_pack",
+      "output": "Packed: /private/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-rdp0eg5g/out/asana-1.1.0.zip"
+    },
+    {
+      "step": "javascript_preflight_native_source",
+      "output": "{\n  \"path\": \"/Users/lasvie/Documents/openJiuwen/openJiuwen_Mods/agentic-hub-linear-standard/connectors/asana/asana\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_native_zip",
+      "output": "{\n  \"path\": \"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-rdp0eg5g/native.zip\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    },
+    {
+      "step": "javascript_preflight_wrapped_zip",
+      "output": "{\n  \"path\": \"/var/folders/_l/c87b96ts3xx_s3fhy4_m4w4m0000gn/T/google-connector-pack-rdp0eg5g/out/asana-1.1.0.zip\",\n  \"javascript_files_scanned\": 0,\n  \"known_dynamic_js_signatures\": 0\n}"
+    }
+  ],
+  "verification_limits": "Exact macOS stock WorkSwarm 0.2.8 local-catalog card install, user-entered PAT, Chinese status/list/read/create/independent readback and stock RPC disconnect with zero residual Node processes passed. Runtime source and ZIPs unchanged. Windows/Linux, remote deployment, actual multi-page responses, GUI uninstall/reinstall, natural expiry, production Hub install/moderation remain unverified. Current-version user completion confirmed by Song Haoran on 2026-11-23 in the current conversation.",
+  "test_evidence": "connectors/asana/test-evidence/20261123-card-1.1.0/evidence-index.json",
+  "user_confirmation": {
+    "user": "Song Haoran",
+    "date": "2026-11-23",
+    "source": "current conversation",
+    "statement": "确认 Asana 1.1.0 测试通过，附上实测截图提交 PR",
+    "report_id": "RPT-20261122-asana-gui-auth-repair"
+  }
+}

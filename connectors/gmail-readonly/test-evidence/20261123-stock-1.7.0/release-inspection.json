@@ -1,0 +1,19 @@
+{
+  "version": "1.7.0",
+  "payload_files": 12,
+  "legacy_zips_unchanged": 4,
+  "archives": [
+    {
+      "kind": "native",
+      "sha256": "38e5378f1bbf70cbd452acd0e22c0a90d2df41c79e667d3814b56899ab954be2",
+      "entries": 12,
+      "max_compression_ratio": 1.0
+    },
+    {
+      "kind": "wrapped",
+      "sha256": "1264e564ef1f60ff4e7ca597693949bd5e778248dd8ccf1d27c7e42debcfebcb",
+      "entries": 13,
+      "max_compression_ratio": 14.23094958968347
+    }
+  ]
+}

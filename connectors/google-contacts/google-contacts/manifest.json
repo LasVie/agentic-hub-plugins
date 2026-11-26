@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "package_type": "mcp",
+  "id": "google-contacts",
+  "name": "Google 联系人连接器",
+  "description": "通过 WorkSwarm 卡片授权 Google，搜索和读取账号中已保存的联系人。",
+  "display_name": {
+    "zh": "Google 联系人连接器",
+    "en": "Google Contacts Connector"
+  },
+  "display_description": {
+    "zh": "通过 WorkSwarm 卡片授权 Google，搜索和读取账号中已保存的联系人。",
+    "en": "Authorize Google and search or read saved contacts in WorkSwarm."
+  },
+  "integration": {
+    "type": "cli",
+    "file": "cli.json"
+  },
+  "credentials": {
+    "type": "cli-oauth"
+  },
+  "skills": [
+    {
+      "dir": "skills/google-contacts-guide",
+      "mode": "all"
+    }
+  ]
+}

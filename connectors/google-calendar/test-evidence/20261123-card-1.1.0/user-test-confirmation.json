@@ -1,0 +1,13 @@
+{
+  "task_id": "AH-20261116-google-calendar",
+  "version": "1.1.0",
+  "confirmed_by": "Song Haoran",
+  "date": "2026-11-23",
+  "source": "current conversation",
+  "original_user_message": "确认 Google Calendar 1.1.0 测试通过，接受取消授权后手动点「取消连接」的限制。附上实测截图提交 PR，然后继续修复 Jira，还是只改 Agentic Hub 包，用我本地 WorkSwarm 0.2.8 验证。",
+  "record": "User test confirmation: Confirmed Google Calendar 1.1.0 tests passed and accepted the requirement to manually click Cancel connection after cancelling Google consent; requested PR submission with actual screenshots, then package-only Jira repair tested in local WorkSwarm 0.2.8. Confirmed by Song Haoran; date 2026-11-23 (Asia/Shanghai; exact message time not supplied); Task ID AH-20261116-google-calendar; version 1.1.0; native ZIP SHA256 1951aa274ddc89da2eab20b62d9d3c7c39060c75d55cb13598a7fe2414fb93ba; Hub ZIP SHA256 53ba2d3dc8cda301213c7d699a9ebe04e6ad1a536d6bde04febb18cb2d7f445a; known blocking issues none within accepted scope; documented host Cancel limitation explicitly accepted; evidence/source current conversation.",
+  "native_sha256": "1951aa274ddc89da2eab20b62d9d3c7c39060c75d55cb13598a7fe2414fb93ba",
+  "hub_sha256": "53ba2d3dc8cda301213c7d699a9ebe04e6ad1a536d6bde04febb18cb2d7f445a",
+  "github_pr_submission_authorized": true,
+  "hub_publication_authorized": false
+}

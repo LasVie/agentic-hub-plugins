@@ -3,7 +3,7 @@
   "type": "agent-mcp",
   "name": "jira-cloud",
   "display_name": "Jira Cloud 连接器",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "owner": "Song Haoran",
   "task_id": "AH-20261117-jira-cloud-connector",
   "internal_asset_id": "repo:agent-mcp:jira-cloud",

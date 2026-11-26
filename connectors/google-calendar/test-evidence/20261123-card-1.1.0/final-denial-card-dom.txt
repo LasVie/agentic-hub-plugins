@@ -1,0 +1,30 @@
+- complementary:
+  - img "Logo"
+  - button "任务":
+    - generic: 任务
+  - button "专家":
+    - generic: 专家
+  - button "技能":
+    - generic: 技能
+  - button "扩展":
+    - generic: 扩展
+  - button "RSI":
+    - generic: RSI
+  - button "设置":
+    - generic: 设置
+  - button "更新":
+    - generic: 更新
+- main:
+  - heading "扩展" [level=2]
+  - paragraph: 创建并管理插件、连接器
+  - tablist:
+    - tab "插件广场"
+    - tab "连接器广场" [selected]
+    - tab "我的扩展"
+  - button "全部":
+    - generic: 全部
+  - textbox "搜索连接器"
+  - generic: G
+  - generic "Google 日历连接器"
+  - button "连接"
+  - generic: 用 Node CLI 查询主日历、创建个人日程并独立回读。使用自建 Desktop OAuth。

@@ -1,0 +1,47 @@
+{
+  "version": "1.1.0",
+  "task_id": "AH-20261117-confluence-cloud-connector",
+  "native": {
+    "path": "test-packages/confluence-cloud-1.1.0-native.zip",
+    "sha256": "d1a538d4bc6dbeba23a695f35a9bb50c3d2ab0891330b3cc6909c54940812e7e"
+  },
+  "wrapped": {
+    "path": "release/1.1.0/confluence-cloud-1.1.0-agent-mcp.zip",
+    "sha256": "3ee1f9bdc59c7d6721574a4b5b4a1fad8dcf04f22e8bb8468580e73ce6c7e35e"
+  },
+  "review_files_sha256": {
+    "SOURCE_REVIEW.md": "b8bb058b808cc89692d2c5bf3a5377ec273bb94e53b87569bd85524729f61935",
+    "TEST_REPORT.md": "d3d135ba5b959a2cfe0d2f1d756afbd4b643ca6b5412a9e0ada5f54f3e00d1cd",
+    "provenance.json": "6d5f79ed7690e87b9697f25d62d88f344ba9909ee6a7455e3869b28bc3f44610",
+    "NATIVE_DESIGN.md": "106bd15e31e8b9fd17eb5b3b38a2cdf95933a3b6fd76c3cbf111285e7fd150a6",
+    "tests/test_confluence_node.cjs": "0d0287009320b3e5966b55b5cc7a91931709dcd4c92a2d61529e6d43ef56dabd",
+    "tests/fixtures/workswarm-0.2.8-20261123.json": "5a70fa366b70b27baa2e9d1ab4fd6477acc6ac673bfd4442dacc6008ed4989e9",
+    "test-evidence/20261123-stock-1.1.0/evidence.json": "43aec73d686d4d59ed85fe5169ddc9757e48330e1e6bf0bc4feee6dc38ba740e"
+  },
+  "payload_sha256": {
+    "README.md": "500e4570ce25dbff44997fabf1d0c4763dd4d8a4db669c5b2a69515db22d4832",
+    "THIRD_PARTY_NOTICES.md": "5186eaddedc06f3409c936f95766509a395d7f55db4ca6938749a6eb6133ba31",
+    "cli.json": "9febb220ccccc58c26e48d343d4e33e7572f1ef701a5a1ff46ab3b150bba3a95",
+    "icon.png": "739da5cf8f9a986d3890577e600186ab617ba590d4993f2c02ede921c0e826cd",
+    "licenses/mcp-remote/LICENSE": "5514f48637fa1d8fed2256d12d322009a75962e6111370755fc5b20773db67ad",
+    "manifest.json": "c30323d056dacf295efb7339da9b1903c8730a9ff5636ef638d791bcced5d346",
+    "skills/confluence-cloud-guide/SKILL.md": "036a65dd3b2ff30615fc8e7bf8e8732800a43633127a2d51723ffa9ad038c5ce",
+    "skills/confluence-cloud-guide/scripts/confluence-cli.cjs": "6c7c09ba1c0e78c98071237259a16fb3ccb3ac7aa63b2eb69499de968f372504",
+    "skills/confluence-cloud-guide/scripts/login-bridge.cjs": "6951a15e5ac30dce57eac1d72d7a337a54b91d58be75d7b14de8d66731f988b0",
+    "skills/confluence-cloud-guide/scripts/scope.cjs": "2c512c60390719fe7058cbd4c66651df3fa3d5d3cb96b23b3812c80f617656a0"
+  },
+  "stage": "Submitting: exact tested Chinese 1.1.0 confirmed by Song Haoran; five original screenshot publication approved; no merge/Hub publication requested",
+  "user_confirmation": {
+    "quote": "确认通过并附原图提交 PR",
+    "confirmed_by": "Song Haoran",
+    "recorded_at": "2026-11-23T02:56:51+08:00",
+    "source": "Current conversation; reply to request_user_input_async call_debe4d24e54348c7bb32def256091a7d",
+    "task_id": "AH-20261117-confluence-cloud-connector",
+    "version": "1.1.0",
+    "native_sha256": "d1a538d4bc6dbeba23a695f35a9bb50c3d2ab0891330b3cc6909c54940812e7e",
+    "wrapped_sha256": "3ee1f9bdc59c7d6721574a4b5b4a1fad8dcf04f22e8bb8468580e73ce6c7e35e",
+    "known_blocking_issues": "none in tested scope; user accepted listed untested boundaries",
+    "original_screenshot_count": 5,
+    "publication": "Five unmodified QA screenshots in GitHub delivery PR approved; merge not requested"
+  }
+}

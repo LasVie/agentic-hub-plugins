@@ -1,0 +1,8 @@
+{
+  "version": "1.2.1",
+  "stage": "disconnected-before-chat",
+  "checked_at": "2026-11-22T22:59:22.796158+08:00",
+  "owned_node_processes": [],
+  "idle_without_owned_node_children": true,
+  "method": "Full descendants of all recorded isolated runtime parents; no command-path-only filtering"
+}

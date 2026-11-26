@@ -1,0 +1,17 @@
+[
+  {
+    "path": "AGENTS.md",
+    "matches_origin_main": true,
+    "sha256": "1c7d3e8ba2be4b333594b3c38a229704ae1e28f30c6706bd50dd96e744a601bb"
+  },
+  {
+    "path": "connectors/README.md",
+    "matches_origin_main": true,
+    "sha256": "3c9a1396cc4b7a5844c90b3a07dbe592fff7a5a281fc2eda7fe60b6168a4ec0e"
+  },
+  {
+    "path": "docs/PACKAGING.md",
+    "matches_origin_main": true,
+    "sha256": "db997da04c0fe1910342092fecb03bc203b56cba5f7658097a3c374e71e90cc8"
+  }
+]
