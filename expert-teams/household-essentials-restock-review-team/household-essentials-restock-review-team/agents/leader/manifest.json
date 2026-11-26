@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "leader",
+  "description": "按日预测缺货并选择合适包装，凭核验回执交付清单",
+  "display_name": {
+    "zh": "补货核对主理人",
+    "en": "Restock Planning Lead"
+  },
+  "display_description": {
+    "zh": "按日预测缺货并选择合适包装，凭核验回执交付清单",
+    "en": "Restock Planning Lead"
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/restock-planning",
+      "mode": "all"
+    }
+  ]
+}

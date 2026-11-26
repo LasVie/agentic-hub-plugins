@@ -1,0 +1,32 @@
+{
+  "payload_files": 17,
+  "archive_hashes": {
+    "native": "d84845ebdd42aae9a1950058622425d2f4b99f172eca671327ebf8fcdbdd3d4d",
+    "wrapped": "6c035111a5bee2f750facde8a25436a4d750f7fb5fb36640ed4ece73cfd70e7c"
+  },
+  "manual_replay_sha256": {
+    "intake.json": "ecaff7ea4f66e93b2dc135af9132a96ed14f6348031744a4d7f614969cf203e0",
+    "baseline.json": "d0208bf0fd611b29ed3c43fda6366afd73f948faf6a24bd8c3d72ad5f47ba90c",
+    "proposal.json": "53aa48402f8815df03a32f36dfaf1e409348af0a1a69e3513f71fa6101b225cc",
+    "verification.json": "a2a754408e591c17201696d75da6a647aa64ee2e414ba114da38dd94f09919c0",
+    "shopping-list.md": "e69222fbf3a1af81c06ac4756d6ce9aef034e82b4140bf95b7ab8d42cbe119ae",
+    "restock.csv": "a3f02848a40a8e941a6a4f918ad88695c29198bd2cbfc56b82b9adce68bfb7f0",
+    "audit.json": "77efab3261bb24090154b42081c75e92f437c06aa3ecdd85d60bfab486940778"
+  },
+  "source_sha256": "66c46bbd87a243f422dd97b530bfc979a5647c4498fe02e6478e1ef60c049574",
+  "baseline_precedes_proposal_verification_delivery": true,
+  "matched_items": 4,
+  "issues": [],
+  "task_id": "AH-20261126-household-essentials-restock-review-team",
+  "confirmation_report_id": "RPT-20261126-household-essentials-restock-review-team-user-confirmation",
+  "checked_at": "2026-11-26T16:40:08+08:00",
+  "functional_tests": {
+    "source": 8,
+    "exact_native_extraction": 8
+  },
+  "preflight": {
+    "source": "passed",
+    "native": "passed",
+    "wrapper": "passed"
+  }
+}

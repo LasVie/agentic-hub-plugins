@@ -1,0 +1,24 @@
+{
+  "mode": "native",
+  "candidate_id": "Not Applicable",
+  "task_id": "AH-20261126-household-essentials-restock-review-team",
+  "asset_id": "repo:agent-group:household-essentials-restock-review-team",
+  "base": "b310a672ea017b734f01f2f91ce85bcdd9f0490f",
+  "references": [
+    {
+      "url": "https://github.com/openJiuwen-ai/skillhub",
+      "version": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+      "use": "external packaging CLI",
+      "bundled_paths": []
+    }
+  ],
+  "repository_test_infrastructure": [
+    "expert-teams/business-interruption-rehearsal-team/tests/package.py",
+    "expert-teams/business-interruption-rehearsal-team/tests/host_integration.py",
+    "expert-teams/online-order-payment-review-team/tests/package.py"
+  ],
+  "runtime_dependencies": [
+    "WorkSwarm AgentGroup with local file and command tools",
+    "Python standard library >=3.10"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "inventory-analyst",
+  "description": "核对计量单位、可用存量和确认到货",
+  "display_name": {
+    "zh": "库存与到货核对员",
+    "en": "Stock and Delivery Analyst"
+  },
+  "display_description": {
+    "zh": "核对计量单位、可用存量和确认到货",
+    "en": "Stock and Delivery Analyst"
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/stock-intake",
+      "mode": "all"
+    }
+  ]
+}

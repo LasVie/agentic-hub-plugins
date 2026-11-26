@@ -1,0 +1,23 @@
+{
+  "package_type": "agent_group",
+  "name": "household-essentials-restock-review-team",
+  "version": "1.0.0",
+  "description": "按可用库存、日耗和确认到货核对缺货，复核整包补货数量与存放上限。",
+  "display_name": {
+    "zh": "家庭日用品补货核验专家团",
+    "en": "Household Essentials Restock Review Team"
+  },
+  "display_description": {
+    "zh": "按可用库存、日耗和确认到货核对缺货，复核整包补货数量与存放上限。",
+    "en": "Independently check household restock timing, pack sizes and storage limits."
+  },
+  "instruction": "默认使用简体中文。以用户提供的盘点、消耗估计与确认到货为依据；待定到货和未知适配不可计入可用数量。只制定清单，不下单。保存真实交接和核验回执。",
+  "agents": [
+    "leader",
+    "inventory-analyst",
+    "verifier"
+  ],
+  "skills": [
+    "restock-evidence"
+  ]
+}

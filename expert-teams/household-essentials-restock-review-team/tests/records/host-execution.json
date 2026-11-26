@@ -1,0 +1,115 @@
+{
+  "frontend_http": 200,
+  "native_sha256": "d84845ebdd42aae9a1950058622425d2f4b99f172eca671327ebf8fcdbdd3d4d",
+  "payload": {
+    "README.md": "c56949f55624058052537ddfb541fab204620fc21cec01ee8f95311479f1fc49",
+    "agents/inventory-analyst/manifest.json": "e7575202a8cf208411911130aaeff2eda44a05840749c537bf94e47243d8956a",
+    "agents/inventory-analyst/persona/role.md": "5e75cb857476517eb15a4c51cb97ee03acbf365153817fa60a859e8a10eb4356",
+    "agents/inventory-analyst/skills/stock-intake/SKILL.md": "d774389c651312ab0f80bcbf99767e9da8380706ba6adebcd9dbb42d76252a5e",
+    "agents/leader/AGENT.md": "7f73472061242665c92f33ad3532279850f685a4a2d1ac218d7b8235682e87ca",
+    "agents/leader/manifest.json": "3906c8690a5fae30adc3d030aa1e435b9a0977636a43def0907dc255bd56ed6d",
+    "agents/leader/persona/role.md": "75f3a40946ce2481a9a8270b8ff31f04638e9645821af58035d065003f006033",
+    "agents/leader/skills/restock-planning/SKILL.md": "f44c0374f6b6d2ba3d5680d0f2e08d83e043ee5efd7251fdbf8a43f6f39f521a",
+    "agents/verifier/manifest.json": "63393eccd2e34c1f89c0fe6e684e9a8b2125f7ec322ad8ba018118bacf3100cb",
+    "agents/verifier/persona/role.md": "8fd301dbcf46c4c76f8e8a5143fe8b1a995f50524b288ca2ec332a02bb513a1d",
+    "agents/verifier/skills/restock-verification/SKILL.md": "3ca601a1dc3c2efcb1338e173ffbe98cb955bc38f2b2739ff5c3693fc6586b33",
+    "examples/weekly-restock.json": "66c46bbd87a243f422dd97b530bfc979a5647c4498fe02e6478e1ef60c049574",
+    "manifest.json": "f109b35a91a4bbc2197b8d62ec60f20c5dd72e07981b8a0cf5a96113edcc3387",
+    "skills/restock-evidence/SKILL.md": "2e9a8997efbffd35a2a8b02218b291ae724494eb5103d07867f03d91285620f7",
+    "skills/restock-evidence/scripts/forecast.py": "3f56ae430dc1947a20c21cf0982361af14ca2067ea5e8ce9bf139ecaaf2807e9",
+    "skills/restock-evidence/scripts/restock.py": "1b40e8ac334650e5fff6a1d723809670a245390c501ebcfdbd95fd4985bfada8",
+    "skills/restock-evidence/scripts/stock.py": "a1132b3ea703a0b2972547cb82e4536e0f3b2bebff3a583784cb283a61a00230"
+  },
+  "group": "household-essentials-restock-review-team",
+  "member_ids": [
+    "leader",
+    "inventory-analyst",
+    "verifier"
+  ],
+  "version": "1.0.0",
+  "installed_equal": true,
+  "model_calls": "none for management",
+  "boundary": "Real host integration with fixed local responses; not autonomous reasoning or manual acceptance.",
+  "session_id": "web_1a216e1186d_2384b2752995",
+  "role_execution": {
+    "leader": {
+      "skills": [
+        "restock-evidence",
+        "restock-planning"
+      ],
+      "tools": [
+        "bash",
+        "build_team",
+        "create_task",
+        "send_message",
+        "skill_tool"
+      ],
+      "successful_stages": [
+        "plan",
+        "deliver"
+      ]
+    },
+    "inventory-analyst": {
+      "skills": [
+        "restock-evidence",
+        "stock-intake"
+      ],
+      "tools": [
+        "bash",
+        "claim_task",
+        "send_message",
+        "skill_tool"
+      ],
+      "successful_stages": [
+        "intake"
+      ]
+    },
+    "verifier": {
+      "skills": [
+        "restock-evidence",
+        "restock-verification"
+      ],
+      "tools": [
+        "bash",
+        "claim_task",
+        "send_message",
+        "skill_tool"
+      ],
+      "successful_stages": [
+        "baseline",
+        "verify"
+      ]
+    }
+  },
+  "request_counts": {
+    "leader": 8,
+    "inventory-analyst": 7,
+    "verifier": 9
+  },
+  "events": 215,
+  "baseline_preceded_proposal": true,
+  "checked_items": 4,
+  "fixture_decisions": [
+    [
+      "buy",
+      10000
+    ],
+    [
+      "buy",
+      2000
+    ],
+    [
+      "check",
+      null
+    ],
+    [
+      "wait",
+      null
+    ]
+  ],
+  "output_digests": {
+    "shopping-list.md": "e69222fbf3a1af81c06ac4756d6ce9aef034e82b4140bf95b7ab8d42cbe119ae",
+    "restock.csv": "a3f02848a40a8e941a6a4f918ad88695c29198bd2cbfc56b82b9adce68bfb7f0",
+    "audit.json": "77efab3261bb24090154b42081c75e92f437c06aa3ecdd85d60bfab486940778"
+  }
+}
