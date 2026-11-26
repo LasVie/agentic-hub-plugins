@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "leader",
+  "description": "确认核对范围、分派独立任务并交付可用清单",
+  "display_name": {
+    "zh": "家校核对主理人",
+    "en": "School Notice Review Leader"
+  },
+  "display_description": {
+    "zh": "确认核对范围、分派独立任务并交付可用清单",
+    "en": "School Notice Review Leader"
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/notice-delivery",
+      "mode": "all"
+    }
+  ]
+}

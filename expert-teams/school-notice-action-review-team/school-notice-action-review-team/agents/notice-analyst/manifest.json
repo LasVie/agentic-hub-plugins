@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "notice-analyst",
+  "description": "从原文提取逐条待办、期限和版本引用",
+  "display_name": {
+    "zh": "通知与变更分析员",
+    "en": "Notice and Change Analyst"
+  },
+  "display_description": {
+    "zh": "从原文提取逐条待办、期限和版本引用",
+    "en": "Notice and Change Analyst"
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/notice-analysis",
+      "mode": "all"
+    }
+  ]
+}

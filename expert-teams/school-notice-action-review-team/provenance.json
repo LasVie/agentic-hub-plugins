@@ -1,0 +1,16 @@
+{
+  "mode": "native",
+  "candidate_id": "Not Applicable",
+  "task_id": "AH-20261120-school-notice-action-review-team",
+  "asset_id": "repo:agent-group:school-notice-action-review-team",
+  "base": "5222c449153a0ca7938473c45456eeb9bd56262c",
+  "references": [
+    {"url": "https://github.com/openJiuwen-ai/skillhub", "version": "c8ee4ef44be0453470114aa5a19f4e1017462907", "use": "external packaging CLI", "bundled_paths": []}
+  ],
+  "repository_test_infrastructure": [
+    "expert-teams/business-interruption-rehearsal-team/tests/package.py",
+    "expert-teams/business-interruption-rehearsal-team/tests/host_integration.py",
+    "expert-teams/online-order-payment-review-team/tests/package.py"
+  ],
+  "runtime_dependencies": ["WorkSwarm AgentGroup with local file and command tools", "Python standard library >=3.10"]
+}

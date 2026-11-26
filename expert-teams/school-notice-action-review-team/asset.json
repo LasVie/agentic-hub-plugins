@@ -1,0 +1,21 @@
+{
+  "type": "agent-group",
+  "name": "school-notice-action-review-team",
+  "version": "1.0.0",
+  "display_name": "家校通知变更与待办核验专家团",
+  "description": "独立核对家校通知中的日期、适用对象和更正，生成中文照护人待办。",
+  "publisher": "Cai Zhenze",
+  "category": "productivity",
+  "tags": [
+    "家校通知",
+    "待办核对",
+    "独立复核"
+  ],
+  "members": [
+    "leader",
+    "notice-analyst",
+    "verifier"
+  ],
+  "candidate_id": null,
+  "task_id": "AH-20261120-school-notice-action-review-team"
+}

@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "verifier",
+  "description": "先独立读原文建立基线，再核对遗漏、范围和变更",
+  "display_name": {
+    "zh": "独立通知核验员",
+    "en": "Independent Notice Reviewer"
+  },
+  "display_description": {
+    "zh": "先独立读原文建立基线，再核对遗漏、范围和变更",
+    "en": "Independent Notice Reviewer"
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/notice-verification",
+      "mode": "all"
+    }
+  ]
+}

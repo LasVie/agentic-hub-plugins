@@ -1,0 +1,21 @@
+test_baseline_rejects_draft_input_and_incomplete_notice_coverage (__main__.NoticeReviewTest) ... ok
+test_chinese_help (__main__.NoticeReviewTest) ... ok
+test_competing_edits_on_same_parent_do_not_choose_a_winner (__main__.NoticeReviewTest) ... ok
+test_disputed_correction_leaves_other_class_usable (__main__.NoticeReviewTest) ... ok
+test_earlier_or_different_issuer_cannot_replace (__main__.NoticeReviewTest) ... ok
+test_fake_quote_stops_sealing (__main__.NoticeReviewTest) ... ok
+test_forged_receipt_fails_and_existing_output_is_preserved (__main__.NoticeReviewTest) ... ok
+test_half_hour_cannot_be_shortened_but_full_phrase_is_supported (__main__.NoticeReviewTest) ... ok
+test_missing_link_flags_potential_stale_item (__main__.NoticeReviewTest) ... ok
+test_raw_source_changes_invalidate_baseline (__main__.NoticeReviewTest) ... ok
+test_same_day_only_date_does_not_override (__main__.NoticeReviewTest) ... ok
+test_same_day_order_known_does_override (__main__.NoticeReviewTest) ... ok
+test_substring_must_not_change_time (__main__.NoticeReviewTest) ... ok
+test_unclear_twelve_hour_phrase_stays_pending (__main__.NoticeReviewTest) ... ok
+test_unknown_scope_blocks_previous_without_guessing_class (__main__.NoticeReviewTest) ... ok
+test_weekly_changes_audience_and_missing_date (__main__.NoticeReviewTest) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 1.799s
+
+OK

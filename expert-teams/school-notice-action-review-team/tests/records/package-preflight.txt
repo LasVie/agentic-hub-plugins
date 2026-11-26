@@ -1,0 +1,15 @@
+{
+  "path": "/Users/IDLE_And_R/.codex/worktrees/0e7b/agentic-hub-plugins/expert-teams/school-notice-action-review-team/school-notice-action-review-team",
+  "javascript_files_scanned": 0,
+  "known_dynamic_js_signatures": 0
+}
+{
+  "path": "/Users/IDLE_And_R/.codex/worktrees/0e7b/agentic-hub-plugins/expert-teams/school-notice-action-review-team/test-packages/school-notice-action-review-team-1.0.0-native.zip",
+  "javascript_files_scanned": 0,
+  "known_dynamic_js_signatures": 0
+}
+{
+  "path": "/Users/IDLE_And_R/.codex/worktrees/0e7b/agentic-hub-plugins/expert-teams/school-notice-action-review-team/release/1.0.0/school-notice-action-review-team-1.0.0-agent-group.zip",
+  "javascript_files_scanned": 0,
+  "known_dynamic_js_signatures": 0
+}

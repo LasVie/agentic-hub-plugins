@@ -1,0 +1,31 @@
+{
+  "native_sha256": "4f34070f46787c9c57fc421d3ad736d76d9c73c70e023bc3b5ec007c5a1964c0",
+  "wrapped_sha256": "7acc7fe4213205def7cc06e0d199b9e8ce33e1387a6f6cb17b120d74771a907c",
+  "matched_payload_files": 17,
+  "same_bundled_fictional_source_sha256": "b56612c76fe2372eb1f2189bd6e130331f51993b844f5cdc25026322071b4a6e",
+  "baseline_preceded_draft": true,
+  "observations": 8,
+  "disagreements": 0,
+  "confirmed_actions": 4,
+  "changes": 2,
+  "pending": 1,
+  "delivery_assigned_to": "notice-analyst",
+  "reproduced_stage_sha256": {
+    "baseline": "9e94118388b70dc912784cc082f2902c5384ba4e98cd237de4bdab6c21751214",
+    "draft": "71cc6c74dc194e2c431c466664612a49d7a5affa011e3eb990259f8fa4f7e31d",
+    "verification": "038f619bfca5e675b9a9d7cb60c9adeba13c02185067262d8ada3cfd9c5a86e6"
+  },
+  "manual_command_receipt_sha256": {
+    "draft-command-receipt.json": "6b0b3b62e72a7685b76f8f49f5b496148bfd4bdf0eb1d46d911b690ee5402300",
+    "command-receipt.json": "27c8b1940b90ab1e7d81de9b7542e7234e941b7cfaf835a4ca768ec9298cdb95"
+  },
+  "manual_outputs_reproduced_byte_for_byte": {
+    "checklist.md": "f0fc96c979626b6cb815617f6d3f48fe9617e7230578d35c52b0e0b662a905be",
+    "changes.csv": "83293d56dd8e4d80f981073fb7f05891d3d4f5d1422bbd3c3de163e49e37b7bd",
+    "audit.json": "038f619bfca5e675b9a9d7cb60c9adeba13c02185067262d8ada3cfd9c5a86e6"
+  },
+  "functional_tests": {
+    "source": 16,
+    "exact_native": 16
+  }
+}

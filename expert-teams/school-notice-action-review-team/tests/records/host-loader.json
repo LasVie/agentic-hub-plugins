@@ -1,0 +1,38 @@
+{
+  "sdk": "0.1.20",
+  "native_sha256": "4f34070f46787c9c57fc421d3ad736d76d9c73c70e023bc3b5ec007c5a1964c0",
+  "members": {
+    "leader": {
+      "skills": [
+        "notice-delivery",
+        "notice-evidence"
+      ],
+      "prompt_sections": [
+        "identity",
+        "agent_group_leader_rules",
+        "agent_group_instruction"
+      ]
+    },
+    "notice-analyst": {
+      "skills": [
+        "notice-analysis",
+        "notice-evidence"
+      ],
+      "prompt_sections": [
+        "identity",
+        "agent_group_instruction"
+      ]
+    },
+    "verifier": {
+      "skills": [
+        "notice-evidence",
+        "notice-verification"
+      ],
+      "prompt_sections": [
+        "identity",
+        "agent_group_instruction"
+      ]
+    }
+  },
+  "missing_verifier_rejected": "agent directory not found: verifier"
+}
