@@ -1,0 +1,17 @@
+{
+  "filesSHA256": {
+    "image-02.png": "6a820e2cb90bd818bacfa9868b486ad72db76038803def4dfde23cb99f6d0cc5"
+  },
+  "held": [
+    "image-01"
+  ],
+  "planSHA256": "77db5b87921b83f1c4d060125d59ab9505e98e7ec6a29afc9f4b31eca378020a",
+  "scanSHA256": "8367e3974f4cbd855541c774b307847e9c00ec35d2bb9dd5670b3c151e905dab",
+  "version": "1.0.0",
+  "browser_confirmation_page": "passed",
+  "source": "exact extracted package",
+  "held_without_approval": true,
+  "actual_protected_box_drawn": true,
+  "vision_suggested_mask_applied": true,
+  "synthetic_only": true
+}

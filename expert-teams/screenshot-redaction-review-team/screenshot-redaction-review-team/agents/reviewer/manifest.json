@@ -1,0 +1,16 @@
+{
+  "name": "reviewer",
+  "package_type": "agent_template",
+  "description": "解码并校验候选像素、图片块和报告摘要",
+  "display_name": {
+    "zh": "独立像素复核员",
+    "en": "Independent Pixel Reviewer"
+  },
+  "display_description": {
+    "zh": "解码并校验候选像素、图片块和报告摘要",
+    "en": "Independent Pixel Reviewer"
+  },
+  "persona": {
+    "dir": "persona"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "asset_id": "repo:agent-group:screenshot-redaction-review-team",
+  "task_id": "AH-20261126-screenshot-redaction-review-team",
+  "candidate_id": "Not Applicable",
+  "type": "agent-group",
+  "name": "screenshot-redaction-review-team",
+  "display_name": "截图外发脱敏复核专家团",
+  "version": "1.0.0",
+  "zip": "screenshot-redaction-review-team-1.0.0.zip",
+  "sha256": "929ab5af53203cc61f4e807becc1bcb85c49d1eb106ec5b253edf50b5a3fe3bd",
+  "zip_bytes": 20821,
+  "native_test_zip": "../../test-packages/screenshot-redaction-review-team-1.0.0-native.zip",
+  "native_test_zip_sha256": "378f693a26709fd353bdb4b49f37a204cff21f083a8e8c2f81abd9a1aacf3f2c",
+  "native_test_zip_bytes": 41168,
+  "plugin_yaml_sha256": "f96caa1b9c77c0543a21e16029e92c5371cd27ea13ac1027951d6b9e03213a6f",
+  "payload_file_count": 12,
+  "payload_sha256": {
+    "README.md": "d6a40f9d8bfa10b2addced2ea3f901e20f6997b2996dcc4fe4dab4b40761979b",
+    "agents/leader/AGENT.md": "b1596ffa6f55fde2c86a02cc3667fdc29d26584207c43c38e4b415d9a5695f75",
+    "agents/leader/manifest.json": "6d247e74c0a49a166d10815bc7a3dc5b38e186d455c91546da4772958f3b1b5e",
+    "agents/leader/persona/leader.md": "99d3ccef2ba5d214d2ca78acffa7d4d2165ad2d568a8de159a05713339e1ed1a",
+    "agents/redactor/manifest.json": "6bce1a8124ba34bb1a9bcd4f3e916925d3360a70b26feb2f74e29eec281b13c0",
+    "agents/redactor/persona/redactor.md": "4bdec6df5041d42207c4b1101fc7f911ce183412af3f7d3d7388c8369583c422",
+    "agents/reviewer/manifest.json": "b2623fd6f25150cf53d4b7f246321947a93edfc4cbabe18332a3d5544923c2a3",
+    "agents/reviewer/persona/reviewer.md": "ec27b82eedd3473167e400c4e5d210d880eda479cdf38857b227611b81804ce1",
+    "manifest.json": "69e51d624ae01ae84652afa6cf9a2cb60f9d4d6e6e513c4fc4281a1b1370dbed",
+    "skills/screenshot-review/SKILL.md": "efe8984ba4e0bd36ebae1c1f802cf8f85c19b4c5bb17555a9aed368d450beb81",
+    "skills/screenshot-review/confirm.html": "14d30860046b55da90b283d522f3e13f9a12828afe5951421c5865365b6e4bfb",
+    "skills/screenshot-review/scripts/review.swift": "d9fbcf1748a719b2ed5602213d1b5e8795059fe8a462f2bccfeb8c3275a563fa"
+  },
+  "package_verification": {
+    "paths_types_sizes_ratios": "passed",
+    "native_wrapped_source_payload_equality": "passed",
+    "native_compression": "ZIP_STORED",
+    "canonical_compression": "official CLI ZIP_DEFLATED",
+    "reproducible_archive_timestamp": "2026-01-01T00:00:00"
+  },
+  "official_cli": {
+    "distribution": "openjiuwen-agentichub",
+    "version": "0.0.1",
+    "source_commit": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+    "main_py_sha256": "f3a0e0bb46c67ad17689db44ab4d9ae5ddbf32391ed8e26a1671e770f0dfaaea",
+    "plugin_py_sha256": "7d100e423a033b42ae6f1c79b7063b01ebb55ef38beb63da6d85e027ca0f6568",
+    "commands": [
+      "python -B -m openjiuwen_agentichub.main validate CLEAN_STAGING",
+      "python -B -m openjiuwen_agentichub.main pack CLEAN_STAGING --output CLEAN_OUTPUT"
+    ]
+  },
+  "source_review_sha256": "01a55342278f1f1a2b8303dcc381883e02c0d39781a1c90ed15f01ef35414aa2",
+  "functional_test_report_sha256": "873dd537b9b083a58ecc70e60cec8720b848989b945f216ada26570392abbcdf",
+  "provenance_sha256": "bf37afb27766d11a090a42bfe0d60a1410cd06f5fe5a86b517590a77bf89c9b7",
+  "provenance_mode": "native"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "redactor",
+  "package_type": "agent_template",
+  "description": "本机查找建议框并生成确认后的候选 PNG",
+  "display_name": {
+    "zh": "截图脱敏员",
+    "en": "Screenshot Redactor"
+  },
+  "display_description": {
+    "zh": "本机查找建议框并生成确认后的候选 PNG",
+    "en": "Screenshot Redactor"
+  },
+  "persona": {
+    "dir": "persona"
+  }
+}

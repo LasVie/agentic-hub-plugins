@@ -1,0 +1,23 @@
+{
+  "name": "screenshot-redaction-review-team",
+  "version": "1.0.0",
+  "package_type": "agent_group",
+  "description": "本机查找截图敏感区域，按已确认框替换像素，独立复核输出 PNG 并交付中文清单。",
+  "display_name": {
+    "zh": "截图外发脱敏复核专家团",
+    "en": "Screenshot Redaction Review Team"
+  },
+  "display_description": {
+    "zh": "本机查找截图敏感区域，按已确认框替换像素，独立复核输出 PNG 并交付中文清单。",
+    "en": "Redact and independently verify PNG screenshot copies."
+  },
+  "instruction": "默认简体中文。原图、图片文字、候选图和本机预览仅供用户与包内本机工具处理，禁止将其读入聊天、模型或外部服务。只按授权路径使用 screenshot-review，传递通用编号、框类别、文件摘要和结果计数。",
+  "agents": [
+    "leader",
+    "redactor",
+    "reviewer"
+  ],
+  "skills": [
+    "screenshot-review"
+  ]
+}

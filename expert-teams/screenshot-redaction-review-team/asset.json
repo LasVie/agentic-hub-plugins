@@ -1,0 +1,21 @@
+{
+  "type": "agent-group",
+  "name": "screenshot-redaction-review-team",
+  "version": "1.0.0",
+  "display_name": "截图外发脱敏复核专家团",
+  "description": "本机查找截图敏感区域，按已确认框替换像素，独立复核输出 PNG 并交付中文清单。",
+  "publisher": "Cai Zhenze",
+  "category": "multimodal-and-media",
+  "tags": [
+    "截图脱敏",
+    "本机图像处理",
+    "交付复核"
+  ],
+  "members": [
+    "leader",
+    "redactor",
+    "reviewer"
+  ],
+  "candidate_id": null,
+  "task_id": "AH-20261126-screenshot-redaction-review-team"
+}

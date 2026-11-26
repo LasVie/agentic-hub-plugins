@@ -1,0 +1,82 @@
+{
+  "frontend_http": 200,
+  "native_sha256": "378f693a26709fd353bdb4b49f37a204cff21f083a8e8c2f81abd9a1aacf3f2c",
+  "payload": {
+    "README.md": "d6a40f9d8bfa10b2addced2ea3f901e20f6997b2996dcc4fe4dab4b40761979b",
+    "agents/leader/AGENT.md": "b1596ffa6f55fde2c86a02cc3667fdc29d26584207c43c38e4b415d9a5695f75",
+    "agents/leader/manifest.json": "6d247e74c0a49a166d10815bc7a3dc5b38e186d455c91546da4772958f3b1b5e",
+    "agents/leader/persona/leader.md": "99d3ccef2ba5d214d2ca78acffa7d4d2165ad2d568a8de159a05713339e1ed1a",
+    "agents/redactor/manifest.json": "6bce1a8124ba34bb1a9bcd4f3e916925d3360a70b26feb2f74e29eec281b13c0",
+    "agents/redactor/persona/redactor.md": "4bdec6df5041d42207c4b1101fc7f911ce183412af3f7d3d7388c8369583c422",
+    "agents/reviewer/manifest.json": "b2623fd6f25150cf53d4b7f246321947a93edfc4cbabe18332a3d5544923c2a3",
+    "agents/reviewer/persona/reviewer.md": "ec27b82eedd3473167e400c4e5d210d880eda479cdf38857b227611b81804ce1",
+    "manifest.json": "69e51d624ae01ae84652afa6cf9a2cb60f9d4d6e6e513c4fc4281a1b1370dbed",
+    "skills/screenshot-review/SKILL.md": "efe8984ba4e0bd36ebae1c1f802cf8f85c19b4c5bb17555a9aed368d450beb81",
+    "skills/screenshot-review/confirm.html": "14d30860046b55da90b283d522f3e13f9a12828afe5951421c5865365b6e4bfb",
+    "skills/screenshot-review/scripts/review.swift": "d9fbcf1748a719b2ed5602213d1b5e8795059fe8a462f2bccfeb8c3275a563fa"
+  },
+  "group": "screenshot-redaction-review-team",
+  "member_ids": [
+    "leader",
+    "redactor",
+    "reviewer"
+  ],
+  "version": "1.0.0",
+  "installed_equal": true,
+  "model_calls": "loopback fixed responses only",
+  "boundary": "Real host and tool execution with fixed local responses; no semantic model or manual pass.",
+  "session_id": "web_1a216d4b376_ac28cfa17149",
+  "status": "one verified PNG and one held image",
+  "held": [
+    "image-01"
+  ],
+  "verified_output_sha256": {
+    "image-02.png": "971a49c43238a31788dc500d9f075a0eb94e8dcdc5f8633d3f0cb7f173f09046"
+  },
+  "role_execution": {
+    "leader": {
+      "requests": 7,
+      "tools": [
+        "bash",
+        "build_team",
+        "create_task",
+        "skill_tool"
+      ],
+      "real_command_exit": 0
+    },
+    "scan": {
+      "requests": 5,
+      "tools": [
+        "bash",
+        "claim_task",
+        "skill_tool"
+      ],
+      "real_command_exit": 0
+    },
+    "redaction": {
+      "requests": 5,
+      "tools": [
+        "bash",
+        "claim_task",
+        "skill_tool"
+      ],
+      "real_command_exit": 0
+    },
+    "audit": {
+      "requests": 5,
+      "tools": [
+        "bash",
+        "claim_task",
+        "skill_tool"
+      ],
+      "real_command_exit": 0
+    }
+  },
+  "actual_upstream_receipts_verified": true,
+  "source_pixels_and_ocr_text_absent_from_fixture_model_context": true,
+  "events": 201,
+  "request_count": 22,
+  "approval_source": "preauthorized synthetic fixture, not manual testing",
+  "human_testing_passed": false,
+  "semantic_acceptance": false
+}
