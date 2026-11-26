@@ -1,0 +1,13 @@
+test_chinese_help_and_missing_argument (__main__.RestockTests) ... ok
+test_complete_weekly_case (__main__.RestockTests) ... ok
+test_exact_fit_and_fewer_packages_breaks_tie (__main__.RestockTests) ... ok
+test_existing_output_is_preserved (__main__.RestockTests) ... ok
+test_invalid_inputs_do_not_create_intake (__main__.RestockTests) ... ok
+test_same_day_supply_and_next_shop_boundary (__main__.RestockTests) ... ok
+test_stale_and_altered_evidence_blocks_delivery (__main__.RestockTests) ... ok
+test_uncertainty_and_pack_constraints (__main__.RestockTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 1.101s
+
+OK

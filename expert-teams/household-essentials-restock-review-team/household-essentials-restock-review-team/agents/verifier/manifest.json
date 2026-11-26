@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "verifier",
+  "description": "独立核算每日库存下限、包装和存放约束",
+  "display_name": {
+    "zh": "独立补货核验员",
+    "en": "Independent Restock Verifier"
+  },
+  "display_description": {
+    "zh": "独立核算每日库存下限、包装和存放约束",
+    "en": "Independent Restock Verifier"
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/restock-verification",
+      "mode": "all"
+    }
+  ]
+}

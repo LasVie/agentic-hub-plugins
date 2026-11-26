@@ -1,0 +1,38 @@
+{
+  "as_of": "2026-11-23",
+  "next_shop": "2026-11-30",
+  "items": [
+    {
+      "name": "厨房垃圾袋",
+      "unit": "个",
+      "daily_use": 1,
+      "stock": [{"qty": 4}],
+      "packs": [{"qty": 10}, {"qty": 20}]
+    },
+    {
+      "name": "卷纸",
+      "unit": "卷",
+      "daily_use": 1,
+      "stock": [{"qty": 2}],
+      "arrivals": [{"date": "2026-11-27", "qty": 6, "status": "confirmed"}],
+      "packs": [{"qty": 2}, {"qty": 6}],
+      "capacity": 6
+    },
+    {
+      "name": "吸尘器集尘袋",
+      "unit": "只",
+      "variant": "V12",
+      "daily_use": 0.2,
+      "stock": [{"qty": 3, "variant": "V10"}],
+      "packs": [{"qty": 4}, {"qty": 5, "variant": "V10"}]
+    },
+    {
+      "name": "洗碗块",
+      "unit": "块",
+      "daily_use": 1,
+      "stock": [{"qty": 7}],
+      "arrivals": [{"date": "2026-11-24", "qty": 10, "status": "pending"}],
+      "packs": [{"qty": 10}]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "agent-group",
+  "name": "household-essentials-restock-review-team",
+  "version": "1.0.0",
+  "display_name": "家庭日用品补货核验专家团",
+  "description": "按可用库存、日耗和确认到货核对缺货，复核整包补货数量与存放上限。",
+  "publisher": "Cai Zhenze",
+  "category": "productivity",
+  "tags": [
+    "家庭日用品",
+    "补货清单",
+    "独立核验"
+  ],
+  "members": [
+    "leader",
+    "inventory-analyst",
+    "verifier"
+  ],
+  "candidate_id": null,
+  "task_id": "AH-20261126-household-essentials-restock-review-team"
+}
