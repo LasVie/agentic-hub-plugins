@@ -1,0 +1,9 @@
+{
+  "approved_duration": "00:00:12,000",
+  "revised_duration": "00:00:07,000",
+  "edits": [
+    {"start": "00:00:00,000", "end": "00:00:03,000", "new_duration_ms": 0},
+    {"start": "00:00:05,000", "end": "00:00:07,000", "new_duration_ms": 0},
+    {"start": "00:00:09,000", "end": "00:00:10,000", "new_duration_ms": 1000}
+  ]
+}

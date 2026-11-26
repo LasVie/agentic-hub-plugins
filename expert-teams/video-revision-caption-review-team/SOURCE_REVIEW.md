@@ -1,0 +1,12 @@
+# Source and license review
+
+Cai Zhenze approved independent development in the current Codex conversation on 2026-11-26. Video Revision Caption Review Team → 视频改版字幕核验专家团 → video-revision-caption-review-team. Candidate Not Applicable. Task AH-20261126-video-revision-caption-review-team. Repository asset ID repo:agent-group:video-revision-caption-review-team.
+
+At kickoff the checked-out base was 84dab8912de1bf482b702bd1dace6c8cbf35a559. The live tracker and repository contained no matching development claim or delivery. Phase 1 read the public functional descriptions of the exact catalog versions below. It also inspected the repository description for video-channel-ops (PR #57 and the later 1.0.2 catalog entry), which runs a production workflow and checks the end of a caption track relative to video length.
+
+- Subtitle Authoring and Alignment applies a global offset or two-anchor linear transform to one SRT/VTT, preserves the text, and reports cue quality. This team compares two versions and explicit cut boundaries. [Catalog entry 1.0.0](https://agentichub.openjiuwen.com/assets/9747f29c6fc24747a7dd62ac5fbcc6e5?version=1.0.0)
+- Video Editing and Subtitle Delivery cuts one window, adapts the subtitle track for that render, and verifies output media parameters. It does not review cue provenance across two export versions. [Catalog entry 1.0.0](https://agentichub.openjiuwen.com/assets/ed451127c9a94fd49a46643bcc07acff?version=1.0.0)
+- Media Delivery Preflight inspects video/audio parameters, black frames, freezes and silence. [Catalog entry 1.0.0](https://agentichub.openjiuwen.com/assets/2f8ada3788034ccb90ef4417d60707ee?version=1.0.0)
+- Douyin Short Video Analysis turns a supplied link into transcripts, summaries and creative materials. [Catalog entry 1.1.0](https://agentichub.openjiuwen.com/assets/5d2a89037a3541b792015ba5d879687a?version=1.1.0)
+
+Native development from those functional descriptions and the approved workflow. No upstream packages or implementations were downloaded or adapted. The shipped Python, prompts, documentation, and fictional input assets are original. No third-party code, fonts, images, media, datasets or runtime packages are distributed. Python's standard library and WorkSwarm's existing task, messaging, file and command tools are runtime prerequisites. The pinned official SkillHub CLI is external build tooling. Existing repository packaging and isolated host test helpers are used outside the runtime payload. Repository-wide licensing remains with the Project Lead.

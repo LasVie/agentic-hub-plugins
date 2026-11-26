@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "verifier",
+  "description": "先从已确认字幕和剪辑记录封存基线，再独立复核改版方案。",
+  "display_name": {
+    "zh": "独立字幕核验员",
+    "en": "Independent Caption Verifier"
+  },
+  "display_description": {
+    "zh": "先从已确认字幕和剪辑记录封存基线，再独立复核改版方案。",
+    "en": "Independent Caption Verifier"
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/caption-verification",
+      "mode": "all"
+    }
+  ]
+}

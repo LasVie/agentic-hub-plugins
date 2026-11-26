@@ -1,0 +1,70 @@
+{
+  "asset": "video-revision-caption-review-team",
+  "type": "agent-group",
+  "version": "1.0.0",
+  "task_id": "AH-20261126-video-revision-caption-review-team",
+  "tool": {
+    "name": "official agentichub CLI",
+    "version": "0.0.1",
+    "commit": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+    "checks": [
+      {
+        "command": "validate",
+        "exit": 0
+      },
+      {
+        "command": "pack",
+        "exit": 0
+      }
+    ]
+  },
+  "payload_sha256": {
+    "README.md": "b5aa1a2a1577647e5962aa4e1628ac4663e89cc1528ccd7a5754d2c32af458ee",
+    "agents/leader/AGENT.md": "92d61301853714f5b863d40e8aa01f7189be7d0400c0f479c248565512d6c704",
+    "agents/leader/manifest.json": "02a889f9b70a1c9e55593139dd93cc6a7f73ccdf003cd147f1b5b3ac3b841861",
+    "agents/leader/persona/role.md": "f548baefec20d15b3fb1dadaa5d9393b0259d9290605618f4d5368cd94a3137b",
+    "agents/leader/skills/caption-delivery/SKILL.md": "1941f178261e553d3aad152499fc0875a2597ff7ce937df5d3de65ddb57edfe6",
+    "agents/timeline-analyst/manifest.json": "6f9d35e7660cf65070e6b22972c10c1bc9ad93e3f74e0ef99cc8532ae13b8c5f",
+    "agents/timeline-analyst/persona/role.md": "38a6f982232b60772512dcee584a0cd7a25e50aa4c1f0e487e20b8d87208b3e3",
+    "agents/timeline-analyst/skills/caption-timeline/SKILL.md": "842b40dd4dbfe24d8aeef2f39f6bf2eaefcf5f371bed4a1bfc0dfc12118dbc17",
+    "agents/verifier/manifest.json": "8d836a1e322aa99e32873fe3def8bfd76296e6f97715a2c4e79b264b28fa3c91",
+    "agents/verifier/persona/role.md": "3bdd262bdf394335abeb9c02149a375f885b9b560021951903ca2b44857f0276",
+    "agents/verifier/skills/caption-verification/SKILL.md": "a24fa68c313f57b43622691c3e9a63505080edd86663cf5ec03c6b9e9c7dc547",
+    "examples/approved.srt": "9b44296324e076e20237c10fbdbffb934e543ffdbf1f60031946cd7adc7f1beb",
+    "examples/edits.json": "efc99007a39cdffac6b0fb6d62cba27d9e52c6238ebeb37401b10f2bcc5fa5f6",
+    "examples/intro-only-edits.json": "3509da4d65601f0d7af6fcc70074bddd30c2039273beb2c0e1fa0c2003d9183e",
+    "examples/intro-only.srt": "54375204a73798b307f20b69433a87beb22e0961157bd667a91849007426ec87",
+    "examples/revised.srt": "f28c2c57153694dcf44e0ef2112cda140c802ee645c0022fe9ec0eaa09dded38",
+    "manifest.json": "cbd319297b459a0b9c2945a7774ec44252c049ec1f1f898aac9bba073570e8c4",
+    "skills/caption-evidence/SKILL.md": "e94b26d998ef67b8b3082e47fdf134ad187c6940ad9f7fe2f461822adf34ee7e",
+    "skills/caption-evidence/scripts/captions.py": "3f1d55194cba0fa0911ccb3d52944036ce385b55d40623313f1731e4ce06f3e3",
+    "skills/caption-evidence/scripts/inputs.py": "1ac0be56f8ec55e0e5af460062b38c89b3c908eb4c6e9e3fc99eda40c3004426",
+    "skills/caption-evidence/scripts/timeline.py": "cc7e58ab57b9f9fd6dc2eb35fdc61d3099497f6037d595fcb94755d72030dd6d"
+  },
+  "payload_equality": true,
+  "artifacts": {
+    "native": {
+      "path": "test-packages/video-revision-caption-review-team-1.0.0-native.zip",
+      "sha256": "840382bb741fdf026fc5d8b664d26f75510629aab466c37720a491b7fbdc44b2",
+      "bytes": 35968
+    },
+    "wrapped": {
+      "path": "release/1.0.0/video-revision-caption-review-team-1.0.0-agent-group.zip",
+      "sha256": "cf6f7d471e668b35f21350a60cba08ff5476bf1fdb9e531d01b8cbd9d6a3c6fc",
+      "bytes": 21373
+    }
+  },
+  "records_sha256": {
+    "SOURCE_REVIEW.md": "5788031d9b0ddc9a898dcfb3556dc57b45f3f418dc08c10d737446be9ab6c8af",
+    "NATIVE_DESIGN.md": "72bf9e8fa08ed4c74775690d5f4fd8e40bc0037fc2800ed6a79f9be12a95d90a",
+    "MANUAL_TESTING.md": "e02915f1a6dde09285b741508e8f88d596962cff16e27c1b4f31e04e0cca8c37",
+    "TEST_REPORT.md": "6f183a80900fa76674e2d41795fe9f08e57c6df39e0afc20bb1d3d174052fa0c",
+    "provenance.json": "9403f906cf9e8523f9113f645b9b3eb0d9351aa3158e83e93e883533edd827ce",
+    "tests/records/extracted-tests.txt": "415b508ba0128d394d33c8d834280fc54e6388e22be9a91dd4d2d74e1d48d446",
+    "tests/records/host-creator.json": "bb5fbd1820de853d128783b70531e6a1f82151d92af3ed4c94dd1221836ae663",
+    "tests/records/host-execution.json": "e9915f859ca5627422c5c8f2c573b8d43d07a10e64cb3b6fecc28995a2820f65",
+    "tests/records/host-import.json": "df8becc2e1d1b22ed4e3f0396ca00891faa2590b294e4a9dfc8df4e30006711c",
+    "tests/records/package-preflight.txt": "cffcdede086635584579f39ca4c2f3d010cf64c671c7b00db7226ce9664fa8f9",
+    "tests/records/source-tests.txt": "f5d87e609afefb67e1048ca19eceea0dde99fa98cad68dfdd746dbaeb6130ce9"
+  }
+}

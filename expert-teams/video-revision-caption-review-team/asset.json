@@ -1,0 +1,22 @@
+{
+  "type": "agent-group",
+  "name": "video-revision-caption-review-team",
+  "version": "1.0.0",
+  "display_name": "视频改版字幕核验专家团",
+  "description": "对照已确认与改版 SRT，核验剪辑后的字幕去向和时间，生成复核清单。",
+  "publisher": "Cai Zhenze",
+  "category": "multimodal-and-media",
+  "tags": [
+    "字幕",
+    "视频改版",
+    "时间轴",
+    "独立核验"
+  ],
+  "members": [
+    "leader",
+    "timeline-analyst",
+    "verifier"
+  ],
+  "candidate_id": null,
+  "task_id": "AH-20261126-video-revision-caption-review-team"
+}
