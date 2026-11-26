@@ -1,0 +1,168 @@
+{
+  "task_id": "AH-20261120-weekly-timesheet-review-team",
+  "version": "1.0.0",
+  "native_zip_sha256": "a2b935f8070ba58a82d1036d80592e92baa2b9f9afa502e84f694182aa4f4786",
+  "wrapped_zip_sha256": "06f15e09ce45c13319ec3cbb477c41f12fb7437273ffdaf2f32aa921bd9860e7",
+  "native_payload_files_matching_source_wrapped_and_local_installations": 11,
+  "packaged_member_ids": [
+    "leader",
+    "analyst",
+    "reviewer"
+  ],
+  "manual_runtime_final_delivery_assignee": "delivery-auditor",
+  "manual_receipts": {
+    "baseline": {
+      "task_id": "baseline-v100-1",
+      "role": "reviewer",
+      "receipt_sha256": "31237286103958765ac34847d4a10aceed7d85b0c29431211c2df0cc4c6c8ebc",
+      "report_sha256": "58e4a0bcb96787601198bee42025b006112863ba63c1889f39a1e37037b79182"
+    },
+    "analysis": {
+      "task_id": "analysis-v100-1",
+      "role": "analyst",
+      "receipt_sha256": "d4f39a71deadbacef6d28b0e89ba05a1e9092fa8e6752e53d93a318260ef9565",
+      "report_sha256": "2e352d41420e5917344190bd7133c24a5e0352d452a6c55701e3c0526ae5fb37"
+    },
+    "review": {
+      "task_id": "review-v100-1",
+      "role": "reviewer",
+      "receipt_sha256": "157c381b511d864010876a9418e2af4615b687f6895044e3f823a506877d5122",
+      "report_sha256": "7e4d524a04c21537e58b036258ee16116786339a3baf3b803eda720ef0a98c65"
+    }
+  },
+  "manual_bundle_file_sha256": {
+    "artifact.json": "0501a6f363f8383569cc08c1bba8d65a7d76ea8659028684423d7afa43bf7314",
+    "checklist.html": "d2c5fb337b3d0d16ae15242588b9f9ebec9e903ee2bab96fe5e366886282fa15",
+    "evaluation.json": "55dfd091c735fff28257d7ad3a5a5737cc69a5c3d6985d8130aa4b39e2ac1d7b",
+    "inputs/analysis.json": "2e352d41420e5917344190bd7133c24a5e0352d452a6c55701e3c0526ae5fb37",
+    "inputs/baseline.json": "58e4a0bcb96787601198bee42025b006112863ba63c1889f39a1e37037b79182",
+    "inputs/entries.csv": "cf99288697576b9bbbffe68ea6676a1a26a0ca07e75fb59f41f316f590af1201",
+    "inputs/review.json": "7e4d524a04c21537e58b036258ee16116786339a3baf3b803eda720ef0a98c65",
+    "inputs/week.json": "35d0a45097a1c06c0fbe95ce167652fb3a5f89fd25142ec66610960e0a469dbe"
+  },
+  "manual_bundle_reproduced_byte_for_byte": true,
+  "result": {
+    "days": {
+      "2026-11-16": 105,
+      "2026-11-17": 155,
+      "2026-11-18": 0,
+      "2026-11-19": 0,
+      "2026-11-20": 0,
+      "2026-11-21": 0,
+      "2026-11-22": 0
+    },
+    "findings": [
+      {
+        "code": "invalid_time",
+        "message": "起止日期时间缺失或无效",
+        "rows": [
+          8
+        ]
+      },
+      {
+        "code": "outside_week",
+        "message": "周内没有工作分钟",
+        "rows": [
+          9
+        ]
+      },
+      {
+        "code": "duplicate",
+        "message": "原始记录重复，请核对保留哪一行",
+        "rows": [
+          4,
+          5
+        ]
+      },
+      {
+        "code": "overlap",
+        "message": "工时重叠，请核对各行实际归属",
+        "minutes": 30,
+        "rows": [
+          2,
+          3
+        ]
+      },
+      {
+        "code": "expected_day_unconfirmed",
+        "date": "2026-11-18",
+        "message": "预计日期没有可汇总工时，请核实记录",
+        "rows": []
+      }
+    ],
+    "held_rows": [
+      2,
+      3,
+      4,
+      5,
+      8
+    ],
+    "included_minutes": 260,
+    "projects": {
+      "周报": 50,
+      "夜班支持": 210
+    },
+    "rows": [
+      {
+        "days": {
+          "2026-11-16": 120
+        },
+        "included": false,
+        "minutes": 120,
+        "project": "客户甲",
+        "row": 2
+      },
+      {
+        "days": {
+          "2026-11-16": 60
+        },
+        "included": false,
+        "minutes": 60,
+        "project": "内部例会",
+        "row": 3
+      },
+      {
+        "days": {
+          "2026-11-16": 60
+        },
+        "included": false,
+        "minutes": 60,
+        "project": "文档整理",
+        "row": 4
+      },
+      {
+        "days": {
+          "2026-11-16": 60
+        },
+        "included": false,
+        "minutes": 60,
+        "project": "文档整理",
+        "row": 5
+      },
+      {
+        "days": {
+          "2026-11-16": 105,
+          "2026-11-17": 105
+        },
+        "included": true,
+        "minutes": 210,
+        "project": "夜班支持",
+        "row": 6
+      },
+      {
+        "days": {
+          "2026-11-17": 50
+        },
+        "included": true,
+        "minutes": 50,
+        "project": "周报",
+        "row": 7
+      }
+    ],
+    "status": "reviewed_with_holds"
+  },
+  "confirmation_report_id": "RPT-20261126-weekly-timesheet-review-team-user-confirmation",
+  "recorded_at": "2026-11-26T15:28:35+08:00",
+  "source_functional_tests": 12,
+  "extracted_native_functional_tests": 12
+}
