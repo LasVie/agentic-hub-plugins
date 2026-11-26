@@ -1,0 +1,78 @@
+{
+  "asset_id": "repo:agent-group:screenshot-redaction-review-team",
+  "task_id": "AH-20261126-screenshot-redaction-review-team",
+  "candidate_id": "Not Applicable",
+  "display_name": "截图外发脱敏复核专家团",
+  "version": "1.0.0",
+  "native_test_zip_sha256": "378f693a26709fd353bdb4b49f37a204cff21f083a8e8c2f81abd9a1aacf3f2c",
+  "wrapped_zip_sha256": "929ab5af53203cc61f4e807becc1bcb85c49d1eb106ec5b253edf50b5a3fe3bd",
+  "confirmation_report_id": "RPT-20261126-screenshot-redaction-review-team-user-confirmation",
+  "recorded_at": "2026-11-26T16:35:10+08:00",
+  "source": "Seven original PNG attachments from Cai Zhenze's explicit test-pass message in the current Codex conversation",
+  "content": "Real WorkSwarm manual-test session and synthetic PNG fixtures with reserved .test domains",
+  "screenshots": [
+    {
+      "file": "originals/01-scan-and-tasks.png",
+      "original_filename": "Screenshot 2026-11-26 at 4.26.13 PM.png",
+      "width": 3324,
+      "height": 1912,
+      "bytes": 960146,
+      "sha256": "433f21f06d717e3daec17c63ca555e3593ac070fc275dd25aecfdfcf23340c39",
+      "subject": "Installed v1.0.0 preflight, local email scan and task chronology"
+    },
+    {
+      "file": "originals/02-approval-handoff.png",
+      "original_filename": "Screenshot 2026-11-26 at 4.26.27 PM.png",
+      "width": 3324,
+      "height": 1914,
+      "bytes": 883758,
+      "sha256": "fde59a5ef9d7208dc370420d8ab5778da85bc88d8e8e4299648b65bad98028cf",
+      "subject": "User approval handoff and real WorkSwarm participants"
+    },
+    {
+      "file": "originals/03-completed-tasks.png",
+      "original_filename": "Screenshot 2026-11-26 at 4.26.38 PM.png",
+      "width": 3332,
+      "height": 1904,
+      "bytes": 695120,
+      "sha256": "47a7f15a57122fa142994f6087a90f9c1f3d2a339ee21c30ec4edad028e4c671",
+      "subject": "Five completed WorkSwarm tasks and local delivery result"
+    },
+    {
+      "file": "originals/04-delivery-receipts.png",
+      "original_filename": "Screenshot 2026-11-26 at 4.26.51 PM.png",
+      "width": 3318,
+      "height": 1908,
+      "bytes": 905027,
+      "sha256": "4df94adcb996f4da7ce30d9e845e539deaaa322ead095897da1503d476e17563",
+      "subject": "Delivery result and scan, render, verify and delivery receipts"
+    },
+    {
+      "file": "originals/05-approved-areas.png",
+      "original_filename": "Screenshot 2026-11-26 at 4.27.00 PM.png",
+      "width": 2262,
+      "height": 1806,
+      "bytes": 389192,
+      "sha256": "75a6e52c08472d5e4f7f65f12313ff4f49369784c98e74900b0f520daba7b7bd",
+      "subject": "Approved synthetic image with proposed email mask and protected error message"
+    },
+    {
+      "file": "originals/06-held-image.png",
+      "original_filename": "Screenshot 2026-11-26 at 4.27.48 PM.png",
+      "width": 2308,
+      "height": 1756,
+      "bytes": 376149,
+      "sha256": "e171c9d72395502b417a672fc26b38b4e8c0460f753ab225ef7cfadc2dacca61",
+      "subject": "Held synthetic image in local review"
+    },
+    {
+      "file": "originals/07-redacted-output.png",
+      "original_filename": "Screenshot 2026-11-26 at 4.28.36 PM.png",
+      "width": 1646,
+      "height": 972,
+      "bytes": 196989,
+      "sha256": "f5362532d5ab3d26cc3d3fad47f78e1c84f4ac1c718867055e20910486bd27ae",
+      "subject": "Reviewed PNG with opaque mask and preserved error message"
+    }
+  ]
+}

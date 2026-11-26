@@ -1,0 +1,16 @@
+{
+  "name": "leader",
+  "package_type": "agent_template",
+  "description": "确认范围，按真实任务回执协调复核与交付",
+  "display_name": {
+    "zh": "脱敏复核主理人",
+    "en": "Redaction Review Lead"
+  },
+  "display_description": {
+    "zh": "确认范围，按真实任务回执协调复核与交付",
+    "en": "Redaction Review Lead"
+  },
+  "persona": {
+    "dir": "persona"
+  }
+}

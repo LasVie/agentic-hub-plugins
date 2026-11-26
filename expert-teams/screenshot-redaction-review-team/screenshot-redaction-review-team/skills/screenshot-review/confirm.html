@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src blob:; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>确认截图脱敏区域</title>
+<style>
+:root{color-scheme:light;background:#f2f5f4;color:#162e34;font:16px/1.5 system-ui,sans-serif}
+*{box-sizing:border-box}body{margin:0}main{max-width:1120px;margin:auto;padding:26px}
+h1{margin:0;font-size:2rem}section{padding:16px;background:#fff;border:1px solid #bbcfc9;border-radius:12px;margin:16px 0}
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}label{font-weight:600}input,select,button{font:inherit}
+button,select{border:1px solid #91b4a9;border-radius:6px;padding:6px 10px;background:white;color:#183a37}
+button:disabled{opacity:.48}.primary{background:#226658;color:white}canvas{display:block;max-width:100%;height:auto;background:#e5ece8;touch-action:none;cursor:crosshair}
+small{color:#34585d}#status{min-height:1.5em}ul{padding-left:21px}li{margin:5px 0}
+fieldset{border:0;padding:0;margin:10px 0}hr{border:0;border-top:1px solid #d6e4df}
+</style>
+</head>
+<body><main>
+<h1>确认截图脱敏区域</h1>
+<p>先选扫描 JSON，再选原图。页面在本机核对摘要。逐张检查画面，拖动补画遮盖框或保留框。</p>
+<section class="row">
+<label>扫描 JSON <input id="scan" type="file" accept=".json"></label>
+<label>原 PNG <input id="photos" type="file" accept="image/png,.png" multiple disabled></label>
+<button class="primary" id="save" disabled>保存确认 JSON</button>
+</section>
+<p id="status" role="status" aria-live="polite">等待扫描 JSON。</p>
+<section id="work" hidden>
+<div class="row">
+<label>截图 <select id="choice"></select></label>
+<label>拖动用途 <select id="mode"><option value="mask">补画遮盖框</option><option value="keep">标记保留区域</option></select></label>
+<button id="undo">撤销最后手绘框</button>
+</div>
+<p><small>黄色为本机建议，红色为补画遮盖框，绿色为保留区域。调整任何框后须重新确认。</small></p>
+<canvas id="canvas" aria-label="当前截图与遮盖区域"></canvas>
+<ul id="suggestions"></ul>
+<div class="row">
+<label><input id="checked" type="checkbox"> 我已检查整张原图并同意这些遮盖区域</label>
+<button id="hold">暂缓这张</button>
+</div>
+</section>
+</main>
+<script>
+const get = id => document.getElementById(id);
+const scanFile = get("scan"), photos = get("photos"), choice = get("choice"), canvas = get("canvas");
+const ctx = canvas.getContext("2d");
+let scan, scanSHA256, selected, drag, generation = 0, paintGeneration = 0;
+const files = new Map(), drafts = new Map();
+const descriptions = {email:"电子邮件",phone:"疑似电话号码",url:"网址",account:"疑似账号"};
+const toHex = bytes => Array.from(new Uint8Array(bytes), x => x.toString(16).padStart(2,"0")).join("");
+async function hash(bytes) { return toHex(await crypto.subtle.digest("SHA-256",bytes)); }
+function status(text) { get("status").textContent = text; }
+function currentImage() { return scan?.images.find(item => item.id === selected); }
+function activeDraft() { return drafts.get(selected); }
+function refreshChoices() {
+  for (const option of choice.options) {
+    const draft = drafts.get(option.value);
+    const file = files.has(scan.images.find(x=>x.id===option.value).sha256);
+    option.textContent = option.value + (draft.checked ? " · 已确认" : file ? " · 暂缓" : " · 未选原图");
+  }
+}
+function boxValid(b, w, h) {
+  return b && [b.x,b.y,b.w,b.h].every(Number.isSafeInteger) &&
+    b.x >= 0 && b.y >= 0 && b.w > 0 && b.h > 0 && b.x + b.w <= w && b.y + b.h <= h;
+}
+function invalidate() {
+  activeDraft().checked = false;
+  get("checked").checked = false;
+  refreshChoices();
+}
+async function draw() {
+  const serial = ++paintGeneration;
+  const spec = currentImage(), draft = activeDraft();
+  const file = spec && files.get(spec.sha256);
+  if (!file) { canvas.hidden = true; return; }
+  canvas.hidden = false;
+  const picture = await createImageBitmap(file);
+  try {
+    if (serial !== paintGeneration) return;
+    if (picture.width !== spec.width || picture.height !== spec.height) throw Error("图像尺寸不符");
+    canvas.width = spec.width;
+    canvas.height = spec.height;
+    ctx.drawImage(picture,0,0);
+    ctx.lineWidth = Math.max(3,spec.width/450);
+    const groups = [
+      [spec.suggestions.filter((_,i)=>!draft.dismissed.has(i)).map(x=>x.box),"#f6c646"],
+      [draft.manual.filter(x=>x.mode==="mask").map(x=>x.box),"#eb4c41"],
+      [draft.manual.filter(x=>x.mode==="keep").map(x=>x.box),"#13ad7e"],
+    ];
+    for (const [boxes,color] of groups) {
+      ctx.strokeStyle = color;
+      for (const b of boxes) ctx.strokeRect(b.x,b.y,b.w,b.h);
+    }
+    if (drag?.end) {
+      ctx.strokeStyle="#ffffff";
+      ctx.strokeRect(drag.start.x,drag.start.y,drag.end.x-drag.start.x,drag.end.y-drag.start.y);
+    }
+  } finally { picture.close(); }
+}
+function repaint() { draw().catch(()=>status("无法显示原图。")); }
+function show() {
+  const item = currentImage(), draft = activeDraft();
+  const found = files.has(item.sha256);
+  get("checked").disabled = !found;
+  get("checked").checked = draft.checked;
+  const list = get("suggestions");
+  list.replaceChildren();
+  item.suggestions.forEach((s,i)=>{
+    const li = document.createElement("li"), label = document.createElement("label");
+    const input = document.createElement("input");
+    input.type = "checkbox";
+    input.checked = draft.dismissed.has(i);
+    input.disabled = !found;
+    input.addEventListener("change",()=>{
+      if(input.checked) draft.dismissed.add(i); else draft.dismissed.delete(i);
+      invalidate(); repaint();
+    });
+    label.append(input, " 确认忽略建议 " + (i+1) + " · " + descriptions[s.kind] + " · 左上像素 " + s.box.x + ", " + s.box.y);
+    li.append(label); list.append(li);
+  });
+  repaint();
+}
+scanFile.addEventListener("change",async ()=>{
+  const n = ++generation;
+  files.clear(); drafts.clear(); scan = undefined; drag = undefined;
+  get("work").hidden = true;
+  get("save").disabled = true;
+  photos.value = ""; photos.disabled = true;
+  const file = scanFile.files[0];
+  if (!file) { status("等待扫描 JSON。"); return; }
+  try {
+    if(file.size > 2000000) throw Error();
+    const data = await file.arrayBuffer();
+    const parsed = JSON.parse(new TextDecoder().decode(data));
+    if (parsed.version !== "1.0.0" || !Array.isArray(parsed.images) || parsed.images.length < 1 || parsed.images.length > 12) throw Error();
+    if (!parsed.images.every((s,i)=>s.id==="image-"+String(i+1).padStart(2,"0") &&
+      /^[0-9a-f]{64}$/.test(s.sha256) && Number.isInteger(s.width) && Number.isInteger(s.height) &&
+      s.width>0 && s.height>0 && s.width<=6000 && s.height<=6000 && s.width*s.height<=16000000 &&
+      Array.isArray(s.suggestions) && s.suggestions.length<=200 &&
+      s.suggestions.every(a=>Object.hasOwn(descriptions,a.kind) && boxValid(a.box,s.width,s.height)))) throw Error();
+    const checksum = await hash(data);
+    if(n!==generation) return;
+    scan=parsed; scanSHA256=checksum;
+    choice.replaceChildren();
+    for(const item of scan.images) {
+      drafts.set(item.id,{checked:false,manual:[],dismissed:new Set()});
+      choice.add(new Option(item.id,item.id));
+    }
+    selected = scan.images[0].id;
+    photos.disabled=false;
+    get("work").hidden=false;
+    status("请选择扫描对应的原 PNG。");
+    refreshChoices(); show();
+  } catch { status("扫描 JSON 不可用，请核对版本或使用支持本地摘要校验的浏览器。"); }
+});
+photos.addEventListener("change",async ()=>{
+  const n=generation, chosen=Array.from(photos.files);
+  if(chosen.length>12){status("每批最多选择 12 张。");return;}
+  let skipped=0;
+  for(const file of chosen){
+    if(file.size>33554432){skipped++;continue;}
+    const digest=await hash(await file.arrayBuffer());
+    if(n!==generation)return;
+    if(scan.images.some(spec=>spec.sha256===digest)) files.set(digest,file); else skipped++;
+  }
+  const present=scan.images.filter(spec=>files.has(spec.sha256)).length;
+  status("已核对 "+present+" 张。"+(skipped ? " 本次有 "+skipped+" 张不匹配或过大。" : ""));
+  get("save").disabled = !present;
+  refreshChoices(); show();
+});
+choice.addEventListener("change",()=>{ selected=choice.value; drag=undefined; show(); });
+function point(event) {
+  const rect=canvas.getBoundingClientRect();
+  return {x:Math.round(Math.max(0,Math.min(canvas.width,(event.clientX-rect.left)*canvas.width/rect.width))),
+          y:Math.round(Math.max(0,Math.min(canvas.height,(event.clientY-rect.top)*canvas.height/rect.height)))};
+}
+canvas.addEventListener("pointerdown",event=>{
+  if(get("checked").disabled || event.button!==0)return;
+  canvas.setPointerCapture(event.pointerId); drag={start:point(event)};
+});
+canvas.addEventListener("pointermove",event=>{
+  if(drag){drag.end=point(event);repaint();}
+});
+canvas.addEventListener("pointerup",event=>{
+  if(!drag)return;
+  const a=drag.start,b=point(event);
+  drag=undefined;
+  const box={x:Math.min(a.x,b.x),y:Math.min(a.y,b.y),w:Math.abs(a.x-b.x),h:Math.abs(a.y-b.y)};
+  const list=activeDraft().manual;
+  if(list.length<200 && boxValid(box,canvas.width,canvas.height)){list.push({mode:get("mode").value,box});invalidate();}
+  repaint();
+});
+canvas.addEventListener("pointercancel",()=>{drag=undefined;repaint();});
+get("undo").addEventListener("click",()=>{if(activeDraft().manual.pop()){invalidate();repaint();}});
+get("hold").addEventListener("click",()=>{invalidate();});
+get("checked").addEventListener("change",()=>{
+  const draft=activeDraft();
+  const item=currentImage();
+  const masks=[...item.suggestions.filter((_,i)=>!draft.dismissed.has(i)).map(s=>s.box),...draft.manual.filter(x=>x.mode==="mask").map(x=>x.box)];
+  const keep=draft.manual.filter(x=>x.mode==="keep").map(x=>x.box);
+  const overlap=masks.some(m=>keep.some(k=>m.x<k.x+k.w&&k.x<m.x+m.w&&m.y<k.y+k.h&&k.y<m.y+m.h));
+  if(get("checked").checked && (overlap||masks.length>200)){
+    status("遮盖框与保留区重叠，或框数超过上限。请修正或暂缓。");
+    get("checked").checked=false;
+  }
+  draft.checked = get("checked").checked;
+  refreshChoices();
+});
+get("save").addEventListener("click",()=>{
+  const images=scan.images.map(spec=>{
+    const draft=drafts.get(spec.id), dismissed=[...draft.dismissed].sort((a,b)=>a-b);
+    const masks=[...spec.suggestions.filter((_,i)=>!draft.dismissed.has(i)).map(x=>x.box),...draft.manual.filter(x=>x.mode==="mask").map(x=>x.box)];
+    const keep=draft.manual.filter(x=>x.mode==="keep").map(x=>x.box);
+    return {id:spec.id,disposition:draft.checked?"approved":"held",masks:draft.checked?masks:[],keep,dismissed};
+  });
+  const url=URL.createObjectURL(new Blob([JSON.stringify({version:scan.version,scanSHA256,images},null,2)+"\n"],{type:"application/json"}));
+  const link=document.createElement("a");
+  link.href=url; link.download="approval.json"; link.click(); setTimeout(()=>URL.revokeObjectURL(url),1000);
+});
+</script>
+</body></html>

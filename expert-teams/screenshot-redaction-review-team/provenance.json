@@ -1,0 +1,35 @@
+{
+  "mode": "native",
+  "base": "b310a672ea017b734f01f2f91ce85bcdd9f0490f",
+  "asset_id": "repo:agent-group:screenshot-redaction-review-team",
+  "task_id": "AH-20261126-screenshot-redaction-review-team",
+  "candidate_id": "Not Applicable",
+  "official_category_preference": "Multimodal and Media",
+  "references": [
+    {
+      "url": "https://developer.apple.com/documentation/vision/recognizing-text-in-images",
+      "use": "API behavior",
+      "bundled_paths": []
+    },
+    {
+      "url": "https://www.w3.org/TR/png-3/",
+      "use": "PNG format",
+      "bundled_paths": []
+    },
+    {
+      "url": "https://github.com/openJiuwen-ai/skillhub",
+      "version": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+      "use": "External build and validation",
+      "bundled_paths": []
+    }
+  ],
+  "repository_build_harness_reuse": [
+    "expert-teams/laundry-load-review-team/tests/build_package.py",
+    "expert-teams/weekly-timesheet-review-team/tests/host_integration.py"
+  ],
+  "runtime_dependencies": [
+    "macOS with installed Swift and Vision, Core Graphics, ImageIO, CryptoKit",
+    "local browser",
+    "WorkSwarm AgentGroup file and shell task routing"
+  ]
+}
