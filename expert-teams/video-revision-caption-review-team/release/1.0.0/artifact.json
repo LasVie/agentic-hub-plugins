@@ -55,16 +55,18 @@
     }
   },
   "records_sha256": {
-    "SOURCE_REVIEW.md": "5788031d9b0ddc9a898dcfb3556dc57b45f3f418dc08c10d737446be9ab6c8af",
+    "SOURCE_REVIEW.md": "e858aaf3b6a730d32be8dc7bd3d2faa8d91fe6450e16eaa6c858857aba33452b",
     "NATIVE_DESIGN.md": "72bf9e8fa08ed4c74775690d5f4fd8e40bc0037fc2800ed6a79f9be12a95d90a",
     "MANUAL_TESTING.md": "e02915f1a6dde09285b741508e8f88d596962cff16e27c1b4f31e04e0cca8c37",
-    "TEST_REPORT.md": "6f183a80900fa76674e2d41795fe9f08e57c6df39e0afc20bb1d3d174052fa0c",
+    "TEST_REPORT.md": "5ad6fad35d357fe16b660a198b9c745a8ed09b6203332bd4af342060d394789a",
     "provenance.json": "9403f906cf9e8523f9113f645b9b3eb0d9351aa3158e83e93e883533edd827ce",
     "tests/records/extracted-tests.txt": "415b508ba0128d394d33c8d834280fc54e6388e22be9a91dd4d2d74e1d48d446",
     "tests/records/host-creator.json": "bb5fbd1820de853d128783b70531e6a1f82151d92af3ed4c94dd1221836ae663",
     "tests/records/host-execution.json": "e9915f859ca5627422c5c8f2c573b8d43d07a10e64cb3b6fecc28995a2820f65",
     "tests/records/host-import.json": "df8becc2e1d1b22ed4e3f0396ca00891faa2590b294e4a9dfc8df4e30006711c",
     "tests/records/package-preflight.txt": "cffcdede086635584579f39ca4c2f3d010cf64c671c7b00db7226ce9664fa8f9",
-    "tests/records/source-tests.txt": "f5d87e609afefb67e1048ca19eceea0dde99fa98cad68dfdd746dbaeb6130ce9"
+    "tests/records/source-tests.txt": "f5d87e609afefb67e1048ca19eceea0dde99fa98cad68dfdd746dbaeb6130ce9",
+    "evidence/1.0.0/index.json": "4fce83a1d15036d7c22edb0c5bf748641c8834dfd0d9c6bbd358b03a2ec96425",
+    "tests/records/phase3-verification.json": "f6bec19284efff30afad7f0b231d481181a670ec379b545c9ff79c67132f93b7"
   }
 }
