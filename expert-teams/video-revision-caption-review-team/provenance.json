@@ -1,0 +1,48 @@
+{
+  "mode": "native",
+  "candidate_id": "Not Applicable",
+  "task_id": "AH-20261126-video-revision-caption-review-team",
+  "asset_id": "repo:agent-group:video-revision-caption-review-team",
+  "base": "84dab8912de1bf482b702bd1dace6c8cbf35a559",
+  "references": [
+    {
+      "url": "https://github.com/openJiuwen-ai/skillhub",
+      "version": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+      "use": "external packaging CLI",
+      "bundled_paths": []
+    },
+    {
+      "url": "https://agentichub.openjiuwen.com/assets/9747f29c6fc24747a7dd62ac5fbcc6e5?version=1.0.0",
+      "version": "1.0.0",
+      "use": "functional comparison from public description",
+      "bundled_paths": []
+    },
+    {
+      "url": "https://agentichub.openjiuwen.com/assets/ed451127c9a94fd49a46643bcc07acff?version=1.0.0",
+      "version": "1.0.0",
+      "use": "functional comparison from public description",
+      "bundled_paths": []
+    },
+    {
+      "url": "https://agentichub.openjiuwen.com/assets/2f8ada3788034ccb90ef4417d60707ee?version=1.0.0",
+      "version": "1.0.0",
+      "use": "functional comparison from public description",
+      "bundled_paths": []
+    },
+    {
+      "url": "https://agentichub.openjiuwen.com/assets/5d2a89037a3541b792015ba5d879687a?version=1.1.0",
+      "version": "1.1.0",
+      "use": "functional comparison from public description",
+      "bundled_paths": []
+    }
+  ],
+  "repository_test_infrastructure": [
+    "expert-teams/business-interruption-rehearsal-team/tests/host_integration.py",
+    "expert-teams/household-essentials-restock-review-team/tests/host_restock.py",
+    "expert-teams/online-order-payment-review-team/tests/package.py"
+  ],
+  "runtime_dependencies": [
+    "WorkSwarm AgentGroup with local file and command tools",
+    "Python standard library >=3.10"
+  ]
+}

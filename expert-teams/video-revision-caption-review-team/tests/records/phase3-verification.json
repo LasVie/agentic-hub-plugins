@@ -1,0 +1,45 @@
+{
+  "archive_hashes": {
+    "native": "840382bb741fdf026fc5d8b664d26f75510629aab466c37720a491b7fbdc44b2",
+    "wrapped": "cf6f7d471e668b35f21350a60cba08ff5476bf1fdb9e531d01b8cbd9d6a3c6fc"
+  },
+  "payload_files": 21,
+  "manual_replay_sha256": {
+    "baseline.json": "cc8c359e2b7b4ccbdfab66371cac2e78109b599ef6e239a33755561d9ddd4103",
+    "proposal.json": "fc298b24b5dda0854417a3353b4629e867cb222e19695ff431c48d9e8aa9007c",
+    "verification.json": "5a3f60b5b7af0d97e351f3354358e4c83ce8cd4233b011c3b37756501a3358dc",
+    "review.md": "b0b0faee14021e55c05608fb96a951a8f3bafc08cfa165bff9105f39ccae8bac",
+    "cue-review.csv": "7b7266758d560f6f57b1c5880b62905f6dfd2b291f396c2bcde4bfe4984f0446",
+    "audit.json": "7acfbbf0b1c7aba3b0c99bf2efb24141dc748bead9de7f3d68fac8de3b436eb7"
+  },
+  "manual_stage_file_times": {
+    "baseline": "2026-11-27T16:26:46+08:00",
+    "propose": "2026-11-27T16:26:44+08:00",
+    "verify": "2026-11-27T16:27:17+08:00",
+    "deliver": "2026-11-27T16:28:21+08:00"
+  },
+  "baseline_preceded_verification": true,
+  "manual_delivery_assignee": "caption-delivery-specialist",
+  "result": "matched",
+  "track_status": "review_required",
+  "playback_review_rows": 5,
+  "timing_suggestion_milliseconds": {
+    "3": [
+      2500,
+      3500
+    ]
+  },
+  "reviewed_srt_generated": false,
+  "task_id": "AH-20261126-video-revision-caption-review-team",
+  "confirmation_report_id": "RPT-20261127-video-revision-caption-review-team-user-confirmation",
+  "checked_at": "2026-11-27T16:54:23+08:00",
+  "functional_tests": {
+    "source": 10,
+    "exact_native_extraction": 10
+  },
+  "preflight": {
+    "source": "passed",
+    "native": "passed",
+    "wrapper": "passed"
+  }
+}

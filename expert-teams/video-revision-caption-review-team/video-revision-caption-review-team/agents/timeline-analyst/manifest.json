@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "timeline-analyst",
+  "description": "根据剪辑记录映射保留字幕，逐条生成改版核对方案。",
+  "display_name": {
+    "zh": "字幕时间轴分析员",
+    "en": "Caption Timeline Analyst"
+  },
+  "display_description": {
+    "zh": "根据剪辑记录映射保留字幕，逐条生成改版核对方案。",
+    "en": "Caption Timeline Analyst"
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/caption-timeline",
+      "mode": "all"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "tool": "WorkSwarm 0.2.8 register_group.py",
+  "args": [
+    "exact native extraction",
+    "--validate-only"
+  ],
+  "exit": 0,
+  "result": "RESULT: PASS (3 agents)",
+  "native_sha256": "840382bb741fdf026fc5d8b664d26f75510629aab466c37720a491b7fbdc44b2"
+}

@@ -1,0 +1,15 @@
+{
+  "path": "video-revision-caption-review-team",
+  "javascript_files_scanned": 0,
+  "known_dynamic_js_signatures": 0
+}
+{
+  "path": "test-packages/video-revision-caption-review-team-1.0.0-native.zip",
+  "javascript_files_scanned": 0,
+  "known_dynamic_js_signatures": 0
+}
+{
+  "path": "release/1.0.0/video-revision-caption-review-team-1.0.0-agent-group.zip",
+  "javascript_files_scanned": 0,
+  "known_dynamic_js_signatures": 0
+}

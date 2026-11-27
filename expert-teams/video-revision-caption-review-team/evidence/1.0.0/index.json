@@ -1,0 +1,44 @@
+{
+  "task_id": "AH-20261126-video-revision-caption-review-team",
+  "candidate": "Not Applicable",
+  "owner": "Cai Zhenze",
+  "name": "视频改版字幕核验专家团",
+  "version": "1.0.0",
+  "confirmation_report_id": "RPT-20261127-video-revision-caption-review-team-user-confirmation",
+  "source": "Explicit confirmation and three original screenshots in the current Codex conversation",
+  "user_confirmation": "Manual testing of the exact native ZIP is complete and passed.",
+  "confirmation_recorded_at": "2026-11-27T16:54:23+08:00",
+  "sha256": {
+    "native": "840382bb741fdf026fc5d8b664d26f75510629aab466c37720a491b7fbdc44b2",
+    "wrapped": "cf6f7d471e668b35f21350a60cba08ff5476bf1fdb9e531d01b8cbd9d6a3c6fc"
+  },
+  "original_screenshots": [
+    {
+      "original_filename": "Screenshot 2026-11-27 at 4.52.25 PM.png",
+      "description": "Tested version, fictional inputs and four completed tasks",
+      "width": 3322,
+      "height": 1906,
+      "bytes": 736201,
+      "sha256": "376b74a44d2816f0c0e0d28f8507e61d696d0b99c95ffd297e1595a785ee80a6",
+      "path": "originals/01-version-and-task-completion.png"
+    },
+    {
+      "original_filename": "Screenshot 2026-11-27 at 4.52.44 PM.png",
+      "description": "Analyst proposal, source-only baseline, verification and three outputs",
+      "width": 3326,
+      "height": 1910,
+      "bytes": 872703,
+      "sha256": "995d5e3c236a9de48b23ce660ccb01ffc3bb42793cd8e9ecc69e79942ab66a11",
+      "path": "originals/02-handoffs-and-delivery.png"
+    },
+    {
+      "original_filename": "Screenshot 2026-11-27 at 4.52.58 PM.png",
+      "description": "Rendered Chinese review and playback list",
+      "width": 1522,
+      "height": 760,
+      "bytes": 182074,
+      "sha256": "d0c05ce33c08304522e9d261aa0cca2ef8e90991224e7d07c98dbd3b043a3d70",
+      "path": "originals/03-rendered-review.png"
+    }
+  ]
+}

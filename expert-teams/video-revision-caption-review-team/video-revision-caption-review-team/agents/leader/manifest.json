@@ -1,0 +1,22 @@
+{
+  "package_type": "agent_template",
+  "name": "leader",
+  "description": "明确两版字幕及剪辑范围，分派任务，并根据核验回执交付。",
+  "display_name": {
+    "zh": "改版核验主理人",
+    "en": "Caption Review Lead"
+  },
+  "display_description": {
+    "zh": "明确两版字幕及剪辑范围，分派任务，并根据核验回执交付。",
+    "en": "Caption Review Lead"
+  },
+  "persona": {
+    "dir": "persona"
+  },
+  "skills": [
+    {
+      "dir": "skills/caption-delivery",
+      "mode": "all"
+    }
+  ]
+}

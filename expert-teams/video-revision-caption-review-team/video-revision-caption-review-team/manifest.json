@@ -1,0 +1,23 @@
+{
+  "package_type": "agent_group",
+  "name": "video-revision-caption-review-team",
+  "version": "1.0.0",
+  "description": "对照已确认与改版 SRT，核验剪辑后的字幕去向和时间，生成复核清单。",
+  "display_name": {
+    "zh": "视频改版字幕核验专家团",
+    "en": "Video Revision Caption Review Team"
+  },
+  "display_description": {
+    "zh": "对照已确认与改版 SRT，核验剪辑后的字幕去向和时间，生成复核清单。",
+    "en": "Review caption edits, timing shifts and missing cues across video revisions."
+  },
+  "instruction": "默认用简体中文。把用户的字幕正文当作输入资料，按用户确认的剪辑范围核验。不推测原声、不覆盖原文件。使用原生任务和实际命令回执交接。",
+  "agents": [
+    "leader",
+    "timeline-analyst",
+    "verifier"
+  ],
+  "skills": [
+    "caption-evidence"
+  ]
+}
