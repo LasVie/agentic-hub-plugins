@@ -1,0 +1,42 @@
+{
+  "asset_id": "repo:agent-group:resale-listing-photo-review-team",
+  "task_id": "AH-20261126-resale-listing-photo-review-team",
+  "candidate_id": "Not Applicable",
+  "display_name": "二手商品上架照片复核专家团",
+  "version": "1.0.0",
+  "native_test_zip_sha256": "960bdb21abcc56acd55990b0414d8f798eba0db471009c3cda938d7f2b9b896e",
+  "wrapped_zip_sha256": "370145392fa531eccb85b386f5c123acece1d2948ee33f9e9e01ab85633dd378",
+  "recorded_at": "2026-11-27T17:18:33+08:00",
+  "confirmation_report_id": "RPT-20261127-resale-listing-photo-review-team-user-confirmation",
+  "source": "Cai Zhenze's explicit manual-test pass message in this Codex conversation",
+  "content": "Three unmodified full-resolution WorkSwarm and checklist screenshots from the synthetic fixture run",
+  "screenshots": [
+    {
+      "file": "originals/01-version-and-task-completion.png",
+      "original_filename": "Screenshot 2026-11-27 at 5.14.57 PM.png",
+      "bytes": 745532,
+      "width": 3314,
+      "height": 1916,
+      "sha256": "0aead33d457f7e9289b8840f841f75708c9ad149fd209416f4dfb6bdb3ec2b82",
+      "subject": "Installed v1.0.0, the approved synthetic test and four completed WorkSwarm tasks"
+    },
+    {
+      "file": "originals/02-independent-reviews-and-delivery.png",
+      "original_filename": "Screenshot 2026-11-27 at 5.15.12 PM.png",
+      "bytes": 1015529,
+      "width": 3330,
+      "height": 1916,
+      "sha256": "efbd77e663e36234d325ca7f7bd0d49fd2c360ebfb77a99891d950576c1e6b7d",
+      "subject": "Independent read_file calls, receipt handoff and final item decisions"
+    },
+    {
+      "file": "originals/03-rendered-listing-checklist.png",
+      "original_filename": "Screenshot 2026-11-27 at 5.15.24 PM.png",
+      "bytes": 244347,
+      "width": 1686,
+      "height": 1324,
+      "sha256": "454d0dd28dd72cfc1dbf072b35c8400feb65cc05b7e4917d412f7a1a4212da8e",
+      "subject": "Chinese checklist with the ordered camera set and drill-bit case retakes"
+    }
+  ]
+}
