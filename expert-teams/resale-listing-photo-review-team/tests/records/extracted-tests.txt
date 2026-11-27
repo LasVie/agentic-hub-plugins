@@ -1,0 +1,17 @@
+test_changed_photo_refuses_delivery (__main__.ListingReviewTest.test_changed_photo_refuses_delivery) ... ok
+test_changed_source_refuses_seal (__main__.ListingReviewTest.test_changed_source_refuses_seal) ... ok
+test_cross_item_duplicate_content_rejected (__main__.ListingReviewTest.test_cross_item_duplicate_content_rejected) ... ok
+test_disjoint_cover_and_evidence_remain_held (__main__.ListingReviewTest.test_disjoint_cover_and_evidence_remain_held) ... ok
+test_duplicate_within_item_yields_one_file_per_content (__main__.ListingReviewTest.test_duplicate_within_item_yields_one_file_per_content) ... ok
+test_html_escapes_input_and_prevents_overwrite (__main__.ListingReviewTest.test_html_escapes_input_and_prevents_overwrite) ... ok
+test_missing_photo_observation_or_unknown_item_rejected (__main__.ListingReviewTest.test_missing_photo_observation_or_unknown_item_rejected) ... ok
+test_other_batch_hash_cannot_deliver (__main__.ListingReviewTest.test_other_batch_hash_cannot_deliver) ... ok
+test_ready_order_and_held_item_with_read_only_sources (__main__.ListingReviewTest.test_ready_order_and_held_item_with_read_only_sources) ... ok
+test_traversal_and_symlink_rejected (__main__.ListingReviewTest.test_traversal_and_symlink_rejected) ... ok
+test_unreadable_photo_never_satisfies_check (__main__.ListingReviewTest.test_unreadable_photo_never_satisfies_check) ... ok
+test_wrong_role_and_missing_receipt_do_not_deliver (__main__.ListingReviewTest.test_wrong_role_and_missing_receipt_do_not_deliver) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 1.000s
+
+OK

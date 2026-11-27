@@ -1,0 +1,15 @@
+{
+  "path": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/expert-teams/resale-listing-photo-review-team/resale-listing-photo-review-team",
+  "javascript_files_scanned": 0,
+  "known_dynamic_js_signatures": 0
+}
+{
+  "path": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/expert-teams/resale-listing-photo-review-team/test-packages/resale-listing-photo-review-team-1.0.0-native.zip",
+  "javascript_files_scanned": 0,
+  "known_dynamic_js_signatures": 0
+}
+{
+  "path": "/Users/IDLE_And_R/Downloads/Huawei/agentic-hub-plugins/expert-teams/resale-listing-photo-review-team/release/1.0.0/resale-listing-photo-review-team-1.0.0.zip",
+  "javascript_files_scanned": 0,
+  "known_dynamic_js_signatures": 0
+}

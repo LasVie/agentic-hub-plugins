@@ -1,0 +1,79 @@
+{
+  "asset_id": "repo:agent-group:resale-listing-photo-review-team",
+  "task_id": "AH-20261126-resale-listing-photo-review-team",
+  "candidate_id": "Not Applicable",
+  "display_name": "二手商品上架照片复核专家团",
+  "version": "1.0.0",
+  "native_test_zip_sha256": "960bdb21abcc56acd55990b0414d8f798eba0db471009c3cda938d7f2b9b896e",
+  "wrapped_zip_sha256": "370145392fa531eccb85b386f5c123acece1d2948ee33f9e9e01ab85633dd378",
+  "recorded_at": "2026-11-27T17:18:33+08:00",
+  "payload_sha256": {
+    "README.md": "3da9e1b6b61f9ae29a0192403cfd76ec27a18e53285c45c0a519b6de51a8f35c",
+    "agents/evidence/manifest.json": "b204d8ecd3488c706292900cabf94ee4eaee664a64bfa0298d95c309047a4dd7",
+    "agents/evidence/persona/role.md": "2f81fb23847ce0236e82bcf67348d16b544f3cf3b817d520c263d1938dfe9bd3",
+    "agents/leader/AGENT.md": "4fd3a0c91fa3946b8821d0c35f2afb3596c522e630da2f3174f6d3ab1d79ac44",
+    "agents/leader/manifest.json": "4d1d97d9c86627f0528d8c59a5ae85b250455ec4f542e6807c4538fca22584a6",
+    "agents/leader/persona/role.md": "9076adc854049764ec0b332ec440673ce2409cb3073be79c321a1da34ecd5450",
+    "agents/verifier/manifest.json": "c26a06f53c48c2398691c7a1bcf5ef66317471b7191de84288f3efb17971b117",
+    "agents/verifier/persona/role.md": "e301087d02cd3d2f2535a44dd6ebd4738a011a6a618254608613816a2bf8d202",
+    "manifest.json": "511694f9993d90c7350d79db1a0a901559e4fbcad1dfde51b0907730add290ba",
+    "skills/listing-photo-review/SKILL.md": "45b3b37c48d15ab33ae59a00af387918afc1167f702405152a5d6266b8aecd97",
+    "skills/listing-photo-review/scripts/review.py": "d44d59126352a5a1b295c5a82ecd25afeeca0919fb1318d821fbe46317352dae"
+  },
+  "verified_installations": [
+    "manual WorkSwarm installation",
+    "isolated Phase 2 WorkSwarm installation"
+  ],
+  "package_members": [
+    "leader",
+    "evidence",
+    "verifier"
+  ],
+  "manual_session_helpers": [
+    "batch-preparer",
+    "delivery-auditor"
+  ],
+  "manual_receipts": [
+    {
+      "task_id": "independent-evidence",
+      "role": "evidence",
+      "reported_image_reads": 4,
+      "sha256": "fef03cee4849badc7ef363c18d9d6cebe5d0a0b0b8dffeeead930431885c0405"
+    },
+    {
+      "task_id": "independent-verifier",
+      "role": "verifier",
+      "reported_image_reads": 4,
+      "sha256": "9c0d621adbd850889a4957d8c8ac7f27baf08ac560c329d253de23fc2dbb766f"
+    }
+  ],
+  "manual_preflight_sha256": "9ae15d4da0e7e51c4959d20c1afc0dd123131b7e46910f67362e238f4428cad1",
+  "fixture_source_sha256": "24fb52651974be66f1e27e2d2d51e561f1b1d87cd674d749fbb248d1f43d7240",
+  "reproduced_sha256": {
+    "batch/batch.json": "e8127150916708315cfccdfcb31ab213d5be84a80f39f13fee88e68e7f2783f4",
+    "evidence/review.json": "336d7517c7519cd9adba089c99b12717d91923ee80ab207d4de8e17c4c5ecdaa",
+    "verify/review.json": "d80a348e6064b3d6c949550cde92fa84fd9a1837f653f8662b9c1fcf031fcd98",
+    "delivery/report.json": "79638d2372717cc3b9e96c97d91fdd6391e52bedb505e2e9e2d316adcdad1225",
+    "delivery/checklist.html": "901422d97340844ab132e74afa699efce4c7efe0806a25a7a6a94579a59c8c48"
+  },
+  "results": {
+    "ready": [
+      "C01"
+    ],
+    "camera_order": [
+      "camera/front.jpg",
+      "camera/right-scratch.png",
+      "camera/charger.png"
+    ],
+    "held": [
+      "D02"
+    ],
+    "hold_reason": "Drill-bit case not pictured"
+  },
+  "verification": {
+    "source_tests_passed": 12,
+    "extracted_native_tests_passed": 12,
+    "package_and_javascript_preflight": "passed",
+    "manual_task_completion": "visible in the original screenshots"
+  }
+}

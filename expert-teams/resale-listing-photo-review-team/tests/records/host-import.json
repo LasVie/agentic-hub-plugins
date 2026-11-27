@@ -1,0 +1,27 @@
+{
+  "frontend_http": 200,
+  "native_sha256": "960bdb21abcc56acd55990b0414d8f798eba0db471009c3cda938d7f2b9b896e",
+  "payload": {
+    "README.md": "3da9e1b6b61f9ae29a0192403cfd76ec27a18e53285c45c0a519b6de51a8f35c",
+    "agents/evidence/manifest.json": "b204d8ecd3488c706292900cabf94ee4eaee664a64bfa0298d95c309047a4dd7",
+    "agents/evidence/persona/role.md": "2f81fb23847ce0236e82bcf67348d16b544f3cf3b817d520c263d1938dfe9bd3",
+    "agents/leader/AGENT.md": "4fd3a0c91fa3946b8821d0c35f2afb3596c522e630da2f3174f6d3ab1d79ac44",
+    "agents/leader/manifest.json": "4d1d97d9c86627f0528d8c59a5ae85b250455ec4f542e6807c4538fca22584a6",
+    "agents/leader/persona/role.md": "9076adc854049764ec0b332ec440673ce2409cb3073be79c321a1da34ecd5450",
+    "agents/verifier/manifest.json": "c26a06f53c48c2398691c7a1bcf5ef66317471b7191de84288f3efb17971b117",
+    "agents/verifier/persona/role.md": "e301087d02cd3d2f2535a44dd6ebd4738a011a6a618254608613816a2bf8d202",
+    "manifest.json": "511694f9993d90c7350d79db1a0a901559e4fbcad1dfde51b0907730add290ba",
+    "skills/listing-photo-review/SKILL.md": "45b3b37c48d15ab33ae59a00af387918afc1167f702405152a5d6266b8aecd97",
+    "skills/listing-photo-review/scripts/review.py": "d44d59126352a5a1b295c5a82ecd25afeeca0919fb1318d821fbe46317352dae"
+  },
+  "group": "resale-listing-photo-review-team",
+  "member_ids": [
+    "leader",
+    "evidence",
+    "verifier"
+  ],
+  "version": "1.0.0",
+  "installed_equal": true,
+  "model_calls": "none for management",
+  "boundary": "Real host integration with fixed local responses; not autonomous reasoning or manual acceptance."
+}

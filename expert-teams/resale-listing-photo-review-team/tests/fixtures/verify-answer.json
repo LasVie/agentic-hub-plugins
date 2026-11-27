@@ -1,0 +1,21 @@
+{
+  "items": {
+    "C01": {
+      "covers": ["p01"],
+      "photos": {"p01": "usable", "p02": "usable", "p03": "usable"},
+      "checks": {
+        "c01": {"status": "supported", "photos": ["p01"], "note": "灰机身与镜头完整，缩略仍可辨。"},
+        "c02": {"status": "supported", "photos": ["p02"], "note": "右侧近照有两条浅色线条。"},
+        "c03": {"status": "supported", "photos": ["p03"], "note": "可见与相机一起拍摄的充电器。"}
+      }
+    },
+    "D02": {
+      "covers": ["p01"],
+      "photos": {"p01": "usable"},
+      "checks": {
+        "c01": {"status": "supported", "photos": ["p01"], "note": "轮廓完整，绿色机身与说明一致。"},
+        "c02": {"status": "retake", "photos": [], "note": "画面只有电钻。请补拍打开的钻头盒与电钻同框。"}
+      }
+    }
+  }
+}

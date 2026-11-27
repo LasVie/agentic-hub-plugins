@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "id": "C01",
+      "title": "灰色练习相机",
+      "photos": ["camera/front.jpg", "camera/right-scratch.png", "camera/charger.png"],
+      "checks": ["灰色相机主体", "右侧浅色划痕", "随附充电器"]
+    },
+    {
+      "id": "D02",
+      "title": "绿色练习电钻",
+      "photos": ["drill/front.png"],
+      "checks": ["绿色电钻主体", "随附钻头收纳盒"]
+    }
+  ]
+}

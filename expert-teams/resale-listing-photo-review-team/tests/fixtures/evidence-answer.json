@@ -1,0 +1,21 @@
+{
+  "items": {
+    "C01": {
+      "covers": ["p01", "p03"],
+      "photos": {"p01": "usable", "p02": "usable", "p03": "usable"},
+      "checks": {
+        "c01": {"status": "supported", "photos": ["p01"], "note": "机身正面完整，可见灰色外壳。"},
+        "c02": {"status": "supported", "photos": ["p02"], "note": "右侧中央可见浅色斜划痕。"},
+        "c03": {"status": "supported", "photos": ["p03"], "note": "右下有充电器和插脚。"}
+      }
+    },
+    "D02": {
+      "covers": ["p01"],
+      "photos": {"p01": "usable"},
+      "checks": {
+        "c01": {"status": "supported", "photos": ["p01"], "note": "绿色电钻居中，手柄完整。"},
+        "c02": {"status": "retake", "photos": [], "note": "请补拍钻头收纳盒与电钻同框。"}
+      }
+    }
+  }
+}
