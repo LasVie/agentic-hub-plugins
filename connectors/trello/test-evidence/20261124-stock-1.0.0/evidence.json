@@ -1,0 +1,41 @@
+{
+  "task_id": "AH-20261124-trello",
+  "version": "1.0.0",
+  "environment": "macOS WorkSwarm 0.2.8, Node 22.12.0, isolated local catalog",
+  "hub_zip_sha256": "5488082cb3502eae50bb18587db09ad19cc629a16b2b7d73253be8e455aa9d26",
+  "native_zip_sha256": "d1062b6c82dd8026fe41c0fb8841167c23d9e44adaf3c8fb03c6c2c385ec59fe",
+  "local": {
+    "controlled_tests_passed": 9,
+    "installed_files_verified": 5,
+    "card_credential_form": true,
+    "invalid_credential_error_against_provider": true
+  },
+  "live": {
+    "session_id": "web_1a20ca61d25_5fa688b05d20",
+    "api_probe": true,
+    "card_connected": true,
+    "card_credentials_transferred_after_user_approval": true,
+    "scope": "read,write",
+    "token_lifetime_days": 30,
+    "manual_entries_with_invalid_format": 3,
+    "mcp_tools_verified": 6,
+    "board": "WorkSwarm Trello QA 20261124",
+    "workspace": "WorkSwarm QA",
+    "board_visibility": "private",
+    "list": "To Do",
+    "same_name_matches_before_create": 0,
+    "created_test_cards": 1,
+    "direct_get_matches": true,
+    "provider_page_matches": true,
+    "provider_to_do_list_total_after": 1,
+    "card_title": "WorkSwarm 验收卡片 20261124",
+    "synthetic_card_short_link": "D6kYbnYg"
+  },
+  "screenshots": {
+    "01-workswarm-credential-form.jpg": "054e7df8d993b84af5d175ef8717b237d67ec2addba81faeb8b24422bcbedc76",
+    "02-private-test-board.jpg": "69e79d1885030d2896a7f49da295671948681ce7227b051bf831b4a9b7f36d68",
+    "03-workswarm-connected-tools.jpg": "ef3813cc73ca1830023c3a7f8775e3f994b668d9cb4b8bc68ece6695ba46b140",
+    "04-workswarm-chat-readback.jpg": "7b1f9a569482a93ce95d5d006ab9e14bb7b118413e0c2771779135f7151873f5",
+    "05-trello-card-readback.jpg": "53cd8b3ec1d5a863838f42f39308490353d086f81962070c62b4c341db0cffad"
+  }
+}

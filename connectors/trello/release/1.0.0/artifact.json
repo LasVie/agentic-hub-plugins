@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "runtime_type": "agent-mcp",
+  "name": "trello",
+  "version": "1.0.0",
+  "source_review_sha256": "c6f191bf02536cce6509189e0c5f251bedb24edde3d0c37534bd323645e9649d",
+  "test_report_sha256": "ededf57862965d87be0df59fd2e7ddedd8eec5905f006e925e93130b957a116e",
+  "official_cli": {
+    "version": "0.0.1",
+    "source_commit": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+    "validation": "validate and pack passed in clean staging"
+  },
+  "artifacts": {
+    "hub": {
+      "path": "connectors/trello/release/1.0.0/trello-1.0.0-agent-mcp.zip",
+      "sha256": "5488082cb3502eae50bb18587db09ad19cc629a16b2b7d73253be8e455aa9d26"
+    },
+    "native": {
+      "path": "connectors/trello/test-packages/trello-1.0.0-native.zip",
+      "sha256": "d1062b6c82dd8026fe41c0fb8841167c23d9e44adaf3c8fb03c6c2c385ec59fe"
+    }
+  },
+  "payload_sha256": {
+    "README.md": "222b7e61499bf82662915e70fae1123bb8a09e9d82d7dadde4827be72d880959",
+    "manifest.json": "c4318708abcceec1b2e3c2145b1b44259daa043b18ed64b383929ba46016c488",
+    "mcp.json": "9c41267d59ca59a77513c9f8f0584caf09260749edb502087724d4ff7c3123dd",
+    "skills/trello-guide/SKILL.md": "e7d6c17b762a5e491441f2bb226919082249f3e209aadc2935cac12a9c288bf6",
+    "token-schema.json": "cbdc3278d4f7de971a04ecfbefdaf1c93a423a6d915f1d025c3cfd4a298787c0"
+  }
+}

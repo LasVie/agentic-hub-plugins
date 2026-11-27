@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "package_type": "mcp",
+  "id": "trello",
+  "name": "Trello 看板连接器",
+  "description": "查询 Trello 看板、列表和卡片，在指定列表创建卡片并回读。",
+  "display_name": {"zh": "Trello 看板连接器", "en": "Trello Boards"},
+  "display_description": {"zh": "查询 Trello 看板、列表和卡片，在指定列表创建卡片并回读。", "en": "Find Trello boards, lists and cards, and create a card in an authorized list."},
+  "integration": {"type": "stdio-mcp", "file": "mcp.json"},
+  "credentials": {"type": "token", "file": "token-schema.json"},
+  "skills": [{"dir": "skills/trello-guide", "mode": "all"}]
+}

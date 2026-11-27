@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "mode": "native",
+  "version": "1.0.0",
+  "owner": "Song Haoran",
+  "task_id": "AH-20261124-trello",
+  "candidate_id": null,
+  "naming": {"original": "Trello", "display_name": "Trello 看板连接器", "slug": "trello"},
+  "upstream": [
+    {"source": "https://developer.atlassian.com/cloud/trello/guides/rest-api/authorization/", "version": "REST v1, checked 2026-11-24", "permission_status": "unknown", "copied_paths": [], "use": "Public API auth and resource contracts only."}
+  ],
+  "team_reuse": {
+    "source": "https://github.com/LasVie/agentic-hub-plugins/tree/7b29e81d26bbe0b94af0d1dc6395a480bbfc25ce/connectors/fathom",
+    "paths": ["src/build-config.py","src/fathom-mcp.cjs"],
+    "modifications": "Adapted repository-owned stdio MCP lifecycle for Trello and prepared two card credential placeholders."
+  }
+}

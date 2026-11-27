@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "type": "agent-mcp",
+  "name": "trello",
+  "display_name": "Trello 看板连接器",
+  "version": "1.0.0",
+  "owner": "Song Haoran",
+  "task_id": "AH-20261124-trello",
+  "candidate_id": null,
+  "internal_asset_id": "repo:agent-mcp:trello",
+  "description": "查询 Trello 看板、列表和卡片，在指定列表创建卡片并回读。",
+  "native_path": "trello"
+}

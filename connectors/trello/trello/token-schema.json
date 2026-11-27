@@ -1,0 +1,6 @@
+{
+  "fields": [
+    {"key": "TRELLO_API_KEY", "label": "Trello 应用 API Key", "type": "password", "required": true},
+    {"key": "TRELLO_API_TOKEN", "label": "Trello 用户令牌", "type": "password", "required": true}
+  ]
+}
