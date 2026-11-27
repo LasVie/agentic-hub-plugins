@@ -1,0 +1,33 @@
+{
+  "name": "survey-skip-logic-review-team",
+  "version": "1.0.1",
+  "type": "agent-group",
+  "official_cli_version": "0.0.1",
+  "official_cli_ref": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+  "archives": {
+    "wrapper": {
+      "path": "release/1.0.1/survey-skip-logic-review-team-1.0.1-agent-group.zip",
+      "sha256": "c81918bd7c52ed9b7ea6619a87761ce11db1ac3ce3da25a056c5ac57eac47f89"
+    },
+    "native": {
+      "path": "test-packages/history/survey-skip-logic-review-team-1.0.1-native.zip",
+      "sha256": "288495599a9ebbf124bfa4505a276d39cc183bd43a4479186bf69b64ec0102bd"
+    }
+  },
+  "payload_sha256": {
+    "agents/analyst/manifest.json": "56f0696d1590305b0965271d22cdd3230c3e72468021c7a50dcf77ee6e347fc0",
+    "agents/analyst/persona/analyst.md": "f23b894953fcfae5aad04b42d4deb2ea7d1f125a99fc1a41854cccb42b37289c",
+    "agents/leader/AGENT.md": "3bf992150910d3492bfed44d0e28888203b8277d3c6cb8e63e7911a1c1388ca6",
+    "agents/leader/manifest.json": "5c92493f345c7f0c14c3bf8f1ce0044202e12ec4fb1bb6c3d8d0e748606c694a",
+    "agents/leader/persona/leader.md": "b8873dad480e16991016142de5f46c1a9060a5e61b5d0fa3d32022cfe8f1ca2b",
+    "agents/verifier/manifest.json": "ee9097c3c2a546460e9afa37c26435ebfa081a0b314eb6b8b6d3678ddc991cd9",
+    "agents/verifier/persona/verifier.md": "461d3da0bf66153a51708e4e781f6cfb55a7c47fc5c504637a080ccad7e50f1c",
+    "examples/演示问卷.json": "4addec4a48b6e861c5f62959530331894403437476517f3ecb132f6053ff399b",
+    "manifest.json": "5018f53d2530012acba989db5abeaf46a8aaf1f6984b7b4d72ca6f06be8b19f6",
+    "README.md": "4b6be1dfc4abc005f8054d191f12b5fd6bd224e480ebff6773ef3beeee60396c",
+    "scripts/routing.py": "5b3535bb38a3d750497c93615e188813362f6704dc57797ca7911539eb5f603a",
+    "skills/routing-protocol/SKILL.md": "539c78159ae19ed8da861720cafdd59d62d1641ed4240f0baeef6eae5deedadc"
+  },
+  "source_review_sha256": "5c70565bad1b171f94fde2fa055877bd2734c629af5ea411549a9254c0250c59",
+  "test_report_sha256": "a34401f7aaffbdab503a83b907ff0b601822af3fdc43c4e5b4a48ee18dea8ab6"
+}

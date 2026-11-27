@@ -1,0 +1,23 @@
+{
+  "task_id": "AH-20261120-survey-skip-logic-review-team",
+  "asset_version": "1.0.2",
+  "native_zip_sha256": "8a95dc972094d12c2c0d290f4e0e9090788114c7886d0f5987d65877f3d5e107",
+  "originals": [
+    {
+      "original_filename": "jiuwenswarm-share-20261127-114916.png",
+      "path": "originals/jiuwenswarm-share-20261127-114916.png",
+      "description": "Case 1: Chinese routing findings and real group handoffs",
+      "sha256": "5b36cd3252e716d1b0d1129a005b1e180beb4363f771103c916875fe0517fbb2",
+      "bytes": 2805282,
+      "dimensions": [2250, 17313]
+    },
+    {
+      "original_filename": "jiuwenswarm-share-20261127-125913.png",
+      "path": "originals/jiuwenswarm-share-20261127-125913.png",
+      "description": "Case 2: Chinese duplicate-key rejection with no tasks or outputs",
+      "sha256": "7c08d52027f432af1f19a7b6cd430436fa0cd1cb5858694db667c77d1c358a37",
+      "bytes": 756936,
+      "dimensions": [2250, 5472]
+    }
+  ]
+}

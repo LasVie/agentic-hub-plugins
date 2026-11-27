@@ -1,0 +1,16 @@
+{
+  "package_type": "agent_template",
+  "name": "verifier",
+  "description": "先独立计算可达性基线，再回放分析证据，拒绝不一致结果。",
+  "display_name": {
+    "zh": "独立核验员",
+    "en": "Independent Verifier"
+  },
+  "display_description": {
+    "zh": "先独立计算可达性基线，再回放分析证据，拒绝不一致结果。",
+    "en": "Compute an independent baseline and replay the reported paths."
+  },
+  "persona": {
+    "dir": "persona"
+  }
+}

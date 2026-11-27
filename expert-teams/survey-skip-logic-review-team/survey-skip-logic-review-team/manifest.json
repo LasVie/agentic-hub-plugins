@@ -1,0 +1,23 @@
+{
+  "name": "survey-skip-logic-review-team",
+  "version": "1.0.2",
+  "package_type": "agent_group",
+  "description": "核验单选问卷的不可达题、断链和可重复循环，并独立回放证据路径。",
+  "display_name": {
+    "zh": "问卷跳题逻辑核验专家团",
+    "en": "Survey Skip-Logic Review Team"
+  },
+  "display_description": {
+    "zh": "核验单选问卷的不可达题、断链和可重复循环，并独立回放证据路径。",
+    "en": "Audit single-choice survey routing with independently replayed evidence."
+  },
+  "instruction": "仅处理用户授权的本地跳转规则，不收集或读入真实作答。默认中文。所有成员使用相同原始文件和本次专用输出目录；报告必须有实际任务记录与可读的交接文件。",
+  "agents": [
+    "leader",
+    "analyst",
+    "verifier"
+  ],
+  "skills": [
+    "routing-protocol"
+  ]
+}

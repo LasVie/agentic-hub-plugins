@@ -1,0 +1,17 @@
+{
+  "type": "agent-group",
+  "name": "survey-skip-logic-review-team",
+  "version": "1.0.2",
+  "display_name": "问卷跳题逻辑核验专家团",
+  "description": "核验单选问卷的不可达题、断链和可重复循环，并独立回放证据路径。",
+  "publisher": "Nguyen Trung Dung",
+  "category": "数据与科研",
+  "tags": [
+    "问卷",
+    "跳题逻辑",
+    "路径核验"
+  ],
+  "candidate_id": "Not Applicable",
+  "task_id": "AH-20261120-survey-skip-logic-review-team",
+  "asset_id": "repo:agent-group:survey-skip-logic-review-team"
+}

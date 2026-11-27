@@ -1,0 +1,33 @@
+{
+  "name": "survey-skip-logic-review-team",
+  "version": "1.0.2",
+  "type": "agent-group",
+  "official_cli_version": "0.0.1",
+  "official_cli_ref": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+  "archives": {
+    "wrapper": {
+      "path": "release/1.0.2/survey-skip-logic-review-team-1.0.2-agent-group.zip",
+      "sha256": "031de2214e497b88fc2d52f43b71644dc8fb26ef1af1ed52419be52ecd2efb25"
+    },
+    "native": {
+      "path": "test-packages/survey-skip-logic-review-team-1.0.2-native.zip",
+      "sha256": "8a95dc972094d12c2c0d290f4e0e9090788114c7886d0f5987d65877f3d5e107"
+    }
+  },
+  "payload_sha256": {
+    "agents/analyst/manifest.json": "56f0696d1590305b0965271d22cdd3230c3e72468021c7a50dcf77ee6e347fc0",
+    "agents/analyst/persona/analyst.md": "f23b894953fcfae5aad04b42d4deb2ea7d1f125a99fc1a41854cccb42b37289c",
+    "agents/leader/AGENT.md": "647eb99b2b16981558f75dee7437be016563e35802791fb54e9f45336e3af997",
+    "agents/leader/manifest.json": "5c92493f345c7f0c14c3bf8f1ce0044202e12ec4fb1bb6c3d8d0e748606c694a",
+    "agents/leader/persona/leader.md": "b8873dad480e16991016142de5f46c1a9060a5e61b5d0fa3d32022cfe8f1ca2b",
+    "agents/verifier/manifest.json": "ee9097c3c2a546460e9afa37c26435ebfa081a0b314eb6b8b6d3678ddc991cd9",
+    "agents/verifier/persona/verifier.md": "461d3da0bf66153a51708e4e781f6cfb55a7c47fc5c504637a080ccad7e50f1c",
+    "examples/演示问卷.json": "4addec4a48b6e861c5f62959530331894403437476517f3ecb132f6053ff399b",
+    "manifest.json": "d00bc526b5d6e3e9e40a1a125fb11805d18fbdc7dde373bf13d163394fc7ef05",
+    "README.md": "99ad3d04d0b32c01977cf6cadee31b4240713d8b0e41e429549a9aebfc5ea67b",
+    "scripts/routing.py": "d2302d9d287afa856cd8689ce6783d3b1f6eab2935ed2bc07fffec4d25aa0137",
+    "skills/routing-protocol/SKILL.md": "58398deaecc7ed7ad977dfebe70e53b7266d29a8d40d2c94143eb7afed280c58"
+  },
+  "source_review_sha256": "df5a9f1920fa7272d5c9831c158997bae6ed6d36ff65c747a912cfc3b648c78b",
+  "test_report_sha256": "f6839f1670a4a47105910b0b89461d8c68df58c6b16db49d35c1fd2c4a0328b2"
+}

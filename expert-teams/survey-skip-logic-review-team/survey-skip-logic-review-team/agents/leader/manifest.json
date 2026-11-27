@@ -1,0 +1,16 @@
+{
+  "package_type": "agent_template",
+  "name": "leader",
+  "description": "确认输入和输出范围；按顺序分派并核验成员的实际产物，签发报告。",
+  "display_name": {
+    "zh": "跳题核验负责人",
+    "en": "Routing Review Lead"
+  },
+  "display_description": {
+    "zh": "确认输入和输出范围；按顺序分派并核验成员的实际产物，签发报告。",
+    "en": "Coordinate the run and deliver the verified report."
+  },
+  "persona": {
+    "dir": "persona"
+  }
+}

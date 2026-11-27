@@ -1,0 +1,16 @@
+{
+  "package_type": "agent_template",
+  "name": "analyst",
+  "description": "从起始题正向搜索，生成断链和循环的具体选项序列。",
+  "display_name": {
+    "zh": "路径分析员",
+    "en": "Path Analyst"
+  },
+  "display_description": {
+    "zh": "从起始题正向搜索，生成断链和循环的具体选项序列。",
+    "en": "Explore reachable paths and collect reproducible defects."
+  },
+  "persona": {
+    "dir": "persona"
+  }
+}

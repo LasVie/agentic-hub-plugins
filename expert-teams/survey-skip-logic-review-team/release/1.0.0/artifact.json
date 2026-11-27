@@ -1,0 +1,33 @@
+{
+  "name": "survey-skip-logic-review-team",
+  "version": "1.0.0",
+  "type": "agent-group",
+  "official_cli_version": "0.0.1",
+  "official_cli_ref": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+  "archives": {
+    "wrapper": {
+      "path": "release/1.0.0/survey-skip-logic-review-team-1.0.0-agent-group.zip",
+      "sha256": "47e116c0e8cb239ca6a1fc0c926ad8935334cb7fab0ba07b756880ad92180e98"
+    },
+    "native": {
+      "path": "test-packages/history/survey-skip-logic-review-team-1.0.0-native.zip",
+      "sha256": "77206de197a2ed826d08f394bbfb7479d34f270c053ee6cf8772610a5fe6c338"
+    }
+  },
+  "payload_sha256": {
+    "agents/analyst/manifest.json": "56f0696d1590305b0965271d22cdd3230c3e72468021c7a50dcf77ee6e347fc0",
+    "agents/analyst/persona/analyst.md": "f23b894953fcfae5aad04b42d4deb2ea7d1f125a99fc1a41854cccb42b37289c",
+    "agents/leader/AGENT.md": "9c9c71a06b165a2890892f6d0ff2cbce1046ef74358cb3b44485c335a9c20c43",
+    "agents/leader/manifest.json": "5c92493f345c7f0c14c3bf8f1ce0044202e12ec4fb1bb6c3d8d0e748606c694a",
+    "agents/leader/persona/leader.md": "b8873dad480e16991016142de5f46c1a9060a5e61b5d0fa3d32022cfe8f1ca2b",
+    "agents/verifier/manifest.json": "ee9097c3c2a546460e9afa37c26435ebfa081a0b314eb6b8b6d3678ddc991cd9",
+    "agents/verifier/persona/verifier.md": "461d3da0bf66153a51708e4e781f6cfb55a7c47fc5c504637a080ccad7e50f1c",
+    "examples/演示问卷.json": "4addec4a48b6e861c5f62959530331894403437476517f3ecb132f6053ff399b",
+    "manifest.json": "c0e26c384e4fdbf26a30614a2928220afe0cd57fc79771a139c518a5efcc3557",
+    "README.md": "4b6be1dfc4abc005f8054d191f12b5fd6bd224e480ebff6773ef3beeee60396c",
+    "scripts/routing.py": "801db83f38c88dd11e190481e28d254b9dd01d9ae0e85c8b8ac60c4282b5395b",
+    "skills/routing-protocol/SKILL.md": "60380c7f902b0c54fbc54250721984f6531af96ce001051d93945c1878cdff9a"
+  },
+  "source_review_sha256": "5c70565bad1b171f94fde2fa055877bd2734c629af5ea411549a9254c0250c59",
+  "test_report_sha256": "5ecce5b66ee61b35d404ec8981df022ce3462bd6fc72612cf9fe7b09b8510a3c"
+}
