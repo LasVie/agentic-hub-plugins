@@ -1,0 +1,20 @@
+{
+  "mode": "native",
+  "permission_status": "not-applicable",
+  "task_id": "AH-20261120-survey-skip-logic-review-team",
+  "source_review": "SOURCE_REVIEW.md",
+  "native_design": "NATIVE_DESIGN.md",
+  "reused_paths": [],
+  "license_evidence": [],
+  "sources": [
+    {
+      "url": "https://github.com/LasVie/agentic-hub-plugins/blob/df95878c7670e93ab38fda6066aa58253f3097b8/expert-teams/README.md",
+      "ref": "df95878c7670e93ab38fda6066aa58253f3097b8",
+      "use": "Package interface only"
+    }
+  ],
+  "runtime_dependencies": [
+    "Python 3.10+ standard library",
+    "WorkSwarm AgentGroup host task and file/command tools"
+  ]
+}

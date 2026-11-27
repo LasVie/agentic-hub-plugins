@@ -1,0 +1,5 @@
+# Independent design
+
+Audit a bounded single-choice questionnaire before collecting responses. The only input is an authorized UTF-8 JSON routing specification; each option has exactly one target, a question ID or `END`. There are no external form connectors, executable conditions, scoring, real responses, or form edits. A missing schema field blocks analysis. A declared edge to an undefined question is an auditable defect, not a successful exit.
+
+The analyst explores reachable questions from the start and produces answer sequences for invalid targets and possible loops. Questions never reached are listed separately. The verifier reads the original specification and computes reachability, invalid transitions, and cycle membership with a distinct fixed-point procedure before receiving the analyst result. It then validates the witness paths against the original transitions. The Leader checks the host task records and source-bound handoff files, then invokes the report step. A failed check or an input change blocks the final report. A verified report can contain defects; it does not validate respondent intent, wording, or a live form.
