@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "runtime_type": "agent-mcp",
+  "name": "outlook-work-calendar",
+  "version": "1.0.0",
+  "source_review_sha256": "728cbd5bdc5a40d1c583de50b4fbdd5b45615173bde0f347088723bb737a84dd",
+  "test_report_sha256": "a39d12c8859df11d0dc3b9a71c4e9752a9b5f13566d214cc50f0cc0ef27a4ec0",
+  "official_cli": {
+    "version": "0.0.1",
+    "source_commit": "c8ee4ef44be0453470114aa5a19f4e1017462907",
+    "validation": "validate and pack passed in clean staging"
+  },
+  "artifacts": {
+    "hub": {
+      "path": "connectors/outlook-work-calendar/release/1.0.0/outlook-work-calendar-1.0.0-agent-mcp.zip",
+      "sha256": "e42d1419ee5211ac3f8434198b0dec99633200a34bb48839a4fe46b072340df5"
+    },
+    "native": {
+      "path": "connectors/outlook-work-calendar/test-packages/outlook-work-calendar-1.0.0-native.zip",
+      "sha256": "1c6b2ddf1293df85f4536c61a7849d287574b73e15b8ce1fdb35f4872fe0a643"
+    }
+  },
+  "payload_sha256": {
+    "README.md": "e8e86da28b3c8a2156ea71c94e2951a423072688c04e0703003ec9e2a180746f",
+    "cli.json": "5498bb9b3f553be93f1113fc3441491373a861110090d4306da1f9e934ff4d5d",
+    "manifest.json": "db9056a84325a140009bfe12c713f88dd4d7999e703fff34ef9900d1540d5174",
+    "skills/outlook-work-calendar-guide/SKILL.md": "444d73338b3d8ebe2cac7142ebef2feb52e03e963668439fcf76e865ce37b5b4",
+    "skills/outlook-work-calendar-guide/scripts/graph.cjs": "fb1ae8edcab9ddba4b54c3b25109a85bef29838508fc9bb1dbb35527f2299a88",
+    "skills/outlook-work-calendar-guide/scripts/outlook-cli.cjs": "ecddbf9cfdf3f31d190df18167df691352199fba84853711ee6d14882f5e8c29",
+    "skills/outlook-work-calendar-guide/scripts/storage.cjs": "a2190fec8b762c5b34f731e7b922c771a04b0e87f0c3c2f3eabbe30ce01f8dc9"
+  }
+}

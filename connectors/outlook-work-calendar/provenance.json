@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "mode": "native",
+  "version": "1.0.0",
+  "owner": "Song Haoran",
+  "task_id": "AH-20261124-outlook-work-calendar",
+  "candidate_id": null,
+  "naming": {"original": "Microsoft 365 Outlook Calendar", "display_name": "Outlook 工作日历连接器", "slug": "outlook-work-calendar"},
+  "upstream": [
+    {"source": "https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow", "version": "Entra OAuth v2.0, checked 2026-11-24", "permission_status": "unknown", "copied_paths": [], "use": "Public authorization and token behavior."},
+    {"source": "https://learn.microsoft.com/en-us/graph/api/user-list-calendarview?view=graph-rest-1.0", "version": "Graph REST v1.0, checked 2026-11-24", "permission_status": "unknown", "copied_paths": [], "use": "Public calendar API interface, data and scope contract."}
+  ],
+  "team_reuse": {
+    "source": "https://github.com/LasVie/agentic-hub-plugins/tree/fe4744ce839b2a28d9fcf4c34ca6fdce3453a20e/connectors/google-calendar",
+    "paths": ["google-calendar/cli.json", "google-calendar/skills/google-calendar-guide/scripts/storage.cjs"],
+    "modifications": "Adapted launcher and private file access to the new slug. Removed provider-specific storage and dependencies."
+  }
+}

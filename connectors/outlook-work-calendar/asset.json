@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "type": "agent-mcp",
+  "name": "outlook-work-calendar",
+  "display_name": "Outlook 工作日历连接器",
+  "version": "1.0.0",
+  "owner": "Song Haoran",
+  "task_id": "AH-20261124-outlook-work-calendar",
+  "candidate_id": null,
+  "internal_asset_id": "repo:agent-mcp:outlook-work-calendar",
+  "description": "连接 Microsoft 365 工作或学校账号，查询并读取 Outlook 主日历中的日程基本信息。",
+  "native_path": "outlook-work-calendar"
+}
